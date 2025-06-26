@@ -13,7 +13,7 @@ from typing import List
 
 from .config import config
 from .utils.logging import setup_logging
-from .core import WebScraper, TextProcessor
+from .core import WebScraper, TextProcessor, MultiPageCrawler
 from .outputs import OutputManager
 
 logger = logging.getLogger(__name__)
@@ -108,8 +108,15 @@ def create_parser() -> argparse.ArgumentParser:
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
 Examples:
+  # Single page crawling
   %(prog)s https://example.com
   %(prog)s https://example.com --output-dir custom_output
+  
+  # Multi-page crawling
+  %(prog)s https://example.com --multi-page
+  %(prog)s https://example.com --multi-page --max-urls 100 --max-depth 3
+  
+  # Multiple URLs (single page mode)
   %(prog)s https://site1.com https://site2.com --no-ocr
         """
     )
@@ -149,6 +156,47 @@ Examples:
         help=f"Log file path (default: {config.log_file})"
     )
     
+    # Multi-page crawling options
+    parser.add_argument(
+        "--multi-page",
+        action="store_true",
+        help="Enable multi-page crawling mode"
+    )
+    
+    parser.add_argument(
+        "--max-urls",
+        type=int,
+        default=50,
+        help="Maximum number of URLs to crawl (default: 50)"
+    )
+    
+    parser.add_argument(
+        "--max-depth",
+        type=int,
+        default=2,
+        help="Maximum crawling depth (default: 2)"
+    )
+    
+    parser.add_argument(
+        "--max-workers",
+        type=int,
+        default=1,
+        help="Maximum number of concurrent workers (default: 1, use sequential processing)"
+    )
+    
+    parser.add_argument(
+        "--delay",
+        type=float,
+        default=6.0,
+        help="Delay between requests in seconds (default: 6.0 for rate limit safety)"
+    )
+    
+    parser.add_argument(
+        "--no-sitemap",
+        action="store_true",
+        help="Disable sitemap discovery"
+    )
+    
     return parser
 
 
@@ -162,41 +210,96 @@ def main():
     setup_logging(level=log_level, log_file=args.log_file)
     
     try:
-        # Initialize crawler
-        crawler = WebsiteCrawler(
-            output_dir=args.output_dir,
-            enable_ocr=not args.no_ocr
-        )
-        
-        # Process URLs
-        if len(args.urls) == 1:
-            # Single URL processing
-            result = crawler.process_website(args.urls[0], args.filename)
-            
-            if result['status'] == 'success':
-                print(f"\n✅ Processing completed: {result['title']}")
-                print(f"📊 Text length: {result['text_length']:,} characters")
-                print(f"🖼️  Images processed: {result['image_count']}")
-                print(f"📁 Output files:")
-                for format_type, path in result['files'].items():
-                    print(f"   - {format_type.upper()}: {path}")
-            else:
-                print(f"❌ Processing failed: {result['error']}")
+        if args.multi_page:
+            # Multi-page crawling mode
+            if len(args.urls) > 1:
+                print("❌ Multi-page mode only supports single base URL")
                 sys.exit(1)
+            
+            base_url = args.urls[0]
+            print(f"🔄 Starting multi-page crawling for: {base_url}")
+            
+            # Progress callback
+            def progress_callback(message: str, current: int, total: int):
+                percentage = (current / total) * 100 if total > 0 else 0
+                print(f"📈 [{percentage:5.1f}%] {message}")
+            
+            # Initialize multi-page crawler
+            multi_crawler = MultiPageCrawler(
+                api_key=config.firecrawl_api_key,
+                output_dir=args.output_dir,
+                max_urls=args.max_urls,
+                max_depth=args.max_depth,
+                max_workers=args.max_workers,
+                delay_between_requests=args.delay,
+                enable_ocr=not args.no_ocr,
+                progress_callback=progress_callback
+            )
+            
+            # Execute multi-page crawling
+            result = multi_crawler.crawl_website(base_url)
+            
+            if result['success']:
+                site_structure = result['site_structure']
+                stats = result['stats']
+                
+                print(f"\n✅ Multi-page crawling completed!")
+                print(f"🌐 Base URL: {site_structure.base_url}")
+                print(f"📊 Pages crawled: {site_structure.successful_pages}/{site_structure.total_pages}")
+                print(f"📝 Total text: {site_structure.total_text_length:,} characters")
+                print(f"🖼️  Total images: {site_structure.total_images}")
+                duration = site_structure.crawl_duration
+                if duration:
+                    print(f"⏱️  Duration: {duration:.1f} seconds")
+                else:
+                    print(f"⏱️  Duration: N/A")
+                print(f"📈 Success rate: {site_structure.success_rate:.1%}")
+                
+                print(f"\n📁 Saved files:")
+                for file_type, path in result['saved_files'].items():
+                    print(f"   - {file_type.replace('_', ' ').title()}: {path}")
+                    
+            else:
+                print(f"❌ Multi-page crawling failed: {result['error']}")
+                sys.exit(1)
+        
         else:
-            # Multiple URL processing
-            results = crawler.process_multiple_websites(args.urls)
+            # Single page mode (existing functionality)
+            # Initialize crawler
+            crawler = WebsiteCrawler(
+                output_dir=args.output_dir,
+                enable_ocr=not args.no_ocr
+            )
             
-            successful = len([r for r in results if r['status'] == 'success'])
-            print(f"\n✅ Batch processing completed: {successful}/{len(args.urls)} successful")
-            print(f"📁 Output directory: {args.output_dir}")
-            
-            # Show failed URLs
-            failed_results = [r for r in results if r['status'] == 'error']
-            if failed_results:
-                print("\n❌ Failed URLs:")
-                for result in failed_results:
-                    print(f"   - {result['url']}: {result['error']}")
+            # Process URLs
+            if len(args.urls) == 1:
+                # Single URL processing
+                result = crawler.process_website(args.urls[0], args.filename)
+                
+                if result['status'] == 'success':
+                    print(f"\n✅ Processing completed: {result['title']}")
+                    print(f"📊 Text length: {result['text_length']:,} characters")
+                    print(f"🖼️  Images processed: {result['image_count']}")
+                    print(f"📁 Output files:")
+                    for format_type, path in result['files'].items():
+                        print(f"   - {format_type.upper()}: {path}")
+                else:
+                    print(f"❌ Processing failed: {result['error']}")
+                    sys.exit(1)
+            else:
+                # Multiple URL processing
+                results = crawler.process_multiple_websites(args.urls)
+                
+                successful = len([r for r in results if r['status'] == 'success'])
+                print(f"\n✅ Batch processing completed: {successful}/{len(args.urls)} successful")
+                print(f"📁 Output directory: {args.output_dir}")
+                
+                # Show failed URLs
+                failed_results = [r for r in results if r['status'] == 'error']
+                if failed_results:
+                    print("\n❌ Failed URLs:")
+                    for result in failed_results:
+                        print(f"   - {result['url']}: {result['error']}")
         
     except KeyboardInterrupt:
         logger.info("Processing interrupted by user")

@@ -1,0 +1,452 @@
+2025-06-26 16:54:46,425 - website_crawler.core.ocr - WARNING - OCR処理に失敗: cannot identify image file <_io.BytesIO object at 0x1245a75b0>
+2025-06-26 16:54:47,846 - website_crawler.core.ocr - WARNING - OCR処理に失敗: cannot identify image file <_io.BytesIO object at 0x124208db0>
+2025-06-26 17:13:50,635 - firecrawl - DEBUG - Initialized FirecrawlApp with API URL: https://api.firecrawl.dev
+2025-06-26 17:14:24,885 - website_crawler.core.scraper - WARNING - 画像が検出されませんでした。HTMLを確認します...
+2025-06-26 17:14:29,999 - website_crawler.core.scraper - WARNING - 画像が検出されませんでした。HTMLを確認します...
+2025-06-26 17:14:52,941 - website_crawler.core.scraper - WARNING - 画像が検出されませんでした。HTMLを確認します...
+2025-06-26 17:14:54,268 - website_crawler.core.scraper - WARNING - 画像が検出されませんでした。HTMLを確認します...
+2025-06-26 17:14:55,295 - __main__ - ERROR - Unexpected error: unsupported format string passed to NoneType.__format__
+2025-06-26 17:15:13,181 - website_crawler.core.multi_crawler - INFO - MultiPageCrawler initialized: max_urls=3, max_depth=1
+2025-06-26 17:15:13,181 - website_crawler.core.multi_crawler - INFO - Progress: 0/100 - Discovering URLs
+2025-06-26 17:15:13,181 - website_crawler.core.multi_crawler - INFO - Starting URL discovery for: https://www.tad.u-toyama.ac.jp/
+2025-06-26 17:15:13,181 - website_crawler.core.sitemap - INFO - Attempting sitemap discovery...
+2025-06-26 17:15:14,851 - website_crawler.core.sitemap - INFO - Found sitemap at: https://www.tad.u-toyama.ac.jp/sitemap_index.xml
+2025-06-26 17:15:16,165 - website_crawler.core.sitemap - INFO - Parsing sitemap: https://www.tad.u-toyama.ac.jp/sitemap_index.xml
+2025-06-26 17:15:16,636 - website_crawler.core.sitemap - INFO - Found sitemap index with 8 sitemaps
+2025-06-26 17:15:17,001 - website_crawler.core.sitemap - INFO - Found 19 URLs in sitemap
+2025-06-26 17:15:17,003 - website_crawler.core.sitemap - INFO - Discovered 3 unique URLs from sitemaps
+2025-06-26 17:15:17,003 - website_crawler.core.sitemap - INFO - Found 3 URLs from sitemaps
+2025-06-26 17:15:17,003 - website_crawler.core.sitemap - INFO - Total discovered URLs: 3
+2025-06-26 17:15:17,004 - website_crawler.core.multi_crawler - INFO - Progress: 3/3 - URLs discovered
+2025-06-26 17:15:17,004 - website_crawler.core.multi_crawler - INFO - Progress: 0/3 - Starting page crawling
+2025-06-26 17:15:17,004 - website_crawler.core.multi_crawler - INFO - Starting to crawl 3 pages
+2025-06-26 17:15:17,004 - website_crawler.core.multi_crawler - INFO - Progress: 0/3 - Starting crawl
+2025-06-26 17:15:17,004 - website_crawler.core.multi_crawler - INFO - Crawling: https://www.tad.u-toyama.ac.jp/archives/2638
+2025-06-26 17:15:17,005 - website_crawler.core.multi_crawler - INFO - Crawling: https://www.tad.u-toyama.ac.jp/archives/2641
+2025-06-26 17:15:17,005 - website_crawler.core.scraper - INFO - ページスクレーピング開始: https://www.tad.u-toyama.ac.jp/archives/2638
+2025-06-26 17:15:17,005 - website_crawler.core.multi_crawler - INFO - Crawling: https://www.tad.u-toyama.ac.jp/archives/2643
+2025-06-26 17:15:17,006 - website_crawler.core.scraper - INFO - ページスクレーピング開始: https://www.tad.u-toyama.ac.jp/archives/2641
+2025-06-26 17:15:17,007 - website_crawler.core.scraper - INFO - ページスクレーピング開始: https://www.tad.u-toyama.ac.jp/archives/2643
+2025-06-26 17:15:32,362 - website_crawler.core.scraper - INFO - ページスクレーピング完了: https://www.tad.u-toyama.ac.jp/archives/2643
+2025-06-26 17:15:32,362 - website_crawler.core.processor - INFO - テキスト統合処理開始
+2025-06-26 17:15:32,369 - website_crawler.core.processor - INFO - テキスト統合処理完了: 統合テキスト長=1988
+2025-06-26 17:15:33,373 - website_crawler.core.multi_crawler - INFO - Successfully crawled: https://www.tad.u-toyama.ac.jp/archives/2643 (1988 chars)
+2025-06-26 17:15:33,374 - website_crawler.core.multi_crawler - INFO - Progress: 1/3 - Crawled https://www.tad.u-toyama.ac.jp/archives/2643
+2025-06-26 17:15:35,845 - website_crawler.core.scraper - INFO - ページスクレーピング完了: https://www.tad.u-toyama.ac.jp/archives/2638
+2025-06-26 17:15:35,862 - website_crawler.core.processor - INFO - テキスト統合処理開始
+2025-06-26 17:15:35,867 - website_crawler.core.processor - INFO - テキスト統合処理完了: 統合テキスト長=1188
+2025-06-26 17:15:36,870 - website_crawler.core.multi_crawler - INFO - Successfully crawled: https://www.tad.u-toyama.ac.jp/archives/2638 (1188 chars)
+2025-06-26 17:15:36,870 - website_crawler.core.multi_crawler - INFO - Progress: 2/3 - Crawled https://www.tad.u-toyama.ac.jp/archives/2638
+2025-06-26 17:15:52,023 - website_crawler.core.scraper - INFO - ページスクレーピング完了: https://www.tad.u-toyama.ac.jp/archives/2641
+2025-06-26 17:15:52,023 - website_crawler.core.processor - INFO - テキスト統合処理開始
+2025-06-26 17:15:52,028 - website_crawler.core.processor - INFO - テキスト統合処理完了: 統合テキスト長=1530
+2025-06-26 17:15:53,034 - website_crawler.core.multi_crawler - INFO - Successfully crawled: https://www.tad.u-toyama.ac.jp/archives/2641 (1530 chars)
+2025-06-26 17:15:53,034 - website_crawler.core.multi_crawler - INFO - Progress: 3/3 - Crawled https://www.tad.u-toyama.ac.jp/archives/2641
+2025-06-26 17:15:53,035 - website_crawler.core.multi_crawler - INFO - Crawling completed: 3 successful, 0 failed
+2025-06-26 17:15:53,036 - website_crawler.core.multi_crawler - INFO - Progress: 95/100 - Creating site structure
+2025-06-26 17:15:53,036 - website_crawler.core.multi_crawler - INFO - Progress: 98/100 - Saving results
+2025-06-26 17:15:53,040 - website_crawler.outputs.managers - INFO - Saved website data to 3 formats
+2025-06-26 17:15:53,044 - website_crawler.outputs.managers - INFO - Saved website data to 3 formats
+2025-06-26 17:15:53,047 - website_crawler.outputs.managers - INFO - Saved website data to 3 formats
+2025-06-26 17:15:53,050 - website_crawler.outputs.managers - INFO - Created summary report: outputs/structured/summary_20250626_171553.csv
+2025-06-26 17:15:53,051 - website_crawler.core.multi_crawler - INFO - Saved results to 2 files
+2025-06-26 17:15:53,051 - website_crawler.core.multi_crawler - INFO - Progress: 100/100 - Crawling completed
+2025-06-26 17:19:09,353 - website_crawler.core.scraper - WARNING - 画像が検出されませんでした。HTMLを確認します...
+2025-06-26 17:19:23,328 - website_crawler.core.scraper - WARNING - 画像が検出されませんでした。HTMLを確認します...
+2025-06-26 17:19:24,533 - website_crawler.core.scraper - ERROR - ページスクレーピングエラー: Unexpected error during scrape URL: Status code 429. Rate limit exceeded. Consumed (req/min): 11, Remaining (req/min): 0. Upgrade your plan at https://firecrawl.dev/pricing for increased rate limits or please retry after 23s, resets at Thu Jun 26 2025 08:19:47 GMT+0000 (Coordinated Universal Time) - No additional error details provided.
+2025-06-26 17:19:24,534 - website_crawler.core.multi_crawler - ERROR - Failed to crawl https://www.tad.u-toyama.ac.jp/archives/3174: Unexpected error during scrape URL: Status code 429. Rate limit exceeded. Consumed (req/min): 11, Remaining (req/min): 0. Upgrade your plan at https://firecrawl.dev/pricing for increased rate limits or please retry after 23s, resets at Thu Jun 26 2025 08:19:47 GMT+0000 (Coordinated Universal Time) - No additional error details provided.
+2025-06-26 17:19:24,756 - website_crawler.core.scraper - ERROR - ページスクレーピングエラー: Unexpected error during scrape URL: Status code 429. Rate limit exceeded. Consumed (req/min): 12, Remaining (req/min): 0. Upgrade your plan at https://firecrawl.dev/pricing for increased rate limits or please retry after 22s, resets at Thu Jun 26 2025 08:19:47 GMT+0000 (Coordinated Universal Time) - No additional error details provided.
+2025-06-26 17:19:24,757 - website_crawler.core.multi_crawler - ERROR - Failed to crawl https://www.tad.u-toyama.ac.jp/archives/6784: Unexpected error during scrape URL: Status code 429. Rate limit exceeded. Consumed (req/min): 12, Remaining (req/min): 0. Upgrade your plan at https://firecrawl.dev/pricing for increased rate limits or please retry after 22s, resets at Thu Jun 26 2025 08:19:47 GMT+0000 (Coordinated Universal Time) - No additional error details provided.
+2025-06-26 17:19:24,956 - website_crawler.core.scraper - ERROR - ページスクレーピングエラー: Unexpected error during scrape URL: Status code 429. Rate limit exceeded. Consumed (req/min): 13, Remaining (req/min): 0. Upgrade your plan at https://firecrawl.dev/pricing for increased rate limits or please retry after 22s, resets at Thu Jun 26 2025 08:19:47 GMT+0000 (Coordinated Universal Time) - No additional error details provided.
+2025-06-26 17:19:24,956 - website_crawler.core.multi_crawler - ERROR - Failed to crawl https://www.tad.u-toyama.ac.jp/archives/7080: Unexpected error during scrape URL: Status code 429. Rate limit exceeded. Consumed (req/min): 13, Remaining (req/min): 0. Upgrade your plan at https://firecrawl.dev/pricing for increased rate limits or please retry after 22s, resets at Thu Jun 26 2025 08:19:47 GMT+0000 (Coordinated Universal Time) - No additional error details provided.
+2025-06-26 17:19:25,186 - website_crawler.core.scraper - ERROR - ページスクレーピングエラー: Unexpected error during scrape URL: Status code 429. Rate limit exceeded. Consumed (req/min): 14, Remaining (req/min): 0. Upgrade your plan at https://firecrawl.dev/pricing for increased rate limits or please retry after 22s, resets at Thu Jun 26 2025 08:19:47 GMT+0000 (Coordinated Universal Time) - No additional error details provided.
+2025-06-26 17:19:25,186 - website_crawler.core.multi_crawler - ERROR - Failed to crawl https://www.tad.u-toyama.ac.jp/archives/8153: Unexpected error during scrape URL: Status code 429. Rate limit exceeded. Consumed (req/min): 14, Remaining (req/min): 0. Upgrade your plan at https://firecrawl.dev/pricing for increased rate limits or please retry after 22s, resets at Thu Jun 26 2025 08:19:47 GMT+0000 (Coordinated Universal Time) - No additional error details provided.
+2025-06-26 17:19:25,396 - website_crawler.core.scraper - ERROR - ページスクレーピングエラー: Unexpected error during scrape URL: Status code 429. Rate limit exceeded. Consumed (req/min): 15, Remaining (req/min): 0. Upgrade your plan at https://firecrawl.dev/pricing for increased rate limits or please retry after 22s, resets at Thu Jun 26 2025 08:19:47 GMT+0000 (Coordinated Universal Time) - No additional error details provided.
+2025-06-26 17:19:25,396 - website_crawler.core.multi_crawler - ERROR - Failed to crawl https://www.tad.u-toyama.ac.jp/archives/9044: Unexpected error during scrape URL: Status code 429. Rate limit exceeded. Consumed (req/min): 15, Remaining (req/min): 0. Upgrade your plan at https://firecrawl.dev/pricing for increased rate limits or please retry after 22s, resets at Thu Jun 26 2025 08:19:47 GMT+0000 (Coordinated Universal Time) - No additional error details provided.
+2025-06-26 17:19:25,605 - website_crawler.core.scraper - ERROR - ページスクレーピングエラー: Unexpected error during scrape URL: Status code 429. Rate limit exceeded. Consumed (req/min): 16, Remaining (req/min): 0. Upgrade your plan at https://firecrawl.dev/pricing for increased rate limits or please retry after 22s, resets at Thu Jun 26 2025 08:19:47 GMT+0000 (Coordinated Universal Time) - No additional error details provided.
+2025-06-26 17:19:25,605 - website_crawler.core.multi_crawler - ERROR - Failed to crawl https://www.tad.u-toyama.ac.jp/archives/9427: Unexpected error during scrape URL: Status code 429. Rate limit exceeded. Consumed (req/min): 16, Remaining (req/min): 0. Upgrade your plan at https://firecrawl.dev/pricing for increased rate limits or please retry after 22s, resets at Thu Jun 26 2025 08:19:47 GMT+0000 (Coordinated Universal Time) - No additional error details provided.
+2025-06-26 17:19:25,806 - website_crawler.core.scraper - ERROR - ページスクレーピングエラー: Unexpected error during scrape URL: Status code 429. Rate limit exceeded. Consumed (req/min): 17, Remaining (req/min): 0. Upgrade your plan at https://firecrawl.dev/pricing for increased rate limits or please retry after 21s, resets at Thu Jun 26 2025 08:19:47 GMT+0000 (Coordinated Universal Time) - No additional error details provided.
+2025-06-26 17:19:25,806 - website_crawler.core.multi_crawler - ERROR - Failed to crawl https://www.tad.u-toyama.ac.jp/archives/87: Unexpected error during scrape URL: Status code 429. Rate limit exceeded. Consumed (req/min): 17, Remaining (req/min): 0. Upgrade your plan at https://firecrawl.dev/pricing for increased rate limits or please retry after 21s, resets at Thu Jun 26 2025 08:19:47 GMT+0000 (Coordinated Universal Time) - No additional error details provided.
+2025-06-26 17:19:26,009 - website_crawler.core.scraper - ERROR - ページスクレーピングエラー: Unexpected error during scrape URL: Status code 429. Rate limit exceeded. Consumed (req/min): 18, Remaining (req/min): 0. Upgrade your plan at https://firecrawl.dev/pricing for increased rate limits or please retry after 21s, resets at Thu Jun 26 2025 08:19:47 GMT+0000 (Coordinated Universal Time) - No additional error details provided.
+2025-06-26 17:19:26,009 - website_crawler.core.multi_crawler - ERROR - Failed to crawl https://www.tad.u-toyama.ac.jp/archives/10790: Unexpected error during scrape URL: Status code 429. Rate limit exceeded. Consumed (req/min): 18, Remaining (req/min): 0. Upgrade your plan at https://firecrawl.dev/pricing for increased rate limits or please retry after 21s, resets at Thu Jun 26 2025 08:19:47 GMT+0000 (Coordinated Universal Time) - No additional error details provided.
+2025-06-26 17:19:26,207 - website_crawler.core.scraper - ERROR - ページスクレーピングエラー: Unexpected error during scrape URL: Status code 429. Rate limit exceeded. Consumed (req/min): 19, Remaining (req/min): 0. Upgrade your plan at https://firecrawl.dev/pricing for increased rate limits or please retry after 21s, resets at Thu Jun 26 2025 08:19:47 GMT+0000 (Coordinated Universal Time) - No additional error details provided.
+2025-06-26 17:19:26,207 - website_crawler.core.multi_crawler - ERROR - Failed to crawl https://www.tad.u-toyama.ac.jp/archives/18621: Unexpected error during scrape URL: Status code 429. Rate limit exceeded. Consumed (req/min): 19, Remaining (req/min): 0. Upgrade your plan at https://firecrawl.dev/pricing for increased rate limits or please retry after 21s, resets at Thu Jun 26 2025 08:19:47 GMT+0000 (Coordinated Universal Time) - No additional error details provided.
+2025-06-26 17:19:26,405 - website_crawler.core.scraper - ERROR - ページスクレーピングエラー: Unexpected error during scrape URL: Status code 429. Rate limit exceeded. Consumed (req/min): 20, Remaining (req/min): 0. Upgrade your plan at https://firecrawl.dev/pricing for increased rate limits or please retry after 21s, resets at Thu Jun 26 2025 08:19:47 GMT+0000 (Coordinated Universal Time) - No additional error details provided.
+2025-06-26 17:19:26,406 - website_crawler.core.multi_crawler - ERROR - Failed to crawl https://www.tad.u-toyama.ac.jp/archives/18912: Unexpected error during scrape URL: Status code 429. Rate limit exceeded. Consumed (req/min): 20, Remaining (req/min): 0. Upgrade your plan at https://firecrawl.dev/pricing for increased rate limits or please retry after 21s, resets at Thu Jun 26 2025 08:19:47 GMT+0000 (Coordinated Universal Time) - No additional error details provided.
+2025-06-26 17:19:26,655 - website_crawler.core.scraper - ERROR - ページスクレーピングエラー: Unexpected error during scrape URL: Status code 429. Rate limit exceeded. Consumed (req/min): 21, Remaining (req/min): 0. Upgrade your plan at https://firecrawl.dev/pricing for increased rate limits or please retry after 21s, resets at Thu Jun 26 2025 08:19:47 GMT+0000 (Coordinated Universal Time) - No additional error details provided.
+2025-06-26 17:19:26,655 - website_crawler.core.multi_crawler - ERROR - Failed to crawl https://www.tad.u-toyama.ac.jp/archives/20560: Unexpected error during scrape URL: Status code 429. Rate limit exceeded. Consumed (req/min): 21, Remaining (req/min): 0. Upgrade your plan at https://firecrawl.dev/pricing for increased rate limits or please retry after 21s, resets at Thu Jun 26 2025 08:19:47 GMT+0000 (Coordinated Universal Time) - No additional error details provided.
+2025-06-26 17:19:26,859 - website_crawler.core.scraper - ERROR - ページスクレーピングエラー: Unexpected error during scrape URL: Status code 429. Rate limit exceeded. Consumed (req/min): 22, Remaining (req/min): 0. Upgrade your plan at https://firecrawl.dev/pricing for increased rate limits or please retry after 20s, resets at Thu Jun 26 2025 08:19:47 GMT+0000 (Coordinated Universal Time) - No additional error details provided.
+2025-06-26 17:19:26,859 - website_crawler.core.multi_crawler - ERROR - Failed to crawl https://www.tad.u-toyama.ac.jp/archives/20623: Unexpected error during scrape URL: Status code 429. Rate limit exceeded. Consumed (req/min): 22, Remaining (req/min): 0. Upgrade your plan at https://firecrawl.dev/pricing for increased rate limits or please retry after 20s, resets at Thu Jun 26 2025 08:19:47 GMT+0000 (Coordinated Universal Time) - No additional error details provided.
+2025-06-26 17:19:27,068 - website_crawler.core.scraper - ERROR - ページスクレーピングエラー: Unexpected error during scrape URL: Status code 429. Rate limit exceeded. Consumed (req/min): 23, Remaining (req/min): 0. Upgrade your plan at https://firecrawl.dev/pricing for increased rate limits or please retry after 20s, resets at Thu Jun 26 2025 08:19:47 GMT+0000 (Coordinated Universal Time) - No additional error details provided.
+2025-06-26 17:19:27,069 - website_crawler.core.multi_crawler - ERROR - Failed to crawl https://www.tad.u-toyama.ac.jp/archives/10885: Unexpected error during scrape URL: Status code 429. Rate limit exceeded. Consumed (req/min): 23, Remaining (req/min): 0. Upgrade your plan at https://firecrawl.dev/pricing for increased rate limits or please retry after 20s, resets at Thu Jun 26 2025 08:19:47 GMT+0000 (Coordinated Universal Time) - No additional error details provided.
+2025-06-26 17:19:27,271 - website_crawler.core.scraper - ERROR - ページスクレーピングエラー: Unexpected error during scrape URL: Status code 429. Rate limit exceeded. Consumed (req/min): 24, Remaining (req/min): 0. Upgrade your plan at https://firecrawl.dev/pricing for increased rate limits or please retry after 20s, resets at Thu Jun 26 2025 08:19:47 GMT+0000 (Coordinated Universal Time) - No additional error details provided.
+2025-06-26 17:19:27,271 - website_crawler.core.multi_crawler - ERROR - Failed to crawl https://www.tad.u-toyama.ac.jp/archives/20673: Unexpected error during scrape URL: Status code 429. Rate limit exceeded. Consumed (req/min): 24, Remaining (req/min): 0. Upgrade your plan at https://firecrawl.dev/pricing for increased rate limits or please retry after 20s, resets at Thu Jun 26 2025 08:19:47 GMT+0000 (Coordinated Universal Time) - No additional error details provided.
+2025-06-26 17:19:27,485 - website_crawler.core.scraper - ERROR - ページスクレーピングエラー: Unexpected error during scrape URL: Status code 429. Rate limit exceeded. Consumed (req/min): 25, Remaining (req/min): 0. Upgrade your plan at https://firecrawl.dev/pricing for increased rate limits or please retry after 20s, resets at Thu Jun 26 2025 08:19:47 GMT+0000 (Coordinated Universal Time) - No additional error details provided.
+2025-06-26 17:19:27,504 - website_crawler.core.multi_crawler - ERROR - Failed to crawl https://www.tad.u-toyama.ac.jp/: Unexpected error during scrape URL: Status code 429. Rate limit exceeded. Consumed (req/min): 25, Remaining (req/min): 0. Upgrade your plan at https://firecrawl.dev/pricing for increased rate limits or please retry after 20s, resets at Thu Jun 26 2025 08:19:47 GMT+0000 (Coordinated Universal Time) - No additional error details provided.
+2025-06-26 17:19:27,710 - website_crawler.core.scraper - ERROR - ページスクレーピングエラー: Unexpected error during scrape URL: Status code 429. Rate limit exceeded. Consumed (req/min): 26, Remaining (req/min): 0. Upgrade your plan at https://firecrawl.dev/pricing for increased rate limits or please retry after 20s, resets at Thu Jun 26 2025 08:19:47 GMT+0000 (Coordinated Universal Time) - No additional error details provided.
+2025-06-26 17:19:27,711 - website_crawler.core.multi_crawler - ERROR - Failed to crawl https://www.tad.u-toyama.ac.jp/topics: Unexpected error during scrape URL: Status code 429. Rate limit exceeded. Consumed (req/min): 26, Remaining (req/min): 0. Upgrade your plan at https://firecrawl.dev/pricing for increased rate limits or please retry after 20s, resets at Thu Jun 26 2025 08:19:47 GMT+0000 (Coordinated Universal Time) - No additional error details provided.
+2025-06-26 17:19:27,913 - website_crawler.core.scraper - ERROR - ページスクレーピングエラー: Unexpected error during scrape URL: Status code 429. Rate limit exceeded. Consumed (req/min): 27, Remaining (req/min): 0. Upgrade your plan at https://firecrawl.dev/pricing for increased rate limits or please retry after 19s, resets at Thu Jun 26 2025 08:19:47 GMT+0000 (Coordinated Universal Time) - No additional error details provided.
+2025-06-26 17:19:27,914 - website_crawler.core.multi_crawler - ERROR - Failed to crawl https://www.tad.u-toyama.ac.jp/send_news: Unexpected error during scrape URL: Status code 429. Rate limit exceeded. Consumed (req/min): 27, Remaining (req/min): 0. Upgrade your plan at https://firecrawl.dev/pricing for increased rate limits or please retry after 19s, resets at Thu Jun 26 2025 08:19:47 GMT+0000 (Coordinated Universal Time) - No additional error details provided.
+2025-06-26 17:19:28,129 - website_crawler.core.scraper - ERROR - ページスクレーピングエラー: Unexpected error during scrape URL: Status code 429. Rate limit exceeded. Consumed (req/min): 28, Remaining (req/min): 0. Upgrade your plan at https://firecrawl.dev/pricing for increased rate limits or please retry after 19s, resets at Thu Jun 26 2025 08:19:47 GMT+0000 (Coordinated Universal Time) - No additional error details provided.
+2025-06-26 17:19:28,132 - website_crawler.core.multi_crawler - ERROR - Failed to crawl https://www.tad.u-toyama.ac.jp/privacy: Unexpected error during scrape URL: Status code 429. Rate limit exceeded. Consumed (req/min): 28, Remaining (req/min): 0. Upgrade your plan at https://firecrawl.dev/pricing for increased rate limits or please retry after 19s, resets at Thu Jun 26 2025 08:19:47 GMT+0000 (Coordinated Universal Time) - No additional error details provided.
+2025-06-26 17:19:28,351 - website_crawler.core.scraper - ERROR - ページスクレーピングエラー: Unexpected error during scrape URL: Status code 429. Rate limit exceeded. Consumed (req/min): 29, Remaining (req/min): 0. Upgrade your plan at https://firecrawl.dev/pricing for increased rate limits or please retry after 19s, resets at Thu Jun 26 2025 08:19:47 GMT+0000 (Coordinated Universal Time) - No additional error details provided.
+2025-06-26 17:19:28,351 - website_crawler.core.multi_crawler - ERROR - Failed to crawl https://www.tad.u-toyama.ac.jp/about/facility/collection: Unexpected error during scrape URL: Status code 429. Rate limit exceeded. Consumed (req/min): 29, Remaining (req/min): 0. Upgrade your plan at https://firecrawl.dev/pricing for increased rate limits or please retry after 19s, resets at Thu Jun 26 2025 08:19:47 GMT+0000 (Coordinated Universal Time) - No additional error details provided.
+2025-06-26 17:19:28,554 - website_crawler.core.scraper - ERROR - ページスクレーピングエラー: Unexpected error during scrape URL: Status code 429. Rate limit exceeded. Consumed (req/min): 30, Remaining (req/min): 0. Upgrade your plan at https://firecrawl.dev/pricing for increased rate limits or please retry after 19s, resets at Thu Jun 26 2025 08:19:47 GMT+0000 (Coordinated Universal Time) - No additional error details provided.
+2025-06-26 17:19:28,554 - website_crawler.core.multi_crawler - ERROR - Failed to crawl https://www.tad.u-toyama.ac.jp/feature: Unexpected error during scrape URL: Status code 429. Rate limit exceeded. Consumed (req/min): 30, Remaining (req/min): 0. Upgrade your plan at https://firecrawl.dev/pricing for increased rate limits or please retry after 19s, resets at Thu Jun 26 2025 08:19:47 GMT+0000 (Coordinated Universal Time) - No additional error details provided.
+2025-06-26 17:19:28,751 - website_crawler.core.scraper - ERROR - ページスクレーピングエラー: Unexpected error during scrape URL: Status code 429. Rate limit exceeded. Consumed (req/min): 31, Remaining (req/min): 0. Upgrade your plan at https://firecrawl.dev/pricing for increased rate limits or please retry after 19s, resets at Thu Jun 26 2025 08:19:47 GMT+0000 (Coordinated Universal Time) - No additional error details provided.
+2025-06-26 17:19:28,752 - website_crawler.core.multi_crawler - ERROR - Failed to crawl https://www.tad.u-toyama.ac.jp/special: Unexpected error during scrape URL: Status code 429. Rate limit exceeded. Consumed (req/min): 31, Remaining (req/min): 0. Upgrade your plan at https://firecrawl.dev/pricing for increased rate limits or please retry after 19s, resets at Thu Jun 26 2025 08:19:47 GMT+0000 (Coordinated Universal Time) - No additional error details provided.
+2025-06-26 17:19:28,948 - website_crawler.core.scraper - ERROR - ページスクレーピングエラー: Unexpected error during scrape URL: Status code 429. Rate limit exceeded. Consumed (req/min): 32, Remaining (req/min): 0. Upgrade your plan at https://firecrawl.dev/pricing for increased rate limits or please retry after 18s, resets at Thu Jun 26 2025 08:19:47 GMT+0000 (Coordinated Universal Time) - No additional error details provided.
+2025-06-26 17:19:28,948 - website_crawler.core.multi_crawler - ERROR - Failed to crawl https://www.tad.u-toyama.ac.jp/streetview: Unexpected error during scrape URL: Status code 429. Rate limit exceeded. Consumed (req/min): 32, Remaining (req/min): 0. Upgrade your plan at https://firecrawl.dev/pricing for increased rate limits or please retry after 18s, resets at Thu Jun 26 2025 08:19:47 GMT+0000 (Coordinated Universal Time) - No additional error details provided.
+2025-06-26 17:19:29,148 - website_crawler.core.scraper - ERROR - ページスクレーピングエラー: Unexpected error during scrape URL: Status code 429. Rate limit exceeded. Consumed (req/min): 33, Remaining (req/min): 0. Upgrade your plan at https://firecrawl.dev/pricing for increased rate limits or please retry after 18s, resets at Thu Jun 26 2025 08:19:47 GMT+0000 (Coordinated Universal Time) - No additional error details provided.
+2025-06-26 17:19:29,149 - website_crawler.core.multi_crawler - ERROR - Failed to crawl https://www.tad.u-toyama.ac.jp/field/f_interdisciplinary: Unexpected error during scrape URL: Status code 429. Rate limit exceeded. Consumed (req/min): 33, Remaining (req/min): 0. Upgrade your plan at https://firecrawl.dev/pricing for increased rate limits or please retry after 18s, resets at Thu Jun 26 2025 08:19:47 GMT+0000 (Coordinated Universal Time) - No additional error details provided.
+2025-06-26 17:19:29,349 - website_crawler.core.scraper - ERROR - ページスクレーピングエラー: Unexpected error during scrape URL: Status code 429. Rate limit exceeded. Consumed (req/min): 34, Remaining (req/min): 0. Upgrade your plan at https://firecrawl.dev/pricing for increased rate limits or please retry after 18s, resets at Thu Jun 26 2025 08:19:47 GMT+0000 (Coordinated Universal Time) - No additional error details provided.
+2025-06-26 17:19:29,350 - website_crawler.core.multi_crawler - ERROR - Failed to crawl https://www.tad.u-toyama.ac.jp/field/f_fineart: Unexpected error during scrape URL: Status code 429. Rate limit exceeded. Consumed (req/min): 34, Remaining (req/min): 0. Upgrade your plan at https://firecrawl.dev/pricing for increased rate limits or please retry after 18s, resets at Thu Jun 26 2025 08:19:47 GMT+0000 (Coordinated Universal Time) - No additional error details provided.
+2025-06-26 17:19:29,549 - website_crawler.core.scraper - ERROR - ページスクレーピングエラー: Unexpected error during scrape URL: Status code 429. Rate limit exceeded. Consumed (req/min): 35, Remaining (req/min): 0. Upgrade your plan at https://firecrawl.dev/pricing for increased rate limits or please retry after 18s, resets at Thu Jun 26 2025 08:19:47 GMT+0000 (Coordinated Universal Time) - No additional error details provided.
+2025-06-26 17:19:29,550 - website_crawler.core.multi_crawler - ERROR - Failed to crawl https://www.tad.u-toyama.ac.jp/field/f_craft: Unexpected error during scrape URL: Status code 429. Rate limit exceeded. Consumed (req/min): 35, Remaining (req/min): 0. Upgrade your plan at https://firecrawl.dev/pricing for increased rate limits or please retry after 18s, resets at Thu Jun 26 2025 08:19:47 GMT+0000 (Coordinated Universal Time) - No additional error details provided.
+2025-06-26 17:19:29,758 - website_crawler.core.scraper - ERROR - ページスクレーピングエラー: Unexpected error during scrape URL: Status code 429. Rate limit exceeded. Consumed (req/min): 36, Remaining (req/min): 0. Upgrade your plan at https://firecrawl.dev/pricing for increased rate limits or please retry after 17s, resets at Thu Jun 26 2025 08:19:47 GMT+0000 (Coordinated Universal Time) - No additional error details provided.
+2025-06-26 17:19:29,759 - website_crawler.core.multi_crawler - ERROR - Failed to crawl https://www.tad.u-toyama.ac.jp/field/f_design: Unexpected error during scrape URL: Status code 429. Rate limit exceeded. Consumed (req/min): 36, Remaining (req/min): 0. Upgrade your plan at https://firecrawl.dev/pricing for increased rate limits or please retry after 17s, resets at Thu Jun 26 2025 08:19:47 GMT+0000 (Coordinated Universal Time) - No additional error details provided.
+2025-06-26 17:19:29,971 - website_crawler.core.scraper - ERROR - ページスクレーピングエラー: Unexpected error during scrape URL: Status code 429. Rate limit exceeded. Consumed (req/min): 37, Remaining (req/min): 0. Upgrade your plan at https://firecrawl.dev/pricing for increased rate limits or please retry after 17s, resets at Thu Jun 26 2025 08:19:47 GMT+0000 (Coordinated Universal Time) - No additional error details provided.
+2025-06-26 17:19:29,971 - website_crawler.core.multi_crawler - ERROR - Failed to crawl https://www.tad.u-toyama.ac.jp/field/f_architecture: Unexpected error during scrape URL: Status code 429. Rate limit exceeded. Consumed (req/min): 37, Remaining (req/min): 0. Upgrade your plan at https://firecrawl.dev/pricing for increased rate limits or please retry after 17s, resets at Thu Jun 26 2025 08:19:47 GMT+0000 (Coordinated Universal Time) - No additional error details provided.
+2025-06-26 17:19:30,174 - website_crawler.core.scraper - ERROR - ページスクレーピングエラー: Unexpected error during scrape URL: Status code 429. Rate limit exceeded. Consumed (req/min): 38, Remaining (req/min): 0. Upgrade your plan at https://firecrawl.dev/pricing for increased rate limits or please retry after 17s, resets at Thu Jun 26 2025 08:19:47 GMT+0000 (Coordinated Universal Time) - No additional error details provided.
+2025-06-26 17:19:30,192 - website_crawler.core.multi_crawler - ERROR - Failed to crawl https://www.tad.u-toyama.ac.jp/field/f_curation: Unexpected error during scrape URL: Status code 429. Rate limit exceeded. Consumed (req/min): 38, Remaining (req/min): 0. Upgrade your plan at https://firecrawl.dev/pricing for increased rate limits or please retry after 17s, resets at Thu Jun 26 2025 08:19:47 GMT+0000 (Coordinated Universal Time) - No additional error details provided.
+2025-06-26 17:19:31,274 - website_crawler.core.scraper - WARNING - 画像が検出されませんでした。HTMLを確認します...
+2025-06-26 17:19:32,490 - website_crawler.core.scraper - ERROR - ページスクレーピングエラー: Unexpected error during scrape URL: Status code 429. Rate limit exceeded. Consumed (req/min): 39, Remaining (req/min): 0. Upgrade your plan at https://firecrawl.dev/pricing for increased rate limits or please retry after 15s, resets at Thu Jun 26 2025 08:19:47 GMT+0000 (Coordinated Universal Time) - No additional error details provided.
+2025-06-26 17:19:32,490 - website_crawler.core.multi_crawler - ERROR - Failed to crawl https://www.tad.u-toyama.ac.jp/special/misunderstanding: Unexpected error during scrape URL: Status code 429. Rate limit exceeded. Consumed (req/min): 39, Remaining (req/min): 0. Upgrade your plan at https://firecrawl.dev/pricing for increased rate limits or please retry after 15s, resets at Thu Jun 26 2025 08:19:47 GMT+0000 (Coordinated Universal Time) - No additional error details provided.
+2025-06-26 17:19:32,705 - website_crawler.core.scraper - ERROR - ページスクレーピングエラー: Unexpected error during scrape URL: Status code 429. Rate limit exceeded. Consumed (req/min): 40, Remaining (req/min): 0. Upgrade your plan at https://firecrawl.dev/pricing for increased rate limits or please retry after 15s, resets at Thu Jun 26 2025 08:19:47 GMT+0000 (Coordinated Universal Time) - No additional error details provided.
+2025-06-26 17:19:32,705 - website_crawler.core.multi_crawler - ERROR - Failed to crawl https://www.tad.u-toyama.ac.jp/special/geibun13/selection: Unexpected error during scrape URL: Status code 429. Rate limit exceeded. Consumed (req/min): 40, Remaining (req/min): 0. Upgrade your plan at https://firecrawl.dev/pricing for increased rate limits or please retry after 15s, resets at Thu Jun 26 2025 08:19:47 GMT+0000 (Coordinated Universal Time) - No additional error details provided.
+2025-06-26 17:19:32,921 - website_crawler.core.scraper - ERROR - ページスクレーピングエラー: Unexpected error during scrape URL: Status code 429. Rate limit exceeded. Consumed (req/min): 41, Remaining (req/min): 0. Upgrade your plan at https://firecrawl.dev/pricing for increased rate limits or please retry after 14s, resets at Thu Jun 26 2025 08:19:47 GMT+0000 (Coordinated Universal Time) - No additional error details provided.
+2025-06-26 17:19:32,921 - website_crawler.core.multi_crawler - ERROR - Failed to crawl https://www.tad.u-toyama.ac.jp/special/geibun13/design: Unexpected error during scrape URL: Status code 429. Rate limit exceeded. Consumed (req/min): 41, Remaining (req/min): 0. Upgrade your plan at https://firecrawl.dev/pricing for increased rate limits or please retry after 14s, resets at Thu Jun 26 2025 08:19:47 GMT+0000 (Coordinated Universal Time) - No additional error details provided.
+2025-06-26 17:19:33,081 - website_crawler.core.scraper - WARNING - 画像が検出されませんでした。HTMLを確認します...
+2025-06-26 17:19:33,188 - website_crawler.core.scraper - ERROR - ページスクレーピングエラー: Unexpected error during scrape URL: Status code 429. Rate limit exceeded. Consumed (req/min): 42, Remaining (req/min): 0. Upgrade your plan at https://firecrawl.dev/pricing for increased rate limits or please retry after 14s, resets at Thu Jun 26 2025 08:19:47 GMT+0000 (Coordinated Universal Time) - No additional error details provided.
+2025-06-26 17:19:33,188 - website_crawler.core.multi_crawler - ERROR - Failed to crawl https://www.tad.u-toyama.ac.jp/special/geibun13/craft: Unexpected error during scrape URL: Status code 429. Rate limit exceeded. Consumed (req/min): 42, Remaining (req/min): 0. Upgrade your plan at https://firecrawl.dev/pricing for increased rate limits or please retry after 14s, resets at Thu Jun 26 2025 08:19:47 GMT+0000 (Coordinated Universal Time) - No additional error details provided.
+2025-06-26 17:19:33,397 - website_crawler.core.scraper - ERROR - ページスクレーピングエラー: Unexpected error during scrape URL: Status code 429. Rate limit exceeded. Consumed (req/min): 43, Remaining (req/min): 0. Upgrade your plan at https://firecrawl.dev/pricing for increased rate limits or please retry after 14s, resets at Thu Jun 26 2025 08:19:47 GMT+0000 (Coordinated Universal Time) - No additional error details provided.
+2025-06-26 17:19:33,397 - website_crawler.core.multi_crawler - ERROR - Failed to crawl https://www.tad.u-toyama.ac.jp/special/geibun13/architecture: Unexpected error during scrape URL: Status code 429. Rate limit exceeded. Consumed (req/min): 43, Remaining (req/min): 0. Upgrade your plan at https://firecrawl.dev/pricing for increased rate limits or please retry after 14s, resets at Thu Jun 26 2025 08:19:47 GMT+0000 (Coordinated Universal Time) - No additional error details provided.
+2025-06-26 17:19:33,598 - website_crawler.core.scraper - ERROR - ページスクレーピングエラー: Unexpected error during scrape URL: Status code 429. Rate limit exceeded. Consumed (req/min): 44, Remaining (req/min): 0. Upgrade your plan at https://firecrawl.dev/pricing for increased rate limits or please retry after 14s, resets at Thu Jun 26 2025 08:19:47 GMT+0000 (Coordinated Universal Time) - No additional error details provided.
+2025-06-26 17:19:33,598 - website_crawler.core.multi_crawler - ERROR - Failed to crawl https://www.tad.u-toyama.ac.jp/special/geibun13/fineart: Unexpected error during scrape URL: Status code 429. Rate limit exceeded. Consumed (req/min): 44, Remaining (req/min): 0. Upgrade your plan at https://firecrawl.dev/pricing for increased rate limits or please retry after 14s, resets at Thu Jun 26 2025 08:19:47 GMT+0000 (Coordinated Universal Time) - No additional error details provided.
+2025-06-26 17:19:33,799 - website_crawler.core.scraper - ERROR - ページスクレーピングエラー: Unexpected error during scrape URL: Status code 429. Rate limit exceeded. Consumed (req/min): 45, Remaining (req/min): 0. Upgrade your plan at https://firecrawl.dev/pricing for increased rate limits or please retry after 13s, resets at Thu Jun 26 2025 08:19:47 GMT+0000 (Coordinated Universal Time) - No additional error details provided.
+2025-06-26 17:19:33,800 - website_crawler.core.multi_crawler - ERROR - Failed to crawl https://www.tad.u-toyama.ac.jp/special/geibun13/interdisciplinary: Unexpected error during scrape URL: Status code 429. Rate limit exceeded. Consumed (req/min): 45, Remaining (req/min): 0. Upgrade your plan at https://firecrawl.dev/pricing for increased rate limits or please retry after 13s, resets at Thu Jun 26 2025 08:19:47 GMT+0000 (Coordinated Universal Time) - No additional error details provided.
+2025-06-26 17:19:34,000 - website_crawler.core.scraper - ERROR - ページスクレーピングエラー: Unexpected error during scrape URL: Status code 429. Rate limit exceeded. Consumed (req/min): 46, Remaining (req/min): 0. Upgrade your plan at https://firecrawl.dev/pricing for increased rate limits or please retry after 13s, resets at Thu Jun 26 2025 08:19:47 GMT+0000 (Coordinated Universal Time) - No additional error details provided.
+2025-06-26 17:19:34,000 - website_crawler.core.multi_crawler - ERROR - Failed to crawl https://www.tad.u-toyama.ac.jp/special/geibun13/p_fineart: Unexpected error during scrape URL: Status code 429. Rate limit exceeded. Consumed (req/min): 46, Remaining (req/min): 0. Upgrade your plan at https://firecrawl.dev/pricing for increased rate limits or please retry after 13s, resets at Thu Jun 26 2025 08:19:47 GMT+0000 (Coordinated Universal Time) - No additional error details provided.
+2025-06-26 17:19:34,217 - website_crawler.core.scraper - ERROR - ページスクレーピングエラー: Unexpected error during scrape URL: Status code 429. Rate limit exceeded. Consumed (req/min): 47, Remaining (req/min): 0. Upgrade your plan at https://firecrawl.dev/pricing for increased rate limits or please retry after 13s, resets at Thu Jun 26 2025 08:19:47 GMT+0000 (Coordinated Universal Time) - No additional error details provided.
+2025-06-26 17:19:34,217 - website_crawler.core.multi_crawler - ERROR - Failed to crawl https://www.tad.u-toyama.ac.jp/special/geibun13/p_area: Unexpected error during scrape URL: Status code 429. Rate limit exceeded. Consumed (req/min): 47, Remaining (req/min): 0. Upgrade your plan at https://firecrawl.dev/pricing for increased rate limits or please retry after 13s, resets at Thu Jun 26 2025 08:19:47 GMT+0000 (Coordinated Universal Time) - No additional error details provided.
+2025-06-26 17:19:34,296 - website_crawler.core.scraper - ERROR - ページスクレーピングエラー: Unexpected error during scrape URL: Status code 429. Rate limit exceeded. Consumed (req/min): 48, Remaining (req/min): 0. Upgrade your plan at https://firecrawl.dev/pricing for increased rate limits or please retry after 13s, resets at Thu Jun 26 2025 08:19:47 GMT+0000 (Coordinated Universal Time) - No additional error details provided.
+2025-06-26 17:19:34,296 - website_crawler.core.multi_crawler - ERROR - Failed to crawl https://www.tad.u-toyama.ac.jp/special/geibun13/p_interdisciplinary: Unexpected error during scrape URL: Status code 429. Rate limit exceeded. Consumed (req/min): 48, Remaining (req/min): 0. Upgrade your plan at https://firecrawl.dev/pricing for increased rate limits or please retry after 13s, resets at Thu Jun 26 2025 08:19:47 GMT+0000 (Coordinated Universal Time) - No additional error details provided.
+2025-06-26 17:19:34,417 - website_crawler.core.scraper - ERROR - ページスクレーピングエラー: Unexpected error during scrape URL: Status code 429. Rate limit exceeded. Consumed (req/min): 49, Remaining (req/min): 0. Upgrade your plan at https://firecrawl.dev/pricing for increased rate limits or please retry after 13s, resets at Thu Jun 26 2025 08:19:47 GMT+0000 (Coordinated Universal Time) - No additional error details provided.
+2025-06-26 17:19:34,417 - website_crawler.core.multi_crawler - ERROR - Failed to crawl https://www.tad.u-toyama.ac.jp/feature/education/education_detail02: Unexpected error during scrape URL: Status code 429. Rate limit exceeded. Consumed (req/min): 49, Remaining (req/min): 0. Upgrade your plan at https://firecrawl.dev/pricing for increased rate limits or please retry after 13s, resets at Thu Jun 26 2025 08:19:47 GMT+0000 (Coordinated Universal Time) - No additional error details provided.
+2025-06-26 17:19:34,497 - website_crawler.core.scraper - ERROR - ページスクレーピングエラー: Unexpected error during scrape URL: Status code 429. Rate limit exceeded. Consumed (req/min): 50, Remaining (req/min): 0. Upgrade your plan at https://firecrawl.dev/pricing for increased rate limits or please retry after 13s, resets at Thu Jun 26 2025 08:19:47 GMT+0000 (Coordinated Universal Time) - No additional error details provided.
+2025-06-26 17:19:34,497 - website_crawler.core.multi_crawler - ERROR - Failed to crawl https://www.tad.u-toyama.ac.jp/feature/education/education_detail01: Unexpected error during scrape URL: Status code 429. Rate limit exceeded. Consumed (req/min): 50, Remaining (req/min): 0. Upgrade your plan at https://firecrawl.dev/pricing for increased rate limits or please retry after 13s, resets at Thu Jun 26 2025 08:19:47 GMT+0000 (Coordinated Universal Time) - No additional error details provided.
+2025-06-26 17:19:34,621 - website_crawler.core.scraper - ERROR - ページスクレーピングエラー: Unexpected error during scrape URL: Status code 429. Rate limit exceeded. Consumed (req/min): 51, Remaining (req/min): 0. Upgrade your plan at https://firecrawl.dev/pricing for increased rate limits or please retry after 13s, resets at Thu Jun 26 2025 08:19:47 GMT+0000 (Coordinated Universal Time) - No additional error details provided.
+2025-06-26 17:19:34,621 - website_crawler.core.multi_crawler - ERROR - Failed to crawl https://www.tad.u-toyama.ac.jp/feature/education/education_detail03: Unexpected error during scrape URL: Status code 429. Rate limit exceeded. Consumed (req/min): 51, Remaining (req/min): 0. Upgrade your plan at https://firecrawl.dev/pricing for increased rate limits or please retry after 13s, resets at Thu Jun 26 2025 08:19:47 GMT+0000 (Coordinated Universal Time) - No additional error details provided.
+2025-06-26 17:19:34,701 - website_crawler.core.scraper - ERROR - ページスクレーピングエラー: Unexpected error during scrape URL: Status code 429. Rate limit exceeded. Consumed (req/min): 52, Remaining (req/min): 0. Upgrade your plan at https://firecrawl.dev/pricing for increased rate limits or please retry after 13s, resets at Thu Jun 26 2025 08:19:47 GMT+0000 (Coordinated Universal Time) - No additional error details provided.
+2025-06-26 17:19:34,701 - website_crawler.core.multi_crawler - ERROR - Failed to crawl https://www.tad.u-toyama.ac.jp/feature/education: Unexpected error during scrape URL: Status code 429. Rate limit exceeded. Consumed (req/min): 52, Remaining (req/min): 0. Upgrade your plan at https://firecrawl.dev/pricing for increased rate limits or please retry after 13s, resets at Thu Jun 26 2025 08:19:47 GMT+0000 (Coordinated Universal Time) - No additional error details provided.
+2025-06-26 17:19:34,828 - website_crawler.core.scraper - ERROR - ページスクレーピングエラー: Unexpected error during scrape URL: Status code 429. Rate limit exceeded. Consumed (req/min): 53, Remaining (req/min): 0. Upgrade your plan at https://firecrawl.dev/pricing for increased rate limits or please retry after 12s, resets at Thu Jun 26 2025 08:19:47 GMT+0000 (Coordinated Universal Time) - No additional error details provided.
+2025-06-26 17:19:34,828 - website_crawler.core.multi_crawler - ERROR - Failed to crawl https://www.tad.u-toyama.ac.jp/special/geibun13: Unexpected error during scrape URL: Status code 429. Rate limit exceeded. Consumed (req/min): 53, Remaining (req/min): 0. Upgrade your plan at https://firecrawl.dev/pricing for increased rate limits or please retry after 12s, resets at Thu Jun 26 2025 08:19:47 GMT+0000 (Coordinated Universal Time) - No additional error details provided.
+2025-06-26 17:19:34,890 - website_crawler.core.scraper - ERROR - ページスクレーピングエラー: Unexpected error during scrape URL: Status code 429. Rate limit exceeded. Consumed (req/min): 54, Remaining (req/min): 0. Upgrade your plan at https://firecrawl.dev/pricing for increased rate limits or please retry after 12s, resets at Thu Jun 26 2025 08:19:47 GMT+0000 (Coordinated Universal Time) - No additional error details provided.
+2025-06-26 17:19:34,891 - website_crawler.core.multi_crawler - ERROR - Failed to crawl https://www.tad.u-toyama.ac.jp/feature/integrated: Unexpected error during scrape URL: Status code 429. Rate limit exceeded. Consumed (req/min): 54, Remaining (req/min): 0. Upgrade your plan at https://firecrawl.dev/pricing for increased rate limits or please retry after 12s, resets at Thu Jun 26 2025 08:19:47 GMT+0000 (Coordinated Universal Time) - No additional error details provided.
+2025-06-26 17:19:34,907 - website_crawler.core.scraper - ERROR - ページスクレーピングエラー: Unexpected error during scrape URL: Status code 429. Rate limit exceeded. Consumed (req/min): 55, Remaining (req/min): 0. Upgrade your plan at https://firecrawl.dev/pricing for increased rate limits or please retry after 12s, resets at Thu Jun 26 2025 08:19:47 GMT+0000 (Coordinated Universal Time) - No additional error details provided.
+2025-06-26 17:19:34,907 - website_crawler.core.multi_crawler - ERROR - Failed to crawl https://www.tad.u-toyama.ac.jp/special/geibun14/craft: Unexpected error during scrape URL: Status code 429. Rate limit exceeded. Consumed (req/min): 55, Remaining (req/min): 0. Upgrade your plan at https://firecrawl.dev/pricing for increased rate limits or please retry after 12s, resets at Thu Jun 26 2025 08:19:47 GMT+0000 (Coordinated Universal Time) - No additional error details provided.
+2025-06-26 17:29:56,699 - website_crawler.core.multi_crawler - INFO - MultiPageCrawler initialized: max_urls=3, max_depth=2
+2025-06-26 17:29:56,699 - website_crawler.core.multi_crawler - INFO - Progress: 0/100 - Discovering URLs
+2025-06-26 17:29:56,699 - website_crawler.core.multi_crawler - INFO - Starting URL discovery for: https://www.tad.u-toyama.ac.jp/
+2025-06-26 17:29:56,700 - website_crawler.core.sitemap - INFO - Attempting sitemap discovery...
+2025-06-26 17:29:58,199 - website_crawler.core.sitemap - INFO - Found sitemap at: https://www.tad.u-toyama.ac.jp/sitemap_index.xml
+2025-06-26 17:29:59,126 - website_crawler.core.sitemap - INFO - Parsing sitemap: https://www.tad.u-toyama.ac.jp/sitemap_index.xml
+2025-06-26 17:29:59,534 - website_crawler.core.sitemap - INFO - Found sitemap index with 8 sitemaps
+2025-06-26 17:29:59,801 - website_crawler.core.sitemap - INFO - Found 19 URLs in sitemap
+2025-06-26 17:29:59,802 - website_crawler.core.sitemap - INFO - Discovered 3 unique URLs from sitemaps
+2025-06-26 17:29:59,802 - website_crawler.core.sitemap - INFO - Found 3 URLs from sitemaps
+2025-06-26 17:29:59,802 - website_crawler.core.sitemap - INFO - Total discovered URLs: 3
+2025-06-26 17:29:59,802 - website_crawler.core.multi_crawler - INFO - Progress: 3/3 - URLs discovered
+2025-06-26 17:29:59,802 - website_crawler.core.multi_crawler - INFO - Progress: 0/3 - Starting page crawling
+2025-06-26 17:29:59,802 - website_crawler.core.multi_crawler - INFO - Starting to crawl 3 pages
+2025-06-26 17:29:59,802 - website_crawler.core.multi_crawler - INFO - Progress: 0/3 - Starting crawl
+2025-06-26 17:29:59,802 - website_crawler.core.multi_crawler - INFO - Crawling: https://www.tad.u-toyama.ac.jp/archives/2638
+2025-06-26 17:29:59,802 - website_crawler.core.scraper - INFO - ページスクレーピング開始: https://www.tad.u-toyama.ac.jp/archives/2638
+2025-06-26 17:30:17,136 - website_crawler.core.scraper - INFO - ページスクレーピング完了: https://www.tad.u-toyama.ac.jp/archives/2638
+2025-06-26 17:30:17,136 - website_crawler.core.processor - INFO - テキスト統合処理開始
+2025-06-26 17:30:17,141 - website_crawler.core.processor - INFO - テキスト統合処理完了: 統合テキスト長=1188
+2025-06-26 17:30:24,142 - website_crawler.core.multi_crawler - INFO - Successfully crawled: https://www.tad.u-toyama.ac.jp/archives/2638 (1188 chars)
+2025-06-26 17:30:24,143 - website_crawler.core.multi_crawler - INFO - Progress: 1/3 - Crawled https://www.tad.u-toyama.ac.jp/archives/2638
+2025-06-26 17:30:24,143 - website_crawler.core.multi_crawler - INFO - Crawling: https://www.tad.u-toyama.ac.jp/archives/2641
+2025-06-26 17:30:24,143 - website_crawler.core.scraper - INFO - ページスクレーピング開始: https://www.tad.u-toyama.ac.jp/archives/2641
+2025-06-26 17:30:45,935 - website_crawler.core.scraper - INFO - ページスクレーピング完了: https://www.tad.u-toyama.ac.jp/archives/2641
+2025-06-26 17:30:45,935 - website_crawler.core.processor - INFO - テキスト統合処理開始
+2025-06-26 17:30:45,940 - website_crawler.core.processor - INFO - テキスト統合処理完了: 統合テキスト長=1530
+2025-06-26 17:30:52,942 - website_crawler.core.multi_crawler - INFO - Successfully crawled: https://www.tad.u-toyama.ac.jp/archives/2641 (1530 chars)
+2025-06-26 17:30:52,942 - website_crawler.core.multi_crawler - INFO - Progress: 2/3 - Crawled https://www.tad.u-toyama.ac.jp/archives/2641
+2025-06-26 17:30:52,943 - website_crawler.core.multi_crawler - INFO - Crawling: https://www.tad.u-toyama.ac.jp/archives/2643
+2025-06-26 17:30:52,943 - website_crawler.core.scraper - INFO - ページスクレーピング開始: https://www.tad.u-toyama.ac.jp/archives/2643
+2025-06-26 17:31:14,264 - website_crawler.core.scraper - INFO - ページスクレーピング完了: https://www.tad.u-toyama.ac.jp/archives/2643
+2025-06-26 17:31:14,264 - website_crawler.core.processor - INFO - テキスト統合処理開始
+2025-06-26 17:31:14,267 - website_crawler.core.processor - INFO - テキスト統合処理完了: 統合テキスト長=1988
+2025-06-26 17:31:21,268 - website_crawler.core.multi_crawler - INFO - Successfully crawled: https://www.tad.u-toyama.ac.jp/archives/2643 (1988 chars)
+2025-06-26 17:31:21,269 - website_crawler.core.multi_crawler - INFO - Progress: 3/3 - Crawled https://www.tad.u-toyama.ac.jp/archives/2643
+2025-06-26 17:31:21,269 - website_crawler.core.multi_crawler - INFO - Crawling completed: 3 successful, 0 failed
+2025-06-26 17:31:21,269 - website_crawler.core.multi_crawler - INFO - Progress: 95/100 - Creating site structure
+2025-06-26 17:31:21,269 - website_crawler.core.multi_crawler - INFO - Progress: 98/100 - Saving results
+2025-06-26 17:31:21,276 - website_crawler.core.multi_crawler - ERROR - Website crawling failed: name 'csv' is not defined
+2025-06-26 17:31:38,290 - website_crawler.core.multi_crawler - INFO - MultiPageCrawler initialized: max_urls=3, max_depth=2
+2025-06-26 17:31:38,290 - website_crawler.core.multi_crawler - INFO - Progress: 0/100 - Discovering URLs
+2025-06-26 17:31:38,290 - website_crawler.core.multi_crawler - INFO - Starting URL discovery for: https://www.tad.u-toyama.ac.jp/
+2025-06-26 17:31:38,290 - website_crawler.core.sitemap - INFO - Attempting sitemap discovery...
+2025-06-26 17:31:39,798 - website_crawler.core.sitemap - INFO - Found sitemap at: https://www.tad.u-toyama.ac.jp/sitemap_index.xml
+2025-06-26 17:31:40,560 - website_crawler.core.sitemap - INFO - Parsing sitemap: https://www.tad.u-toyama.ac.jp/sitemap_index.xml
+2025-06-26 17:31:40,917 - website_crawler.core.sitemap - INFO - Found sitemap index with 8 sitemaps
+2025-06-26 17:31:41,190 - website_crawler.core.sitemap - INFO - Found 19 URLs in sitemap
+2025-06-26 17:31:41,190 - website_crawler.core.sitemap - INFO - Discovered 3 unique URLs from sitemaps
+2025-06-26 17:31:41,191 - website_crawler.core.sitemap - INFO - Found 3 URLs from sitemaps
+2025-06-26 17:31:41,191 - website_crawler.core.sitemap - INFO - Total discovered URLs: 3
+2025-06-26 17:31:41,191 - website_crawler.core.multi_crawler - INFO - Progress: 3/3 - URLs discovered
+2025-06-26 17:31:41,191 - website_crawler.core.multi_crawler - INFO - Progress: 0/3 - Starting page crawling
+2025-06-26 17:31:41,191 - website_crawler.core.multi_crawler - INFO - Starting to crawl 3 pages
+2025-06-26 17:31:41,191 - website_crawler.core.multi_crawler - INFO - Progress: 0/3 - Starting crawl
+2025-06-26 17:31:41,191 - website_crawler.core.multi_crawler - INFO - Crawling: https://www.tad.u-toyama.ac.jp/archives/2638
+2025-06-26 17:31:41,191 - website_crawler.core.scraper - INFO - ページスクレーピング開始: https://www.tad.u-toyama.ac.jp/archives/2638
+2025-06-26 17:31:55,141 - website_crawler.core.scraper - ERROR - ページスクレーピングエラー: Failed to parse Firecrawl error response as JSON. Status code: 502
+2025-06-26 17:31:55,141 - website_crawler.core.multi_crawler - ERROR - Failed to crawl https://www.tad.u-toyama.ac.jp/archives/2638: Failed to parse Firecrawl error response as JSON. Status code: 502
+2025-06-26 17:31:55,141 - website_crawler.core.multi_crawler - INFO - Progress: 1/3 - Crawled https://www.tad.u-toyama.ac.jp/archives/2638
+2025-06-26 17:31:55,141 - website_crawler.core.multi_crawler - INFO - Crawling: https://www.tad.u-toyama.ac.jp/archives/2641
+2025-06-26 17:31:55,142 - website_crawler.core.scraper - INFO - ページスクレーピング開始: https://www.tad.u-toyama.ac.jp/archives/2641
+2025-06-26 17:32:14,247 - website_crawler.core.scraper - INFO - ページスクレーピング完了: https://www.tad.u-toyama.ac.jp/archives/2641
+2025-06-26 17:32:14,247 - website_crawler.core.processor - INFO - テキスト統合処理開始
+2025-06-26 17:32:14,251 - website_crawler.core.processor - INFO - テキスト統合処理完了: 統合テキスト長=1529
+2025-06-26 17:32:21,255 - website_crawler.core.multi_crawler - INFO - Successfully crawled: https://www.tad.u-toyama.ac.jp/archives/2641 (1529 chars)
+2025-06-26 17:32:21,255 - website_crawler.core.multi_crawler - INFO - Progress: 2/3 - Crawled https://www.tad.u-toyama.ac.jp/archives/2641
+2025-06-26 17:32:21,255 - website_crawler.core.multi_crawler - INFO - Crawling: https://www.tad.u-toyama.ac.jp/archives/2643
+2025-06-26 17:32:21,255 - website_crawler.core.scraper - INFO - ページスクレーピング開始: https://www.tad.u-toyama.ac.jp/archives/2643
+2025-06-26 17:32:43,603 - website_crawler.core.scraper - INFO - ページスクレーピング完了: https://www.tad.u-toyama.ac.jp/archives/2643
+2025-06-26 17:32:43,604 - website_crawler.core.processor - INFO - テキスト統合処理開始
+2025-06-26 17:32:43,608 - website_crawler.core.processor - INFO - テキスト統合処理完了: 統合テキスト長=1988
+2025-06-26 17:32:50,612 - website_crawler.core.multi_crawler - INFO - Successfully crawled: https://www.tad.u-toyama.ac.jp/archives/2643 (1988 chars)
+2025-06-26 17:32:50,612 - website_crawler.core.multi_crawler - INFO - Progress: 3/3 - Crawled https://www.tad.u-toyama.ac.jp/archives/2643
+2025-06-26 17:32:50,612 - website_crawler.core.multi_crawler - INFO - Crawling completed: 2 successful, 1 failed
+2025-06-26 17:32:50,612 - website_crawler.core.multi_crawler - INFO - Progress: 95/100 - Creating site structure
+2025-06-26 17:32:50,612 - website_crawler.core.multi_crawler - INFO - Progress: 98/100 - Saving results
+2025-06-26 17:32:50,621 - website_crawler.core.multi_crawler - INFO - Saved results to 4 files
+2025-06-26 17:32:50,621 - website_crawler.core.multi_crawler - INFO - Progress: 100/100 - Crawling completed
+2025-06-26 17:46:35,611 - firecrawl - DEBUG - Initialized FirecrawlApp with API URL: https://api.firecrawl.dev
+2025-06-26 17:54:38,494 - firecrawl - DEBUG - Initialized FirecrawlApp with API URL: https://api.firecrawl.dev
+2025-06-26 17:55:37,322 - website_crawler.core.scraper - WARNING - 画像が検出されませんでした。HTMLを確認します...
+2025-06-26 17:55:56,207 - website_crawler.core.scraper - WARNING - 画像が検出されませんでした。HTMLを確認します...
+2025-06-26 17:56:33,110 - website_crawler.core.scraper - WARNING - 画像が検出されませんでした。HTMLを確認します...
+2025-06-26 17:56:51,743 - website_crawler.core.scraper - WARNING - 画像が検出されませんでした。HTMLを確認します...
+2025-06-26 17:57:12,125 - website_crawler.core.scraper - WARNING - 画像が検出されませんでした。HTMLを確認します...
+2025-06-26 17:58:14,949 - website_crawler.core.scraper - WARNING - 画像が検出されませんでした。HTMLを確認します...
+2025-06-26 17:59:47,676 - website_crawler.core.scraper - WARNING - 画像が検出されませんでした。HTMLを確認します...
+2025-06-26 18:01:13,412 - website_crawler.core.scraper - WARNING - 画像が検出されませんでした。HTMLを確認します...
+2025-06-26 18:01:48,262 - website_crawler.core.scraper - WARNING - 画像が検出されませんでした。HTMLを確認します...
+2025-06-26 18:03:01,612 - website_crawler.core.scraper - WARNING - 画像が検出されませんでした。HTMLを確認します...
+2025-06-26 18:03:28,644 - website_crawler.core.scraper - WARNING - 画像が検出されませんでした。HTMLを確認します...
+2025-06-26 18:04:45,111 - firecrawl - DEBUG - Initialized FirecrawlApp with API URL: https://api.firecrawl.dev
+2025-06-26 18:04:45,111 - website_crawler.core.multi_crawler - INFO - MultiPageCrawler initialized: max_urls=50, max_depth=2
+2025-06-26 18:04:45,111 - website_crawler.core.multi_crawler - INFO - Progress: 0/100 - Discovering URLs
+2025-06-26 18:04:45,111 - website_crawler.core.multi_crawler - INFO - Starting URL discovery for: https://www.tad.u-toyama.ac.jp/
+2025-06-26 18:04:45,111 - website_crawler.core.sitemap - INFO - Attempting sitemap discovery...
+2025-06-26 18:04:45,130 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.tad.u-toyama.ac.jp:443
+2025-06-26 18:04:45,399 - urllib3.connectionpool - DEBUG - https://www.tad.u-toyama.ac.jp:443 "GET /robots.txt HTTP/1.1" 200 75
+2025-06-26 18:04:45,401 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.tad.u-toyama.ac.jp:443
+2025-06-26 18:04:45,670 - urllib3.connectionpool - DEBUG - https://www.tad.u-toyama.ac.jp:443 "HEAD /sitemap.xml HTTP/1.1" 301 0
+2025-06-26 18:04:45,674 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.tad.u-toyama.ac.jp:443
+2025-06-26 18:04:46,011 - urllib3.connectionpool - DEBUG - https://www.tad.u-toyama.ac.jp:443 "HEAD /sitemap_index.xml HTTP/1.1" 200 0
+2025-06-26 18:04:46,013 - website_crawler.core.sitemap - INFO - Found sitemap at: https://www.tad.u-toyama.ac.jp/sitemap_index.xml
+2025-06-26 18:04:46,016 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.tad.u-toyama.ac.jp:443
+2025-06-26 18:04:46,255 - urllib3.connectionpool - DEBUG - https://www.tad.u-toyama.ac.jp:443 "HEAD /sitemaps.xml HTTP/1.1" 404 0
+2025-06-26 18:04:46,258 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.tad.u-toyama.ac.jp:443
+2025-06-26 18:04:46,494 - urllib3.connectionpool - DEBUG - https://www.tad.u-toyama.ac.jp:443 "HEAD /sitemap.php HTTP/1.1" 404 0
+2025-06-26 18:04:46,495 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.tad.u-toyama.ac.jp:443
+2025-06-26 18:04:46,753 - urllib3.connectionpool - DEBUG - https://www.tad.u-toyama.ac.jp:443 "HEAD /wp-sitemap.xml HTTP/1.1" 301 0
+2025-06-26 18:04:46,756 - website_crawler.core.sitemap - INFO - Parsing sitemap: https://www.tad.u-toyama.ac.jp/sitemap_index.xml
+2025-06-26 18:04:46,758 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.tad.u-toyama.ac.jp:443
+2025-06-26 18:04:47,142 - urllib3.connectionpool - DEBUG - https://www.tad.u-toyama.ac.jp:443 "GET /sitemap_index.xml HTTP/1.1" 200 1325
+2025-06-26 18:04:47,143 - website_crawler.core.sitemap - INFO - Found sitemap index with 8 sitemaps
+2025-06-26 18:04:47,145 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.tad.u-toyama.ac.jp:443
+2025-06-26 18:04:47,488 - urllib3.connectionpool - DEBUG - https://www.tad.u-toyama.ac.jp:443 "GET /post-sitemap.xml HTTP/1.1" 200 4996
+2025-06-26 18:04:47,489 - website_crawler.core.sitemap - INFO - Found 19 URLs in sitemap
+2025-06-26 18:04:47,492 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.tad.u-toyama.ac.jp:443
+2025-06-26 18:04:48,282 - urllib3.connectionpool - DEBUG - https://www.tad.u-toyama.ac.jp:443 "GET /page-sitemap.xml HTTP/1.1" 200 None
+2025-06-26 18:04:48,286 - website_crawler.core.sitemap - INFO - Found 85 URLs in sitemap
+2025-06-26 18:04:48,288 - website_crawler.core.sitemap - INFO - Discovered 69 unique URLs from sitemaps
+2025-06-26 18:04:48,288 - website_crawler.core.sitemap - INFO - Found 50 URLs from sitemaps
+2025-06-26 18:04:48,288 - website_crawler.core.sitemap - INFO - Total discovered URLs: 50
+2025-06-26 18:04:48,288 - website_crawler.core.multi_crawler - INFO - Progress: 50/50 - URLs discovered
+2025-06-26 18:04:48,288 - website_crawler.core.multi_crawler - INFO - Progress: 0/50 - Starting page crawling
+2025-06-26 18:04:48,288 - website_crawler.core.multi_crawler - INFO - Starting to crawl 50 pages
+2025-06-26 18:04:48,289 - website_crawler.core.multi_crawler - INFO - Progress: 0/50 - Starting crawl
+2025-06-26 18:04:48,289 - website_crawler.core.multi_crawler - INFO - Crawling: https://www.tad.u-toyama.ac.jp/archives/2638
+2025-06-26 18:04:48,289 - website_crawler.core.scraper - INFO - ページスクレーピング開始: https://www.tad.u-toyama.ac.jp/archives/2638
+2025-06-26 18:04:48,290 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.firecrawl.dev:443
+2025-06-26 18:04:52,403 - urllib3.connectionpool - DEBUG - https://api.firecrawl.dev:443 "POST /v1/scrape HTTP/1.1" 200 10111
+2025-06-26 18:04:52,407 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.firecrawl.dev:443
+2025-06-26 18:05:04,998 - urllib3.connectionpool - DEBUG - https://api.firecrawl.dev:443 "POST /v1/scrape HTTP/1.1" 200 4364
+2025-06-26 18:05:05,001 - website_crawler.core.scraper - INFO - ページスクレーピング完了: https://www.tad.u-toyama.ac.jp/archives/2638
+2025-06-26 18:05:05,001 - website_crawler.core.processor - INFO - テキスト統合処理開始
+2025-06-26 18:05:05,007 - website_crawler.core.processor - INFO - テキスト統合処理完了: 統合テキスト長=1188
+2025-06-26 18:05:08,013 - website_crawler.core.multi_crawler - INFO - Successfully crawled: https://www.tad.u-toyama.ac.jp/archives/2638 (1188 chars)
+2025-06-26 18:05:08,014 - website_crawler.core.multi_crawler - INFO - Progress: 1/50 - Crawled https://www.tad.u-toyama.ac.jp/archives/2638
+2025-06-26 18:05:08,014 - website_crawler.core.multi_crawler - INFO - Crawling: https://www.tad.u-toyama.ac.jp/archives/2641
+2025-06-26 18:05:08,015 - website_crawler.core.scraper - INFO - ページスクレーピング開始: https://www.tad.u-toyama.ac.jp/archives/2641
+2025-06-26 18:05:08,016 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.firecrawl.dev:443
+2025-06-26 18:05:13,602 - urllib3.connectionpool - DEBUG - https://api.firecrawl.dev:443 "POST /v1/scrape HTTP/1.1" 200 12371
+2025-06-26 18:05:13,606 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.firecrawl.dev:443
+2025-06-26 18:05:27,628 - urllib3.connectionpool - DEBUG - https://api.firecrawl.dev:443 "POST /v1/scrape HTTP/1.1" 200 4332
+2025-06-26 18:05:27,629 - website_crawler.core.scraper - INFO - ページスクレーピング完了: https://www.tad.u-toyama.ac.jp/archives/2641
+2025-06-26 18:05:27,629 - website_crawler.core.processor - INFO - テキスト統合処理開始
+2025-06-26 18:05:27,635 - website_crawler.core.processor - INFO - テキスト統合処理完了: 統合テキスト長=1530
+2025-06-26 18:05:30,636 - website_crawler.core.multi_crawler - INFO - Successfully crawled: https://www.tad.u-toyama.ac.jp/archives/2641 (1530 chars)
+2025-06-26 18:05:30,636 - website_crawler.core.multi_crawler - INFO - Progress: 2/50 - Crawled https://www.tad.u-toyama.ac.jp/archives/2641
+2025-06-26 18:05:30,636 - website_crawler.core.multi_crawler - INFO - Crawling: https://www.tad.u-toyama.ac.jp/archives/2643
+2025-06-26 18:05:30,636 - website_crawler.core.scraper - INFO - ページスクレーピング開始: https://www.tad.u-toyama.ac.jp/archives/2643
+2025-06-26 18:05:30,638 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.firecrawl.dev:443
+2025-06-26 18:05:33,625 - urllib3.connectionpool - DEBUG - https://api.firecrawl.dev:443 "POST /v1/scrape HTTP/1.1" 200 14288
+2025-06-26 18:05:33,628 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.firecrawl.dev:443
+2025-06-26 18:05:45,138 - urllib3.connectionpool - DEBUG - https://api.firecrawl.dev:443 "POST /v1/scrape HTTP/1.1" 200 4799
+2025-06-26 18:05:45,138 - website_crawler.core.scraper - INFO - ページスクレーピング完了: https://www.tad.u-toyama.ac.jp/archives/2643
+2025-06-26 18:05:45,138 - website_crawler.core.processor - INFO - テキスト統合処理開始
+2025-06-26 18:05:45,141 - website_crawler.core.processor - INFO - テキスト統合処理完了: 統合テキスト長=1988
+2025-06-26 18:05:48,174 - website_crawler.core.multi_crawler - INFO - Successfully crawled: https://www.tad.u-toyama.ac.jp/archives/2643 (1988 chars)
+2025-06-26 18:05:48,174 - website_crawler.core.multi_crawler - INFO - Progress: 3/50 - Crawled https://www.tad.u-toyama.ac.jp/archives/2643
+2025-06-26 18:05:48,174 - website_crawler.core.multi_crawler - INFO - Crawling: https://www.tad.u-toyama.ac.jp/archives/2659
+2025-06-26 18:05:48,174 - website_crawler.core.scraper - INFO - ページスクレーピング開始: https://www.tad.u-toyama.ac.jp/archives/2659
+2025-06-26 18:05:48,176 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.firecrawl.dev:443
+2025-06-26 18:05:51,694 - urllib3.connectionpool - DEBUG - https://api.firecrawl.dev:443 "POST /v1/scrape HTTP/1.1" 200 12593
+2025-06-26 18:05:51,697 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.firecrawl.dev:443
+2025-06-26 18:06:15,754 - urllib3.connectionpool - DEBUG - https://api.firecrawl.dev:443 "POST /v1/scrape HTTP/1.1" 200 5635
+2025-06-26 18:06:15,755 - website_crawler.core.scraper - INFO - ページスクレーピング完了: https://www.tad.u-toyama.ac.jp/archives/2659
+2025-06-26 18:06:15,755 - website_crawler.core.processor - INFO - テキスト統合処理開始
+2025-06-26 18:06:15,759 - website_crawler.core.processor - INFO - テキスト統合処理完了: 統合テキスト長=1659
+2025-06-26 18:06:18,761 - website_crawler.core.multi_crawler - INFO - Successfully crawled: https://www.tad.u-toyama.ac.jp/archives/2659 (1659 chars)
+2025-06-26 18:06:18,762 - website_crawler.core.multi_crawler - INFO - Progress: 4/50 - Crawled https://www.tad.u-toyama.ac.jp/archives/2659
+2025-06-26 18:06:18,762 - website_crawler.core.multi_crawler - INFO - Crawling: https://www.tad.u-toyama.ac.jp/archives/2717
+2025-06-26 18:06:18,763 - website_crawler.core.scraper - INFO - ページスクレーピング開始: https://www.tad.u-toyama.ac.jp/archives/2717
+2025-06-26 18:06:18,764 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.firecrawl.dev:443
+2025-06-26 18:06:26,609 - urllib3.connectionpool - DEBUG - https://api.firecrawl.dev:443 "POST /v1/scrape HTTP/1.1" 200 7855
+2025-06-26 18:06:26,610 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.firecrawl.dev:443
+2025-06-26 18:06:36,318 - urllib3.connectionpool - DEBUG - https://api.firecrawl.dev:443 "POST /v1/scrape HTTP/1.1" 200 3486
+2025-06-26 18:06:36,319 - website_crawler.core.scraper - INFO - ページスクレーピング完了: https://www.tad.u-toyama.ac.jp/archives/2717
+2025-06-26 18:06:36,319 - website_crawler.core.processor - INFO - テキスト統合処理開始
+2025-06-26 18:06:36,321 - website_crawler.core.processor - INFO - テキスト統合処理完了: 統合テキスト長=691
+2025-06-26 18:06:39,333 - website_crawler.core.multi_crawler - INFO - Successfully crawled: https://www.tad.u-toyama.ac.jp/archives/2717 (691 chars)
+2025-06-26 18:06:39,333 - website_crawler.core.multi_crawler - INFO - Progress: 5/50 - Crawled https://www.tad.u-toyama.ac.jp/archives/2717
+2025-06-26 18:06:39,334 - website_crawler.core.multi_crawler - INFO - Crawling: https://www.tad.u-toyama.ac.jp/archives/3174
+2025-06-26 18:06:39,334 - website_crawler.core.scraper - INFO - ページスクレーピング開始: https://www.tad.u-toyama.ac.jp/archives/3174
+2025-06-26 18:06:39,335 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.firecrawl.dev:443
+2025-06-26 18:06:47,907 - urllib3.connectionpool - DEBUG - https://api.firecrawl.dev:443 "POST /v1/scrape HTTP/1.1" 200 8277
+2025-06-26 18:06:47,911 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.firecrawl.dev:443
+2025-06-26 18:07:00,093 - urllib3.connectionpool - DEBUG - https://api.firecrawl.dev:443 "POST /v1/scrape HTTP/1.1" 200 3967
+2025-06-26 18:07:00,095 - website_crawler.core.scraper - INFO - ページスクレーピング完了: https://www.tad.u-toyama.ac.jp/archives/3174
+2025-06-26 18:07:00,095 - website_crawler.core.processor - INFO - テキスト統合処理開始
+2025-06-26 18:07:00,097 - website_crawler.core.processor - INFO - テキスト統合処理完了: 統合テキスト長=732
+2025-06-26 18:07:03,104 - website_crawler.core.multi_crawler - INFO - Successfully crawled: https://www.tad.u-toyama.ac.jp/archives/3174 (732 chars)
+2025-06-26 18:07:03,105 - website_crawler.core.multi_crawler - INFO - Progress: 6/50 - Crawled https://www.tad.u-toyama.ac.jp/archives/3174
+2025-06-26 18:07:03,105 - website_crawler.core.multi_crawler - INFO - Crawling: https://www.tad.u-toyama.ac.jp/archives/6784
+2025-06-26 18:07:03,105 - website_crawler.core.scraper - INFO - ページスクレーピング開始: https://www.tad.u-toyama.ac.jp/archives/6784
+2025-06-26 18:07:03,107 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.firecrawl.dev:443
+2025-06-26 18:07:06,646 - urllib3.connectionpool - DEBUG - https://api.firecrawl.dev:443 "POST /v1/scrape HTTP/1.1" 200 15237
+2025-06-26 18:07:06,649 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.firecrawl.dev:443
+2025-06-26 18:07:24,770 - urllib3.connectionpool - DEBUG - https://api.firecrawl.dev:443 "POST /v1/scrape HTTP/1.1" 200 5186
+2025-06-26 18:07:24,771 - website_crawler.core.scraper - INFO - ページスクレーピング完了: https://www.tad.u-toyama.ac.jp/archives/6784
+2025-06-26 18:07:24,772 - website_crawler.core.processor - INFO - テキスト統合処理開始
+2025-06-26 18:07:24,775 - website_crawler.core.processor - INFO - テキスト統合処理完了: 統合テキスト長=1934
+2025-06-26 18:07:27,782 - website_crawler.core.multi_crawler - INFO - Successfully crawled: https://www.tad.u-toyama.ac.jp/archives/6784 (1934 chars)
+2025-06-26 18:07:27,783 - website_crawler.core.multi_crawler - INFO - Progress: 7/50 - Crawled https://www.tad.u-toyama.ac.jp/archives/6784
+2025-06-26 18:07:27,783 - website_crawler.core.multi_crawler - INFO - Crawling: https://www.tad.u-toyama.ac.jp/archives/7080
+2025-06-26 18:07:27,783 - website_crawler.core.scraper - INFO - ページスクレーピング開始: https://www.tad.u-toyama.ac.jp/archives/7080
+2025-06-26 18:07:27,784 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.firecrawl.dev:443
+2025-06-26 18:07:31,119 - urllib3.connectionpool - DEBUG - https://api.firecrawl.dev:443 "POST /v1/scrape HTTP/1.1" 200 14131
+2025-06-26 18:07:31,122 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.firecrawl.dev:443
+2025-06-26 18:07:45,134 - urllib3.connectionpool - DEBUG - https://api.firecrawl.dev:443 "POST /v1/scrape HTTP/1.1" 200 5047
+2025-06-26 18:07:45,134 - website_crawler.core.scraper - INFO - ページスクレーピング完了: https://www.tad.u-toyama.ac.jp/archives/7080
+2025-06-26 18:07:45,135 - website_crawler.core.processor - INFO - テキスト統合処理開始
+2025-06-26 18:07:45,138 - website_crawler.core.processor - INFO - テキスト統合処理完了: 統合テキスト長=1853
+2025-06-26 18:07:48,143 - website_crawler.core.multi_crawler - INFO - Successfully crawled: https://www.tad.u-toyama.ac.jp/archives/7080 (1853 chars)
+2025-06-26 18:07:48,143 - website_crawler.core.multi_crawler - INFO - Progress: 8/50 - Crawled https://www.tad.u-toyama.ac.jp/archives/7080
+2025-06-26 18:07:48,143 - website_crawler.core.multi_crawler - INFO - Crawling: https://www.tad.u-toyama.ac.jp/archives/8153
+2025-06-26 18:07:48,144 - website_crawler.core.scraper - INFO - ページスクレーピング開始: https://www.tad.u-toyama.ac.jp/archives/8153
+2025-06-26 18:07:48,145 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.firecrawl.dev:443
+2025-06-26 18:07:53,749 - urllib3.connectionpool - DEBUG - https://api.firecrawl.dev:443 "POST /v1/scrape HTTP/1.1" 200 11999
+2025-06-26 18:07:53,752 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.firecrawl.dev:443
+2025-06-26 18:08:13,819 - urllib3.connectionpool - DEBUG - https://api.firecrawl.dev:443 "POST /v1/scrape HTTP/1.1" 200 4782
+2025-06-26 18:08:13,821 - website_crawler.core.scraper - INFO - ページスクレーピング完了: https://www.tad.u-toyama.ac.jp/archives/8153
+2025-06-26 18:08:13,821 - website_crawler.core.processor - INFO - テキスト統合処理開始
+2025-06-26 18:08:13,827 - website_crawler.core.processor - INFO - テキスト統合処理完了: 統合テキスト長=1498
+2025-06-26 18:08:16,834 - website_crawler.core.multi_crawler - INFO - Successfully crawled: https://www.tad.u-toyama.ac.jp/archives/8153 (1498 chars)
+2025-06-26 18:08:16,835 - website_crawler.core.multi_crawler - INFO - Progress: 9/50 - Crawled https://www.tad.u-toyama.ac.jp/archives/8153
+2025-06-26 18:08:16,835 - website_crawler.core.multi_crawler - INFO - Crawling: https://www.tad.u-toyama.ac.jp/archives/9044
+2025-06-26 18:08:16,835 - website_crawler.core.scraper - INFO - ページスクレーピング開始: https://www.tad.u-toyama.ac.jp/archives/9044
+2025-06-26 18:08:16,838 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.firecrawl.dev:443
+2025-06-26 18:08:20,339 - urllib3.connectionpool - DEBUG - https://api.firecrawl.dev:443 "POST /v1/scrape HTTP/1.1" 200 9165
+2025-06-26 18:08:20,343 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.firecrawl.dev:443
+2025-06-26 18:08:31,636 - urllib3.connectionpool - DEBUG - https://api.firecrawl.dev:443 "POST /v1/scrape HTTP/1.1" 200 3625
+2025-06-26 18:08:31,637 - website_crawler.core.scraper - INFO - ページスクレーピング完了: https://www.tad.u-toyama.ac.jp/archives/9044
+2025-06-26 18:08:31,637 - website_crawler.core.processor - INFO - テキスト統合処理開始
+2025-06-26 18:08:31,640 - website_crawler.core.processor - INFO - テキスト統合処理完了: 統合テキスト長=845
+2025-06-26 18:08:34,644 - website_crawler.core.multi_crawler - INFO - Successfully crawled: https://www.tad.u-toyama.ac.jp/archives/9044 (845 chars)
+2025-06-26 18:08:34,644 - website_crawler.core.multi_crawler - INFO - Progress: 10/50 - Crawled https://www.tad.u-toyama.ac.jp/archives/9044
+2025-06-26 18:08:34,644 - website_crawler.core.multi_crawler - INFO - Crawling: https://www.tad.u-toyama.ac.jp/archives/9427
+2025-06-26 18:08:34,645 - website_crawler.core.scraper - INFO - ページスクレーピング開始: https://www.tad.u-toyama.ac.jp/archives/9427
+2025-06-26 18:08:34,646 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.firecrawl.dev:443
+2025-06-26 18:08:38,183 - urllib3.connectionpool - DEBUG - https://api.firecrawl.dev:443 "POST /v1/scrape HTTP/1.1" 200 10353
+2025-06-26 18:08:38,186 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.firecrawl.dev:443
+2025-06-26 18:08:48,019 - urllib3.connectionpool - DEBUG - https://api.firecrawl.dev:443 "POST /v1/scrape HTTP/1.1" 200 3886
+2025-06-26 18:08:48,020 - website_crawler.core.scraper - INFO - ページスクレーピング完了: https://www.tad.u-toyama.ac.jp/archives/9427
+2025-06-26 18:08:48,021 - website_crawler.core.processor - INFO - テキスト統合処理開始
+2025-06-26 18:08:48,024 - website_crawler.core.processor - INFO - テキスト統合処理完了: 統合テキスト長=1199
+2025-06-26 18:08:51,027 - website_crawler.core.multi_crawler - INFO - Successfully crawled: https://www.tad.u-toyama.ac.jp/archives/9427 (1199 chars)
+2025-06-26 18:08:51,028 - website_crawler.core.multi_crawler - INFO - Progress: 11/50 - Crawled https://www.tad.u-toyama.ac.jp/archives/9427
+2025-06-26 18:08:51,028 - website_crawler.core.multi_crawler - INFO - Crawling: https://www.tad.u-toyama.ac.jp/archives/87
+2025-06-26 18:08:51,028 - website_crawler.core.scraper - INFO - ページスクレーピング開始: https://www.tad.u-toyama.ac.jp/archives/87
+2025-06-26 18:08:51,029 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.firecrawl.dev:443
+2025-06-26 18:08:55,087 - urllib3.connectionpool - DEBUG - https://api.firecrawl.dev:443 "POST /v1/scrape HTTP/1.1" 200 12518
+2025-06-26 18:08:55,091 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.firecrawl.dev:443
+2025-06-26 18:09:17,202 - urllib3.connectionpool - DEBUG - https://api.firecrawl.dev:443 "POST /v1/scrape HTTP/1.1" 200 5303
+2025-06-26 18:09:17,204 - website_crawler.core.scraper - INFO - ページスクレーピング完了: https://www.tad.u-toyama.ac.jp/archives/87
+2025-06-26 18:09:17,204 - website_crawler.core.processor - INFO - テキスト統合処理開始
+2025-06-26 18:09:17,208 - website_crawler.core.processor - INFO - テキスト統合処理完了: 統合テキスト長=1547
+2025-06-26 18:09:20,217 - website_crawler.core.multi_crawler - INFO - Successfully crawled: https://www.tad.u-toyama.ac.jp/archives/87 (1547 chars)
+2025-06-26 18:09:20,217 - website_crawler.core.multi_crawler - INFO - Progress: 12/50 - Crawled https://www.tad.u-toyama.ac.jp/archives/87
+2025-06-26 18:09:20,218 - website_crawler.core.multi_crawler - INFO - Crawling: https://www.tad.u-toyama.ac.jp/archives/10790
+2025-06-26 18:09:20,218 - website_crawler.core.scraper - INFO - ページスクレーピング開始: https://www.tad.u-toyama.ac.jp/archives/10790
+2025-06-26 18:09:20,222 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.firecrawl.dev:443
+2025-06-26 18:09:24,063 - urllib3.connectionpool - DEBUG - https://api.firecrawl.dev:443 "POST /v1/scrape HTTP/1.1" 200 16937
+2025-06-26 18:09:24,074 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.firecrawl.dev:443
+2025-06-26 18:20:38,180 - firecrawl - DEBUG - Initialized FirecrawlApp with API URL: https://api.firecrawl.dev
+2025-06-26 18:20:38,180 - website_crawler.core.multi_crawler - INFO - MultiPageCrawler initialized: max_urls=20, max_depth=2
+2025-06-26 18:20:38,181 - website_crawler.core.multi_crawler - INFO - Progress: 0/100 - Discovering URLs
+2025-06-26 18:20:38,181 - website_crawler.core.multi_crawler - INFO - Starting URL discovery for: https://www.tad.u-toyama.ac.jp/
+2025-06-26 18:20:38,181 - website_crawler.core.sitemap - INFO - Attempting sitemap discovery...
+2025-06-26 18:20:38,200 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.tad.u-toyama.ac.jp:443
+2025-06-26 18:20:38,761 - urllib3.connectionpool - DEBUG - https://www.tad.u-toyama.ac.jp:443 "GET /robots.txt HTTP/1.1" 200 75
+2025-06-26 18:20:38,765 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.tad.u-toyama.ac.jp:443
+2025-06-26 18:20:39,071 - urllib3.connectionpool - DEBUG - https://www.tad.u-toyama.ac.jp:443 "HEAD /sitemap.xml HTTP/1.1" 301 0
+2025-06-26 18:20:39,074 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.tad.u-toyama.ac.jp:443
+2025-06-26 18:20:39,580 - urllib3.connectionpool - DEBUG - https://www.tad.u-toyama.ac.jp:443 "HEAD /sitemap_index.xml HTTP/1.1" 200 0
+2025-06-26 18:20:39,580 - website_crawler.core.sitemap - INFO - Found sitemap at: https://www.tad.u-toyama.ac.jp/sitemap_index.xml
+2025-06-26 18:20:39,581 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.tad.u-toyama.ac.jp:443
+2025-06-26 18:20:39,808 - urllib3.connectionpool - DEBUG - https://www.tad.u-toyama.ac.jp:443 "HEAD /sitemaps.xml HTTP/1.1" 404 0
+2025-06-26 18:20:39,809 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.tad.u-toyama.ac.jp:443
+2025-06-26 18:20:40,069 - urllib3.connectionpool - DEBUG - https://www.tad.u-toyama.ac.jp:443 "HEAD /sitemap.php HTTP/1.1" 404 0
+2025-06-26 18:20:40,073 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.tad.u-toyama.ac.jp:443
+2025-06-26 18:20:40,313 - urllib3.connectionpool - DEBUG - https://www.tad.u-toyama.ac.jp:443 "HEAD /wp-sitemap.xml HTTP/1.1" 301 0
+2025-06-26 18:20:40,315 - website_crawler.core.sitemap - INFO - Parsing sitemap: https://www.tad.u-toyama.ac.jp/sitemap_index.xml
+2025-06-26 18:20:40,317 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.tad.u-toyama.ac.jp:443
+2025-06-26 18:20:40,809 - urllib3.connectionpool - DEBUG - https://www.tad.u-toyama.ac.jp:443 "GET /sitemap_index.xml HTTP/1.1" 200 1325
+2025-06-26 18:20:40,815 - website_crawler.core.sitemap - INFO - Found sitemap index with 8 sitemaps
+2025-06-26 18:20:40,818 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.tad.u-toyama.ac.jp:443
+2025-06-26 18:20:41,321 - urllib3.connectionpool - DEBUG - https://www.tad.u-toyama.ac.jp:443 "GET /post-sitemap.xml HTTP/1.1" 200 4996
+2025-06-26 18:20:41,323 - website_crawler.core.sitemap - INFO - Found 19 URLs in sitemap
+2025-06-26 18:20:41,326 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.tad.u-toyama.ac.jp:443
+2025-06-26 18:20:41,885 - urllib3.connectionpool - DEBUG - https://www.tad.u-toyama.ac.jp:443 "GET /page-sitemap.xml HTTP/1.1" 200 None
+2025-06-26 18:20:41,886 - website_crawler.core.sitemap - INFO - Found 85 URLs in sitemap
+2025-06-26 18:20:41,887 - website_crawler.core.sitemap - INFO - Discovered 39 unique URLs from sitemaps
+2025-06-26 18:20:41,887 - website_crawler.core.sitemap - INFO - Found 20 URLs from sitemaps
+2025-06-26 18:20:41,887 - website_crawler.core.sitemap - INFO - Total discovered URLs: 20
+2025-06-26 18:20:41,887 - website_crawler.core.multi_crawler - INFO - Progress: 20/20 - URLs discovered
+2025-06-26 18:20:41,887 - website_crawler.core.multi_crawler - INFO - Progress: 0/20 - Starting page crawling
+2025-06-26 18:20:41,887 - website_crawler.core.multi_crawler - INFO - Starting to crawl 20 pages
+2025-06-26 18:20:41,887 - website_crawler.core.multi_crawler - INFO - Progress: 0/20 - Starting crawl
+2025-06-26 18:20:41,887 - website_crawler.core.multi_crawler - INFO - Crawling: https://www.tad.u-toyama.ac.jp/archives/2638
+2025-06-26 18:20:41,888 - website_crawler.core.scraper - INFO - ページスクレーピング開始: https://www.tad.u-toyama.ac.jp/archives/2638
+2025-06-26 18:20:41,889 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.firecrawl.dev:443
+2025-06-26 18:20:46,442 - urllib3.connectionpool - DEBUG - https://api.firecrawl.dev:443 "POST /v1/scrape HTTP/1.1" 200 10111
+2025-06-26 18:20:46,447 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.firecrawl.dev:443
+2025-06-26 18:21:12,618 - firecrawl - DEBUG - Initialized FirecrawlApp with API URL: https://api.firecrawl.dev

@@ -14,11 +14,19 @@ A comprehensive website crawler that extracts content from web pages using the F
 - **Structured Data**: News, events, contact information extraction
 - **OCR Processing**: Text extraction from images with confidence scoring
 
+### 🔄 Multi-Page Crawling
+- **Sitemap Discovery**: Automatic sitemap.xml detection and parsing
+- **Link Following**: Intelligent link discovery and filtering
+- **Depth Control**: Configurable crawling depth (1-5 levels)
+- **Smart Filtering**: Exclude admin pages, downloads, and irrelevant content
+- **Site Structure Analysis**: Complete website mapping and reporting
+
 ### 📁 Multiple Output Formats
 - **JSON**: Complete data structure with metadata
 - **HTML**: Beautiful, formatted web pages
 - **Markdown**: Clean text format for documentation
 - **CSV**: Structured data in spreadsheet format
+- **Site Reports**: Comprehensive website structure analysis
 
 ### 🖼️ Advanced Image Processing
 - Automatic image download and processing
@@ -28,10 +36,11 @@ A comprehensive website crawler that extracts content from web pages using the F
 - Optional AWS S3 integration
 
 ### ⚡ Efficient Processing
-- Batch processing for multiple URLs
-- Progress tracking and detailed logging
-- Error handling and recovery
-- Configurable output options
+- **Concurrent Crawling**: Multi-threaded processing for speed
+- **Progress Tracking**: Real-time progress display
+- **Error Recovery**: Robust error handling and retry logic
+- **Rate Limiting**: Configurable delays to respect server limits
+- **Batch Processing**: Process multiple URLs or entire websites
 
 ## 📋 Requirements
 
@@ -62,6 +71,7 @@ A comprehensive website crawler that extracts content from web pages using the F
 
 ### Command Line Interface
 
+#### Single Page Mode
 ```bash
 # Process a single website
 python -m website_crawler.cli https://example.com
@@ -77,6 +87,25 @@ python -m website_crawler.cli https://example.com --no-ocr
 
 # Verbose logging
 python -m website_crawler.cli https://example.com --verbose
+```
+
+#### Multi-Page Crawling Mode
+```bash
+# Basic multi-page crawling
+python -m website_crawler.cli https://example.com --multi-page
+
+# Advanced multi-page crawling with custom settings
+python -m website_crawler.cli https://example.com --multi-page \
+  --max-urls 100 \
+  --max-depth 3 \
+  --max-workers 5 \
+  --delay 0.5
+
+# Fast multi-page crawling without OCR
+python -m website_crawler.cli https://example.com --multi-page --no-ocr
+
+# Multi-page crawling without sitemap discovery
+python -m website_crawler.cli https://example.com --multi-page --no-sitemap
 ```
 
 ### Python API
@@ -182,6 +211,131 @@ DEFAULT_OUTPUT_DIR=outputs
 |----------|-------|------|-----|---------|------------|
 | News | Latest Update | 2024-01-01 | https://... | Content description | |
 | Event | Workshop | 2024-01-15 | | Event details | Location: Room A |
+
+## 🔄 Execution Flow
+
+### System Architecture
+
+```mermaid
+graph TD
+    A[python -m website_crawler.cli URL] --> B[CLI Entry Point]
+    B --> C[Parse Arguments]
+    C --> D[Setup Logging]
+    D --> E[Initialize WebsiteCrawler]
+    
+    E --> F[WebScraper初期化]
+    E --> G[TextProcessor初期化]
+    E --> H[OutputManager初期化]
+    
+    F --> I[Firecrawl API設定]
+    G --> J[テキスト処理設定]
+    H --> K[出力ディレクトリ作成]
+    
+    I --> L[process_website開始]
+    J --> L
+    K --> L
+    
+    L --> M[Step 1: scraper.scrape_page]
+    M --> N[Firecrawl API呼び出し]
+    N --> O[HTML/Markdown取得]
+    O --> P[画像URL抽出]
+    P --> Q[画像ダウンロード]
+    Q --> R[OCR処理 - PaddleOCR]
+    
+    R --> S[Step 2: text_processor.process_scraped_data]
+    S --> T[HTML→テキスト変換]
+    T --> U[Markdown処理]
+    U --> V[OCRテキスト統合]
+    V --> W[重複除去・フォーマット]
+    
+    W --> X[Step 3: output_manager.save_website_data]
+    X --> Y[JSON出力生成]
+    X --> Z[Markdown出力生成]
+    X --> AA[HTML出力生成]
+    
+    Y --> BB[outputs/json/に保存]
+    Z --> CC[outputs/markdown/に保存]
+    AA --> DD[outputs/html/に保存]
+    
+    BB --> EE[実行結果表示]
+    CC --> EE
+    DD --> EE
+    
+    EE --> FF[✅ 完了]
+
+    style A fill:#e1f5fe
+    style FF fill:#c8e6c9
+    style R fill:#fff3e0
+    style N fill:#fce4ec
+```
+
+### 📋 Detailed Execution Flow
+
+#### 1. **初期化フェーズ**
+```
+CLI起動 → 引数解析 → ログ設定 → コンポーネント初期化
+├── WebScraper (Firecrawl API + OCR)
+├── TextProcessor (テキスト統合処理)
+└── OutputManager (ファイル出力管理)
+```
+
+#### 2. **データ収集フェーズ**
+```
+scraper.scrape_page(url)
+├── Firecrawl API呼び出し
+├── HTML/Markdownコンテンツ取得
+├── 画像URL抽出・ダウンロード
+└── PaddleOCRで画像→テキスト変換
+```
+
+#### 3. **データ処理フェーズ**
+```
+text_processor.process_scraped_data()
+├── HTMLからプレーンテキスト抽出
+├── Markdownコンテンツ処理
+├── OCRテキストと統合
+└── 重複除去・フォーマット整形
+```
+
+#### 4. **出力生成フェーズ**
+```
+output_manager.save_website_data()
+├── JSON形式 (構造化データ)
+├── Markdown形式 (文書形式)
+└── HTML形式 (Web表示用)
+```
+
+#### 5. **ファイル構造**
+```
+outputs/
+├── json/           # 構造化データ
+├── markdown/       # テキスト文書
+├── html/          # Web表示用
+└── structured/    # CSV等(バッチ処理時)
+
+downloaded_images/  # OCR用画像ファイル
+```
+
+### ⚙️ 主要コンポーネント
+
+| コンポーネント | 役割 | 主要技術 |
+|---|---|---|
+| **WebScraper** | Web内容取得・OCR | Firecrawl API, PaddleOCR |
+| **TextProcessor** | テキスト統合処理 | BeautifulSoup, 正規表現 |
+| **OutputManager** | マルチ形式出力 | JSON, HTML, Markdown |
+| **CLI** | ユーザーインターフェース | argparse, logging |
+
+### 🔄 データフロー
+```
+URL → Firecrawl → HTML/MD → 画像抽出 → OCR → テキスト統合 → 出力ファイル
+```
+
+### 📊 処理時間の目安
+- **小規模サイト** (～10画像): 30秒～1分
+- **中規模サイト** (10～50画像): 1～3分  
+- **大規模サイト** (50+画像): 3分以上
+
+OCR処理が時間の大部分を占めるため、高速処理には `--no-ocr` オプションを使用してください。
 
 ## 🔍 Development
 
