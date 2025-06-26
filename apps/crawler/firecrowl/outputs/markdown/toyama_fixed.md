@@ -1,0 +1,642 @@
+# University of Toyama 2025
+
+## メタデータ
+
+- **URL:** [https://www.u-toyama.ac.jp/](https://www.u-toyama.ac.jp/)
+- **スクレーピング実行日時:** 2025年06月25日 21:14:27
+- **統合テキスト文字数:** 13,500文字
+- **HTML文字数:** 4,605文字
+- **Markdown文字数:** 12,585文字
+- **OCRテキスト文字数:** 0文字
+- **処理画像数:** 0枚
+
+## 統合テキストコンテンツ
+
+=== Webページコンテンツ ===
+[![オープンキャンパス2025](https://www.u-toyama.ac.jp/wp/wp-content/uploads/opencampus2025_banner.png)](https://juken.adm.u-toyama.ac.jp/opencampus/)
+
+[![【第2回】富大生　動画コンテスト2025](https://www.u-toyama.ac.jp/wp/wp-content/uploads/douga2025_banner.jpg)](https://www.u-toyama.ac.jp/wp/wp-content/uploads/douga2025.pdf)
+
+[![University of Toyama 2025](https://www.u-toyama.ac.jp/wp/wp-content/uploads/university_of-_toyama_2025_banner.jpg)](https://www.u-toyama.ac.jp/news-topics/111114/)
+
+[![動画で見る富山大学](https://www.u-toyama.ac.jp/wp/wp-content/uploads/bnr_tomidai_movie.png)](https://www.u-toyama.ac.jp/outline/overview/toyama-movie/)
+
+![オープンキャンパス2025](https://www.u-toyama.ac.jp/wp/wp-content/uploads/opencampus2025_banner-300x138.png)
+
+![【第2回】富大生　動画コンテスト2025](https://www.u-toyama.ac.jp/wp/wp-content/uploads/douga2025_banner-300x138.jpg)
+
+![University of Toyama 2025](https://www.u-toyama.ac.jp/wp/wp-content/uploads/university_of-_toyama_2025_banner-300x138.jpg)
+
+![動画で見る富山大学](https://www.u-toyama.ac.jp/wp/wp-content/uploads/bnr_tomidai_movie-300x138.png)
+
+## TOPICS
+
+- すべて
+- ニュース
+- 入試
+- 教育・研究
+- 国際交流・留学
+- プレスリリース
+
+- [国際交流・留学\\
+\\
+2025年06月25日\\
+\\
+INTERNATIONAL OPEN CAMPUS in University of Toyama …](https://www.u-toyama.ac.jp/news-international/115904/)
+
+[ニュース\\
+\\
+2025年06月25日\\
+\\
+立山称名滝への夏のスタディ・エクスカーション](https://www.u-toyama.ac.jp/news-topics/115912/)
+
+[ニュース\\
+\\
+2025年06月25日\\
+\\
+学生支援事業「100円カレー」の実施について](https://www.u-toyama.ac.jp/news-topics/114941/)
+
+[入試\\
+\\
+2025年06月24日\\
+\\
+学生募集要項公表　令和８年度大学院人文社会芸術総合研究科（修士課程）](https://www.has.u-toyama.ac.jp/2025/06/23/853/?lang=ja)
+
+[プレスリリース\\
+\\
+2025年06月23日\\
+\\
+左右の腎臓が互いに機能のバランスを調節するメカニズムを解明](https://www.u-toyama.ac.jp/news-press/115724/)
+
+[教育・研究\\
+\\
+2025年06月23日\\
+\\
+日本糖尿病学会よりハーゲドーン賞を受賞](https://www.u-toyama.ac.jp/news-education/115802/)
+
+[ニュース\\
+\\
+2025年06月23日\\
+\\
+ネーミングライツ事業「難民映画祭パートナーズ上映会in 富山大学」を開催](https://www.u-toyama.ac.jp/news-topics/115764/)
+
+[ニュース\\
+\\
+2025年06月23日\\
+\\
+ガンダムの素材をつくる⁉中高生が都市デザイン学部のPBL授業を体験](https://www.sus.u-toyama.ac.jp/2025/news/pbl_gundam/)
+
+[ニュース\\
+\\
+2025年06月25日\\
+\\
+立山称名滝への夏のスタディ・エクスカーション](https://www.u-toyama.ac.jp/news-topics/115912/)
+
+[ニュース\\
+\\
+2025年06月25日\\
+\\
+学生支援事業「100円カレー」の実施について](https://www.u-toyama.ac.jp/news-topics/114941/)
+
+[入試\\
+\\
+2025年06月24日\\
+\\
+学生募集要項公表　令和８年度大学院人文社会芸術総合研究科（修士課程）](https://www.has.u-toyama.ac.jp/2025/06/23/853/?lang=ja)
+
+[プレスリリース\\
+\\
+2025年06月23日\\
+\\
+左右の腎臓が互いに機能のバランスを調節するメカニズムを解明](https://www.u-toyama.ac.jp/news-press/115724/)
+
+[教育・研究\\
+\\
+2025年06月23日\\
+\\
+日本糖尿病学会よりハーゲドーン賞を受賞](https://www.u-toyama.ac.jp/news-education/115802/)
+
+- [ニュース\\
+\\
+2025年06月25日\\
+\\
+立山称名滝への夏のスタディ・エクスカーション](https://www.u-toyama.ac.jp/news-topics/115912/)
+
+[ニュース\\
+\\
+2025年06月25日\\
+\\
+学生支援事業「100円カレー」の実施について](https://www.u-toyama.ac.jp/news-topics/114941/)
+
+[ニュース\\
+\\
+2025年06月23日\\
+\\
+ネーミングライツ事業「難民映画祭パートナーズ上映会in 富山大学」を開催](https://www.u-toyama.ac.jp/news-topics/115764/)
+
+[ニュース\\
+\\
+2025年06月23日\\
+\\
+ガンダムの素材をつくる⁉中高生が都市デザイン学部のPBL授業を体験](https://www.sus.u-toyama.ac.jp/2025/news/pbl_gundam/)
+
+[ニュース\\
+\\
+2025年06月18日\\
+\\
+2025年度富山大学女子学生チーム「スマート・ポリネーター」任命式を開催](https://www.u-toyama.ac.jp/news-topics/115442/)
+
+[ニュース\\
+\\
+2025年06月12日\\
+\\
+令和7年度「富山“Re-Design"ラボ」開講式を開催](https://www.u-toyama.ac.jp/news-topics/115015/)
+
+[ニュース\\
+\\
+2025年06月09日\\
+\\
+富山大学産学交流振興会 令和7年度 総会を開催](https://www.u-toyama.ac.jp/news-topics/114800/)
+
+[ニュース\\
+\\
+2025年06月05日\\
+\\
+「ほくぎん若手研究者助成金」令和7年度贈呈式・令和6年度研究成果報告会を開催](https://www.u-toyama.ac.jp/news-topics/114560/)
+
+[ニュース\\
+\\
+2025年06月25日\\
+\\
+立山称名滝への夏のスタディ・エクスカーション](https://www.u-toyama.ac.jp/news-topics/115912/)
+
+[ニュース\\
+\\
+2025年06月25日\\
+\\
+学生支援事業「100円カレー」の実施について](https://www.u-toyama.ac.jp/news-topics/114941/)
+
+[ニュース\\
+\\
+2025年06月23日\\
+\\
+ネーミングライツ事業「難民映画祭パートナーズ上映会in 富山大学」を開催](https://www.u-toyama.ac.jp/news-topics/115764/)
+
+[ニュース\\
+\\
+2025年06月23日\\
+\\
+ガンダムの素材をつくる⁉中高生が都市デザイン学部のPBL授業を体験](https://www.sus.u-toyama.ac.jp/2025/news/pbl_gundam/)
+
+[ニュース\\
+\\
+2025年06月18日\\
+\\
+2025年度富山大学女子学生チーム「スマート・ポリネーター」任命式を開催](https://www.u-toyama.ac.jp/news-topics/115442/)
+
+- [入試\\
+\\
+2025年06月24日\\
+\\
+学生募集要項公表　令和８年度大学院人文社会芸術総合研究科（修士課程）](https://www.has.u-toyama.ac.jp/2025/06/23/853/?lang=ja)
+
+[入試\\
+\\
+2025年06月19日\\
+\\
+学生募集要項公表　令和８年度教職実践開発研究科（教職大学院）](https://ttd.edc.u-toyama.ac.jp/)
+
+[入試\\
+\\
+2025年06月16日\\
+\\
+学生募集要項公表　令和８年度医学部医学科学士入学（第２年次編入学）](http://www.sugitani.u-toyama.ac.jp/nyuushi/sub1.html)
+
+[入試\\
+\\
+2025年06月13日\\
+\\
+令和８年度工学部３年次編入学試験（推薦による選抜）　合格発表](http://enghp.eng.u-toyama.ac.jp/2025/06/12/6055/)
+
+[入試\\
+\\
+2025年06月13日\\
+\\
+令和８年度理学部３年次編入学試験合格発表](http://www.sci.u-toyama.ac.jp/)
+
+[入試\\
+\\
+2025年06月13日\\
+\\
+令和８年度都市デザイン学部３年次編入学試験合格発表](https://www.sus.u-toyama.ac.jp/2025/news/r8-transferexam_goukaku_202506/)
+
+[入試\\
+\\
+2025年06月11日\\
+\\
+富山大学大学院　総合医薬学研究科総合医薬学専攻（博士前期課程）看護科学プログラム及び（修士課程）先端…](http://www.sugitani.u-toyama.ac.jp/nyuushi/sub2.html)
+
+[入試\\
+\\
+2025年06月11日\\
+\\
+学生募集要項公表　令和８年度大学院医薬理工学環（博士後期課程・博士前期課程）](https://www.gpms.u-toyama.ac.jp/)
+
+[入試\\
+\\
+2025年06月24日\\
+\\
+学生募集要項公表　令和８年度大学院人文社会芸術総合研究科（修士課程）](https://www.has.u-toyama.ac.jp/2025/06/23/853/?lang=ja)
+
+[入試\\
+\\
+2025年06月19日\\
+\\
+学生募集要項公表　令和８年度教職実践開発研究科（教職大学院）](https://ttd.edc.u-toyama.ac.jp/)
+
+[入試\\
+\\
+2025年06月16日\\
+\\
+学生募集要項公表　令和８年度医学部医学科学士入学（第２年次編入学）](http://www.sugitani.u-toyama.ac.jp/nyuushi/sub1.html)
+
+[入試\\
+\\
+2025年06月13日\\
+\\
+令和８年度工学部３年次編入学試験（推薦による選抜）　合格発表](http://enghp.eng.u-toyama.ac.jp/2025/06/12/6055/)
+
+[入試\\
+\\
+2025年06月13日\\
+\\
+令和８年度理学部３年次編入学試験合格発表](http://www.sci.u-toyama.ac.jp/)
+
+- [教育・研究\\
+\\
+2025年06月23日\\
+\\
+日本糖尿病学会よりハーゲドーン賞を受賞](https://www.u-toyama.ac.jp/news-education/115802/)
+
+[教育・研究\\
+\\
+2025年06月19日\\
+\\
+日本都市計画学会2024年年間優秀論文賞を受賞](https://www.tad.u-toyama.ac.jp/archives/campuslife/34535)
+
+[教育・研究\\
+\\
+2025年06月09日\\
+\\
+地球電磁気・地球惑星圏学会より田中舘賞を受賞](https://www.u-toyama.ac.jp/news-education/114695/)
+
+[教育・研究\\
+\\
+2025年04月30日\\
+\\
+Meets GEIBUN 第33回企画展「GEIBUN PROPOSAL展 case#07/#08」…](https://www.tad.u-toyama.ac.jp/archives/campuslife/28273)
+
+[教育・研究\\
+\\
+2025年04月04日\\
+\\
+日本生態学会Ecological Research 論文賞を受賞](https://www.u-toyama.ac.jp/news-education/110556/)
+
+[教育・研究\\
+\\
+2025年03月27日\\
+\\
+APPW2025（第130回日本解剖学会・第102回日本生理学会・第98回日本薬理学会 合同大会）で…](https://www.u-toyama.ac.jp/news-education/109823/)
+
+[教育・研究\\
+\\
+2025年03月26日\\
+\\
+第27回日本図学会中部支部 奨励賞を受賞](https://www.u-toyama.ac.jp/news-education/109674/)
+
+[教育・研究\\
+\\
+2025年03月25日\\
+\\
+本学附属病院と三晶MEC株式会社との共同開発による検査用装置が「第50回（2024年度）発明大賞」に…](https://www.u-toyama.ac.jp/news-education/109568/)
+
+[教育・研究\\
+\\
+2025年06月23日\\
+\\
+日本糖尿病学会よりハーゲドーン賞を受賞](https://www.u-toyama.ac.jp/news-education/115802/)
+
+[教育・研究\\
+\\
+2025年06月19日\\
+\\
+日本都市計画学会2024年年間優秀論文賞を受賞](https://www.tad.u-toyama.ac.jp/archives/campuslife/34535)
+
+[教育・研究\\
+\\
+2025年06月09日\\
+\\
+地球電磁気・地球惑星圏学会より田中舘賞を受賞](https://www.u-toyama.ac.jp/news-education/114695/)
+
+[教育・研究\\
+\\
+2025年04月30日\\
+\\
+Meets GEIBUN 第33回企画展「GEIBUN PROPOSAL展 ca…](https://www.tad.u-toyama.ac.jp/archives/campuslife/28273)
+
+[教育・研究\\
+\\
+2025年04月04日\\
+\\
+日本生態学会Ecological Research 論文賞を受賞](https://www.u-toyama.ac.jp/news-education/110556/)
+
+- [国際交流・留学\\
+\\
+2025年06月25日\\
+\\
+INTERNATIONAL OPEN CAMPUS in University of Toyama …](https://www.u-toyama.ac.jp/news-international/115904/)
+
+[国際交流・留学\\
+\\
+2025年06月10日\\
+\\
+ネーミングライツ事業「富大夏祭り2025」の開催について／Funded by Naming Righ…](https://www.u-toyama.ac.jp/news-international/114845/)
+
+[国際交流・留学\\
+\\
+2025年05月27日\\
+\\
+【留学生の今日】留学リポートvol.25！プラハから望月 華がお届けします！](https://www.tad.u-toyama.ac.jp/archives/campuslife/34418)
+
+[国際交流・留学\\
+\\
+2025年05月22日\\
+\\
+【6/11（水）開催！】海外留学フェアin富山大学2025](https://www.u-toyama.ac.jp/news-international/113716/)
+
+[国際交流・留学\\
+\\
+2025年05月12日\\
+\\
+中国・内蒙古医科大学訪問団が富山大学を訪問](https://www.u-toyama.ac.jp/news-international/news-visits/113091/)
+
+[国際交流・留学\\
+\\
+2025年03月26日\\
+\\
+令和６年度学部１年次対象短期海外英語研修　帰国報告会の開催について](https://www.u-toyama.ac.jp/news-international/109692/)
+
+[国際交流・留学\\
+\\
+2025年03月12日\\
+\\
+富山大学リエゾンプロフェッサー 　チェコ共和国・西ボヘミア大学ヤン・ミナール(Ján Minár)教…](https://www.u-toyama.ac.jp/news-international/news-visits/108769/)
+
+[国際交流・留学\\
+\\
+2025年03月07日\\
+\\
+池田真行富山大学理事・副学長がマレーシア・サンウェイ大学、テイラーズ大学、サンウェイ・メディカル・セ…](https://www.u-toyama.ac.jp/news-international/news-visits/108024/)
+
+[国際交流・留学\\
+\\
+2025年06月25日\\
+\\
+INTERNATIONAL OPEN CAMPUS in University …](https://www.u-toyama.ac.jp/news-international/115904/)
+
+[国際交流・留学\\
+\\
+2025年06月10日\\
+\\
+ネーミングライツ事業「富大夏祭り2025」の開催について／Funded by N…](https://www.u-toyama.ac.jp/news-international/114845/)
+
+[国際交流・留学\\
+\\
+2025年05月27日\\
+\\
+【留学生の今日】留学リポートvol.25！プラハから望月 華がお届けします！](https://www.tad.u-toyama.ac.jp/archives/campuslife/34418)
+
+[国際交流・留学\\
+\\
+2025年05月22日\\
+\\
+【6/11（水）開催！】海外留学フェアin富山大学2025](https://www.u-toyama.ac.jp/news-international/113716/)
+
+[国際交流・留学\\
+\\
+2025年05月12日\\
+\\
+中国・内蒙古医科大学訪問団が富山大学を訪問](https://www.u-toyama.ac.jp/news-international/news-visits/113091/)
+
+- [プレスリリース\\
+\\
+2025年06月23日\\
+\\
+左右の腎臓が互いに機能のバランスを調節するメカニズムを解明](https://www.u-toyama.ac.jp/news-press/115724/)
+
+[プレスリリース\\
+\\
+2025年06月20日\\
+\\
+人工股関節手術に新たな指針 ～外閉鎖筋の温存で脱臼リスク軽減の可能性～](https://www.u-toyama.ac.jp/news-press/115564/)
+
+[プレスリリース\\
+\\
+2025年06月11日\\
+\\
+鎮痛薬の中枢での作用メカニズム解明に向けた新技術の確立](https://www.u-toyama.ac.jp/news-press/114846/)
+
+[プレスリリース\\
+\\
+2025年06月06日\\
+\\
+世界初、膵臓外科手術の安全性を高める新たな指針を開発](https://www.u-toyama.ac.jp/news-press/114574/)
+
+[プレスリリース\\
+\\
+2025年06月06日\\
+\\
+超低電圧駆動有機ELの材料選択を革新～界面スペーサー技術で性能を飛躍的に向上～](https://www.u-toyama.ac.jp/news-press/114640/)
+
+[プレスリリース\\
+\\
+2025年06月06日\\
+\\
+妊娠前のBMI、妊娠中の体重増加量は出産後6か月間の母乳栄養の継続と関連する（エコチル調査より）](https://www.u-toyama.ac.jp/news-press/114573/)
+
+[プレスリリース\\
+\\
+2025年05月30日\\
+\\
+産卵場に集結したアユの生涯履歴の解読に成功 ～生まれた時期でその後の運命が変わる!? 長良川研究～](https://www.u-toyama.ac.jp/news-press/114191/)
+
+[プレスリリース\\
+\\
+2025年05月30日\\
+\\
+海と川を⾏き来する⿂は「海らしさ」を失いながらも海由来の物質を川へ届ける](https://www.u-toyama.ac.jp/news-press/114122/)
+
+[プレスリリース\\
+\\
+2025年06月23日\\
+\\
+左右の腎臓が互いに機能のバランスを調節するメカニズムを解明](https://www.u-toyama.ac.jp/news-press/115724/)
+
+[プレスリリース\\
+\\
+2025年06月20日\\
+\\
+人工股関節手術に新たな指針 ～外閉鎖筋の温存で脱臼リスク軽減の可能性～](https://www.u-toyama.ac.jp/news-press/115564/)
+
+[プレスリリース\\
+\\
+2025年06月11日\\
+\\
+鎮痛薬の中枢での作用メカニズム解明に向けた新技術の確立](https://www.u-toyama.ac.jp/news-press/114846/)
+
+[プレスリリース\\
+\\
+2025年06月06日\\
+\\
+世界初、膵臓外科手術の安全性を高める新たな指針を開発](https://www.u-toyama.ac.jp/news-press/114574/)
+
+[プレスリリース\\
+\\
+2025年06月06日\\
+\\
+超低電圧駆動有機ELの材料選択を革新～界面スペーサー技術で性能を飛躍的に向上～](https://www.u-toyama.ac.jp/news-press/114640/)
+
+[トピックス一覧](https://www.u-toyama.ac.jp/topics/)
+
+## EVENT
+
+### 開催中
+
+- [〜 2025年06月25日 \\
+\\
+第43回「人文知」コレギウム](https://www.u-toyama.ac.jp/event/113324/)
+- [〜 2025年07月06日 \\
+\\
+Meets GEIBUN 第34回企画展「GEIBUN GOODS展 vol.4」\\
+\\
+―“GEIBUN ＆ TOYAMA”な“バッジ ＆ Tシャツ”](https://www.u-toyama.ac.jp/event/115132/)
+- [〜 2025年08月06日 \\
+\\
+令和7年度創業・起業支援コース「ビジネスプラン作成講座」～事業を成功に導くプランを～](https://www.u-toyama.ac.jp/event/107537/)
+- [〜 2025年09月12日 \\
+\\
+富山大学2025年度 前期公開講座＆前学期オープン・クラス](https://www.u-toyama.ac.jp/event/108505/)
+
+### まもなく開催
+
+[7月\\
+\\
+2025年07月05日 \\
+\\
+〜 2025年07月05日 \\
+\\
+富山大学県民向け公開セミナー『みんなで考えよう！持続可能な農業と食のミライ』](https://www.u-toyama.ac.jp/event/113330/)
+
+[7月\\
+\\
+2025年07月10日 \\
+\\
+〜 2025年07月10日 \\
+\\
+ネーミングライツ事業「富大夏祭り2025」](https://www.u-toyama.ac.jp/event/114917/)
+
+[7月\\
+\\
+2025年07月16日 \\
+\\
+〜 2025年07月16日 \\
+\\
+第44回「人文知」コレギウム](https://www.u-toyama.ac.jp/event/115315/)
+
+[イベント一覧](https://www.u-toyama.ac.jp/event/)
+
+## PICK UP
+
+[先進アルミニウム国際研究センター](https://arc.ctg.u-toyama.ac.jp/)
+
+[未病研究センター](https://rcpds-toyama.net/)
+
+[データサイエンス推進事業](https://dstoyama.adm.u-toyama.ac.jp/)
+
+[博⼠後期課程学⽣⽀援プロジェクト](https://promotion-research.ctg.u-toyama.ac.jp/ss)
+
+[⼤学による地⽅創⽣⼈材教育プログラム構築事業](https://coc-r.jp/)
+
+[ダイバーシティ推進センター](http://www3.u-toyama.ac.jp/danjo/)
+
+## INFORMATION
+
+- [令和6年能登半島地震に関する富⼭⼤学の対応](https://www.u-toyama.ac.jp/news-hide/81970/)
+- [新型コロナウイルス‧インフルエンザ等の感染症の相談‧報告](https://www.u-toyama.ac.jp/news-topics/15857/)
+
+[![資料請求](https://www.u-toyama.ac.jp/wp/wp-content/themes/u-toyama/images/hm-btn-document.png)](https://www.u-toyama.ac.jp/admission/undergraduate-exam/requirement/)
+
+[![報道機関の方](https://www.u-toyama.ac.jp/wp/wp-content/themes/u-toyama/images/hm-btn-media.png)](https://www.u-toyama.ac.jp/outline/pr/publicity/)
+
+[![公開講座、オープン・クラス](https://www.u-toyama.ac.jp/wp/wp-content/themes/u-toyama/images/hm-btn-lecture-open.png)](https://www.u-toyama.ac.jp/general/course/extension/)
+
+[![本学への寄附をお考えの方へ](https://www.u-toyama.ac.jp/wp/wp-content/themes/u-toyama/images/hm-btn-donation.png)](https://www.u-toyama.ac.jp/donation/)
+
+[![教職員採用](https://www.u-toyama.ac.jp/wp/wp-content/themes/u-toyama/images/hm-btn-recruit.png)](https://www.u-toyama.ac.jp/outline/faculty_member/)
+
+[![産学官連携のご相談](https://www.u-toyama.ac.jp/wp/wp-content/themes/u-toyama/images/hm-btn-cooperation.png)](https://sanren.ctg.u-toyama.ac.jp/)
+
+![](<Base64-Image-Removed>)
+
+=== 追加構造化情報 ===
+タイトル: 立山称名滝への夏のスタディ・エクスカーション
+日付: 2025年06月25日
+内容: 立山称名滝への夏のスタディ・エクスカーション
+
+タイトル: 学生支援事業「100円カレー」の実施について
+日付: 2025年06月25日
+内容: 学生支援事業「100円カレー」の実施について
+
+タイトル: 学生募集要項公表　令和８年度大学院人文社会芸術総合研究科（修士課程）
+日付: 2025年06月24日
+内容: 学生募集要項公表　令和８年度大学院人文社会芸術総合研究科（修士課程）
+
+タイトル: 左右の腎臓が互いに機能のバランスを調節するメカニズムを解明
+日付: 2025年06月23日
+内容: 左右の腎臓が互いに機能のバランスを調節するメカニズムを解明
+
+タイトル: 日本糖尿病学会よりハーゲドーン賞を受賞
+日付: 2025年06月23日
+内容: 日本糖尿病学会よりハーゲドーン賞を受賞
+
+タイトル: ネーミングライツ事業「難民映画祭パートナーズ上映会in 富山大学」を開催
+日付: 2025年06月23日
+内容: ネーミングライツ事業「難民映画祭パートナーズ上映会in 富山大学」を開催
+
+タイトル: ガンダムの素材をつくる⁉中高生が都市デザイン学部のPBL授業を体験
+日付: 2025年06月23日
+内容: ガンダムの素材をつくる⁉中高生が都市デザイン学部のPBL授業を体験
+
+イベント情報:
+イベント: 第43回「人文知」コレギウム
+日付: 2025年06月25日
+場所: University of Toyama
+説明: 第43回「人文知」コレギウム
+
+イベント: Meets GEIBUN 第34回企画展「GEIBUN GOODS展 vol.4」
+日付: 2025年07月06日
+場所: University of Toyama
+説明: Meets GEIBUN 第34回企画展「GEIBUN GOODS展 vol.4」
+
+イベント: 令和7年度創業・起業支援コース「ビジネスプラン作成講座」
+日付: 2025年08月06日
+場所: University of Toyama
+説明: 令和7年度創業・起業支援コース「ビジネスプラン作成講座」
+
+イベント: 富山大学2025年度 前期公開講座＆前学期オープン・クラス
+日付: 2025年09月12日
+場所: University of Toyama
+説明: 富山大学2025年度 前期公開講座＆前学期オープン・クラス
+
+---
+*このファイルは自動生成されました - 2025/06/25 21:14:27*
