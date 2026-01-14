@@ -1,0 +1,70 @@
+{
+  "version": "1.0",
+  "metadata": {
+    "municipality": "歌志内市",
+    "prefecture": "北海道",
+    "sourceUrl": "https://www.city.utashinai.hokkaido.jp/",
+    "extractedAt": "2025-11-25T03:02:35.762Z",
+    "lastModified": "2025-11-25T03:02:35.762Z"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumbs-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          { "label": "ホーム", "href": "/" },
+          { "label": "歌志内市", "href": "/utashinai" }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "title": "歌志内市 行政情報ポータル"
+      }
+    },
+    {
+      "id": "callout-emergency",
+      "type": "Callout",
+      "props": {
+        "severity": "warning",
+        "title": "感染症注意報",
+        "content": "<p>水痘（みずぼうそう）およびインフルエンザの注意報が発令されています。手洗い・うがいを徹底してください。</p>"
+      }
+    },
+    {
+      "id": "richtext-intro",
+      "type": "RichText",
+      "props": {
+        "content": "<p>歌志内市の行政情報をまとめてご覧いただけます。各種手続き、イベント情報、施設案内などをご確認ください。</p>"
+      }
+    },
+    {
+      "id": "info-table-1",
+      "type": "InfoTable",
+      "props": {
+        "rows": [
+          { "label": "所在地", "value": "北海道歌志内市字本町5番地" },
+          { "label": "電話番号", "value": "0125-42-3211" },
+          { "label": "開庁時間", "value": "平日 8:30〜17:15" },
+          { "label": "人口", "value": "約2,800人（2024年現在）" }
+        ]
+      }
+    },
+    {
+      "id": "related-links-1",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          { "title": "住民票の写し等の電子申請", "href": "/utashinai/procedures/juminhyo" },
+          { "title": "各種届出・手続き一覧", "href": "/utashinai/procedures" },
+          { "title": "イベント情報", "href": "/utashinai/events" },
+          { "title": "公共施設案内", "href": "/utashinai/facilities" },
+          { "title": "緊急・防災情報", "href": "/utashinai/emergency" }
+        ]
+      }
+    }
+  ]
+}

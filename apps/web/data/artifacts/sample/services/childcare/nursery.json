@@ -1,0 +1,168 @@
+{
+  "schema_version": "1.0.0",
+  "page_id": "sample-childcare-nursery",
+  "municipality_id": "sample",
+  "path": "/services/childcare/nursery",
+  "title": "保育園・幼稚園",
+  "description": "サンプル市の保育園・幼稚園に関する情報。入園申込、保育園一覧、一時保育など。",
+  "page_type": "service_sublanding",
+  "category": "childcare_parenting",
+  "source": {
+    "source_url": "https://www.sample-city.lg.jp/services/childcare/nursery",
+    "fetched_at": "2025-01-14T00:00:00.000Z",
+    "content_type": "text/html",
+    "content_hash": "sha256:sample-childcare-nursery-hash"
+  },
+  "pipeline": {
+    "run_id": "sample-run-001",
+    "generated_at": "2025-01-14T00:00:00.000Z",
+    "schema_version": "1.0.0",
+    "extractor_version": "1.0.0",
+    "structurer_version": "1.0.0",
+    "transformer_version": "1.0.0",
+    "renderer_version": "1.0.0",
+    "model": "claude-3-opus"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumbs-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          { "label": "ホーム", "href": "/" },
+          { "label": "子育て", "href": "/services/childcare" },
+          { "label": "保育園・幼稚園", "href": "/services/childcare/nursery" }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "title": "保育園・幼稚園"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "content": "サンプル市では、認可保育園、認定こども園、幼稚園など、お子さまの年齢や保護者の就労状況に応じた保育施設をご利用いただけます。"
+      }
+    },
+    {
+      "id": "service-link-list-1",
+      "type": "ServiceLinkList",
+      "props": {
+        "sections": [
+          {
+            "title": "入園申込",
+            "items": [
+              {
+                "title": "認可保育園の入園申込",
+                "href": "https://www.sample-city.lg.jp/services/childcare/nursery/apply",
+                "description": "令和7年度4月入園の申込受付中（締切：2月末）"
+              },
+              {
+                "title": "年度途中の入園申込",
+                "href": "https://www.sample-city.lg.jp/services/childcare/nursery/apply-midyear",
+                "description": "年度途中からの入園をご希望の方"
+              },
+              {
+                "title": "幼稚園の入園",
+                "href": "https://www.sample-city.lg.jp/services/childcare/kindergarten",
+                "description": "市立・私立幼稚園への入園手続き"
+              }
+            ]
+          },
+          {
+            "title": "施設を探す",
+            "items": [
+              {
+                "title": "認可保育園一覧",
+                "href": "https://www.sample-city.lg.jp/services/childcare/nursery/list",
+                "description": "市内の認可保育園（32施設）"
+              },
+              {
+                "title": "認定こども園一覧",
+                "href": "https://www.sample-city.lg.jp/services/childcare/nursery/kodomoen",
+                "description": "市内の認定こども園（8施設）"
+              },
+              {
+                "title": "小規模保育事業所",
+                "href": "https://www.sample-city.lg.jp/services/childcare/nursery/small",
+                "description": "0〜2歳児対象の小規模施設"
+              }
+            ]
+          },
+          {
+            "title": "保育料・補助",
+            "items": [
+              {
+                "title": "保育料について",
+                "href": "https://www.sample-city.lg.jp/services/childcare/nursery/fee",
+                "description": "保育料の算定方法と金額"
+              },
+              {
+                "title": "幼児教育・保育の無償化",
+                "href": "https://www.sample-city.lg.jp/services/childcare/nursery/free",
+                "description": "3〜5歳児の保育料無償化"
+              }
+            ]
+          },
+          {
+            "title": "その他の保育サービス",
+            "items": [
+              {
+                "title": "一時保育",
+                "href": "https://www.sample-city.lg.jp/services/childcare/temporary",
+                "description": "緊急時や一時的な保育が必要な方"
+              },
+              {
+                "title": "病児・病後児保育",
+                "href": "https://www.sample-city.lg.jp/services/childcare/sick-child",
+                "description": "お子さまが病気のときの保育"
+              },
+              {
+                "title": "延長保育",
+                "href": "https://www.sample-city.lg.jp/services/childcare/extended",
+                "description": "通常の保育時間を超えた保育"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "related-topics-1",
+      "type": "RelatedTopics",
+      "props": {
+        "items": [
+          { "title": "児童手当", "href": "https://www.sample-city.lg.jp/services/childcare/allowance" },
+          { "title": "子ども医療費助成", "href": "https://www.sample-city.lg.jp/services/childcare/medical" },
+          { "title": "学童保育", "href": "https://www.sample-city.lg.jp/services/childcare/after-school" }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "dept": "保育課",
+        "tel": "03-1234-5680",
+        "email": "hoiku@sample-city.lg.jp",
+        "hours": "平日 8:30〜17:15",
+        "address": "サンプル市役所 2階"
+      }
+    },
+    {
+      "id": "footer-1",
+      "type": "Footer",
+      "props": {}
+    }
+  ],
+  "search": {
+    "summary": "サンプル市の保育園・幼稚園情報。入園申込、認可保育園一覧、認定こども園、保育料、一時保育など。",
+    "keywords": ["保育園", "幼稚園", "入園申込", "認可保育園", "認定こども園", "保育料", "無償化", "一時保育"],
+    "plain_text": "サンプル市の保育園・幼稚園情報。認可保育園の入園申込、年度途中の入園、幼稚園の入園、認可保育園一覧、認定こども園一覧、小規模保育事業所、保育料、幼児教育・保育の無償化、一時保育、病児・病後児保育、延長保育。"
+  }
+}

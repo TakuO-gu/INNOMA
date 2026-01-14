@@ -1,0 +1,90 @@
+{
+  "version": "1.0",
+  "metadata": {
+    "municipality": "歌志内市",
+    "prefecture": "北海道",
+    "sourceUrl": "https://www.city.utashinai.hokkaido.jp/emergency",
+    "extractedAt": "2025-11-25T03:02:35.762Z",
+    "lastModified": "2025-11-21T00:00:00.000Z"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumbs-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          { "label": "ホーム", "href": "/" },
+          { "label": "歌志内市", "href": "/utashinai" },
+          { "label": "緊急・防災情報", "href": "/utashinai/emergency" }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "title": "緊急・防災情報"
+      }
+    },
+    {
+      "id": "emergency-1",
+      "type": "Emergency",
+      "props": {
+        "type": "alert",
+        "severity": "high",
+        "title": "インフルエンザ警報が発令されました",
+        "content": "<p>北海道内でインフルエンザの流行が拡大しています。手洗い・うがいの徹底、人混みを避けるなどの予防対策をお願いします。</p><p>発熱等の症状がある場合は、かかりつけ医または発熱外来に事前連絡の上、受診してください。</p>",
+        "publishedAt": "2025-11-07",
+        "contact": "保健福祉課 TEL: 0125-42-3213"
+      }
+    },
+    {
+      "id": "emergency-2",
+      "type": "Emergency",
+      "props": {
+        "type": "alert",
+        "severity": "medium",
+        "title": "水痘（みずぼうそう）注意報発令中",
+        "content": "<p>水痘の発生が増加しています。予防接種を受けていない方は、かかりつけ医にご相談ください。</p>",
+        "publishedAt": "2025-11-21",
+        "contact": "保健福祉課 TEL: 0125-42-3213"
+      }
+    },
+    {
+      "id": "emergency-3",
+      "type": "Emergency",
+      "props": {
+        "type": "evacuation",
+        "severity": "low",
+        "title": "避難所について",
+        "content": "<p>災害時の指定避難所は以下の施設となっています。事前に場所をご確認ください。</p>",
+        "publishedAt": "2025-04-01",
+        "affectedAreas": ["歌志内市全域"],
+        "evacuationShelters": [
+          "歌志内市民センター",
+          "歌志内中学校体育館",
+          "文珠地区コミュニティセンター"
+        ],
+        "contact": "総務課 防災係 TEL: 0125-42-3211"
+      }
+    },
+    {
+      "id": "richtext-info",
+      "type": "RichText",
+      "props": {
+        "content": "<h2>防災情報の入手方法</h2><p>歌志内市では、以下の方法で防災情報を発信しています。</p><ul><li>防災行政無線</li><li>歌志内市ホームページ</li><li>北海道防災情報システム</li></ul>"
+      }
+    },
+    {
+      "id": "related-links-1",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          { "title": "避難所一覧", "href": "/utashinai/emergency/shelters" },
+          { "title": "ハザードマップ", "href": "/utashinai/emergency/hazard-map" },
+          { "title": "防災メール登録", "href": "/utashinai/emergency/mail-register" }
+        ]
+      }
+    }
+  ]
+}

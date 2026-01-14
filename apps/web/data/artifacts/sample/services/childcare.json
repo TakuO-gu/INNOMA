@@ -1,0 +1,186 @@
+{
+  "schema_version": "1.0.0",
+  "page_id": "sample-childcare-landing",
+  "municipality_id": "sample",
+  "path": "/services/childcare",
+  "title": "子育て",
+  "description": "サンプル市の子育て支援サービス。保育園、児童手当、母子保健など。",
+  "page_type": "service_landing",
+  "category": "childcare_parenting",
+  "source": {
+    "source_url": "https://www.sample-city.lg.jp/services/childcare",
+    "fetched_at": "2025-01-14T00:00:00.000Z",
+    "content_type": "text/html",
+    "content_hash": "sha256:sample-childcare-landing-hash"
+  },
+  "pipeline": {
+    "run_id": "sample-run-001",
+    "generated_at": "2025-01-14T00:00:00.000Z",
+    "schema_version": "1.0.0",
+    "extractor_version": "1.0.0",
+    "structurer_version": "1.0.0",
+    "transformer_version": "1.0.0",
+    "renderer_version": "1.0.0",
+    "model": "claude-3-opus"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumbs-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          { "label": "ホーム", "href": "/" },
+          { "label": "子育て", "href": "/services/childcare" }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "title": "子育て"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "content": "サンプル市では、子育て世帯を支援するさまざまなサービスを提供しています。保育園・幼稚園、児童手当、子ども医療費助成など、お子さまの成長に合わせた支援をご利用ください。"
+      }
+    },
+    {
+      "id": "top-task-1",
+      "type": "TopTask",
+      "props": {
+        "label": "保育園の入園申込",
+        "href": "https://www.sample-city.lg.jp/services/childcare/nursery/apply",
+        "description": "令和7年度の入園申込を受付中です"
+      }
+    },
+    {
+      "id": "service-link-list-1",
+      "type": "ServiceLinkList",
+      "props": {
+        "sections": [
+          {
+            "title": "保育園・幼稚園",
+            "items": [
+              {
+                "title": "保育園の入園申込",
+                "href": "https://www.sample-city.lg.jp/services/childcare/nursery/apply",
+                "description": "認可保育園への入園手続き"
+              },
+              {
+                "title": "保育園一覧",
+                "href": "https://www.sample-city.lg.jp/services/childcare/nursery/list",
+                "description": "市内の認可保育園・認定こども園"
+              },
+              {
+                "title": "幼稚園の入園",
+                "href": "https://www.sample-city.lg.jp/services/childcare/kindergarten",
+                "description": "市立・私立幼稚園への入園"
+              },
+              {
+                "title": "一時保育",
+                "href": "https://www.sample-city.lg.jp/services/childcare/temporary",
+                "description": "一時的な保育サービス"
+              }
+            ]
+          },
+          {
+            "title": "手当・助成",
+            "items": [
+              {
+                "title": "児童手当",
+                "href": "https://www.sample-city.lg.jp/services/childcare/allowance",
+                "description": "中学校卒業までの子どもを養育する方への手当"
+              },
+              {
+                "title": "子ども医療費助成",
+                "href": "https://www.sample-city.lg.jp/services/childcare/medical",
+                "description": "18歳までの子どもの医療費助成"
+              },
+              {
+                "title": "ひとり親家庭支援",
+                "href": "https://www.sample-city.lg.jp/services/childcare/single-parent",
+                "description": "ひとり親家庭への各種支援"
+              }
+            ]
+          },
+          {
+            "title": "母子保健",
+            "items": [
+              {
+                "title": "妊娠届・母子健康手帳",
+                "href": "https://www.sample-city.lg.jp/services/childcare/pregnancy",
+                "description": "妊娠がわかったら届出を"
+              },
+              {
+                "title": "乳幼児健診",
+                "href": "https://www.sample-city.lg.jp/services/childcare/checkup",
+                "description": "乳幼児健康診査のご案内"
+              },
+              {
+                "title": "予防接種",
+                "href": "https://www.sample-city.lg.jp/services/childcare/vaccination",
+                "description": "子どもの定期予防接種"
+              }
+            ]
+          },
+          {
+            "title": "子育て支援",
+            "items": [
+              {
+                "title": "子育て支援センター",
+                "href": "https://www.sample-city.lg.jp/services/childcare/support-center",
+                "description": "子育て相談、親子の交流の場"
+              },
+              {
+                "title": "学童保育",
+                "href": "https://www.sample-city.lg.jp/services/childcare/after-school",
+                "description": "放課後の子どもの居場所"
+              },
+              {
+                "title": "ファミリーサポート",
+                "href": "https://www.sample-city.lg.jp/services/childcare/family-support",
+                "description": "地域で子育てを支え合う仕組み"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "related-topics-1",
+      "type": "RelatedTopics",
+      "props": {
+        "items": [
+          { "title": "教育・学校", "href": "https://www.sample-city.lg.jp/services/education" },
+          { "title": "福祉・介護", "href": "https://www.sample-city.lg.jp/services/welfare" },
+          { "title": "健康・医療", "href": "https://www.sample-city.lg.jp/services/health" }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "dept": "子ども家庭課",
+        "tel": "03-1234-5679",
+        "email": "kodomo@sample-city.lg.jp",
+        "hours": "平日 8:30〜17:15",
+        "address": "サンプル市役所 2階"
+      }
+    },
+    {
+      "id": "footer-1",
+      "type": "Footer",
+      "props": {}
+    }
+  ],
+  "search": {
+    "summary": "サンプル市の子育て支援サービス。保育園、児童手当、子ども医療費助成、母子保健、子育て支援センターなど。",
+    "keywords": ["子育て", "保育園", "幼稚園", "児童手当", "医療費助成", "母子保健", "予防接種", "学童保育"],
+    "plain_text": "サンプル市の子育て支援サービス。保育園・幼稚園の入園申込、児童手当、子ども医療費助成、ひとり親家庭支援、妊娠届・母子健康手帳、乳幼児健診、予防接種、子育て支援センター、学童保育、ファミリーサポートなど。"
+  }
+}

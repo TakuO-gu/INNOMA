@@ -1,0 +1,113 @@
+{
+  "version": "1.0",
+  "metadata": {
+    "municipality": "歌志内市",
+    "prefecture": "北海道",
+    "sourceUrl": "https://www.city.utashinai.hokkaido.jp/procedures/juminhyo",
+    "extractedAt": "2025-11-25T03:02:35.762Z",
+    "lastModified": "2025-11-01T00:00:00.000Z"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumbs-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          { "label": "ホーム", "href": "/" },
+          { "label": "歌志内市", "href": "/utashinai" },
+          { "label": "各種手続き", "href": "/utashinai/procedures" },
+          { "label": "住民票の写し等の電子申請", "href": "/utashinai/procedures/juminhyo" }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "title": "住民票の写し等の電子申請"
+      }
+    },
+    {
+      "id": "callout-info",
+      "type": "Callout",
+      "props": {
+        "severity": "info",
+        "title": "オンライン申請が可能です",
+        "content": "<p>マイナンバーカードをお持ちの方は、オンラインで住民票の写しを申請できます。</p>"
+      }
+    },
+    {
+      "id": "richtext-desc",
+      "type": "RichText",
+      "props": {
+        "content": "<p>住民票の写し、住民票記載事項証明書の交付を電子申請で行うことができます。申請後、市役所窓口での受け取り、または郵送での受け取りが可能です。</p>"
+      }
+    },
+    {
+      "id": "info-table-1",
+      "type": "InfoTable",
+      "props": {
+        "rows": [
+          { "label": "手数料", "value": "1通 300円" },
+          { "label": "受付窓口", "value": "市民課 戸籍住民係" },
+          { "label": "受付時間", "value": "平日 8:30〜17:15" },
+          { "label": "電話番号", "value": "0125-42-3211（内線112）" },
+          { "label": "オンライン申請", "value": "可能（マイナンバーカード必要）" }
+        ]
+      }
+    },
+    {
+      "id": "procedure-steps-1",
+      "type": "ProcedureSteps",
+      "props": {
+        "steps": [
+          {
+            "title": "必要書類を準備する",
+            "content": "<p>以下の書類をご準備ください。</p>",
+            "checklist": [
+              "本人確認書類（運転免許証、マイナンバーカード等）",
+              "印鑑（認印可）",
+              "手数料（1通300円）"
+            ]
+          },
+          {
+            "title": "申請方法を選択する",
+            "content": "<p>窓口申請またはオンライン申請のいずれかを選択します。オンライン申請にはマイナンバーカードと対応スマートフォンまたはICカードリーダーが必要です。</p>",
+            "checklist": []
+          },
+          {
+            "title": "申請書を提出・送信する",
+            "content": "<p>窓口の場合は市民課窓口へ、オンラインの場合は専用サイトから申請を行います。</p>",
+            "checklist": []
+          },
+          {
+            "title": "証明書を受け取る",
+            "content": "<p>窓口申請の場合は即日交付、オンライン申請の場合は郵送または後日窓口受取となります。</p>",
+            "checklist": []
+          }
+        ]
+      }
+    },
+    {
+      "id": "related-links-1",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          { "title": "戸籍謄本・抄本の請求", "href": "/utashinai/procedures/koseki" },
+          { "title": "印鑑登録証明書の請求", "href": "/utashinai/procedures/inkan" },
+          { "title": "各種届出・手続き一覧", "href": "/utashinai/procedures" }
+        ]
+      }
+    },
+    {
+      "id": "attachments-1",
+      "type": "Attachments",
+      "props": {
+        "items": [
+          { "title": "住民票交付申請書（様式）", "href": "/files/juminhyo-shinsei.pdf", "content_type": "application/pdf" },
+          { "title": "委任状（様式）", "href": "/files/inin-jo.pdf", "content_type": "application/pdf" }
+        ]
+      }
+    }
+  ]
+}
