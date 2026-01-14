@@ -6,6 +6,10 @@ from pathlib import Path
 
 from .crawler import WebCrawler
 
+# プロジェクトルートからの相対パス
+PROJECT_ROOT = Path(__file__).resolve().parents[4]
+DEFAULT_OUTPUT_DIR = PROJECT_ROOT / 'data' / 'crawl'
+
 
 def main():
     """メイン関数"""
@@ -20,8 +24,8 @@ def main():
 
     parser.add_argument(
         '-o', '--output',
-        default='output',
-        help='出力ディレクトリ (デフォルト: output)'
+        default=str(DEFAULT_OUTPUT_DIR),
+        help=f'出力ディレクトリ (デフォルト: {DEFAULT_OUTPUT_DIR})'
     )
 
     parser.add_argument(

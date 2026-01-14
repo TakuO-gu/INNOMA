@@ -32,3 +32,5 @@ Thumbs.db
 # Crawler outputs
 downloaded_images/
 crawl_output/
+data/crawl/*
+!data/crawl/.gitkeep
