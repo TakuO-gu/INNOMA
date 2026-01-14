@@ -1,0 +1,107 @@
+{
+  "metadata": {
+    "sourceUrl": "https://www.city.utashinai.hokkaido.jp/",
+    "extractedAt": "2025-11-25T03:02:35.762Z",
+    "municipality": "歌志内市",
+    "prefecture": "北海道",
+    "confidence": 0.8,
+    "llmModel": "gpt-4o",
+    "processingTimeMs": 9794
+  },
+  "news": [
+    {
+      "date": "2025-11-21",
+      "title": "水痘（みずぼうそう）の注意報が発令されました",
+      "url": "https://www.city.utashinai.hokkaido.jp/",
+      "importance": "high"
+    },
+    {
+      "date": "2025-11-20",
+      "title": "市長交際費",
+      "url": "https://www.city.utashinai.hokkaido.jp/",
+      "importance": "low"
+    },
+    {
+      "date": "2025-11-11",
+      "title": "児童館等一元化施設建設事業の進捗状況について",
+      "url": "https://www.city.utashinai.hokkaido.jp/",
+      "importance": "medium"
+    },
+    {
+      "date": "2025-11-11",
+      "title": "認定こども園（あおぞら）の園児の作品展示",
+      "url": "https://www.city.utashinai.hokkaido.jp/",
+      "importance": "low"
+    },
+    {
+      "date": "2025-11-07",
+      "title": "インフルエンザ警報が発令されました",
+      "url": "https://www.city.utashinai.hokkaido.jp/",
+      "importance": "high"
+    },
+    {
+      "date": "2025-11-01",
+      "title": "住民票の写し等の電子申請",
+      "url": "https://www.city.utashinai.hokkaido.jp/",
+      "importance": "medium"
+    },
+    {
+      "date": "2025-10-30",
+      "title": "議会だより",
+      "url": "https://www.city.utashinai.hokkaido.jp/",
+      "importance": "low"
+    },
+    {
+      "date": "2025-10-30",
+      "title": "気象情報",
+      "url": "https://www.city.utashinai.hokkaido.jp/",
+      "importance": "medium"
+    },
+    {
+      "date": "2025-10-24",
+      "title": "地方公営企業の抜本的な改革等の取組状況調査に係る公表について",
+      "url": "https://www.city.utashinai.hokkaido.jp/",
+      "importance": "low"
+    }
+  ],
+  "events": [
+    {
+      "date": "2025-11-19",
+      "title": "1年生が「あきパーク」でおもてなし",
+      "url": "https://www.city.utashinai.hokkaido.jp/",
+      "importance": "low"
+    }
+  ],
+  "procedures": [
+    {
+      "title": "住民票の写し等の電子申請",
+      "url": "https://www.city.utashinai.hokkaido.jp/",
+      "importance": "medium"
+    },
+    {
+      "title": "国土利用計画法の届出",
+      "url": "https://www.city.utashinai.hokkaido.jp/",
+      "importance": "low"
+    },
+    {
+      "title": "農地の売買等（農地法第３条）の申請、許可について",
+      "url": "https://www.city.utashinai.hokkaido.jp/",
+      "importance": "low"
+    }
+  ],
+  "facilities": [
+    {
+      "title": "歌志内市立病院にリハビリテーション室が再開しました。",
+      "url": "https://www.city.utashinai.hokkaido.jp/",
+      "importance": "medium"
+    }
+  ],
+  "contacts": [],
+  "emergencyInfo": [
+    {
+      "title": "【重要】避難所について",
+      "url": "https://www.city.utashinai.hokkaido.jp/",
+      "importance": "high"
+    }
+  ]
+}
