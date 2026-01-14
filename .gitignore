@@ -28,3 +28,7 @@ Thumbs.db
 
 # Database files
 *.db
+
+# Crawler outputs
+downloaded_images/
+crawl_output/
