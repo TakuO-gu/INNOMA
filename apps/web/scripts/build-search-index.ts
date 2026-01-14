@@ -1,0 +1,300 @@
+#!/usr/bin/env npx tsx
+/**
+ * 検索インデックス生成スクリプト
+ *
+ * Artifactを走査してsearch.jsonlを生成
+ *
+ * Usage:
+ *   npx tsx scripts/build-search-index.ts [input-dir] [output-file]
+ *   npm run build:search-index
+ *
+ * 出力形式 (JSONL):
+ *   {"id": "tokyo-shibuya/procedures/juminhyo", "municipality": "渋谷区", "title": "住民票", "content": "...", "type": "procedure", "keywords": [...]}
+ *
+ * インデックスキー設計:
+ *   - id: {municipality_id}/{path} （グローバルユニーク）
+ *   - municipality: 自治体名（自治体内検索用）
+ *   - type: コンテンツタイプ（フィルタ用）
+ *   - keywords: 検索用キーワード（将来の全文検索用）
+ */
+
+import fs from "node:fs/promises";
+import path from "node:path";
+import type { InnomaArtifact, InnomaBlock } from "../lib/artifact/types";
+
+// 検索インデックスエントリの型
+interface SearchIndexEntry {
+  /** グローバルユニークID: {municipality_id}/{path} */
+  id: string;
+  /** 自治体名（自治体内検索用） */
+  municipality: string;
+  /** 都道府県（横断検索用） */
+  prefecture?: string;
+  /** タイトル */
+  title: string;
+  /** 概要テキスト */
+  content: string;
+  /** コンテンツタイプ */
+  type: "page" | "procedure" | "emergency" | "info";
+  /** 検索用キーワード */
+  keywords: string[];
+  /** 最終更新日 */
+  lastModified?: string;
+  /** Emergency優先度 */
+  priority?: "critical" | "high" | "medium" | "low";
+}
+
+/**
+ * RichTextContentからプレーンテキストを抽出
+ */
+function extractPlainText(content: string): string {
+  // HTMLタグを除去
+  return content
+    .replace(/<[^>]+>/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+/**
+ * ブロックからタイトルを抽出
+ */
+function extractTitle(blocks: InnomaBlock[]): string {
+  const titleBlock = blocks.find((b) => b.type === "Title");
+  if (titleBlock && titleBlock.type === "Title") {
+    return titleBlock.props.title;
+  }
+  return "無題";
+}
+
+/**
+ * ブロックからコンテンツタイプを推定
+ */
+function inferContentType(blocks: InnomaBlock[]): SearchIndexEntry["type"] {
+  if (blocks.some((b) => b.type === "Emergency")) {
+    return "emergency";
+  }
+  if (blocks.some((b) => b.type === "ProcedureSteps")) {
+    return "procedure";
+  }
+  return "page";
+}
+
+/**
+ * ブロックから概要テキストを生成
+ */
+function extractSummary(blocks: InnomaBlock[], maxLength = 200): string {
+  const textParts: string[] = [];
+
+  for (const block of blocks) {
+    switch (block.type) {
+      case "RichText":
+        textParts.push(extractPlainText(block.props.content));
+        break;
+      case "Callout":
+        if (block.props.title) {
+          textParts.push(block.props.title);
+        }
+        textParts.push(extractPlainText(block.props.content));
+        break;
+      case "InfoTable":
+        for (const row of block.props.rows) {
+          textParts.push(`${row.label}: ${extractPlainText(row.value)}`);
+        }
+        break;
+      case "ProcedureSteps":
+        for (const step of block.props.steps) {
+          textParts.push(step.title);
+          textParts.push(extractPlainText(step.content));
+        }
+        break;
+      case "Emergency":
+        textParts.push(block.props.title);
+        textParts.push(extractPlainText(block.props.content));
+        break;
+    }
+  }
+
+  const combined = textParts.join(" ").slice(0, maxLength);
+  return combined.length === maxLength ? combined + "..." : combined;
+}
+
+/**
+ * ブロックからキーワードを抽出
+ */
+function extractKeywords(blocks: InnomaBlock[]): string[] {
+  const keywords = new Set<string>();
+
+  for (const block of blocks) {
+    switch (block.type) {
+      case "Title":
+        keywords.add(block.props.title);
+        break;
+      case "Breadcrumbs":
+        for (const item of block.props.items) {
+          keywords.add(item.label);
+        }
+        break;
+      case "RelatedLinks":
+        for (const item of block.props.items) {
+          keywords.add(item.title);
+        }
+        break;
+      case "ProcedureSteps":
+        for (const step of block.props.steps) {
+          keywords.add(step.title);
+          if (step.checklist) {
+            for (const item of step.checklist) {
+              keywords.add(item);
+            }
+          }
+        }
+        break;
+      case "Emergency":
+        keywords.add(block.props.title);
+        keywords.add(block.props.type);
+        if (block.props.affectedAreas) {
+          for (const area of block.props.affectedAreas) {
+            keywords.add(area);
+          }
+        }
+        break;
+    }
+  }
+
+  return Array.from(keywords);
+}
+
+/**
+ * Emergency優先度を取得
+ */
+function getEmergencyPriority(blocks: InnomaBlock[]): SearchIndexEntry["priority"] {
+  const emergencyBlock = blocks.find((b) => b.type === "Emergency");
+  if (emergencyBlock && emergencyBlock.type === "Emergency") {
+    return emergencyBlock.props.severity;
+  }
+  return undefined;
+}
+
+/**
+ * JSONファイルを再帰的に検索
+ */
+async function findJsonFiles(dir: string): Promise<string[]> {
+  const files: string[] = [];
+
+  try {
+    const entries = await fs.readdir(dir, { withFileTypes: true });
+
+    for (const entry of entries) {
+      const fullPath = path.join(dir, entry.name);
+
+      if (entry.isDirectory()) {
+        const subFiles = await findJsonFiles(fullPath);
+        files.push(...subFiles);
+      } else if (entry.isFile() && entry.name.endsWith(".json")) {
+        files.push(fullPath);
+      }
+    }
+  } catch (error) {
+    if ((error as NodeJS.ErrnoException).code !== "ENOENT") {
+      throw error;
+    }
+  }
+
+  return files;
+}
+
+/**
+ * Artifactファイルからインデックスエントリを生成
+ */
+async function processArtifact(
+  filePath: string,
+  baseDir: string
+): Promise<SearchIndexEntry | null> {
+  try {
+    const content = await fs.readFile(filePath, "utf-8");
+    const artifact: InnomaArtifact = JSON.parse(content);
+
+    // IDを生成（ベースディレクトリからの相対パス、拡張子なし）
+    const relativePath = path.relative(baseDir, filePath);
+    const id = relativePath.replace(/\.json$/, "");
+
+    // 自治体IDを抽出（最初のディレクトリ名）
+    const municipalityId = id.split("/")[0];
+
+    const entry: SearchIndexEntry = {
+      id,
+      municipality: artifact.metadata?.municipality || municipalityId,
+      prefecture: artifact.metadata?.prefecture,
+      title: extractTitle(artifact.blocks),
+      content: extractSummary(artifact.blocks),
+      type: inferContentType(artifact.blocks),
+      keywords: extractKeywords(artifact.blocks),
+      lastModified: artifact.metadata?.lastModified,
+      priority: getEmergencyPriority(artifact.blocks),
+    };
+
+    return entry;
+  } catch (error) {
+    console.error(`Error processing ${filePath}:`, (error as Error).message);
+    return null;
+  }
+}
+
+/**
+ * メイン処理
+ */
+async function main(): Promise<void> {
+  const inputDir = process.argv[2] || "./data/artifacts";
+  const outputFile = process.argv[3] || "./data/search.jsonl";
+
+  console.log(`\n🔍 Building search index from: ${inputDir}\n`);
+
+  const files = await findJsonFiles(inputDir);
+
+  if (files.length === 0) {
+    console.log("No artifact files found.");
+    return;
+  }
+
+  console.log(`Found ${files.length} artifact files.`);
+
+  const entries: SearchIndexEntry[] = [];
+
+  for (const file of files) {
+    const entry = await processArtifact(file, inputDir);
+    if (entry) {
+      entries.push(entry);
+      console.log(`✅ ${entry.id} (${entry.type})`);
+    }
+  }
+
+  // 出力ディレクトリを作成
+  await fs.mkdir(path.dirname(outputFile), { recursive: true });
+
+  // JSONL形式で出力
+  const jsonlContent = entries.map((e) => JSON.stringify(e)).join("\n");
+  await fs.writeFile(outputFile, jsonlContent + "\n", "utf-8");
+
+  console.log(`\n📊 Results:`);
+  console.log(`  Total entries: ${entries.length}`);
+  console.log(`  By type:`);
+
+  const byType = entries.reduce(
+    (acc, e) => {
+      acc[e.type] = (acc[e.type] || 0) + 1;
+      return acc;
+    },
+    {} as Record<string, number>
+  );
+
+  for (const [type, count] of Object.entries(byType)) {
+    console.log(`    ${type}: ${count}`);
+  }
+
+  console.log(`\n✅ Search index written to: ${outputFile}\n`);
+}
+
+main().catch((error) => {
+  console.error("Build failed:", error);
+  process.exit(1);
+});
