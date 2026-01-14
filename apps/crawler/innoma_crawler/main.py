@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """CLIエントリーポイント"""
 import argparse
+import os
 import sys
 from pathlib import Path
 
@@ -42,6 +43,25 @@ def main():
         help='リクエスト間の待機時間秒数 (デフォルト: 0.5)'
     )
 
+    # Revalidate関連オプション
+    parser.add_argument(
+        '-m', '--municipality',
+        default=None,
+        help='自治体ID (revalidate時に使用、例: tokyo-shibuya)'
+    )
+
+    parser.add_argument(
+        '--revalidate-url',
+        default=os.environ.get('REVALIDATE_URL'),
+        help='Next.js revalidate API の URL (環境変数 REVALIDATE_URL で設定可)'
+    )
+
+    parser.add_argument(
+        '--revalidate-secret',
+        default=os.environ.get('REVALIDATE_SECRET'),
+        help='revalidate API の認証シークレット (環境変数 REVALIDATE_SECRET で設定可)'
+    )
+
     args = parser.parse_args()
 
     # URLバリデーション
@@ -57,7 +77,10 @@ def main():
             start_url=args.start_url,
             output_dir=args.output,
             timeout=args.timeout,
-            delay=args.delay
+            delay=args.delay,
+            municipality_id=args.municipality,
+            revalidate_url=args.revalidate_url,
+            revalidate_secret=args.revalidate_secret
         )
         crawler.crawl()
     except KeyboardInterrupt:

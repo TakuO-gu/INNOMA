@@ -4,7 +4,7 @@ import json
 import os
 import time
 from collections import deque
-from typing import Set, Deque, Optional
+from typing import Set, Deque, Optional, List
 from pathlib import Path
 
 import requests
@@ -18,6 +18,7 @@ from .url_normalizer import (
     should_skip_url
 )
 from .dom_converter import convert_html_to_dom
+from .revalidate import RevalidateClient, RevalidateResult
 
 
 class WebCrawler:
@@ -28,7 +29,10 @@ class WebCrawler:
         start_url: str,
         output_dir: str = 'output',
         timeout: int = 10,
-        delay: float = 0.5
+        delay: float = 0.5,
+        municipality_id: Optional[str] = None,
+        revalidate_url: Optional[str] = None,
+        revalidate_secret: Optional[str] = None
     ):
         """
         Args:
@@ -36,20 +40,33 @@ class WebCrawler:
             output_dir: JSON出力ディレクトリ
             timeout: HTTPリクエストタイムアウト(秒)
             delay: リクエスト間の待機時間(秒)
+            municipality_id: 自治体ID（revalidate時に使用）
+            revalidate_url: Next.js revalidate API の URL
+            revalidate_secret: revalidate API の認証シークレット
         """
         self.start_url = normalize_url(start_url)
         self.output_dir = Path(output_dir)
         self.timeout = timeout
         self.delay = delay
+        self.municipality_id = municipality_id
 
         # クロール状態管理
         self.visited_urls: Set[str] = set()
         self.url_queue: Deque[str] = deque([self.start_url])
 
+        # 更新されたパスを記録（revalidate用）
+        self.updated_paths: List[str] = []
+
         # 統計情報
         self.total_crawled = 0
         self.total_skipped = 0
         self.total_errors = 0
+
+        # Revalidate クライアント
+        self.revalidate_client = RevalidateClient(
+            base_url=revalidate_url,
+            secret=revalidate_secret
+        )
 
         # 出力ディレクトリ作成
         self.output_dir.mkdir(parents=True, exist_ok=True)
@@ -82,6 +99,9 @@ class WebCrawler:
         print(f"  取得成功: {self.total_crawled}件")
         print(f"  スキップ: {self.total_skipped}件")
         print(f"  エラー: {self.total_errors}件")
+
+        # Artifact更新をNext.jsに通知
+        self._notify_revalidate()
 
     def _crawl_page(self, url: str) -> None:
         """
@@ -129,6 +149,11 @@ class WebCrawler:
 
             # JSON保存
             self._save_json(url, dom_data)
+
+            # revalidate用にパスを記録
+            if self.municipality_id:
+                artifact_path = f"/{self.municipality_id}/{self._url_to_filename(url).replace('.json', '')}"
+                self.updated_paths.append(artifact_path)
 
             self.total_crawled += 1
             print(f"  ✓ 保存完了")
@@ -215,3 +240,44 @@ class WebCrawler:
         # URLをSHA256ハッシュ化
         url_hash = hashlib.sha256(url.encode('utf-8')).hexdigest()[:16]
         return f"{url_hash}.json"
+
+    def _notify_revalidate(self) -> Optional[RevalidateResult]:
+        """
+        Next.jsにArtifact更新を通知
+
+        Returns:
+            RevalidateResult or None
+        """
+        if not self.revalidate_client.is_configured:
+            print("\n⚠ Revalidate: 未設定のためスキップ")
+            return None
+
+        if not self.updated_paths and not self.municipality_id:
+            print("\n⚠ Revalidate: 更新パスがないためスキップ")
+            return None
+
+        print("\n" + "-" * 60)
+        print("Next.js キャッシュ再検証")
+
+        # 方法1: 個別パスを再検証（パスが少ない場合）
+        # 方法2: プレフィックスで一括無効化（パスが多い場合）
+        if self.municipality_id and len(self.updated_paths) > 10:
+            # プレフィックスで一括無効化
+            print(f"  方式: プレフィックス一括 ({self.municipality_id}/)")
+            result = self.revalidate_client.invalidate_prefix(f"{self.municipality_id}/")
+        elif self.updated_paths:
+            # 個別パスを再検証
+            print(f"  方式: 個別パス ({len(self.updated_paths)}件)")
+            result = self.revalidate_client.revalidate_paths(self.updated_paths)
+        else:
+            return None
+
+        if result.success:
+            print(f"  ✓ 再検証完了")
+            print(f"    パス: {len(result.revalidated_paths)}件")
+            print(f"    キー: {len(result.invalidated_keys)}件")
+            print(f"    プレフィックス: {result.invalidated_by_prefix}件")
+        else:
+            print(f"  ✗ 再検証失敗: {result.error}")
+
+        return result
