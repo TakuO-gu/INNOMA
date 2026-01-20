@@ -96,11 +96,6 @@
     margin-top: 1rem;
   }
 
-  /* div要素に上下16pxのマージン（ネストされたdivも含む） */
-  .dads-page div {
-    @apply my-4;
-  }
-
   /* p, ul, ol の間に16px (mt-4相当) */
   .dads-page p + p,
   .dads-page p + ul,
@@ -143,6 +138,31 @@
   /* H4直後のコンテンツ: 24px */
   .dads-page h4 + * {
     margin-top: 24px;
+  }
+
+  /* コンポーネント内のheadingは除外 */
+  .no-heading-margin h2,
+  .no-heading-margin h3,
+  .no-heading-margin h4,
+  .topic-list h2,
+  .topic-list h3,
+  .topic-list h4,
+  .topic-grid h2,
+  .topic-grid h3,
+  .topic-grid h4 {
+    margin-top: 0;
+  }
+
+  .no-heading-margin h2 + *,
+  .no-heading-margin h3 + *,
+  .no-heading-margin h4 + *,
+  .topic-list h2 + *,
+  .topic-list h3 + *,
+  .topic-list h4 + *,
+  .topic-grid h2 + *,
+  .topic-grid h3 + *,
+  .topic-grid h4 + * {
+    margin-top: 0;
   }
 
   /* 最初の見出しは上余白なし */

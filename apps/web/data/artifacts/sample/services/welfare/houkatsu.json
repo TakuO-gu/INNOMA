@@ -7,7 +7,10 @@
   "description": "地域包括支援センターの役割、相談内容、利用方法について",
   "content_type": "guide",
   "service_category": "welfare",
-  "audience": ["residents", "elderly"],
+  "audience": [
+    "residents",
+    "elderly"
+  ],
   "topic": [],
   "source": {
     "source_url": "template://sample/services/welfare/houkatsu",
@@ -25,10 +28,22 @@
       "type": "Breadcrumbs",
       "props": {
         "items": [
-          { "label": "ホーム", "href": "/" },
-          { "label": "くらしの情報", "href": "/topics" },
-          { "label": "福祉・介護", "href": "/topics/welfare" },
-          { "label": "地域包括支援センター", "href": "/services/welfare/houkatsu" }
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "くらしの情報",
+            "href": "/topics"
+          },
+          {
+            "label": "福祉・介護",
+            "href": "/topics/welfare"
+          },
+          {
+            "label": "地域包括支援センター",
+            "href": "/services/welfare/houkatsu"
+          }
         ]
       }
     },
@@ -51,11 +66,17 @@
       "type": "RichText",
       "props": {
         "content": [
-          { "type": "heading", "level": 2, "text": "地域包括支援センターとは" },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "地域包括支援センターとは"
+          },
           {
             "type": "paragraph",
             "runs": [
-              { "text": "地域包括支援センターは、介護保険法に基づいて設置された、高齢者のための総合相談窓口です。保健師、社会福祉士、主任ケアマネジャーなどの専門職が配置され、様々な相談に応じています。" }
+              {
+                "text": "地域包括支援センターは、介護保険法に基づいて設置された、高齢者のための総合相談窓口です。保健師、社会福祉士、主任ケアマネジャーなどの専門職が配置され、様々な相談に応じています。"
+              }
             ]
           },
           {
@@ -65,10 +86,13 @@
               {
                 "type": "paragraph",
                 "runs": [
-                  { "text": "相談は無料です。お気軽にご相談ください。" }
+                  {
+                    "text": "相談は無料です。お気軽にご相談ください。"
+                  }
                 ]
               }
-            ]
+            ],
+            "title": "お知らせ"
           }
         ]
       }
@@ -78,45 +102,173 @@
       "type": "RichText",
       "props": {
         "content": [
-          { "type": "heading", "level": 2, "text": "相談できること" },
-          { "type": "heading", "level": 3, "text": "介護に関すること" },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "相談できること"
+          },
+          {
+            "type": "heading",
+            "level": 3,
+            "text": "介護に関すること"
+          },
           {
             "type": "list",
             "ordered": false,
             "items": [
-              [{ "type": "paragraph", "runs": [{ "text": "介護保険の申請方法がわからない" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "介護サービスを利用したい" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "家族の介護が大変で困っている" }] }]
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "介護保険の申請方法がわからない"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "介護サービスを利用したい"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "家族の介護が大変で困っている"
+                    }
+                  ]
+                }
+              ]
             ]
           },
-          { "type": "heading", "level": 3, "text": "健康に関すること" },
+          {
+            "type": "heading",
+            "level": 3,
+            "text": "健康に関すること"
+          },
           {
             "type": "list",
             "ordered": false,
             "items": [
-              [{ "type": "paragraph", "runs": [{ "text": "もの忘れが気になる" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "体力の衰えを感じる" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "介護予防のための活動に参加したい" }] }]
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "もの忘れが気になる"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "体力の衰えを感じる"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "介護予防のための活動に参加したい"
+                    }
+                  ]
+                }
+              ]
             ]
           },
-          { "type": "heading", "level": 3, "text": "生活に関すること" },
+          {
+            "type": "heading",
+            "level": 3,
+            "text": "生活に関すること"
+          },
           {
             "type": "list",
             "ordered": false,
             "items": [
-              [{ "type": "paragraph", "runs": [{ "text": "一人暮らしで不安がある" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "お金の管理が難しくなってきた" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "近所に気になる高齢者がいる" }] }]
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "一人暮らしで不安がある"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "お金の管理が難しくなってきた"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "近所に気になる高齢者がいる"
+                    }
+                  ]
+                }
+              ]
             ]
           },
-          { "type": "heading", "level": 3, "text": "権利擁護に関すること" },
+          {
+            "type": "heading",
+            "level": 3,
+            "text": "権利擁護に関すること"
+          },
           {
             "type": "list",
             "ordered": false,
             "items": [
-              [{ "type": "paragraph", "runs": [{ "text": "成年後見制度について知りたい" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "悪質商法の被害にあった" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "虐待を受けている・見かけた" }] }]
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "成年後見制度について知りたい"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "悪質商法の被害にあった"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "虐待を受けている・見かけた"
+                    }
+                  ]
+                }
+              ]
             ]
           }
         ]
@@ -127,33 +279,61 @@
       "type": "RichText",
       "props": {
         "content": [
-          { "type": "heading", "level": 2, "text": "主な業務" },
-          { "type": "heading", "level": 3, "text": "総合相談支援" },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "主な業務"
+          },
+          {
+            "type": "heading",
+            "level": 3,
+            "text": "総合相談支援"
+          },
           {
             "type": "paragraph",
             "runs": [
-              { "text": "高齢者やその家族からの相談に応じ、適切なサービスや機関につなぎます。" }
+              {
+                "text": "高齢者やその家族からの相談に応じ、適切なサービスや機関につなぎます。"
+              }
             ]
           },
-          { "type": "heading", "level": 3, "text": "介護予防ケアマネジメント" },
+          {
+            "type": "heading",
+            "level": 3,
+            "text": "介護予防ケアマネジメント"
+          },
           {
             "type": "paragraph",
             "runs": [
-              { "text": "要支援1・2の方や、介護予防・日常生活支援総合事業対象者のケアプランを作成します。" }
+              {
+                "text": "要支援1・2の方や、介護予防・日常生活支援総合事業対象者のケアプランを作成します。"
+              }
             ]
           },
-          { "type": "heading", "level": 3, "text": "権利擁護" },
+          {
+            "type": "heading",
+            "level": 3,
+            "text": "権利擁護"
+          },
           {
             "type": "paragraph",
             "runs": [
-              { "text": "高齢者虐待の防止・早期発見、成年後見制度の利用支援、消費者被害の防止などを行います。" }
+              {
+                "text": "高齢者虐待の防止・早期発見、成年後見制度の利用支援、消費者被害の防止などを行います。"
+              }
             ]
           },
-          { "type": "heading", "level": 3, "text": "包括的・継続的ケアマネジメント支援" },
+          {
+            "type": "heading",
+            "level": 3,
+            "text": "包括的・継続的ケアマネジメント支援"
+          },
           {
             "type": "paragraph",
             "runs": [
-              { "text": "地域のケアマネジャーへの支援や、医療・介護の連携を図ります。" }
+              {
+                "text": "地域のケアマネジャーへの支援や、医療・介護の連携を図ります。"
+              }
             ]
           }
         ]
@@ -164,11 +344,17 @@
       "type": "RichText",
       "props": {
         "content": [
-          { "type": "heading", "level": 2, "text": "市内の地域包括支援センター" },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "市内の地域包括支援センター"
+          },
           {
             "type": "paragraph",
             "runs": [
-              { "text": "市内には5か所か所の地域包括支援センターがあります。お住まいの地区を担当するセンターにご相談ください。" }
+              {
+                "text": "市内には5か所か所の地域包括支援センターがあります。お住まいの地区を担当するセンターにご相談ください。"
+              }
             ]
           }
         ]
@@ -188,9 +374,18 @@
       "type": "RelatedLinks",
       "props": {
         "items": [
-          { "title": "介護保険", "href": "/services/welfare/kaigo" },
-          { "title": "高齢者福祉", "href": "/services/welfare/koureisha" },
-          { "title": "成年後見制度", "href": "/services/welfare/kouken" }
+          {
+            "title": "介護保険",
+            "href": "/services/welfare/kaigo"
+          },
+          {
+            "title": "高齢者福祉",
+            "href": "/services/welfare/koureisha"
+          },
+          {
+            "title": "成年後見制度",
+            "href": "/services/welfare/kouken"
+          }
         ]
       }
     },
@@ -208,7 +403,14 @@
   ],
   "search": {
     "summary": "地域包括支援センターの案内。高齢者の介護・福祉・健康の総合相談窓口。",
-    "keywords": ["地域包括支援センター", "高齢者", "介護相談", "介護予防", "権利擁護", "ケアマネジメント"],
+    "keywords": [
+      "地域包括支援センター",
+      "高齢者",
+      "介護相談",
+      "介護予防",
+      "権利擁護",
+      "ケアマネジメント"
+    ],
     "plain_text": "地域包括支援センター。高齢者の総合相談窓口。介護、健康、生活、権利擁護の相談に対応。相談無料。要支援者のケアプラン作成も実施。"
   }
 }

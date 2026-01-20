@@ -4,13 +4,12 @@ import React from "react";
 import NextLink from "next/link";
 import {
   Link,
-  NotificationBanner,
-  NotificationBannerBody,
 } from "@/components/dads";
 import type { RichTextContent } from "@/lib/artifact/types";
 import type { RichTextNodeType } from "@/lib/artifact/schema";
 import { useMunicipality, prefixInternalLink } from "./MunicipalityContext";
 import type { RichTextNode } from "./types";
+import { renderNotificationBanner } from "./components/NotificationBannerRenderer";
 
 export function RichTextRenderer({ content }: { content: RichTextContent | RichTextNodeType[] }) {
   const { municipalityId } = useMunicipality();
@@ -101,23 +100,17 @@ function renderNode(node: RichTextNode, key: number, municipalityId: string): Re
     }
 
     case "callout": {
-      const severityMap: Record<string, "info1" | "info2" | "warning" | "error" | "success"> = {
-        info: "info1",
-        warning: "warning",
-        danger: "error",
-      };
-      const type = severityMap[node.severity || "info"] || "info1";
+      // 共通のrenderNotificationBanner関数を使用
       return (
-        <NotificationBanner
-          key={key}
-          bannerStyle="standard"
-          type={type}
-          title={node.title || ""}
-        >
-          <NotificationBannerBody className="col-span-2 col-start-2">
-            {node.content?.map((subNode, subIdx) => renderNode(subNode, subIdx, municipalityId))}
-          </NotificationBannerBody>
-        </NotificationBanner>
+        <React.Fragment key={key}>
+          {renderNotificationBanner({
+            severity: node.severity as "info" | "warning" | "danger" | "success",
+            title: node.title,
+            content: node.content as RichTextNodeType[] | undefined,
+            municipalityId,
+            contentRenderer: (content) => content.map((subNode, subIdx) => renderNode(subNode as RichTextNode, subIdx, municipalityId)),
+          })}
+        </React.Fragment>
       );
     }
 
