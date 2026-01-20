@@ -37,7 +37,7 @@ const PREFECTURES = Array.from(new Set(MUNICIPALITIES.map((m) => m.prefecture)))
 function MunicipalityCard({ municipality }: { municipality: Municipality }) {
   return (
     <NextLink
-      href={`/municipalities/${municipality.id}`}
+      href={`/${municipality.id}`}
       className="block bg-white rounded-xl border border-solid-gray-300 hover:border-blue-900 hover:shadow-lg transition-all overflow-hidden focus-visible:outline focus-visible:outline-4 focus-visible:outline-black focus-visible:bg-yellow-300 focus-visible:rounded"
     >
       <div className="p-6">

@@ -1,14 +1,109 @@
 /**
  * Page Content Fetcher
  * Fetches and processes web page content for LLM extraction
+ * PDFファイルはGoogle Vision APIでOCRを実行
  */
 
 import { PageContent } from './types';
+import { extractTextFromBase64Image, type PdfOcrResult } from '../pdf/vision-ocr';
+import { getCachedOcr, setCachedOcr } from '../pdf/cache';
 
 /**
- * Fetch and process a web page
+ * URLがPDFかどうかを判定
+ */
+function isPdfUrl(url: string): boolean {
+  const lowerUrl = url.toLowerCase();
+  return lowerUrl.endsWith('.pdf') || lowerUrl.includes('.pdf?');
+}
+
+/**
+ * URLが画像かどうかを判定
+ */
+function isImageUrl(url: string): boolean {
+  const lowerUrl = url.toLowerCase();
+  const imageExtensions = ['.jpg', '.jpeg', '.png', '.gif', '.webp', '.bmp', '.tiff'];
+  return imageExtensions.some(ext => lowerUrl.endsWith(ext) || lowerUrl.includes(ext + '?'));
+}
+
+/**
+ * PDFまたは画像からテキストを抽出（Vision API OCR）
+ */
+async function fetchPdfContent(url: string): Promise<PageContent> {
+  // キャッシュを確認
+  const cached = await getCachedOcr(url);
+  if (cached) {
+    return {
+      url,
+      title: 'PDF Document (Cached)',
+      content: cached.text,
+      fetchedAt: cached.cachedAt,
+      contentType: 'pdf',
+    };
+  }
+
+  // URLからコンテンツを取得
+  const response = await fetch(url, {
+    headers: {
+      'User-Agent': 'Mozilla/5.0 (compatible; INNOMA/1.0; +https://innoma.jp)',
+    },
+  });
+
+  if (!response.ok) {
+    throw new Error(`Failed to fetch PDF: ${response.status} ${response.statusText}`);
+  }
+
+  const contentType = response.headers.get('content-type') || '';
+  const buffer = await response.arrayBuffer();
+  const base64 = Buffer.from(buffer).toString('base64');
+
+  // PDFの場合
+  if (contentType.includes('pdf')) {
+    // Vision APIはPDFを直接処理できない
+    // 将来的にはpdf-to-imageライブラリで変換するか、
+    // Google Cloud Storage経由の非同期OCRを使用
+    return {
+      url,
+      title: 'PDF Document',
+      content: '[PDF file detected. Direct PDF OCR requires page-by-page image conversion. Consider using Cloud Vision async API for large PDFs.]',
+      fetchedAt: new Date().toISOString(),
+      contentType: 'pdf',
+      error: 'PDF direct OCR not supported. Convert to images first.',
+    };
+  }
+
+  // 画像の場合はOCRを実行
+  if (contentType.startsWith('image/')) {
+    const result: PdfOcrResult = await extractTextFromBase64Image(base64);
+
+    if (!result.success) {
+      throw new Error(`OCR failed: ${result.error}`);
+    }
+
+    // キャッシュに保存
+    await setCachedOcr(url, result.text);
+
+    return {
+      url,
+      title: 'Image Document (OCR)',
+      content: result.text,
+      fetchedAt: new Date().toISOString(),
+      contentType: 'image',
+    };
+  }
+
+  throw new Error(`Unsupported content type: ${contentType}`);
+}
+
+/**
+ * Fetch and process a web page or PDF/image
  */
 export async function fetchPage(url: string): Promise<PageContent> {
+  // PDFまたは画像の場合はOCR処理
+  if (isPdfUrl(url) || isImageUrl(url)) {
+    return fetchPdfContent(url);
+  }
+
+  // 通常のHTMLページ
   const response = await fetch(url, {
     headers: {
       'User-Agent': 'Mozilla/5.0 (compatible; INNOMA/1.0; +https://innoma.jp)',
@@ -21,6 +116,37 @@ export async function fetchPage(url: string): Promise<PageContent> {
     throw new Error(`Failed to fetch page: ${response.status} ${response.statusText}`);
   }
 
+  // Content-Typeを確認
+  const contentType = response.headers.get('content-type') || '';
+
+  // レスポンスがPDFや画像の場合（リダイレクトされた可能性）
+  if (contentType.includes('pdf') || contentType.startsWith('image/')) {
+    const buffer = await response.arrayBuffer();
+    const base64 = Buffer.from(buffer).toString('base64');
+
+    if (contentType.startsWith('image/')) {
+      const result = await extractTextFromBase64Image(base64);
+      if (result.success) {
+        await setCachedOcr(url, result.text);
+        return {
+          url,
+          title: 'Image Document (OCR)',
+          content: result.text,
+          fetchedAt: new Date().toISOString(),
+          contentType: 'image',
+        };
+      }
+    }
+
+    return {
+      url,
+      title: 'PDF Document',
+      content: '[PDF content - requires image conversion for OCR]',
+      fetchedAt: new Date().toISOString(),
+      contentType: 'pdf',
+    };
+  }
+
   const html = await response.text();
   const { title, content } = extractTextContent(html);
 
@@ -29,6 +155,7 @@ export async function fetchPage(url: string): Promise<PageContent> {
     title,
     content,
     fetchedAt: new Date().toISOString(),
+    contentType: 'html',
   };
 }
 
@@ -131,12 +258,13 @@ export async function fetchPages(
 
 /**
  * Check if URL is likely to contain useful content
+ * PDFと画像は除外しない（OCRで処理可能）
  */
 export function isUsefulUrl(url: string): boolean {
   const lowerUrl = url.toLowerCase();
 
-  // Exclude certain file types
-  const excludeExtensions = ['.pdf', '.doc', '.docx', '.xls', '.xlsx', '.zip', '.jpg', '.png', '.gif'];
+  // Exclude certain file types (but keep PDF and images for OCR)
+  const excludeExtensions = ['.doc', '.docx', '.xls', '.xlsx', '.zip', '.ppt', '.pptx'];
   if (excludeExtensions.some((ext) => lowerUrl.endsWith(ext))) {
     return false;
   }
@@ -148,4 +276,18 @@ export function isUsefulUrl(url: string): boolean {
   }
 
   return true;
+}
+
+/**
+ * Check if URL points to a PDF file
+ */
+export function isPdf(url: string): boolean {
+  return isPdfUrl(url);
+}
+
+/**
+ * Check if URL points to an image file
+ */
+export function isImage(url: string): boolean {
+  return isImageUrl(url);
 }

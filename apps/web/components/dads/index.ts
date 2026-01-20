@@ -73,4 +73,14 @@ export { StatusBadge } from './StatusBadge';
 export { SupportText } from './SupportText';
 export { Textarea } from './Textarea';
 export { Ul, ulStyle } from './Ul';
+export {
+  StepNavigation,
+  StepNavigationStep,
+  StepNavigationHeader,
+  StepNavigationNumber,
+  StepNavigationTitle,
+  StepNavigationDescription,
+  StepNavigationStateIcon,
+  StepNavigationStateLabel,
+} from './StepNavigation';
 export { UtilityLink, UtilityLinkExternalLinkIcon, utilityLinkStyle } from './UtilityLink';

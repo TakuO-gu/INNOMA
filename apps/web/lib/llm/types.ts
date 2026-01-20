@@ -32,6 +32,10 @@ export interface PageContent {
   title: string;
   content: string;
   fetchedAt: string;
+  /** コンテンツの種類: html, pdf, image */
+  contentType?: 'html' | 'pdf' | 'image';
+  /** OCR/取得時のエラー（あれば） */
+  error?: string;
 }
 
 /**

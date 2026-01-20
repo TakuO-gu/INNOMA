@@ -24,10 +24,10 @@ export async function generateContent(
   prompt: string,
   config: GenerationConfig = {}
 ): Promise<string> {
-  const apiKey = process.env.GEMINI_API_KEY;
+  const apiKey = process.env.GOOGLE_GEMINI_API_KEY;
 
   if (!apiKey) {
-    throw new Error('GEMINI_API_KEY is not set');
+    throw new Error('GOOGLE_GEMINI_API_KEY is not set');
   }
 
   const url = `${GEMINI_API_URL}/${DEFAULT_MODEL}:generateContent?key=${apiKey}`;

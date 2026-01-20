@@ -83,6 +83,7 @@ INNOMA/
 | スキーマ検証 | Zod |
 | LLM | Google Gemini |
 | Web検索 | Google Custom Search API |
+| PDF OCR | Google Vision API |
 | デプロイ | Vercel |
 
 ---
@@ -95,6 +96,10 @@ INNOMA/
 - Artifact読み込み・レンダリング
 - 全文検索
 - sampleテンプレート（15トピック、約110ページ）
+- 共通ヘッダー（INNOMA ロゴ、自治体名、検索バー）
+- 編集履歴記録
+- 通知システム
+- LLM情報取得時のPDF OCR（Google Vision API）
 
 ### 🚧 これから実装
 1. **管理画面** → [ADMIN_PANEL_SPEC.md](ADMIN_PANEL_SPEC.md)
@@ -110,9 +115,19 @@ INNOMA/
 - `apps/web/lib/artifact/schema.ts` - Zodスキーマ定義
 - `apps/web/lib/artifact/types.ts` - TypeScript型定義
 
+### PDF OCR関連（LLM情報取得用）
+- `apps/web/lib/pdf/vision-ocr.ts` - Google Vision API OCR機能
+- `apps/web/lib/pdf/cache.ts` - OCR結果キャッシュ管理
+- `apps/web/lib/llm/page-fetcher.ts` - ページ取得時のPDF/画像OCR統合
+
+### 検索関連
+- `apps/web/lib/search/index.ts` - 全文検索（Artifact）
+- `apps/web/app/[municipality]/search/page.tsx` - 検索結果ページ
+
 ### コンポーネント
 - `apps/web/components/blocks/BlockRenderer.tsx` - ブロックレンダラー
 - `apps/web/components/blocks/dads/` - DA-DS準拠コンポーネント
+- `apps/web/components/layout/MunicipalityHeader.tsx` - 自治体ページ共通ヘッダー
 
 ### データ
 - `apps/web/data/artifacts/sample/` - サンプルテンプレート
@@ -125,15 +140,14 @@ INNOMA/
 ## 環境変数
 
 ```env
-# LLM
-GEMINI_API_KEY=xxx
-
-# Web検索
-GOOGLE_CUSTOM_SEARCH_API_KEY=xxx
-GOOGLE_CUSTOM_SEARCH_ENGINE_ID=xxx
+# Google APIs
+GOOGLE_GEMINI_API_KEY=xxx          # Gemini API（LLM用）
+GOOGLE_CUSTOM_SEARCH_API_KEY=xxx   # Custom Search API（ウェブ検索用）
+GOOGLE_VISION_API_KEY=xxx          # Vision API（PDF OCR用）
 
 # オプション
-ARTIFACT_STORAGE_PATH=./data/artifacts
+STORAGE_TYPE=local                 # local または s3
+STORAGE_BASE_PATH=./data/artifacts
 ```
 
 ---

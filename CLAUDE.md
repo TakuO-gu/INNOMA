@@ -68,6 +68,17 @@ npm run build            # ビルド確認
 
 ---
 
+## 外部リソース（DADS）
+
+UIコンポーネント実装時はデジタル庁デザインシステム（DADS）を参照する。
+
+| リソース | URL | 用途 |
+|---------|-----|------|
+| DADS Reactコードスニペット | https://design.digital.go.jp/dads/react/ | コンポーネントの使用例・コード例 |
+| Reactコンポーネント実装 | https://github.com/digital-go-jp/design-system-example-components-react/tree/main/src/components | コンポーネントのソースコード参照 |
+
+---
+
 ## 禁止事項
 
 - `archive/` 内のコードを参照・復活させない
