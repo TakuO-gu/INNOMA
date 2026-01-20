@@ -240,10 +240,31 @@
       "type": "Table",
       "props": {
         "rows": [
-          { "label": "医療分", "value": "67万円" },
-          { "label": "後期高齢者支援分", "value": "26万円" },
-          { "label": "介護分", "value": "17万円" },
-          { "label": "合計", "value": "110万円" }
+          { "label": "医療分", "value": "{{kokuho_limit_medical}}" },
+          { "label": "後期高齢者支援分", "value": "{{kokuho_limit_support}}" },
+          { "label": "介護分", "value": "{{kokuho_limit_care}}" },
+          { "label": "合計", "value": "{{kokuho_limit_total}}" }
+        ]
+      }
+    },
+    {
+      "id": "richtext-limits-note",
+      "type": "RichText",
+      "props": {
+        "content": [
+          {
+            "type": "callout",
+            "severity": "info",
+            "title": "保険料上限額について",
+            "content": [
+              {
+                "type": "paragraph",
+                "runs": [
+                  { "text": "保険料の賦課限度額は毎年度見直される場合があります。最新の情報は担当窓口にお問い合わせください。" }
+                ]
+              }
+            ]
+          }
         ]
       }
     },
