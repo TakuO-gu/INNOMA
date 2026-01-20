@@ -57,6 +57,11 @@ export function renderNotificationBanner({
   contentRenderer,
   className,
 }: NotificationBannerProps): React.ReactNode {
+  // contentが空の場合は何も表示しない（特記する内容がない場合の非表示対応）
+  if (!content || content.length === 0) {
+    return null;
+  }
+
   // titleが指定されていない場合はデフォルトタイトルを使用
   const finalTitle = title || DEFAULT_TITLES[severity] || "お知らせ";
   const type = SEVERITY_TO_TYPE_MAP[severity] || "info1";

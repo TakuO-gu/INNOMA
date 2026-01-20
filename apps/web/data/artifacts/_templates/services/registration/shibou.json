@@ -7,7 +7,9 @@
   "description": "ご家族が亡くなられたときの届出方法、必要書類について",
   "content_type": "step_by_step",
   "service_category": "government",
-  "audience": ["residents"],
+  "audience": [
+    "residents"
+  ],
   "topic": [],
   "source": {
     "source_url": "template://sample/services/registration/shibou",
@@ -25,10 +27,22 @@
       "type": "Breadcrumbs",
       "props": {
         "items": [
-          { "label": "ホーム", "href": "/" },
-          { "label": "くらしの情報", "href": "/topics" },
-          { "label": "届出・証明", "href": "/topics/registration" },
-          { "label": "死亡届", "href": "/services/registration/shibou" }
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "くらしの情報",
+            "href": "/topics"
+          },
+          {
+            "label": "届出・証明",
+            "href": "/topics/registration"
+          },
+          {
+            "label": "死亡届",
+            "href": "/services/registration/shibou"
+          }
         ]
       }
     },
@@ -51,13 +65,24 @@
       "type": "RichText",
       "props": {
         "content": [
-          { "type": "heading", "level": 2, "text": "届出期間" },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "届出期間"
+          },
           {
             "type": "paragraph",
             "runs": [
-              { "text": "死亡の事実を知った日から" },
-              { "text": "7日以内", "bold": true },
-              { "text": "に届け出てください。届出が遅れると、過料の対象となる場合があります。" }
+              {
+                "text": "死亡の事実を知った日から"
+              },
+              {
+                "text": "7日以内",
+                "bold": true
+              },
+              {
+                "text": "に届け出てください。届出が遅れると、過料の対象となる場合があります。"
+              }
             ]
           }
         ]
@@ -72,7 +97,9 @@
           {
             "title": "死亡診断書の受け取り",
             "body": "医師から死亡診断書（または死体検案書）を受け取ります。死亡届は死亡診断書と一体の様式です。",
-            "documents": ["死亡診断書"]
+            "documents": [
+              "死亡診断書"
+            ]
           },
           {
             "title": "死亡届の記入",
@@ -82,7 +109,10 @@
           {
             "title": "届出",
             "body": "市区町村の窓口に届出します。死亡届は24時間受け付けています。",
-            "documents": ["死亡届", "届出人の印鑑"]
+            "documents": [
+              "死亡届",
+              "届出人の印鑑"
+            ]
           },
           {
             "title": "火葬許可証の受け取り",
@@ -97,15 +127,55 @@
       "type": "RichText",
       "props": {
         "content": [
-          { "type": "heading", "level": 2, "text": "届出できる人" },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "届出できる人"
+          },
           {
             "type": "list",
             "ordered": false,
             "items": [
-              [{ "type": "paragraph", "runs": [{ "text": "親族" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "同居者" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "家主、地主、土地の管理人" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "後見人、保佐人、補助人、任意後見人" }] }]
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "親族"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "同居者"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "家主、地主、土地の管理人"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "後見人、保佐人、補助人、任意後見人"
+                    }
+                  ]
+                }
+              ]
             ]
           }
         ]
@@ -116,20 +186,53 @@
       "type": "RichText",
       "props": {
         "content": [
-          { "type": "heading", "level": 2, "text": "届出先" },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "届出先"
+          },
           {
             "type": "paragraph",
             "runs": [
-              { "text": "以下のいずれかの市区町村に届出できます。" }
+              {
+                "text": "以下のいずれかの市区町村に届出できます。"
+              }
             ]
           },
           {
             "type": "list",
             "ordered": false,
             "items": [
-              [{ "type": "paragraph", "runs": [{ "text": "死亡者の本籍地" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "届出人の所在地（住所地）" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "死亡した場所" }] }]
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "死亡者の本籍地"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "届出人の所在地（住所地）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "死亡した場所"
+                    }
+                  ]
+                }
+              ]
             ]
           },
           {
@@ -139,10 +242,13 @@
               {
                 "type": "paragraph",
                 "runs": [
-                  { "text": "死亡届は24時間、休日・夜間も受け付けています。" }
+                  {
+                    "text": "死亡届は24時間、休日・夜間も受け付けています。"
+                  }
                 ]
               }
-            ]
+            ],
+            "title": "お知らせ"
           }
         ]
       }
@@ -152,13 +258,43 @@
       "type": "RichText",
       "props": {
         "content": [
-          { "type": "heading", "level": 2, "text": "届出に必要なもの" },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "届出に必要なもの"
+          },
           {
             "type": "list",
             "ordered": false,
             "items": [
-              [{ "type": "paragraph", "runs": [{ "text": "死亡届（死亡診断書）", "bold": true }, { "text": "（医師が記入済みのもの）" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "届出人の印鑑", "bold": true }, { "text": "（認印可、シャチハタ不可）" }] }]
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "死亡届（死亡診断書）",
+                      "bold": true
+                    },
+                    {
+                      "text": "（医師が記入済みのもの）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "届出人の印鑑",
+                      "bold": true
+                    },
+                    {
+                      "text": "（認印可、シャチハタ不可）"
+                    }
+                  ]
+                }
+              ]
             ]
           }
         ]
@@ -169,23 +305,83 @@
       "type": "RichText",
       "props": {
         "content": [
-          { "type": "heading", "level": 2, "text": "届出後の手続き" },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "届出後の手続き"
+          },
           {
             "type": "paragraph",
             "runs": [
-              { "text": "死亡届の届出後、以下の手続きが必要になる場合があります。" }
+              {
+                "text": "死亡届の届出後、以下の手続きが必要になる場合があります。"
+              }
             ]
           },
           {
             "type": "list",
             "ordered": false,
             "items": [
-              [{ "type": "paragraph", "runs": [{ "text": "年金の届出（年金事務所、市区町村）" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "国民健康保険・後期高齢者医療の届出" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "介護保険の届出" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "葬祭費の申請" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "相続手続き" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "世帯主変更届（世帯主が亡くなった場合）" }] }]
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "年金の届出（年金事務所、市区町村）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "国民健康保険・後期高齢者医療の届出"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "介護保険の届出"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "葬祭費の申請"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "相続手続き"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "世帯主変更届（世帯主が亡くなった場合）"
+                    }
+                  ]
+                }
+              ]
             ]
           },
           {
@@ -196,7 +392,9 @@
               {
                 "type": "paragraph",
                 "runs": [
-                  { "text": "{{okuyami_madoguchi_description}}" }
+                  {
+                    "text": "{{okuyami_madoguchi_description}}"
+                  }
                 ]
               }
             ]
@@ -209,10 +407,22 @@
       "type": "RelatedLinks",
       "props": {
         "items": [
-          { "title": "戸籍謄本・住民票", "href": "/services/registration/koseki" },
-          { "title": "国民健康保険", "href": "/services/health/kokuho" },
-          { "title": "後期高齢者医療", "href": "/services/health/kouki" },
-          { "title": "国民年金", "href": "/services/benefits/nenkin" }
+          {
+            "title": "戸籍謄本・住民票",
+            "href": "/services/registration/koseki"
+          },
+          {
+            "title": "国民健康保険",
+            "href": "/services/health/kokuho"
+          },
+          {
+            "title": "後期高齢者医療",
+            "href": "/services/health/kouki"
+          },
+          {
+            "title": "国民年金",
+            "href": "/services/benefits/nenkin"
+          }
         ]
       }
     },
@@ -230,7 +440,13 @@
   ],
   "search": {
     "summary": "死亡届の届出方法。死亡を知った日から7日以内に届出。届出後に火葬許可証を発行。",
-    "keywords": ["死亡届", "届出", "火葬許可証", "死亡診断書", "葬儀"],
+    "keywords": [
+      "死亡届",
+      "届出",
+      "火葬許可証",
+      "死亡診断書",
+      "葬儀"
+    ],
     "plain_text": "死亡届。死亡を知った日から7日以内に届出。届出先は死亡者の本籍地、届出人の所在地、死亡した場所のいずれか。24時間受付。届出後に火葬許可証を発行。"
   }
 }

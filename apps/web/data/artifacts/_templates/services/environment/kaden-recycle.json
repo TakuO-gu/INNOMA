@@ -7,7 +7,9 @@
   "description": "テレビ、エアコン、冷蔵庫、洗濯機の処分方法について",
   "content_type": "guide",
   "service_category": "environment",
-  "audience": ["residents"],
+  "audience": [
+    "residents"
+  ],
   "topic": [],
   "source": {
     "source_url": "template://sample/services/environment/kaden-recycle",
@@ -25,10 +27,22 @@
       "type": "Breadcrumbs",
       "props": {
         "items": [
-          { "label": "ホーム", "href": "/" },
-          { "label": "くらしの情報", "href": "/topics" },
-          { "label": "環境・ごみ", "href": "/topics/environment" },
-          { "label": "家電リサイクル", "href": "/services/environment/kaden-recycle" }
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "くらしの情報",
+            "href": "/topics"
+          },
+          {
+            "label": "環境・ごみ",
+            "href": "/topics/environment"
+          },
+          {
+            "label": "家電リサイクル",
+            "href": "/services/environment/kaden-recycle"
+          }
         ]
       }
     },
@@ -51,21 +65,73 @@
       "type": "RichText",
       "props": {
         "content": [
-          { "type": "heading", "level": 2, "text": "対象となる家電製品" },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "対象となる家電製品"
+          },
           {
             "type": "paragraph",
             "runs": [
-              { "text": "家電リサイクル法では、以下の4品目が対象となります。" }
+              {
+                "text": "家電リサイクル法では、以下の4品目が対象となります。"
+              }
             ]
           },
           {
             "type": "list",
             "ordered": false,
             "items": [
-              [{ "type": "paragraph", "runs": [{ "text": "エアコン", "bold": true }, { "text": "（室外機を含む）" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "テレビ", "bold": true }, { "text": "（ブラウン管式、液晶・プラズマ式）" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "冷蔵庫・冷凍庫", "bold": true }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "洗濯機・衣類乾燥機", "bold": true }] }]
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "エアコン",
+                      "bold": true
+                    },
+                    {
+                      "text": "（室外機を含む）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "テレビ",
+                      "bold": true
+                    },
+                    {
+                      "text": "（ブラウン管式、液晶・プラズマ式）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "冷蔵庫・冷凍庫",
+                      "bold": true
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "洗濯機・衣類乾燥機",
+                      "bold": true
+                    }
+                  ]
+                }
+              ]
             ]
           },
           {
@@ -75,10 +141,13 @@
               {
                 "type": "paragraph",
                 "runs": [
-                  { "text": "これらの家電製品は、市のごみ収集（粗大ごみを含む）では処分できません。" }
+                  {
+                    "text": "これらの家電製品は、市のごみ収集（粗大ごみを含む）では処分できません。"
+                  }
                 ]
               }
-            ]
+            ],
+            "title": "注意"
           }
         ]
       }
@@ -88,11 +157,17 @@
       "type": "RichText",
       "props": {
         "content": [
-          { "type": "heading", "level": 2, "text": "リサイクル料金" },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "リサイクル料金"
+          },
           {
             "type": "paragraph",
             "runs": [
-              { "text": "処分にはリサイクル料金と収集運搬料金がかかります。リサイクル料金はメーカーや製品のサイズにより異なります。" }
+              {
+                "text": "処分にはリサイクル料金と収集運搬料金がかかります。リサイクル料金はメーカーや製品のサイズにより異なります。"
+              }
             ]
           }
         ]
@@ -103,12 +178,30 @@
       "type": "Table",
       "props": {
         "rows": [
-          { "label": "エアコン", "value": "990円〜" },
-          { "label": "テレビ（15型以下）", "value": "1,870円〜" },
-          { "label": "テレビ（16型以上）", "value": "2,970円〜" },
-          { "label": "冷蔵庫・冷凍庫（170L以下）", "value": "3,740円〜" },
-          { "label": "冷蔵庫・冷凍庫（171L以上）", "value": "4,730円〜" },
-          { "label": "洗濯機・衣類乾燥機", "value": "2,530円〜" }
+          {
+            "label": "エアコン",
+            "value": "990円〜"
+          },
+          {
+            "label": "テレビ（15型以下）",
+            "value": "1,870円〜"
+          },
+          {
+            "label": "テレビ（16型以上）",
+            "value": "2,970円〜"
+          },
+          {
+            "label": "冷蔵庫・冷凍庫（170L以下）",
+            "value": "3,740円〜"
+          },
+          {
+            "label": "冷蔵庫・冷凍庫（171L以上）",
+            "value": "4,730円〜"
+          },
+          {
+            "label": "洗濯機・衣類乾燥機",
+            "value": "2,530円〜"
+          }
         ]
       }
     },
@@ -124,12 +217,20 @@
               {
                 "type": "paragraph",
                 "runs": [
-                  { "text": "上記は主要メーカーの参考料金です。正確な料金は" },
-                  { "text": "一般財団法人家電製品協会のウェブサイト", "link": "https://www.rkc.aeha.or.jp/" },
-                  { "text": "でご確認ください。" }
+                  {
+                    "text": "上記は主要メーカーの参考料金です。正確な料金は"
+                  },
+                  {
+                    "text": "一般財団法人家電製品協会のウェブサイト",
+                    "link": "https://www.rkc.aeha.or.jp/"
+                  },
+                  {
+                    "text": "でご確認ください。"
+                  }
                 ]
               }
-            ]
+            ],
+            "title": "お知らせ"
           }
         ]
       }
@@ -139,25 +240,51 @@
       "type": "RichText",
       "props": {
         "content": [
-          { "type": "heading", "level": 2, "text": "処分方法1：購入店に依頼する" },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "処分方法1：購入店に依頼する"
+          },
           {
             "type": "paragraph",
             "runs": [
-              { "text": "最も一般的な方法です。" }
+              {
+                "text": "最も一般的な方法です。"
+              }
             ]
           },
           {
             "type": "list",
             "ordered": false,
             "items": [
-              [{ "type": "paragraph", "runs": [{ "text": "新しく家電を購入する場合 → 購入店に引き取りを依頼" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "買い替えでない場合 → 購入した店舗に引き取りを依頼" }] }]
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "新しく家電を購入する場合 → 購入店に引き取りを依頼"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "買い替えでない場合 → 購入した店舗に引き取りを依頼"
+                    }
+                  ]
+                }
+              ]
             ]
           },
           {
             "type": "paragraph",
             "runs": [
-              { "text": "※購入した店舗には引き取り義務があります。収集運搬料金は店舗により異なります。" }
+              {
+                "text": "※購入した店舗には引き取り義務があります。収集運搬料金は店舗により異なります。"
+              }
             ]
           }
         ]
@@ -168,27 +295,61 @@
       "type": "RichText",
       "props": {
         "content": [
-          { "type": "heading", "level": 2, "text": "処分方法2：指定引取場所へ持ち込む" },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "処分方法2：指定引取場所へ持ち込む"
+          },
           {
             "type": "paragraph",
             "runs": [
-              { "text": "ご自身で指定引取場所へ持ち込む場合は、収集運搬料金がかかりません。" }
+              {
+                "text": "ご自身で指定引取場所へ持ち込む場合は、収集運搬料金がかかりません。"
+              }
             ]
           },
-          { "type": "heading", "level": 3, "text": "手順" },
+          {
+            "type": "heading",
+            "level": 3,
+            "text": "手順"
+          },
           {
             "type": "list",
             "ordered": true,
             "items": [
-              [{ "type": "paragraph", "runs": [{ "text": "郵便局で家電リサイクル券を購入（リサイクル料金を振り込み）" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "リサイクル券と家電製品を指定引取場所へ持ち込み" }] }]
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "郵便局で家電リサイクル券を購入（リサイクル料金を振り込み）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "リサイクル券と家電製品を指定引取場所へ持ち込み"
+                    }
+                  ]
+                }
+              ]
             ]
           },
-          { "type": "heading", "level": 3, "text": "近隣の指定引取場所" },
+          {
+            "type": "heading",
+            "level": 3,
+            "text": "近隣の指定引取場所"
+          },
           {
             "type": "paragraph",
             "runs": [
-              { "text": "{{kaden_hikitori_basho}}" }
+              {
+                "text": "{{kaden_hikitori_basho}}"
+              }
             ]
           }
         ]
@@ -199,11 +360,17 @@
       "type": "RichText",
       "props": {
         "content": [
-          { "type": "heading", "level": 2, "text": "処分方法3：許可業者に依頼する" },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "処分方法3：許可業者に依頼する"
+          },
           {
             "type": "paragraph",
             "runs": [
-              { "text": "購入店がわからない場合や、自分で持ち込めない場合は、市の許可を受けた収集運搬業者に依頼できます。" }
+              {
+                "text": "購入店がわからない場合や、自分で持ち込めない場合は、市の許可を受けた収集運搬業者に依頼できます。"
+              }
             ]
           },
           {
@@ -213,10 +380,13 @@
               {
                 "type": "paragraph",
                 "runs": [
-                  { "text": "無許可の業者に依頼すると、不法投棄につながる恐れがあります。「無料回収」をうたう業者には注意してください。" }
+                  {
+                    "text": "無許可の業者に依頼すると、不法投棄につながる恐れがあります。「無料回収」をうたう業者には注意してください。"
+                  }
                 ]
               }
-            ]
+            ],
+            "title": "注意"
           }
         ]
       }
@@ -226,20 +396,53 @@
       "type": "RichText",
       "props": {
         "content": [
-          { "type": "heading", "level": 2, "text": "パソコンの処分" },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "パソコンの処分"
+          },
           {
             "type": "paragraph",
             "runs": [
-              { "text": "パソコンは家電リサイクル法の対象外ですが、「資源有効利用促進法」により、メーカーによる回収・リサイクルが義務付けられています。" }
+              {
+                "text": "パソコンは家電リサイクル法の対象外ですが、「資源有効利用促進法」により、メーカーによる回収・リサイクルが義務付けられています。"
+              }
             ]
           },
           {
             "type": "list",
             "ordered": false,
             "items": [
-              [{ "type": "paragraph", "runs": [{ "text": "メーカーに申し込んで回収（PCリサイクルマーク付きは無料）" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "小型家電回収ボックスに投入（ノートPCなど小型のもの）" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "リネットジャパンによる宅配回収（国認定・無料）" }] }]
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "メーカーに申し込んで回収（PCリサイクルマーク付きは無料）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "小型家電回収ボックスに投入（ノートPCなど小型のもの）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "リネットジャパンによる宅配回収（国認定・無料）"
+                    }
+                  ]
+                }
+              ]
             ]
           }
         ]
@@ -250,9 +453,18 @@
       "type": "RelatedLinks",
       "props": {
         "items": [
-          { "title": "ごみの出し方（分別ガイド）", "href": "/services/environment/gomi" },
-          { "title": "粗大ごみの出し方", "href": "/services/environment/sodaigomi" },
-          { "title": "不用品のリユース", "href": "/services/environment/reuse" }
+          {
+            "title": "ごみの出し方（分別ガイド）",
+            "href": "/services/environment/gomi"
+          },
+          {
+            "title": "粗大ごみの出し方",
+            "href": "/services/environment/sodaigomi"
+          },
+          {
+            "title": "不用品のリユース",
+            "href": "/services/environment/reuse"
+          }
         ]
       }
     },
@@ -270,7 +482,15 @@
   ],
   "search": {
     "summary": "家電リサイクル法対象品（テレビ、エアコン、冷蔵庫、洗濯機）の処分方法。購入店への依頼、指定引取場所への持込、許可業者への依頼。",
-    "keywords": ["家電リサイクル", "テレビ", "エアコン", "冷蔵庫", "洗濯機", "処分", "リサイクル料金"],
+    "keywords": [
+      "家電リサイクル",
+      "テレビ",
+      "エアコン",
+      "冷蔵庫",
+      "洗濯機",
+      "処分",
+      "リサイクル料金"
+    ],
     "plain_text": "家電リサイクル。テレビ、エアコン、冷蔵庫・冷凍庫、洗濯機・衣類乾燥機は市では収集できない。購入店に依頼するか、指定引取場所に持ち込む。リサイクル料金と収集運搬料金がかかる。"
   }
 }
