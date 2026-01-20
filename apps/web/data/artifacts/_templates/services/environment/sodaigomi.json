@@ -7,7 +7,9 @@
   "description": "粗大ごみの出し方。申込方法、手数料、収集日など。",
   "content_type": "step_by_step",
   "service_category": "environment",
-  "audience": ["residents"],
+  "audience": [
+    "residents"
+  ],
   "topic": [],
   "source": {
     "source_url": "template://sample/services/environment/sodaigomi",
@@ -25,10 +27,22 @@
       "type": "Breadcrumbs",
       "props": {
         "items": [
-          { "label": "ホーム", "href": "/" },
-          { "label": "くらしの情報", "href": "/topics" },
-          { "label": "環境・ごみ", "href": "/topics/environment" },
-          { "label": "粗大ごみの出し方", "href": "/services/environment/sodaigomi" }
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "くらしの情報",
+            "href": "/topics"
+          },
+          {
+            "label": "環境・ごみ",
+            "href": "/topics/environment"
+          },
+          {
+            "label": "粗大ごみの出し方",
+            "href": "/services/environment/sodaigomi"
+          }
         ]
       }
     },
@@ -51,21 +65,63 @@
       "type": "RichText",
       "props": {
         "content": [
-          { "type": "heading", "level": 2, "text": "粗大ごみとは" },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "粗大ごみとは"
+          },
           {
             "type": "paragraph",
             "runs": [
-              { "text": "家庭から出る一辺が30cm以上の大型ごみが対象です。" }
+              {
+                "text": "家庭から出る一辺が30cm以上の大型ごみが対象です。"
+              }
             ]
           },
           {
             "type": "list",
             "ordered": false,
             "items": [
-              [{ "type": "paragraph", "runs": [{ "text": "家具類（タンス、机、椅子、ソファー、ベッドなど）" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "家電類（電子レンジ、掃除機、扇風機など）" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "寝具類（布団、マットレスなど）" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "自転車、ベビーカーなど" }] }]
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "家具類（タンス、机、椅子、ソファー、ベッドなど）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "家電類（電子レンジ、掃除機、扇風機など）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "寝具類（布団、マットレスなど）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "自転車、ベビーカーなど"
+                    }
+                  ]
+                }
+              ]
             ]
           },
           {
@@ -76,8 +132,13 @@
               {
                 "type": "paragraph",
                 "runs": [
-                  { "text": "エアコン、テレビ、冷蔵庫・冷凍庫、洗濯機・衣類乾燥機は粗大ごみとして出せません。", "bold": true },
-                  { "text": "販売店または指定引取場所にお持ちください。" }
+                  {
+                    "text": "エアコン、テレビ、冷蔵庫・冷凍庫、洗濯機・衣類乾燥機は粗大ごみとして出せません。",
+                    "bold": true
+                  },
+                  {
+                    "text": "販売店または指定引取場所にお持ちください。"
+                  }
                 ]
               }
             ]
@@ -114,11 +175,17 @@
       "type": "RichText",
       "props": {
         "content": [
-          { "type": "heading", "level": 2, "text": "手数料" },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "手数料"
+          },
           {
             "type": "paragraph",
             "runs": [
-              { "text": "品目ごとに手数料が異なります。申込時にお伝えします。" }
+              {
+                "text": "品目ごとに手数料が異なります。申込時にお伝えします。"
+              }
             ]
           }
         ]
@@ -129,10 +196,22 @@
       "type": "Table",
       "props": {
         "rows": [
-          { "label": "小型品（椅子、扇風機など）", "value": "{{sodaigomi_fee_small}}" },
-          { "label": "中型品（タンス小、自転車など）", "value": "{{sodaigomi_fee_medium}}" },
-          { "label": "大型品（タンス大、ソファーなど）", "value": "{{sodaigomi_fee_large}}" },
-          { "label": "特大品（ベッド、マットレスなど）", "value": "{{sodaigomi_fee_xlarge}}" }
+          {
+            "label": "小型品（椅子、扇風機など）",
+            "value": "{{sodaigomi_fee_small}}"
+          },
+          {
+            "label": "中型品（タンス小、自転車など）",
+            "value": "{{sodaigomi_fee_medium}}"
+          },
+          {
+            "label": "大型品（タンス大、ソファーなど）",
+            "value": "{{sodaigomi_fee_large}}"
+          },
+          {
+            "label": "特大品（ベッド、マットレスなど）",
+            "value": "{{sodaigomi_fee_xlarge}}"
+          }
         ]
       }
     },
@@ -150,19 +229,44 @@
       "type": "RichText",
       "props": {
         "content": [
-          { "type": "heading", "level": 2, "text": "電話での申込" },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "電話での申込"
+          },
           {
             "type": "paragraph",
             "runs": [
-              { "text": "粗大ごみ受付センター", "bold": true }
+              {
+                "text": "粗大ごみ受付センター",
+                "bold": true
+              }
             ]
           },
           {
             "type": "list",
             "ordered": false,
             "items": [
-              [{ "type": "paragraph", "runs": [{ "text": "電話番号：{{sodaigomi_phone}}" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "受付時間：{{sodaigomi_reception_hours}}" }] }]
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "電話番号：{{sodaigomi_phone}}"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "受付時間：{{sodaigomi_reception_hours}}"
+                    }
+                  ]
+                }
+              ]
             ]
           }
         ]
@@ -173,9 +277,18 @@
       "type": "RelatedLinks",
       "props": {
         "items": [
-          { "title": "ごみの出し方（分別ガイド）", "href": "/services/environment/gomi" },
-          { "title": "家電リサイクル", "href": "/services/environment/kaden-recycle" },
-          { "title": "不用品のリユース", "href": "/services/environment/reuse" }
+          {
+            "title": "ごみの出し方（分別ガイド）",
+            "href": "/services/environment/gomi"
+          },
+          {
+            "title": "家電リサイクル",
+            "href": "/services/environment/kaden-recycle"
+          },
+          {
+            "title": "不用品のリユース",
+            "href": "/services/environment/reuse"
+          }
         ]
       }
     },
@@ -193,7 +306,16 @@
   ],
   "search": {
     "summary": "粗大ごみの出し方。申込方法、手数料、収集日について。インターネット・電話で申込可能。",
-    "keywords": ["粗大ごみ", "大型ごみ", "処理券", "収集", "申込", "手数料", "家具", "家電"],
+    "keywords": [
+      "粗大ごみ",
+      "大型ごみ",
+      "処理券",
+      "収集",
+      "申込",
+      "手数料",
+      "家具",
+      "家電"
+    ],
     "plain_text": "粗大ごみの出し方。粗大ごみは一辺が30cm以上の大型ごみ。家具類、家電類、寝具類、自転車など。申込方法：電話またはインターネットで申込、コンビニで処理券を購入、収集日の朝8時までに玄関先に出す。家電リサイクル法対象品は対象外。"
   }
 }

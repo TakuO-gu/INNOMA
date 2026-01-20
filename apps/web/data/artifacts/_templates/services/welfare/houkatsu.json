@@ -82,6 +82,7 @@
           {
             "type": "callout",
             "severity": "info",
+            "title": "お知らせ",
             "content": [
               {
                 "type": "paragraph",
@@ -91,8 +92,7 @@
                   }
                 ]
               }
-            ],
-            "title": "お知らせ"
+            ]
           }
         ]
       }

@@ -183,6 +183,7 @@
           {
             "type": "callout",
             "severity": "warning",
+            "title": "注意",
             "content": [
               {
                 "type": "paragraph",
@@ -192,8 +193,7 @@
                   }
                 ]
               }
-            ],
-            "title": "注意"
+            ]
           }
         ]
       }

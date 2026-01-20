@@ -7,7 +7,9 @@
   "description": "指定避難所、指定緊急避難場所、福祉避難所の一覧と開設情報",
   "content_type": "directory",
   "service_category": "safety",
-  "audience": ["residents"],
+  "audience": [
+    "residents"
+  ],
   "topic": [],
   "source": {
     "source_url": "template://sample/services/disaster/hinanjo",
@@ -25,10 +27,22 @@
       "type": "Breadcrumbs",
       "props": {
         "items": [
-          { "label": "ホーム", "href": "/" },
-          { "label": "くらしの情報", "href": "/topics" },
-          { "label": "防災・安全", "href": "/topics/disaster" },
-          { "label": "避難所・避難場所", "href": "/services/disaster/hinanjo" }
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "くらしの情報",
+            "href": "/topics"
+          },
+          {
+            "label": "防災・安全",
+            "href": "/topics/disaster"
+          },
+          {
+            "label": "避難所・避難場所",
+            "href": "/services/disaster/hinanjo"
+          }
         ]
       }
     },
@@ -51,26 +65,48 @@
       "type": "RichText",
       "props": {
         "content": [
-          { "type": "heading", "level": 2, "text": "避難場所・避難所の種類" },
-          { "type": "heading", "level": 3, "text": "指定緊急避難場所" },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "避難場所・避難所の種類"
+          },
+          {
+            "type": "heading",
+            "level": 3,
+            "text": "指定緊急避難場所"
+          },
           {
             "type": "paragraph",
             "runs": [
-              { "text": "災害が発生し、または発生するおそれがある場合に、一時的に身を守るために避難する場所です。災害の種類（洪水、土砂災害、地震など）ごとに指定されています。" }
+              {
+                "text": "災害が発生し、または発生するおそれがある場合に、一時的に身を守るために避難する場所です。災害の種類（洪水、土砂災害、地震など）ごとに指定されています。"
+              }
             ]
           },
-          { "type": "heading", "level": 3, "text": "指定避難所" },
+          {
+            "type": "heading",
+            "level": 3,
+            "text": "指定避難所"
+          },
           {
             "type": "paragraph",
             "runs": [
-              { "text": "災害により住居を失った方が、一定期間避難生活を送る施設です。学校の体育館や公民館などが指定されています。" }
+              {
+                "text": "災害により住居を失った方が、一定期間避難生活を送る施設です。学校の体育館や公民館などが指定されています。"
+              }
             ]
           },
-          { "type": "heading", "level": 3, "text": "福祉避難所" },
+          {
+            "type": "heading",
+            "level": 3,
+            "text": "福祉避難所"
+          },
           {
             "type": "paragraph",
             "runs": [
-              { "text": "高齢者、障害者、妊産婦など、一般の避難所での生活が困難な方のための避難所です。必要に応じて開設されます。" }
+              {
+                "text": "高齢者、障害者、妊産婦など、一般の避難所での生活が困難な方のための避難所です。必要に応じて開設されます。"
+              }
             ]
           }
         ]
@@ -81,11 +117,17 @@
       "type": "RichText",
       "props": {
         "content": [
-          { "type": "heading", "level": 2, "text": "主な避難所一覧" },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "主な避難所一覧"
+          },
           {
             "type": "paragraph",
             "runs": [
-              { "text": "全{{hinanjo_count}}か所の避難所が指定されています。" }
+              {
+                "text": "全{{hinanjo_count}}か所の避難所が指定されています。"
+              }
             ]
           }
         ]
@@ -96,9 +138,18 @@
       "type": "Table",
       "props": {
         "rows": [
-          { "label": "指定緊急避難場所", "value": "{{kinkyu_hinanbasho_count}}か所" },
-          { "label": "指定避難所", "value": "{{shitei_hinanjo_count}}か所" },
-          { "label": "福祉避難所", "value": "{{fukushi_hinanjo_count}}か所" }
+          {
+            "label": "指定緊急避難場所",
+            "value": "{{kinkyu_hinanbasho_count}}か所"
+          },
+          {
+            "label": "指定避難所",
+            "value": "{{shitei_hinanjo_count}}か所"
+          },
+          {
+            "label": "福祉避難所",
+            "value": "{{fukushi_hinanjo_count}}か所"
+          }
         ]
       }
     },
@@ -116,11 +167,17 @@
       "type": "RichText",
       "props": {
         "content": [
-          { "type": "heading", "level": 2, "text": "避難所の開設情報" },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "避難所の開設情報"
+          },
           {
             "type": "paragraph",
             "runs": [
-              { "text": "災害発生時は、市ホームページ、防災メール、防災行政無線などでお知らせします。開設している避難所は下記のリンクから確認できます。" }
+              {
+                "text": "災害発生時は、市ホームページ、防災メール、防災行政無線などでお知らせします。開設している避難所は下記のリンクから確認できます。"
+              }
             ]
           }
         ]
@@ -140,15 +197,55 @@
       "type": "RichText",
       "props": {
         "content": [
-          { "type": "heading", "level": 2, "text": "避難の心得" },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "避難の心得"
+          },
           {
             "type": "list",
             "ordered": false,
             "items": [
-              [{ "type": "paragraph", "runs": [{ "text": "避難場所・避難所への移動ルートを事前に確認しておきましょう" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "非常持出品を準備しておきましょう（水、食料、薬、携帯電話充電器など）" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "避難情報が出たら、早めの避難を心がけましょう" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "ペットを連れて避難する場合は、事前にルールを確認してください" }] }]
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "避難場所・避難所への移動ルートを事前に確認しておきましょう"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "非常持出品を準備しておきましょう（水、食料、薬、携帯電話充電器など）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "避難情報が出たら、早めの避難を心がけましょう"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "ペットを連れて避難する場合は、事前にルールを確認してください"
+                    }
+                  ]
+                }
+              ]
             ]
           },
           {
@@ -159,7 +256,9 @@
               {
                 "type": "paragraph",
                 "runs": [
-                  { "text": "自宅が安全な場合は「在宅避難」、親戚・知人宅への避難も選択肢です。避難所の混雑を避けるため、分散避難へのご協力をお願いします。" }
+                  {
+                    "text": "自宅が安全な場合は「在宅避難」、親戚・知人宅への避難も選択肢です。避難所の混雑を避けるため、分散避難へのご協力をお願いします。"
+                  }
                 ]
               }
             ]
@@ -172,7 +271,11 @@
       "type": "RichText",
       "props": {
         "content": [
-          { "type": "heading", "level": 2, "text": "避難情報の種類" }
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "避難情報の種類"
+          }
         ]
       }
     },
@@ -181,9 +284,17 @@
       "type": "Table",
       "props": {
         "rows": [
-          { "label": "警戒レベル3（高齢者等避難）", "value": "高齢者や障害のある方など避難に時間がかかる方は避難開始" },
-          { "label": "警戒レベル4（避難指示）", "value": "危険な場所にいる全員が避難" },
-          { "label": "警戒レベル5（緊急安全確保）", "value": "命を守る最善の行動を"
+          {
+            "label": "警戒レベル3（高齢者等避難）",
+            "value": "高齢者や障害のある方など避難に時間がかかる方は避難開始"
+          },
+          {
+            "label": "警戒レベル4（避難指示）",
+            "value": "危険な場所にいる全員が避難"
+          },
+          {
+            "label": "警戒レベル5（緊急安全確保）",
+            "value": "命を守る最善の行動を"
           }
         ]
       }
@@ -193,10 +304,22 @@
       "type": "RelatedLinks",
       "props": {
         "items": [
-          { "title": "ハザードマップ", "href": "/services/disaster/hazard-map" },
-          { "title": "防災情報メール", "href": "/services/disaster/bosai-mail" },
-          { "title": "非常持出品", "href": "/services/disaster/mochidashi" },
-          { "title": "地域防災計画", "href": "/services/disaster/bosai-keikaku" }
+          {
+            "title": "ハザードマップ",
+            "href": "/services/disaster/hazard-map"
+          },
+          {
+            "title": "防災情報メール",
+            "href": "/services/disaster/bosai-mail"
+          },
+          {
+            "title": "非常持出品",
+            "href": "/services/disaster/mochidashi"
+          },
+          {
+            "title": "地域防災計画",
+            "href": "/services/disaster/bosai-keikaku"
+          }
         ]
       }
     },
@@ -214,7 +337,15 @@
   ],
   "search": {
     "summary": "避難所・避難場所の案内。指定緊急避難場所、指定避難所、福祉避難所の一覧と開設情報。",
-    "keywords": ["避難所", "避難場所", "指定緊急避難場所", "福祉避難所", "避難情報", "警戒レベル", "防災"],
+    "keywords": [
+      "避難所",
+      "避難場所",
+      "指定緊急避難場所",
+      "福祉避難所",
+      "避難情報",
+      "警戒レベル",
+      "防災"
+    ],
     "plain_text": "避難所・避難場所。指定緊急避難場所は一時的に身を守る場所。指定避難所は避難生活を送る施設。福祉避難所は高齢者・障害者向け。避難情報（警戒レベル3〜5）に注意。"
   }
 }

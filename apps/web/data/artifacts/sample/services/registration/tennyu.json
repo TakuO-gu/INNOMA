@@ -7,7 +7,9 @@
   "description": "他の市区町村から引っ越してきたときの届出（転入届）の手続き案内",
   "content_type": "step_by_step",
   "service_category": "government",
-  "audience": ["residents"],
+  "audience": [
+    "residents"
+  ],
   "topic": [],
   "source": {
     "source_url": "template://sample/services/registration/tennyu",
@@ -25,10 +27,22 @@
       "type": "Breadcrumbs",
       "props": {
         "items": [
-          { "label": "ホーム", "href": "/" },
-          { "label": "くらしの情報", "href": "/topics" },
-          { "label": "届出・申請・証明書", "href": "/topics/registration" },
-          { "label": "転入届", "href": "/services/registration/tennyu" }
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "くらしの情報",
+            "href": "/topics"
+          },
+          {
+            "label": "届出・申請・証明書",
+            "href": "/topics/registration"
+          },
+          {
+            "label": "転入届",
+            "href": "/services/registration/tennyu"
+          }
         ]
       }
     },
@@ -56,7 +70,9 @@
           {
             "type": "paragraph",
             "runs": [
-              { "text": "マイナンバーカードをお持ちの方は、マイナポータルから転入届の事前予約ができます。窓口での待ち時間を短縮できます。" }
+              {
+                "text": "マイナンバーカードをお持ちの方は、マイナポータルから転入届の事前予約ができます。窓口での待ち時間を短縮できます。"
+              }
             ]
           }
         ]
@@ -67,19 +83,34 @@
       "type": "RichText",
       "props": {
         "content": [
-          { "type": "heading", "level": 2, "text": "届出が必要な方" },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "届出が必要な方"
+          },
           {
             "type": "paragraph",
             "runs": [
-              { "text": "他の市区町村からサンプル市に住所を移した方（引っ越してきた方）" }
+              {
+                "text": "他の市区町村からサンプル市に住所を移した方（引っ越してきた方）"
+              }
             ]
           },
-          { "type": "heading", "level": 2, "text": "届出期間" },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "届出期間"
+          },
           {
             "type": "paragraph",
             "runs": [
-              { "text": "引越し日（新住所に住み始めた日）から" },
-              { "text": "14日以内", "bold": true }
+              {
+                "text": "引越し日（新住所に住み始めた日）から"
+              },
+              {
+                "text": "14日以内",
+                "bold": true
+              }
             ]
           },
           {
@@ -90,7 +121,9 @@
               {
                 "type": "paragraph",
                 "runs": [
-                  { "text": "届出が遅れると、5万円以下の過料が科される場合があります。" }
+                  {
+                    "text": "届出が遅れると、5万円以下の過料が科される場合があります。"
+                  }
                 ]
               }
             ]
@@ -107,12 +140,19 @@
           {
             "title": "前住所地で転出届を提出",
             "body": "引越し前の市区町村で転出届を提出し、転出証明書を受け取ります。マイナンバーカードをお持ちの方は、マイナポータルからオンラインで転出届を提出できます。",
-            "documents": ["転出証明書（前住所地で交付）"]
+            "documents": [
+              "転出証明書（前住所地で交付）"
+            ]
           },
           {
             "title": "必要書類を準備",
             "body": "転入届に必要な書類を準備します。",
-            "documents": ["転出証明書", "届出人の本人確認書類", "マイナンバーカード（お持ちの方）", "在留カード（外国籍の方）"]
+            "documents": [
+              "転出証明書",
+              "届出人の本人確認書類",
+              "マイナンバーカード（お持ちの方）",
+              "在留カード（外国籍の方）"
+            ]
           },
           {
             "title": "窓口で届出",
@@ -132,26 +172,122 @@
       "type": "RichText",
       "props": {
         "content": [
-          { "type": "heading", "level": 2, "text": "届出に必要なもの" },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "届出に必要なもの"
+          },
           {
             "type": "list",
             "ordered": false,
             "items": [
-              [{ "type": "paragraph", "runs": [{ "text": "転出証明書", "bold": true }, { "text": "（前住所地で交付されたもの。マイナンバーカードで転出届をした場合は不要）" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "届出人の本人確認書類", "bold": true }, { "text": "（マイナンバーカード、運転免許証、パスポートなど）" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "転入する方全員のマイナンバーカード", "bold": true }, { "text": "（お持ちの方のみ。暗証番号の入力が必要です）" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "在留カードまたは特別永住者証明書", "bold": true }, { "text": "（外国籍の方）" }] }]
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "転出証明書",
+                      "bold": true
+                    },
+                    {
+                      "text": "（前住所地で交付されたもの。マイナンバーカードで転出届をした場合は不要）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "届出人の本人確認書類",
+                      "bold": true
+                    },
+                    {
+                      "text": "（マイナンバーカード、運転免許証、パスポートなど）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "転入する方全員のマイナンバーカード",
+                      "bold": true
+                    },
+                    {
+                      "text": "（お持ちの方のみ。暗証番号の入力が必要です）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "在留カードまたは特別永住者証明書",
+                      "bold": true
+                    },
+                    {
+                      "text": "（外国籍の方）"
+                    }
+                  ]
+                }
+              ]
             ]
           },
-          { "type": "heading", "level": 2, "text": "届出人" },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "届出人"
+          },
           {
             "type": "list",
             "ordered": false,
             "items": [
-              [{ "type": "paragraph", "runs": [{ "text": "本人" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "世帯主" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "同一世帯の方" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "代理人（委任状が必要）" }] }]
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "本人"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "世帯主"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "同一世帯の方"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "代理人（委任状が必要）"
+                    }
+                  ]
+                }
+              ]
             ]
           }
         ]
@@ -162,10 +298,22 @@
       "type": "Table",
       "props": {
         "rows": [
-          { "label": "届出場所", "value": "市役所1階 市民課窓口" },
-          { "label": "受付時間", "value": "平日 8:30〜17:15（土日祝日・年末年始を除く）" },
-          { "label": "届出期限", "value": "引越し日から14日以内" },
-          { "label": "手数料", "value": "無料" }
+          {
+            "label": "届出場所",
+            "value": "市役所1階 市民課窓口"
+          },
+          {
+            "label": "受付時間",
+            "value": "平日 8:30〜17:15（土日祝日・年末年始を除く）"
+          },
+          {
+            "label": "届出期限",
+            "value": "引越し日から14日以内"
+          },
+          {
+            "label": "手数料",
+            "value": "無料"
+          }
         ]
       }
     },
@@ -174,22 +322,73 @@
       "type": "RichText",
       "props": {
         "content": [
-          { "type": "heading", "level": 2, "text": "転入届と一緒に行える手続き" },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "転入届と一緒に行える手続き"
+          },
           {
             "type": "paragraph",
             "runs": [
-              { "text": "転入届の届出時に、以下の手続きも一緒に行うことができます。" }
+              {
+                "text": "転入届の届出時に、以下の手続きも一緒に行うことができます。"
+              }
             ]
           },
           {
             "type": "list",
             "ordered": false,
             "items": [
-              [{ "type": "paragraph", "runs": [{ "text": "国民健康保険の加入（前住所地で国保に加入していた方）" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "国民年金の届出" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "児童手当の認定請求" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "印鑑登録（希望する方）" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "マイナンバーカードの住所変更" }] }]
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "国民健康保険の加入（前住所地で国保に加入していた方）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "国民年金の届出"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "児童手当の認定請求"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "印鑑登録（希望する方）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "マイナンバーカードの住所変更"
+                    }
+                  ]
+                }
+              ]
             ]
           }
         ]
@@ -200,10 +399,22 @@
       "type": "RelatedLinks",
       "props": {
         "items": [
-          { "title": "転出届", "href": "/services/registration/tenshutsu" },
-          { "title": "転居届（市内での引越し）", "href": "/services/registration/tenkyo" },
-          { "title": "国民健康保険の届出", "href": "/services/health/kokuho" },
-          { "title": "印鑑登録", "href": "/services/registration/inkan" }
+          {
+            "title": "転出届",
+            "href": "/services/registration/tenshutsu"
+          },
+          {
+            "title": "転居届（市内での引越し）",
+            "href": "/services/registration/tenkyo"
+          },
+          {
+            "title": "国民健康保険の届出",
+            "href": "/services/health/kokuho"
+          },
+          {
+            "title": "印鑑登録",
+            "href": "/services/registration/inkan"
+          }
         ]
       }
     },
@@ -221,7 +432,15 @@
   ],
   "search": {
     "summary": "転入届の手続き案内。他の市区町村から引っ越してきたときの届出方法、必要書類、届出期間など。",
-    "keywords": ["転入届", "引越し", "住所変更", "転入", "住民票", "転出証明書", "マイナンバーカード"],
+    "keywords": [
+      "転入届",
+      "引越し",
+      "住所変更",
+      "転入",
+      "住民票",
+      "転出証明書",
+      "マイナンバーカード"
+    ],
     "plain_text": "転入届。他の市区町村から引っ越してきたときの届出。届出期間は引越し日から14日以内。必要書類は転出証明書、本人確認書類、マイナンバーカード。届出人は本人、世帯主、同一世帯の方、代理人。"
   }
 }

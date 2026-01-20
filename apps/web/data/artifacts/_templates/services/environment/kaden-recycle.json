@@ -137,6 +137,7 @@
           {
             "type": "callout",
             "severity": "warning",
+            "title": "注意",
             "content": [
               {
                 "type": "paragraph",
@@ -146,8 +147,7 @@
                   }
                 ]
               }
-            ],
-            "title": "注意"
+            ]
           }
         ]
       }
@@ -213,6 +213,7 @@
           {
             "type": "callout",
             "severity": "info",
+            "title": "お知らせ",
             "content": [
               {
                 "type": "paragraph",
@@ -229,8 +230,7 @@
                   }
                 ]
               }
-            ],
-            "title": "お知らせ"
+            ]
           }
         ]
       }
@@ -376,6 +376,7 @@
           {
             "type": "callout",
             "severity": "warning",
+            "title": "注意",
             "content": [
               {
                 "type": "paragraph",
@@ -385,8 +386,7 @@
                   }
                 ]
               }
-            ],
-            "title": "注意"
+            ]
           }
         ]
       }
