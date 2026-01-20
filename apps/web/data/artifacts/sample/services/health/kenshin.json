@@ -11,12 +11,12 @@
   "topic": [],
   "source": {
     "source_url": "template://sample/services/health/kenshin",
-    "fetched_at": "{{generated_at}}",
+    "fetched_at": "2026-01-20",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "{{generated_at}}",
+    "generated_at": "2026-01-20",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -67,9 +67,9 @@
       "props": {
         "rows": [
           { "label": "対象者", "value": "40〜74歳の国民健康保険加入者" },
-          { "label": "自己負担", "value": "{{tokutei_kenshin_fee}}" },
+          { "label": "自己負担", "value": "無料" },
           { "label": "検査項目", "value": "身体計測、血圧測定、血液検査、尿検査など" },
-          { "label": "実施期間", "value": "{{kenshin_period}}" }
+          { "label": "実施期間", "value": "6月〜11月" }
         ]
       }
     },
@@ -94,7 +94,7 @@
       "props": {
         "rows": [
           { "label": "対象者", "value": "75歳以上の方（および65〜74歳で後期高齢者医療に加入の方）" },
-          { "label": "自己負担", "value": "{{kouki_kenshin_fee}}" },
+          { "label": "自己負担", "value": "無料" },
           { "label": "検査項目", "value": "身体計測、血圧測定、血液検査、尿検査など" }
         ]
       }
@@ -142,12 +142,12 @@
       "type": "Table",
       "props": {
         "rows": [
-          { "label": "胃がん検診（X線）", "value": "{{gan_i_xray_fee}}" },
-          { "label": "胃がん検診（内視鏡）", "value": "{{gan_i_naishikyo_fee}}" },
-          { "label": "肺がん検診", "value": "{{gan_hai_fee}}" },
-          { "label": "大腸がん検診", "value": "{{gan_daicho_fee}}" },
-          { "label": "乳がん検診", "value": "{{gan_nyu_fee}}" },
-          { "label": "子宮頸がん検診", "value": "{{gan_shikyukei_fee}}" }
+          { "label": "胃がん検診（X線）", "value": "1,000円" },
+          { "label": "胃がん検診（内視鏡）", "value": "3,000円" },
+          { "label": "肺がん検診", "value": "500円" },
+          { "label": "大腸がん検診", "value": "500円" },
+          { "label": "乳がん検診", "value": "1,500円" },
+          { "label": "子宮頸がん検診", "value": "1,000円" }
         ]
       }
     },
@@ -225,11 +225,11 @@
       "id": "contact-1",
       "type": "Contact",
       "props": {
-        "department": "{{kenshin_department}}",
-        "phone": "{{kenshin_phone}}",
-        "email": "{{kenshin_email}}",
-        "hours": "{{city_hall_hours}}",
-        "address": "{{city_hall_address}}"
+        "department": "健康推進課 健診係",
+        "phone": "03-1234-5731",
+        "email": "kenshin@sample-city.lg.jp",
+        "hours": "平日 8:30〜17:15（土日祝日・年末年始を除く）",
+        "address": "〒100-0001 東京都サンプル市中央1-1-1"
       }
     }
   ],

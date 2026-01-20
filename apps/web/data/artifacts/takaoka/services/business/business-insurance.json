@@ -1,0 +1,163 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "takaoka-services-business-business-insurance",
+  "municipality_id": "takaoka",
+  "path": "/services/business/business-insurance",
+  "title": "社会保険・労働保険",
+  "description": "社会保険加入、労働保険成立届、雇用保険",
+  "content_type": "guide",
+  "service_category": "business",
+  "audience": [
+    "businesses"
+  ],
+  "topic": [],
+  "source": {
+    "source_url": "template://sample/services/business/business-insurance",
+    "fetched_at": "2026-01-20T10:33:17.311Z",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "2026-01-20T10:33:17.311Z",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "くらしの情報",
+            "href": "/topics"
+          },
+          {
+            "label": "事業・経営",
+            "href": "/topics/business"
+          },
+          {
+            "label": "社会保険・労働保険",
+            "href": "/services/business/business-insurance"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "社会保険・労働保険"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "従業員を雇用する事業主が加入すべき社会保険・労働保険の手続きをご案内します。"
+      }
+    },
+    {
+      "id": "richtext-1",
+      "type": "RichText",
+      "props": {
+        "content": [
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "社会保険（健康保険・厚生年金）"
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "加入対象：法人事業所（従業員数問わず）、常時5人以上を雇用する個人事業所"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "届出先：年金事務所"
+                    }
+                  ]
+                }
+              ]
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "労働保険（労災保険・雇用保険）"
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "労災保険",
+                      "bold": true
+                    },
+                    {
+                      "text": "：1人でも雇用したら加入義務（労働基準監督署へ届出）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "雇用保険",
+                      "bold": true
+                    },
+                    {
+                      "text": "：週20時間以上勤務する従業員を雇用したら加入（ハローワークへ届出）"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{pension_office}}",
+        "phone": "{{pension_office_phone}}",
+        "address": "{{pension_office_address}}"
+      }
+    }
+  ],
+  "search": {
+    "summary": "社会保険・労働保険の案内。健康保険、厚生年金、労災保険、雇用保険の加入手続き。",
+    "keywords": [
+      "社会保険",
+      "労働保険",
+      "健康保険",
+      "厚生年金",
+      "労災保険",
+      "雇用保険"
+    ],
+    "plain_text": "社会保険・労働保険。社会保険は年金事務所、労災保険は労働基準監督署、雇用保険はハローワークへ届出。"
+  }
+}

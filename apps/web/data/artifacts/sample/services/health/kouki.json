@@ -11,12 +11,12 @@
   "topic": [],
   "source": {
     "source_url": "template://sample/services/health/kouki",
-    "fetched_at": "{{generated_at}}",
+    "fetched_at": "2026-01-20",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "{{generated_at}}",
+    "generated_at": "2026-01-20",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -148,8 +148,8 @@
       "type": "Table",
       "props": {
         "rows": [
-          { "label": "均等割額", "value": "{{kouki_kinto_wari}}" },
-          { "label": "所得割率", "value": "{{kouki_shotoku_wari_rate}}" },
+          { "label": "均等割額", "value": "47,300円" },
+          { "label": "所得割率", "value": "9.49%" },
           { "label": "賦課限度額", "value": "80万円（令和6・7年度）" },
           { "label": "納付方法", "value": "特別徴収（年金天引き）または普通徴収（納付書・口座振替）" }
         ]
@@ -187,7 +187,7 @@
           {
             "type": "paragraph",
             "runs": [
-              { "text": "被保険者が亡くなったとき、葬祭を行った方に{{kouki_sousaihi}}が支給されます。" }
+              { "text": "被保険者が亡くなったとき、葬祭を行った方に70,000円が支給されます。" }
             ]
           },
           { "type": "heading", "level": 3, "text": "療養費" },
@@ -216,11 +216,11 @@
       "id": "contact-1",
       "type": "Contact",
       "props": {
-        "department": "{{kouki_department}}",
-        "phone": "{{kouki_phone}}",
-        "email": "{{kouki_email}}",
-        "hours": "{{city_hall_hours}}",
-        "address": "{{city_hall_address}}"
+        "department": "保険年金課 後期高齢者係",
+        "phone": "03-1234-5701",
+        "email": "kouki@sample-city.lg.jp",
+        "hours": "平日 8:30〜17:15（土日祝日・年末年始を除く）",
+        "address": "〒100-0001 東京都サンプル市中央1-1-1"
       }
     }
   ],

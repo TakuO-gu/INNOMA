@@ -1,0 +1,214 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "takaoka-services-land-farmland-conversion",
+  "municipality_id": "takaoka",
+  "path": "/services/land/farmland-conversion",
+  "title": "農地転用",
+  "description": "農地転用許可、届出、農振除外の手続き",
+  "content_type": "guide",
+  "service_category": "environment",
+  "audience": [
+    "residents",
+    "businesses"
+  ],
+  "topic": [],
+  "source": {
+    "source_url": "template://sample/services/land/farmland-conversion",
+    "fetched_at": "2026-01-20T10:33:17.311Z",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "2026-01-20T10:33:17.311Z",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "くらしの情報",
+            "href": "/topics"
+          },
+          {
+            "label": "土地・農林水産",
+            "href": "/topics/land"
+          },
+          {
+            "label": "農地転用",
+            "href": "/services/land/farmland-conversion"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "農地転用"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "農地を農地以外（住宅、駐車場、資材置場など）に利用する場合は、農地転用の許可または届出が必要です。"
+      }
+    },
+    {
+      "id": "richtext-1",
+      "type": "RichText",
+      "props": {
+        "content": [
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "農地転用とは"
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "農地法に基づき、農地を農地以外の用途に変更することです。優良農地の確保と農地の計画的利用のため、許可制度が設けられています。"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "許可が必要な場合（農地法4条・5条）"
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "4条許可",
+                      "bold": true
+                    },
+                    {
+                      "text": "：自分の農地を自分で転用する場合"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "5条許可",
+                      "bold": true
+                    },
+                    {
+                      "text": "：農地を売買・賃貸借して転用する場合"
+                    }
+                  ]
+                }
+              ]
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "届出で済む場合（市街化区域内）"
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "市街化区域内の農地は、農業委員会への届出により転用できます。"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "転用が認められない農地"
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "農用地区域内農地（青地）：原則不許可"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "第1種農地（優良農地）：原則不許可"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "甲種農地（特に良好な営農条件）：原則不許可"
+                    }
+                  ]
+                }
+              ]
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "農振除外"
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "農用地区域内の農地（青地）を転用するには、まず農業振興地域整備計画から除外する手続きが必要です。除外には厳格な要件があります。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{agricultural_commission}}",
+        "phone": "{{agricultural_commission_phone}}",
+        "email": "{{agricultural_commission_email}}",
+        "hours": "{{city_hall_hours}}",
+        "address": "{{city_hall_address}}"
+      }
+    }
+  ],
+  "search": {
+    "summary": "農地転用の案内。農地転用許可、届出、農振除外の手続き。",
+    "keywords": [
+      "農地転用",
+      "農地法",
+      "4条許可",
+      "5条許可",
+      "農振除外"
+    ],
+    "plain_text": "農地転用。農地を他の用途に変更するには許可が必要。市街化区域は届出制。農用地区域は農振除外が必要。"
+  }
+}

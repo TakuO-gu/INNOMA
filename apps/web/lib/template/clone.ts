@@ -15,7 +15,7 @@ import type {
 import { replaceVariables } from "./replace";
 
 const ARTIFACTS_DIR = join(process.cwd(), "data/artifacts");
-const TEMPLATE_DIR = join(ARTIFACTS_DIR, "sample"); // sampleをテンプレートとして使用
+const TEMPLATE_DIR = join(ARTIFACTS_DIR, "_templates"); // _templatesをテンプレートマスターとして使用
 
 /**
  * ディレクトリ内のすべてのファイルを再帰的に取得
@@ -253,9 +253,12 @@ export async function deleteMunicipality(municipalityId: string): Promise<void> 
     throw new Error(`自治体 "${municipalityId}" が見つかりません`);
   }
 
-  // sampleは削除不可
+  // _templatesとsampleは削除不可
+  if (municipalityId === "_templates") {
+    throw new Error("_templatesテンプレートは削除できません");
+  }
   if (municipalityId === "sample") {
-    throw new Error("sampleテンプレートは削除できません");
+    throw new Error("sampleデモデータは削除できません");
   }
 
   await rm(dir, { recursive: true, force: true });

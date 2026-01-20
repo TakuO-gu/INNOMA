@@ -11,12 +11,12 @@
   "topic": [],
   "source": {
     "source_url": "template://sample/topics/employment",
-    "fetched_at": "{{generated_at}}",
+    "fetched_at": "2026-01-20",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "{{generated_at}}",
+    "generated_at": "2026-01-20",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -53,7 +53,7 @@
           {
             "title": "ハローワーク・求人情報",
             "href": "/services/employment/hello-work",
-            "description": "{{prefecture_name}}内のハローワーク所在地、求人検索案内"
+            "description": "東京都内のハローワーク所在地、求人検索案内"
           },
           {
             "title": "就職支援・キャリア相談",
@@ -78,7 +78,7 @@
           {
             "title": "労働条件・最低賃金",
             "href": "/services/employment/labor-standards",
-            "description": "{{prefecture_name}}の最低賃金、労働時間、残業規制"
+            "description": "東京都の最低賃金、労働時間、残業規制"
           },
           {
             "title": "労働相談・労働紛争",
@@ -93,7 +93,7 @@
           {
             "title": "シルバー人材センター",
             "href": "/services/employment/silver-center",
-            "description": "{{municipality_name}}シルバー人材センターの入会・仕事案内"
+            "description": "サンプル市シルバー人材センターの入会・仕事案内"
           },
           {
             "title": "障害者雇用支援",
@@ -107,11 +107,11 @@
       "id": "contact-1",
       "type": "Contact",
       "props": {
-        "department": "{{employment_department}}",
-        "phone": "{{employment_phone}}",
-        "email": "{{employment_email}}",
-        "hours": "{{city_hall_hours}}",
-        "address": "{{city_hall_address}}"
+        "department": "産業振興課 雇用対策係",
+        "phone": "03-1234-5775",
+        "email": "koyo@sample-city.lg.jp",
+        "hours": "平日 8:30〜17:15（土日祝日・年末年始を除く）",
+        "address": "〒100-0001 東京都サンプル市中央1-1-1"
       }
     }
   ],

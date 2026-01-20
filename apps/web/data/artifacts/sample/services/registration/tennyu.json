@@ -11,12 +11,12 @@
   "topic": [],
   "source": {
     "source_url": "template://sample/services/registration/tennyu",
-    "fetched_at": "{{generated_at}}",
+    "fetched_at": "2026-01-20",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "{{generated_at}}",
+    "generated_at": "2026-01-20",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -43,7 +43,7 @@
       "id": "summary-1",
       "type": "Summary",
       "props": {
-        "text": "他の市区町村から{{municipality_name}}に引っ越してきたときは、転入届を届け出てください。届出は引越し日から14日以内に行う必要があります。"
+        "text": "他の市区町村からサンプル市に引っ越してきたときは、転入届を届け出てください。届出は引越し日から14日以内に行う必要があります。"
       }
     },
     {
@@ -71,7 +71,7 @@
           {
             "type": "paragraph",
             "runs": [
-              { "text": "他の市区町村から{{municipality_name}}に住所を移した方（引っ越してきた方）" }
+              { "text": "他の市区町村からサンプル市に住所を移した方（引っ越してきた方）" }
             ]
           },
           { "type": "heading", "level": 2, "text": "届出期間" },
@@ -161,8 +161,8 @@
       "type": "Table",
       "props": {
         "rows": [
-          { "label": "届出場所", "value": "{{registration_window}}" },
-          { "label": "受付時間", "value": "{{city_hall_hours}}" },
+          { "label": "届出場所", "value": "市役所1階 市民課窓口" },
+          { "label": "受付時間", "value": "平日 8:30〜17:15（土日祝日・年末年始を除く）" },
           { "label": "届出期限", "value": "引越し日から14日以内" },
           { "label": "手数料", "value": "無料" }
         ]
@@ -210,11 +210,11 @@
       "id": "contact-1",
       "type": "Contact",
       "props": {
-        "department": "{{registration_department}}",
-        "phone": "{{registration_phone}}",
-        "email": "{{registration_email}}",
-        "hours": "{{city_hall_hours}}",
-        "address": "{{city_hall_address}}"
+        "department": "市民課 届出窓口",
+        "phone": "03-1234-5680",
+        "email": "todokede@sample-city.lg.jp",
+        "hours": "平日 8:30〜17:15（土日祝日・年末年始を除く）",
+        "address": "〒100-0001 東京都サンプル市中央1-1-1"
       }
     }
   ],

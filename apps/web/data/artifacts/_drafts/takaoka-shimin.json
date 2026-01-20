@@ -1,0 +1,41 @@
+{
+  "success": true,
+  "variables": [
+    {
+      "variableName": "shimin_department",
+      "value": "市民課",
+      "confidence": 0.6999999999999998,
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/shiminka/2/4/6/2403.html",
+      "extractedAt": "2026-01-20T10:38:17.378Z"
+    },
+    {
+      "variableName": "juminhyo_fee",
+      "value": "発行する証明書による",
+      "confidence": 0.6,
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/shiminka/2/4/6/2171.html",
+      "extractedAt": "2026-01-20T10:38:17.378Z"
+    },
+    {
+      "variableName": "koseki_fee",
+      "value": "発行する証明書による",
+      "confidence": 0.6,
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/shiminka/2/4/6/2171.html",
+      "extractedAt": "2026-01-20T10:38:17.378Z"
+    },
+    {
+      "variableName": "inkan_touroku_fee",
+      "value": "発行する証明書による",
+      "confidence": 0.6,
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/shiminka/2/4/6/2171.html",
+      "extractedAt": "2026-01-20T10:38:17.378Z"
+    },
+    {
+      "variableName": "inkan_shomei_fee",
+      "value": "発行する証明書による",
+      "confidence": 0.6,
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/shiminka/2/4/6/2171.html",
+      "extractedAt": "2026-01-20T10:38:17.378Z"
+    }
+  ],
+  "errors": []
+}

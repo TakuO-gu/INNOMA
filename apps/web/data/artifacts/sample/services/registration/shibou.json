@@ -11,12 +11,12 @@
   "topic": [],
   "source": {
     "source_url": "template://sample/services/registration/shibou",
-    "fetched_at": "{{generated_at}}",
+    "fetched_at": "2026-01-20",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "{{generated_at}}",
+    "generated_at": "2026-01-20",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -196,7 +196,7 @@
               {
                 "type": "paragraph",
                 "runs": [
-                  { "text": "{{okuyami_madoguchi_description}}" }
+                  { "text": "ご遺族の手続きをワンストップでサポートします" }
                 ]
               }
             ]
@@ -220,11 +220,11 @@
       "id": "contact-1",
       "type": "Contact",
       "props": {
-        "department": "{{shimin_department}}",
-        "phone": "{{shimin_phone}}",
-        "email": "{{shimin_email}}",
+        "department": "市民課",
+        "phone": "03-1234-5679",
+        "email": "shimin@sample-city.lg.jp",
         "hours": "24時間受付（届出のみ）",
-        "address": "{{city_hall_address}}"
+        "address": "〒100-0001 東京都サンプル市中央1-1-1"
       }
     }
   ],

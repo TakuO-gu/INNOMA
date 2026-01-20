@@ -1,0 +1,112 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "takaoka-topics-disaster",
+  "municipality_id": "takaoka",
+  "path": "/topics/disaster",
+  "title": "防災・安全",
+  "description": "地震・台風対策、避難所、ハザードマップ、防犯に関する情報",
+  "content_type": "directory",
+  "service_category": "safety",
+  "audience": [
+    "residents"
+  ],
+  "topic": [
+    "emergency"
+  ],
+  "source": {
+    "source_url": "template://sample/topics/disaster",
+    "fetched_at": "2026-01-20T10:33:17.311Z",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "2026-01-20T10:33:17.311Z",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "くらしの情報",
+            "href": "/topics"
+          },
+          {
+            "label": "防災・安全",
+            "href": "/topics/disaster"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "防災・安全"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "地震・台風対策、避難所、ハザードマップ、防犯に関する情報をまとめています"
+      }
+    },
+    {
+      "id": "topic-list-1",
+      "type": "TopicList",
+      "props": {
+        "items": [
+          {
+            "title": "避難所・避難場所",
+            "href": "/services/disaster/hinanjo",
+            "description": "避難所の場所・開設状況"
+          },
+          {
+            "title": "ハザードマップ",
+            "href": "/services/disaster/hazard-map",
+            "description": "洪水・土砂災害・津波のハザードマップ"
+          },
+          {
+            "title": "防災メール",
+            "href": "/services/disaster/bosai-mail",
+            "description": "防災情報メールの登録"
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{disaster_department}}",
+        "phone": "{{disaster_phone}}",
+        "email": "{{disaster_email}}",
+        "hours": "{{city_hall_hours}}",
+        "address": "{{city_hall_address}}"
+      }
+    }
+  ],
+  "search": {
+    "summary": "防災・安全に関する情報。避難所、ハザードマップ、地震・風水害対策、防犯の案内。",
+    "keywords": [
+      "防災",
+      "安全",
+      "避難所",
+      "ハザードマップ",
+      "地震",
+      "台風",
+      "洪水",
+      "防犯",
+      "消防",
+      "救急"
+    ],
+    "plain_text": "防災・安全。地震・台風対策、避難所、ハザードマップ、防犯に関する情報。避難所・避難場所、ハザードマップ、地震対策、風水害対策、防災情報・警報、被災者支援、消防・救急、防犯。"
+  }
+}

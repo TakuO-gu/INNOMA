@@ -13,12 +13,12 @@
   "topic": [],
   "source": {
     "source_url": "template://sample/services/nationality/foreign-registration",
-    "fetched_at": "{{generated_at}}",
+    "fetched_at": "2026-01-20",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "{{generated_at}}",
+    "generated_at": "2026-01-20",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -68,7 +68,7 @@
           {
             "type": "heading",
             "level": 2,
-            "text": "転入届（{{municipality_name}}に引っ越してきたとき）"
+            "text": "転入届（サンプル市に引っ越してきたとき）"
           },
           {
             "type": "list",
@@ -109,7 +109,7 @@
           {
             "type": "heading",
             "level": 2,
-            "text": "転出届（{{municipality_name}}から引っ越すとき）"
+            "text": "転出届（サンプル市から引っ越すとき）"
           },
           {
             "type": "list",
@@ -150,7 +150,7 @@
           {
             "type": "heading",
             "level": 2,
-            "text": "転居届（{{municipality_name}}内で引っ越したとき）"
+            "text": "転居届（サンプル市内で引っ越したとき）"
           },
           {
             "type": "list",
@@ -208,11 +208,11 @@
       "id": "contact-1",
       "type": "Contact",
       "props": {
-        "department": "{{resident_department}}",
-        "phone": "{{resident_phone}}",
-        "email": "{{resident_email}}",
-        "hours": "{{city_hall_hours}}",
-        "address": "{{city_hall_address}}"
+        "department": "市民課",
+        "phone": "03-1234-5681",
+        "email": "jumin@sample-city.lg.jp",
+        "hours": "平日 8:30〜17:15（土日祝日・年末年始を除く）",
+        "address": "〒100-0001 東京都サンプル市中央1-1-1"
       }
     }
   ],

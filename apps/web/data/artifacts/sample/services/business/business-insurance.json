@@ -13,12 +13,12 @@
   "topic": [],
   "source": {
     "source_url": "template://sample/services/business/business-insurance",
-    "fetched_at": "{{generated_at}}",
+    "fetched_at": "2026-01-20",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "{{generated_at}}",
+    "generated_at": "2026-01-20",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -142,9 +142,9 @@
       "id": "contact-1",
       "type": "Contact",
       "props": {
-        "department": "{{pension_office}}",
-        "phone": "{{pension_office_phone}}",
-        "address": "{{pension_office_address}}"
+        "department": "サンプル年金事務所",
+        "phone": "03-3456-7890",
+        "address": "東京都サンプル市中央3-3-3"
       }
     }
   ],

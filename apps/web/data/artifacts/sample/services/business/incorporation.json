@@ -11,12 +11,12 @@
   "topic": [],
   "source": {
     "source_url": "template://sample/services/business/incorporation",
-    "fetched_at": "{{generated_at}}",
+    "fetched_at": "2026-01-20",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "{{generated_at}}",
+    "generated_at": "2026-01-20",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -81,8 +81,8 @@
       "props": {
         "rows": [
           { "label": "定款認証", "value": "公証役場（株式会社のみ）" },
-          { "label": "設立登記", "value": "{{legal_affairs_bureau}}" },
-          { "label": "法人設立届出", "value": "税務署、{{prefecture_name}}、{{municipality_name}}" }
+          { "label": "設立登記", "value": "東京法務局サンプル出張所" },
+          { "label": "法人設立届出", "value": "税務署、東京都、サンプル市" }
         ]
       }
     },
@@ -90,9 +90,9 @@
       "id": "contact-1",
       "type": "Contact",
       "props": {
-        "department": "{{legal_affairs_bureau}}",
-        "phone": "{{legal_affairs_bureau_phone}}",
-        "address": "{{legal_affairs_bureau_address}}"
+        "department": "東京法務局サンプル出張所",
+        "phone": "03-5678-9012",
+        "address": "東京都サンプル市中央5-5-5"
       }
     }
   ],

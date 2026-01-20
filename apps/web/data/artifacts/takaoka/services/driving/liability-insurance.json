@@ -1,0 +1,179 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "takaoka-services-driving-liability-insurance",
+  "municipality_id": "takaoka",
+  "path": "/services/driving/liability-insurance",
+  "title": "自賠責保険",
+  "description": "自動車損害賠償責任保険（自賠責）の加入案内",
+  "content_type": "guide",
+  "service_category": "government",
+  "audience": [
+    "residents"
+  ],
+  "topic": [],
+  "source": {
+    "source_url": "template://sample/services/driving/liability-insurance",
+    "fetched_at": "2026-01-20T10:33:17.311Z",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "2026-01-20T10:33:17.311Z",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "くらしの情報",
+            "href": "/topics"
+          },
+          {
+            "label": "運転・車両",
+            "href": "/topics/driving"
+          },
+          {
+            "label": "自賠責保険",
+            "href": "/services/driving/liability-insurance"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "自賠責保険"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "自賠責保険（自動車損害賠償責任保険）は、すべての自動車に加入が義務付けられている強制保険です。"
+      }
+    },
+    {
+      "id": "richtext-1",
+      "type": "RichText",
+      "props": {
+        "content": [
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "補償内容"
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "死亡：3,000万円まで"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "後遺障害：4,000万円まで（等級による）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "傷害：120万円まで"
+                    }
+                  ]
+                }
+              ]
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "保険料（24か月）"
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "自家用乗用車：17,650円"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "軽自動車：17,540円"
+                    }
+                  ]
+                }
+              ]
+            ]
+          },
+          {
+            "type": "callout",
+            "severity": "warning",
+            "content": [
+              {
+                "type": "paragraph",
+                "runs": [
+                  {
+                    "text": "自賠責保険に未加入で運行した場合、1年以下の懲役または50万円以下の罰金です。"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{driving_department}}",
+        "phone": "{{driving_phone}}",
+        "email": "{{driving_email}}",
+        "hours": "{{city_hall_hours}}",
+        "address": "{{city_hall_address}}"
+      }
+    }
+  ],
+  "search": {
+    "summary": "自賠責保険の案内。強制保険、補償内容、保険料。",
+    "keywords": [
+      "自賠責保険",
+      "強制保険",
+      "自動車保険",
+      "補償"
+    ],
+    "plain_text": "自賠責保険。すべての自動車に加入義務。死亡3,000万円、後遺障害4,000万円、傷害120万円まで補償。"
+  }
+}

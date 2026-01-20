@@ -10,6 +10,7 @@ import { fetchPage, isUsefulUrl } from './page-fetcher';
 import { validateVariable, calculateValidationConfidence } from './validators';
 import { getServiceDefinition, serviceDefinitions, getVariableDefinition } from './variable-priority';
 import { ExtractedVariable, ExtractionError, ExtractionResult, LLMFetchConfig, FetchJob, SearchResult } from './types';
+import { isConcreteValue, deepSearch, executeRefinedSearch } from './deep-search';
 
 /**
  * Fetch variables for a municipality service
@@ -128,6 +129,88 @@ export async function fetchServiceVariables(
             message: `Failed to fetch ${url}: ${error instanceof Error ? error.message : 'Unknown error'}`,
             retryable: true,
           });
+        }
+      }
+    }
+
+    // Deep search: 具体的でない値があれば深堀り検索
+    const vagueVariables = variables.filter(
+      v => v.value && !isConcreteValue(v.variableName, v.value)
+    );
+    const missingVariables = service.variables.filter(
+      name => !variables.some(v => v.variableName === name && v.value)
+    );
+
+    if ((vagueVariables.length > 0 || missingVariables.length > 0) && searchResults.length > 0) {
+      const targetVars = [
+        ...vagueVariables.map(v => {
+          const def = getVariableDefinition(v.variableName);
+          return {
+            name: v.variableName,
+            description: def?.description || v.variableName,
+            examples: def?.examples,
+          };
+        }),
+        ...missingVariables.map(name => {
+          const def = getVariableDefinition(name);
+          return {
+            name,
+            description: def?.description || name,
+            examples: def?.examples,
+          };
+        }),
+      ];
+
+      // ページ内リンク探索による深堀り
+      if (targetVars.length > 0) {
+        const firstUrl = searchResults[0].link;
+        const deepResult = await deepSearch(
+          municipalityName,
+          firstUrl,
+          targetVars,
+          { maxDepth: 2, maxPagesPerLevel: 2, officialUrl }
+        );
+
+        // 深堀りで取得した変数を追加
+        for (const deepVar of deepResult.variables) {
+          const existingIndex = variables.findIndex(
+            v => v.variableName === deepVar.variableName
+          );
+          if (existingIndex >= 0) {
+            // 既存の曖昧な値を上書き
+            variables[existingIndex] = deepVar;
+          } else {
+            variables.push(deepVar);
+          }
+        }
+
+        // まだ取得できていない変数があれば再検索
+        const stillMissing = targetVars.filter(
+          tv => !deepResult.variables.some(v => v.variableName === tv.name && isConcreteValue(v.variableName, v.value))
+        );
+
+        if (stillMissing.length > 0 && deepResult.suggestedQueries.length > 0) {
+          // 最大2つの再検索を実行
+          for (const query of deepResult.suggestedQueries.slice(0, 2)) {
+            const refinedVars = await executeRefinedSearch(
+              municipalityName,
+              query,
+              officialUrl
+            );
+
+            for (const refinedVar of refinedVars) {
+              const existingIndex = variables.findIndex(
+                v => v.variableName === refinedVar.variableName
+              );
+              if (existingIndex >= 0) {
+                if (!isConcreteValue(variables[existingIndex].variableName, variables[existingIndex].value)) {
+                  variables[existingIndex] = refinedVar;
+                }
+              } else {
+                variables.push(refinedVar);
+              }
+            }
+          }
         }
       }
     }

@@ -4,7 +4,7 @@
   "municipality_id": "sample",
   "path": "/services/nationality/passport",
   "title": "パスポート（旅券）",
-  "description": "パスポートの申請・更新・届出、{{passport_office_name}}",
+  "description": "パスポートの申請・更新・届出、東京都パスポートセンター",
   "content_type": "guide",
   "service_category": "government",
   "audience": [
@@ -13,12 +13,12 @@
   "topic": [],
   "source": {
     "source_url": "template://sample/services/nationality/passport",
-    "fetched_at": "{{generated_at}}",
+    "fetched_at": "2026-01-20",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "{{generated_at}}",
+    "generated_at": "2026-01-20",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -187,9 +187,9 @@
       "id": "contact-1",
       "type": "Contact",
       "props": {
-        "department": "{{passport_office_name}}",
-        "phone": "{{passport_office_phone}}",
-        "address": "{{passport_office_address}}"
+        "department": "東京都パスポートセンター",
+        "phone": "03-5321-7711",
+        "address": "東京都新宿区西新宿2-8-1"
       }
     }
   ],

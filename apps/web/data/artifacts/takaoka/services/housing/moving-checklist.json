@@ -1,0 +1,301 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "takaoka-services-housing-moving-checklist",
+  "municipality_id": "takaoka",
+  "path": "/services/housing/moving-checklist",
+  "title": "引越し手続き一覧",
+  "description": "転入届、転出届、ライフラインの手続き一覧",
+  "content_type": "guide",
+  "service_category": "housing",
+  "audience": [
+    "residents"
+  ],
+  "topic": [],
+  "source": {
+    "source_url": "template://sample/services/housing/moving-checklist",
+    "fetched_at": "2026-01-20T10:33:17.311Z",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "2026-01-20T10:33:17.311Z",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "くらしの情報",
+            "href": "/topics"
+          },
+          {
+            "label": "住まい・引越し",
+            "href": "/topics/housing"
+          },
+          {
+            "label": "引越し手続き一覧",
+            "href": "/services/housing/moving-checklist"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "引越し手続き一覧"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "引越しに伴う各種届出・手続きの一覧です。引越し前後に必要な手続きを確認してください。"
+      }
+    },
+    {
+      "id": "richtext-1",
+      "type": "RichText",
+      "props": {
+        "content": [
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "市役所での手続き"
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "転入届・転出届・転居届",
+                      "bold": true
+                    },
+                    {
+                      "text": "（引越し後14日以内）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "マイナンバーカードの住所変更",
+                      "bold": true
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "国民健康保険の届出",
+                      "bold": true
+                    },
+                    {
+                      "text": "（加入者のみ）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "国民年金の届出",
+                      "bold": true
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "児童手当の届出",
+                      "bold": true
+                    },
+                    {
+                      "text": "（受給者のみ）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "印鑑登録",
+                      "bold": true
+                    },
+                    {
+                      "text": "（必要な方）"
+                    }
+                  ]
+                }
+              ]
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "ライフライン"
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "電気の開始届",
+                      "bold": true
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "ガスの開栓届",
+                      "bold": true
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "水道の開始届",
+                      "bold": true
+                    }
+                  ]
+                }
+              ]
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "その他の届出"
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "運転免許証の住所変更",
+                      "bold": true
+                    },
+                    {
+                      "text": "（警察署・運転免許センター）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "自動車の変更登録",
+                      "bold": true
+                    },
+                    {
+                      "text": "（陸運局）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "郵便物の転送届",
+                      "bold": true
+                    },
+                    {
+                      "text": "（郵便局）"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "related-links-1",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "転入届",
+            "href": "/services/registration/tennyu"
+          },
+          {
+            "title": "転出届",
+            "href": "/services/registration/tenshutsu"
+          },
+          {
+            "title": "転居届",
+            "href": "/services/registration/tenkyo"
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{registration_department}}",
+        "phone": "{{registration_phone}}",
+        "email": "{{registration_email}}",
+        "hours": "{{city_hall_hours}}",
+        "address": "{{city_hall_address}}"
+      }
+    }
+  ],
+  "search": {
+    "summary": "引越し手続き一覧。転入届・転出届、マイナンバーカード、国民健康保険、ライフライン、運転免許証の住所変更など。",
+    "keywords": [
+      "引越し",
+      "転入届",
+      "転出届",
+      "手続き",
+      "ライフライン",
+      "住所変更"
+    ],
+    "plain_text": "引越し手続き一覧。市役所での手続き、ライフライン、その他の届出。転入届・転出届・転居届は引越し後14日以内。"
+  }
+}

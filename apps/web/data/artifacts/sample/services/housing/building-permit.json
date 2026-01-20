@@ -11,12 +11,12 @@
   "topic": [],
   "source": {
     "source_url": "template://sample/services/housing/building-permit",
-    "fetched_at": "{{generated_at}}",
+    "fetched_at": "2026-01-20",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "{{generated_at}}",
+    "generated_at": "2026-01-20",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -85,7 +85,7 @@
       "type": "Table",
       "props": {
         "rows": [
-          { "label": "申請先", "value": "{{building_department}}または指定確認検査機関" },
+          { "label": "申請先", "value": "建築指導課または指定確認検査機関" },
           { "label": "手数料", "value": "床面積により異なる（数万円〜数十万円）" },
           { "label": "審査期間", "value": "7日〜35日（建築物の規模による）" }
         ]
@@ -95,11 +95,11 @@
       "id": "contact-1",
       "type": "Contact",
       "props": {
-        "department": "{{building_department}}",
-        "phone": "{{building_phone}}",
-        "email": "{{building_email}}",
-        "hours": "{{city_hall_hours}}",
-        "address": "{{city_hall_address}}"
+        "department": "建築指導課",
+        "phone": "03-1234-5761",
+        "email": "kenchiku@sample-city.lg.jp",
+        "hours": "平日 8:30〜17:15（土日祝日・年末年始を除く）",
+        "address": "〒100-0001 東京都サンプル市中央1-1-1"
       }
     }
   ],

@@ -1,0 +1,134 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "takaoka-services-business-incorporation",
+  "municipality_id": "takaoka",
+  "path": "/services/business/incorporation",
+  "title": "法人設立（株式会社・合同会社）",
+  "description": "会社設立の手続き、定款認証、登記申請",
+  "content_type": "guide",
+  "service_category": "business",
+  "audience": [
+    "businesses"
+  ],
+  "topic": [],
+  "source": {
+    "source_url": "template://sample/services/business/incorporation",
+    "fetched_at": "2026-01-20T10:33:17.311Z",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "2026-01-20T10:33:17.311Z",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "くらしの情報",
+            "href": "/topics"
+          },
+          {
+            "label": "事業・経営",
+            "href": "/topics/business"
+          },
+          {
+            "label": "法人設立",
+            "href": "/services/business/incorporation"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "法人設立（株式会社・合同会社）"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "株式会社・合同会社の設立手続きの流れと必要な届出をご案内します。"
+      }
+    },
+    {
+      "id": "step-nav-1",
+      "type": "StepNavigation",
+      "props": {
+        "currentStep": 0,
+        "steps": [
+          {
+            "title": "定款の作成",
+            "body": "会社の基本的なルールを定めた定款を作成します。商号、事業目的、本店所在地、資本金などを記載します。"
+          },
+          {
+            "title": "定款の認証（株式会社のみ）",
+            "body": "公証役場で定款の認証を受けます。合同会社は不要です。電子定款の場合は印紙代4万円が不要。"
+          },
+          {
+            "title": "資本金の払込み",
+            "body": "発起人の個人口座に資本金を払い込み、払込証明書を作成します。"
+          },
+          {
+            "title": "設立登記",
+            "body": "法務局に設立登記を申請します。登録免許税は株式会社15万円〜、合同会社6万円〜。"
+          },
+          {
+            "title": "各種届出",
+            "body": "税務署、都道府県、市区町村、年金事務所、ハローワーク等への届出を行います。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "table-1",
+      "type": "Table",
+      "props": {
+        "rows": [
+          {
+            "label": "定款認証",
+            "value": "公証役場（株式会社のみ）"
+          },
+          {
+            "label": "設立登記",
+            "value": "{{legal_affairs_bureau}}"
+          },
+          {
+            "label": "法人設立届出",
+            "value": "税務署、富山県、高岡市"
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{legal_affairs_bureau}}",
+        "phone": "{{legal_affairs_bureau_phone}}",
+        "address": "{{legal_affairs_bureau_address}}"
+      }
+    }
+  ],
+  "search": {
+    "summary": "法人設立の手続き案内。株式会社・合同会社の設立登記、定款認証。",
+    "keywords": [
+      "法人設立",
+      "株式会社",
+      "合同会社",
+      "定款",
+      "設立登記",
+      "会社設立"
+    ],
+    "plain_text": "法人設立。定款作成→定款認証（株式会社）→資本金払込み→設立登記→各種届出の流れ。"
+  }
+}

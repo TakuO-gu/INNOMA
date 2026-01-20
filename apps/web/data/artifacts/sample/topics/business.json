@@ -11,12 +11,12 @@
   "topic": [],
   "source": {
     "source_url": "template://sample/topics/business",
-    "fetched_at": "{{generated_at}}",
+    "fetched_at": "2026-01-20",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "{{generated_at}}",
+    "generated_at": "2026-01-20",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -73,7 +73,7 @@
           {
             "title": "補助金・助成金",
             "href": "/services/business/subsidies",
-            "description": "{{municipality_name}}の中小企業向け補助金、国・県の助成制度"
+            "description": "サンプル市の中小企業向け補助金、国・県の助成制度"
           },
           {
             "title": "融資・資金調達",
@@ -107,11 +107,11 @@
       "id": "contact-1",
       "type": "Contact",
       "props": {
-        "department": "{{business_department}}",
-        "phone": "{{business_phone}}",
-        "email": "{{business_email}}",
-        "hours": "{{city_hall_hours}}",
-        "address": "{{city_hall_address}}"
+        "department": "産業振興課",
+        "phone": "03-1234-5770",
+        "email": "sangyo@sample-city.lg.jp",
+        "hours": "平日 8:30〜17:15（土日祝日・年末年始を除く）",
+        "address": "〒100-0001 東京都サンプル市中央1-1-1"
       }
     }
   ],

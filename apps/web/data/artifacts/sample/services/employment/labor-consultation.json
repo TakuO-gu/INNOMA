@@ -11,12 +11,12 @@
   "topic": [],
   "source": {
     "source_url": "template://sample/services/employment/labor-consultation",
-    "fetched_at": "{{generated_at}}",
+    "fetched_at": "2026-01-20",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "{{generated_at}}",
+    "generated_at": "2026-01-20",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -75,9 +75,9 @@
       "id": "contact-1",
       "type": "Contact",
       "props": {
-        "department": "{{labor_bureau}}総合労働相談コーナー",
-        "phone": "{{labor_bureau_phone}}",
-        "address": "{{labor_bureau_address}}"
+        "department": "東京労働局総合労働相談コーナー",
+        "phone": "03-6789-0123",
+        "address": "東京都千代田区九段南1-2-1"
       }
     }
   ],

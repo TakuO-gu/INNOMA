@@ -1,0 +1,168 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "takaoka-services-childcare-nursery",
+  "municipality_id": "takaoka",
+  "path": "/services/childcare/nursery",
+  "title": "保育園・幼稚園",
+  "description": "保育園・幼稚園に関する情報。入園申込、保育園一覧、一時保育など。",
+  "content_type": "directory",
+  "service_category": "children",
+  "audience": [
+    "children_families"
+  ],
+  "topic": [],
+  "source": {
+    "source_url": "template://sample/services/childcare/nursery",
+    "fetched_at": "2026-01-20T10:33:17.311Z",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "2026-01-20T10:33:17.311Z",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "子育て",
+            "href": "/services/childcare"
+          },
+          {
+            "label": "保育園・幼稚園",
+            "href": "/services/childcare/nursery"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "保育園・幼稚園"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "高岡市では、認可保育園、認定こども園、幼稚園など、お子さまの年齢や保護者の就労状況に応じた保育施設をご利用いただけます。"
+      }
+    },
+    {
+      "id": "topic-list-1",
+      "type": "TopicList",
+      "props": {
+        "items": [
+          {
+            "title": "認可保育園の入園申込",
+            "href": "/services/childcare/nursery/apply",
+            "description": "{{nursery_apply_notice}}"
+          },
+          {
+            "title": "年度途中の入園申込",
+            "href": "/services/childcare/nursery/apply-midyear",
+            "description": "年度途中からの入園をご希望の方"
+          },
+          {
+            "title": "幼稚園の入園",
+            "href": "/services/childcare/kindergarten",
+            "description": "市立・私立幼稚園への入園手続き"
+          },
+          {
+            "title": "認可保育園一覧",
+            "href": "/services/childcare/nursery/list",
+            "description": "市内の認可保育園（{{nursery_count}}施設）"
+          },
+          {
+            "title": "認定こども園一覧",
+            "href": "/services/childcare/nursery/kodomoen",
+            "description": "市内の認定こども園"
+          },
+          {
+            "title": "小規模保育事業所",
+            "href": "/services/childcare/nursery/small",
+            "description": "0〜2歳児対象の小規模施設"
+          },
+          {
+            "title": "保育料について",
+            "href": "/services/childcare/nursery/fee",
+            "description": "保育料の算定方法と金額"
+          },
+          {
+            "title": "幼児教育・保育の無償化",
+            "href": "/services/childcare/nursery/free",
+            "description": "3〜5歳児の保育料無償化"
+          },
+          {
+            "title": "一時保育",
+            "href": "/services/childcare/temporary",
+            "description": "緊急時や一時的な保育が必要な方"
+          },
+          {
+            "title": "病児・病後児保育",
+            "href": "/services/childcare/sick-child",
+            "description": "お子さまが病気のときの保育"
+          },
+          {
+            "title": "延長保育",
+            "href": "/services/childcare/extended",
+            "description": "通常の保育時間を超えた保育"
+          }
+        ]
+      }
+    },
+    {
+      "id": "related-links-1",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "児童手当",
+            "href": "/services/childcare/allowance"
+          },
+          {
+            "title": "子ども医療費助成",
+            "href": "/services/childcare/medical"
+          },
+          {
+            "title": "学童保育",
+            "href": "/services/childcare/after-school"
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{nursery_department}}",
+        "phone": "{{nursery_phone}}",
+        "email": "{{nursery_email}}",
+        "hours": "{{city_hall_hours}}",
+        "address": "{{city_hall_address}}"
+      }
+    }
+  ],
+  "search": {
+    "summary": "保育園・幼稚園情報。入園申込、認可保育園一覧、認定こども園、保育料、一時保育など。",
+    "keywords": [
+      "保育園",
+      "幼稚園",
+      "入園申込",
+      "認可保育園",
+      "認定こども園",
+      "保育料",
+      "無償化",
+      "一時保育"
+    ],
+    "plain_text": "保育園・幼稚園情報。認可保育園の入園申込、年度途中の入園、幼稚園の入園、認可保育園一覧、認定こども園一覧、小規模保育事業所、保育料、幼児教育・保育の無償化、一時保育、病児・病後児保育、延長保育。"
+  }
+}

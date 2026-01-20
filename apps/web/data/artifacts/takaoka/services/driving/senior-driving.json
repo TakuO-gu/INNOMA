@@ -1,0 +1,159 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "takaoka-services-driving-senior-driving",
+  "municipality_id": "takaoka",
+  "path": "/services/driving/senior-driving",
+  "title": "高齢者運転支援",
+  "description": "運転免許証自主返納、高齢者講習、安全運転相談",
+  "content_type": "guide",
+  "service_category": "government",
+  "audience": [
+    "residents"
+  ],
+  "topic": [],
+  "source": {
+    "source_url": "template://sample/services/driving/senior-driving",
+    "fetched_at": "2026-01-20T10:33:17.311Z",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "2026-01-20T10:33:17.311Z",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "くらしの情報",
+            "href": "/topics"
+          },
+          {
+            "label": "運転・車両",
+            "href": "/topics/driving"
+          },
+          {
+            "label": "高齢者運転支援",
+            "href": "/services/driving/senior-driving"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "高齢者運転支援"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "高齢ドライバーの安全運転支援と運転免許証の自主返納についてご案内します。"
+      }
+    },
+    {
+      "id": "richtext-1",
+      "type": "RichText",
+      "props": {
+        "content": [
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "高齢者講習"
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "70歳以上の方は免許更新時に高齢者講習の受講が必要です。75歳以上は認知機能検査も必要です。"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "運転免許証の自主返納"
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "運転に不安を感じる方は、運転免許証を自主的に返納できます。返納後は「運転経歴証明書」を申請でき、身分証明書として使用できます。"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "自主返納者への支援"
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "高岡市では、自主返納された方に以下の支援を行っています。"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "{{license_return_support_1}}"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "{{license_return_support_2}}"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{driving_department}}",
+        "phone": "{{driving_phone}}",
+        "email": "{{driving_email}}",
+        "hours": "{{city_hall_hours}}",
+        "address": "{{city_hall_address}}"
+      }
+    }
+  ],
+  "search": {
+    "summary": "高齢者運転支援の案内。高齢者講習、認知機能検査、運転免許自主返納。",
+    "keywords": [
+      "高齢者運転",
+      "自主返納",
+      "高齢者講習",
+      "認知機能検査",
+      "運転経歴証明書"
+    ],
+    "plain_text": "高齢者運転支援。70歳以上は高齢者講習、75歳以上は認知機能検査が必要。運転免許証の自主返納も可能。"
+  }
+}

@@ -13,12 +13,12 @@
   "topic": [],
   "source": {
     "source_url": "template://sample/services/driving/traffic-safety",
-    "fetched_at": "{{generated_at}}",
+    "fetched_at": "2026-01-20",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "{{generated_at}}",
+    "generated_at": "2026-01-20",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -57,7 +57,7 @@
       "id": "summary-1",
       "type": "Summary",
       "props": {
-        "text": "{{municipality_name}}の交通安全に関する取組みと支援制度をご案内します。"
+        "text": "サンプル市の交通安全に関する取組みと支援制度をご案内します。"
       }
     },
     {
@@ -74,7 +74,7 @@
             "type": "paragraph",
             "runs": [
               {
-                "text": "{{prefecture_name}}では自転車保険への加入が義務化されています。自転車事故で加害者になった場合の損害賠償に備えましょう。"
+                "text": "東京都では自転車保険への加入が義務化されています。自転車事故で加害者になった場合の損害賠償に備えましょう。"
               }
             ]
           },
@@ -87,7 +87,7 @@
             "type": "paragraph",
             "runs": [
               {
-                "text": "{{childseat_subsidy_description}}"
+                "text": "チャイルドシート購入費の1/2を補助（上限5,000円）"
               }
             ]
           },
@@ -139,11 +139,11 @@
       "id": "contact-1",
       "type": "Contact",
       "props": {
-        "department": "{{driving_department}}",
-        "phone": "{{driving_phone}}",
-        "email": "{{driving_email}}",
-        "hours": "{{city_hall_hours}}",
-        "address": "{{city_hall_address}}"
+        "department": "市民課 届出窓口",
+        "phone": "03-1234-5680",
+        "email": "todokede@sample-city.lg.jp",
+        "hours": "平日 8:30〜17:15（土日祝日・年末年始を除く）",
+        "address": "〒100-0001 東京都サンプル市中央1-1-1"
       }
     }
   ],

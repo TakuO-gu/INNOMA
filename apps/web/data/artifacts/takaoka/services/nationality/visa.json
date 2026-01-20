@@ -1,0 +1,201 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "takaoka-services-nationality-visa",
+  "municipality_id": "takaoka",
+  "path": "/services/nationality/visa",
+  "title": "在留資格・ビザ",
+  "description": "在留資格の種類、在留資格変更・更新、入国管理局案内",
+  "content_type": "guide",
+  "service_category": "government",
+  "audience": [
+    "foreigners"
+  ],
+  "topic": [],
+  "source": {
+    "source_url": "template://sample/services/nationality/visa",
+    "fetched_at": "2026-01-20T10:33:17.311Z",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "2026-01-20T10:33:17.311Z",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "くらしの情報",
+            "href": "/topics"
+          },
+          {
+            "label": "戸籍・国籍・在留",
+            "href": "/topics/nationality"
+          },
+          {
+            "label": "在留資格・ビザ",
+            "href": "/services/nationality/visa"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "在留資格・ビザ"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "日本に滞在する外国人の在留資格（ビザ）に関する手続きをご案内します。"
+      }
+    },
+    {
+      "id": "richtext-1",
+      "type": "RichText",
+      "props": {
+        "content": [
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "主な在留資格"
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "永住者",
+                      "bold": true
+                    },
+                    {
+                      "text": "：在留期限なし"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "技術・人文知識・国際業務",
+                      "bold": true
+                    },
+                    {
+                      "text": "：専門的・技術的分野の就労"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "特定技能",
+                      "bold": true
+                    },
+                    {
+                      "text": "：人手不足分野での就労"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "留学",
+                      "bold": true
+                    },
+                    {
+                      "text": "：大学・専門学校等での学習"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "家族滞在",
+                      "bold": true
+                    },
+                    {
+                      "text": "：就労者の扶養家族"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "日本人の配偶者等",
+                      "bold": true
+                    },
+                    {
+                      "text": "：日本人の配偶者・子"
+                    }
+                  ]
+                }
+              ]
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "在留期間更新・在留資格変更"
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "在留期間の満了前に出入国在留管理局で更新・変更の申請を行ってください。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{immigration_bureau}}",
+        "phone": "{{immigration_bureau_phone}}",
+        "address": "{{immigration_bureau_address}}"
+      }
+    }
+  ],
+  "search": {
+    "summary": "在留資格・ビザの案内。在留資格の種類、更新・変更手続き。",
+    "keywords": [
+      "在留資格",
+      "ビザ",
+      "在留期間",
+      "更新",
+      "変更",
+      "入国管理局"
+    ],
+    "plain_text": "在留資格・ビザ。永住者、技術・人文知識・国際業務、特定技能、留学など。出入国在留管理局で手続き。"
+  }
+}

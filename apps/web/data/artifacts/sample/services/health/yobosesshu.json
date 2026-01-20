@@ -11,12 +11,12 @@
   "topic": [],
   "source": {
     "source_url": "template://sample/services/health/yobosesshu",
-    "fetched_at": "{{generated_at}}",
+    "fetched_at": "2026-01-20",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "{{generated_at}}",
+    "generated_at": "2026-01-20",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -102,8 +102,8 @@
       "props": {
         "rows": [
           { "label": "対象者", "value": "65歳以上の方（60〜64歳で心臓・腎臓・呼吸器の機能障害等がある方を含む）" },
-          { "label": "接種期間", "value": "{{influenza_period}}" },
-          { "label": "自己負担", "value": "{{influenza_fee}}" }
+          { "label": "接種期間", "value": "10月1日〜翌年1月31日" },
+          { "label": "自己負担", "value": "2,500円" }
         ]
       }
     },
@@ -128,7 +128,7 @@
       "props": {
         "rows": [
           { "label": "対象者", "value": "65歳、70歳、75歳、80歳、85歳、90歳、95歳、100歳の方（過去に接種していない方）" },
-          { "label": "自己負担", "value": "{{haienkyukin_fee}}" }
+          { "label": "自己負担", "value": "4,000円" }
         ]
       }
     },
@@ -153,8 +153,8 @@
       "props": {
         "rows": [
           { "label": "対象者", "value": "50歳以上の方" },
-          { "label": "助成額（生ワクチン）", "value": "{{taijohosin_live_subsidy}}" },
-          { "label": "助成額（不活化ワクチン）", "value": "{{taijohosin_inactivated_subsidy}}" }
+          { "label": "助成額（生ワクチン）", "value": "10,800円" },
+          { "label": "助成額（不活化ワクチン）", "value": "10,800円" }
         ]
       }
     },
@@ -218,11 +218,11 @@
       "id": "contact-1",
       "type": "Contact",
       "props": {
-        "department": "{{yobosesshu_department}}",
-        "phone": "{{yobosesshu_phone}}",
-        "email": "{{yobosesshu_email}}",
-        "hours": "{{city_hall_hours}}",
-        "address": "{{city_hall_address}}"
+        "department": "健康推進課 予防接種係",
+        "phone": "03-1234-5732",
+        "email": "yobo@sample-city.lg.jp",
+        "hours": "平日 8:30〜17:15（土日祝日・年末年始を除く）",
+        "address": "〒100-0001 東京都サンプル市中央1-1-1"
       }
     }
   ],

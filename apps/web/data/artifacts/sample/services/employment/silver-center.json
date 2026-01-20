@@ -4,19 +4,19 @@
   "municipality_id": "sample",
   "path": "/services/employment/silver-center",
   "title": "シルバー人材センター",
-  "description": "{{municipality_name}}シルバー人材センターの入会・仕事案内",
+  "description": "サンプル市シルバー人材センターの入会・仕事案内",
   "content_type": "guide",
   "service_category": "business",
   "audience": ["residents"],
   "topic": [],
   "source": {
     "source_url": "template://sample/services/employment/silver-center",
-    "fetched_at": "{{generated_at}}",
+    "fetched_at": "2026-01-20",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "{{generated_at}}",
+    "generated_at": "2026-01-20",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -57,7 +57,7 @@
             "ordered": false,
             "items": [
               [{ "type": "paragraph", "runs": [{ "text": "おおむね60歳以上の方" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "{{municipality_name}}に在住の方" }] }],
+              [{ "type": "paragraph", "runs": [{ "text": "サンプル市に在住の方" }] }],
               [{ "type": "paragraph", "runs": [{ "text": "健康で働く意欲のある方" }] }]
             ]
           },
@@ -77,7 +77,7 @@
           {
             "type": "paragraph",
             "runs": [
-              { "text": "年会費：{{silver_center_fee}}円" }
+              { "text": "年会費：年会費2,000円円" }
             ]
           }
         ]
@@ -87,10 +87,10 @@
       "id": "contact-1",
       "type": "Contact",
       "props": {
-        "department": "{{municipality_name}}シルバー人材センター",
-        "phone": "{{silver_center_phone}}",
-        "email": "{{silver_center_email}}",
-        "address": "{{silver_center_address}}"
+        "department": "サンプル市シルバー人材センター",
+        "phone": "03-1234-5801",
+        "email": "silver@sample-city.lg.jp",
+        "address": "東京都サンプル市中央1-1-3"
       }
     }
   ],

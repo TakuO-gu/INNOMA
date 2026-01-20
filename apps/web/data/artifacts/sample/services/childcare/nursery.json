@@ -11,12 +11,12 @@
   "topic": [],
   "source": {
     "source_url": "template://sample/services/childcare/nursery",
-    "fetched_at": "{{generated_at}}",
+    "fetched_at": "2026-01-20",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "{{generated_at}}",
+    "generated_at": "2026-01-20",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -42,7 +42,7 @@
       "id": "summary-1",
       "type": "Summary",
       "props": {
-        "text": "{{municipality_name}}では、認可保育園、認定こども園、幼稚園など、お子さまの年齢や保護者の就労状況に応じた保育施設をご利用いただけます。"
+        "text": "サンプル市では、認可保育園、認定こども園、幼稚園など、お子さまの年齢や保護者の就労状況に応じた保育施設をご利用いただけます。"
       }
     },
     {
@@ -53,7 +53,7 @@
           {
             "title": "認可保育園の入園申込",
             "href": "/services/childcare/nursery/apply",
-            "description": "{{nursery_apply_notice}}"
+            "description": "令和8年度保育所入所申込みを受け付けます"
           },
           {
             "title": "年度途中の入園申込",
@@ -68,7 +68,7 @@
           {
             "title": "認可保育園一覧",
             "href": "/services/childcare/nursery/list",
-            "description": "市内の認可保育園（{{nursery_count}}施設）"
+            "description": "市内の認可保育園（15か所施設）"
           },
           {
             "title": "認定こども園一覧",
@@ -123,11 +123,11 @@
       "id": "contact-1",
       "type": "Contact",
       "props": {
-        "department": "{{nursery_department}}",
-        "phone": "{{nursery_phone}}",
-        "email": "{{nursery_email}}",
-        "hours": "{{city_hall_hours}}",
-        "address": "{{city_hall_address}}"
+        "department": "子育て支援課 保育係",
+        "phone": "03-1234-5722",
+        "email": "hoiku@sample-city.lg.jp",
+        "hours": "平日 8:30〜17:15（土日祝日・年末年始を除く）",
+        "address": "〒100-0001 東京都サンプル市中央1-1-1"
       }
     }
   ],

@@ -11,12 +11,12 @@
   "topic": [],
   "source": {
     "source_url": "template://sample/services/registration/koseki",
-    "fetched_at": "{{generated_at}}",
+    "fetched_at": "2026-01-20",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "{{generated_at}}",
+    "generated_at": "2026-01-20",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -81,12 +81,12 @@
       "type": "Table",
       "props": {
         "rows": [
-          { "label": "戸籍謄本・抄本", "value": "{{koseki_fee}}" },
-          { "label": "除籍謄本・抄本", "value": "{{jokoseki_fee}}" },
-          { "label": "改製原戸籍謄本・抄本", "value": "{{kaisei_koseki_fee}}" },
-          { "label": "住民票の写し", "value": "{{jyuminhyo_fee}}" },
-          { "label": "住民票記載事項証明書", "value": "{{jyuminhyo_kisai_fee}}" },
-          { "label": "戸籍の附票", "value": "{{fuhyo_fee}}" }
+          { "label": "戸籍謄本・抄本", "value": "450円" },
+          { "label": "除籍謄本・抄本", "value": "750円" },
+          { "label": "改製原戸籍謄本・抄本", "value": "750円" },
+          { "label": "住民票の写し", "value": "300円" },
+          { "label": "住民票記載事項証明書", "value": "300円" },
+          { "label": "戸籍の附票", "value": "300円" }
         ]
       }
     },
@@ -107,8 +107,8 @@
             "type": "list",
             "ordered": false,
             "items": [
-              [{ "type": "paragraph", "runs": [{ "text": "受付場所：{{registration_window}}" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "受付時間：{{city_hall_hours}}" }] }]
+              [{ "type": "paragraph", "runs": [{ "text": "受付場所：市役所1階 市民課窓口" }] }],
+              [{ "type": "paragraph", "runs": [{ "text": "受付時間：平日 8:30〜17:15（土日祝日・年末年始を除く）" }] }]
             ]
           },
           { "type": "heading", "level": 3, "text": "コンビニ交付" },
@@ -123,7 +123,7 @@
             "ordered": false,
             "items": [
               [{ "type": "paragraph", "runs": [{ "text": "利用時間：6:30〜23:00（年末年始・メンテナンス時を除く）" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "手数料：窓口より{{convenience_discount}}円安い" }] }]
+              [{ "type": "paragraph", "runs": [{ "text": "手数料：窓口より100円円安い" }] }]
             ]
           },
           { "type": "heading", "level": 3, "text": "郵送での取得" },
@@ -193,17 +193,17 @@
         "items": [
           {
             "title": "戸籍証明書等交付請求書",
-            "href": "{{koseki_form_url}}",
+            "href": "https://www.sample-city.lg.jp/forms/koseki.pdf",
             "content_type": "application/pdf"
           },
           {
             "title": "住民票等交付請求書",
-            "href": "{{jyuminhyo_form_url}}",
+            "href": "https://www.sample-city.lg.jp/forms/juminhyo.pdf",
             "content_type": "application/pdf"
           },
           {
             "title": "委任状",
-            "href": "{{inin_form_url}}",
+            "href": "https://www.sample-city.lg.jp/forms/inin.pdf",
             "content_type": "application/pdf"
           }
         ]
@@ -224,11 +224,11 @@
       "id": "contact-1",
       "type": "Contact",
       "props": {
-        "department": "{{registration_department}}",
-        "phone": "{{registration_phone}}",
-        "email": "{{registration_email}}",
-        "hours": "{{city_hall_hours}}",
-        "address": "{{city_hall_address}}"
+        "department": "市民課 届出窓口",
+        "phone": "03-1234-5680",
+        "email": "todokede@sample-city.lg.jp",
+        "hours": "平日 8:30〜17:15（土日祝日・年末年始を除く）",
+        "address": "〒100-0001 東京都サンプル市中央1-1-1"
       }
     }
   ],

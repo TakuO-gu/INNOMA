@@ -1,0 +1,236 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "takaoka-services-land-urban-planning",
+  "municipality_id": "takaoka",
+  "path": "/services/land/urban-planning",
+  "title": "都市計画・用途地域",
+  "description": "都市計画区域、用途地域、建ぺい率・容積率",
+  "content_type": "guide",
+  "service_category": "environment",
+  "audience": [
+    "residents",
+    "businesses"
+  ],
+  "topic": [],
+  "source": {
+    "source_url": "template://sample/services/land/urban-planning",
+    "fetched_at": "2026-01-20T10:33:17.311Z",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "2026-01-20T10:33:17.311Z",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "くらしの情報",
+            "href": "/topics"
+          },
+          {
+            "label": "土地・農林水産",
+            "href": "/topics/land"
+          },
+          {
+            "label": "都市計画・用途地域",
+            "href": "/services/land/urban-planning"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "都市計画・用途地域"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "土地を利用する際に関係する都市計画、用途地域、建築制限についてご案内します。"
+      }
+    },
+    {
+      "id": "richtext-1",
+      "type": "RichText",
+      "props": {
+        "content": [
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "都市計画区域"
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "市街化区域",
+                      "bold": true
+                    },
+                    {
+                      "text": "：すでに市街地または優先的に市街化すべき区域"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "市街化調整区域",
+                      "bold": true
+                    },
+                    {
+                      "text": "：市街化を抑制すべき区域（原則として建物を建てられない）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "非線引き区域",
+                      "bold": true
+                    },
+                    {
+                      "text": "：区域区分が定められていない区域"
+                    }
+                  ]
+                }
+              ]
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "用途地域"
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "市街化区域では、土地の用途に応じて13種類の用途地域が指定されています。"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "住居系（8種）",
+                      "bold": true
+                    },
+                    {
+                      "text": "：第一種低層住居専用地域など"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "商業系（2種）",
+                      "bold": true
+                    },
+                    {
+                      "text": "：近隣商業地域、商業地域"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "工業系（3種）",
+                      "bold": true
+                    },
+                    {
+                      "text": "：準工業地域、工業地域、工業専用地域"
+                    }
+                  ]
+                }
+              ]
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "建ぺい率・容積率"
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "用途地域ごとに、敷地に対する建築面積の割合（建ぺい率）と延べ床面積の割合（容積率）が定められています。"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "都市計画の確認"
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "土地の都市計画情報（用途地域、建ぺい率、容積率、道路幅員など）は、都市計画課窓口または都市計画図でご確認いただけます。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{urban_planning_department}}",
+        "phone": "{{urban_planning_phone}}",
+        "email": "{{urban_planning_email}}",
+        "hours": "{{city_hall_hours}}",
+        "address": "{{city_hall_address}}"
+      }
+    }
+  ],
+  "search": {
+    "summary": "都市計画・用途地域の案内。市街化区域、用途地域、建ぺい率・容積率。",
+    "keywords": [
+      "都市計画",
+      "用途地域",
+      "建ぺい率",
+      "容積率",
+      "市街化区域",
+      "市街化調整区域"
+    ],
+    "plain_text": "都市計画・用途地域。市街化区域、市街化調整区域、用途地域の説明。建ぺい率・容積率の制限あり。"
+  }
+}

@@ -4,19 +4,19 @@
   "municipality_id": "sample",
   "path": "/services/employment/labor-standards",
   "title": "労働条件・最低賃金",
-  "description": "{{prefecture_name}}の最低賃金、労働時間、残業規制",
+  "description": "東京都の最低賃金、労働時間、残業規制",
   "content_type": "guide",
   "service_category": "business",
   "audience": ["residents"],
   "topic": [],
   "source": {
     "source_url": "template://sample/services/employment/labor-standards",
-    "fetched_at": "{{generated_at}}",
+    "fetched_at": "2026-01-20",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "{{generated_at}}",
+    "generated_at": "2026-01-20",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -43,7 +43,7 @@
       "id": "summary-1",
       "type": "Summary",
       "props": {
-        "text": "労働基準法で定められた労働条件の基準と、{{prefecture_name}}の最低賃金についてご案内します。"
+        "text": "労働基準法で定められた労働条件の基準と、東京都の最低賃金についてご案内します。"
       }
     },
     {
@@ -51,13 +51,13 @@
       "type": "RichText",
       "props": {
         "content": [
-          { "type": "heading", "level": 2, "text": "{{prefecture_name}}の最低賃金" },
+          { "type": "heading", "level": 2, "text": "東京都の最低賃金" },
           {
             "type": "paragraph",
             "runs": [
-              { "text": "{{prefecture_name}}の地域別最低賃金は", "bold": false },
-              { "text": "{{minimum_wage}}円/時間", "bold": true },
-              { "text": "（{{minimum_wage_effective_date}}発効）" }
+              { "text": "東京都の地域別最低賃金は", "bold": false },
+              { "text": "1,163円円/時間", "bold": true },
+              { "text": "（令和7年10月1日発効）" }
             ]
           },
           { "type": "heading", "level": 2, "text": "法定労働時間" },
@@ -88,14 +88,14 @@
       "id": "contact-1",
       "type": "Contact",
       "props": {
-        "department": "{{labor_standards_office}}",
-        "phone": "{{labor_standards_office_phone}}",
-        "address": "{{labor_standards_office_address}}"
+        "department": "サンプル労働基準監督署",
+        "phone": "03-7890-1234",
+        "address": "東京都サンプル市中央6-6-6"
       }
     }
   ],
   "search": {
-    "summary": "労働条件・最低賃金の案内。{{prefecture_name}}の最低賃金、法定労働時間、割増賃金。",
+    "summary": "労働条件・最低賃金の案内。東京都の最低賃金、法定労働時間、割増賃金。",
     "keywords": ["最低賃金", "労働条件", "労働時間", "残業", "割増賃金", "36協定"],
     "plain_text": "労働条件・最低賃金。法定労働時間は1日8時間、週40時間。時間外労働は割増賃金25%以上。"
   }

@@ -11,12 +11,12 @@
   "topic": [],
   "source": {
     "source_url": "template://sample/services/welfare/houkatsu",
-    "fetched_at": "{{generated_at}}",
+    "fetched_at": "2026-01-20",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "{{generated_at}}",
+    "generated_at": "2026-01-20",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -168,7 +168,7 @@
           {
             "type": "paragraph",
             "runs": [
-              { "text": "市内には{{houkatsu_count}}か所の地域包括支援センターがあります。お住まいの地区を担当するセンターにご相談ください。" }
+              { "text": "市内には5か所か所の地域包括支援センターがあります。お住まいの地区を担当するセンターにご相談ください。" }
             ]
           }
         ]
@@ -179,7 +179,7 @@
       "type": "TaskButton",
       "props": {
         "label": "地域包括支援センター一覧を見る",
-        "href": "{{houkatsu_list_url}}",
+        "href": "https://www.sample-city.lg.jp/houkatsu/list",
         "isTopTask": true
       }
     },
@@ -198,11 +198,11 @@
       "id": "contact-1",
       "type": "Contact",
       "props": {
-        "department": "{{houkatsu_department}}",
-        "phone": "{{houkatsu_phone}}",
-        "email": "{{houkatsu_email}}",
-        "hours": "{{city_hall_hours}}",
-        "address": "{{city_hall_address}}"
+        "department": "地域包括支援センター",
+        "phone": "03-1234-5715",
+        "email": "houkatsu@sample-city.lg.jp",
+        "hours": "平日 8:30〜17:15（土日祝日・年末年始を除く）",
+        "address": "〒100-0001 東京都サンプル市中央1-1-1"
       }
     }
   ],

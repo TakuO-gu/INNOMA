@@ -1,0 +1,108 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "takaoka-topics-tax",
+  "municipality_id": "takaoka",
+  "path": "/topics/tax",
+  "title": "税金",
+  "description": "住民税、固定資産税、確定申告、ふるさと納税に関する情報",
+  "content_type": "directory",
+  "service_category": "government",
+  "audience": [
+    "residents",
+    "businesses"
+  ],
+  "topic": [],
+  "source": {
+    "source_url": "template://sample/topics/tax",
+    "fetched_at": "2026-01-20T10:33:17.311Z",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "2026-01-20T10:33:17.311Z",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "くらしの情報",
+            "href": "/topics"
+          },
+          {
+            "label": "税金",
+            "href": "/topics/tax"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "税金"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "住民税、固定資産税、確定申告、ふるさと納税に関する情報をまとめています"
+      }
+    },
+    {
+      "id": "topic-list-1",
+      "type": "TopicList",
+      "props": {
+        "items": [
+          {
+            "title": "住民税",
+            "href": "/services/tax/juminzei",
+            "description": "住民税の課税・納付・届出"
+          },
+          {
+            "title": "固定資産税",
+            "href": "/services/tax/kotei",
+            "description": "固定資産税・都市計画税の課税・納付"
+          },
+          {
+            "title": "軽自動車税",
+            "href": "/services/tax/keijidosha",
+            "description": "軽自動車・バイクの税金"
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{tax_department}}",
+        "phone": "{{tax_phone}}",
+        "email": "{{tax_email}}",
+        "hours": "{{city_hall_hours}}",
+        "address": "{{city_hall_address}}"
+      }
+    }
+  ],
+  "search": {
+    "summary": "税金に関する情報。住民税、固定資産税、軽自動車税、確定申告、ふるさと納税の案内。",
+    "keywords": [
+      "税金",
+      "住民税",
+      "固定資産税",
+      "軽自動車税",
+      "確定申告",
+      "ふるさと納税",
+      "税証明書"
+    ],
+    "plain_text": "税金。住民税、固定資産税、確定申告、ふるさと納税に関する情報。住民税、固定資産税、軽自動車税、確定申告、ふるさと納税、税証明書。"
+  }
+}

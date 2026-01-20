@@ -1,0 +1,346 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "takaoka-services-welfare-koureisha",
+  "municipality_id": "takaoka",
+  "path": "/services/welfare/koureisha",
+  "title": "高齢者福祉",
+  "description": "高齢者向けの福祉サービス、支援制度の一覧",
+  "content_type": "directory",
+  "service_category": "welfare",
+  "audience": [
+    "residents",
+    "elderly"
+  ],
+  "topic": [],
+  "source": {
+    "source_url": "template://sample/services/welfare/koureisha",
+    "fetched_at": "2026-01-20T10:33:17.311Z",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "2026-01-20T10:33:17.311Z",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "くらしの情報",
+            "href": "/topics"
+          },
+          {
+            "label": "福祉・介護",
+            "href": "/topics/welfare"
+          },
+          {
+            "label": "高齢者福祉",
+            "href": "/services/welfare/koureisha"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "高齢者福祉"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "高齢者の皆さんが住み慣れた地域で安心して暮らせるよう、様々な福祉サービスを提供しています。"
+      }
+    },
+    {
+      "id": "richtext-seikatsu",
+      "type": "RichText",
+      "props": {
+        "content": [
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "生活支援サービス"
+          },
+          {
+            "type": "heading",
+            "level": 3,
+            "text": "配食サービス"
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "調理が困難な高齢者等に対し、栄養バランスのとれた食事を届けます。安否確認も兼ねています。"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 3,
+            "text": "緊急通報システム"
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "一人暮らしの高齢者等に対し、緊急時にボタンを押すだけで通報できる機器を貸与します。"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 3,
+            "text": "ごみ出し支援"
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "ごみ出しが困難な高齢者等に対し、戸別収集を行います。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "richtext-kenko",
+      "type": "RichText",
+      "props": {
+        "content": [
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "健康・介護予防"
+          },
+          {
+            "type": "heading",
+            "level": 3,
+            "text": "介護予防教室"
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "体操、栄養、口腔ケアなど、介護予防に関する教室を開催しています。"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 3,
+            "text": "高齢者健康診査"
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "後期高齢者医療に加入している方を対象に健康診査を実施しています。"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 3,
+            "text": "高齢者インフルエンザ予防接種"
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "65歳以上の方を対象に、インフルエンザ予防接種の費用を助成しています。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "richtext-keizai",
+      "type": "RichText",
+      "props": {
+        "content": [
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "経済的支援"
+          },
+          {
+            "type": "heading",
+            "level": 3,
+            "text": "敬老祝金"
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "長寿をお祝いして、節目の年齢を迎えた方に祝金をお贈りしています。"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 3,
+            "text": "おむつ費用助成"
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "在宅で介護を受けている方に対し、紙おむつの購入費用を助成します。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "richtext-sumu",
+      "type": "RichText",
+      "props": {
+        "content": [
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "住まい・外出支援"
+          },
+          {
+            "type": "heading",
+            "level": 3,
+            "text": "シルバーハウジング"
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "バリアフリー対応の公営住宅で、生活援助員（LSA）による見守りサービスがあります。"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 3,
+            "text": "住宅改修費助成"
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "手すりの設置や段差解消など、住宅のバリアフリー改修費用を助成します。"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 3,
+            "text": "高齢者移動支援"
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "外出が困難な高齢者に対し、タクシー券やバス乗車券などを交付します。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "richtext-ikigai",
+      "type": "RichText",
+      "props": {
+        "content": [
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "生きがい・社会参加"
+          },
+          {
+            "type": "heading",
+            "level": 3,
+            "text": "老人クラブ"
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "高齢者の仲間づくりや健康増進、社会奉仕活動などを行う団体への支援を行っています。"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 3,
+            "text": "シルバー人材センター"
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "高齢者の就業機会の提供と、生きがいの充実を図る公益法人です。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "related-links-1",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "介護保険",
+            "href": "/services/welfare/kaigo"
+          },
+          {
+            "title": "地域包括支援センター",
+            "href": "/services/welfare/houkatsu"
+          },
+          {
+            "title": "後期高齢者医療",
+            "href": "/services/health/kouki"
+          },
+          {
+            "title": "成年後見制度",
+            "href": "/services/welfare/kouken"
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{koureisha_department}}",
+        "phone": "{{koureisha_phone}}",
+        "email": "{{koureisha_email}}",
+        "hours": "{{city_hall_hours}}",
+        "address": "{{city_hall_address}}"
+      }
+    }
+  ],
+  "search": {
+    "summary": "高齢者福祉サービスの案内。生活支援、健康・介護予防、経済的支援、住まい・外出支援など。",
+    "keywords": [
+      "高齢者福祉",
+      "配食サービス",
+      "緊急通報",
+      "介護予防",
+      "敬老祝金",
+      "シルバー人材センター"
+    ],
+    "plain_text": "高齢者福祉。配食サービス、緊急通報システム、介護予防教室、敬老祝金、住宅改修費助成、タクシー券など。高齢者の生活を支援するサービス。"
+  }
+}

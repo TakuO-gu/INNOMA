@@ -13,12 +13,12 @@
   "topic": [],
   "source": {
     "source_url": "template://sample/services/driving/garage-certificate",
-    "fetched_at": "{{generated_at}}",
+    "fetched_at": "2026-01-20",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "{{generated_at}}",
+    "generated_at": "2026-01-20",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -195,9 +195,9 @@
       "id": "contact-1",
       "type": "Contact",
       "props": {
-        "department": "{{police_station}}",
-        "phone": "{{police_station_phone}}",
-        "address": "{{police_station_address}}"
+        "department": "サンプル警察署",
+        "phone": "03-8901-2345",
+        "address": "東京都サンプル市中央7-7-7"
       }
     }
   ],

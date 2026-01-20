@@ -4,19 +4,19 @@
   "municipality_id": "sample",
   "path": "/topics",
   "title": "くらしの情報",
-  "description": "{{municipality_name}}の行政サービス・くらしの情報一覧",
+  "description": "サンプル市の行政サービス・くらしの情報一覧",
   "content_type": "directory",
   "service_category": "government",
   "audience": ["residents"],
   "topic": [],
   "source": {
     "source_url": "template://sample/topics",
-    "fetched_at": "{{generated_at}}",
+    "fetched_at": "2026-01-20",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "{{generated_at}}",
+    "generated_at": "2026-01-20",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -41,7 +41,7 @@
       "id": "summary-1",
       "type": "Summary",
       "props": {
-        "text": "{{municipality_name}}の行政サービス・届出・手続きの情報をまとめています"
+        "text": "サンプル市の行政サービス・届出・手続きの情報をまとめています"
       }
     },
     {
@@ -131,17 +131,17 @@
       "id": "contact-1",
       "type": "Contact",
       "props": {
-        "department": "{{city_hall_department}}",
-        "phone": "{{city_hall_phone}}",
-        "email": "{{city_hall_email}}",
-        "hours": "{{city_hall_hours}}",
-        "address": "{{city_hall_address}}"
+        "department": "総務課",
+        "phone": "03-1234-5678",
+        "email": "info@sample-city.lg.jp",
+        "hours": "平日 8:30〜17:15（土日祝日・年末年始を除く）",
+        "address": "〒100-0001 東京都サンプル市中央1-1-1"
       }
     }
   ],
   "search": {
-    "summary": "{{municipality_name}}の行政サービス・くらしの情報一覧。届出、社会保障、税金、子育て、健康、福祉、住まい、仕事、事業、運転、環境、防災、戸籍、市民参加、土地に関する情報。",
+    "summary": "サンプル市の行政サービス・くらしの情報一覧。届出、社会保障、税金、子育て、健康、福祉、住まい、仕事、事業、運転、環境、防災、戸籍、市民参加、土地に関する情報。",
     "keywords": ["くらしの情報", "行政サービス", "届出", "社会保障", "税金", "子育て", "健康", "福祉", "住まい", "仕事", "事業", "運転", "環境", "防災", "戸籍", "市民参加", "土地"],
-    "plain_text": "くらしの情報。{{municipality_name}}の行政サービス・届出・手続きの情報をまとめています。届出・申請・証明書、社会保障・給付金、税金、子育て・教育、健康・医療、福祉・介護、住まい・引越し、仕事・労働、事業・経営、運転・車両、環境・ごみ・リサイクル、防災・安全、戸籍・国籍・在留、市民参加・権利行使、土地・農林水産の情報を提供しています。"
+    "plain_text": "くらしの情報。サンプル市の行政サービス・届出・手続きの情報をまとめています。届出・申請・証明書、社会保障・給付金、税金、子育て・教育、健康・医療、福祉・介護、住まい・引越し、仕事・労働、事業・経営、運転・車両、環境・ごみ・リサイクル、防災・安全、戸籍・国籍・在留、市民参加・権利行使、土地・農林水産の情報を提供しています。"
   }
 }

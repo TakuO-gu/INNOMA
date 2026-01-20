@@ -12,7 +12,7 @@ import type { TableRow, AccordionItem } from "../types";
 export function TitleBlock({ props }: { props: Record<string, unknown> }) {
   const text = (props.text as string) || (props.title as string) || "";
   return (
-    <h1 className="text-std-45B-140 text-solid-gray-900 mb-6">{text}</h1>
+    <h1 className="text-std-45B-140 text-solid-gray-900">{text}</h1>
   );
 }
 

@@ -40,7 +40,7 @@ interface BlockRendererProps {
 export function BlockRenderer({ blocks, municipalityId }: BlockRendererProps) {
   return (
     <MunicipalityProvider municipalityId={municipalityId}>
-      <div className="block-renderer max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <div className="dads-page">
         {blocks.map((block) => (
           <BlockSwitch key={block.id} block={block} />
         ))}

@@ -13,12 +13,12 @@
   "topic": [],
   "source": {
     "source_url": "template://sample/services/driving/accident",
-    "fetched_at": "{{generated_at}}",
+    "fetched_at": "2026-01-20",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "{{generated_at}}",
+    "generated_at": "2026-01-20",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -130,7 +130,7 @@
                   "type": "paragraph",
                   "runs": [
                     {
-                      "text": "{{prefecture_name}}交通事故相談所",
+                      "text": "東京都交通事故相談所",
                       "bold": true
                     },
                     {
@@ -176,8 +176,8 @@
       "id": "contact-1",
       "type": "Contact",
       "props": {
-        "department": "{{prefecture_name}}交通事故相談所",
-        "phone": "{{traffic_accident_consultation_phone}}"
+        "department": "東京都交通事故相談所",
+        "phone": "03-1234-5802"
       }
     }
   ],

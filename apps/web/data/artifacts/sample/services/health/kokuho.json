@@ -11,12 +11,12 @@
   "topic": [],
   "source": {
     "source_url": "template://sample/services/health/kokuho",
-    "fetched_at": "{{generated_at}}",
+    "fetched_at": "2026-01-20",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "{{generated_at}}",
+    "generated_at": "2026-01-20",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -305,11 +305,11 @@
       "id": "contact-1",
       "type": "Contact",
       "props": {
-        "department": "{{kokuho_department}}",
-        "phone": "{{kokuho_phone}}",
-        "email": "{{kokuho_email}}",
-        "address": "{{kokuho_address}}",
-        "hours": "{{kokuho_hours}}"
+        "department": "保険年金課 国保係",
+        "phone": "03-1234-5700",
+        "email": "kokuho@sample-city.lg.jp",
+        "address": "市役所2階 保険年金課",
+        "hours": "平日 8:30〜17:15"
       }
     }
   ],

@@ -13,12 +13,12 @@
   "topic": [],
   "source": {
     "source_url": "template://sample/services/civic/victim-support",
-    "fetched_at": "{{generated_at}}",
+    "fetched_at": "2026-01-20",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "{{generated_at}}",
+    "generated_at": "2026-01-20",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -89,7 +89,7 @@
                   "type": "paragraph",
                   "runs": [
                     {
-                      "text": "{{prefecture_name}}犯罪被害者支援センター：{{victim_support_center_phone}}"
+                      "text": "東京都犯罪被害者支援センター：0120-xxx-xxx"
                     }
                   ]
                 }
@@ -158,7 +158,7 @@
           {
             "type": "heading",
             "level": 2,
-            "text": "{{municipality_name}}の支援制度"
+            "text": "サンプル市の支援制度"
           },
           {
             "type": "list",
@@ -169,7 +169,7 @@
                   "type": "paragraph",
                   "runs": [
                     {
-                      "text": "見舞金の支給（{{victim_support_benefit}}）"
+                      "text": "見舞金の支給（見舞金30万円〜100万円）"
                     }
                   ]
                 }
@@ -252,11 +252,11 @@
       "id": "contact-1",
       "type": "Contact",
       "props": {
-        "department": "{{victim_support_department}}",
-        "phone": "{{victim_support_phone}}",
-        "email": "{{victim_support_email}}",
-        "hours": "{{city_hall_hours}}",
-        "address": "{{city_hall_address}}"
+        "department": "福祉課 相談支援係",
+        "phone": "03-1234-5788",
+        "email": "sodan@sample-city.lg.jp",
+        "hours": "平日 8:30〜17:15（土日祝日・年末年始を除く）",
+        "address": "〒100-0001 東京都サンプル市中央1-1-1"
       }
     }
   ],

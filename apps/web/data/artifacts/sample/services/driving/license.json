@@ -13,12 +13,12 @@
   "topic": [],
   "source": {
     "source_url": "template://sample/services/driving/license",
-    "fetched_at": "{{generated_at}}",
+    "fetched_at": "2026-01-20",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "{{generated_at}}",
+    "generated_at": "2026-01-20",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -177,9 +177,9 @@
       "id": "contact-1",
       "type": "Contact",
       "props": {
-        "department": "{{driver_license_center}}",
-        "phone": "{{driver_license_center_phone}}",
-        "address": "{{driver_license_center_address}}"
+        "department": "東京都運転免許センター",
+        "phone": "03-9012-3456",
+        "address": "東京都府中市多磨町3-1-1"
       }
     }
   ],

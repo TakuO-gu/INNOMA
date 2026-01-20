@@ -11,12 +11,12 @@
   "topic": [],
   "source": {
     "source_url": "template://sample/services/environment/sodaigomi",
-    "fetched_at": "{{generated_at}}",
+    "fetched_at": "2026-01-20",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "{{generated_at}}",
+    "generated_at": "2026-01-20",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -129,10 +129,10 @@
       "type": "Table",
       "props": {
         "rows": [
-          { "label": "小型品（椅子、扇風機など）", "value": "{{sodaigomi_fee_small}}" },
-          { "label": "中型品（タンス小、自転車など）", "value": "{{sodaigomi_fee_medium}}" },
-          { "label": "大型品（タンス大、ソファーなど）", "value": "{{sodaigomi_fee_large}}" },
-          { "label": "特大品（ベッド、マットレスなど）", "value": "{{sodaigomi_fee_xlarge}}" }
+          { "label": "小型品（椅子、扇風機など）", "value": "300円" },
+          { "label": "中型品（タンス小、自転車など）", "value": "500円" },
+          { "label": "大型品（タンス大、ソファーなど）", "value": "1,000円" },
+          { "label": "特大品（ベッド、マットレスなど）", "value": "2,000円" }
         ]
       }
     },
@@ -141,7 +141,7 @@
       "type": "TaskButton",
       "props": {
         "label": "インターネットで申込む",
-        "href": "{{sodaigomi_online_url}}",
+        "href": "https://www.sample-city.lg.jp/sodaigomi/apply",
         "isTopTask": true
       }
     },
@@ -161,8 +161,8 @@
             "type": "list",
             "ordered": false,
             "items": [
-              [{ "type": "paragraph", "runs": [{ "text": "電話番号：{{sodaigomi_phone}}" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "受付時間：{{sodaigomi_reception_hours}}" }] }]
+              [{ "type": "paragraph", "runs": [{ "text": "電話番号：03-1234-5741" }] }],
+              [{ "type": "paragraph", "runs": [{ "text": "受付時間：平日 8:30〜17:00" }] }]
             ]
           }
         ]
@@ -183,11 +183,11 @@
       "id": "contact-1",
       "type": "Contact",
       "props": {
-        "department": "{{environment_department}}",
-        "phone": "{{environment_phone}}",
-        "email": "{{environment_email}}",
-        "hours": "{{city_hall_hours}}",
-        "address": "{{city_hall_address}}"
+        "department": "環境課",
+        "phone": "03-1234-5740",
+        "email": "kankyo@sample-city.lg.jp",
+        "hours": "平日 8:30〜17:15（土日祝日・年末年始を除く）",
+        "address": "〒100-0001 東京都サンプル市中央1-1-1"
       }
     }
   ],

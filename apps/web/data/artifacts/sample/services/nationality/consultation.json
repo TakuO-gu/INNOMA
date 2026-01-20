@@ -4,7 +4,7 @@
   "municipality_id": "sample",
   "path": "/services/nationality/consultation",
   "title": "外国人のための相談窓口",
-  "description": "多言語相談、生活相談、{{municipality_name}}国際交流協会",
+  "description": "多言語相談、生活相談、サンプル市国際交流協会",
   "content_type": "guide",
   "service_category": "government",
   "audience": [
@@ -13,12 +13,12 @@
   "topic": [],
   "source": {
     "source_url": "template://sample/services/nationality/consultation",
-    "fetched_at": "{{generated_at}}",
+    "fetched_at": "2026-01-20",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "{{generated_at}}",
+    "generated_at": "2026-01-20",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -87,14 +87,14 @@
             "type": "paragraph",
             "runs": [
               {
-                "text": "{{foreign_consultation_languages}}"
+                "text": "英語、中国語、韓国語"
               }
             ]
           },
           {
             "type": "heading",
             "level": 2,
-            "text": "{{municipality_name}}国際交流協会"
+            "text": "サンプル市国際交流協会"
           },
           {
             "type": "paragraph",
@@ -111,11 +111,11 @@
       "id": "contact-1",
       "type": "Contact",
       "props": {
-        "department": "{{international_association}}",
-        "phone": "{{international_association_phone}}",
-        "email": "{{international_association_email}}",
-        "hours": "{{city_hall_hours}}",
-        "address": "{{international_association_address}}"
+        "department": "サンプル市国際交流協会",
+        "phone": "03-1234-5800",
+        "email": "kokusai@sample-city.lg.jp",
+        "hours": "平日 8:30〜17:15（土日祝日・年末年始を除く）",
+        "address": "東京都サンプル市中央1-1-2"
       }
     }
   ],

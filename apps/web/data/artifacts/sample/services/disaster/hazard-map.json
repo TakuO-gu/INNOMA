@@ -11,12 +11,12 @@
   "topic": [],
   "source": {
     "source_url": "template://sample/services/disaster/hazard-map",
-    "fetched_at": "{{generated_at}}",
+    "fetched_at": "2026-01-20",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "{{generated_at}}",
+    "generated_at": "2026-01-20",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -76,7 +76,7 @@
           {
             "type": "paragraph",
             "runs": [
-              { "text": "河川が氾濫した場合の浸水想定区域と浸水深を示しています。想定される最大規模の降雨（{{kozui_soutei_uryou}}）による浸水を想定しています。" }
+              { "text": "河川が氾濫した場合の浸水想定区域と浸水深を示しています。想定される最大規模の降雨（総雨量690mm（48時間））による浸水を想定しています。" }
             ]
           }
         ]
@@ -99,7 +99,7 @@
       "type": "TaskButton",
       "props": {
         "label": "洪水ハザードマップを見る",
-        "href": "{{kozui_hazard_map_url}}",
+        "href": "https://www.sample-city.lg.jp/bosai/hazard-kozui",
         "isTopTask": true
       }
     },
@@ -132,7 +132,7 @@
       "type": "TaskButton",
       "props": {
         "label": "土砂災害ハザードマップを見る",
-        "href": "{{dosha_hazard_map_url}}",
+        "href": "https://www.sample-city.lg.jp/bosai/hazard-dosha",
         "isTopTask": false
       }
     },
@@ -165,7 +165,7 @@
       "type": "TaskButton",
       "props": {
         "label": "地震ハザードマップを見る",
-        "href": "{{jishin_hazard_map_url}}",
+        "href": "https://www.sample-city.lg.jp/bosai/hazard-jishin",
         "isTopTask": false
       }
     },
@@ -197,7 +197,7 @@
           {
             "type": "paragraph",
             "runs": [
-              { "text": "紙のハザードマップは、{{hazard_map_haifu_basho}}で配布しています。" }
+              { "text": "紙のハザードマップは、市役所、各出張所、図書館で配布しています。" }
             ]
           }
         ]
@@ -219,11 +219,11 @@
       "id": "contact-1",
       "type": "Contact",
       "props": {
-        "department": "{{bosai_department}}",
-        "phone": "{{bosai_phone}}",
-        "email": "{{bosai_email}}",
-        "hours": "{{city_hall_hours}}",
-        "address": "{{city_hall_address}}"
+        "department": "危機管理課",
+        "phone": "03-1234-5750",
+        "email": "bosai@sample-city.lg.jp",
+        "hours": "平日 8:30〜17:15（土日祝日・年末年始を除く）",
+        "address": "〒100-0001 東京都サンプル市中央1-1-1"
       }
     }
   ],

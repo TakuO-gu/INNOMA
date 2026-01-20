@@ -11,12 +11,12 @@
   "topic": [],
   "source": {
     "source_url": "template://sample/services/childcare/boshi",
-    "fetched_at": "{{generated_at}}",
+    "fetched_at": "2026-01-20",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "{{generated_at}}",
+    "generated_at": "2026-01-20",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -63,7 +63,7 @@
             "type": "list",
             "ordered": false,
             "items": [
-              [{ "type": "paragraph", "runs": [{ "text": "届出場所：", "bold": true }, { "text": "{{boshi_madoguchi}}" }] }],
+              [{ "type": "paragraph", "runs": [{ "text": "届出場所：", "bold": true }, { "text": "保健センター" }] }],
               [{ "type": "paragraph", "runs": [{ "text": "届出に必要なもの：", "bold": true }, { "text": "本人確認書類、マイナンバーがわかるもの" }] }]
             ]
           },
@@ -79,7 +79,7 @@
             "ordered": false,
             "items": [
               [{ "type": "paragraph", "runs": [{ "text": "助成回数：14回" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "助成額：{{ninpu_kenshin_josei}}" }] }]
+              [{ "type": "paragraph", "runs": [{ "text": "助成額：14回分（上限計98,000円）" }] }]
             ]
           }
         ]
@@ -120,7 +120,7 @@
               [{ "type": "paragraph", "runs": [{ "text": "対象：産後1年未満の母子" }] }],
               [{ "type": "paragraph", "runs": [{ "text": "内容：授乳指導、沐浴指導、育児相談、心身のケアなど" }] }],
               [{ "type": "paragraph", "runs": [{ "text": "種類：宿泊型、デイサービス型、訪問型" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "利用料：{{sango_care_fee}}" }] }]
+              [{ "type": "paragraph", "runs": [{ "text": "利用料：1日あたり2,500円（上限7日）" }] }]
             ]
           }
         ]
@@ -205,9 +205,9 @@
             "type": "list",
             "ordered": false,
             "items": [
-              [{ "type": "paragraph", "runs": [{ "text": "日時：{{ikuji_sodan_schedule}}" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "場所：{{ikuji_sodan_basho}}" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "予約：{{ikuji_sodan_yoyaku}}" }] }]
+              [{ "type": "paragraph", "runs": [{ "text": "日時：毎月第1・3水曜日" }] }],
+              [{ "type": "paragraph", "runs": [{ "text": "場所：保健センター" }] }],
+              [{ "type": "paragraph", "runs": [{ "text": "予約：要予約" }] }]
             ]
           },
           { "type": "heading", "level": 3, "text": "両親学級（プレパパママ教室）" },
@@ -266,11 +266,11 @@
       "id": "contact-1",
       "type": "Contact",
       "props": {
-        "department": "{{boshi_department}}",
-        "phone": "{{boshi_phone}}",
-        "email": "{{boshi_email}}",
-        "hours": "{{city_hall_hours}}",
-        "address": "{{city_hall_address}}"
+        "department": "子育て支援課 母子保健係",
+        "phone": "03-1234-5721",
+        "email": "boshi@sample-city.lg.jp",
+        "hours": "平日 8:30〜17:15（土日祝日・年末年始を除く）",
+        "address": "〒100-0001 東京都サンプル市中央1-1-1"
       }
     }
   ],

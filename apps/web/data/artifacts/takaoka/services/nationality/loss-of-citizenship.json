@@ -1,0 +1,252 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "takaoka-services-nationality-loss-of-citizenship",
+  "municipality_id": "takaoka",
+  "path": "/services/nationality/loss-of-citizenship",
+  "title": "国籍喪失届",
+  "description": "日本国籍を喪失した場合の届出手続き",
+  "content_type": "guide",
+  "service_category": "government",
+  "audience": [
+    "residents"
+  ],
+  "topic": [],
+  "source": {
+    "source_url": "template://sample/services/nationality/loss-of-citizenship",
+    "fetched_at": "2026-01-20T10:33:17.311Z",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "2026-01-20T10:33:17.311Z",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "くらしの情報",
+            "href": "/topics"
+          },
+          {
+            "label": "戸籍・国籍・在留",
+            "href": "/topics/nationality"
+          },
+          {
+            "label": "国籍喪失届",
+            "href": "/services/nationality/loss-of-citizenship"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "国籍喪失届"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "外国籍を取得したことなどにより日本国籍を喪失した場合の届出手続きをご案内します。"
+      }
+    },
+    {
+      "id": "richtext-1",
+      "type": "RichText",
+      "props": {
+        "content": [
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "届出が必要な場合"
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "自己の志望によって外国の国籍を取得したとき（自動的に日本国籍を喪失）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "外国で生まれ、出生により外国籍を取得し、国籍留保をしなかったとき"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "日本国籍の離脱届を提出したとき"
+                    }
+                  ]
+                }
+              ]
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "届出人"
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "国籍を喪失した本人、配偶者、四親等内の親族"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "届出期間"
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "国籍喪失の事実を知った日から1か月以内（届出人が国外にいる場合は3か月以内）"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "届出先"
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "国籍を喪失した者の本籍地の市区町村役場"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "届出人の所在地の市区町村役場"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "国外の場合は在外公館（大使館・領事館）"
+                    }
+                  ]
+                }
+              ]
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "必要書類"
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "国籍喪失届（届出書）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "国籍喪失の原因を証する書面（外国の国籍証明書など）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "上記書類の日本語訳"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "届出人の本人確認書類"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{koseki_department}}",
+        "phone": "{{koseki_phone}}",
+        "email": "{{koseki_email}}",
+        "hours": "{{city_hall_hours}}",
+        "address": "{{city_hall_address}}"
+      }
+    }
+  ],
+  "search": {
+    "summary": "国籍喪失届の案内。外国籍取得による日本国籍喪失の届出手続き。",
+    "keywords": [
+      "国籍喪失",
+      "国籍喪失届",
+      "外国籍取得",
+      "国籍離脱"
+    ],
+    "plain_text": "国籍喪失届。外国籍を取得した場合など日本国籍を喪失した際の届出。本籍地または所在地の市区町村へ届出。"
+  }
+}

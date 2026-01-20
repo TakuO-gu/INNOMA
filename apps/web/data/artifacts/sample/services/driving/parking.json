@@ -4,7 +4,7 @@
   "municipality_id": "sample",
   "path": "/services/driving/parking",
   "title": "市営駐車場・駐輪場",
-  "description": "{{municipality_name}}の公営駐車場・駐輪場の利用案内",
+  "description": "サンプル市の公営駐車場・駐輪場の利用案内",
   "content_type": "guide",
   "service_category": "government",
   "audience": [
@@ -13,12 +13,12 @@
   "topic": [],
   "source": {
     "source_url": "template://sample/services/driving/parking",
-    "fetched_at": "{{generated_at}}",
+    "fetched_at": "2026-01-20",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "{{generated_at}}",
+    "generated_at": "2026-01-20",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -57,7 +57,7 @@
       "id": "summary-1",
       "type": "Summary",
       "props": {
-        "text": "{{municipality_name}}が運営する公営駐車場・駐輪場の利用案内です。"
+        "text": "サンプル市が運営する公営駐車場・駐輪場の利用案内です。"
       }
     },
     {
@@ -74,7 +74,7 @@
             "type": "paragraph",
             "runs": [
               {
-                "text": "{{municipal_parking_info}}"
+                "text": "市営駐車場は市役所周辺に3か所あります"
               }
             ]
           },
@@ -100,7 +100,7 @@
                   "type": "paragraph",
                   "runs": [
                     {
-                      "text": "定期利用：月額{{bicycle_parking_monthly}}円〜"
+                      "text": "定期利用：月額2,000円円〜"
                     }
                   ]
                 }
@@ -110,7 +110,7 @@
                   "type": "paragraph",
                   "runs": [
                     {
-                      "text": "一時利用：1回{{bicycle_parking_daily}}円"
+                      "text": "一時利用：1回100円円"
                     }
                   ]
                 }
@@ -124,11 +124,11 @@
       "id": "contact-1",
       "type": "Contact",
       "props": {
-        "department": "{{driving_department}}",
-        "phone": "{{driving_phone}}",
-        "email": "{{driving_email}}",
-        "hours": "{{city_hall_hours}}",
-        "address": "{{city_hall_address}}"
+        "department": "市民課 届出窓口",
+        "phone": "03-1234-5680",
+        "email": "todokede@sample-city.lg.jp",
+        "hours": "平日 8:30〜17:15（土日祝日・年末年始を除く）",
+        "address": "〒100-0001 東京都サンプル市中央1-1-1"
       }
     }
   ],

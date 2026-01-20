@@ -4,19 +4,19 @@
   "municipality_id": "sample",
   "path": "/services/housing/reform-subsidy",
   "title": "住宅リフォーム補助",
-  "description": "{{municipality_name}}独自の住宅リフォーム補助制度",
+  "description": "サンプル市独自の住宅リフォーム補助制度",
   "content_type": "guide",
   "service_category": "housing",
   "audience": ["residents"],
   "topic": [],
   "source": {
     "source_url": "template://sample/services/housing/reform-subsidy",
-    "fetched_at": "{{generated_at}}",
+    "fetched_at": "2026-01-20",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "{{generated_at}}",
+    "generated_at": "2026-01-20",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -43,7 +43,7 @@
       "id": "summary-1",
       "type": "Summary",
       "props": {
-        "text": "{{municipality_name}}では、住宅の改修工事に対する補助制度を設けています。対象となる工事や補助金額は制度により異なります。"
+        "text": "サンプル市では、住宅の改修工事に対する補助制度を設けています。対象となる工事や補助金額は制度により異なります。"
       }
     },
     {
@@ -58,14 +58,14 @@
             "items": [
               [{ "type": "paragraph", "runs": [{ "text": "バリアフリー改修", "bold": true }, { "text": "（手すり設置、段差解消、浴室改修など）" }] }],
               [{ "type": "paragraph", "runs": [{ "text": "省エネ改修", "bold": true }, { "text": "（断熱工事、高効率給湯器設置など）" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "一般リフォーム", "bold": true }, { "text": "（{{reform_general_eligible}}）" }] }]
+              [{ "type": "paragraph", "runs": [{ "text": "一般リフォーム", "bold": true }, { "text": "（市内に住宅を所有する方）" }] }]
             ]
           },
           { "type": "heading", "level": 2, "text": "補助金額" },
           {
             "type": "paragraph",
             "runs": [
-              { "text": "工事費用の{{reform_subsidy_rate}}（上限{{reform_subsidy_max}}円）" }
+              { "text": "工事費用の工事費の10%（上限20万円円）" }
             ]
           },
           { "type": "heading", "level": 2, "text": "申請の注意点" },
@@ -90,9 +90,9 @@
       "type": "Table",
       "props": {
         "rows": [
-          { "label": "申請期間", "value": "{{reform_application_period}}" },
-          { "label": "補助率", "value": "{{reform_subsidy_rate}}" },
-          { "label": "上限額", "value": "{{reform_subsidy_max}}円" }
+          { "label": "申請期間", "value": "4月1日〜翌年2月末日" },
+          { "label": "補助率", "value": "工事費の10%" },
+          { "label": "上限額", "value": "20万円円" }
         ]
       }
     },
@@ -100,11 +100,11 @@
       "id": "contact-1",
       "type": "Contact",
       "props": {
-        "department": "{{housing_department}}",
-        "phone": "{{housing_phone}}",
-        "email": "{{housing_email}}",
-        "hours": "{{city_hall_hours}}",
-        "address": "{{city_hall_address}}"
+        "department": "住宅課",
+        "phone": "03-1234-5760",
+        "email": "jutaku@sample-city.lg.jp",
+        "hours": "平日 8:30〜17:15（土日祝日・年末年始を除く）",
+        "address": "〒100-0001 東京都サンプル市中央1-1-1"
       }
     }
   ],

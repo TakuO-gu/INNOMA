@@ -11,12 +11,12 @@
   "topic": [],
   "source": {
     "source_url": "template://sample/services/business/sole-proprietor",
-    "fetched_at": "{{generated_at}}",
+    "fetched_at": "2026-01-20",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "{{generated_at}}",
+    "generated_at": "2026-01-20",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -92,9 +92,9 @@
       "id": "contact-1",
       "type": "Contact",
       "props": {
-        "department": "{{tax_office}}",
-        "phone": "{{tax_office_phone}}",
-        "address": "{{tax_office_address}}"
+        "department": "サンプル税務署",
+        "phone": "03-4567-8901",
+        "address": "東京都サンプル市中央4-4-4"
       }
     }
   ],

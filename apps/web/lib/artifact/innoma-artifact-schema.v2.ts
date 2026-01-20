@@ -241,9 +241,22 @@ const ResourceListBlock = BaseBlock.extend({
 const NotificationBannerBlock = BaseBlock.extend({
   type: z.literal("NotificationBanner"),
   props: z.object({
+    // 必須要素
     severity: z.enum(["info", "warning", "danger", "success"]),
-    title: z.string().optional(),
-    content: z.array(RichTextNode),
+    title: z.string(), // バナータイトルは必須
+    // 任意要素
+    content: z.array(RichTextNode).optional(), // バナーデスクリプション（任意）
+    // オプション要素
+    date: z.object({
+      dateTime: z.string(), // ISO 8601形式 (YYYY-MM-DD or YYYY-MM)
+      display: z.string(),  // 表示用テキスト（例: "2024年7月1日", "7月1日"）
+    }).optional(),
+    showCloseButton: z.boolean().optional(), // 閉じるボタン表示フラグ
+    actions: z.array(z.object({
+      label: z.string(),
+      href: z.string().optional(),
+      variant: z.enum(["solid-fill", "outline"]).optional(),
+    })).optional(),
   }),
 });
 

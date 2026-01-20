@@ -1,0 +1,24 @@
+{
+  "municipality_name": {
+    "value": "高岡市",
+    "source": "manual",
+    "updatedAt": "2026-01-20T10:33:17.311Z"
+  },
+  "prefecture_name": {
+    "value": "富山県",
+    "source": "manual",
+    "updatedAt": "2026-01-20T10:33:17.311Z"
+  },
+  "generated_at": {
+    "value": "2026-01-20T10:33:17.311Z",
+    "source": "manual",
+    "updatedAt": "2026-01-20T10:33:17.311Z"
+  },
+  "shimin_department": {
+    "value": "市民課",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/shiminka/2/4/6/2403.html",
+    "confidence": 0.7,
+    "updatedAt": "2026-01-20T10:38:17.378Z"
+  }
+}

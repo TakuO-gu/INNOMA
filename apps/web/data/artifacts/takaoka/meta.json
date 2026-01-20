@@ -1,0 +1,13 @@
+{
+  "id": "takaoka",
+  "name": "高岡市",
+  "prefecture": "富山県",
+  "officialUrl": "https://www.city.takaoka.toyama.jp/",
+  "createdAt": "2026-01-20T10:33:17.311Z",
+  "updatedAt": "2026-01-20T10:33:17.311Z",
+  "status": "draft",
+  "settings": {
+    "autoPublish": false,
+    "fetchInterval": "manual"
+  }
+}

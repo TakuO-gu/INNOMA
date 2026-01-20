@@ -1,0 +1,442 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "takaoka-services-tax-kotei",
+  "municipality_id": "takaoka",
+  "path": "/services/tax/kotei",
+  "title": "固定資産税・都市計画税",
+  "description": "固定資産税・都市計画税の対象、税額の計算方法、納付方法について",
+  "content_type": "guide",
+  "service_category": "government",
+  "audience": [
+    "residents"
+  ],
+  "topic": [],
+  "source": {
+    "source_url": "template://sample/services/tax/kotei",
+    "fetched_at": "2026-01-20T10:33:17.311Z",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "2026-01-20T10:33:17.311Z",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "くらしの情報",
+            "href": "/topics"
+          },
+          {
+            "label": "税金",
+            "href": "/topics/tax"
+          },
+          {
+            "label": "固定資産税・都市計画税",
+            "href": "/services/tax/kotei"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "固定資産税・都市計画税"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "固定資産税は、土地・家屋・償却資産を所有している方に毎年かかる税金です。都市計画税は市街化区域内の土地・家屋に対してかかります。"
+      }
+    },
+    {
+      "id": "richtext-overview",
+      "type": "RichText",
+      "props": {
+        "content": [
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "納税義務者"
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "毎年1月1日時点で土地・家屋・償却資産を所有している方が対象です。"
+              }
+            ]
+          },
+          {
+            "type": "callout",
+            "severity": "info",
+            "content": [
+              {
+                "type": "paragraph",
+                "runs": [
+                  {
+                    "text": "年の途中で売却した場合でも、1月1日時点の所有者に1年分の税金が課税されます。"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "richtext-taisho",
+      "type": "RichText",
+      "props": {
+        "content": [
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "課税対象"
+          },
+          {
+            "type": "heading",
+            "level": 3,
+            "text": "土地"
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "田、畑、宅地、山林、原野など、すべての土地が対象です。"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 3,
+            "text": "家屋"
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "住宅、店舗、工場、倉庫など、すべての建物が対象です。"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 3,
+            "text": "償却資産"
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "事業に使用する機械、器具、備品などが対象です。毎年1月末までに申告が必要です。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "richtext-keisan",
+      "type": "RichText",
+      "props": {
+        "content": [
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "税額の計算"
+          }
+        ]
+      }
+    },
+    {
+      "id": "table-keisan",
+      "type": "Table",
+      "props": {
+        "rows": [
+          {
+            "label": "固定資産税",
+            "value": "課税標準額 × 1.4%（標準税率）"
+          },
+          {
+            "label": "都市計画税",
+            "value": "課税標準額 × {{toshikeikaku_rate}}（市街化区域内のみ）"
+          },
+          {
+            "label": "免税点（土地）",
+            "value": "30万円"
+          },
+          {
+            "label": "免税点（家屋）",
+            "value": "20万円"
+          },
+          {
+            "label": "免税点（償却資産）",
+            "value": "150万円"
+          }
+        ]
+      }
+    },
+    {
+      "id": "richtext-tokutei",
+      "type": "RichText",
+      "props": {
+        "content": [
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "主な軽減措置"
+          },
+          {
+            "type": "heading",
+            "level": 3,
+            "text": "住宅用地の特例"
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "小規模住宅用地（200㎡以下）\", \"bold\": true }, { \"text\": \"：固定資産税1/6、都市計画税1/3に軽減"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "一般住宅用地（200㎡超）",
+                      "bold": true
+                    },
+                    {
+                      "text": "：固定資産税1/3、都市計画税2/3に軽減"
+                    }
+                  ]
+                }
+              ]
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 3,
+            "text": "新築住宅の減額"
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "新築住宅は、一定期間、固定資産税が1/2に減額されます。"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "一般住宅：新築後3年間"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "長期優良住宅：新築後5年間"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "3階建以上の耐火・準耐火建築物：新築後5年間（長期優良住宅は7年間）"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "richtext-nofu",
+      "type": "RichText",
+      "props": {
+        "content": [
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "納付方法"
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "毎年4月〜5月頃に納税通知書をお届けします。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "table-nofu",
+      "type": "Table",
+      "props": {
+        "rows": [
+          {
+            "label": "第1期",
+            "value": "{{kotei_kigen_1}}"
+          },
+          {
+            "label": "第2期",
+            "value": "{{kotei_kigen_2}}"
+          },
+          {
+            "label": "第3期",
+            "value": "{{kotei_kigen_3}}"
+          },
+          {
+            "label": "第4期",
+            "value": "{{kotei_kigen_4}}"
+          },
+          {
+            "label": "納付場所",
+            "value": "金融機関、コンビニ、口座振替、クレジットカード、スマートフォン決済など"
+          }
+        ]
+      }
+    },
+    {
+      "id": "richtext-todoke",
+      "type": "RichText",
+      "props": {
+        "content": [
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "届出が必要なとき"
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "家屋を新築・増築・取り壊したとき"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "土地・家屋の利用状況が変わったとき"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "住所・氏名が変わったとき"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "所有者が亡くなったとき（相続人届出）"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "related-links-1",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "住民税",
+            "href": "/services/tax/juminzei"
+          },
+          {
+            "title": "軽自動車税",
+            "href": "/services/tax/keijidosha"
+          },
+          {
+            "title": "納税証明書",
+            "href": "/services/registration/nozei-shomei"
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{shisanzei_department}}",
+        "phone": "{{shisanzei_phone}}",
+        "email": "{{shisanzei_email}}",
+        "hours": "{{city_hall_hours}}",
+        "address": "{{city_hall_address}}"
+      }
+    }
+  ],
+  "search": {
+    "summary": "固定資産税・都市計画税の案内。土地・家屋・償却資産が対象。税額の計算方法、軽減措置、納付方法について。",
+    "keywords": [
+      "固定資産税",
+      "都市計画税",
+      "土地",
+      "家屋",
+      "償却資産",
+      "住宅用地",
+      "新築",
+      "軽減"
+    ],
+    "plain_text": "固定資産税・都市計画税。1月1日時点の所有者に課税。固定資産税は課税標準額の1.4%。住宅用地の特例、新築住宅の減額あり。年4回の納期。"
+  }
+}

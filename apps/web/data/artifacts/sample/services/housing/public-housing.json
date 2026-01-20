@@ -11,12 +11,12 @@
   "topic": [],
   "source": {
     "source_url": "template://sample/services/housing/public-housing",
-    "fetched_at": "{{generated_at}}",
+    "fetched_at": "2026-01-20",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "{{generated_at}}",
+    "generated_at": "2026-01-20",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -43,7 +43,7 @@
       "id": "summary-1",
       "type": "Summary",
       "props": {
-        "text": "{{municipality_name}}では、住宅に困窮する低所得者の方に対して、低廉な家賃で市営住宅を提供しています。入居には収入要件等があります。"
+        "text": "サンプル市では、住宅に困窮する低所得者の方に対して、低廉な家賃で市営住宅を提供しています。入居には収入要件等があります。"
       }
     },
     {
@@ -58,7 +58,7 @@
             "items": [
               [{ "type": "paragraph", "runs": [{ "text": "現に住宅に困窮していることが明らかな方" }] }],
               [{ "type": "paragraph", "runs": [{ "text": "収入が一定基準以下の方（収入分位25%以下が原則）" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "{{municipality_name}}内に住所または勤務先がある方" }] }],
+              [{ "type": "paragraph", "runs": [{ "text": "サンプル市内に住所または勤務先がある方" }] }],
               [{ "type": "paragraph", "runs": [{ "text": "税金を滞納していない方" }] }],
               [{ "type": "paragraph", "runs": [{ "text": "暴力団員でない方" }] }]
             ]
@@ -67,7 +67,7 @@
           {
             "type": "paragraph",
             "runs": [
-              { "text": "定期募集：{{public_housing_schedule}}" }
+              { "text": "定期募集：毎年4月・10月に募集" }
             ]
           },
           {
@@ -80,7 +80,7 @@
           {
             "type": "paragraph",
             "runs": [
-              { "text": "家賃は入居者の収入、住宅の立地・広さ・建築年数等により決定されます。おおよその目安は月額{{public_housing_rent_range}}です。" }
+              { "text": "家賃は入居者の収入、住宅の立地・広さ・建築年数等により決定されます。おおよその目安は月額月額15,000円〜50,000円程度です。" }
             ]
           }
         ]
@@ -91,8 +91,8 @@
       "type": "Table",
       "props": {
         "rows": [
-          { "label": "募集時期", "value": "{{public_housing_schedule}}" },
-          { "label": "申込場所", "value": "{{housing_department}}" },
+          { "label": "募集時期", "value": "毎年4月・10月に募集" },
+          { "label": "申込場所", "value": "住宅課" },
           { "label": "選考方法", "value": "抽選または住宅困窮度評価" },
           { "label": "敷金", "value": "家賃の3か月分" }
         ]
@@ -102,11 +102,11 @@
       "id": "contact-1",
       "type": "Contact",
       "props": {
-        "department": "{{housing_department}}",
-        "phone": "{{housing_phone}}",
-        "email": "{{housing_email}}",
-        "hours": "{{city_hall_hours}}",
-        "address": "{{city_hall_address}}"
+        "department": "住宅課",
+        "phone": "03-1234-5760",
+        "email": "jutaku@sample-city.lg.jp",
+        "hours": "平日 8:30〜17:15（土日祝日・年末年始を除く）",
+        "address": "〒100-0001 東京都サンプル市中央1-1-1"
       }
     }
   ],

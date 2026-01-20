@@ -13,12 +13,12 @@
   "topic": [],
   "source": {
     "source_url": "template://sample/services/driving/registration",
-    "fetched_at": "{{generated_at}}",
+    "fetched_at": "2026-01-20",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "{{generated_at}}",
+    "generated_at": "2026-01-20",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -170,9 +170,9 @@
       "id": "contact-1",
       "type": "Contact",
       "props": {
-        "department": "{{transport_branch}}",
-        "phone": "{{transport_branch_phone}}",
-        "address": "{{transport_branch_address}}"
+        "department": "関東運輸局東京運輸支局",
+        "phone": "050-5540-2030",
+        "address": "東京都品川区東大井1-12-17"
       }
     }
   ],

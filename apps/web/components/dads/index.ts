@@ -54,6 +54,8 @@ export {
   NotificationBannerBody,
   NotificationBannerClose,
   NotificationBannerMobileClose,
+  NotificationBannerDate,
+  NotificationBannerActions,
 } from './NotificationBanner';
 export { Ol, olStyle } from './Ol';
 export { Radio } from './Radio';

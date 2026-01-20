@@ -107,18 +107,54 @@ export async function searchServiceInfo(
 
 /**
  * Check if domain is official government domain
+ * どんなhostnameでも受け入れ、公式ドメインかどうかを判定
  */
 export function isOfficialDomain(url: string): boolean {
   try {
-    const hostname = new URL(url).hostname;
-    return (
-      hostname.endsWith('.lg.jp') ||
-      hostname.endsWith('.go.jp') ||
-      hostname.endsWith('.city.') ||
-      hostname.endsWith('.town.') ||
-      hostname.endsWith('.vill.')
-    );
+    const hostname = new URL(url).hostname.toLowerCase();
+
+    // 日本の行政ドメイン
+    const officialSuffixes = ['.lg.jp', '.go.jp'];
+    if (officialSuffixes.some(suffix => hostname.endsWith(suffix))) {
+      return true;
+    }
+
+    // 自治体ドメインパターン (例: www.city.takaoka.toyama.jp)
+    const municipalityPatterns = [
+      /\.city\.[a-z]+\.jp$/,      // city.xxx.jp
+      /\.town\.[a-z]+\.jp$/,      // town.xxx.jp
+      /\.vill\.[a-z]+\.jp$/,      // vill.xxx.jp (村)
+      /\.pref\.[a-z]+\.jp$/,      // pref.xxx.jp (県)
+      /^www\.city\./,              // www.city.xxx
+      /^www\.town\./,              // www.town.xxx
+      /^www\.vill\./,              // www.vill.xxx
+      /^www\.pref\./,              // www.pref.xxx
+      /^city\./,                   // city.xxx
+      /^town\./,                   // town.xxx
+      /^vill\./,                   // vill.xxx
+      /^pref\./,                   // pref.xxx
+    ];
+
+    if (municipalityPatterns.some(pattern => pattern.test(hostname))) {
+      return true;
+    }
+
+    // その他の公式っぽいドメイン
+    // 例: takaoka.lg.jp, xxx-city.jp など
+    if (hostname.endsWith('.jp') && (
+      hostname.includes('-city') ||
+      hostname.includes('-town') ||
+      hostname.includes('-village') ||
+      hostname.includes('-shi') ||
+      hostname.includes('-machi') ||
+      hostname.includes('-mura')
+    )) {
+      return true;
+    }
+
+    return false;
   } catch {
+    // URLパースエラーの場合はfalse
     return false;
   }
 }

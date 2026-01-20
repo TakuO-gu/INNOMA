@@ -11,12 +11,12 @@
   "topic": [],
   "source": {
     "source_url": "template://sample/services/environment/gomi",
-    "fetched_at": "{{generated_at}}",
+    "fetched_at": "2026-01-20",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "{{generated_at}}",
+    "generated_at": "2026-01-20",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -43,7 +43,7 @@
       "id": "summary-1",
       "type": "Summary",
       "props": {
-        "text": "ごみは正しく分別し、決められた日の朝{{gomi_dashijikan}}までに出してください。分別ルールを守ることで、リサイクルが進み、環境負荷を減らすことができます。"
+        "text": "ごみは正しく分別し、決められた日の朝収集日の朝8:00までまでに出してください。分別ルールを守ることで、リサイクルが進み、環境負荷を減らすことができます。"
       }
     },
     {
@@ -51,7 +51,7 @@
       "type": "TaskButton",
       "props": {
         "label": "ごみ収集日カレンダーを見る",
-        "href": "{{gomi_calendar_url}}",
+        "href": "https://www.sample-city.lg.jp/gomi/calendar",
         "isTopTask": true
       }
     },
@@ -73,7 +73,7 @@
             "ordered": false,
             "items": [
               [{ "type": "paragraph", "runs": [{ "text": "収集日：週2回" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "出し方：{{moeru_gomi_dashikata}}" }] }]
+              [{ "type": "paragraph", "runs": [{ "text": "出し方：指定ごみ袋に入れて出してください" }] }]
             ]
           },
           { "type": "heading", "level": 3, "text": "燃やせないごみ" },
@@ -87,8 +87,8 @@
             "type": "list",
             "ordered": false,
             "items": [
-              [{ "type": "paragraph", "runs": [{ "text": "収集日：{{moenai_gomi_shushuhi}}" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "出し方：{{moenai_gomi_dashikata}}" }] }]
+              [{ "type": "paragraph", "runs": [{ "text": "収集日：月2回（第2・4水曜日）" }] }],
+              [{ "type": "paragraph", "runs": [{ "text": "出し方：指定ごみ袋に入れて出してください" }] }]
             ]
           },
           { "type": "heading", "level": 3, "text": "資源ごみ" },
@@ -102,7 +102,7 @@
             "type": "list",
             "ordered": false,
             "items": [
-              [{ "type": "paragraph", "runs": [{ "text": "収集日：{{shigen_gomi_shushuhi}}" }] }],
+              [{ "type": "paragraph", "runs": [{ "text": "収集日：毎週木曜日" }] }],
               [{ "type": "paragraph", "runs": [{ "text": "出し方：種類ごとに分けて出してください" }] }]
             ]
           }
@@ -204,7 +204,7 @@
           {
             "type": "paragraph",
             "runs": [
-              { "text": "{{gomi_app_description}}" }
+              { "text": "スマートフォンアプリ「サンプル市ごみ分別アプリ」でも確認できます" }
             ]
           }
         ]
@@ -225,11 +225,11 @@
       "id": "contact-1",
       "type": "Contact",
       "props": {
-        "department": "{{environment_department}}",
-        "phone": "{{environment_phone}}",
-        "email": "{{environment_email}}",
-        "hours": "{{city_hall_hours}}",
-        "address": "{{city_hall_address}}"
+        "department": "環境課",
+        "phone": "03-1234-5740",
+        "email": "kankyo@sample-city.lg.jp",
+        "hours": "平日 8:30〜17:15（土日祝日・年末年始を除く）",
+        "address": "〒100-0001 東京都サンプル市中央1-1-1"
       }
     }
   ],

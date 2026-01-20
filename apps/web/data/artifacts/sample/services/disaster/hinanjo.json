@@ -11,12 +11,12 @@
   "topic": [],
   "source": {
     "source_url": "template://sample/services/disaster/hinanjo",
-    "fetched_at": "{{generated_at}}",
+    "fetched_at": "2026-01-20",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "{{generated_at}}",
+    "generated_at": "2026-01-20",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -85,7 +85,7 @@
           {
             "type": "paragraph",
             "runs": [
-              { "text": "全{{hinanjo_count}}か所の避難所が指定されています。" }
+              { "text": "全50か所か所の避難所が指定されています。" }
             ]
           }
         ]
@@ -96,9 +96,9 @@
       "type": "Table",
       "props": {
         "rows": [
-          { "label": "指定緊急避難場所", "value": "{{kinkyu_hinanbasho_count}}か所" },
-          { "label": "指定避難所", "value": "{{shitei_hinanjo_count}}か所" },
-          { "label": "福祉避難所", "value": "{{fukushi_hinanjo_count}}か所" }
+          { "label": "指定緊急避難場所", "value": "20か所か所" },
+          { "label": "指定避難所", "value": "30か所か所" },
+          { "label": "福祉避難所", "value": "10か所か所" }
         ]
       }
     },
@@ -107,7 +107,7 @@
       "type": "TaskButton",
       "props": {
         "label": "避難所マップを見る",
-        "href": "{{hinanjo_map_url}}",
+        "href": "https://www.sample-city.lg.jp/bosai/hinanjo-map",
         "isTopTask": true
       }
     },
@@ -131,7 +131,7 @@
       "type": "TaskButton",
       "props": {
         "label": "避難所の開設状況を確認する",
-        "href": "{{hinanjo_status_url}}",
+        "href": "https://www.sample-city.lg.jp/bosai/hinanjo-status",
         "isTopTask": false
       }
     },
@@ -204,11 +204,11 @@
       "id": "contact-1",
       "type": "Contact",
       "props": {
-        "department": "{{bosai_department}}",
-        "phone": "{{bosai_phone}}",
-        "email": "{{bosai_email}}",
-        "hours": "{{city_hall_hours}}",
-        "address": "{{city_hall_address}}"
+        "department": "危機管理課",
+        "phone": "03-1234-5750",
+        "email": "bosai@sample-city.lg.jp",
+        "hours": "平日 8:30〜17:15（土日祝日・年末年始を除く）",
+        "address": "〒100-0001 東京都サンプル市中央1-1-1"
       }
     }
   ],

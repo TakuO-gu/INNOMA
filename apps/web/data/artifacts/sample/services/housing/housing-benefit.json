@@ -11,12 +11,12 @@
   "topic": [],
   "source": {
     "source_url": "template://sample/services/housing/housing-benefit",
-    "fetched_at": "{{generated_at}}",
+    "fetched_at": "2026-01-20",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "{{generated_at}}",
+    "generated_at": "2026-01-20",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -66,7 +66,7 @@
           {
             "type": "paragraph",
             "runs": [
-              { "text": "家賃相当額（上限：単身世帯{{housing_benefit_single}}円、2人世帯{{housing_benefit_couple}}円）" }
+              { "text": "家賃相当額（上限：単身世帯53,700円円、2人世帯64,000円円）" }
             ]
           },
           { "type": "heading", "level": 2, "text": "支給期間" },
@@ -86,7 +86,7 @@
         "rows": [
           { "label": "支給期間", "value": "原則3か月（最長9か月）" },
           { "label": "支給方法", "value": "家主または不動産会社へ直接振込" },
-          { "label": "申請先", "value": "{{welfare_department}}（自立相談支援窓口）" }
+          { "label": "申請先", "value": "福祉課（自立相談支援窓口）" }
         ]
       }
     },
@@ -94,11 +94,11 @@
       "id": "contact-1",
       "type": "Contact",
       "props": {
-        "department": "{{welfare_department}}",
-        "phone": "{{welfare_phone}}",
-        "email": "{{welfare_email}}",
-        "hours": "{{city_hall_hours}}",
-        "address": "{{city_hall_address}}"
+        "department": "福祉課",
+        "phone": "03-1234-5710",
+        "email": "fukushi@sample-city.lg.jp",
+        "hours": "平日 8:30〜17:15（土日祝日・年末年始を除く）",
+        "address": "〒100-0001 東京都サンプル市中央1-1-1"
       }
     }
   ],

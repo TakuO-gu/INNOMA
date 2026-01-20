@@ -13,12 +13,12 @@
   "topic": [],
   "source": {
     "source_url": "template://sample/services/nationality/japanese-class",
-    "fetched_at": "{{generated_at}}",
+    "fetched_at": "2026-01-20",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "{{generated_at}}",
+    "generated_at": "2026-01-20",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -74,7 +74,7 @@
             "type": "paragraph",
             "runs": [
               {
-                "text": "{{municipality_name}}では、外国人住民の方を対象とした日本語教室を開催しています。"
+                "text": "サンプル市では、外国人住民の方を対象とした日本語教室を開催しています。"
               }
             ]
           },
@@ -87,7 +87,7 @@
                   "type": "paragraph",
                   "runs": [
                     {
-                      "text": "開催場所：{{japanese_class_location}}"
+                      "text": "開催場所：市民活動センター"
                     }
                   ]
                 }
@@ -97,7 +97,7 @@
                   "type": "paragraph",
                   "runs": [
                     {
-                      "text": "開催日時：{{japanese_class_schedule}}"
+                      "text": "開催日時：毎週土曜日 10:00〜12:00"
                     }
                   ]
                 }
@@ -107,7 +107,7 @@
                   "type": "paragraph",
                   "runs": [
                     {
-                      "text": "参加費：{{japanese_class_fee}}"
+                      "text": "参加費：無料（教材費実費）"
                     }
                   ]
                 }
@@ -117,7 +117,7 @@
                   "type": "paragraph",
                   "runs": [
                     {
-                      "text": "申込方法：{{japanese_class_application}}"
+                      "text": "申込方法：随時受付中"
                     }
                   ]
                 }
@@ -146,7 +146,7 @@
                   "type": "paragraph",
                   "runs": [
                     {
-                      "text": "対応言語：{{multilingual_languages}}"
+                      "text": "対応言語：英語、中国語、韓国語、ベトナム語"
                     }
                   ]
                 }
@@ -156,7 +156,7 @@
                   "type": "paragraph",
                   "runs": [
                     {
-                      "text": "相談日時：{{multilingual_consultation_hours}}"
+                      "text": "相談日時：毎週水曜日 10:00〜16:00"
                     }
                   ]
                 }
@@ -172,7 +172,7 @@
             "type": "paragraph",
             "runs": [
               {
-                "text": "国際交流協会や市民団体による交流イベントが開催されています。詳しくは{{international_association}}にお問い合わせください。"
+                "text": "国際交流協会や市民団体による交流イベントが開催されています。詳しくはサンプル市国際交流協会にお問い合わせください。"
               }
             ]
           },
@@ -196,11 +196,11 @@
       "id": "contact-1",
       "type": "Contact",
       "props": {
-        "department": "{{multicultural_department}}",
-        "phone": "{{multicultural_phone}}",
-        "email": "{{multicultural_email}}",
-        "hours": "{{city_hall_hours}}",
-        "address": "{{city_hall_address}}"
+        "department": "市民協働課 多文化共生係",
+        "phone": "03-1234-5780",
+        "email": "tabunka@sample-city.lg.jp",
+        "hours": "平日 8:30〜17:15（土日祝日・年末年始を除く）",
+        "address": "〒100-0001 東京都サンプル市中央1-1-1"
       }
     }
   ],

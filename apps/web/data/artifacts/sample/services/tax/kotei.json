@@ -11,12 +11,12 @@
   "topic": [],
   "source": {
     "source_url": "template://sample/services/tax/kotei",
-    "fetched_at": "{{generated_at}}",
+    "fetched_at": "2026-01-20",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "{{generated_at}}",
+    "generated_at": "2026-01-20",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -118,7 +118,7 @@
       "props": {
         "rows": [
           { "label": "固定資産税", "value": "課税標準額 × 1.4%（標準税率）" },
-          { "label": "都市計画税", "value": "課税標準額 × {{toshikeikaku_rate}}（市街化区域内のみ）" },
+          { "label": "都市計画税", "value": "課税標準額 × 0.3%（市街化区域内のみ）" },
           { "label": "免税点（土地）", "value": "30万円" },
           { "label": "免税点（家屋）", "value": "20万円" },
           { "label": "免税点（償却資産）", "value": "150万円" }
@@ -179,10 +179,10 @@
       "type": "Table",
       "props": {
         "rows": [
-          { "label": "第1期", "value": "{{kotei_kigen_1}}" },
-          { "label": "第2期", "value": "{{kotei_kigen_2}}" },
-          { "label": "第3期", "value": "{{kotei_kigen_3}}" },
-          { "label": "第4期", "value": "{{kotei_kigen_4}}" },
+          { "label": "第1期", "value": "4月30日" },
+          { "label": "第2期", "value": "7月31日" },
+          { "label": "第3期", "value": "12月28日" },
+          { "label": "第4期", "value": "翌年2月末日" },
           { "label": "納付場所", "value": "金融機関、コンビニ、口座振替、クレジットカード、スマートフォン決済など" }
         ]
       }
@@ -221,11 +221,11 @@
       "id": "contact-1",
       "type": "Contact",
       "props": {
-        "department": "{{shisanzei_department}}",
-        "phone": "{{shisanzei_phone}}",
-        "email": "{{shisanzei_email}}",
-        "hours": "{{city_hall_hours}}",
-        "address": "{{city_hall_address}}"
+        "department": "税務課 資産税係",
+        "phone": "03-1234-5692",
+        "email": "shisanzei@sample-city.lg.jp",
+        "hours": "平日 8:30〜17:15（土日祝日・年末年始を除く）",
+        "address": "〒100-0001 東京都サンプル市中央1-1-1"
       }
     }
   ],

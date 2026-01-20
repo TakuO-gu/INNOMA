@@ -1,0 +1,231 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "takaoka-services-nationality-foreign-registration",
+  "municipality_id": "takaoka",
+  "path": "/services/nationality/foreign-registration",
+  "title": "外国人住民の届出",
+  "description": "外国人住民の転入届・転出届・転居届、在留カード関連手続き",
+  "content_type": "guide",
+  "service_category": "government",
+  "audience": [
+    "foreigners"
+  ],
+  "topic": [],
+  "source": {
+    "source_url": "template://sample/services/nationality/foreign-registration",
+    "fetched_at": "2026-01-20T10:33:17.311Z",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "2026-01-20T10:33:17.311Z",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "くらしの情報",
+            "href": "/topics"
+          },
+          {
+            "label": "戸籍・国籍・在留",
+            "href": "/topics/nationality"
+          },
+          {
+            "label": "外国人住民の届出",
+            "href": "/services/nationality/foreign-registration"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "外国人住民の届出"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "外国人住民の方の住所変更届出、在留カードへの新住所記載についてご案内します。"
+      }
+    },
+    {
+      "id": "richtext-1",
+      "type": "RichText",
+      "props": {
+        "content": [
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "転入届（高岡市に引っ越してきたとき）"
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "届出期間：引っ越した日から14日以内"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "持ち物：在留カード（または特別永住者証明書）、パスポート"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "世帯主との続柄を証明する書類（該当する場合）"
+                    }
+                  ]
+                }
+              ]
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "転出届（高岡市から引っ越すとき）"
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "届出期間：引っ越し予定日の14日前から届出可能"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "持ち物：在留カード（または特別永住者証明書）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "転出証明書を受け取り、転入先で提出"
+                    }
+                  ]
+                }
+              ]
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "転居届（高岡市内で引っ越したとき）"
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "届出期間：引っ越した日から14日以内"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "持ち物：在留カード（または特別永住者証明書）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "在留カードに新住所を記載します"
+                    }
+                  ]
+                }
+              ]
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "届出対象者"
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "3か月を超える在留資格を持つ外国人（中長期在留者、特別永住者）"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{resident_department}}",
+        "phone": "{{resident_phone}}",
+        "email": "{{resident_email}}",
+        "hours": "{{city_hall_hours}}",
+        "address": "{{city_hall_address}}"
+      }
+    }
+  ],
+  "search": {
+    "summary": "外国人住民の届出案内。転入届・転出届・転居届、在留カードへの住所記載。",
+    "keywords": [
+      "外国人",
+      "転入届",
+      "転出届",
+      "転居届",
+      "在留カード",
+      "住所変更"
+    ],
+    "plain_text": "外国人住民の届出。引っ越した日から14日以内に届出。在留カードに新住所を記載。"
+  }
+}

@@ -18,14 +18,14 @@ export function RichTextRenderer({ content }: { content: RichTextContent | RichT
   if (!content) return null;
 
   if (Array.isArray(content)) {
-    return <div className="space-y-4">{renderNodes(content as RichTextNode[], municipalityId)}</div>;
+    return <div>{renderNodes(content as RichTextNode[], municipalityId)}</div>;
   }
 
   if (typeof content === "string") {
     if (content.startsWith("[") || content.startsWith("{")) {
       try {
         const parsed = JSON.parse(content) as RichTextNode[];
-        return <div className="space-y-4">{renderNodes(parsed, municipalityId)}</div>;
+        return <div>{renderNodes(parsed, municipalityId)}</div>;
       } catch {
         // JSONパースに失敗した場合はプレーンテキストとして処理
       }
@@ -34,7 +34,7 @@ export function RichTextRenderer({ content }: { content: RichTextContent | RichT
     const paragraphs = content.split("\n\n").filter((p) => p.trim());
     if (paragraphs.length > 1) {
       return (
-        <div className="space-y-4">
+        <div>
           {paragraphs.map((para, idx) => (
             <p key={idx} className="text-std-16N-170 text-solid-gray-800">
               {para.split("\n").map((line, lineIdx) => (
@@ -50,7 +50,7 @@ export function RichTextRenderer({ content }: { content: RichTextContent | RichT
     }
 
     return (
-      <div className="space-y-4">
+      <div>
         <p className="text-std-16N-170 text-solid-gray-800">{content}</p>
       </div>
     );
@@ -169,12 +169,12 @@ function renderRun(
 
 export function getHeadingSizeClass(level: number): string {
   const classes: Record<number, string> = {
-    1: "text-std-45B-140 text-solid-gray-900 mb-4",
-    2: "text-std-32B-150 text-solid-gray-900 mb-3",
-    3: "text-std-24B-150 text-solid-gray-900 mb-2",
-    4: "text-std-20B-150 text-solid-gray-900 mb-2",
-    5: "text-std-17B-170 text-solid-gray-900 mb-2",
-    6: "text-std-17B-170 text-solid-gray-900 mb-2",
+    1: "text-std-45B-140 text-solid-gray-900",
+    2: "text-std-32B-150 text-solid-gray-900",
+    3: "text-std-24B-150 text-solid-gray-900",
+    4: "text-std-20B-150 text-solid-gray-900",
+    5: "text-std-17B-170 text-solid-gray-900",
+    6: "text-std-17B-170 text-solid-gray-900",
   };
   return classes[level] || classes[3];
 }

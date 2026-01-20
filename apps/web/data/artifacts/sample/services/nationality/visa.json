@@ -13,12 +13,12 @@
   "topic": [],
   "source": {
     "source_url": "template://sample/services/nationality/visa",
-    "fetched_at": "{{generated_at}}",
+    "fetched_at": "2026-01-20",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "{{generated_at}}",
+    "generated_at": "2026-01-20",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -180,9 +180,9 @@
       "id": "contact-1",
       "type": "Contact",
       "props": {
-        "department": "{{immigration_bureau}}",
-        "phone": "{{immigration_bureau_phone}}",
-        "address": "{{immigration_bureau_address}}"
+        "department": "東京出入国在留管理局",
+        "phone": "0570-034259",
+        "address": "東京都港区港南5-5-30"
       }
     }
   ],

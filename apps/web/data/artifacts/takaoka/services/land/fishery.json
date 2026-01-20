@@ -1,0 +1,234 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "takaoka-services-land-fishery",
+  "municipality_id": "takaoka",
+  "path": "/services/land/fishery",
+  "title": "漁業・水産業",
+  "description": "漁業権、漁業許可、漁業補助金、水産資源管理",
+  "content_type": "guide",
+  "service_category": "environment",
+  "audience": [
+    "businesses"
+  ],
+  "topic": [],
+  "source": {
+    "source_url": "template://sample/services/land/fishery",
+    "fetched_at": "2026-01-20T10:33:17.311Z",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "2026-01-20T10:33:17.311Z",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "くらしの情報",
+            "href": "/topics"
+          },
+          {
+            "label": "土地・農林水産",
+            "href": "/topics/land"
+          },
+          {
+            "label": "漁業・水産業",
+            "href": "/services/land/fishery"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "漁業・水産業"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "漁業を営むために必要な許可、漁業権、補助金についてご案内します。"
+      }
+    },
+    {
+      "id": "richtext-1",
+      "type": "RichText",
+      "props": {
+        "content": [
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "漁業権"
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "一定の水面で漁業を営む権利です。漁業協同組合などに免許されます。"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "共同漁業権",
+                      "bold": true
+                    },
+                    {
+                      "text": "：一定の水面を漁業協同組合の組合員が共同で利用"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "区画漁業権",
+                      "bold": true
+                    },
+                    {
+                      "text": "：養殖業を行う権利"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "定置漁業権",
+                      "bold": true
+                    },
+                    {
+                      "text": "：定置網漁業を行う権利"
+                    }
+                  ]
+                }
+              ]
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "漁業許可"
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "一定規模以上の漁船漁業には、知事または大臣の許可が必要です。"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "漁業支援制度"
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "漁業経営セーフティネット構築事業",
+                      "bold": true
+                    },
+                    {
+                      "text": "：燃油・配合飼料価格上昇時の補填"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "水産業競争力強化漁船導入緊急支援事業",
+                      "bold": true
+                    },
+                    {
+                      "text": "：漁船の更新・改修支援"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "漁業近代化資金",
+                      "bold": true
+                    },
+                    {
+                      "text": "：漁船・漁具の取得に低利融資"
+                    }
+                  ]
+                }
+              ]
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "遊漁者の方へ"
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "海での釣りは原則自由ですが、漁業権が設定された区域でのアワビ・ウニ等の採取は禁止されています。また、漁業調整規則により、禁止されている漁法や禁漁期間がありますのでご注意ください。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{fishery_department}}",
+        "phone": "{{fishery_phone}}",
+        "email": "{{fishery_email}}",
+        "hours": "{{city_hall_hours}}",
+        "address": "{{city_hall_address}}"
+      }
+    }
+  ],
+  "search": {
+    "summary": "漁業・水産業の案内。漁業権、漁業許可、漁業補助金、遊漁ルール。",
+    "keywords": [
+      "漁業",
+      "水産業",
+      "漁業権",
+      "漁業許可",
+      "漁業補助金"
+    ],
+    "plain_text": "漁業・水産業。漁業を営むには漁業権または許可が必要。燃油補填、漁船導入支援等の補助金あり。"
+  }
+}

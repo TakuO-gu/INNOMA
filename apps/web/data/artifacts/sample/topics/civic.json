@@ -11,12 +11,12 @@
   "topic": [],
   "source": {
     "source_url": "template://sample/topics/civic",
-    "fetched_at": "{{generated_at}}",
+    "fetched_at": "2026-01-20",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "{{generated_at}}",
+    "generated_at": "2026-01-20",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -107,11 +107,11 @@
       "id": "contact-1",
       "type": "Contact",
       "props": {
-        "department": "{{civic_department}}",
-        "phone": "{{civic_phone}}",
-        "email": "{{civic_email}}",
-        "hours": "{{city_hall_hours}}",
-        "address": "{{city_hall_address}}"
+        "department": "市民協働課",
+        "phone": "03-1234-5781",
+        "email": "kyodo@sample-city.lg.jp",
+        "hours": "平日 8:30〜17:15（土日祝日・年末年始を除く）",
+        "address": "〒100-0001 東京都サンプル市中央1-1-1"
       }
     }
   ],

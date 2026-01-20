@@ -1,0 +1,133 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "takaoka-services-nationality-consultation",
+  "municipality_id": "takaoka",
+  "path": "/services/nationality/consultation",
+  "title": "外国人のための相談窓口",
+  "description": "多言語相談、生活相談、高岡市国際交流協会",
+  "content_type": "guide",
+  "service_category": "government",
+  "audience": [
+    "foreigners"
+  ],
+  "topic": [],
+  "source": {
+    "source_url": "template://sample/services/nationality/consultation",
+    "fetched_at": "2026-01-20T10:33:17.311Z",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "2026-01-20T10:33:17.311Z",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "くらしの情報",
+            "href": "/topics"
+          },
+          {
+            "label": "戸籍・国籍・在留",
+            "href": "/topics/nationality"
+          },
+          {
+            "label": "外国人相談窓口",
+            "href": "/services/nationality/consultation"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "外国人のための相談窓口"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "外国人住民の方が日本での生活で困ったときの相談窓口をご案内します。多言語で対応しています。"
+      }
+    },
+    {
+      "id": "richtext-1",
+      "type": "RichText",
+      "props": {
+        "content": [
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "外国人総合相談支援センター"
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "在留手続き、雇用・労働、医療・福祉、出産・子育て、子の教育など、生活全般の相談に多言語で対応します。"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "対応言語"
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "{{foreign_consultation_languages}}"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "高岡市国際交流協会"
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "日本語教室、異文化交流イベント、通訳・翻訳ボランティアの紹介など。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{international_association}}",
+        "phone": "{{international_association_phone}}",
+        "email": "{{international_association_email}}",
+        "hours": "{{city_hall_hours}}",
+        "address": "{{international_association_address}}"
+      }
+    }
+  ],
+  "search": {
+    "summary": "外国人相談窓口の案内。多言語対応、生活相談、国際交流協会。",
+    "keywords": [
+      "外国人相談",
+      "多言語",
+      "国際交流",
+      "生活相談",
+      "通訳"
+    ],
+    "plain_text": "外国人のための相談窓口。在留手続き、雇用、医療、子育てなど生活全般を多言語で相談可能。"
+  }
+}

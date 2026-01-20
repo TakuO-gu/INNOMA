@@ -57,6 +57,7 @@ export interface DraftMetadata {
   rejectedBy?: string;
   rejectedAt?: string;
   rejectionReason?: string;
+  autoApproved?: boolean;
 }
 
 /**

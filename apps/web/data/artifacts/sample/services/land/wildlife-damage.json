@@ -14,12 +14,12 @@
   "topic": [],
   "source": {
     "source_url": "template://sample/services/land/wildlife-damage",
-    "fetched_at": "{{generated_at}}",
+    "fetched_at": "2026-01-20",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "{{generated_at}}",
+    "generated_at": "2026-01-20",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -128,7 +128,7 @@
             "type": "paragraph",
             "runs": [
               {
-                "text": "{{municipality_name}}では、電気柵や金属メッシュ柵等の設置費用を補助しています。"
+                "text": "サンプル市では、電気柵や金属メッシュ柵等の設置費用を補助しています。"
               }
             ]
           },
@@ -141,7 +141,7 @@
                   "type": "paragraph",
                   "runs": [
                     {
-                      "text": "補助率：{{wildlife_fence_subsidy_rate}}"
+                      "text": "補助率：費用の1/2（上限10万円）"
                     }
                   ]
                 }
@@ -161,7 +161,7 @@
                   "type": "paragraph",
                   "runs": [
                     {
-                      "text": "申込期間：{{wildlife_fence_application_period}}"
+                      "text": "申込期間：4月1日〜12月28日"
                     }
                   ]
                 }
@@ -214,11 +214,11 @@
       "id": "contact-1",
       "type": "Contact",
       "props": {
-        "department": "{{agriculture_department}}",
-        "phone": "{{agriculture_phone}}",
-        "email": "{{agriculture_email}}",
-        "hours": "{{city_hall_hours}}",
-        "address": "{{city_hall_address}}"
+        "department": "農業振興課",
+        "phone": "03-1234-5771",
+        "email": "nogyo@sample-city.lg.jp",
+        "hours": "平日 8:30〜17:15（土日祝日・年末年始を除く）",
+        "address": "〒100-0001 東京都サンプル市中央1-1-1"
       }
     }
   ],

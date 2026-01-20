@@ -11,12 +11,12 @@
   "topic": [],
   "source": {
     "source_url": "template://sample/services/housing/vacant-house",
-    "fetched_at": "{{generated_at}}",
+    "fetched_at": "2026-01-20",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "{{generated_at}}",
+    "generated_at": "2026-01-20",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -43,7 +43,7 @@
       "id": "summary-1",
       "type": "Summary",
       "props": {
-        "text": "{{municipality_name}}では、空き家の有効活用と適正管理を推進しています。空き家バンクへの登録、解体補助などをご案内します。"
+        "text": "サンプル市では、空き家の有効活用と適正管理を推進しています。空き家バンクへの登録、解体補助などをご案内します。"
       }
     },
     {
@@ -77,7 +77,7 @@
             "type": "list",
             "ordered": false,
             "items": [
-              [{ "type": "paragraph", "runs": [{ "text": "補助額：解体費用の{{vacant_house_subsidy_rate}}（上限{{vacant_house_subsidy_max}}円）" }] }],
+              [{ "type": "paragraph", "runs": [{ "text": "補助額：解体費用の工事費の1/2（上限50万円円）" }] }],
               [{ "type": "paragraph", "runs": [{ "text": "対象：1年以上使用されていない住宅" }] }]
             ]
           },
@@ -95,11 +95,11 @@
       "id": "contact-1",
       "type": "Contact",
       "props": {
-        "department": "{{housing_department}}",
-        "phone": "{{housing_phone}}",
-        "email": "{{housing_email}}",
-        "hours": "{{city_hall_hours}}",
-        "address": "{{city_hall_address}}"
+        "department": "住宅課",
+        "phone": "03-1234-5760",
+        "email": "jutaku@sample-city.lg.jp",
+        "hours": "平日 8:30〜17:15（土日祝日・年末年始を除く）",
+        "address": "〒100-0001 東京都サンプル市中央1-1-1"
       }
     }
   ],

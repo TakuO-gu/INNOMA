@@ -11,12 +11,12 @@
   "topic": [],
   "source": {
     "source_url": "template://sample/services/employment/unemployment-insurance",
-    "fetched_at": "{{generated_at}}",
+    "fetched_at": "2026-01-20",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "{{generated_at}}",
+    "generated_at": "2026-01-20",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -111,9 +111,9 @@
       "id": "contact-1",
       "type": "Contact",
       "props": {
-        "department": "{{hello_work_name}}",
-        "phone": "{{hello_work_phone}}",
-        "address": "{{hello_work_address}}",
+        "department": "ハローワークサンプル",
+        "phone": "03-2345-6789",
+        "address": "東京都サンプル市中央2-2-2",
         "hours": "平日8:30〜17:15"
       }
     }

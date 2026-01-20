@@ -13,12 +13,12 @@
   "topic": [],
   "source": {
     "source_url": "template://sample/services/driving/senior-driving",
-    "fetched_at": "{{generated_at}}",
+    "fetched_at": "2026-01-20",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "{{generated_at}}",
+    "generated_at": "2026-01-20",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -100,7 +100,7 @@
             "type": "paragraph",
             "runs": [
               {
-                "text": "{{municipality_name}}では、自主返納された方に以下の支援を行っています。"
+                "text": "サンプル市では、自主返納された方に以下の支援を行っています。"
               }
             ]
           },
@@ -113,7 +113,7 @@
                   "type": "paragraph",
                   "runs": [
                     {
-                      "text": "{{license_return_support_1}}"
+                      "text": "運転経歴証明書の手数料補助（1,100円）"
                     }
                   ]
                 }
@@ -123,7 +123,7 @@
                   "type": "paragraph",
                   "runs": [
                     {
-                      "text": "{{license_return_support_2}}"
+                      "text": "公共交通機関の回数券贈呈（5,000円分）"
                     }
                   ]
                 }
@@ -137,11 +137,11 @@
       "id": "contact-1",
       "type": "Contact",
       "props": {
-        "department": "{{driving_department}}",
-        "phone": "{{driving_phone}}",
-        "email": "{{driving_email}}",
-        "hours": "{{city_hall_hours}}",
-        "address": "{{city_hall_address}}"
+        "department": "市民課 届出窓口",
+        "phone": "03-1234-5680",
+        "email": "todokede@sample-city.lg.jp",
+        "hours": "平日 8:30〜17:15（土日祝日・年末年始を除く）",
+        "address": "〒100-0001 東京都サンプル市中央1-1-1"
       }
     }
   ],

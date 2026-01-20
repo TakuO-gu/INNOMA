@@ -11,12 +11,12 @@
   "topic": [],
   "source": {
     "source_url": "template://sample/services/housing/property-registration",
-    "fetched_at": "{{generated_at}}",
+    "fetched_at": "2026-01-20",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "{{generated_at}}",
+    "generated_at": "2026-01-20",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -85,9 +85,9 @@
       "type": "Table",
       "props": {
         "rows": [
-          { "label": "申請先", "value": "{{legal_affairs_bureau}}" },
-          { "label": "所在地", "value": "{{legal_affairs_bureau_address}}" },
-          { "label": "電話番号", "value": "{{legal_affairs_bureau_phone}}" }
+          { "label": "申請先", "value": "東京法務局サンプル出張所" },
+          { "label": "所在地", "value": "東京都サンプル市中央5-5-5" },
+          { "label": "電話番号", "value": "03-5678-9012" }
         ]
       }
     },
@@ -95,9 +95,9 @@
       "id": "contact-1",
       "type": "Contact",
       "props": {
-        "department": "{{legal_affairs_bureau}}",
-        "phone": "{{legal_affairs_bureau_phone}}",
-        "address": "{{legal_affairs_bureau_address}}"
+        "department": "東京法務局サンプル出張所",
+        "phone": "03-5678-9012",
+        "address": "東京都サンプル市中央5-5-5"
       }
     }
   ],

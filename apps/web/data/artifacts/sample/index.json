@@ -3,20 +3,20 @@
   "page_id": "sample-home",
   "municipality_id": "sample",
   "path": "/",
-  "title": "{{municipality_name}}",
-  "description": "{{municipality_name}}の行政情報ポータルサイト",
+  "title": "サンプル市",
+  "description": "サンプル市の行政情報ポータルサイト",
   "content_type": "service",
   "service_category": "government",
   "audience": ["residents"],
   "topic": [],
   "source": {
     "source_url": "template://sample/home",
-    "fetched_at": "{{generated_at}}",
+    "fetched_at": "2026-01-20",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "{{generated_at}}",
+    "generated_at": "2026-01-20",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -24,7 +24,7 @@
       "id": "hero-1",
       "type": "Hero",
       "props": {
-        "title": "{{municipality_name}}へようこそ",
+        "title": "サンプル市へようこそ",
         "subtitle": "市民の皆さまの暮らしをサポートする行政情報をお届けします"
       }
     },
@@ -85,17 +85,17 @@
       "id": "contact-1",
       "type": "Contact",
       "props": {
-        "department": "{{city_hall_department}}",
-        "phone": "{{city_hall_phone}}",
-        "email": "{{city_hall_email}}",
-        "hours": "{{city_hall_hours}}",
-        "address": "{{city_hall_address}}"
+        "department": "総務課",
+        "phone": "03-1234-5678",
+        "email": "info@sample-city.lg.jp",
+        "hours": "平日 8:30〜17:15（土日祝日・年末年始を除く）",
+        "address": "〒100-0001 東京都サンプル市中央1-1-1"
       }
     }
   ],
   "search": {
-    "summary": "{{municipality_name}}の行政情報ポータルサイト。届出、子育て、福祉、健康、税金、環境など各種行政サービスの案内。",
-    "keywords": ["{{municipality_name}}", "行政", "届出", "子育て", "福祉", "健康", "税金", "ごみ", "防災"],
-    "plain_text": "{{municipality_name}}へようこそ。市民の皆さまの暮らしをサポートする行政情報をお届けします。届出・申請・証明書、子育て、福祉・介護、健康・医療、税金、環境・ごみ、住まい・施設、防災・災害などの情報を提供しています。"
+    "summary": "サンプル市の行政情報ポータルサイト。届出、子育て、福祉、健康、税金、環境など各種行政サービスの案内。",
+    "keywords": ["サンプル市", "行政", "届出", "子育て", "福祉", "健康", "税金", "ごみ", "防災"],
+    "plain_text": "サンプル市へようこそ。市民の皆さまの暮らしをサポートする行政情報をお届けします。届出・申請・証明書、子育て、福祉・介護、健康・医療、税金、環境・ごみ、住まい・施設、防災・災害などの情報を提供しています。"
   }
 }

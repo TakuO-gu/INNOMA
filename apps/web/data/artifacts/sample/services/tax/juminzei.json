@@ -11,12 +11,12 @@
   "topic": [],
   "source": {
     "source_url": "template://sample/services/tax/juminzei",
-    "fetched_at": "{{generated_at}}",
+    "fetched_at": "2026-01-20",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "{{generated_at}}",
+    "generated_at": "2026-01-20",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -112,8 +112,8 @@
       "props": {
         "rows": [
           { "label": "所得割", "value": "（前年の所得−所得控除）× 10%（市民税6%・県民税4%）" },
-          { "label": "均等割（市民税）", "value": "{{juminzei_kinto_shi}}" },
-          { "label": "均等割（県民税）", "value": "{{juminzei_kinto_ken}}" },
+          { "label": "均等割（市民税）", "value": "3,000円" },
+          { "label": "均等割（県民税）", "value": "1,000円" },
           { "label": "森林環境税", "value": "1,000円（令和6年度から国税として賦課）" }
         ]
       }
@@ -146,10 +146,10 @@
       "type": "Table",
       "props": {
         "rows": [
-          { "label": "第1期", "value": "{{juminzei_kigen_1}}" },
-          { "label": "第2期", "value": "{{juminzei_kigen_2}}" },
-          { "label": "第3期", "value": "{{juminzei_kigen_3}}" },
-          { "label": "第4期", "value": "{{juminzei_kigen_4}}" },
+          { "label": "第1期", "value": "6月30日" },
+          { "label": "第2期", "value": "8月31日" },
+          { "label": "第3期", "value": "10月31日" },
+          { "label": "第4期", "value": "翌年1月31日" },
           { "label": "納付場所", "value": "金融機関、コンビニ、口座振替、クレジットカード、スマートフォン決済など" }
         ]
       }
@@ -222,11 +222,11 @@
       "id": "contact-1",
       "type": "Contact",
       "props": {
-        "department": "{{zeimu_department}}",
-        "phone": "{{zeimu_phone}}",
-        "email": "{{zeimu_email}}",
-        "hours": "{{city_hall_hours}}",
-        "address": "{{city_hall_address}}"
+        "department": "税務課",
+        "phone": "03-1234-5691",
+        "email": "zeimu@sample-city.lg.jp",
+        "hours": "平日 8:30〜17:15（土日祝日・年末年始を除く）",
+        "address": "〒100-0001 東京都サンプル市中央1-1-1"
       }
     }
   ],

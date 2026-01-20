@@ -11,12 +11,12 @@
   "topic": [],
   "source": {
     "source_url": "template://sample/services/disaster/bosai-mail",
-    "fetched_at": "{{generated_at}}",
+    "fetched_at": "2026-01-20",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "{{generated_at}}",
+    "generated_at": "2026-01-20",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -108,7 +108,7 @@
             "type": "paragraph",
             "runs": [
               { "text": "登録用メールアドレス：" },
-              { "text": "{{bosai_mail_address}}", "bold": true }
+              { "text": "bosai@sample-city.lg.jp", "bold": true }
             ]
           },
           {
@@ -131,7 +131,7 @@
       "type": "TaskButton",
       "props": {
         "label": "防災情報メールに登録する",
-        "href": "{{bosai_mail_touroku_url}}",
+        "href": "https://www.sample-city.lg.jp/bosai/mail",
         "isTopTask": true
       }
     },
@@ -145,7 +145,7 @@
           {
             "type": "paragraph",
             "runs": [
-              { "text": "屋外スピーカーから避難情報などをお知らせします。聞き取れなかった場合は、テレホンサービス（{{bosai_telephone}}）で確認できます。" }
+              { "text": "屋外スピーカーから避難情報などをお知らせします。聞き取れなかった場合は、テレホンサービス（0120-xxx-xxx）で確認できます。" }
             ]
           },
           { "type": "heading", "level": 3, "text": "市公式SNS" },
@@ -180,11 +180,11 @@
       "id": "contact-1",
       "type": "Contact",
       "props": {
-        "department": "{{bosai_department}}",
-        "phone": "{{bosai_phone}}",
-        "email": "{{bosai_email}}",
-        "hours": "{{city_hall_hours}}",
-        "address": "{{city_hall_address}}"
+        "department": "危機管理課",
+        "phone": "03-1234-5750",
+        "email": "bosai@sample-city.lg.jp",
+        "hours": "平日 8:30〜17:15（土日祝日・年末年始を除く）",
+        "address": "〒100-0001 東京都サンプル市中央1-1-1"
       }
     }
   ],

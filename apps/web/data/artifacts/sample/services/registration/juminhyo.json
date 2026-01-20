@@ -11,12 +11,12 @@
   "topic": [],
   "source": {
     "source_url": "template://sample/services/registration/juminhyo",
-    "fetched_at": "{{generated_at}}",
+    "fetched_at": "2026-01-20",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "{{generated_at}}",
+    "generated_at": "2026-01-20",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -91,9 +91,9 @@
       "type": "Table",
       "props": {
         "rows": [
-          { "label": "住民票の写し（窓口）", "value": "{{juminhyo_fee}}" },
-          { "label": "住民票の写し（コンビニ）", "value": "{{juminhyo_convenience_fee}}" },
-          { "label": "住民票記載事項証明書", "value": "{{juminhyo_kisai_fee}}" }
+          { "label": "住民票の写し（窓口）", "value": "300円" },
+          { "label": "住民票の写し（コンビニ）", "value": "200円" },
+          { "label": "住民票記載事項証明書", "value": "300円" }
         ]
       }
     },
@@ -126,7 +126,7 @@
           {
             "type": "paragraph",
             "runs": [
-              { "text": "{{juminhyo_madoguchi}}" }
+              { "text": "市役所1階 市民課窓口、各出張所" }
             ]
           }
         ]
@@ -208,11 +208,11 @@
       "id": "contact-1",
       "type": "Contact",
       "props": {
-        "department": "{{shimin_department}}",
-        "phone": "{{shimin_phone}}",
-        "email": "{{shimin_email}}",
-        "hours": "{{city_hall_hours}}",
-        "address": "{{city_hall_address}}"
+        "department": "市民課",
+        "phone": "03-1234-5679",
+        "email": "shimin@sample-city.lg.jp",
+        "hours": "平日 8:30〜17:15（土日祝日・年末年始を除く）",
+        "address": "〒100-0001 東京都サンプル市中央1-1-1"
       }
     }
   ],
