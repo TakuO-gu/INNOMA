@@ -123,7 +123,7 @@
             "ordered": false,
             "items": [
               [{ "type": "paragraph", "runs": [{ "text": "利用時間：6:30〜23:00（年末年始・メンテナンス時を除く）" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "手数料：窓口より100円円安い" }] }]
+              [{ "type": "paragraph", "runs": [{ "text": "手数料：窓口より100円安い" }] }]
             ]
           },
           { "type": "heading", "level": 3, "text": "郵送での取得" },

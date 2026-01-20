@@ -56,7 +56,7 @@
             "type": "paragraph",
             "runs": [
               { "text": "東京都の地域別最低賃金は", "bold": false },
-              { "text": "1,163円円/時間", "bold": true },
+              { "text": "1,163円/時間", "bold": true },
               { "text": "（令和7年10月1日発効）" }
             ]
           },

@@ -116,7 +116,7 @@
           {
             "type": "callout",
             "severity": "warning",
-            "title": "届出期限にご注意ください",
+            "title": "注意",
             "content": [
               {
                 "type": "paragraph",
