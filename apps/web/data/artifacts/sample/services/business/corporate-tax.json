@@ -1,0 +1,175 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "sample-services-business-corporate-tax",
+  "municipality_id": "sample",
+  "path": "/services/business/corporate-tax",
+  "title": "法人税・事業税",
+  "description": "法人市民税、法人事業税、消費税の申告",
+  "content_type": "guide",
+  "service_category": "business",
+  "audience": [
+    "businesses"
+  ],
+  "topic": [],
+  "source": {
+    "source_url": "template://sample/services/business/corporate-tax",
+    "fetched_at": "{{generated_at}}",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "{{generated_at}}",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "くらしの情報",
+            "href": "/topics"
+          },
+          {
+            "label": "事業・経営",
+            "href": "/topics/business"
+          },
+          {
+            "label": "法人税・事業税",
+            "href": "/services/business/corporate-tax"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "法人税・事業税"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "法人が納める税金と申告手続きについてご案内します。"
+      }
+    },
+    {
+      "id": "richtext-1",
+      "type": "RichText",
+      "props": {
+        "content": [
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "法人が納める主な税金"
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "法人税",
+                      "bold": true
+                    },
+                    {
+                      "text": "：国税、所得に対して課税（税務署へ申告）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "法人住民税",
+                      "bold": true
+                    },
+                    {
+                      "text": "：都道府県民税・市町村民税（地方税）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "法人事業税",
+                      "bold": true
+                    },
+                    {
+                      "text": "：都道府県税、所得に対して課税"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "消費税",
+                      "bold": true
+                    },
+                    {
+                      "text": "：売上に含まれる消費税を申告・納付"
+                    }
+                  ]
+                }
+              ]
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "申告期限"
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "事業年度終了後2か月以内（届出により3か月まで延長可能）"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{tax_department}}",
+        "phone": "{{tax_phone}}",
+        "email": "{{tax_email}}",
+        "hours": "{{city_hall_hours}}",
+        "address": "{{city_hall_address}}"
+      }
+    }
+  ],
+  "search": {
+    "summary": "法人税・事業税の案内。法人税、法人住民税、法人事業税、消費税の申告。",
+    "keywords": [
+      "法人税",
+      "法人住民税",
+      "法人事業税",
+      "消費税",
+      "法人の税金",
+      "確定申告"
+    ],
+    "plain_text": "法人税・事業税。法人税（国税）、法人住民税・法人事業税（地方税）、消費税。事業年度終了後2か月以内に申告。"
+  }
+}

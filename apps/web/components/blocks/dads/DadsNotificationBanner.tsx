@@ -1,6 +1,6 @@
 import React from "react";
 
-type Severity = "info" | "warning" | "danger";
+type Severity = "info" | "warning" | "danger" | "success";
 
 export function DadsNotificationBanner({
   severity,

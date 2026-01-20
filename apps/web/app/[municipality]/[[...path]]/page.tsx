@@ -35,12 +35,16 @@ interface PageProps {
 
 /**
  * Artifactキーを生成
+ * Note: Next.js App Router already decodes URL params, but we decode again for safety
  */
 function buildArtifactKey(municipality: string, path?: string[]): string {
+  // Decode municipality and path components
+  const decodedMunicipality = decodeURIComponent(municipality);
   if (!path || path.length === 0) {
-    return `${municipality}/index.json`;
+    return `${decodedMunicipality}/index.json`;
   }
-  return `${municipality}/${path.join("/")}.json`;
+  const decodedPath = path.map(p => decodeURIComponent(p));
+  return `${decodedMunicipality}/${decodedPath.join("/")}.json`;
 }
 
 export default async function ArtifactPage({ params }: PageProps) {
@@ -63,12 +67,15 @@ export default async function ArtifactPage({ params }: PageProps) {
   const isEmergency = hasEmergencyContent(artifact);
   const isHighPriority = hasHighPriorityEmergency(artifact);
 
+  // artifact.municipality_id または URL パラメータを使用
+  const municipalityId = artifact.municipality_id || municipality;
+
   return (
     <main
       data-emergency={isEmergency ? "true" : undefined}
       data-priority={isHighPriority ? "high" : undefined}
     >
-      <BlockRenderer blocks={artifact.blocks} />
+      <BlockRenderer blocks={artifact.blocks} municipalityId={municipalityId} />
     </main>
   );
 }
@@ -89,13 +96,21 @@ export async function generateMetadata({ params }: PageProps) {
   }
 
   const { artifact } = result;
-  const titleBlock = artifact.blocks.find((b) => b.type === "Title");
-  const title = titleBlock && titleBlock.type === "Title" ? titleBlock.props.title : municipality;
+  // v2スキーマ: artifact.title、v1スキーマ: titleブロックから取得
+  const title = artifact.title || (() => {
+    const titleBlock = artifact.blocks.find((b) => b.type === "Title");
+    if (titleBlock && titleBlock.type === "Title") {
+      return (titleBlock.props as { text?: string; title?: string }).text || (titleBlock.props as { title?: string }).title;
+    }
+    return municipality;
+  })();
+
+  // v2スキーマ: artifact.description / artifact.municipality_id
+  const description = artifact.description ||
+    (artifact.municipality_id ? `${artifact.municipality_id}の行政情報` : undefined);
 
   return {
     title: `${title} - INNOMA`,
-    description: artifact.metadata?.municipality
-      ? `${artifact.metadata.municipality}の行政情報`
-      : undefined,
+    description,
   };
 }

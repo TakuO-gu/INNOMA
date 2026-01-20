@@ -1,130 +1,93 @@
-import { z } from "zod";
-
 /**
- * InnomaArtifact Zod Schema
- * 型安全なvalidationとランタイムチェック
+ * INNOMA Artifact Schema (v2)
+ *
+ * packages/schemaから再エクスポート + apps/web固有のユーティリティ
  */
 
-export const RichTextContentSchema = z.string();
+import { z } from "zod";
 
-export const BreadcrumbItemSchema = z.object({
-  label: z.string(),
-  href: z.string(),
+// packages/schemaからすべてを再エクスポート
+export * from "@innoma/schema";
+
+// 内部使用のためにインポート
+import {
+  ContentType,
+  ServiceCategory,
+  Audience,
+  Topic,
+  HeadingSchema,
+  LinkSchema,
+  type Block,
+} from "@innoma/schema";
+
+/* =============================================================================
+ * apps/web固有の追加機能
+ * ============================================================================= */
+
+// 移行期間用の緩いスキーマ（apps/web固有）
+const FlexibleBlockSchema = z.object({
+  id: z.string(),
+  type: z.string(),
+  props: z.record(z.string(), z.unknown()),
 });
 
-export const RelatedLinkItemSchema = z.object({
-  title: z.string(),
-  href: z.string(),
-});
-
-export const AttachmentItemSchema = z.object({
-  title: z.string(),
-  href: z.string(),
-  content_type: z.string().optional(),
-});
-
-export const ProcedureStepSchema = z.object({
-  title: z.string(),
-  content: RichTextContentSchema,
-  checklist: z.array(z.string()).optional(),
-});
-
-export const InfoTableRowSchema = z.object({
-  label: z.string(),
-  value: RichTextContentSchema,
-});
-
-export const EmergencyInfoSchema = z.object({
-  type: z.enum(["disaster", "alert", "warning", "evacuation", "other"]),
-  severity: z.enum(["critical", "high", "medium", "low"]),
-  title: z.string(),
-  content: RichTextContentSchema,
-  publishedAt: z.string(),
-  affectedAreas: z.array(z.string()).optional(),
-  evacuationShelters: z.array(z.string()).optional(),
-  contact: z.string().optional(),
-  url: z.string().optional(),
-});
-
-export const InnomaBlockSchema = z.discriminatedUnion("type", [
-  z.object({
-    id: z.string(),
-    type: z.literal("Breadcrumbs"),
-    props: z.object({ items: z.array(BreadcrumbItemSchema) }),
-  }),
-  z.object({
-    id: z.string(),
-    type: z.literal("Title"),
-    props: z.object({ title: z.string() }),
-  }),
-  z.object({
-    id: z.string(),
-    type: z.literal("Callout"),
-    props: z.object({
-      severity: z.enum(["info", "warning", "danger"]),
-      title: z.string().optional(),
-      content: RichTextContentSchema,
-    }),
-  }),
-  z.object({
-    id: z.string(),
-    type: z.literal("RichText"),
-    props: z.object({ content: RichTextContentSchema }),
-  }),
-  z.object({
-    id: z.string(),
-    type: z.literal("InfoTable"),
-    props: z.object({ rows: z.array(InfoTableRowSchema) }),
-  }),
-  z.object({
-    id: z.string(),
-    type: z.literal("RelatedLinks"),
-    props: z.object({ items: z.array(RelatedLinkItemSchema) }),
-  }),
-  z.object({
-    id: z.string(),
-    type: z.literal("Attachments"),
-    props: z.object({ items: z.array(AttachmentItemSchema) }),
-  }),
-  z.object({
-    id: z.string(),
-    type: z.literal("ProcedureSteps"),
-    props: z.object({ steps: z.array(ProcedureStepSchema) }),
-  }),
-  z.object({
-    id: z.string(),
-    type: z.literal("Emergency"),
-    props: EmergencyInfoSchema,
-  }),
-]);
-
+/**
+ * 移行期間用の緩いArtifactスキーマ
+ * v1/v2どちらの形式も受け付ける
+ */
 export const InnomaArtifactSchema = z.object({
-  version: z.string().optional().default("1.0"),
-  metadata: z
-    .object({
-      municipality: z.string().optional(),
-      prefecture: z.string().optional(),
-      sourceUrl: z.string().optional(),
-      extractedAt: z.string().optional(),
-      lastModified: z.string().optional(),
-    })
-    .optional(),
-  blocks: z.array(InnomaBlockSchema),
+  schema_version: z.string().optional().default("2.0.0"),
+  page_id: z.string().optional(),
+  municipality_id: z.string().optional(),
+  path: z.string().optional(),
+  title: z.string(),
+  description: z.string().optional(),
+  // v1/v2両対応: stringまたはContentType enum
+  content_type: z.union([ContentType, z.string()]).optional(),
+  service_category: z.union([ServiceCategory, z.string()]).optional(),
+  category: z.union([ServiceCategory, z.string()]).optional(), // v1互換
+  audience: z.array(z.union([Audience, z.string()])).optional(),
+  topic: z.array(z.union([Topic, z.string()])).optional(),
+  source: z.object({
+    source_url: z.string(),
+    crawl_file: z.string().optional(),
+    fetched_at: z.string().optional(),
+    content_type: z.string().optional(),
+    content_hash: z.string().optional(),
+  }).optional(),
+  pipeline: z.object({
+    run_id: z.string().optional(),
+    generated_at: z.string(),
+    schema_version: z.string().optional(),
+  }).optional(),
+  raw: z.object({
+    headings: z.array(HeadingSchema).optional(),
+    main: z.array(z.any()).optional(),
+    links: z.array(LinkSchema).optional(),
+  }).optional(),
+  blocks: z.array(FlexibleBlockSchema),
+  search: z.object({
+    summary: z.string().optional(),
+    keywords: z.array(z.string()).optional(),
+    plain_text: z.string().optional(),
+  }).optional(),
 });
 
 export type InnomaArtifactValidated = z.infer<typeof InnomaArtifactSchema>;
 
 /**
- * Artifactをvalidateして型安全なオブジェクトを返す
+ * 厳密なv2バリデーション用（InnomaArtifactSchemaとの互換性用）
+ * @deprecated validateArtifact を使用してください
  */
-export function validateArtifact(data: unknown): InnomaArtifactValidated {
+export function validateInnomaArtifact(data: unknown): InnomaArtifactValidated {
   return InnomaArtifactSchema.parse(data);
 }
 
 /**
- * Artifactをsafe parseしてエラー情報を返す
+ * 安全なv2バリデーション用（InnomaArtifactSchemaとの互換性用）
+ * @deprecated safeValidateArtifact を使用してください
  */
-export function safeValidateArtifact(data: unknown): {
+export function safeValidateInnomaArtifact(data: unknown): {
   success: boolean;
   data?: InnomaArtifactValidated;
   error?: z.ZodError;
@@ -134,4 +97,24 @@ export function safeValidateArtifact(data: unknown): {
     return { success: true, data: result.data };
   }
   return { success: false, error: result.error };
+}
+
+/**
+ * Blockの型でフィルタリング（InnomaArtifactValidated用）
+ */
+export function getBlocksByTypeFromValidated<T extends Block["type"]>(
+  artifact: InnomaArtifactValidated,
+  type: T
+): Extract<Block, { type: T }>[] {
+  return artifact.blocks.filter((b): b is Extract<Block, { type: T }> => b.type === type);
+}
+
+/**
+ * 最初のBlockを取得（InnomaArtifactValidated用）
+ */
+export function getFirstBlockByTypeFromValidated<T extends Block["type"]>(
+  artifact: InnomaArtifactValidated,
+  type: T
+): Extract<Block, { type: T }> | undefined {
+  return artifact.blocks.find((b): b is Extract<Block, { type: T }> => b.type === type);
 }

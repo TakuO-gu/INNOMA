@@ -1,0 +1,102 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "sample-services-employment-career-support",
+  "municipality_id": "sample",
+  "path": "/services/employment/career-support",
+  "title": "就職支援・キャリア相談",
+  "description": "若者サポートステーション、ジョブカフェ、就職氷河期世代支援",
+  "content_type": "guide",
+  "service_category": "business",
+  "audience": ["residents"],
+  "topic": [],
+  "source": {
+    "source_url": "template://sample/services/employment/career-support",
+    "fetched_at": "{{generated_at}}",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "{{generated_at}}",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          { "label": "ホーム", "href": "/" },
+          { "label": "くらしの情報", "href": "/topics" },
+          { "label": "仕事・労働", "href": "/topics/employment" },
+          { "label": "就職支援・キャリア相談", "href": "/services/employment/career-support" }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "就職支援・キャリア相談"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "若者、就職氷河期世代、ひとり親など、様々な方を対象とした就職支援サービスをご案内します。"
+      }
+    },
+    {
+      "id": "richtext-1",
+      "type": "RichText",
+      "props": {
+        "content": [
+          { "type": "heading", "level": 2, "text": "地域若者サポートステーション（サポステ）" },
+          {
+            "type": "paragraph",
+            "runs": [
+              { "text": "15〜49歳で就労に悩みを抱える方への支援。キャリアコンサルタントによる相談、就労体験、ビジネスマナー講座など。" }
+            ]
+          },
+          { "type": "heading", "level": 2, "text": "ジョブカフェ" },
+          {
+            "type": "paragraph",
+            "runs": [
+              { "text": "若者の就職支援をワンストップで行う施設。職業相談、セミナー、職業適性診断、面接対策など。" }
+            ]
+          },
+          { "type": "heading", "level": 2, "text": "就職氷河期世代支援" },
+          {
+            "type": "paragraph",
+            "runs": [
+              { "text": "概ね35〜55歳で、不本意な非正規雇用や無業状態にある方への支援プログラム。ハローワークに専門窓口があります。" }
+            ]
+          },
+          { "type": "heading", "level": 2, "text": "ひとり親への就職支援" },
+          {
+            "type": "paragraph",
+            "runs": [
+              { "text": "マザーズハローワーク、ひとり親家庭等就業・自立支援センターで、子育てしながら働きたい方を支援します。" }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{employment_department}}",
+        "phone": "{{employment_phone}}",
+        "email": "{{employment_email}}",
+        "hours": "{{city_hall_hours}}",
+        "address": "{{city_hall_address}}"
+      }
+    }
+  ],
+  "search": {
+    "summary": "就職支援・キャリア相談の案内。サポステ、ジョブカフェ、就職氷河期世代支援。",
+    "keywords": ["就職支援", "キャリア相談", "サポステ", "ジョブカフェ", "就職氷河期", "マザーズハローワーク"],
+    "plain_text": "就職支援・キャリア相談。若者サポートステーション、ジョブカフェ、就職氷河期世代支援、ひとり親就職支援。"
+  }
+}

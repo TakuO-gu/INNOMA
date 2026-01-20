@@ -1,0 +1,202 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "sample-services-nationality-international-marriage",
+  "municipality_id": "sample",
+  "path": "/services/nationality/international-marriage",
+  "title": "国際結婚",
+  "description": "外国人との婚姻届、婚姻要件具備証明書、在留資格変更",
+  "content_type": "guide",
+  "service_category": "government",
+  "audience": [
+    "residents",
+    "foreigners"
+  ],
+  "topic": [],
+  "source": {
+    "source_url": "template://sample/services/nationality/international-marriage",
+    "fetched_at": "{{generated_at}}",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "{{generated_at}}",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "くらしの情報",
+            "href": "/topics"
+          },
+          {
+            "label": "戸籍・国籍・在留",
+            "href": "/topics/nationality"
+          },
+          {
+            "label": "国際結婚",
+            "href": "/services/nationality/international-marriage"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "国際結婚"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "日本人と外国人が結婚する場合、または外国人同士が日本で結婚する場合の手続きをご案内します。"
+      }
+    },
+    {
+      "id": "richtext-1",
+      "type": "RichText",
+      "props": {
+        "content": [
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "婚姻届の提出"
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "日本人の本籍地または届出人の所在地の市区町村役場に届出できます。"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "必要書類（外国人配偶者）"
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "婚姻要件具備証明書",
+                      "bold": true
+                    },
+                    {
+                      "text": "（独身で婚姻に法的障害がないことを証明する書類）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "上記書類の日本語訳（翻訳者の署名入り）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "パスポート"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "在留カード（日本在住の場合）"
+                    }
+                  ]
+                }
+              ]
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "婚姻要件具備証明書の取得"
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "外国人配偶者の本国の在日大使館・領事館で発行されます。国によって名称や形式が異なります。"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "在留資格の変更"
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "婚姻後、外国人配偶者は「日本人の配偶者等」への在留資格変更申請ができます。出入国在留管理局で手続きしてください。"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "相手国への届出"
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "外国人配偶者の本国にも婚姻届出が必要な場合があります。在日大使館・領事館にご確認ください。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{koseki_department}}",
+        "phone": "{{koseki_phone}}",
+        "email": "{{koseki_email}}",
+        "hours": "{{city_hall_hours}}",
+        "address": "{{city_hall_address}}"
+      }
+    }
+  ],
+  "search": {
+    "summary": "国際結婚の案内。婚姻届、婚姻要件具備証明書、在留資格変更。",
+    "keywords": [
+      "国際結婚",
+      "婚姻届",
+      "婚姻要件具備証明書",
+      "外国人配偶者",
+      "在留資格"
+    ],
+    "plain_text": "国際結婚。外国人配偶者は婚姻要件具備証明書が必要。婚姻後は「日本人の配偶者等」への在留資格変更が可能。"
+  }
+}

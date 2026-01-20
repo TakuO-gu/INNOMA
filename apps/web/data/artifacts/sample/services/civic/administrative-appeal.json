@@ -1,0 +1,225 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "sample-services-civic-administrative-appeal",
+  "municipality_id": "sample",
+  "path": "/services/civic/administrative-appeal",
+  "title": "行政不服審査",
+  "description": "行政処分に対する審査請求、不服申立ての手続き",
+  "content_type": "guide",
+  "service_category": "community",
+  "audience": [
+    "residents"
+  ],
+  "topic": [],
+  "source": {
+    "source_url": "template://sample/services/civic/administrative-appeal",
+    "fetched_at": "{{generated_at}}",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "{{generated_at}}",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "くらしの情報",
+            "href": "/topics"
+          },
+          {
+            "label": "市民参加・権利行使",
+            "href": "/topics/civic"
+          },
+          {
+            "label": "行政不服審査",
+            "href": "/services/civic/administrative-appeal"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "行政不服審査"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "行政庁の処分に不服がある場合、行政不服審査法に基づき審査請求をすることができます。"
+      }
+    },
+    {
+      "id": "richtext-1",
+      "type": "RichText",
+      "props": {
+        "content": [
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "審査請求とは"
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "行政庁の処分（許可の取消し、不許可処分など）に不服がある場合に、その処分の取消しや変更を求める手続きです。裁判所に訴える行政訴訟とは別の制度です。"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "審査請求ができる人"
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "処分によって直接自己の権利利益を侵害された人"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "審査請求期間"
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "処分があったことを知った日の翌日から3か月以内"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "処分があった日の翌日から1年以内"
+                    }
+                  ]
+                }
+              ]
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "審査請求の方法"
+          },
+          {
+            "type": "list",
+            "ordered": true,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "審査請求書を作成（処分の内容、審査請求の趣旨・理由等を記載）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "処分庁または審査庁に提出"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "審理員による審理"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "行政不服審査会への諮問（必要な場合）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "裁決（認容・棄却・却下）"
+                    }
+                  ]
+                }
+              ]
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "手数料"
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "無料（行政訴訟と異なり、訴訟費用はかかりません）"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{legal_department}}",
+        "phone": "{{legal_phone}}",
+        "email": "{{legal_email}}",
+        "hours": "{{city_hall_hours}}",
+        "address": "{{city_hall_address}}"
+      }
+    }
+  ],
+  "search": {
+    "summary": "行政不服審査の案内。行政処分に対する審査請求の手続き。",
+    "keywords": [
+      "行政不服審査",
+      "審査請求",
+      "不服申立て",
+      "行政処分",
+      "行政訴訟"
+    ],
+    "plain_text": "行政不服審査。行政処分に不服がある場合、処分を知った日から3か月以内に審査請求可能。手数料無料。"
+  }
+}

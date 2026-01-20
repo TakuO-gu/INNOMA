@@ -1,0 +1,371 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "{{municipality_id}}-kokuho-leave",
+  "municipality_id": "{{municipality_id}}",
+  "path": "/services/health/kokuho/leave",
+  "title": "国民健康保険からの脱退手続き",
+  "description": "国民健康保険をやめるときの届出方法、必要書類、届出場所について。",
+  "content_type": "guide",
+  "service_category": "health",
+  "audience": ["residents"],
+  "topic": [],
+  "_template_meta": {
+    "template_version": "1.0.0",
+    "created_at": "2026-01-15T00:00:00.000Z",
+    "variables": [
+      "{{municipality_id}}",
+      "{{municipality_name}}",
+      "{{kokuho_phone}}",
+      "{{kokuho_department}}",
+      "{{kokuho_address}}",
+      "{{kokuho_hours}}"
+    ],
+    "municipality_specific_sections": [
+      "届出窓口の所在地・営業時間",
+      "保険証の返却方法（窓口・郵送）"
+    ],
+    "national_standard": {
+      "届出期限": "14日以内（全国共通）",
+      "保険証の返却": "脱退時に返却が必要（全国共通）",
+      "脱退事由": "法律で定められた要件（全国共通）"
+    }
+  },
+  "source": {
+    "source_url": "https://www.{{municipality_id}}.lg.jp/services/health/kokuho/leave",
+    "fetched_at": "{{generated_at}}"
+  },
+  "pipeline": {
+    "run_id": "base-template",
+    "generated_at": "{{generated_at}}",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumbs-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          { "label": "ホーム", "href": "/" },
+          { "label": "健康・医療", "href": "/services/health" },
+          { "label": "国民健康保険", "href": "/services/health/kokuho" },
+          { "label": "脱退手続き", "href": "/services/health/kokuho/leave" }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "国民健康保険からの脱退手続き"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "就職して会社の健康保険に加入したとき、他の市区町村へ転出するとき、75歳になったときなど、国民健康保険をやめる届出が必要です。届出は事由が発生した日から14日以内に行ってください。"
+      }
+    },
+    {
+      "id": "notification-important",
+      "type": "NotificationBanner",
+      "props": {
+        "severity": "danger",
+        "title": "届出をしないと二重加入になります",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              { "text": "会社の健康保険に加入しても、届出をしないと国保の資格は自動的にはなくなりません。届出をしないと", "bold": false },
+              { "text": "二重に保険料を支払う", "bold": true },
+              { "text": "ことになります。必ず届出をしてください。" }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "richtext-cases",
+      "type": "RichText",
+      "props": {
+        "content": [
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "国保をやめるとき（届出が必要な場合）"
+          }
+        ]
+      }
+    },
+    {
+      "id": "accordion-cases",
+      "type": "Accordion",
+      "props": {
+        "items": [
+          {
+            "title": "1. 他の市区町村へ転出するとき",
+            "content": [
+              {
+                "type": "paragraph",
+                "runs": [{ "text": "転出届と同時に届出を行うことができます。転出先で新たに国保に加入する場合は、転入届と同時に手続きしてください。" }]
+              },
+              {
+                "type": "heading",
+                "level": 3,
+                "text": "必要書類"
+              },
+              {
+                "type": "list",
+                "ordered": false,
+                "items": [
+                  [{ "type": "paragraph", "runs": [{ "text": "国民健康保険証（加入者全員分）", "bold": true }] }],
+                  [{ "type": "paragraph", "runs": [{ "text": "本人確認書類" }] }],
+                  [{ "type": "paragraph", "runs": [{ "text": "マイナンバーが確認できる書類" }] }]
+                ]
+              }
+            ]
+          },
+          {
+            "title": "2. 就職して会社の健康保険に加入したとき",
+            "content": [
+              {
+                "type": "paragraph",
+                "runs": [{ "text": "会社の健康保険（協会けんぽ・組合健保など）や共済組合に加入した場合、国保の資格を喪失します。" }]
+              },
+              {
+                "type": "heading",
+                "level": 3,
+                "text": "必要書類"
+              },
+              {
+                "type": "list",
+                "ordered": false,
+                "items": [
+                  [{ "type": "paragraph", "runs": [{ "text": "新しい健康保険証（加入者全員分）", "bold": true }, { "text": "またはその写し" }] }],
+                  [{ "type": "paragraph", "runs": [{ "text": "国民健康保険証（加入者全員分）", "bold": true }] }],
+                  [{ "type": "paragraph", "runs": [{ "text": "本人確認書類" }] }],
+                  [{ "type": "paragraph", "runs": [{ "text": "マイナンバーが確認できる書類" }] }]
+                ]
+              },
+              {
+                "type": "callout",
+                "severity": "info",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "runs": [{ "text": "会社の健康保険証の発行には時間がかかる場合があります。届出は新しい保険証が届いてからで構いません。" }]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "title": "3. 会社の健康保険の被扶養者になったとき",
+            "content": [
+              {
+                "type": "paragraph",
+                "runs": [{ "text": "家族が就職し、その被扶養者として健康保険に加入した場合も届出が必要です。" }]
+              },
+              {
+                "type": "heading",
+                "level": 3,
+                "text": "必要書類"
+              },
+              {
+                "type": "list",
+                "ordered": false,
+                "items": [
+                  [{ "type": "paragraph", "runs": [{ "text": "新しい健康保険証（被扶養者として記載されたもの）", "bold": true }] }],
+                  [{ "type": "paragraph", "runs": [{ "text": "国民健康保険証" }] }],
+                  [{ "type": "paragraph", "runs": [{ "text": "本人確認書類" }] }]
+                ]
+              }
+            ]
+          },
+          {
+            "title": "4. 75歳になったとき（後期高齢者医療制度への移行）",
+            "content": [
+              {
+                "type": "paragraph",
+                "runs": [{ "text": "75歳の誕生日から後期高齢者医療制度に移行します。届出は不要で、自動的に切り替わります。" }]
+              },
+              {
+                "type": "callout",
+                "severity": "info",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "runs": [{ "text": "後期高齢者医療被保険者証は、誕生月の前月頃に届きます。国民健康保険証は誕生日以降使用できませんので、ご返却ください。" }]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "title": "5. 生活保護を受け始めたとき",
+            "content": [
+              {
+                "type": "heading",
+                "level": 3,
+                "text": "必要書類"
+              },
+              {
+                "type": "list",
+                "ordered": false,
+                "items": [
+                  [{ "type": "paragraph", "runs": [{ "text": "保護開始決定通知書", "bold": true }] }],
+                  [{ "type": "paragraph", "runs": [{ "text": "国民健康保険証" }] }],
+                  [{ "type": "paragraph", "runs": [{ "text": "本人確認書類" }] }]
+                ]
+              }
+            ]
+          },
+          {
+            "title": "6. 死亡したとき",
+            "content": [
+              {
+                "type": "paragraph",
+                "runs": [{ "text": "死亡届の届出後に、国保の届出を行ってください。" }]
+              },
+              {
+                "type": "heading",
+                "level": 3,
+                "text": "必要書類"
+              },
+              {
+                "type": "list",
+                "ordered": false,
+                "items": [
+                  [{ "type": "paragraph", "runs": [{ "text": "国民健康保険証" }] }],
+                  [{ "type": "paragraph", "runs": [{ "text": "届出人の本人確認書類" }] }]
+                ]
+              },
+              {
+                "type": "callout",
+                "severity": "info",
+                "title": "葬祭費の支給",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "runs": [{ "text": "国保加入者が亡くなられた場合、葬祭を行った方に葬祭費が支給されます。詳しくは給付内容のページをご覧ください。" }]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "richtext-return",
+      "type": "RichText",
+      "props": {
+        "content": [
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "保険証の返却について"
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              { "text": "脱退届出の際は、", "bold": false },
+              { "text": "必ず国民健康保険証を返却", "bold": true },
+              { "text": "してください。" }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [{ "type": "paragraph", "runs": [{ "text": "窓口に持参", "bold": true }, { "text": "：届出時に直接お持ちください" }] }],
+              [{ "type": "paragraph", "runs": [{ "text": "郵送で返却", "bold": true }, { "text": "：{{kokuho_department}}宛に郵送してください" }] }]
+            ]
+          },
+          {
+            "type": "callout",
+            "severity": "danger",
+            "title": "資格喪失後の受診は全額自己負担",
+            "content": [
+              {
+                "type": "paragraph",
+                "runs": [{ "text": "国保の資格を喪失した後に、国保の保険証を使って医療機関を受診した場合、国保が負担した医療費（7割）を返還していただくことになります。" }]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "richtext-premium",
+      "type": "RichText",
+      "props": {
+        "content": [
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "保険料の精算について"
+          },
+          {
+            "type": "paragraph",
+            "runs": [{ "text": "国保の保険料は月割りで計算されます。脱退届出後、保険料が再計算され、変更がある場合は通知書でお知らせします。" }]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [{ "type": "paragraph", "runs": [{ "text": "払いすぎた保険料がある場合：還付（返金）されます" }] }],
+              [{ "type": "paragraph", "runs": [{ "text": "不足額がある場合：追加の納付書が届きます" }] }]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "table-where",
+      "type": "Table",
+      "props": {
+        "rows": [
+          { "label": "届出場所", "value": "{{kokuho_department}}（{{kokuho_address}}）" },
+          { "label": "受付時間", "value": "{{kokuho_hours}}" }
+        ]
+      }
+    },
+    {
+      "id": "related-links-1",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          { "title": "国民健康保険への加入手続き", "href": "/services/health/kokuho/join" },
+          { "title": "保険料について", "href": "/services/health/kokuho/premium" },
+          { "title": "給付内容（葬祭費）", "href": "/services/health/kokuho/benefits" },
+          { "title": "後期高齢者医療制度", "href": "/services/health/kouki-kourei" },
+          { "title": "転出届", "href": "/services/housing/tenshutsu" }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{kokuho_department}}",
+        "phone": "{{kokuho_phone}}",
+        "hours": "{{kokuho_hours}}",
+        "address": "{{kokuho_address}}"
+      }
+    }
+  ],
+  "search": {
+    "summary": "国民健康保険からの脱退手続き。就職・転出・75歳到達時などの届出方法、必要書類。届出は14日以内に。",
+    "keywords": [
+      "国保",
+      "脱退",
+      "届出",
+      "就職",
+      "転出",
+      "保険証返却",
+      "資格喪失"
+    ],
+    "plain_text": "国民健康保険からの脱退手続き。届出は14日以内に。就職、転出、後期高齢者医療制度への移行、生活保護開始、死亡などの場合に届出が必要。保険証の返却が必要。届出をしないと二重加入になります。"
+  }
+}

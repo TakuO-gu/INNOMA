@@ -15,10 +15,14 @@ export type {
 // Schema & Validation
 export {
   InnomaArtifactSchema,
-  InnomaBlockSchema,
   validateArtifact,
   safeValidateArtifact,
+  getBlocksByType,
+  getFirstBlockByType,
   type InnomaArtifactValidated,
+  type ContentType,
+  type ServiceCategory,
+  type Category,
 } from "./schema";
 
 // Loader

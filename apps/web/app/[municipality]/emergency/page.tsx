@@ -12,7 +12,7 @@
 import { notFound } from "next/navigation";
 import { loadArtifact } from "@/lib/artifact/loader";
 import BlockRenderer from "@/components/blocks/BlockRenderer";
-import type { InnomaBlock } from "@/lib/artifact/types";
+import type { Block } from "@/lib/artifact/schema";
 
 // SSR設定: 極短revalidate
 export const revalidate = 30; // 30秒
@@ -45,7 +45,7 @@ export default async function EmergencyPage({ params }: PageProps) {
 
   // Emergencyブロックのみをフィルタリング
   const emergencyBlocks = artifact.blocks.filter(
-    (b): b is Extract<InnomaBlock, { type: "Emergency" }> => b.type === "Emergency"
+    (b): b is Extract<Block, { type: "Emergency" }> => b.type === "Emergency"
   );
 
   if (emergencyBlocks.length === 0) {
@@ -70,7 +70,7 @@ export default async function EmergencyPage({ params }: PageProps) {
         <header>
           <h1 className="dads-heading dads-heading--xl">緊急情報</h1>
         </header>
-        <BlockRenderer blocks={emergencyBlocks} />
+        <BlockRenderer blocks={emergencyBlocks} municipalityId={artifact.municipality_id || municipality} />
       </div>
     </main>
   );

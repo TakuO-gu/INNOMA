@@ -61,7 +61,9 @@ function extractPlainText(content: string): string {
 function extractTitle(blocks: InnomaBlock[]): string {
   const titleBlock = blocks.find((b) => b.type === "Title");
   if (titleBlock && titleBlock.type === "Title") {
-    return titleBlock.props.title;
+    // v2: props.text, v1: props.title
+    const props = titleBlock.props as { text?: string; title?: string };
+    return props.text || props.title || "無題";
   }
   return "無題";
 }
@@ -86,30 +88,41 @@ function extractSummary(blocks: InnomaBlock[], maxLength = 200): string {
   const textParts: string[] = [];
 
   for (const block of blocks) {
+    const props = block.props as Record<string, unknown>;
     switch (block.type) {
       case "RichText":
-        textParts.push(extractPlainText(block.props.content));
+        textParts.push(extractPlainText(props.content as string));
         break;
       case "Callout":
-        if (block.props.title) {
-          textParts.push(block.props.title);
+      case "NotificationBanner":
+        if (props.title) {
+          textParts.push(props.title as string);
         }
-        textParts.push(extractPlainText(block.props.content));
+        textParts.push(extractPlainText(props.content as string));
         break;
       case "InfoTable":
-        for (const row of block.props.rows) {
-          textParts.push(`${row.label}: ${extractPlainText(row.value)}`);
+      case "Table":
+        if (Array.isArray(props.rows)) {
+          for (const row of props.rows as Array<{ label: string; value: unknown }>) {
+            textParts.push(`${row.label}: ${extractPlainText(row.value as string)}`);
+          }
         }
         break;
       case "ProcedureSteps":
-        for (const step of block.props.steps) {
-          textParts.push(step.title);
-          textParts.push(extractPlainText(step.content));
+      case "StepNavigation":
+        if (Array.isArray(props.steps)) {
+          for (const step of props.steps as Array<{ title: string; content?: string; body?: unknown }>) {
+            textParts.push(step.title);
+            if (step.content) textParts.push(extractPlainText(step.content));
+          }
         }
         break;
       case "Emergency":
-        textParts.push(block.props.title);
-        textParts.push(extractPlainText(block.props.content));
+        if (props.title) textParts.push(props.title as string);
+        if (props.content) textParts.push(extractPlainText(props.content as string));
+        break;
+      case "Summary":
+        if (props.text) textParts.push(props.text as string);
         break;
     }
   }
@@ -125,35 +138,47 @@ function extractKeywords(blocks: InnomaBlock[]): string[] {
   const keywords = new Set<string>();
 
   for (const block of blocks) {
+    const props = block.props as Record<string, unknown>;
     switch (block.type) {
-      case "Title":
-        keywords.add(block.props.title);
+      case "Title": {
+        // v2: props.text, v1: props.title
+        const title = (props.text as string) || (props.title as string);
+        if (title) keywords.add(title);
         break;
+      }
       case "Breadcrumbs":
-        for (const item of block.props.items) {
-          keywords.add(item.label);
+        if (Array.isArray(props.items)) {
+          for (const item of props.items as Array<{ label: string }>) {
+            keywords.add(item.label);
+          }
         }
         break;
       case "RelatedLinks":
-        for (const item of block.props.items) {
-          keywords.add(item.title);
+      case "ResourceList":
+        if (Array.isArray(props.items)) {
+          for (const item of props.items as Array<{ title: string }>) {
+            keywords.add(item.title);
+          }
         }
         break;
       case "ProcedureSteps":
-        for (const step of block.props.steps) {
-          keywords.add(step.title);
-          if (step.checklist) {
-            for (const item of step.checklist) {
-              keywords.add(item);
+      case "StepNavigation":
+        if (Array.isArray(props.steps)) {
+          for (const step of props.steps as Array<{ title: string; checklist?: string[] }>) {
+            keywords.add(step.title);
+            if (step.checklist) {
+              for (const item of step.checklist) {
+                keywords.add(item);
+              }
             }
           }
         }
         break;
       case "Emergency":
-        keywords.add(block.props.title);
-        keywords.add(block.props.type);
-        if (block.props.affectedAreas) {
-          for (const area of block.props.affectedAreas) {
+        if (props.title) keywords.add(props.title as string);
+        if (props.type) keywords.add(props.type as string);
+        if (Array.isArray(props.affectedAreas)) {
+          for (const area of props.affectedAreas as string[]) {
             keywords.add(area);
           }
         }
@@ -170,7 +195,8 @@ function extractKeywords(blocks: InnomaBlock[]): string[] {
 function getEmergencyPriority(blocks: InnomaBlock[]): SearchIndexEntry["priority"] {
   const emergencyBlock = blocks.find((b) => b.type === "Emergency");
   if (emergencyBlock && emergencyBlock.type === "Emergency") {
-    return emergencyBlock.props.severity;
+    const props = emergencyBlock.props as { severity?: "critical" | "high" | "medium" | "low" };
+    return props.severity;
   }
   return undefined;
 }
@@ -221,15 +247,19 @@ async function processArtifact(
     // 自治体IDを抽出（最初のディレクトリ名）
     const municipalityId = id.split("/")[0];
 
+    // v2: artifact直下のフィールド、v1: metadataフィールド
+    const artifactAny = artifact as Record<string, unknown>;
+    const metadata = artifactAny.metadata as Record<string, string> | undefined;
+
     const entry: SearchIndexEntry = {
       id,
-      municipality: artifact.metadata?.municipality || municipalityId,
-      prefecture: artifact.metadata?.prefecture,
-      title: extractTitle(artifact.blocks),
-      content: extractSummary(artifact.blocks),
+      municipality: artifact.title || metadata?.municipality || municipalityId,
+      prefecture: metadata?.prefecture,
+      title: artifact.title || extractTitle(artifact.blocks),
+      content: artifact.search?.summary || extractSummary(artifact.blocks),
       type: inferContentType(artifact.blocks),
-      keywords: extractKeywords(artifact.blocks),
-      lastModified: artifact.metadata?.lastModified,
+      keywords: artifact.search?.keywords || extractKeywords(artifact.blocks),
+      lastModified: artifact.source?.fetched_at || metadata?.lastModified,
       priority: getEmergencyPriority(artifact.blocks),
     };
 

@@ -1,31 +1,27 @@
 {
-  "schema_version": "1.0.0",
-  "page_id": "sample-childcare-nursery-apply",
+  "schema_version": "2.0.0",
+  "page_id": "sample-services-childcare-nursery-apply",
   "municipality_id": "sample",
   "path": "/services/childcare/nursery/apply",
   "title": "認可保育園の入園申込",
-  "description": "サンプル市の認可保育園への入園申込方法。必要書類、申込期間、選考基準など。",
-  "page_type": "service_page",
-  "category": "childcare_parenting",
+  "description": "認可保育園への入園申込方法。必要書類、申込期間、選考基準など。",
+  "content_type": "step_by_step",
+  "service_category": "children",
+  "audience": ["children_families"],
+  "topic": [],
   "source": {
-    "source_url": "https://www.sample-city.lg.jp/services/childcare/nursery/apply",
-    "fetched_at": "2025-01-14T00:00:00.000Z",
-    "content_type": "text/html",
-    "content_hash": "sha256:sample-childcare-nursery-apply-hash"
+    "source_url": "template://sample/services/childcare/nursery/apply",
+    "fetched_at": "{{generated_at}}",
+    "content_hash": "template"
   },
   "pipeline": {
-    "run_id": "sample-run-001",
-    "generated_at": "2025-01-14T00:00:00.000Z",
-    "schema_version": "1.0.0",
-    "extractor_version": "1.0.0",
-    "structurer_version": "1.0.0",
-    "transformer_version": "1.0.0",
-    "renderer_version": "1.0.0",
-    "model": "claude-3-opus"
+    "run_id": "template-001",
+    "generated_at": "{{generated_at}}",
+    "schema_version": "2.0.0"
   },
   "blocks": [
     {
-      "id": "breadcrumbs-1",
+      "id": "breadcrumb-1",
       "type": "Breadcrumbs",
       "props": {
         "items": [
@@ -40,82 +36,70 @@
       "id": "title-1",
       "type": "Title",
       "props": {
-        "title": "認可保育園の入園申込"
+        "text": "認可保育園の入園申込"
       }
     },
     {
       "id": "summary-1",
       "type": "Summary",
       "props": {
-        "content": "サンプル市内の認可保育園（認定こども園の保育園部分を含む）への入園申込についてご案内します。"
+        "text": "{{municipality_name}}内の認可保育園（認定こども園の保育園部分を含む）への入園申込についてご案内します。"
       }
     },
     {
-      "id": "callout-1",
-      "type": "Callout",
+      "id": "notification-1",
+      "type": "NotificationBanner",
       "props": {
         "severity": "info",
-        "title": "令和7年度4月入園の申込受付中",
+        "title": "{{nursery_apply_year}}度{{nursery_apply_month}}月入園の申込受付中",
         "content": [
           {
             "type": "paragraph",
             "runs": [
               { "text": "一次申込締切：", "bold": true },
-              { "text": "令和7年2月28日（金）必着" }
+              { "text": "{{nursery_apply_deadline}}" }
             ]
           }
         ]
       }
     },
     {
-      "id": "richtext-1",
+      "id": "richtext-eligibility",
       "type": "RichText",
       "props": {
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "申込できる方"
-          },
+          { "type": "heading", "level": 2, "text": "申込できる方" },
           {
             "type": "paragraph",
             "runs": [
-              { "text": "サンプル市に住民登録があり、保護者のいずれもが次のいずれかに該当し、家庭で保育ができない状態にあるお子さま" }
+              { "text": "{{municipality_name}}に住民登録があり、保護者のいずれもが次のいずれかに該当し、家庭で保育ができない状態にあるお子さま" }
             ]
           },
           {
             "type": "list",
             "ordered": false,
             "items": [
-              [[{ "type": "paragraph", "runs": [{ "text": "月64時間以上就労している" }] }]],
-              [[{ "type": "paragraph", "runs": [{ "text": "妊娠中または出産後間もない" }] }]],
-              [[{ "type": "paragraph", "runs": [{ "text": "疾病・障害がある" }] }]],
-              [[{ "type": "paragraph", "runs": [{ "text": "親族を常時介護・看護している" }] }]],
-              [[{ "type": "paragraph", "runs": [{ "text": "災害復旧にあたっている" }] }]],
-              [[{ "type": "paragraph", "runs": [{ "text": "求職活動中（入園後3か月以内に就労開始が条件）" }] }]],
-              [[{ "type": "paragraph", "runs": [{ "text": "就学している（職業訓練を含む）" }] }]]
+              [{ "type": "paragraph", "runs": [{ "text": "月64時間以上就労している" }] }],
+              [{ "type": "paragraph", "runs": [{ "text": "妊娠中または出産後間もない" }] }],
+              [{ "type": "paragraph", "runs": [{ "text": "疾病・障害がある" }] }],
+              [{ "type": "paragraph", "runs": [{ "text": "親族を常時介護・看護している" }] }],
+              [{ "type": "paragraph", "runs": [{ "text": "災害復旧にあたっている" }] }],
+              [{ "type": "paragraph", "runs": [{ "text": "求職活動中（入園後3か月以内に就労開始が条件）" }] }],
+              [{ "type": "paragraph", "runs": [{ "text": "就学している（職業訓練を含む）" }] }]
             ]
           },
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "必要書類"
-          },
+          { "type": "heading", "level": 2, "text": "必要書類" },
           {
             "type": "list",
             "ordered": true,
             "items": [
-              [[{ "type": "paragraph", "runs": [{ "text": "保育所等利用申込書（様式第1号）" }] }]],
-              [[{ "type": "paragraph", "runs": [{ "text": "保育を必要とする証明書（就労証明書など）" }] }]],
-              [[{ "type": "paragraph", "runs": [{ "text": "マイナンバー確認書類" }] }]],
-              [[{ "type": "paragraph", "runs": [{ "text": "本人確認書類（運転免許証、パスポート等）" }] }]]
+              [{ "type": "paragraph", "runs": [{ "text": "保育所等利用申込書（様式第1号）" }] }],
+              [{ "type": "paragraph", "runs": [{ "text": "保育を必要とする証明書（就労証明書など）" }] }],
+              [{ "type": "paragraph", "runs": [{ "text": "マイナンバー確認書類" }] }],
+              [{ "type": "paragraph", "runs": [{ "text": "本人確認書類（運転免許証、パスポート等）" }] }]
             ]
           },
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "申込方法"
-          },
+          { "type": "heading", "level": 2, "text": "申込方法" },
           {
             "type": "paragraph",
             "runs": [
@@ -126,16 +110,12 @@
             "type": "list",
             "ordered": false,
             "items": [
-              [[{ "type": "paragraph", "runs": [{ "text": "オンライン申請", "bold": true }, { "text": "（推奨）：電子申請システムから24時間申込可能" }] }]],
-              [[{ "type": "paragraph", "runs": [{ "text": "窓口申請", "bold": true }, { "text": "：保育課窓口（市役所2階）へ直接提出" }] }]],
-              [[{ "type": "paragraph", "runs": [{ "text": "郵送申請", "bold": true }, { "text": "：保育課宛に簡易書留で郵送" }] }]]
+              [{ "type": "paragraph", "runs": [{ "text": "オンライン申請", "bold": true }, { "text": "（推奨）：電子申請システムから24時間申込可能" }] }],
+              [{ "type": "paragraph", "runs": [{ "text": "窓口申請", "bold": true }, { "text": "：保育課窓口へ直接提出" }] }],
+              [{ "type": "paragraph", "runs": [{ "text": "郵送申請", "bold": true }, { "text": "：保育課宛に簡易書留で郵送" }] }]
             ]
           },
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "選考について"
-          },
+          { "type": "heading", "level": 2, "text": "選考について" },
           {
             "type": "paragraph",
             "runs": [
@@ -150,27 +130,18 @@
       "type": "TaskButton",
       "props": {
         "label": "オンラインで申込む",
-        "href": "https://www.sample-city.lg.jp/shinsei/nursery-apply",
+        "href": "{{nursery_online_apply_url}}",
         "isTopTask": true
       }
     },
     {
-      "id": "info-table-1",
-      "type": "InfoTable",
+      "id": "table-info",
+      "type": "Table",
       "props": {
         "rows": [
-          {
-            "label": "申込期間",
-            "value": [{ "type": "paragraph", "runs": [{ "text": "令和7年1月6日（月）〜2月28日（金）" }] }]
-          },
-          {
-            "label": "結果通知",
-            "value": [{ "type": "paragraph", "runs": [{ "text": "令和7年3月上旬に郵送でお知らせします" }] }]
-          },
-          {
-            "label": "手数料",
-            "value": [{ "type": "paragraph", "runs": [{ "text": "無料" }] }]
-          }
+          { "label": "申込期間", "value": "{{nursery_apply_period}}" },
+          { "label": "結果通知", "value": "{{nursery_result_notice}}" },
+          { "label": "手数料", "value": "無料" }
         ]
       }
     },
@@ -181,22 +152,22 @@
         "items": [
           {
             "title": "保育所等利用申込書（様式第1号）",
-            "href": "https://www.sample-city.lg.jp/forms/nursery-application.pdf",
+            "href": "{{nursery_form_application_url}}",
             "content_type": "application/pdf"
           },
           {
             "title": "就労証明書",
-            "href": "https://www.sample-city.lg.jp/forms/employment-certificate.pdf",
+            "href": "{{nursery_form_employment_url}}",
             "content_type": "application/pdf"
           },
           {
             "title": "利用調整基準表",
-            "href": "https://www.sample-city.lg.jp/forms/adjustment-criteria.pdf",
+            "href": "{{nursery_form_criteria_url}}",
             "content_type": "application/pdf"
           },
           {
             "title": "保育園入園のしおり",
-            "href": "https://www.sample-city.lg.jp/forms/nursery-guide.pdf",
+            "href": "{{nursery_form_guide_url}}",
             "content_type": "application/pdf"
           }
         ]
@@ -207,9 +178,9 @@
       "type": "RelatedLinks",
       "props": {
         "items": [
-          { "title": "認可保育園一覧", "href": "https://www.sample-city.lg.jp/services/childcare/nursery/list" },
-          { "title": "保育料について", "href": "https://www.sample-city.lg.jp/services/childcare/nursery/fee" },
-          { "title": "年度途中の入園申込", "href": "https://www.sample-city.lg.jp/services/childcare/nursery/apply-midyear" }
+          { "title": "認可保育園一覧", "href": "/services/childcare/nursery/list" },
+          { "title": "保育料について", "href": "/services/childcare/nursery/fee" },
+          { "title": "年度途中の入園申込", "href": "/services/childcare/nursery/apply-midyear" }
         ]
       }
     },
@@ -217,22 +188,17 @@
       "id": "contact-1",
       "type": "Contact",
       "props": {
-        "dept": "保育課 入園担当",
-        "tel": "03-1234-5680",
-        "email": "hoiku-nyuen@sample-city.lg.jp",
-        "hours": "平日 8:30〜17:15",
-        "address": "サンプル市役所 2階"
+        "department": "{{nursery_apply_department}}",
+        "phone": "{{nursery_apply_phone}}",
+        "email": "{{nursery_apply_email}}",
+        "hours": "{{city_hall_hours}}",
+        "address": "{{city_hall_address}}"
       }
-    },
-    {
-      "id": "footer-1",
-      "type": "Footer",
-      "props": {}
     }
   ],
   "search": {
-    "summary": "サンプル市の認可保育園への入園申込方法。申込資格、必要書類、申込方法、選考基準など。オンライン申請可能。",
+    "summary": "認可保育園への入園申込方法。申込資格、必要書類、申込方法、選考基準など。オンライン申請可能。",
     "keywords": ["保育園", "入園申込", "認可保育園", "申込書", "就労証明書", "保育の必要性", "利用調整"],
-    "plain_text": "サンプル市の認可保育園への入園申込。申込できる方：サンプル市に住民登録があり、保護者が就労、妊娠・出産、疾病・障害、介護・看護、災害復旧、求職活動、就学のいずれかに該当する方。必要書類：保育所等利用申込書、就労証明書、マイナンバー確認書類、本人確認書類。申込方法：オンライン申請、窓口申請、郵送申請。選考は利用調整基準に基づく指数により行います。"
+    "plain_text": "認可保育園への入園申込。申込できる方：住民登録があり、保護者が就労、妊娠・出産、疾病・障害、介護・看護、災害復旧、求職活動、就学のいずれかに該当する方。必要書類：保育所等利用申込書、就労証明書、マイナンバー確認書類、本人確認書類。申込方法：オンライン申請、窓口申請、郵送申請。選考は利用調整基準に基づく指数により行います。"
   }
 }

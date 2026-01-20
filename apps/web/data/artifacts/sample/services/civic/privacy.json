@@ -1,0 +1,227 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "sample-services-civic-privacy",
+  "municipality_id": "sample",
+  "path": "/services/civic/privacy",
+  "title": "個人情報保護",
+  "description": "個人情報保護制度、自己情報の開示・訂正請求",
+  "content_type": "guide",
+  "service_category": "community",
+  "audience": [
+    "residents"
+  ],
+  "topic": [],
+  "source": {
+    "source_url": "template://sample/services/civic/privacy",
+    "fetched_at": "{{generated_at}}",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "{{generated_at}}",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "くらしの情報",
+            "href": "/topics"
+          },
+          {
+            "label": "市民参加・権利行使",
+            "href": "/topics/civic"
+          },
+          {
+            "label": "個人情報保護",
+            "href": "/services/civic/privacy"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "個人情報保護"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "{{municipality_name}}が保有するご自身の個人情報について、開示・訂正等を請求することができます。"
+      }
+    },
+    {
+      "id": "richtext-1",
+      "type": "RichText",
+      "props": {
+        "content": [
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "請求できる権利"
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "開示請求",
+                      "bold": true
+                    },
+                    {
+                      "text": "：自己に関する個人情報の開示を求める"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "訂正請求",
+                      "bold": true
+                    },
+                    {
+                      "text": "：事実に誤りがある場合の訂正を求める"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "利用停止請求",
+                      "bold": true
+                    },
+                    {
+                      "text": "：不適正な取得・利用の停止を求める"
+                    }
+                  ]
+                }
+              ]
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "請求できる方"
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "本人または法定代理人（未成年者の親権者、成年後見人など）"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "請求方法"
+          },
+          {
+            "type": "list",
+            "ordered": true,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "請求書に必要事項を記入"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "本人確認書類（運転免許証、マイナンバーカードなど）を添付"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "担当課または総務課に提出"
+                    }
+                  ]
+                }
+              ]
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "手数料"
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "開示請求は無料（ただし写しの交付には実費が必要）"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "決定までの期間"
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "請求を受けた日から原則15日以内に開示・非開示等の決定を行います。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{privacy_department}}",
+        "phone": "{{privacy_phone}}",
+        "email": "{{privacy_email}}",
+        "hours": "{{city_hall_hours}}",
+        "address": "{{city_hall_address}}"
+      }
+    }
+  ],
+  "search": {
+    "summary": "個人情報保護の案内。自己情報の開示・訂正・利用停止請求。",
+    "keywords": [
+      "個人情報",
+      "個人情報保護",
+      "開示請求",
+      "訂正請求",
+      "プライバシー"
+    ],
+    "plain_text": "個人情報保護。市が保有する自己の個人情報について開示・訂正・利用停止を請求可能。本人確認書類が必要。"
+  }
+}

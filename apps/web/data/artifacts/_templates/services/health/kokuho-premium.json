@@ -1,0 +1,423 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "{{municipality_id}}-kokuho-premium",
+  "municipality_id": "{{municipality_id}}",
+  "path": "/services/health/kokuho/premium",
+  "title": "国民健康保険料について",
+  "description": "国民健康保険料の計算方法、納付方法、軽減・減免制度について。",
+  "content_type": "guide",
+  "service_category": "health",
+  "audience": ["residents"],
+  "topic": [],
+  "_template_meta": {
+    "template_version": "1.0.0",
+    "created_at": "2026-01-15T00:00:00.000Z",
+    "variables": [
+      "{{municipality_id}}",
+      "{{municipality_name}}",
+      "{{kokuho_phone}}",
+      "{{kokuho_department}}",
+      "{{fiscal_year}}",
+      "{{medical_shotokuwari_rate}}",
+      "{{medical_kintowarari_amount}}",
+      "{{medical_byodowari_amount}}",
+      "{{medical_limit}}",
+      "{{shien_shotokuwari_rate}}",
+      "{{shien_kintowarari_amount}}",
+      "{{shien_byodowari_amount}}",
+      "{{shien_limit}}",
+      "{{kaigo_shotokuwari_rate}}",
+      "{{kaigo_kintowarari_amount}}",
+      "{{kaigo_byodowari_amount}}",
+      "{{kaigo_limit}}",
+      "{{total_limit}}",
+      "{{payment_due_dates}}"
+    ],
+    "municipality_specific_sections": [
+      "保険料率（所得割・均等割・平等割の具体的な金額・率）",
+      "納期（納付期限）",
+      "独自の減免制度",
+      "口座振替の申込方法"
+    ],
+    "national_standard": {
+      "保険料の構成": "医療分・後期高齢者支援分・介護分の3区分（全国共通）",
+      "計算要素": "所得割・均等割・（平等割）の組み合わせ（市区町村により異なる）",
+      "賦課限度額": "医療分67万円、後期高齢者支援分26万円、介護分17万円（令和7年度・全国共通）",
+      "法定軽減": "7割・5割・2割軽減の基準（全国共通）"
+    }
+  },
+  "source": {
+    "source_url": "https://www.{{municipality_id}}.lg.jp/services/health/kokuho/premium",
+    "fetched_at": "{{generated_at}}"
+  },
+  "pipeline": {
+    "run_id": "base-template",
+    "generated_at": "{{generated_at}}",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumbs-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          { "label": "ホーム", "href": "/" },
+          { "label": "健康・医療", "href": "/services/health" },
+          { "label": "国民健康保険", "href": "/services/health/kokuho" },
+          { "label": "保険料について", "href": "/services/health/kokuho/premium" }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "国民健康保険料について"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "国民健康保険料は、前年の所得や世帯の加入者数などをもとに計算されます。保険料は世帯主に課税され、世帯主が納付義務者となります。"
+      }
+    },
+    {
+      "id": "richtext-structure",
+      "type": "RichText",
+      "props": {
+        "content": [
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "保険料の構成"
+          },
+          {
+            "type": "paragraph",
+            "runs": [{ "text": "国民健康保険料は、以下の3つの区分で構成されています。" }]
+          }
+        ]
+      }
+    },
+    {
+      "id": "table-structure",
+      "type": "Table",
+      "props": {
+        "rows": [
+          {
+            "label": "医療分（基礎分）",
+            "value": "加入者の医療費に充てられる保険料"
+          },
+          {
+            "label": "後期高齢者支援分",
+            "value": "後期高齢者医療制度を支えるための保険料"
+          },
+          {
+            "label": "介護分",
+            "value": "介護保険制度を支えるための保険料（40歳〜64歳の方のみ）"
+          }
+        ]
+      }
+    },
+    {
+      "id": "richtext-calculation",
+      "type": "RichText",
+      "props": {
+        "content": [
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "保険料の計算方法"
+          },
+          {
+            "type": "paragraph",
+            "runs": [{ "text": "保険料は、以下の要素を組み合わせて計算されます。" }]
+          }
+        ]
+      }
+    },
+    {
+      "id": "table-calculation-elements",
+      "type": "Table",
+      "props": {
+        "rows": [
+          {
+            "label": "所得割",
+            "value": "前年の所得に応じて計算（所得が多いほど高くなる）"
+          },
+          {
+            "label": "均等割",
+            "value": "加入者1人あたりの定額"
+          },
+          {
+            "label": "平等割",
+            "value": "1世帯あたりの定額（採用していない自治体もあります）"
+          }
+        ]
+      }
+    },
+    {
+      "id": "richtext-formula",
+      "type": "RichText",
+      "props": {
+        "content": [
+          {
+            "type": "callout",
+            "severity": "info",
+            "title": "計算式",
+            "content": [
+              {
+                "type": "paragraph",
+                "runs": [
+                  { "text": "年間保険料 = 所得割額 + 均等割額 × 加入者数 + 平等割額", "bold": true }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "runs": [{ "text": "※所得割額 = （前年所得 − 基礎控除43万円）× 所得割率" }]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "richtext-rates-title",
+      "type": "RichText",
+      "_comment": "【自治体固有】保険料率は自治体によって大きく異なります",
+      "props": {
+        "content": [
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "{{fiscal_year}}年度の保険料率"
+          },
+          {
+            "type": "paragraph",
+            "runs": [{ "text": "{{municipality_name}}の保険料率は以下のとおりです。" }]
+          }
+        ]
+      }
+    },
+    {
+      "id": "table-rates-medical",
+      "type": "Table",
+      "_comment": "【自治体固有】以下の値は自治体ごとに異なります",
+      "props": {
+        "rows": [
+          { "label": "【医療分】所得割率", "value": "{{medical_shotokuwari_rate}}" },
+          { "label": "【医療分】均等割額", "value": "{{medical_kintowarari_amount}}（1人あたり年額）" },
+          { "label": "【医療分】平等割額", "value": "{{medical_byodowari_amount}}（1世帯あたり年額）" },
+          { "label": "【医療分】賦課限度額", "value": "{{medical_limit}}" }
+        ]
+      }
+    },
+    {
+      "id": "table-rates-shien",
+      "type": "Table",
+      "props": {
+        "rows": [
+          { "label": "【後期高齢者支援分】所得割率", "value": "{{shien_shotokuwari_rate}}" },
+          { "label": "【後期高齢者支援分】均等割額", "value": "{{shien_kintowarari_amount}}（1人あたり年額）" },
+          { "label": "【後期高齢者支援分】平等割額", "value": "{{shien_byodowari_amount}}（1世帯あたり年額）" },
+          { "label": "【後期高齢者支援分】賦課限度額", "value": "{{shien_limit}}" }
+        ]
+      }
+    },
+    {
+      "id": "table-rates-kaigo",
+      "type": "Table",
+      "props": {
+        "rows": [
+          { "label": "【介護分】所得割率", "value": "{{kaigo_shotokuwari_rate}}" },
+          { "label": "【介護分】均等割額", "value": "{{kaigo_kintowarari_amount}}（1人あたり年額）" },
+          { "label": "【介護分】平等割額", "value": "{{kaigo_byodowari_amount}}（1世帯あたり年額）" },
+          { "label": "【介護分】賦課限度額", "value": "{{kaigo_limit}}" }
+        ]
+      }
+    },
+    {
+      "id": "notification-limit",
+      "type": "NotificationBanner",
+      "props": {
+        "severity": "info",
+        "title": "令和7年度の賦課限度額（全国共通）",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [{ "text": "医療分67万円 + 後期高齢者支援分26万円 + 介護分17万円 = 合計110万円" }]
+          }
+        ]
+      }
+    },
+    {
+      "id": "richtext-payment",
+      "type": "RichText",
+      "props": {
+        "content": [
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "保険料の納付方法"
+          },
+          {
+            "type": "heading",
+            "level": 3,
+            "text": "普通徴収（納付書・口座振替）"
+          },
+          {
+            "type": "paragraph",
+            "runs": [{ "text": "毎年6月頃に年間の保険料が決定し、納入通知書をお届けします。" }]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [{ "type": "paragraph", "runs": [{ "text": "納付書払い", "bold": true }, { "text": "：金融機関、コンビニエンスストア、市区町村窓口で納付" }] }],
+              [{ "type": "paragraph", "runs": [{ "text": "口座振替", "bold": true }, { "text": "：金融機関口座から自動引落し（届出が必要）" }] }],
+              [{ "type": "paragraph", "runs": [{ "text": "スマホ決済", "bold": true }, { "text": "：PayPay、LINE Payなど（対応状況は自治体による）" }] }]
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 3,
+            "text": "特別徴収（年金からの天引き）"
+          },
+          {
+            "type": "paragraph",
+            "runs": [{ "text": "以下の条件をすべて満たす方は、年金から保険料が天引きされます。" }]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [{ "type": "paragraph", "runs": [{ "text": "世帯主が国保加入者である" }] }],
+              [{ "type": "paragraph", "runs": [{ "text": "世帯内の国保加入者全員が65歳以上75歳未満である" }] }],
+              [{ "type": "paragraph", "runs": [{ "text": "年金額が年18万円以上である" }] }],
+              [{ "type": "paragraph", "runs": [{ "text": "介護保険料と国保保険料の合計が年金額の1/2以下である" }] }]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "richtext-due-dates",
+      "type": "RichText",
+      "_comment": "【自治体固有】納期は自治体によって異なります",
+      "props": {
+        "content": [
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "納期（納付期限）"
+          },
+          {
+            "type": "paragraph",
+            "runs": [{ "text": "{{municipality_name}}の保険料の納期は以下のとおりです。" }]
+          }
+        ]
+      }
+    },
+    {
+      "id": "table-due-dates",
+      "type": "Table",
+      "props": {
+        "rows": [
+          { "label": "納期", "value": "{{payment_due_dates}}" }
+        ]
+      }
+    },
+    {
+      "id": "richtext-reduction",
+      "type": "RichText",
+      "props": {
+        "content": [
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "保険料の軽減制度（法定軽減）"
+          },
+          {
+            "type": "paragraph",
+            "runs": [{ "text": "世帯の所得が一定以下の場合、均等割・平等割が軽減されます。申請は不要で、所得に応じて自動的に適用されます。" }]
+          }
+        ]
+      }
+    },
+    {
+      "id": "table-reduction",
+      "type": "Table",
+      "props": {
+        "rows": [
+          {
+            "label": "7割軽減",
+            "value": "世帯の所得が43万円＋10万円×（給与所得者等の数−1）以下"
+          },
+          {
+            "label": "5割軽減",
+            "value": "世帯の所得が43万円＋29.5万円×被保険者数＋10万円×（給与所得者等の数−1）以下"
+          },
+          {
+            "label": "2割軽減",
+            "value": "世帯の所得が43万円＋54.5万円×被保険者数＋10万円×（給与所得者等の数−1）以下"
+          }
+        ]
+      }
+    },
+    {
+      "id": "richtext-reduction-note",
+      "type": "RichText",
+      "props": {
+        "content": [
+          {
+            "type": "callout",
+            "severity": "warning",
+            "title": "所得申告が必要です",
+            "content": [
+              {
+                "type": "paragraph",
+                "runs": [{ "text": "軽減を受けるには、世帯主と加入者全員の所得が判明している必要があります。所得がない方も、住民税の申告をしてください。" }]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "related-links-1",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          { "title": "保険料の減額・減免制度", "href": "/services/health/kokuho/reduction" },
+          { "title": "保険料の試算シミュレーション", "href": "/services/health/kokuho/simulation" },
+          { "title": "口座振替の申込", "href": "/services/health/kokuho/kouza" },
+          { "title": "保険料を納付できないとき", "href": "/services/health/kokuho/tainou" }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{kokuho_department}}",
+        "phone": "{{kokuho_phone}}",
+        "hours": "{{kokuho_hours}}",
+        "address": "{{kokuho_address}}"
+      }
+    }
+  ],
+  "search": {
+    "summary": "国民健康保険料の計算方法、保険料率、納付方法、軽減制度について。所得割・均等割・平等割の仕組み。",
+    "keywords": [
+      "国保",
+      "保険料",
+      "計算",
+      "所得割",
+      "均等割",
+      "納付",
+      "軽減",
+      "口座振替"
+    ],
+    "plain_text": "国民健康保険料について。医療分・後期高齢者支援分・介護分の3区分。所得割・均等割・平等割で計算。軽減制度は7割・5割・2割軽減。納付は納付書・口座振替・年金天引き。"
+  }
+}

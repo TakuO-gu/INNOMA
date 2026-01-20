@@ -5,14 +5,14 @@ export function DadsTable({
 }: {
   rows: { label: string; value: React.ReactNode }[];
 }) {
-  // DADS仕様：.dads-table + data-border 等（必要に応じて data-cell-border も）
+  // DADS compliant table without outer border
   return (
-    <table className="dads-table" data-border>
+    <table className="dads-table">
       <tbody>
         {rows.map((r, i) => (
-          <tr key={i}>
-            <th scope="row">{r.label}</th>
-            <td>{r.value}</td>
+          <tr key={i} className="dads-table__row">
+            <th scope="row" className="dads-table__header">{r.label}</th>
+            <td className="dads-table__cell">{r.value}</td>
           </tr>
         ))}
       </tbody>

@@ -1,0 +1,190 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "sample-services-business-closure",
+  "municipality_id": "sample",
+  "path": "/services/business/closure",
+  "title": "廃業・倒産",
+  "description": "廃業届、解散・清算手続き、破産申立て",
+  "content_type": "guide",
+  "service_category": "business",
+  "audience": [
+    "businesses"
+  ],
+  "topic": [],
+  "source": {
+    "source_url": "template://sample/services/business/closure",
+    "fetched_at": "{{generated_at}}",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "{{generated_at}}",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "くらしの情報",
+            "href": "/topics"
+          },
+          {
+            "label": "事業・経営",
+            "href": "/topics/business"
+          },
+          {
+            "label": "廃業・倒産",
+            "href": "/services/business/closure"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "廃業・倒産"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "事業を終了する場合の手続きをご案内します。廃業（自主的な終了）と倒産（破産等）では手続きが異なります。"
+      }
+    },
+    {
+      "id": "richtext-1",
+      "type": "RichText",
+      "props": {
+        "content": [
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "個人事業の廃業届出"
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "個人事業の廃業届出書：税務署へ（廃業後1か月以内）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "事業廃止届出書：都道府県税事務所へ"
+                    }
+                  ]
+                }
+              ]
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "法人の解散・清算"
+          },
+          {
+            "type": "list",
+            "ordered": true,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "解散決議（株主総会）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "解散登記"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "清算手続き（債権回収・債務弁済）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "清算結了登記"
+                    }
+                  ]
+                }
+              ]
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "経営難の相談窓口"
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "経営が厳しい場合は、早めに専門家に相談することをお勧めします。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{business_department}}",
+        "phone": "{{business_phone}}",
+        "email": "{{business_email}}",
+        "hours": "{{city_hall_hours}}",
+        "address": "{{city_hall_address}}"
+      }
+    }
+  ],
+  "search": {
+    "summary": "廃業・倒産の手続き案内。廃業届、法人解散・清算、破産。",
+    "keywords": [
+      "廃業",
+      "倒産",
+      "解散",
+      "清算",
+      "破産",
+      "廃業届"
+    ],
+    "plain_text": "廃業・倒産。個人事業は廃業届出書を税務署へ。法人は解散決議→解散登記→清算→清算結了登記。"
+  }
+}

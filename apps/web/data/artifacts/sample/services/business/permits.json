@@ -1,0 +1,205 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "sample-services-business-permits",
+  "municipality_id": "sample",
+  "path": "/services/business/permits",
+  "title": "許認可・届出",
+  "description": "飲食店営業、古物商、建設業、宅建業などの許認可",
+  "content_type": "guide",
+  "service_category": "business",
+  "audience": [
+    "businesses"
+  ],
+  "topic": [],
+  "source": {
+    "source_url": "template://sample/services/business/permits",
+    "fetched_at": "{{generated_at}}",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "{{generated_at}}",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "くらしの情報",
+            "href": "/topics"
+          },
+          {
+            "label": "事業・経営",
+            "href": "/topics/business"
+          },
+          {
+            "label": "許認可・届出",
+            "href": "/services/business/permits"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "許認可・届出"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "業種によって必要な許認可・届出の一覧です。事業を始める前に必要な手続きを確認してください。"
+      }
+    },
+    {
+      "id": "richtext-1",
+      "type": "RichText",
+      "props": {
+        "content": [
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "主な許認可の種類"
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "飲食店営業許可",
+                      "bold": true
+                    },
+                    {
+                      "text": "：保健所"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "古物商許可",
+                      "bold": true
+                    },
+                    {
+                      "text": "：警察署"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "建設業許可",
+                      "bold": true
+                    },
+                    {
+                      "text": "：都道府県または国土交通大臣"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "宅地建物取引業免許",
+                      "bold": true
+                    },
+                    {
+                      "text": "：都道府県または国土交通大臣"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "旅館業許可",
+                      "bold": true
+                    },
+                    {
+                      "text": "：保健所"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "酒類販売業免許",
+                      "bold": true
+                    },
+                    {
+                      "text": "：税務署"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "運送業許可",
+                      "bold": true
+                    },
+                    {
+                      "text": "：運輸支局"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{business_department}}",
+        "phone": "{{business_phone}}",
+        "email": "{{business_email}}",
+        "hours": "{{city_hall_hours}}",
+        "address": "{{city_hall_address}}"
+      }
+    }
+  ],
+  "search": {
+    "summary": "許認可・届出の案内。飲食店営業、古物商、建設業、宅建業などの許可申請先。",
+    "keywords": [
+      "許認可",
+      "許可",
+      "届出",
+      "飲食店営業",
+      "古物商",
+      "建設業",
+      "宅建業"
+    ],
+    "plain_text": "許認可・届出。業種により保健所、警察署、都道府県などへの許可申請が必要。"
+  }
+}

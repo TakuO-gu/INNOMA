@@ -1,4 +1,7 @@
+"use client";
+
 import React from "react";
+import { useMunicipality, prefixInternalLink } from "../MunicipalityContext";
 
 export function DadsLink({
   href,
@@ -11,10 +14,13 @@ export function DadsLink({
   external?: boolean;
   className?: string;
 }) {
+  const { municipalityId } = useMunicipality();
+  const resolvedHref = prefixInternalLink(href, municipalityId);
+
   return (
     <a
       className={`dads-link ${className}`.trim()}
-      href={href}
+      href={resolvedHref}
       target={external ? "_blank" : undefined}
       rel={external ? "noreferrer" : undefined}
     >

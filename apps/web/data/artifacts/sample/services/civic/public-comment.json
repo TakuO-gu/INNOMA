@@ -1,0 +1,273 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "sample-services-civic-public-comment",
+  "municipality_id": "sample",
+  "path": "/services/civic/public-comment",
+  "title": "パブリックコメント",
+  "description": "パブリックコメント制度、意見募集、政策への市民参加",
+  "content_type": "guide",
+  "service_category": "community",
+  "audience": [
+    "residents"
+  ],
+  "topic": [],
+  "source": {
+    "source_url": "template://sample/services/civic/public-comment",
+    "fetched_at": "{{generated_at}}",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "{{generated_at}}",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "くらしの情報",
+            "href": "/topics"
+          },
+          {
+            "label": "市民参加・権利行使",
+            "href": "/topics/civic"
+          },
+          {
+            "label": "パブリックコメント",
+            "href": "/services/civic/public-comment"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "パブリックコメント"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "{{municipality_name}}の政策形成過程に市民の皆様の意見を反映させるパブリックコメント制度についてご案内します。"
+      }
+    },
+    {
+      "id": "richtext-1",
+      "type": "RichText",
+      "props": {
+        "content": [
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "パブリックコメントとは"
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "{{municipality_name}}が重要な計画や条例などを策定する際に、案の段階で市民の皆様から意見を募集し、それを考慮して最終決定を行う制度です。"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "対象となる案件"
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "条例の制定・改廃（市民生活に直接影響するもの）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "総合計画、個別計画などの基本的な計画"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "行政指導の指針"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "その他市長が必要と認めるもの"
+                    }
+                  ]
+                }
+              ]
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "意見を提出できる方"
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "{{municipality_name}}にお住まいの方"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "{{municipality_name}}に通勤・通学している方"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "{{municipality_name}}に事業所を有する方"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "当該案件に利害関係のある方"
+                    }
+                  ]
+                }
+              ]
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "意見の提出方法"
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "電子メール"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "郵送"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "FAX"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "窓口への持参"
+                    }
+                  ]
+                }
+              ]
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "意見の取扱い"
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "提出された意見は取りまとめの上、市の考え方とともに公表します。個別の回答は行いません。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{planning_department}}",
+        "phone": "{{planning_phone}}",
+        "email": "{{planning_email}}",
+        "hours": "{{city_hall_hours}}",
+        "address": "{{city_hall_address}}"
+      }
+    }
+  ],
+  "search": {
+    "summary": "パブリックコメントの案内。政策形成への市民参加、意見募集制度。",
+    "keywords": [
+      "パブリックコメント",
+      "意見募集",
+      "市民参加",
+      "政策形成",
+      "条例"
+    ],
+    "plain_text": "パブリックコメント。計画や条例策定時に市民から意見を募集する制度。住民や利害関係者が意見提出可能。"
+  }
+}

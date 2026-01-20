@@ -1,0 +1,271 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "sample-services-civic-direct-democracy",
+  "municipality_id": "sample",
+  "path": "/services/civic/direct-democracy",
+  "title": "直接請求",
+  "description": "条例の制定・改廃請求、解職請求、住民投票",
+  "content_type": "guide",
+  "service_category": "community",
+  "audience": [
+    "residents"
+  ],
+  "topic": [],
+  "source": {
+    "source_url": "template://sample/services/civic/direct-democracy",
+    "fetched_at": "{{generated_at}}",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "{{generated_at}}",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "くらしの情報",
+            "href": "/topics"
+          },
+          {
+            "label": "市民参加・権利行使",
+            "href": "/topics/civic"
+          },
+          {
+            "label": "直接請求",
+            "href": "/services/civic/direct-democracy"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "直接請求"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "住民が一定数の署名を集めて、条例の制定・改廃や首長・議員の解職などを請求できる直接民主制の制度をご案内します。"
+      }
+    },
+    {
+      "id": "richtext-1",
+      "type": "RichText",
+      "props": {
+        "content": [
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "条例の制定・改廃請求（イニシアティブ）"
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "必要署名数：選挙権を有する住民の50分の1以上"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "請求先：市長"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "市長は20日以内に議会を招集し、意見を付けて議会に付議"
+                    }
+                  ]
+                }
+              ]
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "事務の監査請求"
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "必要署名数：選挙権を有する住民の50分の1以上"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "請求先：監査委員"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "監査委員は監査を行い、結果を公表"
+                    }
+                  ]
+                }
+              ]
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "議会の解散請求"
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "必要署名数：選挙権を有する住民の3分の1以上"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "請求先：選挙管理委員会"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "住民投票で過半数の同意があれば解散"
+                    }
+                  ]
+                }
+              ]
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "首長・議員の解職請求（リコール）"
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "必要署名数：選挙権を有する住民の3分の1以上"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "請求先：選挙管理委員会"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "住民投票で過半数の同意があれば失職"
+                    }
+                  ]
+                }
+              ]
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "署名収集の手続き"
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "署名収集には請求代表者の届出が必要です。署名収集期間は1か月（議員解職は2か月）です。詳しくは選挙管理委員会にお問い合わせください。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{election_commission}}",
+        "phone": "{{election_commission_phone}}",
+        "email": "{{election_commission_email}}",
+        "hours": "{{city_hall_hours}}",
+        "address": "{{city_hall_address}}"
+      }
+    }
+  ],
+  "search": {
+    "summary": "直接請求の案内。条例制定・改廃請求、解職請求（リコール）、住民投票。",
+    "keywords": [
+      "直接請求",
+      "リコール",
+      "住民投票",
+      "条例制定",
+      "解職請求"
+    ],
+    "plain_text": "直接請求。住民の署名により条例制定・改廃請求（50分の1以上）、首長・議員の解職請求（3分の1以上）が可能。"
+  }
+}

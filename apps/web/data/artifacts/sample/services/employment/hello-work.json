@@ -1,0 +1,104 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "sample-services-employment-hello-work",
+  "municipality_id": "sample",
+  "path": "/services/employment/hello-work",
+  "title": "ハローワーク・求人情報",
+  "description": "{{prefecture_name}}内のハローワーク所在地、求人検索案内",
+  "content_type": "guide",
+  "service_category": "business",
+  "audience": ["residents"],
+  "topic": [],
+  "source": {
+    "source_url": "template://sample/services/employment/hello-work",
+    "fetched_at": "{{generated_at}}",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "{{generated_at}}",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          { "label": "ホーム", "href": "/" },
+          { "label": "くらしの情報", "href": "/topics" },
+          { "label": "仕事・労働", "href": "/topics/employment" },
+          { "label": "ハローワーク", "href": "/services/employment/hello-work" }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "ハローワーク・求人情報"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "ハローワーク（公共職業安定所）は、就職支援や雇用保険の手続きを行う国の機関です。求人情報の閲覧、職業相談、雇用保険の手続きができます。"
+      }
+    },
+    {
+      "id": "richtext-1",
+      "type": "RichText",
+      "props": {
+        "content": [
+          { "type": "heading", "level": 2, "text": "ハローワークでできること" },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [{ "type": "paragraph", "runs": [{ "text": "求人情報の検索・閲覧" }] }],
+              [{ "type": "paragraph", "runs": [{ "text": "職業相談・紹介" }] }],
+              [{ "type": "paragraph", "runs": [{ "text": "雇用保険（失業給付）の手続き" }] }],
+              [{ "type": "paragraph", "runs": [{ "text": "職業訓練の申込み" }] }],
+              [{ "type": "paragraph", "runs": [{ "text": "就職活動に関するセミナー参加" }] }]
+            ]
+          },
+          { "type": "heading", "level": 2, "text": "ハローワークインターネットサービス" },
+          {
+            "type": "paragraph",
+            "runs": [
+              { "text": "インターネットで全国の求人情報を検索できます。求職登録するとより詳細な情報が閲覧できます。" }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "table-1",
+      "type": "Table",
+      "props": {
+        "rows": [
+          { "label": "管轄ハローワーク", "value": "{{hello_work_name}}" },
+          { "label": "所在地", "value": "{{hello_work_address}}" },
+          { "label": "電話番号", "value": "{{hello_work_phone}}" },
+          { "label": "受付時間", "value": "平日8:30〜17:15" }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{hello_work_name}}",
+        "phone": "{{hello_work_phone}}",
+        "address": "{{hello_work_address}}",
+        "hours": "平日8:30〜17:15"
+      }
+    }
+  ],
+  "search": {
+    "summary": "ハローワークの案内。求人情報検索、職業相談、雇用保険手続き。",
+    "keywords": ["ハローワーク", "求人", "職業安定所", "就職", "転職", "求人情報"],
+    "plain_text": "ハローワーク・求人情報。求人情報の検索・閲覧、職業相談、雇用保険の手続き、職業訓練の申込みができる。"
+  }
+}

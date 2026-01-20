@@ -9,7 +9,10 @@
  *   - Emergency系: TTL 30秒 or キャッシュ無効
  */
 
-import type { InnomaArtifact, InnomaBlock } from "./types";
+import type { InnomaArtifactValidated } from "./schema";
+
+// 汎用Artifact型（v1/v2両対応）
+type AnyArtifact = InnomaArtifactValidated;
 
 // キャッシュ設定
 export const CACHE_CONFIG = {
@@ -36,25 +39,28 @@ const cache = new Map<string, CacheEntry<unknown>>();
 /**
  * Artifactにemergencyブロックが含まれているか判定
  */
-export function hasEmergencyContent(artifact: InnomaArtifact): boolean {
-  return artifact.blocks.some((block) => block.type === "Emergency");
+export function hasEmergencyContent(artifact: AnyArtifact): boolean {
+  return artifact.blocks.some((block: { type: string }) =>
+    block.type === "Emergency" || block.type === "EmergencyBanner"
+  );
 }
 
 /**
  * Artifactに高優先度（critical/high）のemergencyがあるか判定
  */
-export function hasHighPriorityEmergency(artifact: InnomaArtifact): boolean {
+export function hasHighPriorityEmergency(artifact: AnyArtifact): boolean {
   return artifact.blocks.some(
-    (block) =>
-      block.type === "Emergency" &&
-      (block.props.severity === "critical" || block.props.severity === "high")
+    (block: { type: string; props: Record<string, unknown> }) =>
+      (block.type === "Emergency" || block.type === "EmergencyBanner") &&
+      (block.props.severity === "critical" ||
+       block.props.severity === "high")
   );
 }
 
 /**
  * Artifactに基づいて適切なTTLを決定
  */
-export function getTTLForArtifact(artifact: InnomaArtifact): number {
+export function getTTLForArtifact(artifact: AnyArtifact): number {
   if (hasHighPriorityEmergency(artifact)) {
     return 0; // キャッシュ無効
   }

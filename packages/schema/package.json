@@ -1,0 +1,13 @@
+{
+  "name": "@innoma/schema",
+  "version": "2.0.0",
+  "description": "INNOMA Artifact Schema definitions",
+  "main": "./index.ts",
+  "types": "./index.ts",
+  "exports": {
+    ".": "./index.ts"
+  },
+  "dependencies": {
+    "zod": "^4.3.5"
+  }
+}

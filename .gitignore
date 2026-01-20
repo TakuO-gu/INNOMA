@@ -29,7 +29,10 @@ Thumbs.db
 # Database files
 *.db
 
-# Crawler outputs
+# Archive (not tracked in git)
+archive/
+
+# Crawler outputs (legacy)
 downloaded_images/
 crawl_output/
 data/crawl/*

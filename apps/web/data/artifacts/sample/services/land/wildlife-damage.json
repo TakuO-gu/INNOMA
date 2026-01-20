@@ -1,0 +1,238 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "sample-services-land-wildlife-damage",
+  "municipality_id": "sample",
+  "path": "/services/land/wildlife-damage",
+  "title": "鳥獣被害対策",
+  "description": "イノシシ・シカ等による農作物被害対策、電気柵補助、有害鳥獣駆除",
+  "content_type": "guide",
+  "service_category": "environment",
+  "audience": [
+    "residents",
+    "businesses"
+  ],
+  "topic": [],
+  "source": {
+    "source_url": "template://sample/services/land/wildlife-damage",
+    "fetched_at": "{{generated_at}}",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "{{generated_at}}",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "くらしの情報",
+            "href": "/topics"
+          },
+          {
+            "label": "土地・農林水産",
+            "href": "/topics/land"
+          },
+          {
+            "label": "鳥獣被害対策",
+            "href": "/services/land/wildlife-damage"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "鳥獣被害対策"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "イノシシ、シカ、サル、カラス等による農作物被害を防ぐための対策支援をご案内します。"
+      }
+    },
+    {
+      "id": "richtext-1",
+      "type": "RichText",
+      "props": {
+        "content": [
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "被害防止対策"
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "電気柵・防護柵の設置",
+                      "bold": true
+                    },
+                    {
+                      "text": "：農地への侵入を防止"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "追い払い",
+                      "bold": true
+                    },
+                    {
+                      "text": "：サル等の追い払い活動"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "環境整備",
+                      "bold": true
+                    },
+                    {
+                      "text": "：藪の刈り払い、放棄果樹の除去"
+                    }
+                  ]
+                }
+              ]
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "侵入防止柵の補助"
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "{{municipality_name}}では、電気柵や金属メッシュ柵等の設置費用を補助しています。"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "補助率：{{wildlife_fence_subsidy_rate}}"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "対象者：農業者または農業者が組織する団体"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "申込期間：{{wildlife_fence_application_period}}"
+                    }
+                  ]
+                }
+              ]
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "有害鳥獣の捕獲"
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "野生鳥獣の捕獲には原則として許可が必要です。農作物被害が発生した場合、市を通じて有害鳥獣捕獲の許可申請ができます。"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "被害の報告"
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "農作物等に被害を受けた場合は、農林課へご報告ください。被害状況を把握し、対策に活用します。"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "クマの出没"
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "クマの目撃情報がある場合は、すぐに警察（110番）または市役所にご連絡ください。むやみに近づかないでください。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{agriculture_department}}",
+        "phone": "{{agriculture_phone}}",
+        "email": "{{agriculture_email}}",
+        "hours": "{{city_hall_hours}}",
+        "address": "{{city_hall_address}}"
+      }
+    }
+  ],
+  "search": {
+    "summary": "鳥獣被害対策の案内。電気柵補助、有害鳥獣捕獲、クマ対策。",
+    "keywords": [
+      "鳥獣被害",
+      "イノシシ",
+      "シカ",
+      "サル",
+      "電気柵",
+      "有害鳥獣",
+      "クマ"
+    ],
+    "plain_text": "鳥獣被害対策。電気柵・防護柵設置に補助金。有害鳥獣捕獲は許可申請が必要。クマ目撃時は110番通報。"
+  }
+}

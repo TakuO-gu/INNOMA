@@ -1,0 +1,195 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "sample-services-driving-accident",
+  "municipality_id": "sample",
+  "path": "/services/driving/accident",
+  "title": "交通事故相談",
+  "description": "交通事故の届出、損害賠償相談、交通事故相談所",
+  "content_type": "guide",
+  "service_category": "government",
+  "audience": [
+    "residents"
+  ],
+  "topic": [],
+  "source": {
+    "source_url": "template://sample/services/driving/accident",
+    "fetched_at": "{{generated_at}}",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "{{generated_at}}",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "くらしの情報",
+            "href": "/topics"
+          },
+          {
+            "label": "運転・車両",
+            "href": "/topics/driving"
+          },
+          {
+            "label": "交通事故相談",
+            "href": "/services/driving/accident"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "交通事故相談"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "交通事故に遭われた方への相談窓口と手続きをご案内します。"
+      }
+    },
+    {
+      "id": "richtext-1",
+      "type": "RichText",
+      "props": {
+        "content": [
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "事故直後の対応"
+          },
+          {
+            "type": "list",
+            "ordered": true,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "けが人の救護・119番通報"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "警察への届出（110番）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "相手の情報確認（氏名、住所、保険会社）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "保険会社への連絡"
+                    }
+                  ]
+                }
+              ]
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "交通事故相談窓口"
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "{{prefecture_name}}交通事故相談所",
+                      "bold": true
+                    },
+                    {
+                      "text": "：損害賠償、示談などの相談"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "日弁連交通事故相談センター",
+                      "bold": true
+                    },
+                    {
+                      "text": "：弁護士による無料相談"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "交通事故紛争処理センター",
+                      "bold": true
+                    },
+                    {
+                      "text": "：示談あっせん、審査"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{prefecture_name}}交通事故相談所",
+        "phone": "{{traffic_accident_consultation_phone}}"
+      }
+    }
+  ],
+  "search": {
+    "summary": "交通事故相談の案内。事故直後の対応、相談窓口、損害賠償相談。",
+    "keywords": [
+      "交通事故",
+      "交通事故相談",
+      "損害賠償",
+      "示談",
+      "事故届出"
+    ],
+    "plain_text": "交通事故相談。事故直後はけが人救護→警察届出→保険会社連絡。損害賠償は交通事故相談所で相談。"
+  }
+}

@@ -1,0 +1,146 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "sample-services-driving-parking",
+  "municipality_id": "sample",
+  "path": "/services/driving/parking",
+  "title": "市営駐車場・駐輪場",
+  "description": "{{municipality_name}}の公営駐車場・駐輪場の利用案内",
+  "content_type": "guide",
+  "service_category": "government",
+  "audience": [
+    "residents"
+  ],
+  "topic": [],
+  "source": {
+    "source_url": "template://sample/services/driving/parking",
+    "fetched_at": "{{generated_at}}",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "{{generated_at}}",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "くらしの情報",
+            "href": "/topics"
+          },
+          {
+            "label": "運転・車両",
+            "href": "/topics/driving"
+          },
+          {
+            "label": "市営駐車場・駐輪場",
+            "href": "/services/driving/parking"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "市営駐車場・駐輪場"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "{{municipality_name}}が運営する公営駐車場・駐輪場の利用案内です。"
+      }
+    },
+    {
+      "id": "richtext-1",
+      "type": "RichText",
+      "props": {
+        "content": [
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "市営駐車場"
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "{{municipal_parking_info}}"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "市営駐輪場"
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "主要駅周辺に市営駐輪場を設置しています。定期利用と一時利用があります。"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "定期利用：月額{{bicycle_parking_monthly}}円〜"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "一時利用：1回{{bicycle_parking_daily}}円"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{driving_department}}",
+        "phone": "{{driving_phone}}",
+        "email": "{{driving_email}}",
+        "hours": "{{city_hall_hours}}",
+        "address": "{{city_hall_address}}"
+      }
+    }
+  ],
+  "search": {
+    "summary": "市営駐車場・駐輪場の利用案内。場所、料金、定期利用。",
+    "keywords": [
+      "市営駐車場",
+      "市営駐輪場",
+      "駐車場",
+      "駐輪場",
+      "定期利用"
+    ],
+    "plain_text": "市営駐車場・駐輪場。定期利用と一時利用。料金は施設により異なる。"
+  }
+}
