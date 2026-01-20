@@ -15,6 +15,13 @@ import {
 } from "@/lib/drafts";
 import { getVariableStore, updateVariableStore } from "@/lib/template";
 import { revalidatePath } from "next/cache";
+import {
+  recordDraftApproval,
+  recordDraftRejection,
+  VariableChange,
+} from "@/lib/history";
+import { notifyDraftApproved, notifyDraftRejected } from "@/lib/notification";
+import { getMunicipalityMeta } from "@/lib/template";
 
 interface RouteParams {
   params: Promise<{
@@ -66,6 +73,25 @@ export async function PUT(request: NextRequest, { params }: RouteParams) {
       const newStore = applyDraftToStore(draft, existingStore);
       await updateVariableStore(municipalityId, newStore);
 
+      // Record history
+      const changes: VariableChange[] = Object.entries(draft.variables).map(
+        ([variableName, entry]) => ({
+          variableName,
+          oldValue: existingStore[variableName]?.value,
+          newValue: entry.value,
+        })
+      );
+      await recordDraftApproval(municipalityId, service, changes, "admin");
+
+      // Send notification
+      const meta = await getMunicipalityMeta(municipalityId);
+      await notifyDraftApproved(
+        municipalityId,
+        meta?.name || municipalityId,
+        service,
+        Object.keys(draft.variables).length
+      );
+
       // Update draft status
       const updated = await updateDraftStatus(municipalityId, service, "approved", {
         approvedAt: new Date().toISOString(),
@@ -82,6 +108,18 @@ export async function PUT(request: NextRequest, { params }: RouteParams) {
 
     // Handle reject action
     if (action === "reject") {
+      // Record history
+      await recordDraftRejection(municipalityId, service, "admin", body.reason);
+
+      // Send notification
+      const meta = await getMunicipalityMeta(municipalityId);
+      await notifyDraftRejected(
+        municipalityId,
+        meta?.name || municipalityId,
+        service,
+        body.reason
+      );
+
       const updated = await updateDraftStatus(municipalityId, service, "rejected", {
         rejectedAt: new Date().toISOString(),
         rejectedBy: "admin", // TODO: get from session

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { Metadata } from "next";
+import NotificationBell from "./components/NotificationBell";
 
 export const metadata: Metadata = {
   title: "INNOMA Admin",
@@ -46,6 +47,7 @@ export default function AdminLayout({
               </nav>
             </div>
             <div className="flex items-center gap-4">
+              <NotificationBell />
               <Link
                 href="/"
                 className="text-sm text-gray-500 hover:text-gray-700"

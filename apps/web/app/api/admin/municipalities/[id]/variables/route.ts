@@ -7,6 +7,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { getVariableStore, updateVariableStore } from "@/lib/template";
 import { validateVariable } from "@/lib/llm/validators";
 import { revalidatePath } from "next/cache";
+import { recordBulkVariableUpdate, VariableChange } from "@/lib/history";
 
 interface RouteParams {
   params: Promise<{
@@ -66,8 +67,32 @@ export async function PUT(request: NextRequest, { params }: RouteParams) {
       );
     }
 
+    // Collect changes for history
+    const changes: VariableChange[] = [];
+    for (const [variableName, value] of Object.entries(updates)) {
+      if (typeof value !== "string") continue;
+      if (errors.some((e) => e.variable === variableName)) continue;
+
+      const oldValue = currentStore[variableName]?.value;
+      const validation = validateVariable(variableName, value);
+      const newValue = validation.normalized || value;
+
+      if (oldValue !== newValue) {
+        changes.push({
+          variableName,
+          oldValue,
+          newValue,
+        });
+      }
+    }
+
     // Save the updated store
     await updateVariableStore(id, updatedStore);
+
+    // Record history if there are changes
+    if (changes.length > 0) {
+      await recordBulkVariableUpdate(id, changes, "manual", "admin");
+    }
 
     // Revalidate the municipality pages
     revalidatePath(`/${id}`);

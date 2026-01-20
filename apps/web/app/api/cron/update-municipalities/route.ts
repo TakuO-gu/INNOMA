@@ -22,6 +22,7 @@ import { fetchServiceVariables } from "@/lib/llm/fetcher";
 import { serviceDefinitions } from "@/lib/llm/variable-priority";
 import { createDraft, getDraft } from "@/lib/drafts";
 import { DraftVariableEntry } from "@/lib/drafts/types";
+import { notifyCronCompleted, notifyCronFailed, notifyDraftCreated } from "@/lib/notification";
 
 // Rate limiting: max municipalities per run
 const MAX_MUNICIPALITIES_PER_RUN = 5;
@@ -144,6 +145,14 @@ export async function GET(request: NextRequest) {
               }))
             );
 
+            // Notify about new draft
+            await notifyDraftCreated(
+              municipality.id,
+              municipality.name,
+              service.id,
+              Object.keys(variables).length
+            );
+
             municipalityResult.servicesUpdated++;
           }
         } catch (error) {
@@ -162,6 +171,13 @@ export async function GET(request: NextRequest) {
     const totalUpdated = results.reduce((sum, r) => sum + r.servicesUpdated, 0);
     const totalErrors = results.reduce((sum, r) => sum + r.errors.length, 0);
 
+    // Send completion notification
+    await notifyCronCompleted(
+      municipalitiesToUpdate.length,
+      totalUpdated,
+      totalErrors
+    );
+
     return NextResponse.json({
       success: true,
       message: `Processed ${municipalitiesToUpdate.length} municipalities`,
@@ -172,6 +188,12 @@ export async function GET(request: NextRequest) {
     });
   } catch (error) {
     console.error("Cron job error:", error);
+
+    // Send failure notification
+    await notifyCronFailed(
+      error instanceof Error ? error.message : "Unknown error"
+    );
+
     return NextResponse.json(
       {
         success: false,

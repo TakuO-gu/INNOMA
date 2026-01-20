@@ -8,6 +8,7 @@ import {
 import { DeleteButton } from "./DeleteButton";
 import { VariableTable } from "./VariableTable";
 import { FetchButton } from "./FetchButton";
+import HistoryTable from "./HistoryTable";
 
 interface PageProps {
   params: Promise<{ id: string }>;
@@ -208,7 +209,7 @@ export default async function MunicipalityDetailPage({ params }: PageProps) {
       </div>
 
       {/* 変数一覧 */}
-      <div className="bg-white rounded-lg shadow-sm border border-gray-200">
+      <div className="bg-white rounded-lg shadow-sm border border-gray-200 mb-8">
         <div className="px-6 py-4 border-b border-gray-200">
           <h2 className="text-lg font-semibold text-gray-900">変数一覧</h2>
           <p className="text-sm text-gray-500 mt-1">
@@ -216,6 +217,17 @@ export default async function MunicipalityDetailPage({ params }: PageProps) {
           </p>
         </div>
         <VariableTable variables={variableEntries} municipalityId={id} />
+      </div>
+
+      {/* 編集履歴 */}
+      <div className="bg-white rounded-lg shadow-sm border border-gray-200">
+        <div className="px-6 py-4 border-b border-gray-200">
+          <h2 className="text-lg font-semibold text-gray-900">編集履歴</h2>
+          <p className="text-sm text-gray-500 mt-1">
+            変数の変更履歴を表示します
+          </p>
+        </div>
+        <HistoryTable municipalityId={id} />
       </div>
     </div>
   );
