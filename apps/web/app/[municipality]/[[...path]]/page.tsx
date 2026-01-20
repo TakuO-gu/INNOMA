@@ -70,12 +70,15 @@ export default async function ArtifactPage({ params }: PageProps) {
   // artifact.municipality_id または URL パラメータを使用
   const municipalityId = artifact.municipality_id || municipality;
 
+  // sourcesがある場合はBlockRendererに渡す（Wikipedia風参照表示用）
+  const sources = (artifact as { sources?: Array<{ id: number; url: string; title?: string; accessedAt?: string; variables?: string[] }> }).sources;
+
   return (
     <main
       data-emergency={isEmergency ? "true" : undefined}
       data-priority={isHighPriority ? "high" : undefined}
     >
-      <BlockRenderer blocks={artifact.blocks} municipalityId={municipalityId} />
+      <BlockRenderer blocks={artifact.blocks} municipalityId={municipalityId} sources={sources} />
     </main>
   );
 }

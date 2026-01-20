@@ -75,7 +75,8 @@
             "type": "paragraph",
             "runs": [
               {
-                "text": "市内に住所があり、中学校修了前の児童を養育している方（父母のうち所得が高い方）"
+                "text": "市内に住所があり、中学校修了前の児童を養育している方（父母のうち所得が高い方）",
+                "sourceRef": 1
               }
             ]
           },
@@ -105,7 +106,8 @@
           {
             "type": "heading",
             "level": 2,
-            "text": "支給額（月額）"
+            "text": "支給額（月額）",
+            "sourceRef": 1
           }
         ]
       }
@@ -595,6 +597,29 @@
         "hours": "平日 8:30〜17:15（土日祝日・年末年始を除く）",
         "address": "〒100-0001 東京都サンプル市中央1-1-1"
       }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "出典"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "url": "https://www.cfa.go.jp/policies/kokoseido/jidouteate/",
+      "title": "児童手当制度のご案内 | こども家庭庁",
+      "accessedAt": "2026-01-20T10:00:00Z",
+      "variables": ["jidou_teate_gaku", "jidou_teate_taisho"]
+    },
+    {
+      "id": 2,
+      "url": "https://www.sample-city.lg.jp/kosodate/jidouteate/",
+      "title": "児童手当 | サンプル市",
+      "accessedAt": "2026-01-20T10:00:00Z",
+      "variables": ["kosodate_phone", "kosodate_email"]
     }
   ],
   "search": {

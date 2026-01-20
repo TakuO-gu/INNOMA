@@ -68,9 +68,18 @@ function renderNode(node: RichTextNode, key: number, municipalityId: string): Re
       const level = node.level || 2;
       const Tag = `h${level}` as keyof JSX.IntrinsicElements;
       const sizeClass = getHeadingSizeClass(level);
+      const sourceRef = (node as { sourceRef?: number }).sourceRef;
       return (
         <Tag key={key} className={sizeClass}>
           {node.text}
+          {sourceRef !== undefined && (
+            <a
+              href={`#source-${sourceRef}`}
+              className="text-blue-600 hover:text-blue-800 no-underline ml-1"
+            >
+              <sup className="text-xs font-normal">[{sourceRef}]</sup>
+            </a>
+          )}
         </Tag>
       );
     }
@@ -123,7 +132,7 @@ function renderNode(node: RichTextNode, key: number, municipalityId: string): Re
 }
 
 function renderRun(
-  run: { text: string; bold?: boolean; link?: { href: string; label?: string; external?: boolean } },
+  run: { text: string; bold?: boolean; link?: { href: string; label?: string; external?: boolean }; sourceRef?: number },
   key: number,
   municipalityId: string
 ): React.ReactNode {
@@ -155,6 +164,21 @@ function renderRun(
         </Link>
       );
     }
+  }
+
+  // 参照番号がある場合、Wikipedia風の上付き文字で表示
+  if (run.sourceRef !== undefined) {
+    content = (
+      <React.Fragment key={`source-${key}`}>
+        {content}
+        <a
+          href={`#source-${run.sourceRef}`}
+          className="text-blue-600 hover:text-blue-800 no-underline"
+        >
+          <sup className="text-xs font-normal">[{run.sourceRef}]</sup>
+        </a>
+      </React.Fragment>
+    );
   }
 
   return <React.Fragment key={key}>{content}</React.Fragment>;
