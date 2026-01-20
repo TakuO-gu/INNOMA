@@ -14,11 +14,81 @@
     "source": "manual",
     "updatedAt": "2026-01-20T10:33:17.311Z"
   },
+  "city_hall_address": {
+    "value": "〒933-0057 富山県高岡市広小路7-50",
+    "source": "manual",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-20T16:00:00.000Z"
+  },
+  "city_hall_phone": {
+    "value": "0766-20-1111",
+    "source": "manual",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-20T16:00:00.000Z"
+  },
+  "city_hall_hours": {
+    "value": "平日8:30-17:15",
+    "source": "manual",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-20T16:00:00.000Z"
+  },
+  "city_hall_department": {
+    "value": "総務課",
+    "source": "manual",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/",
+    "confidence": 0.8,
+    "updatedAt": "2026-01-20T16:00:00.000Z"
+  },
   "shimin_department": {
     "value": "市民課",
-    "source": "llm",
+    "source": "manual",
     "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/shiminka/2/4/6/2403.html",
-    "confidence": 0.7,
-    "updatedAt": "2026-01-20T10:38:17.378Z"
+    "confidence": 0.95,
+    "updatedAt": "2026-01-20T16:00:00.000Z"
+  },
+  "shimin_phone": {
+    "value": "0766-20-1337",
+    "source": "manual",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/shiminka/2/4/6/2403.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-20T16:00:00.000Z"
+  },
+  "juminhyo_fee": {
+    "value": "300円",
+    "source": "manual",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/shiminka/2/4/6/2403.html",
+    "confidence": 0.9,
+    "updatedAt": "2026-01-20T16:00:00.000Z"
+  },
+  "koseki_fee": {
+    "value": "450円",
+    "source": "manual",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/shiminka/2/4/6/2403.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-20T16:00:00.000Z"
+  },
+  "inkan_shomei_fee": {
+    "value": "300円",
+    "source": "manual",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/shiminka/2/4/6/2403.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-20T16:00:00.000Z"
+  },
+  "kokuho_department": {
+    "value": "福祉保健部 保険年金課",
+    "source": "manual",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/hisho/shise/gaiyo/soshiki/fukushihoken/hoken.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-20T16:00:00.000Z"
+  },
+  "kokuho_phone": {
+    "value": "0766-20-1357",
+    "source": "manual",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/hisho/shise/gaiyo/soshiki/fukushihoken/hoken.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-20T16:00:00.000Z"
   }
 }
