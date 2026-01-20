@@ -1,13 +1,13 @@
 /**
  * INNOMA Artifact Schema (v2)
  *
- * packages/schemaから再エクスポート + apps/web固有のユーティリティ
+ * ローカルのスキーマ定義 + apps/web固有のユーティリティ
  */
 
 import { z } from "zod";
 
-// packages/schemaからすべてを再エクスポート
-export * from "@innoma/schema";
+// ローカルのスキーマからすべてを再エクスポート
+export * from "./innoma-artifact-schema.v2";
 
 // 内部使用のためにインポート
 import {
@@ -18,7 +18,7 @@ import {
   HeadingSchema,
   LinkSchema,
   type Block,
-} from "@innoma/schema";
+} from "./innoma-artifact-schema.v2";
 
 /* =============================================================================
  * apps/web固有の追加機能

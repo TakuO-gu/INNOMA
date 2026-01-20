@@ -16,7 +16,6 @@
   },
   "dependencies": {
     "@digital-go-jp/design-tokens": "^1.1.2",
-    "@innoma/schema": "file:../../packages/schema",
     "next": "^15.1.3",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",

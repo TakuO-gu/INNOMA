@@ -372,6 +372,7 @@
  * DADS Link - Official CSS
  * Source: /tmp/dads-html/src/components/link/link.css
  * ===================================================================== */
+.dads-link,
 .dads-link:any-link {
   color: var(--color-primitive-blue-1000);
   text-decoration: underline;
