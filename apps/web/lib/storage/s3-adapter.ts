@@ -33,9 +33,9 @@ export class S3StorageAdapter implements ArtifactStorageAdapter {
   }
 
   private async signRequest(
-    method: string,
+    _method: string,
     key: string,
-    body?: string
+    _body?: string
   ): Promise<{ url: string; headers: Record<string, string> }> {
     // 簡易実装：本番ではaws4-signを使用するか、AWS SDKを使用
     const url = `${this.getBaseUrl()}/${key}`;

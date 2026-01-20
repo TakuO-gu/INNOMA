@@ -79,9 +79,13 @@
   }
 }
 
-/* DADS Component Styles - Enhanced Typography & Spacing */
+/* =====================================================================
+ * DADS Official Component Styles
+ * Copied from: https://github.com/digital-go-jp/design-system-example-components-html
+ * ===================================================================== */
+
+/* Page container and block renderer spacing */
 @layer components {
-  /* Page container - wider spacing */
   .dads-page {
     @apply max-w-4xl mx-auto px-6 py-12;
   }
@@ -89,391 +93,1823 @@
     @apply mt-12;
   }
 
-  /* Section wrapper - clear visual separation */
   .dads-page > section {
     @apply py-2;
   }
 
-  /* ===================================================================
-   * Block Renderer - セクション間余白
-   * SmartHR Design System参考: セクション間 32px、ブロック間 24px
-   * =================================================================== */
   .block-renderer {
     @apply space-y-8;
   }
 
-  /* 各ブロック要素の基本余白 */
   .block-renderer > * {
     @apply mb-0;
   }
 
-  /* セクション区切りとなるブロック（見出しの前）には大きな余白 */
   .block-renderer > *:has(+ .dads-heading) {
     @apply mb-4;
   }
+}
 
-  /* ===================================================================
-   * Heading styles - DADS Storybook準拠
-   * https://design.digital.go.jp/dads/html/?path=/docs/components-見出し--docs
-   * =================================================================== */
-  .dads-heading {
-    color: var(--color-neutral-solid-gray-800, #333333);
-    font-family: var(--font-family-sans, 'Noto Sans JP', -apple-system, BlinkMacSystemFont, sans-serif);
-    margin: 0;
+/* =====================================================================
+ * DADS Heading - Official CSS
+ * Source: /tmp/dads-html/src/components/heading/heading.css
+ * ===================================================================== */
+.dads-heading {
+  color: var(--color-neutral-solid-gray-800);
+  font-family: var(--font-family-sans);
+}
+
+.dads-heading[data-size="64"] {
+  --_shoulder-size: calc(28 / 16 * 1rem);
+  --_shoulder-line-height: 1.5;
+  --_shoulder-letter-spacing: 0.01em;
+  font-weight: bold;
+  font-size: calc(64 / 16 * 1rem);
+  line-height: 1.4;
+  letter-spacing: 0;
+}
+
+.dads-heading[data-size="57"] {
+  --_shoulder-size: calc(24 / 16 * 1rem);
+  --_shoulder-line-height: 1.5;
+  --_shoulder-letter-spacing: 0.02em;
+  font-weight: bold;
+  font-size: calc(57 / 16 * 1rem);
+  line-height: 1.4;
+  letter-spacing: 0;
+}
+
+.dads-heading[data-size="45"] {
+  --_shoulder-size: calc(22 / 16 * 1rem);
+  --_shoulder-line-height: 1.5;
+  --_shoulder-letter-spacing: 0.02em;
+  font-weight: bold;
+  font-size: calc(45 / 16 * 1rem);
+  line-height: 1.4;
+  letter-spacing: 0;
+}
+
+.dads-heading[data-size="36"] {
+  --_shoulder-size: calc(20 / 16 * 1rem);
+  --_shoulder-line-height: 1.5;
+  --_shoulder-letter-spacing: 0.02em;
+  font-weight: bold;
+  font-size: calc(36 / 16 * 1rem);
+  line-height: 1.4;
+  letter-spacing: 0.01em;
+}
+
+.dads-heading[data-size="32"] {
+  --_shoulder-size: calc(18 / 16 * 1rem);
+  --_shoulder-line-height: 1.6;
+  --_shoulder-letter-spacing: 0.02em;
+  font-weight: bold;
+  font-size: calc(32 / 16 * 1rem);
+  line-height: 1.5;
+  letter-spacing: 0.01em;
+}
+
+.dads-heading[data-size="28"] {
+  --_shoulder-size: calc(16 / 16 * 1rem);
+  --_shoulder-line-height: 1.7;
+  --_shoulder-letter-spacing: 0.02em;
+  font-weight: bold;
+  font-size: calc(28 / 16 * 1rem);
+  line-height: 1.5;
+  letter-spacing: 0.01em;
+}
+
+.dads-heading[data-size="24"] {
+  --_shoulder-size: calc(16 / 16 * 1rem);
+  --_shoulder-line-height: 1.7;
+  --_shoulder-letter-spacing: 0.02em;
+  font-weight: bold;
+  font-size: calc(24 / 16 * 1rem);
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.dads-heading[data-size="20"] {
+  --_shoulder-size: calc(16 / 16 * 1rem);
+  --_shoulder-line-height: 1.7;
+  --_shoulder-letter-spacing: 0.02em;
+  font-weight: bold;
+  font-size: calc(20 / 16 * 1rem);
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.dads-heading[data-size="18"] {
+  --_shoulder-size: calc(16 / 16 * 1rem);
+  --_shoulder-line-height: 1.7;
+  --_shoulder-letter-spacing: 0.02em;
+  font-weight: bold;
+  font-size: calc(18 / 16 * 1rem);
+  line-height: 1.6;
+  letter-spacing: 0.02em;
+}
+
+.dads-heading[data-size="16"] {
+  --_shoulder-size: calc(16 / 16 * 1rem);
+  --_shoulder-line-height: 1.7;
+  --_shoulder-letter-spacing: 0.02em;
+  font-weight: bold;
+  font-size: calc(16 / 16 * 1rem);
+  line-height: 1.7;
+  letter-spacing: 0.02em;
+}
+
+.dads-heading[data-chip] {
+  position: relative;
+  padding-left: calc(1em / 3 + 0.5em);
+}
+
+.dads-heading[data-chip]::before {
+  position: absolute;
+  top: 0.2em;
+  bottom: 0.1em;
+  left: 0;
+  width: calc(1em / 3);
+  background-color: var(--color-primitive-blue-900);
+  content: "";
+}
+
+@supports (top: 1lh) {
+  .dads-heading[data-chip]::before {
+    top: calc(0.5lh - 0.45em);
+    bottom: calc(0.5lh - 0.55em);
   }
+}
 
-  /* 最初の見出し要素には上余白を適用しない */
-  .dads-heading:first-child,
-  .block-renderer > *:first-child .dads-heading,
-  .dads-richtext > .dads-heading:first-child {
-    margin-top: 0;
+.dads-heading[data-chip]:has(.dads-heading__shoulder)::before {
+  top: calc((var(--_shoulder-size) * (var(--_shoulder-line-height) - 1)) / 2);
+}
+
+@media (forced-colors: active) {
+  .dads-heading[data-chip]::before {
+    background-color: CanvasText;
   }
+}
 
-  /* XL: 64px - ページタイトル（h1） */
+.dads-heading[data-rule] {
+  border-bottom: solid var(--color-primitive-blue-900);
+}
+
+.dads-heading[data-rule="8"] {
+  border-bottom-width: calc(8 / 16 * 1rem);
+  padding-bottom: calc(32 / 16 * 1rem);
+}
+
+.dads-heading[data-rule="6"] {
+  border-bottom-width: calc(6 / 16 * 1rem);
+  padding-bottom: calc(24 / 16 * 1rem);
+}
+
+.dads-heading[data-rule="4"] {
+  border-bottom-width: calc(4 / 16 * 1rem);
+  padding-bottom: calc(16 / 16 * 1rem);
+}
+
+.dads-heading[data-rule="2"] {
+  border-bottom-width: calc(2 / 16 * 1rem);
+  padding-bottom: calc(8 / 16 * 1rem);
+}
+
+.dads-heading__shoulder {
+  margin: 0;
+  font-weight: bold;
+  font-size: var(--_shoulder-size);
+  line-height: var(--_shoulder-line-height);
+  letter-spacing: var(--_shoulder-letter-spacing);
+}
+
+.dads-heading__heading {
+  margin: 0;
+  font: inherit;
+}
+
+.dads-heading__icon {
+  margin-right: calc(0.4em - 0.25em);
+}
+
+.dads-heading__icon::after {
+  content: " ";
+}
+
+.dads-heading__icon-svg {
+  display: inline-block;
+  width: 1.25em;
+  height: 1.25em;
+  vertical-align: -0.25em;
+}
+
+/* Heading spacing for page layout */
+.dads-heading:first-child,
+.block-renderer > *:first-child .dads-heading,
+.dads-richtext > .dads-heading:first-child {
+  margin-top: 0;
+}
+
+.dads-heading[data-size="64"],
+.dads-heading--xl {
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+
+.dads-heading[data-size="45"],
+.dads-heading--l {
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.dads-heading[data-size="32"],
+.dads-heading--m {
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.dads-heading[data-size="24"],
+.dads-heading--s {
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.dads-heading[data-size="20"],
+.dads-heading--xs {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Responsive heading sizes */
+@media (max-width: 640px) {
   .dads-heading[data-size="64"],
   .dads-heading--xl {
-    --_shoulder-size: calc(28 / 16 * 1rem);
-    --_shoulder-line-height: 1.5;
-    --_shoulder-letter-spacing: 0.01em;
-    font-weight: bold;
-    font-size: calc(64 / 16 * 1rem);
-    line-height: 1.4;
-    letter-spacing: 0;
-    @apply mt-16 mb-8;
+    font-size: calc(36 / 16 * 1rem);
   }
 
-  /* L: 45px - セクション見出し（h2） */
   .dads-heading[data-size="45"],
   .dads-heading--l {
-    --_shoulder-size: calc(22 / 16 * 1rem);
-    --_shoulder-line-height: 1.5;
-    --_shoulder-letter-spacing: 0.02em;
-    font-weight: bold;
-    font-size: calc(45 / 16 * 1rem);
-    line-height: 1.4;
-    letter-spacing: 0;
-    @apply mt-12 mb-6 pt-4 border-t-2 border-gray-100;
+    font-size: calc(28 / 16 * 1rem);
   }
 
-  /* テーブルの後のH2見出しに追加スペース */
-  .dads-table + .dads-heading[data-size="45"],
-  .dads-table + .dads-heading--l,
-  table + h2,
-  table + .dads-heading[data-size="45"],
-  table + .dads-heading--l {
-    margin-top: 2rem;
-  }
-
-  /* M: 32px - サブセクション見出し（h3） */
   .dads-heading[data-size="32"],
   .dads-heading--m {
-    --_shoulder-size: calc(18 / 16 * 1rem);
-    --_shoulder-line-height: 1.6;
-    --_shoulder-letter-spacing: 0.02em;
-    font-weight: bold;
-    font-size: calc(32 / 16 * 1rem);
-    line-height: 1.5;
-    letter-spacing: 0.01em;
-    @apply mt-10 mb-4;
+    font-size: calc(24 / 16 * 1rem);
   }
 
-  /* S: 24px - 小見出し（h4） */
   .dads-heading[data-size="24"],
   .dads-heading--s {
-    --_shoulder-size: calc(16 / 16 * 1rem);
-    --_shoulder-line-height: 1.7;
-    --_shoulder-letter-spacing: 0.02em;
-    font-weight: bold;
-    font-size: calc(24 / 16 * 1rem);
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    @apply mt-8 mb-3;
+    font-size: calc(20 / 16 * 1rem);
   }
 
-  /* XS: 20px - 最小見出し（h5, h6） */
   .dads-heading[data-size="20"],
   .dads-heading--xs {
-    --_shoulder-size: calc(16 / 16 * 1rem);
-    --_shoulder-line-height: 1.7;
-    --_shoulder-letter-spacing: 0.02em;
-    font-weight: bold;
-    font-size: calc(20 / 16 * 1rem);
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    @apply mt-6 mb-2;
+    font-size: calc(18 / 16 * 1rem);
   }
+}
 
-  /* 追加サイズ（必要に応じて使用） */
-  .dads-heading[data-size="57"] {
-    --_shoulder-size: calc(24 / 16 * 1rem);
-    --_shoulder-line-height: 1.5;
-    --_shoulder-letter-spacing: 0.02em;
-    font-weight: bold;
-    font-size: calc(57 / 16 * 1rem);
-    line-height: 1.4;
-    letter-spacing: 0;
-    @apply mt-14 mb-7;
+/* =====================================================================
+ * DADS Link - Official CSS
+ * Source: /tmp/dads-html/src/components/link/link.css
+ * ===================================================================== */
+.dads-link:any-link {
+  color: var(--color-primitive-blue-1000);
+  text-decoration: underline;
+  text-decoration-thickness: calc(1 / 16 * 1rem);
+  text-underline-offset: calc(3 / 16 * 1rem);
+}
+
+.dads-link:visited {
+  color: var(--color-primitive-magenta-900);
+}
+
+@media (hover: hover) {
+  .dads-link:hover {
+    color: var(--color-primitive-blue-900);
+    text-decoration-thickness: calc(3 / 16 * 1rem);
   }
+}
 
-  .dads-heading[data-size="36"] {
-    --_shoulder-size: calc(20 / 16 * 1rem);
-    --_shoulder-line-height: 1.5;
-    --_shoulder-letter-spacing: 0.02em;
-    font-weight: bold;
-    font-size: calc(36 / 16 * 1rem);
-    line-height: 1.4;
-    letter-spacing: 0.01em;
-    @apply mt-11 mb-5;
+.dads-link:active {
+  color: var(--color-primitive-orange-800);
+  text-decoration-thickness: calc(1 / 16 * 1rem);
+}
+
+.dads-link:focus-visible {
+  outline: calc(4 / 16 * 1rem) solid var(--color-neutral-black);
+  outline-offset: calc(2 / 16 * 1rem);
+  border-radius: calc(4 / 16 * 1rem);
+  background-color: var(--color-primitive-yellow-300);
+  box-shadow: 0 0 0 calc(2 / 16 * 1rem) var(--color-primitive-yellow-300);
+}
+
+.dads-link__icon {
+  display: inline-block;
+  width: calc(16 / 16 * 1rem);
+  height: calc(16 / 16 * 1rem);
+  vertical-align: -0.15em;
+}
+
+/* =====================================================================
+ * DADS Breadcrumb - Official CSS
+ * Source: /tmp/dads-html/src/components/breadcrumb/breadcrumb.css
+ * ===================================================================== */
+.dads-breadcrumb {
+  display: flex;
+  column-gap: calc(4 / 16 * 1rem);
+  color: var(--color-neutral-solid-gray-800);
+  font-weight: normal;
+  font-size: calc(16 / 16 * 1rem);
+  line-height: 1.7;
+  font-family: var(--font-family-sans);
+  letter-spacing: 0.02em;
+}
+
+.dads-breadcrumb__label {
+  flex-shrink: 0;
+}
+
+.dads-breadcrumb__label::after {
+  content: "：";
+}
+
+.dads-breadcrumb__list {
+  list-style-type: "";
+  margin: 0;
+  padding: 0;
+}
+
+.dads-breadcrumb__item {
+  display: inline;
+  overflow-wrap: break-word;
+}
+
+.dads-breadcrumb__link:any-link {
+  color: var(--color-primitive-blue-1000);
+  text-decoration: underline;
+  text-decoration-thickness: calc(1 / 16 * 1rem);
+  text-underline-offset: calc(3 / 16 * 1rem);
+}
+
+@media (hover: hover) {
+  .dads-breadcrumb__link:hover {
+    color: var(--color-primitive-blue-900);
+    text-decoration-thickness: calc(3 / 16 * 1rem);
   }
+}
 
-  .dads-heading[data-size="28"] {
-    --_shoulder-size: calc(16 / 16 * 1rem);
-    --_shoulder-line-height: 1.7;
-    --_shoulder-letter-spacing: 0.02em;
-    font-weight: bold;
-    font-size: calc(28 / 16 * 1rem);
-    line-height: 1.5;
-    letter-spacing: 0.01em;
-    @apply mt-9 mb-4;
+.dads-breadcrumb__link:active {
+  color: var(--color-primitive-orange-800);
+  text-decoration-thickness: calc(1 / 16 * 1rem);
+}
+
+.dads-breadcrumb__link:focus-visible {
+  outline: calc(4 / 16 * 1rem) solid var(--color-neutral-black);
+  outline-offset: calc(2 / 16 * 1rem);
+  border-radius: calc(4 / 16 * 1rem);
+  background-color: var(--color-primitive-yellow-300);
+  box-shadow: 0 0 0 calc(2 / 16 * 1rem) var(--color-primitive-yellow-300);
+}
+
+.dads-breadcrumb__link-icon {
+  display: inline-block;
+  vertical-align: -0.15em;
+  width: calc(16 / 16 * 1rem);
+  height: calc(16 / 16 * 1rem);
+}
+
+.dads-breadcrumb__separator::before,
+.dads-breadcrumb__separator::after {
+  content: " ";
+}
+
+.dads-breadcrumb__separator-icon {
+  display: inline-block;
+  margin-right: calc(1 / 16 * 1rem);
+  margin-left: calc(1 / 16 * 1rem);
+  width: calc(12 / 16 * 1rem);
+  height: calc(12 / 16 * 1rem);
+  vertical-align: middle;
+  color: var(--color-neutral-solid-gray-900);
+}
+
+/* =====================================================================
+ * DADS Divider - Official CSS
+ * Source: /tmp/dads-html/src/components/divider/divider.css
+ * ===================================================================== */
+.dads-divider {
+  margin: 0;
+  border: 0;
+  border-top: 1px solid;
+  opacity: 1;
+}
+
+.dads-divider[data-color="solid-gray-420"] {
+  border-top-color: var(--color-neutral-solid-gray-420);
+}
+
+.dads-divider[data-color="solid-gray-536"] {
+  border-top-color: var(--color-neutral-solid-gray-536);
+}
+
+.dads-divider[data-color="black"] {
+  border-top-color: var(--color-neutral-black);
+}
+
+.dads-divider[data-style="solid"] {
+  border-top-style: solid;
+}
+
+.dads-divider[data-style="dashed"] {
+  border-top-style: dashed;
+}
+
+.dads-divider[data-width="1"] {
+  border-top-width: 1px;
+}
+
+.dads-divider[data-width="2"] {
+  border-top-width: 2px;
+}
+
+.dads-divider[data-width="3"] {
+  border-top-width: 3px;
+}
+
+.dads-divider[data-width="4"] {
+  border-top-width: 4px;
+}
+
+/* =====================================================================
+ * DADS List - Official CSS
+ * Source: /tmp/dads-html/src/components/list/list.css
+ * ===================================================================== */
+.dads-list {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: calc(32 / 16 * 1rem);
+  list-style-type: revert;
+}
+
+.dads-list > .dads-list__item {
+  --_spacing: 0;
+  padding-top: var(--_spacing);
+  padding-bottom: var(--_spacing);
+}
+
+.dads-list > .dads-list__item > :first-child {
+  margin-top: var(--_spacing);
+}
+
+.dads-list > .dads-list__item > :last-child {
+  margin-bottom: calc(-1 * var(--_spacing));
+}
+
+.dads-list[data-spacing="4"] > .dads-list__item {
+  --_spacing: calc(4 / 16 * 1rem);
+}
+
+.dads-list[data-spacing="8"] > .dads-list__item {
+  --_spacing: calc(8 / 16 * 1rem);
+}
+
+.dads-list[data-spacing="12"] > .dads-list__item {
+  --_spacing: calc(12 / 16 * 1rem);
+}
+
+/* =====================================================================
+ * DADS Accordion - Official CSS
+ * Source: /tmp/dads-html/src/components/accordion/accordion.css
+ * ===================================================================== */
+.dads-accordion {
+  --_icon-size: calc(20 / 16 * 1rem);
+  border-bottom: 1px solid var(--color-neutral-solid-gray-420);
+}
+
+@media (min-width: 48rem) {
+  .dads-accordion {
+    --_icon-size: calc(32 / 16 * 1rem);
   }
+}
 
-  .dads-heading[data-size="18"] {
-    --_shoulder-size: calc(16 / 16 * 1rem);
-    --_shoulder-line-height: 1.7;
-    --_shoulder-letter-spacing: 0.02em;
-    font-weight: bold;
+.dads-accordion__summary {
+  position: relative;
+  display: block;
+  padding: calc(8 / 16 * 1rem) calc(8 / 16 * 1rem) calc(8 / 16 * 1rem)
+    calc(var(--_icon-size) + 0.75rem);
+  color: var(--color-neutral-solid-gray-800);
+  font-weight: normal;
+  font-size: calc(16 / 16 * 1rem);
+  line-height: 1.7;
+  font-family: var(--font-family-sans);
+  letter-spacing: 0.02em;
+  cursor: default;
+}
+
+.dads-accordion__summary::marker {
+  content: "";
+}
+
+.dads-accordion__summary::-webkit-details-marker {
+  display: none;
+}
+
+@media (min-width: 48rem) {
+  .dads-accordion__summary {
+    padding: calc(16 / 16 * 1rem) calc(16 / 16 * 1rem) calc(16 / 16 * 1rem)
+      calc(var(--_icon-size) + calc(20 / 16 * 1rem));
     font-size: calc(18 / 16 * 1rem);
     line-height: 1.6;
-    letter-spacing: 0.02em;
-    @apply mt-5 mb-2;
   }
+}
 
-  .dads-heading[data-size="16"] {
-    --_shoulder-size: calc(16 / 16 * 1rem);
-    --_shoulder-line-height: 1.7;
-    --_shoulder-letter-spacing: 0.02em;
-    font-weight: bold;
-    font-size: calc(16 / 16 * 1rem);
-    line-height: 1.7;
-    letter-spacing: 0.02em;
-    @apply mt-4 mb-2;
+@media (hover: hover) {
+  .dads-accordion__summary:hover:not(:focus-visible) {
+    background-color: var(--color-neutral-solid-gray-50);
   }
+}
 
-  /* チップ装飾（左側の縦線） */
-  .dads-heading[data-chip] {
-    position: relative;
-    padding-left: calc(1em / 3 + 0.5em);
+.dads-accordion__summary:focus-visible {
+  outline: calc(4 / 16 * 1rem) solid var(--color-neutral-black);
+  outline-offset: calc(2 / 16 * 1rem);
+  border-radius: calc(4 / 16 * 1rem);
+  background-color: var(--color-primitive-yellow-300);
+  box-shadow: 0 0 0 calc(2 / 16 * 1rem) var(--color-primitive-yellow-300);
+}
+
+.dads-accordion__icon {
+  position: absolute;
+  top: calc(8 / 16 * 1rem);
+  left: calc(2 / 16 * 1rem);
+  margin-top: calc((1lh - var(--_icon-size)) / 2);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: var(--_icon-size);
+  height: var(--_icon-size);
+  border-radius: 50%;
+  border: 1px solid currentcolor;
+  background-color: var(--color-neutral-white);
+  color: var(--color-primitive-blue-1000);
+}
+
+@media (min-width: 48rem) {
+  .dads-accordion__icon {
+    top: calc(14 / 16 * 1rem);
+    left: calc(6 / 16 * 1rem);
   }
+}
 
-  .dads-heading[data-chip]::before {
-    position: absolute;
-    top: 0.2em;
-    bottom: 0.1em;
-    left: 0;
-    width: calc(1em / 3);
-    background-color: var(--color-primitive-blue-900, #0017c1);
-    content: "";
+.dads-accordion[open] .dads-accordion__icon {
+  transform: rotate(180deg);
+}
+
+@media (hover: hover) {
+  .dads-accordion__summary:hover .dads-accordion__icon {
+    outline: calc(2 / 16 * 1rem) solid currentcolor;
   }
+}
 
-  @supports (top: 1lh) {
-    .dads-heading[data-chip]::before {
-      top: calc(0.5lh - 0.45em);
-      bottom: calc(0.5lh - 0.55em);
-    }
+.dads-accordion__icon-svg {
+  margin-top: calc(2 / 16 * 1rem);
+  width: calc(16 / 16 * 1rem);
+  height: calc(16 / 16 * 1rem);
+  pointer-events: none;
+}
+
+@media (min-width: 48rem) {
+  .dads-accordion__icon-svg {
+    width: auto;
+    height: auto;
   }
+}
 
-  .dads-heading[data-chip]:has(.dads-heading__shoulder)::before {
-    top: calc((var(--_shoulder-size) * (var(--_shoulder-line-height) - 1)) / 2);
+.dads-accordion__summary :is(h1, h2, h3, h4, h5, h6) {
+  margin: 0;
+  font: inherit;
+}
+
+.dads-accordion__content {
+  padding: calc(16 / 16 * 1rem) calc(8 / 16 * 1rem) calc(16 / 16 * 1rem)
+    calc(var(--_icon-size) + 0.75rem);
+}
+
+@media (min-width: 48rem) {
+  .dads-accordion__content {
+    padding: calc(24 / 16 * 1rem) calc(16 / 16 * 1rem) calc(24 / 16 * 1rem)
+      calc(var(--_icon-size) + 1.25rem);
   }
+}
 
-  @media (forced-colors: active) {
-    .dads-heading[data-chip]::before {
-      background-color: CanvasText;
-    }
+.dads-accordion__back-link:any-link {
+  display: flex;
+  align-items: flex-start;
+  gap: calc(6 / 16 * 1rem);
+  width: fit-content;
+  color: var(--color-primitive-blue-1000);
+  text-decoration: underline;
+  text-decoration-thickness: calc(1 / 16 * 1rem);
+  text-underline-offset: calc(3 / 16 * 1rem);
+  text-spacing-trim: trim-start;
+}
+
+@media (hover: hover) {
+  .dads-accordion__back-link:hover {
+    color: var(--color-primitive-blue-900);
+    text-decoration-thickness: calc(3 / 16 * 1rem);
   }
+}
 
-  /* 下線装飾 */
-  .dads-heading[data-rule] {
-    border-bottom: solid var(--color-primitive-blue-900, #0017c1);
-  }
+.dads-accordion__back-link:active {
+  color: var(--color-primitive-orange-800);
+  text-decoration-thickness: calc(1 / 16 * 1rem);
+}
 
-  .dads-heading[data-rule="8"] {
-    border-bottom-width: calc(8 / 16 * 1rem);
+.dads-accordion__back-link:focus-visible {
+  outline: calc(4 / 16 * 1rem) solid var(--color-neutral-black);
+  outline-offset: calc(2 / 16 * 1rem);
+  border-radius: calc(4 / 16 * 1rem);
+  background-color: var(--color-primitive-yellow-300);
+  box-shadow: 0 0 0 calc(2 / 16 * 1rem) var(--color-primitive-yellow-300);
+}
+
+.dads-accordion__back-link-icon {
+  margin-top: calc((1lh - 24 / 16 * 1rem) / 2);
+  flex-shrink: 0;
+}
+
+/* =====================================================================
+ * DADS Notification Banner - Official CSS
+ * Source: /tmp/dads-html/src/components/notification-banner/notification-banner.css
+ * ===================================================================== */
+.dads-notification-banner {
+  --_base-color: var(--color-primitive-blue-900);
+  --_color-chip-color: var(--color-primitive-blue-900);
+  display: grid;
+  grid-template-columns: calc(24 / 16 * 1rem) 1fr auto;
+  grid-template-rows: minmax(calc(36 / 16 * 1rem), auto);
+  border: solid var(--_base-color);
+  background-color: var(--color-neutral-white);
+  padding-top: calc(8 / 16 * 1rem);
+  padding-right: calc(16 / 16 * 1rem);
+  padding-bottom: calc(24 / 16 * 1rem);
+  padding-left: calc(16 / 16 * 1rem);
+  gap: calc(16 / 16 * 1rem);
+  color: var(--color-neutral-solid-gray-800);
+  font-weight: normal;
+  font-size: calc(16 / 16 * 1rem);
+  line-height: 1.7;
+  font-family: var(--font-family-sans);
+  letter-spacing: 0.02em;
+}
+
+.dads-notification-banner[data-style="standard"] {
+  border-radius: calc(12 / 16 * 1rem);
+  border-width: calc(3 / 16 * 1rem);
+}
+
+.dads-notification-banner[data-style="color-chip"] {
+  border-width: calc(2 / 16 * 1rem);
+  padding-left: calc(24 / 16 * 1rem);
+  box-shadow: inset calc(8 / 16 * 1rem) 0 0 0 var(--_color-chip-color);
+}
+
+@media (min-width: 48rem) {
+  .dads-notification-banner {
+    grid-template-columns: calc(36 / 16 * 1rem) 1fr auto;
+    padding-top: calc(24 / 16 * 1rem);
+    padding-right: calc(24 / 16 * 1rem);
     padding-bottom: calc(32 / 16 * 1rem);
+    padding-left: calc(24 / 16 * 1rem);
+    column-gap: calc(24 / 16 * 1rem);
   }
 
-  .dads-heading[data-rule="6"] {
-    border-bottom-width: calc(6 / 16 * 1rem);
-    padding-bottom: calc(24 / 16 * 1rem);
+  .dads-notification-banner[data-style="color-chip"] {
+    padding-left: calc(40 / 16 * 1rem);
+    box-shadow: inset calc(16 / 16 * 1rem) 0 0 0 var(--_color-chip-color);
+  }
+}
+
+.dads-notification-banner[data-type="success"] {
+  --_base-color: var(--color-semantic-success-2);
+  --_color-chip-color: var(--color-semantic-success-2);
+}
+
+.dads-notification-banner[data-type="error"] {
+  --_base-color: var(--color-semantic-error-1);
+  --_color-chip-color: var(--color-semantic-error-1);
+}
+
+.dads-notification-banner[data-type="warning"] {
+  --_base-color: var(--color-semantic-warning-yellow-2);
+  --_color-chip-color: var(--color-primitive-yellow-400);
+}
+
+.dads-notification-banner[data-type="info-1"] {
+  --_base-color: var(--color-primitive-blue-900);
+  --_color-chip-color: var(--color-primitive-blue-900);
+}
+
+.dads-notification-banner[data-type="info-2"] {
+  --_base-color: var(--color-neutral-solid-gray-536);
+  --_color-chip-color: var(--color-neutral-solid-gray-536);
+}
+
+.dads-notification-banner__icon {
+  justify-self: center;
+  width: calc(28 / 16 * 1rem);
+  height: calc(28 / 16 * 1rem);
+  max-width: none;
+  max-height: none;
+  padding-top: calc(3 / 16 * 1rem);
+  color: var(--_base-color);
+}
+
+@media (min-width: 48rem) {
+  .dads-notification-banner__icon {
+    margin-top: calc(-4 / 16 * 1rem);
+    margin-bottom: calc(-4 / 16 * 1rem);
+    width: calc(44 / 16 * 1rem);
+    height: calc(44 / 16 * 1rem);
+    padding: 0;
+  }
+}
+
+@media (forced-colors: active) {
+  .dads-notification-banner__icon {
+    color: currentcolor;
+  }
+}
+
+.dads-notification-banner__heading {
+  grid-column: span 2;
+  margin-top: 0;
+  margin-bottom: 0;
+  display: grid;
+  grid-template-columns: inherit;
+  gap: inherit;
+}
+
+.dads-notification-banner__heading-text {
+  padding-top: calc(3 / 16 * 1rem);
+  color: var(--color-neutral-solid-gray-900);
+  font-weight: bold;
+  font-size: calc(17 / 16 * 1rem);
+  line-height: 1.7;
+  letter-spacing: 0.02em;
+}
+
+@media (min-width: 48rem) {
+  .dads-notification-banner__heading-text {
+    padding-top: calc(2 / 16 * 1rem);
+    font-size: calc(20 / 16 * 1rem);
+    line-height: 1.5;
+  }
+}
+
+.dads-notification-banner__close {
+  margin-right: calc(-12 / 16 * 1rem);
+  display: flex;
+  align-self: start;
+  align-items: center;
+  column-gap: calc(4 / 16 * 1rem);
+  background: transparent;
+  border-radius: calc(8 / 16 * 1rem);
+  border: 0;
+  padding-top: calc(4 / 16 * 1rem);
+  padding-right: calc(12 / 16 * 1rem);
+  padding-bottom: calc(6 / 16 * 1rem);
+  padding-left: calc(12 / 16 * 1rem);
+  color: var(--color-neutral-solid-gray-900);
+  font: inherit;
+  line-height: 1;
+  letter-spacing: inherit;
+}
+
+@media (hover: hover) {
+  .dads-notification-banner__close:hover {
+    background-color: var(--color-neutral-solid-gray-50);
+    text-decoration: underline;
+    text-decoration-thickness: calc(1 / 16 * 1rem);
+    text-underline-offset: calc(3 / 16 * 1rem);
+  }
+}
+
+.dads-notification-banner__close:focus-visible {
+  outline: calc(4 / 16 * 1rem) solid var(--color-neutral-black);
+  outline-offset: calc(2 / 16 * 1rem);
+  background-color: var(--color-primitive-yellow-300);
+  box-shadow: 0 0 0 calc(2 / 16 * 1rem) var(--color-primitive-yellow-300);
+}
+
+.dads-notification-banner__close-icon {
+  margin-top: calc(2 / 16 * 1rem);
+  width: calc(24 / 16 * 1rem);
+  height: calc(24 / 16 * 1rem);
+}
+
+.dads-notification-banner__mobile-close {
+  margin-top: calc(4 / 16 * 1rem);
+  border: 0;
+  border-radius: calc(4 / 16 * 1rem);
+  background: transparent;
+  padding: 0;
+  color: var(--color-neutral-black);
+  touch-action: manipulation;
+}
+
+@media (hover: hover) {
+  .dads-notification-banner__mobile-close:hover {
+    outline: 1px solid;
+    background-color: var(--color-neutral-solid-gray-50);
+  }
+}
+
+.dads-notification-banner__mobile-close:focus-visible {
+  outline: calc(4 / 16 * 1rem) solid var(--color-neutral-black);
+  outline-offset: calc(2 / 16 * 1rem);
+  background-color: var(--color-primitive-yellow-300);
+  box-shadow: 0 0 0 calc(2 / 16 * 1rem) var(--color-primitive-yellow-300);
+}
+
+.dads-notification-banner__mobile-close-icon {
+  display: block;
+  width: calc(44 / 16 * 1rem);
+  height: calc(44 / 16 * 1rem);
+}
+
+.dads-notification-banner__body {
+  margin-top: calc(-4 / 16 * 1rem);
+  display: grid;
+  row-gap: calc(8 / 16 * 1rem);
+  grid-column: 1 / 4;
+  color: var(--color-neutral-solid-gray-800);
+}
+
+@media (min-width: 48rem) {
+  .dads-notification-banner__body {
+    margin-top: 0;
+    grid-column: 2 / 4;
+  }
+}
+
+.dads-notification-banner__body > * {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.dads-notification-banner__actions {
+  margin-bottom: calc(-8 / 16 * 1rem);
+  display: grid;
+  gap: calc(8 / 16 * 1rem);
+  grid-column: 1 / 4;
+}
+
+@media (min-width: 48rem) {
+  .dads-notification-banner__actions {
+    grid-auto-flow: column;
+    gap: calc(16 / 16 * 1rem);
+    grid-column: 2 / 4;
+    justify-content: end;
+  }
+}
+
+.dads-notification-banner .dads-button {
+  width: auto;
+}
+
+.dads-notification-banner[data-type="success"] .dads-button {
+  --button-color: var(--color-semantic-success-2);
+  --button-hover-color: var(--color-primitive-green-1000);
+  --button-active-color: var(--color-primitive-green-1200);
+  --button-outline-hover-bg-color: var(--color-primitive-green-200);
+  --button-outline-active-bg-color: var(--color-primitive-green-300);
+}
+
+.dads-notification-banner[data-type="error"] .dads-button {
+  --button-color: var(--color-semantic-error-1);
+  --button-hover-color: var(--color-primitive-red-1000);
+  --button-active-color: var(--color-primitive-red-1200);
+  --button-outline-hover-bg-color: var(--color-primitive-red-200);
+  --button-outline-active-bg-color: var(--color-primitive-red-300);
+}
+
+.dads-notification-banner[data-type="warning"] .dads-button {
+  --button-color: var(--color-semantic-warning-yellow-2);
+  --button-hover-color: var(--color-primitive-yellow-1000);
+  --button-active-color: var(--color-primitive-yellow-1200);
+  --button-outline-hover-bg-color: var(--color-primitive-yellow-200);
+  --button-outline-active-bg-color: var(--color-primitive-yellow-300);
+}
+
+.dads-notification-banner[data-type="info-1"] .dads-button {
+  --button-color: var(--color-primitive-blue-900);
+  --button-hover-color: var(--color-primitive-blue-1000);
+  --button-active-color: var(--color-primitive-blue-1200);
+  --button-outline-hover-bg-color: var(--color-primitive-blue-200);
+  --button-outline-active-bg-color: var(--color-primitive-blue-300);
+}
+
+.dads-notification-banner[data-type="info-2"] .dads-button {
+  --button-color: var(--color-neutral-solid-gray-800);
+  --button-hover-color: var(--color-neutral-solid-gray-900);
+  --button-active-color: var(--color-neutral-black);
+  --button-outline-hover-bg-color: var(--color-neutral-solid-gray-200);
+  --button-outline-active-bg-color: var(--color-neutral-solid-gray-300);
+}
+
+/* Compatibility with existing component structure (__title + __body) */
+.dads-notification-banner--info,
+.dads-notification-banner--warning,
+.dads-notification-banner--danger,
+.dads-notification-banner--success {
+  display: block;
+  border-radius: calc(12 / 16 * 1rem);
+  border-width: calc(3 / 16 * 1rem);
+}
+
+.dads-notification-banner--info {
+  --_base-color: var(--color-primitive-blue-900);
+}
+
+.dads-notification-banner--warning {
+  --_base-color: var(--color-semantic-warning-yellow-2);
+}
+
+.dads-notification-banner--danger {
+  --_base-color: var(--color-semantic-error-1);
+}
+
+.dads-notification-banner--success {
+  --_base-color: var(--color-semantic-success-2);
+}
+
+.dads-notification-banner__title {
+  font-weight: bold;
+  font-size: calc(17 / 16 * 1rem);
+  line-height: 1.7;
+  color: var(--color-neutral-solid-gray-900);
+  margin-bottom: 0.5rem;
+}
+
+@media (min-width: 48rem) {
+  .dads-notification-banner__title {
+    font-size: calc(20 / 16 * 1rem);
+    line-height: 1.5;
+  }
+}
+
+/* =====================================================================
+ * DADS Emergency Banner - Official CSS
+ * Source: /tmp/dads-html/src/components/emergency-banner/emergency-banner.css
+ * ===================================================================== */
+.dads-emergency-banner {
+  display: grid;
+  row-gap: calc(8 / 16 * 1rem);
+  border: 6px solid var(--color-semantic-warning-orange-1);
+  background-color: var(--color-neutral-white);
+  padding: calc(14 / 16 * 1rem) calc(10 / 16 * 1rem);
+  color: var(--color-neutral-solid-gray-800);
+  font-weight: normal;
+  font-size: calc(16 / 16 * 1rem);
+  line-height: 1.7;
+  font-family: var(--font-family-sans);
+  letter-spacing: 0.02em;
+}
+
+@media (min-width: 48rem) {
+  .dads-emergency-banner {
+    row-gap: calc(16 / 16 * 1rem);
+    padding: calc(26 / 16 * 1rem);
+  }
+}
+
+.dads-emergency-banner__header {
+  display: grid;
+  row-gap: calc(8 / 16 * 1rem);
+}
+
+.dads-emergency-banner__heading {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: bold;
+  font-size: calc(20 / 16 * 1rem);
+  line-height: 1.5;
+  text-spacing-trim: trim-start;
+}
+
+@media (min-width: 48rem) {
+  .dads-emergency-banner__heading {
+    font-size: calc(24 / 16 * 1rem);
+  }
+}
+
+.dads-emergency-banner__timestamp {
+  display: block;
+}
+
+.dads-emergency-banner__body {
+  display: grid;
+  row-gap: calc(8 / 16 * 1rem);
+}
+
+.dads-emergency-banner__body > * {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+@media (min-width: 48rem) {
+  .dads-emergency-banner__body {
+    row-gap: calc(16 / 16 * 1rem);
+    font-size: var(--font-size-20);
+    line-height: var(--line-height-150);
+  }
+}
+
+.dads-emergency-banner__action {
+  padding-top: calc(8 / 16 * 1rem);
+}
+
+@media (min-width: 48rem) {
+  .dads-emergency-banner__action {
+    display: flex;
+    justify-content: center;
+    padding-top: calc(12 / 16 * 1rem);
+    padding-bottom: calc(4 / 16 * 1rem);
+  }
+}
+
+.dads-emergency-banner__button,
+.dads-emergency-banner__button:any-link {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  border: 2px solid transparent;
+  border-radius: calc(12 / 16 * 1rem);
+  background-color: var(--color-semantic-error-1);
+  padding: calc(18 / 16 * 1rem);
+  color: var(--color-neutral-white);
+  text-align: center;
+  font-weight: bold;
+  font-size: calc(16 / 16 * 1rem);
+  line-height: 1;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+@media (min-width: 48rem) {
+  .dads-emergency-banner__button,
+  .dads-emergency-banner__button:any-link {
+    width: fit-content;
+    min-width: 50%;
+    border-width: 4px;
+    border-radius: calc(16 / 16 * 1rem);
+    padding: calc(20 / 16 * 1rem);
+  }
+}
+
+@media (hover: hover) {
+  .dads-emergency-banner__button:hover {
+    background-color: var(--color-semantic-error-2);
+    text-decoration: underline;
+    text-decoration-thickness: calc(1 / 16 * 1rem);
+    text-underline-offset: calc(3 / 16 * 1rem);
+  }
+}
+
+.dads-emergency-banner__button:focus-visible {
+  outline: calc(4 / 16 * 1rem) solid var(--color-neutral-black);
+  outline-offset: calc(2 / 16 * 1rem);
+  box-shadow: 0 0 0 calc(2 / 16 * 1rem) var(--color-primitive-yellow-300);
+}
+
+.dads-emergency-banner__button::after {
+  position: absolute;
+  inset: 0;
+  border: 2px solid var(--color-neutral-white);
+  border-radius: calc(10 / 16 * 1rem);
+  content: "";
+}
+
+@media (min-width: 48rem) {
+  .dads-emergency-banner__button::after {
+    border-width: 4px;
+    border-radius: calc(12 / 16 * 1rem);
+  }
+}
+
+@media (forced-colors: active) {
+  .dads-emergency-banner__button::after {
+    inset: calc(4 / 16 * 1rem);
+    border-width: 2px;
+    border-radius: calc(8 / 16 * 1rem);
+  }
+}
+
+.dads-emergency-banner__button-icon {
+  display: inline-block;
+  fill: currentcolor;
+  vertical-align: -0.15em;
+}
+
+.dads-emergency-banner__button-icon::before {
+  content: " ";
+}
+
+.dads-emergency-banner__button-icon-glyph {
+  display: block;
+  width: calc(16 / 16 * 1rem);
+  height: calc(16 / 16 * 1rem);
+}
+
+/* =====================================================================
+ * DADS Step Navigation - Official CSS
+ * Source: /tmp/dads-html/src/components/step-navigation/step-navigation.css
+ * ===================================================================== */
+.dads-step-navigation {
+  color: var(--color-neutral-solid-gray-800);
+  font-weight: normal;
+  font-size: calc(16 / 16 * 1rem);
+  font-family: var(--font-family-sans);
+  line-height: 1.7;
+  letter-spacing: 0.02em;
+  overflow-wrap: anywhere;
+}
+
+.dads-step-navigation[data-size="normal"] {
+  --_number-size: calc(44 / 16 * 1rem);
+  --_number-margin: calc(4 / 16 * 1rem);
+  --_outline-width: calc(2 / 16 * 1rem);
+  --_title-margin: calc(24 / 16 * 1rem);
+  --_description-margin: calc(8 / 16 * 1rem);
+}
+
+.dads-step-navigation[data-size="small"] {
+  --_number-size: calc(32 / 16 * 1rem);
+  --_number-margin: calc(3 / 16 * 1rem);
+  --_outline-width: calc(1 / 16 * 1rem);
+  --_title-margin: calc(16 / 16 * 1rem);
+  --_description-margin: calc(4 / 16 * 1rem);
+}
+
+.dads-step-navigation > ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.dads-step-navigation__step {
+  position: relative;
+  box-sizing: border-box;
+}
+
+.dads-step-navigation__step::before,
+.dads-step-navigation__step::after {
+  position: absolute;
+  z-index: -1;
+  content: "";
+}
+
+.dads-step-navigation__step[data-first]::before {
+  display: none;
+}
+
+.dads-step-navigation__step[data-last]::after {
+  display: none;
+}
+
+.dads-step-navigation__header {
+  display: block;
+  border: 0;
+  background: none;
+  padding: 0;
+  color: inherit;
+  font: inherit;
+  text-wrap: pretty;
+}
+
+.dads-step-navigation__header:any-link,
+.dads-step-navigation__header:enabled {
+  text-decoration: underline;
+  text-decoration-thickness: calc(1 / 16 * 1rem);
+  text-underline-offset: calc(3 / 16 * 1rem);
+}
+
+@media (hover: hover) {
+  .dads-step-navigation__header:any-link:hover,
+  .dads-step-navigation__header:enabled:hover {
+    text-decoration-thickness: calc(3 / 16 * 1rem);
+    cursor: pointer;
+  }
+}
+
+.dads-step-navigation__header:focus-visible {
+  border-radius: 0;
+  outline: 0;
+  box-shadow: none;
+}
+
+.dads-step-navigation__number {
+  position: relative;
+  display: grid;
+  place-content: center;
+  margin: calc(4 / 16 * 1rem);
+  box-sizing: border-box;
+  width: fit-content;
+  height: var(--_number-size);
+  min-width: var(--_number-size);
+  border: 2px solid;
+  border-radius: 50%;
+  background-color: var(--color-neutral-white);
+  padding: 0 calc(2 / 16 * 1rem) calc(2 / 16 * 1rem);
+  font-weight: bold;
+  font-size: calc(20 / 16 * 1rem);
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-decoration: inherit;
+  text-decoration-thickness: inherit;
+}
+
+.dads-step-navigation[data-size="small"] .dads-step-navigation__number {
+  margin: calc(3 / 16 * 1rem);
+  border-width: 1px;
+  font-size: calc(16 / 16 * 1rem);
+}
+
+.dads-step-navigation__step[data-state="reached"]
+  .dads-step-navigation__number {
+  background-color: var(--color-neutral-solid-gray-800);
+  color: var(--color-neutral-white);
+  border-color: var(--color-neutral-solid-gray-800);
+}
+
+.dads-step-navigation__step[data-state="completed"]
+  .dads-step-navigation__number {
+  background-color: var(--color-neutral-solid-gray-50);
+}
+
+.dads-step-navigation__step[data-state="error"] .dads-step-navigation__number {
+  color: var(--color-semantic-error-1);
+}
+
+.dads-step-navigation__step[data-state="skipped"]
+  .dads-step-navigation__number {
+  border-width: 1px;
+  border-style: dashed;
+}
+
+.dads-step-navigation__step[aria-current] .dads-step-navigation__number {
+  outline: var(--_outline-width) solid var(--color-neutral-solid-gray-800);
+  outline-offset: calc(2 / 16 * 1rem);
+  box-shadow: 0 0 0 calc(2 / 16 * 1rem) var(--color-neutral-white);
+}
+
+@media (forced-colors: active) {
+  .dads-step-navigation__step[data-state="reached"]
+    .dads-step-navigation__number {
+    background-color: CanvasText;
+    color: Canvas;
+    forced-color-adjust: none;
   }
 
-  .dads-heading[data-rule="4"] {
-    border-bottom-width: calc(4 / 16 * 1rem);
-    padding-bottom: calc(16 / 16 * 1rem);
+  .dads-step-navigation__step[data-state="completed"]
+    .dads-step-navigation__state-icon
+    circle {
+    fill: CanvasText;
   }
 
-  .dads-heading[data-rule="2"] {
-    border-bottom-width: calc(2 / 16 * 1rem);
-    padding-bottom: calc(8 / 16 * 1rem);
+  .dads-step-navigation__step[data-state="completed"]
+    .dads-step-navigation__state-icon
+    path {
+    fill: Canvas;
   }
 
-  /* 肩見出し（サブタイトル） */
-  .dads-heading__shoulder {
-    margin: 0;
-    font-weight: bold;
-    font-size: var(--_shoulder-size);
-    line-height: var(--_shoulder-line-height);
-    letter-spacing: var(--_shoulder-letter-spacing);
+  .dads-step-navigation__step[data-state="editing"]
+    .dads-step-navigation__state-icon
+    path {
+    fill: CanvasText;
   }
 
-  .dads-heading__heading {
-    margin: 0;
-    font: inherit;
+  .dads-step-navigation__step[data-state="error"]
+    .dads-step-navigation__state-icon
+    path {
+    fill: CanvasText;
+  }
+}
+
+.dads-step-navigation__header:focus-visible .dads-step-navigation__number {
+  outline: calc(4 / 16 * 1rem) solid var(--color-neutral-black);
+  outline-offset: calc(2 / 16 * 1rem);
+  box-shadow: 0 0 0 calc(2 / 16 * 1rem) var(--color-primitive-yellow-300);
+}
+
+.dads-step-navigation__state-icon {
+  position: absolute;
+  top: calc(-10 / 16 * 1rem);
+  left: calc(50% + calc(6 / 16 * 1rem));
+  border-radius: 50%;
+  background-color: var(--color-neutral-white);
+}
+
+.dads-step-navigation[data-size="small"] .dads-step-navigation__state-icon {
+  top: calc(-9 / 16 * 1rem);
+  left: calc(50% + calc(4 / 16 * 1rem));
+}
+
+.dads-step-navigation__state-icon > svg {
+  display: block;
+  max-width: none;
+}
+
+.dads-step-navigation[data-size="small"]
+  .dads-step-navigation__state-icon
+  > svg {
+  width: calc(20 / 16 * 1rem);
+  height: calc(20 / 16 * 1rem);
+}
+
+.dads-step-navigation__state-label {
+  position: absolute;
+  inset: calc(100% + calc(8 / 16 * 1rem)) -100% 0;
+  margin: 0 auto;
+  width: 4em;
+  height: 1.2em;
+  background-color: var(--color-neutral-white);
+  font-weight: normal;
+  font-size: calc(14 / 16 * 1rem);
+  line-height: 1.2;
+  letter-spacing: 0;
+  text-align: center;
+}
+
+.dads-step-navigation__title {
+  display: block;
+  font-weight: bold;
+  font-size: calc(18 / 16 * 1rem);
+  line-height: 1.6;
+  letter-spacing: 0.02em;
+  text-decoration-thickness: inherit;
+}
+
+.dads-step-navigation[data-size="small"] .dads-step-navigation__title {
+  font-weight: bold;
+  font-size: calc(16 / 16 * 1rem);
+  line-height: 1.7;
+  letter-spacing: 0.02em;
+}
+
+.dads-step-navigation__description {
+  margin: var(--_description-margin) 0 0;
+}
+
+/* Orientations */
+
+.dads-step-navigation[data-orientation="horizontal"] {
+  overflow-x: auto;
+  padding-top: calc(6 / 16 * 1rem);
+  padding-bottom: calc(6 / 16 * 1rem);
+}
+
+.dads-step-navigation[data-orientation="horizontal"] > ul {
+  display: flex;
+}
+
+.dads-step-navigation[data-orientation="vertical"] > ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.dads-step-navigation[data-orientation="horizontal"]
+  .dads-step-navigation__step {
+  width: calc(var(--_step-width, 320) / 16 * 1rem);
+  min-width: calc(var(--_step-min-width, 160) / 16 * 1rem);
+  padding: 0 calc(16 / 16 * 1rem);
+}
+
+.dads-step-navigation[data-orientation="vertical"] .dads-step-navigation__step {
+  flex: 1;
+  padding-bottom: calc(24 / 16 * 1rem);
+}
+
+.dads-step-navigation[data-orientation="vertical"]
+  .dads-step-navigation__step:last-child {
+  padding-bottom: 0;
+}
+
+.dads-step-navigation[data-orientation="horizontal"]
+  .dads-step-navigation__step::before {
+  top: calc(var(--_number-size) / 2 + var(--_number-margin));
+  right: 50%;
+  width: 50%;
+  border-bottom: 1px solid;
+}
+
+.dads-step-navigation[data-orientation="horizontal"]
+  .dads-step-navigation__step::after {
+  top: calc(var(--_number-size) / 2 + var(--_number-margin));
+  left: 50%;
+  width: 50%;
+  border-bottom: 1px solid;
+}
+
+.dads-step-navigation[data-orientation="vertical"]
+  .dads-step-navigation__step::before {
+  left: calc(var(--_number-size) / 2 + var(--_number-margin));
+  top: 0;
+  height: calc(32 / 16 * 1rem);
+  border-right: 1px solid;
+}
+
+.dads-step-navigation[data-orientation="vertical"]
+  .dads-step-navigation__step::after {
+  left: calc(var(--_number-size) / 2 + var(--_number-margin));
+  bottom: 0;
+  height: calc(100% - calc(32 / 16 * 1rem));
+  border-right: 1px solid;
+}
+
+.dads-step-navigation[data-orientation="horizontal"]
+  .dads-step-navigation__header {
+  width: 100%;
+  text-align: center;
+}
+
+.dads-step-navigation[data-orientation="vertical"]
+  .dads-step-navigation__header {
+  position: relative;
+  display: flex;
+  align-items: baseline;
+  column-gap: calc(16 / 16 * 1rem);
+  text-align: left;
+}
+
+.dads-step-navigation[data-orientation="horizontal"]
+  .dads-step-navigation__number {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.dads-step-navigation[data-orientation="vertical"]
+  .dads-step-navigation__number {
+  flex-shrink: 0;
+}
+
+.dads-step-navigation[data-orientation="horizontal"]
+  .dads-step-navigation__title {
+  margin-top: var(--_title-margin);
+}
+
+.dads-step-navigation[data-orientation="vertical"]
+  .dads-step-navigation__title {
+  padding: calc(var(--_number-size) / 2 + var(--_number-margin) - 0.875rem) 0;
+}
+
+.dads-step-navigation[data-orientation="horizontal"]
+  .dads-step-navigation__description {
+  text-align: center;
+}
+
+.dads-step-navigation[data-orientation="vertical"]
+  .dads-step-navigation__description {
+  margin-top: calc(
+    var(--_description-margin) -
+    (var(--_number-size) / 2 + var(--_number-margin) - 0.875rem)
+  );
+  padding-left: calc(
+    var(--_number-size) +
+    var(--_number-margin) +
+    var(--_number-margin) +
+    calc(16 / 16 * 1rem)
+  );
+}
+
+/* =====================================================================
+ * DADS Table - Official CSS
+ * Source: /tmp/dads-html/src/components/table/table.css
+ * ===================================================================== */
+.dads-table {
+  --_border-color: var(--color-neutral-solid-gray-420);
+  --_padding: calc(20 / 16 * 1rem) calc(16 / 16 * 1rem);
+  margin: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: calc(16 / 16 * 1rem);
+  color: var(--color-neutral-solid-gray-800);
+  font-weight: normal;
+  font-size: calc(16 / 16 * 1rem);
+  line-height: 1.7;
+  font-family: var(--font-family-sans);
+  letter-spacing: 0.02em;
+}
+
+.dads-table[data-size="dense"] {
+  --_padding: calc(12 / 16 * 1rem) calc(16 / 16 * 1rem);
+  line-height: 1.3;
+}
+
+.dads-table__caption {
+  font-weight: bold;
+  font-size: calc(17 / 16 * 1rem);
+}
+
+.dads-table__table {
+  border-collapse: collapse;
+}
+
+.dads-table__table :is(td, th) {
+  padding: var(--_padding);
+  text-align: left;
+  vertical-align: baseline;
+}
+
+.dads-table__table th {
+  font-weight: bold;
+}
+
+.dads-table__col-header {
+  --_border-color: var(--color-neutral-solid-gray-500);
+  background-color: var(--color-neutral-solid-gray-100);
+  color: var(--color-neutral-solid-gray-900);
+}
+
+.dads-table__row-header {
+  --_border-color: var(--color-neutral-solid-gray-500);
+  background-color: var(--color-neutral-solid-gray-100);
+  color: var(--color-neutral-solid-gray-900);
+}
+
+/* Stripe */
+
+.dads-table[data-row-stripe] {
+  --_border-color: var(--color-neutral-solid-gray-500);
+}
+
+.dads-table[data-row-stripe] tr:nth-child(even) {
+  background-color: var(--color-neutral-solid-gray-50);
+}
+
+/* Hover highlight */
+
+.dads-table[data-row-hover-highlight] {
+  --_border-color: var(--color-neutral-solid-gray-500);
+}
+
+@media (hover: hover) {
+  .dads-table[data-row-hover-highlight] tr:hover {
+    background-color: var(--color-primitive-blue-50);
+  }
+}
+
+/* With checkbox */
+
+.dads-table[data-selectable] {
+  --_border-color: var(--color-neutral-solid-gray-500);
+}
+
+.dads-table[data-selectable] tr:has(:checked) {
+  background-color: var(--color-primitive-blue-100);
+}
+
+@supports (selector(:has(.x))) {
+  .dads-table td:has(.dads-checkbox:only-child, .dads-radio:only-child),
+  .dads-table th:has(.dads-checkbox:only-child, .dads-radio:only-child) {
+    position: relative;
+    box-sizing: border-box;
+    width: calc(40 / 16 * 1rem);
+    padding: 0;
   }
 
-  /* アイコン */
-  .dads-heading__icon {
-    margin-right: calc(0.4em - 0.25em);
+  .dads-table td > :is(.dads-checkbox:only-child, .dads-radio:only-child),
+  .dads-table th > :is(.dads-checkbox:only-child, .dads-radio:only-child) {
+    position: absolute;
+    inset: 0;
+    display: grid;
+    justify-content: center;
+    width: auto;
+    padding-top: calc(10 / 16 * 1rem);
   }
+}
 
-  .dads-heading__icon::after {
-    content: " ";
-  }
+/* Sort and action */
 
-  .dads-heading__icon-svg {
-    display: inline-block;
-    width: 1.25em;
-    height: 1.25em;
-    vertical-align: -0.25em;
-  }
+.dads-table__sort-header {
+  --_border-color: var(--color-neutral-solid-gray-500);
+  background-color: var(--color-neutral-solid-gray-100);
+  padding: calc(12 / 16 * 1rem) calc(16 / 16 * 1rem);
+  color: var(--color-neutral-solid-gray-900);
+}
 
-  /* レスポンシブ対応: モバイルでは小さめに */
-  @media (max-width: 640px) {
-    .dads-heading[data-size="64"],
-    .dads-heading--xl {
-      font-size: calc(36 / 16 * 1rem);
-    }
+.dads-table[data-size="dense"] .dads-table__sort-header {
+  padding-top: 0;
+  padding-bottom: 0;
+}
 
-    .dads-heading[data-size="45"],
-    .dads-heading--l {
-      font-size: calc(28 / 16 * 1rem);
-    }
+.dads-table__sort-inner {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  column-gap: calc(4 / 16 * 1rem);
+}
 
-    .dads-heading[data-size="32"],
-    .dads-heading--m {
-      font-size: calc(24 / 16 * 1rem);
-    }
+.dads-table__sort-label {
+  display: flex;
+  align-items: start;
+  gap: calc(4 / 16 * 1rem);
+  padding-top: calc(8 / 16 * 1rem);
+  padding-bottom: calc(8 / 16 * 1rem);
+}
 
-    .dads-heading[data-size="24"],
-    .dads-heading--s {
-      font-size: calc(20 / 16 * 1rem);
-    }
+.dads-table[data-size="dense"] .dads-table__sort-label {
+  padding-top: calc(11 / 16 * 1rem);
+  padding-bottom: calc(11 / 16 * 1rem);
+}
 
-    .dads-heading[data-size="20"],
-    .dads-heading--xs {
-      font-size: calc(18 / 16 * 1rem);
-    }
-  }
+.dads-table__sort-button {
+  display: inline-flex;
+  align-items: start;
+  column-gap: calc(4 / 16 * 1rem);
+  border: 0;
+  background-color: transparent;
+  padding: 0;
+  color: inherit;
+  text-align: left;
+  font: inherit;
+  letter-spacing: inherit;
+  text-decoration: underline;
+  text-underline-offset: calc(3 / 16 * 1rem);
+}
 
-  /* Paragraph - larger, more readable */
+.dads-table__sort-button:hover {
+  text-decoration-thickness: calc(3 / 16 * 1rem);
+}
+
+.dads-table__sort-button:focus-visible {
+  outline: calc(4 / 16 * 1rem) solid var(--color-neutral-black);
+  outline-offset: calc(2 / 16 * 1rem);
+  border-radius: calc(4 / 16 * 1rem);
+  background-color: var(--color-primitive-yellow-300);
+  box-shadow: 0 0 0 calc(2 / 16 * 1rem) var(--color-primitive-yellow-300);
+}
+
+.dads-table__sort-icon {
+  flex-shrink: 0;
+  padding-top: calc(2 / 16 * 1rem);
+}
+
+.dads-table[data-size="dense"] .dads-table__sort-icon {
+  margin-top: calc(-2 / 16 * 1rem);
+  padding-top: 0;
+}
+
+.dads-table__sort-svg {
+  display: block;
+  width: calc(24 / 16 * 1rem);
+  height: calc(24 / 16 * 1rem);
+}
+
+.dads-table__action {
+  margin-right: calc(-16 / 16 * 1rem);
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: calc(44 / 16 * 1rem);
+  height: calc(44 / 16 * 1rem);
+  border-radius: calc(4 / 16 * 1rem);
+  border: 0;
+  background-color: transparent;
+  padding: 0;
+  color: inherit;
+}
+
+.dads-table__action:focus-visible {
+  outline: calc(4 / 16 * 1rem) solid var(--color-neutral-black);
+  outline-offset: calc(2 / 16 * 1rem);
+  border-radius: calc(4 / 16 * 1rem);
+  background-color: var(--color-primitive-yellow-300);
+  box-shadow: 0 0 0 calc(2 / 16 * 1rem) var(--color-primitive-yellow-300);
+}
+
+.dads-table__action-svg {
+  display: block;
+  width: calc(24 / 16 * 1rem);
+  height: calc(24 / 16 * 1rem);
+}
+
+/* Utilities */
+
+.dads-table [data-width="full"] {
+  width: 100%;
+}
+
+.dads-table [data-layout="fixed"] {
+  table-layout: fixed;
+}
+
+.dads-table [data-cell-border=""] :where(td, th) {
+  border: 1px solid var(--_border-color);
+}
+
+.dads-table [data-cell-border~="top"] :where(td, th) {
+  border-top: 1px solid var(--_border-color);
+}
+
+.dads-table [data-cell-border~="right"] :where(td, th) {
+  border-right: 1px solid var(--_border-color);
+}
+
+.dads-table [data-cell-border~="bottom"] :where(td, th) {
+  border-bottom: 1px solid var(--_border-color);
+}
+
+.dads-table [data-cell-border~="left"] :where(td, th) {
+  border-left: 1px solid var(--_border-color);
+}
+
+/* Header cell's black border should take precedence over [data-cell-border] */
+:last-of-type > .dads-table__col-header,
+:last-of-type > .dads-table__sort-header {
+  border-bottom: 1px solid var(--color-neutral-black);
+}
+.dads-table__row-header:last-of-type {
+  border-right: 1px solid var(--color-neutral-black);
+}
+
+.dads-table [data-border=""] {
+  border: 1px solid var(--_border-color);
+}
+
+.dads-table [data-border~="top"] {
+  border-top: 1px solid var(--_border-color);
+}
+
+.dads-table [data-border~="right"] {
+  border-right: 1px solid var(--_border-color);
+}
+
+.dads-table [data-border~="bottom"] {
+  border-bottom: 1px solid var(--_border-color);
+}
+
+.dads-table [data-border~="left"] {
+  border-left: 1px solid var(--_border-color);
+}
+
+.dads-table [data-border="hidden"] {
+  border-style: hidden;
+}
+
+.dads-table [data-border~="top-hidden"] {
+  border-top-style: hidden;
+}
+
+.dads-table [data-border~="right-hidden"] {
+  border-right-style: hidden;
+}
+
+.dads-table [data-border~="bottom-hidden"] {
+  border-bottom-style: hidden;
+}
+
+.dads-table [data-border~="left-hidden"] {
+  border-left-style: hidden;
+}
+
+.dads-table [data-bg="white"] {
+  background-color: var(--color-neutral-white);
+}
+
+.dads-table [data-bg="solid-gray-50"] {
+  --_border-color: var(--color-neutral-solid-gray-500);
+  background-color: var(--color-neutral-solid-gray-50);
+}
+
+.dads-table [data-bg="solid-gray-100"] {
+  --_border-color: var(--color-neutral-solid-gray-500);
+  background-color: var(--color-neutral-solid-gray-100);
+}
+
+.dads-table [data-bg="transparent"] {
+  background-color: transparent;
+}
+
+/* =====================================================================
+ * Additional application-specific styles
+ * ===================================================================== */
+
+/* Paragraph styling */
+@layer components {
   .dads-paragraph {
     @apply text-lg md:text-xl leading-relaxed text-gray-700 mb-6;
   }
 
-  /* RichText container - more breathing room */
+  /* RichText container */
   .dads-richtext {
     @apply space-y-6;
-  }
-
-  /* ===================================================================
-   * Link - DADS準拠
-   * https://github.com/digital-go-jp/design-system-example-components-react
-   * =================================================================== */
-  .dads-link {
-    color: var(--color-primitive-blue-1000, #00118f);
-    text-decoration: underline;
-    text-underline-offset: calc(3/16*1rem);
-  }
-  .dads-link:visited {
-    color: var(--color-primitive-magenta-900, #8b008b);
-  }
-  .dads-link:hover {
-    color: var(--color-primitive-blue-1000, #00118f);
-    text-decoration-thickness: calc(3/16*1rem);
-  }
-  .dads-link:active {
-    color: var(--color-primitive-orange-800, #c74700);
-    text-decoration-thickness: 1px;
-  }
-  .dads-link:focus-visible {
-    border-radius: var(--border-radius-4, 0.25rem);
-    outline: 4px solid black;
-    outline-offset: calc(2/16*1rem);
-    background-color: var(--color-primitive-yellow-300, #ffd43d);
-    color: var(--color-primitive-blue-1000, #00118f);
-  }
-  /* 外部リンクアイコン */
-  .dads-link[target="_blank"]::after {
-    content: "";
-    display: inline-block;
-    width: 16px;
-    height: 17px;
-    margin-left: calc(3/16*1rem);
-    margin-bottom: calc(3/16*1rem);
-    vertical-align: middle;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='17' viewBox='0 0 16 17' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M3 13.5H13V9.16667H14V14.5H2V2.5H7.33333V3.5H3V13.5ZM9.33333 3.5V2.5H14V7.16667H13V4.23333L7 10.1667L6.33333 9.5L12.2667 3.5H9.33333Z' fill='currentColor'/%3E%3C/svg%3E");
-    background-repeat: no-repeat;
-  }
-
-  /* ===================================================================
-   * Breadcrumbs - DADS準拠
-   * https://github.com/digital-go-jp/design-system-example-components-react
-   * =================================================================== */
-  .dads-breadcrumb__list {
-    display: inline;
-  }
-  .dads-breadcrumb__item {
-    display: inline;
-    word-break: break-word;
-  }
-  .dads-breadcrumb__item:not([aria-current])::after {
-    content: "";
-    display: inline-block;
-    width: 12px;
-    height: 12px;
-    margin: 0 0.5rem;
-    vertical-align: middle;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12' fill='none'%3E%3Cpath d='M4.50078 1.2998L3.80078 1.9998L7.80078 5.9998L3.80078 9.9998L4.50078 10.6998L9.20078 5.9998L4.50078 1.2998Z' fill='currentColor'/%3E%3C/svg%3E");
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  .dads-breadcrumb__item[aria-current="page"] {
-    font-size: 1rem;
-    line-height: 1;
-    letter-spacing: 0;
-  }
-  .dads-breadcrumb__link {
-    color: var(--color-primitive-blue-1000, #00118f);
-    font-size: 1rem;
-    line-height: 1;
-    letter-spacing: 0;
-    text-decoration: underline;
-    text-underline-offset: calc(3/16*1rem);
-  }
-  .dads-breadcrumb__link:hover {
-    color: var(--color-primitive-blue-900, #0017c1);
-    text-decoration-thickness: calc(3/16*1rem);
-  }
-  .dads-breadcrumb__link:active {
-    color: var(--color-primitive-orange-800, #c74700);
-    text-decoration-thickness: 1px;
-  }
-  .dads-breadcrumb__link:focus-visible {
-    border-radius: var(--border-radius-4, 0.25rem);
-    outline: 4px solid black;
-    outline-offset: calc(2/16*1rem);
-    background-color: var(--color-primitive-yellow-300, #ffd43d);
-    color: var(--color-primitive-blue-1000, #00118f);
   }
 
   /* Resource list - card style */
@@ -486,355 +1922,18 @@
   .dads-resource-list__title {
     @apply font-semibold text-lg text-gray-900;
   }
-
-  /* ===================================================================
-   * List (Ul/Ol) - DADS準拠
-   * https://github.com/digital-go-jp/design-system-example-components-react
-   * ネイティブのリストスタイルを使用
-   * =================================================================== */
-  .dads-list {
-    padding-left: 2rem;
-    list-style: revert;
+  .dads-resource-list__description {
+    @apply text-base text-gray-600 mt-2;
   }
-  .dads-list .dads-list__item {
-    color: var(--color-neutral-solid-gray-800, #333333);
-    line-height: 1.7;
+  .dads-resource-list__meta {
+    @apply text-sm text-gray-400 mt-2 font-medium;
   }
-  /* Remove margin from paragraphs inside list items */
-  .dads-list .dads-list__item .dads-paragraph {
-    @apply mb-0;
+  .dads-resource-list__external::after {
+    content: " ↗";
+    @apply text-gray-400 ml-1;
   }
 
-  /* Table - DADS compliant (default: row borders only) */
-  .dads-table {
-    @apply w-full my-8;
-  }
-  .dads-table__row {
-    @apply border-b border-solid;
-    border-color: #949497; /* solid-gray-420 */
-  }
-  .dads-table__row:first-child {
-    @apply border-b;
-    border-color: #1a1a1c; /* solid-gray-900 for header */
-  }
-  .dads-table__header {
-    @apply bg-gray-50 text-left font-semibold text-gray-900 py-3 px-4 text-base align-top;
-  }
-  .dads-table__cell {
-    @apply py-3 px-4 text-gray-900 text-base align-top;
-  }
-  /* Table with full borders (data-border attribute) */
-  .dads-table[data-border] {
-    @apply border border-solid;
-    border-color: #949497;
-  }
-  .dads-table[data-border] .dads-table__header,
-  .dads-table[data-border] .dads-table__cell {
-    @apply border border-solid;
-    border-color: #949497;
-  }
-
-  /* ===================================================================
-   * Notification Banner - DADS準拠
-   * https://github.com/digital-go-jp/design-system-example-components-react
-   * 既存コンポーネント構造（__title + __body）に対応
-   * =================================================================== */
-  .dads-notification-banner {
-    padding: 1rem 1.5rem;
-    border-width: calc(3/16*1rem);
-    border-style: solid;
-    border-radius: var(--border-radius-12, 0.75rem);
-    @apply my-8;
-  }
-  @media (min-width: 1024px) {
-    .dads-notification-banner {
-      padding: 1.5rem 2rem;
-    }
-  }
-  /* タイプ別カラー - DADS公式カラートークン使用 */
-  .dads-notification-banner--info {
-    border-color: var(--color-primitive-blue-900, #0017c1);
-    background-color: var(--color-primitive-blue-50, #e8f1fe);
-  }
-  .dads-notification-banner--warning {
-    border-color: var(--color-semantic-warning-yellow-2, #927200);
-    background-color: var(--color-primitive-yellow-50, #fbf5e0);
-  }
-  .dads-notification-banner--danger {
-    border-color: var(--color-semantic-error-1, #ec0000);
-    background-color: var(--color-primitive-red-50, #fdeeee);
-  }
-  .dads-notification-banner--success {
-    border-color: var(--color-semantic-success-2, #197a4b);
-    background-color: var(--color-primitive-green-50, #e6f5ec);
-  }
-  .dads-notification-banner__title {
-    font-weight: bold;
-    font-size: calc(17/16*1rem);
-    line-height: 1.7;
-    color: var(--color-neutral-solid-gray-900, #1a1a1a);
-    margin-bottom: 0.5rem;
-  }
-  @media (min-width: 1024px) {
-    .dads-notification-banner__title {
-      font-size: calc(20/16*1rem);
-      line-height: 1.5;
-    }
-  }
-  .dads-notification-banner__body,
-  .dads-notification-banner__content {
-    color: var(--color-neutral-solid-gray-800, #333333);
-    line-height: 1.7;
-  }
-
-  /* ===================================================================
-   * Emergency Banner - DADS準拠
-   * https://github.com/digital-go-jp/design-system-example-components-react
-   * =================================================================== */
-  .dads-emergency-banner {
-    display: block;
-    padding: 0.625rem 0.875rem;
-    border: calc(6/16*1rem) solid var(--color-semantic-warning-orange-1, #fb5b01);
-    background-color: var(--color-neutral-white, #ffffff);
-    @apply my-8;
-  }
-  @media (min-width: 1024px) {
-    .dads-emergency-banner {
-      padding: calc(26/16*1rem);
-    }
-  }
-  .dads-emergency-banner__title {
-    font-weight: bold;
-    font-size: calc(20/16*1rem);
-    line-height: 1.5;
-    color: var(--color-neutral-solid-gray-900, #1a1a1a);
-    margin-bottom: 0.5rem;
-  }
-  .dads-emergency-banner__content {
-    color: var(--color-neutral-solid-gray-800, #333333);
-    line-height: 1.7;
-  }
-
-  /* Step navigation - DADS official spec */
-  .dads-step-navigation {
-    color: var(--color-neutral-solid-gray-800, #1a1a1a);
-    font-weight: normal;
-    font-size: 1rem;
-    font-family: var(--font-family-sans, sans-serif);
-    line-height: 1.7;
-    letter-spacing: 0.02em;
-    overflow-wrap: anywhere;
-    --_number-size: 2.75rem; /* 44px */
-    --_number-margin: 0.25rem; /* 4px */
-    --_outline-width: 0.125rem; /* 2px */
-    --_title-margin: 1.5rem; /* 24px */
-    --_description-margin: 0.5rem; /* 8px */
-    @apply my-10;
-  }
-
-  .dads-step-navigation[data-size="small"] {
-    --_number-size: 2rem; /* 32px */
-    --_number-margin: 0.1875rem; /* 3px */
-    --_outline-width: 0.0625rem; /* 1px */
-    --_title-margin: 1rem; /* 16px */
-    --_description-margin: 0.25rem; /* 4px */
-  }
-
-  .dads-step-navigation > ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-  }
-
-  .dads-step-navigation__step {
-    position: relative;
-    box-sizing: border-box;
-  }
-
-  .dads-step-navigation__step::before,
-  .dads-step-navigation__step::after {
-    position: absolute;
-    z-index: -1;
-    content: "";
-  }
-
-  .dads-step-navigation__step[data-first]::before {
-    display: none;
-  }
-
-  .dads-step-navigation__step[data-last]::after {
-    display: none;
-  }
-
-  .dads-step-navigation__header {
-    display: block;
-    border: 0;
-    background: none;
-    padding: 0;
-    color: inherit;
-    font: inherit;
-    text-wrap: pretty;
-  }
-
-  .dads-step-navigation__number {
-    position: relative;
-    display: grid;
-    place-content: center;
-    margin: var(--_number-margin, 0.25rem);
-    box-sizing: border-box;
-    width: fit-content;
-    height: var(--_number-size, 2.75rem);
-    min-width: var(--_number-size, 2.75rem);
-    border: 2px solid;
-    border-radius: 50%;
-    background-color: var(--color-neutral-white, #fff);
-    padding: 0 0.125rem 0.125rem;
-    font-weight: bold;
-    font-size: 1.25rem;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-  }
-
-  .dads-step-navigation[data-size="small"] .dads-step-navigation__number {
-    margin: 0.1875rem;
-    border-width: 1px;
-    font-size: 1rem;
-  }
-
-  .dads-step-navigation__step[data-state="reached"] .dads-step-navigation__number {
-    background-color: var(--color-neutral-solid-gray-800, #1a1a1a);
-    color: var(--color-neutral-white, #fff);
-    border-color: var(--color-neutral-solid-gray-800, #1a1a1a);
-  }
-
-  .dads-step-navigation__step[data-state="completed"] .dads-step-navigation__number {
-    background-color: var(--color-neutral-solid-gray-50, #f5f5f5);
-  }
-
-  .dads-step-navigation__title {
-    display: block;
-    font-weight: bold;
-    font-size: 1.125rem;
-    line-height: 1.6;
-    letter-spacing: 0.02em;
-  }
-
-  .dads-step-navigation[data-size="small"] .dads-step-navigation__title {
-    font-weight: bold;
-    font-size: 1rem;
-    line-height: 1.7;
-    letter-spacing: 0.02em;
-  }
-
-  .dads-step-navigation__description {
-    margin: var(--_description-margin, 0.5rem) 0 0;
-  }
-
-  /* Vertical orientation (default) */
-  .dads-step-navigation[data-orientation="vertical"] > ul {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .dads-step-navigation[data-orientation="vertical"] .dads-step-navigation__step {
-    flex: 1;
-    padding-bottom: 1.5rem;
-  }
-
-  .dads-step-navigation[data-orientation="vertical"] .dads-step-navigation__step:last-child {
-    padding-bottom: 0;
-  }
-
-  .dads-step-navigation[data-orientation="vertical"] .dads-step-navigation__step::before {
-    left: calc(var(--_number-size, 2.75rem) / 2 + var(--_number-margin, 0.25rem));
-    top: 0;
-    height: 2rem;
-    border-right: 1px solid;
-  }
-
-  .dads-step-navigation[data-orientation="vertical"] .dads-step-navigation__step::after {
-    left: calc(var(--_number-size, 2.75rem) / 2 + var(--_number-margin, 0.25rem));
-    bottom: 0;
-    height: calc(100% - 2rem);
-    border-right: 1px solid;
-  }
-
-  .dads-step-navigation[data-orientation="vertical"] .dads-step-navigation__header {
-    position: relative;
-    display: flex;
-    align-items: baseline;
-    column-gap: 1rem;
-    text-align: left;
-  }
-
-  .dads-step-navigation[data-orientation="vertical"] .dads-step-navigation__number {
-    flex-shrink: 0;
-  }
-
-  .dads-step-navigation[data-orientation="vertical"] .dads-step-navigation__title {
-    padding: calc(var(--_number-size, 2.75rem) / 2 + var(--_number-margin, 0.25rem) - 0.875rem) 0;
-  }
-
-  .dads-step-navigation[data-orientation="vertical"] .dads-step-navigation__description {
-    margin-top: calc(var(--_description-margin, 0.5rem) - (var(--_number-size, 2.75rem) / 2 + var(--_number-margin, 0.25rem) - 0.875rem));
-    padding-left: calc(var(--_number-size, 2.75rem) + var(--_number-margin, 0.25rem) + var(--_number-margin, 0.25rem) + 1rem);
-  }
-
-  /* Horizontal orientation */
-  .dads-step-navigation[data-orientation="horizontal"] {
-    overflow-x: auto;
-    padding-top: 0.375rem;
-    padding-bottom: 0.375rem;
-  }
-
-  .dads-step-navigation[data-orientation="horizontal"] > ul {
-    display: flex;
-  }
-
-  .dads-step-navigation[data-orientation="horizontal"] .dads-step-navigation__step {
-    width: 20rem;
-    min-width: 10rem;
-    padding: 0 1rem;
-  }
-
-  .dads-step-navigation[data-orientation="horizontal"] .dads-step-navigation__step::before {
-    top: calc(var(--_number-size, 2.75rem) / 2 + var(--_number-margin, 0.25rem));
-    right: 50%;
-    width: 50%;
-    border-bottom: 1px solid;
-  }
-
-  .dads-step-navigation[data-orientation="horizontal"] .dads-step-navigation__step::after {
-    top: calc(var(--_number-size, 2.75rem) / 2 + var(--_number-margin, 0.25rem));
-    left: 50%;
-    width: 50%;
-    border-bottom: 1px solid;
-  }
-
-  .dads-step-navigation[data-orientation="horizontal"] .dads-step-navigation__header {
-    width: 100%;
-    text-align: center;
-  }
-
-  .dads-step-navigation[data-orientation="horizontal"] .dads-step-navigation__number {
-    margin-right: auto;
-    margin-left: auto;
-  }
-
-  .dads-step-navigation[data-orientation="horizontal"] .dads-step-navigation__title {
-    margin-top: var(--_title-margin, 1.5rem);
-  }
-
-  .dads-step-navigation[data-orientation="horizontal"] .dads-step-navigation__description {
-    text-align: center;
-  }
-
-  /* Visually hidden (for screen readers) */
-  .dads-u-visually-hidden {
-    @apply sr-only;
-  }
-
-  /* Summary block - emphasized lead text */
+  /* Summary block */
   .dads-summary {
     @apply mb-10 pb-8 border-b border-gray-200;
   }
@@ -842,7 +1941,7 @@
     @apply text-xl md:text-2xl text-gray-600 leading-relaxed font-light;
   }
 
-  /* Contact block - prominent card */
+  /* Contact block */
   .dads-contact {
     @apply mt-16 pt-10 border-t-2 border-gray-200;
   }
@@ -864,7 +1963,7 @@
     @apply text-lg text-gray-700;
   }
 
-  /* Action button - more prominent CTA */
+  /* Action button */
   .dads-action-button {
     @apply my-10;
   }
@@ -881,89 +1980,7 @@
     @apply text-sm bg-white/20 px-3 py-1 rounded-md;
   }
 
-  /* ===================================================================
-   * Accordion - DADS準拠
-   * https://github.com/digital-go-jp/design-system-example-components-react
-   * =================================================================== */
-  .dads-accordion {
-    @apply my-8;
-  }
-  .dads-accordion__item {
-    border-bottom: 1px solid var(--color-neutral-solid-gray-420, #949494);
-    --icon-size: calc(20/16*1rem);
-  }
-  @media (min-width: 1024px) {
-    .dads-accordion__item {
-      --icon-size: calc(32/16*1rem);
-    }
-  }
-  .dads-accordion__header {
-    position: relative;
-    display: block;
-    cursor: default;
-    padding: 0.5rem 0.5rem 0.5rem calc(var(--icon-size) + 0.75rem);
-    list-style: none;
-  }
-  .dads-accordion__header::-webkit-details-marker {
-    display: none;
-  }
-  .dads-accordion__header:hover {
-    background-color: var(--color-neutral-solid-gray-50, #f2f2f2);
-  }
-  .dads-accordion__header:focus-visible {
-    border-radius: var(--border-radius-4, 0.25rem);
-    background-color: var(--color-primitive-yellow-300, #ffd43d);
-    outline: 4px solid black;
-    outline-offset: calc(2/16*1rem);
-  }
-  @media (min-width: 1024px) {
-    .dads-accordion__header {
-      padding: 0.875rem 1rem 0.875rem calc(var(--icon-size) + 1.25rem);
-    }
-  }
-  .dads-accordion__header::before {
-    content: "";
-    position: absolute;
-    top: 0.5rem;
-    left: 0.125rem;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: var(--icon-size);
-    height: var(--icon-size);
-    margin-top: calc((1lh - var(--icon-size)) / 2);
-    border: 1px solid var(--color-primitive-blue-1000, #00118f);
-    border-radius: 50%;
-    background-color: var(--color-neutral-white, #ffffff);
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='none'%3E%3Cpath d='M16.668 5.5L10.0013 12.1667L3.33464 5.5L2.16797 6.66667L10.0013 14.5L17.8346 6.66667L16.668 5.5Z' fill='%2300118f'/%3E%3C/svg%3E");
-    background-repeat: no-repeat;
-    background-position: center calc(50% + 1px);
-    background-size: 1rem;
-    transition: transform 0.2s;
-  }
-  @media (min-width: 1024px) {
-    .dads-accordion__header::before {
-      top: 0.875rem;
-      left: 0.375rem;
-      background-size: auto;
-    }
-  }
-  .dads-accordion__header:hover::before {
-    outline: 2px solid var(--color-primitive-blue-1000, #00118f);
-  }
-  .dads-accordion__item[open] .dads-accordion__header::before {
-    transform: rotate(180deg);
-  }
-  .dads-accordion__content {
-    padding: 1rem 0.5rem 1rem calc(var(--icon-size) + 0.75rem);
-  }
-  @media (min-width: 1024px) {
-    .dads-accordion__content {
-      padding: 1.5rem 1rem 1.5rem calc(var(--icon-size) + 1.25rem);
-    }
-  }
-
-  /* Directory list - cards with better hierarchy */
+  /* Directory list */
   .dads-directory-list {
     @apply space-y-6 my-8;
   }
@@ -986,7 +2003,7 @@
     @apply text-gray-700;
   }
 
-  /* News meta - badge style */
+  /* News meta */
   .dads-news-meta {
     @apply flex flex-wrap items-center gap-4 text-base text-gray-600 mb-8 pb-4 border-b border-gray-100;
   }
@@ -1000,7 +2017,7 @@
     @apply bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium;
   }
 
-  /* Callout (inline in RichText) - more impactful */
+  /* Callout (inline in RichText) */
   .dads-callout {
     @apply p-6 rounded-xl my-8;
   }
@@ -1020,27 +2037,7 @@
     @apply text-lg text-gray-700;
   }
 
-  /* ===================================================================
-   * Divider - DADS準拠
-   * https://github.com/digital-go-jp/design-system-example-components-react
-   * カラー: gray-420 (default), gray-536, black
-   * =================================================================== */
-  .dads-divider {
-    border-top-width: 1px;
-    border-color: var(--color-neutral-solid-gray-420, #949494);
-    @apply my-10;
-  }
-  .dads-divider[data-color="gray-420"] {
-    border-color: var(--color-neutral-solid-gray-420, #949494);
-  }
-  .dads-divider[data-color="gray-536"] {
-    border-color: var(--color-neutral-solid-gray-536, #767676);
-  }
-  .dads-divider[data-color="black"] {
-    border-color: var(--color-neutral-black, #000000);
-  }
-
-  /* Raw content block - better spacing */
+  /* Raw content block */
   .dads-raw-content {
     @apply space-y-6;
   }
@@ -1048,26 +2045,9 @@
     @apply mt-10 pt-8 border-t-2 border-gray-100;
   }
 
-  /* Ordered list - DADS準拠（ネイティブスタイル） */
-  .dads-list--ordered {
-    padding-left: 2rem;
-    list-style: revert;
-  }
-  .dads-list--ordered .dads-list__item {
-    color: var(--color-neutral-solid-gray-800, #333333);
-    line-height: 1.7;
-  }
-
-  /* Resource list with descriptions - enhanced */
-  .dads-resource-list__description {
-    @apply text-base text-gray-600 mt-2;
-  }
-  .dads-resource-list__meta {
-    @apply text-sm text-gray-400 mt-2 font-medium;
-  }
-  .dads-resource-list__external::after {
-    content: " ↗";
-    @apply text-gray-400 ml-1;
+  /* Visually hidden (for screen readers) */
+  .dads-u-visually-hidden {
+    @apply sr-only;
   }
 }
 

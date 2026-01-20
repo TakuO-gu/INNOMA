@@ -1,0 +1,37 @@
+/**
+ * テンプレートシステム エントリーポイント
+ *
+ * 自治体サイト生成のためのテンプレート複製・変数置換機能
+ */
+
+// 型定義
+export * from "./types";
+
+// 複製機能
+export {
+  cloneTemplate,
+  extractTemplateVariables,
+  getMunicipalityPageCount,
+  deleteMunicipality,
+} from "./clone";
+
+// 変数置換機能
+export {
+  replaceVariables,
+  variableStoreToMap,
+  extractVariables,
+  hasUnreplacedVariables,
+  validators,
+  inferValidator,
+  validateVariableValue,
+} from "./replace";
+
+// 自治体データ操作
+export {
+  getMunicipalities,
+  getMunicipality,
+  getMunicipalityMeta,
+  getVariableStore,
+  updateVariableStore,
+  updateMunicipalityMeta,
+} from "./storage";

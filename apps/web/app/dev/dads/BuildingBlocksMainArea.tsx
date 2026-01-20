@@ -1,8 +1,8 @@
 import React from "react";
 
-const img = "https://www.figma.com/api/mcp/asset/defebdf3-1d9f-4a50-bcc7-d2bff09ab04e";
+const _img = "https://www.figma.com/api/mcp/asset/defebdf3-1d9f-4a50-bcc7-d2bff09ab04e";
 const img1 = "https://www.figma.com/api/mcp/asset/48d61337-d6bf-4f4c-b322-c4671772c2c3";
-const img2 = "https://www.figma.com/api/mcp/asset/9a5d604a-bd28-4afe-84e6-3ab559337a6e";
+const _img2 = "https://www.figma.com/api/mcp/asset/9a5d604a-bd28-4afe-84e6-3ab559337a6e";
 const img3 = "https://www.figma.com/api/mcp/asset/fe875d52-f3cf-4c83-83b4-cf0011681292";
 const img4 = "https://www.figma.com/api/mcp/asset/9847c7a7-8d6e-4e5b-95e6-98bc8942a116";
 const img5 = "https://www.figma.com/api/mcp/asset/235f7836-37d6-42c8-b48f-ef4f56c84019";
@@ -21,7 +21,7 @@ export default function BuildingBlocksMainArea({
   contents = true,
   showEndIcon = true,
   state = "Default",
-  link = false,
+  link: _link = false,
   propFunction = false,
 }: Props) {
   const base = "border border-neutral-400 border-solid flex flex-col relative w-[352px]";

@@ -36,7 +36,7 @@ interface RelatedLinkItem {
   external?: boolean;
 }
 
-interface ResourceListItem {
+interface _ResourceListItem {
   title: string;
   href: string;
   description?: string;
