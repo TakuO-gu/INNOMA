@@ -215,7 +215,7 @@ export default async function MunicipalityDetailPage({ params }: PageProps) {
             設定済み: {variableEntries.length}件
           </p>
         </div>
-        <VariableTable variables={variableEntries} />
+        <VariableTable variables={variableEntries} municipalityId={id} />
       </div>
     </div>
   );

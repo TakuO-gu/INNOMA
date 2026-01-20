@@ -14,6 +14,7 @@ import {
   applyDraftToStore,
 } from "@/lib/drafts";
 import { getVariableStore, updateVariableStore } from "@/lib/template";
+import { revalidatePath } from "next/cache";
 
 interface RouteParams {
   params: Promise<{
@@ -70,6 +71,11 @@ export async function PUT(request: NextRequest, { params }: RouteParams) {
         approvedAt: new Date().toISOString(),
         approvedBy: "admin", // TODO: get from session
       });
+
+      // Trigger ISR revalidation for the municipality pages
+      revalidatePath(`/${municipalityId}`);
+      revalidatePath(`/${municipalityId}/[...path]`, "page");
+      revalidatePath(`/admin/municipalities/${municipalityId}`);
 
       return NextResponse.json(updated);
     }
