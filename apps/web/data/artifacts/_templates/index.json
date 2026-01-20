@@ -1,0 +1,101 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "sample-home",
+  "municipality_id": "sample",
+  "path": "/",
+  "title": "{{municipality_name}}",
+  "description": "{{municipality_name}}の行政情報ポータルサイト",
+  "content_type": "service",
+  "service_category": "government",
+  "audience": ["residents"],
+  "topic": [],
+  "source": {
+    "source_url": "template://sample/home",
+    "fetched_at": "{{generated_at}}",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "{{generated_at}}",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "hero-1",
+      "type": "Hero",
+      "props": {
+        "title": "{{municipality_name}}へようこそ",
+        "subtitle": "市民の皆さまの暮らしをサポートする行政情報をお届けします"
+      }
+    },
+    {
+      "id": "topic-grid-1",
+      "type": "TopicGrid",
+      "props": {
+        "items": [
+          {
+            "title": "届出・申請・証明書",
+            "href": "/topics/registration",
+            "description": "出生届、婚姻届、転入届、戸籍謄本、住民票、マイナンバーカード"
+          },
+          {
+            "title": "社会保障・給付金",
+            "href": "/topics/benefits",
+            "description": "年金、医療保険、介護保険、児童手当、生活保護"
+          },
+          {
+            "title": "子育て・教育",
+            "href": "/topics/childcare",
+            "description": "妊娠届、保育所、幼稚園、小中学校、奨学金"
+          },
+          {
+            "title": "健康・医療",
+            "href": "/topics/health",
+            "description": "国民健康保険、予防接種、検診、救急医療"
+          },
+          {
+            "title": "福祉・介護",
+            "href": "/topics/welfare",
+            "description": "高齢者福祉、介護サービス、障害者福祉"
+          },
+          {
+            "title": "環境・ごみ",
+            "href": "/topics/environment",
+            "description": "ごみの分別、粗大ごみ、リサイクル"
+          },
+          {
+            "title": "住まい・引越し",
+            "href": "/topics/housing",
+            "description": "公営住宅、引越し手続き、住所変更"
+          },
+          {
+            "title": "防災・安全",
+            "href": "/topics/disaster",
+            "description": "避難所、ハザードマップ、防犯"
+          },
+          {
+            "title": "税金",
+            "href": "/topics/tax",
+            "description": "住民税、固定資産税、確定申告"
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{city_hall_department}}",
+        "phone": "{{city_hall_phone}}",
+        "email": "{{city_hall_email}}",
+        "hours": "{{city_hall_hours}}",
+        "address": "{{city_hall_address}}"
+      }
+    }
+  ],
+  "search": {
+    "summary": "{{municipality_name}}の行政情報ポータルサイト。届出、子育て、福祉、健康、税金、環境など各種行政サービスの案内。",
+    "keywords": ["{{municipality_name}}", "行政", "届出", "子育て", "福祉", "健康", "税金", "ごみ", "防災"],
+    "plain_text": "{{municipality_name}}へようこそ。市民の皆さまの暮らしをサポートする行政情報をお届けします。届出・申請・証明書、子育て、福祉・介護、健康・医療、税金、環境・ごみ、住まい・施設、防災・災害などの情報を提供しています。"
+  }
+}

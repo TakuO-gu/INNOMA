@@ -1,51 +1,34 @@
 {
   "schema_version": "2.0.0",
-  "page_id": "{{municipality_id}}-kokuho",
-  "municipality_id": "{{municipality_id}}",
+  "page_id": "sample-services-health-kokuho",
+  "municipality_id": "sample",
   "path": "/services/health/kokuho",
   "title": "国民健康保険",
-  "description": "{{municipality_name}}の国民健康保険に関する情報。加入・脱退手続き、保険料、給付内容など。",
-  "content_type": "service",
+  "description": "国民健康保険の加入・脱退・届出に関する情報",
+  "content_type": "guide",
   "service_category": "health",
   "audience": ["residents"],
   "topic": [],
-  "_template_meta": {
-    "template_version": "1.0.0",
-    "created_at": "2026-01-15T00:00:00.000Z",
-    "variables": [
-      "{{municipality_id}}",
-      "{{municipality_name}}",
-      "{{kokuho_phone}}",
-      "{{kokuho_email}}",
-      "{{kokuho_hours}}",
-      "{{kokuho_address}}",
-      "{{kokuho_department}}"
-    ],
-    "municipality_specific_sections": [
-      "保険料率（所得割・均等割・平等割の具体的な金額）",
-      "問い合わせ先",
-      "独自の減免制度",
-      "オンライン申請の可否"
-    ]
-  },
   "source": {
-    "source_url": "https://www.{{municipality_id}}.lg.jp/services/health/kokuho",
-    "fetched_at": "{{generated_at}}"
+    "source_url": "template://sample/services/health/kokuho",
+    "fetched_at": "{{generated_at}}",
+    "content_hash": "template"
   },
   "pipeline": {
-    "run_id": "base-template",
+    "run_id": "template-001",
     "generated_at": "{{generated_at}}",
     "schema_version": "2.0.0"
   },
   "blocks": [
     {
-      "id": "breadcrumbs-1",
+      "id": "breadcrumb-1",
       "type": "Breadcrumbs",
       "props": {
         "items": [
           { "label": "ホーム", "href": "/" },
-          { "label": "健康・医療", "href": "/{{municipality_id}}/services/health" },
-          { "label": "国民健康保険", "href": "/{{municipality_id}}/services/health/kokuho" }
+          { "label": "くらしの情報", "href": "/topics" },
+          { "label": "社会保障・給付金", "href": "/topics/benefits" },
+          { "label": "国民健康保険", "href": "/services/health/kokuho" }
         ]
       }
     },
@@ -60,7 +43,23 @@
       "id": "summary-1",
       "type": "Summary",
       "props": {
-        "text": "国民健康保険（国保）は、自営業者、フリーランス、退職された方など、会社の健康保険に加入していない方のための医療保険制度です。"
+        "text": "国民健康保険は、会社の健康保険に加入していない方が加入する医療保険制度です。病気やけがをしたときに、医療費の一部を負担するだけで医療を受けることができます。"
+      }
+    },
+    {
+      "id": "notification-1",
+      "type": "NotificationBanner",
+      "props": {
+        "severity": "info",
+        "title": "オンライン申請が可能になりました",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              { "text": "令和7年3月24日から、マイナンバーカードとマイナポータルを使って、国民健康保険の加入届出がオンラインで申請できるようになりました。" }
+            ]
+          }
+        ]
       }
     },
     {
@@ -68,121 +67,223 @@
       "type": "RichText",
       "props": {
         "content": [
+          { "type": "heading", "level": 2, "text": "国民健康保険とは" },
           {
-            "type": "heading",
-            "level": 2,
-            "text": "国民健康保険とは"
+            "type": "paragraph",
+            "runs": [
+              { "text": "国民健康保険は、自営業の方、農業・漁業に従事している方、退職して職場の健康保険を脱退した方など、他の医療保険に加入していない方を対象とした医療保険制度です。" }
+            ]
           },
           {
             "type": "paragraph",
             "runs": [
+              { "text": "国民皆保険制度のもと、すべての国民が何らかの医療保険に加入することが義務付けられています。会社の健康保険（社会保険）や後期高齢者医療制度、生活保護を受けている方以外は、国民健康保険に加入する必要があります。" }
+            ]
+          },
+          { "type": "heading", "level": 2, "text": "加入する方" },
+          {
+            "type": "paragraph",
+            "runs": [
+              { "text": "以下に該当する方は、国民健康保険に加入してください。" }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [{ "type": "paragraph", "runs": [{ "text": "お店などを経営している自営業の方" }] }],
+              [{ "type": "paragraph", "runs": [{ "text": "農業や漁業などを営んでいる方" }] }],
+              [{ "type": "paragraph", "runs": [{ "text": "退職して職場の健康保険をやめた方" }] }],
+              [{ "type": "paragraph", "runs": [{ "text": "パートやアルバイトなどで職場の健康保険に加入していない方" }] }],
+              [{ "type": "paragraph", "runs": [{ "text": "3か月を超えて日本に滞在する外国籍の方（在留資格による）" }] }]
+            ]
+          },
+          { "type": "heading", "level": 2, "text": "届出が必要なとき" },
+          {
+            "type": "paragraph",
+            "runs": [
+              { "text": "以下の場合は、事由が発生した日から" },
+              { "text": "14日以内", "bold": true },
+              { "text": "に届け出てください。届出が遅れた場合でも、資格取得日（退職日の翌日等）にさかのぼって保険料が発生します。" }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "table-join",
+      "type": "Table",
+      "props": {
+        "rows": [
+          { "label": "他の市区町村から転入したとき", "value": "転入届と同時に届け出てください" },
+          { "label": "職場の健康保険をやめたとき", "value": "資格喪失証明書が届いたら届け出てください" },
+          { "label": "職場の健康保険の被扶養者から外れたとき", "value": "資格喪失証明書が届いたら届け出てください" },
+          { "label": "子どもが生まれたとき", "value": "出生届と同時に届け出てください" },
+          { "label": "生活保護を受けなくなったとき", "value": "保護廃止決定通知書を持参して届け出てください" }
+        ]
+      }
+    },
+    {
+      "id": "table-leave",
+      "type": "Table",
+      "props": {
+        "rows": [
+          { "label": "他の市区町村へ転出するとき", "value": "転出届と同時に届け出てください" },
+          { "label": "職場の健康保険に加入したとき", "value": "新しい保険証が届いたら届け出てください" },
+          { "label": "職場の健康保険の被扶養者になったとき", "value": "新しい保険証が届いたら届け出てください" },
+          { "label": "死亡したとき", "value": "葬祭費の申請と同時に届け出てください" },
+          { "label": "生活保護を受けるようになったとき", "value": "保護開始決定通知書を持参して届け出てください" },
+          { "label": "75歳になったとき", "value": "届出不要（自動的に後期高齢者医療制度に移行）" }
+        ]
+      }
+    },
+    {
+      "id": "richtext-documents",
+      "type": "RichText",
+      "props": {
+        "content": [
+          { "type": "heading", "level": 2, "text": "届出に必要なもの" },
+          { "type": "heading", "level": 3, "text": "加入するとき" },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [{ "type": "paragraph", "runs": [{ "text": "健康保険資格喪失証明書（職場の健康保険を脱退した場合）または退職証明書、雇用保険被保険者離職票など退職日がわかる書類" }] }],
+              [{ "type": "paragraph", "runs": [{ "text": "届出人の本人確認書類（マイナンバーカード、運転免許証など顔写真付きのもの。顔写真なしの場合は2点以上）" }] }],
+              [{ "type": "paragraph", "runs": [{ "text": "世帯主および加入する方のマイナンバーがわかるもの（マイナンバーカード、通知カード等）" }] }]
+            ]
+          },
+          { "type": "heading", "level": 3, "text": "やめるとき" },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [{ "type": "paragraph", "runs": [{ "text": "加入した健康保険の資格確認書・資格情報のお知らせ、または健康保険資格取得証明書" }] }],
+              [{ "type": "paragraph", "runs": [{ "text": "国民健康保険証や資格確認書（異動がある方全員分）" }] }],
+              [{ "type": "paragraph", "runs": [{ "text": "届出人の本人確認書類" }] }],
+              [{ "type": "paragraph", "runs": [{ "text": "世帯主および届出する方のマイナンバーがわかるもの" }] }]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "richtext-online",
+      "type": "RichText",
+      "props": {
+        "content": [
+          { "type": "heading", "level": 2, "text": "届出方法" },
+          { "type": "heading", "level": 3, "text": "窓口での届出" },
+          {
+            "type": "paragraph",
+            "runs": [
+              { "text": "市区町村の国民健康保険担当窓口で届け出てください。届出は原則として世帯主が行いますが、同一世帯の方であれば届出が可能です。別世帯の方が届け出る場合は委任状が必要です。" }
+            ]
+          },
+          { "type": "heading", "level": 3, "text": "オンライン申請（令和7年3月24日開始）" },
+          {
+            "type": "paragraph",
+            "runs": [
+              { "text": "マイナンバーカードとマイナポータルを使って、以下の届出がオンラインで申請できます。" }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [{ "type": "paragraph", "runs": [{ "text": "国民健康保険の加入届出" }] }],
+              [{ "type": "paragraph", "runs": [{ "text": "国民健康保険の脱退届出" }] }],
+              [{ "type": "paragraph", "runs": [{ "text": "被保険者証等の再交付申請" }] }]
+            ]
+          },
+          {
+            "type": "callout",
+            "severity": "info",
+            "title": "マイナポータルからの申請方法",
+            "content": [
               {
-                "text": "日本では、すべての国民が何らかの健康保険に加入する「国民皆保険制度」が採用されています。国民健康保険は、会社員や公務員が加入する「被用者保険」に加入していない方が対象となる公的医療保険です。"
+                "type": "paragraph",
+                "runs": [
+                  { "text": "マイナポータル（" },
+                  { "text": "https://myna.go.jp", "link": { "href": "https://myna.go.jp", "external": true } },
+                  { "text": "）にログインし、「手続の検索・電子申請」から「国民健康保険」で検索して手続きを進めてください。" }
+                ]
               }
             ]
-          },
-          {
-            "type": "heading",
-            "level": 3,
-            "text": "国保に加入する方"
-          },
-          {
-            "type": "list",
-            "ordered": false,
-            "items": [
-              [{ "type": "paragraph", "runs": [{ "text": "自営業者・個人事業主" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "農業・漁業従事者" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "フリーランス・フリーター" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "退職して会社の健康保険を脱退した方" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "パート・アルバイトで会社の健康保険に加入していない方" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "上記の方に扶養されている家族" }] }]
-            ]
-          },
-          {
-            "type": "heading",
-            "level": 3,
-            "text": "国保に加入しない方"
-          },
-          {
-            "type": "list",
-            "ordered": false,
-            "items": [
-              [{ "type": "paragraph", "runs": [{ "text": "会社の健康保険（協会けんぽ・組合健保）に加入している方とその被扶養者" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "公務員共済組合に加入している方とその被扶養者" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "後期高齢者医療制度の対象者（75歳以上の方）" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "生活保護を受けている方" }] }]
-            ]
           }
         ]
       }
     },
     {
-      "id": "resource-list-procedures",
-      "type": "ResourceList",
+      "id": "richtext-insurance-fee",
+      "type": "RichText",
       "props": {
-        "heading": "届出・手続き",
-        "items": [
-          {
-            "title": "国保への加入手続き",
-            "href": "/{{municipality_id}}/services/health/kokuho/join",
-            "description": "退職・転入など、国保に加入するときの届出"
-          },
-          {
-            "title": "国保からの脱退手続き",
-            "href": "/{{municipality_id}}/services/health/kokuho/leave",
-            "description": "就職・転出など、国保をやめるときの届出"
-          },
-          {
-            "title": "その他の届出（氏名変更・住所変更など）",
-            "href": "/{{municipality_id}}/services/health/kokuho/change",
-            "description": "世帯や被保険者に関する届出"
-          },
-          {
-            "title": "保険証の再発行",
-            "href": "/{{municipality_id}}/services/health/kokuho/reissue",
-            "description": "保険証をなくした・汚損した場合"
-          }
-        ]
-      }
-    },
-    {
-      "id": "notification-deadline",
-      "type": "NotificationBanner",
-      "props": {
-        "severity": "warning",
-        "title": "届出は14日以内に",
         "content": [
+          { "type": "heading", "level": 2, "text": "保険料について" },
           {
             "type": "paragraph",
             "runs": [
-              { "text": "国保に加入するとき、やめるときは、", "bold": false },
-              { "text": "14日以内", "bold": true },
-              { "text": "に届出が必要です。届出が遅れると、保険料をさかのぼって支払う必要があり、届出までの間の医療費が全額自己負担になる場合があります。" }
+              { "text": "国民健康保険料は、前年の所得に応じた「所得割」と、加入者1人あたりの「均等割」（および世帯あたりの「平等割」）を合計して計算されます。" }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              { "text": "保険料は「医療分」「後期高齢者支援分」「介護分（40〜64歳の方のみ）」の3つで構成されます。" }
             ]
           }
         ]
       }
     },
     {
-      "id": "resource-list-info",
-      "type": "ResourceList",
+      "id": "table-limits",
+      "type": "Table",
       "props": {
-        "heading": "保険料・給付について",
-        "items": [
+        "rows": [
+          { "label": "医療分", "value": "67万円" },
+          { "label": "後期高齢者支援分", "value": "26万円" },
+          { "label": "介護分", "value": "17万円" },
+          { "label": "合計", "value": "110万円" }
+        ]
+      }
+    },
+    {
+      "id": "richtext-reduction",
+      "type": "RichText",
+      "props": {
+        "content": [
+          { "type": "heading", "level": 3, "text": "保険料の軽減・減免" },
           {
-            "title": "保険料について",
-            "href": "/{{municipality_id}}/services/health/kokuho/premium",
-            "description": "保険料の計算方法、納付方法、減免制度"
+            "type": "paragraph",
+            "runs": [
+              { "text": "所得が一定以下の世帯は、均等割・平等割が軽減されます（7割・5割・2割軽減）。また、倒産・解雇などで離職した方は、申請により保険料が軽減される場合があります。" }
+            ]
           },
           {
-            "title": "給付内容（医療費の給付）",
-            "href": "/{{municipality_id}}/services/health/kokuho/benefits",
-            "description": "療養の給付、高額療養費、出産育児一時金など"
-          },
+            "type": "paragraph",
+            "runs": [
+              { "text": "子ども（未就学児）の均等割は、全国一律で5割軽減されます。" }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "richtext-benefits",
+      "type": "RichText",
+      "props": {
+        "content": [
+          { "type": "heading", "level": 2, "text": "国民健康保険で受けられる給付" },
           {
-            "title": "保険料の減額・減免制度",
-            "href": "/{{municipality_id}}/services/health/kokuho/reduction",
-            "description": "所得に応じた軽減、特別な事情による減免"
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [{ "type": "paragraph", "runs": [{ "text": "療養の給付：医療機関で保険証を提示すると、医療費の一部負担（原則3割、義務教育就学前2割、70〜74歳は2割または3割）で診療を受けられます" }] }],
+              [{ "type": "paragraph", "runs": [{ "text": "高額療養費：1か月の医療費が高額になった場合、自己負担限度額を超えた分が支給されます" }] }],
+              [{ "type": "paragraph", "runs": [{ "text": "出産育児一時金：出産したとき、1児につき50万円（産科医療補償制度未加入の場合は48.8万円）が支給されます" }] }],
+              [{ "type": "paragraph", "runs": [{ "text": "葬祭費：被保険者が亡くなったとき、葬祭を行った方に支給されます（金額は自治体により異なる）" }] }],
+              [{ "type": "paragraph", "runs": [{ "text": "傷病手当金：条例で定めがある場合に支給されます（新型コロナ特例など）" }] }]
+            ]
           }
         ]
       }
@@ -192,10 +293,11 @@
       "type": "RelatedLinks",
       "props": {
         "items": [
-          { "title": "後期高齢者医療制度", "href": "/{{municipality_id}}/services/health/kouki-kourei" },
-          { "title": "介護保険", "href": "/{{municipality_id}}/services/welfare/kaigo-hoken" },
-          { "title": "国民年金", "href": "/{{municipality_id}}/services/welfare/kokumin-nenkin" },
-          { "title": "医療費助成制度", "href": "/{{municipality_id}}/services/health/iryouhi-josei" }
+          { "title": "国民健康保険料の計算方法", "href": "/services/health/kokuho/fee" },
+          { "title": "高額療養費の申請", "href": "/services/health/kokuho/high-cost" },
+          { "title": "出産育児一時金の申請", "href": "/services/health/kokuho/childbirth" },
+          { "title": "葬祭費の申請", "href": "/services/health/kokuho/funeral" },
+          { "title": "国民年金", "href": "/services/benefits/pension" }
         ]
       }
     },
@@ -206,24 +308,14 @@
         "department": "{{kokuho_department}}",
         "phone": "{{kokuho_phone}}",
         "email": "{{kokuho_email}}",
-        "hours": "{{kokuho_hours}}",
-        "address": "{{kokuho_address}}"
+        "address": "{{kokuho_address}}",
+        "hours": "{{kokuho_hours}}"
       }
     }
   ],
   "search": {
-    "summary": "国民健康保険（国保）の加入・脱退手続き、保険料、給付内容について。自営業者・フリーランス・退職された方向け。",
-    "keywords": [
-      "国民健康保険",
-      "国保",
-      "健康保険",
-      "医療保険",
-      "加入",
-      "脱退",
-      "保険料",
-      "保険証",
-      "高額療養費"
-    ],
-    "plain_text": "国民健康保険。自営業者、フリーランス、退職された方など会社の健康保険に加入していない方のための医療保険制度。加入・脱退手続き、保険料、給付内容、減免制度。届出は14日以内に。"
+    "summary": "国民健康保険の加入・脱退に関する手続き案内。届出期間は14日以内。必要書類、届出方法、保険料、給付内容について。",
+    "keywords": ["国民健康保険", "国保", "加入", "脱退", "届出", "保険料", "資格喪失証明書", "高額療養費", "出産育児一時金", "マイナポータル", "オンライン申請"],
+    "plain_text": "国民健康保険。会社の健康保険に加入していない方が加入する医療保険制度。届出期間は事由発生から14日以内。加入には健康保険資格喪失証明書、本人確認書類、マイナンバーが必要。保険料は所得割と均等割で計算。給付には療養の給付、高額療養費、出産育児一時金、葬祭費がある。"
   }
 }

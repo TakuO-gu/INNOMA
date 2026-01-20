@@ -1,0 +1,181 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "sample-services-driving-weight-tax",
+  "municipality_id": "sample",
+  "path": "/services/driving/weight-tax",
+  "title": "自動車重量税",
+  "description": "車検時に課税される自動車重量税について",
+  "content_type": "guide",
+  "service_category": "government",
+  "audience": [
+    "residents"
+  ],
+  "topic": [],
+  "source": {
+    "source_url": "template://sample/services/driving/weight-tax",
+    "fetched_at": "{{generated_at}}",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "{{generated_at}}",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "くらしの情報",
+            "href": "/topics"
+          },
+          {
+            "label": "運転・車両",
+            "href": "/topics/driving"
+          },
+          {
+            "label": "自動車重量税",
+            "href": "/services/driving/weight-tax"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "自動車重量税"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "自動車重量税は、新規登録時および車検時に納付する国税です。車両重量に応じて税額が決まります。"
+      }
+    },
+    {
+      "id": "richtext-1",
+      "type": "RichText",
+      "props": {
+        "content": [
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "納付時期"
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "新規登録時（新車購入時）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "継続検査時（車検時）"
+                    }
+                  ]
+                }
+              ]
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "税額（2年分・乗用車）"
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "〜0.5t：8,200円"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "〜1.0t：16,400円"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "〜1.5t：24,600円"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "〜2.0t：32,800円"
+                    }
+                  ]
+                }
+              ]
+            ]
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "※エコカー減税対象車は軽減または免除されます。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{tax_office}}",
+        "phone": "{{tax_office_phone}}",
+        "address": "{{tax_office_address}}"
+      }
+    }
+  ],
+  "search": {
+    "summary": "自動車重量税の案内。車検時に納付、車両重量に応じた税額。",
+    "keywords": [
+      "自動車重量税",
+      "重量税",
+      "車検",
+      "エコカー減税"
+    ],
+    "plain_text": "自動車重量税。新規登録時と車検時に納付。車両重量に応じて税額が決まる。エコカー減税対象車は軽減。"
+  }
+}

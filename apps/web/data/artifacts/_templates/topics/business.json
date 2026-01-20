@@ -1,0 +1,123 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "sample-topics-business",
+  "municipality_id": "sample",
+  "path": "/topics/business",
+  "title": "事業・経営",
+  "description": "起業支援、法人設立、許認可、補助金、融資などの事業・経営に関する情報",
+  "content_type": "directory",
+  "service_category": "business",
+  "audience": ["businesses"],
+  "topic": [],
+  "source": {
+    "source_url": "template://sample/topics/business",
+    "fetched_at": "{{generated_at}}",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "{{generated_at}}",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          { "label": "ホーム", "href": "/" },
+          { "label": "くらしの情報", "href": "/topics" },
+          { "label": "事業・経営", "href": "/topics/business" }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "事業・経営"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "起業・創業から事業運営までの支援情報をまとめています"
+      }
+    },
+    {
+      "id": "topic-list-1",
+      "type": "TopicList",
+      "props": {
+        "items": [
+          {
+            "title": "起業・創業支援",
+            "href": "/services/business/startup",
+            "description": "創業相談、起業セミナー、インキュベーション施設"
+          },
+          {
+            "title": "法人設立（株式会社・合同会社）",
+            "href": "/services/business/incorporation",
+            "description": "会社設立の手続き、定款認証、登記申請"
+          },
+          {
+            "title": "個人事業主・開業届",
+            "href": "/services/business/sole-proprietor",
+            "description": "開業届、青色申告承認申請、屋号の届出"
+          },
+          {
+            "title": "許認可・届出",
+            "href": "/services/business/permits",
+            "description": "飲食店営業、古物商、建設業、宅建業などの許認可"
+          },
+          {
+            "title": "補助金・助成金",
+            "href": "/services/business/subsidies",
+            "description": "{{municipality_name}}の中小企業向け補助金、国・県の助成制度"
+          },
+          {
+            "title": "融資・資金調達",
+            "href": "/services/business/financing",
+            "description": "制度融資、信用保証協会、日本政策金融公庫"
+          },
+          {
+            "title": "法人税・事業税",
+            "href": "/services/business/corporate-tax",
+            "description": "法人市民税、法人事業税、消費税の申告"
+          },
+          {
+            "title": "社会保険・労働保険",
+            "href": "/services/business/business-insurance",
+            "description": "社会保険加入、労働保険成立届、雇用保険"
+          },
+          {
+            "title": "事業承継・M&A",
+            "href": "/services/business/succession",
+            "description": "事業承継税制、後継者育成、M&A支援"
+          },
+          {
+            "title": "廃業・倒産",
+            "href": "/services/business/closure",
+            "description": "廃業届、解散・清算手続き、破産申立て"
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{business_department}}",
+        "phone": "{{business_phone}}",
+        "email": "{{business_email}}",
+        "hours": "{{city_hall_hours}}",
+        "address": "{{city_hall_address}}"
+      }
+    }
+  ],
+  "search": {
+    "summary": "事業・経営に関する情報。起業支援、法人設立、個人事業主、法人税、許認可、補助金、助成金、融資、知的財産、事業承継、廃業の案内。",
+    "keywords": ["事業", "経営", "起業", "創業", "法人設立", "株式会社", "合同会社", "個人事業主", "開業届", "法人税", "事業税", "許認可", "補助金", "助成金", "融資", "特許", "商標", "事業承継", "廃業"],
+    "plain_text": "事業・経営。起業・創業から事業運営までの支援情報。起業・創業支援、法人設立、個人事業主・開業届、法人税・事業税、許認可・届出、補助金・助成金、融資・資金調達、知的財産、事業承継・M&A、廃業・倒産・破産。"
+  }
+}

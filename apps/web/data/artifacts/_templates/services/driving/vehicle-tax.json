@@ -1,0 +1,182 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "sample-services-driving-vehicle-tax",
+  "municipality_id": "sample",
+  "path": "/services/driving/vehicle-tax",
+  "title": "自動車税・軽自動車税",
+  "description": "自動車税種別割、軽自動車税種別割、納税証明書",
+  "content_type": "guide",
+  "service_category": "government",
+  "audience": [
+    "residents"
+  ],
+  "topic": [],
+  "source": {
+    "source_url": "template://sample/services/driving/vehicle-tax",
+    "fetched_at": "{{generated_at}}",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "{{generated_at}}",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "くらしの情報",
+            "href": "/topics"
+          },
+          {
+            "label": "運転・車両",
+            "href": "/topics/driving"
+          },
+          {
+            "label": "自動車税・軽自動車税",
+            "href": "/services/driving/vehicle-tax"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "自動車税・軽自動車税"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "4月1日時点の所有者に課税されます。自動車税は都道府県税、軽自動車税は市町村税です。"
+      }
+    },
+    {
+      "id": "richtext-1",
+      "type": "RichText",
+      "props": {
+        "content": [
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "納期限"
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "毎年5月31日（休日の場合は翌営業日）"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "自動車税（普通車等）"
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "課税主体：都道府県"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "税額：排気量により年額25,000円〜111,000円"
+                    }
+                  ]
+                }
+              ]
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "軽自動車税（軽自動車等）"
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "課税主体：市町村"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "税額：軽乗用車は年額10,800円"
+                    }
+                  ]
+                }
+              ]
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "エコカー減税・グリーン化特例"
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "電気自動車、燃費基準達成車等は税額が軽減されます。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{tax_department}}",
+        "phone": "{{tax_phone}}",
+        "email": "{{tax_email}}",
+        "hours": "{{city_hall_hours}}",
+        "address": "{{city_hall_address}}"
+      }
+    }
+  ],
+  "search": {
+    "summary": "自動車税・軽自動車税の案内。納期限、税額、エコカー減税。",
+    "keywords": [
+      "自動車税",
+      "軽自動車税",
+      "車税",
+      "納税",
+      "エコカー減税"
+    ],
+    "plain_text": "自動車税・軽自動車税。4月1日時点の所有者に課税。納期限は5月31日。"
+  }
+}

@@ -1,0 +1,206 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "sample-services-nationality-passport",
+  "municipality_id": "sample",
+  "path": "/services/nationality/passport",
+  "title": "パスポート（旅券）",
+  "description": "パスポートの申請・更新・届出、{{passport_office_name}}",
+  "content_type": "guide",
+  "service_category": "government",
+  "audience": [
+    "residents"
+  ],
+  "topic": [],
+  "source": {
+    "source_url": "template://sample/services/nationality/passport",
+    "fetched_at": "{{generated_at}}",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "{{generated_at}}",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "くらしの情報",
+            "href": "/topics"
+          },
+          {
+            "label": "戸籍・国籍・在留",
+            "href": "/topics/nationality"
+          },
+          {
+            "label": "パスポート",
+            "href": "/services/nationality/passport"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "パスポート（旅券）"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "日本国パスポートの申請・更新手続きをご案内します。"
+      }
+    },
+    {
+      "id": "richtext-1",
+      "type": "RichText",
+      "props": {
+        "content": [
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "パスポートの種類"
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "10年有効（20歳以上）：16,000円"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "5年有効（12歳以上）：11,000円"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "5年有効（12歳未満）：6,000円"
+                    }
+                  ]
+                }
+              ]
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "必要書類"
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "一般旅券発給申請書"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "戸籍謄本（6か月以内）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "写真（6か月以内、縦45mm×横35mm）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "本人確認書類"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "有効中のパスポート（更新の場合）"
+                    }
+                  ]
+                }
+              ]
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "受け取り"
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "申請から約1週間で受け取り可能。必ず本人が受け取りに行く必要があります。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{passport_office_name}}",
+        "phone": "{{passport_office_phone}}",
+        "address": "{{passport_office_address}}"
+      }
+    }
+  ],
+  "search": {
+    "summary": "パスポート申請の案内。10年・5年有効、必要書類、手数料。",
+    "keywords": [
+      "パスポート",
+      "旅券",
+      "パスポート申請",
+      "パスポート更新"
+    ],
+    "plain_text": "パスポート。10年有効16,000円、5年有効11,000円（12歳以上）。申請から約1週間で受け取り。"
+  }
+}

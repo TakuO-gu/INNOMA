@@ -7,6 +7,7 @@ import {
 } from "@/lib/template";
 import { DeleteButton } from "./DeleteButton";
 import { VariableTable } from "./VariableTable";
+import { FetchButton } from "./FetchButton";
 
 interface PageProps {
   params: Promise<{ id: string }>;
@@ -191,22 +192,18 @@ export default async function MunicipalityDetailPage({ params }: PageProps) {
       {/* アクション */}
       <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200 mb-8">
         <h2 className="text-lg font-semibold text-gray-900 mb-4">アクション</h2>
-        <div className="flex gap-4">
-          <button
-            className="px-4 py-2 text-sm font-medium text-white bg-blue-600 border border-transparent rounded-md hover:bg-blue-700 disabled:opacity-50"
-            disabled
+        <div className="flex gap-4 items-start">
+          <FetchButton id={id} />
+          <Link
+            href={`/admin/drafts`}
+            className="px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md hover:bg-gray-50"
           >
-            情報を再取得
-          </button>
-          <button
-            className="px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md hover:bg-gray-50 disabled:opacity-50"
-            disabled
-          >
-            手動編集
-          </button>
+            下書きを確認
+          </Link>
         </div>
         <p className="text-xs text-gray-500 mt-2">
-          LLM情報取得機能は今後実装予定です
+          「情報を再取得」ボタンでLLMが自治体公式サイトから情報を取得します。
+          取得結果は下書きとして保存され、確認後に反映できます。
         </p>
       </div>
 

@@ -1,0 +1,241 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "sample-services-health-kenshin",
+  "municipality_id": "sample",
+  "path": "/services/health/kenshin",
+  "title": "健康診査・がん検診",
+  "description": "特定健康診査、後期高齢者健康診査、各種がん検診について",
+  "content_type": "guide",
+  "service_category": "health",
+  "audience": ["residents"],
+  "topic": [],
+  "source": {
+    "source_url": "template://sample/services/health/kenshin",
+    "fetched_at": "{{generated_at}}",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "{{generated_at}}",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          { "label": "ホーム", "href": "/" },
+          { "label": "くらしの情報", "href": "/topics" },
+          { "label": "健康・医療", "href": "/topics/health" },
+          { "label": "健康診査・がん検診", "href": "/services/health/kenshin" }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "健康診査・がん検診"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "生活習慣病の予防・早期発見のため、各種健康診査・がん検診を実施しています。対象の方には受診券をお送りします。"
+      }
+    },
+    {
+      "id": "richtext-tokutei",
+      "type": "RichText",
+      "props": {
+        "content": [
+          { "type": "heading", "level": 2, "text": "特定健康診査" },
+          {
+            "type": "paragraph",
+            "runs": [
+              { "text": "メタボリックシンドローム（内臓脂肪症候群）に着目した健康診査です。" }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "table-tokutei",
+      "type": "Table",
+      "props": {
+        "rows": [
+          { "label": "対象者", "value": "40〜74歳の国民健康保険加入者" },
+          { "label": "自己負担", "value": "{{tokutei_kenshin_fee}}" },
+          { "label": "検査項目", "value": "身体計測、血圧測定、血液検査、尿検査など" },
+          { "label": "実施期間", "value": "{{kenshin_period}}" }
+        ]
+      }
+    },
+    {
+      "id": "richtext-kouki-kenshin",
+      "type": "RichText",
+      "props": {
+        "content": [
+          { "type": "heading", "level": 2, "text": "後期高齢者健康診査" },
+          {
+            "type": "paragraph",
+            "runs": [
+              { "text": "後期高齢者医療制度に加入している方を対象とした健康診査です。" }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "table-kouki-kenshin",
+      "type": "Table",
+      "props": {
+        "rows": [
+          { "label": "対象者", "value": "75歳以上の方（および65〜74歳で後期高齢者医療に加入の方）" },
+          { "label": "自己負担", "value": "{{kouki_kenshin_fee}}" },
+          { "label": "検査項目", "value": "身体計測、血圧測定、血液検査、尿検査など" }
+        ]
+      }
+    },
+    {
+      "id": "richtext-gan",
+      "type": "RichText",
+      "props": {
+        "content": [
+          { "type": "heading", "level": 2, "text": "がん検診" },
+          {
+            "type": "paragraph",
+            "runs": [
+              { "text": "がんの早期発見・早期治療のため、以下のがん検診を実施しています。" }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "table-gan",
+      "type": "Table",
+      "props": {
+        "rows": [
+          { "label": "胃がん検診", "value": "50歳以上（2年に1回）。胃部X線検査または胃内視鏡検査" },
+          { "label": "肺がん検診", "value": "40歳以上（年1回）。胸部X線検査" },
+          { "label": "大腸がん検診", "value": "40歳以上（年1回）。便潜血検査" },
+          { "label": "乳がん検診", "value": "40歳以上の女性（2年に1回）。マンモグラフィ検査" },
+          { "label": "子宮頸がん検診", "value": "20歳以上の女性（2年に1回）。細胞診" },
+          { "label": "前立腺がん検診", "value": "50歳以上の男性（年1回）。PSA検査" }
+        ]
+      }
+    },
+    {
+      "id": "richtext-fee",
+      "type": "RichText",
+      "props": {
+        "content": [
+          { "type": "heading", "level": 2, "text": "検診費用" }
+        ]
+      }
+    },
+    {
+      "id": "table-fee",
+      "type": "Table",
+      "props": {
+        "rows": [
+          { "label": "胃がん検診（X線）", "value": "{{gan_i_xray_fee}}" },
+          { "label": "胃がん検診（内視鏡）", "value": "{{gan_i_naishikyo_fee}}" },
+          { "label": "肺がん検診", "value": "{{gan_hai_fee}}" },
+          { "label": "大腸がん検診", "value": "{{gan_daicho_fee}}" },
+          { "label": "乳がん検診", "value": "{{gan_nyu_fee}}" },
+          { "label": "子宮頸がん検診", "value": "{{gan_shikyukei_fee}}" }
+        ]
+      }
+    },
+    {
+      "id": "richtext-menjo",
+      "type": "RichText",
+      "props": {
+        "content": [
+          {
+            "type": "callout",
+            "severity": "info",
+            "title": "費用が無料になる方",
+            "content": [
+              {
+                "type": "paragraph",
+                "runs": [
+                  { "text": "以下の方は検診費用が無料になります。" }
+                ]
+              },
+              {
+                "type": "list",
+                "ordered": false,
+                "items": [
+                  [{ "type": "paragraph", "runs": [{ "text": "70歳以上の方" }] }],
+                  [{ "type": "paragraph", "runs": [{ "text": "生活保護受給者" }] }],
+                  [{ "type": "paragraph", "runs": [{ "text": "市民税非課税世帯の方" }] }]
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "step-nav-1",
+      "type": "StepNavigation",
+      "props": {
+        "currentStep": 0,
+        "steps": [
+          {
+            "title": "受診券の確認",
+            "body": "対象の方には受診券をお送りします。届いていない方はお問い合わせください。",
+            "documents": ["受診券"]
+          },
+          {
+            "title": "医療機関の予約",
+            "body": "指定医療機関に直接予約してください。",
+            "documents": []
+          },
+          {
+            "title": "受診",
+            "body": "受診券と保険証を持参して受診してください。",
+            "documents": ["受診券", "保険証"]
+          },
+          {
+            "title": "結果通知",
+            "body": "約2〜3週間後に結果をお知らせします。",
+            "documents": []
+          }
+        ]
+      }
+    },
+    {
+      "id": "related-links-1",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          { "title": "予防接種", "href": "/services/health/yobosesshu" },
+          { "title": "国民健康保険", "href": "/services/health/kokuho" },
+          { "title": "後期高齢者医療", "href": "/services/health/kouki" }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{kenshin_department}}",
+        "phone": "{{kenshin_phone}}",
+        "email": "{{kenshin_email}}",
+        "hours": "{{city_hall_hours}}",
+        "address": "{{city_hall_address}}"
+      }
+    }
+  ],
+  "search": {
+    "summary": "健康診査・がん検診の案内。特定健診、後期高齢者健診、各種がん検診の対象者、費用、受診方法について。",
+    "keywords": ["健康診査", "特定健診", "がん検診", "胃がん", "肺がん", "大腸がん", "乳がん", "子宮頸がん", "健診"],
+    "plain_text": "健康診査・がん検診。特定健診は40〜74歳の国保加入者対象。がん検診は胃がん、肺がん、大腸がん、乳がん、子宮頸がんなど。受診券を持参して指定医療機関で受診。"
+  }
+}

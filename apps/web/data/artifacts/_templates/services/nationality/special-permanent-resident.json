@@ -1,0 +1,240 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "sample-services-nationality-special-permanent-resident",
+  "municipality_id": "sample",
+  "path": "/services/nationality/special-permanent-resident",
+  "title": "特別永住者",
+  "description": "特別永住者証明書の申請・更新、紛失時の手続き",
+  "content_type": "guide",
+  "service_category": "government",
+  "audience": [
+    "foreigners"
+  ],
+  "topic": [],
+  "source": {
+    "source_url": "template://sample/services/nationality/special-permanent-resident",
+    "fetched_at": "{{generated_at}}",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "{{generated_at}}",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "くらしの情報",
+            "href": "/topics"
+          },
+          {
+            "label": "戸籍・国籍・在留",
+            "href": "/topics/nationality"
+          },
+          {
+            "label": "特別永住者",
+            "href": "/services/nationality/special-permanent-resident"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "特別永住者"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "特別永住者の方の各種届出・手続きについてご案内します。"
+      }
+    },
+    {
+      "id": "richtext-1",
+      "type": "RichText",
+      "props": {
+        "content": [
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "特別永住者とは"
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "日本国との平和条約に基づき日本の国籍を離脱した者等の出入国管理に関する特例法に基づく在留資格です。主に在日韓国・朝鮮人、在日台湾人の方が対象となります。"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "特別永住者証明書の更新"
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "有効期間満了の2か月前から更新申請ができます。"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "16歳未満の方：16歳の誕生日まで有効"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "16歳以上の方：更新後7年間有効"
+                    }
+                  ]
+                }
+              ]
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "届出が必要な場合"
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "住所変更（転入届・転居届と同時に届出）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "氏名・国籍・生年月日等の変更"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "証明書の紛失・盗難・汚損"
+                    }
+                  ]
+                }
+              ]
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "必要書類"
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "特別永住者証明書"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "パスポート（お持ちの方）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "写真1枚（縦4cm×横3cm、3か月以内撮影）"
+                    }
+                  ]
+                }
+              ]
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "手数料"
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "無料"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{resident_department}}",
+        "phone": "{{resident_phone}}",
+        "email": "{{resident_email}}",
+        "hours": "{{city_hall_hours}}",
+        "address": "{{city_hall_address}}"
+      }
+    }
+  ],
+  "search": {
+    "summary": "特別永住者の案内。特別永住者証明書の更新、届出手続き。",
+    "keywords": [
+      "特別永住者",
+      "特別永住者証明書",
+      "在日",
+      "更新"
+    ],
+    "plain_text": "特別永住者。特別永住者証明書の更新は有効期間満了2か月前から。住所変更・氏名変更などの届出も市区町村で手続き。"
+  }
+}
