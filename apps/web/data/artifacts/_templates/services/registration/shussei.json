@@ -7,7 +7,10 @@
   "description": "子どもが生まれたときの届出（出生届）の手続き案内",
   "content_type": "step_by_step",
   "service_category": "government",
-  "audience": ["residents", "children_families"],
+  "audience": [
+    "residents",
+    "children_families"
+  ],
   "topic": [],
   "source": {
     "source_url": "template://sample/services/registration/shussei",
@@ -25,10 +28,22 @@
       "type": "Breadcrumbs",
       "props": {
         "items": [
-          { "label": "ホーム", "href": "/" },
-          { "label": "くらしの情報", "href": "/topics" },
-          { "label": "届出・申請・証明書", "href": "/topics/registration" },
-          { "label": "出生届", "href": "/services/registration/shussei" }
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "くらしの情報",
+            "href": "/topics"
+          },
+          {
+            "label": "届出・申請・証明書",
+            "href": "/topics/registration"
+          },
+          {
+            "label": "出生届",
+            "href": "/services/registration/shussei"
+          }
         ]
       }
     },
@@ -51,35 +66,80 @@
       "type": "RichText",
       "props": {
         "content": [
-          { "type": "heading", "level": 2, "text": "届出期間" },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "届出期間"
+          },
           {
             "type": "paragraph",
             "runs": [
-              { "text": "生まれた日を含めて" },
-              { "text": "14日以内", "bold": true },
-              { "text": "（国外で生まれた場合は3か月以内）" }
+              {
+                "text": "生まれた日を含めて"
+              },
+              {
+                "text": "14日以内",
+                "bold": true
+              },
+              {
+                "text": "（国外で生まれた場合は3か月以内）"
+              }
             ]
           },
           {
             "type": "callout",
             "severity": "info",
+            "title": "お知らせ",
             "content": [
               {
                 "type": "paragraph",
                 "runs": [
-                  { "text": "届出期限が土日祝日の場合は、翌開庁日までに届け出てください。" }
+                  {
+                    "text": "届出期限が土日祝日の場合は、翌開庁日までに届け出てください。"
+                  }
                 ]
               }
             ]
           },
-          { "type": "heading", "level": 2, "text": "届出場所" },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "届出場所"
+          },
           {
             "type": "list",
             "ordered": false,
             "items": [
-              [{ "type": "paragraph", "runs": [{ "text": "子どもの出生地の市区町村" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "届出人の所在地（住所地）の市区町村" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "届出人の本籍地の市区町村" }] }]
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "子どもの出生地の市区町村"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "届出人の所在地（住所地）の市区町村"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "届出人の本籍地の市区町村"
+                    }
+                  ]
+                }
+              ]
             ]
           }
         ]
@@ -94,7 +154,9 @@
           {
             "title": "出生届を入手",
             "body": "出生届の用紙は、病院・産院で出生証明書と一体になったものをもらえます。市区町村の窓口でも入手できます。",
-            "documents": ["出生届（出生証明書付き）"]
+            "documents": [
+              "出生届（出生証明書付き）"
+            ]
           },
           {
             "title": "出生届を記入",
@@ -104,7 +166,11 @@
           {
             "title": "窓口で届出",
             "body": "出生届と必要書類を持って、市区町村の窓口で届け出ます。届出後、戸籍に記載されます。",
-            "documents": ["出生届", "母子健康手帳", "届出人の本人確認書類"]
+            "documents": [
+              "出生届",
+              "母子健康手帳",
+              "届出人の本人確認書類"
+            ]
           },
           {
             "title": "関連手続き",
@@ -119,31 +185,117 @@
       "type": "RichText",
       "props": {
         "content": [
-          { "type": "heading", "level": 2, "text": "届出に必要なもの" },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "届出に必要なもの"
+          },
           {
             "type": "list",
             "ordered": false,
             "items": [
-              [{ "type": "paragraph", "runs": [{ "text": "出生届", "bold": true }, { "text": "（出生証明書が記入されたもの）" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "母子健康手帳", "bold": true }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "届出人の本人確認書類", "bold": true }, { "text": "（マイナンバーカード、運転免許証など）" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "届出人の印鑑", "bold": true }, { "text": "（任意）" }] }]
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "出生届",
+                      "bold": true
+                    },
+                    {
+                      "text": "（出生証明書が記入されたもの）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "母子健康手帳",
+                      "bold": true
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "届出人の本人確認書類",
+                      "bold": true
+                    },
+                    {
+                      "text": "（マイナンバーカード、運転免許証など）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "届出人の印鑑",
+                      "bold": true
+                    },
+                    {
+                      "text": "（任意）"
+                    }
+                  ]
+                }
+              ]
             ]
           },
-          { "type": "heading", "level": 2, "text": "届出人" },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "届出人"
+          },
           {
             "type": "paragraph",
             "runs": [
-              { "text": "原則として、以下の順序で届出を行います。" }
+              {
+                "text": "原則として、以下の順序で届出を行います。"
+              }
             ]
           },
           {
             "type": "list",
             "ordered": true,
             "items": [
-              [{ "type": "paragraph", "runs": [{ "text": "父または母" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "同居者" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "出産に立ち会った医師、助産師" }] }]
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "父または母"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "同居者"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "出産に立ち会った医師、助産師"
+                    }
+                  ]
+                }
+              ]
             ]
           }
         ]
@@ -154,11 +306,26 @@
       "type": "Table",
       "props": {
         "rows": [
-          { "label": "届出場所", "value": "{{registration_window}}" },
-          { "label": "受付時間", "value": "{{city_hall_hours}}" },
-          { "label": "届出期限", "value": "生まれた日を含めて14日以内" },
-          { "label": "手数料", "value": "無料" },
-          { "label": "時間外届出", "value": "{{after_hours_shussei}}" }
+          {
+            "label": "届出場所",
+            "value": "{{registration_window}}"
+          },
+          {
+            "label": "受付時間",
+            "value": "{{city_hall_hours}}"
+          },
+          {
+            "label": "届出期限",
+            "value": "生まれた日を含めて14日以内"
+          },
+          {
+            "label": "手数料",
+            "value": "無料"
+          },
+          {
+            "label": "時間外届出",
+            "value": "{{after_hours_shussei}}"
+          }
         ]
       }
     },
@@ -167,15 +334,63 @@
       "type": "RichText",
       "props": {
         "content": [
-          { "type": "heading", "level": 2, "text": "出生届と一緒に行う手続き" },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "出生届と一緒に行う手続き"
+          },
           {
             "type": "list",
             "ordered": false,
             "items": [
-              [{ "type": "paragraph", "runs": [{ "text": "児童手当の認定請求", "bold": true }, { "text": "（出生日の翌日から15日以内に届出）" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "子ども医療費助成の申請" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "国民健康保険への加入", "bold": true }, { "text": "（国保加入世帯の場合）" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "出産育児一時金の申請" }] }]
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "児童手当の認定請求",
+                      "bold": true
+                    },
+                    {
+                      "text": "（出生日の翌日から15日以内に届出）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "子ども医療費助成の申請"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "国民健康保険への加入",
+                      "bold": true
+                    },
+                    {
+                      "text": "（国保加入世帯の場合）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "出産育児一時金の申請"
+                    }
+                  ]
+                }
+              ]
             ]
           }
         ]
@@ -186,10 +401,22 @@
       "type": "RelatedLinks",
       "props": {
         "items": [
-          { "title": "児童手当", "href": "/services/childcare/allowance" },
-          { "title": "子ども医療費助成", "href": "/services/childcare/medical" },
-          { "title": "国民健康保険", "href": "/services/health/kokuho" },
-          { "title": "母子健康手帳", "href": "/services/childcare/pregnancy" }
+          {
+            "title": "児童手当",
+            "href": "/services/childcare/allowance"
+          },
+          {
+            "title": "子ども医療費助成",
+            "href": "/services/childcare/medical"
+          },
+          {
+            "title": "国民健康保険",
+            "href": "/services/health/kokuho"
+          },
+          {
+            "title": "母子健康手帳",
+            "href": "/services/childcare/pregnancy"
+          }
         ]
       }
     },
@@ -207,7 +434,15 @@
   ],
   "search": {
     "summary": "出生届の手続き案内。子どもが生まれたときの届出方法、必要書類、届出期間など。",
-    "keywords": ["出生届", "赤ちゃん", "子ども", "出産", "戸籍", "届出", "命名"],
+    "keywords": [
+      "出生届",
+      "赤ちゃん",
+      "子ども",
+      "出産",
+      "戸籍",
+      "届出",
+      "命名"
+    ],
     "plain_text": "出生届。子どもが生まれたときの届出。届出期間は生まれた日を含めて14日以内。必要書類は出生届、母子健康手帳、本人確認書類。届出人は父または母。"
   }
 }

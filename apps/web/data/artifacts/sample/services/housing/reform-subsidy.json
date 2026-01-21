@@ -127,7 +127,7 @@
             "type": "paragraph",
             "runs": [
               {
-                "text": "工事費用の工事費の10%（上限20万円円）"
+                "text": "工事工事費の10%（上限20万円）"
               }
             ]
           },
@@ -139,6 +139,7 @@
           {
             "type": "callout",
             "severity": "warning",
+            "title": "注意",
             "content": [
               {
                 "type": "paragraph",
@@ -152,8 +153,7 @@
                   }
                 ]
               }
-            ],
-            "title": "注意"
+            ]
           }
         ]
       }
@@ -173,7 +173,7 @@
           },
           {
             "label": "上限額",
-            "value": "20万円円"
+            "value": "20万円"
           }
         ]
       }

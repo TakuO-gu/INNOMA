@@ -31,3 +31,6 @@ export {
   QuickLinksBlock,
   NewsListBlock,
 } from "./HomePageBlocks";
+
+// Sources Blocks
+export { SourcesBlock } from "./SourcesBlocks";

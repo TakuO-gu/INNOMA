@@ -66,6 +66,14 @@ export const InnomaArtifactSchema = z.object({
     links: z.array(LinkSchema).optional(),
   }).optional(),
   blocks: z.array(FlexibleBlockSchema),
+  // 情報ソース（Wikipedia風の参照表示用）
+  sources: z.array(z.object({
+    id: z.number(),
+    url: z.string(),
+    title: z.string().optional(),
+    accessedAt: z.string().optional(),
+    variables: z.array(z.string()).optional(),
+  })).optional(),
   search: z.object({
     summary: z.string().optional(),
     keywords: z.array(z.string()).optional(),

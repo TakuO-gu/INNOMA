@@ -126,22 +126,37 @@ const TextRunSchema = z.object({
     label: z.string().optional(),
     external: z.boolean().optional(),
   }).optional(),
+  sourceRef: z.number().optional(), // 参照番号（例: 1 → テキスト末尾に[1]を表示）
 });
 
 type TextRun = z.infer<typeof TextRunSchema>;
 
 export type RichTextNodeType =
-  | { type: "heading"; level: 2 | 3 | 4; text: string }
+  | { type: "heading"; level: 2 | 3 | 4; text: string; sourceRef?: number }
   | { type: "paragraph"; runs: TextRun[] }
   | { type: "list"; ordered: boolean; items: RichTextNodeType[][] }
   | { type: "callout"; severity: "info" | "warning" | "danger"; title?: string; content: RichTextNodeType[] }
   | { type: "divider" };
+
+/* =============================================================================
+ * 6.5) Source（情報ソース）- Wikipedia風の参照表示用
+ * ============================================================================= */
+
+export const SourceSchema = z.object({
+  id: z.number(),                    // 参照番号 [1], [2], ...
+  url: z.string(),                   // ソースURL
+  title: z.string().optional(),      // ページタイトル
+  accessedAt: z.string().optional(), // アクセス日時 (ISO 8601)
+  variables: z.array(z.string()).optional(), // このソースから取得した変数名
+});
+export type Source = z.infer<typeof SourceSchema>;
 
 export const RichTextNode: z.ZodType<RichTextNodeType> = z.discriminatedUnion("type", [
   z.object({
     type: z.literal("heading"),
     level: z.union([z.literal(2), z.literal(3), z.literal(4)]),
     text: z.string(),
+    sourceRef: z.number().optional(),
   }),
   z.object({
     type: z.literal("paragraph"),
@@ -386,6 +401,16 @@ const DirectoryListBlock = BaseBlock.extend({
   }),
 });
 
+// ===== 情報ソースブロック =====
+
+const SourcesBlock = BaseBlock.extend({
+  type: z.literal("Sources"),
+  props: z.object({
+    heading: z.string().optional(), // デフォルト: "出典"
+    // sources配列はArtifactレベルで管理
+  }),
+});
+
 export const Block = z.discriminatedUnion("type", [
   BreadcrumbsBlock,
   TitleBlock,
@@ -408,6 +433,8 @@ export const Block = z.discriminatedUnion("type", [
   ContactCardBlock,
   NewsMetaBlock,
   DirectoryListBlock,
+  // 情報ソースブロック
+  SourcesBlock,
 ]);
 export type Block = z.infer<typeof Block>;
 
@@ -519,6 +546,9 @@ const ArtifactV2 = z.object({
 
   // 構造化ブロック（Structurer経由、または変換器で生成）
   blocks: z.array(Block),
+
+  // 情報ソース（Wikipedia風の参照表示用）
+  sources: z.array(SourceSchema).optional(),
 
   // 検索用（自動生成可能）
   search: SearchFields,

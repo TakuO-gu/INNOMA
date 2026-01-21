@@ -7,7 +7,9 @@
   "description": "{{municipality_name}}独自の住宅リフォーム補助制度",
   "content_type": "guide",
   "service_category": "housing",
-  "audience": ["residents"],
+  "audience": [
+    "residents"
+  ],
   "topic": [],
   "source": {
     "source_url": "template://sample/services/housing/reform-subsidy",
@@ -25,10 +27,22 @@
       "type": "Breadcrumbs",
       "props": {
         "items": [
-          { "label": "ホーム", "href": "/" },
-          { "label": "くらしの情報", "href": "/topics" },
-          { "label": "住まい・引越し", "href": "/topics/housing" },
-          { "label": "住宅リフォーム補助", "href": "/services/housing/reform-subsidy" }
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "くらしの情報",
+            "href": "/topics"
+          },
+          {
+            "label": "住まい・引越し",
+            "href": "/topics/housing"
+          },
+          {
+            "label": "住宅リフォーム補助",
+            "href": "/services/housing/reform-subsidy"
+          }
         ]
       }
     },
@@ -51,33 +65,92 @@
       "type": "RichText",
       "props": {
         "content": [
-          { "type": "heading", "level": 2, "text": "対象となる工事" },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "対象となる工事"
+          },
           {
             "type": "list",
             "ordered": false,
             "items": [
-              [{ "type": "paragraph", "runs": [{ "text": "バリアフリー改修", "bold": true }, { "text": "（手すり設置、段差解消、浴室改修など）" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "省エネ改修", "bold": true }, { "text": "（断熱工事、高効率給湯器設置など）" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "一般リフォーム", "bold": true }, { "text": "（{{reform_general_eligible}}）" }] }]
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "バリアフリー改修",
+                      "bold": true
+                    },
+                    {
+                      "text": "（手すり設置、段差解消、浴室改修など）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "省エネ改修",
+                      "bold": true
+                    },
+                    {
+                      "text": "（断熱工事、高効率給湯器設置など）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "一般リフォーム",
+                      "bold": true
+                    },
+                    {
+                      "text": "（{{reform_general_eligible}}）"
+                    }
+                  ]
+                }
+              ]
             ]
           },
-          { "type": "heading", "level": 2, "text": "補助金額" },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "補助金額"
+          },
           {
             "type": "paragraph",
             "runs": [
-              { "text": "工事費用の{{reform_subsidy_rate}}（上限{{reform_subsidy_max}}円）" }
+              {
+                "text": "工事費用の{{reform_subsidy_rate}}（上限{{reform_subsidy_max}}円）"
+              }
             ]
           },
-          { "type": "heading", "level": 2, "text": "申請の注意点" },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "申請の注意点"
+          },
           {
             "type": "callout",
             "severity": "warning",
+            "title": "注意",
             "content": [
               {
                 "type": "paragraph",
                 "runs": [
-                  { "text": "工事着手前に申請が必要です。", "bold": true },
-                  { "text": "工事後の申請は受け付けられません。" }
+                  {
+                    "text": "工事着手前に申請が必要です。",
+                    "bold": true
+                  },
+                  {
+                    "text": "工事後の申請は受け付けられません。"
+                  }
                 ]
               }
             ]
@@ -90,9 +163,18 @@
       "type": "Table",
       "props": {
         "rows": [
-          { "label": "申請期間", "value": "{{reform_application_period}}" },
-          { "label": "補助率", "value": "{{reform_subsidy_rate}}" },
-          { "label": "上限額", "value": "{{reform_subsidy_max}}円" }
+          {
+            "label": "申請期間",
+            "value": "{{reform_application_period}}"
+          },
+          {
+            "label": "補助率",
+            "value": "{{reform_subsidy_rate}}"
+          },
+          {
+            "label": "上限額",
+            "value": "{{reform_subsidy_max}}円"
+          }
         ]
       }
     },
@@ -110,7 +192,14 @@
   ],
   "search": {
     "summary": "住宅リフォーム補助制度の案内。バリアフリー改修、省エネ改修、一般リフォームへの補助。",
-    "keywords": ["リフォーム", "住宅改修", "補助金", "バリアフリー", "省エネ", "断熱"],
+    "keywords": [
+      "リフォーム",
+      "住宅改修",
+      "補助金",
+      "バリアフリー",
+      "省エネ",
+      "断熱"
+    ],
     "plain_text": "住宅リフォーム補助。バリアフリー改修、省エネ改修、一般リフォームへの補助制度。工事着手前に申請が必要。"
   }
 }

@@ -7,7 +7,9 @@
   "description": "土地・建物の登記手続き（法務局案内）",
   "content_type": "guide",
   "service_category": "housing",
-  "audience": ["residents"],
+  "audience": [
+    "residents"
+  ],
   "topic": [],
   "source": {
     "source_url": "template://sample/services/housing/property-registration",
@@ -25,10 +27,22 @@
       "type": "Breadcrumbs",
       "props": {
         "items": [
-          { "label": "ホーム", "href": "/" },
-          { "label": "くらしの情報", "href": "/topics" },
-          { "label": "住まい・引越し", "href": "/topics/housing" },
-          { "label": "不動産登記", "href": "/services/housing/property-registration" }
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "くらしの情報",
+            "href": "/topics"
+          },
+          {
+            "label": "住まい・引越し",
+            "href": "/topics/housing"
+          },
+          {
+            "label": "不動産登記",
+            "href": "/services/housing/property-registration"
+          }
         ]
       }
     },
@@ -51,28 +65,107 @@
       "type": "RichText",
       "props": {
         "content": [
-          { "type": "heading", "level": 2, "text": "主な登記の種類" },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "主な登記の種類"
+          },
           {
             "type": "list",
             "ordered": false,
             "items": [
-              [{ "type": "paragraph", "runs": [{ "text": "所有権保存登記", "bold": true }, { "text": "：新築建物の最初の登記" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "所有権移転登記", "bold": true }, { "text": "：売買・贈与・相続による名義変更" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "抵当権設定登記", "bold": true }, { "text": "：住宅ローン借入時" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "抵当権抹消登記", "bold": true }, { "text": "：住宅ローン完済時" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "住所変更登記", "bold": true }, { "text": "：所有者の住所が変わったとき" }] }]
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "所有権保存登記",
+                      "bold": true
+                    },
+                    {
+                      "text": "：新築建物の最初の登記"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "所有権移転登記",
+                      "bold": true
+                    },
+                    {
+                      "text": "：売買・贈与・相続による名義変更"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "抵当権設定登記",
+                      "bold": true
+                    },
+                    {
+                      "text": "：住宅ローン借入時"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "抵当権抹消登記",
+                      "bold": true
+                    },
+                    {
+                      "text": "：住宅ローン完済時"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "住所変更登記",
+                      "bold": true
+                    },
+                    {
+                      "text": "：所有者の住所が変わったとき"
+                    }
+                  ]
+                }
+              ]
             ]
           },
-          { "type": "heading", "level": 2, "text": "相続登記の義務化" },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "相続登記の義務化"
+          },
           {
             "type": "callout",
             "severity": "warning",
+            "title": "注意",
             "content": [
               {
                 "type": "paragraph",
                 "runs": [
-                  { "text": "2024年4月1日から相続登記が義務化されました。", "bold": true },
-                  { "text": "相続により不動産を取得した場合、3年以内に登記が必要です。" }
+                  {
+                    "text": "2024年4月1日から相続登記が義務化されました。",
+                    "bold": true
+                  },
+                  {
+                    "text": "相続により不動産を取得した場合、3年以内に登記が必要です。"
+                  }
                 ]
               }
             ]
@@ -85,9 +178,18 @@
       "type": "Table",
       "props": {
         "rows": [
-          { "label": "申請先", "value": "{{legal_affairs_bureau}}" },
-          { "label": "所在地", "value": "{{legal_affairs_bureau_address}}" },
-          { "label": "電話番号", "value": "{{legal_affairs_bureau_phone}}" }
+          {
+            "label": "申請先",
+            "value": "{{legal_affairs_bureau}}"
+          },
+          {
+            "label": "所在地",
+            "value": "{{legal_affairs_bureau_address}}"
+          },
+          {
+            "label": "電話番号",
+            "value": "{{legal_affairs_bureau_phone}}"
+          }
         ]
       }
     },
@@ -103,7 +205,14 @@
   ],
   "search": {
     "summary": "不動産登記の案内。所有権移転、抵当権設定・抹消、相続登記の義務化について。",
-    "keywords": ["不動産登記", "所有権移転", "抵当権", "相続登記", "法務局", "登記"],
+    "keywords": [
+      "不動産登記",
+      "所有権移転",
+      "抵当権",
+      "相続登記",
+      "法務局",
+      "登記"
+    ],
     "plain_text": "不動産登記。土地・建物の登記手続きは法務局で行う。2024年4月から相続登記が義務化、3年以内に登記が必要。"
   }
 }

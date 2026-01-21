@@ -3,6 +3,7 @@
 import React from "react";
 import { MunicipalityProvider } from "./MunicipalityContext";
 import type { BaseBlock } from "./types";
+import type { Source } from "@/lib/artifact/innoma-artifact-schema.v2";
 import {
   // Navigation
   BreadcrumbsBlock,
@@ -30,26 +31,29 @@ import {
   TopicListBlock,
   QuickLinksBlock,
   NewsListBlock,
+  // Sources
+  SourcesBlock,
 } from "./components";
 
 interface BlockRendererProps {
   blocks: BaseBlock[];
   municipalityId: string;
+  sources?: Source[];
 }
 
-export function BlockRenderer({ blocks, municipalityId }: BlockRendererProps) {
+export function BlockRenderer({ blocks, municipalityId, sources }: BlockRendererProps) {
   return (
     <MunicipalityProvider municipalityId={municipalityId}>
       <div className="dads-page">
         {blocks.map((block) => (
-          <BlockSwitch key={block.id} block={block} />
+          <BlockSwitch key={block.id} block={block} sources={sources} />
         ))}
       </div>
     </MunicipalityProvider>
   );
 }
 
-function BlockSwitch({ block }: { block: BaseBlock }) {
+function BlockSwitch({ block, sources }: { block: BaseBlock; sources?: Source[] }) {
   const { type, props } = block;
 
   switch (type) {
@@ -96,6 +100,8 @@ function BlockSwitch({ block }: { block: BaseBlock }) {
       return <NewsListBlock props={props} />;
     case "EmergencyBanner":
       return <EmergencyBannerBlock props={props} />;
+    case "Sources":
+      return <SourcesBlock props={props} sources={sources} />;
     default:
       return (
         <div className="block-unknown" data-type={type}>
