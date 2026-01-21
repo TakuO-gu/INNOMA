@@ -515,6 +515,27 @@
       }
     },
     {
+      "id": "richtext-limits-note",
+      "type": "RichText",
+      "props": {
+        "content": [
+          {
+            "type": "callout",
+            "severity": "info",
+            "title": "保険料上限額について",
+            "content": [
+              {
+                "type": "paragraph",
+                "runs": [
+                  { "text": "保険料の賦課限度額は毎年度見直される場合があります。最新の情報は担当窓口にお問い合わせください。" }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
       "id": "richtext-reduction",
       "type": "RichText",
       "props": {

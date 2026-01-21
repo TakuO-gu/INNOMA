@@ -179,12 +179,16 @@ LLM情報取得システムが自動で埋める対象となる。
 | `sodaigomi_fee_large` | 粗大ごみ（大） |
 | `sodaigomi_fee_xlarge` | 粗大ごみ（特大） |
 
-#### 2.4.4 保険料率
-| 変数名 | 説明 |
-|--------|------|
-| `kouki_shotoku_wari_rate` | 後期高齢者 所得割率 |
-| `kouki_kinto_wari` | 後期高齢者 均等割額 |
-| `kouki_sousaihi` | 後期高齢者 葬祭費 |
+#### 2.4.4 保険料率・上限額
+| 変数名 | 説明 | 例 |
+|--------|------|-----|
+| `kokuho_limit_medical` | 国保 医療分上限額 | 67万円 |
+| `kokuho_limit_support` | 国保 後期支援分上限額 | 26万円 |
+| `kokuho_limit_care` | 国保 介護分上限額 | 17万円 |
+| `kokuho_limit_total` | 国保 合計上限額 | 110万円 |
+| `kouki_shotoku_wari_rate` | 後期高齢者 所得割率 | |
+| `kouki_kinto_wari` | 後期高齢者 均等割額 | |
+| `kouki_sousaihi` | 後期高齢者 葬祭費 | |
 
 #### 2.4.5 補助金・助成
 | 変数名 | 説明 |

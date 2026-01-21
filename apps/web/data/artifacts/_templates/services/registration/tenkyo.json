@@ -99,9 +99,24 @@
             "items": [
               [{ "type": "paragraph", "runs": [{ "text": "届出人の本人確認書類", "bold": true }, { "text": "（マイナンバーカード、運転免許証など）" }] }],
               [{ "type": "paragraph", "runs": [{ "text": "マイナンバーカード", "bold": true }, { "text": "（転居する方全員分。住所変更が必要）" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "国民健康保険証", "bold": true }, { "text": "（加入している場合。住所変更が必要）" }] }],
+              [{ "type": "paragraph", "runs": [{ "text": "国民健康保険証・資格確認書", "bold": true }, { "text": "（加入している場合。住所変更が必要）" }] }],
+              [{ "type": "paragraph", "runs": [{ "text": "後期高齢者医療資格確認書", "bold": true }, { "text": "（該当する場合）" }] }],
               [{ "type": "paragraph", "runs": [{ "text": "介護保険被保険者証", "bold": true }, { "text": "（該当する場合）" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "在留カード", "bold": true }, { "text": "（外国籍の方）" }] }]
+              [{ "type": "paragraph", "runs": [{ "text": "在留カード", "bold": true }, { "text": "（外国籍の方）" }] }],
+              [{ "type": "paragraph", "runs": [{ "text": "印鑑", "bold": true }, { "text": "（自治体により必要な場合があります）" }] }]
+            ]
+          },
+          {
+            "type": "callout",
+            "severity": "info",
+            "title": "必要書類について",
+            "content": [
+              {
+                "type": "paragraph",
+                "runs": [
+                  { "text": "必要書類は自治体により異なる場合があります。事前にお住まいの市区町村にご確認ください。" }
+                ]
+              }
             ]
           }
         ]
