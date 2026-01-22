@@ -1,0 +1,44 @@
+{
+  "id": "takaoka-health",
+  "municipalityId": "takaoka",
+  "service": "health",
+  "status": "draft",
+  "createdAt": "2026-01-21T02:57:32.847Z",
+  "updatedAt": "2026-01-21T02:57:32.847Z",
+  "variables": {
+    "health_department": {
+      "value": "健康増進課",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kenkozoshinka/3/3/5/index.html",
+      "confidence": 0.7999999999999999,
+      "extractedAt": "2026-01-21T02:57:17.078Z",
+      "validated": true
+    },
+    "kenshin_period": {
+      "value": "令和6年6月3日（月曜日）から令和6年7月31日（水曜日）まで（土曜日、日曜日、祝日を除く）",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/hokennenkinka/2/3/1/4984.html",
+      "confidence": 0.7999999999999999,
+      "extractedAt": "2026-01-21T02:57:17.078Z",
+      "validated": true
+    },
+    "health_phone": {
+      "value": "0766-20-1296",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/hokennenkinka/2/3/2/3013.html",
+      "confidence": 0.95,
+      "extractedAt": "2026-01-21T02:57:19.332Z",
+      "validated": true
+    },
+    "tokutei_kenshin_fee": {
+      "value": "無料",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/hokennenkinka/2/3/2/3013.html",
+      "confidence": 0.95,
+      "extractedAt": "2026-01-21T02:57:19.332Z",
+      "validated": true
+    }
+  },
+  "missingVariables": [],
+  "errors": [],
+  "metadata": {
+    "totalVariables": 4,
+    "filledVariables": 4
+  }
+}

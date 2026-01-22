@@ -1,0 +1,86 @@
+{
+  "id": "takaoka-business",
+  "municipalityId": "takaoka",
+  "service": "business",
+  "status": "draft",
+  "createdAt": "2026-01-21T03:30:25.418Z",
+  "updatedAt": "2026-01-21T03:30:25.418Z",
+  "variables": {
+    "local_business_subsidy_description": {
+      "value": "高岡市内において、ものづくりを中心とした創業、第二創業及び事業承継による新たな取り組み又は後継者人材育成の取り組みに対し、費用の一部を補助するものです。",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/sanki/sangyo/shinsangyo/sogyo_shokei.html",
+      "confidence": 0.7999999999999999,
+      "extractedAt": "2026-01-21T03:30:07.849Z",
+      "validated": true
+    },
+    "business_department": {
+      "value": "産業企画課",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/sangyokikakuka/2/1/1/2671.html",
+      "confidence": 0.95,
+      "extractedAt": "2026-01-21T03:30:09.546Z",
+      "validated": true
+    },
+    "business_email": {
+      "value": "メールフォームによるお問い合わせ",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/sangyokikakuka/2/1/1/2671.html",
+      "confidence": 0.8500000000000001,
+      "extractedAt": "2026-01-21T03:30:09.546Z",
+      "validated": true
+    },
+    "business_phone": {
+      "value": "0766-20-1395",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/sangyokikakuka/2/1/1/2671.html",
+      "confidence": 0.95,
+      "extractedAt": "2026-01-21T03:30:09.546Z",
+      "validated": true
+    },
+    "legal_affairs_bureau": {
+      "value": "チェンジ推進課",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kikakuka/2/7/4906.html",
+      "confidence": 0.9,
+      "extractedAt": "2026-01-21T03:30:20.914Z",
+      "validated": true
+    },
+    "legal_affairs_bureau_address": {
+      "value": "〒933-8601 富山県高岡市広小路7-50",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kikakuka/2/7/4906.html",
+      "confidence": 0.9,
+      "extractedAt": "2026-01-21T03:30:20.914Z",
+      "validated": true
+    },
+    "legal_affairs_bureau_phone": {
+      "value": "0766-20-1226",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kikakuka/2/7/4906.html",
+      "confidence": 0.9,
+      "extractedAt": "2026-01-21T03:30:20.914Z",
+      "validated": true
+    },
+    "pension_office": {
+      "value": "保険年金課",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/hokennenkinka/2/3/3374.html",
+      "confidence": 0.9,
+      "extractedAt": "2026-01-21T03:30:23.179Z",
+      "validated": true
+    },
+    "pension_office_address": {
+      "value": "〒933-8601 富山県高岡市広小路7-50",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/hokennenkinka/2/3/3374.html",
+      "confidence": 0.9,
+      "extractedAt": "2026-01-21T03:30:23.179Z",
+      "validated": true
+    },
+    "pension_office_phone": {
+      "value": "0766-20-1360",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/hokennenkinka/2/3/3374.html",
+      "confidence": 0.9,
+      "extractedAt": "2026-01-21T03:30:23.179Z",
+      "validated": true
+    }
+  },
+  "missingVariables": [],
+  "errors": [],
+  "metadata": {
+    "totalVariables": 10,
+    "filledVariables": 10
+  }
+}

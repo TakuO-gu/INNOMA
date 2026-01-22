@@ -1,0 +1,58 @@
+{
+  "id": "takaoka-welfare",
+  "municipalityId": "takaoka",
+  "service": "welfare",
+  "status": "draft",
+  "createdAt": "2026-01-21T02:57:13.037Z",
+  "updatedAt": "2026-01-21T02:57:13.038Z",
+  "variables": {
+    "welfare_department": {
+      "value": "長寿福祉課",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/koreikaigoka/2/1/2/7/4610.html",
+      "confidence": 0.7999999999999999,
+      "extractedAt": "2026-01-21T02:56:58.865Z",
+      "validated": true
+    },
+    "welfare_phone": {
+      "value": "0766-20-1372",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/koreikaigoka/2/1/2/7/4610.html",
+      "confidence": 0.7999999999999999,
+      "extractedAt": "2026-01-21T02:56:58.865Z",
+      "validated": true
+    },
+    "koureisha_department": {
+      "value": "長寿福祉課",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/koreikaigoka/2/1/1/kaigosyashien10785.html",
+      "confidence": 0.7999999999999999,
+      "extractedAt": "2026-01-21T02:56:58.865Z",
+      "validated": true
+    },
+    "kaigo_department": {
+      "value": "長寿福祉課",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/koreikaigoka/2/1/1/kaigosyashien10785.html",
+      "confidence": 0.7999999999999999,
+      "extractedAt": "2026-01-21T02:56:58.865Z",
+      "validated": true
+    },
+    "kaigo_phone": {
+      "value": "0766-20-1372",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/koreikaigoka/2/1/2/7/4423.html",
+      "confidence": 0.7999999999999999,
+      "extractedAt": "2026-01-21T02:56:58.865Z",
+      "validated": true
+    },
+    "koureisha_phone": {
+      "value": "0766-20-1372",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/koreikaigoka/2/1/2/7/4610.html",
+      "confidence": 0.95,
+      "extractedAt": "2026-01-21T02:56:59.920Z",
+      "validated": true
+    }
+  },
+  "missingVariables": [],
+  "errors": [],
+  "metadata": {
+    "totalVariables": 6,
+    "filledVariables": 6
+  }
+}

@@ -263,3 +263,35 @@ export async function deleteMunicipality(municipalityId: string): Promise<void> 
 
   await rm(dir, { recursive: true, force: true });
 }
+
+// キャッシュ: テンプレート変数の総数
+let cachedTotalVariableCount: number | null = null;
+let cachedAllVariableNames: string[] | null = null;
+
+/**
+ * テンプレートで使用されている全変数の数を取得
+ * 結果はキャッシュされる
+ */
+export async function getTotalVariableCount(): Promise<number> {
+  if (cachedTotalVariableCount !== null) {
+    return cachedTotalVariableCount;
+  }
+
+  const variableMap = await extractTemplateVariables();
+  cachedTotalVariableCount = variableMap.size;
+  return cachedTotalVariableCount;
+}
+
+/**
+ * テンプレートで使用されている全変数名を取得
+ * 結果はキャッシュされる
+ */
+export async function getAllTemplateVariableNames(): Promise<string[]> {
+  if (cachedAllVariableNames !== null) {
+    return cachedAllVariableNames;
+  }
+
+  const variableMap = await extractTemplateVariables();
+  cachedAllVariableNames = Array.from(variableMap.keys()).sort();
+  return cachedAllVariableNames;
+}

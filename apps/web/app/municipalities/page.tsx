@@ -1,40 +1,9 @@
 import NextLink from "next/link";
 import { Header, Footer } from "@/components/layout";
 import { Link } from "@/components/dads";
+import { getMunicipalities, type MunicipalitySummary } from "@/lib/template";
 
-type Municipality = {
-  id: string;
-  name: string;
-  prefecture: string;
-  description?: string;
-  population?: number;
-  lastUpdated?: string;
-  categories?: string[];
-};
-
-const MUNICIPALITIES: Municipality[] = [
-  {
-    id: "utashinai",
-    name: "歌志内市",
-    prefecture: "北海道",
-    description: "北海道中央部に位置する、かつて炭鉱で栄えた街。日本で最も人口の少ない市として知られています。",
-    population: 2800,
-    lastUpdated: "2025-11-25",
-    categories: ["ニュース", "イベント", "手続き", "施設", "緊急情報"],
-  },
-  {
-    id: "sample",
-    name: "サンプル市",
-    prefecture: "東京都",
-    description: "デモ用のサンプル自治体データ。システムの動作確認用に使用されます。",
-    lastUpdated: "2024-12-15",
-    categories: ["ニュース", "イベント", "手続き", "施設"],
-  },
-];
-
-const PREFECTURES = Array.from(new Set(MUNICIPALITIES.map((m) => m.prefecture)));
-
-function MunicipalityCard({ municipality }: { municipality: Municipality }) {
+function MunicipalityCard({ municipality }: { municipality: MunicipalitySummary }) {
   return (
     <NextLink
       href={`/${municipality.id}`}
@@ -52,37 +21,25 @@ function MunicipalityCard({ municipality }: { municipality: Municipality }) {
           </div>
         </div>
 
-        {municipality.description && (
-          <p className="text-solid-gray-600 text-sm mb-4 line-clamp-2">
-            {municipality.description}
-          </p>
-        )}
-
-        <div className="flex flex-wrap gap-2 mb-4">
-          {municipality.categories?.map((category) => (
-            <span
-              key={category}
-              className="px-2 py-1 text-xs text-solid-gray-600 bg-solid-gray-100 rounded"
-            >
-              {category}
-            </span>
-          ))}
-        </div>
-
         <div className="flex items-center justify-between text-sm text-solid-gray-536">
-          {municipality.population && (
-            <span>人口: 約{municipality.population.toLocaleString()}人</span>
-          )}
-          {municipality.lastUpdated && (
-            <span>更新: {municipality.lastUpdated}</span>
-          )}
+          <span>ページ数: {municipality.pageCount}</span>
+          <span>更新: {new Date(municipality.updatedAt).toLocaleDateString("ja-JP")}</span>
         </div>
       </div>
     </NextLink>
   );
 }
 
-export default function MunicipalitiesPage() {
+export default async function MunicipalitiesPage() {
+  // 公開中の自治体のみ取得
+  const allMunicipalities = await getMunicipalities();
+  const publishedMunicipalities = allMunicipalities.filter(
+    (m) => m.status === "published"
+  );
+  const prefectures = Array.from(
+    new Set(publishedMunicipalities.map((m) => m.prefecture))
+  );
+
   return (
     <div className="min-h-screen bg-solid-gray-50 flex flex-col">
       <Header />
@@ -106,14 +63,14 @@ export default function MunicipalitiesPage() {
           {/* Stats */}
           <div className="flex items-center justify-between mb-6">
             <p className="text-solid-gray-600">
-              <span className="font-semibold text-solid-gray-900">{MUNICIPALITIES.length}</span>
+              <span className="font-semibold text-solid-gray-900">{publishedMunicipalities.length}</span>
               件の自治体
             </p>
             <div className="flex items-center gap-2">
               <span className="text-sm text-solid-gray-536">都道府県:</span>
               <select className="px-3 py-2 border border-solid-gray-300 rounded-lg text-sm bg-white text-solid-gray-900 focus:outline-none focus:ring-4 focus:ring-yellow-300 focus:border-black">
                 <option value="">すべて</option>
-                {PREFECTURES.map((pref) => (
+                {prefectures.map((pref) => (
                   <option key={pref} value={pref}>
                     {pref}
                   </option>
@@ -124,7 +81,7 @@ export default function MunicipalitiesPage() {
 
           {/* Grid */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {MUNICIPALITIES.map((municipality) => (
+            {publishedMunicipalities.map((municipality) => (
               <MunicipalityCard key={municipality.id} municipality={municipality} />
             ))}
           </div>

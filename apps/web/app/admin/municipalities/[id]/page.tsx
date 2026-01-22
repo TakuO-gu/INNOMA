@@ -8,7 +8,9 @@ import {
 import { DeleteButton } from "./DeleteButton";
 import { VariableTable } from "./VariableTable";
 import { FetchButton } from "./FetchButton";
+import { PublishButton } from "./PublishButton";
 import HistoryTable from "./HistoryTable";
+import { ServiceVariableStats } from "./ServiceVariableStats";
 
 interface PageProps {
   params: Promise<{ id: string }>;
@@ -85,6 +87,13 @@ export default async function MunicipalityDetailPage({ params }: PageProps) {
           </p>
         </div>
         <div className="flex items-center gap-2">
+          {!isSample && (
+            <PublishButton
+              id={id}
+              name={summary.name}
+              currentStatus={summary.status}
+            />
+          )}
           <Link
             href={`/${id}`}
             className="px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md hover:bg-gray-50"
@@ -97,7 +106,7 @@ export default async function MunicipalityDetailPage({ params }: PageProps) {
       </div>
 
       {/* 基本情報カード */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
         <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
           <h2 className="text-lg font-semibold text-gray-900 mb-4">基本情報</h2>
           <dl className="space-y-3">
@@ -112,9 +121,9 @@ export default async function MunicipalityDetailPage({ params }: PageProps) {
             {meta?.officialUrl && (
               <div className="flex justify-between">
                 <dt className="text-sm text-gray-500">公式サイト</dt>
-                <dd className="text-sm text-blue-600 hover:underline">
+                <dd className="text-sm text-blue-600 hover:underline truncate max-w-[150px]">
                   <a href={meta.officialUrl} target="_blank" rel="noopener">
-                    {meta.officialUrl}
+                    {new URL(meta.officialUrl).hostname}
                   </a>
                 </dd>
               </div>
@@ -188,6 +197,8 @@ export default async function MunicipalityDetailPage({ params }: PageProps) {
             </div>
           </dl>
         </div>
+
+        <ServiceVariableStats variables={variables} />
       </div>
 
       {/* アクション */}

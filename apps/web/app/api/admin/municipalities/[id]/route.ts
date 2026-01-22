@@ -14,7 +14,9 @@ import {
   updateMunicipalityMeta,
   updateVariableStore,
   deleteMunicipality,
+  updateMunicipalityStatus,
 } from "@/lib/template";
+import type { MunicipalityStatus } from "@/lib/template/types";
 
 interface Params {
   params: Promise<{ id: string }>;
@@ -69,6 +71,20 @@ export async function PUT(request: NextRequest, { params }: Params) {
         { error: "自治体が見つかりません" },
         { status: 404 }
       );
+    }
+
+    // ステータスの更新
+    if (body.status) {
+      const validStatuses: MunicipalityStatus[] = [
+        "draft",
+        "published",
+        "fetching",
+        "pending_review",
+        "error",
+      ];
+      if (validStatuses.includes(body.status)) {
+        await updateMunicipalityStatus(id, body.status);
+      }
     }
 
     // メタデータの更新

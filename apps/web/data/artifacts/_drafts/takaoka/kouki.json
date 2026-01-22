@@ -1,0 +1,57 @@
+{
+  "id": "takaoka-kouki",
+  "municipalityId": "takaoka",
+  "service": "kouki",
+  "status": "draft",
+  "createdAt": "2026-01-21T02:56:21.477Z",
+  "updatedAt": "2026-01-21T02:56:21.478Z",
+  "variables": {
+    "kouki_department": {
+      "value": "保険年金課",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/hokennenkinka/2/3/1/2642.html",
+      "confidence": 0.95,
+      "extractedAt": "2026-01-21T02:56:11.751Z",
+      "validated": true
+    },
+    "kouki_phone": {
+      "value": "0766-20-1481",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/hokennenkinka/2/3/1/2642.html",
+      "confidence": 0.95,
+      "extractedAt": "2026-01-21T02:56:11.751Z",
+      "validated": true
+    },
+    "kouki_email": {
+      "value": "メールフォームによるお問い合わせ",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/hokennenkinka/2/3/1/2642.html",
+      "confidence": 0.8500000000000001,
+      "extractedAt": "2026-01-21T02:56:11.751Z",
+      "validated": true
+    },
+    "kouki_shotoku_wari_rate": {
+      "value": "8.82%",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/hokennenkinka/2/3/1/3016.html",
+      "confidence": 0.9,
+      "extractedAt": "2026-01-21T02:56:17.585Z",
+      "validated": true
+    },
+    "kouki_kinto_wari": {
+      "value": "46,800円",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/hokennenkinka/2/3/1/3016.html",
+      "confidence": 0.9,
+      "extractedAt": "2026-01-21T02:56:20.121Z",
+      "validated": true
+    }
+  },
+  "missingVariables": [],
+  "errors": [
+    {
+      "code": "PAGE_FETCH_FAILED",
+      "message": "Failed to fetch https://www.city.takaoka.toyama.jp/hoken/kurashi/hoken/koresha/hokenryo.html: Failed to fetch page: 404 Not Found",
+      "timestamp": "2026-01-21T02:56:21.477Z"
+    }
+  ],
+  "metadata": {
+    "totalVariables": 5,
+    "filledVariables": 5
+  }
+}

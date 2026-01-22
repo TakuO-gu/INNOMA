@@ -1,0 +1,114 @@
+{
+  "id": "takaoka-nationality",
+  "municipalityId": "takaoka",
+  "service": "nationality",
+  "status": "draft",
+  "createdAt": "2026-01-21T03:31:16.270Z",
+  "updatedAt": "2026-01-21T03:31:16.270Z",
+  "variables": {
+    "resident_department": {
+      "value": "市民課",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/shiminka/2/1/3585.html",
+      "confidence": 0.7999999999999999,
+      "extractedAt": "2026-01-21T03:30:54.907Z",
+      "validated": true
+    },
+    "resident_phone": {
+      "value": "0766-20-1337",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/shiminka/2/1/3585.html",
+      "confidence": 0.7999999999999999,
+      "extractedAt": "2026-01-21T03:30:54.907Z",
+      "validated": true
+    },
+    "resident_department_address": {
+      "value": "〒933-8601 富山県高岡市広小路7-50",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/shiminka/2/1/3585.html",
+      "confidence": 0.7999999999999999,
+      "extractedAt": "2026-01-21T03:30:54.907Z",
+      "validated": true
+    },
+    "multicultural_department": {
+      "value": "文化国際課",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/bunkakokusaika/1/5/tabunkakyousei/12304.html",
+      "confidence": 0.7999999999999999,
+      "extractedAt": "2026-01-21T03:30:54.907Z",
+      "validated": true
+    },
+    "passport_office_address": {
+      "value": "御旅屋町101御旅屋セリオ7階",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/shiminseikatsuka/2/4/4534.html",
+      "confidence": 0.95,
+      "extractedAt": "2026-01-21T03:30:59.967Z",
+      "validated": true
+    },
+    "passport_office_name": {
+      "value": "富山県旅券センター高岡支所",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/shiminseikatsuka/2/4/4534.html",
+      "confidence": 0.95,
+      "extractedAt": "2026-01-21T03:30:59.967Z",
+      "validated": true
+    },
+    "passport_office_phone": {
+      "value": "27-1855",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/shiminseikatsuka/2/4/4534.html",
+      "confidence": 0.8500000000000001,
+      "extractedAt": "2026-01-21T03:30:59.967Z",
+      "validated": true
+    },
+    "foreign_consultation_languages": {
+      "value": "英語、ポルトガル語、中国語、ベトナム語、ロシア語、韓国語、テルグ語",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/shiminseikatsuka/2/4/4534.html",
+      "confidence": 0.95,
+      "extractedAt": "2026-01-21T03:30:59.967Z",
+      "validated": true
+    },
+    "nationality_department": {
+      "value": "市民課",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/shiminka/2/1/3585.html",
+      "confidence": 0.95,
+      "extractedAt": "2026-01-21T03:31:02.487Z",
+      "validated": true
+    },
+    "nationality_phone": {
+      "value": "0766-20-1337",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/shiminka/2/1/3585.html",
+      "confidence": 0.95,
+      "extractedAt": "2026-01-21T03:31:02.487Z",
+      "validated": true
+    },
+    "international_association": {
+      "value": "高岡市国際交流センター",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/bunkakokusaika/1/5/12308.html",
+      "confidence": 0.9,
+      "extractedAt": "2026-01-21T03:31:14.548Z",
+      "validated": true
+    },
+    "international_association_address": {
+      "value": "富山県高岡市御旅屋町101番地 御旅屋セリオ7F",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/bunkakokusaika/1/5/12308.html",
+      "confidence": 0.9,
+      "extractedAt": "2026-01-21T03:31:14.548Z",
+      "validated": true
+    },
+    "international_association_email": {
+      "value": "kokusai@p1.tcnet.ne.jp",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/bunkakokusaika/1/5/12308.html",
+      "confidence": 0.9,
+      "extractedAt": "2026-01-21T03:31:14.548Z",
+      "validated": true
+    },
+    "international_association_phone": {
+      "value": "0766-27-1856",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/bunkakokusaika/1/5/12308.html",
+      "confidence": 0.9,
+      "extractedAt": "2026-01-21T03:31:14.548Z",
+      "validated": true
+    }
+  },
+  "missingVariables": [],
+  "errors": [],
+  "metadata": {
+    "totalVariables": 14,
+    "filledVariables": 14
+  }
+}

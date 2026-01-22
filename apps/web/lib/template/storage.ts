@@ -13,6 +13,7 @@ import type {
   VariableStore,
 } from "./types";
 import { getMunicipalityPageCount } from "./clone";
+import { getAllServiceVariables } from "../llm/variable-priority";
 
 const ARTIFACTS_DIR = join(process.cwd(), "data/artifacts");
 
@@ -37,6 +38,10 @@ export async function getMunicipalities(): Promise<MunicipalitySummary[]> {
   const entries = await readdir(ARTIFACTS_DIR, { withFileTypes: true });
   const municipalities: MunicipalitySummary[] = [];
 
+  // serviceDefinitionsから全変数を取得
+  const allVariables = getAllServiceVariables();
+  const totalVariables = allVariables.length;
+
   for (const entry of entries) {
     // ディレクトリのみ、_で始まるものは除外
     if (!entry.isDirectory() || entry.name.startsWith("_")) {
@@ -49,9 +54,8 @@ export async function getMunicipalities(): Promise<MunicipalitySummary[]> {
     const pageCount = await getMunicipalityPageCount(id);
     const pendingDrafts = await countPendingDrafts(id);
 
-    // 変数統計を計算
-    const variableNames = Object.keys(variables);
-    const filledCount = variableNames.filter(
+    // 変数統計を計算（serviceDefinitionsの変数のみをカウント）
+    const filledCount = allVariables.filter(
       (name) => variables[name]?.value && variables[name].value.trim() !== ""
     ).length;
 
@@ -63,9 +67,9 @@ export async function getMunicipalities(): Promise<MunicipalitySummary[]> {
       status: meta?.status ?? (id === "sample" ? "published" : "draft"),
       updatedAt: meta?.updatedAt ?? new Date().toISOString(),
       variableStats: {
-        total: 353, // 全変数数（TEMPLATE_VARIABLES.mdより）
+        total: totalVariables,
         filled: filledCount,
-        missing: 353 - filledCount,
+        missing: totalVariables - filledCount,
       },
       pendingDrafts,
       pageCount,
@@ -98,8 +102,12 @@ export async function getMunicipality(
   const pageCount = await getMunicipalityPageCount(id);
   const pendingDrafts = await countPendingDrafts(id);
 
-  const variableNames = Object.keys(variables);
-  const filledCount = variableNames.filter(
+  // serviceDefinitionsから全変数を取得
+  const allVariables = getAllServiceVariables();
+  const totalVariables = allVariables.length;
+
+  // 変数統計を計算（serviceDefinitionsの変数のみをカウント）
+  const filledCount = allVariables.filter(
     (name) => variables[name]?.value && variables[name].value.trim() !== ""
   ).length;
 
@@ -110,9 +118,9 @@ export async function getMunicipality(
     status: meta?.status ?? "draft",
     updatedAt: meta?.updatedAt ?? new Date().toISOString(),
     variableStats: {
-      total: 353,
+      total: totalVariables,
       filled: filledCount,
-      missing: 353 - filledCount,
+      missing: totalVariables - filledCount,
     },
     pendingDrafts,
     pageCount,
@@ -253,135 +261,4 @@ async function countPendingDrafts(municipalityId: string): Promise<number> {
   }
 }
 
-/**
- * すべての変数名を取得（優先度順）
- */
-export function getAllVariableNames(): string[] {
-  // 基本情報（必須）
-  const basicVariables = [
-    "municipality_name",
-    "prefecture_name",
-    "city_hall_address",
-    "city_hall_hours",
-    "city_hall_phone",
-    "city_hall_email",
-    "city_hall_department",
-    "generated_at",
-  ];
-
-  // 主要部署連絡先
-  const departmentPrefixes = [
-    "shimin",
-    "registration",
-    "koseki",
-    "resident",
-    "mynumber",
-    "tax",
-    "zeimu",
-    "shisanzei",
-    "kokuho",
-    "kouki",
-    "nenkin",
-    "welfare",
-    "childcare",
-    "kosodate",
-    "boshi",
-    "nursery",
-    "nursery_apply",
-    "koureisha",
-    "kaigo",
-    "shogai",
-    "disability",
-    "seikatsu_hogo",
-    "health",
-    "kenshin",
-    "yobosesshu",
-    "houkatsu",
-    "environment",
-    "bosai",
-    "disaster",
-    "housing",
-    "building",
-    "urban_planning",
-    "development",
-    "land",
-    "business",
-    "agriculture",
-    "forestry",
-    "fishery",
-    "wildlife",
-    "employment",
-    "driving",
-    "nationality",
-    "multicultural",
-    "civic",
-    "election_commission",
-    "audit_commission",
-    "agricultural_commission",
-    "disclosure",
-    "privacy",
-    "legal",
-    "victim_support",
-    "benefits",
-    "planning",
-  ];
-
-  const departmentVariables = departmentPrefixes.flatMap((prefix) => [
-    `${prefix}_department`,
-    `${prefix}_phone`,
-    `${prefix}_email`,
-    `${prefix}_address`,
-    `${prefix}_hours`,
-  ]);
-
-  // 外部機関
-  const externalPrefixes = [
-    "hello_work",
-    "pension_office",
-    "tax_office",
-    "legal_affairs_bureau",
-    "labor_bureau",
-    "labor_standards_office",
-    "police_station",
-    "driver_license_center",
-    "transport_branch",
-    "passport_office",
-    "immigration_bureau",
-    "international_association",
-    "silver_center",
-  ];
-
-  const externalVariables = externalPrefixes.flatMap((prefix) => [
-    `${prefix}_name`,
-    `${prefix}_phone`,
-    `${prefix}_address`,
-  ]);
-
-  // 料金
-  const feeVariables = [
-    "juminhyo_fee",
-    "juminhyo_convenience_fee",
-    "juminhyo_kisai_fee",
-    "koseki_fee",
-    "kaisei_koseki_fee",
-    "jokoseki_fee",
-    "inkan_touroku_fee",
-    "inkan_shomei_fee",
-    "inkan_shomei_convenience_fee",
-    "fuhyo_fee",
-    "tokutei_kenshin_fee",
-    "kouki_kenshin_fee",
-    "influenza_fee",
-    "sodaigomi_fee_small",
-    "sodaigomi_fee_medium",
-    "sodaigomi_fee_large",
-    "sodaigomi_fee_xlarge",
-  ];
-
-  return [
-    ...basicVariables,
-    ...departmentVariables,
-    ...externalVariables,
-    ...feeVariables,
-  ];
-}
+// getAllVariableNames は getAllTemplateVariableNames (clone.ts) に置き換えられました

@@ -1,10 +1,43 @@
 /**
- * Google Custom Search API Client
+ * Search API Client
+ * Supports both Brave Search API and Google Custom Search API
+ * Default: Brave Search API (recommended)
  */
 
-import { GoogleSearchResponse, SearchResult } from './types';
+import { SearchResult } from './types';
+import { braveSearch as braveSearchImpl, searchMunicipalitySite as braveSearchMunicipalitySite, searchServiceInfo as braveSearchServiceInfo } from './brave-search';
 
+/**
+ * Search provider type
+ */
+type SearchProvider = 'brave' | 'google';
+
+/**
+ * Get the configured search provider
+ */
+function getSearchProvider(): SearchProvider {
+  // Use Brave by default, fallback to Google if BRAVE_SEARCH_API_KEY is not set
+  if (process.env.BRAVE_SEARCH_API_KEY) {
+    return 'brave';
+  }
+  if (process.env.GOOGLE_CUSTOM_SEARCH_API_KEY) {
+    return 'google';
+  }
+  throw new Error('No search API configured. Set BRAVE_SEARCH_API_KEY or GOOGLE_CUSTOM_SEARCH_API_KEY');
+}
+
+/**
+ * Google Custom Search API (legacy, kept for backwards compatibility)
+ */
 const GOOGLE_CUSTOM_SEARCH_API_URL = 'https://www.googleapis.com/customsearch/v1';
+
+interface GoogleSearchResponse {
+  items?: SearchResult[];
+  error?: {
+    code: number;
+    message: string;
+  };
+}
 
 /**
  * Search configuration
@@ -12,16 +45,16 @@ const GOOGLE_CUSTOM_SEARCH_API_URL = 'https://www.googleapis.com/customsearch/v1
 interface SearchConfig {
   /** Limit search to specific site */
   siteRestrict?: string;
-  /** Number of results to return (max 10) */
+  /** Number of results to return (max 10 for Google, 20 for Brave) */
   num?: number;
   /** Language restriction */
   lr?: string;
 }
 
 /**
- * Execute Google Custom Search
+ * Execute Google Custom Search (legacy)
  */
-export async function googleSearch(
+async function googleSearchImpl(
   query: string,
   config: SearchConfig = {}
 ): Promise<SearchResult[]> {
@@ -61,6 +94,25 @@ export async function googleSearch(
 }
 
 /**
+ * Execute search using configured provider
+ */
+export async function googleSearch(
+  query: string,
+  config: SearchConfig = {}
+): Promise<SearchResult[]> {
+  const provider = getSearchProvider();
+
+  if (provider === 'brave') {
+    return braveSearchImpl(query, {
+      siteRestrict: config.siteRestrict,
+      count: config.num,
+    });
+  }
+
+  return googleSearchImpl(query, config);
+}
+
+/**
  * Search within municipality official site
  */
 export async function searchMunicipalitySite(
@@ -68,7 +120,13 @@ export async function searchMunicipalitySite(
   query: string,
   officialUrl?: string
 ): Promise<SearchResult[]> {
-  // Extract domain from official URL if provided
+  const provider = getSearchProvider();
+
+  if (provider === 'brave') {
+    return braveSearchMunicipalitySite(municipalityName, query, officialUrl);
+  }
+
+  // Google implementation
   let siteRestrict: string | undefined;
   if (officialUrl) {
     try {
@@ -79,7 +137,6 @@ export async function searchMunicipalitySite(
     }
   }
 
-  // Build search query
   const fullQuery = siteRestrict
     ? query
     : `${municipalityName} ${query} site:.lg.jp OR site:.go.jp`;
@@ -99,6 +156,12 @@ export async function searchServiceInfo(
   targetInfo: string[],
   officialUrl?: string
 ): Promise<SearchResult[]> {
+  const provider = getSearchProvider();
+
+  if (provider === 'brave') {
+    return braveSearchServiceInfo(municipalityName, serviceName, targetInfo, officialUrl);
+  }
+
   const infoKeywords = targetInfo.join(' ');
   const query = `${municipalityName} ${serviceName} ${infoKeywords}`;
 
@@ -107,7 +170,6 @@ export async function searchServiceInfo(
 
 /**
  * Check if domain is official government domain
- * どんなhostnameでも受け入れ、公式ドメインかどうかを判定
  */
 export function isOfficialDomain(url: string): boolean {
   try {
@@ -140,7 +202,6 @@ export function isOfficialDomain(url: string): boolean {
     }
 
     // その他の公式っぽいドメイン
-    // 例: takaoka.lg.jp, xxx-city.jp など
     if (hostname.endsWith('.jp') && (
       hostname.includes('-city') ||
       hostname.includes('-town') ||
@@ -154,7 +215,6 @@ export function isOfficialDomain(url: string): boolean {
 
     return false;
   } catch {
-    // URLパースエラーの場合はfalse
     return false;
   }
 }

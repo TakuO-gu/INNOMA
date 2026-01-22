@@ -1,0 +1,177 @@
+[
+  {
+    "id": "1768960645485-hd2r0j9",
+    "municipalityId": "takaoka",
+    "type": "approve",
+    "source": "llm",
+    "changes": [
+      {
+        "variableName": "bosai_department",
+        "newValue": "危機管理課"
+      },
+      {
+        "variableName": "bosai_phone",
+        "newValue": "0766-20-1229"
+      },
+      {
+        "variableName": "bosai_email",
+        "newValue": "bousai.takaoka-city@raiden3.ktaiwork.jp"
+      }
+    ],
+    "changedBy": "admin",
+    "changedAt": "2026-01-21T01:57:25.485Z",
+    "serviceId": "disaster",
+    "comment": "サービス「disaster」の下書きを承認"
+  },
+  {
+    "id": "1768963448395-5qll231",
+    "municipalityId": "takaoka",
+    "type": "approve",
+    "source": "llm",
+    "changes": [
+      {
+        "variableName": "environment_department",
+        "newValue": "環境政策課"
+      },
+      {
+        "variableName": "environment_phone",
+        "newValue": "0766-22-2144"
+      },
+      {
+        "variableName": "environment_email",
+        "newValue": "メールフォームによるお問い合わせ"
+      },
+      {
+        "variableName": "sodaigomi_fee_small",
+        "newValue": "10キログラムまでごとに100円"
+      },
+      {
+        "variableName": "sodaigomi_fee_medium",
+        "newValue": "100キログラムまでごとに350円"
+      }
+    ],
+    "changedBy": "admin",
+    "changedAt": "2026-01-21T02:44:08.395Z",
+    "serviceId": "environment",
+    "comment": "サービス「environment」の下書きを承認"
+  },
+  {
+    "id": "1768966698938-al6yf62",
+    "municipalityId": "takaoka",
+    "type": "approve",
+    "source": "llm",
+    "changes": [
+      {
+        "variableName": "environment_department",
+        "oldValue": "環境政策課",
+        "newValue": "環境政策課"
+      },
+      {
+        "variableName": "environment_phone",
+        "oldValue": "0766-22-2144",
+        "newValue": "0766-22-2144"
+      },
+      {
+        "variableName": "gomi_calendar_url",
+        "newValue": "https://www.city.takaoka.toyama.jp/gyosei/kurashi_tetsuzuki/gomi_recycle/5/2/1/6907.html"
+      },
+      {
+        "variableName": "moenai_gomi_dashikata",
+        "newValue": "飲食用缶類（スチール缶、アルミ缶）\n飲食用ペットボトル\n飲食用びん（無色、茶色、その他色）\n金属類・家電品類\nプラスチック資源類\n古紙類\n乾電池等有害ごみ"
+      },
+      {
+        "variableName": "moenai_gomi_shushuhi",
+        "newValue": "10キログラムまでごとに100円\n（注意）特殊な処理を要する物については、1個につき300円を加算する。ただし、木質の家具・建具類及び畳については、1個につき100円を加算する。\n犬、猫の死体は1体につき300円"
+      },
+      {
+        "variableName": "moeru_gomi_dashikata",
+        "newValue": "机、いす、タンス\n布団類\nたたみ\nカーペット類（電気含む）\n草\n材木（長さ300センチメートル直径20センチメートルまで）\n生木（長さ300センチメートル直径10センチメートルまで）\n竹（長さ80センチメートル直径10センチメートルまで）\n犬、猫の死体\n通常の燃やせるごみも含む"
+      },
+      {
+        "variableName": "gomi_app_description",
+        "newValue": "ごみ拾いSNSアプリ「ピリカ」を活用したごみ拾い活動"
+      },
+      {
+        "variableName": "sodaigomi_phone",
+        "newValue": "0766-22-2144"
+      },
+      {
+        "variableName": "sodaigomi_fee_small",
+        "oldValue": "10キログラムまでごとに100円",
+        "newValue": "10キログラムまでごとに100円"
+      },
+      {
+        "variableName": "sodaigomi_fee_large",
+        "newValue": "100キログラムまでごとに350円"
+      },
+      {
+        "variableName": "sodaigomi_online_url",
+        "newValue": "null"
+      },
+      {
+        "variableName": "sodaigomi_reception_hours",
+        "newValue": "午前8時30分～午後4時30分"
+      }
+    ],
+    "changedBy": "admin",
+    "changedAt": "2026-01-21T03:38:18.937Z",
+    "serviceId": "environment",
+    "comment": "サービス「environment」の下書きを承認"
+  },
+  {
+    "id": "1768967680751-43y8zhq",
+    "municipalityId": "takaoka",
+    "type": "approve",
+    "source": "llm",
+    "changes": [
+      {
+        "variableName": "environment_department",
+        "oldValue": "環境政策課",
+        "newValue": "環境政策課"
+      },
+      {
+        "variableName": "environment_phone",
+        "oldValue": "0766-22-2144",
+        "newValue": "0766-22-2144"
+      },
+      {
+        "variableName": "gomi_calendar_url",
+        "oldValue": "https://www.city.takaoka.toyama.jp/gyosei/kurashi_tetsuzuki/gomi_recycle/5/2/1/6907.html",
+        "newValue": "https://www.city.takaoka.toyama.jp/gyosei/kurashi_tetsuzuki/gomi_recycle/5/2/1/6907.html"
+      },
+      {
+        "variableName": "gomi_app_description",
+        "oldValue": "ごみ拾いSNSアプリ「ピリカ」を活用したごみ拾い活動",
+        "newValue": "ごみ拾いSNSアプリ「ピリカ」を活用したごみ拾い活動"
+      }
+    ],
+    "changedBy": "admin",
+    "changedAt": "2026-01-21T03:54:40.751Z",
+    "serviceId": "environment",
+    "comment": "サービス「environment」の下書きを承認"
+  },
+  {
+    "id": "1768967847589-ajoegck",
+    "municipalityId": "takaoka",
+    "type": "approve",
+    "source": "llm",
+    "changes": [
+      {
+        "variableName": "environment_department",
+        "newValue": "環境政策課"
+      },
+      {
+        "variableName": "environment_phone",
+        "newValue": "0766-22-2144"
+      },
+      {
+        "variableName": "gomi_calendar_url",
+        "newValue": "https://www.city.takaoka.toyama.jp/gyosei/kurashi_tetsuzuki/gomi_recycle/5/2/1/6907.html"
+      }
+    ],
+    "changedBy": "admin",
+    "changedAt": "2026-01-21T03:57:27.588Z",
+    "serviceId": "environment",
+    "comment": "サービス「environment」の下書きを承認"
+  }
+]

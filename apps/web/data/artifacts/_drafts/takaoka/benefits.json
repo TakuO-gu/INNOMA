@@ -1,0 +1,44 @@
+{
+  "id": "takaoka-benefits",
+  "municipalityId": "takaoka",
+  "service": "benefits",
+  "status": "draft",
+  "createdAt": "2026-01-21T03:31:51.227Z",
+  "updatedAt": "2026-01-21T03:31:51.228Z",
+  "variables": {
+    "nenkin_department": {
+      "value": "保険年金課",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/hokennenkinka/2/3/3/5239.html",
+      "confidence": 0.7999999999999999,
+      "extractedAt": "2026-01-21T03:31:35.973Z",
+      "validated": true
+    },
+    "nenkin_phone": {
+      "value": "0766-20-1362",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/hokennenkinka/2/3/3/5239.html",
+      "confidence": 0.7999999999999999,
+      "extractedAt": "2026-01-21T03:31:35.973Z",
+      "validated": true
+    },
+    "benefits_phone": {
+      "value": "0766-20-1369",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/shakaifukushika/2/4/12268.html",
+      "confidence": 1,
+      "extractedAt": "2026-01-21T03:31:39.990Z",
+      "validated": true
+    },
+    "benefits_department": {
+      "value": "社会福祉課",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/shakaifukushika/2/4/12268.html",
+      "confidence": 0.95,
+      "extractedAt": "2026-01-21T03:31:36.945Z",
+      "validated": true
+    }
+  },
+  "missingVariables": [],
+  "errors": [],
+  "metadata": {
+    "totalVariables": 4,
+    "filledVariables": 4
+  }
+}

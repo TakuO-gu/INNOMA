@@ -1,0 +1,36 @@
+{
+  "id": "takaoka-kokuho",
+  "municipalityId": "takaoka",
+  "service": "kokuho",
+  "status": "draft",
+  "createdAt": "2026-01-21T02:56:06.527Z",
+  "updatedAt": "2026-01-21T02:56:06.528Z",
+  "variables": {
+    "kokuho_department": {
+      "value": "保険年金課",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/hokennenkinka/2/3/2/2638.html",
+      "confidence": 0.7999999999999999,
+      "extractedAt": "2026-01-21T02:55:52.496Z",
+      "validated": true
+    },
+    "kokuho_phone": {
+      "value": "0766-20-1357",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/hokennenkinka/2/3/2/2638.html",
+      "confidence": 0.95,
+      "extractedAt": "2026-01-21T02:55:53.587Z",
+      "validated": true
+    }
+  },
+  "missingVariables": [],
+  "errors": [
+    {
+      "code": "PAGE_FETCH_FAILED",
+      "message": "Failed to fetch https://www.city.takaoka.toyama.jp/hoken/kurashi/hoken/download.html: Failed to fetch page: 404 Not Found",
+      "timestamp": "2026-01-21T02:56:06.527Z"
+    }
+  ],
+  "metadata": {
+    "totalVariables": 2,
+    "filledVariables": 2
+  }
+}

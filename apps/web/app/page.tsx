@@ -1,5 +1,6 @@
 import NextLink from "next/link";
 import { Link, Button } from "@/components/dads";
+import { getMunicipalities } from "@/lib/template";
 
 const FEATURES = [
   {
@@ -24,22 +25,12 @@ const FEATURES = [
   },
 ];
 
-const SAMPLE_MUNICIPALITIES = [
-  {
-    id: "utashinai",
-    name: "歌志内市",
-    prefecture: "北海道",
-    description: "北海道中央部に位置する、かつて炭鉱で栄えた街",
-  },
-  {
-    id: "sample",
-    name: "サンプル市",
-    prefecture: "東京都",
-    description: "デモ用のサンプル自治体データ",
-  },
-];
-
-export default function Home() {
+export default async function Home() {
+  // 公開中の自治体のみ取得
+  const allMunicipalities = await getMunicipalities();
+  const publishedMunicipalities = allMunicipalities
+    .filter((m) => m.status === "published")
+    .slice(0, 4); // トップページでは最大4件表示
   return (
     <div className="min-h-screen bg-solid-gray-50">
       {/* Header */}
@@ -69,10 +60,10 @@ export default function Home() {
             誰もが簡単にアクセスできる形で提供するオープンソースプロジェクトです。
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button asChild size="lg" variant="solid-fill" className="bg-white text-blue-900 hover:bg-blue-50 border-0">
+            <Button asChild size="lg" variant="solid-fill" className="flex items-center justify-center !bg-white !text-blue-900 hover:!bg-solid-gray-50">
               <NextLink href="/municipalities">自治体を探す</NextLink>
             </Button>
-            <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-blue-800">
+            <Button asChild size="lg" variant="outline" className="flex items-center justify-center !bg-transparent !text-white !border-white hover:!bg-white/10">
               <a
                 href="https://github.com/YOUR_ORG/INNOMA"
                 target="_blank"
@@ -95,7 +86,7 @@ export default function Home() {
             {FEATURES.map((feature) => (
               <div
                 key={feature.title}
-                className="bg-white p-6 rounded-xl border border-solid-gray-300 hover:shadow-lg transition-shadow"
+                className="bg-white p-6 rounded-xl border border-solid-gray-300"
               >
                 <div className="text-4xl mb-4">{feature.icon}</div>
                 <h3 className="text-lg font-semibold text-solid-gray-900 mb-2">
@@ -118,10 +109,10 @@ export default function Home() {
             </Link>
           </div>
           <div className="grid md:grid-cols-2 gap-6">
-            {SAMPLE_MUNICIPALITIES.map((municipality) => (
+            {publishedMunicipalities.map((municipality) => (
               <NextLink
                 key={municipality.id}
-                href={`/municipalities/${municipality.id}`}
+                href={`/${municipality.id}`}
                 className="block p-6 bg-solid-gray-50 rounded-xl border border-solid-gray-300 hover:border-blue-400 hover:shadow-md transition-all focus-visible:outline focus-visible:outline-4 focus-visible:outline-black focus-visible:outline-offset-2 focus-visible:bg-yellow-300"
               >
                 <div className="flex items-start justify-between">
@@ -131,9 +122,6 @@ export default function Home() {
                     </h3>
                     <p className="text-sm text-solid-gray-600 mb-2">
                       {municipality.prefecture}
-                    </p>
-                    <p className="text-solid-gray-700 text-sm">
-                      {municipality.description}
                     </p>
                   </div>
                   <span className="text-solid-gray-420 text-2xl">→</span>

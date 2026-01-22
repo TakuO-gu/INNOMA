@@ -13,12 +13,16 @@ export {
   extractTemplateVariables,
   getMunicipalityPageCount,
   deleteMunicipality,
+  getTotalVariableCount,
+  getAllTemplateVariableNames,
 } from "./clone";
 
 // 変数置換機能
 export {
   replaceVariables,
   variableStoreToMap,
+  variableStoreToMapForJson,
+  escapeForJson,
   extractVariables,
   hasUnreplacedVariables,
   validators,
@@ -34,4 +38,5 @@ export {
   getVariableStore,
   updateVariableStore,
   updateMunicipalityMeta,
+  updateMunicipalityStatus,
 } from "./storage";

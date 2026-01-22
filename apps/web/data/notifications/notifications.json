@@ -1,0 +1,72 @@
+[
+  {
+    "id": "1768967847590-24x6r2y",
+    "type": "draft_approved",
+    "severity": "success",
+    "title": "下書き承認: 高岡市",
+    "message": "サービス「environment」の下書きを承認しました（3件の変数を反映）",
+    "municipalityId": "takaoka",
+    "serviceId": "environment",
+    "data": {
+      "variableCount": 3
+    },
+    "createdAt": "2026-01-21T03:57:27.591Z",
+    "read": false
+  },
+  {
+    "id": "1768967680752-e4or9lx",
+    "type": "draft_approved",
+    "severity": "success",
+    "title": "下書き承認: 高岡市",
+    "message": "サービス「environment」の下書きを承認しました（4件の変数を反映）",
+    "municipalityId": "takaoka",
+    "serviceId": "environment",
+    "data": {
+      "variableCount": 4
+    },
+    "createdAt": "2026-01-21T03:54:40.752Z",
+    "read": false
+  },
+  {
+    "id": "1768966698941-w1ap2vf",
+    "type": "draft_approved",
+    "severity": "success",
+    "title": "下書き承認: 高岡市",
+    "message": "サービス「environment」の下書きを承認しました（12件の変数を反映）",
+    "municipalityId": "takaoka",
+    "serviceId": "environment",
+    "data": {
+      "variableCount": 12
+    },
+    "createdAt": "2026-01-21T03:38:18.941Z",
+    "read": false
+  },
+  {
+    "id": "1768963448397-v36fpkd",
+    "type": "draft_approved",
+    "severity": "success",
+    "title": "下書き承認: 高岡市",
+    "message": "サービス「environment」の下書きを承認しました（5件の変数を反映）",
+    "municipalityId": "takaoka",
+    "serviceId": "environment",
+    "data": {
+      "variableCount": 5
+    },
+    "createdAt": "2026-01-21T02:44:08.397Z",
+    "read": false
+  },
+  {
+    "id": "1768960645486-ml7a14m",
+    "type": "draft_approved",
+    "severity": "success",
+    "title": "下書き承認: 高岡市",
+    "message": "サービス「disaster」の下書きを承認しました（3件の変数を反映）",
+    "municipalityId": "takaoka",
+    "serviceId": "disaster",
+    "data": {
+      "variableCount": 3
+    },
+    "createdAt": "2026-01-21T01:57:25.486Z",
+    "read": false
+  }
+]

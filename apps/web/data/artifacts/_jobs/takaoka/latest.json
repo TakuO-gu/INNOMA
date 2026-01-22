@@ -1,0 +1,17 @@
+{
+  "id": "takaoka-1768980192127",
+  "municipalityId": "takaoka",
+  "startedAt": "2026-01-21T07:23:12.127Z",
+  "updatedAt": "2026-01-21T07:23:34.528Z",
+  "status": "completed",
+  "totalServices": 1,
+  "services": {
+    "environment": {
+      "status": "completed",
+      "startedAt": "2026-01-21T07:23:12.130Z",
+      "completedAt": "2026-01-21T07:23:34.526Z",
+      "variablesCount": 2
+    }
+  },
+  "completedAt": "2026-01-21T07:23:34.528Z"
+}

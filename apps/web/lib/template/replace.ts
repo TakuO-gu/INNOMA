@@ -73,6 +73,33 @@ export function variableStoreToMap(store: VariableStore): Record<string, string>
 }
 
 /**
+ * JSON文字列内での置換用に値をエスケープ
+ * JSON文字列リテラル内で使用される特殊文字をエスケープする
+ *
+ * @param value エスケープする値
+ * @returns JSONセーフにエスケープされた値
+ */
+export function escapeForJson(value: string): string {
+  // JSON.stringifyを使って確実にエスケープし、前後のクォートを削除
+  return JSON.stringify(value).slice(1, -1);
+}
+
+/**
+ * VariableStoreからJSON内での置換用の変数値マップを作成
+ * 値はJSON文字列リテラル内で安全に使用できるようにエスケープされる
+ *
+ * @param store 変数ストア
+ * @returns 変数名とJSONエスケープ済み値のマップ
+ */
+export function variableStoreToMapForJson(store: VariableStore): Record<string, string> {
+  const result: Record<string, string> = {};
+  for (const [name, data] of Object.entries(store)) {
+    result[name] = escapeForJson(data.value);
+  }
+  return result;
+}
+
+/**
  * コンテンツ内の変数を抽出
  *
  * @param content 対象コンテンツ

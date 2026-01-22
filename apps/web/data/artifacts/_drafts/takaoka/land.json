@@ -1,0 +1,190 @@
+{
+  "id": "takaoka-land",
+  "municipalityId": "takaoka",
+  "service": "land",
+  "status": "draft",
+  "createdAt": "2026-01-21T03:30:49.382Z",
+  "updatedAt": "2026-01-21T03:30:49.383Z",
+  "variables": {
+    "agriculture_department": {
+      "value": "産業振興部 農地林務課",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/gyosei/gyoseijoho/yakusho_madoguchiannai/1/2/6549.html",
+      "confidence": 0.7999999999999999,
+      "extractedAt": "2026-01-21T03:30:30.443Z",
+      "validated": true
+    },
+    "development_department": {
+      "value": "建築政策課",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kenchikuseisakuka/2/2/1/4588.html",
+      "confidence": 0.7999999999999999,
+      "extractedAt": "2026-01-21T03:30:30.443Z",
+      "validated": true
+    },
+    "urban_planning_department": {
+      "value": "都市計画",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/sangyo/toshi/index.html",
+      "confidence": 0.7999999999999999,
+      "extractedAt": "2026-01-21T03:30:30.443Z",
+      "validated": true
+    },
+    "land_department": {
+      "value": "農地林務課",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/gyosei/gyoseijoho/yakusho_madoguchiannai/1/2/6549.html",
+      "confidence": 0.95,
+      "extractedAt": "2026-01-21T03:30:33.351Z",
+      "validated": true
+    },
+    "land_phone": {
+      "value": "0766-20-1317",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/gyosei/gyoseijoho/yakusho_madoguchiannai/1/2/6549.html",
+      "confidence": 0.95,
+      "extractedAt": "2026-01-21T03:30:33.351Z",
+      "validated": true
+    },
+    "forestry_department": {
+      "value": "林務係",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/gyosei/gyoseijoho/yakusho_madoguchiannai/1/2/6549.html",
+      "confidence": 0.95,
+      "extractedAt": "2026-01-21T03:30:33.351Z",
+      "validated": true
+    },
+    "forestry_phone": {
+      "value": "0766-20-1316",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/nochirimmuka/1/5/2/3033.html",
+      "confidence": 0.9,
+      "extractedAt": "2026-01-21T03:30:45.593Z",
+      "validated": true
+    },
+    "wildlife_department": {
+      "value": "鳥獣保護",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/gyosei/gyoseijoho/yakusho_madoguchiannai/1/2/6549.html",
+      "confidence": 0.95,
+      "extractedAt": "2026-01-21T03:30:33.351Z",
+      "validated": true
+    },
+    "land_email": {
+      "value": "null",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/gyosei/gyoseijoho/yakusho_madoguchiannai/1/2/6549.html",
+      "confidence": 0.8,
+      "extractedAt": "2026-01-21T03:30:37.863Z",
+      "validated": true
+    },
+    "agriculture_email": {
+      "value": "null",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/gyosei/gyoseijoho/yakusho_madoguchiannai/1/2/6549.html",
+      "confidence": 0.8,
+      "extractedAt": "2026-01-21T03:30:37.863Z",
+      "validated": true
+    },
+    "agricultural_commission": {
+      "value": "null",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/gyosei/gyoseijoho/yakusho_madoguchiannai/1/2/6549.html",
+      "confidence": 1,
+      "extractedAt": "2026-01-21T03:30:37.863Z",
+      "validated": true
+    },
+    "agricultural_commission_email": {
+      "value": "null",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/gyosei/gyoseijoho/yakusho_madoguchiannai/1/2/6549.html",
+      "confidence": 0.8,
+      "extractedAt": "2026-01-21T03:30:37.863Z",
+      "validated": true
+    },
+    "agricultural_commission_meeting_day": {
+      "value": "null",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/gyosei/gyoseijoho/yakusho_madoguchiannai/1/2/6549.html",
+      "confidence": 1,
+      "extractedAt": "2026-01-21T03:30:37.863Z",
+      "validated": true
+    },
+    "development_email": {
+      "value": "null",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/gyosei/gyoseijoho/yakusho_madoguchiannai/1/2/6549.html",
+      "confidence": 0.8,
+      "extractedAt": "2026-01-21T03:30:37.863Z",
+      "validated": true
+    },
+    "fishery_department": {
+      "value": "null",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/gyosei/gyoseijoho/yakusho_madoguchiannai/1/2/6549.html",
+      "confidence": 1,
+      "extractedAt": "2026-01-21T03:30:37.863Z",
+      "validated": true
+    },
+    "fishery_email": {
+      "value": "null",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/gyosei/gyoseijoho/yakusho_madoguchiannai/1/2/6549.html",
+      "confidence": 0.8,
+      "extractedAt": "2026-01-21T03:30:37.863Z",
+      "validated": true
+    },
+    "forestry_email": {
+      "value": "null",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/gyosei/gyoseijoho/yakusho_madoguchiannai/1/2/6549.html",
+      "confidence": 0.8,
+      "extractedAt": "2026-01-21T03:30:37.863Z",
+      "validated": true
+    },
+    "urban_planning_email": {
+      "value": "null",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/gyosei/gyoseijoho/yakusho_madoguchiannai/1/2/6549.html",
+      "confidence": 0.8,
+      "extractedAt": "2026-01-21T03:30:37.863Z",
+      "validated": true
+    },
+    "wildlife_email": {
+      "value": "null",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/gyosei/gyoseijoho/yakusho_madoguchiannai/1/2/6549.html",
+      "confidence": 0.8,
+      "extractedAt": "2026-01-21T03:30:37.863Z",
+      "validated": true
+    },
+    "wildlife_fence_application_period": {
+      "value": "null",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/gyosei/gyoseijoho/yakusho_madoguchiannai/1/2/6549.html",
+      "confidence": 0.8,
+      "extractedAt": "2026-01-21T03:30:37.863Z",
+      "validated": true
+    },
+    "wildlife_fence_subsidy_rate": {
+      "value": "null",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/gyosei/gyoseijoho/yakusho_madoguchiannai/1/2/6549.html",
+      "confidence": 0.8,
+      "extractedAt": "2026-01-21T03:30:37.863Z",
+      "validated": true
+    },
+    "new_farmer_consultation": {
+      "value": "null",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/gyosei/gyoseijoho/yakusho_madoguchiannai/1/2/6549.html",
+      "confidence": 1,
+      "extractedAt": "2026-01-21T03:30:37.863Z",
+      "validated": true
+    },
+    "new_farmer_support_program": {
+      "value": "null",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/gyosei/gyoseijoho/yakusho_madoguchiannai/1/2/6549.html",
+      "confidence": 1,
+      "extractedAt": "2026-01-21T03:30:37.863Z",
+      "validated": true
+    },
+    "agricultural_commission_phone": {
+      "value": "0766-20-1473",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/nogyoiinkaijimukyoku/1/2/1/5004.html",
+      "confidence": 0.9,
+      "extractedAt": "2026-01-21T03:30:48.209Z",
+      "validated": true
+    }
+  },
+  "missingVariables": [],
+  "errors": [
+    {
+      "code": "PAGE_FETCH_FAILED",
+      "message": "Failed to fetch https://www.city.takaoka.toyama.jp/nojim/sangyo/norinsuisan/nosonsebi/gyomu/04tenyo.html: Failed to fetch page: 404 Not Found",
+      "timestamp": "2026-01-21T03:30:49.382Z"
+    }
+  ],
+  "metadata": {
+    "totalVariables": 24,
+    "filledVariables": 24
+  }
+}

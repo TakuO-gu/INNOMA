@@ -1,0 +1,62 @@
+{
+  "id": "takaoka-civic",
+  "municipalityId": "takaoka",
+  "service": "civic",
+  "status": "draft",
+  "createdAt": "2026-01-21T03:31:32.453Z",
+  "updatedAt": "2026-01-21T03:31:32.454Z",
+  "variables": {
+    "election_commission_phone": {
+      "value": "0766-20-1464",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/senkyokanriiinkaijimukyoku/2/1/2180.html",
+      "confidence": 0.7999999999999999,
+      "extractedAt": "2026-01-21T03:31:20.575Z",
+      "validated": true
+    },
+    "privacy_department": {
+      "value": "情報公開・個人情報",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/shise/shigikai/index.html",
+      "confidence": 0.7999999999999999,
+      "extractedAt": "2026-01-21T03:31:20.575Z",
+      "validated": true
+    },
+    "civic_department": {
+      "value": "市民課",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/shiminka/2/4/3055.html",
+      "confidence": 0.9,
+      "extractedAt": "2026-01-21T03:31:27.344Z",
+      "validated": true
+    },
+    "civic_phone": {
+      "value": "0766-20-1333",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/shiminka/2/4/3055.html",
+      "confidence": 0.9,
+      "extractedAt": "2026-01-21T03:31:27.344Z",
+      "validated": true
+    },
+    "election_commission": {
+      "value": "選挙管理委員会事務局",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/senkyokanriiinkaijimukyoku/2/2/1/2911.html",
+      "confidence": 0.9,
+      "extractedAt": "2026-01-21T03:31:31.127Z",
+      "validated": true
+    }
+  },
+  "missingVariables": [],
+  "errors": [
+    {
+      "code": "PAGE_FETCH_FAILED",
+      "message": "Failed to fetch https://www.city.takaoka.toyama.jp/shise/shigikai/index.html: Failed to fetch page: 404 Not Found",
+      "timestamp": "2026-01-21T03:31:32.453Z"
+    },
+    {
+      "code": "PAGE_FETCH_FAILED",
+      "message": "Failed to fetch https://www.city.takaoka.toyama.jp/somu/shise/johokokai/about.html: Failed to fetch page: 404 Not Found",
+      "timestamp": "2026-01-21T03:31:32.453Z"
+    }
+  ],
+  "metadata": {
+    "totalVariables": 5,
+    "filledVariables": 5
+  }
+}

@@ -1,0 +1,155 @@
+{
+  "id": "takaoka-registration",
+  "municipalityId": "takaoka",
+  "service": "registration",
+  "status": "draft",
+  "createdAt": "2026-01-21T03:30:03.406Z",
+  "updatedAt": "2026-01-21T03:30:03.407Z",
+  "variables": {
+    "registration_window": {
+      "value": "高岡市役所1階市民課（6番窓口） 各支所（伏木・戸出・中田・福岡）",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/shiminka/2/4/7/2453.html",
+      "confidence": 0.7999999999999999,
+      "extractedAt": "2026-01-21T03:29:48.557Z",
+      "validated": true
+    },
+    "shimin_department": {
+      "value": "市民課",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/shiminka/2/4/7/2453.html",
+      "confidence": 0.7999999999999999,
+      "extractedAt": "2026-01-21T03:29:48.557Z",
+      "validated": true
+    },
+    "juminhyo_madoguchi": {
+      "value": "300円",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/shiminka/2/4/6/2403.html",
+      "confidence": 0.9,
+      "extractedAt": "2026-01-21T03:29:58.385Z",
+      "validated": true
+    },
+    "koseki_fee": {
+      "value": "450円",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/shiminka/2/4/6/2403.html",
+      "confidence": 0.9,
+      "extractedAt": "2026-01-21T03:29:58.385Z",
+      "validated": true
+    },
+    "inkan_shomei_fee": {
+      "value": "300円",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/shiminka/2/4/6/2403.html",
+      "confidence": 0.9,
+      "extractedAt": "2026-01-21T03:29:58.385Z",
+      "validated": true
+    },
+    "shimin_email": {
+      "value": "メールフォームによるお問い合わせ",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/shiminka/2/4/7/2453.html",
+      "confidence": 0.8500000000000001,
+      "extractedAt": "2026-01-21T03:29:51.216Z",
+      "validated": true
+    },
+    "shimin_phone": {
+      "value": "0766-20-1337",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/shiminka/2/4/7/2453.html",
+      "confidence": 0.95,
+      "extractedAt": "2026-01-21T03:29:51.216Z",
+      "validated": true
+    },
+    "juminhyo_fee": {
+      "value": "300円",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/shiminka/2/4/6/2403.html",
+      "confidence": 0.95,
+      "extractedAt": "2026-01-21T03:29:53.673Z",
+      "validated": true
+    },
+    "juminhyo_convenience_fee": {
+      "value": "200円",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/shiminka/2/4/6/2403.html",
+      "confidence": 0.95,
+      "extractedAt": "2026-01-21T03:29:53.673Z",
+      "validated": true
+    },
+    "juminhyo_kisai_fee": {
+      "value": "300円",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/shiminka/2/4/6/2403.html",
+      "confidence": 0.95,
+      "extractedAt": "2026-01-21T03:29:53.673Z",
+      "validated": true
+    },
+    "jyuminhyo_fee": {
+      "value": "300円",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/shiminka/2/4/6/2403.html",
+      "confidence": 0.95,
+      "extractedAt": "2026-01-21T03:29:53.673Z",
+      "validated": true
+    },
+    "jyuminhyo_kisai_fee": {
+      "value": "300円",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/shiminka/2/4/6/2403.html",
+      "confidence": 0.95,
+      "extractedAt": "2026-01-21T03:29:53.673Z",
+      "validated": true
+    },
+    "kaisei_koseki_fee": {
+      "value": "750円",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/shiminka/2/4/6/2403.html",
+      "confidence": 0.95,
+      "extractedAt": "2026-01-21T03:29:53.673Z",
+      "validated": true
+    },
+    "jokoseki_fee": {
+      "value": "750円",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/shiminka/2/4/6/2403.html",
+      "confidence": 0.95,
+      "extractedAt": "2026-01-21T03:29:53.673Z",
+      "validated": true
+    },
+    "inkan_touroku_fee": {
+      "value": "300円",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/shiminka/2/4/6/2403.html",
+      "confidence": 0.95,
+      "extractedAt": "2026-01-21T03:29:53.673Z",
+      "validated": true
+    },
+    "inkan_shomei_convenience_fee": {
+      "value": "200円",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/shiminka/2/4/6/2403.html",
+      "confidence": 0.95,
+      "extractedAt": "2026-01-21T03:29:53.673Z",
+      "validated": true
+    },
+    "fuhyo_fee": {
+      "value": "300円",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/shiminka/2/4/6/2403.html",
+      "confidence": 0.95,
+      "extractedAt": "2026-01-21T03:29:53.673Z",
+      "validated": true
+    },
+    "koseki_form_url": {
+      "value": "https://www.city.takaoka.toyama.jp/shimin/todoke/shomei/yusou.html",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/shiminka/2/4/6/4228.html",
+      "confidence": 0.9,
+      "extractedAt": "2026-01-21T03:30:01.252Z",
+      "validated": true
+    },
+    "inin_form_url": {
+      "value": "https://www.city.takaoka.toyama.jp/shimin/todoke/shomei/yusou.html",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/shiminka/2/4/6/4228.html",
+      "confidence": 0.9,
+      "extractedAt": "2026-01-21T03:30:01.252Z",
+      "validated": true
+    }
+  },
+  "missingVariables": [],
+  "errors": [
+    {
+      "code": "PAGE_FETCH_FAILED",
+      "message": "Failed to fetch https://www.city.takaoka.toyama.jp/shimin/kurashi/koseki/henko/tennyu.html: Failed to fetch page: 404 Not Found",
+      "timestamp": "2026-01-21T03:30:03.406Z"
+    }
+  ],
+  "metadata": {
+    "totalVariables": 19,
+    "filledVariables": 19
+  }
+}

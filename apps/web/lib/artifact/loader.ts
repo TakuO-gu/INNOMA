@@ -24,6 +24,7 @@ import {
   hasEmergencyContent,
 } from "./cache";
 import { artifactLogger } from "./logger";
+import { getVariableStore, variableStoreToMapForJson, replaceVariables } from "@/lib/template";
 
 export type { InnomaArtifactValidated };
 export { invalidateCache, invalidateCacheByPrefix, makeCacheKey };
@@ -99,9 +100,35 @@ async function loadArtifactInternal(
       };
     }
 
+    // Extract municipality ID from key (e.g., "takaoka/services/environment/gomi.json" -> "takaoka")
+    const municipalityId = key.split("/")[0];
+
+    // Load variable store for this municipality (with JSON-safe escaping)
+    let variableMap: Record<string, string> = {};
+    try {
+      const variableStore = await getVariableStore(municipalityId);
+      variableMap = variableStoreToMapForJson(variableStore);
+    } catch (e) {
+      // Variable store may not exist for some municipalities, continue without it
+      artifactLogger.debug("variable_store_not_found", { municipalityId, error: (e as Error).message });
+    }
+
+    // Replace variables in the raw JSON string before parsing
+    let processedData = data;
+    if (Object.keys(variableMap).length > 0) {
+      const replaceResult = replaceVariables(data, variableMap);
+      processedData = replaceResult.content;
+      if (replaceResult.unreplacedVariables.length > 0) {
+        artifactLogger.debug("unreplaced_variables", {
+          key,
+          unreplaced: replaceResult.unreplacedVariables,
+        });
+      }
+    }
+
     let parsed: unknown;
     try {
-      parsed = JSON.parse(data);
+      parsed = JSON.parse(processedData);
     } catch (e) {
       artifactLogger.error("invalid_json", { key, error: (e as Error).message });
       return {

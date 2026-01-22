@@ -4,6 +4,7 @@ import { getDraft, getDraftComparison } from "@/lib/drafts";
 import { getMunicipalityMeta } from "@/lib/template";
 import { serviceDefinitions } from "@/lib/llm/variable-priority";
 import { DraftActions } from "./DraftActions";
+import { VariableContextViewer } from "./VariableContextViewer";
 
 interface Props {
   params: Promise<{
@@ -32,6 +33,14 @@ export default async function DraftDetailPage({ params }: Props) {
   const comparison = await getDraftComparison(municipalityId, service);
 
   const statusInfo = statusLabels[draft.status] || statusLabels.draft;
+
+  // Prepare changes data for client component
+  const changesData = comparison?.changes.map((c) => ({
+    variableName: c.variableName,
+    changeType: c.changeType,
+    oldValue: c.oldValue,
+    newValue: c.newValue,
+  }));
 
   return (
     <div>
@@ -102,121 +111,26 @@ export default async function DraftDetailPage({ params }: Props) {
         />
       </div>
 
-      {/* Variables Table */}
-      <div className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden mb-8">
-        <div className="px-6 py-4 border-b border-gray-200">
-          <h2 className="text-lg font-semibold text-gray-900">取得済み変数</h2>
+      {/* Variable Context Viewer (Split View) */}
+      <div className="mb-8">
+        <div className="mb-4">
+          <h2 className="text-lg font-semibold text-gray-900">変数とソースの確認</h2>
+          <p className="text-sm text-gray-500 mt-1">
+            左側で変数を選択すると、右側に取得元のソースコンテンツが表示されます。取得した値がハイライトされます。
+          </p>
         </div>
-        <table className="min-w-full divide-y divide-gray-200">
-          <thead className="bg-gray-50">
-            <tr>
-              <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                変数名
-              </th>
-              <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                値
-              </th>
-              <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                信頼度
-              </th>
-              <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                ソース
-              </th>
-              {comparison && (
-                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                  変更
-                </th>
-              )}
-            </tr>
-          </thead>
-          <tbody className="bg-white divide-y divide-gray-200">
-            {Object.entries(draft.variables).map(([name, variable]) => {
-              const change = comparison?.changes.find(
-                (c) => c.variableName === name
-              );
-              const confidenceColor =
-                variable.confidence >= 0.8
-                  ? "text-green-600"
-                  : variable.confidence >= 0.5
-                    ? "text-yellow-600"
-                    : "text-red-600";
-
-              return (
-                <tr key={name} className="hover:bg-gray-50">
-                  <td className="px-6 py-4">
-                    <code className="text-sm bg-gray-100 px-2 py-0.5 rounded">
-                      {name}
-                    </code>
-                  </td>
-                  <td className="px-6 py-4 text-sm text-gray-900">
-                    {variable.value}
-                  </td>
-                  <td className="px-6 py-4">
-                    <span className={`text-sm font-medium ${confidenceColor}`}>
-                      {Math.round(variable.confidence * 100)}%
-                    </span>
-                  </td>
-                  <td className="px-6 py-4 text-sm">
-                    {variable.sourceUrl ? (
-                      <a
-                        href={variable.sourceUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-blue-600 hover:underline truncate block max-w-xs"
-                      >
-                        {new URL(variable.sourceUrl).hostname}
-                      </a>
-                    ) : (
-                      <span className="text-gray-400">-</span>
-                    )}
-                  </td>
-                  {comparison && (
-                    <td className="px-6 py-4">
-                      {change?.changeType === "added" && (
-                        <span className="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-green-100 text-green-800">
-                          新規
-                        </span>
-                      )}
-                      {change?.changeType === "modified" && (
-                        <span className="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-blue-100 text-blue-800">
-                          変更
-                        </span>
-                      )}
-                    </td>
-                  )}
-                </tr>
-              );
-            })}
-          </tbody>
-        </table>
+        <VariableContextViewer
+          municipalityId={municipalityId}
+          service={service}
+          variables={draft.variables}
+          missingVariables={draft.missingVariables}
+          changes={changesData}
+        />
       </div>
-
-      {/* Missing Variables */}
-      {draft.missingVariables.length > 0 && (
-        <div className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden mb-8">
-          <div className="px-6 py-4 border-b border-gray-200">
-            <h2 className="text-lg font-semibold text-gray-900">
-              未取得変数 ({draft.missingVariables.length})
-            </h2>
-          </div>
-          <div className="px-6 py-4">
-            <div className="flex flex-wrap gap-2">
-              {draft.missingVariables.map((name) => (
-                <code
-                  key={name}
-                  className="text-sm bg-orange-50 text-orange-700 px-2 py-1 rounded border border-orange-200"
-                >
-                  {name}
-                </code>
-              ))}
-            </div>
-          </div>
-        </div>
-      )}
 
       {/* Errors */}
       {draft.errors.length > 0 && (
-        <div className="bg-white rounded-lg shadow-sm border border-red-200 overflow-hidden">
+        <div className="bg-white rounded-lg shadow-sm border border-red-200 overflow-hidden mb-8">
           <div className="px-6 py-4 border-b border-red-200 bg-red-50">
             <h2 className="text-lg font-semibold text-red-900">
               エラー ({draft.errors.length})

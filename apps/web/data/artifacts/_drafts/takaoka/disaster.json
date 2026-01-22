@@ -1,0 +1,79 @@
+{
+  "id": "takaoka-disaster",
+  "municipalityId": "takaoka",
+  "service": "disaster",
+  "status": "draft",
+  "createdAt": "2026-01-21T06:54:53.343Z",
+  "updatedAt": "2026-01-21T06:54:53.344Z",
+  "variables": {
+    "bosai_department": {
+      "value": "危機管理課",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/somu/bosai/bosai/hazard-map/index.html",
+      "confidence": 0.7999999999999999,
+      "extractedAt": "2026-01-21T06:54:33.375Z",
+      "validated": true
+    },
+    "bosai_phone": {
+      "value": "0766-20-1229",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/somu/bosai/bosai/hazard-map/index.html",
+      "confidence": 0.7999999999999999,
+      "extractedAt": "2026-01-21T06:54:33.375Z",
+      "validated": true
+    },
+    "dosha_hazard_map_url": {
+      "value": "土砂災害ハザードマップ",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/gyosei/kurashi_tetsuzuki/anzen_anshin/8/1/5555.html",
+      "confidence": 0.8,
+      "extractedAt": "2026-01-21T06:54:49.519Z",
+      "validated": true
+    },
+    "jishin_hazard_map_url": {
+      "value": "高岡市地震防災マップ",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/gyosei/kurashi_tetsuzuki/anzen_anshin/8/1/5555.html",
+      "confidence": 0.8,
+      "extractedAt": "2026-01-21T06:54:49.519Z",
+      "validated": true
+    },
+    "kozui_hazard_map_url": {
+      "value": "高岡市水害ハザードマップ・内水(ないすい)浸水想定区域図",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/gyosei/kurashi_tetsuzuki/anzen_anshin/8/1/5555.html",
+      "confidence": 0.8,
+      "extractedAt": "2026-01-21T06:54:49.519Z",
+      "validated": true
+    },
+    "disaster_department": {
+      "value": "危機管理課",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/somu/bosai/bosai/hazard-map/index.html",
+      "confidence": 0.95,
+      "extractedAt": "2026-01-21T06:54:35.347Z",
+      "validated": true
+    },
+    "disaster_phone": {
+      "value": "0766-20-1229",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/somu/bosai/bosai/hazard-map/index.html",
+      "confidence": 0.95,
+      "extractedAt": "2026-01-21T06:54:35.347Z",
+      "validated": true
+    }
+  },
+  "missingVariables": [
+    "bosai_email",
+    "bosai_mail_address",
+    "bosai_mail_touroku_url",
+    "bosai_telephone",
+    "disaster_email",
+    "fukushi_hinanjo_count",
+    "hazard_map_haifu_basho",
+    "hinanjo_count",
+    "hinanjo_map_url",
+    "hinanjo_status_url",
+    "kinkyu_hinanbasho_count",
+    "kozui_soutei_uryou",
+    "shitei_hinanjo_count"
+  ],
+  "errors": [],
+  "metadata": {
+    "totalVariables": 20,
+    "filledVariables": 7
+  }
+}

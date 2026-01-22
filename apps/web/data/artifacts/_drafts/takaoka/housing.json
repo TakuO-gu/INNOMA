@@ -1,0 +1,115 @@
+{
+  "id": "takaoka-housing",
+  "municipalityId": "takaoka",
+  "service": "housing",
+  "status": "draft",
+  "createdAt": "2026-01-21T06:55:17.145Z",
+  "updatedAt": "2026-01-21T06:55:17.145Z",
+  "variables": {
+    "reform_general_eligible": {
+      "value": "昭和56年6月以降に建築された一戸建て住宅（新耐震基準適合住宅、耐震改修工事を行う木造一戸建て住宅も可）",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kenchikuseisakuka/2/3/4/2521.html",
+      "confidence": 0.7999999999999999,
+      "extractedAt": "2026-01-21T06:54:57.928Z",
+      "validated": true
+    },
+    "seismic_diagnosis_max": {
+      "value": "予算の範囲内で、下記のとおり補助金を交付",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kenchikuseisakuka/2/3/4/4274.html",
+      "confidence": 0.7999999999999999,
+      "extractedAt": "2026-01-21T06:54:57.928Z",
+      "validated": true
+    },
+    "seismic_retrofit_max": {
+      "value": "予算の範囲内で、下記のとおり補助金を交付",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kenchikuseisakuka/2/3/4/4274.html",
+      "confidence": 0.7999999999999999,
+      "extractedAt": "2026-01-21T06:54:57.928Z",
+      "validated": true
+    },
+    "building_department": {
+      "value": "建築政策課",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kenchikuseisakuka/2/3/4/2521.html",
+      "confidence": 0.95,
+      "extractedAt": "2026-01-21T06:54:59.855Z",
+      "validated": true
+    },
+    "building_phone": {
+      "value": "0766-30-7291",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kenchikuseisakuka/2/3/4/2521.html",
+      "confidence": 0.95,
+      "extractedAt": "2026-01-21T06:54:59.855Z",
+      "validated": true
+    },
+    "reform_subsidy_max": {
+      "value": "100万円",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kenchikuseisakuka/2/3/4/2521.html",
+      "confidence": 0.95,
+      "extractedAt": "2026-01-21T06:54:59.855Z",
+      "validated": true
+    },
+    "reform_subsidy_rate": {
+      "value": "2/3",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kenchikuseisakuka/2/3/4/2521.html",
+      "confidence": 0.8500000000000001,
+      "extractedAt": "2026-01-21T06:54:59.855Z",
+      "validated": true
+    },
+    "vacant_house_subsidy_max": {
+      "value": "40万円",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kenchikuseisakuka/2/3/4/2521.html",
+      "confidence": 0.95,
+      "extractedAt": "2026-01-21T06:54:59.855Z",
+      "validated": true
+    },
+    "vacant_house_subsidy_rate": {
+      "value": "2/3",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kenchikuseisakuka/2/3/4/2521.html",
+      "confidence": 0.8500000000000001,
+      "extractedAt": "2026-01-21T06:54:59.855Z",
+      "validated": true
+    },
+    "housing_department": {
+      "value": "住宅・空き家等への居住支援",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kenchikuseisakuka/2/3/4/4998.html",
+      "confidence": 0.95,
+      "extractedAt": "2026-01-21T06:55:01.908Z",
+      "validated": true
+    },
+    "seismic_diagnosis_rate": {
+      "value": "9割",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kenchikuseisakuka/2/3/4/4274.html",
+      "confidence": 0.8500000000000001,
+      "extractedAt": "2026-01-21T06:55:04.262Z",
+      "validated": true
+    },
+    "seismic_retrofit_rate": {
+      "value": "5分の4",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kenchikuseisakuka/2/3/4/4274.html",
+      "confidence": 0.8500000000000001,
+      "extractedAt": "2026-01-21T06:55:04.262Z",
+      "validated": true
+    },
+    "housing_phone": {
+      "value": "0766-30-7291",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kenchikuseisakuka/2/3/4/2521.html",
+      "confidence": 1,
+      "extractedAt": "2026-01-21T06:55:05.525Z",
+      "validated": true
+    }
+  },
+  "missingVariables": [
+    "housing_email",
+    "building_email",
+    "housing_benefit_couple",
+    "housing_benefit_single",
+    "public_housing_rent_range",
+    "public_housing_schedule",
+    "reform_application_period"
+  ],
+  "errors": [],
+  "metadata": {
+    "totalVariables": 20,
+    "filledVariables": 13
+  }
+}
