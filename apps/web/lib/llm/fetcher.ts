@@ -6,11 +6,14 @@
 import { searchMunicipalitySite, isOfficialDomain, calculateUrlCredibility } from './google-search';
 import { generateSearchQuery } from './prompts/query-generator';
 import { extractVariables, extractFromSnippets } from './prompts/extractor';
-import { fetchPage, isUsefulUrl } from './page-fetcher';
+import { fetchPage, fetchPageWithPdfs, isUsefulUrl } from './page-fetcher';
 import { validateVariable, calculateValidationConfidence } from './validators';
 import { getServiceDefinition, serviceDefinitions, getVariableDefinition } from './variable-priority';
-import { ExtractedVariable, ExtractionError, ExtractionResult, LLMFetchConfig, FetchJob, SearchResult } from './types';
+import { ExtractedVariable, ExtractionError, ExtractionResult, LLMFetchConfig, FetchJob, SearchResult, SearchAttemptRecord } from './types';
 import { isConcreteValue, deepSearch, executeRefinedSearch } from './deep-search';
+import { generateJSON } from './gemini';
+import { buildMissingVariableSuggestionPrompt } from './prompts/missing-variable-suggester';
+import type { MissingVariableSuggestion } from '../drafts/types';
 
 /**
  * Fetch variables for a municipality service
@@ -31,6 +34,31 @@ export async function fetchServiceVariables(
 
   const variables: ExtractedVariable[] = [];
   const errors: ExtractionError[] = [];
+  const searchAttempts: Record<string, SearchAttemptRecord[]> = {};
+  const relatedPdfUrls = new Set<string>();
+
+  // Helper to record a search attempt for missing variables
+  const recordSearchAttempt = (
+    variableNames: string[],
+    query: string,
+    results: SearchResult[],
+    reason: SearchAttemptRecord['reason']
+  ) => {
+    const attempt: SearchAttemptRecord = {
+      query,
+      searchedAt: new Date().toISOString(),
+      resultsCount: results.length,
+      urls: results.slice(0, 5).map(r => r.link),
+      snippets: results.slice(0, 3).map(r => r.snippet),
+      reason,
+    };
+    for (const varName of variableNames) {
+      if (!searchAttempts[varName]) {
+        searchAttempts[varName] = [];
+      }
+      searchAttempts[varName].push(attempt);
+    }
+  };
 
   try {
     // Generate search query for the service
@@ -40,12 +68,14 @@ export async function fetchServiceVariables(
     const searchResults = await searchMunicipalitySite(municipalityName, query, officialUrl);
 
     if (searchResults.length === 0) {
+      // Record that no results were found for all variables in this service
+      recordSearchAttempt(service.variables, query, [], 'not_found');
       errors.push({
         code: 'SEARCH_FAILED',
         message: `No search results for ${service.nameJa}`,
         retryable: true,
       });
-      return { success: false, variables, errors };
+      return { success: false, variables, errors, searchAttempts };
     }
 
     // Try to extract from snippets first
@@ -82,15 +112,25 @@ export async function fetchServiceVariables(
 
     // Fetch full pages for variables that need more context
     if (snippetResult.needsPageFetch.length > 0) {
-      // Find useful URLs to fetch
+      // Find useful URLs to fetch (increased from 3 to 5)
       const urlsToFetch = searchResults
         .filter((r: SearchResult) => isUsefulUrl(r.link) && isOfficialDomain(r.link))
-        .slice(0, 3)
+        .slice(0, 5)
         .map((r: SearchResult) => r.link);
 
       for (const url of urlsToFetch) {
         try {
-          const pageContent = await fetchPage(url);
+          // ページとPDFリンクを取得 (increased from 2 to 4)
+          const { page: pageContent, pdfContents } = await fetchPageWithPdfs(url, {
+            fetchPdfs: true,
+            maxPdfs: 4,
+          });
+
+          for (const pdf of pdfContents) {
+            if (pdf.url) {
+              relatedPdfUrls.add(pdf.url);
+            }
+          }
 
           const remainingVars = snippetResult.needsPageFetch.map((name) => {
             const def = getVariableDefinition(name);
@@ -101,6 +141,7 @@ export async function fetchServiceVariables(
             };
           });
 
+          // まずHTMLページから抽出
           const pageExtracted = await extractVariables(pageContent.content, url, remainingVars);
 
           for (const extracted of pageExtracted) {
@@ -120,6 +161,48 @@ export async function fetchServiceVariables(
               // Only add if not already extracted
               if (!variables.some((v) => v.variableName === extracted.variableName && v.value)) {
                 variables.push(extracted);
+              }
+            }
+          }
+
+          // HTMLから取得できなかった変数をPDFから抽出
+          const stillMissingVars = remainingVars.filter(
+            (v) => !variables.some((ev) => ev.variableName === v.variableName && ev.value)
+          );
+
+          if (stillMissingVars.length > 0 && pdfContents.length > 0) {
+            for (const pdfContent of pdfContents) {
+              if (stillMissingVars.length === 0) break;
+
+              const pdfExtracted = await extractVariables(
+                pdfContent.content,
+                pdfContent.url,
+                stillMissingVars
+              );
+
+              for (const extracted of pdfExtracted) {
+                if (extracted.value) {
+                  const urlCredibility = calculateUrlCredibility(pdfContent.url);
+                  const validationResult = validateVariable(extracted.variableName, extracted.value);
+
+                  if (validationResult.valid) {
+                    extracted.confidence = Math.min(extracted.confidence + 0.2, 1.0);
+                    if (validationResult.normalized) {
+                      extracted.value = validationResult.normalized;
+                    }
+                  }
+
+                  extracted.confidence = Math.min((extracted.confidence + urlCredibility) / 2, 1.0);
+
+                  if (!variables.some((v) => v.variableName === extracted.variableName && v.value)) {
+                    variables.push(extracted);
+                    // 取得できた変数をリストから除外
+                    const idx = stillMissingVars.findIndex(
+                      (v) => v.variableName === extracted.variableName
+                    );
+                    if (idx >= 0) stillMissingVars.splice(idx, 1);
+                  }
+                }
               }
             }
           }
@@ -161,14 +244,14 @@ export async function fetchServiceVariables(
         }),
       ];
 
-      // ページ内リンク探索による深堀り
+      // ページ内リンク探索による深堀り (increased depth and pages)
       if (targetVars.length > 0) {
         const firstUrl = searchResults[0].link;
         const deepResult = await deepSearch(
           municipalityName,
           firstUrl,
           targetVars,
-          { maxDepth: 2, maxPagesPerLevel: 2, officialUrl }
+          { maxDepth: 3, maxPagesPerLevel: 4, officialUrl }
         );
 
         // 深堀りで取得した変数を追加
@@ -190,8 +273,8 @@ export async function fetchServiceVariables(
         );
 
         if (stillMissing.length > 0 && deepResult.suggestedQueries.length > 0) {
-          // 最大2つの再検索を実行
-          for (const query of deepResult.suggestedQueries.slice(0, 2)) {
+          // 最大4つの再検索を実行 (increased from 2)
+          for (const query of deepResult.suggestedQueries.slice(0, 4)) {
             const refinedVars = await executeRefinedSearch(
               municipalityName,
               query,
@@ -215,10 +298,183 @@ export async function fetchServiceVariables(
       }
     }
 
+    // Record search attempts for variables that were not successfully extracted
+    const extractedVarNames = new Set(variables.filter(v => v.value).map(v => v.variableName));
+    let missingVarNames = service.variables.filter(name => !extractedVarNames.has(name));
+
+    // 個別変数ごとの追加検索 (変数名を含む専用クエリで検索)
+    if (missingVarNames.length > 0) {
+      for (const varName of missingVarNames) {
+        const def = getVariableDefinition(varName);
+        if (!def) continue;
+
+        // 変数専用の検索クエリを生成
+        const varSpecificQuery = `${municipalityName} ${def.description}`;
+
+        try {
+          const varSearchResults = await searchMunicipalitySite(municipalityName, varSpecificQuery, officialUrl);
+
+          if (varSearchResults.length > 0) {
+            // 最大3つのURLを試行
+            for (const result of varSearchResults.slice(0, 3)) {
+              if (!isUsefulUrl(result.link)) continue;
+
+              try {
+                const { page: pageContent, pdfContents } = await fetchPageWithPdfs(result.link, {
+                  fetchPdfs: true,
+                  maxPdfs: 2,
+                });
+                for (const pdf of pdfContents) {
+                  if (pdf.url) {
+                    relatedPdfUrls.add(pdf.url);
+                  }
+                }
+
+                const varExtracted = await extractVariables(
+                  pageContent.content,
+                  result.link,
+                  [{ variableName: varName, description: def.description, examples: def.examples }]
+                );
+
+                for (const extracted of varExtracted) {
+                  if (extracted.value && isConcreteValue(extracted.variableName, extracted.value)) {
+                    const urlCredibility = calculateUrlCredibility(result.link);
+                    const validationResult = validateVariable(extracted.variableName, extracted.value);
+
+                    if (validationResult.valid) {
+                      extracted.confidence = Math.min(extracted.confidence + 0.2, 1.0);
+                      if (validationResult.normalized) {
+                        extracted.value = validationResult.normalized;
+                      }
+                    }
+
+                    extracted.confidence = Math.min((extracted.confidence + urlCredibility) / 2, 1.0);
+
+                    if (!variables.some((v) => v.variableName === extracted.variableName && v.value)) {
+                      variables.push(extracted);
+                      // 取得できたので次の変数へ
+                      break;
+                    }
+                  }
+                }
+
+                // PDFからも探索
+                if (!variables.some((v) => v.variableName === varName && v.value)) {
+                  for (const pdfContent of pdfContents) {
+                    const pdfExtracted = await extractVariables(
+                      pdfContent.content,
+                      pdfContent.url,
+                      [{ variableName: varName, description: def.description, examples: def.examples }]
+                    );
+
+                    for (const extracted of pdfExtracted) {
+                      if (extracted.value && isConcreteValue(extracted.variableName, extracted.value)) {
+                        const urlCredibility = calculateUrlCredibility(pdfContent.url);
+                        extracted.confidence = Math.min((extracted.confidence + urlCredibility) / 2, 1.0);
+
+                        if (!variables.some((v) => v.variableName === extracted.variableName && v.value)) {
+                          variables.push(extracted);
+                          break;
+                        }
+                      }
+                    }
+
+                    if (variables.some((v) => v.variableName === varName && v.value)) break;
+                  }
+                }
+
+                // 取得できたら次の変数へ
+                if (variables.some((v) => v.variableName === varName && v.value)) break;
+              } catch {
+                // Individual URL fetch failed, continue to next
+              }
+            }
+
+            // 検索試行を記録
+            recordSearchAttempt(
+              [varName],
+              varSpecificQuery,
+              varSearchResults,
+              variables.some((v) => v.variableName === varName && v.value) ? 'no_match' : 'no_match'
+            );
+          } else {
+            recordSearchAttempt([varName], varSpecificQuery, [], 'not_found');
+          }
+        } catch {
+          // Variable-specific search failed
+          recordSearchAttempt([varName], varSpecificQuery, [], 'not_found');
+        }
+      }
+    }
+
+    // 最終的な未取得変数を更新
+    const finalExtractedVarNames = new Set(variables.filter(v => v.value).map(v => v.variableName));
+    missingVarNames = service.variables.filter(name => !finalExtractedVarNames.has(name));
+
+    // If there are missing variables that don't have search attempts yet, record the main query
+    for (const varName of missingVarNames) {
+      if (!searchAttempts[varName] || searchAttempts[varName].length === 0) {
+        recordSearchAttempt([varName], query, searchResults, 'no_match');
+      }
+    }
+
+    let missingSuggestions: Record<string, MissingVariableSuggestion> | undefined;
+    if (missingVarNames.length > 0) {
+      try {
+        const prompt = buildMissingVariableSuggestionPrompt({
+          municipalityName,
+          serviceName: service.nameJa,
+          variables: missingVarNames.map((name) => {
+            const def = getVariableDefinition(name);
+            return {
+              variableName: name,
+              description: def?.description || name,
+              examples: def?.examples,
+            };
+          }),
+          searchAttempts,
+          relatedPdfs: Array.from(relatedPdfUrls),
+        });
+
+        const suggestionResponse = await generateJSON<{
+          suggestions: Array<{
+            variableName: string;
+            reason: string;
+            suggestedValue?: string | null;
+            suggestedSourceUrl?: string | null;
+            relatedUrls?: string[];
+            relatedPdfs?: string[];
+            confidence?: number;
+          }>;
+        }>(prompt, { maxOutputTokens: 1200 });
+
+        missingSuggestions = {};
+        for (const suggestion of suggestionResponse.suggestions || []) {
+          if (!missingVarNames.includes(suggestion.variableName)) {
+            continue;
+          }
+          missingSuggestions[suggestion.variableName] = {
+            variableName: suggestion.variableName,
+            reason: suggestion.reason,
+            suggestedValue: suggestion.suggestedValue ?? null,
+            suggestedSourceUrl: suggestion.suggestedSourceUrl ?? null,
+            relatedUrls: suggestion.relatedUrls || [],
+            relatedPdfs: suggestion.relatedPdfs || [],
+            confidence: suggestion.confidence ?? 0.3,
+            status: "suggested",
+          };
+        }
+      } catch (error) {
+        console.warn("Failed to generate missing variable suggestions:", error);
+      }
+    }
+
     return {
       success: errors.length === 0 || variables.length > 0,
       variables,
       errors,
+      searchAttempts,
+      missingSuggestions,
     };
   } catch (error) {
     errors.push({
@@ -226,7 +482,7 @@ export async function fetchServiceVariables(
       message: error instanceof Error ? error.message : 'Unknown error',
       retryable: true,
     });
-    return { success: false, variables, errors };
+    return { success: false, variables, errors, searchAttempts };
   }
 }
 

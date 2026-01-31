@@ -1,0 +1,171 @@
+{
+  "municipality_name": {
+    "value": "川崎町",
+    "source": "manual",
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "prefecture_name": {
+    "value": "宮城県",
+    "source": "manual",
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "generated_at": {
+    "value": "2026-01-31T00:00:00.000Z",
+    "source": "manual",
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "city_hall_address": {
+    "value": "〒989-1592 宮城県柴田郡川崎町大字前川字裏丁175-1",
+    "source": "llm",
+    "sourceUrl": "https://www.town.kawasaki.miyagi.jp/soshiki/chomin/286.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "city_hall_phone": {
+    "value": "0224-84-2111",
+    "source": "llm",
+    "sourceUrl": "https://www.town.kawasaki.miyagi.jp/soshiki/1.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "city_hall_department": {
+    "value": "総務課",
+    "source": "llm",
+    "sourceUrl": "https://www.town.kawasaki.miyagi.jp/soshiki/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "shimin_department": {
+    "value": "町民生活課 窓口係",
+    "source": "llm",
+    "sourceUrl": "https://www.town.kawasaki.miyagi.jp/soshiki/chomin/286.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "shimin_phone": {
+    "value": "0224-84-2112",
+    "source": "llm",
+    "sourceUrl": "https://www.town.kawasaki.miyagi.jp/soshiki/chomin/286.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "shimin_fax": {
+    "value": "0224-85-1907",
+    "source": "llm",
+    "sourceUrl": "https://www.town.kawasaki.miyagi.jp/soshiki/chomin/286.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "registration_department": {
+    "value": "町民生活課 窓口係",
+    "source": "llm",
+    "sourceUrl": "https://www.town.kawasaki.miyagi.jp/soshiki/chomin/286.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "registration_phone": {
+    "value": "0224-84-2112",
+    "source": "llm",
+    "sourceUrl": "https://www.town.kawasaki.miyagi.jp/soshiki/chomin/286.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "koseki_department": {
+    "value": "町民生活課 窓口係",
+    "source": "llm",
+    "sourceUrl": "https://www.town.kawasaki.miyagi.jp/soshiki/chomin/286.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "koseki_phone": {
+    "value": "0224-84-2112",
+    "source": "llm",
+    "sourceUrl": "https://www.town.kawasaki.miyagi.jp/soshiki/chomin/286.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "tax_department": {
+    "value": "税務課",
+    "source": "llm",
+    "sourceUrl": "https://www.town.kawasaki.miyagi.jp/soshiki/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "zeimu_department": {
+    "value": "税務課",
+    "source": "llm",
+    "sourceUrl": "https://www.town.kawasaki.miyagi.jp/soshiki/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "welfare_department": {
+    "value": "保健福祉課",
+    "source": "llm",
+    "sourceUrl": "https://www.town.kawasaki.miyagi.jp/soshiki/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "building_department": {
+    "value": "建設課",
+    "source": "llm",
+    "sourceUrl": "https://www.town.kawasaki.miyagi.jp/soshiki/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "housing_department": {
+    "value": "建設課",
+    "source": "llm",
+    "sourceUrl": "https://www.town.kawasaki.miyagi.jp/soshiki/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "agriculture_department": {
+    "value": "農林課",
+    "source": "llm",
+    "sourceUrl": "https://www.town.kawasaki.miyagi.jp/soshiki/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "business_department": {
+    "value": "地域振興課",
+    "source": "llm",
+    "sourceUrl": "https://www.town.kawasaki.miyagi.jp/soshiki/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "suidou_department": {
+    "value": "上下水道課",
+    "source": "llm",
+    "sourceUrl": "https://www.town.kawasaki.miyagi.jp/soshiki/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "childcare_department": {
+    "value": "幼児教育課",
+    "source": "llm",
+    "sourceUrl": "https://www.town.kawasaki.miyagi.jp/soshiki/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "agricultural_commission": {
+    "value": "農業委員会",
+    "source": "llm",
+    "sourceUrl": "https://www.town.kawasaki.miyagi.jp/soshiki/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "juminhyo_fee": {
+    "value": "300円（抄本）/ 500円（謄本）",
+    "source": "llm",
+    "sourceUrl": "https://www.town.kawasaki.miyagi.jp/soshiki/chomin/286.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "koseki_fee": {
+    "value": "450円",
+    "source": "llm",
+    "sourceUrl": "https://www.town.kawasaki.miyagi.jp/soshiki/chomin/286.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  }
+}

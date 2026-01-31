@@ -1,0 +1,22 @@
+{
+  "mynumber_department": {
+    "value": "市民課",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/shiminka/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "mynumber_phone": {
+    "value": "0766-20-1333",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/shiminka/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "mynumber_email": {
+    "value": "shimin@city.takaoka.lg.jp",
+    "source": "llm",
+    "confidence": 0.7,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  }
+}

@@ -7,6 +7,7 @@ import { NextRequest } from "next/server";
 import { getLatestJob, canResumeJob, getJobSummary } from "@/lib/jobs";
 import { getDraft } from "@/lib/drafts";
 import { serviceDefinitions } from "@/lib/llm/variable-priority";
+import { isValidMunicipalityId } from "@/lib/security/validators";
 
 interface RouteParams {
   params: Promise<{
@@ -25,6 +26,12 @@ interface ServiceStatus {
 
 export async function GET(_request: NextRequest, { params }: RouteParams) {
   const { id } = await params;
+  if (!isValidMunicipalityId(id)) {
+    return Response.json(
+      { error: "自治体IDの形式が正しくありません" },
+      { status: 400 }
+    );
+  }
 
   try {
     // Get service statuses from drafts

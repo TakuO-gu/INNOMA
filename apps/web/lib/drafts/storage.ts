@@ -5,8 +5,9 @@
 
 import { readdir, readFile, writeFile, mkdir, unlink, stat } from 'fs/promises';
 import path from 'path';
-import { Draft, DraftSummary, DraftStatus, DraftVariableEntry } from './types';
+import { Draft, DraftSummary, DraftStatus, DraftVariableEntry, SearchAttempt } from './types';
 import { serviceDefinitions } from '../llm/variable-priority';
+import type { DraftVariableUpdate, MissingVariableSuggestion } from './types';
 
 const DRAFTS_DIR = path.join(process.cwd(), 'data', 'artifacts', '_drafts');
 
@@ -143,7 +144,9 @@ export async function createDraft(
   service: string,
   variables: Record<string, DraftVariableEntry>,
   missingVariables: string[],
-  errors: { code: string; message: string; variableName?: string }[]
+  errors: { code: string; message: string; variableName?: string }[],
+  searchAttempts?: Record<string, SearchAttempt[]>,
+  missingSuggestions?: Record<string, MissingVariableSuggestion>
 ): Promise<Draft> {
   const now = new Date().toISOString();
   const id = generateDraftId(municipalityId, service);
@@ -157,6 +160,8 @@ export async function createDraft(
     updatedAt: now,
     variables,
     missingVariables,
+    searchAttempts,
+    missingSuggestions,
     errors: errors.map((e) => ({ ...e, timestamp: now })),
     metadata: {
       totalVariables: Object.keys(variables).length + missingVariables.length,
@@ -196,7 +201,7 @@ export async function updateDraftStatus(
 export async function updateDraftVariables(
   municipalityId: string,
   service: string,
-  updates: Record<string, string>
+  updates: Record<string, string | DraftVariableUpdate>
 ): Promise<Draft | null> {
   const draft = await getDraft(municipalityId, service);
   if (!draft) return null;
@@ -204,26 +209,61 @@ export async function updateDraftVariables(
   const now = new Date().toISOString();
 
   for (const [name, value] of Object.entries(updates)) {
+    const normalized =
+      typeof value === "string"
+        ? { value }
+        : value;
+
     if (draft.variables[name]) {
-      draft.variables[name].value = value;
+      draft.variables[name].value = normalized.value;
       draft.variables[name].extractedAt = now;
+      if (normalized.sourceUrl !== undefined) {
+        draft.variables[name].sourceUrl = normalized.sourceUrl;
+      }
+      if (normalized.confidence !== undefined) {
+        draft.variables[name].confidence = normalized.confidence;
+      }
+      if (normalized.validated !== undefined) {
+        draft.variables[name].validated = normalized.validated;
+      }
     } else {
       draft.variables[name] = {
-        value,
-        sourceUrl: '',
-        confidence: 1.0,
+        value: normalized.value,
+        sourceUrl: normalized.sourceUrl || '',
+        confidence: normalized.confidence ?? 1.0,
         extractedAt: now,
-        validated: true,
+        validated: normalized.validated ?? true,
       };
 
       // Remove from missing list
       draft.missingVariables = draft.missingVariables.filter((v) => v !== name);
+    }
+
+    if (draft.missingSuggestions?.[name]) {
+      draft.missingSuggestions[name].status = "accepted";
     }
   }
 
   draft.metadata.filledVariables = Object.keys(draft.variables).length;
   await saveDraft(draft);
 
+  return draft;
+}
+
+/**
+ * Update missing suggestion status
+ */
+export async function updateMissingSuggestionStatus(
+  municipalityId: string,
+  service: string,
+  variableName: string,
+  status: "suggested" | "accepted" | "rejected"
+): Promise<Draft | null> {
+  const draft = await getDraft(municipalityId, service);
+  if (!draft || !draft.missingSuggestions?.[variableName]) return draft;
+
+  draft.missingSuggestions[variableName].status = status;
+  await saveDraft(draft);
   return draft;
 }
 

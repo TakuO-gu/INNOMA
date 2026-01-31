@@ -236,16 +236,10 @@
             ]
           },
           {
-            "type": "callout",
-            "severity": "info",
-            "content": [
+            "type": "paragraph",
+            "runs": [
               {
-                "type": "paragraph",
-                "runs": [
-                  {
-                    "text": "死亡届は24時間、休日・夜間も受け付けています。"
-                  }
-                ]
+                "text": "死亡届は24時間、休日・夜間も受け付けています。"
               }
             ]
           }
@@ -384,17 +378,15 @@
             ]
           },
           {
-            "type": "callout",
-            "severity": "info",
-            "title": "おくやみ窓口",
-            "content": [
+            "type": "heading",
+            "level": 3,
+            "text": "おくやみ窓口"
+          },
+          {
+            "type": "paragraph",
+            "runs": [
               {
-                "type": "paragraph",
-                "runs": [
-                  {
-                    "text": "{{okuyami_madoguchi_description}}"
-                  }
-                ]
+                "text": "{{okuyami_madoguchi_description}}"
               }
             ]
           }

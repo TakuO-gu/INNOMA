@@ -47,7 +47,13 @@ export function ContactBlock({ props }: { props: Record<string, unknown> }) {
           <div className="flex">
             <dt className="w-24 font-medium text-solid-gray-600">メール</dt>
             <dd>
-              <Link href={`mailto:${email}`}>{email}</Link>
+              {email.startsWith("http://") || email.startsWith("https://") ? (
+                <Link href={email} target="_blank" rel="noopener noreferrer">
+                  問い合わせフォーム
+                </Link>
+              ) : (
+                <Link href={`mailto:${email}`}>{email}</Link>
+              )}
             </dd>
           </div>
         )}
@@ -75,12 +81,19 @@ export function ContactBlock({ props }: { props: Record<string, unknown> }) {
 }
 
 export function ActionButtonBlock({ props }: { props: Record<string, unknown> }) {
-  const { municipalityId } = useMunicipality();
+  const { municipalityId, isPageCompleted } = useMunicipality();
   const label = (props.label as string) || "申請する";
   const href = (props.href as string) || "#";
   const actionType = props.action_type as "web_form" | "pdf" | "external_link" | undefined;
 
-  const isExternal = actionType === "external_link" || actionType === "pdf";
+  const isExternal = actionType === "external_link" || actionType === "pdf" ||
+    href.startsWith("http://") || href.startsWith("https://");
+
+  // 内部リンクで未完成ページの場合は表示しない
+  if (!isExternal && !isPageCompleted(href)) {
+    return null;
+  }
+
   const resolvedHref = isExternal ? href : prefixInternalLink(href, municipalityId);
 
   return (
@@ -95,6 +108,51 @@ export function ActionButtonBlock({ props }: { props: Record<string, unknown> })
         {actionType === "pdf" && <span className="ml-2 text-sm">(PDF)</span>}
         {isExternal && (
           <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+          </svg>
+        )}
+      </a>
+    </div>
+  );
+}
+
+export function TaskButtonBlock({ props }: { props: Record<string, unknown> }) {
+  const { municipalityId, isPageCompleted } = useMunicipality();
+  const label = (props.label as string) || "タスクを実行";
+  const href = (props.href as string) || "#";
+  const isTopTask = props.isTopTask as boolean | undefined;
+
+  // 外部リンク判定 (http/https で始まる、または変数展開後の外部URL)
+  const isExternal = href.startsWith("http://") || href.startsWith("https://");
+
+  // 内部リンクで未完成ページの場合は表示しない
+  if (!isExternal && !isPageCompleted(href)) {
+    return null;
+  }
+
+  const resolvedHref = isExternal ? href : prefixInternalLink(href, municipalityId);
+
+  // isTopTask の場合は目立つスタイル、そうでなければ控えめなスタイル
+  const baseClasses = "inline-flex items-center gap-2 font-medium rounded-lg transition-colors";
+  const topTaskClasses = "px-6 py-3 bg-blue-1000 text-white hover:bg-blue-900";
+  const normalTaskClasses = "px-4 py-2 bg-solid-gray-100 text-blue-1000 hover:bg-solid-gray-200 border border-solid-gray-300";
+
+  return (
+    <div className={`task-button ${isTopTask ? "my-6" : "my-4"}`}>
+      <a
+        href={resolvedHref}
+        target={isExternal ? "_blank" : undefined}
+        rel={isExternal ? "noopener noreferrer" : undefined}
+        className={`${baseClasses} ${isTopTask ? topTaskClasses : normalTaskClasses}`}
+      >
+        {isTopTask && (
+          <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+          </svg>
+        )}
+        {label}
+        {isExternal && (
+          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
           </svg>
         )}

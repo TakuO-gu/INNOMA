@@ -1,17 +1,41 @@
 {
-  "id": "takaoka-1768980192127",
+  "id": "takaoka-1769732066852",
   "municipalityId": "takaoka",
-  "startedAt": "2026-01-21T07:23:12.127Z",
-  "updatedAt": "2026-01-21T07:23:34.528Z",
+  "startedAt": "2026-01-30T00:14:26.852Z",
+  "updatedAt": "2026-01-30T00:21:41.118Z",
   "status": "completed",
-  "totalServices": 1,
+  "totalServices": 5,
   "services": {
     "environment": {
       "status": "completed",
-      "startedAt": "2026-01-21T07:23:12.130Z",
-      "completedAt": "2026-01-21T07:23:34.526Z",
-      "variablesCount": 2
+      "startedAt": "2026-01-30T00:14:26.854Z",
+      "completedAt": "2026-01-30T00:15:58.691Z",
+      "variablesCount": 11
+    },
+    "disaster": {
+      "status": "completed",
+      "startedAt": "2026-01-30T00:15:59.693Z",
+      "completedAt": "2026-01-30T00:17:57.773Z",
+      "variablesCount": 15
+    },
+    "housing": {
+      "status": "completed",
+      "startedAt": "2026-01-30T00:17:58.776Z",
+      "completedAt": "2026-01-30T00:20:26.365Z",
+      "variablesCount": 15
+    },
+    "employment": {
+      "status": "completed",
+      "startedAt": "2026-01-30T00:20:27.367Z",
+      "completedAt": "2026-01-30T00:21:36.323Z",
+      "variablesCount": 13
+    },
+    "driving": {
+      "status": "completed",
+      "startedAt": "2026-01-30T00:21:37.324Z",
+      "completedAt": "2026-01-30T00:21:41.117Z",
+      "variablesCount": 0
     }
   },
-  "completedAt": "2026-01-21T07:23:34.528Z"
+  "completedAt": "2026-01-30T00:21:41.117Z"
 }

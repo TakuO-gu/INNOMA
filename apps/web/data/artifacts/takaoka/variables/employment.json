@@ -1,0 +1,119 @@
+{
+  "hello_work_name": {
+    "value": "ハローワーク高岡",
+    "source": "llm",
+    "sourceUrl": "https://jsite.mhlw.go.jp/toyama-roudoukyoku/hw/hello/takaoaka.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "hello_work_phone": {
+    "value": "0766-21-1515",
+    "source": "llm",
+    "sourceUrl": "https://jsite.mhlw.go.jp/toyama-roudoukyoku/hw/hello/takaoaka.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "hello_work_address": {
+    "value": "富山県高岡市向野町3丁目43-4",
+    "source": "llm",
+    "sourceUrl": "https://jsite.mhlw.go.jp/toyama-roudoukyoku/hw/hello/takaoaka.html",
+    "confidence": 0.9,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "labor_bureau": {
+    "value": "富山労働局",
+    "source": "llm",
+    "sourceUrl": "https://jsite.mhlw.go.jp/toyama-roudoukyoku/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "labor_bureau_phone": {
+    "value": "076-432-2740",
+    "source": "llm",
+    "sourceUrl": "https://jsite.mhlw.go.jp/toyama-roudoukyoku/",
+    "confidence": 0.9,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "labor_bureau_address": {
+    "value": "〒930-8509 富山市神通本町1-5-5 富山労働総合庁舎",
+    "source": "llm",
+    "sourceUrl": "https://jsite.mhlw.go.jp/toyama-roudoukyoku/",
+    "confidence": 0.9,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "labor_standards_office": {
+    "value": "高岡労働基準監督署",
+    "source": "llm",
+    "sourceUrl": "https://jsite.mhlw.go.jp/toyama-roudoukyoku/kantoku/kijun.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "labor_standards_office_phone": {
+    "value": "0766-23-6446",
+    "source": "llm",
+    "sourceUrl": "https://jsite.mhlw.go.jp/toyama-roudoukyoku/kantoku/kijun.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "labor_standards_office_address": {
+    "value": "〒933-0046 富山県高岡市中川本町10-21",
+    "source": "llm",
+    "sourceUrl": "https://jsite.mhlw.go.jp/toyama-roudoukyoku/kantoku/kijun.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "minimum_wage": {
+    "value": "1,062円",
+    "source": "llm",
+    "sourceUrl": "https://jsite.mhlw.go.jp/toyama-roudoukyoku/riyousha_mokuteki_menu/mokuteki_naiyou/saiteichingin_koutin.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "minimum_wage_effective_date": {
+    "value": "令和7年10月12日",
+    "source": "llm",
+    "sourceUrl": "https://jsite.mhlw.go.jp/toyama-roudoukyoku/riyousha_mokuteki_menu/mokuteki_naiyou/saiteichingin_koutin.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "business_department": {
+    "value": "産業振興課",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/sangyoshinkoka/",
+    "confidence": 0.9,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "business_phone": {
+    "value": "0766-20-1221",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/sangyoshinkoka/",
+    "confidence": 0.8,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "business_email": {
+    "value": "sangyo@city.takaoka.lg.jp",
+    "source": "llm",
+    "confidence": 0.7,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "employment_department": {
+    "value": "産業振興課",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/sangyoshinkoka/",
+    "confidence": 0.9,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "employment_phone": {
+    "value": "0766-20-1221",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/sangyoshinkoka/",
+    "confidence": 0.8,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "employment_email": {
+    "value": "sangyo@city.takaoka.lg.jp",
+    "source": "llm",
+    "confidence": 0.7,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  }
+}

@@ -18,6 +18,7 @@ export { NotificationBannerBlock, EmergencyBannerBlock } from "./NotificationBlo
 export {
   ContactBlock,
   ActionButtonBlock,
+  TaskButtonBlock,
   StepNavigationBlock,
   DirectoryListBlock,
   NewsMetaBlock,
@@ -34,3 +35,6 @@ export {
 
 // Sources Blocks
 export { SourcesBlock } from "./SourcesBlocks";
+
+// District Selector Block
+export { DistrictSelectorBlock } from "./DistrictSelectorBlock";

@@ -1,0 +1,31 @@
+{
+  "municipality_name": {
+    "value": "東吉野村",
+    "source": "manual",
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "prefecture_name": {
+    "value": "奈良県",
+    "source": "manual",
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "generated_at": {
+    "value": "2026-01-31T00:00:00.000Z",
+    "source": "manual",
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "city_hall_address": {
+    "value": "〒633-2492 奈良県吉野郡東吉野村大字小川99",
+    "source": "llm",
+    "sourceUrl": "https://www.vill.higashiyoshino.nara.jp/",
+    "confidence": 0.8,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "city_hall_phone": {
+    "value": "0746-42-0441",
+    "source": "llm",
+    "sourceUrl": "https://www.vill.higashiyoshino.nara.jp/",
+    "confidence": 0.8,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  }
+}

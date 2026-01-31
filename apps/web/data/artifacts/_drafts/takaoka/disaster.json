@@ -3,77 +3,402 @@
   "municipalityId": "takaoka",
   "service": "disaster",
   "status": "draft",
-  "createdAt": "2026-01-21T06:54:53.343Z",
-  "updatedAt": "2026-01-21T06:54:53.344Z",
+  "createdAt": "2026-01-30T00:17:57.770Z",
+  "updatedAt": "2026-01-30T00:17:57.771Z",
   "variables": {
     "bosai_department": {
       "value": "危機管理課",
       "sourceUrl": "https://www.city.takaoka.toyama.jp/somu/bosai/bosai/hazard-map/index.html",
       "confidence": 0.7999999999999999,
-      "extractedAt": "2026-01-21T06:54:33.375Z",
+      "extractedAt": "2026-01-30T00:16:03.400Z",
       "validated": true
     },
     "bosai_phone": {
       "value": "0766-20-1229",
       "sourceUrl": "https://www.city.takaoka.toyama.jp/somu/bosai/bosai/hazard-map/index.html",
       "confidence": 0.7999999999999999,
-      "extractedAt": "2026-01-21T06:54:33.375Z",
+      "extractedAt": "2026-01-30T00:16:03.400Z",
       "validated": true
     },
-    "dosha_hazard_map_url": {
-      "value": "土砂災害ハザードマップ",
-      "sourceUrl": "https://www.city.takaoka.toyama.jp/gyosei/kurashi_tetsuzuki/anzen_anshin/8/1/5555.html",
-      "confidence": 0.8,
-      "extractedAt": "2026-01-21T06:54:49.519Z",
-      "validated": true
-    },
-    "jishin_hazard_map_url": {
-      "value": "高岡市地震防災マップ",
-      "sourceUrl": "https://www.city.takaoka.toyama.jp/gyosei/kurashi_tetsuzuki/anzen_anshin/8/1/5555.html",
-      "confidence": 0.8,
-      "extractedAt": "2026-01-21T06:54:49.519Z",
-      "validated": true
-    },
-    "kozui_hazard_map_url": {
-      "value": "高岡市水害ハザードマップ・内水(ないすい)浸水想定区域図",
-      "sourceUrl": "https://www.city.takaoka.toyama.jp/gyosei/kurashi_tetsuzuki/anzen_anshin/8/1/5555.html",
-      "confidence": 0.8,
-      "extractedAt": "2026-01-21T06:54:49.519Z",
+    "hinanjo_map_url": {
+      "value": "https://www.city.takaoka.toyama.jp/somu/bosai/bosai/hinanjo/hinanjo.html",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/somu/bosai/bosai/hinanjo/hinanjo.html",
+      "confidence": 0.7999999999999999,
+      "extractedAt": "2026-01-30T00:16:03.400Z",
       "validated": true
     },
     "disaster_department": {
       "value": "危機管理課",
       "sourceUrl": "https://www.city.takaoka.toyama.jp/somu/bosai/bosai/hazard-map/index.html",
       "confidence": 0.95,
-      "extractedAt": "2026-01-21T06:54:35.347Z",
+      "extractedAt": "2026-01-30T00:16:06.205Z",
       "validated": true
     },
     "disaster_phone": {
       "value": "0766-20-1229",
       "sourceUrl": "https://www.city.takaoka.toyama.jp/somu/bosai/bosai/hazard-map/index.html",
       "confidence": 0.95,
-      "extractedAt": "2026-01-21T06:54:35.347Z",
+      "extractedAt": "2026-01-30T00:16:06.205Z",
+      "validated": true
+    },
+    "dosha_hazard_map_url": {
+      "value": "土砂災害ハザードマップ",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/gyosei/kurashi_tetsuzuki/anzen_anshin/8/1/5555.html",
+      "confidence": 0.8,
+      "extractedAt": "2026-01-30T00:16:34.650Z",
+      "validated": true
+    },
+    "jishin_hazard_map_url": {
+      "value": "高岡市地震防災マップ",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/gyosei/kurashi_tetsuzuki/anzen_anshin/8/1/5555.html",
+      "confidence": 0.8,
+      "extractedAt": "2026-01-30T00:16:34.650Z",
+      "validated": true
+    },
+    "kozui_hazard_map_url": {
+      "value": "高岡市水害ハザードマップ・内水(ないすい)浸水想定区域図",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/gyosei/kurashi_tetsuzuki/anzen_anshin/8/1/5555.html",
+      "confidence": 0.8,
+      "extractedAt": "2026-01-30T00:16:34.650Z",
+      "validated": true
+    },
+    "bosai_mail_address": {
+      "value": "bousai.takaoka-city@raiden3.ktaiwork.jp",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kikikanrika/2/1/1/3/5433.html",
+      "confidence": 0.9,
+      "extractedAt": "2026-01-30T00:16:40.979Z",
+      "validated": true
+    },
+    "bosai_telephone": {
+      "value": "0766-20-1229",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kikikanrika/2/1/1/3/5433.html",
+      "confidence": 0.9,
+      "extractedAt": "2026-01-30T00:16:40.979Z",
+      "validated": true
+    },
+    "bosai_email": {
+      "value": "bousai.takaoka-city@raiden3.ktaiwork.jp",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/material/files/group/11/takaokacity_bousasi_mail.pdf",
+      "confidence": 0.8500000000000001,
+      "extractedAt": "2026-01-30T00:16:48.147Z",
+      "validated": true
+    },
+    "bosai_mail_touroku_url": {
+      "value": "https://raiden",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/material/files/group/11/takaokacity_bousasi_mail.pdf",
+      "confidence": 0.8500000000000001,
+      "extractedAt": "2026-01-30T00:16:51.442Z",
+      "validated": true
+    },
+    "hinanjo_count": {
+      "value": "147",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/material/files/group/11/R070701hinanbasyohinansyo.pdf",
+      "confidence": 0.8500000000000001,
+      "extractedAt": "2026-01-30T00:17:42.420Z",
+      "validated": true
+    },
+    "kozui_soutei_uryou": {
+      "value": "1時間当たり130ミリメートル（想定最大規模降雨）",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/gesuidokomuka/2/1/2/3/4661.html",
+      "confidence": 0.95,
+      "extractedAt": "2026-01-30T00:17:48.289Z",
+      "validated": true
+    },
+    "shitei_hinanjo_count": {
+      "value": "147",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/material/files/group/11/R070701hinanbasyohinansyo.pdf",
+      "confidence": 0.8500000000000001,
+      "extractedAt": "2026-01-30T00:17:51.444Z",
       "validated": true
     }
   },
   "missingVariables": [
-    "bosai_email",
-    "bosai_mail_address",
-    "bosai_mail_touroku_url",
-    "bosai_telephone",
     "disaster_email",
     "fukushi_hinanjo_count",
     "hazard_map_haifu_basho",
-    "hinanjo_count",
-    "hinanjo_map_url",
     "hinanjo_status_url",
-    "kinkyu_hinanbasho_count",
-    "kozui_soutei_uryou",
-    "shitei_hinanjo_count"
+    "kinkyu_hinanbasho_count"
   ],
-  "errors": [],
+  "searchAttempts": {
+    "bosai_email": [
+      {
+        "query": "高岡市 防災課のメールアドレス",
+        "searchedAt": "2026-01-30T00:16:48.147Z",
+        "resultsCount": 5,
+        "urls": [
+          "https://www.city.takaoka.toyama.jp/kikikanri/bosai/bosai/joho/bousai-mail.html",
+          "https://www.city.takaoka.toyama.jp/soshiki/shobohombu_tsuushinshireika/2/1/2162.html",
+          "https://www.city.takaoka.toyama.jp/soshiki/kikikanrika/2/1/1/3/5433.html",
+          "https://www.city.takaoka.toyama.jp/somu/bosai/bosai/joho/bousai-mail.html",
+          "https://www.city.takaoka.toyama.jp/hisho/shise/gaiyo/soshiki/kikikanri/index.html"
+        ],
+        "snippets": [
+          "ホーム &gt; 防災・防犯 &gt; 防災 &gt; 災害時情報提供 &gt; 高岡市防災情報メール配信サービス（登録制）",
+          "消防本部 通信指令課 〒933-0057 富山県高岡市広小路5-10 電話番号：0766-22-3131 ファックス：0766-22-3498",
+          "危機管理課 · 業務案内 · 安全・安心 · 防災 · 情報発信 · 高岡市防災情報メール配信サービス(登録制) あしあと · あしあとを消去する · 更新日：2024年07月26日 · ページID : 5433 · 携帯電話、スマートフォン、タブレット、パソコンなどのメール機能を活用し、気象警報や避難情報等を配信しています。 ·"
+        ],
+        "reason": "no_match"
+      }
+    ],
+    "bosai_mail_touroku_url": [
+      {
+        "query": "高岡市 防災メール登録URL",
+        "searchedAt": "2026-01-30T00:16:51.442Z",
+        "resultsCount": 5,
+        "urls": [
+          "https://www.city.takaoka.toyama.jp/kikikanri/bosai/bosai/joho/bousai-mail.html",
+          "https://www.city.takaoka.toyama.jp/kikikanri/bosai/bosai/joho/bousai-tagengomail.html",
+          "https://www.city.takaoka.toyama.jp/soshiki/kikikanrika/2/1/1/3/5433.html",
+          "https://www.city.takaoka.toyama.jp/somu/bosai/bosai/joho/bousai-mail.html",
+          "https://www.city.takaoka.toyama.jp/soshiki/kikikanrika/2/1/1/3/5116.html"
+        ],
+        "snippets": [
+          "ホーム &gt; 防災・防犯 &gt; 防災 &gt; 災害時情報提供 &gt; 高岡市防災情報メール配信サービス（登録制） ... 携帯電話、スマートフォン、タブレット、パソコンなどのメール機能を活用し、気象警報や避難情報等を配信しています。 ... 指定河川洪水予報（氾濫注意情報、氾濫警戒情報、氾濫危険情報、氾濫発生情報） ... 迷惑メール設定を確認 「@raiden3.ktaiwork.jp」からドメイン許可、URL付メールの許可、なりすまし規制の許可",
+          "ホーム &gt; 防災・防犯 &gt; 防災 &gt; 災害時情報提供 &gt; 高岡市防災情報多言語メール配信サービス（登録制）",
+          "返信されたメールに記載されたアドレス（URL）にアクセス · 配信を希望する項目を選択し、完了したら下の「次へ」ボタンを押す · 内容を確認し、登録を押す · 登録完了メールが届けば完了 · 『高岡市防災情報メール配信サービス』にメールを送信 ·"
+        ],
+        "reason": "no_match"
+      }
+    ],
+    "disaster_email": [
+      {
+        "query": "高岡市 災害対策課のメールアドレス",
+        "searchedAt": "2026-01-30T00:16:53.445Z",
+        "resultsCount": 5,
+        "urls": [
+          "https://www.city.takaoka.toyama.jp/soshiki/shobohombu_tsuushinshireika/2/1/2162.html",
+          "https://www.city.takaoka.toyama.jp/kikikanri/bosai/bosai/joho/bousai-mail.html",
+          "https://www.city.takaoka.toyama.jp/somu/bosai/bosai/joho/bousai-mail.html",
+          "https://www.city.takaoka.toyama.jp/kikikanri/bosai/bosai/joho/bousai-tagengomail.html",
+          "https://www.city.takaoka.toyama.jp/yokuarushitsumon/kurashi_tetsuzuki/12/1/8602.html"
+        ],
+        "snippets": [
+          "また、災害情報メールの内容変更又は配信を解除する場合は、登録完了メール又は災害情報メールに記載されたアドレス（URL）にアクセスしてください。 · 消防本部 通信指令課 〒933-0057 富山県高岡市広小路5-10 電話番号：0766-22-3131 ファックス：0766-22-3498",
+          "ホーム &gt; 防災・防犯 &gt; 防災 &gt; 災害時情報提供 &gt; 高岡市防災情報メール配信サービス（登録制）",
+          "ヤフー株式会社と「災害に係る情報発信等に関する協定」を締結しました ... 平成29年5月1日より「高岡市防災情報メール」でお知らせする防災情報をより分かりやすくするために、気象警報等の発令時に背景色をつけ..."
+        ],
+        "reason": "no_match"
+      }
+    ],
+    "fukushi_hinanjo_count": [
+      {
+        "query": "高岡市 福祉避難所の数",
+        "searchedAt": "2026-01-30T00:17:10.430Z",
+        "resultsCount": 5,
+        "urls": [
+          "https://www.city.takaoka.toyama.jp/somu/bosai/bosai/hinanjo/hinanjo.html",
+          "https://www.city.takaoka.toyama.jp/hinanzyo01011.html",
+          "https://www.city.takaoka.toyama.jp/soshiki/kikikanrika/2/2/1/4431.html",
+          "https://www.city.takaoka.toyama.jp/somu/bosai/bosai/hinanjo/documents/r050401hinanbasyohinansyo.pdf",
+          "https://www.city.takaoka.toyama.jp/somu/bosai/bosai/hazard-map/index.html"
+        ],
+        "snippets": [
+          "指定緊急避難場所・指定避難所一覧・福祉避難所（令和5年4月1日時点）（PDF：93KB） · ※今後の耐震改修の状況等により、変更することがあります。その都度、最新の状況（一覧）を更新します。",
+          "避難所を下記の通り開設しています。 【問合先】 災害対策本部☎0766-20-1110",
+          "本市では、東日本大震災...のマニュアルに基づき、29個所（特別養護老人ホーム12か所、老人保健施設7か所及び障がい者福祉施設等10か所）の福祉避難所を指定し、その..."
+        ],
+        "reason": "no_match"
+      }
+    ],
+    "hazard_map_haifu_basho": [
+      {
+        "query": "高岡市 ハザードマップの配布場所",
+        "searchedAt": "2026-01-30T00:17:32.691Z",
+        "resultsCount": 5,
+        "urls": [
+          "https://www.city.takaoka.toyama.jp/gyosei/kurashi_tetsuzuki/anzen_anshin/8/1/index.html",
+          "https://www.city.takaoka.toyama.jp/somu/bosai/bosai/hazard-map/index.html",
+          "https://www.city.takaoka.toyama.jp/soshiki/gesuidokomuka/2/1/2/3/4661.html",
+          "https://www.city.takaoka.toyama.jp/gyosei/kurashi_tetsuzuki/anzen_anshin/8/1/5555.html",
+          "https://www.city.takaoka.toyama.jp/gyosei/kurashi_tetsuzuki/anzen_anshin/8/1/7069.html"
+        ],
+        "snippets": [
+          "まるごとまちごとハザードマップ整備事業（水害リスクの現地表示） · 洪水ハザードマップ · 土砂災害ハザードマップ · 高岡市地震防災マップ ·",
+          "危機管理課 〒933-8601 富山県高岡市広小路7-50 電話番号：0766-20-1229 ファックス：0766-20-1549",
+          "想定最大規模降雨(約1,000年に一度)に対応した「洪水ハザードマップ」と「内水（ないすい）ハザードマップ」を重ね合わせた「水害ハザードマップ」を令和4年3月に作成しました。 · 市民の皆様には、広報誌「たかおか市民と市政（令和4年6月号）」等に併せてお住いの地域版を配布します。"
+        ],
+        "reason": "no_match"
+      }
+    ],
+    "hinanjo_count": [
+      {
+        "query": "高岡市 指定避難所の総数",
+        "searchedAt": "2026-01-30T00:17:42.420Z",
+        "resultsCount": 5,
+        "urls": [
+          "https://www.city.takaoka.toyama.jp/somu/bosai/bosai/hinanjo/hinanjo.html",
+          "https://www.city.takaoka.toyama.jp/hinanzyo01011.html",
+          "https://www.city.takaoka.toyama.jp/gyosei/kurashi_tetsuzuki/anzen_anshin/8/2/6781.html",
+          "https://www.city.takaoka.toyama.jp/somu/bosai/bosai/hinanjo/documents/r050401hinanbasyohinansyo.pdf",
+          "https://www.city.takaoka.toyama.jp/9043.html"
+        ],
+        "snippets": [
+          "指定緊急避難場所・指定避難所一覧・福祉避難所（令和5年4月1日時点）（PDF：93KB） · ※今後の耐震改修の状況等により、変更することがあります。その都度、最新の状況（一覧）を更新します。",
+          "避難所を下記の通り開設しています。 【問合先】 災害対策本部☎0766-20-1110",
+          "指定緊急避難場所・指定避難所一覧（令和6年5月31日時点） (PDFファイル: 224.8KB) ... （注意）今後の耐震改修の状況等により、変更することがあります。その都度、最新の状況（一覧）を更新します。"
+        ],
+        "reason": "no_match"
+      }
+    ],
+    "hinanjo_status_url": [
+      {
+        "query": "高岡市 避難所の開設状況確認URL",
+        "searchedAt": "2026-01-30T00:17:44.736Z",
+        "resultsCount": 5,
+        "urls": [
+          "https://www.city.takaoka.toyama.jp/somu/bosai/bosai/hinanjo/hinanjo.html",
+          "https://www.city.takaoka.toyama.jp/hinanzyo01011.html",
+          "https://www.city.takaoka.toyama.jp/somu/bosai/bosai/hazard-map/index.html",
+          "https://www.city.takaoka.toyama.jp/gyosei/kurashi_tetsuzuki/anzen_anshin/8/2/6781.html",
+          "https://www.city.takaoka.toyama.jp/somu/bosai/bosai/hinanjo/documents/r050401hinanbasyohinansyo.pdf"
+        ],
+        "snippets": [
+          "指定緊急避難場所・指定避難所一覧・福祉避難所（令和5年4月1日時点）（PDF：93KB） · ※今後の耐震改修の状況等により、変更することがあります。その都度、最新の状況（一覧）を更新します。",
+          "避難所を下記の通り開設しています。 【問合先】 災害対策本部☎0766-20-1110",
+          "危機管理課 〒933-8601 富山県高岡市広小路7-50 電話番号：0766-20-1229 ファックス：0766-20-1549"
+        ],
+        "reason": "no_match"
+      }
+    ],
+    "kinkyu_hinanbasho_count": [
+      {
+        "query": "高岡市 緊急避難場所の数",
+        "searchedAt": "2026-01-30T00:17:46.211Z",
+        "resultsCount": 5,
+        "urls": [
+          "https://www.city.takaoka.toyama.jp/somu/bosai/bosai/hinanjo/hinanjo.html",
+          "https://www.city.takaoka.toyama.jp/somu/bosai/bosai/hinanjo/documents/r050401hinanbasyohinansyo.pdf",
+          "https://www.city.takaoka.toyama.jp/hinanzyo01011.html",
+          "https://www.city.takaoka.toyama.jp/gyosei/kurashi_tetsuzuki/anzen_anshin/8/2/6781.html",
+          "https://www.city.takaoka.toyama.jp/gyosei/kurashi_tetsuzuki/anzen_anshin/6/index.html"
+        ],
+        "snippets": [
+          "総面積10,000平方メートル以上の公園、緑地、グラウンド（校庭含む）、公共空地帯のうち、付近家屋の密集度、火災延焼の可能性、危険物の有無等を考慮して選定しています。主として地震や火災で延焼拡大した場合の避難場所です。「地震」、「大規模火事」の指定緊急避難場所へ避難してください。",
+          "地図です。高岡市が日本の富山県にあることを示しています。 · 緊急情報一覧を見る · 2026年01月20日 · 大雪に関する情報 · 2025年12月25日 · 令和6年能登半島地震 支援・対応等関連情報 · 雨晴海岸（女岩と立山連峰） ·",
+          "避難所を下記の通り開設しています。 【問合先】 災害対策本部☎0766-20-1110"
+        ],
+        "reason": "no_match"
+      }
+    ],
+    "kozui_soutei_uryou": [
+      {
+        "query": "高岡市 洪水想定雨量",
+        "searchedAt": "2026-01-30T00:17:48.289Z",
+        "resultsCount": 5,
+        "urls": [
+          "https://www.city.takaoka.toyama.jp/soshiki/gesuidokomuka/2/1/2/3/4661.html",
+          "https://www.city.takaoka.toyama.jp/gyosei/kurashi_tetsuzuki/anzen_anshin/8/1/7069.html",
+          "https://www.city.takaoka.toyama.jp/gyosei/kurashi_tetsuzuki/anzen_anshin/8/1/5555.html",
+          "https://www.city.takaoka.toyama.jp/9043.html",
+          "https://www.city.takaoka.toyama.jp/somu/bosai/bosai/hazard-map/index.html"
+        ],
+        "snippets": [
+          "継続的に雨が降り続くと...被害（洪水被害）が発生します。避難指示等の避難情報に応じて、速やかに安全な場所へ避難する必要があります。 · （注意）水害ハザードマップでは、内水浸水の深さを「50センチメートル未満」と「50センチメートル以上」の2段階で表示してありますが、内水浸水想定区域図で...",
+          "高岡市水害ハザードマップ・内水(ないすい)浸水想定区域図",
+          "高岡市水害ハザードマップ・内水(ないすい)浸水想定区域図 · とやまの洪水浸水想定区域図 · 自宅の耐震化、家具の転倒防止等の促進のため、「高岡市地震防災マップ」を作成しました。 · 高岡市地震防災マップ ·"
+        ],
+        "reason": "no_match"
+      }
+    ],
+    "shitei_hinanjo_count": [
+      {
+        "query": "高岡市 指定避難所の数",
+        "searchedAt": "2026-01-30T00:17:51.444Z",
+        "resultsCount": 5,
+        "urls": [
+          "https://www.city.takaoka.toyama.jp/somu/bosai/bosai/hinanjo/hinanjo.html",
+          "https://www.city.takaoka.toyama.jp/hinanzyo01011.html",
+          "https://www.city.takaoka.toyama.jp/gyosei/kurashi_tetsuzuki/anzen_anshin/8/2/6781.html",
+          "https://www.city.takaoka.toyama.jp/somu/bosai/bosai/hinanjo/documents/r050401hinanbasyohinansyo.pdf",
+          "https://www.city.takaoka.toyama.jp/bosai/shobo/"
+        ],
+        "snippets": [
+          "総面積10,000平方メートル以上の公園、緑地、グラウンド（校庭含む）、公共空地帯のうち、付近家屋の密集度、火災延焼の可能性、危険物の有無等を考慮して選定しています。主として地震や火災で延焼拡大した場合の避難場所です。「地震」、「大規模火事」の指定緊急避難場所へ避難してください。 ... 開設する避難所は、災害の状況等により異なります。また、すべての避難所があらゆる災害に対応できる場所とは限りません。あらかじめ指定緊急避難場所・指定一般避難所等や各種ハザードマップ等で確認し、災害種別に応じて安全な避難を行ってください。",
+          "避難所を下記の通り開設しています。 【問合先】 災害対策本部☎0766-20-1110",
+          "指定緊急避難場所・指定避難所一覧（令和6年5月31日時点） (PDFファイル: 224.8KB) ... （注意）今後の耐震改修の状況等により、変更することがあります。その都度、最新の状況（一覧）を更新します。"
+        ],
+        "reason": "no_match"
+      }
+    ]
+  },
+  "missingSuggestions": {
+    "disaster_email": {
+      "variableName": "disaster_email",
+      "reason": "高岡市公式サイトを検索しましたが、災害対策課のメールアドレスを特定できませんでした。防災に関する情報提供メールの登録ページは見つかりましたが、担当課のメールアドレスは記載されていませんでした。",
+      "suggestedValue": null,
+      "suggestedSourceUrl": null,
+      "relatedUrls": [
+        "https://www.city.takaoka.toyama.jp/kikikanri/bosai/bosai/joho/bousai-mail.html"
+      ],
+      "relatedPdfs": [
+        "https://www.city.takaoka.toyama.jp/material/files/group/11/takaokacity_bousasi_mail.pdf"
+      ],
+      "confidence": 0.5,
+      "status": "suggested"
+    },
+    "fukushi_hinanjo_count": {
+      "variableName": "fukushi_hinanjo_count",
+      "reason": "高岡市公式サイトを検索しましたが、福祉避難所の数を特定できませんでした。指定避難所一覧に福祉避難所も含まれている可能性があります。",
+      "suggestedValue": null,
+      "suggestedSourceUrl": null,
+      "relatedUrls": [
+        "https://www.city.takaoka.toyama.jp/somu/bosai/bosai/hinanjo/hinanjo.html"
+      ],
+      "relatedPdfs": [
+        "https://www.city.takaoka.toyama.jp/material/files/group/11/fukushimanual.pdf",
+        "https://www.city.takaoka.toyama.jp/material/files/group/11/fukushiyousiki.pdf"
+      ],
+      "confidence": 0.5,
+      "status": "suggested"
+    },
+    "hazard_map_haifu_basho": {
+      "variableName": "hazard_map_haifu_basho",
+      "reason": "高岡市公式サイトを検索しましたが、ハザードマップの配布場所を特定できませんでした。危機管理課が担当しているようなので、問い合わせてみるのが良いかもしれません。",
+      "suggestedValue": null,
+      "suggestedSourceUrl": null,
+      "relatedUrls": [
+        "https://www.city.takaoka.toyama.jp/somu/bosai/bosai/hazard-map/index.html"
+      ],
+      "relatedPdfs": [],
+      "confidence": 0.5,
+      "status": "suggested"
+    },
+    "hinanjo_status_url": {
+      "variableName": "hinanjo_status_url",
+      "reason": "高岡市公式サイトを検索しましたが、避難所の開設状況を確認できるURLを特定できませんでした。災害時にはトップページに情報が掲載される可能性があります。",
+      "suggestedValue": null,
+      "suggestedSourceUrl": null,
+      "relatedUrls": [
+        "https://www.city.takaoka.toyama.jp/somu/bosai/bosai/hinanjo/hinanjo.html"
+      ],
+      "relatedPdfs": [],
+      "confidence": 0.5,
+      "status": "suggested"
+    },
+    "kinkyu_hinanbasho_count": {
+      "variableName": "kinkyu_hinanbasho_count",
+      "reason": "高岡市公式サイトを検索しましたが、緊急避難場所の数を特定できませんでした。指定緊急避難場所一覧のPDFに情報が含まれている可能性があります。",
+      "suggestedValue": null,
+      "suggestedSourceUrl": null,
+      "relatedUrls": [
+        "https://www.city.takaoka.toyama.jp/somu/bosai/bosai/hinanjo/hinanjo.html"
+      ],
+      "relatedPdfs": [
+        "https://www.city.takaoka.toyama.jp/material/files/group/11/R070701hinanbasyohinansyo.pdf"
+      ],
+      "confidence": 0.5,
+      "status": "suggested"
+    }
+  },
+  "errors": [
+    {
+      "code": "PAGE_FETCH_FAILED",
+      "message": "Failed to fetch https://www.city.takaoka.toyama.jp/somu/bosai/bosai/hinanjo/hinanjo.html: Failed to fetch page: 404 Not Found",
+      "timestamp": "2026-01-30T00:17:57.770Z"
+    }
+  ],
   "metadata": {
     "totalVariables": 20,
-    "filledVariables": 7
+    "filledVariables": 15
   }
 }

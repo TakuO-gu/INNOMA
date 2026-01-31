@@ -8,18 +8,19 @@ import type { RichTextNodeType } from "@/lib/artifact/schema";
 import { useMunicipality, prefixInternalLink } from "../MunicipalityContext";
 import { RichTextRenderer, getHeadingSizeClass } from "../RichTextRenderer";
 import type { TableRow, AccordionItem } from "../types";
+import { budouxParse } from "@/components/BudouX";
 
 export function TitleBlock({ props }: { props: Record<string, unknown> }) {
   const text = (props.text as string) || (props.title as string) || "";
   return (
-    <h1 className="text-std-45B-140 text-solid-gray-900">{text}</h1>
+    <h1 className="text-std-45B-140 text-solid-gray-900 budoux">{budouxParse(text)}</h1>
   );
 }
 
 export function SummaryBlock({ props }: { props: Record<string, unknown> }) {
   const text = (props.text as string) || "";
   return (
-    <p className="text-std-17N-170 text-solid-gray-700 mb-8 leading-relaxed">{text}</p>
+    <p className="text-std-17N-170 text-solid-gray-700 mb-8 leading-relaxed budoux">{budouxParse(text)}</p>
   );
 }
 

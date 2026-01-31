@@ -1,0 +1,129 @@
+{
+  "municipality_name": {
+    "value": "南牧村",
+    "source": "manual",
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "prefecture_name": {
+    "value": "群馬県",
+    "source": "manual",
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "generated_at": {
+    "value": "2026-01-31T00:00:00.000Z",
+    "source": "manual",
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "city_hall_address": {
+    "value": "〒370-2806 群馬県甘楽郡南牧村大字大日向1098",
+    "source": "llm",
+    "sourceUrl": "https://nanmoku.ne.jp/sonsei/gaiyou/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "city_hall_phone": {
+    "value": "0274-87-2011",
+    "source": "llm",
+    "sourceUrl": "https://nanmoku.ne.jp/sonsei/gaiyou/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "city_hall_department": {
+    "value": "総務課",
+    "source": "llm",
+    "sourceUrl": "https://nanmoku.ne.jp/sonsei/gaiyou/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "shimin_department": {
+    "value": "住民税務課",
+    "source": "llm",
+    "sourceUrl": "https://nanmoku.ne.jp/sonsei/gaiyou/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "shimin_phone": {
+    "value": "0274-87-2011（代表）",
+    "source": "llm",
+    "sourceUrl": "https://nanmoku.ne.jp/sonsei/gaiyou/",
+    "confidence": 0.8,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "registration_department": {
+    "value": "住民税務課",
+    "source": "llm",
+    "sourceUrl": "https://nanmoku.ne.jp/sonsei/gaiyou/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "tax_department": {
+    "value": "住民税務課",
+    "source": "llm",
+    "sourceUrl": "https://nanmoku.ne.jp/sonsei/gaiyou/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "zeimu_department": {
+    "value": "住民税務課",
+    "source": "llm",
+    "sourceUrl": "https://nanmoku.ne.jp/sonsei/gaiyou/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "welfare_department": {
+    "value": "保健福祉課",
+    "source": "llm",
+    "sourceUrl": "https://nanmoku.ne.jp/sonsei/gaiyou/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "health_department": {
+    "value": "保健福祉課",
+    "source": "llm",
+    "sourceUrl": "https://nanmoku.ne.jp/sonsei/gaiyou/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "building_department": {
+    "value": "振興整備課 建設水道係",
+    "source": "llm",
+    "sourceUrl": "https://nanmoku.ne.jp/sonsei/gaiyou/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "housing_department": {
+    "value": "振興整備課 建設水道係",
+    "source": "llm",
+    "sourceUrl": "https://nanmoku.ne.jp/sonsei/gaiyou/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "suidou_department": {
+    "value": "振興整備課 建設水道係",
+    "source": "llm",
+    "sourceUrl": "https://nanmoku.ne.jp/sonsei/gaiyou/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "business_department": {
+    "value": "振興整備課 産業係",
+    "source": "llm",
+    "sourceUrl": "https://nanmoku.ne.jp/sonsei/gaiyou/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "planning_department": {
+    "value": "人事財政課",
+    "source": "llm",
+    "sourceUrl": "https://nanmoku.ne.jp/sonsei/gaiyou/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "election_commission": {
+    "value": "総務課（選挙管理委員会）",
+    "source": "llm",
+    "sourceUrl": "https://nanmoku.ne.jp/sonsei/gaiyou/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  }
+}

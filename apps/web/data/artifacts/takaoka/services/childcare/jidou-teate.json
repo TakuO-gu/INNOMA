@@ -80,16 +80,10 @@
             ]
           },
           {
-            "type": "callout",
-            "severity": "info",
-            "content": [
+            "type": "paragraph",
+            "runs": [
               {
-                "type": "paragraph",
-                "runs": [
-                  {
-                    "text": "公務員の方は勤務先から支給されますので、勤務先で手続きしてください。"
-                  }
-                ]
+                "text": "公務員の方は勤務先から支給されますので、勤務先で手続きしてください。"
               }
             ]
           }

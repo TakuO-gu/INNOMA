@@ -22,6 +22,7 @@ import {
   // Interactive
   ContactBlock,
   ActionButtonBlock,
+  TaskButtonBlock,
   StepNavigationBlock,
   DirectoryListBlock,
   NewsMetaBlock,
@@ -33,17 +34,24 @@ import {
   NewsListBlock,
   // Sources
   SourcesBlock,
+  // District Selector
+  DistrictSelectorBlock,
 } from "./components";
 
 interface BlockRendererProps {
   blocks: BaseBlock[];
   municipalityId: string;
   sources?: Source[];
+  /** 完成済みページのパス一覧（未取得変数がないページ） */
+  completedPages?: string[];
 }
 
-export function BlockRenderer({ blocks, municipalityId, sources }: BlockRendererProps) {
+export function BlockRenderer({ blocks, municipalityId, sources, completedPages = [] }: BlockRendererProps) {
+  // completedPagesをSetに変換（propsはシリアライズ可能な配列で受け取る）
+  const completedPagesSet = new Set(completedPages);
+
   return (
-    <MunicipalityProvider municipalityId={municipalityId}>
+    <MunicipalityProvider municipalityId={municipalityId} completedPages={completedPagesSet}>
       <div className="dads-page">
         {blocks.map((block) => (
           <BlockSwitch key={block.id} block={block} sources={sources} />
@@ -82,6 +90,8 @@ function BlockSwitch({ block, sources }: { block: BaseBlock; sources?: Source[] 
       return <ContactBlock props={props} />;
     case "ActionButton":
       return <ActionButtonBlock props={props} />;
+    case "TaskButton":
+      return <TaskButtonBlock props={props} />;
     case "StepNavigation":
       return <StepNavigationBlock props={props} />;
     case "NewsMeta":
@@ -102,6 +112,8 @@ function BlockSwitch({ block, sources }: { block: BaseBlock; sources?: Source[] 
       return <EmergencyBannerBlock props={props} />;
     case "Sources":
       return <SourcesBlock props={props} sources={sources} />;
+    case "DistrictSelector":
+      return <DistrictSelectorBlock props={props} />;
     default:
       return (
         <div className="block-unknown" data-type={type}>

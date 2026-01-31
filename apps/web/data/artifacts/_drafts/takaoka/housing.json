@@ -3,113 +3,319 @@
   "municipalityId": "takaoka",
   "service": "housing",
   "status": "draft",
-  "createdAt": "2026-01-21T06:55:17.145Z",
-  "updatedAt": "2026-01-21T06:55:17.145Z",
+  "createdAt": "2026-01-30T00:20:26.363Z",
+  "updatedAt": "2026-01-30T00:20:26.363Z",
   "variables": {
     "reform_general_eligible": {
       "value": "昭和56年6月以降に建築された一戸建て住宅（新耐震基準適合住宅、耐震改修工事を行う木造一戸建て住宅も可）",
       "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kenchikuseisakuka/2/3/4/2521.html",
       "confidence": 0.7999999999999999,
-      "extractedAt": "2026-01-21T06:54:57.928Z",
-      "validated": true
-    },
-    "seismic_diagnosis_max": {
-      "value": "予算の範囲内で、下記のとおり補助金を交付",
-      "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kenchikuseisakuka/2/3/4/4274.html",
-      "confidence": 0.7999999999999999,
-      "extractedAt": "2026-01-21T06:54:57.928Z",
+      "extractedAt": "2026-01-30T00:18:02.931Z",
       "validated": true
     },
     "seismic_retrofit_max": {
       "value": "予算の範囲内で、下記のとおり補助金を交付",
       "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kenchikuseisakuka/2/3/4/4274.html",
       "confidence": 0.7999999999999999,
-      "extractedAt": "2026-01-21T06:54:57.928Z",
-      "validated": true
-    },
-    "building_department": {
-      "value": "建築政策課",
-      "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kenchikuseisakuka/2/3/4/2521.html",
-      "confidence": 0.95,
-      "extractedAt": "2026-01-21T06:54:59.855Z",
-      "validated": true
-    },
-    "building_phone": {
-      "value": "0766-30-7291",
-      "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kenchikuseisakuka/2/3/4/2521.html",
-      "confidence": 0.95,
-      "extractedAt": "2026-01-21T06:54:59.855Z",
-      "validated": true
-    },
-    "reform_subsidy_max": {
-      "value": "100万円",
-      "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kenchikuseisakuka/2/3/4/2521.html",
-      "confidence": 0.95,
-      "extractedAt": "2026-01-21T06:54:59.855Z",
-      "validated": true
-    },
-    "reform_subsidy_rate": {
-      "value": "2/3",
-      "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kenchikuseisakuka/2/3/4/2521.html",
-      "confidence": 0.8500000000000001,
-      "extractedAt": "2026-01-21T06:54:59.855Z",
-      "validated": true
-    },
-    "vacant_house_subsidy_max": {
-      "value": "40万円",
-      "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kenchikuseisakuka/2/3/4/2521.html",
-      "confidence": 0.95,
-      "extractedAt": "2026-01-21T06:54:59.855Z",
-      "validated": true
-    },
-    "vacant_house_subsidy_rate": {
-      "value": "2/3",
-      "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kenchikuseisakuka/2/3/4/2521.html",
-      "confidence": 0.8500000000000001,
-      "extractedAt": "2026-01-21T06:54:59.855Z",
+      "extractedAt": "2026-01-30T00:18:02.931Z",
       "validated": true
     },
     "housing_department": {
       "value": "住宅・空き家等への居住支援",
       "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kenchikuseisakuka/2/3/4/4998.html",
       "confidence": 0.95,
-      "extractedAt": "2026-01-21T06:55:01.908Z",
+      "extractedAt": "2026-01-30T00:18:06.588Z",
+      "validated": true
+    },
+    "building_department": {
+      "value": "都市創造部 建築政策課",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kenchikuseisakuka/2/3/4/4998.html",
+      "confidence": 0.95,
+      "extractedAt": "2026-01-30T00:18:06.588Z",
+      "validated": true
+    },
+    "building_phone": {
+      "value": "0766-30-7291",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kenchikuseisakuka/2/3/4/4998.html",
+      "confidence": 0.95,
+      "extractedAt": "2026-01-30T00:18:06.588Z",
+      "validated": true
+    },
+    "reform_subsidy_max": {
+      "value": "100万円",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kenchikuseisakuka/2/3/4/2521.html",
+      "confidence": 0.95,
+      "extractedAt": "2026-01-30T00:18:19.769Z",
+      "validated": true
+    },
+    "reform_subsidy_rate": {
+      "value": "2/3",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kenchikuseisakuka/2/3/4/2521.html",
+      "confidence": 0.8500000000000001,
+      "extractedAt": "2026-01-30T00:18:19.769Z",
+      "validated": true
+    },
+    "vacant_house_subsidy_max": {
+      "value": "40万円",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kenchikuseisakuka/2/3/4/2521.html",
+      "confidence": 0.95,
+      "extractedAt": "2026-01-30T00:18:19.769Z",
+      "validated": true
+    },
+    "vacant_house_subsidy_rate": {
+      "value": "2/3",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kenchikuseisakuka/2/3/4/2521.html",
+      "confidence": 0.8500000000000001,
+      "extractedAt": "2026-01-30T00:18:19.769Z",
+      "validated": true
+    },
+    "housing_benefit_couple": {
+      "value": "30万円",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/material/files/group/45/siennseidotirasi.pdf",
+      "confidence": 0.95,
+      "extractedAt": "2026-01-30T00:18:21.227Z",
+      "validated": true
+    },
+    "seismic_retrofit_rate": {
+      "value": "4/5",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/material/files/group/45/siennseidotirasi.pdf",
+      "confidence": 0.8500000000000001,
+      "extractedAt": "2026-01-30T00:18:21.227Z",
+      "validated": true
+    },
+    "housing_phone": {
+      "value": "0766-20-1101",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/material/files/group/45/R7kuikibetumenu.pdf",
+      "confidence": 0.95,
+      "extractedAt": "2026-01-30T00:18:22.665Z",
       "validated": true
     },
     "seismic_diagnosis_rate": {
       "value": "9割",
       "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kenchikuseisakuka/2/3/4/4274.html",
       "confidence": 0.8500000000000001,
-      "extractedAt": "2026-01-21T06:55:04.262Z",
+      "extractedAt": "2026-01-30T00:19:21.339Z",
       "validated": true
     },
-    "seismic_retrofit_rate": {
-      "value": "5分の4",
-      "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kenchikuseisakuka/2/3/4/4274.html",
-      "confidence": 0.8500000000000001,
-      "extractedAt": "2026-01-21T06:55:04.262Z",
-      "validated": true
-    },
-    "housing_phone": {
-      "value": "0766-30-7291",
+    "reform_application_period": {
+      "value": "新築、隣接土地上の空き家等の解体、リフォーム…工事着工前（計画段階）\n県外移住者の空き家（古民家）改修…工事着工3か月以上前（計画段階）\n空き家を賃貸物件化するためのリフォーム…工事着工前（計画段階）",
       "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kenchikuseisakuka/2/3/4/2521.html",
-      "confidence": 1,
-      "extractedAt": "2026-01-21T06:55:05.525Z",
+      "confidence": 0.8,
+      "extractedAt": "2026-01-30T00:19:42.743Z",
+      "validated": true
+    },
+    "building_email": {
+      "value": "kentiku@city.takaoka.lg.jp",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/material/files/group/45/kakunin_denshi_tirashi_1_2go.pdf",
+      "confidence": 0.8500000000000001,
+      "extractedAt": "2026-01-30T00:19:53.597Z",
       "validated": true
     }
   },
   "missingVariables": [
     "housing_email",
-    "building_email",
-    "housing_benefit_couple",
     "housing_benefit_single",
     "public_housing_rent_range",
     "public_housing_schedule",
-    "reform_application_period"
+    "seismic_diagnosis_max"
   ],
-  "errors": [],
+  "searchAttempts": {
+    "housing_email": [
+      {
+        "query": "高岡市 住宅課のメールアドレス",
+        "searchedAt": "2026-01-30T00:19:46.529Z",
+        "resultsCount": 5,
+        "urls": [
+          "https://www.city.takaoka.toyama.jp/soshiki/kyosomachizukurika/3/4/1/4564.html",
+          "https://www.city.takaoka.toyama.jp/soshiki/index.html",
+          "https://www.city.takaoka.toyama.jp/kentiku/kurashi/jutaku/koe/akisitujoho.html",
+          "https://www.city.takaoka.toyama.jp/gyosei/kurashi_tetsuzuki/sumai/6/7753.html",
+          "https://www.city.takaoka.toyama.jp/soshiki/shiminka/2/4/3055.html"
+        ],
+        "snippets": [
+          "地域課 〒933-8601 富山県高岡市広小路7-50 電話番号：0766-20-1326 ファックス：0766-20-1641",
+          "営繕課 · 福岡駅前土地区画整理推進室 · 高岡市民病院 · 会計課 · 消防本部 総務課 · 消防本部 予防課 · 消防本部 警防課 · 消防本部 通信指令課 · 上下水道局 総務課 · 上下水道局 営業課 · 水道工務課 ·",
+          "スマートフォン版を表示 · 大雪に関する情報"
+        ],
+        "reason": "no_match"
+      }
+    ],
+    "building_email": [
+      {
+        "query": "高岡市 建築指導課のメールアドレス",
+        "searchedAt": "2026-01-30T00:19:53.597Z",
+        "resultsCount": 5,
+        "urls": [
+          "https://www.city.takaoka.toyama.jp/soshiki/dobokuijika/2/5/1/1/4738.html",
+          "https://www.city.takaoka.toyama.jp/gyosei/sangyo_business/kaihatsu_kenchiku/4/6339.html",
+          "https://www.city.takaoka.toyama.jp/soshiki/index.html",
+          "https://www.city.takaoka.toyama.jp/soshiki/toshikeikakuka/2/2/1/4572.html",
+          "https://www.city.takaoka.toyama.jp/soshiki/dobokuijika/index.html"
+        ],
+        "snippets": [
+          "土木維持課 〒933-8601 富山県高岡市広小路7-50 電話番号：0766-20-1389 ファックス：0766-30-7289",
+          "建築政策課 〒933-8601 富山県高岡市広小路7-50 電話番号：0766-20-1429 ファックス：0766-20-1477",
+          "建築政策課 · 営繕課 · 福岡駅前土地区画整理推進室 · 高岡市民病院 · 会計課 · 消防本部 総務課 · 消防本部 予防課 · 消防本部 警防課 · 消防本部 通信指令課 · 上下水道局 総務課 · 上下水道局 営業課 ·"
+        ],
+        "reason": "no_match"
+      }
+    ],
+    "housing_benefit_single": [
+      {
+        "query": "高岡市 単身者向け住宅補助金の上限額",
+        "searchedAt": "2026-01-30T00:19:59.121Z",
+        "resultsCount": 5,
+        "urls": [
+          "https://www.city.takaoka.toyama.jp/soshiki/kenchikuseisakuka/2/3/4/4998.html",
+          "https://www.city.takaoka.toyama.jp/soshiki/kenchikuseisakuka/2/3/4/2521.html",
+          "https://www.city.takaoka.toyama.jp/gyosei/kurashi_tetsuzuki/sumai/5/index.html",
+          "https://www.city.takaoka.toyama.jp/kentiku/kurashi/jutaku/jose/takaokagurashi.html",
+          "https://www.city.takaoka.toyama.jp/kurashi/jutaku/jose/index.html"
+        ],
+        "snippets": [
+          "補助金制度のなかで、どの制度が該当するのか確認できます。 新築一戸建て住宅 詳細はこのページの「新築住宅への支援」の箇所をご覧ください。 中古一戸建て住宅 詳細はこのページの「中古住宅への支援」の箇所をご覧ください。 分譲マンション 詳細はこのページの「分譲マンションへの支援」の箇所をご覧ください。 リフォーム 詳細はこのページの「リフォームへの支援」の箇所をご覧ください。 空き家 詳細はこのページの「空き家への支援」の箇所をご覧ください。 その他 詳細はこのページの「その他の支援」の箇所をご覧ください。",
+          "改修工事完了後、市から...るとともに賃貸物件として活用する者 · 補助対象工事：1と2の合計額（2のみは不可）が30万円以上であること...",
+          "高岡市被災者引越支援事業 · 高岡市まちぐるみ空き家対策危険防止支援事業【自治会向け支援】 · 被災木造住宅耐震診断支援事業 · 住宅や宅地の修理に使える補助金のご案内 · 高岡市脱炭素先行地域再生可能エネルギー導入事業費補助金 ·"
+        ],
+        "reason": "no_match"
+      }
+    ],
+    "public_housing_rent_range": [
+      {
+        "query": "高岡市 公営住宅の家賃範囲",
+        "searchedAt": "2026-01-30T00:20:08.134Z",
+        "resultsCount": 5,
+        "urls": [
+          "https://www.city.takaoka.toyama.jp/kentiku/faq/kurashi/jutaku/koe/yachin.html",
+          "https://www.city.takaoka.toyama.jp/soshiki/kenchikuseisakuka/2/6/1/5460.html",
+          "https://www.city.takaoka.toyama.jp/soshiki/kenchikuseisakuka/2/3/2/2178.html",
+          "https://www.city.takaoka.toyama.jp/faq/kurashi/jutaku/koe/index.html",
+          "https://www.city.takaoka.toyama.jp/soshiki/kenchikuseisakuka/2/3/4/2521.html"
+        ],
+        "snippets": [
+          "ホーム &gt; よくある質問 &gt; 住宅 &gt; 公営住宅 &gt; 市営住宅の家賃の額を教えてください。",
+          "「空き家・空き地情報バンク利用申込書」と「誓約書」を市に提出してください。 詳しくは下記のリンクの「空き家・空き地を探している方（借りたい、買いたい）」の箇所をご覧ください。 ... 高岡市では、賃貸・売買に関する交渉、契約に関しての媒介は行いません。宅地建物取引業者の媒介を希望される方は、高岡市と協定を締結する団体の会員である業者等へ依頼することができます（注意：宅地建物取引業者の媒介には、宅地建物取引業法の規定に基づく報酬が必要となります）。媒介を希望されない場合は、当事者間（所有者と利用希望者）での直接交渉となります。",
+          "上記以外の物件検索にご利用ください。 · 高岡市商工会議所「空き工場等有効活用事業」ホームページをご覧ください。 貸したい、売りたい事業用不動産の登録、お探し物件の登録受付も行っています。"
+        ],
+        "reason": "no_match"
+      }
+    ],
+    "public_housing_schedule": [
+      {
+        "query": "高岡市 公営住宅の募集時期",
+        "searchedAt": "2026-01-30T00:20:14.486Z",
+        "resultsCount": 5,
+        "urls": [
+          "https://www.city.takaoka.toyama.jp/soshiki/kenchikuseisakuka/2/3/4/2521.html",
+          "https://www.city.takaoka.toyama.jp/faq/kurashi/jutaku/koe/index.html",
+          "https://www.city.takaoka.toyama.jp/soshiki/kenchikuseisakuka/2/6/1/5460.html",
+          "https://www.city.takaoka.toyama.jp/soshiki/kenchikuseisakuka/2/3/2/2178.html",
+          "https://www.city.takaoka.toyama.jp/kentiku/kurashi/jutaku/koe/akisitujoho.html"
+        ],
+        "snippets": [
+          "昭和56年6月以降に建築さ...う木造一戸建て住宅も可） ... 対象者：富山県外（1年以上居住）から高岡市に転入（5年以内も可）し、古民家に5年以上居住することが見込まれる方 · 着工時期を調整可能な方（...",
+          "受付時間：午前8時30分～午後5時15分（ただし、土日、国民の祝日、年末年始12月29日～1月3日を除く） ※部署、施設によっては、受付時間などが異なるところがあります",
+          "物件の登録期間は、最長で2年間です。2年を過ぎたものは、改めて登録申請をする必要があります。 · 高岡市内の空き工場、倉庫、事務所、事業用地などの物件情報 高岡市商工会議所「空き工場等有効活用事業」ホームページをご覧ください。 貸したい、売りたい事業用不動産の登録、お探し物件の登録受付も行っています。 高岡商工会議所 空き工場等有効活用事業「高岡市 事業用物件検索」"
+        ],
+        "reason": "no_match"
+      }
+    ],
+    "seismic_diagnosis_max": [
+      {
+        "query": "高岡市 耐震診断補助金の上限額",
+        "searchedAt": "2026-01-30T00:20:20.424Z",
+        "resultsCount": 5,
+        "urls": [
+          "https://www.city.takaoka.toyama.jp/soshiki/kenchikuseisakuka/2/3/4/4274.html",
+          "https://www.city.takaoka.toyama.jp/kentiku/kurashi/jutaku/jose/taishin.html",
+          "https://www.city.takaoka.toyama.jp/soshiki/kenchikuseisakuka/2/3/4/4998.html",
+          "https://www.city.takaoka.toyama.jp/saigaisiensaku3.html",
+          "https://www.city.takaoka.toyama.jp/kentiku/kurashi/jutaku/shisaku/taisinsokusin.html"
+        ],
+        "snippets": [
+          "令和6年1月に石川県能登地方を震源とする最大震度7の大地震が発生し、市内においても大きな被害がありました。阪神・淡路大震災の犠牲者の約9割は、古い木造住宅の倒壊等によるものとされており、住宅の耐震化は市民の生命・財産を守るうえで重要な課題となっています。 高岡市では、地震による住宅の倒壊等の被害を最小限に抑え、地震災害に強いまちづくりを促進するため、市内において住宅等の耐震改修を行う場合、予算の範囲内で、下記のとおり補助金を交付しています。 · 高岡市内にある住宅で、次の要件すべてを満たすものです ... 富山県が住宅の耐震診断に必要な費用を9割負担しています。自己負担額は下記のとおりです。",
+          "新潟県中越地震、福岡県...とおり補助金を交付します。 · 高岡市内にある住宅で、次の要件すべてを満たすものです ... 富山県が住宅の耐震診断に必要な費用を９割負担しています。自己負担額は下記のと...",
+          "補助金制度のなかで、どの制度が該当するのか確認できます。 新築一戸建て住宅 詳細はこのページの「新築住宅への支援」の箇所をご覧ください。 中古一戸建て住宅 詳細はこのページの「中古住宅への支援」の箇所をご覧ください。 分譲マンション 詳細はこのページの「分譲マンションへの支援」の箇所をご覧ください。 リフォーム 詳細はこのページの「リフォームへの支援」の箇所をご覧ください。 空き家 詳細はこのページの「空き家への支援」の箇所をご覧ください。 その他 詳細はこのページの「その他の支援」の箇所をご覧ください。"
+        ],
+        "reason": "no_match"
+      }
+    ]
+  },
+  "missingSuggestions": {
+    "housing_email": {
+      "variableName": "housing_email",
+      "reason": "住宅課のメールアドレスは、高岡市公式サイトの組織一覧や住宅関連ページを検索しましたが、直接的な記載が見つかりませんでした。一般的な自治体の傾向として、課の代表メールアドレスは公開されていない場合があります。",
+      "suggestedValue": null,
+      "suggestedSourceUrl": null,
+      "relatedUrls": [
+        "https://www.city.takaoka.toyama.jp/soshiki/index.html"
+      ],
+      "relatedPdfs": [],
+      "confidence": 0.5,
+      "status": "suggested"
+    },
+    "housing_benefit_single": {
+      "variableName": "housing_benefit_single",
+      "reason": "高岡市で単身者向けの住宅補助金に関する情報を検索しましたが、具体的な上限額に関する記述は見つかりませんでした。住宅補助金の種類や条件によって金額が異なるか、単身者向けの補助金制度がない可能性があります。",
+      "suggestedValue": null,
+      "suggestedSourceUrl": null,
+      "relatedUrls": [
+        "https://www.city.takaoka.toyama.jp/gyosei/kurashi_tetsuzuki/sumai/5/index.html"
+      ],
+      "relatedPdfs": [
+        "https://www.city.takaoka.toyama.jp/material/files/group/45/siennseidotirasi.pdf"
+      ],
+      "confidence": 0.3,
+      "status": "suggested"
+    },
+    "public_housing_rent_range": {
+      "variableName": "public_housing_rent_range",
+      "reason": "高岡市の公営住宅の家賃範囲について検索しましたが、具体的な家賃範囲を特定できる情報は見つかりませんでした。家賃は住宅の条件や入居者の収入によって変動するため、一律の範囲を示す情報がない可能性があります。",
+      "suggestedValue": null,
+      "suggestedSourceUrl": null,
+      "relatedUrls": [
+        "https://www.city.takaoka.toyama.jp/kentiku/faq/kurashi/jutaku/koe/yachin.html"
+      ],
+      "relatedPdfs": [],
+      "confidence": 0.3,
+      "status": "suggested"
+    },
+    "public_housing_schedule": {
+      "variableName": "public_housing_schedule",
+      "reason": "高岡市の公営住宅の募集時期について検索しましたが、明確な募集時期に関する情報は見つかりませんでした。募集は不定期であるか、または特定の時期に集中していない可能性があります。",
+      "suggestedValue": null,
+      "suggestedSourceUrl": null,
+      "relatedUrls": [
+        "https://www.city.takaoka.toyama.jp/soshiki/kenchikuseisakuka/2/3/4/2521.html"
+      ],
+      "relatedPdfs": [],
+      "confidence": 0.3,
+      "status": "suggested"
+    },
+    "seismic_diagnosis_max": {
+      "variableName": "seismic_diagnosis_max",
+      "reason": "高岡市の耐震診断補助金の上限額について検索しましたが、具体的な金額を特定できる情報は見つかりませんでした。補助金額は住宅の状況や診断内容によって異なる場合や、所得制限など他の条件がある可能性があります。",
+      "suggestedValue": null,
+      "suggestedSourceUrl": null,
+      "relatedUrls": [
+        "https://www.city.takaoka.toyama.jp/kentiku/kurashi/jutaku/jose/taishin.html"
+      ],
+      "relatedPdfs": [
+        "https://www.city.takaoka.toyama.jp/material/files/group/45/taishinshindan.pdf"
+      ],
+      "confidence": 0.3,
+      "status": "suggested"
+    }
+  },
+  "errors": [
+    {
+      "code": "PAGE_FETCH_FAILED",
+      "message": "Failed to fetch https://www.city.takaoka.toyama.jp/kentiku/hozilyokin5.html: Failed to fetch page: 404 Not Found",
+      "timestamp": "2026-01-30T00:20:26.363Z"
+    }
+  ],
   "metadata": {
     "totalVariables": 20,
-    "filledVariables": 13
+    "filledVariables": 15
   }
 }

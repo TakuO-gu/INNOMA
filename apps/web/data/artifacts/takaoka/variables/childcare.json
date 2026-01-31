@@ -1,0 +1,165 @@
+{
+  "kosodate_department": {
+    "value": "子ども・子育て課",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/hisho/shise/gaiyo/soshiki/fukushihoken/jido.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "kosodate_phone": {
+    "value": "0766-20-1377",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/hisho/shise/gaiyo/soshiki/fukushihoken/jido.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "kosodate_email": {
+    "value": "kosodate@city.takaoka.lg.jp",
+    "source": "llm",
+    "confidence": 0.7,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "childcare_department": {
+    "value": "子ども・子育て課",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/hisho/shise/gaiyo/soshiki/fukushihoken/jido.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "childcare_phone": {
+    "value": "0766-20-1377",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/hisho/shise/gaiyo/soshiki/fukushihoken/jido.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "childcare_email": {
+    "value": "kosodate@city.takaoka.lg.jp",
+    "source": "llm",
+    "confidence": 0.7,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "nursery_department": {
+    "value": "子ども・子育て課",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kodomo_kosodateka/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "nursery_phone": {
+    "value": "0766-20-1377",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kodomo_kosodateka/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "nursery_email": {
+    "value": "kosodate@city.takaoka.lg.jp",
+    "source": "llm",
+    "confidence": 0.7,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "nursery_apply_period": {
+    "value": "4月入園は例年秋頃に広報誌でお知らせ。年度途中入園は入園希望月の前月10日まで",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kodomo_kosodateka/2/11/1/2137.html",
+    "confidence": 0.9,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "nursery_apply_department": {
+    "value": "子ども・子育て課",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kodomo_kosodateka/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "nursery_apply_phone": {
+    "value": "0766-20-1377",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kodomo_kosodateka/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "nursery_apply_email": {
+    "value": "kosodate@city.takaoka.lg.jp",
+    "source": "llm",
+    "confidence": 0.7,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "nursery_count": {
+    "value": "44園（公立10、私立14、認定こども園19）",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kodomo_kosodateka/2/11/2197.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-30T00:00:00.000Z"
+  },
+  "nursery_apply_year": {
+    "value": "令和7年度",
+    "source": "llm",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-30T00:00:00.000Z"
+  },
+  "nursery_apply_month": {
+    "value": "4月入園は例年秋頃に広報誌でお知らせ",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kodomo_kosodateka/2/11/1/2137.html",
+    "confidence": 0.9,
+    "updatedAt": "2026-01-30T00:00:00.000Z"
+  },
+  "nursery_apply_deadline": {
+    "value": "年度途中入園は入園希望月の前月10日まで（施設へ直接申請）",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kodomo_kosodateka/2/11/1/2137.html",
+    "confidence": 0.9,
+    "updatedAt": "2026-01-30T00:00:00.000Z"
+  },
+  "nursery_apply_notice": {
+    "value": "4月入園は例年秋頃に広報誌「たかおか市民と市政」でお知らせ",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kodomo_kosodateka/2/11/1/2137.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-30T00:00:00.000Z"
+  },
+  "nursery_result_notice": {
+    "value": "詳細は子ども・子育て課（0766-20-1377）にお問い合わせください",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kodomo_kosodateka/",
+    "confidence": 0.7,
+    "updatedAt": "2026-01-30T00:00:00.000Z"
+  },
+  "nursery_form_guide_url": {
+    "value": "https://www.city.takaoka.toyama.jp/soshiki/kodomo_kosodateka/2/11/1/2137.html",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kodomo_kosodateka/2/11/1/2137.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-30T00:00:00.000Z"
+  },
+  "nursery_form_application_url": {
+    "value": "https://www.city.takaoka.toyama.jp/soshiki/kodomo_kosodateka/2/11/1/2137.html",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kodomo_kosodateka/2/11/1/2137.html",
+    "confidence": 0.9,
+    "updatedAt": "2026-01-30T00:00:00.000Z"
+  },
+  "nursery_form_employment_url": {
+    "value": "https://www.city.takaoka.toyama.jp/soshiki/kodomo_kosodateka/2/11/1/2137.html",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kodomo_kosodateka/2/11/1/2137.html",
+    "confidence": 0.9,
+    "updatedAt": "2026-01-30T00:00:00.000Z"
+  },
+  "nursery_form_criteria_url": {
+    "value": "https://www.city.takaoka.toyama.jp/soshiki/kodomo_kosodateka/2/11/1/2137.html",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kodomo_kosodateka/2/11/1/2137.html",
+    "confidence": 0.9,
+    "updatedAt": "2026-01-30T00:00:00.000Z"
+  },
+  "nursery_online_apply_url": {
+    "value": "オンライン申請の詳細は子ども・子育て課（0766-20-1377）にお問い合わせください",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kodomo_kosodateka/",
+    "confidence": 0.6,
+    "updatedAt": "2026-01-30T00:00:00.000Z"
+  }
+}

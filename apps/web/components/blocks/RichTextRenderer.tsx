@@ -10,6 +10,7 @@ import type { RichTextNodeType } from "@/lib/artifact/schema";
 import { useMunicipality, prefixInternalLink } from "./MunicipalityContext";
 import type { RichTextNode } from "./types";
 import { renderNotificationBanner } from "./components/NotificationBannerRenderer";
+import { budouxParse } from "@/components/BudouX";
 
 export function RichTextRenderer({ content }: { content: RichTextContent | RichTextNodeType[] }) {
   const { municipalityId } = useMunicipality();
@@ -70,8 +71,8 @@ function renderNode(node: RichTextNode, key: number, municipalityId: string): Re
       const sizeClass = getHeadingSizeClass(level);
       const sourceRef = (node as { sourceRef?: number }).sourceRef;
       return (
-        <Tag key={key} className={sizeClass}>
-          {node.text}
+        <Tag key={key} className={`${sizeClass} budoux`}>
+          {budouxParse(node.text || "")}
           {sourceRef !== undefined && (
             <a
               href={`#source-${sourceRef}`}
@@ -86,7 +87,7 @@ function renderNode(node: RichTextNode, key: number, municipalityId: string): Re
 
     case "paragraph":
       return (
-        <p key={key} className="text-std-16N-170 text-solid-gray-800">
+        <p key={key} className="text-std-16N-170 text-solid-gray-800 budoux">
           {node.runs?.map((run, runIdx) => renderRun(run, runIdx, municipalityId))}
         </p>
       );
@@ -136,7 +137,7 @@ function renderRun(
   key: number,
   municipalityId: string
 ): React.ReactNode {
-  let content: React.ReactNode = run.text;
+  let content: React.ReactNode = budouxParse(run.text);
 
   if (run.bold) {
     content = <strong key={`bold-${key}`}>{content}</strong>;

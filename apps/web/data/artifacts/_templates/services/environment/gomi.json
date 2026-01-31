@@ -70,6 +70,16 @@
       }
     },
     {
+      "id": "district-selector-1",
+      "type": "DistrictSelector",
+      "props": {
+        "variableGroup": "gomi_shushu",
+        "label": "お住まいの地区を選択してください",
+        "placeholder": "地区を選択",
+        "helpText": "収集日は地区によって異なります。正確な収集日を確認するため、お住まいの地区を選択してください。"
+      }
+    },
+    {
       "id": "richtext-bunbetsu",
       "type": "RichText",
       "props": {
@@ -210,44 +220,37 @@
             "text": "プラスチックの分別"
           },
           {
-            "type": "callout",
-            "severity": "info",
-            "title": "お知らせ",
-            "content": [
+            "type": "paragraph",
+            "runs": [
               {
-                "type": "paragraph",
-                "runs": [
-                  {
-                    "text": "プラスチック製品は、リサイクルマーク（プラマーク）の有無で分別が変わります。"
-                  }
-                ]
-              },
-              {
-                "type": "list",
-                "ordered": false,
-                "items": [
-                  [
+                "text": "プラスチック製品は、リサイクルマーク（プラマーク）の有無で分別が変わります。"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
                     {
-                      "type": "paragraph",
-                      "runs": [
-                        {
-                          "text": "プラマークあり → 資源ごみ（プラスチック製容器包装）"
-                        }
-                      ]
-                    }
-                  ],
-                  [
-                    {
-                      "type": "paragraph",
-                      "runs": [
-                        {
-                          "text": "プラマークなし → 燃やせるごみ"
-                        }
-                      ]
+                      "text": "プラマークあり → 資源ごみ（プラスチック製容器包装）"
                     }
                   ]
-                ]
-              }
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "プラマークなし → 燃やせるごみ"
+                    }
+                  ]
+                }
+              ]
             ]
           }
         ]

@@ -48,9 +48,19 @@ export function validateEmail(value: string): ValidationResult {
     return { valid: true, normalized };
   }
 
+  // Allow contact form URL when email address is not available
+  try {
+    const url = new URL(normalized);
+    if (url.protocol === "http:" || url.protocol === "https:") {
+      return { valid: true, normalized: url.toString() };
+    }
+  } catch {
+    // not a URL
+  }
+
   return {
     valid: false,
-    error: 'メールアドレスの形式が正しくありません',
+    error: 'メールアドレスの形式が正しくありません（問い合わせフォームURLも可）',
   };
 }
 
@@ -197,12 +207,31 @@ export function validatePostalCode(value: string): ValidationResult {
  */
 export type ValidatorFunction = (value: string) => ValidationResult;
 
+import type { VariableValidationType } from './types';
+
 /**
- * Map variable name patterns to validators
+ * Map validation type to validator function
+ * 明示的なバリデーションタイプからバリデーターを取得
+ */
+const validatorsByType: Record<VariableValidationType, ValidatorFunction | null> = {
+  phone: validatePhone,
+  email: validateEmail,
+  url: validateUrl,
+  fee: validateFee,
+  percent: validatePercent,
+  date: validateDate,
+  time: validateTime,
+  postal: validatePostalCode,
+  text: null,  // テキストはバリデーションなし
+};
+
+/**
+ * Map variable name patterns to validators (後方互換性のため維持)
+ * @deprecated 新しい変数は validationType を明示的に指定してください
  */
 const validatorPatterns: [RegExp, ValidatorFunction][] = [
-  [/_phone$/, validatePhone],
-  [/_email$/, validateEmail],
+  [/_phone$|_tel$/, validatePhone],
+  [/_email$|_mail$/, validateEmail],
   [/_url$/, validateUrl],
   [/_fee$|_fee_/, validateFee],
   [/_rate$/, validatePercent],
@@ -211,9 +240,27 @@ const validatorPatterns: [RegExp, ValidatorFunction][] = [
 ];
 
 /**
- * Get appropriate validator for a variable name
+ * Get validator by explicit validation type
  */
-export function getValidator(variableName: string): ValidatorFunction | null {
+export function getValidatorByType(validationType: VariableValidationType): ValidatorFunction | null {
+  return validatorsByType[validationType] ?? null;
+}
+
+/**
+ * Get appropriate validator for a variable name
+ * @param variableName 変数名
+ * @param validationType 明示的なバリデーションタイプ（指定時は優先）
+ */
+export function getValidator(
+  variableName: string,
+  validationType?: VariableValidationType
+): ValidatorFunction | null {
+  // 明示的なバリデーションタイプが指定されている場合はそれを使用
+  if (validationType) {
+    return getValidatorByType(validationType);
+  }
+
+  // 後方互換性: 変数名のパターンマッチング
   for (const [pattern, validator] of validatorPatterns) {
     if (pattern.test(variableName)) {
       return validator;
@@ -224,9 +271,16 @@ export function getValidator(variableName: string): ValidatorFunction | null {
 
 /**
  * Validate a variable value
+ * @param variableName 変数名
+ * @param value 値
+ * @param validationType 明示的なバリデーションタイプ（指定時は優先）
  */
-export function validateVariable(variableName: string, value: string): ValidationResult {
-  const validator = getValidator(variableName);
+export function validateVariable(
+  variableName: string,
+  value: string,
+  validationType?: VariableValidationType
+): ValidationResult {
+  const validator = getValidator(variableName, validationType);
   if (!validator) {
     // No specific validator, accept any value
     return { valid: true, normalized: value.trim() };

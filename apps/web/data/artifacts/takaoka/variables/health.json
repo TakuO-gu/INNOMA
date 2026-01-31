@@ -1,0 +1,250 @@
+{
+  "health_department": {
+    "value": "健康増進課",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kenkozoshinka/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "health_phone": {
+    "value": "0766-20-1348",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kenkozoshinka/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "health_email": {
+    "value": "kenkozoshin@city.takaoka.lg.jp",
+    "source": "llm",
+    "confidence": 0.7,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "kenshin_department": {
+    "value": "健康増進課",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kenkozoshinka/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "kenshin_phone": {
+    "value": "0766-20-1345",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kenkozoshinka/3/3/5/2273.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "kenshin_email": {
+    "value": "kenkozoshin@city.takaoka.lg.jp",
+    "source": "llm",
+    "confidence": 0.7,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "yobosesshu_department": {
+    "value": "健康増進課",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kenkozoshinka/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "yobosesshu_phone": {
+    "value": "0766-20-1349",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kenkozoshinka/3/3/8/5385.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "yobosesshu_email": {
+    "value": "kenkozoshin@city.takaoka.lg.jp",
+    "source": "llm",
+    "confidence": 0.7,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "influenza_fee": {
+    "value": "1,600円（65歳以上）、子ども・妊婦は上限3,000円助成",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kenkozoshinka/3/3/8/4177.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "taijohosin_live_subsidy": {
+    "value": "上限4,000円/回（1回まで）",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kenkozoshinka/3/3/8/4822.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "taijohosin_inactivated_subsidy": {
+    "value": "上限10,000円/回（2回まで）",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kenkozoshinka/3/3/8/4822.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "boshi_department": {
+    "value": "健康増進課 母子保健係",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kenkozoshinka/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "boshi_phone": {
+    "value": "0766-20-1344",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kenkozoshinka/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "boshi_email": {
+    "value": "kenkozoshin@city.takaoka.lg.jp",
+    "source": "llm",
+    "confidence": 0.7,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "kenshin_period": {
+    "value": "4月〜12月",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kenkozoshinka/3/3/5/2273.html",
+    "confidence": 0.9,
+    "updatedAt": "2026-01-30T00:00:00.000Z"
+  },
+  "influenza_period": {
+    "value": "10月1日〜1月31日",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kenkozoshinka/3/3/8/4177.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-30T00:00:00.000Z"
+  },
+  "nyuyoji_kenshin_basho": {
+    "value": "高岡市保健センター（本丸町7-25）",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kenkozoshinka/3/10/3/2667.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-30T00:00:00.000Z"
+  },
+  "boshi_techo_basho": {
+    "value": "高岡市保健センター（本丸町7-25）※要予約",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kenkozoshinka/3/9/2/2668.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-30T00:00:00.000Z"
+  },
+  "haienkyukin_fee": {
+    "value": "対象者に接種費用を一部助成（詳細は健康増進課へお問い合わせください）",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kenkozoshinka/3/3/8/index.html",
+    "confidence": 0.7,
+    "updatedAt": "2026-01-30T00:00:00.000Z"
+  },
+  "gan_i_xray_fee": {
+    "value": "費用は健康増進課（0766-20-1345）にお問い合わせください",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kenkozoshinka/3/3/5/2273.html",
+    "confidence": 0.6,
+    "updatedAt": "2026-01-30T00:00:00.000Z"
+  },
+  "gan_i_naishikyo_fee": {
+    "value": "費用は健康増進課（0766-20-1345）にお問い合わせください",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kenkozoshinka/3/3/5/2273.html",
+    "confidence": 0.6,
+    "updatedAt": "2026-01-30T00:00:00.000Z"
+  },
+  "gan_hai_fee": {
+    "value": "費用は健康増進課（0766-20-1345）にお問い合わせください",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kenkozoshinka/3/3/5/2273.html",
+    "confidence": 0.6,
+    "updatedAt": "2026-01-30T00:00:00.000Z"
+  },
+  "gan_daicho_fee": {
+    "value": "費用は健康増進課（0766-20-1345）にお問い合わせください",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kenkozoshinka/3/3/5/2273.html",
+    "confidence": 0.6,
+    "updatedAt": "2026-01-30T00:00:00.000Z"
+  },
+  "gan_nyu_fee": {
+    "value": "費用は健康増進課（0766-20-1345）にお問い合わせください",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kenkozoshinka/3/3/5/2273.html",
+    "confidence": 0.6,
+    "updatedAt": "2026-01-30T00:00:00.000Z"
+  },
+  "gan_shikyukei_fee": {
+    "value": "費用は健康増進課（0766-20-1345）にお問い合わせください",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kenkozoshinka/3/3/5/2273.html",
+    "confidence": 0.6,
+    "updatedAt": "2026-01-30T00:00:00.000Z"
+  },
+  "sango_care_fee": {
+    "value": "宿泊型：1泊6,000円（追加1泊3,000円）、日帰り型：3,000円/日、訪問型：1,000円/日",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kenkozoshinka/3/9/1/2208.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-30T00:00:00.000Z"
+  },
+  "ninpu_kenshin_josei": {
+    "value": "県内医療機関での受診は受診票利用、県外は償還払い（助成限度額と実費の少ない方）",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kenkozoshinka/3/10/2/5389.html",
+    "confidence": 0.9,
+    "updatedAt": "2026-01-30T00:00:00.000Z"
+  },
+  "1sai6month_kenshin_basho": {
+    "value": "高岡市保健センター（本丸町7-25）",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kenkozoshinka/3/10/3/2667.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-30T00:00:00.000Z"
+  },
+  "3sai_kenshin_basho": {
+    "value": "高岡市保健センター（本丸町7-25）",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kenkozoshinka/3/10/3/index.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-30T00:00:00.000Z"
+  },
+  "34month_kenshin_basho": {
+    "value": "高岡市保健センター（本丸町7-25）",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kenkozoshinka/3/10/3/3038.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-30T00:00:00.000Z"
+  },
+  "910month_kenshin_basho": {
+    "value": "県内の委託医療機関（生後6～7か月、9～10か月健診は医療機関で実施）",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kenkozoshinka/3/10/3/index.html",
+    "confidence": 0.9,
+    "updatedAt": "2026-01-30T00:00:00.000Z"
+  },
+  "ikuji_sodan_basho": {
+    "value": "高岡市保健センター（本丸町7-25）",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kenkozoshinka/3/10/index.html",
+    "confidence": 0.9,
+    "updatedAt": "2026-01-30T00:00:00.000Z"
+  },
+  "ikuji_sodan_schedule": {
+    "value": "詳細は健康増進課（0766-20-1344）にお問い合わせください",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kenkozoshinka/",
+    "confidence": 0.6,
+    "updatedAt": "2026-01-30T00:00:00.000Z"
+  },
+  "ikuji_sodan_yoyaku": {
+    "value": "健康増進課（0766-20-1344）",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kenkozoshinka/",
+    "confidence": 0.9,
+    "updatedAt": "2026-01-30T00:00:00.000Z"
+  },
+  "boshi_madoguchi": {
+    "value": "高岡市保健センター（本丸町7-25）",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kenkozoshinka/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-30T00:00:00.000Z"
+  }
+}

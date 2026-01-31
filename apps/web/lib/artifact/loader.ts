@@ -33,7 +33,7 @@ export { invalidateCache, invalidateCacheByPrefix, makeCacheKey };
  * Artifact読み込み結果
  */
 export type ArtifactLoadResult =
-  | { success: true; artifact: InnomaArtifactValidated; cached: boolean }
+  | { success: true; artifact: InnomaArtifactValidated; cached: boolean; unreplacedVariables: string[] }
   | { success: false; error: "not_found" | "invalid_json" | "validation_failed" | "timeout"; message: string };
 
 /**
@@ -63,7 +63,7 @@ async function loadArtifactInternal(
     const cached = getFromCache<InnomaArtifactValidated>(key);
     if (cached) {
       artifactLogger.debug("cache_hit", { key });
-      return { success: true, artifact: cached, cached: true };
+      return { success: true, artifact: cached, cached: true, unreplacedVariables: [] };
     }
   }
 
@@ -115,13 +115,15 @@ async function loadArtifactInternal(
 
     // Replace variables in the raw JSON string before parsing
     let processedData = data;
+    let unreplacedVariables: string[] = [];
     if (Object.keys(variableMap).length > 0) {
       const replaceResult = replaceVariables(data, variableMap);
       processedData = replaceResult.content;
-      if (replaceResult.unreplacedVariables.length > 0) {
+      unreplacedVariables = replaceResult.unreplacedVariables;
+      if (unreplacedVariables.length > 0) {
         artifactLogger.debug("unreplaced_variables", {
           key,
-          unreplaced: replaceResult.unreplacedVariables,
+          unreplaced: unreplacedVariables,
         });
       }
     }
@@ -167,7 +169,7 @@ async function loadArtifactInternal(
       ttl,
     });
 
-    return { success: true, artifact, cached: false };
+    return { success: true, artifact, cached: false, unreplacedVariables };
   } catch (e) {
     artifactLogger.error("load_error", { key, error: (e as Error).message });
     throw new Error(`Failed to load artifact ${key}: ${(e as Error).message}`);
@@ -215,13 +217,72 @@ export async function loadArtifacts(
 }
 
 /**
+ * Artifactではない特殊ファイルのパターン
+ * これらは別スキーマで管理されるためArtifactとして読み込まない
+ */
+const NON_ARTIFACT_FILES = [
+  "meta.json",
+  "variables.json",
+  "districts.json",
+  "history/", // historyディレクトリ内のファイル
+];
+
+/**
  * Artifact一覧を取得
+ * meta.json, variables.json, districts.json などの特殊ファイルは除外
  */
 export async function listArtifacts(prefix: string = ""): Promise<string[]> {
   const storage = getDefaultStorageAdapter();
   const keys = await storage.list(prefix);
-  return keys.filter((k) => k.endsWith(".json"));
+  return keys.filter((k) => {
+    if (!k.endsWith(".json")) return false;
+    // 特殊ファイルを除外
+    for (const pattern of NON_ARTIFACT_FILES) {
+      if (k.endsWith(pattern) || k.includes(pattern)) {
+        return false;
+      }
+    }
+    return true;
+  });
 }
+
+/**
+ * 完成済みページのパス一覧を取得
+ * 未取得変数がないページのみを返す
+ */
+export const getCompletedPages = cache(async (municipalityId: string): Promise<Set<string>> => {
+  const completedPages = new Set<string>();
+
+  try {
+    const allKeys = await listArtifacts(`${municipalityId}/`);
+
+    // 並列で全ページをチェック
+    const results = await Promise.all(
+      allKeys.map(async (key) => {
+        const result = await loadArtifact(key, { skipCache: false });
+        if (result.success && result.unreplacedVariables.length === 0) {
+          // keyからpathを抽出: "takaoka/services/environment/gomi.json" -> "/services/environment/gomi"
+          const path = "/" + key
+            .replace(`${municipalityId}/`, "")
+            .replace(/\.json$/, "")
+            .replace(/^index$/, "");
+          return path === "/" ? "/" : path;
+        }
+        return null;
+      })
+    );
+
+    results.forEach((path) => {
+      if (path !== null) {
+        completedPages.add(path);
+      }
+    });
+  } catch (e) {
+    artifactLogger.error("get_completed_pages_error", { municipalityId, error: (e as Error).message });
+  }
+
+  return completedPages;
+});
 
 // Custom Errors
 export class ArtifactNotFoundError extends Error {

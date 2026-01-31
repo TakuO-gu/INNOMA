@@ -3,26 +3,13 @@
   "municipalityId": "takaoka",
   "service": "driving",
   "status": "draft",
-  "createdAt": "2026-01-21T06:55:59.382Z",
-  "updatedAt": "2026-01-21T06:55:59.382Z",
-  "variables": {
-    "driving_department": {
-      "value": "情報政策課",
-      "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/johoseisakuka/2/3/1/1/5112.html",
-      "confidence": 0.9,
-      "extractedAt": "2026-01-21T06:55:55.619Z",
-      "validated": true
-    },
-    "driving_phone": {
-      "value": "0766-20-1238",
-      "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/johoseisakuka/2/3/1/1/5112.html",
-      "confidence": 0.9,
-      "extractedAt": "2026-01-21T06:55:55.619Z",
-      "validated": true
-    }
-  },
+  "createdAt": "2026-01-30T00:21:41.115Z",
+  "updatedAt": "2026-01-30T00:21:41.115Z",
+  "variables": {},
   "missingVariables": [
+    "driving_department",
     "driving_email",
+    "driving_phone",
     "driver_license_center",
     "driver_license_center_address",
     "driver_license_center_phone",
@@ -38,20 +25,16 @@
     "municipal_parking_info",
     "traffic_accident_consultation_phone"
   ],
+  "searchAttempts": {},
   "errors": [
     {
-      "code": "PAGE_FETCH_FAILED",
-      "message": "Failed to fetch https://www.city.takaoka.toyama.jp/shiminzei/kurashi/zekin/kejidosha/kejidosha.html: Failed to fetch page: 404 Not Found",
-      "timestamp": "2026-01-21T06:55:59.382Z"
-    },
-    {
-      "code": "PAGE_FETCH_FAILED",
-      "message": "Failed to fetch https://www.city.takaoka.toyama.jp/shiminzei/kurashi/zekin/shome/shurui.html: Failed to fetch page: 404 Not Found",
-      "timestamp": "2026-01-21T06:55:59.382Z"
+      "code": "EXTRACTION_FAILED",
+      "message": "Cannot read properties of null (reading 'sourceIndex')",
+      "timestamp": "2026-01-30T00:21:41.115Z"
     }
   ],
   "metadata": {
     "totalVariables": 17,
-    "filledVariables": 2
+    "filledVariables": 0
   }
 }

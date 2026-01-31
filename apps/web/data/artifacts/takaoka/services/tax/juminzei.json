@@ -79,16 +79,10 @@
             ]
           },
           {
-            "type": "callout",
-            "severity": "info",
-            "content": [
+            "type": "paragraph",
+            "runs": [
               {
-                "type": "paragraph",
-                "runs": [
-                  {
-                    "text": "1月2日以降に転入・転出された方も、1月1日時点でお住まいだった市区町村に住民税を納めます。"
-                  }
-                ]
+                "text": "1月2日以降に転入・転出された方も、1月1日時点でお住まいだった市区町村に住民税を納めます。"
               }
             ]
           }
@@ -342,16 +336,10 @@
             ]
           },
           {
-            "type": "callout",
-            "severity": "info",
-            "content": [
+            "type": "paragraph",
+            "runs": [
               {
-                "type": "paragraph",
-                "runs": [
-                  {
-                    "text": "所得税の確定申告をした方は、住民税の申告は不要です。"
-                  }
-                ]
+                "text": "所得税の確定申告をした方は、住民税の申告は不要です。"
               }
             ]
           }

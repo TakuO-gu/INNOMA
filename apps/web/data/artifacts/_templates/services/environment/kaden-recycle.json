@@ -211,24 +211,17 @@
       "props": {
         "content": [
           {
-            "type": "callout",
-            "severity": "info",
-            "title": "お知らせ",
-            "content": [
+            "type": "paragraph",
+            "runs": [
               {
-                "type": "paragraph",
-                "runs": [
-                  {
-                    "text": "上記は主要メーカーの参考料金です。正確な料金は"
-                  },
-                  {
-                    "text": "一般財団法人家電製品協会のウェブサイト",
-                    "link": "https://www.rkc.aeha.or.jp/"
-                  },
-                  {
-                    "text": "でご確認ください。"
-                  }
-                ]
+                "text": "上記は主要メーカーの参考料金です。正確な料金は"
+              },
+              {
+                "text": "一般財団法人家電製品協会のウェブサイト",
+                "link": { "href": "https://www.rkc.aeha.or.jp/", "external": true }
+              },
+              {
+                "text": "でご確認ください。"
               }
             ]
           }

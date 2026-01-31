@@ -197,18 +197,11 @@
             ]
           },
           {
-            "type": "callout",
-            "severity": "info",
-            "title": "マイナポータルからの申請方法",
-            "content": [
-              {
-                "type": "paragraph",
-                "runs": [
-                  { "text": "マイナポータル（" },
-                  { "text": "https://myna.go.jp", "link": { "href": "https://myna.go.jp", "external": true } },
-                  { "text": "）にログインし、「手続の検索・電子申請」から「国民健康保険」で検索して手続きを進めてください。" }
-                ]
-              }
+            "type": "paragraph",
+            "runs": [
+              { "text": "マイナポータル（" },
+              { "text": "https://myna.go.jp", "link": { "href": "https://myna.go.jp", "external": true } },
+              { "text": "）にログインし、「手続の検索・電子申請」から「国民健康保険」で検索して手続きを進めてください。" }
             ]
           }
         ]
@@ -253,16 +246,9 @@
       "props": {
         "content": [
           {
-            "type": "callout",
-            "severity": "info",
-            "title": "保険料上限額について",
-            "content": [
-              {
-                "type": "paragraph",
-                "runs": [
-                  { "text": "保険料の賦課限度額は毎年度見直される場合があります。最新の情報は担当窓口にお問い合わせください。" }
-                ]
-              }
+            "type": "paragraph",
+            "runs": [
+              { "text": "保険料の賦課限度額は毎年度見直される場合があります。最新の情報は担当窓口にお問い合わせください。" }
             ]
           }
         ]

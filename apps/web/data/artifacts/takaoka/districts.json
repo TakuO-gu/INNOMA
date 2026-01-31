@@ -1,0 +1,90 @@
+{
+  "municipalityId": "takaoka",
+  "variables": {
+    "moeru_gomi_shushuhi": {
+      "variableName": "moeru_gomi_shushuhi",
+      "districts": [
+        {
+          "id": "getsu-moku",
+          "name": "月・木曜日収集地区",
+          "value": "月曜日・木曜日",
+          "areas": [
+            "定塚町", "下関町", "博労町", "平米町", "福田六家", "小勢町", "旭ヶ丘", "中田",
+            "東五位", "横田", "伏木", "成美", "塚", "牧野", "戸出", "立野", "石堤",
+            "山王", "大滝", "五位山", "古府", "佐野"
+          ]
+        },
+        {
+          "id": "ka-kin",
+          "name": "火・金曜日収集地区",
+          "value": "火曜日・金曜日",
+          "areas": [
+            "西条", "川原町", "二上町", "熊町", "野村", "木津", "国吉", "太田", "福岡",
+            "西五位", "赤丸", "守山"
+          ]
+        }
+      ],
+      "defaultValue": "地区により異なります（下記から地区を選択してください）",
+      "selectPrompt": "お住まいの地区を選択してください",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/kurashi/gomi/index.html",
+      "updatedAt": "2026-01-27T00:00:00.000Z"
+    },
+    "moenai_gomi_shushuhi": {
+      "variableName": "moenai_gomi_shushuhi",
+      "districts": [
+        {
+          "id": "getsu-moku",
+          "name": "月・木曜日収集地区",
+          "value": "第1・第3月曜日",
+          "areas": [
+            "定塚町", "下関町", "博労町", "平米町", "福田六家", "小勢町", "旭ヶ丘", "中田",
+            "東五位", "横田", "伏木", "成美", "塚", "牧野", "戸出", "立野", "石堤",
+            "山王", "大滝", "五位山", "古府", "佐野"
+          ]
+        },
+        {
+          "id": "ka-kin",
+          "name": "火・金曜日収集地区",
+          "value": "第1・第3火曜日",
+          "areas": [
+            "西条", "川原町", "二上町", "熊町", "野村", "木津", "国吉", "太田", "福岡",
+            "西五位", "赤丸", "守山"
+          ]
+        }
+      ],
+      "defaultValue": "地区により異なります（下記から地区を選択してください）",
+      "selectPrompt": "お住まいの地区を選択してください",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/material/files/group/25/2025getsumoku.pdf",
+      "updatedAt": "2026-01-27T00:00:00.000Z"
+    },
+    "shigen_gomi_shushuhi": {
+      "variableName": "shigen_gomi_shushuhi",
+      "districts": [
+        {
+          "id": "getsu-moku",
+          "name": "月・木曜日収集地区",
+          "value": "第2・第4月曜日",
+          "areas": [
+            "定塚町", "下関町", "博労町", "平米町", "福田六家", "小勢町", "旭ヶ丘", "中田",
+            "東五位", "横田", "伏木", "成美", "塚", "牧野", "戸出", "立野", "石堤",
+            "山王", "大滝", "五位山", "古府", "佐野"
+          ]
+        },
+        {
+          "id": "ka-kin",
+          "name": "火・金曜日収集地区",
+          "value": "第2・第4火曜日",
+          "areas": [
+            "西条", "川原町", "二上町", "熊町", "野村", "木津", "国吉", "太田", "福岡",
+            "西五位", "赤丸", "守山"
+          ]
+        }
+      ],
+      "defaultValue": "地区により異なります（下記から地区を選択してください）",
+      "selectPrompt": "お住まいの地区を選択してください",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/material/files/group/25/2025getsumoku.pdf",
+      "updatedAt": "2026-01-27T00:00:00.000Z"
+    }
+  },
+  "updatedAt": "2026-01-27T00:00:00.000Z"
+}

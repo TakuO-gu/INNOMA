@@ -106,17 +106,10 @@
             ]
           },
           {
-            "type": "callout",
-            "severity": "info",
-            "title": "お知らせ",
-            "content": [
+            "type": "paragraph",
+            "runs": [
               {
-                "type": "paragraph",
-                "runs": [
-                  {
-                    "text": "75歳の誕生日が近づくと、被保険者証が届きます。届出の手続きは不要です。"
-                  }
-                ]
+                "text": "75歳の誕生日が近づくと、被保険者証が届きます。届出の手続きは不要です。"
               }
             ]
           }

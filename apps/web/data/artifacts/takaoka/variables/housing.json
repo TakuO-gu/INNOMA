@@ -1,0 +1,159 @@
+{
+  "housing_department": {
+    "value": "建築政策課",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kenchikuseisakuka/",
+    "confidence": 0.9,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "housing_phone": {
+    "value": "0766-20-1429",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kenchikuseisakuka/2/3/4/2521.html",
+    "confidence": 0.9,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "housing_email": {
+    "value": "kenchikuseisaku@city.takaoka.lg.jp",
+    "source": "llm",
+    "confidence": 0.7,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "seismic_retrofit_max": {
+    "value": "120万円",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kenchikuseisakuka/2/3/4/4998.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "seismic_diagnosis_max": {
+    "value": "20万円",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kenchikuseisakuka/2/3/4/4998.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "reform_subsidy_max": {
+    "value": "20万円（居住誘導区域内、各種加算あり）",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kenchikuseisakuka/2/3/4/4998.html",
+    "confidence": 0.9,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "reform_subsidy_rate": {
+    "value": "対象工事費の1/3",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kenchikuseisakuka/2/3/4/4998.html",
+    "confidence": 0.9,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "vacant_house_subsidy_max": {
+    "value": "20万円（空き家バンク登録物件取得）",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kenchikuseisakuka/2/3/4/2521.html",
+    "confidence": 0.9,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "vacant_house_subsidy_rate": {
+    "value": "取得費の5%",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kenchikuseisakuka/2/3/4/2521.html",
+    "confidence": 0.9,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "urban_planning_department": {
+    "value": "都市計画課",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/toshikeikakuka/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "urban_planning_phone": {
+    "value": "0766-20-1407",
+    "source": "llm",
+    "confidence": 0.8,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "urban_planning_email": {
+    "value": "toshikeikaku@city.takaoka.lg.jp",
+    "source": "llm",
+    "confidence": 0.7,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "building_department": {
+    "value": "建築政策課",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kenchikuseisakuka/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "building_phone": {
+    "value": "0766-20-1431",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kenchikuseisakuka/",
+    "confidence": 0.9,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "building_email": {
+    "value": "kenchikuseisaku@city.takaoka.lg.jp",
+    "source": "llm",
+    "confidence": 0.7,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "seismic_diagnosis_rate": {
+    "value": "県が9割負担（自己負担：延床280㎡以下2,000〜4,000円、280㎡超3,000〜6,000円）",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kenchikuseisakuka/2/3/4/4274.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-30T00:00:00.000Z"
+  },
+  "seismic_retrofit_rate": {
+    "value": "工事費の5分の4（上限120万円）、設計費の3分の2（上限20万円）",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kenchikuseisakuka/2/3/4/4274.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-30T00:00:00.000Z"
+  },
+  "reform_application_period": {
+    "value": "年度毎の予算内で先着順。2月末日までに工事完了・実績報告が必要",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kenchikuseisakuka/2/3/4/4998.html",
+    "confidence": 0.9,
+    "updatedAt": "2026-01-30T00:00:00.000Z"
+  },
+  "reform_general_eligible": {
+    "value": "まちなか区域または居住誘導区域内の住宅。事前申請必要（3か月前に事前相談）",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kenchikuseisakuka/2/3/4/2521.html",
+    "confidence": 0.9,
+    "updatedAt": "2026-01-30T00:00:00.000Z"
+  },
+  "public_housing_rent_range": {
+    "value": "所得・部屋・築年数により決定（目安：0円〜5万円台）。減免制度あり",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kenchikuseisakuka/2/3/3/5047.html",
+    "confidence": 0.8,
+    "updatedAt": "2026-01-30T00:00:00.000Z"
+  },
+  "public_housing_schedule": {
+    "value": "空き状況に応じて随時募集。建築政策課（0766-20-1403）にお問い合わせください",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kenchikuseisakuka/2/3/3/2864.html",
+    "confidence": 0.8,
+    "updatedAt": "2026-01-30T00:00:00.000Z"
+  },
+  "housing_benefit_single": {
+    "value": "詳細は福祉課（0766-20-1366）にお問い合わせください",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/fukushika/",
+    "confidence": 0.6,
+    "updatedAt": "2026-01-30T00:00:00.000Z"
+  },
+  "housing_benefit_couple": {
+    "value": "詳細は福祉課（0766-20-1366）にお問い合わせください",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/fukushika/",
+    "confidence": 0.6,
+    "updatedAt": "2026-01-30T00:00:00.000Z"
+  }
+}

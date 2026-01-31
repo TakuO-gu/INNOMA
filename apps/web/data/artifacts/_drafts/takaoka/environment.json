@@ -3,45 +3,365 @@
   "municipalityId": "takaoka",
   "service": "environment",
   "status": "draft",
-  "createdAt": "2026-01-21T07:23:34.525Z",
-  "updatedAt": "2026-01-21T07:23:34.525Z",
+  "createdAt": "2026-01-30T00:15:58.690Z",
+  "updatedAt": "2026-01-30T00:15:58.690Z",
   "variables": {
     "environment_department": {
       "value": "環境政策課",
       "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kankyoseisakuka/2/1/3/2265.html",
       "confidence": 0.7999999999999999,
-      "extractedAt": "2026-01-21T07:23:15.783Z",
+      "extractedAt": "2026-01-30T00:14:31.290Z",
       "validated": true
     },
     "environment_phone": {
       "value": "0766-22-2144",
       "sourceUrl": "https://www.city.takaoka.toyama.jp/kurashi/gomi/kate/index.html",
       "confidence": 0.7999999999999999,
-      "extractedAt": "2026-01-21T07:23:15.783Z",
+      "extractedAt": "2026-01-30T00:14:31.290Z",
+      "validated": true
+    },
+    "gomi_calendar_url": {
+      "value": "https://www.city.takaoka.toyama.jp/gyosei/kurashi_tetsuzuki/gomi_recycle/5/2/1/6907.html",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/gyosei/kurashi_tetsuzuki/gomi_recycle/5/2/1/6907.html",
+      "confidence": 0.7999999999999999,
+      "extractedAt": "2026-01-30T00:14:31.290Z",
+      "validated": true
+    },
+    "gomi_dashijikan": {
+      "value": "朝8:30まで",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/material/files/group/25/2025getsumoku.pdf",
+      "confidence": 0.95,
+      "extractedAt": "2026-01-30T00:14:42.248Z",
+      "validated": true
+    },
+    "moenai_gomi_shushuhi": {
+      "value": "月1回",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/material/files/group/25/2024getsumoku.pdf",
+      "confidence": 0.9,
+      "extractedAt": "2026-01-30T00:15:00.941Z",
+      "validated": true
+    },
+    "shigen_gomi_shushuhi": {
+      "value": "毎週日曜日の午前10時~午後3時",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/material/files/group/25/2025getsumoku.pdf",
+      "confidence": 0.95,
+      "extractedAt": "2026-01-30T00:14:42.248Z",
+      "validated": true
+    },
+    "kaden_hikitori_basho": {
+      "value": "ストックヤード(長慶寺)",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/material/files/group/25/2024kakin.pdf",
+      "confidence": 0.95,
+      "extractedAt": "2026-01-30T00:14:47.466Z",
+      "validated": true
+    },
+    "moeru_gomi_dashikata": {
+      "value": "指定袋に入る大きさにして。できない場合は、持ち込むか戸別収集",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/material/files/group/25/r610bunbetuitiran.pdf",
+      "confidence": 0.95,
+      "extractedAt": "2026-01-30T00:14:51.154Z",
+      "validated": true
+    },
+    "sodaigomi_phone": {
+      "value": "22-2144",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/material/files/group/25/r610bunbetuitiran.pdf",
+      "confidence": 0.8500000000000001,
+      "extractedAt": "2026-01-30T00:14:51.154Z",
+      "validated": true
+    },
+    "moenai_gomi_dashikata": {
+      "value": "朝8:30までに出してください。",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/material/files/group/25/2024kateikeigominodasikata.pdf",
+      "confidence": 0.8500000000000001,
+      "extractedAt": "2026-01-30T00:15:28.718Z",
+      "validated": true
+    },
+    "sodaigomi_fee_small": {
+      "value": "100円",
+      "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kankyoseisakuka/2/1/3/2265.html",
+      "confidence": 0.95,
+      "extractedAt": "2026-01-30T00:15:38.823Z",
       "validated": true
     }
   },
   "missingVariables": [
     "environment_email",
     "gomi_app_description",
-    "gomi_calendar_url",
-    "gomi_dashijikan",
-    "kaden_hikitori_basho",
-    "moenai_gomi_dashikata",
-    "moenai_gomi_shushuhi",
-    "moeru_gomi_dashikata",
-    "shigen_gomi_shushuhi",
     "sodaigomi_fee_large",
     "sodaigomi_fee_medium",
-    "sodaigomi_fee_small",
     "sodaigomi_fee_xlarge",
     "sodaigomi_online_url",
-    "sodaigomi_phone",
     "sodaigomi_reception_hours"
   ],
+  "searchAttempts": {
+    "environment_email": [
+      {
+        "query": "高岡市 環境課のメールアドレス",
+        "searchedAt": "2026-01-30T00:15:16.706Z",
+        "resultsCount": 5,
+        "urls": [
+          "https://www.city.takaoka.toyama.jp/soshiki/kankyoseisakuka/index.html",
+          "https://www.city.takaoka.toyama.jp/soshiki/kankyoseisakuka/2/11/1/1/4731.html",
+          "https://www.city.takaoka.toyama.jp/soshiki/johoseisakuka/2/3/1/1/5115.html",
+          "https://www.city.takaoka.toyama.jp/soshiki/kankyoseisakuka/2/4/5/4635.html",
+          "https://www.city.takaoka.toyama.jp/soshiki/kankyoseisakuka/2/1/3/3473.html"
+        ],
+        "snippets": [
+          "環境政策課 · あしあと · あしあとを消去する · ページID : 0173 · よくある質問 ·",
+          "環境政策課 〒933-0951 富山県高岡市長慶寺640 電話番号：0766-22-2144 ファックス：0766-22-2341",
+          "情報政策課 〒933-8601 富山県高岡市広小路7-50 電話番号：0766-20-1238 ファックス：0766-20-1319"
+        ],
+        "reason": "no_match"
+      }
+    ],
+    "gomi_app_description": [
+      {
+        "query": "高岡市 ごみ分別アプリの説明・名称",
+        "searchedAt": "2026-01-30T00:15:23.462Z",
+        "resultsCount": 5,
+        "urls": [
+          "https://www.city.takaoka.toyama.jp/kurashi/gomi/kate/index.html",
+          "https://www.city.takaoka.toyama.jp/soshiki/kankyoseisakuka/2/1/4/2/2839.html",
+          "https://www.city.takaoka.toyama.jp/soshiki/kankyoseisakuka/2/1/4/2/4976.html",
+          "https://www.city.takaoka.toyama.jp/soshiki/kankyoseisakuka/2/1/4/3/1/kana.html",
+          "https://www.city.takaoka.toyama.jp/soshiki/kankyoseisakuka/2/1/4/2/3462.html"
+        ],
+        "snippets": [
+          "スマートフォン版を表示 · くらし・手続き くらし・手続きを開く",
+          "ごみの分別についてのチャットボットはこちらからご利用ください。 · 高岡市AIチャットボット · 環境政策課 〒933-0951 富山県高岡市長慶寺640 電話番号：0766-22-2144 ファックス：0766-22-2341 · メールフォームによるお問い合わせ ·",
+          "スマートフォン版を表示 · くらし・手続き くらし・手続きを開く"
+        ],
+        "reason": "no_match"
+      }
+    ],
+    "moenai_gomi_dashikata": [
+      {
+        "query": "高岡市 燃やせないごみの出し方（袋の種類、縛り方など）",
+        "searchedAt": "2026-01-30T00:15:28.719Z",
+        "resultsCount": 5,
+        "urls": [
+          "https://www.city.takaoka.toyama.jp/kurashi/gomi/kate/index.html",
+          "https://www.city.takaoka.toyama.jp/soshiki/kankyoseisakuka/2/1/4/2/2839.html",
+          "https://www.city.takaoka.toyama.jp/soshiki/kankyoseisakuka/2/1/4/2/4976.html",
+          "https://www.city.takaoka.toyama.jp/soshiki/kankyoseisakuka/2/1/4/3/1/kana.html",
+          "https://www.city.takaoka.toyama.jp/soshiki/kankyoseisakuka/2/1/3/2265.html"
+        ],
+        "snippets": [
+          "スマートフォン版を表示 · くらし・手続き くらし・手続きを開く",
+          "スマートフォン版を表示 · くらし・手続き くらし・手続きを開く",
+          "スマートフォン版を表示 · くらし・手続き くらし・手続きを開く"
+        ],
+        "reason": "no_match"
+      }
+    ],
+    "sodaigomi_fee_large": [
+      {
+        "query": "高岡市 粗大ごみ処理手数料（大型品）",
+        "searchedAt": "2026-01-30T00:15:33.257Z",
+        "resultsCount": 5,
+        "urls": [
+          "https://www.city.takaoka.toyama.jp/kurashi/gomi/kate/index.html",
+          "https://www.city.takaoka.toyama.jp/soshiki/kankyoseisakuka/2/1/3/2265.html",
+          "https://www.city.takaoka.toyama.jp/soshiki/kankyoseisakuka/2/1/4/2/2839.html",
+          "https://www.city.takaoka.toyama.jp/gyosei/kurashi_tetsuzuki/gomi_recycle/3/index.html",
+          "https://www.city.takaoka.toyama.jp/soshiki/kankyoseisakuka/2/1/4/3/1/kana.html"
+        ],
+        "snippets": [
+          "スマートフォン版を表示 · くらし・手続き くらし・手続きを開く",
+          "井戸ポンプ、ボイラー、電気温水器、厨房機器、洗面化粧台、浴槽、コピー機など大型OA機器 ... コンクリート片、瓦、ブロック、石こう製品、残土等（注意：ストックヤードのみ） ... 環境政策課 〒933-0951 富山県高岡市長慶寺640 電話番号：0766-22-2144 ファックス：0766-22-2341",
+          "スマートフォン版を表示 · くらし・手続き くらし・手続きを開く"
+        ],
+        "reason": "no_match"
+      }
+    ],
+    "sodaigomi_fee_medium": [
+      {
+        "query": "高岡市 粗大ごみ処理手数料（中型品）",
+        "searchedAt": "2026-01-30T00:15:37.288Z",
+        "resultsCount": 5,
+        "urls": [
+          "https://www.city.takaoka.toyama.jp/soshiki/kankyoseisakuka/2/1/3/2265.html",
+          "https://www.city.takaoka.toyama.jp/kurashi/gomi/kate/index.html",
+          "https://www.city.takaoka.toyama.jp/soshiki/kankyoseisakuka/2/1/4/2/2839.html",
+          "https://www.city.takaoka.toyama.jp/gyosei/kurashi_tetsuzuki/gomi_recycle/3/index.html",
+          "https://www.city.takaoka.toyama.jp/soshiki/kankyoseisakuka/2/1/4/2/4976.html"
+        ],
+        "snippets": [
+          "（注意）処理できないものもありますので、ごみの種類・量等について事前に確認ください。",
+          "スマートフォン版を表示 · くらし・手続き くらし・手続きを開く",
+          "スマートフォン版を表示 · くらし・手続き くらし・手続きを開く"
+        ],
+        "reason": "no_match"
+      }
+    ],
+    "sodaigomi_fee_small": [
+      {
+        "query": "高岡市 粗大ごみ処理手数料（小型品）",
+        "searchedAt": "2026-01-30T00:15:38.824Z",
+        "resultsCount": 5,
+        "urls": [
+          "https://www.city.takaoka.toyama.jp/soshiki/kankyoseisakuka/2/1/3/2265.html",
+          "https://www.city.takaoka.toyama.jp/kurashi/gomi/kate/index.html",
+          "https://www.city.takaoka.toyama.jp/soshiki/kankyoseisakuka/2/1/4/2/2839.html",
+          "https://www.city.takaoka.toyama.jp/gyosei/kurashi_tetsuzuki/gomi_recycle/3/index.html",
+          "https://www.city.takaoka.toyama.jp/soshiki/kankyoseisakuka/2/1/4/1/4643.html"
+        ],
+        "snippets": [
+          "未分別又は排出した家庭の方以外の持ち込みのものや、材質、形状、量等で適正な処理ができないものは搬入をお断りします。",
+          "スマートフォン版を表示 · くらし・手続き くらし・手続きを開く",
+          "スマートフォン版を表示 · くらし・手続き くらし・手続きを開く"
+        ],
+        "reason": "no_match"
+      }
+    ],
+    "sodaigomi_fee_xlarge": [
+      {
+        "query": "高岡市 粗大ごみ処理手数料（特大品）",
+        "searchedAt": "2026-01-30T00:15:43.023Z",
+        "resultsCount": 5,
+        "urls": [
+          "https://www.city.takaoka.toyama.jp/soshiki/kankyoseisakuka/2/1/3/2265.html",
+          "https://www.city.takaoka.toyama.jp/kurashi/gomi/kate/index.html",
+          "https://www.city.takaoka.toyama.jp/soshiki/kankyoseisakuka/2/1/4/2/2839.html",
+          "https://www.city.takaoka.toyama.jp/gyosei/kurashi_tetsuzuki/gomi_recycle/3/index.html",
+          "https://www.city.takaoka.toyama.jp/gyosei/kurashi_tetsuzuki/gomi_recycle/5/2/1/6907.html"
+        ],
+        "snippets": [
+          "（注意）処理できないものもありますので、ごみの種類・量等について事前に確認ください。",
+          "スマートフォン版を表示 · くらし・手続き くらし・手続きを開く",
+          "スマートフォン版を表示 · くらし・手続き くらし・手続きを開く"
+        ],
+        "reason": "no_match"
+      }
+    ],
+    "sodaigomi_online_url": [
+      {
+        "query": "高岡市 粗大ごみのオンライン申込URL",
+        "searchedAt": "2026-01-30T00:15:47.116Z",
+        "resultsCount": 5,
+        "urls": [
+          "https://www.city.takaoka.toyama.jp/kurashi/gomi/kate/index.html",
+          "https://www.city.takaoka.toyama.jp/soshiki/kankyoseisakuka/2/1/4/2/2839.html",
+          "https://www.city.takaoka.toyama.jp/soshiki/kankyoseisakuka/2/1/3/2265.html",
+          "https://www.city.takaoka.toyama.jp/gyosei/kurashi_tetsuzuki/gomi_recycle/5/2/1/6907.html",
+          "https://www.city.takaoka.toyama.jp/gyosei/kurashi_tetsuzuki/gomi_recycle/3/index.html"
+        ],
+        "snippets": [
+          "スマートフォン版を表示 · くらし・手続き くらし・手続きを開く",
+          "スマートフォン版を表示 · くらし・手続き くらし・手続きを開く",
+          "環境政策課 〒933-0951 富山県高岡市長慶寺640 電話番号：0766-22-2144 ファックス：0766-22-2341"
+        ],
+        "reason": "no_match"
+      }
+    ],
+    "sodaigomi_reception_hours": [
+      {
+        "query": "高岡市 粗大ごみ受付の受付時間",
+        "searchedAt": "2026-01-30T00:15:52.273Z",
+        "resultsCount": 5,
+        "urls": [
+          "https://www.city.takaoka.toyama.jp/kurashi/gomi/kate/index.html",
+          "https://www.city.takaoka.toyama.jp/soshiki/kankyoseisakuka/2/1/3/2265.html",
+          "https://www.city.takaoka.toyama.jp/gyosei/kurashi_tetsuzuki/gomi_recycle/5/2/1/6907.html",
+          "https://www.city.takaoka.toyama.jp/gyosei/kurashi_tetsuzuki/gomi_recycle/3/index.html",
+          "https://www.city.takaoka.toyama.jp/kankyo/kurashi/gomi/kate/g-calendar/g-calendar-05.html"
+        ],
+        "snippets": [
+          "スマートフォン版を表示 · くらし・手続き くらし・手続きを開く",
+          "町内の集積場へ出せないごみや一時多量ごみは、直接市の施設に持ち込むことができます。",
+          "環境政策課 〒933-0951 富山県高岡市長慶寺640 電話番号：0766-22-2144 ファックス：0766-22-2341"
+        ],
+        "reason": "no_match"
+      }
+    ]
+  },
+  "missingSuggestions": {
+    "environment_email": {
+      "variableName": "environment_email",
+      "reason": "環境課のメールアドレスは、検索結果に直接記載されていませんでした。環境政策課のページには電話番号とファックス番号が記載されています。",
+      "suggestedValue": null,
+      "suggestedSourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kankyoseisakuka/index.html",
+      "relatedUrls": [
+        "https://www.city.takaoka.toyama.jp/soshiki/kankyoseisakuka/index.html"
+      ],
+      "relatedPdfs": [],
+      "confidence": 0.5,
+      "status": "suggested"
+    },
+    "gomi_app_description": {
+      "variableName": "gomi_app_description",
+      "reason": "ごみ分別アプリに関する情報は見つかりませんでした。ただし、ごみの分別についてのチャットボットの利用が案内されています。",
+      "suggestedValue": null,
+      "suggestedSourceUrl": null,
+      "relatedUrls": [
+        "https://www.city.takaoka.toyama.jp/soshiki/kankyoseisakuka/2/1/4/2/2839.html"
+      ],
+      "relatedPdfs": [],
+      "confidence": 0.4,
+      "status": "suggested"
+    },
+    "sodaigomi_fee_large": {
+      "variableName": "sodaigomi_fee_large",
+      "reason": "粗大ごみ処理手数料に関する情報は見つかりませんでした。関連URLには粗大ごみとして処理できないものについての記述があります。",
+      "suggestedValue": null,
+      "suggestedSourceUrl": null,
+      "relatedUrls": [
+        "https://www.city.takaoka.toyama.jp/soshiki/kankyoseisakuka/2/1/3/2265.html"
+      ],
+      "relatedPdfs": [],
+      "confidence": 0.3,
+      "status": "suggested"
+    },
+    "sodaigomi_fee_medium": {
+      "variableName": "sodaigomi_fee_medium",
+      "reason": "粗大ごみ処理手数料に関する情報は見つかりませんでした。関連URLには粗大ごみとして処理できないものについての記述があります。",
+      "suggestedValue": null,
+      "suggestedSourceUrl": null,
+      "relatedUrls": [
+        "https://www.city.takaoka.toyama.jp/soshiki/kankyoseisakuka/2/1/3/2265.html"
+      ],
+      "relatedPdfs": [],
+      "confidence": 0.3,
+      "status": "suggested"
+    },
+    "sodaigomi_fee_xlarge": {
+      "variableName": "sodaigomi_fee_xlarge",
+      "reason": "粗大ごみ処理手数料に関する情報は見つかりませんでした。関連URLには粗大ごみとして処理できないものについての記述があります。",
+      "suggestedValue": null,
+      "suggestedSourceUrl": null,
+      "relatedUrls": [
+        "https://www.city.takaoka.toyama.jp/soshiki/kankyoseisakuka/2/1/3/2265.html"
+      ],
+      "relatedPdfs": [],
+      "confidence": 0.3,
+      "status": "suggested"
+    },
+    "sodaigomi_online_url": {
+      "variableName": "sodaigomi_online_url",
+      "reason": "粗大ごみのオンライン申し込みに関する情報は見つかりませんでした。",
+      "suggestedValue": null,
+      "suggestedSourceUrl": null,
+      "relatedUrls": [],
+      "relatedPdfs": [],
+      "confidence": 0.3,
+      "status": "suggested"
+    },
+    "sodaigomi_reception_hours": {
+      "variableName": "sodaigomi_reception_hours",
+      "reason": "粗大ごみ受付時間に関する情報は見つかりませんでした。",
+      "suggestedValue": null,
+      "suggestedSourceUrl": null,
+      "relatedUrls": [
+        "https://www.city.takaoka.toyama.jp/soshiki/kankyoseisakuka/2/1/3/2265.html"
+      ],
+      "relatedPdfs": [],
+      "confidence": 0.3,
+      "status": "suggested"
+    }
+  },
   "errors": [],
   "metadata": {
     "totalVariables": 18,
-    "filledVariables": 2
+    "filledVariables": 11
   }
 }

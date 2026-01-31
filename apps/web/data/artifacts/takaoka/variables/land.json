@@ -1,0 +1,172 @@
+{
+  "agriculture_department": {
+    "value": "農業水産課",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/nogyosuisanka/",
+    "confidence": 0.9,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "agriculture_phone": {
+    "value": "0766-20-1306",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/nogyosuisanka/",
+    "confidence": 0.8,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "agriculture_email": {
+    "value": "nogyosuisan@city.takaoka.lg.jp",
+    "source": "llm",
+    "confidence": 0.7,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "agricultural_commission": {
+    "value": "農業委員会事務局",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/nogyoiinkai/",
+    "confidence": 0.9,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "agricultural_commission_phone": {
+    "value": "0766-20-1303",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/nogyoiinkai/",
+    "confidence": 0.8,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "agricultural_commission_email": {
+    "value": "https://www.city.takaoka.toyama.jp/soshiki/nogyoiinkaijimukyoku/",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/nogyoiinkaijimukyoku/",
+    "confidence": 0.8,
+    "updatedAt": "2026-01-30T00:00:00.000Z"
+  },
+  "land_department": {
+    "value": "都市計画課",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/toshikeikakuka/",
+    "confidence": 0.9,
+    "updatedAt": "2026-01-30T00:00:00.000Z"
+  },
+  "land_phone": {
+    "value": "0766-20-1407",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/toshikeikakuka/",
+    "confidence": 0.8,
+    "updatedAt": "2026-01-30T00:00:00.000Z"
+  },
+  "land_email": {
+    "value": "toshikeikaku@city.takaoka.lg.jp",
+    "source": "llm",
+    "confidence": 0.7,
+    "updatedAt": "2026-01-30T00:00:00.000Z"
+  },
+  "forestry_department": {
+    "value": "農業水産課",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/nogyosuisanka/",
+    "confidence": 0.9,
+    "updatedAt": "2026-01-30T00:00:00.000Z"
+  },
+  "forestry_phone": {
+    "value": "0766-20-1306",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/nogyosuisanka/",
+    "confidence": 0.8,
+    "updatedAt": "2026-01-30T00:00:00.000Z"
+  },
+  "forestry_email": {
+    "value": "nogyosuisan@city.takaoka.lg.jp",
+    "source": "llm",
+    "confidence": 0.7,
+    "updatedAt": "2026-01-30T00:00:00.000Z"
+  },
+  "fishery_department": {
+    "value": "農業水産課",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/nogyosuisanka/",
+    "confidence": 0.9,
+    "updatedAt": "2026-01-30T00:00:00.000Z"
+  },
+  "fishery_phone": {
+    "value": "0766-20-1306",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/nogyosuisanka/",
+    "confidence": 0.8,
+    "updatedAt": "2026-01-30T00:00:00.000Z"
+  },
+  "fishery_email": {
+    "value": "nogyosuisan@city.takaoka.lg.jp",
+    "source": "llm",
+    "confidence": 0.7,
+    "updatedAt": "2026-01-30T00:00:00.000Z"
+  },
+  "agricultural_commission_meeting_day": {
+    "value": "詳細は農業委員会事務局（0766-20-1303）にお問い合わせください",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/nogyoiinkai/",
+    "confidence": 0.6,
+    "updatedAt": "2026-01-30T00:00:00.000Z"
+  },
+  "new_farmer_consultation": {
+    "value": "農業水産課（0766-20-1306）または農業委員会事務局（0766-20-1303）",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/nogyosuisanka/",
+    "confidence": 0.8,
+    "updatedAt": "2026-01-30T00:00:00.000Z"
+  },
+  "new_farmer_support_program": {
+    "value": "詳細は農業水産課（0766-20-1306）にお問い合わせください",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/nogyosuisanka/",
+    "confidence": 0.6,
+    "updatedAt": "2026-01-30T00:00:00.000Z"
+  },
+  "wildlife_department": {
+    "value": "環境政策課",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kankyoseisakuka/",
+    "confidence": 0.8,
+    "updatedAt": "2026-01-30T00:00:00.000Z"
+  },
+  "wildlife_phone": {
+    "value": "0766-22-3212",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kankyoseisakuka/2/2/1/4563.html",
+    "confidence": 0.9,
+    "updatedAt": "2026-01-30T00:00:00.000Z"
+  },
+  "wildlife_email": {
+    "value": "kankyoseisaku@city.takaoka.lg.jp",
+    "source": "llm",
+    "confidence": 0.7,
+    "updatedAt": "2026-01-30T00:00:00.000Z"
+  },
+  "wildlife_fence_subsidy_rate": {
+    "value": "詳細は農業水産課（0766-20-1306）にお問い合わせください",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/nogyosuisanka/",
+    "confidence": 0.6,
+    "updatedAt": "2026-01-30T00:00:00.000Z"
+  },
+  "wildlife_fence_application_period": {
+    "value": "詳細は農業水産課（0766-20-1306）にお問い合わせください",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/nogyosuisanka/",
+    "confidence": 0.6,
+    "updatedAt": "2026-01-30T00:00:00.000Z"
+  },
+  "toshikeikaku_rate": {
+    "value": "0.3%（都市計画税）",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/shisanzeika/",
+    "confidence": 0.9,
+    "updatedAt": "2026-01-30T00:00:00.000Z"
+  },
+  "local_business_subsidy_description": {
+    "value": "詳細は産業企画課（0766-20-1283）にお問い合わせください",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/sangyokikakuka/",
+    "confidence": 0.6,
+    "updatedAt": "2026-01-30T00:00:00.000Z"
+  }
+}

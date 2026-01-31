@@ -216,15 +216,6 @@
       }
     },
     {
-      "id": "task-button-1",
-      "type": "TaskButton",
-      "props": {
-        "label": "マイナポータルで転出届を届出する",
-        "href": "https://myna.go.jp/",
-        "isTopTask": true
-      }
-    },
-    {
       "id": "richtext-online",
       "type": "RichText",
       "props": {
@@ -279,6 +270,15 @@
             ]
           }
         ]
+      }
+    },
+    {
+      "id": "task-button-1",
+      "type": "TaskButton",
+      "props": {
+        "label": "マイナポータルで転出届を届出する",
+        "href": "https://myna.go.jp/",
+        "isTopTask": true
       }
     },
     {

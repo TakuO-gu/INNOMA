@@ -125,6 +125,8 @@ export default async function DraftDetailPage({ params }: Props) {
           variables={draft.variables}
           missingVariables={draft.missingVariables}
           changes={changesData}
+          searchAttempts={draft.searchAttempts}
+          missingSuggestions={draft.missingSuggestions}
         />
       </div>
 

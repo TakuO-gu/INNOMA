@@ -173,5 +173,86 @@
     "changedAt": "2026-01-21T03:57:27.588Z",
     "serviceId": "environment",
     "comment": "サービス「environment」の下書きを承認"
+  },
+  {
+    "id": "1769463533744-pn6whsb",
+    "municipalityId": "takaoka",
+    "type": "approve",
+    "source": "llm",
+    "changes": [
+      {
+        "variableName": "environment_department",
+        "oldValue": "環境政策課",
+        "newValue": "環境政策課"
+      },
+      {
+        "variableName": "environment_phone",
+        "oldValue": "0766-22-2144",
+        "newValue": "0766-22-2144"
+      },
+      {
+        "variableName": "gomi_calendar_url",
+        "oldValue": "https://www.city.takaoka.toyama.jp/gyosei/kurashi_tetsuzuki/gomi_recycle/5/2/1/6907.html",
+        "newValue": "https://www.city.takaoka.toyama.jp/gyosei/kurashi_tetsuzuki/gomi_recycle/5/2/1/6907.html"
+      }
+    ],
+    "changedBy": "admin",
+    "changedAt": "2026-01-26T21:38:53.744Z",
+    "serviceId": "environment",
+    "comment": "サービス「environment」の下書きを承認"
+  },
+  {
+    "id": "1769470116687-p69jpk2",
+    "municipalityId": "takaoka",
+    "type": "approve",
+    "source": "llm",
+    "changes": [
+      {
+        "variableName": "environment_department",
+        "oldValue": "環境政策課",
+        "newValue": "環境政策課"
+      },
+      {
+        "variableName": "environment_phone",
+        "oldValue": "0766-22-2144",
+        "newValue": "0766-22-2144"
+      },
+      {
+        "variableName": "sodaigomi_phone",
+        "newValue": "22-2144"
+      },
+      {
+        "variableName": "gomi_dashijikan",
+        "newValue": "朝8:30まで"
+      },
+      {
+        "variableName": "kaden_hikitori_basho",
+        "newValue": "市役所本庁舎, 環境政策課(長慶寺640), 高岡市ストックヤード"
+      },
+      {
+        "variableName": "moenai_gomi_dashikata",
+        "newValue": "朝8:30までに出してください。"
+      },
+      {
+        "variableName": "moenai_gomi_shushuhi",
+        "newValue": "第1,3収集日 曜日:月火水木金"
+      },
+      {
+        "variableName": "moeru_gomi_dashikata",
+        "newValue": "指定袋に入る大きさにして。できない場合は、持ち込むか戸別収集"
+      },
+      {
+        "variableName": "shigen_gomi_shushuhi",
+        "newValue": "毎週日曜日の午前10時~午後3時"
+      },
+      {
+        "variableName": "sodaigomi_fee_small",
+        "newValue": "100円"
+      }
+    ],
+    "changedBy": "admin",
+    "changedAt": "2026-01-26T23:28:36.687Z",
+    "serviceId": "environment",
+    "comment": "サービス「environment」の下書きを承認"
   }
 ]

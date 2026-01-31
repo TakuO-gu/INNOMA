@@ -1,0 +1,108 @@
+{
+  "municipality_name": {
+    "value": "吉野町",
+    "source": "manual",
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "prefecture_name": {
+    "value": "奈良県",
+    "source": "manual",
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "generated_at": {
+    "value": "2026-01-31T00:00:00.000Z",
+    "source": "manual",
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "city_hall_address": {
+    "value": "〒639-3192 奈良県吉野郡吉野町大字上市80番地の1",
+    "source": "llm",
+    "sourceUrl": "https://www.town.yoshino.nara.jp/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "city_hall_phone": {
+    "value": "0746-32-3081",
+    "source": "llm",
+    "sourceUrl": "https://www.town.yoshino.nara.jp/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "city_hall_fax": {
+    "value": "0746-32-8855",
+    "source": "llm",
+    "sourceUrl": "https://www.town.yoshino.nara.jp/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "city_hall_department": {
+    "value": "総務課",
+    "source": "llm",
+    "sourceUrl": "https://www.town.yoshino.nara.jp/soshiki/index.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "shimin_department": {
+    "value": "町民税務課",
+    "source": "llm",
+    "sourceUrl": "https://www.town.yoshino.nara.jp/soshiki/index.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "shimin_phone": {
+    "value": "0746-32-3081（代表）",
+    "source": "llm",
+    "sourceUrl": "https://www.town.yoshino.nara.jp/",
+    "confidence": 0.7,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "tax_department": {
+    "value": "町民税務課",
+    "source": "llm",
+    "sourceUrl": "https://www.town.yoshino.nara.jp/soshiki/index.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "welfare_department": {
+    "value": "長寿福祉課",
+    "source": "llm",
+    "sourceUrl": "https://www.town.yoshino.nara.jp/soshiki/index.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "environment_department": {
+    "value": "暮らし環境整備課 環境対策室",
+    "source": "llm",
+    "sourceUrl": "https://www.town.yoshino.nara.jp/soshiki/index.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "norin_department": {
+    "value": "暮らし環境整備課 農林振興室",
+    "source": "llm",
+    "sourceUrl": "https://www.town.yoshino.nara.jp/soshiki/index.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "kanko_department": {
+    "value": "産業観光課",
+    "source": "llm",
+    "sourceUrl": "https://www.town.yoshino.nara.jp/soshiki/index.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "disaster_department": {
+    "value": "総務課 危機管理室",
+    "source": "llm",
+    "sourceUrl": "https://www.town.yoshino.nara.jp/soshiki/index.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "kyoiku_department": {
+    "value": "教育委員会事務局 教育総務課",
+    "source": "llm",
+    "sourceUrl": "https://www.town.yoshino.nara.jp/soshiki/index.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  }
+}

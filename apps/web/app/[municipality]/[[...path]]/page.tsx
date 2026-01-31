@@ -11,7 +11,7 @@
  */
 
 import { notFound } from "next/navigation";
-import { loadArtifact } from "@/lib/artifact/loader";
+import { loadArtifact, getCompletedPages } from "@/lib/artifact/loader";
 import { hasEmergencyContent, hasHighPriorityEmergency } from "@/lib/artifact/cache";
 import BlockRenderer from "@/components/blocks/BlockRenderer";
 
@@ -61,7 +61,13 @@ export default async function ArtifactPage({ params }: PageProps) {
     throw new Error(result.message);
   }
 
-  const { artifact } = result;
+  const { artifact, unreplacedVariables } = result;
+
+  // 未取得の変数があるページはエンドユーザーには表示しない
+  // リンク側でフィルタリングするが、直接URLアクセスされた場合の保険としてnotFoundを返す
+  if (unreplacedVariables.length > 0) {
+    notFound();
+  }
 
   // Emergency検出でヘッダー情報を追加（クライアントサイドでの更新頻度調整用）
   const isEmergency = hasEmergencyContent(artifact);
@@ -73,12 +79,21 @@ export default async function ArtifactPage({ params }: PageProps) {
   // sourcesがある場合はBlockRendererに渡す（Wikipedia風参照表示用）
   const sources = (artifact as { sources?: Array<{ id: number; url: string; title?: string; accessedAt?: string; variables?: string[] }> }).sources;
 
+  // 完成済みページのリストを取得（リンク表示フィルタリング用）
+  const completedPages = await getCompletedPages(municipalityId);
+  const completedPagesArray = Array.from(completedPages);
+
   return (
     <main
       data-emergency={isEmergency ? "true" : undefined}
       data-priority={isHighPriority ? "high" : undefined}
     >
-      <BlockRenderer blocks={artifact.blocks} municipalityId={municipalityId} sources={sources} />
+      <BlockRenderer
+        blocks={artifact.blocks}
+        municipalityId={municipalityId}
+        sources={sources}
+        completedPages={completedPagesArray}
+      />
     </main>
   );
 }

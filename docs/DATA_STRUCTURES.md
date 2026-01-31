@@ -1,6 +1,6 @@
 # データ構造定義
 
-**最終更新**: 2026-01-20
+**最終更新**: 2026-01-27
 
 ---
 
@@ -22,12 +22,23 @@ apps/web/data/artifacts/
 ├── _drafts/              # 下書き
 │   └── {municipality}/
 │       └── {service}.json
+├── _jobs/                # ジョブ状態
+│   └── {municipality}/
+│       └── latest.json
 └── {municipality}/       # 各自治体のデータ
     ├── meta.json         # メタデータ
     ├── variables.json    # 変数値
+    ├── history/          # 編集履歴
+    │   └── {year-month}.json
     ├── index.json        # トップページ
     ├── topics/
     └── services/
+
+apps/web/data/
+├── notifications/        # 通知
+│   └── notifications.json
+└── pdf-cache/            # PDF OCRキャッシュ
+    └── {hash}.json
 ```
 
 ---
@@ -278,90 +289,189 @@ type ServiceCategory =
 
 ---
 
-## 5. ジョブキュー
+## 5. ジョブ状態
 
-`_jobs/queue.json`
+`_jobs/{municipality}/latest.json`
 
-非同期処理のキュー（LLM取得など）。
+情報取得の進捗状態を保存。中断後の再開に使用。
 
 ```typescript
-interface JobQueue {
-  jobs: Job[];
-}
-
-interface Job {
-  id: string;                    // "fetch-123"
-  type: JobType;
+interface FetchJob {
+  id: string;                    // "fetch-takaoka-1234567890"
   municipalityId: string;
-  status: JobStatus;
-
-  // パラメータ
-  params: {
-    services?: string[];         // 対象サービス
-    force?: boolean;             // 強制再取得
-  };
+  status: FetchJobStatus;
 
   // 進捗
-  progress: {
-    current: number;
-    total: number;
-    currentService: string | null;
-  };
+  totalServices: number;
+  completedServices: string[];   // 完了したサービスID
+  currentService: string | null;
 
   // タイムスタンプ
-  createdAt: string;
-  startedAt: string | null;
+  startedAt: string;
+  updatedAt: string;
   completedAt: string | null;
 
-  // 結果
-  result: JobResult | null;
+  // エラー情報
+  errors: FetchJobError[];
 }
 
-type JobType = "fetch" | "validate" | "export";
+type FetchJobStatus =
+  | "running"      // 実行中
+  | "completed"    // 正常完了
+  | "interrupted"  // 中断（ユーザー操作）
+  | "failed";      // エラー終了
 
-type JobStatus =
-  | "queued"
-  | "running"
-  | "completed"
-  | "failed";
+interface FetchJobError {
+  service: string;
+  message: string;
+  timestamp: string;
+}
+```
 
-interface JobResult {
-  success: boolean;
-  draftsCreated: number;
-  variablesFetched: number;
-  errors: string[];
+**例**:
+```json
+{
+  "id": "fetch-takaoka-1706345678901",
+  "municipalityId": "takaoka",
+  "status": "interrupted",
+  "totalServices": 15,
+  "completedServices": ["registration", "tax", "health"],
+  "currentService": "childcare",
+  "startedAt": "2026-01-20T10:00:00Z",
+  "updatedAt": "2026-01-20T10:15:00Z",
+  "completedAt": null,
+  "errors": []
 }
 ```
 
 ---
 
-## 6. 設定
+## 6. 編集履歴
 
-`_config/settings.json`
+`{municipality}/history/{year-month}.json`
 
-グローバル設定。
+変数の編集履歴を月別に保存。
 
 ```typescript
-interface Settings {
-  // LLM設定
-  llm: {
-    provider: "gemini";
-    model: string;               // "gemini-2.0-flash"
-    maxRetries: number;
-  };
+interface HistoryFile {
+  municipalityId: string;
+  month: string;               // "2026-01"
+  entries: HistoryEntry[];
+}
 
-  // 検索設定
-  search: {
-    provider: "google";
-    maxResults: number;
-  };
-
-  // 更新設定
-  fetch: {
-    defaultInterval: FetchInterval;
-    priorityVariables: string[]; // 優先取得する変数
+interface HistoryEntry {
+  id: string;
+  timestamp: string;
+  type: HistoryType;
+  source: HistorySource;
+  changes: VariableChange[];
+  metadata?: {
+    service?: string;          // 下書き承認時のサービス名
+    actor?: string;            // 操作者
   };
 }
+
+type HistoryType =
+  | "variable_update"          // 変数更新（手動）
+  | "bulk_variable_update"     // 一括更新
+  | "draft_approval"           // 下書き承認
+  | "draft_rejection";         // 下書き却下
+
+type HistorySource =
+  | "manual"                   // 手動編集
+  | "draft"                    // 下書き承認
+  | "cron";                    // 定期更新
+
+interface VariableChange {
+  variable: string;
+  oldValue: string | null;
+  newValue: string | null;
+}
+```
+
+---
+
+## 7. 通知
+
+`data/notifications/notifications.json`
+
+システム全体の通知を管理。
+
+```typescript
+interface NotificationFile {
+  notifications: Notification[];
+}
+
+interface Notification {
+  id: string;
+  type: NotificationType;
+  severity: NotificationSeverity;
+  title: string;
+  message: string;
+  municipalityId?: string;
+  service?: string;
+  read: boolean;
+  createdAt: string;
+  readAt?: string;
+}
+
+type NotificationType =
+  | "draft_created"            // 下書き作成
+  | "draft_approved"           // 下書き承認
+  | "draft_rejected"           // 下書き却下
+  | "variable_updated"         // 変数更新
+  | "cron_completed"           // 定期更新完了
+  | "cron_failed"              // 定期更新失敗
+  | "fetch_completed"          // 情報取得完了
+  | "fetch_failed";            // 情報取得失敗
+
+type NotificationSeverity =
+  | "info"
+  | "success"
+  | "warning"
+  | "error";
+```
+
+---
+
+## 8. PDF OCRキャッシュ
+
+`data/pdf-cache/{hash}.json`
+
+Vision API OCR結果をキャッシュ。
+
+```typescript
+interface OcrCache {
+  url: string;                 // 元のURL
+  text: string;                // 抽出されたテキスト
+  createdAt: string;
+  metadata?: {
+    pages?: number;            // ページ数
+    contentType?: string;      // MIME type
+  };
+}
+```
+
+ファイル名はURLのSHA256ハッシュ。
+
+---
+
+## 9. 設定
+
+環境変数で管理（`.env.local`）。
+
+```
+# Google APIs
+GOOGLE_GEMINI_API_KEY=xxx
+GOOGLE_CUSTOM_SEARCH_API_KEY=xxx
+GOOGLE_VISION_API_KEY=xxx
+
+# Storage
+STORAGE_TYPE=local
+STORAGE_BASE_PATH=./data/artifacts
+
+# Cron認証
+CRON_SECRET=xxx
 ```
 
 ---
@@ -372,42 +482,78 @@ interface Settings {
 
 ```
 apps/web/lib/
-├── types/
-│   ├── municipality.ts    # MunicipalityMeta, MunicipalityStatus
-│   ├── variables.ts       # VariablesStore, VariableValue
-│   ├── drafts.ts          # Draft, DraftChange
-│   └── jobs.ts            # Job, JobQueue
-└── schema/
-    ├── municipality.ts    # Zodスキーマ
-    ├── variables.ts
-    ├── drafts.ts
-    └── jobs.ts
+├── template/
+│   └── types.ts           # MunicipalityMeta, VariableStore
+├── drafts/
+│   └── types.ts           # Draft, DraftVariable, SearchAttempt
+├── jobs/
+│   └── types.ts           # FetchJob, FetchJobStatus
+├── history/
+│   └── types.ts           # HistoryEntry, VariableChange
+├── notification/
+│   └── types.ts           # Notification, NotificationType
+└── llm/
+    └── types.ts           # DraftVariable（re-export）, VariableDefinition
 ```
 
 ---
 
 ## バリデーション
 
-全データはZodスキーマで検証。
+### 変数バリデーション
+
+`lib/llm/validators.ts` でバリデーターを定義。
 
 ```typescript
-// 例: municipality.ts
-import { z } from "zod";
+type VariableValidationType =
+  | "phone"    // 電話番号
+  | "email"    // メールアドレス
+  | "url"      // URL
+  | "fee"      // 金額（円）
+  | "percent"  // パーセント
+  | "date"     // 日付
+  | "time"     // 時刻
+  | "postal"   // 郵便番号
+  | "text";    // テキスト（常にtrue）
 
-export const MunicipalityMetaSchema = z.object({
-  id: z.string().regex(/^[a-z0-9-]+$/),
-  name: z.string().min(1),
-  prefecture: z.string().min(1),
-  officialUrl: z.string().url().nullable(),
-  createdAt: z.string().datetime(),
-  updatedAt: z.string().datetime(),
-  lastFetchAt: z.string().datetime().nullable(),
-  status: z.enum(["published", "draft", "processing", "error"]),
-  settings: z.object({
-    autoPublish: z.boolean(),
-    fetchInterval: z.enum(["manual", "daily", "weekly", "monthly"]),
-  }),
-});
-
-export type MunicipalityMeta = z.infer<typeof MunicipalityMetaSchema>;
+// 変数定義で明示的に指定可能
+interface VariableDefinition {
+  description: string;
+  examples?: string[];
+  validationType?: VariableValidationType;
+}
 ```
+
+### バリデーションパターン
+
+| タイプ | パターン |
+|--------|---------|
+| phone | `^\d{2,5}-\d{2,4}-\d{4}$` |
+| email | `^[\w.-]+@[\w.-]+\.[a-z]{2,}$` |
+| url | `^https?://` |
+| fee | `^[\d,]+円$` |
+| postal | `^〒?\d{3}-\d{4}$` |
+| date | `^\d{4}年\d{1,2}月\d{1,2}日$` |
+| time | `^\d{1,2}:\d{2}$` |
+
+---
+
+## データ整合性
+
+### 下書きとサービス定義の同期
+
+`lib/llm/variable-priority.ts` でサービス別変数を定義。
+下書きの`missingVariables`はサービス定義から動的に計算。
+
+```typescript
+// missingCountの計算
+const fetchedVariableNames = new Set(Object.keys(draft.variables));
+const missingCount = serviceDef.variables.filter(
+  (varName) => !fetchedVariableNames.has(varName)
+).length;
+```
+
+### 変数総数の動的計算
+
+テンプレートファイルから`{{variable_name}}`形式の変数を抽出。
+ハードコードせず、`getTotalVariableCount()`で取得。

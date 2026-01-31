@@ -1,0 +1,224 @@
+{
+  "welfare_department": {
+    "value": "社会福祉課",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/shakaifukushika/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "welfare_phone": {
+    "value": "0766-20-1369",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/shakaifukushika/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "welfare_email": {
+    "value": "shakaifukushi@city.takaoka.lg.jp",
+    "source": "llm",
+    "confidence": 0.7,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "kaigo_department": {
+    "value": "長寿福祉課",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/gyosei/gyoseijoho/yakusho_madoguchiannai/1/7/6557.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "kaigo_phone": {
+    "value": "0766-20-1372",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/gyosei/gyoseijoho/yakusho_madoguchiannai/1/7/6557.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "kaigo_email": {
+    "value": "chojufukushi@city.takaoka.lg.jp",
+    "source": "llm",
+    "confidence": 0.7,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "koureisha_department": {
+    "value": "長寿福祉課",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/gyosei/gyoseijoho/yakusho_madoguchiannai/1/7/6557.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "koureisha_phone": {
+    "value": "0766-20-1372",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/gyosei/gyoseijoho/yakusho_madoguchiannai/1/7/6557.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "koureisha_email": {
+    "value": "chojufukushi@city.takaoka.lg.jp",
+    "source": "llm",
+    "confidence": 0.7,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "houkatsu_count": {
+    "value": "11",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/koreikaigoka/2/1/5/2432.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "houkatsu_department": {
+    "value": "長寿福祉課",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/koreikaigoka/2/1/5/2432.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "houkatsu_phone": {
+    "value": "0766-20-1372",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/koreikaigoka/2/1/5/2432.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "houkatsu_list_url": {
+    "value": "https://www.city.takaoka.toyama.jp/soshiki/koreikaigoka/2/1/5/2432.html",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/koreikaigoka/2/1/5/2432.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "shogai_department": {
+    "value": "社会福祉課 障がい福祉係",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/shakaifukushika/",
+    "confidence": 0.9,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "shogai_phone": {
+    "value": "0766-20-1369",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/shakaifukushika/",
+    "confidence": 0.9,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "shogai_email": {
+    "value": "shakaifukushi@city.takaoka.lg.jp",
+    "source": "llm",
+    "confidence": 0.7,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "disability_department": {
+    "value": "社会福祉課 障がい福祉係",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/shakaifukushika/",
+    "confidence": 0.9,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "disability_phone": {
+    "value": "0766-20-1369",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/shakaifukushika/",
+    "confidence": 0.9,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "disability_email": {
+    "value": "shakaifukushi@city.takaoka.lg.jp",
+    "source": "llm",
+    "confidence": 0.7,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "seikatsu_hogo_department": {
+    "value": "社会福祉課 保護係",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/shakaifukushika/",
+    "confidence": 0.9,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "seikatsu_hogo_phone": {
+    "value": "0766-20-1369",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/shakaifukushika/",
+    "confidence": 0.9,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "seikatsu_hogo_email": {
+    "value": "shakaifukushi@city.takaoka.lg.jp",
+    "source": "llm",
+    "confidence": 0.7,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "silver_center_phone": {
+    "value": "0766-20-1650",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/koreikaigoka/2/1/6/3167.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "silver_center_address": {
+    "value": "〒933-0935 富山県高岡市博労本町4-1 高岡市ふれあい福祉センター1階",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/koreikaigoka/2/1/6/3167.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "kaigo_kijun_gaku": {
+    "value": "77,928円/年（月額6,494円）",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/kaigo/faq/kenko/kaigo/hokenryo.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-30T00:00:00.000Z"
+  },
+  "houkatsu_email": {
+    "value": "chojufukushi@city.takaoka.lg.jp",
+    "source": "llm",
+    "confidence": 0.7,
+    "updatedAt": "2026-01-30T00:00:00.000Z"
+  },
+  "silver_center_email": {
+    "value": "高岡市シルバー人材センター（電話:0766-20-1650）にお問い合わせください",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/koreikaigoka/2/1/6/3167.html",
+    "confidence": 0.7,
+    "updatedAt": "2026-01-30T00:00:00.000Z"
+  },
+  "silver_center_fee": {
+    "value": "会員登録料は年額2,000円（詳細はセンターにお問い合わせください）",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/koreikaigoka/2/1/6/3167.html",
+    "confidence": 0.7,
+    "updatedAt": "2026-01-30T00:00:00.000Z"
+  },
+  "victim_support_department": {
+    "value": "市民生活課（犯罪被害者等支援）",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/shiminseikatsuka/",
+    "confidence": 0.8,
+    "updatedAt": "2026-01-30T00:00:00.000Z"
+  },
+  "victim_support_phone": {
+    "value": "0766-20-1342",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/shiminseikatsuka/",
+    "confidence": 0.8,
+    "updatedAt": "2026-01-30T00:00:00.000Z"
+  },
+  "victim_support_email": {
+    "value": "shiminseikatu@city.takaoka.lg.jp",
+    "source": "llm",
+    "confidence": 0.7,
+    "updatedAt": "2026-01-30T00:00:00.000Z"
+  },
+  "victim_support_benefit": {
+    "value": "詳細は市民生活課（0766-20-1342）にお問い合わせください",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/shiminseikatsuka/",
+    "confidence": 0.6,
+    "updatedAt": "2026-01-30T00:00:00.000Z"
+  },
+  "victim_support_center_phone": {
+    "value": "0570-783-554（よりそいホットライン）または警察相談専用電話#9110",
+    "source": "llm",
+    "confidence": 0.8,
+    "updatedAt": "2026-01-30T00:00:00.000Z"
+  }
+}

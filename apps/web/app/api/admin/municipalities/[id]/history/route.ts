@@ -5,6 +5,7 @@
 
 import { NextRequest, NextResponse } from "next/server";
 import { getHistoryList, getHistoryEntry, getHistoryStats } from "@/lib/history";
+import { isValidMunicipalityId } from "@/lib/security/validators";
 
 interface RouteParams {
   params: Promise<{
@@ -15,6 +16,12 @@ interface RouteParams {
 export async function GET(request: NextRequest, { params }: RouteParams) {
   try {
     const { id } = await params;
+    if (!isValidMunicipalityId(id)) {
+      return NextResponse.json(
+        { error: "自治体IDの形式が正しくありません" },
+        { status: 400 }
+      );
+    }
     const { searchParams } = new URL(request.url);
 
     // Check if requesting a specific entry

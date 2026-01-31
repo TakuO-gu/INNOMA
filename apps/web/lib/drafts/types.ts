@@ -20,6 +20,42 @@ export interface DraftVariableEntry {
 }
 
 /**
+ * Suggestion for missing variable
+ */
+export interface MissingVariableSuggestion {
+  variableName: string;
+  reason: string;
+  relatedUrls: string[];
+  relatedPdfs: string[];
+  suggestedValue?: string | null;
+  suggestedSourceUrl?: string | null;
+  confidence?: number;
+  status?: "suggested" | "accepted" | "rejected";
+}
+
+/**
+ * Draft variable update payload
+ */
+export interface DraftVariableUpdate {
+  value: string;
+  sourceUrl?: string;
+  confidence?: number;
+  validated?: boolean;
+}
+
+/**
+ * Search attempt record for a variable
+ */
+export interface SearchAttempt {
+  query: string;
+  searchedAt: string;
+  resultsCount: number;
+  urls: string[];
+  snippets: string[];
+  reason: 'not_found' | 'no_match' | 'low_confidence' | 'validation_failed';
+}
+
+/**
  * Draft data structure
  */
 export interface Draft {
@@ -31,6 +67,10 @@ export interface Draft {
   updatedAt: string;
   variables: Record<string, DraftVariableEntry>;
   missingVariables: string[];
+  /** 未取得変数の検索試行情報 */
+  searchAttempts?: Record<string, SearchAttempt[]>;
+  /** 未取得変数への代替案提案 */
+  missingSuggestions?: Record<string, MissingVariableSuggestion>;
   errors: DraftError[];
   metadata: DraftMetadata;
 }

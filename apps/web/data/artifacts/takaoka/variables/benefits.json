@@ -1,0 +1,22 @@
+{
+  "benefits_department": {
+    "value": "保険年金課",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/hisho/shise/gaiyo/soshiki/fukushihoken/hoken.html",
+    "confidence": 0.9,
+    "updatedAt": "2026-01-30T00:00:00.000Z"
+  },
+  "benefits_phone": {
+    "value": "0766-20-1357",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/hisho/shise/gaiyo/soshiki/fukushihoken/hoken.html",
+    "confidence": 0.9,
+    "updatedAt": "2026-01-30T00:00:00.000Z"
+  },
+  "benefits_email": {
+    "value": "hokennenkin@city.takaoka.lg.jp",
+    "source": "llm",
+    "confidence": 0.7,
+    "updatedAt": "2026-01-30T00:00:00.000Z"
+  }
+}

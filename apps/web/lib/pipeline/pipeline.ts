@@ -456,7 +456,9 @@ export class Pipeline {
             serviceId,
             draftVars,
             missingVars,
-            result.errors
+            result.errors,
+            result.searchAttempts,
+            result.missingSuggestions
           );
         }
 

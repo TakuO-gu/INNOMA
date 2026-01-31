@@ -15,6 +15,12 @@
     @apply antialiased text-gray-900;
   }
 
+  /* BudouX: word-break: auto-phrase のフォールバック */
+  .budoux {
+    word-break: keep-all;
+    overflow-wrap: anywhere;
+  }
+
   /* Focus visible for accessibility */
   :focus-visible {
     @apply outline-2 outline-offset-2 outline-blue-500;
@@ -149,7 +155,10 @@
   .topic-list h4,
   .topic-grid h2,
   .topic-grid h3,
-  .topic-grid h4 {
+  .topic-grid h4,
+  .content-card h2,
+  .content-card h3,
+  .content-card h4 {
     margin-top: 0;
   }
 
@@ -161,7 +170,10 @@
   .topic-list h4 + *,
   .topic-grid h2 + *,
   .topic-grid h3 + *,
-  .topic-grid h4 + * {
+  .topic-grid h4 + *,
+  .content-card h2 + *,
+  .content-card h3 + *,
+  .content-card h4 + * {
     margin-top: 0;
   }
 

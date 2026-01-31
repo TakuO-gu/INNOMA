@@ -1,0 +1,31 @@
+{
+  "municipality_name": {
+    "value": "下市町",
+    "source": "manual",
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "prefecture_name": {
+    "value": "奈良県",
+    "source": "manual",
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "generated_at": {
+    "value": "2026-01-31T00:00:00.000Z",
+    "source": "manual",
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "city_hall_address": {
+    "value": "〒638-8510 奈良県吉野郡下市町大字下市1960",
+    "source": "llm",
+    "sourceUrl": "https://www.town.shimoichi.lg.jp/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "city_hall_phone": {
+    "value": "0747-52-0001",
+    "source": "llm",
+    "sourceUrl": "https://www.town.shimoichi.lg.jp/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  }
+}

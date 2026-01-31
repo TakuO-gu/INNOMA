@@ -1,0 +1,159 @@
+{
+  "tax_department": {
+    "value": "市民税課",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/shiminzeika/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "tax_phone": {
+    "value": "0766-20-1257",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/shiminzeika/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "tax_email": {
+    "value": "shiminzei@city.takaoka.lg.jp",
+    "source": "llm",
+    "confidence": 0.7,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "zeimu_department": {
+    "value": "市民税課",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/shiminzeika/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "zeimu_phone": {
+    "value": "0766-20-1257",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/shiminzeika/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "zeimu_email": {
+    "value": "shiminzei@city.takaoka.lg.jp",
+    "source": "llm",
+    "confidence": 0.7,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "juminzei_kinto_shi": {
+    "value": "3,500円",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/shiminzeika/2/2/4/4241.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "juminzei_kinto_ken": {
+    "value": "2,000円（水と緑の森づくり税500円含む）",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/shiminzeika/2/2/4/4241.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "shisanzei_department": {
+    "value": "資産税課",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/shisanzeika/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "shisanzei_phone": {
+    "value": "0766-20-1265",
+    "source": "llm",
+    "confidence": 0.8,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "shisanzei_email": {
+    "value": "shisanzei@city.takaoka.lg.jp",
+    "source": "llm",
+    "confidence": 0.7,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "tax_office": {
+    "value": "高岡税務署",
+    "source": "llm",
+    "sourceUrl": "https://www.nta.go.jp/about/organization/kanazawa/location/toyama/takaoka/index.htm",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "tax_office_phone": {
+    "value": "0766-21-2501",
+    "source": "llm",
+    "sourceUrl": "https://www.nta.go.jp/about/organization/kanazawa/location/toyama/takaoka/index.htm",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "tax_office_address": {
+    "value": "〒933-8540 富山県高岡市博労本町5-30",
+    "source": "llm",
+    "sourceUrl": "https://www.nta.go.jp/about/organization/kanazawa/location/toyama/takaoka/index.htm",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "juminzei_kigen_1": {
+    "value": "6月30日",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/nozeika/2/3/3/2221.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-30T00:00:00.000Z"
+  },
+  "juminzei_kigen_2": {
+    "value": "9月1日",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/nozeika/2/3/3/2221.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-30T00:00:00.000Z"
+  },
+  "juminzei_kigen_3": {
+    "value": "10月31日",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/nozeika/2/3/3/2221.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-30T00:00:00.000Z"
+  },
+  "juminzei_kigen_4": {
+    "value": "2月2日",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/nozeika/2/3/3/2221.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-30T00:00:00.000Z"
+  },
+  "kotei_kigen_1": {
+    "value": "4月30日",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/nozeika/2/3/3/2221.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-30T00:00:00.000Z"
+  },
+  "kotei_kigen_2": {
+    "value": "7月31日",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/nozeika/2/3/3/2221.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-30T00:00:00.000Z"
+  },
+  "kotei_kigen_3": {
+    "value": "12月25日",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/nozeika/2/3/3/2221.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-30T00:00:00.000Z"
+  },
+  "kotei_kigen_4": {
+    "value": "3月2日",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/nozeika/2/3/3/2221.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-30T00:00:00.000Z"
+  },
+  "keijidosha_kigen": {
+    "value": "6月2日",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/nozeika/2/3/3/2221.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-30T00:00:00.000Z"
+  }
+}

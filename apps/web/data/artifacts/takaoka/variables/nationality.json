@@ -1,0 +1,119 @@
+{
+  "international_association": {
+    "value": "高岡市国際交流協会",
+    "source": "llm",
+    "sourceUrl": "https://takaoka-iec.jimdofree.com/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "international_association_address": {
+    "value": "〒933-0029 富山県高岡市御旅屋町101 御旅屋セリオ7階",
+    "source": "llm",
+    "sourceUrl": "https://takaoka-iec.jimdofree.com/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "international_association_phone": {
+    "value": "0766-20-1236",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/bunkakokusaika/1/5/12308.html",
+    "confidence": 0.9,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "multicultural_department": {
+    "value": "文化国際課",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/bunkakokusaika/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "multicultural_phone": {
+    "value": "0766-20-1236",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/bunkakokusaika/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "multicultural_email": {
+    "value": "bunkakokusai@city.takaoka.lg.jp",
+    "source": "llm",
+    "confidence": 0.7,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "foreign_consultation_languages": {
+    "value": "日本語、ベトナム語（通訳在席日あり）、その他は翻訳機対応",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/bunkakokusaika/1/5/tabunkakyousei/12304.html",
+    "confidence": 0.9,
+    "updatedAt": "2026-01-30T00:00:00.000Z"
+  },
+  "nationality_department": {
+    "value": "文化国際課",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/bunkakokusaika/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-30T00:00:00.000Z"
+  },
+  "nationality_phone": {
+    "value": "0766-20-1236",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/bunkakokusaika/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-30T00:00:00.000Z"
+  },
+  "nationality_email": {
+    "value": "bunkakokusai@city.takaoka.lg.jp",
+    "source": "llm",
+    "confidence": 0.7,
+    "updatedAt": "2026-01-30T00:00:00.000Z"
+  },
+  "japanese_class_location": {
+    "value": "高岡市国際交流協会（0766-27-1856）にお問い合わせください",
+    "source": "llm",
+    "sourceUrl": "https://takaoka-iec.jimdofree.com/",
+    "confidence": 0.7,
+    "updatedAt": "2026-01-30T00:00:00.000Z"
+  },
+  "japanese_class_schedule": {
+    "value": "高岡市国際交流協会（0766-27-1856）にお問い合わせください",
+    "source": "llm",
+    "sourceUrl": "https://takaoka-iec.jimdofree.com/",
+    "confidence": 0.7,
+    "updatedAt": "2026-01-30T00:00:00.000Z"
+  },
+  "japanese_class_fee": {
+    "value": "高岡市国際交流協会（0766-27-1856）にお問い合わせください",
+    "source": "llm",
+    "sourceUrl": "https://takaoka-iec.jimdofree.com/",
+    "confidence": 0.7,
+    "updatedAt": "2026-01-30T00:00:00.000Z"
+  },
+  "japanese_class_application": {
+    "value": "高岡市国際交流協会（電話：0766-27-1856、メール：kokusai@p1.tcnet.ne.jp）",
+    "source": "llm",
+    "sourceUrl": "https://takaoka-iec.jimdofree.com/",
+    "confidence": 0.9,
+    "updatedAt": "2026-01-30T00:00:00.000Z"
+  },
+  "multilingual_consultation_hours": {
+    "value": "詳細は文化国際課（0766-20-1236）にお問い合わせください",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/bunkakokusaika/",
+    "confidence": 0.7,
+    "updatedAt": "2026-01-30T00:00:00.000Z"
+  },
+  "multilingual_languages": {
+    "value": "日本語、ベトナム語（通訳在席日あり）、その他は翻訳機対応",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/bunkakokusaika/1/5/tabunkakyousei/12304.html",
+    "confidence": 0.9,
+    "updatedAt": "2026-01-30T00:00:00.000Z"
+  },
+  "international_association_email": {
+    "value": "kokusai@p1.tcnet.ne.jp",
+    "source": "llm",
+    "sourceUrl": "https://takaoka-iec.jimdofree.com/",
+    "confidence": 0.9,
+    "updatedAt": "2026-01-30T00:00:00.000Z"
+  }
+}

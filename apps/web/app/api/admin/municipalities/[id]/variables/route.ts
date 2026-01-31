@@ -8,6 +8,7 @@ import { getVariableStore, updateVariableStore } from "@/lib/template";
 import { validateVariable } from "@/lib/llm/validators";
 import { revalidatePath } from "next/cache";
 import { recordBulkVariableUpdate, VariableChange } from "@/lib/history";
+import { isValidMunicipalityId } from "@/lib/security/validators";
 
 interface RouteParams {
   params: Promise<{
@@ -18,6 +19,12 @@ interface RouteParams {
 export async function PUT(request: NextRequest, { params }: RouteParams) {
   try {
     const { id } = await params;
+    if (!isValidMunicipalityId(id)) {
+      return NextResponse.json(
+        { error: "自治体IDの形式が正しくありません" },
+        { status: 400 }
+      );
+    }
     const updates = await request.json();
 
     if (!updates || typeof updates !== "object" || Object.keys(updates).length === 0) {
@@ -115,6 +122,12 @@ export async function PUT(request: NextRequest, { params }: RouteParams) {
 export async function GET(request: NextRequest, { params }: RouteParams) {
   try {
     const { id } = await params;
+    if (!isValidMunicipalityId(id)) {
+      return NextResponse.json(
+        { error: "自治体IDの形式が正しくありません" },
+        { status: 400 }
+      );
+    }
     const variables = await getVariableStore(id);
 
     return NextResponse.json(variables);

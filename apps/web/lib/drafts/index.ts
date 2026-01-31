@@ -15,6 +15,7 @@ export {
   createDraft,
   updateDraftStatus,
   updateDraftVariables,
+  updateMissingSuggestionStatus,
   deleteDraft,
   getDraftsByStatus,
   draftExists,

@@ -38,11 +38,14 @@ export async function GET(request: NextRequest) {
   const authHeader = request.headers.get("authorization");
   const cronSecret = process.env.CRON_SECRET;
 
-  // In production, verify the cron secret
-  if (process.env.NODE_ENV === "production" && cronSecret) {
-    if (authHeader !== `Bearer ${cronSecret}`) {
-      return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
-    }
+  if (!cronSecret) {
+    return NextResponse.json(
+      { error: "CRON_SECRET is not configured" },
+      { status: 500 }
+    );
+  }
+  if (authHeader !== `Bearer ${cronSecret}`) {
+    return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
   }
 
   try {
@@ -142,7 +145,9 @@ export async function GET(request: NextRequest) {
                 code: e.code,
                 message: e.message,
                 variableName: e.variableName,
-              }))
+              })),
+              result.searchAttempts,
+              result.missingSuggestions
             );
 
             // Notify about new draft

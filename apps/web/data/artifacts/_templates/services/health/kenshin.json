@@ -250,54 +250,52 @@
       "props": {
         "content": [
           {
-            "type": "callout",
-            "severity": "info",
-            "title": "費用が無料になる方",
-            "content": [
+            "type": "heading",
+            "level": 3,
+            "text": "費用が無料になる方"
+          },
+          {
+            "type": "paragraph",
+            "runs": [
               {
-                "type": "paragraph",
-                "runs": [
-                  {
-                    "text": "以下の方は検診費用が無料になります。"
-                  }
-                ]
-              },
-              {
-                "type": "list",
-                "ordered": false,
-                "items": [
-                  [
+                "text": "以下の方は検診費用が無料になります。"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
                     {
-                      "type": "paragraph",
-                      "runs": [
-                        {
-                          "text": "70歳以上の方"
-                        }
-                      ]
-                    }
-                  ],
-                  [
-                    {
-                      "type": "paragraph",
-                      "runs": [
-                        {
-                          "text": "生活保護受給者"
-                        }
-                      ]
-                    }
-                  ],
-                  [
-                    {
-                      "type": "paragraph",
-                      "runs": [
-                        {
-                          "text": "市民税非課税世帯の方"
-                        }
-                      ]
+                      "text": "70歳以上の方"
                     }
                   ]
-                ]
-              }
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "生活保護受給者"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "市民税非課税世帯の方"
+                    }
+                  ]
+                }
+              ]
             ]
           }
         ]

@@ -1,12 +1,13 @@
 /**
  * Page Content Fetcher
  * Fetches and processes web page content for LLM extraction
- * PDFファイルはGoogle Vision APIでOCRを実行
+ * PDFファイルはpdfjs-distで画像に変換後、Google Vision APIでOCRを実行
  */
 
 import { PageContent } from './types';
-import { extractTextFromBase64Image, type PdfOcrResult } from '../pdf/vision-ocr';
+import { extractTextFromImages, extractTextFromBase64Image, type PdfOcrResult } from '../pdf/vision-ocr';
 import { getCachedOcr, setCachedOcr } from '../pdf/cache';
+import { convertPdfToImages, extractTextFromPdf } from '../pdf/pdf-to-images';
 
 /**
  * URLがPDFかどうかを判定
@@ -56,18 +57,87 @@ async function fetchPdfContent(url: string): Promise<PageContent> {
   const buffer = await response.arrayBuffer();
   const base64 = Buffer.from(buffer).toString('base64');
 
-  // PDFの場合
+  // PDFの場合: まずテキスト抽出を試み、テキストが少なければOCR
   if (contentType.includes('pdf')) {
-    // Vision APIはPDFを直接処理できない
-    // 将来的にはpdf-to-imageライブラリで変換するか、
-    // Google Cloud Storage経由の非同期OCRを使用
+    // まずテキスト抽出を試みる
+    const textResult = await extractTextFromPdf(buffer, { maxPages: 10 });
+
+    if (!textResult.error && textResult.isTextBased && textResult.text.trim().length > 0) {
+      // テキストベースのPDF - OCR不要
+      await setCachedOcr(url, textResult.text);
+
+      return {
+        url,
+        title: `PDF Document (${textResult.pageCount} pages, text)`,
+        content: textResult.text,
+        fetchedAt: new Date().toISOString(),
+        contentType: 'pdf',
+      };
+    }
+
+    // テキストが少ない/画像ベースのPDF - OCRが必要
+    const pdfResult = await convertPdfToImages(buffer, {
+      scale: 2.0,
+      maxPages: 10,
+      format: 'png',
+    });
+
+    if (pdfResult.error || pdfResult.images.length === 0) {
+      // 画像変換も失敗した場合、テキスト抽出結果があればそれを返す
+      if (textResult.text.trim().length > 0) {
+        return {
+          url,
+          title: `PDF Document (${textResult.pageCount} pages, partial text)`,
+          content: textResult.text,
+          fetchedAt: new Date().toISOString(),
+          contentType: 'pdf',
+        };
+      }
+
+      return {
+        url,
+        title: 'PDF Document',
+        content: `[PDF conversion failed: ${pdfResult.error || 'No pages extracted'}]`,
+        fetchedAt: new Date().toISOString(),
+        contentType: 'pdf',
+        error: pdfResult.error || 'Failed to convert PDF to images',
+      };
+    }
+
+    // 各ページの画像をOCR
+    const ocrResult = await extractTextFromImages(pdfResult.images);
+
+    if (!ocrResult.success) {
+      // OCR失敗時、テキスト抽出結果があればそれを返す
+      if (textResult.text.trim().length > 0) {
+        return {
+          url,
+          title: `PDF Document (${textResult.pageCount} pages, partial text)`,
+          content: textResult.text,
+          fetchedAt: new Date().toISOString(),
+          contentType: 'pdf',
+        };
+      }
+
+      return {
+        url,
+        title: 'PDF Document',
+        content: `[PDF OCR failed: ${ocrResult.error}]`,
+        fetchedAt: new Date().toISOString(),
+        contentType: 'pdf',
+        error: ocrResult.error,
+      };
+    }
+
+    // キャッシュに保存
+    await setCachedOcr(url, ocrResult.text);
+
     return {
       url,
-      title: 'PDF Document',
-      content: '[PDF file detected. Direct PDF OCR requires page-by-page image conversion. Consider using Cloud Vision async API for large PDFs.]',
+      title: `PDF Document (${pdfResult.pageCount} pages, OCR)`,
+      content: ocrResult.text,
       fetchedAt: new Date().toISOString(),
       contentType: 'pdf',
-      error: 'PDF direct OCR not supported. Convert to images first.',
     };
   }
 
@@ -122,9 +192,10 @@ export async function fetchPage(url: string): Promise<PageContent> {
   // レスポンスがPDFや画像の場合（リダイレクトされた可能性）
   if (contentType.includes('pdf') || contentType.startsWith('image/')) {
     const buffer = await response.arrayBuffer();
-    const base64 = Buffer.from(buffer).toString('base64');
 
+    // 画像の場合
     if (contentType.startsWith('image/')) {
+      const base64 = Buffer.from(buffer).toString('base64');
       const result = await extractTextFromBase64Image(base64);
       if (result.success) {
         await setCachedOcr(url, result.text);
@@ -138,13 +209,84 @@ export async function fetchPage(url: string): Promise<PageContent> {
       }
     }
 
-    return {
-      url,
-      title: 'PDF Document',
-      content: '[PDF content - requires image conversion for OCR]',
-      fetchedAt: new Date().toISOString(),
-      contentType: 'pdf',
-    };
+    // PDFの場合: まずテキスト抽出を試み、テキストが少なければOCR
+    if (contentType.includes('pdf')) {
+      // まずテキスト抽出を試みる
+      const textResult = await extractTextFromPdf(buffer, { maxPages: 10 });
+
+      if (!textResult.error && textResult.isTextBased && textResult.text.trim().length > 0) {
+        await setCachedOcr(url, textResult.text);
+
+        return {
+          url,
+          title: `PDF Document (${textResult.pageCount} pages, text)`,
+          content: textResult.text,
+          fetchedAt: new Date().toISOString(),
+          contentType: 'pdf',
+        };
+      }
+
+      // テキストが少ない/画像ベースのPDF - OCRが必要
+      const pdfResult = await convertPdfToImages(buffer, {
+        scale: 2.0,
+        maxPages: 10,
+        format: 'png',
+      });
+
+      if (pdfResult.error || pdfResult.images.length === 0) {
+        if (textResult.text.trim().length > 0) {
+          return {
+            url,
+            title: `PDF Document (${textResult.pageCount} pages, partial text)`,
+            content: textResult.text,
+            fetchedAt: new Date().toISOString(),
+            contentType: 'pdf',
+          };
+        }
+
+        return {
+          url,
+          title: 'PDF Document',
+          content: `[PDF conversion failed: ${pdfResult.error || 'No pages extracted'}]`,
+          fetchedAt: new Date().toISOString(),
+          contentType: 'pdf',
+          error: pdfResult.error || 'Failed to convert PDF to images',
+        };
+      }
+
+      const ocrResult = await extractTextFromImages(pdfResult.images);
+
+      if (!ocrResult.success) {
+        if (textResult.text.trim().length > 0) {
+          return {
+            url,
+            title: `PDF Document (${textResult.pageCount} pages, partial text)`,
+            content: textResult.text,
+            fetchedAt: new Date().toISOString(),
+            contentType: 'pdf',
+          };
+        }
+
+        return {
+          url,
+          title: 'PDF Document',
+          content: `[PDF OCR failed: ${ocrResult.error}]`,
+          fetchedAt: new Date().toISOString(),
+          contentType: 'pdf',
+          error: ocrResult.error,
+        };
+      }
+
+      await setCachedOcr(url, ocrResult.text);
+
+      return {
+        url,
+        title: `PDF Document (${pdfResult.pageCount} pages, OCR)`,
+        content: ocrResult.text,
+        fetchedAt: new Date().toISOString(),
+        contentType: 'pdf',
+      };
+    }
   }
 
   const html = await response.text();
@@ -290,4 +432,99 @@ export function isPdf(url: string): boolean {
  */
 export function isImage(url: string): boolean {
   return isImageUrl(url);
+}
+
+/**
+ * HTMLからPDFリンクを抽出
+ * @param html HTMLコンテンツ
+ * @param baseUrl ベースURL（相対パスを解決するため）
+ * @returns PDFのURL配列
+ */
+export function extractPdfLinks(html: string, baseUrl: string): string[] {
+  const pdfLinks: string[] = [];
+  const baseUrlObj = new URL(baseUrl);
+
+  // href属性からPDFリンクを抽出
+  const hrefRegex = /href=["']([^"']*\.pdf[^"']*)["']/gi;
+  let match;
+  while ((match = hrefRegex.exec(html)) !== null) {
+    try {
+      const pdfUrl = new URL(match[1], baseUrl).href;
+      // 同じドメインのPDFのみ取得
+      const pdfUrlObj = new URL(pdfUrl);
+      if (pdfUrlObj.hostname === baseUrlObj.hostname && !pdfLinks.includes(pdfUrl)) {
+        pdfLinks.push(pdfUrl);
+      }
+    } catch {
+      // Invalid URL - skip
+    }
+  }
+
+  // src属性からPDFリンクを抽出（embed, object, iframe）
+  const srcRegex = /src=["']([^"']*\.pdf[^"']*)["']/gi;
+  while ((match = srcRegex.exec(html)) !== null) {
+    try {
+      const pdfUrl = new URL(match[1], baseUrl).href;
+      const pdfUrlObj = new URL(pdfUrl);
+      if (pdfUrlObj.hostname === baseUrlObj.hostname && !pdfLinks.includes(pdfUrl)) {
+        pdfLinks.push(pdfUrl);
+      }
+    } catch {
+      // Invalid URL - skip
+    }
+  }
+
+  return pdfLinks;
+}
+
+/**
+ * HTMLページを取得し、ページ内のPDFリンクからも情報を抽出
+ * @param url HTMLページのURL
+ * @param options オプション（PDFを取得するかどうか等）
+ * @returns ページコンテンツと、オプションでPDFコンテンツも含む
+ */
+export async function fetchPageWithPdfs(
+  url: string,
+  options: { fetchPdfs?: boolean; maxPdfs?: number } = {}
+): Promise<{ page: PageContent; pdfContents: PageContent[] }> {
+  const { fetchPdfs = true, maxPdfs = 3 } = options;
+
+  // メインページを取得
+  const page = await fetchPage(url);
+  const pdfContents: PageContent[] = [];
+
+  // HTMLページの場合のみPDFリンクを抽出
+  if (fetchPdfs && page.contentType === 'html') {
+    // HTMLを再取得（page.contentはテキスト抽出済みなのでHTMLを取得し直す）
+    try {
+      const response = await fetch(url, {
+        headers: {
+          'User-Agent': 'Mozilla/5.0 (compatible; INNOMA/1.0; +https://innoma.jp)',
+          Accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+          'Accept-Language': 'ja,en;q=0.5',
+        },
+      });
+
+      if (response.ok) {
+        const html = await response.text();
+        const pdfLinks = extractPdfLinks(html, url);
+
+        // PDFを取得（最大数まで）
+        for (const pdfUrl of pdfLinks.slice(0, maxPdfs)) {
+          try {
+            const pdfContent = await fetchPage(pdfUrl);
+            if (pdfContent.contentType === 'pdf' && !pdfContent.error) {
+              pdfContents.push(pdfContent);
+            }
+          } catch (error) {
+            console.error(`Failed to fetch PDF ${pdfUrl}:`, error);
+          }
+        }
+      }
+    } catch {
+      // PDF抽出に失敗しても、メインページのコンテンツは返す
+    }
+  }
+
+  return { page, pdfContents };
 }

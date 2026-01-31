@@ -12,6 +12,7 @@ import {
   setCachedOcr,
   hasCachedOcr,
 } from "@/lib/pdf";
+import { validateExternalUrl } from "@/lib/security/ssrf";
 
 /**
  * POST: PDFのOCRを実行
@@ -33,11 +34,27 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    const _targetUrl = url || `base64:${Date.now()}`;
+    let safeUrl: string | null = null;
+    if (url) {
+      const allowedDomains = (process.env.OCR_ALLOWED_DOMAINS || "")
+        .split(",")
+        .map((d) => d.trim())
+        .filter(Boolean);
+      const validated = await validateExternalUrl(url, {
+        allowedDomains,
+      });
+      if (!validated.ok) {
+        return NextResponse.json(
+          { success: false, error: validated.error },
+          { status: 400 }
+        );
+      }
+      safeUrl = validated.url;
+    }
 
     // キャッシュ確認（forceでない場合）
-    if (!force && url) {
-      const cached = await getCachedOcr(url);
+    if (!force && safeUrl) {
+      const cached = await getCachedOcr(safeUrl);
       if (cached) {
         return NextResponse.json({
           success: true,
@@ -63,7 +80,7 @@ export async function POST(request: NextRequest) {
       text = result.text;
     } else if (url) {
       // URLから画像を取得してOCR
-      const response = await fetch(url);
+      const response = await fetch(safeUrl as string);
       if (!response.ok) {
         return NextResponse.json(
           {
@@ -103,8 +120,8 @@ export async function POST(request: NextRequest) {
     }
 
     // キャッシュに保存
-    if (url) {
-      await setCachedOcr(url, text);
+    if (safeUrl) {
+      await setCachedOcr(safeUrl, text);
     }
 
     return NextResponse.json({

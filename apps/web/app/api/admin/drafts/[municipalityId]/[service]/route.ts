@@ -10,6 +10,7 @@ import {
   getDraft,
   updateDraftStatus,
   updateDraftVariables,
+  updateMissingSuggestionStatus,
   deleteDraft,
   applyDraftToStore,
 } from "@/lib/drafts";
@@ -22,6 +23,7 @@ import {
 } from "@/lib/history";
 import { notifyDraftApproved, notifyDraftRejected } from "@/lib/notification";
 import { getMunicipalityMeta } from "@/lib/template";
+import { isValidMunicipalityId, isValidServiceId } from "@/lib/security/validators";
 
 interface RouteParams {
   params: Promise<{
@@ -30,9 +32,35 @@ interface RouteParams {
   }>;
 }
 
+function getActorFromRequest(request: NextRequest): string {
+  const authHeader = request.headers.get("authorization") || "";
+
+  if (authHeader.startsWith("Basic ")) {
+    try {
+      const decoded = Buffer.from(authHeader.slice(6), "base64").toString("utf-8");
+      const [username] = decoded.split(":");
+      if (username) return username;
+    } catch {
+      // ignore decode errors
+    }
+  }
+
+  if (authHeader.startsWith("Bearer ")) {
+    return "bearer";
+  }
+
+  return "admin";
+}
+
 export async function GET(_request: NextRequest, { params }: RouteParams) {
   try {
     const { municipalityId, service } = await params;
+    if (!isValidMunicipalityId(municipalityId) || !isValidServiceId(service)) {
+      return NextResponse.json(
+        { error: "パラメータの形式が正しくありません" },
+        { status: 400 }
+      );
+    }
     const draft = await getDraft(municipalityId, service);
 
     if (!draft) {
@@ -55,8 +83,15 @@ export async function GET(_request: NextRequest, { params }: RouteParams) {
 export async function PUT(request: NextRequest, { params }: RouteParams) {
   try {
     const { municipalityId, service } = await params;
+    if (!isValidMunicipalityId(municipalityId) || !isValidServiceId(service)) {
+      return NextResponse.json(
+        { error: "パラメータの形式が正しくありません" },
+        { status: 400 }
+      );
+    }
     const body = await request.json();
     const { action, variables } = body;
+    const actor = getActorFromRequest(request);
 
     const draft = await getDraft(municipalityId, service);
     if (!draft) {
@@ -81,7 +116,7 @@ export async function PUT(request: NextRequest, { params }: RouteParams) {
           newValue: entry.value,
         })
       );
-      await recordDraftApproval(municipalityId, service, changes, "admin");
+      await recordDraftApproval(municipalityId, service, changes, actor);
 
       // Send notification
       const meta = await getMunicipalityMeta(municipalityId);
@@ -95,12 +130,11 @@ export async function PUT(request: NextRequest, { params }: RouteParams) {
       // Update draft status
       const updated = await updateDraftStatus(municipalityId, service, "approved", {
         approvedAt: new Date().toISOString(),
-        approvedBy: "admin", // TODO: get from session
+        approvedBy: actor,
       });
 
       // Trigger ISR revalidation for the municipality pages
-      revalidatePath(`/${municipalityId}`);
-      revalidatePath(`/${municipalityId}/[...path]`, "page");
+      revalidatePath(`/${municipalityId}`, "layout");
       revalidatePath(`/admin/municipalities/${municipalityId}`);
 
       return NextResponse.json(updated);
@@ -109,7 +143,7 @@ export async function PUT(request: NextRequest, { params }: RouteParams) {
     // Handle reject action
     if (action === "reject") {
       // Record history
-      await recordDraftRejection(municipalityId, service, "admin", body.reason);
+      await recordDraftRejection(municipalityId, service, actor, body.reason);
 
       // Send notification
       const meta = await getMunicipalityMeta(municipalityId);
@@ -122,10 +156,44 @@ export async function PUT(request: NextRequest, { params }: RouteParams) {
 
       const updated = await updateDraftStatus(municipalityId, service, "rejected", {
         rejectedAt: new Date().toISOString(),
-        rejectedBy: "admin", // TODO: get from session
+        rejectedBy: actor,
         rejectionReason: body.reason,
       });
 
+      return NextResponse.json(updated);
+    }
+
+    // Apply suggestion
+    if (action === "apply_suggestion") {
+      const { variableName, value, sourceUrl, confidence } = body || {};
+      if (!variableName || !value) {
+        return NextResponse.json(
+          { error: "variableName and value are required" },
+          { status: 400 }
+        );
+      }
+      const updated = await updateDraftVariables(municipalityId, service, {
+        [variableName]: {
+          value,
+          sourceUrl,
+          confidence,
+          validated: true,
+        },
+      });
+      await updateMissingSuggestionStatus(municipalityId, service, variableName, "accepted");
+      return NextResponse.json(updated);
+    }
+
+    // Reject suggestion
+    if (action === "reject_suggestion") {
+      const { variableName } = body || {};
+      if (!variableName) {
+        return NextResponse.json(
+          { error: "variableName is required" },
+          { status: 400 }
+        );
+      }
+      const updated = await updateMissingSuggestionStatus(municipalityId, service, variableName, "rejected");
       return NextResponse.json(updated);
     }
 
@@ -151,6 +219,12 @@ export async function PUT(request: NextRequest, { params }: RouteParams) {
 export async function DELETE(_request: NextRequest, { params }: RouteParams) {
   try {
     const { municipalityId, service } = await params;
+    if (!isValidMunicipalityId(municipalityId) || !isValidServiceId(service)) {
+      return NextResponse.json(
+        { error: "パラメータの形式が正しくありません" },
+        { status: 400 }
+      );
+    }
 
     const success = await deleteDraft(municipalityId, service);
     if (!success) {

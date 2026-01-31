@@ -1,0 +1,241 @@
+{
+  "municipality_name": {
+    "value": "豊能町",
+    "source": "manual",
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "prefecture_name": {
+    "value": "大阪府",
+    "source": "manual",
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "generated_at": {
+    "value": "2026-01-31T00:00:00.000Z",
+    "source": "manual",
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "city_hall_address": {
+    "value": "〒563-0292 大阪府豊能郡豊能町余野414番地1",
+    "source": "llm",
+    "sourceUrl": "https://www.town.toyono.osaka.jp/section.php",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "city_hall_phone": {
+    "value": "072-739-0001",
+    "source": "llm",
+    "sourceUrl": "https://www.town.toyono.osaka.jp/section.php",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "city_hall_department": {
+    "value": "総務課",
+    "source": "llm",
+    "sourceUrl": "https://www.town.toyono.osaka.jp/section.php",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "soumu_phone": {
+    "value": "072-739-3415",
+    "source": "llm",
+    "sourceUrl": "https://www.town.toyono.osaka.jp/section.php",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "kikaku_department": {
+    "value": "総合政策課",
+    "source": "llm",
+    "sourceUrl": "https://www.town.toyono.osaka.jp/section.php",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "kikaku_phone": {
+    "value": "072-739-3412",
+    "source": "llm",
+    "sourceUrl": "https://www.town.toyono.osaka.jp/section.php",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "shimin_department": {
+    "value": "住民人権課",
+    "source": "llm",
+    "sourceUrl": "https://www.town.toyono.osaka.jp/section.php",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "shimin_phone": {
+    "value": "072-739-3418",
+    "source": "llm",
+    "sourceUrl": "https://www.town.toyono.osaka.jp/section.php",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "registration_department": {
+    "value": "住民人権課",
+    "source": "llm",
+    "sourceUrl": "https://www.town.toyono.osaka.jp/section.php",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "registration_phone": {
+    "value": "072-739-3402",
+    "source": "llm",
+    "sourceUrl": "https://www.town.toyono.osaka.jp/section.php",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "tax_department": {
+    "value": "税務課",
+    "source": "llm",
+    "sourceUrl": "https://www.town.toyono.osaka.jp/section.php",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "tax_phone": {
+    "value": "072-739-3417",
+    "source": "llm",
+    "sourceUrl": "https://www.town.toyono.osaka.jp/section.php",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "welfare_department": {
+    "value": "福祉課",
+    "source": "llm",
+    "sourceUrl": "https://www.town.toyono.osaka.jp/section.php",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "welfare_phone": {
+    "value": "072-739-3420",
+    "source": "llm",
+    "sourceUrl": "https://www.town.toyono.osaka.jp/section.php",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "hoken_department": {
+    "value": "保険課",
+    "source": "llm",
+    "sourceUrl": "https://www.town.toyono.osaka.jp/section.php",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "hoken_phone": {
+    "value": "072-739-3422",
+    "source": "llm",
+    "sourceUrl": "https://www.town.toyono.osaka.jp/section.php",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "kouki_phone": {
+    "value": "072-739-3421",
+    "source": "llm",
+    "sourceUrl": "https://www.town.toyono.osaka.jp/section.php",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "kosodate_department": {
+    "value": "こども育成課",
+    "source": "llm",
+    "sourceUrl": "https://www.town.toyono.osaka.jp/section.php",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "kosodate_phone": {
+    "value": "072-739-3432",
+    "source": "llm",
+    "sourceUrl": "https://www.town.toyono.osaka.jp/section.php",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "kenko_department": {
+    "value": "健康増進課",
+    "source": "llm",
+    "sourceUrl": "https://www.town.toyono.osaka.jp/section.php",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "kenko_phone": {
+    "value": "072-738-3813",
+    "source": "llm",
+    "sourceUrl": "https://www.town.toyono.osaka.jp/section.php",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "building_department": {
+    "value": "建設課",
+    "source": "llm",
+    "sourceUrl": "https://www.town.toyono.osaka.jp/section.php",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "building_phone": {
+    "value": "072-739-3423",
+    "source": "llm",
+    "sourceUrl": "https://www.town.toyono.osaka.jp/section.php",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "toshikeikaku_phone": {
+    "value": "072-739-3425",
+    "source": "llm",
+    "sourceUrl": "https://www.town.toyono.osaka.jp/section.php",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "norin_department": {
+    "value": "農林商工課",
+    "source": "llm",
+    "sourceUrl": "https://www.town.toyono.osaka.jp/section.php",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "norin_phone": {
+    "value": "072-739-3424",
+    "source": "llm",
+    "sourceUrl": "https://www.town.toyono.osaka.jp/section.php",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "environment_department": {
+    "value": "環境課",
+    "source": "llm",
+    "sourceUrl": "https://www.town.toyono.osaka.jp/section.php",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "environment_phone": {
+    "value": "072-736-1190",
+    "source": "llm",
+    "sourceUrl": "https://www.town.toyono.osaka.jp/section.php",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "kyoiku_department": {
+    "value": "教育総務課",
+    "source": "llm",
+    "sourceUrl": "https://www.town.toyono.osaka.jp/section.php",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "kyoiku_phone": {
+    "value": "072-739-3426",
+    "source": "llm",
+    "sourceUrl": "https://www.town.toyono.osaka.jp/section.php",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "shogai_gakushu_department": {
+    "value": "生涯学習課",
+    "source": "llm",
+    "sourceUrl": "https://www.town.toyono.osaka.jp/section.php",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "shogai_gakushu_phone": {
+    "value": "072-738-4628",
+    "source": "llm",
+    "sourceUrl": "https://www.town.toyono.osaka.jp/section.php",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  }
+}

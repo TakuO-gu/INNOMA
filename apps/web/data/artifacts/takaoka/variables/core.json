@@ -1,0 +1,52 @@
+{
+  "municipality_name": {
+    "value": "高岡市",
+    "source": "manual",
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "prefecture_name": {
+    "value": "富山県",
+    "source": "manual",
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "generated_at": {
+    "value": "2026-01-29T00:00:00.000Z",
+    "source": "manual",
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "city_hall_address": {
+    "value": "〒933-8601 富山県高岡市広小路7-50",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "city_hall_phone": {
+    "value": "0766-20-1111",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "city_hall_hours": {
+    "value": "午前8時30分〜午後5時15分（土日祝日、年末年始を除く）",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "city_hall_department": {
+    "value": "総務課",
+    "source": "manual",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/somuka/2/6/1/1/2920.html",
+    "confidence": 1,
+    "updatedAt": "2026-01-29T23:23:26.086Z"
+  },
+  "city_hall_email": {
+    "value": "https://www.city.takaoka.toyama.jp/cgi-bin/inquiry.php/8?page_no=2920",
+    "source": "manual",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/somuka/2/6/1/1/2920.html",
+    "confidence": 1,
+    "updatedAt": "2026-01-29T23:23:26.086Z"
+  }
+}

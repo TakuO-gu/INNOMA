@@ -1,0 +1,104 @@
+{
+  "kokuho_department": {
+    "value": "保険年金課",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/hisho/shise/gaiyo/soshiki/fukushihoken/hoken.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "kokuho_phone": {
+    "value": "0766-20-1357",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/hisho/shise/gaiyo/soshiki/fukushihoken/hoken.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "kokuho_email": {
+    "value": "hokennenkin@city.takaoka.lg.jp",
+    "source": "llm",
+    "confidence": 0.7,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "kokuho_address": {
+    "value": "〒933-8601 富山県高岡市広小路7-50",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "kokuho_hours": {
+    "value": "午前8時30分〜午後5時15分（土日祝日、年末年始を除く）",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "nenkin_department": {
+    "value": "保険年金課",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/hisho/shise/gaiyo/soshiki/fukushihoken/hoken.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "nenkin_phone": {
+    "value": "0766-20-1357",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/hisho/shise/gaiyo/soshiki/fukushihoken/hoken.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "nenkin_email": {
+    "value": "hokennenkin@city.takaoka.lg.jp",
+    "source": "llm",
+    "confidence": 0.7,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "kouki_department": {
+    "value": "保険年金課",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/hisho/shise/gaiyo/soshiki/fukushihoken/hoken.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "kouki_phone": {
+    "value": "0766-20-1481",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/hokennenkinka/2/3/4/1/3886.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "kouki_email": {
+    "value": "hokennenkin@city.takaoka.lg.jp",
+    "source": "llm",
+    "confidence": 0.7,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "kouki_sousaihi": {
+    "value": "30,000円",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/hokennenkinka/2/3/2/2/3640.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "kouki_kenshin_fee": {
+    "value": "無料",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/hokennenkinka/2/3/1/4984.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-30T00:00:00.000Z"
+  },
+  "kouki_kinto_wari": {
+    "value": "46,800円",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/hokennenkinka/2/3/1/3016.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-30T00:00:00.000Z"
+  },
+  "kouki_shotoku_wari_rate": {
+    "value": "8.82%",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/hokennenkinka/2/3/1/3016.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-30T00:00:00.000Z"
+  }
+}

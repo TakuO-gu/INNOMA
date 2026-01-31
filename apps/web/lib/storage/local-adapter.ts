@@ -64,7 +64,14 @@ export class LocalStorageAdapter implements ArtifactStorageAdapter {
       const entries = await fs.readdir(fullPath, { withFileTypes: true, recursive: true });
       return entries
         .filter((e) => e.isFile())
-        .map((e) => path.join(prefix, e.name));
+        .map((e) => {
+          // parentPath contains the relative path from fullPath to the file's directory
+          // e.name is just the filename
+          const relativePath = e.parentPath
+            ? path.relative(fullPath, path.join(e.parentPath, e.name))
+            : e.name;
+          return path.join(prefix, relativePath);
+        });
     } catch (error) {
       if ((error as NodeJS.ErrnoException).code === "ENOENT") {
         return [];

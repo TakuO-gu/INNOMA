@@ -17,6 +17,7 @@ import {
   updateMunicipalityStatus,
 } from "@/lib/template";
 import type { MunicipalityStatus } from "@/lib/template/types";
+import { isValidMunicipalityId } from "@/lib/security/validators";
 
 interface Params {
   params: Promise<{ id: string }>;
@@ -28,6 +29,12 @@ interface Params {
 export async function GET(request: NextRequest, { params }: Params) {
   try {
     const { id } = await params;
+    if (!isValidMunicipalityId(id)) {
+      return NextResponse.json(
+        { error: "自治体IDの形式が正しくありません" },
+        { status: 400 }
+      );
+    }
     const summary = await getMunicipality(id);
 
     if (!summary) {
@@ -63,6 +70,12 @@ export async function GET(request: NextRequest, { params }: Params) {
 export async function PUT(request: NextRequest, { params }: Params) {
   try {
     const { id } = await params;
+    if (!isValidMunicipalityId(id)) {
+      return NextResponse.json(
+        { error: "自治体IDの形式が正しくありません" },
+        { status: 400 }
+      );
+    }
     const body = await request.json();
 
     const meta = await getMunicipalityMeta(id);
@@ -122,6 +135,12 @@ export async function PUT(request: NextRequest, { params }: Params) {
 export async function DELETE(request: NextRequest, { params }: Params) {
   try {
     const { id } = await params;
+    if (!isValidMunicipalityId(id)) {
+      return NextResponse.json(
+        { error: "自治体IDの形式が正しくありません" },
+        { status: 400 }
+      );
+    }
 
     // sampleは削除不可
     if (id === "sample") {

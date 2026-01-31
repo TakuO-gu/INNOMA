@@ -75,29 +75,9 @@
             ]
           },
           {
-            "type": "callout",
-            "severity": "info",
-            "title": "所得制限について",
-            "content": [
-              {
-                "type": "paragraph",
-                "runs": [
-                  { "text": "令和6年10月から所得制限が撤廃されました。所得にかかわらず支給されます。" }
-                ]
-              }
-            ]
-          },
-          {
-            "type": "callout",
-            "severity": "info",
-            "title": "公務員の方へ",
-            "content": [
-              {
-                "type": "paragraph",
-                "runs": [
-                  { "text": "公務員の方は勤務先から支給されますので、勤務先で手続きしてください。" }
-                ]
-              }
+            "type": "paragraph",
+            "runs": [
+              { "text": "令和6年10月から所得制限が撤廃されました。所得にかかわらず支給されます。公務員の方は勤務先から支給されますので、勤務先で手続きしてください。" }
             ]
           }
         ]

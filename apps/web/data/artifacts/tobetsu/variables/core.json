@@ -1,0 +1,514 @@
+{
+  "municipality_name": {
+    "value": "当別町",
+    "source": "manual",
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "prefecture_name": {
+    "value": "北海道",
+    "source": "manual",
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "generated_at": {
+    "value": "2026-01-31T00:00:00.000Z",
+    "source": "manual",
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "city_hall_address": {
+    "value": "〒061-0292 北海道石狩郡当別町白樺町58番地9",
+    "source": "llm",
+    "sourceUrl": "https://www.town.tobetsu.hokkaido.jp/soshiki/somu/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "city_hall_phone": {
+    "value": "0133-23-2330",
+    "source": "llm",
+    "sourceUrl": "https://www.town.tobetsu.hokkaido.jp/soshiki/ict/4382.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "city_hall_fax": {
+    "value": "0133-23-3206",
+    "source": "llm",
+    "sourceUrl": "https://www.town.tobetsu.hokkaido.jp/soshiki/somu/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "city_hall_department": {
+    "value": "総務課",
+    "source": "llm",
+    "sourceUrl": "https://www.town.tobetsu.hokkaido.jp/soshiki/somu/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "shimin_department": {
+    "value": "住民課 戸籍年金係",
+    "source": "llm",
+    "sourceUrl": "https://www.town.tobetsu.hokkaido.jp/soshiki/ict/4382.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "shimin_phone": {
+    "value": "0133-23-2463",
+    "source": "llm",
+    "sourceUrl": "https://www.town.tobetsu.hokkaido.jp/soshiki/ict/4382.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "registration_department": {
+    "value": "住民課 戸籍年金係",
+    "source": "llm",
+    "sourceUrl": "https://www.town.tobetsu.hokkaido.jp/soshiki/zyumin/2851.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "registration_phone": {
+    "value": "0133-23-2463",
+    "source": "llm",
+    "sourceUrl": "https://www.town.tobetsu.hokkaido.jp/soshiki/zyumin/2851.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "koseki_department": {
+    "value": "住民環境部 住民課 戸籍年金係",
+    "source": "llm",
+    "sourceUrl": "https://www.town.tobetsu.hokkaido.jp/soshiki/zyumin/2852.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "koseki_phone": {
+    "value": "0133-23-2463",
+    "source": "llm",
+    "sourceUrl": "https://www.town.tobetsu.hokkaido.jp/soshiki/zyumin/2852.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "koseki_fax": {
+    "value": "0133-23-4915",
+    "source": "llm",
+    "sourceUrl": "https://www.town.tobetsu.hokkaido.jp/soshiki/zyumin/2852.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "tax_department": {
+    "value": "税務課 税務係",
+    "source": "llm",
+    "sourceUrl": "https://www.town.tobetsu.hokkaido.jp/soshiki/ict/4382.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "tax_phone": {
+    "value": "0133-23-2332",
+    "source": "llm",
+    "sourceUrl": "https://www.town.tobetsu.hokkaido.jp/soshiki/ict/4382.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "zeimu_department": {
+    "value": "税務課",
+    "source": "llm",
+    "sourceUrl": "https://www.town.tobetsu.hokkaido.jp/soshiki/zeimu/index-2.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "zeimu_phone": {
+    "value": "0133-23-2332",
+    "source": "llm",
+    "sourceUrl": "https://www.town.tobetsu.hokkaido.jp/soshiki/ict/4382.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "shisanzei_department": {
+    "value": "税務課 資産税係",
+    "source": "llm",
+    "sourceUrl": "https://www.town.tobetsu.hokkaido.jp/soshiki/ict/4382.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "shisanzei_phone": {
+    "value": "0133-23-2333",
+    "source": "llm",
+    "sourceUrl": "https://www.town.tobetsu.hokkaido.jp/soshiki/ict/4382.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "kokuho_department": {
+    "value": "住民課 国保・後期高齢者医療係",
+    "source": "llm",
+    "sourceUrl": "https://www.town.tobetsu.hokkaido.jp/soshiki/ict/4382.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "kokuho_phone": {
+    "value": "0133-23-2467",
+    "source": "llm",
+    "sourceUrl": "https://www.town.tobetsu.hokkaido.jp/soshiki/ict/4382.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "kouki_department": {
+    "value": "住民課 国保・後期高齢者医療係",
+    "source": "llm",
+    "sourceUrl": "https://www.town.tobetsu.hokkaido.jp/soshiki/ict/4382.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "kouki_phone": {
+    "value": "0133-23-2467",
+    "source": "llm",
+    "sourceUrl": "https://www.town.tobetsu.hokkaido.jp/soshiki/ict/4382.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "nenkin_department": {
+    "value": "住民課 戸籍年金係",
+    "source": "llm",
+    "sourceUrl": "https://www.town.tobetsu.hokkaido.jp/soshiki/ict/4382.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "nenkin_phone": {
+    "value": "0133-23-2463",
+    "source": "llm",
+    "sourceUrl": "https://www.town.tobetsu.hokkaido.jp/soshiki/ict/4382.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "environment_department": {
+    "value": "環境生活課 環境対策係",
+    "source": "llm",
+    "sourceUrl": "https://www.town.tobetsu.hokkaido.jp/soshiki/ict/4382.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "environment_phone": {
+    "value": "0133-23-2503",
+    "source": "llm",
+    "sourceUrl": "https://www.town.tobetsu.hokkaido.jp/soshiki/ict/4382.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "welfare_department": {
+    "value": "保健福祉課 福祉係",
+    "source": "llm",
+    "sourceUrl": "https://www.town.tobetsu.hokkaido.jp/soshiki/ict/4382.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "welfare_phone": {
+    "value": "0133-23-3019",
+    "source": "llm",
+    "sourceUrl": "https://www.town.tobetsu.hokkaido.jp/soshiki/ict/4382.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "welfare_address": {
+    "value": "〒061-0234 北海道石狩郡当別町西町32番地2 当別町総合保健福祉センター ゆとろ",
+    "source": "llm",
+    "sourceUrl": "https://www.town.tobetsu.hokkaido.jp/soshiki/hoken/138.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "health_department": {
+    "value": "保健福祉課 健康推進係",
+    "source": "llm",
+    "sourceUrl": "https://www.town.tobetsu.hokkaido.jp/soshiki/ict/4382.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "health_phone": {
+    "value": "0133-23-4044",
+    "source": "llm",
+    "sourceUrl": "https://www.town.tobetsu.hokkaido.jp/soshiki/ict/4382.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "health_address": {
+    "value": "〒061-0234 北海道石狩郡当別町西町32番地2 当別町総合保健福祉センター ゆとろ",
+    "source": "llm",
+    "sourceUrl": "https://www.town.tobetsu.hokkaido.jp/soshiki/hoken/138.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "kenshin_department": {
+    "value": "保健福祉課 健康推進係",
+    "source": "llm",
+    "sourceUrl": "https://www.town.tobetsu.hokkaido.jp/soshiki/ict/4382.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "kenshin_phone": {
+    "value": "0133-23-4044",
+    "source": "llm",
+    "sourceUrl": "https://www.town.tobetsu.hokkaido.jp/soshiki/ict/4382.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "kaigo_department": {
+    "value": "介護課 介護保険係",
+    "source": "llm",
+    "sourceUrl": "https://www.town.tobetsu.hokkaido.jp/soshiki/ict/4382.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "kaigo_phone": {
+    "value": "0133-23-3029",
+    "source": "llm",
+    "sourceUrl": "https://www.town.tobetsu.hokkaido.jp/soshiki/ict/4382.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "kaigo_fax": {
+    "value": "0133-25-5018",
+    "source": "llm",
+    "sourceUrl": "https://www.town.tobetsu.hokkaido.jp/soshiki/fukushi/6259.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "koureisha_department": {
+    "value": "介護課 高齢者支援係",
+    "source": "llm",
+    "sourceUrl": "https://www.town.tobetsu.hokkaido.jp/soshiki/ict/4382.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "koureisha_phone": {
+    "value": "0133-27-5131",
+    "source": "llm",
+    "sourceUrl": "https://www.town.tobetsu.hokkaido.jp/soshiki/ict/4382.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "shogai_department": {
+    "value": "介護課 障がい支援係",
+    "source": "llm",
+    "sourceUrl": "https://www.town.tobetsu.hokkaido.jp/soshiki/ict/4382.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "shogai_phone": {
+    "value": "0133-25-2665",
+    "source": "llm",
+    "sourceUrl": "https://www.town.tobetsu.hokkaido.jp/soshiki/ict/4382.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "disability_department": {
+    "value": "介護課 障がい支援係",
+    "source": "llm",
+    "sourceUrl": "https://www.town.tobetsu.hokkaido.jp/soshiki/ict/4382.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "disability_phone": {
+    "value": "0133-25-2665",
+    "source": "llm",
+    "sourceUrl": "https://www.town.tobetsu.hokkaido.jp/soshiki/ict/4382.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "childcare_department": {
+    "value": "子ども未来課 子ども係",
+    "source": "llm",
+    "sourceUrl": "https://www.town.tobetsu.hokkaido.jp/soshiki/ict/4382.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "childcare_phone": {
+    "value": "0133-23-3024",
+    "source": "llm",
+    "sourceUrl": "https://www.town.tobetsu.hokkaido.jp/soshiki/ict/4382.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "kosodate_department": {
+    "value": "子ども未来課 子育てサポート係",
+    "source": "llm",
+    "sourceUrl": "https://www.town.tobetsu.hokkaido.jp/soshiki/ict/4382.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "kosodate_phone": {
+    "value": "0133-25-2658",
+    "source": "llm",
+    "sourceUrl": "https://www.town.tobetsu.hokkaido.jp/soshiki/ict/4382.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "houkatsu_department": {
+    "value": "地域包括支援センター",
+    "source": "llm",
+    "sourceUrl": "https://www.town.tobetsu.hokkaido.jp/soshiki/ict/4382.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "houkatsu_phone": {
+    "value": "0133-25-5152",
+    "source": "llm",
+    "sourceUrl": "https://www.town.tobetsu.hokkaido.jp/soshiki/ict/4382.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "building_department": {
+    "value": "建設課 建築住宅係",
+    "source": "llm",
+    "sourceUrl": "https://www.town.tobetsu.hokkaido.jp/soshiki/ict/4382.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "building_phone": {
+    "value": "0133-23-3147",
+    "source": "llm",
+    "sourceUrl": "https://www.town.tobetsu.hokkaido.jp/soshiki/ict/4382.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "housing_department": {
+    "value": "建設課 建築住宅係",
+    "source": "llm",
+    "sourceUrl": "https://www.town.tobetsu.hokkaido.jp/soshiki/ict/4382.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "housing_phone": {
+    "value": "0133-23-3147",
+    "source": "llm",
+    "sourceUrl": "https://www.town.tobetsu.hokkaido.jp/soshiki/ict/4382.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "agriculture_department": {
+    "value": "農務課 農務係",
+    "source": "llm",
+    "sourceUrl": "https://www.town.tobetsu.hokkaido.jp/soshiki/ict/4382.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "agriculture_phone": {
+    "value": "0133-23-3091",
+    "source": "llm",
+    "sourceUrl": "https://www.town.tobetsu.hokkaido.jp/soshiki/ict/4382.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "business_department": {
+    "value": "産業振興課",
+    "source": "llm",
+    "sourceUrl": "https://www.town.tobetsu.hokkaido.jp/soshiki/ict/4382.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "business_phone": {
+    "value": "0133-23-3129",
+    "source": "llm",
+    "sourceUrl": "https://www.town.tobetsu.hokkaido.jp/soshiki/ict/4382.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "bosai_department": {
+    "value": "危機対策課",
+    "source": "llm",
+    "sourceUrl": "https://www.town.tobetsu.hokkaido.jp/soshiki/ict/4382.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "bosai_phone": {
+    "value": "0133-23-2330",
+    "source": "llm",
+    "sourceUrl": "https://www.town.tobetsu.hokkaido.jp/soshiki/ict/4382.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "disaster_department": {
+    "value": "危機対策課",
+    "source": "llm",
+    "sourceUrl": "https://www.town.tobetsu.hokkaido.jp/soshiki/ict/4382.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "disaster_phone": {
+    "value": "0133-23-2330",
+    "source": "llm",
+    "sourceUrl": "https://www.town.tobetsu.hokkaido.jp/soshiki/ict/4382.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "planning_department": {
+    "value": "企画課",
+    "source": "llm",
+    "sourceUrl": "https://www.town.tobetsu.hokkaido.jp/soshiki/ict/4382.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "planning_phone": {
+    "value": "0133-23-2393",
+    "source": "llm",
+    "sourceUrl": "https://www.town.tobetsu.hokkaido.jp/soshiki/ict/4382.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "agricultural_commission": {
+    "value": "農業委員会事務局",
+    "source": "llm",
+    "sourceUrl": "https://www.town.tobetsu.hokkaido.jp/soshiki/ict/4382.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "agricultural_commission_phone": {
+    "value": "0133-23-3279",
+    "source": "llm",
+    "sourceUrl": "https://www.town.tobetsu.hokkaido.jp/soshiki/ict/4382.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "suidou_department": {
+    "value": "上下水道課 業務係",
+    "source": "llm",
+    "sourceUrl": "https://www.town.tobetsu.hokkaido.jp/soshiki/ict/4382.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "suidou_phone": {
+    "value": "0133-22-2411",
+    "source": "llm",
+    "sourceUrl": "https://www.town.tobetsu.hokkaido.jp/soshiki/ict/4382.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "gesuidou_department": {
+    "value": "上下水道課 技術係",
+    "source": "llm",
+    "sourceUrl": "https://www.town.tobetsu.hokkaido.jp/soshiki/ict/4382.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "gesuidou_phone": {
+    "value": "0133-23-3542",
+    "source": "llm",
+    "sourceUrl": "https://www.town.tobetsu.hokkaido.jp/soshiki/ict/4382.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "juminhyo_fee": {
+    "value": "300円",
+    "source": "llm",
+    "sourceUrl": "https://www.town.tobetsu.hokkaido.jp/soshiki/zyumin/2851.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "koseki_fee": {
+    "value": "450円",
+    "source": "llm",
+    "sourceUrl": "https://www.town.tobetsu.hokkaido.jp/soshiki/zyumin/2852.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "silver_center_phone": {
+    "value": "0133-22-4191",
+    "source": "llm",
+    "sourceUrl": "https://www.town.tobetsu.hokkaido.jp/soshiki/ict/4382.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  }
+}

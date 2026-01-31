@@ -12,6 +12,7 @@ import { fetchServiceVariables } from "@/lib/llm/fetcher";
 import { serviceDefinitions, getServiceDefinition, getVariableDefinition } from "@/lib/llm/variable-priority";
 import { createDraft, getDraft } from "@/lib/drafts";
 import { DraftVariableEntry } from "@/lib/drafts/types";
+import { isValidMunicipalityId, isValidServiceId } from "@/lib/security/validators";
 import {
   createFetchJob,
   saveJob,
@@ -56,6 +57,12 @@ interface FetchedVariableInfo {
 
 export async function POST(request: NextRequest, { params }: RouteParams) {
   const { id } = await params;
+  if (!isValidMunicipalityId(id)) {
+    return new Response(
+      JSON.stringify({ error: "自治体IDの形式が正しくありません" }),
+      { status: 400, headers: { "Content-Type": "application/json" } }
+    );
+  }
 
   // Parse request body
   let requestedServices: string[] | undefined;
@@ -102,8 +109,9 @@ export async function POST(request: NextRequest, { params }: RouteParams) {
 
   if (requestedServices && requestedServices.length > 0) {
     // Fetch only requested services
-    servicesToFetch = requestedServices.filter(sId =>
-      serviceDefinitions.some(s => s.id === sId)
+    servicesToFetch = requestedServices.filter(
+      (sId) =>
+        isValidServiceId(sId) && serviceDefinitions.some((s) => s.id === sId)
     );
   } else if (onlyMissing) {
     // Fetch only services with missing variables or no draft
@@ -244,7 +252,9 @@ export async function POST(request: NextRequest, { params }: RouteParams) {
                 code: e.code,
                 message: e.message,
                 variableName: e.variableName,
-              }))
+              })),
+              result.searchAttempts,
+              result.missingSuggestions
             );
 
             const variablesCount = Object.keys(variables).length;

@@ -1,0 +1,136 @@
+{
+  "municipality_name": {
+    "value": "王滝村",
+    "source": "manual",
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "prefecture_name": {
+    "value": "長野県",
+    "source": "manual",
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "generated_at": {
+    "value": "2026-01-31T00:00:00.000Z",
+    "source": "manual",
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "city_hall_address": {
+    "value": "〒397-0201 長野県木曽郡王滝村3623番地",
+    "source": "llm",
+    "sourceUrl": "https://www.vill.otaki.nagano.jp/aboutus/gaiyou/facility/yakuba.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "city_hall_phone": {
+    "value": "0264-48-2001",
+    "source": "llm",
+    "sourceUrl": "https://www.vill.otaki.nagano.jp/aboutus/gaiyou/facility/yakuba.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "city_hall_department": {
+    "value": "総務課",
+    "source": "llm",
+    "sourceUrl": "https://www.vill.otaki.nagano.jp/aboutus/gaiyou/facility/yakuba.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "shimin_department": {
+    "value": "総務課",
+    "source": "llm",
+    "sourceUrl": "https://www.vill.otaki.nagano.jp/aboutus/gaiyou/facility/yakuba.html",
+    "confidence": 0.8,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "shimin_phone": {
+    "value": "0264-48-2001",
+    "source": "llm",
+    "sourceUrl": "https://www.vill.otaki.nagano.jp/aboutus/gaiyou/facility/yakuba.html",
+    "confidence": 0.8,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "registration_department": {
+    "value": "総務課",
+    "source": "llm",
+    "sourceUrl": "https://www.vill.otaki.nagano.jp/aboutus/gaiyou/facility/yakuba.html",
+    "confidence": 0.8,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "registration_phone": {
+    "value": "0264-48-2001",
+    "source": "llm",
+    "sourceUrl": "https://www.vill.otaki.nagano.jp/aboutus/gaiyou/facility/yakuba.html",
+    "confidence": 0.8,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "welfare_department": {
+    "value": "福祉健康課",
+    "source": "llm",
+    "sourceUrl": "https://www.vill.otaki.nagano.jp/aboutus/gaiyou/facility/yakuba.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "welfare_phone": {
+    "value": "0264-48-3155",
+    "source": "llm",
+    "sourceUrl": "https://www.vill.otaki.nagano.jp/aboutus/gaiyou/facility/yakuba.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "kenko_department": {
+    "value": "福祉健康課",
+    "source": "llm",
+    "sourceUrl": "https://www.vill.otaki.nagano.jp/aboutus/gaiyou/facility/yakuba.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "kenko_phone": {
+    "value": "0264-48-3160",
+    "source": "llm",
+    "sourceUrl": "https://www.vill.otaki.nagano.jp/aboutus/gaiyou/facility/yakuba.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "business_department": {
+    "value": "経済産業課",
+    "source": "llm",
+    "sourceUrl": "https://www.vill.otaki.nagano.jp/aboutus/gaiyou/facility/yakuba.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "business_phone": {
+    "value": "0264-48-2001",
+    "source": "llm",
+    "sourceUrl": "https://www.vill.otaki.nagano.jp/aboutus/gaiyou/facility/yakuba.html",
+    "confidence": 0.8,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "kanko_department": {
+    "value": "企画観光推進室 商工観光係",
+    "source": "llm",
+    "sourceUrl": "https://www.vill.otaki.nagano.jp/aboutus/gaiyou/facility/yakuba.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "kanko_phone": {
+    "value": "0264-48-2257",
+    "source": "llm",
+    "sourceUrl": "https://www.vill.otaki.nagano.jp/aboutus/gaiyou/facility/yakuba.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "kyoiku_department": {
+    "value": "教育委員会事務局",
+    "source": "llm",
+    "sourceUrl": "https://www.vill.otaki.nagano.jp/aboutus/gaiyou/facility/yakuba.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "kyoiku_phone": {
+    "value": "0264-48-2134",
+    "source": "llm",
+    "sourceUrl": "https://www.vill.otaki.nagano.jp/aboutus/gaiyou/facility/yakuba.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  }
+}

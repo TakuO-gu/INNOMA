@@ -1,0 +1,1555 @@
+{
+  "municipality_name": {
+    "value": "都留市",
+    "source": "manual",
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "prefecture_name": {
+    "value": "山梨県",
+    "source": "manual",
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "generated_at": {
+    "value": "2026-01-29T00:00:00.000Z",
+    "source": "manual",
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "city_hall_address": {
+    "value": "〒402-8501 山梨県都留市上谷1丁目1-1",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "city_hall_phone": {
+    "value": "0554-43-1111",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "city_hall_hours": {
+    "value": "午前8時30分〜午後5時15分（土日祝日、年末年始を除く）",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "city_hall_fax": {
+    "value": "0554-43-5049",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "city_hall_department": {
+    "value": "総務課",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/somu/",
+    "confidence": 0.9,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "city_hall_email": {
+    "value": "soumu@city.tsuru.yamanashi.jp",
+    "source": "llm",
+    "confidence": 0.7,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "shimin_department": {
+    "value": "市民課",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/shimin/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "shimin_phone": {
+    "value": "0554-43-1111（内線108・112・114・115・119）",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/shimin/shiminmado_t/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "shimin_fax": {
+    "value": "0554-20-3622",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/shimin/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "shimin_email": {
+    "value": "shimin@city.tsuru.yamanashi.jp",
+    "source": "llm",
+    "confidence": 0.7,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "juminhyo_fee": {
+    "value": "300円",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/shimin/shiminmado_t/2/7/880.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "juminhyo_convenience_fee": {
+    "value": "200円",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/shimin/shiminmado_t/2/1/12188.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "juminhyo_madoguchi": {
+    "value": "市民課（市役所1階）",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/shimin/",
+    "confidence": 0.9,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "koseki_fee": {
+    "value": "450円",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/shimin/shiminmado_t/2/7/877.html",
+    "confidence": 0.9,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "koseki_department": {
+    "value": "市民課",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/shimin/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "koseki_phone": {
+    "value": "0554-43-1111（内線108・112・114・115・119）",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/shimin/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "koseki_email": {
+    "value": "shimin@city.tsuru.yamanashi.jp",
+    "source": "llm",
+    "confidence": 0.7,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "inkan_shomei_fee": {
+    "value": "300円",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/shimin/shiminmado_t/",
+    "confidence": 0.9,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "inkan_shomei_convenience_fee": {
+    "value": "200円",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/shimin/shiminmado_t/2/1/12188.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "inkan_touroku_fee": {
+    "value": "300円",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/shimin/shiminmado_t/",
+    "confidence": 0.9,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "convenience_discount": {
+    "value": "100円引き（コンビニ交付サービス利用時）",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/shimin/shiminmado_t/2/1/12188.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "madoguchi_enchou": {
+    "value": "毎週水曜日は午後7時まで市民課・税務課窓口延長",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "registration_department": {
+    "value": "市民課",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/shimin/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "registration_phone": {
+    "value": "0554-43-1111（内線108・112・114・115・119）",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/shimin/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "registration_email": {
+    "value": "shimin@city.tsuru.yamanashi.jp",
+    "source": "llm",
+    "confidence": 0.7,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "registration_window": {
+    "value": "市民課（市役所1階）",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/shimin/",
+    "confidence": 0.9,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "kokuho_department": {
+    "value": "市民課 保険年金担当",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/shimin/hokennenkin_t/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "kokuho_phone": {
+    "value": "0554-43-1111（内線116〜118）",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/shimin/hokennenkin_t/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "kokuho_fax": {
+    "value": "0554-20-3622",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/shimin/hokennenkin_t/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "kokuho_email": {
+    "value": "hokennenkin@city.tsuru.yamanashi.jp",
+    "source": "llm",
+    "confidence": 0.7,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "kokuho_address": {
+    "value": "〒402-8501 山梨県都留市上谷1丁目1-1",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "kokuho_hours": {
+    "value": "午前8時30分〜午後5時15分（土日祝日、年末年始を除く）",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "tax_department": {
+    "value": "税務課",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/zeimuka/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "tax_phone": {
+    "value": "0554-43-1111（内線121・122・128）",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/zeimuka/shiminzei_t/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "tax_fax": {
+    "value": "0554-43-5049",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/zeimuka/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "tax_email": {
+    "value": "zeimu@city.tsuru.yamanashi.jp",
+    "source": "llm",
+    "confidence": 0.7,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "zeimu_department": {
+    "value": "税務課",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/zeimuka/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "zeimu_phone": {
+    "value": "0554-43-1111（内線121・122・128）",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/zeimuka/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "zeimu_email": {
+    "value": "zeimu@city.tsuru.yamanashi.jp",
+    "source": "llm",
+    "confidence": 0.7,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "juminzei_kinto_shi": {
+    "value": "3,500円",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/zeimuka/shiminzei_t/2/755.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "juminzei_kinto_ken": {
+    "value": "2,000円（森林環境税500円含む）",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/zeimuka/shiminzei_t/2/755.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "shisanzei_department": {
+    "value": "税務課 固定資産税担当",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/zeimuka/",
+    "confidence": 0.9,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "shisanzei_phone": {
+    "value": "0554-43-1111（内線123〜127）",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/zeimuka/",
+    "confidence": 0.8,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "shisanzei_email": {
+    "value": "zeimu@city.tsuru.yamanashi.jp",
+    "source": "llm",
+    "confidence": 0.7,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "environment_department": {
+    "value": "地域環境課 環境政策室",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/chiikikankyou/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "environment_phone": {
+    "value": "0554-43-1111（内線171・172・173）",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/chiikikankyou/kankyouseisaku_t/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "environment_fax": {
+    "value": "0554-43-5049",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/chiikikankyou/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "environment_email": {
+    "value": "kankyo@city.tsuru.yamanashi.jp",
+    "source": "llm",
+    "confidence": 0.7,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "gomi_calendar_url": {
+    "value": "https://www.city.tsuru.yamanashi.jp/soshiki/chiikikankyou/kankyouseisaku_t/1/1311.html",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/chiikikankyou/kankyouseisaku_t/1/1311.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "gomi_dashijikan": {
+    "value": "午前8時まで",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/chiikikankyou/kankyouseisaku_t/1/1311.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "sodaigomi_mochikomi": {
+    "value": "まるたの森クリーンセンター（大月市初狩町中）",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/chiikikankyou/kankyouseisaku_t/1/1307.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "sodaigomi_fee_small": {
+    "value": "一般家庭の持ち込みごみは無料",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/chiikikankyou/kankyouseisaku_t/1/1307.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "sodaigomi_phone": {
+    "value": "0554-43-1111（内線171・172・173）",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/chiikikankyou/kankyouseisaku_t/",
+    "confidence": 0.9,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "kosodate_department": {
+    "value": "健康子育て課 子育て包括支援室",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/kenkoukosodate/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "kosodate_phone": {
+    "value": "0554-46-5113（内線101・102）",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/kenkoukosodate/hoiku_t/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "kosodate_address": {
+    "value": "〒402-0051 山梨県都留市下谷2516-1（いきいきプラザ都留）",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/kenkoukosodate/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "kosodate_fax": {
+    "value": "0554-46-5119",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/kenkoukosodate/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "kosodate_email": {
+    "value": "kosodate@city.tsuru.yamanashi.jp",
+    "source": "llm",
+    "confidence": 0.7,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "kosodate_shien_center_count": {
+    "value": "4",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/kosodate/mokutekidesagasu/subete/9151.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "hoikuen_mushouka": {
+    "value": "3歳児から5歳児クラスの保育料は無償",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/kosodate/mokutekidesagasu/azukeru/10354.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "gakudou_club_count": {
+    "value": "11",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/kosodate/mokutekidesagasu/subete/9151.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "childcare_department": {
+    "value": "健康子育て課 子育て包括支援室",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/kenkoukosodate/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "childcare_phone": {
+    "value": "0554-46-5113（内線101・102）",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/kenkoukosodate/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "childcare_email": {
+    "value": "kosodate@city.tsuru.yamanashi.jp",
+    "source": "llm",
+    "confidence": 0.7,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "nursery_department": {
+    "value": "健康子育て課 子育て包括支援室 保育担当",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/kenkoukosodate/hoiku_t/1412.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "nursery_phone": {
+    "value": "0554-46-5113（内線101・102）",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/kenkoukosodate/hoiku_t/1412.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "nursery_email": {
+    "value": "kosodate@city.tsuru.yamanashi.jp",
+    "source": "llm",
+    "confidence": 0.7,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "nursery_apply_department": {
+    "value": "健康子育て課 子育て包括支援室",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/kenkoukosodate/hoiku_t/1412.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "nursery_apply_phone": {
+    "value": "0554-46-5113（内線101・102）",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/kenkoukosodate/hoiku_t/1412.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "nursery_apply_email": {
+    "value": "kosodate@city.tsuru.yamanashi.jp",
+    "source": "llm",
+    "confidence": 0.7,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "health_department": {
+    "value": "健康子育て課 健康づくり担当",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/kenkoukosodate/kenko_yobo_t/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "health_phone": {
+    "value": "0554-46-5113（内線123・124・125）",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/kenkoukosodate/kenko_yobo_t/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "health_address": {
+    "value": "〒402-0051 山梨県都留市下谷2516-1（いきいきプラザ都留）",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/kenkoukosodate/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "health_email": {
+    "value": "kenkou@city.tsuru.yamanashi.jp",
+    "source": "llm",
+    "confidence": 0.7,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "kenshin_department": {
+    "value": "健康子育て課 健康づくり担当",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/kenkoukosodate/kenko_yobo_t/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "kenshin_phone": {
+    "value": "0554-46-5113",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/kenkoukosodate/kenko_yobo_t/1/1/11919.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "kenshin_email": {
+    "value": "kenkou@city.tsuru.yamanashi.jp",
+    "source": "llm",
+    "confidence": 0.7,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "tokutei_kenshin_fee": {
+    "value": "1,000円",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/kenkoukosodate/kenko_yobo_t/1/1/11919.html",
+    "confidence": 0.9,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "34month_kenshin_basho": {
+    "value": "いきいきプラザ都留",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/kenkoukosodate/kodomokatei/1410.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "1sai6month_kenshin_basho": {
+    "value": "いきいきプラザ都留",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/kenkoukosodate/kodomokatei/1410.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "3sai_kenshin_basho": {
+    "value": "いきいきプラザ都留",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/kenkoukosodate/kodomokatei/1410.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "910month_kenshin_basho": {
+    "value": "県内指定医療機関",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/kenkoukosodate/kodomokatei/1428.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "gan_i_xray_fee": {
+    "value": "1,150円（70歳以上550円）",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/material/files/group/2/2013-4-04.pdf",
+    "confidence": 0.8,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "gan_hai_fee": {
+    "value": "350円（65歳以上無料）",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/material/files/group/2/2013-4-04.pdf",
+    "confidence": 0.8,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "gan_daicho_fee": {
+    "value": "500円（70歳以上250円）",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/material/files/group/2/2013-4-04.pdf",
+    "confidence": 0.8,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "gan_nyu_fee": {
+    "value": "1,100円〜1,500円（70歳以上550円）",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/kenkoukosodate/kenko_yobo_t/1/1/1137.html",
+    "confidence": 0.8,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "gan_shikyukei_fee": {
+    "value": "2,100円（70歳以上1,050円）",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/kenkoukosodate/kenko_yobo_t/1/1/1137.html",
+    "confidence": 0.8,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "yobosesshu_department": {
+    "value": "健康子育て課 健康づくり担当",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/kenkoukosodate/kenko_yobo_t/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "yobosesshu_phone": {
+    "value": "0554-46-5113",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/kenkoukosodate/kenko_yobo_t/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "yobosesshu_email": {
+    "value": "kenkou@city.tsuru.yamanashi.jp",
+    "source": "llm",
+    "confidence": 0.7,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "boshi_department": {
+    "value": "健康子育て課 子育て包括支援室 子ども家庭担当",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/kenkoukosodate/kodomokatei/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "boshi_phone": {
+    "value": "0554-46-5113（内線121・122・126）",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/kenkoukosodate/kodomokatei/1410.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "boshi_email": {
+    "value": "kosodate@city.tsuru.yamanashi.jp",
+    "source": "llm",
+    "confidence": 0.7,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "boshi_madoguchi": {
+    "value": "いきいきプラザ都留",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/kenkoukosodate/",
+    "confidence": 0.9,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "kaigo_department": {
+    "value": "長寿介護課 介護保険担当",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/choujukaigo/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "kaigo_phone": {
+    "value": "0554-46-5118（内線137〜140）",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/contact/chojyu/index.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "kaigo_address": {
+    "value": "〒402-0051 山梨県都留市下谷2516-1（いきいきプラザ都留）",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/choujukaigo/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "kaigo_fax": {
+    "value": "0554-46-5119",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/choujukaigo/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "kaigo_email": {
+    "value": "kaigo@city.tsuru.yamanashi.jp",
+    "source": "llm",
+    "confidence": 0.7,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "kaigo_kijun_gaku": {
+    "value": "71,700円（年額）/ 5,975円（月額）",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/choujukaigo/kaigohoken_t/1/5/1164.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "koureisha_department": {
+    "value": "長寿介護課 高齢者福祉担当",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/choujukaigo/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "koureisha_phone": {
+    "value": "0554-46-5118",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/choujukaigo/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "koureisha_email": {
+    "value": "kaigo@city.tsuru.yamanashi.jp",
+    "source": "llm",
+    "confidence": 0.7,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "houkatsu_department": {
+    "value": "長寿介護課 高齢者支援室（地域包括支援センター）",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/choujukaigo/koreifukushi_hokatsu_t/11092.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "houkatsu_phone": {
+    "value": "0554-46-5114",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/choujukaigo/koreifukushi_hokatsu_t/11092.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "houkatsu_email": {
+    "value": "houkatsu@city.tsuru.yamanashi.jp",
+    "source": "llm",
+    "confidence": 0.7,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "houkatsu_count": {
+    "value": "1",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/choujukaigo/koreifukushi_hokatsu_t/11092.html",
+    "confidence": 0.9,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "kouki_department": {
+    "value": "市民課 保険年金担当",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/shimin/hokennenkin_t/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "kouki_phone": {
+    "value": "0554-43-1111（内線116〜118）",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/shimin/hokennenkin_t/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "kouki_email": {
+    "value": "hokennenkin@city.tsuru.yamanashi.jp",
+    "source": "llm",
+    "confidence": 0.7,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "kouki_sousaihi": {
+    "value": "50,000円",
+    "source": "llm",
+    "sourceUrl": "https://www.yamanashi-iryoukouiki.jp/gaiyou/gaiyou4/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "nenkin_department": {
+    "value": "市民課 保険年金担当",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/shimin/hokennenkin_t/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "nenkin_phone": {
+    "value": "0554-43-1111（内線116〜118）",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/shimin/hokennenkin_t/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "nenkin_email": {
+    "value": "hokennenkin@city.tsuru.yamanashi.jp",
+    "source": "llm",
+    "confidence": 0.7,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "welfare_department": {
+    "value": "福祉課 地域福祉担当",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/fukushi/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "welfare_phone": {
+    "value": "0554-46-5112",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/fukushi/chiikifukushi_t/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "welfare_address": {
+    "value": "〒402-0051 山梨県都留市下谷2516-1（いきいきプラザ都留）",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/fukushi/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "welfare_email": {
+    "value": "fukushi@city.tsuru.yamanashi.jp",
+    "source": "llm",
+    "confidence": 0.7,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "shogai_department": {
+    "value": "福祉課 障がい者支援担当",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/fukushi/shougaishashien_t/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "shogai_phone": {
+    "value": "0554-46-5112",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/fukushi/shougaishashien_t/1/9697.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "shogai_email": {
+    "value": "fukushi@city.tsuru.yamanashi.jp",
+    "source": "llm",
+    "confidence": 0.7,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "shogai_soudan_center": {
+    "value": "障がい者基幹相談支援センター",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/fukushi/shougaishashien_t/1/9697.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "shogai_soudan_phone": {
+    "value": "0554-46-5112",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/fukushi/shougaishashien_t/1/9697.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "disability_department": {
+    "value": "福祉課 障がい者支援担当",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/fukushi/shougaishashien_t/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "disability_phone": {
+    "value": "0554-46-5112",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/fukushi/shougaishashien_t/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "disability_email": {
+    "value": "fukushi@city.tsuru.yamanashi.jp",
+    "source": "llm",
+    "confidence": 0.7,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "seikatsu_hogo_department": {
+    "value": "福祉課 地域福祉担当",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/fukushi/",
+    "confidence": 0.9,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "seikatsu_hogo_phone": {
+    "value": "0554-46-5112",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/fukushi/",
+    "confidence": 0.9,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "seikatsu_hogo_email": {
+    "value": "fukushi@city.tsuru.yamanashi.jp",
+    "source": "llm",
+    "confidence": 0.7,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "bosai_department": {
+    "value": "総務課 行政防災室 危機管理担当",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/somu/kikikanri_t/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "bosai_phone": {
+    "value": "0554-43-1111（内線208・209）",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/somu/kikikanri_t/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "bosai_fax": {
+    "value": "0554-43-7992",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/somu/kikikanri_t/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "bosai_email": {
+    "value": "bousai@city.tsuru.yamanashi.jp",
+    "source": "llm",
+    "confidence": 0.7,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "disaster_department": {
+    "value": "総務課 行政防災室 危機管理担当",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/somu/kikikanri_t/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "disaster_phone": {
+    "value": "0554-43-1111（内線208・209）",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/somu/kikikanri_t/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "disaster_email": {
+    "value": "bousai@city.tsuru.yamanashi.jp",
+    "source": "llm",
+    "confidence": 0.7,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "hazard_map_url": {
+    "value": "https://www.city.tsuru.yamanashi.jp/soshiki/somu/kikikanri_t/3/huusuigainisonaete/1230.html",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/somu/kikikanri_t/3/huusuigainisonaete/1230.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "hinanjo_map_url": {
+    "value": "https://www.city.tsuru.yamanashi.jp/soshiki/somu/kikikanri_t/3/huusuigainisonaete/1_1/1743.html",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/somu/kikikanri_t/3/huusuigainisonaete/1_1/1743.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "dosha_keikai_kuiki": {
+    "value": "386区域（急傾斜地228、土石流157、地滑り1）",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/shimin/anzen_anshin/bosai/fuusuigai/8414.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "hazard_map_haifu_basho": {
+    "value": "総務課行政防災室",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/somu/kikikanri_t/3/huusuigainisonaete/1230.html",
+    "confidence": 0.8,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "fukushi_hinanjo_count": {
+    "value": "いきいきプラザ都留",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/somu/kikikanri_t/3/huusuigainisonaete/1_1/1743.html",
+    "confidence": 0.9,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "building_department": {
+    "value": "建設課 建築住宅担当",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/kensetsu/kenchikujuutaku_t/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "building_phone": {
+    "value": "0554-43-1111（内線136・137）",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/kensetsu/kenchikujuutaku_t/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "building_fax": {
+    "value": "0554-43-5049",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/kensetsu/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "building_email": {
+    "value": "kensetsu@city.tsuru.yamanashi.jp",
+    "source": "llm",
+    "confidence": 0.7,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "housing_department": {
+    "value": "建設課 建築住宅担当",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/kensetsu/kenchikujuutaku_t/1/1/823.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "housing_phone": {
+    "value": "0554-43-1111（内線136・137）",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/kensetsu/kenchikujuutaku_t/1/1/823.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "housing_email": {
+    "value": "kensetsu@city.tsuru.yamanashi.jp",
+    "source": "llm",
+    "confidence": 0.7,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "public_housing_rent_range": {
+    "value": "10,700円～17,600円",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/kensetsu/kenchikujuutaku_t/1/1/823.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "seismic_retrofit_max": {
+    "value": "補助制度あり（要問合せ）",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/kensetsu/kenchikujuutaku_t/855.html",
+    "confidence": 0.8,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "seismic_diagnosis_max": {
+    "value": "補助制度あり（要問合せ）",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/kensetsu/kenchikujuutaku_t/855.html",
+    "confidence": 0.8,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "urban_planning_department": {
+    "value": "建設課 都市計画担当",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/kensetsu/toshikeikaku_t/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "urban_planning_phone": {
+    "value": "0554-43-1111（内線131・132）",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/kensetsu/toshikeikaku_t/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "urban_planning_email": {
+    "value": "kensetsu@city.tsuru.yamanashi.jp",
+    "source": "llm",
+    "confidence": 0.7,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "suidou_department": {
+    "value": "上下水道課 水道管理担当",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/jougesuidou/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "suidou_phone": {
+    "value": "0554-43-1111（内線431〜433）",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/contact/jyogesuido/index.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "suidou_fax": {
+    "value": "0554-43-5049",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/jougesuidou/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "gesuidou_department": {
+    "value": "上下水道課 下水道管理担当",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/jougesuidou/gesuidoukanri_t/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "gesuidou_phone": {
+    "value": "0554-43-1111（内線416〜418）",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/jougesuidou/gesuidoukanri_t/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "sangyo_department": {
+    "value": "産業課",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/sangyo/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "sangyo_shoko_phone": {
+    "value": "0554-43-1111（内線215・216）",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/sangyo/shoko_t/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "sangyo_nourin_phone": {
+    "value": "0554-43-1111（内線151〜153）",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/sangyo/nourin_t/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "sangyo_fax": {
+    "value": "0554-43-5049",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/contact/sangyo/index.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "business_department": {
+    "value": "産業課 商工担当",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/sangyo/shoko_t/",
+    "confidence": 0.9,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "business_phone": {
+    "value": "0554-43-1111（内線215・216）",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/sangyo/shoko_t/",
+    "confidence": 0.9,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "business_email": {
+    "value": "sangyo@city.tsuru.yamanashi.jp",
+    "source": "llm",
+    "confidence": 0.7,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "agriculture_department": {
+    "value": "産業課 農林担当",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/sangyo/nourin_t/",
+    "confidence": 0.9,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "agriculture_phone": {
+    "value": "0554-43-1111（内線151〜153）",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/sangyo/nourin_t/",
+    "confidence": 0.9,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "agriculture_email": {
+    "value": "sangyo@city.tsuru.yamanashi.jp",
+    "source": "llm",
+    "confidence": 0.7,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "agricultural_commission": {
+    "value": "農業委員会事務局",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/sangyo/nourin_t/",
+    "confidence": 0.9,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "agricultural_commission_phone": {
+    "value": "0554-43-1111（内線151〜153）",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/sangyo/nourin_t/",
+    "confidence": 0.8,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "soumu_department": {
+    "value": "総務課 行政防災室 法制広報担当",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/somu/houseikouhou_t/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "soumu_phone": {
+    "value": "0554-43-1111（内線401・402）",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/somu/houseikouhou_t/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "soumu_fax": {
+    "value": "0554-43-5049",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/somu/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "election_commission": {
+    "value": "選挙管理委員会事務局",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/senkyo/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "election_commission_phone": {
+    "value": "0554-43-1111（内線260・261）",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/senkyo/1/1641.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "election_commission_email": {
+    "value": "senkyo@city.tsuru.yamanashi.jp",
+    "source": "llm",
+    "confidence": 0.7,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "mynumber_department": {
+    "value": "市民課",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/shimin/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "mynumber_phone": {
+    "value": "0554-43-1111（内線108・112・114・115・119）",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/shimin/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "mynumber_email": {
+    "value": "shimin@city.tsuru.yamanashi.jp",
+    "source": "llm",
+    "confidence": 0.7,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "hello_work_name": {
+    "value": "ハローワーク都留",
+    "source": "llm",
+    "sourceUrl": "https://jsite.mhlw.go.jp/yamanashi-roudoukyoku/hw.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "hello_work_phone": {
+    "value": "0554-43-5141",
+    "source": "llm",
+    "sourceUrl": "https://jsite.mhlw.go.jp/yamanashi-roudoukyoku/hw.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "hello_work_address": {
+    "value": "〒402-0051 山梨県都留市下谷3-7-31",
+    "source": "llm",
+    "sourceUrl": "https://jsite.mhlw.go.jp/yamanashi-roudoukyoku/hw.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "tax_office": {
+    "value": "大月税務署",
+    "source": "llm",
+    "sourceUrl": "https://www.nta.go.jp/about/organization/tokyo/location/yamanashi/otsuki/index.htm",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "tax_office_phone": {
+    "value": "0554-22-3151",
+    "source": "llm",
+    "sourceUrl": "https://www.nta.go.jp/about/organization/tokyo/location/yamanashi/otsuki/index.htm",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "tax_office_address": {
+    "value": "〒401-8502 大月市御太刀2丁目8番10号 大月地方合同庁舎",
+    "source": "llm",
+    "sourceUrl": "https://www.nta.go.jp/about/organization/tokyo/location/yamanashi/otsuki/index.htm",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "legal_affairs_bureau": {
+    "value": "甲府地方法務局 大月支局",
+    "source": "llm",
+    "sourceUrl": "https://houmukyoku.moj.go.jp/kofu/table/shikyokutou/all/ootuki.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "legal_affairs_bureau_phone": {
+    "value": "0554-22-0799",
+    "source": "llm",
+    "sourceUrl": "https://houmukyoku.moj.go.jp/kofu/table/shikyokutou/all/ootuki.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "legal_affairs_bureau_address": {
+    "value": "〒401-0012 大月市御太刀2丁目8番10号（大月地方合同庁舎）",
+    "source": "llm",
+    "sourceUrl": "https://houmukyoku.moj.go.jp/kofu/table/shikyokutou/all/ootuki.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "pension_office": {
+    "value": "大月年金事務所",
+    "source": "llm",
+    "sourceUrl": "https://www.nenkin.go.jp/section/soudan/yamanashi/index.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "pension_office_phone": {
+    "value": "0554-22-3811",
+    "source": "llm",
+    "sourceUrl": "https://www.nenkin.go.jp/section/soudan/yamanashi/index.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "pension_office_address": {
+    "value": "〒401-0013 山梨県大月市大月町花咲1602-1",
+    "source": "llm",
+    "sourceUrl": "https://www.nenkin.go.jp/section/soudan/yamanashi/index.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "pension_office_fax": {
+    "value": "0554-23-2344",
+    "source": "llm",
+    "sourceUrl": "https://www.nenkin.go.jp/section/soudan/yamanashi/index.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "police_station": {
+    "value": "大月警察署 都留分庁舎",
+    "source": "llm",
+    "sourceUrl": "https://www.pref.yamanashi.jp/police/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "police_station_phone": {
+    "value": "0554-45-0110",
+    "source": "llm",
+    "sourceUrl": "https://www.pref.yamanashi.jp/police/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "police_station_address": {
+    "value": "〒402-0051 山梨県都留市下谷3-2-18",
+    "source": "llm",
+    "sourceUrl": "https://www.pref.yamanashi.jp/police/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "driver_license_center": {
+    "value": "山梨県総合交通センター",
+    "source": "llm",
+    "sourceUrl": "https://www.pref.yamanashi.jp/police/untenmenkyo/index.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "driver_license_center_phone": {
+    "value": "055-285-0533",
+    "source": "llm",
+    "sourceUrl": "https://www.pref.yamanashi.jp/police/untenmenkyo/index.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "driver_license_center_address": {
+    "value": "〒400-0202 山梨県南アルプス市下高砂825",
+    "source": "llm",
+    "sourceUrl": "https://www.pref.yamanashi.jp/police/untenmenkyo/index.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "driver_license_tsuru_branch": {
+    "value": "山梨県警運転免許課 都留分室",
+    "source": "llm",
+    "sourceUrl": "https://www.pref.yamanashi.jp/police/untenmenkyo/index.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "driver_license_tsuru_branch_phone": {
+    "value": "0554-43-4101",
+    "source": "llm",
+    "sourceUrl": "https://www.pref.yamanashi.jp/police/untenmenkyo/index.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "passport_office_name": {
+    "value": "山梨県富士・東部地域県民センター",
+    "source": "llm",
+    "sourceUrl": "https://www.pref.yamanashi.jp/ft-kenminc/10881144148.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "passport_office_address": {
+    "value": "〒403-0005 山梨県富士吉田市上吉田一丁目2番5号（南都留合同庁舎内）",
+    "source": "llm",
+    "sourceUrl": "https://www.pref.yamanashi.jp/ft-kenminc/10881144148.html",
+    "confidence": 0.9,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "passport_office_phone": {
+    "value": "0555-24-9000",
+    "source": "llm",
+    "sourceUrl": "https://www.pref.yamanashi.jp/ft-kenminc/10881144148.html",
+    "confidence": 0.9,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "immigration_bureau": {
+    "value": "東京出入国在留管理局甲府出張所",
+    "source": "llm",
+    "sourceUrl": "https://www.moj.go.jp/isa/about/region/index.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "immigration_bureau_address": {
+    "value": "〒400-0031 山梨県甲府市丸の内1-1-18（甲府合同庁舎9階）",
+    "source": "llm",
+    "sourceUrl": "https://www.moj.go.jp/isa/about/region/index.html",
+    "confidence": 0.9,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "immigration_bureau_phone": {
+    "value": "055-255-3350",
+    "source": "llm",
+    "sourceUrl": "https://www.moj.go.jp/isa/about/region/index.html",
+    "confidence": 0.9,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "silver_center_phone": {
+    "value": "0554-22-2900",
+    "source": "llm",
+    "sourceUrl": "http://yamanashitoubu-sjc.jp/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "silver_center_address": {
+    "value": "〒401-0015 山梨県大月市大月町花咲10（東部広域シルバー人材センター）",
+    "source": "llm",
+    "sourceUrl": "http://yamanashitoubu-sjc.jp/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "city_hospital": {
+    "value": "都留市立病院",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/byoin/index.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "city_hospital_phone": {
+    "value": "0554-45-1811",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/byoin/index.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "city_hospital_address": {
+    "value": "〒402-0056 山梨県都留市つる五丁目1番55号",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/byoin/index.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "city_hospital_fax": {
+    "value": "0554-45-2467",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/byoin/index.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "jidou_soudan": {
+    "value": "山梨県都留児童相談所",
+    "source": "llm",
+    "sourceUrl": "https://www.pref.yamanashi.jp/jiso-tsuru/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "minimum_wage": {
+    "value": "1,052円",
+    "source": "llm",
+    "sourceUrl": "https://jsite.mhlw.go.jp/yamanashi-roudoukyoku/hourei_seido_tetsuzuki/tingin_taisyokukin/hourei_seido/saichin01.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "minimum_wage_effective_date": {
+    "value": "令和7年12月1日",
+    "source": "llm",
+    "sourceUrl": "https://jsite.mhlw.go.jp/yamanashi-roudoukyoku/hourei_seido_tetsuzuki/tingin_taisyokukin/hourei_seido/saichin01.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "population": {
+    "value": "31,883人",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/",
+    "confidence": 0.9,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "koureika_ritsu": {
+    "value": "24.53%",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/choujukaigo/kaigohoken_t/",
+    "confidence": 0.9,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "youkaigo_nintei_ritsu": {
+    "value": "16.1%",
+    "source": "llm",
+    "sourceUrl": "https://www.mhlw.go.jp/content/12303500/001253798.pdf",
+    "confidence": 0.9,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "employment_department": {
+    "value": "産業課 商工担当",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/sangyo/shoko_t/",
+    "confidence": 0.9,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "employment_phone": {
+    "value": "0554-43-1111（内線215・216）",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/sangyo/shoko_t/",
+    "confidence": 0.9,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "employment_email": {
+    "value": "sangyo@city.tsuru.yamanashi.jp",
+    "source": "llm",
+    "confidence": 0.7,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "driving_department": {
+    "value": "総務課 行政防災室（交通安全）",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/somu/kikikanri_t/",
+    "confidence": 0.8,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "driving_phone": {
+    "value": "0554-43-1111（内線208・209）",
+    "source": "llm",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/somu/kikikanri_t/",
+    "confidence": 0.8,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "driving_email": {
+    "value": "bousai@city.tsuru.yamanashi.jp",
+    "source": "llm",
+    "confidence": 0.7,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  }
+}

@@ -1,0 +1,142 @@
+{
+  "legal_affairs_bureau": {
+    "value": "富山地方法務局高岡支局",
+    "source": "llm",
+    "sourceUrl": "https://houmukyoku.moj.go.jp/toyama/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "legal_affairs_bureau_phone": {
+    "value": "0766-22-2327",
+    "source": "llm",
+    "sourceUrl": "https://houmukyoku.moj.go.jp/toyama/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "legal_affairs_bureau_address": {
+    "value": "〒933-0056 富山県高岡市中川1-5-22",
+    "source": "llm",
+    "sourceUrl": "https://houmukyoku.moj.go.jp/toyama/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "pension_office_phone": {
+    "value": "0766-21-4182",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/hokennenkinka/2/3/3374.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "pension_office_address": {
+    "value": "〒933-0055 富山県高岡市中川園町11-20",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/hokennenkinka/2/3/3374.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "police_station": {
+    "value": "高岡警察署",
+    "source": "llm",
+    "sourceUrl": "https://police.pref.toyama.jp/keisatsusho/6253/index.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "police_station_phone": {
+    "value": "0766-23-0110",
+    "source": "llm",
+    "sourceUrl": "https://police.pref.toyama.jp/keisatsusho/6253/index.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "police_station_address": {
+    "value": "〒933-0911 富山県高岡市あわら町1-5",
+    "source": "llm",
+    "sourceUrl": "https://police.pref.toyama.jp/keisatsusho/6253/index.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "driver_license_center": {
+    "value": "富山県運転教育センター",
+    "source": "llm",
+    "sourceUrl": "https://police.pref.toyama.jp/6117/untenmenkyo/oshirase/kj00022305.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "driver_license_center_phone": {
+    "value": "076-441-2211",
+    "source": "llm",
+    "sourceUrl": "https://police.pref.toyama.jp/6117/untenmenkyo/oshirase/kj00022305.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "driver_license_center_address": {
+    "value": "〒931-8441 富山県富山市高島62-1",
+    "source": "llm",
+    "sourceUrl": "https://police.pref.toyama.jp/6117/untenmenkyo/oshirase/kj00022305.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "transport_branch": {
+    "value": "北陸信越運輸局富山運輸支局",
+    "source": "llm",
+    "sourceUrl": "https://wwwtb.mlit.go.jp/hokushin/toyama/index.shtml",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "transport_branch_address": {
+    "value": "〒930-0992 富山県富山市新庄町馬場82",
+    "source": "llm",
+    "sourceUrl": "https://wwwtb.mlit.go.jp/hokushin/toyama/index.shtml",
+    "confidence": 0.9,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "transport_branch_phone": {
+    "value": "050-5540-2044",
+    "source": "llm",
+    "sourceUrl": "https://wwwtb.mlit.go.jp/hokushin/toyama/index.shtml",
+    "confidence": 0.8,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "passport_office_name": {
+    "value": "富山県旅券センター高岡支所",
+    "source": "llm",
+    "sourceUrl": "https://www.pref.toyama.jp/kurashi/untenmenkyo/passport/index.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "passport_office_phone": {
+    "value": "0766-27-1855",
+    "source": "llm",
+    "sourceUrl": "https://www.pref.toyama.jp/kurashi/untenmenkyo/passport/index.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "passport_office_address": {
+    "value": "〒933-0029 富山県高岡市御旅屋町101 御旅屋セリオ7階",
+    "source": "llm",
+    "sourceUrl": "https://www.pref.toyama.jp/kurashi/untenmenkyo/passport/index.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "immigration_bureau": {
+    "value": "名古屋出入国在留管理局富山出張所",
+    "source": "llm",
+    "sourceUrl": "https://www.moj.go.jp/isa/about/region/nagoya/index.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "immigration_bureau_phone": {
+    "value": "076-495-1580",
+    "source": "llm",
+    "sourceUrl": "https://www.moj.go.jp/isa/about/region/nagoya/index.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "immigration_bureau_address": {
+    "value": "〒939-8252 富山県富山市秋ヶ島30番地 富山空港国内線ターミナルビル1階",
+    "source": "llm",
+    "sourceUrl": "https://www.moj.go.jp/isa/about/region/nagoya/index.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  }
+}

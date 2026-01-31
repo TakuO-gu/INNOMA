@@ -4,6 +4,10 @@ import React, { createContext, useContext } from "react";
 
 interface MunicipalityContextValue {
   municipalityId: string;
+  /** 完成済みページのパス一覧（未取得変数がないページ） */
+  completedPages: Set<string>;
+  /** 指定したパスが完成済みかどうかをチェック */
+  isPageCompleted: (path: string) => boolean;
 }
 
 const MunicipalityContext = createContext<MunicipalityContextValue | null>(null);
@@ -11,12 +15,32 @@ const MunicipalityContext = createContext<MunicipalityContextValue | null>(null)
 export function MunicipalityProvider({
   children,
   municipalityId,
+  completedPages = new Set<string>(),
 }: {
   children: React.ReactNode;
   municipalityId: string;
+  completedPages?: Set<string>;
 }) {
+  const isPageCompleted = (path: string): boolean => {
+    // 外部リンクは常にOK
+    if (
+      path.startsWith("http://") ||
+      path.startsWith("https://") ||
+      path.startsWith("mailto:") ||
+      path.startsWith("tel:") ||
+      path.startsWith("#")
+    ) {
+      return true;
+    }
+
+    // 内部リンクは完成済みページリストをチェック
+    // パスの正規化: 先頭に/がない場合は追加
+    const normalizedPath = path.startsWith("/") ? path : `/${path}`;
+    return completedPages.has(normalizedPath);
+  };
+
   return (
-    <MunicipalityContext.Provider value={{ municipalityId }}>
+    <MunicipalityContext.Provider value={{ municipalityId, completedPages, isPageCompleted }}>
       {children}
     </MunicipalityContext.Provider>
   );

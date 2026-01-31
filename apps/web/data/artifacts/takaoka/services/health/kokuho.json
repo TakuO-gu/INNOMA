@@ -434,27 +434,25 @@
             ]
           },
           {
-            "type": "callout",
-            "severity": "info",
-            "title": "マイナポータルからの申請方法",
-            "content": [
+            "type": "heading",
+            "level": 3,
+            "text": "マイナポータルからの申請方法"
+          },
+          {
+            "type": "paragraph",
+            "runs": [
               {
-                "type": "paragraph",
-                "runs": [
-                  {
-                    "text": "マイナポータル（"
-                  },
-                  {
-                    "text": "https://myna.go.jp",
-                    "link": {
-                      "href": "https://myna.go.jp",
-                      "external": true
-                    }
-                  },
-                  {
-                    "text": "）にログインし、「手続の検索・電子申請」から「国民健康保険」で検索して手続きを進めてください。"
-                  }
-                ]
+                "text": "マイナポータル（"
+              },
+              {
+                "text": "https://myna.go.jp",
+                "link": {
+                  "href": "https://myna.go.jp",
+                  "external": true
+                }
+              },
+              {
+                "text": "）にログインし、「手続の検索・電子申請」から「国民健康保険」で検索して手続きを進めてください。"
               }
             ]
           }

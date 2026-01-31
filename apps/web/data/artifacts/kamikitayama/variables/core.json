@@ -1,0 +1,31 @@
+{
+  "municipality_name": {
+    "value": "上北山村",
+    "source": "manual",
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "prefecture_name": {
+    "value": "奈良県",
+    "source": "manual",
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "generated_at": {
+    "value": "2026-01-31T00:00:00.000Z",
+    "source": "manual",
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "city_hall_address": {
+    "value": "〒639-3701 奈良県吉野郡上北山村大字河合330番地",
+    "source": "llm",
+    "sourceUrl": "https://www.vill.kamikitayama.nara.jp/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "city_hall_phone": {
+    "value": "07468-2-0001",
+    "source": "llm",
+    "sourceUrl": "https://www.vill.kamikitayama.nara.jp/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  }
+}

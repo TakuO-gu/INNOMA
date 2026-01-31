@@ -189,48 +189,129 @@ export async function updateMunicipalityMeta(
 
 /**
  * 自治体の変数ストアを取得
+ *
+ * 変数は以下の場所から読み込まれ、マージされます（後のものが優先）:
+ * 1. {municipality}/variables.json - 単一ファイル（後方互換性）
+ * 2. {municipality}/variables/*.json - 分割ファイル（カテゴリ別）
  */
 export async function getVariableStore(id: string): Promise<VariableStore> {
-  const variablesPath = join(ARTIFACTS_DIR, id, "variables.json");
+  let result: VariableStore = {};
 
-  if (!(await exists(variablesPath))) {
-    return {};
+  // 1. 単一ファイルから読み込み（後方互換性）
+  const singleFilePath = join(ARTIFACTS_DIR, id, "variables.json");
+  if (await exists(singleFilePath)) {
+    try {
+      const content = await readFile(singleFilePath, "utf-8");
+      result = JSON.parse(content) as VariableStore;
+    } catch {
+      // ファイルが壊れている場合は無視
+    }
   }
 
-  try {
-    const content = await readFile(variablesPath, "utf-8");
-    return JSON.parse(content) as VariableStore;
-  } catch {
-    return {};
+  // 2. 分割ファイルから読み込み（存在する場合は単一ファイルを上書き）
+  const variablesDir = join(ARTIFACTS_DIR, id, "variables");
+  if (await exists(variablesDir)) {
+    try {
+      const files = await readdir(variablesDir);
+      const jsonFiles = files.filter(f => f.endsWith(".json")).sort();
+
+      for (const file of jsonFiles) {
+        const filePath = join(variablesDir, file);
+        try {
+          const content = await readFile(filePath, "utf-8");
+          const partial = JSON.parse(content) as VariableStore;
+          result = { ...result, ...partial };
+        } catch {
+          // 個別ファイルが壊れている場合はスキップ
+        }
+      }
+    } catch {
+      // ディレクトリ読み込みエラーは無視
+    }
   }
+
+  return result;
 }
 
 /**
  * 自治体の変数ストアを更新
+ *
+ * 分割ファイル構造を使用している場合:
+ * - 既存のカテゴリファイルに変数が存在する場合はそのファイルを更新
+ * - 存在しない場合は misc.json に追加
+ *
+ * 単一ファイル構造を使用している場合:
+ * - variables.json を更新
  */
 export async function updateVariableStore(
   id: string,
   updates: VariableStore
 ): Promise<VariableStore> {
-  const current = await getVariableStore(id);
   const now = new Date().toISOString();
 
-  // 更新をマージ
-  const updated: VariableStore = { ...current };
-  for (const [name, value] of Object.entries(updates)) {
-    updated[name] = {
-      ...value,
-      updatedAt: now,
-    };
-  }
+  // 分割ファイル構造の確認
+  const variablesDir = join(ARTIFACTS_DIR, id, "variables");
+  const useSplitFiles = await exists(variablesDir);
 
-  const variablesPath = join(ARTIFACTS_DIR, id, "variables.json");
-  await writeFile(variablesPath, JSON.stringify(updated, null, 2));
+  if (useSplitFiles) {
+    // 分割ファイル構造の場合
+    const files = await readdir(variablesDir);
+    const jsonFiles = files.filter(f => f.endsWith(".json"));
+
+    // 各変数がどのファイルに属するか特定
+    const fileContents: Record<string, VariableStore> = {};
+    for (const file of jsonFiles) {
+      const filePath = join(variablesDir, file);
+      try {
+        const content = await readFile(filePath, "utf-8");
+        fileContents[file] = JSON.parse(content) as VariableStore;
+      } catch {
+        fileContents[file] = {};
+      }
+    }
+
+    // 更新を適用
+    for (const [name, value] of Object.entries(updates)) {
+      let found = false;
+      for (const [file, contents] of Object.entries(fileContents)) {
+        if (name in contents) {
+          fileContents[file][name] = { ...value, updatedAt: now };
+          found = true;
+          break;
+        }
+      }
+      // 既存のファイルに見つからない場合は misc.json に追加
+      if (!found) {
+        if (!fileContents["misc.json"]) {
+          fileContents["misc.json"] = {};
+        }
+        fileContents["misc.json"][name] = { ...value, updatedAt: now };
+      }
+    }
+
+    // ファイルを書き戻す
+    for (const [file, contents] of Object.entries(fileContents)) {
+      if (Object.keys(contents).length > 0) {
+        const filePath = join(variablesDir, file);
+        await writeFile(filePath, JSON.stringify(contents, null, 2));
+      }
+    }
+  } else {
+    // 単一ファイル構造の場合（後方互換性）
+    const current = await getVariableStore(id);
+    const updated: VariableStore = { ...current };
+    for (const [name, value] of Object.entries(updates)) {
+      updated[name] = { ...value, updatedAt: now };
+    }
+
+    const variablesPath = join(ARTIFACTS_DIR, id, "variables.json");
+    await writeFile(variablesPath, JSON.stringify(updated, null, 2));
+  }
 
   // メタデータの更新日時も更新
   await updateMunicipalityMeta(id, {});
 
-  return updated;
+  return await getVariableStore(id);
 }
 
 /**

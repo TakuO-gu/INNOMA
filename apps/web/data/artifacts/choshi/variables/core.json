@@ -1,0 +1,325 @@
+{
+  "municipality_name": {
+    "value": "銚子市",
+    "source": "manual",
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "prefecture_name": {
+    "value": "千葉県",
+    "source": "manual",
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "generated_at": {
+    "value": "2026-01-31T00:00:00.000Z",
+    "source": "manual",
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "city_hall_address": {
+    "value": "〒288-8601 千葉県銚子市若宮町1-1",
+    "source": "llm",
+    "sourceUrl": "https://www.city.choshi.chiba.jp/shisei/soshiki.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "city_hall_phone": {
+    "value": "0479-24-8181",
+    "source": "llm",
+    "sourceUrl": "https://www.city.choshi.chiba.jp/shisei/soshiki.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "city_hall_department": {
+    "value": "秘書広報課",
+    "source": "llm",
+    "sourceUrl": "https://www.city.choshi.chiba.jp/shisei/soshiki.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "shimin_department": {
+    "value": "市民課",
+    "source": "llm",
+    "sourceUrl": "https://www.city.choshi.chiba.jp/shisei/soshiki.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "shimin_phone": {
+    "value": "0479-24-8759",
+    "source": "llm",
+    "sourceUrl": "https://www.city.choshi.chiba.jp/shisei/soshiki.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "registration_department": {
+    "value": "市民課 戸籍班",
+    "source": "llm",
+    "sourceUrl": "https://www.city.choshi.chiba.jp/shisei/soshiki.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "registration_phone": {
+    "value": "0479-24-8915",
+    "source": "llm",
+    "sourceUrl": "https://www.city.choshi.chiba.jp/shisei/soshiki.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "tax_department": {
+    "value": "税務課",
+    "source": "llm",
+    "sourceUrl": "https://www.city.choshi.chiba.jp/shisei/soshiki.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "tax_phone": {
+    "value": "0479-24-8951",
+    "source": "llm",
+    "sourceUrl": "https://www.city.choshi.chiba.jp/shisei/soshiki.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "kotei_department": {
+    "value": "税務課 固定資産税班",
+    "source": "llm",
+    "sourceUrl": "https://www.city.choshi.chiba.jp/shisei/soshiki.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "kotei_phone": {
+    "value": "0479-24-8952",
+    "source": "llm",
+    "sourceUrl": "https://www.city.choshi.chiba.jp/shisei/soshiki.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "keijidosha_department": {
+    "value": "税務課",
+    "source": "llm",
+    "sourceUrl": "https://www.city.choshi.chiba.jp/shisei/soshiki.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "keijidosha_phone": {
+    "value": "0479-24-8953",
+    "source": "llm",
+    "sourceUrl": "https://www.city.choshi.chiba.jp/shisei/soshiki.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "welfare_department": {
+    "value": "社会福祉課",
+    "source": "llm",
+    "sourceUrl": "https://www.city.choshi.chiba.jp/shisei/soshiki.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "welfare_phone": {
+    "value": "0479-24-8195",
+    "source": "llm",
+    "sourceUrl": "https://www.city.choshi.chiba.jp/shisei/soshiki.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "shogai_department": {
+    "value": "社会福祉課 障害支援室",
+    "source": "llm",
+    "sourceUrl": "https://www.city.choshi.chiba.jp/shisei/soshiki.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "shogai_phone": {
+    "value": "0479-24-8968",
+    "source": "llm",
+    "sourceUrl": "https://www.city.choshi.chiba.jp/shisei/soshiki.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "hoken_department": {
+    "value": "市民課 国保給付班",
+    "source": "llm",
+    "sourceUrl": "https://www.city.choshi.chiba.jp/shisei/soshiki.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "hoken_phone": {
+    "value": "0479-24-8955",
+    "source": "llm",
+    "sourceUrl": "https://www.city.choshi.chiba.jp/shisei/soshiki.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "nenkin_department": {
+    "value": "市民課 国民年金班",
+    "source": "llm",
+    "sourceUrl": "https://www.city.choshi.chiba.jp/shisei/soshiki.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "nenkin_phone": {
+    "value": "0479-24-8956",
+    "source": "llm",
+    "sourceUrl": "https://www.city.choshi.chiba.jp/shisei/soshiki.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "kosodate_department": {
+    "value": "子育て支援課",
+    "source": "llm",
+    "sourceUrl": "https://www.city.choshi.chiba.jp/shisei/soshiki.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "kosodate_phone": {
+    "value": "0479-24-8967",
+    "source": "llm",
+    "sourceUrl": "https://www.city.choshi.chiba.jp/shisei/soshiki.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "kaigo_department": {
+    "value": "高齢者福祉課",
+    "source": "llm",
+    "sourceUrl": "https://www.city.choshi.chiba.jp/shisei/soshiki.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "kaigo_phone": {
+    "value": "0479-24-8755",
+    "source": "llm",
+    "sourceUrl": "https://www.city.choshi.chiba.jp/shisei/soshiki.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "koureisha_department": {
+    "value": "高齢者福祉課 高齢者福祉班",
+    "source": "llm",
+    "sourceUrl": "https://www.city.choshi.chiba.jp/shisei/soshiki.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "koureisha_phone": {
+    "value": "0479-24-8754",
+    "source": "llm",
+    "sourceUrl": "https://www.city.choshi.chiba.jp/shisei/soshiki.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "kenko_department": {
+    "value": "健康づくり課",
+    "source": "llm",
+    "sourceUrl": "https://www.city.choshi.chiba.jp/shisei/soshiki.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "kenko_phone": {
+    "value": "0479-24-8070",
+    "source": "llm",
+    "sourceUrl": "https://www.city.choshi.chiba.jp/shisei/soshiki.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "kodomo_katei_center_phone": {
+    "value": "0479-26-3777",
+    "source": "llm",
+    "sourceUrl": "https://www.city.choshi.chiba.jp/shisei/soshiki.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "building_department": {
+    "value": "都市整備課",
+    "source": "llm",
+    "sourceUrl": "https://www.city.choshi.chiba.jp/shisei/soshiki.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "building_phone": {
+    "value": "0479-21-3511",
+    "source": "llm",
+    "sourceUrl": "https://www.city.choshi.chiba.jp/shisei/soshiki.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "toshikeikaku_department": {
+    "value": "都市整備課 都市計画班",
+    "source": "llm",
+    "sourceUrl": "https://www.city.choshi.chiba.jp/shisei/soshiki.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "toshikeikaku_phone": {
+    "value": "0479-24-8945",
+    "source": "llm",
+    "sourceUrl": "https://www.city.choshi.chiba.jp/shisei/soshiki.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "doboku_department": {
+    "value": "都市整備課 土木管理班",
+    "source": "llm",
+    "sourceUrl": "https://www.city.choshi.chiba.jp/shisei/soshiki.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "doboku_phone": {
+    "value": "0479-24-8191",
+    "source": "llm",
+    "sourceUrl": "https://www.city.choshi.chiba.jp/shisei/soshiki.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "environment_department": {
+    "value": "生活環境課",
+    "source": "llm",
+    "sourceUrl": "https://www.city.choshi.chiba.jp/shisei/soshiki.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "environment_phone": {
+    "value": "0479-24-8910",
+    "source": "llm",
+    "sourceUrl": "https://www.city.choshi.chiba.jp/shisei/soshiki.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "seisou_department": {
+    "value": "生活環境課 清掃美化班",
+    "source": "llm",
+    "sourceUrl": "https://www.city.choshi.chiba.jp/shisei/soshiki.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "seisou_phone": {
+    "value": "0479-24-8764",
+    "source": "llm",
+    "sourceUrl": "https://www.city.choshi.chiba.jp/shisei/soshiki.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "kyoiku_department": {
+    "value": "教育委員会 教育総務班",
+    "source": "llm",
+    "sourceUrl": "https://www.city.choshi.chiba.jp/shisei/soshiki.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "kyoiku_phone": {
+    "value": "0479-24-8725",
+    "source": "llm",
+    "sourceUrl": "https://www.city.choshi.chiba.jp/shisei/soshiki.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "gakumu_department": {
+    "value": "教育委員会 学務班",
+    "source": "llm",
+    "sourceUrl": "https://www.city.choshi.chiba.jp/shisei/soshiki.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "gakumu_phone": {
+    "value": "0479-24-8197",
+    "source": "llm",
+    "sourceUrl": "https://www.city.choshi.chiba.jp/shisei/soshiki.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  }
+}

@@ -137,7 +137,10 @@ export const validators = {
 
   /** メールアドレスの検証 */
   email: (value: string): boolean => {
-    return /^[\w.-]+@[\w.-]+\.[a-z]{2,}$/i.test(value);
+    if (/^[\w.-]+@[\w.-]+\.[a-z]{2,}$/i.test(value)) {
+      return true;
+    }
+    return /^https?:\/\/.+/i.test(value);
   },
 
   /** URLの検証 */

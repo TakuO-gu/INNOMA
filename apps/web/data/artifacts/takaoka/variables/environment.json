@@ -1,0 +1,141 @@
+{
+  "environment_department": {
+    "value": "環境政策課",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kankyoseisakuka/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "environment_phone": {
+    "value": "0766-22-2144",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/kurashi/gomi/kate/index.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "environment_email": {
+    "value": "kankyoseisaku@city.takaoka.lg.jp",
+    "source": "llm",
+    "confidence": 0.7,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "environment_fax": {
+    "value": "0766-22-2341",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/kurashi/gomi/kate/index.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "environment_address": {
+    "value": "〒933-0951 富山県高岡市長慶寺640",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/kurashi/gomi/kate/index.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "gomi_calendar_url": {
+    "value": "https://www.city.takaoka.toyama.jp/gyosei/kurashi_tetsuzuki/gomi_recycle/5/2/1/6907.html",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/gyosei/kurashi_tetsuzuki/gomi_recycle/5/2/1/6907.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "sodaigomi_phone": {
+    "value": "0766-22-2144",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/material/files/group/25/r610bunbetuitiran.pdf",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "sodaigomi_reception_hours": {
+    "value": "火〜土 8:30〜16:30",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kankyoseisakuka/2/1/3/2265.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "sodaigomi_fee_small": {
+    "value": "10kgごとに100円",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kankyoseisakuka/2/1/3/2265.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "sodaigomi_fee_medium": {
+    "value": "10kgごとに100円＋木質家具100円加算",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kankyoseisakuka/2/1/3/2265.html",
+    "confidence": 0.9,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "sodaigomi_fee_large": {
+    "value": "10kgごとに100円＋特殊処理300円加算",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kankyoseisakuka/2/1/3/2265.html",
+    "confidence": 0.9,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "gomi_dashijikan": {
+    "value": "8時30分",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/material/files/group/25/2025getsumoku.pdf",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "kaden_hikitori_basho": {
+    "value": "市役所本庁舎、環境政策課（長慶寺640）、高岡市ストックヤード",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kankyoseisakuka/2/1/2/4745.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "moenai_gomi_dashikata": {
+    "value": "収集日の朝8時30分までに出してください",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/material/files/group/25/2024kateikeigominodasikata.pdf",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "moenai_gomi_shushuhi": {
+    "value": "地区により異なります（地区を選択してください）",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/material/files/group/25/2025getsumoku.pdf",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "moeru_gomi_dashikata": {
+    "value": "市指定袋に入れて出してください。袋に入らない場合は、持ち込むか戸別収集をご利用ください",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/material/files/group/25/r610bunbetuitiran.pdf",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "shigen_gomi_shushuhi": {
+    "value": "地区により異なります（地区を選択してください）",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/material/files/group/25/2025getsumoku.pdf",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "gomi_app_description": {
+    "value": "高岡市では、ごみの分別に関するお問い合わせにAIチャットボットで対応しています。ホームページ右下のチャットアイコンから24時間いつでもご利用いただけます。",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kohohasshinka/2/7/3/2690.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "sodaigomi_fee_xlarge": {
+    "value": "10kgごとに100円＋特殊処理300円加算（詳細は環境政策課にお問い合わせください）",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kankyoseisakuka/2/1/3/2265.html",
+    "confidence": 0.8,
+    "updatedAt": "2026-01-30T00:00:00.000Z"
+  },
+  "sodaigomi_online_url": {
+    "value": "粗大ごみの持ち込みについては電話予約制です。オンライン申請は環境政策課（0766-22-2144）にお問い合わせください",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kankyoseisakuka/2/1/3/2265.html",
+    "confidence": 0.7,
+    "updatedAt": "2026-01-30T00:00:00.000Z"
+  }
+}

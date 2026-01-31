@@ -1,0 +1,402 @@
+{
+  "municipality_name": {
+    "value": "歌志内市",
+    "source": "manual",
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "prefecture_name": {
+    "value": "北海道",
+    "source": "manual",
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "generated_at": {
+    "value": "2026-01-31T00:00:00.000Z",
+    "source": "manual",
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "city_hall_address": {
+    "value": "〒073-0492 北海道歌志内市字本町5番地",
+    "source": "llm",
+    "sourceUrl": "https://www.city.utashinai.hokkaido.jp/hotnews/detail/00000246.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "city_hall_phone": {
+    "value": "0125-42-3211",
+    "source": "llm",
+    "sourceUrl": "https://www.city.utashinai.hokkaido.jp/hotnews/detail/00000246.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "city_hall_hours": {
+    "value": "8時30分～17時15分（土日祝日、年末年始12月30日～1月4日を除く）",
+    "source": "llm",
+    "sourceUrl": "https://www.city.utashinai.hokkaido.jp/hotnews/detail/00000246.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "city_hall_department": {
+    "value": "総務課 庶務グループ",
+    "source": "llm",
+    "sourceUrl": "https://www.city.utashinai.hokkaido.jp/hotnews/detail/00001770.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "shimin_department": {
+    "value": "市民課 戸籍保険グループ",
+    "source": "llm",
+    "sourceUrl": "https://www.city.utashinai.hokkaido.jp/hotnews/detail/00001770.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "shimin_phone": {
+    "value": "0125-42-3217",
+    "source": "llm",
+    "sourceUrl": "https://www.city.utashinai.hokkaido.jp/hotnews/detail/00001770.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "registration_department": {
+    "value": "市民課 戸籍保険グループ",
+    "source": "llm",
+    "sourceUrl": "https://www.city.utashinai.hokkaido.jp/hotnews/detail/00001770.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "registration_phone": {
+    "value": "0125-42-3217",
+    "source": "llm",
+    "sourceUrl": "https://www.city.utashinai.hokkaido.jp/hotnews/detail/00001770.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "koseki_department": {
+    "value": "市民課 戸籍保険グループ",
+    "source": "llm",
+    "sourceUrl": "https://www.city.utashinai.hokkaido.jp/hotnews/detail/00001770.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "koseki_phone": {
+    "value": "0125-42-3217",
+    "source": "llm",
+    "sourceUrl": "https://www.city.utashinai.hokkaido.jp/hotnews/detail/00001770.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "tax_department": {
+    "value": "市民課 税務グループ",
+    "source": "llm",
+    "sourceUrl": "https://www.city.utashinai.hokkaido.jp/hotnews/detail/00001770.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "tax_phone": {
+    "value": "0125-42-3217",
+    "source": "llm",
+    "sourceUrl": "https://www.city.utashinai.hokkaido.jp/hotnews/detail/00001770.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "zeimu_department": {
+    "value": "市民課 税務グループ",
+    "source": "llm",
+    "sourceUrl": "https://www.city.utashinai.hokkaido.jp/hotnews/detail/00001770.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "zeimu_phone": {
+    "value": "0125-42-3217",
+    "source": "llm",
+    "sourceUrl": "https://www.city.utashinai.hokkaido.jp/hotnews/detail/00001770.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "kokuho_department": {
+    "value": "市民課 戸籍保険グループ",
+    "source": "llm",
+    "sourceUrl": "https://www.city.utashinai.hokkaido.jp/hotnews/detail/00001770.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "kokuho_phone": {
+    "value": "0125-42-3217",
+    "source": "llm",
+    "sourceUrl": "https://www.city.utashinai.hokkaido.jp/hotnews/detail/00001770.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "kouki_department": {
+    "value": "市民課 戸籍保険グループ",
+    "source": "llm",
+    "sourceUrl": "https://www.city.utashinai.hokkaido.jp/hotnews/detail/00001770.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "kouki_phone": {
+    "value": "0125-42-3217",
+    "source": "llm",
+    "sourceUrl": "https://www.city.utashinai.hokkaido.jp/hotnews/detail/00001770.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "environment_department": {
+    "value": "市民課 環境交通グループ",
+    "source": "llm",
+    "sourceUrl": "https://www.city.utashinai.hokkaido.jp/hotnews/detail/00001770.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "environment_phone": {
+    "value": "0125-42-3217",
+    "source": "llm",
+    "sourceUrl": "https://www.city.utashinai.hokkaido.jp/hotnews/detail/00001770.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "welfare_department": {
+    "value": "福祉事業課 福祉事業グループ",
+    "source": "llm",
+    "sourceUrl": "https://www.city.utashinai.hokkaido.jp/hotnews/detail/00001770.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "welfare_phone": {
+    "value": "0125-42-3213",
+    "source": "llm",
+    "sourceUrl": "https://www.city.utashinai.hokkaido.jp/hotnews/detail/00001770.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "seikatsu_hogo_department": {
+    "value": "福祉事業課 生活保護グループ",
+    "source": "llm",
+    "sourceUrl": "https://www.city.utashinai.hokkaido.jp/hotnews/detail/00001770.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "seikatsu_hogo_phone": {
+    "value": "0125-42-3213",
+    "source": "llm",
+    "sourceUrl": "https://www.city.utashinai.hokkaido.jp/hotnews/detail/00001770.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "health_department": {
+    "value": "保健介護課 保健介護グループ",
+    "source": "llm",
+    "sourceUrl": "https://www.city.utashinai.hokkaido.jp/hotnews/detail/00001770.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "health_phone": {
+    "value": "0125-74-6616",
+    "source": "llm",
+    "sourceUrl": "https://www.city.utashinai.hokkaido.jp/hotnews/detail/00001770.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "kaigo_department": {
+    "value": "保健介護課 保健介護グループ",
+    "source": "llm",
+    "sourceUrl": "https://www.city.utashinai.hokkaido.jp/hotnews/detail/00001770.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "kaigo_phone": {
+    "value": "0125-74-6616",
+    "source": "llm",
+    "sourceUrl": "https://www.city.utashinai.hokkaido.jp/hotnews/detail/00001770.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "kenshin_department": {
+    "value": "保健介護課 保健介護グループ",
+    "source": "llm",
+    "sourceUrl": "https://www.city.utashinai.hokkaido.jp/hotnews/detail/00001770.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "kenshin_phone": {
+    "value": "0125-74-6616",
+    "source": "llm",
+    "sourceUrl": "https://www.city.utashinai.hokkaido.jp/hotnews/detail/00001770.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "building_department": {
+    "value": "建設課 建設管理グループ",
+    "source": "llm",
+    "sourceUrl": "https://www.city.utashinai.hokkaido.jp/hotnews/detail/00001770.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "building_phone": {
+    "value": "0125-42-2223",
+    "source": "llm",
+    "sourceUrl": "https://www.city.utashinai.hokkaido.jp/hotnews/detail/00001770.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "housing_department": {
+    "value": "建設課 建設管理グループ",
+    "source": "llm",
+    "sourceUrl": "https://www.city.utashinai.hokkaido.jp/hotnews/detail/00001770.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "housing_phone": {
+    "value": "0125-42-2223",
+    "source": "llm",
+    "sourceUrl": "https://www.city.utashinai.hokkaido.jp/hotnews/detail/00001770.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "business_department": {
+    "value": "産業課 ふるさと振興グループ",
+    "source": "llm",
+    "sourceUrl": "https://www.city.utashinai.hokkaido.jp/hotnews/detail/00001770.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "business_phone": {
+    "value": "0125-42-3215",
+    "source": "llm",
+    "sourceUrl": "https://www.city.utashinai.hokkaido.jp/hotnews/detail/00001770.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "bosai_department": {
+    "value": "総務課 庶務グループ",
+    "source": "llm",
+    "sourceUrl": "https://www.city.utashinai.hokkaido.jp/hotnews/detail/00003522.html",
+    "confidence": 0.9,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "bosai_phone": {
+    "value": "0125-42-3212",
+    "source": "llm",
+    "sourceUrl": "https://www.city.utashinai.hokkaido.jp/hotnews/detail/00003522.html",
+    "confidence": 0.9,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "disaster_department": {
+    "value": "総務課 庶務グループ",
+    "source": "llm",
+    "sourceUrl": "https://www.city.utashinai.hokkaido.jp/hotnews/detail/00003522.html",
+    "confidence": 0.9,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "disaster_phone": {
+    "value": "0125-42-3212",
+    "source": "llm",
+    "sourceUrl": "https://www.city.utashinai.hokkaido.jp/hotnews/detail/00003522.html",
+    "confidence": 0.9,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "planning_department": {
+    "value": "企画財政課 企画広報グループ",
+    "source": "llm",
+    "sourceUrl": "https://www.city.utashinai.hokkaido.jp/hotnews/detail/00001770.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "planning_phone": {
+    "value": "0125-42-3214",
+    "source": "llm",
+    "sourceUrl": "https://www.city.utashinai.hokkaido.jp/hotnews/detail/00001770.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "juminhyo_fee": {
+    "value": "300円",
+    "source": "llm",
+    "sourceUrl": "https://www.city.utashinai.hokkaido.jp/hotnews/detail/00000055.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "koseki_fee": {
+    "value": "450円",
+    "source": "llm",
+    "sourceUrl": "https://www.city.utashinai.hokkaido.jp/hotnews/detail/00000709.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "jokoseki_fee": {
+    "value": "750円",
+    "source": "llm",
+    "sourceUrl": "https://www.city.utashinai.hokkaido.jp/hotnews/detail/00000709.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "hinanjo_count": {
+    "value": "6",
+    "source": "llm",
+    "sourceUrl": "https://www.city.utashinai.hokkaido.jp/hotnews/detail/00003522.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "kinkyu_hinanbasho_count": {
+    "value": "13（屋内）+ 6（屋外）",
+    "source": "llm",
+    "sourceUrl": "https://www.city.utashinai.hokkaido.jp/hotnews/detail/00003522.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "hello_work_name": {
+    "value": "ハローワーク砂川",
+    "source": "llm",
+    "sourceUrl": "https://www.city.sunagawa.hokkaido.jp/shisei/kikaku_keikaku/ijuu/sigotonojouhou.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "hello_work_phone": {
+    "value": "0125-54-3147",
+    "source": "llm",
+    "sourceUrl": "https://www.city.sunagawa.hokkaido.jp/shisei/kikaku_keikaku/ijuu/sigotonojouhou.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "hello_work_address": {
+    "value": "〒073-0166 北海道砂川市西6条北5丁目1-14",
+    "source": "llm",
+    "sourceUrl": "https://www.navitime.co.jp/category/0502006/01226/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "tax_office": {
+    "value": "滝川税務署",
+    "source": "llm",
+    "sourceUrl": "https://office-okano.jp/jutaku/zeimusho/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "tax_office_phone": {
+    "value": "0125-22-2191",
+    "source": "llm",
+    "sourceUrl": "https://web016.com/kokuzei-sapporo/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "tax_office_address": {
+    "value": "〒073-0022 滝川市大町1丁目8番14号",
+    "source": "llm",
+    "sourceUrl": "https://web016.com/kokuzei-sapporo/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "suidou_department": {
+    "value": "中空知広域水道企業団 歌志内営業所",
+    "source": "llm",
+    "sourceUrl": "https://www.city.utashinai.hokkaido.jp/hotnews/detail/00001770.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "suidou_phone": {
+    "value": "0125-42-2225",
+    "source": "llm",
+    "sourceUrl": "https://www.city.utashinai.hokkaido.jp/hotnews/detail/00001770.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  }
+}

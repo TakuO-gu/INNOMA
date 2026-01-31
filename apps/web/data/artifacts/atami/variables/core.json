@@ -1,0 +1,150 @@
+{
+  "municipality_name": {
+    "value": "熱海市",
+    "source": "manual",
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "prefecture_name": {
+    "value": "静岡県",
+    "source": "manual",
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "generated_at": {
+    "value": "2026-01-31T00:00:00.000Z",
+    "source": "manual",
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "city_hall_address": {
+    "value": "〒413-8550 静岡県熱海市中央町1-1",
+    "source": "llm",
+    "sourceUrl": "https://www.city.atami.lg.jp/shisetsu/shiyakusho/1001957.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "city_hall_phone": {
+    "value": "0557-86-6000",
+    "source": "llm",
+    "sourceUrl": "https://www.city.atami.lg.jp/shisetsu/shiyakusho/1001957.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "shimin_department": {
+    "value": "市民生活課",
+    "source": "llm",
+    "sourceUrl": "https://www.city.atami.lg.jp/shisei/soshiki/1001545/index.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "shimin_phone": {
+    "value": "0557-86-6254",
+    "source": "llm",
+    "sourceUrl": "https://www.city.atami.lg.jp/shisei/soshiki/1001545/1001562/1001563.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "registration_department": {
+    "value": "市民生活課 市民室",
+    "source": "llm",
+    "sourceUrl": "https://www.city.atami.lg.jp/shisei/soshiki/1001545/1001562/1001563.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "registration_phone": {
+    "value": "0557-86-6254",
+    "source": "llm",
+    "sourceUrl": "https://www.city.atami.lg.jp/shisei/soshiki/1001545/1001562/1001563.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "tax_department": {
+    "value": "税務課",
+    "source": "llm",
+    "sourceUrl": "https://www.city.atami.lg.jp/shisei/soshiki/1001545/index.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "welfare_department": {
+    "value": "社会福祉課",
+    "source": "llm",
+    "sourceUrl": "https://www.city.atami.lg.jp/shisei/soshiki/1001545/index.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "kosodate_department": {
+    "value": "社会福祉課 子育て支援室",
+    "source": "llm",
+    "sourceUrl": "https://www.city.atami.lg.jp/shisei/soshiki/1001545/index.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "kosodate_phone": {
+    "value": "0557-86-6552",
+    "source": "llm",
+    "sourceUrl": "https://www.city.atami.lg.jp/shisei/soshiki/1001545/index.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "shogai_department": {
+    "value": "社会福祉課 障がい福祉室",
+    "source": "llm",
+    "sourceUrl": "https://www.city.atami.lg.jp/shisei/soshiki/1001545/index.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "kaigo_department": {
+    "value": "長寿介護課 介護保険室",
+    "source": "llm",
+    "sourceUrl": "https://www.city.atami.lg.jp/shisei/soshiki/1001545/index.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "hoken_department": {
+    "value": "市民生活課 保険年金室",
+    "source": "llm",
+    "sourceUrl": "https://www.city.atami.lg.jp/shisei/soshiki/1001545/index.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "toshikeikaku_department": {
+    "value": "まちづくり課",
+    "source": "llm",
+    "sourceUrl": "https://www.city.atami.lg.jp/shisei/soshiki/1001545/index.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "environment_department": {
+    "value": "環境課",
+    "source": "llm",
+    "sourceUrl": "https://www.city.atami.lg.jp/shisei/soshiki/1001545/index.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "kanko_department": {
+    "value": "観光経済課",
+    "source": "llm",
+    "sourceUrl": "https://www.city.atami.lg.jp/shisei/soshiki/1001545/index.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "business_department": {
+    "value": "観光経済課 産業振興室",
+    "source": "llm",
+    "sourceUrl": "https://www.city.atami.lg.jp/shisei/soshiki/1001545/index.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "kyoiku_department": {
+    "value": "学校教育課",
+    "source": "llm",
+    "sourceUrl": "https://www.city.atami.lg.jp/shisei/soshiki/1001545/index.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "disaster_department": {
+    "value": "危機管理課",
+    "source": "llm",
+    "sourceUrl": "https://www.city.atami.lg.jp/shisei/soshiki/1001545/index.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  }
+}

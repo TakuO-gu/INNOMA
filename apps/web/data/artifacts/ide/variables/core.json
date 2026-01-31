@@ -1,0 +1,136 @@
+{
+  "municipality_name": {
+    "value": "井手町",
+    "source": "manual",
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "prefecture_name": {
+    "value": "京都府",
+    "source": "manual",
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "generated_at": {
+    "value": "2026-01-31T00:00:00.000Z",
+    "source": "manual",
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "city_hall_address": {
+    "value": "〒610-0302 京都府綴喜郡井手町大字井手小字東高月8番地",
+    "source": "llm",
+    "sourceUrl": "https://www.town.ide.kyoto.jp/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "city_hall_phone": {
+    "value": "0774-82-2001",
+    "source": "llm",
+    "sourceUrl": "https://www.town.ide.kyoto.jp/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "city_hall_department": {
+    "value": "総務課",
+    "source": "llm",
+    "sourceUrl": "https://www.town.ide.kyoto.jp/soshiki/index.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "kikaku_department": {
+    "value": "企画財政課",
+    "source": "llm",
+    "sourceUrl": "https://www.town.ide.kyoto.jp/soshiki/index.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "kikaku_phone": {
+    "value": "0774-82-6162",
+    "source": "llm",
+    "sourceUrl": "https://www.town.ide.kyoto.jp/soshiki/kikakuzaiseika/gaiyou/1393985091375.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "shimin_department": {
+    "value": "住民福祉課",
+    "source": "llm",
+    "sourceUrl": "https://www.town.ide.kyoto.jp/soshiki/index.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "shimin_phone": {
+    "value": "0774-82-2001（代表）",
+    "source": "llm",
+    "sourceUrl": "https://www.town.ide.kyoto.jp/soshiki/index.html",
+    "confidence": 0.7,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "registration_department": {
+    "value": "住民福祉課",
+    "source": "llm",
+    "sourceUrl": "https://www.town.ide.kyoto.jp/soshiki/index.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "registration_phone": {
+    "value": "0774-82-2001（代表）",
+    "source": "llm",
+    "sourceUrl": "https://www.town.ide.kyoto.jp/soshiki/index.html",
+    "confidence": 0.7,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "tax_department": {
+    "value": "税務課",
+    "source": "llm",
+    "sourceUrl": "https://www.town.ide.kyoto.jp/soshiki/index.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "welfare_department": {
+    "value": "住民福祉課",
+    "source": "llm",
+    "sourceUrl": "https://www.town.ide.kyoto.jp/soshiki/index.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "koureisha_department": {
+    "value": "高齢福祉課",
+    "source": "llm",
+    "sourceUrl": "https://www.town.ide.kyoto.jp/soshiki/index.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "hoken_department": {
+    "value": "保健医療課",
+    "source": "llm",
+    "sourceUrl": "https://www.town.ide.kyoto.jp/soshiki/index.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "building_department": {
+    "value": "建設課",
+    "source": "llm",
+    "sourceUrl": "https://www.town.ide.kyoto.jp/soshiki/index.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "environment_department": {
+    "value": "産業環境課",
+    "source": "llm",
+    "sourceUrl": "https://www.town.ide.kyoto.jp/soshiki/index.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "disaster_department": {
+    "value": "安心・安全推進課",
+    "source": "llm",
+    "sourceUrl": "https://www.town.ide.kyoto.jp/soshiki/index.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "kyoiku_department": {
+    "value": "教育委員会",
+    "source": "llm",
+    "sourceUrl": "https://www.town.ide.kyoto.jp/soshiki/index.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  }
+}

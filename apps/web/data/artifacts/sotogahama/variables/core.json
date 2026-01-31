@@ -1,0 +1,227 @@
+{
+  "municipality_name": {
+    "value": "外ヶ浜町",
+    "source": "manual",
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "prefecture_name": {
+    "value": "青森県",
+    "source": "manual",
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "generated_at": {
+    "value": "2026-01-31T00:00:00.000Z",
+    "source": "manual",
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "city_hall_address": {
+    "value": "〒030-1393 青森県東津軽郡外ヶ浜町字蟹田高銅屋44番地2",
+    "source": "llm",
+    "sourceUrl": "https://www.town.sotogahama.lg.jp/gyosei/about/kakuka.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "city_hall_phone": {
+    "value": "0174-31-1111",
+    "source": "llm",
+    "sourceUrl": "https://www.town.sotogahama.lg.jp/gyosei/about/kakuka.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "city_hall_department": {
+    "value": "総務課",
+    "source": "llm",
+    "sourceUrl": "https://www.town.sotogahama.lg.jp/gyosei/about/kakuka.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "shimin_department": {
+    "value": "住民課",
+    "source": "llm",
+    "sourceUrl": "https://www.town.sotogahama.lg.jp/gyosei/about/kakuka.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "shimin_phone": {
+    "value": "0174-31-1222",
+    "source": "llm",
+    "sourceUrl": "https://www.town.sotogahama.lg.jp/gyosei/about/kakuka.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "registration_department": {
+    "value": "住民課",
+    "source": "llm",
+    "sourceUrl": "https://www.town.sotogahama.lg.jp/gyosei/about/kakuka.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "registration_phone": {
+    "value": "0174-31-1222",
+    "source": "llm",
+    "sourceUrl": "https://www.town.sotogahama.lg.jp/gyosei/about/kakuka.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "koseki_department": {
+    "value": "住民課",
+    "source": "llm",
+    "sourceUrl": "https://www.town.sotogahama.lg.jp/gyosei/about/kakuka.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "koseki_phone": {
+    "value": "0174-31-1222",
+    "source": "llm",
+    "sourceUrl": "https://www.town.sotogahama.lg.jp/gyosei/about/kakuka.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "tax_department": {
+    "value": "税務課",
+    "source": "llm",
+    "sourceUrl": "https://www.town.sotogahama.lg.jp/gyosei/about/kakuka.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "tax_phone": {
+    "value": "0174-31-1224",
+    "source": "llm",
+    "sourceUrl": "https://www.town.sotogahama.lg.jp/gyosei/about/kakuka.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "zeimu_department": {
+    "value": "税務課",
+    "source": "llm",
+    "sourceUrl": "https://www.town.sotogahama.lg.jp/gyosei/about/kakuka.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "zeimu_phone": {
+    "value": "0174-31-1224",
+    "source": "llm",
+    "sourceUrl": "https://www.town.sotogahama.lg.jp/gyosei/about/kakuka.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "welfare_department": {
+    "value": "福祉課",
+    "source": "llm",
+    "sourceUrl": "https://www.town.sotogahama.lg.jp/gyosei/about/kakuka.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "welfare_phone": {
+    "value": "0174-22-2941",
+    "source": "llm",
+    "sourceUrl": "https://www.town.sotogahama.lg.jp/gyosei/about/kakuka.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "building_department": {
+    "value": "建設課",
+    "source": "llm",
+    "sourceUrl": "https://www.town.sotogahama.lg.jp/gyosei/about/kakuka.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "building_phone": {
+    "value": "0174-31-1226",
+    "source": "llm",
+    "sourceUrl": "https://www.town.sotogahama.lg.jp/gyosei/about/kakuka.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "housing_department": {
+    "value": "建設課",
+    "source": "llm",
+    "sourceUrl": "https://www.town.sotogahama.lg.jp/gyosei/about/kakuka.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "housing_phone": {
+    "value": "0174-31-1226",
+    "source": "llm",
+    "sourceUrl": "https://www.town.sotogahama.lg.jp/gyosei/about/kakuka.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "business_department": {
+    "value": "産業観光課",
+    "source": "llm",
+    "sourceUrl": "https://www.town.sotogahama.lg.jp/gyosei/about/kakuka.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "business_phone": {
+    "value": "0174-31-1228",
+    "source": "llm",
+    "sourceUrl": "https://www.town.sotogahama.lg.jp/gyosei/about/kakuka.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "planning_department": {
+    "value": "企画政策課",
+    "source": "llm",
+    "sourceUrl": "https://www.town.sotogahama.lg.jp/gyosei/about/kakuka.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "planning_phone": {
+    "value": "0174-31-1214",
+    "source": "llm",
+    "sourceUrl": "https://www.town.sotogahama.lg.jp/gyosei/about/kakuka.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "juminhyo_fee": {
+    "value": "300円",
+    "source": "llm",
+    "sourceUrl": "https://www.town.sotogahama.lg.jp/kurashi/todokede/shoumei.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "koseki_fee": {
+    "value": "450円",
+    "source": "llm",
+    "sourceUrl": "https://www.town.sotogahama.lg.jp/kurashi/todokede/shoumei.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "jokoseki_fee": {
+    "value": "750円",
+    "source": "llm",
+    "sourceUrl": "https://www.town.sotogahama.lg.jp/kurashi/todokede/shoumei.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "kaisei_koseki_fee": {
+    "value": "750円",
+    "source": "llm",
+    "sourceUrl": "https://www.town.sotogahama.lg.jp/kurashi/todokede/shoumei.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "inkan_touroku_fee": {
+    "value": "300円",
+    "source": "llm",
+    "sourceUrl": "https://www.town.sotogahama.lg.jp/kurashi/todokede/shoumei.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "inkan_shomei_fee": {
+    "value": "300円",
+    "source": "llm",
+    "sourceUrl": "https://www.town.sotogahama.lg.jp/kurashi/todokede/shoumei.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "fuhyo_fee": {
+    "value": "300円",
+    "source": "llm",
+    "sourceUrl": "https://www.town.sotogahama.lg.jp/kurashi/todokede/shoumei.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  }
+}

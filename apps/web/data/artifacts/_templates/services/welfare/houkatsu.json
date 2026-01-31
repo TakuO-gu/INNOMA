@@ -80,17 +80,10 @@
             ]
           },
           {
-            "type": "callout",
-            "severity": "info",
-            "title": "お知らせ",
-            "content": [
+            "type": "paragraph",
+            "runs": [
               {
-                "type": "paragraph",
-                "runs": [
-                  {
-                    "text": "相談は無料です。お気軽にご相談ください。"
-                  }
-                ]
+                "text": "相談は無料です。お気軽にご相談ください。"
               }
             ]
           }

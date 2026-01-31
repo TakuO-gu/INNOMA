@@ -13,8 +13,14 @@ INNOMA管理画面で使用するAPI一覧。
 
 ## 認証
 
-開発中は認証なし。
-将来的にはVercel Password ProtectionまたはNextAuth.jsで保護。
+管理画面および `/api/admin/*` は認証必須。
+
+**方式（現行）**:
+- `Authorization: Basic <ADMIN_BASIC_AUTH>`
+
+**補足**:
+- `ADMIN_BASIC_AUTH` は `user:pass` のBase64文字列。
+- 認証未設定の場合は 500 を返す。
 
 ---
 

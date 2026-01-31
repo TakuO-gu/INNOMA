@@ -1,0 +1,64 @@
+{
+  "driving_department": {
+    "value": "危機管理課（交通安全）",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kikikanrika/",
+    "confidence": 0.8,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "driving_phone": {
+    "value": "0766-20-1229",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kikikanrika/",
+    "confidence": 0.8,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "driving_email": {
+    "value": "kikikanri@city.takaoka.lg.jp",
+    "source": "llm",
+    "confidence": 0.7,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "municipal_parking_info": {
+    "value": "高岡駅周辺に6か所の市営駐車場あり。1時間まで無料（駅北口ロータリー駐車場は20分まで無料）",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/toshikeikakuka/2/3/1/2484.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-30T00:00:00.000Z"
+  },
+  "license_return_support_1": {
+    "value": "65〜74歳：16,500円分、75歳以上：11,000円分の万葉線・加越能バス共通回数乗車券",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/shiminseikatsuka/2/3/1/2655.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-30T00:00:00.000Z"
+  },
+  "license_return_support_2": {
+    "value": "タクシー等利用券（タクシー・介護タクシー・シニアカー・自転車ヘルメット購入に利用可）",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/shiminseikatsuka/2/3/1/2655.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-30T00:00:00.000Z"
+  },
+  "bicycle_parking_daily": {
+    "value": "無料（市営自転車駐車場は全て無料）",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/shiminseikatsuka/2/8/1/4085.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-30T00:00:00.000Z"
+  },
+  "bicycle_parking_monthly": {
+    "value": "無料（市営自転車駐車場は全て無料）",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/shiminseikatsuka/2/8/1/4085.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-30T00:00:00.000Z"
+  },
+  "traffic_accident_consultation_phone": {
+    "value": "0766-20-1342（市民生活課）",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/shiminseikatsuka/",
+    "confidence": 0.9,
+    "updatedAt": "2026-01-30T00:00:00.000Z"
+  }
+}

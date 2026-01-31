@@ -1,0 +1,178 @@
+{
+  "municipality_name": {
+    "value": "早川町",
+    "source": "manual",
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "prefecture_name": {
+    "value": "山梨県",
+    "source": "manual",
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "generated_at": {
+    "value": "2026-01-31T00:00:00.000Z",
+    "source": "manual",
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "city_hall_address": {
+    "value": "〒409-2732 山梨県南巨摩郡早川町高住758",
+    "source": "llm",
+    "sourceUrl": "https://www.town.hayakawa.yamanashi.jp/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "city_hall_phone": {
+    "value": "0556-45-2511",
+    "source": "llm",
+    "sourceUrl": "https://www.town.hayakawa.yamanashi.jp/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "city_hall_fax": {
+    "value": "0556-20-5000",
+    "source": "llm",
+    "sourceUrl": "https://www.town.hayakawa.yamanashi.jp/town/organization/townsman.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "shimin_department": {
+    "value": "町民課",
+    "source": "llm",
+    "sourceUrl": "https://www.town.hayakawa.yamanashi.jp/town/organization/townsman.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "shimin_phone": {
+    "value": "0556-45-2518",
+    "source": "llm",
+    "sourceUrl": "https://www.town.hayakawa.yamanashi.jp/town/organization/townsman.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "registration_department": {
+    "value": "町民課 町民担当",
+    "source": "llm",
+    "sourceUrl": "https://www.town.hayakawa.yamanashi.jp/town/organization/townsman.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "registration_phone": {
+    "value": "0556-45-2518",
+    "source": "llm",
+    "sourceUrl": "https://www.town.hayakawa.yamanashi.jp/town/organization/townsman.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "tax_department": {
+    "value": "町民課 税務・保険担当",
+    "source": "llm",
+    "sourceUrl": "https://www.town.hayakawa.yamanashi.jp/town/organization/townsman.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "tax_phone": {
+    "value": "0556-45-2519",
+    "source": "llm",
+    "sourceUrl": "https://www.town.hayakawa.yamanashi.jp/town/organization/townsman.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "hoken_department": {
+    "value": "町民課 税務・保険担当",
+    "source": "llm",
+    "sourceUrl": "https://www.town.hayakawa.yamanashi.jp/town/organization/townsman.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "hoken_phone": {
+    "value": "0556-45-2519",
+    "source": "llm",
+    "sourceUrl": "https://www.town.hayakawa.yamanashi.jp/town/organization/townsman.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "welfare_department": {
+    "value": "福祉保健課",
+    "source": "llm",
+    "sourceUrl": "https://www.town.hayakawa.yamanashi.jp/town/organization/welfare.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "welfare_phone": {
+    "value": "0556-45-2363",
+    "source": "llm",
+    "sourceUrl": "https://www.town.hayakawa.yamanashi.jp/town/organization/welfare.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "kosodate_department": {
+    "value": "福祉保健課",
+    "source": "llm",
+    "sourceUrl": "https://www.town.hayakawa.yamanashi.jp/town/organization/welfare.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "kosodate_phone": {
+    "value": "0556-45-2363",
+    "source": "llm",
+    "sourceUrl": "https://www.town.hayakawa.yamanashi.jp/town/organization/welfare.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "kaigo_department": {
+    "value": "福祉保健課",
+    "source": "llm",
+    "sourceUrl": "https://www.town.hayakawa.yamanashi.jp/town/organization/welfare.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "kaigo_phone": {
+    "value": "0556-45-2363",
+    "source": "llm",
+    "sourceUrl": "https://www.town.hayakawa.yamanashi.jp/town/organization/welfare.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "houkatsu_department": {
+    "value": "福祉保健課 地域包括支援センター",
+    "source": "llm",
+    "sourceUrl": "https://www.town.hayakawa.yamanashi.jp/town/organization/welfare.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "houkatsu_phone": {
+    "value": "0556-45-2363",
+    "source": "llm",
+    "sourceUrl": "https://www.town.hayakawa.yamanashi.jp/town/organization/welfare.html",
+    "confidence": 0.9,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "kenko_department": {
+    "value": "福祉保健課",
+    "source": "llm",
+    "sourceUrl": "https://www.town.hayakawa.yamanashi.jp/town/organization/welfare.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "kenko_phone": {
+    "value": "0556-45-2363",
+    "source": "llm",
+    "sourceUrl": "https://www.town.hayakawa.yamanashi.jp/town/organization/welfare.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "environment_department": {
+    "value": "町民課 環境担当",
+    "source": "llm",
+    "sourceUrl": "https://www.town.hayakawa.yamanashi.jp/town/organization/townsman.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "environment_phone": {
+    "value": "0556-45-2518",
+    "source": "llm",
+    "sourceUrl": "https://www.town.hayakawa.yamanashi.jp/town/organization/townsman.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  }
+}

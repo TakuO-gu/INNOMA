@@ -4,6 +4,7 @@ import React from "react";
 import NextLink from "next/link";
 import { useMunicipality, prefixInternalLink } from "../MunicipalityContext";
 import type { TopicGridItem, QuickLinkItem, NewsItem } from "../types";
+import { budouxParse } from "@/components/BudouX";
 
 export function HeroBlock({ props }: { props: Record<string, unknown> }) {
   const title = (props.title as string) || "";
@@ -11,35 +12,38 @@ export function HeroBlock({ props }: { props: Record<string, unknown> }) {
 
   return (
     <div className="hero-block py-8 mb-8 border-b border-solid-gray-200">
-      <h1 className="text-std-45B-140 text-solid-gray-900">{title}</h1>
+      <h1 className="text-std-45B-140 text-solid-gray-900 budoux">{budouxParse(title)}</h1>
       {subtitle && (
-        <p className="mt-4 text-std-20N-150 text-solid-gray-600">{subtitle}</p>
+        <p className="mt-4 text-std-20N-150 text-solid-gray-600 budoux">{budouxParse(subtitle)}</p>
       )}
     </div>
   );
 }
 
 export function TopicGridBlock({ props }: { props: Record<string, unknown> }) {
-  const { municipalityId } = useMunicipality();
+  const { municipalityId, isPageCompleted } = useMunicipality();
   const items = (props.items as TopicGridItem[]) || [];
 
-  if (items.length === 0) return null;
+  // 完成済みページのみをフィルタリング
+  const completedItems = items.filter((item) => isPageCompleted(item.href));
+
+  if (completedItems.length === 0) return null;
 
   return (
     <div className="topic-grid mb-10">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-        {items.map((item, i) => (
+        {completedItems.map((item, i) => (
           <NextLink
             key={i}
             href={prefixInternalLink(item.href, municipalityId)}
             className="block p-5 bg-white border border-solid-gray-200 rounded-lg hover:border-blue-400 hover:shadow-md transition-all group"
           >
-            <h3 className="font-bold text-std-17B-170 text-solid-gray-900 group-hover:text-blue-1000 mb-2">
-              {item.title}
+            <h3 className="font-bold text-std-17B-170 text-solid-gray-900 group-hover:text-blue-1000 mb-2 budoux">
+              {budouxParse(item.title)}
             </h3>
             {item.description && (
-              <p className="text-sm text-solid-gray-600 line-clamp-2">
-                {item.description}
+              <p className="text-sm text-solid-gray-600 line-clamp-2 budoux">
+                {budouxParse(item.description)}
               </p>
             )}
           </NextLink>
@@ -50,25 +54,28 @@ export function TopicGridBlock({ props }: { props: Record<string, unknown> }) {
 }
 
 export function TopicListBlock({ props }: { props: Record<string, unknown> }) {
-  const { municipalityId } = useMunicipality();
+  const { municipalityId, isPageCompleted } = useMunicipality();
   const items = (props.items as TopicGridItem[]) || [];
 
-  if (items.length === 0) return null;
+  // 完成済みページのみをフィルタリング
+  const completedItems = items.filter((item) => isPageCompleted(item.href));
+
+  if (completedItems.length === 0) return null;
 
   return (
     <div className="topic-list mb-8">
       <ul className="divide-y divide-solid-gray-100">
-        {items.map((item, i) => (
+        {completedItems.map((item, i) => (
           <li key={i}>
             <NextLink
               href={prefixInternalLink(item.href, municipalityId)}
               className="block py-4 hover:bg-solid-gray-50 transition-colors group"
             >
-              <h3 className="font-semibold text-solid-gray-900 group-hover:text-blue-1000 mb-1">
-                {item.title}
+              <h3 className="font-semibold text-solid-gray-900 group-hover:text-blue-1000 mb-1 budoux">
+                {budouxParse(item.title)}
               </h3>
               {item.description && (
-                <p className="text-sm text-solid-gray-600">{item.description}</p>
+                <p className="text-sm text-solid-gray-600 budoux">{budouxParse(item.description)}</p>
               )}
             </NextLink>
           </li>
@@ -79,15 +86,18 @@ export function TopicListBlock({ props }: { props: Record<string, unknown> }) {
 }
 
 export function QuickLinksBlock({ props }: { props: Record<string, unknown> }) {
-  const { municipalityId } = useMunicipality();
+  const { municipalityId, isPageCompleted } = useMunicipality();
   const items = (props.items as QuickLinkItem[]) || [];
 
-  if (items.length === 0) return null;
+  // 完成済みページのみをフィルタリング
+  const completedItems = items.filter((item) => isPageCompleted(item.href));
+
+  if (completedItems.length === 0) return null;
 
   return (
     <div className="quick-links mb-8">
       <div className="flex flex-wrap gap-3">
-        {items.map((item, i) => (
+        {completedItems.map((item, i) => (
           <NextLink
             key={i}
             href={prefixInternalLink(item.href, municipalityId)}
@@ -102,10 +112,13 @@ export function QuickLinksBlock({ props }: { props: Record<string, unknown> }) {
 }
 
 export function NewsListBlock({ props }: { props: Record<string, unknown> }) {
-  const { municipalityId } = useMunicipality();
+  const { municipalityId, isPageCompleted } = useMunicipality();
   const items = (props.items as NewsItem[]) || [];
 
-  if (items.length === 0) return null;
+  // 完成済みページのみをフィルタリング
+  const completedItems = items.filter((item) => isPageCompleted(item.href));
+
+  if (completedItems.length === 0) return null;
 
   const formatDate = (dateStr: string) => {
     try {
@@ -123,7 +136,7 @@ export function NewsListBlock({ props }: { props: Record<string, unknown> }) {
     <div className="news-list mb-8">
       <h2 className="text-std-24B-150 text-solid-gray-900 mb-4">お知らせ</h2>
       <ul className="divide-y divide-solid-gray-100">
-        {items.map((item, i) => (
+        {completedItems.map((item, i) => (
           <li key={i} className="py-3">
             <NextLink
               href={prefixInternalLink(item.href, municipalityId)}

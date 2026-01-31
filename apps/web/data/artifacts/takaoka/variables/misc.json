@@ -1,0 +1,22 @@
+{
+  "tokutei_kenshin_fee": {
+    "value": "無料（国保加入者）",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/hokennenkinka/2/3/2/3013.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "pension_office": {
+    "value": "高岡年金事務所",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/hokennenkinka/2/3/3374.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "childseat_subsidy_description": {
+    "value": "高岡市ではチャイルドシート購入補助制度は現在実施していません",
+    "source": "llm",
+    "confidence": 0.7,
+    "updatedAt": "2026-01-30T00:00:00.000Z"
+  }
+}

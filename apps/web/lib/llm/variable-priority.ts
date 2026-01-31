@@ -6,6 +6,56 @@
 import { VariableDefinition, VariablePriority, ServiceDefinition } from './types';
 
 /**
+ * 地区依存変数のリスト
+ * これらの変数は同一自治体内でも地区（町丁目）によって値が異なる
+ * LLMによる自動取得の対象外とし、手動入力または構造化データのインポートで取得
+ *
+ * @see docs/DISTRICT_DEPENDENT_VARIABLES.md
+ */
+export const districtDependentVariables: string[] = [
+  // 環境・ごみ
+  'moeru_gomi_shushuhi',
+  'moenai_gomi_shushuhi',
+  'shigen_gomi_shushuhi',
+  'gomi_shushu_area',
+
+  // 防災
+  'hinanjo_nearest',
+  'hinanjo_area',
+  'kinkyu_hinanbasho_nearest',
+
+  // 選挙・投票
+  'toubyousho',
+  'toubyoku',
+
+  // 教育・学区（将来追加予定）
+  'shogakko_gakku',
+  'chugakko_gakku',
+  'tsuugaku_shogakko',
+  'tsuugaku_chugakko',
+
+  // 福祉
+  'houkatsu_tantou',
+  'minsei_iin',
+
+  // 水道・下水道（将来追加予定）
+  'suidou_kyuusuiku',
+  'gesuidou_shori_kuiki',
+  'suidou_office',
+
+  // 自治会・地域活動
+  'jichikai',
+  'kouminkan',
+];
+
+/**
+ * 変数が地区依存かどうかを判定
+ */
+export function isDistrictDependentVariable(variableName: string): boolean {
+  return districtDependentVariables.includes(variableName);
+}
+
+/**
  * High priority variables - fetched first for all municipalities
  */
 export const highPriorityVariables: VariableDefinition[] = [

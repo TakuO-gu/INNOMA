@@ -1,6 +1,7 @@
 # 管理画面 設計書
 
 **作成日**: 2026-01-20
+**最終更新**: 2026-01-27
 
 ---
 
@@ -27,13 +28,14 @@ INNOMAの運用を行うための管理画面。
 
 ```
 /admin
-├── /                     # ダッシュボード（自治体一覧）
-├── /municipalities       # 自治体一覧（詳細）
-├── /municipalities/new   # 新規自治体追加
-├── /municipalities/[id]  # 自治体詳細
-├── /drafts               # 下書き一覧
-├── /drafts/[id]          # 下書き詳細・承認
-└── /settings             # 設定（将来）
+├── /                              # ダッシュボード
+├── /municipalities                # 自治体一覧
+├── /municipalities/new            # 新規自治体追加
+├── /municipalities/[id]           # 自治体詳細
+├── /drafts                        # 下書き一覧
+├── /drafts/[municipalityId]/[service]  # 下書き詳細・承認（3分割ビュー）
+├── /notifications                 # 通知一覧
+└── /settings                      # 設定（将来）
 ```
 
 ---
@@ -121,42 +123,56 @@ INNOMAの運用を行うための管理画面。
 
 ### 4.3 自治体詳細（/admin/municipalities/[id]）
 
+3カラムレイアウトで、基本情報・変数一覧・サービス別進捗を表示。
+
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│ ← 戻る    青ヶ島村                                          │
+│ ← 戻る    青ヶ島村            [公開する] / [非公開にする]    │
 ├─────────────────────────────────────────────────────────────┤
 │                                                              │
-│  基本情報                                                    │
-│  ┌─────────────────────────────────────────────────────┐   │
-│  │ ID: aogashima                                        │   │
-│  │ 都道府県: 東京都                                     │   │
-│  │ 公式サイト: https://www.vill.aogashima.tokyo.jp/    │   │
-│  │ 最終更新: 2026-01-20 10:30:00                       │   │
-│  └─────────────────────────────────────────────────────┘   │
+│  ┌───────────────┐  ┌────────────────────────────────────┐ │
+│  │ 基本情報       │  │ サービス別変数設定状況               │ │
+│  │ ID: aogashima │  │ ┌────────────────────┬─────────┐   │ │
+│  │ 都道府県: 東京│  │ │ 届出・申請・証明書  │ ████░ 80%│   │ │
+│  │ 公式サイト:   │  │ │ 税金              │ ███░░ 60%│   │ │
+│  │ ...           │  │ │ 健康・医療        │ █████ 100%│   │ │
+│  │               │  │ │ 子育て・保育      │ ██░░░ 40%│   │ │
+│  │ [情報を取得]  │  │ │ ...              │          │   │ │
+│  │ [削除]        │  │ └────────────────────┴─────────┘   │ │
+│  └───────────────┘  └────────────────────────────────────┘ │
 │                                                              │
-│  [🔄 情報を再取得]  [📝 手動編集]  [🗑️ 削除]                │
-│                                                              │
-│  ─────────────────────────────────────────────────────────  │
-│                                                              │
-│  変数一覧                                      [フィルタ ▼] │
+│  変数一覧（インライン編集可能）                              │
 │  ┌──────────────────┬─────────────────┬────────┬────────┐ │
-│  │ 変数名            │ 値              │ ソース │ 状態   │ │
+│  │ 変数名            │ 値              │ ソース │ 操作   │ │
 │  ├──────────────────┼─────────────────┼────────┼────────┤ │
-│  │ city_hall_phone   │ 04996-9-0111   │ LLM    │ ✅     │ │
-│  │ city_hall_address │ 〒100-1701...  │ LLM    │ ✅     │ │
-│  │ kokuho_phone      │ （未設定）      │ -      │ ⚠️     │ │
-│  │ juminhyo_fee      │ 300円          │ 手動   │ ✅     │ │
-│  │ ...               │                │        │        │ │
+│  │ city_hall_phone   │ 04996-9-0111   │ LLM    │ [編集] │ │
+│  │ kokuho_phone      │ （未設定）      │ -      │ [編集] │ │
 │  └──────────────────┴─────────────────┴────────┴────────┘ │
 │                                                              │
-│  設定済み: 280/353 (79%)  未設定: 73                        │
+│  編集履歴                                                    │
+│  ┌──────────┬────────┬────────────┬──────────────────────┐ │
+│  │ 日時      │ 種類   │ 変更数     │ ソース               │ │
+│  ├──────────┼────────┼────────────┼──────────────────────┤ │
+│  │ 01/20    │ 手動   │ 3件        │ admin               │ │
+│  │ 01/19    │ 承認   │ 15件       │ 下書き(kokuho)       │ │
+│  └──────────┴────────┴────────────┴──────────────────────┘ │
 │                                                              │
 └─────────────────────────────────────────────────────────────┘
 ```
 
+**コンポーネント**:
+- `FetchButton`: 情報取得（サービス選択UI付き）
+- `PublishButton`: 公開/非公開切替
+- `VariableTable`: 変数一覧（インライン編集）
+- `ServiceVariableStats`: サービス別進捗
+- `HistoryTable`: 編集履歴
+
 **アクション**:
-- 🔄 情報を再取得: LLM情報取得を再実行
-- 📝 手動編集: 変数を直接編集
+- 🔄 情報を取得: サービスを選択してLLM取得
+  - 未取得のみ / 全て再取得 / サービス選択
+  - 中断・再開対応
+- 📝 インライン編集: 変数を直接編集
+- 📤 公開/非公開: ステータス切替
 - 🗑️ 削除: 自治体を削除
 
 ---
@@ -183,38 +199,52 @@ INNOMAの運用を行うための管理画面。
 
 ---
 
-### 4.5 下書き詳細・承認（/admin/drafts/[id]）
+### 4.5 下書き詳細・承認（/admin/drafts/[municipalityId]/[service]）
+
+3分割ビューで、変数リスト・サンプルページ・ソースコンテンツを同時に確認。
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
 │ ← 戻る    青ヶ島村 / 国民健康保険                            │
 ├─────────────────────────────────────────────────────────────┤
 │                                                              │
-│  📝 下書き                                  取得日: 01/20   │
+│  [承認して反映]  [却下]  [削除]                              │
 │                                                              │
-│  変更内容                                                    │
-│  ┌──────────────────┬─────────────────┬─────────────────┐   │
-│  │ 変数名            │ 現在の値        │ 新しい値        │   │
-│  ├──────────────────┼─────────────────┼─────────────────┤   │
-│  │ kokuho_phone      │ （未設定）      │ 04996-9-0111   │   │
-│  │ kokuho_address    │ （未設定）      │ 〒100-1701...  │   │
-│  │ kokuho_hours      │ 平日9:00-17:00  │ 平日8:30-17:15 │   │
-│  └──────────────────┴─────────────────┴─────────────────┘   │
-│                                                              │
-│  取得元: https://www.vill.aogashima.tokyo.jp/kurashi/...    │
-│  信頼度: 95%                                                 │
-│                                                              │
-│  ⚠️ 取得できなかった変数: kokuho_premium_rate               │
-│                                                              │
-│  [却下]                           [修正して承認]  [承認]    │
+│  ┌──────────┐  ┌───────────────────┐  ┌──────────────────┐ │
+│  │変数リスト  │  │サンプルページ      │  │ソースコンテンツ   │ │
+│  │(25%)      │  │(37.5%)            │  │(37.5%)           │ │
+│  ├──────────┤  ├───────────────────┤  ├──────────────────┤ │
+│  │[取得済み] │  │                   │  │                  │ │
+│  │[未取得]   │  │  サンプル市の      │  │ 取得元URLの      │ │
+│  │          │  │  ページを表示      │  │ コンテンツを表示  │ │
+│  │○ phone   │  │                   │  │                  │ │
+│  │  95%     │  │  選択した変数の    │  │ 取得した値が     │ │
+│  │  新規    │  │  使用箇所を       │  │ ハイライト表示   │ │
+│  │          │  │  黄色ハイライト    │  │                  │ │
+│  │○ hours   │  │                   │  │                  │ │
+│  │  90%     │  │                   │  │                  │ │
+│  │  変更    │  │                   │  │                  │ │
+│  └──────────┘  └───────────────────┘  └──────────────────┘ │
 │                                                              │
 └─────────────────────────────────────────────────────────────┘
 ```
 
+**コンポーネント**:
+- `VariableContextViewer`: 3分割ビューのメインコンポーネント
+- `SourceViewer`: ソースコンテンツ表示
+- `TemplatePreview`: サンプルページプレビュー
+- `DraftActions`: アクションボタン
+
+**変数リスト機能**:
+- タブ切替: 取得済み / 未取得
+- 信頼度カラーコード: 緑(≥80%) / 黄(≥50%) / 赤(<50%)
+- 変更タイプ表示: 新規 / 変更
+- クリックで詳細表示
+
 **アクション**:
-- 承認: 下書きの値を本番に反映
-- 修正して承認: 値を編集してから反映
-- 却下: 下書きを破棄
+- 承認して反映: 下書きをvariables.jsonに反映 + ISR再検証
+- 却下: 下書きを却下（理由を記録）
+- 削除: 下書きを完全削除
 
 ---
 
@@ -227,14 +257,23 @@ INNOMAの運用を行うための管理画面。
 | GET | `/api/admin/municipalities` | 自治体一覧 |
 | POST | `/api/admin/municipalities` | 自治体追加 |
 | GET | `/api/admin/municipalities/[id]` | 自治体詳細 |
-| PUT | `/api/admin/municipalities/[id]` | 自治体更新 |
+| PUT | `/api/admin/municipalities/[id]` | 自治体更新（ステータス変更含む） |
 | DELETE | `/api/admin/municipalities/[id]` | 自治体削除 |
-| POST | `/api/admin/municipalities/[id]/fetch` | 情報再取得 |
+| POST | `/api/admin/municipalities/[id]/fetch` | 情報取得（SSE） |
+| GET | `/api/admin/municipalities/[id]/fetch/status` | 取得状況確認 |
+| PUT | `/api/admin/municipalities/[id]/variables` | 変数更新 |
+| GET | `/api/admin/municipalities/[id]/history` | 編集履歴 |
 | GET | `/api/admin/drafts` | 下書き一覧 |
-| GET | `/api/admin/drafts/[id]` | 下書き詳細 |
-| POST | `/api/admin/drafts/[id]/approve` | 下書き承認 |
-| POST | `/api/admin/drafts/[id]/reject` | 下書き却下 |
-| PUT | `/api/admin/variables/[municipality]/[variable]` | 変数更新 |
+| GET | `/api/admin/drafts/[municipalityId]/[service]` | 下書き詳細 |
+| PUT | `/api/admin/drafts/[municipalityId]/[service]` | 承認/却下 |
+| DELETE | `/api/admin/drafts/[municipalityId]/[service]` | 下書き削除 |
+| GET | `/api/admin/drafts/[municipalityId]/[service]/source` | ソースコンテンツ |
+| GET | `/api/admin/drafts/[municipalityId]/[service]/template` | サンプルページ |
+| GET | `/api/admin/notifications` | 通知一覧 |
+| PUT | `/api/admin/notifications` | 既読にする |
+| DELETE | `/api/admin/notifications` | 通知削除 |
+| POST | `/api/admin/pdf/ocr` | PDF OCR実行 |
+| GET | `/api/admin/pdf/ocr` | OCRキャッシュ確認 |
 
 ### 5.2 レスポンス例
 
@@ -343,22 +382,27 @@ INNOMAの運用を行うための管理画面。
 
 ---
 
-## 7. 実装優先度
+## 7. 実装状況
 
-### Phase 1（MVP）
+### Phase 1（MVP）✅
 1. ダッシュボード（自治体一覧）
 2. 新規自治体追加
 3. 自治体詳細（変数一覧）
 
-### Phase 2
+### Phase 2 ✅
 4. 下書き一覧・承認
-5. 手動編集機能
-6. 情報再取得トリガー
+5. 手動編集機能（インライン編集）
+6. 情報取得トリガー（サービス選択UI）
 
-### Phase 3
-7. 一括操作
-8. 検索・フィルタ
-9. 認証追加
+### Phase 3 ✅
+7. 通知システム（ベル + 一覧ページ）
+8. 編集履歴表示
+9. 3分割ビュー（下書き詳細）
+
+### Phase 4（今後）
+10. 一括操作
+11. 検索・フィルタ
+12. 認証追加
 
 ---
 
@@ -380,19 +424,47 @@ apps/web/
 │       ├── municipalities/
 │       │   ├── page.tsx                # 一覧
 │       │   ├── new/page.tsx            # 新規追加
-│       │   └── [id]/page.tsx           # 詳細
-│       └── drafts/
-│           ├── page.tsx                # 一覧
-│           └── [id]/page.tsx           # 詳細・承認
-├── components/
-│   └── admin/
-│       ├── MunicipalityTable.tsx
-│       ├── DraftTable.tsx
-│       ├── VariableEditor.tsx
-│       └── ...
+│       │   └── [id]/
+│       │       ├── page.tsx            # 詳細
+│       │       ├── FetchButton.tsx     # 情報取得（サービス選択）
+│       │       ├── PublishButton.tsx   # 公開/非公開
+│       │       ├── VariableTable.tsx   # 変数一覧（インライン編集）
+│       │       ├── ServiceVariableStats.tsx  # サービス別進捗
+│       │       └── HistoryTable.tsx    # 編集履歴
+│       ├── drafts/
+│       │   ├── page.tsx                # 一覧
+│       │   └── [municipalityId]/
+│       │       └── [service]/
+│       │           ├── page.tsx        # 詳細
+│       │           ├── DraftActions.tsx
+│       │           ├── VariableContextViewer.tsx  # 3分割ビュー
+│       │           ├── SourceViewer.tsx
+│       │           └── TemplatePreview.tsx
+│       ├── notifications/
+│       │   └── page.tsx                # 通知一覧
+│       └── components/
+│           └── NotificationBell.tsx    # 通知ベル
+├── lib/
+│   ├── drafts/                         # 下書き管理
+│   ├── jobs/                           # ジョブ状態
+│   ├── history/                        # 編集履歴
+│   └── notification/                   # 通知
 └── app/api/admin/
     ├── municipalities/
-    │   └── route.ts
-    └── drafts/
-        └── route.ts
+    │   ├── route.ts
+    │   └── [id]/
+    │       ├── route.ts
+    │       ├── fetch/route.ts          # SSE
+    │       ├── fetch/status/route.ts
+    │       ├── variables/route.ts
+    │       └── history/route.ts
+    ├── drafts/
+    │   ├── route.ts
+    │   └── [municipalityId]/
+    │       └── [service]/
+    │           ├── route.ts
+    │           ├── source/route.ts
+    │           └── template/route.ts
+    ├── notifications/route.ts
+    └── pdf/ocr/route.ts
 ```

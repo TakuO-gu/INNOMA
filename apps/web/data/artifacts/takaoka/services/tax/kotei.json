@@ -79,16 +79,10 @@
             ]
           },
           {
-            "type": "callout",
-            "severity": "info",
-            "content": [
+            "type": "paragraph",
+            "runs": [
               {
-                "type": "paragraph",
-                "runs": [
-                  {
-                    "text": "年の途中で売却した場合でも、1月1日時点の所有者に1年分の税金が課税されます。"
-                  }
-                ]
+                "text": "年の途中で売却した場合でも、1月1日時点の所有者に1年分の税金が課税されます。"
               }
             ]
           }

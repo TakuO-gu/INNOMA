@@ -1,0 +1,80 @@
+{
+  "municipality_name": {
+    "value": "草津町",
+    "source": "manual",
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "prefecture_name": {
+    "value": "群馬県",
+    "source": "manual",
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "generated_at": {
+    "value": "2026-01-31T00:00:00.000Z",
+    "source": "manual",
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "city_hall_address": {
+    "value": "〒377-1792 群馬県吾妻郡草津町大字草津28番地",
+    "source": "llm",
+    "sourceUrl": "https://www.town.kusatsu.gunma.jp/www/contents/1513640181830/index.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "city_hall_phone": {
+    "value": "0279-88-0001",
+    "source": "llm",
+    "sourceUrl": "https://www.town.kusatsu.gunma.jp/www/contents/1513640181830/index.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "city_hall_fax": {
+    "value": "0279-88-0002",
+    "source": "llm",
+    "sourceUrl": "https://www.town.kusatsu.gunma.jp/www/contents/1513640181830/index.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "city_hall_hours": {
+    "value": "午前8時30分〜午後5時15分（土日祝日、年末年始を除く）",
+    "source": "llm",
+    "sourceUrl": "https://www.town.kusatsu.gunma.jp/www/contents/1513640181830/index.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "shimin_department": {
+    "value": "愛町部 住民課",
+    "source": "llm",
+    "sourceUrl": "https://www.town.kusatsu.gunma.jp/www/contents/1513640181830/index.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "shimin_phone": {
+    "value": "0279-88-7192",
+    "source": "llm",
+    "sourceUrl": "https://www.town.kusatsu.gunma.jp/www/contents/1513640181830/index.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "shimin_fax": {
+    "value": "0279-88-0002",
+    "source": "llm",
+    "sourceUrl": "https://www.town.kusatsu.gunma.jp/www/contents/1513640181830/index.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "registration_department": {
+    "value": "愛町部 住民課",
+    "source": "llm",
+    "sourceUrl": "https://www.town.kusatsu.gunma.jp/www/contents/1513640181830/index.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "registration_phone": {
+    "value": "0279-88-7192",
+    "source": "llm",
+    "sourceUrl": "https://www.town.kusatsu.gunma.jp/www/contents/1513640181830/index.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  }
+}

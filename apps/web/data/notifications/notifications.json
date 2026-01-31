@@ -1,5 +1,33 @@
 [
   {
+    "id": "1769470116689-74624fx",
+    "type": "draft_approved",
+    "severity": "success",
+    "title": "下書き承認: 高岡市",
+    "message": "サービス「environment」の下書きを承認しました（10件の変数を反映）",
+    "municipalityId": "takaoka",
+    "serviceId": "environment",
+    "data": {
+      "variableCount": 10
+    },
+    "createdAt": "2026-01-26T23:28:36.689Z",
+    "read": false
+  },
+  {
+    "id": "1769463533746-x8qiw98",
+    "type": "draft_approved",
+    "severity": "success",
+    "title": "下書き承認: 高岡市",
+    "message": "サービス「environment」の下書きを承認しました（3件の変数を反映）",
+    "municipalityId": "takaoka",
+    "serviceId": "environment",
+    "data": {
+      "variableCount": 3
+    },
+    "createdAt": "2026-01-26T21:38:53.746Z",
+    "read": true
+  },
+  {
     "id": "1768967847590-24x6r2y",
     "type": "draft_approved",
     "severity": "success",
@@ -11,7 +39,7 @@
       "variableCount": 3
     },
     "createdAt": "2026-01-21T03:57:27.591Z",
-    "read": false
+    "read": true
   },
   {
     "id": "1768967680752-e4or9lx",
@@ -25,7 +53,7 @@
       "variableCount": 4
     },
     "createdAt": "2026-01-21T03:54:40.752Z",
-    "read": false
+    "read": true
   },
   {
     "id": "1768966698941-w1ap2vf",
@@ -39,7 +67,7 @@
       "variableCount": 12
     },
     "createdAt": "2026-01-21T03:38:18.941Z",
-    "read": false
+    "read": true
   },
   {
     "id": "1768963448397-v36fpkd",
@@ -53,7 +81,7 @@
       "variableCount": 5
     },
     "createdAt": "2026-01-21T02:44:08.397Z",
-    "read": false
+    "read": true
   },
   {
     "id": "1768960645486-ml7a14m",
@@ -67,6 +95,6 @@
       "variableCount": 3
     },
     "createdAt": "2026-01-21T01:57:25.486Z",
-    "read": false
+    "read": true
   }
 ]

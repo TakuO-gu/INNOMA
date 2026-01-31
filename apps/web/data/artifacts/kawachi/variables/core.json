@@ -1,0 +1,157 @@
+{
+  "municipality_name": {
+    "value": "河内町",
+    "source": "manual",
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "prefecture_name": {
+    "value": "茨城県",
+    "source": "manual",
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "generated_at": {
+    "value": "2026-01-31T00:00:00.000Z",
+    "source": "manual",
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "city_hall_address": {
+    "value": "〒300-1392 茨城県稲敷郡河内町源清田1183",
+    "source": "llm",
+    "sourceUrl": "https://www.town.ibaraki-kawachi.lg.jp/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "city_hall_phone": {
+    "value": "0297-84-2111",
+    "source": "llm",
+    "sourceUrl": "https://www.town.ibaraki-kawachi.lg.jp/",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "city_hall_fax": {
+    "value": "0297-84-4357",
+    "source": "llm",
+    "sourceUrl": "https://www.town.ibaraki-kawachi.lg.jp/section.php",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "city_hall_hours": {
+    "value": "平日：午前8時30分から午後5時15分まで（祝日・年末年始を除く）",
+    "source": "llm",
+    "sourceUrl": "https://www.town.ibaraki-kawachi.lg.jp/section.php",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "city_hall_department": {
+    "value": "総務課",
+    "source": "llm",
+    "sourceUrl": "https://www.town.ibaraki-kawachi.lg.jp/section.php",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "shimin_department": {
+    "value": "町民課",
+    "source": "llm",
+    "sourceUrl": "https://www.town.ibaraki-kawachi.lg.jp/section.php",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "shimin_phone": {
+    "value": "0297-84-2111（代表）",
+    "source": "llm",
+    "sourceUrl": "https://www.town.ibaraki-kawachi.lg.jp/section.php",
+    "confidence": 0.8,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "registration_department": {
+    "value": "町民課",
+    "source": "llm",
+    "sourceUrl": "https://www.town.ibaraki-kawachi.lg.jp/section.php",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "registration_phone": {
+    "value": "0297-84-2111（代表）",
+    "source": "llm",
+    "sourceUrl": "https://www.town.ibaraki-kawachi.lg.jp/section.php",
+    "confidence": 0.8,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "tax_department": {
+    "value": "税務課",
+    "source": "llm",
+    "sourceUrl": "https://www.town.ibaraki-kawachi.lg.jp/section.php",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "zeimu_department": {
+    "value": "税務課",
+    "source": "llm",
+    "sourceUrl": "https://www.town.ibaraki-kawachi.lg.jp/section.php",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "welfare_department": {
+    "value": "福祉課",
+    "source": "llm",
+    "sourceUrl": "https://www.town.ibaraki-kawachi.lg.jp/section.php",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "health_department": {
+    "value": "保健センター",
+    "source": "llm",
+    "sourceUrl": "https://www.town.ibaraki-kawachi.lg.jp/section.php",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "building_department": {
+    "value": "都市整備課",
+    "source": "llm",
+    "sourceUrl": "https://www.town.ibaraki-kawachi.lg.jp/section.php",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "housing_department": {
+    "value": "都市整備課",
+    "source": "llm",
+    "sourceUrl": "https://www.town.ibaraki-kawachi.lg.jp/section.php",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "environment_department": {
+    "value": "生活環境課",
+    "source": "llm",
+    "sourceUrl": "https://www.town.ibaraki-kawachi.lg.jp/section.php",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "agriculture_department": {
+    "value": "農政課",
+    "source": "llm",
+    "sourceUrl": "https://www.town.ibaraki-kawachi.lg.jp/section.php",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "planning_department": {
+    "value": "企画財政課",
+    "source": "llm",
+    "sourceUrl": "https://www.town.ibaraki-kawachi.lg.jp/section.php",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "suidou_department": {
+    "value": "上下水道課",
+    "source": "llm",
+    "sourceUrl": "https://www.town.ibaraki-kawachi.lg.jp/section.php",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "gesuidou_department": {
+    "value": "上下水道課",
+    "source": "llm",
+    "sourceUrl": "https://www.town.ibaraki-kawachi.lg.jp/section.php",
+    "confidence": 0.95,
+    "updatedAt": "2026-01-31T00:00:00.000Z"
+  }
+}
