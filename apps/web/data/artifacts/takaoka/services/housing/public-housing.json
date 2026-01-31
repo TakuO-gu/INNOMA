@@ -32,10 +32,6 @@
             "href": "/"
           },
           {
-            "label": "くらしの情報",
-            "href": "/topics"
-          },
-          {
             "label": "住まい・引越し",
             "href": "/topics/housing"
           },
@@ -61,15 +57,12 @@
       }
     },
     {
-      "id": "richtext-1",
-      "type": "RichText",
+      "id": "section-lgrngl5lc",
+      "type": "Section",
       "props": {
+        "heading": "入居資格",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "入居資格"
-          },
           {
             "type": "list",
             "ordered": false,
@@ -125,12 +118,17 @@
                 }
               ]
             ]
-          },
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "募集時期"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-660ax452z",
+      "type": "Section",
+      "props": {
+        "heading": "募集時期",
+        "level": 2,
+        "content": [
           {
             "type": "paragraph",
             "runs": [
@@ -146,12 +144,17 @@
                 "text": "随時募集：空室が出た場合に随時募集を行う場合があります。"
               }
             ]
-          },
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "家賃"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-lwifmeho8",
+      "type": "Section",
+      "props": {
+        "heading": "家賃",
+        "level": 2,
+        "content": [
           {
             "type": "paragraph",
             "runs": [
@@ -188,6 +191,30 @@
       }
     },
     {
+      "id": "related-links-fftk3icjx",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "住宅手当",
+            "href": "/services/housing/housing-benefit"
+          },
+          {
+            "title": "引越し手続き一覧",
+            "href": "/services/housing/moving-checklist"
+          },
+          {
+            "title": "生活保護",
+            "href": "/services/welfare/seikatsu-hogo"
+          },
+          {
+            "title": "転入届",
+            "href": "/services/registration/tennyu"
+          }
+        ]
+      }
+    },
+    {
       "id": "contact-1",
       "type": "Contact",
       "props": {
@@ -196,6 +223,13 @@
         "email": "{{housing_email}}",
         "hours": "{{city_hall_hours}}",
         "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
       }
     }
   ],

@@ -32,10 +32,6 @@
             "href": "/"
           },
           {
-            "label": "くらしの情報",
-            "href": "/topics"
-          },
-          {
             "label": "市民参加・権利行使",
             "href": "/topics/civic"
           },
@@ -61,15 +57,12 @@
       }
     },
     {
-      "id": "richtext-1",
-      "type": "RichText",
+      "id": "section-x5wrjrbgn",
+      "type": "Section",
       "props": {
+        "heading": "相談窓口",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "相談窓口"
-          },
           {
             "type": "list",
             "ordered": false,
@@ -105,12 +98,17 @@
                 }
               ]
             ]
-          },
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "犯罪被害給付制度"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-39l0cmztj",
+      "type": "Section",
+      "props": {
+        "heading": "犯罪被害給付制度",
+        "level": 2,
+        "content": [
           {
             "type": "paragraph",
             "runs": [
@@ -154,12 +152,17 @@
                 }
               ]
             ]
-          },
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "高岡市の支援制度"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-01jeui454",
+      "type": "Section",
+      "props": {
+        "heading": "高岡市の支援制度",
+        "level": 2,
+        "content": [
           {
             "type": "list",
             "ordered": false,
@@ -205,12 +208,17 @@
                 }
               ]
             ]
-          },
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "DV・性犯罪被害"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-ui3w3izsp",
+      "type": "Section",
+      "props": {
+        "heading": "DV・性犯罪被害",
+        "level": 2,
+        "content": [
           {
             "type": "paragraph",
             "runs": [
@@ -249,6 +257,22 @@
       }
     },
     {
+      "id": "related-links-x15skbikb",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "法律相談",
+            "href": "/services/civic/legal-support"
+          },
+          {
+            "title": "交通事故",
+            "href": "/services/driving/accident"
+          }
+        ]
+      }
+    },
+    {
       "id": "contact-1",
       "type": "Contact",
       "props": {
@@ -257,6 +281,13 @@
         "email": "{{victim_support_email}}",
         "hours": "{{city_hall_hours}}",
         "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
       }
     }
   ],

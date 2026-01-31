@@ -32,10 +32,6 @@
             "href": "/"
           },
           {
-            "label": "くらしの情報",
-            "href": "/topics"
-          },
-          {
             "label": "届出・証明",
             "href": "/topics/registration"
           },
@@ -61,15 +57,12 @@
       }
     },
     {
-      "id": "richtext-taisho",
-      "type": "RichText",
+      "id": "section-2ddor3x63",
+      "type": "Section",
       "props": {
+        "heading": "登録できる人",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "登録できる人"
-          },
           {
             "type": "paragraph",
             "runs": [
@@ -77,12 +70,17 @@
                 "text": "当市に住民登録のある15歳以上の方（成年被後見人を除く）"
               }
             ]
-          },
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "登録できる印鑑"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-i6xxvu0wb",
+      "type": "Section",
+      "props": {
+        "heading": "登録できる印鑑",
+        "level": 2,
+        "content": [
           {
             "type": "list",
             "ordered": false,
@@ -118,58 +116,61 @@
                 }
               ]
             ]
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-i6xxvu0wb-notification-0",
+      "type": "NotificationBanner",
+      "props": {
+        "severity": "warning",
+        "title": "登録できない印鑑",
+        "content": [
           {
-            "type": "callout",
-            "severity": "warning",
-            "title": "登録できない印鑑",
-            "content": [
-              {
-                "type": "list",
-                "ordered": false,
-                "items": [
-                  [
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
                     {
-                      "type": "paragraph",
-                      "runs": [
-                        {
-                          "text": "ゴム印など変形しやすいもの"
-                        }
-                      ]
-                    }
-                  ],
-                  [
-                    {
-                      "type": "paragraph",
-                      "runs": [
-                        {
-                          "text": "印影が不鮮明なもの"
-                        }
-                      ]
-                    }
-                  ],
-                  [
-                    {
-                      "type": "paragraph",
-                      "runs": [
-                        {
-                          "text": "氏名以外の事項（職業、資格など）が刻まれているもの"
-                        }
-                      ]
-                    }
-                  ],
-                  [
-                    {
-                      "type": "paragraph",
-                      "runs": [
-                        {
-                          "text": "同一世帯で既に登録されている印鑑と同じもの"
-                        }
-                      ]
+                      "text": "ゴム印など変形しやすいもの"
                     }
                   ]
-                ]
-              }
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "印影が不鮮明なもの"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "氏名以外の事項（職業、資格など）が刻まれているもの"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "同一世帯で既に登録されている印鑑と同じもの"
+                    }
+                  ]
+                }
+              ]
             ]
           }
         ]
@@ -203,55 +204,38 @@
       }
     },
     {
-      "id": "richtext-shorui",
-      "type": "RichText",
+      "id": "section-l4drofj8j",
+      "type": "Section",
       "props": {
+        "heading": "必要書類",
+        "level": 2,
+        "content": []
+      }
+    },
+    {
+      "id": "section-uf15efu0e-table",
+      "type": "Table",
+      "props": {
+        "rows": [
+          {
+            "label": "登録する印鑑",
+            "value": ""
+          },
+          {
+            "label": "顔写真付き本人確認書類（マイナンバーカード、運転免許証、パスポートなど）",
+            "value": ""
+          }
+        ],
+        "heading": "即日登録の場合"
+      }
+    },
+    {
+      "id": "section-tiwxtfogu",
+      "type": "Section",
+      "props": {
+        "heading": "照会書による登録の場合",
+        "level": 3,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "必要書類"
-          },
-          {
-            "type": "heading",
-            "level": 3,
-            "text": "即日登録の場合"
-          },
-          {
-            "type": "list",
-            "ordered": false,
-            "items": [
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "登録する印鑑"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "顔写真付き本人確認書類",
-                      "bold": true
-                    },
-                    {
-                      "text": "（マイナンバーカード、運転免許証、パスポートなど）"
-                    }
-                  ]
-                }
-              ]
-            ]
-          },
-          {
-            "type": "heading",
-            "level": 3,
-            "text": "照会書による登録の場合"
-          },
           {
             "type": "paragraph",
             "runs": [
@@ -259,19 +243,6 @@
                 "text": "顔写真付き本人確認書類がない場合は、照会書を郵送します。届いた照会書に必要事項を記入し、窓口にお持ちください（数日かかります）。"
               }
             ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "richtext-tesuryo",
-      "type": "RichText",
-      "props": {
-        "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "手数料"
           }
         ]
       }
@@ -293,19 +264,17 @@
             "label": "印鑑登録証明書（コンビニ）",
             "value": "{{inkan_shomei_convenience_fee}}"
           }
-        ]
+        ],
+        "heading": "手数料"
       }
     },
     {
-      "id": "richtext-shomei",
-      "type": "RichText",
+      "id": "section-tjnfg566e",
+      "type": "Section",
       "props": {
+        "heading": "印鑑登録証明書の取得",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "印鑑登録証明書の取得"
-          },
           {
             "type": "paragraph",
             "runs": [
@@ -313,12 +282,17 @@
                 "text": "印鑑登録証明書を取得するには、必ず印鑑登録証（カード）が必要です。印鑑そのものでは証明書を取得できません。"
               }
             ]
-          },
-          {
-            "type": "heading",
-            "level": 3,
-            "text": "窓口で取得"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-jo1h0djjw",
+      "type": "Section",
+      "props": {
+        "heading": "窓口で取得",
+        "level": 3,
+        "content": [
           {
             "type": "paragraph",
             "runs": [
@@ -326,12 +300,17 @@
                 "text": "印鑑登録証と本人確認書類を持参してください。"
               }
             ]
-          },
-          {
-            "type": "heading",
-            "level": 3,
-            "text": "コンビニ交付"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-uap9tkss2",
+      "type": "Section",
+      "props": {
+        "heading": "コンビニ交付",
+        "level": 3,
+        "content": [
           {
             "type": "paragraph",
             "runs": [
@@ -349,12 +328,24 @@
       "props": {
         "items": [
           {
-            "title": "戸籍謄本・住民票",
-            "href": "/services/registration/koseki"
+            "title": "住民票",
+            "href": "/services/registration/juminhyo"
           },
           {
             "title": "マイナンバーカード",
             "href": "/services/registration/mynumber"
+          },
+          {
+            "title": "転入届",
+            "href": "/services/registration/tennyu"
+          },
+          {
+            "title": "住宅購入",
+            "href": "/services/housing/home-purchase"
+          },
+          {
+            "title": "自動車登録",
+            "href": "/services/driving/registration"
           }
         ]
       }
@@ -368,6 +359,13 @@
         "email": "{{shimin_email}}",
         "hours": "{{city_hall_hours}}",
         "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
       }
     }
   ],

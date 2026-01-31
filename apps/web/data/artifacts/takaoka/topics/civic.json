@@ -32,10 +32,6 @@
             "href": "/"
           },
           {
-            "label": "くらしの情報",
-            "href": "/topics"
-          },
-          {
             "label": "市民参加・権利行使",
             "href": "/topics/civic"
           }
@@ -123,6 +119,13 @@
         "email": "{{civic_email}}",
         "hours": "{{city_hall_hours}}",
         "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
       }
     }
   ],

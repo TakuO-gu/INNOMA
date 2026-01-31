@@ -32,10 +32,6 @@
             "href": "/"
           },
           {
-            "label": "くらしの情報",
-            "href": "/topics"
-          },
-          {
             "label": "運転・車両",
             "href": "/topics/driving"
           },
@@ -61,15 +57,12 @@
       }
     },
     {
-      "id": "richtext-1",
-      "type": "RichText",
+      "id": "section-11jvaj71y",
+      "type": "Section",
       "props": {
+        "heading": "市営駐車場",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "市営駐車場"
-          },
           {
             "type": "paragraph",
             "runs": [
@@ -77,12 +70,17 @@
                 "text": "市営駐車場は市役所周辺に3か所あります"
               }
             ]
-          },
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "市営駐輪場"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-nb71nrpue",
+      "type": "Section",
+      "props": {
+        "heading": "市営駐輪場",
+        "level": 2,
+        "content": [
           {
             "type": "paragraph",
             "runs": [
@@ -129,6 +127,13 @@
         "email": "todokede@sample-city.lg.jp",
         "hours": "平日 8:30〜17:15（土日祝日・年末年始を除く）",
         "address": "〒100-0001 東京都サンプル市中央1-1-1"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
       }
     }
   ],

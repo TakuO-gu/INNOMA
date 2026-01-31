@@ -7,8 +7,12 @@
   "description": "地震・台風対策、避難所、ハザードマップ、防犯に関する情報",
   "content_type": "directory",
   "service_category": "safety",
-  "audience": ["residents"],
-  "topic": ["emergency"],
+  "audience": [
+    "residents"
+  ],
+  "topic": [
+    "emergency"
+  ],
   "source": {
     "source_url": "template://sample/topics/disaster",
     "fetched_at": "2026-01-20",
@@ -25,9 +29,14 @@
       "type": "Breadcrumbs",
       "props": {
         "items": [
-          { "label": "ホーム", "href": "/" },
-          { "label": "くらしの情報", "href": "/topics" },
-          { "label": "防災・安全", "href": "/topics/disaster" }
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "防災・安全",
+            "href": "/topics/disaster"
+          }
         ]
       }
     },
@@ -78,11 +87,29 @@
         "hours": "平日 8:30〜17:15（土日祝日・年末年始を除く）",
         "address": "〒100-0001 東京都サンプル市中央1-1-1"
       }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
+      }
     }
   ],
   "search": {
     "summary": "防災・安全に関する情報。避難所、ハザードマップ、地震・風水害対策、防犯の案内。",
-    "keywords": ["防災", "安全", "避難所", "ハザードマップ", "地震", "台風", "洪水", "防犯", "消防", "救急"],
+    "keywords": [
+      "防災",
+      "安全",
+      "避難所",
+      "ハザードマップ",
+      "地震",
+      "台風",
+      "洪水",
+      "防犯",
+      "消防",
+      "救急"
+    ],
     "plain_text": "防災・安全。地震・台風対策、避難所、ハザードマップ、防犯に関する情報。避難所・避難場所、ハザードマップ、地震対策、風水害対策、防災情報・警報、被災者支援、消防・救急、防犯。"
   }
 }

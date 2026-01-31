@@ -32,10 +32,6 @@
             "href": "/"
           },
           {
-            "label": "くらしの情報",
-            "href": "/topics"
-          },
-          {
             "label": "運転・車両",
             "href": "/topics/driving"
           },
@@ -61,15 +57,12 @@
       }
     },
     {
-      "id": "richtext-1",
-      "type": "RichText",
+      "id": "section-tvr6nl2fe",
+      "type": "Section",
       "props": {
+        "heading": "免許証の更新",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "免許証の更新"
-          },
           {
             "type": "list",
             "ordered": false,
@@ -105,12 +98,17 @@
                 }
               ]
             ]
-          },
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "住所変更"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-aps8d39g7",
+      "type": "Section",
+      "props": {
+        "heading": "住所変更",
+        "level": 2,
+        "content": [
           {
             "type": "paragraph",
             "runs": [
@@ -118,12 +116,17 @@
                 "text": "引越しで住所が変わった場合は、新住所地の警察署または運転免許センターで変更手続きを行ってください。"
               }
             ]
-          },
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "必要なもの"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-aapamorey",
+      "type": "Section",
+      "props": {
+        "heading": "必要なもの",
+        "level": 2,
+        "content": [
           {
             "type": "list",
             "ordered": false,
@@ -174,12 +177,47 @@
       }
     },
     {
+      "id": "related-links-94r3qcb9x",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "自動車登録",
+            "href": "/services/driving/registration"
+          },
+          {
+            "title": "車庫証明",
+            "href": "/services/driving/garage-certificate"
+          },
+          {
+            "title": "高齢者運転",
+            "href": "/services/driving/senior-driving"
+          },
+          {
+            "title": "住民票",
+            "href": "/services/registration/juminhyo"
+          },
+          {
+            "title": "引越し手続き一覧",
+            "href": "/services/housing/moving-checklist"
+          }
+        ]
+      }
+    },
+    {
       "id": "contact-1",
       "type": "Contact",
       "props": {
         "department": "東京都運転免許センター",
         "phone": "03-9012-3456",
         "address": "東京都府中市多磨町3-1-1"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
       }
     }
   ],

@@ -32,10 +32,6 @@
             "href": "/"
           },
           {
-            "label": "くらしの情報",
-            "href": "/topics"
-          },
-          {
             "label": "戸籍・国籍・在留",
             "href": "/topics/nationality"
           },
@@ -61,15 +57,12 @@
       }
     },
     {
-      "id": "richtext-1",
-      "type": "RichText",
+      "id": "section-ne49z1yod",
+      "type": "Section",
       "props": {
+        "heading": "外国人総合相談支援センター",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "外国人総合相談支援センター"
-          },
           {
             "type": "paragraph",
             "runs": [
@@ -77,12 +70,17 @@
                 "text": "在留手続き、雇用・労働、医療・福祉、出産・子育て、子の教育など、生活全般の相談に多言語で対応します。"
               }
             ]
-          },
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "対応言語"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-q51qlpmyu",
+      "type": "Section",
+      "props": {
+        "heading": "対応言語",
+        "level": 2,
+        "content": [
           {
             "type": "paragraph",
             "runs": [
@@ -90,12 +88,17 @@
                 "text": "{{foreign_consultation_languages}}"
               }
             ]
-          },
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "高岡市国際交流協会"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-ld0hsna6j",
+      "type": "Section",
+      "props": {
+        "heading": "高岡市国際交流協会",
+        "level": 2,
+        "content": [
           {
             "type": "paragraph",
             "runs": [
@@ -103,6 +106,30 @@
                 "text": "日本語教室、異文化交流イベント、通訳・翻訳ボランティアの紹介など。"
               }
             ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "related-links-isasqx5o6",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "ビザ・在留資格",
+            "href": "/services/nationality/visa"
+          },
+          {
+            "title": "外国人登録",
+            "href": "/services/nationality/foreign-registration"
+          },
+          {
+            "title": "日本語教室",
+            "href": "/services/nationality/japanese-class"
+          },
+          {
+            "title": "法律相談",
+            "href": "/services/civic/legal-support"
           }
         ]
       }
@@ -116,6 +143,13 @@
         "email": "{{international_association_email}}",
         "hours": "{{city_hall_hours}}",
         "address": "{{international_association_address}}"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
       }
     }
   ],

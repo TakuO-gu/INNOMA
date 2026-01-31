@@ -7,7 +7,9 @@
   "description": "公営住宅、住宅ローン、引越し手続き、建築確認などの住まい・引越しに関する情報",
   "content_type": "directory",
   "service_category": "housing",
-  "audience": ["residents"],
+  "audience": [
+    "residents"
+  ],
   "topic": [],
   "source": {
     "source_url": "template://sample/topics/housing",
@@ -25,9 +27,14 @@
       "type": "Breadcrumbs",
       "props": {
         "items": [
-          { "label": "ホーム", "href": "/" },
-          { "label": "くらしの情報", "href": "/topics" },
-          { "label": "住まい・引越し", "href": "/topics/housing" }
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "住まい・引越し",
+            "href": "/topics/housing"
+          }
         ]
       }
     },
@@ -108,11 +115,34 @@
         "hours": "{{city_hall_hours}}",
         "address": "{{city_hall_address}}"
       }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
+      }
     }
   ],
   "search": {
     "summary": "住まい・引越しに関する情報。公営住宅、市営住宅、住宅ローン、賃貸住宅、家賃補助、引越し手続き、建築確認、空き家対策、住居確保給付金、不動産登記の案内。",
-    "keywords": ["住まい", "引越し", "公営住宅", "市営住宅", "県営住宅", "住宅ローン", "住宅取得支援", "賃貸住宅", "家賃補助", "ライフライン", "建築確認", "リフォーム", "空き家", "住居確保給付金", "不動産登記"],
+    "keywords": [
+      "住まい",
+      "引越し",
+      "公営住宅",
+      "市営住宅",
+      "県営住宅",
+      "住宅ローン",
+      "住宅取得支援",
+      "賃貸住宅",
+      "家賃補助",
+      "ライフライン",
+      "建築確認",
+      "リフォーム",
+      "空き家",
+      "住居確保給付金",
+      "不動産登記"
+    ],
     "plain_text": "住まい・引越し。住宅・引越しに関する届出・手続き情報。公営住宅・市営住宅・県営住宅、住宅ローン・住宅取得支援、賃貸住宅・家賃補助、引越し手続き、建築確認・リフォーム、空き家対策、住居確保給付金、不動産登記。"
   }
 }

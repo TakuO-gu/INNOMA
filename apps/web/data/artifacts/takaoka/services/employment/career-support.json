@@ -32,10 +32,6 @@
             "href": "/"
           },
           {
-            "label": "くらしの情報",
-            "href": "/topics"
-          },
-          {
             "label": "仕事・労働",
             "href": "/topics/employment"
           },
@@ -61,15 +57,12 @@
       }
     },
     {
-      "id": "richtext-1",
-      "type": "RichText",
+      "id": "section-bfkh42utc",
+      "type": "Section",
       "props": {
+        "heading": "高岡地域若者サポートステーション（たかサポ）",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "地域若者サポートステーション（サポステ）"
-          },
           {
             "type": "paragraph",
             "runs": [
@@ -79,23 +72,97 @@
             ]
           },
           {
-            "type": "heading",
-            "level": 2,
-            "text": "ジョブカフェ"
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "詳細は",
+                "bold": false
+              },
+              {
+                "text": "たかサポのホームページ",
+                "href": "https://www.takasapo.com/"
+              },
+              {
+                "text": "をご覧ください。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "table-takasapo",
+      "type": "Table",
+      "props": {
+        "rows": [
+          {
+            "label": "所在地",
+            "value": "高岡市駅南1-1-18 中野ビル1階"
+          },
+          {
+            "label": "電話番号",
+            "value": "0766-24-4466"
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-g5v5qucyl",
+      "type": "Section",
+      "props": {
+        "heading": "ヤングジョブとやま（富山県若者就業支援センター）",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "若者の就職支援をワンストップで行う施設。職業相談、セミナー、職業適性診断、面接対策など。学生から概ね30歳代までの方が対象です。"
+              }
+            ]
           },
           {
             "type": "paragraph",
             "runs": [
               {
-                "text": "若者の就職支援をワンストップで行う施設。職業相談、セミナー、職業適性診断、面接対策など。"
+                "text": "詳細は",
+                "bold": false
+              },
+              {
+                "text": "ヤングジョブとやまのホームページ",
+                "href": "https://www.youngjob-tym.jp/"
+              },
+              {
+                "text": "をご覧ください。"
               }
             ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "table-youngjob",
+      "type": "Table",
+      "props": {
+        "rows": [
+          {
+            "label": "所在地",
+            "value": "富山市湊入船町9-1 とやま自遊館2階"
           },
           {
-            "type": "heading",
-            "level": 2,
-            "text": "就職氷河期世代支援"
-          },
+            "label": "電話番号",
+            "value": "076-445-1996"
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-5loaeanad",
+      "type": "Section",
+      "props": {
+        "heading": "就職氷河期世代支援",
+        "level": 2,
+        "content": [
           {
             "type": "paragraph",
             "runs": [
@@ -103,12 +170,17 @@
                 "text": "概ね35〜55歳で、不本意な非正規雇用や無業状態にある方への支援プログラム。ハローワークに専門窓口があります。"
               }
             ]
-          },
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "ひとり親への就職支援"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-g2ddupgat",
+      "type": "Section",
+      "props": {
+        "heading": "ひとり親への就職支援",
+        "level": 2,
+        "content": [
           {
             "type": "paragraph",
             "runs": [
@@ -116,6 +188,30 @@
                 "text": "マザーズハローワーク、ひとり親家庭等就業・自立支援センターで、子育てしながら働きたい方を支援します。"
               }
             ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "related-links-f95rram2b",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "ハローワーク",
+            "href": "/services/employment/hello-work"
+          },
+          {
+            "title": "職業訓練",
+            "href": "/services/employment/vocational-training"
+          },
+          {
+            "title": "障害者雇用",
+            "href": "/services/employment/disability-employment"
+          },
+          {
+            "title": "シルバー人材センター",
+            "href": "/services/employment/silver-center"
           }
         ]
       }
@@ -129,6 +225,13 @@
         "email": "{{employment_email}}",
         "hours": "{{city_hall_hours}}",
         "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
       }
     }
   ],

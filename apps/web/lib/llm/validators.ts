@@ -181,6 +181,45 @@ export function validatePercent(value: string): ValidationResult {
 }
 
 /**
+ * Validate count (numeric value for counting items)
+ * Detects fallback text patterns like "PDFで確認" or "公式サイト参照"
+ */
+export function validateCount(value: string): ValidationResult {
+  // Remove commas and trim
+  const cleaned = value.replace(/[,、]/g, '').trim();
+
+  // Check if it's a valid number
+  if (/^\d+$/.test(cleaned)) {
+    return { valid: true, normalized: cleaned };
+  }
+
+  // Detect fallback text patterns
+  const fallbackPatterns = [
+    /PDF/i,
+    /公式サイト/,
+    /詳細は/,
+    /確認/,
+    /参照/,
+    /一覧/,
+    /ホームページ/,
+    /お問い合わせ/,
+  ];
+
+  if (fallbackPatterns.some(p => p.test(value))) {
+    return {
+      valid: false,
+      error: 'fallback_text_detected',
+      normalized: value,
+    };
+  }
+
+  return {
+    valid: false,
+    error: '数値が必要です（例: 29）',
+  };
+}
+
+/**
  * Validate postal code
  */
 export function validatePostalCode(value: string): ValidationResult {
@@ -222,6 +261,7 @@ const validatorsByType: Record<VariableValidationType, ValidatorFunction | null>
   date: validateDate,
   time: validateTime,
   postal: validatePostalCode,
+  count: validateCount,
   text: null,  // テキストはバリデーションなし
 };
 
@@ -237,6 +277,7 @@ const validatorPatterns: [RegExp, ValidatorFunction][] = [
   [/_rate$/, validatePercent],
   [/_kigen|_deadline|_period$/, validateDate],
   [/_hours$/, validateTime],
+  [/_count$/, validateCount],
 ];
 
 /**

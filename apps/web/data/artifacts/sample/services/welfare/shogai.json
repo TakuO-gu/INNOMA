@@ -7,7 +7,10 @@
   "description": "障害者手帳の取得、障害福祉サービス、各種手当・助成制度について",
   "content_type": "guide",
   "service_category": "welfare",
-  "audience": ["residents", "disabled"],
+  "audience": [
+    "residents",
+    "disabled"
+  ],
   "topic": [],
   "source": {
     "source_url": "template://sample/services/welfare/shogai",
@@ -25,10 +28,18 @@
       "type": "Breadcrumbs",
       "props": {
         "items": [
-          { "label": "ホーム", "href": "/" },
-          { "label": "くらしの情報", "href": "/topics" },
-          { "label": "福祉・介護", "href": "/topics/welfare" },
-          { "label": "障害者福祉", "href": "/services/welfare/shogai" }
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "福祉・介護",
+            "href": "/topics/welfare"
+          },
+          {
+            "label": "障害者福祉",
+            "href": "/services/welfare/shogai"
+          }
         ]
       }
     },
@@ -47,117 +58,355 @@
       }
     },
     {
-      "id": "richtext-techo",
-      "type": "RichText",
+      "id": "section-8g4h0i6vw",
+      "type": "Section",
       "props": {
+        "heading": "障害者手帳",
+        "level": 2,
         "content": [
-          { "type": "heading", "level": 2, "text": "障害者手帳" },
           {
             "type": "paragraph",
             "runs": [
-              { "text": "障害の種類や程度に応じて、以下の手帳が交付されます。手帳を持つことで、各種サービスや割引を受けることができます。" }
-            ]
-          },
-          { "type": "heading", "level": 3, "text": "身体障害者手帳" },
-          {
-            "type": "paragraph",
-            "runs": [
-              { "text": "視覚、聴覚、肢体不自由、内部障害（心臓、腎臓など）がある方に交付されます。1級〜6級の等級があります。" }
-            ]
-          },
-          { "type": "heading", "level": 3, "text": "療育手帳（愛の手帳）" },
-          {
-            "type": "paragraph",
-            "runs": [
-              { "text": "知的障害がある方に交付されます。障害の程度により、A（重度）、B（中度・軽度）などに区分されます。" }
-            ]
-          },
-          { "type": "heading", "level": 3, "text": "精神障害者保健福祉手帳" },
-          {
-            "type": "paragraph",
-            "runs": [
-              { "text": "精神疾患のある方で、長期にわたり日常生活または社会生活への制約がある方に交付されます。1級〜3級の等級があります。" }
+              {
+                "text": "障害の種類や程度に応じて、以下の手帳が交付されます。手帳を持つことで、各種サービスや割引を受けることができます。"
+              }
             ]
           }
         ]
       }
     },
     {
-      "id": "richtext-services",
-      "type": "RichText",
+      "id": "section-xwtvg5nfu",
+      "type": "Section",
       "props": {
+        "heading": "身体障害者手帳",
+        "level": 3,
         "content": [
-          { "type": "heading", "level": 2, "text": "障害福祉サービス" },
           {
             "type": "paragraph",
             "runs": [
-              { "text": "障害者総合支援法に基づく障害福祉サービスを利用するには、サービス等利用計画を作成し、支給決定を受ける必要があります。" }
-            ]
-          },
-          { "type": "heading", "level": 3, "text": "介護給付" },
-          {
-            "type": "list",
-            "ordered": false,
-            "items": [
-              [{ "type": "paragraph", "runs": [{ "text": "居宅介護（ホームヘルプ）" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "重度訪問介護" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "同行援護（視覚障害者の外出支援）" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "行動援護（知的・精神障害者の外出支援）" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "短期入所（ショートステイ）" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "生活介護" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "施設入所支援" }] }]
-            ]
-          },
-          { "type": "heading", "level": 3, "text": "訓練等給付" },
-          {
-            "type": "list",
-            "ordered": false,
-            "items": [
-              [{ "type": "paragraph", "runs": [{ "text": "自立訓練（機能訓練・生活訓練）" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "就労移行支援" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "就労継続支援（A型・B型）" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "就労定着支援" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "共同生活援助（グループホーム）" }] }]
+              {
+                "text": "視覚、聴覚、肢体不自由、内部障害（心臓、腎臓など）がある方に交付されます。1級〜6級の等級があります。"
+              }
             ]
           }
         ]
       }
     },
     {
-      "id": "richtext-teate",
-      "type": "RichText",
+      "id": "section-coqi54fm2",
+      "type": "Section",
       "props": {
+        "heading": "療育手帳（愛の手帳）",
+        "level": 3,
         "content": [
-          { "type": "heading", "level": 2, "text": "手当・助成制度" },
-          { "type": "heading", "level": 3, "text": "手当" },
           {
-            "type": "list",
-            "ordered": false,
-            "items": [
-              [{ "type": "paragraph", "runs": [{ "text": "特別障害者手当", "bold": true }, { "text": "：在宅の重度障害者に支給（月額28,840円）" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "障害児福祉手当", "bold": true }, { "text": "：在宅の重度障害児に支給（月額15,690円）" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "特別児童扶養手当", "bold": true }, { "text": "：障害児を養育する方に支給" }] }]
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "知的障害がある方に交付されます。障害の程度により、A（重度）、B（中度・軽度）などに区分されます。"
+              }
             ]
-          },
-          { "type": "heading", "level": 3, "text": "医療費助成" },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-afsu3ez3n",
+      "type": "Section",
+      "props": {
+        "heading": "精神障害者保健福祉手帳",
+        "level": 3,
+        "content": [
           {
-            "type": "list",
-            "ordered": false,
-            "items": [
-              [{ "type": "paragraph", "runs": [{ "text": "自立支援医療（更生医療・育成医療・精神通院医療）", "bold": true }, { "text": "：医療費の自己負担が原則1割に軽減" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "重度心身障害者医療費助成", "bold": true }, { "text": "：医療費の自己負担を助成" }] }]
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "精神疾患のある方で、長期にわたり日常生活または社会生活への制約がある方に交付されます。1級〜3級の等級があります。"
+              }
             ]
-          },
-          { "type": "heading", "level": 3, "text": "その他の助成" },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-udf4n0zig",
+      "type": "Section",
+      "props": {
+        "heading": "障害福祉サービス",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "障害者総合支援法に基づく障害福祉サービスを利用するには、サービス等利用計画を作成し、支給決定を受ける必要があります。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-1u36bdplc",
+      "type": "Section",
+      "props": {
+        "heading": "介護給付",
+        "level": 3,
+        "content": [
           {
             "type": "list",
             "ordered": false,
             "items": [
-              [{ "type": "paragraph", "runs": [{ "text": "補装具費の支給" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "日常生活用具の給付" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "タクシー券・ガソリン券の交付" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "公共交通機関の割引" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "NHK受信料の減免" }] }]
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "居宅介護（ホームヘルプ）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "重度訪問介護"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "同行援護（視覚障害者の外出支援）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "行動援護（知的・精神障害者の外出支援）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "短期入所（ショートステイ）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "生活介護"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "施設入所支援"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-u10q3n63y",
+      "type": "Section",
+      "props": {
+        "heading": "訓練等給付",
+        "level": 3,
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "自立訓練（機能訓練・生活訓練）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "就労移行支援"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "就労継続支援（A型・B型）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "就労定着支援"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "共同生活援助（グループホーム）"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-jqkxghgs2",
+      "type": "Section",
+      "props": {
+        "heading": "手当・助成制度",
+        "level": 2,
+        "content": []
+      }
+    },
+    {
+      "id": "section-e25lpgych-desclist",
+      "type": "DescriptionList",
+      "props": {
+        "items": [
+          {
+            "term": "特別障害者手当",
+            "description": "在宅の重度障害者に支給（月額28,840円）"
+          },
+          {
+            "term": "障害児福祉手当",
+            "description": "在宅の重度障害児に支給（月額15,690円）"
+          },
+          {
+            "term": "特別児童扶養手当",
+            "description": "障害児を養育する方に支給"
+          }
+        ],
+        "heading": "手当"
+      }
+    },
+    {
+      "id": "section-pfvq8ohpf-desclist",
+      "type": "DescriptionList",
+      "props": {
+        "items": [
+          {
+            "term": "自立支援医療（更生医療・育成医療・精神通院医療）",
+            "description": "医療費の自己負担が原則1割に軽減"
+          },
+          {
+            "term": "重度心身障害者医療費助成",
+            "description": "医療費の自己負担を助成"
+          }
+        ],
+        "heading": "医療費助成"
+      }
+    },
+    {
+      "id": "section-snmez36i0",
+      "type": "Section",
+      "props": {
+        "heading": "その他の助成",
+        "level": 3,
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "補装具費の支給"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "日常生活用具の給付"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "タクシー券・ガソリン券の交付"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "公共交通機関の割引"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "NHK受信料の減免"
+                    }
+                  ]
+                }
+              ]
             ]
           }
         ]
@@ -168,10 +417,30 @@
       "type": "RelatedLinks",
       "props": {
         "items": [
-          { "title": "介護保険", "href": "/services/welfare/kaigo" },
-          { "title": "生活保護", "href": "/services/welfare/seikatsu-hogo" },
-          { "title": "成年後見制度", "href": "/services/welfare/kouken" },
-          { "title": "国民年金", "href": "/services/benefits/nenkin" }
+          {
+            "title": "介護保険",
+            "href": "/services/welfare/kaigo"
+          },
+          {
+            "title": "生活保護",
+            "href": "/services/welfare/seikatsu-hogo"
+          },
+          {
+            "title": "国民健康保険",
+            "href": "/services/health/kokuho"
+          },
+          {
+            "title": "障害者雇用",
+            "href": "/services/employment/disability-employment"
+          },
+          {
+            "title": "年金",
+            "href": "/services/benefits/nenkin"
+          },
+          {
+            "title": "住民税",
+            "href": "/services/tax/juminzei"
+          }
         ]
       }
     },
@@ -185,11 +454,27 @@
         "hours": "平日 8:30〜17:15（土日祝日・年末年始を除く）",
         "address": "〒100-0001 東京都サンプル市中央1-1-1"
       }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
+      }
     }
   ],
   "search": {
     "summary": "障害者福祉制度の案内。障害者手帳の取得、障害福祉サービス、各種手当・医療費助成について。",
-    "keywords": ["障害者福祉", "障害者手帳", "身体障害者手帳", "療育手帳", "精神障害者保健福祉手帳", "障害福祉サービス", "自立支援医療", "特別障害者手当"],
+    "keywords": [
+      "障害者福祉",
+      "障害者手帳",
+      "身体障害者手帳",
+      "療育手帳",
+      "精神障害者保健福祉手帳",
+      "障害福祉サービス",
+      "自立支援医療",
+      "特別障害者手当"
+    ],
     "plain_text": "障害者福祉。障害者手帳の取得、障害福祉サービスの利用、手当・医療費助成制度。身体障害者手帳、療育手帳、精神障害者保健福祉手帳。居宅介護、就労支援、特別障害者手当、自立支援医療など。"
   }
 }

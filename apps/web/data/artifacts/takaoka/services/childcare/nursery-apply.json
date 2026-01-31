@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "page_id": "takaoka-services-childcare-nursery-apply",
   "municipality_id": "takaoka",
-  "path": "/services/childcare/nursery/apply",
+  "path": "/services/childcare/nursery-apply",
   "title": "認可保育園の入園申込",
   "description": "認可保育園への入園申込方法。必要書類、申込期間、選考基準など。",
   "content_type": "step_by_step",
@@ -32,16 +32,12 @@
             "href": "/"
           },
           {
-            "label": "子育て",
-            "href": "/services/childcare"
-          },
-          {
-            "label": "保育園・幼稚園",
-            "href": "/services/childcare/nursery"
+            "label": "子育て・教育",
+            "href": "/topics/childcare"
           },
           {
             "label": "認可保育園の入園申込",
-            "href": "/services/childcare/nursery/apply"
+            "href": "/services/childcare/nursery-apply"
           }
         ]
       }
@@ -83,15 +79,12 @@
       }
     },
     {
-      "id": "richtext-eligibility",
-      "type": "RichText",
+      "id": "section-51ebwtqio",
+      "type": "Section",
       "props": {
+        "heading": "申込できる方",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "申込できる方"
-          },
           {
             "type": "paragraph",
             "runs": [
@@ -175,63 +168,42 @@
                 }
               ]
             ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-eqefwo9pq-table",
+      "type": "Table",
+      "props": {
+        "rows": [
+          {
+            "label": "保育所等利用申込書（様式第1号）",
+            "value": ""
           },
           {
-            "type": "heading",
-            "level": 2,
-            "text": "必要書類"
+            "label": "保育を必要とする証明書（就労証明書など）",
+            "value": ""
           },
           {
-            "type": "list",
-            "ordered": true,
-            "items": [
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "保育所等利用申込書（様式第1号）"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "保育を必要とする証明書（就労証明書など）"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "マイナンバー確認書類"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "本人確認書類（運転免許証、パスポート等）"
-                    }
-                  ]
-                }
-              ]
-            ]
+            "label": "マイナンバー確認書類",
+            "value": ""
           },
           {
-            "type": "heading",
-            "level": 2,
-            "text": "申込方法"
-          },
+            "label": "本人確認書類（運転免許証、パスポート等）",
+            "value": ""
+          }
+        ],
+        "heading": "必要書類"
+      }
+    },
+    {
+      "id": "section-yg2zewwnx",
+      "type": "Section",
+      "props": {
+        "heading": "申込方法",
+        "level": 2,
+        "content": [
           {
             "type": "paragraph",
             "runs": [
@@ -287,12 +259,17 @@
                 }
               ]
             ]
-          },
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "選考について"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-x1de14u7b",
+      "type": "Section",
+      "props": {
+        "heading": "選考について",
+        "level": 2,
+        "content": [
           {
             "type": "paragraph",
             "runs": [
@@ -367,16 +344,24 @@
       "props": {
         "items": [
           {
-            "title": "認可保育園一覧",
-            "href": "/services/childcare/nursery/list"
+            "title": "児童手当",
+            "href": "/services/childcare/jidou-teate"
           },
           {
-            "title": "保育料について",
-            "href": "/services/childcare/nursery/fee"
+            "title": "母子保健",
+            "href": "/services/childcare/boshi"
           },
           {
-            "title": "年度途中の入園申込",
-            "href": "/services/childcare/nursery/apply-midyear"
+            "title": "住民票",
+            "href": "/services/registration/juminhyo"
+          },
+          {
+            "title": "住民税",
+            "href": "/services/tax/juminzei"
+          },
+          {
+            "title": "育児・介護休業",
+            "href": "/services/employment/family-leave"
           }
         ]
       }
@@ -390,6 +375,13 @@
         "email": "{{nursery_apply_email}}",
         "hours": "{{city_hall_hours}}",
         "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
       }
     }
   ],

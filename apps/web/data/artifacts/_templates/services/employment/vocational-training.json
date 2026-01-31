@@ -7,7 +7,9 @@
   "description": "公共職業訓練、求職者支援訓練、教育訓練給付",
   "content_type": "guide",
   "service_category": "business",
-  "audience": ["residents"],
+  "audience": [
+    "residents"
+  ],
   "topic": [],
   "source": {
     "source_url": "template://sample/services/employment/vocational-training",
@@ -25,10 +27,18 @@
       "type": "Breadcrumbs",
       "props": {
         "items": [
-          { "label": "ホーム", "href": "/" },
-          { "label": "くらしの情報", "href": "/topics" },
-          { "label": "仕事・労働", "href": "/topics/employment" },
-          { "label": "職業訓練", "href": "/services/employment/vocational-training" }
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "仕事・労働",
+            "href": "/topics/employment"
+          },
+          {
+            "label": "職業訓練",
+            "href": "/services/employment/vocational-training"
+          }
         ]
       }
     },
@@ -47,35 +57,127 @@
       }
     },
     {
-      "id": "richtext-1",
-      "type": "RichText",
+      "id": "section-lpaaz4cvk",
+      "type": "Section",
       "props": {
+        "heading": "公共職業訓練",
+        "level": 2,
         "content": [
-          { "type": "heading", "level": 2, "text": "公共職業訓練" },
           {
             "type": "paragraph",
             "runs": [
-              { "text": "雇用保険を受給している方向け。機械、電気、建築、IT、介護など様々なコースがあります。訓練期間中も失業給付を受けられます。" }
+              {
+                "text": "雇用保険を受給している方向け。機械、電気、建築、IT、介護など様々なコースがあります。訓練期間中も失業給付を受けられます。"
+              }
             ]
-          },
-          { "type": "heading", "level": 2, "text": "求職者支援訓練" },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-9bv6sjzwn",
+      "type": "Section",
+      "props": {
+        "heading": "求職者支援訓練",
+        "level": 2,
+        "content": [
           {
             "type": "paragraph",
             "runs": [
-              { "text": "雇用保険を受給できない方向け。基礎コースと実践コースがあります。一定の要件を満たすと「職業訓練受講給付金」（月額10万円）が支給されます。" }
+              {
+                "text": "雇用保険を受給できない方向け。基礎コースと実践コースがあります。一定の要件を満たすと「職業訓練受講給付金」（月額10万円）が支給されます。"
+              }
             ]
-          },
-          { "type": "heading", "level": 2, "text": "主な訓練コース" },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-740v7ye1x",
+      "type": "Section",
+      "props": {
+        "heading": "主な訓練コース",
+        "level": 2,
+        "content": [
           {
             "type": "list",
             "ordered": false,
             "items": [
-              [{ "type": "paragraph", "runs": [{ "text": "IT・Web・プログラミング" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "介護・福祉" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "医療事務・調剤事務" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "簿記・経理・事務" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "機械・電気・設備" }] }]
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "IT・Web・プログラミング"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "介護・福祉"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "医療事務・調剤事務"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "簿記・経理・事務"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "機械・電気・設備"
+                    }
+                  ]
+                }
+              ]
             ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "related-links-xklb72svc",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "ハローワーク",
+            "href": "/services/employment/hello-work"
+          },
+          {
+            "title": "雇用保険",
+            "href": "/services/employment/unemployment-insurance"
+          },
+          {
+            "title": "就職支援",
+            "href": "/services/employment/career-support"
+          },
+          {
+            "title": "補助金・助成金",
+            "href": "/services/business/subsidies"
           }
         ]
       }
@@ -89,11 +191,24 @@
         "address": "{{hello_work_address}}",
         "hours": "平日8:30〜17:15"
       }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
+      }
     }
   ],
   "search": {
     "summary": "職業訓練（ハロートレーニング）の案内。公共職業訓練、求職者支援訓練、主なコース。",
-    "keywords": ["職業訓練", "ハロートレーニング", "公共職業訓練", "求職者支援訓練", "スキルアップ"],
+    "keywords": [
+      "職業訓練",
+      "ハロートレーニング",
+      "公共職業訓練",
+      "求職者支援訓練",
+      "スキルアップ"
+    ],
     "plain_text": "職業訓練（ハロートレーニング）。受講料無料。公共職業訓練は雇用保険受給者向け、求職者支援訓練は雇用保険を受給できない方向け。"
   }
 }

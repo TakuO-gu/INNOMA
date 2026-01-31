@@ -32,10 +32,6 @@
             "href": "/"
           },
           {
-            "label": "くらしの情報",
-            "href": "/topics"
-          },
-          {
             "label": "市民参加・権利行使",
             "href": "/topics/civic"
           },
@@ -61,15 +57,12 @@
       }
     },
     {
-      "id": "richtext-1",
-      "type": "RichText",
+      "id": "section-y1i1akuh0",
+      "type": "Section",
       "props": {
+        "heading": "投票できる方",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "投票できる方"
-          },
           {
             "type": "list",
             "ordered": false,
@@ -95,12 +88,17 @@
                 }
               ]
             ]
-          },
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "期日前投票"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-4rdre5otp",
+      "type": "Section",
+      "props": {
+        "heading": "期日前投票",
+        "level": 2,
+        "content": [
           {
             "type": "paragraph",
             "runs": [
@@ -108,12 +106,17 @@
                 "text": "投票日に仕事や旅行などで投票所に行けない方は、公示日（告示日）の翌日から投票日前日まで期日前投票ができます。"
               }
             ]
-          },
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "不在者投票"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-25qymbpne",
+      "type": "Section",
+      "props": {
+        "heading": "不在者投票",
+        "level": 2,
+        "content": [
           {
             "type": "paragraph",
             "runs": [
@@ -121,6 +124,26 @@
                 "text": "出張や入院などでサンプル市以外の場所にいる方は、滞在先の選挙管理委員会で投票できます。"
               }
             ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "related-links-wtr8v19a0",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "選挙人名簿",
+            "href": "/services/civic/voter-registration"
+          },
+          {
+            "title": "転入届",
+            "href": "/services/registration/tennyu"
+          },
+          {
+            "title": "転出届",
+            "href": "/services/registration/tenshutsu"
           }
         ]
       }
@@ -134,6 +157,13 @@
         "email": "senkyo@sample-city.lg.jp",
         "hours": "平日 8:30〜17:15（土日祝日・年末年始を除く）",
         "address": "〒100-0001 東京都サンプル市中央1-1-1"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
       }
     }
   ],

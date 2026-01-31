@@ -32,10 +32,6 @@
             "href": "/"
           },
           {
-            "label": "くらしの情報",
-            "href": "/topics"
-          },
-          {
             "label": "戸籍・国籍・在留",
             "href": "/topics/nationality"
           },
@@ -61,15 +57,12 @@
       }
     },
     {
-      "id": "richtext-1",
-      "type": "RichText",
+      "id": "section-ugddqhe4x",
+      "type": "Section",
       "props": {
+        "heading": "転入届（{{municipality_name}}に引っ越してきたとき）",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "転入届（{{municipality_name}}に引っ越してきたとき）"
-          },
           {
             "type": "list",
             "ordered": false,
@@ -105,12 +98,17 @@
                 }
               ]
             ]
-          },
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "転出届（{{municipality_name}}から引っ越すとき）"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-v32smbzjb",
+      "type": "Section",
+      "props": {
+        "heading": "転出届（{{municipality_name}}から引っ越すとき）",
+        "level": 2,
+        "content": [
           {
             "type": "list",
             "ordered": false,
@@ -146,12 +144,17 @@
                 }
               ]
             ]
-          },
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "転居届（{{municipality_name}}内で引っ越したとき）"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-bkubs1kme",
+      "type": "Section",
+      "props": {
+        "heading": "転居届（{{municipality_name}}内で引っ越したとき）",
+        "level": 2,
+        "content": [
           {
             "type": "list",
             "ordered": false,
@@ -187,12 +190,17 @@
                 }
               ]
             ]
-          },
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "届出対象者"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-wk4v83v9q",
+      "type": "Section",
+      "props": {
+        "heading": "届出対象者",
+        "level": 2,
+        "content": [
           {
             "type": "paragraph",
             "runs": [
@@ -200,6 +208,34 @@
                 "text": "3か月を超える在留資格を持つ外国人（中長期在留者、特別永住者）"
               }
             ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "related-links-h54yu57tp",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "在留カード",
+            "href": "/services/nationality/residence-card"
+          },
+          {
+            "title": "ビザ・在留資格",
+            "href": "/services/nationality/visa"
+          },
+          {
+            "title": "外国人相談",
+            "href": "/services/nationality/consultation"
+          },
+          {
+            "title": "住民票",
+            "href": "/services/registration/juminhyo"
+          },
+          {
+            "title": "国民健康保険",
+            "href": "/services/health/kokuho"
           }
         ]
       }
@@ -213,6 +249,13 @@
         "email": "{{resident_email}}",
         "hours": "{{city_hall_hours}}",
         "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
       }
     }
   ],

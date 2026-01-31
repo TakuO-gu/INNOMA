@@ -32,10 +32,6 @@
             "href": "/"
           },
           {
-            "label": "くらしの情報",
-            "href": "/topics"
-          },
-          {
             "label": "届出・申請・証明書",
             "href": "/topics/registration"
           },
@@ -79,15 +75,12 @@
       }
     },
     {
-      "id": "richtext-when",
-      "type": "RichText",
+      "id": "section-3ghpss7yg",
+      "type": "Section",
       "props": {
+        "heading": "届出が必要な方",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "届出が必要な方"
-          },
           {
             "type": "paragraph",
             "runs": [
@@ -95,12 +88,17 @@
                 "text": "他の市区町村から高岡市に住所を移した方（引っ越してきた方）"
               }
             ]
-          },
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "届出期間"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-junvh9trd",
+      "type": "Section",
+      "props": {
+        "heading": "届出期間",
+        "level": 2,
+        "content": [
           {
             "type": "paragraph",
             "runs": [
@@ -114,16 +112,10 @@
             ]
           },
           {
-            "type": "callout",
-            "severity": "warning",
-            "content": [
+            "type": "paragraph",
+            "runs": [
               {
-                "type": "paragraph",
-                "runs": [
-                  {
-                    "text": "届出が遅れると、5万円以下の過料が科される場合があります。"
-                  }
-                ]
+                "text": "届出が遅れると、5万円以下の過料が科される場合があります。"
               }
             ]
           }
@@ -167,15 +159,12 @@
       }
     },
     {
-      "id": "richtext-documents",
-      "type": "RichText",
+      "id": "section-19yghz4a8",
+      "type": "Section",
       "props": {
+        "heading": "届出に必要なもの",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "届出に必要なもの"
-          },
           {
             "type": "list",
             "ordered": false,
@@ -185,11 +174,7 @@
                   "type": "paragraph",
                   "runs": [
                     {
-                      "text": "転出証明書",
-                      "bold": true
-                    },
-                    {
-                      "text": "（前住所地で交付されたもの。マイナンバーカードで転出届をした場合は不要）"
+                      "text": "転出証明書（前住所地で交付されたもの。マイナンバーカードで転出届をした場合は不要）"
                     }
                   ]
                 }
@@ -199,11 +184,7 @@
                   "type": "paragraph",
                   "runs": [
                     {
-                      "text": "届出人の本人確認書類",
-                      "bold": true
-                    },
-                    {
-                      "text": "（マイナンバーカード、運転免許証、パスポートなど）"
+                      "text": "届出人の本人確認書類（マイナンバーカード、運転免許証、パスポートなど）"
                     }
                   ]
                 }
@@ -213,11 +194,7 @@
                   "type": "paragraph",
                   "runs": [
                     {
-                      "text": "転入する方全員のマイナンバーカード",
-                      "bold": true
-                    },
-                    {
-                      "text": "（お持ちの方のみ。暗証番号の入力が必要です）"
+                      "text": "転入する方全員のマイナンバーカード（お持ちの方のみ。暗証番号の入力が必要です）"
                     }
                   ]
                 }
@@ -227,22 +204,23 @@
                   "type": "paragraph",
                   "runs": [
                     {
-                      "text": "在留カードまたは特別永住者証明書",
-                      "bold": true
-                    },
-                    {
-                      "text": "（外国籍の方）"
+                      "text": "在留カードまたは特別永住者証明書（外国籍の方）"
                     }
                   ]
                 }
               ]
             ]
-          },
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "届出人"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-qsiwbhx64",
+      "type": "Section",
+      "props": {
+        "heading": "届出人",
+        "level": 2,
+        "content": [
           {
             "type": "list",
             "ordered": false,
@@ -317,15 +295,12 @@
       }
     },
     {
-      "id": "richtext-related",
-      "type": "RichText",
+      "id": "section-n6u64dqzd",
+      "type": "Section",
       "props": {
+        "heading": "転入届と一緒に行える手続き",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "転入届と一緒に行える手続き"
-          },
           {
             "type": "paragraph",
             "runs": [
@@ -399,20 +374,36 @@
       "props": {
         "items": [
           {
-            "title": "転出届",
-            "href": "/services/registration/tenshutsu"
+            "title": "住民票",
+            "href": "/services/registration/juminhyo"
           },
           {
-            "title": "転居届（市内での引越し）",
-            "href": "/services/registration/tenkyo"
-          },
-          {
-            "title": "国民健康保険の届出",
-            "href": "/services/health/kokuho"
+            "title": "マイナンバーカード",
+            "href": "/services/registration/mynumber"
           },
           {
             "title": "印鑑登録",
             "href": "/services/registration/inkan"
+          },
+          {
+            "title": "国民健康保険",
+            "href": "/services/health/kokuho"
+          },
+          {
+            "title": "児童手当",
+            "href": "/services/childcare/jidou-teate"
+          },
+          {
+            "title": "住民税",
+            "href": "/services/tax/juminzei"
+          },
+          {
+            "title": "ごみの出し方",
+            "href": "/services/environment/gomi"
+          },
+          {
+            "title": "引越し手続き一覧",
+            "href": "/services/housing/moving-checklist"
           }
         ]
       }
@@ -426,6 +417,13 @@
         "email": "{{registration_email}}",
         "hours": "{{city_hall_hours}}",
         "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
       }
     }
   ],

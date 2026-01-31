@@ -16,6 +16,11 @@ import {
   RawContentBlock,
   TableBlock,
   AccordionBlock,
+  SectionBlock,
+  DescriptionListBlock,
+  BlockquoteBlock,
+  StatusBadgeBlock,
+  CardBlock,
   // Notification
   NotificationBannerBlock,
   EmergencyBannerBlock,
@@ -36,7 +41,165 @@ import {
   SourcesBlock,
   // District Selector
   DistrictSelectorBlock,
+  // Info Cards
+  InfoCardBlock,
+  InfoCardGridBlock,
+  // Shelter List
+  ShelterListBlock,
+  // Hazard Map Viewer
+  HazardMapViewerBlock,
+  // Attachments
+  AttachmentsBlock,
+  // Card Grid
+  CardGridBlock,
 } from "./components";
+
+/* =============================================================================
+ * Block Registry - コンポーネントマッピング
+ * ============================================================================= */
+
+type BlockComponent = React.FC<{ props: Record<string, unknown>; sources?: Source[] }>;
+
+const blockRegistry: Record<string, BlockComponent> = {
+  // Navigation
+  Breadcrumbs: BreadcrumbsBlock,
+  ResourceList: ResourceListBlock,
+  RelatedLinks: RelatedLinksBlock,
+  // Content
+  Title: TitleBlock,
+  Summary: SummaryBlock,
+  RichText: RichTextBlock,
+  RawContent: RawContentBlock,
+  Table: TableBlock,
+  Accordion: AccordionBlock,
+  Section: SectionBlock,
+  DescriptionList: DescriptionListBlock,
+  Blockquote: BlockquoteBlock,
+  StatusBadge: StatusBadgeBlock,
+  Card: CardBlock,
+  // Notification
+  NotificationBanner: NotificationBannerBlock,
+  EmergencyBanner: EmergencyBannerBlock,
+  // Interactive
+  Contact: ContactBlock,
+  ContactCard: ContactBlock, // ContactCardはContactにマップ
+  ActionButton: ActionButtonBlock,
+  TaskButton: TaskButtonBlock,
+  StepNavigation: StepNavigationBlock,
+  DirectoryList: DirectoryListBlock,
+  NewsMeta: NewsMetaBlock,
+  // Home Page
+  Hero: HeroBlock,
+  TopicGrid: TopicGridBlock,
+  TopicList: TopicListBlock,
+  QuickLinks: QuickLinksBlock,
+  NewsList: NewsListBlock,
+  // Sources
+  Sources: SourcesBlock,
+  // District Selector
+  DistrictSelector: DistrictSelectorBlock,
+  // Info Cards
+  InfoCard: InfoCardBlock,
+  InfoCardGrid: InfoCardGridBlock,
+  // Shelter List
+  ShelterList: ShelterListBlock,
+  // Hazard Map Viewer
+  HazardMapViewer: HazardMapViewerBlock,
+  // Attachments
+  Attachments: AttachmentsBlock,
+  // Card Grid
+  CardGrid: CardGridBlock,
+};
+
+/* =============================================================================
+ * Spacing Rules - ブロックタイプごとのスペーシング定義
+ *
+ * margin-top のみで制御（margin-bottom は使わない）
+ * 最初のブロックは mt-0
+ * ============================================================================= */
+
+type SpacingSize = "none" | "sm" | "md" | "lg" | "xl" | "2xl";
+
+const spacingClasses: Record<SpacingSize, string> = {
+  none: "mt-0",
+  sm: "mt-4",    // 16px
+  md: "mt-6",    // 24px
+  lg: "mt-12",   // 48px
+  xl: "mt-16",   // 64px
+  "2xl": "mt-24", // 96px
+};
+
+/**
+ * ブロックタイプごとの上部スペーシング
+ */
+const blockSpacing: Record<string, SpacingSize> = {
+  // ヘッダー系 - スペースなし
+  Breadcrumbs: "none",
+  Title: "md",
+  Summary: "md",
+
+  // セクション - 大きなスペース
+  Section: "2xl",
+
+  // コンテンツ系 - 中程度
+  RichText: "lg",
+  RawContent: "lg",
+  Table: "lg",
+  Accordion: "lg",
+  StepNavigation: "lg",
+  DescriptionList: "lg",
+  Blockquote: "lg",
+  Card: "lg",
+
+  // ステータス系 - 小さめ
+  StatusBadge: "sm",
+
+  // 通知系 - 中程度
+  NotificationBanner: "md",
+  EmergencyBanner: "md",
+
+  // ナビゲーション・リンク系
+  ResourceList: "lg",
+  RelatedLinks: "lg",
+
+  // インタラクティブ
+  Contact: "xl",
+  ContactCard: "xl",
+  ActionButton: "lg",
+  TaskButton: "lg",
+  DirectoryList: "lg",
+  NewsMeta: "md",
+
+  // ホームページ系
+  Hero: "none",
+  TopicGrid: "lg",
+  TopicList: "lg",
+  QuickLinks: "lg",
+  NewsList: "lg",
+
+  // その他
+  Sources: "xl",
+  DistrictSelector: "lg",
+  InfoCard: "lg",
+  InfoCardGrid: "lg",
+  ShelterList: "lg",
+  HazardMapViewer: "lg",
+  Attachments: "lg",
+  CardGrid: "lg",
+};
+
+/**
+ * スペーシングクラスを取得
+ */
+function getSpacingClass(blockType: string, isFirst: boolean): string {
+  if (isFirst) return spacingClasses.none;
+  const size = blockSpacing[blockType] || "md";
+  return spacingClasses[size];
+}
+
+/* =============================================================================
+ * BlockRenderer
+ * ============================================================================= */
 
 interface BlockRendererProps {
   blocks: BaseBlock[];
@@ -47,80 +210,62 @@ interface BlockRendererProps {
 }
 
 export function BlockRenderer({ blocks, municipalityId, sources, completedPages = [] }: BlockRendererProps) {
-  // completedPagesをSetに変換（propsはシリアライズ可能な配列で受け取る）
   const completedPagesSet = new Set(completedPages);
 
   return (
     <MunicipalityProvider municipalityId={municipalityId} completedPages={completedPagesSet}>
       <div className="dads-page">
-        {blocks.map((block) => (
-          <BlockSwitch key={block.id} block={block} sources={sources} />
+        {blocks.map((block, index) => (
+          <BlockWrapper
+            key={block.id}
+            block={block}
+            sources={sources}
+            isFirst={index === 0}
+          />
         ))}
       </div>
     </MunicipalityProvider>
   );
 }
 
-function BlockSwitch({ block, sources }: { block: BaseBlock; sources?: Source[] }) {
-  const { type, props } = block;
+/**
+ * ブロックをラップしてスペーシングを適用
+ */
+function BlockWrapper({
+  block,
+  sources,
+  isFirst
+}: {
+  block: BaseBlock;
+  sources?: Source[];
+  isFirst: boolean;
+}) {
+  const { type, props, id } = block;
+  const Component = blockRegistry[type];
+  const spacingClass = getSpacingClass(type, isFirst);
 
-  switch (type) {
-    case "Breadcrumbs":
-      return <BreadcrumbsBlock props={props} />;
-    case "Title":
-      return <TitleBlock props={props} />;
-    case "Summary":
-      return <SummaryBlock props={props} />;
-    case "RichText":
-      return <RichTextBlock props={props} />;
-    case "RawContent":
-      return <RawContentBlock props={props} />;
-    case "Table":
-      return <TableBlock props={props} />;
-    case "ResourceList":
-      return <ResourceListBlock props={props} />;
-    case "NotificationBanner":
-      return <NotificationBannerBlock props={props} />;
-    case "Accordion":
-      return <AccordionBlock props={props} />;
-    case "RelatedLinks":
-      return <RelatedLinksBlock props={props} />;
-    case "Contact":
-    case "ContactCard":
-      return <ContactBlock props={props} />;
-    case "ActionButton":
-      return <ActionButtonBlock props={props} />;
-    case "TaskButton":
-      return <TaskButtonBlock props={props} />;
-    case "StepNavigation":
-      return <StepNavigationBlock props={props} />;
-    case "NewsMeta":
-      return <NewsMetaBlock props={props} />;
-    case "DirectoryList":
-      return <DirectoryListBlock props={props} />;
-    case "Hero":
-      return <HeroBlock props={props} />;
-    case "TopicGrid":
-      return <TopicGridBlock props={props} />;
-    case "TopicList":
-      return <TopicListBlock props={props} />;
-    case "QuickLinks":
-      return <QuickLinksBlock props={props} />;
-    case "NewsList":
-      return <NewsListBlock props={props} />;
-    case "EmergencyBanner":
-      return <EmergencyBannerBlock props={props} />;
-    case "Sources":
-      return <SourcesBlock props={props} sources={sources} />;
-    case "DistrictSelector":
-      return <DistrictSelectorBlock props={props} />;
-    default:
-      return (
-        <div className="block-unknown" data-type={type}>
-          <p className="text-sm text-gray-500">未対応ブロック: {type}</p>
-        </div>
-      );
+  if (!Component) {
+    return (
+      <div
+        className={`block-unknown ${spacingClass}`}
+        data-type={type}
+        data-block-type={type}
+        data-block-id={id}
+      >
+        <p className="text-sm text-gray-500">未対応ブロック: {type}</p>
+      </div>
+    );
   }
+
+  return (
+    <div
+      className={spacingClass}
+      data-block-type={type}
+      data-block-id={id}
+    >
+      <Component props={props} sources={sources} />
+    </div>
+  );
 }
 
 export default BlockRenderer;

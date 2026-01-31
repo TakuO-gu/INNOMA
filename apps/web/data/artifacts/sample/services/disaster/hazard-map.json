@@ -32,10 +32,6 @@
             "href": "/"
           },
           {
-            "label": "くらしの情報",
-            "href": "/topics"
-          },
-          {
             "label": "防災・安全",
             "href": "/topics/disaster"
           },
@@ -64,19 +60,21 @@
       "id": "richtext-intro",
       "type": "RichText",
       "props": {
+        "content": []
+      }
+    },
+    {
+      "id": "richtext-intro-notification-0",
+      "type": "NotificationBanner",
+      "props": {
+        "severity": "warning",
+        "title": "ハザードマップを活用しましょう",
         "content": [
           {
-            "type": "callout",
-            "severity": "warning",
-            "title": "ハザードマップを活用しましょう",
-            "content": [
+            "type": "paragraph",
+            "runs": [
               {
-                "type": "paragraph",
-                "runs": [
-                  {
-                    "text": "ハザードマップで示された区域以外でも災害が発生する可能性があります。マップを参考に、日頃から避難場所や避難経路を確認しておくことが大切です。"
-                  }
-                ]
+                "text": "ハザードマップで示された区域以外でも災害が発生する可能性があります。マップを参考に、日頃から避難場所や避難経路を確認しておくことが大切です。"
               }
             ]
           }
@@ -84,15 +82,12 @@
       }
     },
     {
-      "id": "richtext-kozui",
-      "type": "RichText",
+      "id": "section-4o7lh06oz",
+      "type": "Section",
       "props": {
+        "heading": "洪水ハザードマップ",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "洪水ハザードマップ"
-          },
           {
             "type": "paragraph",
             "runs": [
@@ -138,15 +133,12 @@
       }
     },
     {
-      "id": "richtext-dosha",
-      "type": "RichText",
+      "id": "section-5k6vh9od6",
+      "type": "Section",
       "props": {
+        "heading": "土砂災害ハザードマップ",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "土砂災害ハザードマップ"
-          },
           {
             "type": "paragraph",
             "runs": [
@@ -154,54 +146,26 @@
                 "text": "土砂災害警戒区域（イエローゾーン）と土砂災害特別警戒区域（レッドゾーン）を示しています。"
               }
             ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-5k6vh9od6-desclist",
+      "type": "DescriptionList",
+      "props": {
+        "items": [
+          {
+            "term": "土石流危険渓流",
+            "description": "谷や沢沿いに土石流が流れ出るおそれのある区域"
           },
           {
-            "type": "list",
-            "ordered": false,
-            "items": [
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "土石流危険渓流",
-                      "bold": true
-                    },
-                    {
-                      "text": "：谷や沢沿いに土石流が流れ出るおそれのある区域"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "急傾斜地崩壊危険箇所",
-                      "bold": true
-                    },
-                    {
-                      "text": "：がけ崩れが発生するおそれのある区域"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "地すべり危険箇所",
-                      "bold": true
-                    },
-                    {
-                      "text": "：地すべりが発生するおそれのある区域"
-                    }
-                  ]
-                }
-              ]
-            ]
+            "term": "急傾斜地崩壊危険箇所",
+            "description": "がけ崩れが発生するおそれのある区域"
+          },
+          {
+            "term": "地すべり危険箇所",
+            "description": "地すべりが発生するおそれのある区域"
           }
         ]
       }
@@ -216,15 +180,12 @@
       }
     },
     {
-      "id": "richtext-jishin",
-      "type": "RichText",
+      "id": "section-52wusn4fm",
+      "type": "Section",
       "props": {
+        "heading": "地震ハザードマップ",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "地震ハザードマップ"
-          },
           {
             "type": "paragraph",
             "runs": [
@@ -232,54 +193,26 @@
                 "text": "想定される地震による揺れやすさ、液状化の危険度を示しています。"
               }
             ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-52wusn4fm-desclist",
+      "type": "DescriptionList",
+      "props": {
+        "items": [
+          {
+            "term": "揺れやすさマップ",
+            "description": "地盤の揺れやすさを示す"
           },
           {
-            "type": "list",
-            "ordered": false,
-            "items": [
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "揺れやすさマップ",
-                      "bold": true
-                    },
-                    {
-                      "text": "：地盤の揺れやすさを示す"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "液状化マップ",
-                      "bold": true
-                    },
-                    {
-                      "text": "：液状化の可能性を示す"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "建物倒壊危険度マップ",
-                      "bold": true
-                    },
-                    {
-                      "text": "：建物の被害程度を示す"
-                    }
-                  ]
-                }
-              ]
-            ]
+            "term": "液状化マップ",
+            "description": "液状化の可能性を示す"
+          },
+          {
+            "term": "建物倒壊危険度マップ",
+            "description": "建物の被害程度を示す"
           }
         ]
       }
@@ -294,90 +227,37 @@
       }
     },
     {
-      "id": "richtext-check",
-      "type": "RichText",
+      "id": "section-6e5to54me-step",
+      "type": "StepNavigation",
       "props": {
-        "content": [
+        "steps": [
           {
-            "type": "heading",
-            "level": 2,
-            "text": "ハザードマップの活用方法"
+            "title": "ステップ1",
+            "body": "自宅の位置を確認：自宅がどの危険区域にあるか確認しましょう"
           },
           {
-            "type": "list",
-            "ordered": true,
-            "items": [
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "自宅の位置を確認",
-                      "bold": true
-                    },
-                    {
-                      "text": "：自宅がどの危険区域にあるか確認しましょう"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "避難場所を確認",
-                      "bold": true
-                    },
-                    {
-                      "text": "：最寄りの避難場所と経路を確認しましょう"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "避難経路の安全確認",
-                      "bold": true
-                    },
-                    {
-                      "text": "：避難経路上に危険な箇所がないか確認しましょう"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "家族で共有",
-                      "bold": true
-                    },
-                    {
-                      "text": "：避難場所や連絡方法を家族で話し合いましょう"
-                    }
-                  ]
-                }
-              ]
-            ]
+            "title": "ステップ2",
+            "body": "避難場所を確認：最寄りの避難場所と経路を確認しましょう"
+          },
+          {
+            "title": "ステップ3",
+            "body": "避難経路の安全確認：避難経路上に危険な箇所がないか確認しましょう"
+          },
+          {
+            "title": "ステップ4",
+            "body": "家族で共有：避難場所や連絡方法を家族で話し合いましょう"
           }
-        ]
+        ],
+        "heading": "ハザードマップの活用方法"
       }
     },
     {
-      "id": "richtext-haifu",
-      "type": "RichText",
+      "id": "section-0h613oh0s",
+      "type": "Section",
       "props": {
+        "heading": "ハザードマップの配布",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "ハザードマップの配布"
-          },
           {
             "type": "paragraph",
             "runs": [
@@ -422,6 +302,13 @@
         "email": "bosai@sample-city.lg.jp",
         "hours": "平日 8:30〜17:15（土日祝日・年末年始を除く）",
         "address": "〒100-0001 東京都サンプル市中央1-1-1"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
       }
     }
   ],

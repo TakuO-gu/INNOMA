@@ -32,10 +32,6 @@
             "href": "/"
           },
           {
-            "label": "くらしの情報",
-            "href": "/topics"
-          },
-          {
             "label": "戸籍・国籍・在留",
             "href": "/topics/nationality"
           },
@@ -61,15 +57,12 @@
       }
     },
     {
-      "id": "richtext-1",
-      "type": "RichText",
+      "id": "section-ukiqld8rp",
+      "type": "Section",
       "props": {
+        "heading": "特別永住者とは",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "特別永住者とは"
-          },
           {
             "type": "paragraph",
             "runs": [
@@ -77,12 +70,17 @@
                 "text": "日本国との平和条約に基づき日本の国籍を離脱した者等の出入国管理に関する特例法に基づく在留資格です。主に在日韓国・朝鮮人、在日台湾人の方が対象となります。"
               }
             ]
-          },
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "特別永住者証明書の更新"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-c6ipr09km",
+      "type": "Section",
+      "props": {
+        "heading": "特別永住者証明書の更新",
+        "level": 2,
+        "content": [
           {
             "type": "paragraph",
             "runs": [
@@ -116,12 +114,17 @@
                 }
               ]
             ]
-          },
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "届出が必要な場合"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-bqsbkksfh",
+      "type": "Section",
+      "props": {
+        "heading": "届出が必要な場合",
+        "level": 2,
+        "content": [
           {
             "type": "list",
             "ordered": false,
@@ -157,12 +160,17 @@
                 }
               ]
             ]
-          },
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "必要書類"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-4v5m9ev5r",
+      "type": "Section",
+      "props": {
+        "heading": "必要書類",
+        "level": 2,
+        "content": [
           {
             "type": "list",
             "ordered": false,
@@ -198,12 +206,17 @@
                 }
               ]
             ]
-          },
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "手数料"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-tdsqqnn4i",
+      "type": "Section",
+      "props": {
+        "heading": "手数料",
+        "level": 2,
+        "content": [
           {
             "type": "paragraph",
             "runs": [
@@ -211,6 +224,26 @@
                 "text": "無料"
               }
             ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "related-links-moa45k5hy",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "在留カード",
+            "href": "/services/nationality/residence-card"
+          },
+          {
+            "title": "外国人相談",
+            "href": "/services/nationality/consultation"
+          },
+          {
+            "title": "住民票",
+            "href": "/services/registration/juminhyo"
           }
         ]
       }
@@ -224,6 +257,13 @@
         "email": "jumin@sample-city.lg.jp",
         "hours": "平日 8:30〜17:15（土日祝日・年末年始を除く）",
         "address": "〒100-0001 東京都サンプル市中央1-1-1"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
       }
     }
   ],

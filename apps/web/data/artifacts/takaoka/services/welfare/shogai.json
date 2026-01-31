@@ -33,10 +33,6 @@
             "href": "/"
           },
           {
-            "label": "くらしの情報",
-            "href": "/topics"
-          },
-          {
             "label": "福祉・介護",
             "href": "/topics/welfare"
           },
@@ -62,15 +58,12 @@
       }
     },
     {
-      "id": "richtext-techo",
-      "type": "RichText",
+      "id": "section-sn75flf7o",
+      "type": "Section",
       "props": {
+        "heading": "障害者手帳",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "障害者手帳"
-          },
           {
             "type": "paragraph",
             "runs": [
@@ -78,12 +71,17 @@
                 "text": "障害の種類や程度に応じて、以下の手帳が交付されます。手帳を持つことで、各種サービスや割引を受けることができます。"
               }
             ]
-          },
-          {
-            "type": "heading",
-            "level": 3,
-            "text": "身体障害者手帳"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-pyd4zx3j5",
+      "type": "Section",
+      "props": {
+        "heading": "身体障害者手帳",
+        "level": 3,
+        "content": [
           {
             "type": "paragraph",
             "runs": [
@@ -91,12 +89,17 @@
                 "text": "視覚、聴覚、肢体不自由、内部障害（心臓、腎臓など）がある方に交付されます。1級〜6級の等級があります。"
               }
             ]
-          },
-          {
-            "type": "heading",
-            "level": 3,
-            "text": "療育手帳（愛の手帳）"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-0mbrq8y7r",
+      "type": "Section",
+      "props": {
+        "heading": "療育手帳（愛の手帳）",
+        "level": 3,
+        "content": [
           {
             "type": "paragraph",
             "runs": [
@@ -104,12 +107,17 @@
                 "text": "知的障害がある方に交付されます。障害の程度により、A（重度）、B（中度・軽度）などに区分されます。"
               }
             ]
-          },
-          {
-            "type": "heading",
-            "level": 3,
-            "text": "精神障害者保健福祉手帳"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-vj3tw14fq",
+      "type": "Section",
+      "props": {
+        "heading": "精神障害者保健福祉手帳",
+        "level": 3,
+        "content": [
           {
             "type": "paragraph",
             "runs": [
@@ -122,15 +130,12 @@
       }
     },
     {
-      "id": "richtext-services",
-      "type": "RichText",
+      "id": "section-uwr6lflz2",
+      "type": "Section",
       "props": {
+        "heading": "障害福祉サービス",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "障害福祉サービス"
-          },
           {
             "type": "paragraph",
             "runs": [
@@ -138,12 +143,17 @@
                 "text": "障害者総合支援法に基づく障害福祉サービスを利用するには、サービス等利用計画を作成し、支給決定を受ける必要があります。"
               }
             ]
-          },
-          {
-            "type": "heading",
-            "level": 3,
-            "text": "介護給付"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-29bt43gt7",
+      "type": "Section",
+      "props": {
+        "heading": "介護給付",
+        "level": 3,
+        "content": [
           {
             "type": "list",
             "ordered": false,
@@ -219,12 +229,17 @@
                 }
               ]
             ]
-          },
-          {
-            "type": "heading",
-            "level": 3,
-            "text": "訓練等給付"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-ptr9clav3",
+      "type": "Section",
+      "props": {
+        "heading": "訓練等給付",
+        "level": 3,
+        "content": [
           {
             "type": "list",
             "ordered": false,
@@ -285,112 +300,59 @@
       }
     },
     {
-      "id": "richtext-teate",
-      "type": "RichText",
+      "id": "section-zfzn0t3wf",
+      "type": "Section",
       "props": {
+        "heading": "手当・助成制度",
+        "level": 2,
+        "content": []
+      }
+    },
+    {
+      "id": "section-gjsrqtntw-desclist",
+      "type": "DescriptionList",
+      "props": {
+        "items": [
+          {
+            "term": "特別障害者手当",
+            "description": "在宅の重度障害者に支給（月額28,840円）"
+          },
+          {
+            "term": "障害児福祉手当",
+            "description": "在宅の重度障害児に支給（月額15,690円）"
+          },
+          {
+            "term": "特別児童扶養手当",
+            "description": "障害児を養育する方に支給"
+          }
+        ],
+        "heading": "手当"
+      }
+    },
+    {
+      "id": "section-l91oiiob1-desclist",
+      "type": "DescriptionList",
+      "props": {
+        "items": [
+          {
+            "term": "自立支援医療（更生医療・育成医療・精神通院医療）",
+            "description": "医療費の自己負担が原則1割に軽減"
+          },
+          {
+            "term": "重度心身障害者医療費助成",
+            "description": "医療費の自己負担を助成"
+          }
+        ],
+        "heading": "医療費助成"
+      }
+    },
+    {
+      "id": "section-37mezzxu5",
+      "type": "Section",
+      "props": {
+        "heading": "その他の助成",
+        "level": 3,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "手当・助成制度"
-          },
-          {
-            "type": "heading",
-            "level": 3,
-            "text": "手当"
-          },
-          {
-            "type": "list",
-            "ordered": false,
-            "items": [
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "特別障害者手当",
-                      "bold": true
-                    },
-                    {
-                      "text": "：在宅の重度障害者に支給（月額28,840円）"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "障害児福祉手当",
-                      "bold": true
-                    },
-                    {
-                      "text": "：在宅の重度障害児に支給（月額15,690円）"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "特別児童扶養手当",
-                      "bold": true
-                    },
-                    {
-                      "text": "：障害児を養育する方に支給"
-                    }
-                  ]
-                }
-              ]
-            ]
-          },
-          {
-            "type": "heading",
-            "level": 3,
-            "text": "医療費助成"
-          },
-          {
-            "type": "list",
-            "ordered": false,
-            "items": [
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "自立支援医療（更生医療・育成医療・精神通院医療）",
-                      "bold": true
-                    },
-                    {
-                      "text": "：医療費の自己負担が原則1割に軽減"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "重度心身障害者医療費助成",
-                      "bold": true
-                    },
-                    {
-                      "text": "：医療費の自己負担を助成"
-                    }
-                  ]
-                }
-              ]
-            ]
-          },
-          {
-            "type": "heading",
-            "level": 3,
-            "text": "その他の助成"
-          },
           {
             "type": "list",
             "ordered": false,
@@ -464,12 +426,20 @@
             "href": "/services/welfare/seikatsu-hogo"
           },
           {
-            "title": "成年後見制度",
-            "href": "/services/welfare/kouken"
+            "title": "国民健康保険",
+            "href": "/services/health/kokuho"
           },
           {
-            "title": "国民年金",
+            "title": "障害者雇用",
+            "href": "/services/employment/disability-employment"
+          },
+          {
+            "title": "年金",
             "href": "/services/benefits/nenkin"
+          },
+          {
+            "title": "住民税",
+            "href": "/services/tax/juminzei"
           }
         ]
       }
@@ -483,6 +453,13 @@
         "email": "{{shogai_email}}",
         "hours": "{{city_hall_hours}}",
         "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
       }
     }
   ],

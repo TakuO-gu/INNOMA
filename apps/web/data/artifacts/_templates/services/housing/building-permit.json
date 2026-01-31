@@ -7,7 +7,10 @@
   "description": "新築・増改築の建築確認申請手続き",
   "content_type": "guide",
   "service_category": "housing",
-  "audience": ["residents", "businesses"],
+  "audience": [
+    "residents",
+    "businesses"
+  ],
   "topic": [],
   "source": {
     "source_url": "template://sample/services/housing/building-permit",
@@ -25,10 +28,18 @@
       "type": "Breadcrumbs",
       "props": {
         "items": [
-          { "label": "ホーム", "href": "/" },
-          { "label": "くらしの情報", "href": "/topics" },
-          { "label": "住まい・引越し", "href": "/topics/housing" },
-          { "label": "建築確認申請", "href": "/services/housing/building-permit" }
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "住まい・引越し",
+            "href": "/topics/housing"
+          },
+          {
+            "label": "建築確認申請",
+            "href": "/services/housing/building-permit"
+          }
         ]
       }
     },
@@ -47,37 +58,130 @@
       }
     },
     {
-      "id": "richtext-1",
-      "type": "RichText",
+      "id": "section-keuiq26np",
+      "type": "Section",
       "props": {
+        "heading": "建築確認が必要な場合",
+        "level": 2,
         "content": [
-          { "type": "heading", "level": 2, "text": "建築確認が必要な場合" },
           {
             "type": "list",
             "ordered": false,
             "items": [
-              [{ "type": "paragraph", "runs": [{ "text": "建築物の新築" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "10㎡を超える増築・改築・移転" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "特殊建築物への用途変更" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "大規模な修繕・模様替え" }] }]
-            ]
-          },
-          { "type": "heading", "level": 2, "text": "申請の流れ" },
-          {
-            "type": "list",
-            "ordered": true,
-            "items": [
-              [{ "type": "paragraph", "runs": [{ "text": "事前相談（必要に応じて）" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "建築確認申請書の提出" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "審査（通常7日〜35日）" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "確認済証の交付" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "工事着手" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "中間検査（対象建築物のみ）" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "完了検査" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "検査済証の交付" }] }]
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "建築物の新築"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "10㎡を超える増築・改築・移転"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "特殊建築物への用途変更"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "大規模な修繕・模様替え"
+                    }
+                  ]
+                }
+              ]
             ]
           }
         ]
+      }
+    },
+    {
+      "id": "section-about-application",
+      "type": "Section",
+      "props": {
+        "heading": "建築確認申請とは",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "建築確認申請とは、建築物を建てる前に、その計画が建築基準法などの法令に適合しているかを確認する手続きです。建築主は「建築確認申請書」に設計図書（配置図、平面図、立面図など）を添えて提出し、審査を受ける必要があります。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "通常、建築確認申請は建築士が代理で行います。",
+                "bold": true
+              },
+              {
+                "text": "住宅を新築・増改築する場合は、依頼する建築会社や設計事務所が手続きを代行してくれます。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-8fxkumnez-step",
+      "type": "StepNavigation",
+      "props": {
+        "steps": [
+          {
+            "title": "ステップ1",
+            "body": "事前相談（必要に応じて）"
+          },
+          {
+            "title": "ステップ2",
+            "body": "建築確認申請書の提出（建築士が代行）"
+          },
+          {
+            "title": "ステップ3",
+            "body": "審査（通常7日〜35日）"
+          },
+          {
+            "title": "ステップ4",
+            "body": "確認済証の交付"
+          },
+          {
+            "title": "ステップ5",
+            "body": "工事着手"
+          },
+          {
+            "title": "ステップ6",
+            "body": "中間検査（対象建築物のみ）"
+          },
+          {
+            "title": "ステップ7",
+            "body": "完了検査"
+          },
+          {
+            "title": "ステップ8",
+            "body": "検査済証の交付"
+          }
+        ],
+        "heading": "申請の流れ"
       }
     },
     {
@@ -85,9 +189,42 @@
       "type": "Table",
       "props": {
         "rows": [
-          { "label": "申請先", "value": "{{building_department}}または指定確認検査機関" },
-          { "label": "手数料", "value": "床面積により異なる（数万円〜数十万円）" },
-          { "label": "審査期間", "value": "7日〜35日（建築物の規模による）" }
+          {
+            "label": "申請先",
+            "value": "{{building_department}}または指定確認検査機関"
+          },
+          {
+            "label": "手数料",
+            "value": "床面積により異なる（数万円〜数十万円）"
+          },
+          {
+            "label": "審査期間",
+            "value": "7日〜35日（建築物の規模による）"
+          }
+        ]
+      }
+    },
+    {
+      "id": "related-links-x3ityif37",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "住宅購入",
+            "href": "/services/housing/home-purchase"
+          },
+          {
+            "title": "都市計画",
+            "href": "/services/land/urban-planning"
+          },
+          {
+            "title": "開発許可",
+            "href": "/services/land/development-permit"
+          },
+          {
+            "title": "耐震改修",
+            "href": "/services/housing/seismic-retrofit"
+          }
         ]
       }
     },
@@ -101,11 +238,25 @@
         "hours": "{{city_hall_hours}}",
         "address": "{{city_hall_address}}"
       }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
+      }
     }
   ],
   "search": {
     "summary": "建築確認申請の手続き案内。新築・増改築に必要な建築確認、申請の流れ、審査期間。",
-    "keywords": ["建築確認", "建築確認申請", "新築", "増改築", "建築基準法", "確認済証"],
+    "keywords": [
+      "建築確認",
+      "建築確認申請",
+      "新築",
+      "増改築",
+      "建築基準法",
+      "確認済証"
+    ],
     "plain_text": "建築確認申請。建築物の新築・増改築前に必要な手続き。申請から確認済証交付まで7日〜35日。完了検査後に検査済証交付。"
   }
 }

@@ -7,7 +7,9 @@
   "description": "住宅ローン減税、すまい給付金、住宅取得等資金贈与の非課税",
   "content_type": "guide",
   "service_category": "housing",
-  "audience": ["residents"],
+  "audience": [
+    "residents"
+  ],
   "topic": [],
   "source": {
     "source_url": "template://sample/services/housing/home-purchase",
@@ -25,10 +27,18 @@
       "type": "Breadcrumbs",
       "props": {
         "items": [
-          { "label": "ホーム", "href": "/" },
-          { "label": "くらしの情報", "href": "/topics" },
-          { "label": "住まい・引越し", "href": "/topics/housing" },
-          { "label": "住宅取得支援", "href": "/services/housing/home-purchase" }
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "住まい・引越し",
+            "href": "/topics/housing"
+          },
+          {
+            "label": "住宅取得支援",
+            "href": "/services/housing/home-purchase"
+          }
         ]
       }
     },
@@ -47,40 +57,131 @@
       }
     },
     {
-      "id": "richtext-1",
-      "type": "RichText",
+      "id": "section-ybzzkp5qx",
+      "type": "Section",
       "props": {
+        "heading": "住宅ローン減税（住宅借入金等特別控除）",
+        "level": 2,
         "content": [
-          { "type": "heading", "level": 2, "text": "住宅ローン減税（住宅借入金等特別控除）" },
           {
             "type": "paragraph",
             "runs": [
-              { "text": "住宅ローンを利用して住宅を取得した場合、年末ローン残高の0.7%を所得税から最長13年間控除できます。" }
+              {
+                "text": "住宅ローンを利用して住宅を取得した場合、年末ローン残高の0.7%を所得税から最長13年間控除できます。"
+              }
             ]
           },
           {
             "type": "list",
             "ordered": false,
             "items": [
-              [{ "type": "paragraph", "runs": [{ "text": "控除率：年末ローン残高の0.7%" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "控除期間：新築は最長13年、中古は最長10年" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "申請先：確定申告（税務署）" }] }]
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "控除率：年末ローン残高の0.7%"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "控除期間：新築は最長13年、中古は最長10年"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "申請先：確定申告（税務署）"
+                    }
+                  ]
+                }
+              ]
             ]
-          },
-          { "type": "heading", "level": 2, "text": "住宅取得等資金贈与の非課税" },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-yrwbj3my5",
+      "type": "Section",
+      "props": {
+        "heading": "住宅取得等資金贈与の非課税",
+        "level": 2,
+        "content": [
           {
             "type": "paragraph",
             "runs": [
-              { "text": "父母・祖父母から住宅取得資金の贈与を受けた場合、一定額まで贈与税が非課税になります。" }
+              {
+                "text": "父母・祖父母から住宅取得資金の贈与を受けた場合、一定額まで贈与税が非課税になります。"
+              }
             ]
           },
           {
             "type": "list",
             "ordered": false,
             "items": [
-              [{ "type": "paragraph", "runs": [{ "text": "省エネ等住宅：最大1,000万円まで非課税" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "それ以外の住宅：最大500万円まで非課税" }] }]
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "省エネ等住宅：最大1,000万円まで非課税"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "それ以外の住宅：最大500万円まで非課税"
+                    }
+                  ]
+                }
+              ]
             ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "related-links-3rqn6lqhb",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "不動産登記",
+            "href": "/services/housing/property-registration"
+          },
+          {
+            "title": "建築確認申請",
+            "href": "/services/housing/building-permit"
+          },
+          {
+            "title": "固定資産税",
+            "href": "/services/tax/kotei"
+          },
+          {
+            "title": "印鑑登録",
+            "href": "/services/registration/inkan"
+          },
+          {
+            "title": "リフォーム補助",
+            "href": "/services/housing/reform-subsidy"
+          },
+          {
+            "title": "耐震改修",
+            "href": "/services/housing/seismic-retrofit"
           }
         ]
       }
@@ -95,11 +196,24 @@
         "hours": "平日 8:30〜17:15（土日祝日・年末年始を除く）",
         "address": "〒100-0001 東京都サンプル市中央1-1-1"
       }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
+      }
     }
   ],
   "search": {
     "summary": "住宅取得支援制度の案内。住宅ローン減税、住宅取得等資金贈与の非課税など。",
-    "keywords": ["住宅ローン減税", "住宅取得", "贈与税", "非課税", "住宅購入"],
+    "keywords": [
+      "住宅ローン減税",
+      "住宅取得",
+      "贈与税",
+      "非課税",
+      "住宅購入"
+    ],
     "plain_text": "住宅取得支援。住宅ローン減税は年末ローン残高の0.7%を最長13年間控除。住宅取得等資金贈与は最大1,000万円まで非課税。"
   }
 }

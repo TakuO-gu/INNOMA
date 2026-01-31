@@ -7,7 +7,10 @@
   "description": "日本国籍、帰化申請、在留資格、外国人登録などの戸籍・国籍・在留に関する情報",
   "content_type": "directory",
   "service_category": "government",
-  "audience": ["residents", "foreigners"],
+  "audience": [
+    "residents",
+    "foreigners"
+  ],
   "topic": [],
   "source": {
     "source_url": "template://sample/topics/nationality",
@@ -25,9 +28,14 @@
       "type": "Breadcrumbs",
       "props": {
         "items": [
-          { "label": "ホーム", "href": "/" },
-          { "label": "くらしの情報", "href": "/topics" },
-          { "label": "戸籍・国籍・在留", "href": "/topics/nationality" }
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "戸籍・国籍・在留",
+            "href": "/topics/nationality"
+          }
         ]
       }
     },
@@ -113,11 +121,33 @@
         "hours": "{{city_hall_hours}}",
         "address": "{{city_hall_address}}"
       }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
+      }
     }
   ],
   "search": {
     "summary": "戸籍・国籍・在留に関する情報。日本国籍、帰化申請、在留資格、ビザ、在留カード、特別永住者証明書、外国人登録、入国、出国、難民認定、国際結婚の案内。",
-    "keywords": ["戸籍", "国籍", "在留", "日本国籍", "帰化", "在留資格", "ビザ", "在留カード", "特別永住者", "外国人登録", "入国", "出国", "難民認定", "国際結婚"],
+    "keywords": [
+      "戸籍",
+      "国籍",
+      "在留",
+      "日本国籍",
+      "帰化",
+      "在留資格",
+      "ビザ",
+      "在留カード",
+      "特別永住者",
+      "外国人登録",
+      "入国",
+      "出国",
+      "難民認定",
+      "国際結婚"
+    ],
     "plain_text": "戸籍・国籍・在留。国籍・在留資格・外国人の届出に関する情報。日本国籍の取得・離脱、帰化申請、在留資格・ビザ、在留カード・特別永住者証明書、外国人登録、入国・出国手続き、難民認定、国際結婚・渉外戸籍。"
   }
 }

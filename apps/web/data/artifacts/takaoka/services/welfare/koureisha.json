@@ -33,10 +33,6 @@
             "href": "/"
           },
           {
-            "label": "くらしの情報",
-            "href": "/topics"
-          },
-          {
             "label": "福祉・介護",
             "href": "/topics/welfare"
           },
@@ -62,20 +58,21 @@
       }
     },
     {
-      "id": "richtext-seikatsu",
-      "type": "RichText",
+      "id": "section-k1ytcr9ww",
+      "type": "Section",
       "props": {
+        "heading": "生活支援サービス",
+        "level": 2,
+        "content": []
+      }
+    },
+    {
+      "id": "section-s10lsgjls",
+      "type": "Section",
+      "props": {
+        "heading": "配食サービス",
+        "level": 3,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "生活支援サービス"
-          },
-          {
-            "type": "heading",
-            "level": 3,
-            "text": "配食サービス"
-          },
           {
             "type": "paragraph",
             "runs": [
@@ -83,12 +80,17 @@
                 "text": "調理が困難な高齢者等に対し、栄養バランスのとれた食事を届けます。安否確認も兼ねています。"
               }
             ]
-          },
-          {
-            "type": "heading",
-            "level": 3,
-            "text": "緊急通報システム"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-gyh8e4qb6",
+      "type": "Section",
+      "props": {
+        "heading": "緊急通報システム",
+        "level": 3,
+        "content": [
           {
             "type": "paragraph",
             "runs": [
@@ -96,12 +98,17 @@
                 "text": "一人暮らしの高齢者等に対し、緊急時にボタンを押すだけで通報できる機器を貸与します。"
               }
             ]
-          },
-          {
-            "type": "heading",
-            "level": 3,
-            "text": "ごみ出し支援"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-b20sl6vm4",
+      "type": "Section",
+      "props": {
+        "heading": "ごみ出し支援",
+        "level": 3,
+        "content": [
           {
             "type": "paragraph",
             "runs": [
@@ -114,20 +121,21 @@
       }
     },
     {
-      "id": "richtext-kenko",
-      "type": "RichText",
+      "id": "section-wer0fnonf",
+      "type": "Section",
       "props": {
+        "heading": "健康・介護予防",
+        "level": 2,
+        "content": []
+      }
+    },
+    {
+      "id": "section-pc6l6pfzg",
+      "type": "Section",
+      "props": {
+        "heading": "介護予防教室",
+        "level": 3,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "健康・介護予防"
-          },
-          {
-            "type": "heading",
-            "level": 3,
-            "text": "介護予防教室"
-          },
           {
             "type": "paragraph",
             "runs": [
@@ -135,12 +143,17 @@
                 "text": "体操、栄養、口腔ケアなど、介護予防に関する教室を開催しています。"
               }
             ]
-          },
-          {
-            "type": "heading",
-            "level": 3,
-            "text": "高齢者健康診査"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-iiupbl19h",
+      "type": "Section",
+      "props": {
+        "heading": "高齢者健康診査",
+        "level": 3,
+        "content": [
           {
             "type": "paragraph",
             "runs": [
@@ -148,12 +161,17 @@
                 "text": "後期高齢者医療に加入している方を対象に健康診査を実施しています。"
               }
             ]
-          },
-          {
-            "type": "heading",
-            "level": 3,
-            "text": "高齢者インフルエンザ予防接種"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-4nfurpwvu",
+      "type": "Section",
+      "props": {
+        "heading": "高齢者インフルエンザ予防接種",
+        "level": 3,
+        "content": [
           {
             "type": "paragraph",
             "runs": [
@@ -166,20 +184,21 @@
       }
     },
     {
-      "id": "richtext-keizai",
-      "type": "RichText",
+      "id": "section-sjgiqwmrp",
+      "type": "Section",
       "props": {
+        "heading": "経済的支援",
+        "level": 2,
+        "content": []
+      }
+    },
+    {
+      "id": "section-s23w4zdh3",
+      "type": "Section",
+      "props": {
+        "heading": "敬老祝金",
+        "level": 3,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "経済的支援"
-          },
-          {
-            "type": "heading",
-            "level": 3,
-            "text": "敬老祝金"
-          },
           {
             "type": "paragraph",
             "runs": [
@@ -187,12 +206,17 @@
                 "text": "長寿をお祝いして、節目の年齢を迎えた方に祝金をお贈りしています。"
               }
             ]
-          },
-          {
-            "type": "heading",
-            "level": 3,
-            "text": "おむつ費用助成"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-hwqapk81g",
+      "type": "Section",
+      "props": {
+        "heading": "おむつ費用助成",
+        "level": 3,
+        "content": [
           {
             "type": "paragraph",
             "runs": [
@@ -205,20 +229,21 @@
       }
     },
     {
-      "id": "richtext-sumu",
-      "type": "RichText",
+      "id": "section-1151mzg35",
+      "type": "Section",
       "props": {
+        "heading": "住まい・外出支援",
+        "level": 2,
+        "content": []
+      }
+    },
+    {
+      "id": "section-2a7huic8g",
+      "type": "Section",
+      "props": {
+        "heading": "シルバーハウジング",
+        "level": 3,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "住まい・外出支援"
-          },
-          {
-            "type": "heading",
-            "level": 3,
-            "text": "シルバーハウジング"
-          },
           {
             "type": "paragraph",
             "runs": [
@@ -226,12 +251,17 @@
                 "text": "バリアフリー対応の公営住宅で、生活援助員（LSA）による見守りサービスがあります。"
               }
             ]
-          },
-          {
-            "type": "heading",
-            "level": 3,
-            "text": "住宅改修費助成"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-7kbuaq6u5",
+      "type": "Section",
+      "props": {
+        "heading": "住宅改修費助成",
+        "level": 3,
+        "content": [
           {
             "type": "paragraph",
             "runs": [
@@ -239,12 +269,17 @@
                 "text": "手すりの設置や段差解消など、住宅のバリアフリー改修費用を助成します。"
               }
             ]
-          },
-          {
-            "type": "heading",
-            "level": 3,
-            "text": "高齢者移動支援"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-bck9p6y3t",
+      "type": "Section",
+      "props": {
+        "heading": "高齢者移動支援",
+        "level": 3,
+        "content": [
           {
             "type": "paragraph",
             "runs": [
@@ -257,20 +292,21 @@
       }
     },
     {
-      "id": "richtext-ikigai",
-      "type": "RichText",
+      "id": "section-axh96whxt",
+      "type": "Section",
       "props": {
+        "heading": "生きがい・社会参加",
+        "level": 2,
+        "content": []
+      }
+    },
+    {
+      "id": "section-h28r4v1og",
+      "type": "Section",
+      "props": {
+        "heading": "老人クラブ",
+        "level": 3,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "生きがい・社会参加"
-          },
-          {
-            "type": "heading",
-            "level": 3,
-            "text": "老人クラブ"
-          },
           {
             "type": "paragraph",
             "runs": [
@@ -278,12 +314,17 @@
                 "text": "高齢者の仲間づくりや健康増進、社会奉仕活動などを行う団体への支援を行っています。"
               }
             ]
-          },
-          {
-            "type": "heading",
-            "level": 3,
-            "text": "シルバー人材センター"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-x9e6mtiq9",
+      "type": "Section",
+      "props": {
+        "heading": "シルバー人材センター",
+        "level": 3,
+        "content": [
           {
             "type": "paragraph",
             "runs": [
@@ -313,8 +354,16 @@
             "href": "/services/health/kouki"
           },
           {
-            "title": "成年後見制度",
-            "href": "/services/welfare/kouken"
+            "title": "健康診断・検診",
+            "href": "/services/health/kenshin"
+          },
+          {
+            "title": "高齢者運転",
+            "href": "/services/driving/senior-driving"
+          },
+          {
+            "title": "シルバー人材センター",
+            "href": "/services/employment/silver-center"
           }
         ]
       }
@@ -328,6 +377,13 @@
         "email": "{{koureisha_email}}",
         "hours": "{{city_hall_hours}}",
         "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
       }
     }
   ],

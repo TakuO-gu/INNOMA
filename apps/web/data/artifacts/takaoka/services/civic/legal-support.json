@@ -32,10 +32,6 @@
             "href": "/"
           },
           {
-            "label": "くらしの情報",
-            "href": "/topics"
-          },
-          {
             "label": "市民参加・権利行使",
             "href": "/topics/civic"
           },
@@ -61,15 +57,12 @@
       }
     },
     {
-      "id": "richtext-1",
-      "type": "RichText",
+      "id": "section-e4uirtyrc",
+      "type": "Section",
       "props": {
+        "heading": "市民法律相談",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "市民法律相談"
-          },
           {
             "type": "paragraph",
             "runs": [
@@ -113,12 +106,17 @@
                 }
               ]
             ]
-          },
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "法テラス（日本司法支援センター）"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-0psxvmz26",
+      "type": "Section",
+      "props": {
+        "heading": "法テラス（日本司法支援センター）",
+        "level": 2,
+        "content": [
           {
             "type": "paragraph",
             "runs": [
@@ -139,6 +137,30 @@
       }
     },
     {
+      "id": "related-links-pan9lp1l8",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "犯罪被害者支援",
+            "href": "/services/civic/victim-support"
+          },
+          {
+            "title": "行政不服申立て",
+            "href": "/services/civic/administrative-appeal"
+          },
+          {
+            "title": "労働相談",
+            "href": "/services/employment/labor-consultation"
+          },
+          {
+            "title": "生活保護",
+            "href": "/services/welfare/seikatsu-hogo"
+          }
+        ]
+      }
+    },
+    {
       "id": "contact-1",
       "type": "Contact",
       "props": {
@@ -147,6 +169,13 @@
         "email": "{{civic_email}}",
         "hours": "{{city_hall_hours}}",
         "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
       }
     }
   ],

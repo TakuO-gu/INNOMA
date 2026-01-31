@@ -7,7 +7,9 @@
   "description": "育児休業給付金、介護休業給付金、育休取得の手続き",
   "content_type": "guide",
   "service_category": "business",
-  "audience": ["residents"],
+  "audience": [
+    "residents"
+  ],
   "topic": [],
   "source": {
     "source_url": "template://sample/services/employment/family-leave",
@@ -25,10 +27,18 @@
       "type": "Breadcrumbs",
       "props": {
         "items": [
-          { "label": "ホーム", "href": "/" },
-          { "label": "くらしの情報", "href": "/topics" },
-          { "label": "仕事・労働", "href": "/topics/employment" },
-          { "label": "育児休業・介護休業", "href": "/services/employment/family-leave" }
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "仕事・労働",
+            "href": "/topics/employment"
+          },
+          {
+            "label": "育児休業・介護休業",
+            "href": "/services/employment/family-leave"
+          }
         ]
       }
     },
@@ -47,35 +57,100 @@
       }
     },
     {
-      "id": "richtext-1",
-      "type": "RichText",
+      "id": "section-gmm82257m-table",
+      "type": "Table",
       "props": {
-        "content": [
-          { "type": "heading", "level": 2, "text": "育児休業給付金" },
+        "rows": [
           {
-            "type": "list",
-            "ordered": false,
-            "items": [
-              [{ "type": "paragraph", "runs": [{ "text": "支給額：休業開始時賃金の67%（180日経過後は50%）" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "支給期間：子が1歳になるまで（保育所に入れない場合は最長2歳まで）" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "要件：雇用保険に加入し、休業前2年間に12か月以上の被保険者期間があること" }] }]
-            ]
+            "label": "支給額",
+            "value": "休業開始時賃金の67%（180日経過後は50%）"
           },
-          { "type": "heading", "level": 2, "text": "産後パパ育休（出生時育児休業）" },
+          {
+            "label": "支給期間",
+            "value": "子が1歳になるまで（保育所に入れない場合は最長2歳まで）"
+          },
+          {
+            "label": "要件",
+            "value": "雇用保険に加入し、休業前2年間に12か月以上の被保険者期間があること"
+          }
+        ],
+        "heading": "育児休業給付金"
+      }
+    },
+    {
+      "id": "section-7b5j9q8s1",
+      "type": "Section",
+      "props": {
+        "heading": "産後パパ育休（出生時育児休業）",
+        "level": 2,
+        "content": [
           {
             "type": "paragraph",
             "runs": [
-              { "text": "子の出生後8週間以内に最大4週間取得可能。2回に分割して取得できます。" }
+              {
+                "text": "子の出生後8週間以内に最大4週間取得可能。2回に分割して取得できます。"
+              }
             ]
-          },
-          { "type": "heading", "level": 2, "text": "介護休業給付金" },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-ojupc4da4",
+      "type": "Section",
+      "props": {
+        "heading": "介護休業給付金",
+        "level": 2,
+        "content": [
           {
             "type": "list",
             "ordered": false,
             "items": [
-              [{ "type": "paragraph", "runs": [{ "text": "支給額：休業開始時賃金の67%" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "支給期間：対象家族1人につき通算93日まで（3回まで分割可能）" }] }]
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "支給額：休業開始時賃金の67%"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "支給期間：対象家族1人につき通算93日まで（3回まで分割可能）"
+                    }
+                  ]
+                }
+              ]
             ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "related-links-jnv8cu3wn",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "保育所入所申請",
+            "href": "/services/childcare/nursery-apply"
+          },
+          {
+            "title": "介護保険",
+            "href": "/services/welfare/kaigo"
+          },
+          {
+            "title": "労働基準",
+            "href": "/services/employment/labor-standards"
+          },
+          {
+            "title": "社会保険",
+            "href": "/services/business/business-insurance"
           }
         ]
       }
@@ -89,11 +164,25 @@
         "address": "{{hello_work_address}}",
         "hours": "平日8:30〜17:15"
       }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
+      }
     }
   ],
   "search": {
     "summary": "育児休業・介護休業給付金の案内。支給額、支給期間、取得要件。",
-    "keywords": ["育児休業", "育休", "介護休業", "育児休業給付金", "介護休業給付金", "産後パパ育休"],
+    "keywords": [
+      "育児休業",
+      "育休",
+      "介護休業",
+      "育児休業給付金",
+      "介護休業給付金",
+      "産後パパ育休"
+    ],
     "plain_text": "育児休業・介護休業。育児休業給付金は賃金の67%、子が1歳まで。介護休業給付金は93日まで。"
   }
 }

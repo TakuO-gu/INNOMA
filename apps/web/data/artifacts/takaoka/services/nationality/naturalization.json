@@ -32,10 +32,6 @@
             "href": "/"
           },
           {
-            "label": "くらしの情報",
-            "href": "/topics"
-          },
-          {
             "label": "戸籍・国籍・在留",
             "href": "/topics/nationality"
           },
@@ -61,15 +57,12 @@
       }
     },
     {
-      "id": "richtext-1",
-      "type": "RichText",
+      "id": "section-w8nxchdj8",
+      "type": "Section",
       "props": {
+        "heading": "帰化の要件（普通帰化）",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "帰化の要件（普通帰化）"
-          },
           {
             "type": "list",
             "ordered": false,
@@ -135,12 +128,17 @@
                 }
               ]
             ]
-          },
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "申請先"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-p71njkxmp",
+      "type": "Section",
+      "props": {
+        "heading": "申請先",
+        "level": 2,
+        "content": [
           {
             "type": "paragraph",
             "runs": [
@@ -153,12 +151,43 @@
       }
     },
     {
+      "id": "related-links-7h8j1bek8",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "ビザ・在留資格",
+            "href": "/services/nationality/visa"
+          },
+          {
+            "title": "在留カード",
+            "href": "/services/nationality/residence-card"
+          },
+          {
+            "title": "戸籍",
+            "href": "/services/registration/koseki"
+          },
+          {
+            "title": "外国人相談",
+            "href": "/services/nationality/consultation"
+          }
+        ]
+      }
+    },
+    {
       "id": "contact-1",
       "type": "Contact",
       "props": {
         "department": "{{legal_affairs_bureau}}",
         "phone": "{{legal_affairs_bureau_phone}}",
         "address": "{{legal_affairs_bureau_address}}"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
       }
     }
   ],

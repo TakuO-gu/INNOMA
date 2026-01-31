@@ -32,10 +32,6 @@
             "href": "/"
           },
           {
-            "label": "くらしの情報",
-            "href": "/topics"
-          },
-          {
             "label": "事業・経営",
             "href": "/topics/business"
           },
@@ -61,15 +57,12 @@
       }
     },
     {
-      "id": "richtext-1",
-      "type": "RichText",
+      "id": "section-iw41pxghr",
+      "type": "Section",
       "props": {
+        "heading": "社会保険（健康保険・厚生年金）",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "社会保険（健康保険・厚生年金）"
-          },
           {
             "type": "list",
             "ordered": false,
@@ -95,47 +88,25 @@
                 }
               ]
             ]
-          },
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "労働保険（労災保険・雇用保険）"
-          },
-          {
-            "type": "list",
-            "ordered": false,
-            "items": [
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "労災保険",
-                      "bold": true
-                    },
-                    {
-                      "text": "：1人でも雇用したら加入義務（労働基準監督署へ届出）"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "雇用保険",
-                      "bold": true
-                    },
-                    {
-                      "text": "：週20時間以上勤務する従業員を雇用したら加入（ハローワークへ届出）"
-                    }
-                  ]
-                }
-              ]
-            ]
           }
         ]
+      }
+    },
+    {
+      "id": "section-v1st2fhao-desclist",
+      "type": "DescriptionList",
+      "props": {
+        "items": [
+          {
+            "term": "労災保険",
+            "description": "1人でも雇用したら加入義務（労働基準監督署へ届出）"
+          },
+          {
+            "term": "雇用保険",
+            "description": "週20時間以上勤務する従業員を雇用したら加入（ハローワークへ届出）"
+          }
+        ],
+        "heading": "労働保険（労災保険・雇用保険）"
       }
     },
     {
@@ -145,6 +116,13 @@
         "department": "サンプル年金事務所",
         "phone": "03-3456-7890",
         "address": "東京都サンプル市中央3-3-3"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
       }
     }
   ],

@@ -4,7 +4,29 @@
  * テンプレート内の {{variable_name}} 形式の変数を実際の値に置換する
  */
 
-import type { ReplaceResult, VariableStore } from "./types";
+import type { ReplaceResult, VariableStore, VariableValue } from "./types";
+
+/**
+ * 変数のソース情報
+ */
+export interface VariableSourceInfo {
+  /** 変数名 */
+  variableName: string;
+  /** ソースURL */
+  sourceUrl?: string;
+  /** 信頼度 */
+  confidence?: number;
+  /** ソースタイプ */
+  source: "manual" | "llm" | "default";
+}
+
+/**
+ * ソース情報付き置換結果
+ */
+export interface ReplaceResultWithSources extends ReplaceResult {
+  /** 使用された変数のソース情報 */
+  variableSources: VariableSourceInfo[];
+}
 
 /**
  * 変数のパターン: {{variable_name}}
@@ -218,4 +240,67 @@ export function validateVariableValue(
     return null; // 検証できない
   }
   return validator(value);
+}
+
+/**
+ * コンテンツ内の変数を置換し、ソース情報も収集
+ *
+ * @param content 置換対象のコンテンツ
+ * @param variableStore 変数ストア（ソース情報を含む）
+ * @param escapeJson JSON用にエスケープするかどうか
+ * @returns ソース情報付き置換結果
+ */
+export function replaceVariablesWithSources(
+  content: string,
+  variableStore: VariableStore,
+  escapeJson: boolean = true
+): ReplaceResultWithSources {
+  const replacedVariables: string[] = [];
+  const unreplacedVariables: string[] = [];
+  const variableSources: VariableSourceInfo[] = [];
+  const processedVariables = new Set<string>();
+
+  // 変数を小文字に正規化したマップを作成
+  const normalizedStore: Record<string, VariableValue> = {};
+  for (const [key, value] of Object.entries(variableStore)) {
+    normalizedStore[key.toLowerCase()] = value;
+  }
+
+  // 変数を置換
+  const result = content.replace(VARIABLE_PATTERN, (match, varName) => {
+    const normalizedName = varName.toLowerCase();
+
+    if (normalizedName in normalizedStore) {
+      const varData = normalizedStore[normalizedName];
+
+      if (!replacedVariables.includes(normalizedName)) {
+        replacedVariables.push(normalizedName);
+      }
+
+      // ソース情報を収集（URLがあるもののみ）
+      if (!processedVariables.has(normalizedName) && varData.sourceUrl) {
+        variableSources.push({
+          variableName: normalizedName,
+          sourceUrl: varData.sourceUrl,
+          confidence: varData.confidence,
+          source: varData.source,
+        });
+        processedVariables.add(normalizedName);
+      }
+
+      return escapeJson ? escapeForJson(varData.value) : varData.value;
+    } else {
+      if (!unreplacedVariables.includes(normalizedName)) {
+        unreplacedVariables.push(normalizedName);
+      }
+      return match; // 変数が見つからない場合はそのまま
+    }
+  });
+
+  return {
+    content: result,
+    replacedVariables,
+    unreplacedVariables,
+    variableSources,
+  };
 }

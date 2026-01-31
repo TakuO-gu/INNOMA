@@ -7,7 +7,9 @@
   "description": "市営住宅・県営住宅の入居申込み・抽選案内",
   "content_type": "guide",
   "service_category": "housing",
-  "audience": ["residents"],
+  "audience": [
+    "residents"
+  ],
   "topic": [],
   "source": {
     "source_url": "template://sample/services/housing/public-housing",
@@ -25,10 +27,18 @@
       "type": "Breadcrumbs",
       "props": {
         "items": [
-          { "label": "ホーム", "href": "/" },
-          { "label": "くらしの情報", "href": "/topics" },
-          { "label": "住まい・引越し", "href": "/topics/housing" },
-          { "label": "公営住宅", "href": "/services/housing/public-housing" }
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "住まい・引越し",
+            "href": "/topics/housing"
+          },
+          {
+            "label": "公営住宅",
+            "href": "/services/housing/public-housing"
+          }
         ]
       }
     },
@@ -47,40 +57,110 @@
       }
     },
     {
-      "id": "richtext-1",
-      "type": "RichText",
+      "id": "section-7tw31y0ry",
+      "type": "Section",
       "props": {
+        "heading": "入居資格",
+        "level": 2,
         "content": [
-          { "type": "heading", "level": 2, "text": "入居資格" },
           {
             "type": "list",
             "ordered": false,
             "items": [
-              [{ "type": "paragraph", "runs": [{ "text": "現に住宅に困窮していることが明らかな方" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "収入が一定基準以下の方（収入分位25%以下が原則）" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "サンプル市内に住所または勤務先がある方" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "税金を滞納していない方" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "暴力団員でない方" }] }]
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "現に住宅に困窮していることが明らかな方"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "収入が一定基準以下の方（収入分位25%以下が原則）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "サンプル市内に住所または勤務先がある方"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "税金を滞納していない方"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "暴力団員でない方"
+                    }
+                  ]
+                }
+              ]
             ]
-          },
-          { "type": "heading", "level": 2, "text": "募集時期" },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-w85ph0vp8",
+      "type": "Section",
+      "props": {
+        "heading": "募集時期",
+        "level": 2,
+        "content": [
           {
             "type": "paragraph",
             "runs": [
-              { "text": "定期募集：毎年4月・10月に募集" }
+              {
+                "text": "定期募集：毎年4月・10月に募集"
+              }
             ]
           },
           {
             "type": "paragraph",
             "runs": [
-              { "text": "随時募集：空室が出た場合に随時募集を行う場合があります。" }
+              {
+                "text": "随時募集：空室が出た場合に随時募集を行う場合があります。"
+              }
             ]
-          },
-          { "type": "heading", "level": 2, "text": "家賃" },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-pyd79u4m7",
+      "type": "Section",
+      "props": {
+        "heading": "家賃",
+        "level": 2,
+        "content": [
           {
             "type": "paragraph",
             "runs": [
-              { "text": "家賃は入居者の収入、住宅の立地・広さ・建築年数等により決定されます。おおよその目安は月額月額15,000円〜50,000円程度です。" }
+              {
+                "text": "家賃は入居者の収入、住宅の立地・広さ・建築年数等により決定されます。おおよその目安は月額月額15,000円〜50,000円程度です。"
+              }
             ]
           }
         ]
@@ -91,10 +171,46 @@
       "type": "Table",
       "props": {
         "rows": [
-          { "label": "募集時期", "value": "毎年4月・10月に募集" },
-          { "label": "申込場所", "value": "住宅課" },
-          { "label": "選考方法", "value": "抽選または住宅困窮度評価" },
-          { "label": "敷金", "value": "家賃の3か月分" }
+          {
+            "label": "募集時期",
+            "value": "毎年4月・10月に募集"
+          },
+          {
+            "label": "申込場所",
+            "value": "住宅課"
+          },
+          {
+            "label": "選考方法",
+            "value": "抽選または住宅困窮度評価"
+          },
+          {
+            "label": "敷金",
+            "value": "家賃の3か月分"
+          }
+        ]
+      }
+    },
+    {
+      "id": "related-links-90ndjy6rj",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "住宅手当",
+            "href": "/services/housing/housing-benefit"
+          },
+          {
+            "title": "引越し手続き一覧",
+            "href": "/services/housing/moving-checklist"
+          },
+          {
+            "title": "生活保護",
+            "href": "/services/welfare/seikatsu-hogo"
+          },
+          {
+            "title": "転入届",
+            "href": "/services/registration/tennyu"
+          }
         ]
       }
     },
@@ -108,11 +224,26 @@
         "hours": "平日 8:30〜17:15（土日祝日・年末年始を除く）",
         "address": "〒100-0001 東京都サンプル市中央1-1-1"
       }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
+      }
     }
   ],
   "search": {
     "summary": "市営住宅・県営住宅の入居申込み・抽選案内。入居資格、募集時期、家賃の目安。",
-    "keywords": ["公営住宅", "市営住宅", "県営住宅", "入居申込", "抽選", "低所得者", "家賃"],
+    "keywords": [
+      "公営住宅",
+      "市営住宅",
+      "県営住宅",
+      "入居申込",
+      "抽選",
+      "低所得者",
+      "家賃"
+    ],
     "plain_text": "公営住宅（市営・県営住宅）。住宅に困窮する低所得者向けの低廉な家賃の住宅。入居資格、募集時期、家賃の案内。"
   }
 }

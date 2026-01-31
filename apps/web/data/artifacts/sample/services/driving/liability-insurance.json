@@ -32,10 +32,6 @@
             "href": "/"
           },
           {
-            "label": "くらしの情報",
-            "href": "/topics"
-          },
-          {
             "label": "運転・車両",
             "href": "/topics/driving"
           },
@@ -61,15 +57,12 @@
       }
     },
     {
-      "id": "richtext-1",
-      "type": "RichText",
+      "id": "section-z1a9w48w2",
+      "type": "Section",
       "props": {
+        "heading": "補償内容",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "補償内容"
-          },
           {
             "type": "list",
             "ordered": false,
@@ -105,12 +98,17 @@
                 }
               ]
             ]
-          },
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "保険料（24か月）"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-uofaifwyv",
+      "type": "Section",
+      "props": {
+        "heading": "保険料（24か月）",
+        "level": 2,
+        "content": [
           {
             "type": "list",
             "ordered": false,
@@ -136,21 +134,44 @@
                 }
               ]
             ]
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-uofaifwyv-notification-0",
+      "type": "NotificationBanner",
+      "props": {
+        "severity": "warning",
+        "title": "注意",
+        "content": [
           {
-            "type": "callout",
-            "severity": "warning",
-            "title": "注意",
-            "content": [
+            "type": "paragraph",
+            "runs": [
               {
-                "type": "paragraph",
-                "runs": [
-                  {
-                    "text": "自賠責保険に未加入で運行した場合、1年以下の懲役または50万円以下の罰金です。"
-                  }
-                ]
+                "text": "自賠責保険に未加入で運行した場合、1年以下の懲役または50万円以下の罰金です。"
               }
             ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "related-links-37ytfndew",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "自動車登録",
+            "href": "/services/driving/registration"
+          },
+          {
+            "title": "自動車税",
+            "href": "/services/driving/vehicle-tax"
+          },
+          {
+            "title": "交通事故",
+            "href": "/services/driving/accident"
           }
         ]
       }
@@ -164,6 +185,13 @@
         "email": "todokede@sample-city.lg.jp",
         "hours": "平日 8:30〜17:15（土日祝日・年末年始を除く）",
         "address": "〒100-0001 東京都サンプル市中央1-1-1"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
       }
     }
   ],

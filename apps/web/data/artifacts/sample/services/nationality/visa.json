@@ -32,10 +32,6 @@
             "href": "/"
           },
           {
-            "label": "くらしの情報",
-            "href": "/topics"
-          },
-          {
             "label": "戸籍・国籍・在留",
             "href": "/topics/nationality"
           },
@@ -61,110 +57,45 @@
       }
     },
     {
-      "id": "richtext-1",
-      "type": "RichText",
+      "id": "section-fqk1h3oe0-table",
+      "type": "Table",
       "props": {
+        "rows": [
+          {
+            "label": "永住者",
+            "value": "在留期限なし"
+          },
+          {
+            "label": "技術・人文知識・国際業務",
+            "value": "専門的・技術的分野の就労"
+          },
+          {
+            "label": "特定技能",
+            "value": "人手不足分野での就労"
+          },
+          {
+            "label": "留学",
+            "value": "大学・専門学校等での学習"
+          },
+          {
+            "label": "家族滞在",
+            "value": "就労者の扶養家族"
+          },
+          {
+            "label": "日本人の配偶者等",
+            "value": "日本人の配偶者・子"
+          }
+        ],
+        "heading": "主な在留資格"
+      }
+    },
+    {
+      "id": "section-aki76pr49",
+      "type": "Section",
+      "props": {
+        "heading": "在留期間更新・在留資格変更",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "主な在留資格"
-          },
-          {
-            "type": "list",
-            "ordered": false,
-            "items": [
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "永住者",
-                      "bold": true
-                    },
-                    {
-                      "text": "：在留期限なし"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "技術・人文知識・国際業務",
-                      "bold": true
-                    },
-                    {
-                      "text": "：専門的・技術的分野の就労"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "特定技能",
-                      "bold": true
-                    },
-                    {
-                      "text": "：人手不足分野での就労"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "留学",
-                      "bold": true
-                    },
-                    {
-                      "text": "：大学・専門学校等での学習"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "家族滞在",
-                      "bold": true
-                    },
-                    {
-                      "text": "：就労者の扶養家族"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "日本人の配偶者等",
-                      "bold": true
-                    },
-                    {
-                      "text": "：日本人の配偶者・子"
-                    }
-                  ]
-                }
-              ]
-            ]
-          },
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "在留期間更新・在留資格変更"
-          },
           {
             "type": "paragraph",
             "runs": [
@@ -183,6 +114,13 @@
         "department": "東京出入国在留管理局",
         "phone": "0570-034259",
         "address": "東京都港区港南5-5-30"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
       }
     }
   ],

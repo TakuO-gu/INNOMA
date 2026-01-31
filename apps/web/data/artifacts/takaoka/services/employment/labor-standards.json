@@ -32,10 +32,6 @@
             "href": "/"
           },
           {
-            "label": "くらしの情報",
-            "href": "/topics"
-          },
-          {
             "label": "仕事・労働",
             "href": "/topics/employment"
           },
@@ -61,15 +57,12 @@
       }
     },
     {
-      "id": "richtext-1",
-      "type": "RichText",
+      "id": "section-5u1vl8d7f",
+      "type": "Section",
       "props": {
+        "heading": "富山県の最低賃金",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "富山県の最低賃金"
-          },
           {
             "type": "paragraph",
             "runs": [
@@ -85,53 +78,38 @@
                 "text": "（{{minimum_wage_effective_date}}発効）"
               }
             ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-cqwxj22lz-table",
+      "type": "Table",
+      "props": {
+        "rows": [
+          {
+            "label": "1日8時間、1週40時間が上限",
+            "value": ""
           },
           {
-            "type": "heading",
-            "level": 2,
-            "text": "法定労働時間"
+            "label": "法定労働時間を超える場合は36協定の締結が必要",
+            "value": ""
           },
           {
-            "type": "list",
-            "ordered": false,
-            "items": [
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "1日8時間、1週40時間が上限"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "法定労働時間を超える場合は36協定の締結が必要"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "時間外労働は原則月45時間、年360時間が上限"
-                    }
-                  ]
-                }
-              ]
-            ]
-          },
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "割増賃金"
-          },
+            "label": "時間外労働は原則月45時間、年360時間が上限",
+            "value": ""
+          }
+        ],
+        "heading": "法定労働時間"
+      }
+    },
+    {
+      "id": "section-oq7u10m3y",
+      "type": "Section",
+      "props": {
+        "heading": "割増賃金",
+        "level": 2,
+        "content": [
           {
             "type": "list",
             "ordered": false,
@@ -182,12 +160,39 @@
       }
     },
     {
+      "id": "related-links-i441c4x9y",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "労働相談",
+            "href": "/services/employment/labor-consultation"
+          },
+          {
+            "title": "ハラスメント",
+            "href": "/services/employment/harassment"
+          },
+          {
+            "title": "育児・介護休業",
+            "href": "/services/employment/family-leave"
+          }
+        ]
+      }
+    },
+    {
       "id": "contact-1",
       "type": "Contact",
       "props": {
         "department": "{{labor_standards_office}}",
         "phone": "{{labor_standards_office_phone}}",
         "address": "{{labor_standards_office_address}}"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
       }
     }
   ],

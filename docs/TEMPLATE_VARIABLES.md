@@ -48,6 +48,8 @@ LLM情報取得システムが自動で埋める対象となる。
 |---------------|---------|
 | `tax` | 税務（総合） |
 | `zeimu` | 税務課 |
+| `nouzei` | 納税 |
+| `furusato` | ふるさと納税 |
 | `shisanzei` | 資産税 |
 | `kokuho` | 国民健康保険 |
 | `kouki` | 後期高齢者医療 |
@@ -158,7 +160,15 @@ LLM情報取得システムが自動で埋める対象となる。
 | `inkan_shomei_convenience_fee` | 印鑑証明（コンビニ） | 200円 |
 | `fuhyo_fee` | 附票 | 300円 |
 
-#### 2.4.2 健診・予防接種
+#### 2.4.2 税証明書手数料
+| 変数名 | 説明 | 一般的な値 |
+|--------|------|-----------|
+| `zeishoumei_shotoku_fee` | 所得証明書（窓口） | 300円 |
+| `zeishoumei_shotoku_cvs_fee` | 所得証明書（コンビニ） | 200円 |
+| `zeishoumei_nouzei_fee` | 納税証明書 | 300円 |
+| `zeishoumei_madoguchi` | 税証明書受付窓口 | 市役所1階 税務課窓口 |
+
+#### 2.4.3 健診・予防接種
 | 変数名 | 説明 |
 |--------|------|
 | `tokutei_kenshin_fee` | 特定健診自己負担 |
@@ -213,6 +223,10 @@ LLM情報取得システムが自動で埋める対象となる。
 | `juminzei_kigen_1` ~ `_4` | 住民税納期（1期〜4期） |
 | `kotei_kigen_1` ~ `_4` | 固定資産税納期（1期〜4期） |
 | `keijidosha_kigen` | 軽自動車税納期 |
+| `kakutei_kikan` | 確定申告期間 |
+| `kakutei_jikan` | 確定申告受付時間 |
+| `juminzei_shinkoku_kikan` | 住民税申告期間 |
+| `juminzei_shinkoku_basho` | 住民税申告場所 |
 | `influenza_period` | インフルエンザ接種期間 |
 | `kenshin_period` | 健診実施期間 |
 | `nursery_apply_period` | 保育所申込期間 |
@@ -236,6 +250,7 @@ LLM情報取得システムが自動で埋める対象となる。
 | `hinanjo_status_url` | 避難所開設状況URL |
 | `bosai_mail_touroku_url` | 防災メール登録URL |
 | `houkatsu_list_url` | 地域包括一覧URL |
+| `furusato_portal_url` | ふるさと納税ポータルURL |
 
 ---
 
@@ -273,6 +288,31 @@ LLM情報取得システムが自動で埋める対象となる。
 | `shigen_gomi_shushuhi` | 資源ごみ収集日 |
 | `gomi_dashijikan` | ごみ出し時間 |
 | `kaden_hikitori_basho` | 家電引取場所 |
+
+#### 納税関連
+| 変数名 | 説明 |
+|--------|------|
+| `nouzei_bank` | 利用可能な都市銀行・地方銀行 |
+| `nouzei_shinkin` | 利用可能な信用金庫・信用組合 |
+| `nouzei_ja` | 利用可能な農協・漁協 |
+| `nouzei_paypay` | PayPay対応状況 |
+| `nouzei_linepay` | LINE Pay対応状況 |
+| `nouzei_aupay` | au PAY対応状況 |
+| `nouzei_dpay` | d払い対応状況 |
+| `nouzei_rakutenpay` | 楽天ペイ対応状況 |
+
+#### 確定申告関連
+| 変数名 | 説明 |
+|--------|------|
+| `kakutei_zeimusho_kaijo` | 確定申告会場（税務署） |
+| `kakutei_shiyakusho_kaijo` | 確定申告会場（市役所） |
+
+#### ふるさと納税関連
+| 変数名 | 説明 |
+|--------|------|
+| `furusato_tsukaimichi_1` | 寄附金の使い道1 |
+| `furusato_tsukaimichi_2` | 寄附金の使い道2 |
+| `furusato_tsukaimichi_3` | 寄附金の使い道3 |
 
 ---
 

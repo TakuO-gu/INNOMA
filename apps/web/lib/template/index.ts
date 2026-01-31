@@ -20,6 +20,7 @@ export {
 // 変数置換機能
 export {
   replaceVariables,
+  replaceVariablesWithSources,
   variableStoreToMap,
   variableStoreToMapForJson,
   escapeForJson,
@@ -28,6 +29,11 @@ export {
   validators,
   inferValidator,
   validateVariableValue,
+} from "./replace";
+
+export type {
+  VariableSourceInfo,
+  ReplaceResultWithSources,
 } from "./replace";
 
 // 自治体データ操作

@@ -32,10 +32,6 @@
             "href": "/"
           },
           {
-            "label": "くらしの情報",
-            "href": "/topics"
-          },
-          {
             "label": "市民参加・権利行使",
             "href": "/topics/civic"
           },
@@ -61,15 +57,12 @@
       }
     },
     {
-      "id": "richtext-1",
-      "type": "RichText",
+      "id": "section-qs57m4lrp",
+      "type": "Section",
       "props": {
+        "heading": "住民監査請求とは",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "住民監査請求とは"
-          },
           {
             "type": "paragraph",
             "runs": [
@@ -77,12 +70,17 @@
                 "text": "地方自治体の長や職員による違法・不当な財務会計上の行為（公金の支出、財産の取得・処分、契約の締結など）について、監査委員に監査を求め、是正措置を講じるよう請求する制度です。"
               }
             ]
-          },
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "請求できる人"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-ahoj6zq23",
+      "type": "Section",
+      "props": {
+        "heading": "請求できる人",
+        "level": 2,
+        "content": [
           {
             "type": "paragraph",
             "runs": [
@@ -90,12 +88,17 @@
                 "text": "{{municipality_name}}の住民であれば、1人でも請求できます。"
               }
             ]
-          },
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "請求対象となる行為"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-o61btyb5b",
+      "type": "Section",
+      "props": {
+        "heading": "請求対象となる行為",
+        "level": 2,
+        "content": [
           {
             "type": "list",
             "ordered": false,
@@ -161,12 +164,17 @@
                 }
               ]
             ]
-          },
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "請求期間"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-ck1nb88k0",
+      "type": "Section",
+      "props": {
+        "heading": "請求期間",
+        "level": 2,
+        "content": [
           {
             "type": "paragraph",
             "runs": [
@@ -174,12 +182,17 @@
                 "text": "当該行為のあった日または終わった日から1年以内（正当な理由があれば1年経過後も可能な場合あり）"
               }
             ]
-          },
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "監査結果に不服がある場合"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-2qdye4sa7",
+      "type": "Section",
+      "props": {
+        "heading": "監査結果に不服がある場合",
+        "level": 2,
+        "content": [
           {
             "type": "paragraph",
             "runs": [
@@ -187,6 +200,22 @@
                 "text": "監査結果に不服がある場合、住民訴訟を提起することができます。"
               }
             ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "related-links-bwm8wuuit",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "行政不服申立て",
+            "href": "/services/civic/administrative-appeal"
+          },
+          {
+            "title": "情報公開",
+            "href": "/services/civic/information-disclosure"
           }
         ]
       }
@@ -200,6 +229,13 @@
         "email": "{{audit_commission_email}}",
         "hours": "{{city_hall_hours}}",
         "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
       }
     }
   ],

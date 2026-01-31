@@ -33,10 +33,6 @@
             "href": "/"
           },
           {
-            "label": "くらしの情報",
-            "href": "/topics"
-          },
-          {
             "label": "戸籍・国籍・在留",
             "href": "/topics/nationality"
           },
@@ -62,15 +58,12 @@
       }
     },
     {
-      "id": "richtext-1",
-      "type": "RichText",
+      "id": "section-j4hjaa8xm",
+      "type": "Section",
       "props": {
+        "heading": "婚姻届の提出",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "婚姻届の提出"
-          },
           {
             "type": "paragraph",
             "runs": [
@@ -78,12 +71,17 @@
                 "text": "日本人の本籍地または届出人の所在地の市区町村役場に届出できます。"
               }
             ]
-          },
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "必要書類（外国人配偶者）"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-6gevn2n8z",
+      "type": "Section",
+      "props": {
+        "heading": "必要書類（外国人配偶者）",
+        "level": 2,
+        "content": [
           {
             "type": "list",
             "ordered": false,
@@ -133,12 +131,17 @@
                 }
               ]
             ]
-          },
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "婚姻要件具備証明書の取得"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-3ehikxbc6",
+      "type": "Section",
+      "props": {
+        "heading": "婚姻要件具備証明書の取得",
+        "level": 2,
+        "content": [
           {
             "type": "paragraph",
             "runs": [
@@ -146,12 +149,17 @@
                 "text": "外国人配偶者の本国の在日大使館・領事館で発行されます。国によって名称や形式が異なります。"
               }
             ]
-          },
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "在留資格の変更"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-6iv7bzp2m",
+      "type": "Section",
+      "props": {
+        "heading": "在留資格の変更",
+        "level": 2,
+        "content": [
           {
             "type": "paragraph",
             "runs": [
@@ -159,12 +167,17 @@
                 "text": "婚姻後、外国人配偶者は「日本人の配偶者等」への在留資格変更申請ができます。出入国在留管理局で手続きしてください。"
               }
             ]
-          },
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "相手国への届出"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-nfevr5qk8",
+      "type": "Section",
+      "props": {
+        "heading": "相手国への届出",
+        "level": 2,
+        "content": [
           {
             "type": "paragraph",
             "runs": [
@@ -172,6 +185,30 @@
                 "text": "外国人配偶者の本国にも婚姻届出が必要な場合があります。在日大使館・領事館にご確認ください。"
               }
             ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "related-links-9e3166mfu",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "婚姻届",
+            "href": "/services/registration/konin"
+          },
+          {
+            "title": "ビザ・在留資格",
+            "href": "/services/nationality/visa"
+          },
+          {
+            "title": "外国人相談",
+            "href": "/services/nationality/consultation"
+          },
+          {
+            "title": "戸籍",
+            "href": "/services/registration/koseki"
           }
         ]
       }
@@ -185,6 +222,13 @@
         "email": "{{koseki_email}}",
         "hours": "{{city_hall_hours}}",
         "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
       }
     }
   ],

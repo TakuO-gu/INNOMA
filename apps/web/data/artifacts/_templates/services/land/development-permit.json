@@ -32,10 +32,6 @@
             "href": "/"
           },
           {
-            "label": "くらしの情報",
-            "href": "/topics"
-          },
-          {
             "label": "土地・農林水産",
             "href": "/topics/land"
           },
@@ -61,15 +57,12 @@
       }
     },
     {
-      "id": "richtext-1",
-      "type": "RichText",
+      "id": "section-yyop3o2ov",
+      "type": "Section",
       "props": {
+        "heading": "開発許可とは",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "開発許可とは"
-          },
           {
             "type": "paragraph",
             "runs": [
@@ -77,12 +70,17 @@
                 "text": "都市計画法に基づき、建築物の建築を目的とした土地の区画形質の変更（切土・盛土、道路築造など）を行う場合に必要な許可です。"
               }
             ]
-          },
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "許可が必要な規模"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-noif8qlcb",
+      "type": "Section",
+      "props": {
+        "heading": "許可が必要な規模",
+        "level": 2,
+        "content": [
           {
             "type": "list",
             "ordered": false,
@@ -144,12 +142,17 @@
                 }
               ]
             ]
-          },
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "許可基準"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-dyw9qkrih",
+      "type": "Section",
+      "props": {
+        "heading": "許可基準",
+        "level": 2,
+        "content": [
           {
             "type": "list",
             "ordered": false,
@@ -185,12 +188,17 @@
                 }
               ]
             ]
-          },
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "盛土規制法"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-0qgg17lwp",
+      "type": "Section",
+      "props": {
+        "heading": "盛土規制法",
+        "level": 2,
+        "content": [
           {
             "type": "paragraph",
             "runs": [
@@ -198,12 +206,17 @@
                 "text": "令和5年5月施行の盛土規制法により、盛土等を行う場合は規制区域の確認と許可申請が必要な場合があります。"
               }
             ]
-          },
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "事前相談"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-hlknqfkal",
+      "type": "Section",
+      "props": {
+        "heading": "事前相談",
+        "level": 2,
+        "content": [
           {
             "type": "paragraph",
             "runs": [
@@ -211,6 +224,26 @@
                 "text": "開発計画がある場合は、事業着手前にご相談ください。許可の要否、必要書類などをご案内します。"
               }
             ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "related-links-jwntw3896",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "都市計画",
+            "href": "/services/land/urban-planning"
+          },
+          {
+            "title": "建築確認申請",
+            "href": "/services/housing/building-permit"
+          },
+          {
+            "title": "農地転用",
+            "href": "/services/land/farmland-conversion"
           }
         ]
       }
@@ -224,6 +257,13 @@
         "email": "{{development_email}}",
         "hours": "{{city_hall_hours}}",
         "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
       }
     }
   ],

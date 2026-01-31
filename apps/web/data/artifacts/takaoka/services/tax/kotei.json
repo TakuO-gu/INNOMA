@@ -32,10 +32,6 @@
             "href": "/"
           },
           {
-            "label": "くらしの情報",
-            "href": "/topics"
-          },
-          {
             "label": "税金",
             "href": "/topics/tax"
           },
@@ -61,15 +57,12 @@
       }
     },
     {
-      "id": "richtext-overview",
-      "type": "RichText",
+      "id": "section-xa62btafx",
+      "type": "Section",
       "props": {
+        "heading": "納税義務者",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "納税義務者"
-          },
           {
             "type": "paragraph",
             "runs": [
@@ -90,20 +83,21 @@
       }
     },
     {
-      "id": "richtext-taisho",
-      "type": "RichText",
+      "id": "section-2tp1bfqf9",
+      "type": "Section",
       "props": {
+        "heading": "課税対象",
+        "level": 2,
+        "content": []
+      }
+    },
+    {
+      "id": "section-92326x08k",
+      "type": "Section",
+      "props": {
+        "heading": "土地",
+        "level": 3,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "課税対象"
-          },
-          {
-            "type": "heading",
-            "level": 3,
-            "text": "土地"
-          },
           {
             "type": "paragraph",
             "runs": [
@@ -111,12 +105,17 @@
                 "text": "田、畑、宅地、山林、原野など、すべての土地が対象です。"
               }
             ]
-          },
-          {
-            "type": "heading",
-            "level": 3,
-            "text": "家屋"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-xe62l6v4x",
+      "type": "Section",
+      "props": {
+        "heading": "家屋",
+        "level": 3,
+        "content": [
           {
             "type": "paragraph",
             "runs": [
@@ -124,12 +123,17 @@
                 "text": "住宅、店舗、工場、倉庫など、すべての建物が対象です。"
               }
             ]
-          },
-          {
-            "type": "heading",
-            "level": 3,
-            "text": "償却資産"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-gtqt06fkg",
+      "type": "Section",
+      "props": {
+        "heading": "償却資産",
+        "level": 3,
+        "content": [
           {
             "type": "paragraph",
             "runs": [
@@ -137,19 +141,6 @@
                 "text": "事業に使用する機械、器具、備品などが対象です。毎年1月末までに申告が必要です。"
               }
             ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "richtext-keisan",
-      "type": "RichText",
-      "props": {
-        "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "税額の計算"
           }
         ]
       }
@@ -179,24 +170,26 @@
             "label": "免税点（償却資産）",
             "value": "150万円"
           }
-        ]
+        ],
+        "heading": "税額の計算"
       }
     },
     {
-      "id": "richtext-tokutei",
-      "type": "RichText",
+      "id": "section-knvg90hec",
+      "type": "Section",
       "props": {
+        "heading": "主な軽減措置",
+        "level": 2,
+        "content": []
+      }
+    },
+    {
+      "id": "section-b37qa70i6",
+      "type": "Section",
+      "props": {
+        "heading": "住宅用地の特例",
+        "level": 3,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "主な軽減措置"
-          },
-          {
-            "type": "heading",
-            "level": 3,
-            "text": "住宅用地の特例"
-          },
           {
             "type": "list",
             "ordered": false,
@@ -206,7 +199,11 @@
                   "type": "paragraph",
                   "runs": [
                     {
-                      "text": "小規模住宅用地（200㎡以下）\", \"bold\": true }, { \"text\": \"：固定資産税1/6、都市計画税1/3に軽減"
+                      "text": "小規模住宅用地（200㎡以下）",
+                      "bold": true
+                    },
+                    {
+                      "text": "：固定資産税1/6、都市計画税1/3に軽減"
                     }
                   ]
                 }
@@ -226,12 +223,17 @@
                 }
               ]
             ]
-          },
-          {
-            "type": "heading",
-            "level": 3,
-            "text": "新築住宅の減額"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-en84sv3w4",
+      "type": "Section",
+      "props": {
+        "heading": "新築住宅の減額",
+        "level": 3,
+        "content": [
           {
             "type": "paragraph",
             "runs": [
@@ -280,15 +282,12 @@
       }
     },
     {
-      "id": "richtext-nofu",
-      "type": "RichText",
+      "id": "section-m015hbwz4",
+      "type": "Section",
       "props": {
+        "heading": "納付方法",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "納付方法"
-          },
           {
             "type": "paragraph",
             "runs": [
@@ -329,15 +328,12 @@
       }
     },
     {
-      "id": "richtext-todoke",
-      "type": "RichText",
+      "id": "section-2n6sbim78",
+      "type": "Section",
       "props": {
+        "heading": "届出が必要なとき",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "届出が必要なとき"
-          },
           {
             "type": "list",
             "ordered": false,
@@ -397,12 +393,16 @@
             "href": "/services/tax/juminzei"
           },
           {
-            "title": "軽自動車税",
-            "href": "/services/tax/keijidosha"
+            "title": "住宅購入",
+            "href": "/services/housing/home-purchase"
           },
           {
-            "title": "納税証明書",
-            "href": "/services/registration/nozei-shomei"
+            "title": "不動産登記",
+            "href": "/services/housing/property-registration"
+          },
+          {
+            "title": "都市計画",
+            "href": "/services/land/urban-planning"
           }
         ]
       }
@@ -416,6 +416,13 @@
         "email": "{{shisanzei_email}}",
         "hours": "{{city_hall_hours}}",
         "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
       }
     }
   ],

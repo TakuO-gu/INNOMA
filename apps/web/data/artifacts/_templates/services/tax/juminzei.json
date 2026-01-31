@@ -32,10 +32,6 @@
             "href": "/"
           },
           {
-            "label": "くらしの情報",
-            "href": "/topics"
-          },
-          {
             "label": "税金",
             "href": "/topics/tax"
           },
@@ -61,15 +57,12 @@
       }
     },
     {
-      "id": "richtext-overview",
-      "type": "RichText",
+      "id": "section-upv8rarz3",
+      "type": "Section",
       "props": {
+        "heading": "納税義務者",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "納税義務者"
-          },
           {
             "type": "paragraph",
             "runs": [
@@ -90,15 +83,12 @@
       }
     },
     {
-      "id": "richtext-hikazei",
-      "type": "RichText",
+      "id": "section-e5u718ijf",
+      "type": "Section",
       "props": {
+        "heading": "非課税となる方",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "非課税となる方"
-          },
           {
             "type": "list",
             "ordered": false,
@@ -139,15 +129,12 @@
       }
     },
     {
-      "id": "richtext-keisan",
-      "type": "RichText",
+      "id": "section-d4yoisaxz",
+      "type": "Section",
       "props": {
+        "heading": "税額の計算",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "税額の計算"
-          },
           {
             "type": "paragraph",
             "runs": [
@@ -184,20 +171,21 @@
       }
     },
     {
-      "id": "richtext-nofu",
-      "type": "RichText",
+      "id": "section-mm1vfxkus",
+      "type": "Section",
       "props": {
+        "heading": "納付方法",
+        "level": 2,
+        "content": []
+      }
+    },
+    {
+      "id": "section-3x8cf7hi2",
+      "type": "Section",
+      "props": {
+        "heading": "特別徴収（給与天引き）",
+        "level": 3,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "納付方法"
-          },
-          {
-            "type": "heading",
-            "level": 3,
-            "text": "特別徴収（給与天引き）"
-          },
           {
             "type": "paragraph",
             "runs": [
@@ -205,12 +193,17 @@
                 "text": "会社員の方は、6月から翌年5月まで毎月の給与から天引きされます。勤務先が手続きを行います。"
               }
             ]
-          },
-          {
-            "type": "heading",
-            "level": 3,
-            "text": "普通徴収（納付書払い）"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-8c5snjsh5",
+      "type": "Section",
+      "props": {
+        "heading": "普通徴収（納付書払い）",
+        "level": 3,
+        "content": [
           {
             "type": "paragraph",
             "runs": [
@@ -251,15 +244,12 @@
       }
     },
     {
-      "id": "richtext-nenkin",
-      "type": "RichText",
+      "id": "section-5zovw1h9y",
+      "type": "Section",
       "props": {
+        "heading": "年金特別徴収",
+        "level": 3,
         "content": [
-          {
-            "type": "heading",
-            "level": 3,
-            "text": "年金特別徴収"
-          },
           {
             "type": "paragraph",
             "runs": [
@@ -272,15 +262,12 @@
       }
     },
     {
-      "id": "richtext-shinkoku",
-      "type": "RichText",
+      "id": "section-n2xdj5c8a",
+      "type": "Section",
       "props": {
+        "heading": "申告について",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "申告について"
-          },
           {
             "type": "paragraph",
             "runs": [
@@ -356,16 +343,24 @@
             "href": "/services/tax/kotei"
           },
           {
-            "title": "軽自動車税",
-            "href": "/services/tax/keijidosha"
+            "title": "転入届",
+            "href": "/services/registration/tennyu"
           },
           {
-            "title": "確定申告・税の相談",
-            "href": "/services/tax/kakutei"
+            "title": "転出届",
+            "href": "/services/registration/tenshutsu"
           },
           {
-            "title": "納税証明書",
-            "href": "/services/registration/nozei-shomei"
+            "title": "マイナンバーカード",
+            "href": "/services/registration/mynumber"
+          },
+          {
+            "title": "年金",
+            "href": "/services/benefits/nenkin"
+          },
+          {
+            "title": "保育所入所申請",
+            "href": "/services/childcare/nursery-apply"
           }
         ]
       }
@@ -379,6 +374,13 @@
         "email": "{{zeimu_email}}",
         "hours": "{{city_hall_hours}}",
         "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
       }
     }
   ],

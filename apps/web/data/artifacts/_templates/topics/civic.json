@@ -7,7 +7,9 @@
   "description": "選挙・投票、情報公開請求、行政不服申立てなどの市民参加・権利行使に関する情報",
   "content_type": "directory",
   "service_category": "community",
-  "audience": ["residents"],
+  "audience": [
+    "residents"
+  ],
   "topic": [],
   "source": {
     "source_url": "template://sample/topics/civic",
@@ -25,9 +27,14 @@
       "type": "Breadcrumbs",
       "props": {
         "items": [
-          { "label": "ホーム", "href": "/" },
-          { "label": "くらしの情報", "href": "/topics" },
-          { "label": "市民参加・権利行使", "href": "/topics/civic" }
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "市民参加・権利行使",
+            "href": "/topics/civic"
+          }
         ]
       }
     },
@@ -113,11 +120,31 @@
         "hours": "{{city_hall_hours}}",
         "address": "{{city_hall_address}}"
       }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
+      }
     }
   ],
   "search": {
     "summary": "市民参加・権利行使に関する情報。選挙、投票、裁判、法的支援、犯罪被害者支援、情報公開請求、行政不服申立て、国民審査、住民監査請求の案内。",
-    "keywords": ["市民参加", "権利行使", "選挙", "投票", "裁判", "法的支援", "法テラス", "犯罪被害者支援", "情報公開", "行政不服申立て", "国民審査", "住民監査請求"],
+    "keywords": [
+      "市民参加",
+      "権利行使",
+      "選挙",
+      "投票",
+      "裁判",
+      "法的支援",
+      "法テラス",
+      "犯罪被害者支援",
+      "情報公開",
+      "行政不服申立て",
+      "国民審査",
+      "住民監査請求"
+    ],
     "plain_text": "市民参加・権利行使。選挙・情報公開・行政手続きに関する情報。選挙・投票、裁判・法的支援、犯罪被害者支援、情報公開請求、行政不服申立て、国民審査、住民監査請求。"
   }
 }

@@ -33,10 +33,6 @@
             "href": "/"
           },
           {
-            "label": "くらしの情報",
-            "href": "/topics"
-          },
-          {
             "label": "土地・農林水産",
             "href": "/topics/land"
           },
@@ -62,68 +58,33 @@
       }
     },
     {
-      "id": "richtext-1",
-      "type": "RichText",
+      "id": "section-j295hv0f1-desclist",
+      "type": "DescriptionList",
       "props": {
+        "items": [
+          {
+            "term": "電気柵・防護柵の設置",
+            "description": "農地への侵入を防止"
+          },
+          {
+            "term": "追い払い",
+            "description": "サル等の追い払い活動"
+          },
+          {
+            "term": "環境整備",
+            "description": "藪の刈り払い、放棄果樹の除去"
+          }
+        ],
+        "heading": "被害防止対策"
+      }
+    },
+    {
+      "id": "section-7dm1he212",
+      "type": "Section",
+      "props": {
+        "heading": "侵入防止柵の補助",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "被害防止対策"
-          },
-          {
-            "type": "list",
-            "ordered": false,
-            "items": [
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "電気柵・防護柵の設置",
-                      "bold": true
-                    },
-                    {
-                      "text": "：農地への侵入を防止"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "追い払い",
-                      "bold": true
-                    },
-                    {
-                      "text": "：サル等の追い払い活動"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "環境整備",
-                      "bold": true
-                    },
-                    {
-                      "text": "：藪の刈り払い、放棄果樹の除去"
-                    }
-                  ]
-                }
-              ]
-            ]
-          },
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "侵入防止柵の補助"
-          },
           {
             "type": "paragraph",
             "runs": [
@@ -167,12 +128,17 @@
                 }
               ]
             ]
-          },
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "有害鳥獣の捕獲"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-66plgmgeg",
+      "type": "Section",
+      "props": {
+        "heading": "有害鳥獣の捕獲",
+        "level": 2,
+        "content": [
           {
             "type": "paragraph",
             "runs": [
@@ -180,12 +146,17 @@
                 "text": "野生鳥獣の捕獲には原則として許可が必要です。農作物被害が発生した場合、市を通じて有害鳥獣捕獲の許可申請ができます。"
               }
             ]
-          },
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "被害の報告"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-oeikhns7t",
+      "type": "Section",
+      "props": {
+        "heading": "被害の報告",
+        "level": 2,
+        "content": [
           {
             "type": "paragraph",
             "runs": [
@@ -193,12 +164,17 @@
                 "text": "農作物等に被害を受けた場合は、農林課へご報告ください。被害状況を把握し、対策に活用します。"
               }
             ]
-          },
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "クマの出没"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-um8tuw0pg",
+      "type": "Section",
+      "props": {
+        "heading": "クマの出没",
+        "level": 2,
+        "content": [
           {
             "type": "paragraph",
             "runs": [
@@ -206,6 +182,22 @@
                 "text": "クマの目撃情報がある場合は、すぐに警察（110番）または市役所にご連絡ください。むやみに近づかないでください。"
               }
             ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "related-links-5la581wvd",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "狩猟免許",
+            "href": "/services/land/hunting-license"
+          },
+          {
+            "title": "農業補助金",
+            "href": "/services/land/agriculture-subsidy"
           }
         ]
       }
@@ -219,6 +211,13 @@
         "email": "nogyo@sample-city.lg.jp",
         "hours": "平日 8:30〜17:15（土日祝日・年末年始を除く）",
         "address": "〒100-0001 東京都サンプル市中央1-1-1"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
       }
     }
   ],

@@ -18,7 +18,7 @@ const DATA_DIR = join(process.cwd(), 'data/artifacts');
  * 自治体の地区データファイルパスを取得
  */
 function getDistrictDataPath(municipalityId: string): string {
-  return join(DATA_DIR, municipalityId, 'districts.json');
+  return join(DATA_DIR, municipalityId, 'data', 'districts.json');
 }
 
 /**

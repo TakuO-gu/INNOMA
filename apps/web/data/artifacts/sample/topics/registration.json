@@ -7,7 +7,9 @@
   "description": "出生届、婚姻届、転入届、戸籍謄本、住民票、マイナンバーカードに関する情報",
   "content_type": "directory",
   "service_category": "housing",
-  "audience": ["residents"],
+  "audience": [
+    "residents"
+  ],
   "topic": [],
   "source": {
     "source_url": "template://sample/topics/registration",
@@ -25,9 +27,14 @@
       "type": "Breadcrumbs",
       "props": {
         "items": [
-          { "label": "ホーム", "href": "/" },
-          { "label": "くらしの情報", "href": "/topics" },
-          { "label": "届出・申請・証明書", "href": "/topics/registration" }
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "届出・申請・証明書",
+            "href": "/topics/registration"
+          }
         ]
       }
     },
@@ -113,11 +120,30 @@
         "hours": "平日 8:30〜17:15（土日祝日・年末年始を除く）",
         "address": "〒100-0001 東京都サンプル市中央1-1-1"
       }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
+      }
     }
   ],
   "search": {
     "summary": "届出・申請・証明書に関する情報。転入届、出生届、婚姻届、戸籍謄本、住民票、マイナンバーカードの手続き案内。",
-    "keywords": ["届出", "申請", "証明書", "転入届", "転出届", "出生届", "婚姻届", "戸籍謄本", "住民票", "マイナンバーカード", "印鑑登録"],
+    "keywords": [
+      "届出",
+      "申請",
+      "証明書",
+      "転入届",
+      "転出届",
+      "出生届",
+      "婚姻届",
+      "戸籍謄本",
+      "住民票",
+      "マイナンバーカード",
+      "印鑑登録"
+    ],
     "plain_text": "届出・申請・証明書。出生届、婚姻届、転入届、戸籍謄本、住民票、マイナンバーカードに関する情報。転入届・転出届・転居届、出生届、婚姻届・離婚届、死亡届、戸籍謄本・抄本、住民票、印鑑登録・印鑑証明、マイナンバーカード。"
   }
 }

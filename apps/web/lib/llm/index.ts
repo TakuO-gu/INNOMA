@@ -13,6 +13,13 @@ export { generateContent, generateJSON } from './gemini';
 // Prompts
 export { generateSearchQuery, generateServiceSearchQueries } from './prompts/query-generator';
 export { extractVariables, extractFromSnippets, extractContactInfo, extractFeeInfo } from './prompts/extractor';
+export {
+  analyzeAndStructure,
+  getRecommendedBlockType,
+  COMPONENT_SELECTION_RULES,
+  type InformationType,
+  type StructuredInfo,
+} from './prompts/content-structurer';
 
 // Validators
 export {

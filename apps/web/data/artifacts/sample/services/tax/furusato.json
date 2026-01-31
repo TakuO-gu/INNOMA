@@ -1,0 +1,406 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "sample-services-tax-furusato",
+  "municipality_id": "sample",
+  "path": "/services/tax/furusato",
+  "title": "ふるさと納税",
+  "description": "ふるさと納税の仕組み、ワンストップ特例制度、寄附金控除の申請方法について",
+  "content_type": "guide",
+  "service_category": "government",
+  "audience": [
+    "residents"
+  ],
+  "topic": [],
+  "source": {
+    "source_url": "template://sample/services/tax/furusato",
+    "fetched_at": "{{generated_at}}",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "{{generated_at}}",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "税金",
+            "href": "/topics/tax"
+          },
+          {
+            "label": "ふるさと納税",
+            "href": "/services/tax/furusato"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "ふるさと納税"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "ふるさと納税は、応援したい自治体に寄附ができる制度です。寄附額のうち2,000円を超える部分が所得税・住民税から控除されます。"
+      }
+    },
+    {
+      "id": "section-shikumi",
+      "type": "Section",
+      "props": {
+        "heading": "ふるさと納税の仕組み",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "ふるさと納税は、自分の選んだ自治体に寄附を行うと、寄附額のうち2,000円を超える部分について、所得税と住民税から原則として全額が控除される制度です（一定の上限あり）。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "多くの自治体では、寄附のお礼として地域の特産品などの返礼品が送られます。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-jougen",
+      "type": "Section",
+      "props": {
+        "heading": "控除上限額の目安",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "控除を受けられる寄附金額には、収入や家族構成によって上限があります。上限を超えた分は控除されません。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "総務省のふるさと納税ポータルサイトや各ふるさと納税サイトで、上限額のシミュレーションができます。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-tetsuzuki",
+      "type": "Section",
+      "props": {
+        "heading": "寄附金控除を受けるには",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "ふるさと納税で寄附金控除を受けるには、「確定申告」または「ワンストップ特例制度」のいずれかの手続きが必要です。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "table-hikaku",
+      "type": "Table",
+      "props": {
+        "heading": "確定申告とワンストップ特例の比較",
+        "rows": [
+          {
+            "label": "確定申告",
+            "value": "寄附先が6自治体以上の場合、確定申告が必要な方向け"
+          },
+          {
+            "label": "ワンストップ特例",
+            "value": "寄附先が5自治体以内、確定申告不要な給与所得者向け"
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-onestop",
+      "type": "Section",
+      "props": {
+        "heading": "ワンストップ特例制度",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "確定申告が不要な給与所得者の方は、ワンストップ特例制度を利用すると、確定申告なしで寄附金控除を受けられます。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "step-onestop",
+      "type": "StepNavigation",
+      "props": {
+        "steps": [
+          {
+            "title": "寄附をする",
+            "body": "ふるさと納税ポータルサイト等から寄附を行い、ワンストップ特例申請を希望する"
+          },
+          {
+            "title": "申請書を受け取る",
+            "body": "寄附先自治体から「寄附金税額控除に係る申告特例申請書」が届く"
+          },
+          {
+            "title": "申請書を提出",
+            "body": "必要事項を記入し、本人確認書類のコピーを添えて寄附先自治体へ提出"
+          },
+          {
+            "title": "住民税から控除",
+            "body": "翌年度の住民税から寄附金控除が適用される（6月以降）"
+          }
+        ]
+      }
+    },
+    {
+      "id": "notification-kigen",
+      "type": "NotificationBanner",
+      "props": {
+        "severity": "warning",
+        "title": "ワンストップ特例の申請期限",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "ワンストップ特例の申請書は、寄附した翌年の1月10日必着で寄附先自治体に届ける必要があります。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "table-onestop-shorui",
+      "type": "Table",
+      "props": {
+        "heading": "ワンストップ特例申請に必要なもの",
+        "rows": [
+          {
+            "label": "寄附金税額控除に係る申告特例申請書",
+            "value": ""
+          },
+          {
+            "label": "本人確認書類のコピー",
+            "value": "マイナンバーカード両面、または通知カード＋身分証明書"
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-henkou",
+      "type": "Section",
+      "props": {
+        "heading": "申請内容の変更",
+        "level": 3,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "ワンストップ特例申請後に住所や氏名が変わった場合は、「申告特例申請事項変更届出書」を寄附先自治体に提出してください（寄附した翌年の1月10日まで）。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-kakutei",
+      "type": "Section",
+      "props": {
+        "heading": "確定申告で控除を受ける場合",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "以下に該当する方は、確定申告で寄附金控除を申請してください。"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "寄附先が6自治体以上の方"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "確定申告が必要な方（自営業、医療費控除を受ける方など）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "ワンストップ特例の申請期限に間に合わなかった方"
+                    }
+                  ]
+                }
+              ]
+            ]
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "寄附先自治体から届く「寄附金受領証明書」を確定申告書に添付してください。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-kifu",
+      "type": "Section",
+      "props": {
+        "heading": "当市への寄附について",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "{{municipality_name}}へのふるさと納税は、以下のサイトから受け付けています。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "btn-furusato",
+      "type": "TaskButton",
+      "props": {
+        "label": "ふるさと納税の申込みはこちら",
+        "href": "{{furusato_portal_url}}",
+        "isTopTask": true
+      }
+    },
+    {
+      "id": "table-tsukai",
+      "type": "Table",
+      "props": {
+        "heading": "寄附金の使い道",
+        "rows": [
+          {
+            "label": "{{furusato_tsukaimichi_1}}",
+            "value": ""
+          },
+          {
+            "label": "{{furusato_tsukaimichi_2}}",
+            "value": ""
+          },
+          {
+            "label": "{{furusato_tsukaimichi_3}}",
+            "value": ""
+          },
+          {
+            "label": "市長におまかせ",
+            "value": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "related-links-1",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "確定申告・税の相談",
+            "href": "/services/tax/kakuteishinkoku"
+          },
+          {
+            "title": "住民税",
+            "href": "/services/tax/juminzei"
+          },
+          {
+            "title": "税証明書",
+            "href": "/services/tax/zeishoumei"
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{furusato_department}}",
+        "phone": "{{furusato_phone}}",
+        "email": "{{furusato_email}}",
+        "hours": "{{city_hall_hours}}",
+        "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
+      }
+    }
+  ],
+  "search": {
+    "summary": "ふるさと納税の仕組み、ワンストップ特例制度、寄附金控除の申請方法について。",
+    "keywords": [
+      "ふるさと納税",
+      "寄附",
+      "ワンストップ特例",
+      "寄附金控除",
+      "返礼品",
+      "確定申告"
+    ],
+    "plain_text": "ふるさと納税。応援したい自治体に寄附すると、2,000円を超える部分が所得税・住民税から控除される。ワンストップ特例制度で確定申告不要。申請期限は翌年1月10日。"
+  }
+}

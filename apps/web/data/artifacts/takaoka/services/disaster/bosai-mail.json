@@ -32,10 +32,6 @@
             "href": "/"
           },
           {
-            "label": "くらしの情報",
-            "href": "/topics"
-          },
-          {
             "label": "防災・安全",
             "href": "/topics/disaster"
           },
@@ -61,15 +57,12 @@
       }
     },
     {
-      "id": "richtext-naiyo",
-      "type": "RichText",
+      "id": "section-dm2eqonkz",
+      "type": "Section",
       "props": {
+        "heading": "配信される情報",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "配信される情報"
-          },
           {
             "type": "list",
             "ordered": false,
@@ -179,20 +172,21 @@
       }
     },
     {
-      "id": "richtext-touroku",
-      "type": "RichText",
+      "id": "section-9o6bx8h0w",
+      "type": "Section",
       "props": {
+        "heading": "登録方法",
+        "level": 2,
+        "content": []
+      }
+    },
+    {
+      "id": "section-kgh32fktd",
+      "type": "Section",
+      "props": {
+        "heading": "メールで登録",
+        "level": 3,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "登録方法"
-          },
-          {
-            "type": "heading",
-            "level": 3,
-            "text": "メールで登録"
-          },
           {
             "type": "paragraph",
             "runs": [
@@ -217,6 +211,40 @@
       }
     },
     {
+      "id": "section-qr-registration",
+      "type": "Section",
+      "props": {
+        "heading": "QRコードで登録",
+        "level": 3,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "スマートフォンのカメラでQRコードを読み取り、表示されたURLにアクセスして登録できます。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "登録用URL："
+              },
+              {
+                "text": "{{bosai_mail_qr_url}}",
+                "bold": true,
+                "link": {
+                  "href": "{{bosai_mail_qr_url}}",
+                  "external": true
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
       "id": "task-button-1",
       "type": "TaskButton",
       "props": {
@@ -226,20 +254,21 @@
       }
     },
     {
-      "id": "richtext-sonota",
-      "type": "RichText",
+      "id": "section-bv49tzkdn",
+      "type": "Section",
       "props": {
+        "heading": "その他の情報入手手段",
+        "level": 2,
+        "content": []
+      }
+    },
+    {
+      "id": "section-psqn96q51",
+      "type": "Section",
+      "props": {
+        "heading": "防災行政無線",
+        "level": 3,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "その他の情報入手手段"
-          },
-          {
-            "type": "heading",
-            "level": 3,
-            "text": "防災行政無線"
-          },
           {
             "type": "paragraph",
             "runs": [
@@ -247,12 +276,17 @@
                 "text": "屋外スピーカーから避難情報などをお知らせします。聞き取れなかった場合は、テレホンサービス（{{bosai_telephone}}）で確認できます。"
               }
             ]
-          },
-          {
-            "type": "heading",
-            "level": 3,
-            "text": "市公式SNS"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-kn4k4z833",
+      "type": "Section",
+      "props": {
+        "heading": "市公式SNS",
+        "level": 3,
+        "content": [
           {
             "type": "paragraph",
             "runs": [
@@ -260,12 +294,17 @@
                 "text": "X（旧Twitter）やLINEでも防災情報を配信しています。"
               }
             ]
-          },
-          {
-            "type": "heading",
-            "level": 3,
-            "text": "緊急速報メール"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-7rua9lokt",
+      "type": "Section",
+      "props": {
+        "heading": "緊急速報メール",
+        "level": 3,
+        "content": [
           {
             "type": "paragraph",
             "runs": [
@@ -306,6 +345,13 @@
         "email": "{{bosai_email}}",
         "hours": "{{city_hall_hours}}",
         "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
       }
     }
   ],

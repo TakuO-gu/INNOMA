@@ -32,10 +32,6 @@
             "href": "/"
           },
           {
-            "label": "くらしの情報",
-            "href": "/topics"
-          },
-          {
             "label": "税金",
             "href": "/topics/tax"
           },
@@ -61,15 +57,12 @@
       }
     },
     {
-      "id": "richtext-overview",
-      "type": "RichText",
+      "id": "section-2vxwnl6q6",
+      "type": "Section",
       "props": {
+        "heading": "納税義務者",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "納税義務者"
-          },
           {
             "type": "paragraph",
             "runs": [
@@ -77,19 +70,22 @@
                 "text": "毎年4月1日時点で車両を所有している方に課税されます。年度途中で取得・廃車しても、その年度の税額は変わりません（月割なし）。"
               }
             ]
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-2vxwnl6q6-notification-0",
+      "type": "NotificationBanner",
+      "props": {
+        "severity": "warning",
+        "title": "注意",
+        "content": [
           {
-            "type": "callout",
-            "severity": "warning",
-            "title": "注意",
-            "content": [
+            "type": "paragraph",
+            "runs": [
               {
-                "type": "paragraph",
-                "runs": [
-                  {
-                    "text": "3月末までに廃車届を出さないと、4月1日時点の所有者に1年分の税金がかかります。"
-                  }
-                ]
+                "text": "3月末までに廃車届を出さないと、4月1日時点の所有者に1年分の税金がかかります。"
               }
             ]
           }
@@ -97,21 +93,12 @@
       }
     },
     {
-      "id": "richtext-zei",
-      "type": "RichText",
+      "id": "section-egeugvxf4",
+      "type": "Section",
       "props": {
-        "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "税額"
-          },
-          {
-            "type": "heading",
-            "level": 3,
-            "text": "原動機付自転車・小型特殊自動車"
-          }
-        ]
+        "heading": "税額",
+        "level": 2,
+        "content": []
       }
     },
     {
@@ -143,20 +130,8 @@
             "label": "小型特殊（その他）",
             "value": "5,900円"
           }
-        ]
-      }
-    },
-    {
-      "id": "richtext-keiyonrin",
-      "type": "RichText",
-      "props": {
-        "content": [
-          {
-            "type": "heading",
-            "level": 3,
-            "text": "軽自動車"
-          }
-        ]
+        ],
+        "heading": "原動機付自転車・小型特殊自動車"
       }
     },
     {
@@ -184,20 +159,8 @@
             "label": "軽三輪",
             "value": "3,900円"
           }
-        ]
-      }
-    },
-    {
-      "id": "richtext-nirin",
-      "type": "RichText",
-      "props": {
-        "content": [
-          {
-            "type": "heading",
-            "level": 3,
-            "text": "二輪車"
-          }
-        ]
+        ],
+        "heading": "軽自動車"
       }
     },
     {
@@ -213,24 +176,26 @@
             "label": "二輪の小型自動車（250cc超）",
             "value": "6,000円"
           }
-        ]
+        ],
+        "heading": "二輪車"
       }
     },
     {
-      "id": "richtext-keigen",
-      "type": "RichText",
+      "id": "section-2m2w560oq",
+      "type": "Section",
       "props": {
+        "heading": "グリーン化特例（軽課・重課）",
+        "level": 2,
+        "content": []
+      }
+    },
+    {
+      "id": "section-h1w1btszf",
+      "type": "Section",
+      "props": {
+        "heading": "軽課（減税）",
+        "level": 3,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "グリーン化特例（軽課・重課）"
-          },
-          {
-            "type": "heading",
-            "level": 3,
-            "text": "軽課（減税）"
-          },
           {
             "type": "paragraph",
             "runs": [
@@ -238,12 +203,17 @@
                 "text": "電気自動車、天然ガス自動車は、新規登録の翌年度に限り税額が75%軽減されます。"
               }
             ]
-          },
-          {
-            "type": "heading",
-            "level": 3,
-            "text": "重課（増税）"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-vhkuq4nbt",
+      "type": "Section",
+      "props": {
+        "heading": "重課（増税）",
+        "level": 3,
+        "content": [
           {
             "type": "paragraph",
             "runs": [
@@ -256,15 +226,12 @@
       }
     },
     {
-      "id": "richtext-nofu",
-      "type": "RichText",
+      "id": "section-ohuy8v0ze",
+      "type": "Section",
       "props": {
+        "heading": "納付方法",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "納付方法"
-          },
           {
             "type": "paragraph",
             "runs": [
@@ -293,15 +260,12 @@
       }
     },
     {
-      "id": "richtext-todoke",
-      "type": "RichText",
+      "id": "section-valr4jts1",
+      "type": "Section",
       "props": {
+        "heading": "届出が必要なとき",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "届出が必要なとき"
-          },
           {
             "type": "list",
             "ordered": false,
@@ -368,15 +332,12 @@
       }
     },
     {
-      "id": "richtext-shaken",
-      "type": "RichText",
+      "id": "section-w28bac6q9",
+      "type": "Section",
       "props": {
+        "heading": "車検用の納税証明書",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "車検用の納税証明書"
-          },
           {
             "type": "paragraph",
             "runs": [
@@ -402,16 +363,20 @@
       "props": {
         "items": [
           {
+            "title": "自動車登録",
+            "href": "/services/driving/registration"
+          },
+          {
+            "title": "自動車税",
+            "href": "/services/driving/vehicle-tax"
+          },
+          {
             "title": "住民税",
             "href": "/services/tax/juminzei"
           },
           {
-            "title": "固定資産税",
-            "href": "/services/tax/kotei"
-          },
-          {
-            "title": "納税証明書",
-            "href": "/services/registration/nozei-shomei"
+            "title": "車庫証明",
+            "href": "/services/driving/garage-certificate"
           }
         ]
       }
@@ -425,6 +390,13 @@
         "email": "{{zeimu_email}}",
         "hours": "{{city_hall_hours}}",
         "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
       }
     }
   ],

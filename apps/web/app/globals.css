@@ -91,103 +91,10 @@
  * in components/dads/ directory
  * ===================================================================== */
 
-/* Page container and block renderer spacing */
+/* Page container */
 @layer components {
   .dads-page {
     @apply max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12;
-  }
-
-  /* 基本: すべての要素間に小さなスペース */
-  .dads-page > * + * {
-    margin-top: 1rem;
-  }
-
-  /* p, ul, ol の間に16px (mt-4相当) */
-  .dads-page p + p,
-  .dads-page p + ul,
-  .dads-page ul + p,
-  .dads-page p + ol,
-  .dads-page ol + p {
-    @apply mt-4;
-  }
-
-  /* H1とそれに続く最初のコンテンツの間: 24px */
-  .dads-page h1 + * {
-    margin-top: 24px;
-  }
-
-  /* H2セクション: H2の前に96pxの余白（セクション区切り） */
-  .dads-page h2 {
-    margin-top: 96px;
-  }
-
-  /* H2直後のコンテンツ: 24px */
-  .dads-page h2 + * {
-    margin-top: 24px;
-  }
-
-  /* H3サブセクション: H3の前に72pxの余白 */
-  .dads-page h3 {
-    margin-top: 72px;
-  }
-
-  /* H3直後のコンテンツ: 24px */
-  .dads-page h3 + * {
-    margin-top: 24px;
-  }
-
-  /* H4サブサブセクション: H4の前に56pxの余白 */
-  .dads-page h4 {
-    margin-top: 56px;
-  }
-
-  /* H4直後のコンテンツ: 24px */
-  .dads-page h4 + * {
-    margin-top: 24px;
-  }
-
-  /* コンポーネント内のheadingは除外 */
-  .no-heading-margin h2,
-  .no-heading-margin h3,
-  .no-heading-margin h4,
-  .topic-list h2,
-  .topic-list h3,
-  .topic-list h4,
-  .topic-grid h2,
-  .topic-grid h3,
-  .topic-grid h4,
-  .content-card h2,
-  .content-card h3,
-  .content-card h4 {
-    margin-top: 0;
-  }
-
-  .no-heading-margin h2 + *,
-  .no-heading-margin h3 + *,
-  .no-heading-margin h4 + *,
-  .topic-list h2 + *,
-  .topic-list h3 + *,
-  .topic-list h4 + *,
-  .topic-grid h2 + *,
-  .topic-grid h3 + *,
-  .topic-grid h4 + *,
-  .content-card h2 + *,
-  .content-card h3 + *,
-  .content-card h4 + * {
-    margin-top: 0;
-  }
-
-  /* 最初の見出しは上余白なし */
-  .dads-page > h1:first-child,
-  .dads-page > h2:first-child,
-  .dads-page > h3:first-child,
-  .dads-page > h4:first-child {
-    margin-top: 0;
-  }
-
-  /* H1の直後にH2が来る場合は96pxではなく24px */
-  .dads-page h1 + h2 {
-    margin-top: 24px;
   }
 }
 

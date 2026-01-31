@@ -32,10 +32,6 @@
             "href": "/"
           },
           {
-            "label": "くらしの情報",
-            "href": "/topics"
-          },
-          {
             "label": "福祉・介護",
             "href": "/topics/welfare"
           },
@@ -61,15 +57,12 @@
       }
     },
     {
-      "id": "richtext-overview",
-      "type": "RichText",
+      "id": "section-uhlynq7k8",
+      "type": "Section",
       "props": {
+        "heading": "生活保護とは",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "生活保護とは"
-          },
           {
             "type": "paragraph",
             "runs": [
@@ -82,15 +75,12 @@
       }
     },
     {
-      "id": "richtext-yoken",
-      "type": "RichText",
+      "id": "section-2gc9kyy3x",
+      "type": "Section",
       "props": {
+        "heading": "生活保護を受けるための要件",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "生活保護を受けるための要件"
-          },
           {
             "type": "paragraph",
             "runs": [
@@ -98,96 +88,48 @@
                 "text": "生活保護は、以下の要件を満たす場合に受けることができます。"
               }
             ]
-          },
-          {
-            "type": "list",
-            "ordered": false,
-            "items": [
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "資産の活用",
-                      "bold": true
-                    },
-                    {
-                      "text": "：預貯金、土地・建物、生命保険など、活用できる資産は生活費に充てること"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "能力の活用",
-                      "bold": true
-                    },
-                    {
-                      "text": "：働ける方は、その能力に応じて働くこと"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "他の制度の活用",
-                      "bold": true
-                    },
-                    {
-                      "text": "：年金、児童手当、雇用保険など、他の制度で受けられる給付は受けること"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "扶養義務者からの援助",
-                      "bold": true
-                    },
-                    {
-                      "text": "：親族からの援助が可能な場合は、援助を受けること"
-                    }
-                  ]
-                }
-              ]
-            ]
-          },
-          {
-            "type": "callout",
-            "severity": "info",
-            "title": "お知らせ",
-            "content": [
-              {
-                "type": "paragraph",
-                "runs": [
-                  {
-                    "text": "持ち家に住んでいる、車を持っている、働いている、という理由だけで生活保護を受けられないわけではありません。まずはご相談ください。"
-                  }
-                ]
-              }
-            ]
           }
         ]
       }
     },
     {
-      "id": "richtext-fujo",
-      "type": "RichText",
+      "id": "section-2gc9kyy3x-table",
+      "type": "Table",
       "props": {
+        "rows": [
+          {
+            "label": "資産の活用",
+            "value": "預貯金、土地・建物、生命保険など、活用できる資産は生活費に充てること"
+          },
+          {
+            "label": "能力の活用",
+            "value": "働ける方は、その能力に応じて働くこと"
+          },
+          {
+            "label": "他の制度の活用",
+            "value": "年金、児童手当、雇用保険など、他の制度で受けられる給付は受けること"
+          },
+          {
+            "label": "扶養義務者からの援助",
+            "value": "親族からの援助が可能な場合は、援助を受けること"
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-2gc9kyy3x-notification-0",
+      "type": "NotificationBanner",
+      "props": {
+        "severity": "info",
+        "title": "お知らせ",
         "content": [
           {
-            "type": "heading",
-            "level": 2,
-            "text": "受けられる扶助の種類"
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "持ち家に住んでいる、車を持っている、働いている、という理由だけで生活保護を受けられないわけではありません。まずはご相談ください。"
+              }
+            ]
           }
         ]
       }
@@ -229,7 +171,8 @@
             "label": "葬祭扶助",
             "value": "葬祭に必要な費用"
           }
-        ]
+        ],
+        "heading": "受けられる扶助の種類"
       }
     },
     {
@@ -264,15 +207,12 @@
       }
     },
     {
-      "id": "richtext-soudan",
-      "type": "RichText",
+      "id": "section-fqv9pa0lj",
+      "type": "Section",
       "props": {
+        "heading": "相談窓口",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "相談窓口"
-          },
           {
             "type": "paragraph",
             "runs": [
@@ -280,19 +220,22 @@
                 "text": "生活にお困りの方は、まず福祉事務所にご相談ください。相談は無料で、秘密は厳守します。"
               }
             ]
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-fqv9pa0lj-notification-0",
+      "type": "NotificationBanner",
+      "props": {
+        "severity": "warning",
+        "title": "申請は権利です",
+        "content": [
           {
-            "type": "callout",
-            "severity": "warning",
-            "title": "申請は権利です",
-            "content": [
+            "type": "paragraph",
+            "runs": [
               {
-                "type": "paragraph",
-                "runs": [
-                  {
-                    "text": "生活保護の申請は国民の権利です。窓口で申請を拒否されることはありません。「まだ働ける」「親族に援助を頼め」などと言われて申請を諦める必要はありません。"
-                  }
-                ]
+                "text": "生活保護の申請は国民の権利です。窓口で申請を拒否されることはありません。「まだ働ける」「親族に援助を頼め」などと言われて申請を諦める必要はありません。"
               }
             ]
           }
@@ -305,16 +248,28 @@
       "props": {
         "items": [
           {
-            "title": "地域包括支援センター",
-            "href": "/services/welfare/houkatsu"
-          },
-          {
             "title": "障害者福祉",
             "href": "/services/welfare/shogai"
           },
           {
+            "title": "地域包括支援センター",
+            "href": "/services/welfare/houkatsu"
+          },
+          {
             "title": "国民健康保険",
             "href": "/services/health/kokuho"
+          },
+          {
+            "title": "住宅手当",
+            "href": "/services/housing/housing-benefit"
+          },
+          {
+            "title": "ハローワーク",
+            "href": "/services/employment/hello-work"
+          },
+          {
+            "title": "法律相談",
+            "href": "/services/civic/legal-support"
           }
         ]
       }
@@ -328,6 +283,13 @@
         "email": "hogo@sample-city.lg.jp",
         "hours": "平日 8:30〜17:15（土日祝日・年末年始を除く）",
         "address": "〒100-0001 東京都サンプル市中央1-1-1"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
       }
     }
   ],

@@ -32,10 +32,6 @@
             "href": "/"
           },
           {
-            "label": "くらしの情報",
-            "href": "/topics"
-          },
-          {
             "label": "戸籍・国籍・在留",
             "href": "/topics/nationality"
           },
@@ -61,15 +57,12 @@
       }
     },
     {
-      "id": "richtext-1",
-      "type": "RichText",
+      "id": "section-p98vj37sd",
+      "type": "Section",
       "props": {
+        "heading": "日本語教室",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "日本語教室"
-          },
           {
             "type": "paragraph",
             "runs": [
@@ -123,12 +116,17 @@
                 }
               ]
             ]
-          },
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "多言語相談窓口"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-7ftfhss0r",
+      "type": "Section",
+      "props": {
+        "heading": "多言語相談窓口",
+        "level": 2,
+        "content": [
           {
             "type": "paragraph",
             "runs": [
@@ -162,12 +160,17 @@
                 }
               ]
             ]
-          },
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "国際交流イベント"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-4o8tghzvn",
+      "type": "Section",
+      "props": {
+        "heading": "国際交流イベント",
+        "level": 2,
+        "content": [
           {
             "type": "paragraph",
             "runs": [
@@ -175,12 +178,17 @@
                 "text": "国際交流協会や市民団体による交流イベントが開催されています。詳しくはサンプル市国際交流協会にお問い合わせください。"
               }
             ]
-          },
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "外国人総合相談センター"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-grvekoer4",
+      "type": "Section",
+      "props": {
+        "heading": "外国人総合相談センター",
+        "level": 2,
+        "content": [
           {
             "type": "paragraph",
             "runs": [
@@ -188,6 +196,26 @@
                 "text": "出入国在留管理庁が運営する外国人在留支援センター（FRESC）では、在留手続きや雇用、法律など様々な相談に対応しています。電話：0120-76-2029（多言語対応）"
               }
             ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "related-links-1arsnx4el",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "外国人相談",
+            "href": "/services/nationality/consultation"
+          },
+          {
+            "title": "ビザ・在留資格",
+            "href": "/services/nationality/visa"
+          },
+          {
+            "title": "外国人登録",
+            "href": "/services/nationality/foreign-registration"
           }
         ]
       }
@@ -201,6 +229,13 @@
         "email": "tabunka@sample-city.lg.jp",
         "hours": "平日 8:30〜17:15（土日祝日・年末年始を除く）",
         "address": "〒100-0001 東京都サンプル市中央1-1-1"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
       }
     }
   ],

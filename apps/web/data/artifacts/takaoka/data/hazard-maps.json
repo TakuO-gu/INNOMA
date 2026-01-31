@@ -1,0 +1,264 @@
+{
+  "municipality_id": "takaoka",
+  "updated_at": "2026-01-31T00:00:00Z",
+  "source_url": "https://www.city.takaoka.toyama.jp/soshiki/gesuidokomuka/2/1/2/3/4661.html",
+  "hazard_maps": {
+    "flood": {
+      "title": "水害ハザードマップ",
+      "description": "想定最大規模降雨（約1,000年に一度）に対応した洪水ハザードマップと内水ハザードマップを重ね合わせたマップです。",
+      "districts": [
+        {
+          "id": "hiramai",
+          "name": "平米・定塚・下関・博労・成美・能町・野村地区",
+          "pdfs": [
+            {
+              "type": "flood",
+              "label": "水害ハザードマップ",
+              "url": "https://www.city.takaoka.toyama.jp/material/files/group/53/hiramai1.pdf"
+            },
+            {
+              "type": "inland_flood",
+              "label": "内水浸水想定区域図",
+              "url": "https://www.city.takaoka.toyama.jp/material/files/group/53/nhiramaiweb_a3.pdf"
+            }
+          ]
+        },
+        {
+          "id": "kizu",
+          "name": "木津・南条・二塚地区",
+          "pdfs": [
+            {
+              "type": "flood",
+              "label": "水害ハザードマップ",
+              "url": "https://www.city.takaoka.toyama.jp/material/files/group/53/kidu1.pdf"
+            },
+            {
+              "type": "inland_flood",
+              "label": "内水浸水想定区域図",
+              "url": "https://www.city.takaoka.toyama.jp/material/files/group/53/nkizuweb_a3.pdf"
+            }
+          ]
+        },
+        {
+          "id": "saijo",
+          "name": "西条・横田・川原地区",
+          "pdfs": [
+            {
+              "type": "flood",
+              "label": "水害ハザードマップ",
+              "url": "https://www.city.takaoka.toyama.jp/material/files/group/53/saijo1.pdf"
+            },
+            {
+              "type": "inland_flood",
+              "label": "内水浸水想定区域図",
+              "url": "https://www.city.takaoka.toyama.jp/material/files/group/53/nsaijoweb_a3.pdf"
+            }
+          ]
+        },
+        {
+          "id": "manyo",
+          "name": "万葉地区",
+          "pdfs": [
+            {
+              "type": "flood",
+              "label": "水害ハザードマップ",
+              "url": "https://www.city.takaoka.toyama.jp/material/files/group/53/manyou1.pdf"
+            },
+            {
+              "type": "inland_flood",
+              "label": "内水浸水想定区域図",
+              "url": "https://www.city.takaoka.toyama.jp/material/files/group/53/manyouweb_a3.pdf"
+            }
+          ]
+        },
+        {
+          "id": "makino",
+          "name": "牧野地区",
+          "pdfs": [
+            {
+              "type": "flood",
+              "label": "水害ハザードマップ",
+              "url": "https://www.city.takaoka.toyama.jp/material/files/group/53/makino.pdf"
+            },
+            {
+              "type": "inland_flood",
+              "label": "内水浸水想定区域図",
+              "url": "https://www.city.takaoka.toyama.jp/material/files/group/53/makinoweb_a3.pdf"
+            }
+          ]
+        },
+        {
+          "id": "higashigoi",
+          "name": "東五位・千鳥丘地区",
+          "pdfs": [
+            {
+              "type": "flood",
+              "label": "水害ハザードマップ",
+              "url": "https://www.city.takaoka.toyama.jp/material/files/group/53/higashigoi.pdf"
+            },
+            {
+              "type": "inland_flood",
+              "label": "内水浸水想定区域図",
+              "url": "https://www.city.takaoka.toyama.jp/material/files/group/53/higashigoiweb_a3.pdf"
+            }
+          ]
+        },
+        {
+          "id": "ishidutumi",
+          "name": "石堤地区",
+          "note": "内水浸水想定区域図なし",
+          "pdfs": [
+            {
+              "type": "flood",
+              "label": "水害ハザードマップ",
+              "url": "https://www.city.takaoka.toyama.jp/material/files/group/53/ishidutumi.pdf"
+            }
+          ]
+        },
+        {
+          "id": "kuniyoshi",
+          "name": "国吉地区",
+          "note": "内水浸水想定区域図なし",
+          "pdfs": [
+            {
+              "type": "flood",
+              "label": "水害ハザードマップ",
+              "url": "https://www.city.takaoka.toyama.jp/material/files/group/53/kuniyoshi.pdf"
+            }
+          ]
+        },
+        {
+          "id": "fushiki",
+          "name": "伏木・古府・太田地区",
+          "pdfs": [
+            {
+              "type": "flood",
+              "label": "水害ハザードマップ",
+              "url": "https://www.city.takaoka.toyama.jp/material/files/group/53/fushiki.pdf"
+            },
+            {
+              "type": "inland_flood",
+              "label": "内水浸水想定区域図",
+              "url": "https://www.city.takaoka.toyama.jp/material/files/group/53/fushikiweb_a3.pdf"
+            }
+          ]
+        },
+        {
+          "id": "toide",
+          "name": "戸出西部・戸出東部地区",
+          "pdfs": [
+            {
+              "type": "flood",
+              "label": "水害ハザードマップ",
+              "url": "https://www.city.takaoka.toyama.jp/material/files/group/53/toide02.pdf"
+            },
+            {
+              "type": "inland_flood",
+              "label": "内水浸水想定区域図",
+              "url": "https://www.city.takaoka.toyama.jp/material/files/group/53/toideweb_a3.pdf"
+            }
+          ]
+        },
+        {
+          "id": "nakata",
+          "name": "中田地区",
+          "pdfs": [
+            {
+              "type": "flood",
+              "label": "水害ハザードマップ",
+              "url": "https://www.city.takaoka.toyama.jp/material/files/group/53/nakata.pdf"
+            },
+            {
+              "type": "inland_flood",
+              "label": "内水浸水想定区域図",
+              "url": "https://www.city.takaoka.toyama.jp/material/files/group/53/nakataweb_a3.pdf"
+            }
+          ]
+        },
+        {
+          "id": "fukuoka",
+          "name": "福岡地区",
+          "pdfs": [
+            {
+              "type": "flood",
+              "label": "水害ハザードマップ",
+              "url": "https://www.city.takaoka.toyama.jp/material/files/group/53/fukuoka.pdf"
+            },
+            {
+              "type": "inland_flood",
+              "label": "内水浸水想定区域図",
+              "url": "https://www.city.takaoka.toyama.jp/material/files/group/53/fukuokaweb_a3.pdf"
+            }
+          ]
+        },
+        {
+          "id": "nishihirotani",
+          "name": "西広谷地区",
+          "note": "洪水ハザードマップ作成なし"
+        }
+      ],
+      "educational_materials": [
+        {
+          "id": "all",
+          "label": "情報学習面（全項目）",
+          "url": "https://www.city.takaoka.toyama.jp/material/files/group/53/keihatsu00_henkou.pdf"
+        },
+        {
+          "id": "01",
+          "label": "水害の発生原因",
+          "url": "https://www.city.takaoka.toyama.jp/material/files/group/53/01.pdf"
+        },
+        {
+          "id": "02",
+          "label": "警戒レベルと降雨",
+          "url": "https://www.city.takaoka.toyama.jp/material/files/group/53/02.pdf"
+        },
+        {
+          "id": "03",
+          "label": "避難行動",
+          "url": "https://www.city.takaoka.toyama.jp/material/files/group/53/03.pdf"
+        },
+        {
+          "id": "04",
+          "label": "早期避難区域",
+          "url": "https://www.city.takaoka.toyama.jp/material/files/group/53/04.pdf"
+        },
+        {
+          "id": "05",
+          "label": "情報の入手方法",
+          "url": "https://www.city.takaoka.toyama.jp/material/files/group/53/keihatsu05_henkou.pdf"
+        },
+        {
+          "id": "06",
+          "label": "安全対策",
+          "url": "https://www.city.takaoka.toyama.jp/material/files/group/53/06.pdf"
+        },
+        {
+          "id": "07",
+          "label": "緊急時の備え",
+          "url": "https://www.city.takaoka.toyama.jp/material/files/group/53/07.pdf"
+        },
+        {
+          "id": "08",
+          "label": "最速到達時間（庄川）",
+          "url": "https://www.city.takaoka.toyama.jp/material/files/group/53/08.pdf"
+        }
+      ]
+    },
+    "landslide": {
+      "title": "土砂災害ハザードマップ",
+      "description": "土砂災害警戒区域（イエローゾーン）と土砂災害特別警戒区域（レッドゾーン）を示しています。",
+      "source_url": "https://www.city.takaoka.toyama.jp/gyosei/kurashi_tetsuzuki/anzen_anshin/8/1/5556.html"
+    },
+    "earthquake": {
+      "title": "地震ハザードマップ",
+      "description": "想定される地震による揺れやすさ、液状化の危険度を示しています。",
+      "source_url": "https://www.city.takaoka.toyama.jp/gyosei/kurashi_tetsuzuki/anzen_anshin/8/1/5557.html"
+    },
+    "tsunami": {
+      "title": "津波ハザードマップ",
+      "description": "最大クラスの津波を想定した浸水範囲、最大浸水深、浸水開始時間を示しています。",
+      "source_url": "https://www.city.takaoka.toyama.jp/gyosei/kurashi_tetsuzuki/anzen_anshin/8/1/5608.html"
+    }
+  }
+}

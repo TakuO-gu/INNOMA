@@ -32,10 +32,6 @@
             "href": "/"
           },
           {
-            "label": "くらしの情報",
-            "href": "/topics"
-          },
-          {
             "label": "運転・車両",
             "href": "/topics/driving"
           },
@@ -61,15 +57,12 @@
       }
     },
     {
-      "id": "richtext-1",
-      "type": "RichText",
+      "id": "section-c2gwp3ox9",
+      "type": "Section",
       "props": {
+        "heading": "事故直後の対応",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "事故直後の対応"
-          },
           {
             "type": "list",
             "ordered": true,
@@ -115,61 +108,29 @@
                 }
               ]
             ]
-          },
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "交通事故相談窓口"
-          },
-          {
-            "type": "list",
-            "ordered": false,
-            "items": [
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "東京都交通事故相談所",
-                      "bold": true
-                    },
-                    {
-                      "text": "：損害賠償、示談などの相談"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "日弁連交通事故相談センター",
-                      "bold": true
-                    },
-                    {
-                      "text": "：弁護士による無料相談"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "交通事故紛争処理センター",
-                      "bold": true
-                    },
-                    {
-                      "text": "：示談あっせん、審査"
-                    }
-                  ]
-                }
-              ]
-            ]
           }
         ]
+      }
+    },
+    {
+      "id": "section-nzp61iv8v-desclist",
+      "type": "DescriptionList",
+      "props": {
+        "items": [
+          {
+            "term": "東京都交通事故相談所",
+            "description": "損害賠償、示談などの相談"
+          },
+          {
+            "term": "日弁連交通事故相談センター",
+            "description": "弁護士による無料相談"
+          },
+          {
+            "term": "交通事故紛争処理センター",
+            "description": "示談あっせん、審査"
+          }
+        ],
+        "heading": "交通事故相談窓口"
       }
     },
     {
@@ -178,6 +139,13 @@
       "props": {
         "department": "東京都交通事故相談所",
         "phone": "03-1234-5802"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
       }
     }
   ],

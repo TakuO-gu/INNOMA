@@ -32,10 +32,6 @@
             "href": "/"
           },
           {
-            "label": "くらしの情報",
-            "href": "/topics"
-          },
-          {
             "label": "住まい・引越し",
             "href": "/topics/housing"
           },
@@ -61,15 +57,12 @@
       }
     },
     {
-      "id": "richtext-1",
-      "type": "RichText",
+      "id": "section-uyfjtu1ol",
+      "type": "Section",
       "props": {
+        "heading": "支給対象者",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "支給対象者"
-          },
           {
             "type": "list",
             "ordered": false,
@@ -115,25 +108,43 @@
                 }
               ]
             ]
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-g4dzx4lr4",
+      "type": "Section",
+      "props": {
+        "heading": "支給額",
+        "level": 2,
+        "content": [
           {
-            "type": "heading",
-            "level": 2,
-            "text": "支給額"
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "家賃相当額を支給します（世帯人数に応じた上限額があります）。"
+              }
+            ]
           },
           {
             "type": "paragraph",
             "runs": [
               {
-                "text": "家賃相当額（上限：単身世帯{{housing_benefit_single}}円、2人世帯{{housing_benefit_couple}}円）"
+                "text": "支給上限額：単身世帯 {{housing_benefit_single}}円、2人世帯 {{housing_benefit_couple}}円"
               }
             ]
-          },
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "支給期間"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-nyczqol4j",
+      "type": "Section",
+      "props": {
+        "heading": "支給期間",
+        "level": 2,
+        "content": [
           {
             "type": "paragraph",
             "runs": [
@@ -160,7 +171,31 @@
           },
           {
             "label": "申請先",
-            "value": "{{welfare_department}}（自立相談支援窓口）"
+            "value": "自立相談支援窓口"
+          }
+        ]
+      }
+    },
+    {
+      "id": "related-links-3plgkvqcg",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "公営住宅",
+            "href": "/services/housing/public-housing"
+          },
+          {
+            "title": "生活保護",
+            "href": "/services/welfare/seikatsu-hogo"
+          },
+          {
+            "title": "ハローワーク",
+            "href": "/services/employment/hello-work"
+          },
+          {
+            "title": "雇用保険",
+            "href": "/services/employment/unemployment-insurance"
           }
         ]
       }
@@ -174,6 +209,13 @@
         "email": "{{welfare_email}}",
         "hours": "{{city_hall_hours}}",
         "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
       }
     }
   ],

@@ -32,10 +32,6 @@
             "href": "/"
           },
           {
-            "label": "くらしの情報",
-            "href": "/topics"
-          },
-          {
             "label": "仕事・労働",
             "href": "/topics/employment"
           },
@@ -61,15 +57,12 @@
       }
     },
     {
-      "id": "richtext-1",
-      "type": "RichText",
+      "id": "section-3g93omxqb",
+      "type": "Section",
       "props": {
+        "heading": "ハローワークの障害者専門窓口",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "ハローワークの障害者専門窓口"
-          },
           {
             "type": "paragraph",
             "runs": [
@@ -77,12 +70,17 @@
                 "text": "障害者専門援助部門（専門援助第二部門）で、障害特性に応じた職業紹介、職場定着支援を行います。"
               }
             ]
-          },
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "障害者就労支援サービス"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-m7l0kfgh6",
+      "type": "Section",
+      "props": {
+        "heading": "障害者就労支援サービス",
+        "level": 2,
+        "content": [
           {
             "type": "list",
             "ordered": false,
@@ -144,12 +142,17 @@
                 }
               ]
             ]
-          },
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "障害者雇用率制度"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-r3zsw5sa7",
+      "type": "Section",
+      "props": {
+        "heading": "障害者雇用率制度",
+        "level": 2,
+        "content": [
           {
             "type": "paragraph",
             "runs": [
@@ -157,6 +160,26 @@
                 "text": "従業員43.5人以上の企業は、2.3%以上の障害者を雇用する義務があります。"
               }
             ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "related-links-6x7doat65",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "障害者福祉",
+            "href": "/services/welfare/shogai"
+          },
+          {
+            "title": "ハローワーク",
+            "href": "/services/employment/hello-work"
+          },
+          {
+            "title": "就職支援",
+            "href": "/services/employment/career-support"
           }
         ]
       }
@@ -170,6 +193,13 @@
         "email": "{{disability_email}}",
         "hours": "{{city_hall_hours}}",
         "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
       }
     }
   ],

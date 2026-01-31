@@ -33,10 +33,6 @@
             "href": "/"
           },
           {
-            "label": "くらしの情報",
-            "href": "/topics"
-          },
-          {
             "label": "税金",
             "href": "/topics/tax"
           }
@@ -76,6 +72,26 @@
             "title": "軽自動車税",
             "href": "/services/tax/keijidosha",
             "description": "軽自動車・バイクの税金"
+          },
+          {
+            "title": "税証明書",
+            "href": "/services/tax/zeishoumei",
+            "description": "所得証明書・課税証明書・納税証明書の取得"
+          },
+          {
+            "title": "納税方法",
+            "href": "/services/tax/nouzei",
+            "description": "口座振替・コンビニ・スマホ決済での納付"
+          },
+          {
+            "title": "確定申告・税の相談",
+            "href": "/services/tax/kakuteishinkoku",
+            "description": "確定申告会場・住民税の申告"
+          },
+          {
+            "title": "ふるさと納税",
+            "href": "/services/tax/furusato",
+            "description": "ふるさと納税・ワンストップ特例"
           }
         ]
       }
@@ -89,6 +105,13 @@
         "email": "{{tax_email}}",
         "hours": "{{city_hall_hours}}",
         "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
       }
     }
   ],

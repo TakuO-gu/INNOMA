@@ -4,8 +4,12 @@
  */
 
 import { NextRequest, NextResponse } from "next/server";
+import { readFile } from "fs/promises";
+import { join } from "path";
 import { loadDistrictData } from "@/lib/template/district-variables";
 import { isValidMunicipalityId, isValidVariableName } from "@/lib/security/validators";
+
+const DATA_DIR = join(process.cwd(), "data/artifacts");
 
 interface RouteParams {
   params: Promise<{
@@ -26,6 +30,34 @@ export async function GET(request: NextRequest, { params }: RouteParams) {
   const includeAll = searchParams.get("includeAll") === "true";
 
   try {
+    // sheltersの場合は専用の処理
+    if (variableName === "shelters") {
+      const shelterPath = join(DATA_DIR, municipalityId, "data", "shelters.json");
+      try {
+        const content = await readFile(shelterPath, "utf-8");
+        return NextResponse.json(JSON.parse(content));
+      } catch {
+        return NextResponse.json(
+          { error: "避難所データが見つかりません" },
+          { status: 404 }
+        );
+      }
+    }
+
+    // hazard-mapsの場合は専用の処理
+    if (variableName === "hazard-maps") {
+      const hazardMapPath = join(DATA_DIR, municipalityId, "data", "hazard-maps.json");
+      try {
+        const content = await readFile(hazardMapPath, "utf-8");
+        return NextResponse.json(JSON.parse(content));
+      } catch {
+        return NextResponse.json(
+          { error: "ハザードマップデータが見つかりません" },
+          { status: 404 }
+        );
+      }
+    }
+
     const districtData = await loadDistrictData(municipalityId);
 
     if (!districtData) {

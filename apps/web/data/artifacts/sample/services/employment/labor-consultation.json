@@ -7,7 +7,9 @@
   "description": "総合労働相談コーナー、あっせん、労働審判",
   "content_type": "guide",
   "service_category": "business",
-  "audience": ["residents"],
+  "audience": [
+    "residents"
+  ],
   "topic": [],
   "source": {
     "source_url": "template://sample/services/employment/labor-consultation",
@@ -25,10 +27,18 @@
       "type": "Breadcrumbs",
       "props": {
         "items": [
-          { "label": "ホーム", "href": "/" },
-          { "label": "くらしの情報", "href": "/topics" },
-          { "label": "仕事・労働", "href": "/topics/employment" },
-          { "label": "労働相談・労働紛争", "href": "/services/employment/labor-consultation" }
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "仕事・労働",
+            "href": "/topics/employment"
+          },
+          {
+            "label": "労働相談・労働紛争",
+            "href": "/services/employment/labor-consultation"
+          }
         ]
       }
     },
@@ -47,26 +57,60 @@
       }
     },
     {
-      "id": "richtext-1",
-      "type": "RichText",
+      "id": "section-zszmbgybe",
+      "type": "Section",
       "props": {
+        "heading": "総合労働相談コーナー",
+        "level": 2,
         "content": [
-          { "type": "heading", "level": 2, "text": "総合労働相談コーナー" },
           {
             "type": "paragraph",
             "runs": [
-              { "text": "労働局や労働基準監督署に設置。労働問題全般について、専門の相談員が対応します。解雇、賃金不払い、配置転換、いじめ・嫌がらせなど、あらゆる労働問題を相談できます。相談無料。" }
+              {
+                "text": "労働局や労働基準監督署に設置。労働問題全般について、専門の相談員が対応します。解雇、賃金不払い、配置転換、いじめ・嫌がらせなど、あらゆる労働問題を相談できます。相談無料。"
+              }
             ]
-          },
-          { "type": "heading", "level": 2, "text": "労働問題の解決手段" },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-xsb7yez9a-desclist",
+      "type": "DescriptionList",
+      "props": {
+        "items": [
           {
-            "type": "list",
-            "ordered": true,
-            "items": [
-              [{ "type": "paragraph", "runs": [{ "text": "労働局のあっせん", "bold": true }, { "text": "：中立的な第三者が間に入り話し合いで解決。無料。" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "労働審判", "bold": true }, { "text": "：裁判所で行う簡易迅速な紛争解決手続き。原則3回以内で審理。" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "民事訴訟", "bold": true }, { "text": "：裁判所での訴訟。" }] }]
-            ]
+            "term": "労働局のあっせん",
+            "description": "中立的な第三者が間に入り話し合いで解決。無料。"
+          },
+          {
+            "term": "労働審判",
+            "description": "裁判所で行う簡易迅速な紛争解決手続き。原則3回以内で審理。"
+          },
+          {
+            "term": "民事訴訟",
+            "description": "裁判所での訴訟。"
+          }
+        ],
+        "heading": "労働問題の解決手段"
+      }
+    },
+    {
+      "id": "related-links-wmv61dew6",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "労働基準",
+            "href": "/services/employment/labor-standards"
+          },
+          {
+            "title": "ハラスメント",
+            "href": "/services/employment/harassment"
+          },
+          {
+            "title": "法律相談",
+            "href": "/services/civic/legal-support"
           }
         ]
       }
@@ -79,11 +123,25 @@
         "phone": "03-6789-0123",
         "address": "東京都千代田区九段南1-2-1"
       }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
+      }
     }
   ],
   "search": {
     "summary": "労働相談・労働紛争の案内。総合労働相談コーナー、あっせん、労働審判。",
-    "keywords": ["労働相談", "労働紛争", "解雇", "賃金未払い", "あっせん", "労働審判"],
+    "keywords": [
+      "労働相談",
+      "労働紛争",
+      "解雇",
+      "賃金未払い",
+      "あっせん",
+      "労働審判"
+    ],
     "plain_text": "労働相談・労働紛争。総合労働相談コーナーで労働問題全般を相談可能。あっせん、労働審判、民事訴訟で解決。"
   }
 }

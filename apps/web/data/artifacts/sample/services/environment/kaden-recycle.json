@@ -32,10 +32,6 @@
             "href": "/"
           },
           {
-            "label": "くらしの情報",
-            "href": "/topics"
-          },
-          {
             "label": "環境・ごみ",
             "href": "/topics/environment"
           },
@@ -61,15 +57,12 @@
       }
     },
     {
-      "id": "richtext-taisho",
-      "type": "RichText",
+      "id": "section-reoun9iqg",
+      "type": "Section",
       "props": {
+        "heading": "対象となる家電製品",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "対象となる家電製品"
-          },
           {
             "type": "paragraph",
             "runs": [
@@ -133,19 +126,22 @@
                 }
               ]
             ]
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-reoun9iqg-notification-0",
+      "type": "NotificationBanner",
+      "props": {
+        "severity": "warning",
+        "title": "注意",
+        "content": [
           {
-            "type": "callout",
-            "severity": "warning",
-            "title": "注意",
-            "content": [
+            "type": "paragraph",
+            "runs": [
               {
-                "type": "paragraph",
-                "runs": [
-                  {
-                    "text": "これらの家電製品は、市のごみ収集（粗大ごみを含む）では処分できません。"
-                  }
-                ]
+                "text": "これらの家電製品は、市のごみ収集（粗大ごみを含む）では処分できません。"
               }
             ]
           }
@@ -153,15 +149,12 @@
       }
     },
     {
-      "id": "richtext-ryokin",
-      "type": "RichText",
+      "id": "section-k55te8blz",
+      "type": "Section",
       "props": {
+        "heading": "リサイクル料金",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "リサイクル料金"
-          },
           {
             "type": "paragraph",
             "runs": [
@@ -209,26 +202,28 @@
       "id": "richtext-ryokin-note",
       "type": "RichText",
       "props": {
+        "content": []
+      }
+    },
+    {
+      "id": "richtext-ryokin-note-notification-0",
+      "type": "NotificationBanner",
+      "props": {
+        "severity": "info",
+        "title": "お知らせ",
         "content": [
           {
-            "type": "callout",
-            "severity": "info",
-            "title": "お知らせ",
-            "content": [
+            "type": "paragraph",
+            "runs": [
               {
-                "type": "paragraph",
-                "runs": [
-                  {
-                    "text": "上記は主要メーカーの参考料金です。正確な料金は"
-                  },
-                  {
-                    "text": "一般財団法人家電製品協会のウェブサイト",
-                    "link": "https://www.rkc.aeha.or.jp/"
-                  },
-                  {
-                    "text": "でご確認ください。"
-                  }
-                ]
+                "text": "上記は主要メーカーの参考料金です。正確な料金は"
+              },
+              {
+                "text": "一般財団法人家電製品協会のウェブサイト",
+                "link": "https://www.rkc.aeha.or.jp/"
+              },
+              {
+                "text": "でご確認ください。"
               }
             ]
           }
@@ -236,15 +231,12 @@
       }
     },
     {
-      "id": "richtext-hoho1",
-      "type": "RichText",
+      "id": "section-zm1ujrl2j",
+      "type": "Section",
       "props": {
+        "heading": "処分方法1：購入店に依頼する",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "処分方法1：購入店に依頼する"
-          },
           {
             "type": "paragraph",
             "runs": [
@@ -291,15 +283,12 @@
       }
     },
     {
-      "id": "richtext-hoho2",
-      "type": "RichText",
+      "id": "section-f37unnl7r",
+      "type": "Section",
       "props": {
+        "heading": "処分方法2：指定引取場所へ持ち込む",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "処分方法2：指定引取場所へ持ち込む"
-          },
           {
             "type": "paragraph",
             "runs": [
@@ -307,12 +296,17 @@
                 "text": "ご自身で指定引取場所へ持ち込む場合は、収集運搬料金がかかりません。"
               }
             ]
-          },
-          {
-            "type": "heading",
-            "level": 3,
-            "text": "手順"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-z0npfdxsb",
+      "type": "Section",
+      "props": {
+        "heading": "手順",
+        "level": 3,
+        "content": [
           {
             "type": "list",
             "ordered": true,
@@ -338,12 +332,17 @@
                 }
               ]
             ]
-          },
-          {
-            "type": "heading",
-            "level": 3,
-            "text": "近隣の指定引取場所"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-hev1onvku",
+      "type": "Section",
+      "props": {
+        "heading": "近隣の指定引取場所",
+        "level": 3,
+        "content": [
           {
             "type": "paragraph",
             "runs": [
@@ -356,15 +355,12 @@
       }
     },
     {
-      "id": "richtext-hoho3",
-      "type": "RichText",
+      "id": "section-8e1ygseus",
+      "type": "Section",
       "props": {
+        "heading": "処分方法3：許可業者に依頼する",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "処分方法3：許可業者に依頼する"
-          },
           {
             "type": "paragraph",
             "runs": [
@@ -372,19 +368,22 @@
                 "text": "購入店がわからない場合や、自分で持ち込めない場合は、市の許可を受けた収集運搬業者に依頼できます。"
               }
             ]
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-8e1ygseus-notification-0",
+      "type": "NotificationBanner",
+      "props": {
+        "severity": "warning",
+        "title": "注意",
+        "content": [
           {
-            "type": "callout",
-            "severity": "warning",
-            "title": "注意",
-            "content": [
+            "type": "paragraph",
+            "runs": [
               {
-                "type": "paragraph",
-                "runs": [
-                  {
-                    "text": "無許可の業者に依頼すると、不法投棄につながる恐れがあります。「無料回収」をうたう業者には注意してください。"
-                  }
-                ]
+                "text": "無許可の業者に依頼すると、不法投棄につながる恐れがあります。「無料回収」をうたう業者には注意してください。"
               }
             ]
           }
@@ -392,15 +391,12 @@
       }
     },
     {
-      "id": "richtext-pc",
-      "type": "RichText",
+      "id": "section-z6v65qi1a",
+      "type": "Section",
       "props": {
+        "heading": "パソコンの処分",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "パソコンの処分"
-          },
           {
             "type": "paragraph",
             "runs": [
@@ -477,6 +473,13 @@
         "email": "kankyo@sample-city.lg.jp",
         "hours": "平日 8:30〜17:15（土日祝日・年末年始を除く）",
         "address": "〒100-0001 東京都サンプル市中央1-1-1"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
       }
     }
   ],

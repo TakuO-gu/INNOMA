@@ -32,10 +32,6 @@
             "href": "/"
           },
           {
-            "label": "くらしの情報",
-            "href": "/topics"
-          },
-          {
             "label": "運転・車両",
             "href": "/topics/driving"
           },
@@ -61,15 +57,12 @@
       }
     },
     {
-      "id": "richtext-1",
-      "type": "RichText",
+      "id": "section-cdllpq84l",
+      "type": "Section",
       "props": {
+        "heading": "納期限",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "納期限"
-          },
           {
             "type": "paragraph",
             "runs": [
@@ -77,12 +70,17 @@
                 "text": "毎年5月31日（休日の場合は翌営業日）"
               }
             ]
-          },
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "自動車税（普通車等）"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-z6cmjqyh4",
+      "type": "Section",
+      "props": {
+        "heading": "自動車税（普通車等）",
+        "level": 2,
+        "content": [
           {
             "type": "list",
             "ordered": false,
@@ -108,12 +106,17 @@
                 }
               ]
             ]
-          },
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "軽自動車税（軽自動車等）"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-ms0xnp3pp",
+      "type": "Section",
+      "props": {
+        "heading": "軽自動車税（軽自動車等）",
+        "level": 2,
+        "content": [
           {
             "type": "list",
             "ordered": false,
@@ -139,12 +142,17 @@
                 }
               ]
             ]
-          },
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "エコカー減税・グリーン化特例"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-fvcbdp9gx",
+      "type": "Section",
+      "props": {
+        "heading": "エコカー減税・グリーン化特例",
+        "level": 2,
+        "content": [
           {
             "type": "paragraph",
             "runs": [
@@ -152,6 +160,30 @@
                 "text": "電気自動車、燃費基準達成車等は税額が軽減されます。"
               }
             ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "related-links-qkeea67xr",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "自動車登録",
+            "href": "/services/driving/registration"
+          },
+          {
+            "title": "自動車重量税",
+            "href": "/services/driving/weight-tax"
+          },
+          {
+            "title": "軽自動車税",
+            "href": "/services/tax/keijidosha"
+          },
+          {
+            "title": "自賠責保険",
+            "href": "/services/driving/liability-insurance"
           }
         ]
       }
@@ -165,6 +197,13 @@
         "email": "{{tax_email}}",
         "hours": "{{city_hall_hours}}",
         "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
       }
     }
   ],

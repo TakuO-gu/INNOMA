@@ -7,7 +7,9 @@
   "description": "空き家バンク、空き家の適正管理、解体補助",
   "content_type": "guide",
   "service_category": "housing",
-  "audience": ["residents"],
+  "audience": [
+    "residents"
+  ],
   "topic": [],
   "source": {
     "source_url": "template://sample/services/housing/vacant-house",
@@ -25,10 +27,18 @@
       "type": "Breadcrumbs",
       "props": {
         "items": [
-          { "label": "ホーム", "href": "/" },
-          { "label": "くらしの情報", "href": "/topics" },
-          { "label": "住まい・引越し", "href": "/topics/housing" },
-          { "label": "空き家対策", "href": "/services/housing/vacant-house" }
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "住まい・引越し",
+            "href": "/topics/housing"
+          },
+          {
+            "label": "空き家対策",
+            "href": "/services/housing/vacant-house"
+          }
         ]
       }
     },
@@ -47,46 +57,131 @@
       }
     },
     {
-      "id": "richtext-1",
-      "type": "RichText",
+      "id": "section-t7uh21ikk",
+      "type": "Section",
       "props": {
+        "heading": "空き家バンク",
+        "level": 2,
         "content": [
-          { "type": "heading", "level": 2, "text": "空き家バンク" },
           {
             "type": "paragraph",
             "runs": [
-              { "text": "空き家の売却・賃貸を希望する所有者と、空き家を探している方をマッチングする制度です。" }
+              {
+                "text": "空き家の売却・賃貸を希望する所有者と、空き家を探している方をマッチングする制度です。"
+              }
             ]
           },
           {
             "type": "list",
             "ordered": false,
             "items": [
-              [{ "type": "paragraph", "runs": [{ "text": "登録料：無料" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "仲介は協定不動産事業者が行います" }] }]
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "登録料：無料"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "仲介は協定不動産事業者が行います"
+                    }
+                  ]
+                }
+              ]
             ]
-          },
-          { "type": "heading", "level": 2, "text": "空き家解体補助" },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-1i0p9bdk8",
+      "type": "Section",
+      "props": {
+        "heading": "空き家解体補助",
+        "level": 2,
+        "content": [
           {
             "type": "paragraph",
             "runs": [
-              { "text": "老朽化した空き家の解体費用を補助します。" }
+              {
+                "text": "老朽化した空き家の解体費用を補助します。"
+              }
             ]
           },
           {
             "type": "list",
             "ordered": false,
             "items": [
-              [{ "type": "paragraph", "runs": [{ "text": "補助額：解体工事費の1/2（上限50万円）" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "対象：1年以上使用されていない住宅" }] }]
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "補助額：解体工事費の1/2（上限50万円）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "対象：1年以上使用されていない住宅"
+                    }
+                  ]
+                }
+              ]
             ]
-          },
-          { "type": "heading", "level": 2, "text": "空き家の適正管理" },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-rbspg7jlj",
+      "type": "Section",
+      "props": {
+        "heading": "空き家の適正管理",
+        "level": 2,
+        "content": [
           {
             "type": "paragraph",
             "runs": [
-              { "text": "空き家を所有している方は、適正に管理する義務があります。管理不全の空き家は「特定空家」に指定される場合があります。" }
+              {
+                "text": "空き家を所有している方は、適正に管理する義務があります。管理不全の空き家は「特定空家」に指定される場合があります。"
+              }
             ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "related-links-a53pxloye",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "住宅購入",
+            "href": "/services/housing/home-purchase"
+          },
+          {
+            "title": "固定資産税",
+            "href": "/services/tax/kotei"
+          },
+          {
+            "title": "都市計画",
+            "href": "/services/land/urban-planning"
+          },
+          {
+            "title": "リフォーム補助",
+            "href": "/services/housing/reform-subsidy"
           }
         ]
       }
@@ -101,11 +196,24 @@
         "hours": "平日 8:30〜17:15（土日祝日・年末年始を除く）",
         "address": "〒100-0001 東京都サンプル市中央1-1-1"
       }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
+      }
     }
   ],
   "search": {
     "summary": "空き家対策の案内。空き家バンク、解体補助、適正管理について。",
-    "keywords": ["空き家", "空き家バンク", "解体補助", "特定空家", "空き家対策"],
+    "keywords": [
+      "空き家",
+      "空き家バンク",
+      "解体補助",
+      "特定空家",
+      "空き家対策"
+    ],
     "plain_text": "空き家対策。空き家バンクで売却・賃貸のマッチング。老朽空き家の解体補助。適正管理の義務。"
   }
 }

@@ -32,10 +32,6 @@
             "href": "/"
           },
           {
-            "label": "くらしの情報",
-            "href": "/topics"
-          },
-          {
             "label": "届出・証明",
             "href": "/topics/registration"
           },
@@ -61,15 +57,12 @@
       }
     },
     {
-      "id": "richtext-overview",
-      "type": "RichText",
+      "id": "section-1m8spear6",
+      "type": "Section",
       "props": {
+        "heading": "届出できる人",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "届出できる人"
-          },
           {
             "type": "paragraph",
             "runs": [
@@ -124,68 +117,33 @@
       }
     },
     {
-      "id": "richtext-shorui",
-      "type": "RichText",
+      "id": "section-q9jwny80r-table",
+      "type": "Table",
       "props": {
+        "rows": [
+          {
+            "label": "婚姻届（証人2人の署名が必要）",
+            "value": ""
+          },
+          {
+            "label": "戸籍謄本（本籍地以外に届出する場合、夫・妻それぞれ1通ずつ）",
+            "value": ""
+          },
+          {
+            "label": "届出人の本人確認書類（運転免許証、マイナンバーカードなど）",
+            "value": ""
+          }
+        ],
+        "heading": "必要書類"
+      }
+    },
+    {
+      "id": "section-v090jg6i5",
+      "type": "Section",
+      "props": {
+        "heading": "戸籍謄本について",
+        "level": 3,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "必要書類"
-          },
-          {
-            "type": "list",
-            "ordered": false,
-            "items": [
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "婚姻届",
-                      "bold": true
-                    },
-                    {
-                      "text": "（証人2人の署名が必要）"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "戸籍謄本",
-                      "bold": true
-                    },
-                    {
-                      "text": "（本籍地以外に届出する場合、夫・妻それぞれ1通ずつ）"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "届出人の本人確認書類",
-                      "bold": true
-                    },
-                    {
-                      "text": "（運転免許証、マイナンバーカードなど）"
-                    }
-                  ]
-                }
-              ]
-            ]
-          },
-          {
-            "type": "heading",
-            "level": 3,
-            "text": "戸籍謄本について"
-          },
           {
             "type": "paragraph",
             "runs": [
@@ -198,15 +156,12 @@
       }
     },
     {
-      "id": "richtext-todokesaki",
-      "type": "RichText",
+      "id": "section-4vbyqoze6",
+      "type": "Section",
       "props": {
+        "heading": "届出先・届出時間",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "届出先・届出時間"
-          },
           {
             "type": "paragraph",
             "runs": [
@@ -271,15 +226,12 @@
       }
     },
     {
-      "id": "richtext-sonota",
-      "type": "RichText",
+      "id": "section-kjbwdvkx0",
+      "type": "Section",
       "props": {
+        "heading": "届出後の手続き",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "届出後の手続き"
-          },
           {
             "type": "paragraph",
             "runs": [
@@ -353,16 +305,24 @@
       "props": {
         "items": [
           {
-            "title": "戸籍謄本・住民票",
+            "title": "戸籍",
             "href": "/services/registration/koseki"
           },
           {
-            "title": "転入届",
-            "href": "/services/registration/tennyu"
+            "title": "住民票",
+            "href": "/services/registration/juminhyo"
           },
           {
             "title": "マイナンバーカード",
             "href": "/services/registration/mynumber"
+          },
+          {
+            "title": "国民健康保険",
+            "href": "/services/health/kokuho"
+          },
+          {
+            "title": "国際結婚",
+            "href": "/services/nationality/international-marriage"
           }
         ]
       }
@@ -376,6 +336,13 @@
         "email": "{{shimin_email}}",
         "hours": "{{city_hall_hours}}",
         "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
       }
     }
   ],

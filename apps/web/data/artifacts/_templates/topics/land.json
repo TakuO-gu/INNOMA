@@ -7,7 +7,10 @@
   "description": "農業・林業・漁業、農地転用、土地利用、都市計画などの土地・農林水産に関する情報",
   "content_type": "directory",
   "service_category": "environment",
-  "audience": ["residents", "businesses"],
+  "audience": [
+    "residents",
+    "businesses"
+  ],
   "topic": [],
   "source": {
     "source_url": "template://sample/topics/land",
@@ -25,9 +28,14 @@
       "type": "Breadcrumbs",
       "props": {
         "items": [
-          { "label": "ホーム", "href": "/" },
-          { "label": "くらしの情報", "href": "/topics" },
-          { "label": "土地・農林水産", "href": "/topics/land" }
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "土地・農林水産",
+            "href": "/topics/land"
+          }
         ]
       }
     },
@@ -113,11 +121,32 @@
         "hours": "{{city_hall_hours}}",
         "address": "{{city_hall_address}}"
       }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
+      }
     }
   ],
   "search": {
     "summary": "土地・農林水産に関する情報。農業、林業、漁業、農地転用、開発許可、狩猟免許、有害鳥獣、河川、水利権、土地利用、都市計画の案内。",
-    "keywords": ["土地", "農林水産", "農業", "林業", "漁業", "農地転用", "開発許可", "狩猟免許", "有害鳥獣", "河川", "水利権", "土地利用", "都市計画"],
+    "keywords": [
+      "土地",
+      "農林水産",
+      "農業",
+      "林業",
+      "漁業",
+      "農地転用",
+      "開発許可",
+      "狩猟免許",
+      "有害鳥獣",
+      "河川",
+      "水利権",
+      "土地利用",
+      "都市計画"
+    ],
     "plain_text": "土地・農林水産。農林水産業・土地利用・都市計画に関する情報。農業・林業・漁業、農地転用・開発許可、狩猟免許・有害鳥獣、河川・水利権、土地利用・都市計画。"
   }
 }

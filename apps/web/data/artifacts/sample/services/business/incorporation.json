@@ -7,7 +7,9 @@
   "description": "会社設立の手続き、定款認証、登記申請",
   "content_type": "guide",
   "service_category": "business",
-  "audience": ["businesses"],
+  "audience": [
+    "businesses"
+  ],
   "topic": [],
   "source": {
     "source_url": "template://sample/services/business/incorporation",
@@ -25,10 +27,18 @@
       "type": "Breadcrumbs",
       "props": {
         "items": [
-          { "label": "ホーム", "href": "/" },
-          { "label": "くらしの情報", "href": "/topics" },
-          { "label": "事業・経営", "href": "/topics/business" },
-          { "label": "法人設立", "href": "/services/business/incorporation" }
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "事業・経営",
+            "href": "/topics/business"
+          },
+          {
+            "label": "法人設立",
+            "href": "/services/business/incorporation"
+          }
         ]
       }
     },
@@ -80,9 +90,18 @@
       "type": "Table",
       "props": {
         "rows": [
-          { "label": "定款認証", "value": "公証役場（株式会社のみ）" },
-          { "label": "設立登記", "value": "東京法務局サンプル出張所" },
-          { "label": "法人設立届出", "value": "税務署、東京都、サンプル市" }
+          {
+            "label": "定款認証",
+            "value": "公証役場（株式会社のみ）"
+          },
+          {
+            "label": "設立登記",
+            "value": "東京法務局サンプル出張所"
+          },
+          {
+            "label": "法人設立届出",
+            "value": "税務署、東京都、サンプル市"
+          }
         ]
       }
     },
@@ -94,11 +113,25 @@
         "phone": "03-5678-9012",
         "address": "東京都サンプル市中央5-5-5"
       }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
+      }
     }
   ],
   "search": {
     "summary": "法人設立の手続き案内。株式会社・合同会社の設立登記、定款認証。",
-    "keywords": ["法人設立", "株式会社", "合同会社", "定款", "設立登記", "会社設立"],
+    "keywords": [
+      "法人設立",
+      "株式会社",
+      "合同会社",
+      "定款",
+      "設立登記",
+      "会社設立"
+    ],
     "plain_text": "法人設立。定款作成→定款認証（株式会社）→資本金払込み→設立登記→各種届出の流れ。"
   }
 }

@@ -7,7 +7,9 @@
   "description": "失業給付（基本手当）、再就職手当、教育訓練給付金",
   "content_type": "guide",
   "service_category": "business",
-  "audience": ["residents"],
+  "audience": [
+    "residents"
+  ],
   "topic": [],
   "source": {
     "source_url": "template://sample/services/employment/unemployment-insurance",
@@ -25,10 +27,18 @@
       "type": "Breadcrumbs",
       "props": {
         "items": [
-          { "label": "ホーム", "href": "/" },
-          { "label": "くらしの情報", "href": "/topics" },
-          { "label": "仕事・労働", "href": "/topics/employment" },
-          { "label": "雇用保険・失業給付", "href": "/services/employment/unemployment-insurance" }
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "仕事・労働",
+            "href": "/topics/employment"
+          },
+          {
+            "label": "雇用保険・失業給付",
+            "href": "/services/employment/unemployment-insurance"
+          }
         ]
       }
     },
@@ -47,32 +57,57 @@
       }
     },
     {
-      "id": "richtext-1",
-      "type": "RichText",
+      "id": "section-dno8sictl-table",
+      "type": "Table",
       "props": {
+        "rows": [
+          {
+            "label": "離職前2年間に雇用保険に12か月以上加入していたこと（倒産・解雇の場合は6か月）",
+            "value": ""
+          },
+          {
+            "label": "働く意思と能力があり、求職活動を行っていること",
+            "value": ""
+          },
+          {
+            "label": "ハローワークで求職の申込みを行っていること",
+            "value": ""
+          }
+        ],
+        "heading": "失業給付（基本手当）の受給要件"
+      }
+    },
+    {
+      "id": "section-1zbvqyntz",
+      "type": "Section",
+      "props": {
+        "heading": "給付日数",
+        "level": 2,
         "content": [
-          { "type": "heading", "level": 2, "text": "失業給付（基本手当）の受給要件" },
-          {
-            "type": "list",
-            "ordered": false,
-            "items": [
-              [{ "type": "paragraph", "runs": [{ "text": "離職前2年間に雇用保険に12か月以上加入していたこと（倒産・解雇の場合は6か月）" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "働く意思と能力があり、求職活動を行っていること" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "ハローワークで求職の申込みを行っていること" }] }]
-            ]
-          },
-          { "type": "heading", "level": 2, "text": "給付日数" },
           {
             "type": "paragraph",
             "runs": [
-              { "text": "年齢、雇用保険の加入期間、離職理由により90日〜330日" }
+              {
+                "text": "年齢、雇用保険の加入期間、離職理由により90日〜330日"
+              }
             ]
-          },
-          { "type": "heading", "level": 2, "text": "再就職手当" },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-a40txnlk0",
+      "type": "Section",
+      "props": {
+        "heading": "再就職手当",
+        "level": 2,
+        "content": [
           {
             "type": "paragraph",
             "runs": [
-              { "text": "失業給付の受給中に早期に再就職した場合、残りの給付日数に応じた再就職手当が支給されます。" }
+              {
+                "text": "失業給付の受給中に早期に再就職した場合、残りの給付日数に応じた再就職手当が支給されます。"
+              }
             ]
           }
         ]
@@ -108,6 +143,34 @@
       }
     },
     {
+      "id": "related-links-4cexh5sqt",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "ハローワーク",
+            "href": "/services/employment/hello-work"
+          },
+          {
+            "title": "職業訓練",
+            "href": "/services/employment/vocational-training"
+          },
+          {
+            "title": "就職支援",
+            "href": "/services/employment/career-support"
+          },
+          {
+            "title": "国民健康保険",
+            "href": "/services/health/kokuho"
+          },
+          {
+            "title": "年金",
+            "href": "/services/benefits/nenkin"
+          }
+        ]
+      }
+    },
+    {
       "id": "contact-1",
       "type": "Contact",
       "props": {
@@ -116,11 +179,25 @@
         "address": "東京都サンプル市中央2-2-2",
         "hours": "平日8:30〜17:15"
       }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
+      }
     }
   ],
   "search": {
     "summary": "雇用保険・失業給付の案内。基本手当の受給要件、手続きの流れ、再就職手当。",
-    "keywords": ["雇用保険", "失業給付", "基本手当", "失業手当", "再就職手当", "離職票"],
+    "keywords": [
+      "雇用保険",
+      "失業給付",
+      "基本手当",
+      "失業手当",
+      "再就職手当",
+      "離職票"
+    ],
     "plain_text": "雇用保険・失業給付。離職前2年間に12か月以上加入で受給可能。給付日数は90日〜330日。ハローワークで手続き。"
   }
 }

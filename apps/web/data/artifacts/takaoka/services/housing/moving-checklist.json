@@ -32,10 +32,6 @@
             "href": "/"
           },
           {
-            "label": "くらしの情報",
-            "href": "/topics"
-          },
-          {
             "label": "住まい・引越し",
             "href": "/topics/housing"
           },
@@ -61,15 +57,12 @@
       }
     },
     {
-      "id": "richtext-1",
-      "type": "RichText",
+      "id": "section-4ukfrl5ot",
+      "type": "Section",
       "props": {
+        "heading": "市役所での手続き",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "市役所での手続き"
-          },
           {
             "type": "list",
             "ordered": false,
@@ -153,12 +146,17 @@
                 }
               ]
             ]
-          },
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "ライフライン"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-7sxmzz2c8",
+      "type": "Section",
+      "props": {
+        "heading": "ライフライン",
+        "level": 2,
+        "content": [
           {
             "type": "list",
             "ordered": false,
@@ -197,12 +195,17 @@
                 }
               ]
             ]
-          },
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "その他の届出"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-lb1tpzeme",
+      "type": "Section",
+      "props": {
+        "heading": "その他の届出",
+        "level": 2,
+        "content": [
           {
             "type": "list",
             "ordered": false,
@@ -270,6 +273,42 @@
           {
             "title": "転居届",
             "href": "/services/registration/tenkyo"
+          },
+          {
+            "title": "マイナンバーカード",
+            "href": "/services/registration/mynumber"
+          },
+          {
+            "title": "国民健康保険",
+            "href": "/services/health/kokuho"
+          },
+          {
+            "title": "国民年金",
+            "href": "/services/benefits/nenkin"
+          },
+          {
+            "title": "児童手当",
+            "href": "/services/childcare/jidou-teate"
+          },
+          {
+            "title": "印鑑登録",
+            "href": "/services/registration/inkan"
+          },
+          {
+            "title": "運転免許証",
+            "href": "/services/driving/license"
+          },
+          {
+            "title": "自動車の変更登録",
+            "href": "/services/driving/registration"
+          },
+          {
+            "title": "住民票",
+            "href": "/services/registration/juminhyo"
+          },
+          {
+            "title": "ごみの出し方",
+            "href": "/services/environment/gomi"
           }
         ]
       }
@@ -283,6 +322,13 @@
         "email": "{{registration_email}}",
         "hours": "{{city_hall_hours}}",
         "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
       }
     }
   ],

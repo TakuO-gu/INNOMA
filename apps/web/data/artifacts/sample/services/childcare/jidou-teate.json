@@ -33,12 +33,8 @@
             "href": "/"
           },
           {
-            "label": "くらしの情報",
-            "href": "/topics"
-          },
-          {
             "label": "子育て・教育",
-            "href": "/topics/children"
+            "href": "/topics/childcare"
           },
           {
             "label": "児童手当",
@@ -71,15 +67,12 @@
       }
     },
     {
-      "id": "richtext-taisho",
-      "type": "RichText",
+      "id": "section-qdbska5hm",
+      "type": "Section",
       "props": {
+        "heading": "対象となる方",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "対象となる方"
-          },
           {
             "type": "paragraph",
             "runs": [
@@ -89,32 +82,21 @@
             ]
           },
           {
-            "type": "callout",
-            "severity": "info",
-            "content": [
+            "type": "paragraph",
+            "runs": [
               {
-                "type": "paragraph",
-                "runs": [
-                  {
-                    "text": "公務員の方は勤務先から支給されますので、勤務先で手続きしてください。"
-                  }
-                ]
+                "text": "お知らせ",
+                "bold": true
               }
-            ],
-            "title": "お知らせ"
-          }
-        ]
-      }
-    },
-    {
-      "id": "richtext-gaku",
-      "type": "RichText",
-      "props": {
-        "content": [
+            ]
+          },
           {
-            "type": "heading",
-            "level": 2,
-            "text": "支給額（月額）"
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "公務員の方は勤務先から支給されますので、勤務先で手続きしてください。"
+              }
+            ]
           }
         ]
       }
@@ -140,7 +122,8 @@
             "label": "3歳〜高校生年代（第3子以降）",
             "value": "30,000円"
           }
-        ]
+        ],
+        "heading": "支給額（月額）"
       }
     },
     {
@@ -157,33 +140,32 @@
             ]
           },
           {
-            "type": "callout",
-            "severity": "info",
-            "content": [
+            "type": "paragraph",
+            "runs": [
               {
-                "type": "paragraph",
-                "runs": [
-                  {
-                    "text": "令和6年10月から所得制限が撤廃されました。すべての対象世帯に児童手当が支給されます。"
-                  }
-                ]
+                "text": "お知らせ",
+                "bold": true
               }
-            ],
-            "title": "お知らせ"
+            ]
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "令和6年10月から所得制限が撤廃されました。すべての対象世帯に児童手当が支給されます。"
+              }
+            ]
           }
         ]
       }
     },
     {
-      "id": "richtext-shikyuhi",
-      "type": "RichText",
+      "id": "section-s0ppcgsuy",
+      "type": "Section",
       "props": {
+        "heading": "支給日",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "支給日"
-          },
           {
             "type": "paragraph",
             "runs": [
@@ -228,20 +210,21 @@
       }
     },
     {
-      "id": "richtext-shinsei",
-      "type": "RichText",
+      "id": "section-wzs29660y",
+      "type": "Section",
       "props": {
+        "heading": "申請手続き",
+        "level": 2,
+        "content": []
+      }
+    },
+    {
+      "id": "section-63ckmtupu",
+      "type": "Section",
+      "props": {
+        "heading": "認定請求（新規申請）",
+        "level": 3,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "申請手続き"
-          },
-          {
-            "type": "heading",
-            "level": 3,
-            "text": "認定請求（新規申請）"
-          },
           {
             "type": "paragraph",
             "runs": [
@@ -285,35 +268,35 @@
                 }
               ]
             ]
-          },
-          {
-            "type": "callout",
-            "severity": "warning",
-            "content": [
-              {
-                "type": "paragraph",
-                "runs": [
-                  {
-                    "text": "原則として、申請月の翌月分から支給開始となります。出生・転入から15日以内に申請してください（15日特例）。"
-                  }
-                ]
-              }
-            ],
-            "title": "注意"
           }
         ]
       }
     },
     {
-      "id": "richtext-hitsuyoshorui",
-      "type": "RichText",
+      "id": "section-63ckmtupu-notification-0",
+      "type": "NotificationBanner",
       "props": {
+        "severity": "warning",
+        "title": "注意",
         "content": [
           {
-            "type": "heading",
-            "level": 3,
-            "text": "申請に必要なもの"
-          },
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "原則として、申請月の翌月分から支給開始となります。出生・転入から15日以内に申請してください（15日特例）。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-y8vokpay0",
+      "type": "Section",
+      "props": {
+        "heading": "申請に必要なもの",
+        "level": 3,
+        "content": [
           {
             "type": "list",
             "ordered": false,
@@ -374,15 +357,12 @@
       }
     },
     {
-      "id": "richtext-henkou",
-      "type": "RichText",
+      "id": "section-dis6hleid",
+      "type": "Section",
       "props": {
+        "heading": "届出が必要なとき",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "届出が必要なとき"
-          },
           {
             "type": "paragraph",
             "runs": [
@@ -471,15 +451,12 @@
       }
     },
     {
-      "id": "richtext-genkyo",
-      "type": "RichText",
+      "id": "section-5oykxyqrq",
+      "type": "Section",
       "props": {
+        "heading": "現況届",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "現況届"
-          },
           {
             "type": "paragraph",
             "runs": [
@@ -543,20 +520,28 @@
       "props": {
         "items": [
           {
-            "title": "子ども医療費助成",
-            "href": "/services/childcare/kodomo-iryohi"
-          },
-          {
-            "title": "児童扶養手当",
-            "href": "/services/childcare/jidou-fuyou-teate"
-          },
-          {
             "title": "母子保健",
             "href": "/services/childcare/boshi"
           },
           {
-            "title": "保育園・幼稚園",
-            "href": "/services/childcare/hoikuen"
+            "title": "保育所入所申請",
+            "href": "/services/childcare/nursery-apply"
+          },
+          {
+            "title": "出生届",
+            "href": "/services/registration/shussei"
+          },
+          {
+            "title": "転入届",
+            "href": "/services/registration/tennyu"
+          },
+          {
+            "title": "国民健康保険",
+            "href": "/services/health/kokuho"
+          },
+          {
+            "title": "予防接種",
+            "href": "/services/health/yobosesshu"
           }
         ]
       }
@@ -570,6 +555,13 @@
         "email": "kosodate@sample-city.lg.jp",
         "hours": "平日 8:30〜17:15（土日祝日・年末年始を除く）",
         "address": "〒100-0001 東京都サンプル市中央1-1-1"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
       }
     }
   ],

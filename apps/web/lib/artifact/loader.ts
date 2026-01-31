@@ -24,7 +24,8 @@ import {
   hasEmergencyContent,
 } from "./cache";
 import { artifactLogger } from "./logger";
-import { getVariableStore, variableStoreToMapForJson, replaceVariables } from "@/lib/template";
+import { getVariableStore, replaceVariablesWithSources, type VariableSourceInfo } from "@/lib/template";
+import type { Source } from "./innoma-artifact-schema.v2";
 
 export type { InnomaArtifactValidated };
 export { invalidateCache, invalidateCacheByPrefix, makeCacheKey };
@@ -33,7 +34,7 @@ export { invalidateCache, invalidateCacheByPrefix, makeCacheKey };
  * Artifact読み込み結果
  */
 export type ArtifactLoadResult =
-  | { success: true; artifact: InnomaArtifactValidated; cached: boolean; unreplacedVariables: string[] }
+  | { success: true; artifact: InnomaArtifactValidated; cached: boolean; unreplacedVariables: string[]; sources: Source[] }
   | { success: false; error: "not_found" | "invalid_json" | "validation_failed" | "timeout"; message: string };
 
 /**
@@ -63,7 +64,7 @@ async function loadArtifactInternal(
     const cached = getFromCache<InnomaArtifactValidated>(key);
     if (cached) {
       artifactLogger.debug("cache_hit", { key });
-      return { success: true, artifact: cached, cached: true, unreplacedVariables: [] };
+      return { success: true, artifact: cached, cached: true, unreplacedVariables: [], sources: [] };
     }
   }
 
@@ -103,29 +104,28 @@ async function loadArtifactInternal(
     // Extract municipality ID from key (e.g., "takaoka/services/environment/gomi.json" -> "takaoka")
     const municipalityId = key.split("/")[0];
 
-    // Load variable store for this municipality (with JSON-safe escaping)
-    let variableMap: Record<string, string> = {};
+    // Load variable store for this municipality
+    let processedData = data;
+    let unreplacedVariables: string[] = [];
+    let variableSources: VariableSourceInfo[] = [];
+
     try {
       const variableStore = await getVariableStore(municipalityId);
-      variableMap = variableStoreToMapForJson(variableStore);
+      if (Object.keys(variableStore).length > 0) {
+        const replaceResult = replaceVariablesWithSources(data, variableStore, true);
+        processedData = replaceResult.content;
+        unreplacedVariables = replaceResult.unreplacedVariables;
+        variableSources = replaceResult.variableSources;
+        if (unreplacedVariables.length > 0) {
+          artifactLogger.debug("unreplaced_variables", {
+            key,
+            unreplaced: unreplacedVariables,
+          });
+        }
+      }
     } catch (e) {
       // Variable store may not exist for some municipalities, continue without it
       artifactLogger.debug("variable_store_not_found", { municipalityId, error: (e as Error).message });
-    }
-
-    // Replace variables in the raw JSON string before parsing
-    let processedData = data;
-    let unreplacedVariables: string[] = [];
-    if (Object.keys(variableMap).length > 0) {
-      const replaceResult = replaceVariables(data, variableMap);
-      processedData = replaceResult.content;
-      unreplacedVariables = replaceResult.unreplacedVariables;
-      if (unreplacedVariables.length > 0) {
-        artifactLogger.debug("unreplaced_variables", {
-          key,
-          unreplaced: unreplacedVariables,
-        });
-      }
     }
 
     let parsed: unknown;
@@ -155,6 +155,9 @@ async function loadArtifactInternal(
 
     const artifact = result.data!;
 
+    // 変数ソース情報をSource配列に変換
+    const sources = buildSourcesFromVariables(variableSources);
+
     // TTLを決定してキャッシュに保存
     const ttl = getTTLForArtifact(artifact);
     if (ttl > 0 && !skipCache) {
@@ -167,9 +170,10 @@ async function loadArtifactInternal(
       loadTimeMs,
       hasEmergency: hasEmergencyContent(artifact),
       ttl,
+      sourcesCount: sources.length,
     });
 
-    return { success: true, artifact, cached: false, unreplacedVariables };
+    return { success: true, artifact, cached: false, unreplacedVariables, sources };
   } catch (e) {
     artifactLogger.error("load_error", { key, error: (e as Error).message });
     throw new Error(`Failed to load artifact ${key}: ${(e as Error).message}`);
@@ -225,6 +229,8 @@ const NON_ARTIFACT_FILES = [
   "variables.json",
   "districts.json",
   "history/", // historyディレクトリ内のファイル
+  "variables/", // variablesディレクトリ内のファイル
+  "data/", // dataディレクトリ内のファイル（shelters.json, hazard-maps.json等）
 ];
 
 /**
@@ -297,4 +303,55 @@ export class ArtifactValidationError extends Error {
     super(message);
     this.name = "ArtifactValidationError";
   }
+}
+
+/**
+ * 変数ソース情報をSource配列に変換
+ * 同じURLからの変数はグループ化
+ */
+function buildSourcesFromVariables(variableSources: VariableSourceInfo[]): Source[] {
+  // URLでグループ化
+  const sourcesByUrl = new Map<string, { variables: string[]; accessedAt?: string }>();
+
+  for (const vs of variableSources) {
+    if (!vs.sourceUrl) continue;
+
+    const existing = sourcesByUrl.get(vs.sourceUrl);
+    if (existing) {
+      if (!existing.variables.includes(vs.variableName)) {
+        existing.variables.push(vs.variableName);
+      }
+    } else {
+      sourcesByUrl.set(vs.sourceUrl, {
+        variables: [vs.variableName],
+        accessedAt: new Date().toISOString(),
+      });
+    }
+  }
+
+  // Source配列に変換（番号を付与）
+  const sources: Source[] = [];
+  let id = 1;
+
+  for (const [url, data] of sourcesByUrl.entries()) {
+    // URLからドメインとパスでタイトルを生成
+    let title: string;
+    try {
+      const urlObj = new URL(url);
+      title = urlObj.hostname + (urlObj.pathname !== "/" ? urlObj.pathname : "");
+    } catch {
+      title = url;
+    }
+
+    sources.push({
+      id,
+      url,
+      title,
+      accessedAt: data.accessedAt,
+      variables: data.variables,
+    });
+    id++;
+  }
+
+  return sources;
 }

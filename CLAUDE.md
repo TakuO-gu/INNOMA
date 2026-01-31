@@ -27,14 +27,23 @@
 
 ## タスク完了チェック
 
-タスクが終了したら以下を実行:
+タスクが終了したら以下を実行（**ロック付きコマンドを使用すること**）:
 
 ```bash
 cd apps/web
-npm run lint             # Lintチェック
-npm run test             # テスト実行
-npm run build            # ビルド確認
+npm run check            # Lint + テスト + ビルドを排他実行（推奨）
 ```
+
+または個別に実行する場合:
+
+```bash
+cd apps/web
+npm run lint:lock        # Lintチェック（排他実行）
+npm run test:lock        # テスト実行（排他実行）
+npm run build:lock       # ビルド確認（排他実行）
+```
+
+> **重要**: 複数のClaude Codeが同時に動作している場合、`:lock`付きコマンドを使用してビルド競合を防止すること。ロックは自動的に待機・解放される。
 
 ---
 
@@ -76,6 +85,45 @@ UIコンポーネント実装時はデジタル庁デザインシステム（DAD
 |---------|-----|------|
 | DADS Reactコードスニペット | https://design.digital.go.jp/dads/react/ | コンポーネントの使用例・コード例 |
 | Reactコンポーネント実装 | https://github.com/digital-go-jp/design-system-example-components-react/tree/main/src/components | コンポーネントのソースコード参照 |
+
+---
+
+## サービスページ作成チェックリスト
+
+**新しいサービスページを作成したら、以下の3ステップを必ず実行すること:**
+
+### 1. コンテンツ整合性チェック
+
+ページタイトルと内容が一致しているか確認する:
+- タイトルが示すサービスの情報がページ内で説明されているか
+- 無関係な情報や別サービスの情報が混入していないか
+- 概要（Summary）がページ内容を正しく要約しているか
+
+### 2. 変数・RichTextの妥当性検証
+
+`template-validity-checker`エージェントを使用して、ランダムに選んだ10自治体のWebサイトと比較検証する:
+
+```
+Task tool: subagent_type=template-validity-checker
+```
+
+**検証項目**:
+- 静的コンテンツ（RichText内のテキスト）が全国共通で正確か
+- 自治体ごとに異なる情報が変数化されているか
+- 追加すべき変数がないか（窓口名、手数料、受付時間等）
+- 変数のソースURL（sources）が適切に設定されているか
+
+### 3. コンポーネント最適化
+
+[docs/COMPONENT_SELECTION_LOGIC.md](docs/COMPONENT_SELECTION_LOGIC.md) のルールに従い、コンポーネント構成を最適化する:
+
+**確認項目**:
+- 手順（3ステップ以上）→ `StepNavigation` を使用しているか
+- 条件分岐のある書類リスト → `Table` または `Accordion` を使用しているか
+- 単純なリスト → `RichText (unordered list)` を使用しているか
+- `Table` の `value` が空でないか（空なら `RichText` に変更）
+- 重要な注意事項 → `NotificationBanner` を使用しているか
+- セクション順序が [ドキュメント記載の順序](docs/COMPONENT_SELECTION_LOGIC.md#3-セクション順序) に従っているか
 
 ---
 

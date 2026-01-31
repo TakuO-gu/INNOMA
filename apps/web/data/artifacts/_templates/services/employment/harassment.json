@@ -7,7 +7,9 @@
   "description": "パワハラ・セクハラ・マタハラ等の相談窓口",
   "content_type": "guide",
   "service_category": "business",
-  "audience": ["residents"],
+  "audience": [
+    "residents"
+  ],
   "topic": [],
   "source": {
     "source_url": "template://sample/services/employment/harassment",
@@ -25,10 +27,18 @@
       "type": "Breadcrumbs",
       "props": {
         "items": [
-          { "label": "ホーム", "href": "/" },
-          { "label": "くらしの情報", "href": "/topics" },
-          { "label": "仕事・労働", "href": "/topics/employment" },
-          { "label": "ハラスメント対策", "href": "/services/employment/harassment" }
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "仕事・労働",
+            "href": "/topics/employment"
+          },
+          {
+            "label": "ハラスメント対策",
+            "href": "/services/employment/harassment"
+          }
         ]
       }
     },
@@ -47,29 +57,118 @@
       }
     },
     {
-      "id": "richtext-1",
-      "type": "RichText",
+      "id": "section-ctbqhkqtx",
+      "type": "Section",
       "props": {
+        "heading": "ハラスメントの種類",
+        "level": 2,
         "content": [
-          { "type": "heading", "level": 2, "text": "ハラスメントの種類" },
           {
             "type": "list",
             "ordered": false,
             "items": [
-              [{ "type": "paragraph", "runs": [{ "text": "パワーハラスメント", "bold": true }, { "text": "：優越的な関係を背景とした言動で、業務上必要かつ相当な範囲を超えたもの" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "セクシュアルハラスメント", "bold": true }, { "text": "：性的な言動により不利益を受けたり、就業環境が害されること" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "マタニティハラスメント", "bold": true }, { "text": "：妊娠・出産・育休取得等を理由とする不利益な取扱い" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "カスタマーハラスメント", "bold": true }, { "text": "：顧客からの著しい迷惑行為" }] }]
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "パワーハラスメント",
+                      "bold": true
+                    },
+                    {
+                      "text": "：優越的な関係を背景とした言動で、業務上必要かつ相当な範囲を超えたもの"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "セクシュアルハラスメント",
+                      "bold": true
+                    },
+                    {
+                      "text": "：性的な言動により不利益を受けたり、就業環境が害されること"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "マタニティハラスメント",
+                      "bold": true
+                    },
+                    {
+                      "text": "：妊娠・出産・育休取得等を理由とする不利益な取扱い"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "カスタマーハラスメント",
+                      "bold": true
+                    },
+                    {
+                      "text": "：顧客からの著しい迷惑行為"
+                    }
+                  ]
+                }
+              ]
             ]
-          },
-          { "type": "heading", "level": 2, "text": "相談窓口" },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-3jup2k1jp",
+      "type": "Section",
+      "props": {
+        "heading": "相談窓口",
+        "level": 2,
+        "content": [
           {
             "type": "list",
             "ordered": false,
             "items": [
-              [{ "type": "paragraph", "runs": [{ "text": "総合労働相談コーナー（労働局・労働基準監督署）" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "ハラスメント悩み相談室（厚生労働省委託事業）" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "都道府県労働局雇用環境・均等部（室）" }] }]
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "総合労働相談コーナー（労働局・労働基準監督署）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "ハラスメント悩み相談室（厚生労働省委託事業）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "都道府県労働局雇用環境・均等部（室）"
+                    }
+                  ]
+                }
+              ]
             ]
           }
         ]
@@ -85,8 +184,30 @@
           {
             "type": "paragraph",
             "runs": [
-              { "text": "すべての事業主にパワハラ防止措置が義務化されています。相談体制の整備、再発防止措置等が必要です。" }
+              {
+                "text": "すべての事業主にパワハラ防止措置が義務化されています。相談体制の整備、再発防止措置等が必要です。"
+              }
             ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "related-links-at2t99oen",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "労働相談",
+            "href": "/services/employment/labor-consultation"
+          },
+          {
+            "title": "労働基準",
+            "href": "/services/employment/labor-standards"
+          },
+          {
+            "title": "法律相談",
+            "href": "/services/civic/legal-support"
           }
         ]
       }
@@ -99,11 +220,25 @@
         "phone": "{{labor_bureau_phone}}",
         "address": "{{labor_bureau_address}}"
       }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
+      }
     }
   ],
   "search": {
     "summary": "ハラスメント対策の案内。パワハラ・セクハラ・マタハラの相談窓口。",
-    "keywords": ["ハラスメント", "パワハラ", "セクハラ", "マタハラ", "職場いじめ", "相談窓口"],
+    "keywords": [
+      "ハラスメント",
+      "パワハラ",
+      "セクハラ",
+      "マタハラ",
+      "職場いじめ",
+      "相談窓口"
+    ],
     "plain_text": "ハラスメント対策。パワハラ・セクハラ・マタハラ等の相談は総合労働相談コーナーへ。事業主には防止措置が義務化。"
   }
 }

@@ -32,10 +32,6 @@
             "href": "/"
           },
           {
-            "label": "くらしの情報",
-            "href": "/topics"
-          },
-          {
             "label": "住まい・引越し",
             "href": "/topics/housing"
           },
@@ -61,15 +57,12 @@
       }
     },
     {
-      "id": "richtext-1",
-      "type": "RichText",
+      "id": "section-sqis3cbmo",
+      "type": "Section",
       "props": {
+        "heading": "主な登記の種類",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "主な登記の種類"
-          },
           {
             "type": "list",
             "ordered": false,
@@ -145,29 +138,177 @@
                 }
               ]
             ]
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-zk5snyc0y-notification-0",
+      "type": "NotificationBanner",
+      "props": {
+        "severity": "warning",
+        "title": "注意",
+        "content": [
           {
-            "type": "heading",
-            "level": 2,
-            "text": "相続登記の義務化"
-          },
-          {
-            "type": "callout",
-            "severity": "warning",
-            "title": "注意",
-            "content": [
+            "type": "paragraph",
+            "runs": [
               {
-                "type": "paragraph",
-                "runs": [
-                  {
-                    "text": "2024年4月1日から相続登記が義務化されました。",
-                    "bold": true
-                  },
-                  {
-                    "text": "相続により不動産を取得した場合、3年以内に登記が必要です。"
-                  }
-                ]
+                "text": "2024年4月1日から相続登記が義務化されました。",
+                "bold": true
+              },
+              {
+                "text": "相続により不動産を取得した場合、3年以内に登記が必要です。"
               }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-how-to-register",
+      "type": "Section",
+      "props": {
+        "heading": "登記の手続き方法",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "不動産登記は、管轄の法務局で行います。手続きには以下の方法があります。"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "司法書士に依頼する",
+                      "bold": true
+                    },
+                    {
+                      "text": "（一般的な方法）：売買や住宅ローン借入時は、不動産会社や金融機関が手配する司法書士が手続きを代行します。相続登記も司法書士に依頼できます。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "自分で申請する",
+                      "bold": true
+                    },
+                    {
+                      "text": "：法務局の窓口または郵送で申請書類を提出します。相続登記など比較的シンプルな登記は自分で行うことも可能です。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "オンライン申請",
+                      "bold": true
+                    },
+                    {
+                      "text": "：「登記・供託オンライン申請システム」を利用して申請できます。電子署名が必要です。"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-required-documents",
+      "type": "Section",
+      "props": {
+        "heading": "主な必要書類",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "登記の種類によって必要書類が異なります。詳しくは法務局にお問い合わせください。"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "登記申請書"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "登記原因証明情報（売買契約書、遺産分割協議書など）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "権利証または登記識別情報"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "印鑑証明書"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "住民票"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "固定資産評価証明書（税額計算用）"
+                    }
+                  ]
+                }
+              ]
             ]
           }
         ]
@@ -194,12 +335,43 @@
       }
     },
     {
+      "id": "related-links-jyh0q904u",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "住宅購入",
+            "href": "/services/housing/home-purchase"
+          },
+          {
+            "title": "固定資産税",
+            "href": "/services/tax/kotei"
+          },
+          {
+            "title": "印鑑登録",
+            "href": "/services/registration/inkan"
+          },
+          {
+            "title": "住民票",
+            "href": "/services/registration/juminhyo"
+          }
+        ]
+      }
+    },
+    {
       "id": "contact-1",
       "type": "Contact",
       "props": {
         "department": "東京法務局サンプル出張所",
         "phone": "03-5678-9012",
         "address": "東京都サンプル市中央5-5-5"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
       }
     }
   ],

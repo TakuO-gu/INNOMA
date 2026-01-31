@@ -7,7 +7,10 @@
   "description": "住民税、固定資産税、確定申告、ふるさと納税に関する情報",
   "content_type": "directory",
   "service_category": "government",
-  "audience": ["residents", "businesses"],
+  "audience": [
+    "residents",
+    "businesses"
+  ],
   "topic": [],
   "source": {
     "source_url": "template://sample/topics/tax",
@@ -25,9 +28,14 @@
       "type": "Breadcrumbs",
       "props": {
         "items": [
-          { "label": "ホーム", "href": "/" },
-          { "label": "くらしの情報", "href": "/topics" },
-          { "label": "税金", "href": "/topics/tax" }
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "税金",
+            "href": "/topics/tax"
+          }
         ]
       }
     },
@@ -64,6 +72,26 @@
             "title": "軽自動車税",
             "href": "/services/tax/keijidosha",
             "description": "軽自動車・バイクの税金"
+          },
+          {
+            "title": "税証明書",
+            "href": "/services/tax/zeishoumei",
+            "description": "所得証明書・課税証明書・納税証明書の取得"
+          },
+          {
+            "title": "納税方法",
+            "href": "/services/tax/nouzei",
+            "description": "口座振替・コンビニ・スマホ決済での納付"
+          },
+          {
+            "title": "確定申告・税の相談",
+            "href": "/services/tax/kakuteishinkoku",
+            "description": "確定申告会場・住民税の申告"
+          },
+          {
+            "title": "ふるさと納税",
+            "href": "/services/tax/furusato",
+            "description": "ふるさと納税・ワンストップ特例"
           }
         ]
       }
@@ -78,11 +106,26 @@
         "hours": "{{city_hall_hours}}",
         "address": "{{city_hall_address}}"
       }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
+      }
     }
   ],
   "search": {
     "summary": "税金に関する情報。住民税、固定資産税、軽自動車税、確定申告、ふるさと納税の案内。",
-    "keywords": ["税金", "住民税", "固定資産税", "軽自動車税", "確定申告", "ふるさと納税", "税証明書"],
+    "keywords": [
+      "税金",
+      "住民税",
+      "固定資産税",
+      "軽自動車税",
+      "確定申告",
+      "ふるさと納税",
+      "税証明書"
+    ],
     "plain_text": "税金。住民税、固定資産税、確定申告、ふるさと納税に関する情報。住民税、固定資産税、軽自動車税、確定申告、ふるさと納税、税証明書。"
   }
 }

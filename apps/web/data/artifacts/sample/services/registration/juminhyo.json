@@ -32,10 +32,6 @@
             "href": "/"
           },
           {
-            "label": "くらしの情報",
-            "href": "/topics"
-          },
-          {
             "label": "届出・証明",
             "href": "/topics/registration"
           },
@@ -61,90 +57,40 @@
       }
     },
     {
-      "id": "richtext-shurui",
-      "type": "RichText",
+      "id": "section-jjewxan8v-desclist",
+      "type": "DescriptionList",
       "props": {
-        "content": [
+        "items": [
           {
-            "type": "heading",
-            "level": 2,
-            "text": "住民票の種類"
+            "term": "住民票の写し（世帯全員）",
+            "description": "世帯全員の情報が記載されたもの"
           },
           {
-            "type": "list",
-            "ordered": false,
-            "items": [
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "住民票の写し（世帯全員）",
-                      "bold": true
-                    },
-                    {
-                      "text": "：世帯全員の情報が記載されたもの"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "住民票の写し（一部）",
-                      "bold": true
-                    },
-                    {
-                      "text": "：必要な方のみの情報が記載されたもの"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "住民票記載事項証明書",
-                      "bold": true
-                    },
-                    {
-                      "text": "：住民票の一部の事項を証明するもの"
-                    }
-                  ]
-                }
-              ]
-            ]
+            "term": "住民票の写し（一部）",
+            "description": "必要な方のみの情報が記載されたもの"
           },
           {
-            "type": "callout",
-            "severity": "info",
-            "title": "記載事項の選択",
-            "content": [
-              {
-                "type": "paragraph",
-                "runs": [
-                  {
-                    "text": "本籍・筆頭者、世帯主・続柄、マイナンバーなどは、必要に応じて記載の有無を選択できます。提出先に確認してから請求してください。"
-                  }
-                ]
-              }
-            ]
+            "term": "住民票記載事項証明書",
+            "description": "住民票の一部の事項を証明するもの"
           }
-        ]
+        ],
+        "heading": "住民票の種類"
       }
     },
     {
-      "id": "richtext-tesuryo",
-      "type": "RichText",
+      "id": "section-jjewxan8v-notification-0",
+      "type": "NotificationBanner",
       "props": {
+        "severity": "info",
+        "title": "記載事項の選択",
         "content": [
           {
-            "type": "heading",
-            "level": 2,
-            "text": "手数料"
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "本籍・筆頭者、世帯主・続柄、マイナンバーなどは、必要に応じて記載の有無を選択できます。提出先に確認してから請求してください。"
+              }
+            ]
           }
         ]
       }
@@ -166,104 +112,64 @@
             "label": "住民票記載事項証明書",
             "value": "300円"
           }
-        ]
+        ],
+        "heading": "手数料"
       }
     },
     {
-      "id": "richtext-madoguchi",
-      "type": "RichText",
+      "id": "section-6ssc8xvhx",
+      "type": "Section",
       "props": {
+        "heading": "窓口で請求する",
+        "level": 2,
+        "content": []
+      }
+    },
+    {
+      "id": "section-85577zdmb-table",
+      "type": "Table",
+      "props": {
+        "rows": [
+          {
+            "label": "本人",
+            "value": ""
+          },
+          {
+            "label": "同一世帯の方",
+            "value": ""
+          },
+          {
+            "label": "代理人（委任状が必要）",
+            "value": ""
+          }
+        ],
+        "heading": "請求できる人"
+      }
+    },
+    {
+      "id": "section-j9oqhdl39-table",
+      "type": "Table",
+      "props": {
+        "rows": [
+          {
+            "label": "本人確認書類（マイナンバーカード、運転免許証など）",
+            "value": ""
+          },
+          {
+            "label": "委任状（代理人が請求する場合）",
+            "value": ""
+          }
+        ],
+        "heading": "必要なもの"
+      }
+    },
+    {
+      "id": "section-v7gqvwglw",
+      "type": "Section",
+      "props": {
+        "heading": "受付場所・時間",
+        "level": 3,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "窓口で請求する"
-          },
-          {
-            "type": "heading",
-            "level": 3,
-            "text": "請求できる人"
-          },
-          {
-            "type": "list",
-            "ordered": false,
-            "items": [
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "本人"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "同一世帯の方"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "代理人（委任状が必要）"
-                    }
-                  ]
-                }
-              ]
-            ]
-          },
-          {
-            "type": "heading",
-            "level": 3,
-            "text": "必要なもの"
-          },
-          {
-            "type": "list",
-            "ordered": false,
-            "items": [
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "本人確認書類",
-                      "bold": true
-                    },
-                    {
-                      "text": "（マイナンバーカード、運転免許証など）"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "委任状",
-                      "bold": true
-                    },
-                    {
-                      "text": "（代理人が請求する場合）"
-                    }
-                  ]
-                }
-              ]
-            ]
-          },
-          {
-            "type": "heading",
-            "level": 3,
-            "text": "受付場所・時間"
-          },
           {
             "type": "paragraph",
             "runs": [
@@ -276,15 +182,12 @@
       }
     },
     {
-      "id": "richtext-convenience",
-      "type": "RichText",
+      "id": "section-n6tc25x4r",
+      "type": "Section",
       "props": {
+        "heading": "コンビニで取得する",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "コンビニで取得する"
-          },
           {
             "type": "paragraph",
             "runs": [
@@ -320,17 +223,19 @@
             ]
           },
           {
-            "type": "callout",
-            "severity": "info",
-            "title": "お知らせ",
-            "content": [
+            "type": "paragraph",
+            "runs": [
               {
-                "type": "paragraph",
-                "runs": [
-                  {
-                    "text": "コンビニ交付は窓口より手数料が安くなります。"
-                  }
-                ]
+                "text": "お知らせ",
+                "bold": true
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "コンビニ交付は窓口より手数料が安くなります。"
               }
             ]
           }
@@ -338,15 +243,12 @@
       }
     },
     {
-      "id": "richtext-yubin",
-      "type": "RichText",
+      "id": "section-7radi5w1m",
+      "type": "Section",
       "props": {
+        "heading": "郵送で請求する",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "郵送で請求する"
-          },
           {
             "type": "paragraph",
             "runs": [
@@ -354,72 +256,33 @@
                 "text": "窓口に来庁できない場合は、郵送で請求できます。"
               }
             ]
-          },
-          {
-            "type": "heading",
-            "level": 3,
-            "text": "送付するもの"
-          },
-          {
-            "type": "list",
-            "ordered": false,
-            "items": [
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "請求書",
-                      "bold": true
-                    },
-                    {
-                      "text": "（市ホームページからダウンロード、または便せん等に必要事項を記入）"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "本人確認書類のコピー",
-                      "bold": true
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "定額小為替",
-                      "bold": true
-                    },
-                    {
-                      "text": "（手数料分、郵便局で購入）"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "返信用封筒",
-                      "bold": true
-                    },
-                    {
-                      "text": "（切手貼付、住民登録地宛て）"
-                    }
-                  ]
-                }
-              ]
-            ]
           }
         ]
+      }
+    },
+    {
+      "id": "section-io9mjnkna-table",
+      "type": "Table",
+      "props": {
+        "rows": [
+          {
+            "label": "請求書（市ホームページからダウンロード、または便せん等に必要事項を記入）",
+            "value": ""
+          },
+          {
+            "label": "本人確認書類のコピー",
+            "value": ""
+          },
+          {
+            "label": "定額小為替（手数料分、郵便局で購入）",
+            "value": ""
+          },
+          {
+            "label": "返信用封筒（切手貼付、住民登録地宛て）",
+            "value": ""
+          }
+        ],
+        "heading": "送付するもの"
       }
     },
     {
@@ -428,16 +291,24 @@
       "props": {
         "items": [
           {
-            "title": "戸籍謄本",
-            "href": "/services/registration/koseki"
+            "title": "印鑑登録",
+            "href": "/services/registration/inkan"
           },
           {
-            "title": "印鑑登録証明書",
-            "href": "/services/registration/inkan"
+            "title": "戸籍",
+            "href": "/services/registration/koseki"
           },
           {
             "title": "マイナンバーカード",
             "href": "/services/registration/mynumber"
+          },
+          {
+            "title": "転入届",
+            "href": "/services/registration/tennyu"
+          },
+          {
+            "title": "転出届",
+            "href": "/services/registration/tenshutsu"
           }
         ]
       }
@@ -451,6 +322,13 @@
         "email": "shimin@sample-city.lg.jp",
         "hours": "平日 8:30〜17:15（土日祝日・年末年始を除く）",
         "address": "〒100-0001 東京都サンプル市中央1-1-1"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
       }
     }
   ],

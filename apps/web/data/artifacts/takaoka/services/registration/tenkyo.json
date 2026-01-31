@@ -32,10 +32,6 @@
             "href": "/"
           },
           {
-            "label": "くらしの情報",
-            "href": "/topics"
-          },
-          {
             "label": "届出・証明",
             "href": "/topics/registration"
           },
@@ -61,15 +57,12 @@
       }
     },
     {
-      "id": "richtext-overview",
-      "type": "RichText",
+      "id": "section-gx2aa29kz",
+      "type": "Section",
       "props": {
+        "heading": "届出期間",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "届出期間"
-          },
           {
             "type": "paragraph",
             "runs": [
@@ -116,153 +109,62 @@
       }
     },
     {
-      "id": "richtext-shorui",
-      "type": "RichText",
+      "id": "section-oh3sewykh-table",
+      "type": "Table",
       "props": {
-        "content": [
+        "rows": [
           {
-            "type": "heading",
-            "level": 2,
-            "text": "届出に必要なもの"
+            "label": "届出人の本人確認書類（マイナンバーカード、運転免許証など）",
+            "value": ""
           },
           {
-            "type": "list",
-            "ordered": false,
-            "items": [
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "届出人の本人確認書類",
-                      "bold": true
-                    },
-                    {
-                      "text": "（マイナンバーカード、運転免許証など）"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "マイナンバーカード",
-                      "bold": true
-                    },
-                    {
-                      "text": "（転居する方全員分。住所変更が必要）"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "国民健康保険証",
-                      "bold": true
-                    },
-                    {
-                      "text": "（加入している場合。住所変更が必要）"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "介護保険被保険者証",
-                      "bold": true
-                    },
-                    {
-                      "text": "（該当する場合）"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "在留カード",
-                      "bold": true
-                    },
-                    {
-                      "text": "（外国籍の方）"
-                    }
-                  ]
-                }
-              ]
-            ]
+            "label": "マイナンバーカード（転居する方全員分。住所変更が必要）",
+            "value": ""
+          },
+          {
+            "label": "国民健康保険証（加入している場合。住所変更が必要）",
+            "value": ""
+          },
+          {
+            "label": "介護保険被保険者証（該当する場合）",
+            "value": ""
+          },
+          {
+            "label": "在留カード（外国籍の方）",
+            "value": ""
           }
-        ]
+        ],
+        "heading": "届出に必要なもの"
       }
     },
     {
-      "id": "richtext-todokenin",
-      "type": "RichText",
+      "id": "section-idmysukv5-table",
+      "type": "Table",
       "props": {
-        "content": [
+        "rows": [
           {
-            "type": "heading",
-            "level": 2,
-            "text": "届出できる人"
+            "label": "本人",
+            "value": ""
           },
           {
-            "type": "list",
-            "ordered": false,
-            "items": [
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "本人"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "同一世帯の方"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "代理人（委任状が必要）"
-                    }
-                  ]
-                }
-              ]
-            ]
+            "label": "同一世帯の方",
+            "value": ""
+          },
+          {
+            "label": "代理人（委任状が必要）",
+            "value": ""
           }
-        ]
+        ],
+        "heading": "届出できる人"
       }
     },
     {
-      "id": "richtext-sonota",
-      "type": "RichText",
+      "id": "section-qbtbkd5lq",
+      "type": "Section",
       "props": {
+        "heading": "転居に伴うその他の手続き",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "転居に伴うその他の手続き"
-          },
           {
             "type": "paragraph",
             "runs": [
@@ -336,20 +238,28 @@
       "props": {
         "items": [
           {
-            "title": "転入届",
-            "href": "/services/registration/tennyu"
-          },
-          {
-            "title": "転出届",
-            "href": "/services/registration/tenshutsu"
+            "title": "住民票",
+            "href": "/services/registration/juminhyo"
           },
           {
             "title": "マイナンバーカード",
             "href": "/services/registration/mynumber"
           },
           {
+            "title": "印鑑登録",
+            "href": "/services/registration/inkan"
+          },
+          {
             "title": "国民健康保険",
             "href": "/services/health/kokuho"
+          },
+          {
+            "title": "児童手当",
+            "href": "/services/childcare/jidou-teate"
+          },
+          {
+            "title": "引越し手続き一覧",
+            "href": "/services/housing/moving-checklist"
           }
         ]
       }
@@ -363,6 +273,13 @@
         "email": "{{shimin_email}}",
         "hours": "{{city_hall_hours}}",
         "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
       }
     }
   ],

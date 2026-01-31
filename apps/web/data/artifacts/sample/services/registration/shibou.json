@@ -32,10 +32,6 @@
             "href": "/"
           },
           {
-            "label": "くらしの情報",
-            "href": "/topics"
-          },
-          {
             "label": "届出・証明",
             "href": "/topics/registration"
           },
@@ -61,15 +57,12 @@
       }
     },
     {
-      "id": "richtext-overview",
-      "type": "RichText",
+      "id": "section-pajfv897n",
+      "type": "Section",
       "props": {
+        "heading": "届出期間",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "届出期間"
-          },
           {
             "type": "paragraph",
             "runs": [
@@ -123,15 +116,12 @@
       }
     },
     {
-      "id": "richtext-todokenin",
-      "type": "RichText",
+      "id": "section-49dqjl5xq",
+      "type": "Section",
       "props": {
+        "heading": "届出できる人",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "届出できる人"
-          },
           {
             "type": "list",
             "ordered": false,
@@ -182,15 +172,12 @@
       }
     },
     {
-      "id": "richtext-todokesaki",
-      "type": "RichText",
+      "id": "section-rfawusm54",
+      "type": "Section",
       "props": {
+        "heading": "届出先",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "届出先"
-          },
           {
             "type": "paragraph",
             "runs": [
@@ -236,17 +223,19 @@
             ]
           },
           {
-            "type": "callout",
-            "severity": "info",
-            "title": "お知らせ",
-            "content": [
+            "type": "paragraph",
+            "runs": [
               {
-                "type": "paragraph",
-                "runs": [
-                  {
-                    "text": "死亡届は24時間、休日・夜間も受け付けています。"
-                  }
-                ]
+                "text": "お知らせ",
+                "bold": true
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "死亡届は24時間、休日・夜間も受け付けています。"
               }
             ]
           }
@@ -254,15 +243,12 @@
       }
     },
     {
-      "id": "richtext-shorui",
-      "type": "RichText",
+      "id": "section-2ltrif0cr",
+      "type": "Section",
       "props": {
+        "heading": "届出に必要なもの",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "届出に必要なもの"
-          },
           {
             "type": "list",
             "ordered": false,
@@ -301,15 +287,12 @@
       }
     },
     {
-      "id": "richtext-sonota",
-      "type": "RichText",
+      "id": "section-mfg9c4c2w",
+      "type": "Section",
       "props": {
+        "heading": "届出後の手続き",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "届出後の手続き"
-          },
           {
             "type": "paragraph",
             "runs": [
@@ -385,17 +368,19 @@
             ]
           },
           {
-            "type": "callout",
-            "severity": "info",
-            "title": "おくやみ窓口",
-            "content": [
+            "type": "paragraph",
+            "runs": [
               {
-                "type": "paragraph",
-                "runs": [
-                  {
-                    "text": "ご遺族の手続きをワンストップでサポートします"
-                  }
-                ]
+                "text": "おくやみ窓口",
+                "bold": true
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "ご遺族の手続きをワンストップでサポートします"
               }
             ]
           }
@@ -408,20 +393,24 @@
       "props": {
         "items": [
           {
-            "title": "戸籍謄本・住民票",
+            "title": "戸籍",
             "href": "/services/registration/koseki"
           },
           {
-            "title": "国民健康保険",
-            "href": "/services/health/kokuho"
+            "title": "住民票",
+            "href": "/services/registration/juminhyo"
+          },
+          {
+            "title": "介護保険",
+            "href": "/services/welfare/kaigo"
+          },
+          {
+            "title": "年金",
+            "href": "/services/benefits/nenkin"
           },
           {
             "title": "後期高齢者医療",
             "href": "/services/health/kouki"
-          },
-          {
-            "title": "国民年金",
-            "href": "/services/benefits/nenkin"
           }
         ]
       }
@@ -435,6 +424,13 @@
         "email": "shimin@sample-city.lg.jp",
         "hours": "24時間受付（届出のみ）",
         "address": "〒100-0001 東京都サンプル市中央1-1-1"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
       }
     }
   ],

@@ -7,7 +7,10 @@
   "description": "創業相談、起業セミナー、インキュベーション施設",
   "content_type": "guide",
   "service_category": "business",
-  "audience": ["residents", "businesses"],
+  "audience": [
+    "residents",
+    "businesses"
+  ],
   "topic": [],
   "source": {
     "source_url": "template://sample/services/business/startup",
@@ -25,10 +28,18 @@
       "type": "Breadcrumbs",
       "props": {
         "items": [
-          { "label": "ホーム", "href": "/" },
-          { "label": "くらしの情報", "href": "/topics" },
-          { "label": "事業・経営", "href": "/topics/business" },
-          { "label": "起業・創業支援", "href": "/services/business/startup" }
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "事業・経営",
+            "href": "/topics/business"
+          },
+          {
+            "label": "起業・創業支援",
+            "href": "/services/business/startup"
+          }
         ]
       }
     },
@@ -47,33 +58,117 @@
       }
     },
     {
-      "id": "richtext-1",
-      "type": "RichText",
+      "id": "section-z8y4j5vfu",
+      "type": "Section",
       "props": {
+        "heading": "創業相談",
+        "level": 2,
         "content": [
-          { "type": "heading", "level": 2, "text": "創業相談" },
           {
             "type": "paragraph",
             "runs": [
-              { "text": "商工会・商工会議所、中小企業診断士などの専門家が、事業計画の作成、資金調達、販路開拓などの相談に応じます。" }
+              {
+                "text": "商工会・商工会議所、中小企業診断士などの専門家が、事業計画の作成、資金調達、販路開拓などの相談に応じます。"
+              }
             ]
-          },
-          { "type": "heading", "level": 2, "text": "創業セミナー・スクール" },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-oq6khveoj",
+      "type": "Section",
+      "props": {
+        "heading": "創業セミナー・スクール",
+        "level": 2,
+        "content": [
           {
             "type": "paragraph",
             "runs": [
-              { "text": "創業に必要な知識（経営、財務、マーケティング、法務など）を学べるセミナーを開催しています。" }
+              {
+                "text": "創業に必要な知識（経営、財務、マーケティング、法務など）を学べるセミナーを開催しています。"
+              }
             ]
-          },
-          { "type": "heading", "level": 2, "text": "創業融資" },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-4vx21dkc4",
+      "type": "Section",
+      "props": {
+        "heading": "創業融資",
+        "level": 2,
+        "content": [
           {
             "type": "list",
             "ordered": false,
             "items": [
-              [{ "type": "paragraph", "runs": [{ "text": "日本政策金融公庫「新創業融資制度」", "bold": true }, { "text": "：無担保・無保証人で最大3,000万円" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "東京都制度融資「創業支援資金」", "bold": true }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "サンプル市創業支援融資", "bold": true }] }]
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "日本政策金融公庫「新創業融資制度」",
+                      "bold": true
+                    },
+                    {
+                      "text": "：無担保・無保証人で最大3,000万円"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "東京都制度融資「創業支援資金」",
+                      "bold": true
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "サンプル市創業支援融資",
+                      "bold": true
+                    }
+                  ]
+                }
+              ]
             ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "related-links-riumd9uks",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "法人設立",
+            "href": "/services/business/incorporation"
+          },
+          {
+            "title": "個人事業主",
+            "href": "/services/business/sole-proprietor"
+          },
+          {
+            "title": "補助金・助成金",
+            "href": "/services/business/subsidies"
+          },
+          {
+            "title": "融資制度",
+            "href": "/services/business/financing"
+          },
+          {
+            "title": "許認可申請",
+            "href": "/services/business/permits"
           }
         ]
       }
@@ -88,11 +183,25 @@
         "hours": "平日 8:30〜17:15（土日祝日・年末年始を除く）",
         "address": "〒100-0001 東京都サンプル市中央1-1-1"
       }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
+      }
     }
   ],
   "search": {
     "summary": "起業・創業支援の案内。創業相談、創業セミナー、創業融資。",
-    "keywords": ["起業", "創業", "スタートアップ", "創業融資", "創業相談", "創業支援"],
+    "keywords": [
+      "起業",
+      "創業",
+      "スタートアップ",
+      "創業融資",
+      "創業相談",
+      "創業支援"
+    ],
     "plain_text": "起業・創業支援。創業相談、創業セミナー、創業融資（日本政策金融公庫、制度融資）のご案内。"
   }
 }

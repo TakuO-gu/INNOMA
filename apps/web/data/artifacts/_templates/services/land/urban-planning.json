@@ -33,10 +33,6 @@
             "href": "/"
           },
           {
-            "label": "くらしの情報",
-            "href": "/topics"
-          },
-          {
             "label": "土地・農林水産",
             "href": "/topics/land"
           },
@@ -62,68 +58,33 @@
       }
     },
     {
-      "id": "richtext-1",
-      "type": "RichText",
+      "id": "section-32oaretr1-desclist",
+      "type": "DescriptionList",
       "props": {
+        "items": [
+          {
+            "term": "市街化区域",
+            "description": "すでに市街地または優先的に市街化すべき区域"
+          },
+          {
+            "term": "市街化調整区域",
+            "description": "市街化を抑制すべき区域（原則として建物を建てられない）"
+          },
+          {
+            "term": "非線引き区域",
+            "description": "区域区分が定められていない区域"
+          }
+        ],
+        "heading": "都市計画区域"
+      }
+    },
+    {
+      "id": "section-zrwi58a73",
+      "type": "Section",
+      "props": {
+        "heading": "用途地域",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "都市計画区域"
-          },
-          {
-            "type": "list",
-            "ordered": false,
-            "items": [
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "市街化区域",
-                      "bold": true
-                    },
-                    {
-                      "text": "：すでに市街地または優先的に市街化すべき区域"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "市街化調整区域",
-                      "bold": true
-                    },
-                    {
-                      "text": "：市街化を抑制すべき区域（原則として建物を建てられない）"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "非線引き区域",
-                      "bold": true
-                    },
-                    {
-                      "text": "：区域区分が定められていない区域"
-                    }
-                  ]
-                }
-              ]
-            ]
-          },
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "用途地域"
-          },
           {
             "type": "paragraph",
             "runs": [
@@ -131,60 +92,37 @@
                 "text": "市街化区域では、土地の用途に応じて13種類の用途地域が指定されています。"
               }
             ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-zrwi58a73-desclist",
+      "type": "DescriptionList",
+      "props": {
+        "items": [
+          {
+            "term": "住居系（8種）",
+            "description": "第一種低層住居専用地域など"
           },
           {
-            "type": "list",
-            "ordered": false,
-            "items": [
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "住居系（8種）",
-                      "bold": true
-                    },
-                    {
-                      "text": "：第一種低層住居専用地域など"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "商業系（2種）",
-                      "bold": true
-                    },
-                    {
-                      "text": "：近隣商業地域、商業地域"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "工業系（3種）",
-                      "bold": true
-                    },
-                    {
-                      "text": "：準工業地域、工業地域、工業専用地域"
-                    }
-                  ]
-                }
-              ]
-            ]
+            "term": "商業系（2種）",
+            "description": "近隣商業地域、商業地域"
           },
           {
-            "type": "heading",
-            "level": 2,
-            "text": "建ぺい率・容積率"
-          },
+            "term": "工業系（3種）",
+            "description": "準工業地域、工業地域、工業専用地域"
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-oh76btqob",
+      "type": "Section",
+      "props": {
+        "heading": "建ぺい率・容積率",
+        "level": 2,
+        "content": [
           {
             "type": "paragraph",
             "runs": [
@@ -192,12 +130,17 @@
                 "text": "用途地域ごとに、敷地に対する建築面積の割合（建ぺい率）と延べ床面積の割合（容積率）が定められています。"
               }
             ]
-          },
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "都市計画の確認"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-b6a8nknug",
+      "type": "Section",
+      "props": {
+        "heading": "都市計画の確認",
+        "level": 2,
+        "content": [
           {
             "type": "paragraph",
             "runs": [
@@ -205,6 +148,30 @@
                 "text": "土地の都市計画情報（用途地域、建ぺい率、容積率、道路幅員など）は、都市計画課窓口または都市計画図でご確認いただけます。"
               }
             ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "related-links-snun9kszq",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "開発許可",
+            "href": "/services/land/development-permit"
+          },
+          {
+            "title": "建築確認申請",
+            "href": "/services/housing/building-permit"
+          },
+          {
+            "title": "農地転用",
+            "href": "/services/land/farmland-conversion"
+          },
+          {
+            "title": "固定資産税",
+            "href": "/services/tax/kotei"
           }
         ]
       }
@@ -218,6 +185,13 @@
         "email": "{{urban_planning_email}}",
         "hours": "{{city_hall_hours}}",
         "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
       }
     }
   ],

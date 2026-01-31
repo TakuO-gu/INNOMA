@@ -115,6 +115,7 @@ export type VariableValidationType =
   | 'date'       // 日付
   | 'time'       // 時間
   | 'postal'     // 郵便番号
+  | 'count'      // カウント（数値のみ、例: 29）
   | 'text';      // テキスト（バリデーションなし）
 
 /**

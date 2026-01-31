@@ -33,10 +33,6 @@
             "href": "/"
           },
           {
-            "label": "くらしの情報",
-            "href": "/topics"
-          },
-          {
             "label": "健康・医療",
             "href": "/topics/health"
           },
@@ -62,15 +58,12 @@
       }
     },
     {
-      "id": "richtext-overview",
-      "type": "RichText",
+      "id": "section-ly85sunt0",
+      "type": "Section",
       "props": {
+        "heading": "対象となる方",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "対象となる方"
-          },
           {
             "type": "list",
             "ordered": false,
@@ -106,17 +99,19 @@
             ]
           },
           {
-            "type": "callout",
-            "severity": "info",
-            "title": "お知らせ",
-            "content": [
+            "type": "paragraph",
+            "runs": [
               {
-                "type": "paragraph",
-                "runs": [
-                  {
-                    "text": "75歳の誕生日が近づくと、被保険者証が届きます。届出の手続きは不要です。"
-                  }
-                ]
+                "text": "お知らせ",
+                "bold": true
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "75歳の誕生日が近づくと、被保険者証が届きます。届出の手続きは不要です。"
               }
             ]
           }
@@ -124,15 +119,12 @@
       }
     },
     {
-      "id": "richtext-todoke",
-      "type": "RichText",
+      "id": "section-bjtj2m8nn",
+      "type": "Section",
       "props": {
+        "heading": "届出が必要なとき",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "届出が必要なとき"
-          },
           {
             "type": "list",
             "ordered": false,
@@ -203,15 +195,12 @@
       }
     },
     {
-      "id": "richtext-hutan",
-      "type": "RichText",
+      "id": "section-o8sfnpi1u",
+      "type": "Section",
       "props": {
+        "heading": "医療費の自己負担",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "医療費の自己負担"
-          },
           {
             "type": "paragraph",
             "runs": [
@@ -244,15 +233,12 @@
       }
     },
     {
-      "id": "richtext-hokenryo",
-      "type": "RichText",
+      "id": "section-hvpmfky9c",
+      "type": "Section",
       "props": {
+        "heading": "保険料",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "保険料"
-          },
           {
             "type": "paragraph",
             "runs": [
@@ -297,15 +283,12 @@
       }
     },
     {
-      "id": "richtext-keigen",
-      "type": "RichText",
+      "id": "section-o3deygc46",
+      "type": "Section",
       "props": {
+        "heading": "保険料の軽減",
+        "level": 3,
         "content": [
-          {
-            "type": "heading",
-            "level": 3,
-            "text": "保険料の軽減"
-          },
           {
             "type": "paragraph",
             "runs": [
@@ -318,20 +301,21 @@
       }
     },
     {
-      "id": "richtext-kyufu",
-      "type": "RichText",
+      "id": "section-00uk7g050",
+      "type": "Section",
       "props": {
+        "heading": "主な給付",
+        "level": 2,
+        "content": []
+      }
+    },
+    {
+      "id": "section-j7k9i6olj",
+      "type": "Section",
+      "props": {
+        "heading": "高額療養費",
+        "level": 3,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "主な給付"
-          },
-          {
-            "type": "heading",
-            "level": 3,
-            "text": "高額療養費"
-          },
           {
             "type": "paragraph",
             "runs": [
@@ -339,12 +323,17 @@
                 "text": "1か月の医療費の自己負担額が限度額を超えた場合、超えた分が払い戻されます。"
               }
             ]
-          },
-          {
-            "type": "heading",
-            "level": 3,
-            "text": "葬祭費"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-qpniimifi",
+      "type": "Section",
+      "props": {
+        "heading": "葬祭費",
+        "level": 3,
+        "content": [
           {
             "type": "paragraph",
             "runs": [
@@ -352,12 +341,17 @@
                 "text": "被保険者が亡くなったとき、葬祭を行った方に70,000円が支給されます。"
               }
             ]
-          },
-          {
-            "type": "heading",
-            "level": 3,
-            "text": "療養費"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-vt6piphhs",
+      "type": "Section",
+      "props": {
+        "heading": "療養費",
+        "level": 3,
+        "content": [
           {
             "type": "paragraph",
             "runs": [
@@ -379,6 +373,10 @@
             "href": "/services/health/kokuho"
           },
           {
+            "title": "健康診断・検診",
+            "href": "/services/health/kenshin"
+          },
+          {
             "title": "介護保険",
             "href": "/services/welfare/kaigo"
           },
@@ -387,7 +385,11 @@
             "href": "/services/welfare/koureisha"
           },
           {
-            "title": "国民年金",
+            "title": "地域包括支援センター",
+            "href": "/services/welfare/houkatsu"
+          },
+          {
+            "title": "年金",
             "href": "/services/benefits/nenkin"
           }
         ]
@@ -402,6 +404,13 @@
         "email": "kouki@sample-city.lg.jp",
         "hours": "平日 8:30〜17:15（土日祝日・年末年始を除く）",
         "address": "〒100-0001 東京都サンプル市中央1-1-1"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
       }
     }
   ],

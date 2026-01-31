@@ -285,6 +285,17 @@ const AccordionBlock = BaseBlock.extend({
   }),
 });
 
+// ===== セクションブロック =====
+// h2/h3レベルのセクションを明示的に表現
+const SectionBlock = BaseBlock.extend({
+  type: z.literal("Section"),
+  props: z.object({
+    heading: z.string(),
+    level: z.union([z.literal(2), z.literal(3), z.literal(4)]).default(2),
+    content: z.array(RichTextNode),
+  }),
+});
+
 const RelatedLinksBlock = BaseBlock.extend({
   type: z.literal("RelatedLinks"),
   props: z.object({
@@ -401,6 +412,28 @@ const DirectoryListBlock = BaseBlock.extend({
   }),
 });
 
+// ===== カードグリッドブロック =====
+// DADS カードコンポーネント準拠（https://design.digital.go.jp/dads/components/card/）
+// 一覧・グリッド形式でコンテンツを提示（比較・分析ではなく選択・閲覧目的）
+
+const CardGridBlock = BaseBlock.extend({
+  type: z.literal("CardGrid"),
+  props: z.object({
+    heading: z.string().optional(),
+    variant: z.enum(["media", "link", "info"]).default("link"),
+    columns: z.union([z.literal(2), z.literal(3), z.literal(4)]).default(3),
+    items: z.array(z.object({
+      title: z.string(),
+      description: z.string().optional(),
+      href: z.string().optional(),
+      image: z.string().optional(),     // variant: media の場合
+      icon: z.string().optional(),       // variant: info の場合
+      meta: z.string().optional(),       // カテゴリ、日付などのメタ情報
+      external: z.boolean().optional(),
+    })),
+  }),
+});
+
 // ===== 情報ソースブロック =====
 
 const SourcesBlock = BaseBlock.extend({
@@ -423,6 +456,8 @@ export const Block = z.discriminatedUnion("type", [
   AccordionBlock,
   RelatedLinksBlock,
   ContactBlock,
+  // セクションブロック
+  SectionBlock,
   // ナビゲーション・レイアウトブロック
   HeroBlock,
   TopicGridBlock,
@@ -433,6 +468,8 @@ export const Block = z.discriminatedUnion("type", [
   ContactCardBlock,
   NewsMetaBlock,
   DirectoryListBlock,
+  // カードグリッドブロック
+  CardGridBlock,
   // 情報ソースブロック
   SourcesBlock,
 ]);

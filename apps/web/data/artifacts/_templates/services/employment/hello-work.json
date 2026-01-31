@@ -7,7 +7,9 @@
   "description": "{{prefecture_name}}内のハローワーク所在地、求人検索案内",
   "content_type": "guide",
   "service_category": "business",
-  "audience": ["residents"],
+  "audience": [
+    "residents"
+  ],
   "topic": [],
   "source": {
     "source_url": "template://sample/services/employment/hello-work",
@@ -25,10 +27,18 @@
       "type": "Breadcrumbs",
       "props": {
         "items": [
-          { "label": "ホーム", "href": "/" },
-          { "label": "くらしの情報", "href": "/topics" },
-          { "label": "仕事・労働", "href": "/topics/employment" },
-          { "label": "ハローワーク", "href": "/services/employment/hello-work" }
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "仕事・労働",
+            "href": "/topics/employment"
+          },
+          {
+            "label": "ハローワーク",
+            "href": "/services/employment/hello-work"
+          }
         ]
       }
     },
@@ -47,27 +57,84 @@
       }
     },
     {
-      "id": "richtext-1",
-      "type": "RichText",
+      "id": "section-l60wfu6ll",
+      "type": "Section",
       "props": {
+        "heading": "ハローワークでできること",
+        "level": 2,
         "content": [
-          { "type": "heading", "level": 2, "text": "ハローワークでできること" },
           {
             "type": "list",
             "ordered": false,
             "items": [
-              [{ "type": "paragraph", "runs": [{ "text": "求人情報の検索・閲覧" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "職業相談・紹介" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "雇用保険（失業給付）の手続き" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "職業訓練の申込み" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "就職活動に関するセミナー参加" }] }]
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "求人情報の検索・閲覧"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "職業相談・紹介"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "雇用保険（失業給付）の手続き"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "職業訓練の申込み"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "就職活動に関するセミナー参加"
+                    }
+                  ]
+                }
+              ]
             ]
-          },
-          { "type": "heading", "level": 2, "text": "ハローワークインターネットサービス" },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-aom35je8t",
+      "type": "Section",
+      "props": {
+        "heading": "ハローワークインターネットサービス",
+        "level": 2,
+        "content": [
           {
             "type": "paragraph",
             "runs": [
-              { "text": "インターネットで全国の求人情報を検索できます。求職登録するとより詳細な情報が閲覧できます。" }
+              {
+                "text": "インターネットで全国の求人情報を検索できます。求職登録するとより詳細な情報が閲覧できます。"
+              }
             ]
           }
         ]
@@ -78,10 +145,50 @@
       "type": "Table",
       "props": {
         "rows": [
-          { "label": "管轄ハローワーク", "value": "{{hello_work_name}}" },
-          { "label": "所在地", "value": "{{hello_work_address}}" },
-          { "label": "電話番号", "value": "{{hello_work_phone}}" },
-          { "label": "受付時間", "value": "平日8:30〜17:15" }
+          {
+            "label": "管轄ハローワーク",
+            "value": "{{hello_work_name}}"
+          },
+          {
+            "label": "所在地",
+            "value": "{{hello_work_address}}"
+          },
+          {
+            "label": "電話番号",
+            "value": "{{hello_work_phone}}"
+          },
+          {
+            "label": "受付時間",
+            "value": "平日8:30〜17:15"
+          }
+        ]
+      }
+    },
+    {
+      "id": "related-links-z62uem10k",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "雇用保険",
+            "href": "/services/employment/unemployment-insurance"
+          },
+          {
+            "title": "職業訓練",
+            "href": "/services/employment/vocational-training"
+          },
+          {
+            "title": "就職支援",
+            "href": "/services/employment/career-support"
+          },
+          {
+            "title": "生活保護",
+            "href": "/services/welfare/seikatsu-hogo"
+          },
+          {
+            "title": "住宅手当",
+            "href": "/services/housing/housing-benefit"
+          }
         ]
       }
     },
@@ -94,11 +201,25 @@
         "address": "{{hello_work_address}}",
         "hours": "平日8:30〜17:15"
       }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
+      }
     }
   ],
   "search": {
     "summary": "ハローワークの案内。求人情報検索、職業相談、雇用保険手続き。",
-    "keywords": ["ハローワーク", "求人", "職業安定所", "就職", "転職", "求人情報"],
+    "keywords": [
+      "ハローワーク",
+      "求人",
+      "職業安定所",
+      "就職",
+      "転職",
+      "求人情報"
+    ],
     "plain_text": "ハローワーク・求人情報。求人情報の検索・閲覧、職業相談、雇用保険の手続き、職業訓練の申込みができる。"
   }
 }

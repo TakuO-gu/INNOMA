@@ -32,10 +32,6 @@
             "href": "/"
           },
           {
-            "label": "くらしの情報",
-            "href": "/topics"
-          },
-          {
             "label": "届出・証明",
             "href": "/topics/registration"
           },
@@ -61,15 +57,12 @@
       }
     },
     {
-      "id": "richtext-overview",
-      "type": "RichText",
+      "id": "section-6utxsma6l",
+      "type": "Section",
       "props": {
+        "heading": "届出期間",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "届出期間"
-          },
           {
             "type": "paragraph",
             "runs": [
@@ -123,15 +116,12 @@
       }
     },
     {
-      "id": "richtext-todokenin",
-      "type": "RichText",
+      "id": "section-40jlahxmn",
+      "type": "Section",
       "props": {
+        "heading": "届出できる人",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "届出できる人"
-          },
           {
             "type": "list",
             "ordered": false,
@@ -182,15 +172,12 @@
       }
     },
     {
-      "id": "richtext-todokesaki",
-      "type": "RichText",
+      "id": "section-ov7k2qnk5",
+      "type": "Section",
       "props": {
+        "heading": "届出先",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "届出先"
-          },
           {
             "type": "paragraph",
             "runs": [
@@ -247,15 +234,12 @@
       }
     },
     {
-      "id": "richtext-shorui",
-      "type": "RichText",
+      "id": "section-wzfvrsawb",
+      "type": "Section",
       "props": {
+        "heading": "届出に必要なもの",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "届出に必要なもの"
-          },
           {
             "type": "list",
             "ordered": false,
@@ -294,15 +278,12 @@
       }
     },
     {
-      "id": "richtext-sonota",
-      "type": "RichText",
+      "id": "section-91r4dsqne",
+      "type": "Section",
       "props": {
+        "heading": "届出後の手続き",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "届出後の手続き"
-          },
           {
             "type": "paragraph",
             "runs": [
@@ -376,12 +357,17 @@
                 }
               ]
             ]
-          },
-          {
-            "type": "heading",
-            "level": 3,
-            "text": "おくやみ窓口"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-6lhbu46cz",
+      "type": "Section",
+      "props": {
+        "heading": "おくやみ窓口",
+        "level": 3,
+        "content": [
           {
             "type": "paragraph",
             "runs": [
@@ -399,20 +385,24 @@
       "props": {
         "items": [
           {
-            "title": "戸籍謄本・住民票",
+            "title": "戸籍",
             "href": "/services/registration/koseki"
           },
           {
-            "title": "国民健康保険",
-            "href": "/services/health/kokuho"
+            "title": "住民票",
+            "href": "/services/registration/juminhyo"
+          },
+          {
+            "title": "介護保険",
+            "href": "/services/welfare/kaigo"
+          },
+          {
+            "title": "年金",
+            "href": "/services/benefits/nenkin"
           },
           {
             "title": "後期高齢者医療",
             "href": "/services/health/kouki"
-          },
-          {
-            "title": "国民年金",
-            "href": "/services/benefits/nenkin"
           }
         ]
       }
@@ -426,6 +416,13 @@
         "email": "{{shimin_email}}",
         "hours": "24時間受付（届出のみ）",
         "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
       }
     }
   ],

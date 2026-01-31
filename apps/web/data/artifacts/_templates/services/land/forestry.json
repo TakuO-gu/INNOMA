@@ -33,10 +33,6 @@
             "href": "/"
           },
           {
-            "label": "くらしの情報",
-            "href": "/topics"
-          },
-          {
             "label": "土地・農林水産",
             "href": "/topics/land"
           },
@@ -62,68 +58,33 @@
       }
     },
     {
-      "id": "richtext-1",
-      "type": "RichText",
+      "id": "section-jhu4jbms5-desclist",
+      "type": "DescriptionList",
       "props": {
+        "items": [
+          {
+            "term": "森林の土地の所有者届出",
+            "description": "森林の土地を新たに取得した場合、90日以内に届出（森林法）"
+          },
+          {
+            "term": "伐採届",
+            "description": "立木を伐採する場合、伐採開始の90日から30日前までに届出"
+          },
+          {
+            "term": "伐採後の届出",
+            "description": "伐採・造林完了後30日以内に届出"
+          }
+        ],
+        "heading": "森林の届出"
+      }
+    },
+    {
+      "id": "section-0jfyknkpr",
+      "type": "Section",
+      "props": {
+        "heading": "森林経営計画",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "森林の届出"
-          },
-          {
-            "type": "list",
-            "ordered": false,
-            "items": [
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "森林の土地の所有者届出",
-                      "bold": true
-                    },
-                    {
-                      "text": "：森林の土地を新たに取得した場合、90日以内に届出（森林法）"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "伐採届",
-                      "bold": true
-                    },
-                    {
-                      "text": "：立木を伐採する場合、伐採開始の90日から30日前までに届出"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "伐採後の届出",
-                      "bold": true
-                    },
-                    {
-                      "text": "：伐採・造林完了後30日以内に届出"
-                    }
-                  ]
-                }
-              ]
-            ]
-          },
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "森林経営計画"
-          },
           {
             "type": "paragraph",
             "runs": [
@@ -131,65 +92,38 @@
                 "text": "森林経営計画を作成し、市町村長の認定を受けると、造林・間伐等の補助金が活用できます。"
               }
             ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-qfri28j2q-desclist",
+      "type": "DescriptionList",
+      "props": {
+        "items": [
+          {
+            "term": "造林事業補助金",
+            "description": "植林、下刈り、除伐等の経費を助成"
           },
           {
-            "type": "heading",
-            "level": 2,
-            "text": "造林・間伐の補助"
+            "term": "間伐促進事業",
+            "description": "間伐作業の経費を助成"
           },
           {
-            "type": "list",
-            "ordered": false,
-            "items": [
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "造林事業補助金",
-                      "bold": true
-                    },
-                    {
-                      "text": "：植林、下刈り、除伐等の経費を助成"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "間伐促進事業",
-                      "bold": true
-                    },
-                    {
-                      "text": "：間伐作業の経費を助成"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "森林作業道整備",
-                      "bold": true
-                    },
-                    {
-                      "text": "：作業道の開設・改良を支援"
-                    }
-                  ]
-                }
-              ]
-            ]
-          },
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "森林環境譲与税"
-          },
+            "term": "森林作業道整備",
+            "description": "作業道の開設・改良を支援"
+          }
+        ],
+        "heading": "造林・間伐の補助"
+      }
+    },
+    {
+      "id": "section-qbhrkycr3",
+      "type": "Section",
+      "props": {
+        "heading": "森林環境譲与税",
+        "level": 2,
+        "content": [
           {
             "type": "paragraph",
             "runs": [
@@ -197,12 +131,17 @@
                 "text": "{{municipality_name}}では、森林環境譲与税を活用し、森林整備や木材利用促進、普及啓発活動を行っています。"
               }
             ]
-          },
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "森林組合"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-h5aoti2b2",
+      "type": "Section",
+      "props": {
+        "heading": "森林組合",
+        "level": 2,
+        "content": [
           {
             "type": "paragraph",
             "runs": [
@@ -210,6 +149,26 @@
                 "text": "森林所有者の方は、森林組合に森林の管理を委託することができます。"
               }
             ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "related-links-8lynypnyd",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "農業補助金",
+            "href": "/services/land/agriculture-subsidy"
+          },
+          {
+            "title": "狩猟免許",
+            "href": "/services/land/hunting-license"
+          },
+          {
+            "title": "鳥獣被害対策",
+            "href": "/services/land/wildlife-damage"
           }
         ]
       }
@@ -223,6 +182,13 @@
         "email": "{{forestry_email}}",
         "hours": "{{city_hall_hours}}",
         "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
       }
     }
   ],

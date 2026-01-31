@@ -7,7 +7,9 @@
   "description": "戸籍謄本（戸籍全部事項証明書）・住民票の写しの取得方法と手数料",
   "content_type": "guide",
   "service_category": "government",
-  "audience": ["residents"],
+  "audience": [
+    "residents"
+  ],
   "topic": [],
   "source": {
     "source_url": "template://sample/services/registration/koseki",
@@ -25,10 +27,18 @@
       "type": "Breadcrumbs",
       "props": {
         "items": [
-          { "label": "ホーム", "href": "/" },
-          { "label": "くらしの情報", "href": "/topics" },
-          { "label": "届出・申請・証明書", "href": "/topics/registration" },
-          { "label": "戸籍謄本・住民票の取得", "href": "/services/registration/koseki" }
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "届出・申請・証明書",
+            "href": "/topics/registration"
+          },
+          {
+            "label": "戸籍謄本・住民票の取得",
+            "href": "/services/registration/koseki"
+          }
         ]
       }
     },
@@ -47,33 +57,105 @@
       }
     },
     {
-      "id": "richtext-types",
-      "type": "RichText",
+      "id": "section-2e0pozgk5",
+      "type": "Section",
       "props": {
+        "heading": "取得できる証明書",
+        "level": 2,
+        "content": []
+      }
+    },
+    {
+      "id": "section-gj0orlxh1",
+      "type": "Section",
+      "props": {
+        "heading": "戸籍に関する証明書",
+        "level": 3,
         "content": [
-          { "type": "heading", "level": 2, "text": "取得できる証明書" },
-          { "type": "heading", "level": 3, "text": "戸籍に関する証明書" },
           {
             "type": "list",
             "ordered": false,
             "items": [
-              [{ "type": "paragraph", "runs": [{ "text": "戸籍謄本（戸籍全部事項証明書）", "bold": true }, { "text": "：戸籍に記載されている全員の事項を証明" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "戸籍抄本（戸籍個人事項証明書）", "bold": true }, { "text": "：戸籍に記載されている一部の方の事項を証明" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "除籍謄本・抄本", "bold": true }, { "text": "：除かれた戸籍の証明" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "改製原戸籍謄本・抄本", "bold": true }, { "text": "：戸籍の改製前の証明" }] }]
-            ]
-          },
-          { "type": "heading", "level": 3, "text": "住民票に関する証明書" },
-          {
-            "type": "list",
-            "ordered": false,
-            "items": [
-              [{ "type": "paragraph", "runs": [{ "text": "住民票の写し", "bold": true }, { "text": "：現在の住所・氏名等を証明" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "住民票記載事項証明書", "bold": true }, { "text": "：住民票の一部の事項を証明" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "戸籍の附票", "bold": true }, { "text": "：戸籍に記載されている方の住所の履歴を証明" }] }]
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "戸籍謄本（戸籍全部事項証明書）",
+                      "bold": true
+                    },
+                    {
+                      "text": "：戸籍に記載されている全員の事項を証明"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "戸籍抄本（戸籍個人事項証明書）",
+                      "bold": true
+                    },
+                    {
+                      "text": "：戸籍に記載されている一部の方の事項を証明"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "除籍謄本・抄本",
+                      "bold": true
+                    },
+                    {
+                      "text": "：除かれた戸籍の証明"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "改製原戸籍謄本・抄本",
+                      "bold": true
+                    },
+                    {
+                      "text": "：戸籍の改製前の証明"
+                    }
+                  ]
+                }
+              ]
             ]
           }
         ]
+      }
+    },
+    {
+      "id": "section-1ssesbokn-desclist",
+      "type": "DescriptionList",
+      "props": {
+        "items": [
+          {
+            "term": "住民票の写し",
+            "description": "現在の住所・氏名等を証明"
+          },
+          {
+            "term": "住民票記載事項証明書",
+            "description": "住民票の一部の事項を証明"
+          },
+          {
+            "term": "戸籍の附票",
+            "description": "戸籍に記載されている方の住所の履歴を証明"
+          }
+        ],
+        "heading": "住民票に関する証明書"
       }
     },
     {
@@ -81,109 +163,246 @@
       "type": "Table",
       "props": {
         "rows": [
-          { "label": "戸籍謄本・抄本", "value": "450円" },
-          { "label": "除籍謄本・抄本", "value": "750円" },
-          { "label": "改製原戸籍謄本・抄本", "value": "750円" },
-          { "label": "住民票の写し", "value": "300円" },
-          { "label": "住民票記載事項証明書", "value": "300円" },
-          { "label": "戸籍の附票", "value": "300円" }
+          {
+            "label": "戸籍謄本・抄本",
+            "value": "450円"
+          },
+          {
+            "label": "除籍謄本・抄本",
+            "value": "750円"
+          },
+          {
+            "label": "改製原戸籍謄本・抄本",
+            "value": "750円"
+          },
+          {
+            "label": "住民票の写し",
+            "value": "300円"
+          },
+          {
+            "label": "住民票記載事項証明書",
+            "value": "300円"
+          },
+          {
+            "label": "戸籍の附票",
+            "value": "300円"
+          }
         ]
       }
     },
     {
-      "id": "richtext-how",
-      "type": "RichText",
+      "id": "section-ckd89hhs8",
+      "type": "Section",
       "props": {
+        "heading": "取得方法",
+        "level": 2,
+        "content": []
+      }
+    },
+    {
+      "id": "section-66xfk0t61",
+      "type": "Section",
+      "props": {
+        "heading": "窓口での取得",
+        "level": 3,
         "content": [
-          { "type": "heading", "level": 2, "text": "取得方法" },
-          { "type": "heading", "level": 3, "text": "窓口での取得" },
           {
             "type": "paragraph",
             "runs": [
-              { "text": "市区町村の窓口で申請できます。本人確認書類をお持ちください。" }
+              {
+                "text": "市区町村の窓口で申請できます。本人確認書類をお持ちください。"
+              }
             ]
           },
           {
             "type": "list",
             "ordered": false,
             "items": [
-              [{ "type": "paragraph", "runs": [{ "text": "受付場所：市役所1階 市民課窓口" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "受付時間：平日 8:30〜17:15（土日祝日・年末年始を除く）" }] }]
-            ]
-          },
-          { "type": "heading", "level": 3, "text": "コンビニ交付" },
-          {
-            "type": "paragraph",
-            "runs": [
-              { "text": "マイナンバーカードをお持ちの方は、全国のコンビニエンスストアで住民票・戸籍証明書を取得できます。" }
-            ]
-          },
-          {
-            "type": "list",
-            "ordered": false,
-            "items": [
-              [{ "type": "paragraph", "runs": [{ "text": "利用時間：6:30〜23:00（年末年始・メンテナンス時を除く）" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "手数料：窓口より100円安い" }] }]
-            ]
-          },
-          { "type": "heading", "level": 3, "text": "郵送での取得" },
-          {
-            "type": "paragraph",
-            "runs": [
-              { "text": "窓口に来庁できない方は、郵送でも請求できます。" }
-            ]
-          },
-          {
-            "type": "list",
-            "ordered": false,
-            "items": [
-              [{ "type": "paragraph", "runs": [{ "text": "申請書（ダウンロード可）" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "本人確認書類のコピー" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "手数料分の定額小為替" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "返信用封筒（切手貼付）" }] }]
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "受付場所：市役所1階 市民課窓口"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "受付時間：平日 8:30〜17:15（土日祝日・年末年始を除く）"
+                    }
+                  ]
+                }
+              ]
             ]
           }
         ]
       }
     },
     {
-      "id": "richtext-documents",
-      "type": "RichText",
+      "id": "section-mgtov5ige",
+      "type": "Section",
       "props": {
+        "heading": "コンビニ交付",
+        "level": 3,
         "content": [
-          { "type": "heading", "level": 2, "text": "申請に必要なもの" },
           {
-            "type": "list",
-            "ordered": false,
-            "items": [
-              [{ "type": "paragraph", "runs": [{ "text": "本人確認書類", "bold": true }, { "text": "（マイナンバーカード、運転免許証、パスポートなど）" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "手数料" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "委任状", "bold": true }, { "text": "（代理人が申請する場合）" }] }]
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "マイナンバーカードをお持ちの方は、全国のコンビニエンスストアで住民票・戸籍証明書を取得できます。"
+              }
             ]
           },
-          { "type": "heading", "level": 2, "text": "申請できる方" },
-          { "type": "heading", "level": 3, "text": "戸籍謄本・抄本" },
           {
             "type": "list",
             "ordered": false,
             "items": [
-              [{ "type": "paragraph", "runs": [{ "text": "戸籍に記載されている方" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "配偶者" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "直系の親族（親、祖父母、子、孫など）" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "代理人（委任状が必要）" }] }]
-            ]
-          },
-          { "type": "heading", "level": 3, "text": "住民票の写し" },
-          {
-            "type": "list",
-            "ordered": false,
-            "items": [
-              [{ "type": "paragraph", "runs": [{ "text": "本人" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "同一世帯の方" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "代理人（委任状が必要）" }] }]
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "利用時間：6:30〜23:00（年末年始・メンテナンス時を除く）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "手数料：窓口より100円安い"
+                    }
+                  ]
+                }
+              ]
             ]
           }
         ]
+      }
+    },
+    {
+      "id": "section-i9aptvii0",
+      "type": "Section",
+      "props": {
+        "heading": "郵送での取得",
+        "level": 3,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "窓口に来庁できない方は、郵送でも請求できます。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-i9aptvii0-table",
+      "type": "Table",
+      "props": {
+        "rows": [
+          {
+            "label": "申請書（ダウンロード可）",
+            "value": ""
+          },
+          {
+            "label": "本人確認書類のコピー",
+            "value": ""
+          },
+          {
+            "label": "手数料分の定額小為替",
+            "value": ""
+          },
+          {
+            "label": "返信用封筒（切手貼付）",
+            "value": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-bfz0njz1b-table",
+      "type": "Table",
+      "props": {
+        "rows": [
+          {
+            "label": "本人確認書類（マイナンバーカード、運転免許証、パスポートなど）",
+            "value": ""
+          },
+          {
+            "label": "手数料",
+            "value": ""
+          },
+          {
+            "label": "委任状（代理人が申請する場合）",
+            "value": ""
+          }
+        ],
+        "heading": "申請に必要なもの"
+      }
+    },
+    {
+      "id": "section-znh3iz35j",
+      "type": "Section",
+      "props": {
+        "heading": "申請できる方",
+        "level": 2,
+        "content": []
+      }
+    },
+    {
+      "id": "section-n1tqe3uze-table",
+      "type": "Table",
+      "props": {
+        "rows": [
+          {
+            "label": "戸籍に記載されている方",
+            "value": ""
+          },
+          {
+            "label": "配偶者",
+            "value": ""
+          },
+          {
+            "label": "直系の親族（親、祖父母、子、孫など）",
+            "value": ""
+          },
+          {
+            "label": "代理人（委任状が必要）",
+            "value": ""
+          }
+        ],
+        "heading": "戸籍謄本・抄本"
+      }
+    },
+    {
+      "id": "section-hqrz56fhm-table",
+      "type": "Table",
+      "props": {
+        "rows": [
+          {
+            "label": "本人",
+            "value": ""
+          },
+          {
+            "label": "同一世帯の方",
+            "value": ""
+          },
+          {
+            "label": "代理人（委任状が必要）",
+            "value": ""
+          }
+        ],
+        "heading": "住民票の写し"
       }
     },
     {
@@ -214,9 +433,26 @@
       "type": "RelatedLinks",
       "props": {
         "items": [
-          { "title": "印鑑登録証明書", "href": "/services/registration/inkan" },
-          { "title": "マイナンバーカード", "href": "/services/registration/mynumber" },
-          { "title": "転入届", "href": "/services/registration/tennyu" }
+          {
+            "title": "住民票",
+            "href": "/services/registration/juminhyo"
+          },
+          {
+            "title": "出生届",
+            "href": "/services/registration/shussei"
+          },
+          {
+            "title": "死亡届",
+            "href": "/services/registration/shibou"
+          },
+          {
+            "title": "婚姻届",
+            "href": "/services/registration/konin"
+          },
+          {
+            "title": "パスポート",
+            "href": "/services/nationality/passport"
+          }
         ]
       }
     },
@@ -230,11 +466,26 @@
         "hours": "平日 8:30〜17:15（土日祝日・年末年始を除く）",
         "address": "〒100-0001 東京都サンプル市中央1-1-1"
       }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
+      }
     }
   ],
   "search": {
     "summary": "戸籍謄本・住民票の取得方法と手数料。窓口、コンビニ交付、郵送での申請方法。",
-    "keywords": ["戸籍謄本", "戸籍抄本", "住民票", "証明書", "コンビニ交付", "郵送請求", "手数料"],
+    "keywords": [
+      "戸籍謄本",
+      "戸籍抄本",
+      "住民票",
+      "証明書",
+      "コンビニ交付",
+      "郵送請求",
+      "手数料"
+    ],
     "plain_text": "戸籍謄本・住民票の取得。窓口、コンビニ交付、郵送で取得可能。戸籍謄本・抄本、除籍謄本・抄本、住民票の写し、戸籍の附票。本人確認書類が必要。"
   }
 }

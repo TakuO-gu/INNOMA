@@ -32,10 +32,6 @@
             "href": "/"
           },
           {
-            "label": "くらしの情報",
-            "href": "/topics"
-          },
-          {
             "label": "環境・ごみ",
             "href": "/topics/environment"
           },
@@ -61,15 +57,12 @@
       }
     },
     {
-      "id": "richtext-1",
-      "type": "RichText",
+      "id": "section-fp1h9ta0u",
+      "type": "Section",
       "props": {
+        "heading": "粗大ごみとは",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "粗大ごみとは"
-          },
           {
             "type": "paragraph",
             "runs": [
@@ -123,23 +116,26 @@
                 }
               ]
             ]
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-fp1h9ta0u-notification-0",
+      "type": "NotificationBanner",
+      "props": {
+        "severity": "warning",
+        "title": "家電リサイクル法対象品は対象外です",
+        "content": [
           {
-            "type": "callout",
-            "severity": "warning",
-            "title": "家電リサイクル法対象品は対象外です",
-            "content": [
+            "type": "paragraph",
+            "runs": [
               {
-                "type": "paragraph",
-                "runs": [
-                  {
-                    "text": "エアコン、テレビ、冷蔵庫・冷凍庫、洗濯機・衣類乾燥機は粗大ごみとして出せません。",
-                    "bold": true
-                  },
-                  {
-                    "text": "販売店または指定引取場所にお持ちください。"
-                  }
-                ]
+                "text": "エアコン、テレビ、冷蔵庫・冷凍庫、洗濯機・衣類乾燥機は粗大ごみとして出せません。",
+                "bold": true
+              },
+              {
+                "text": "販売店または指定引取場所にお持ちください。"
               }
             ]
           }
@@ -171,15 +167,12 @@
       }
     },
     {
-      "id": "richtext-fee",
-      "type": "RichText",
+      "id": "section-lri2ogb2f",
+      "type": "Section",
       "props": {
+        "heading": "手数料",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "手数料"
-          },
           {
             "type": "paragraph",
             "runs": [
@@ -225,15 +218,12 @@
       }
     },
     {
-      "id": "richtext-phone",
-      "type": "RichText",
+      "id": "section-czbh0wjcc",
+      "type": "Section",
       "props": {
+        "heading": "電話での申込",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "電話での申込"
-          },
           {
             "type": "paragraph",
             "runs": [
@@ -301,6 +291,13 @@
         "email": "kankyo@sample-city.lg.jp",
         "hours": "平日 8:30〜17:15（土日祝日・年末年始を除く）",
         "address": "〒100-0001 東京都サンプル市中央1-1-1"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
       }
     }
   ],

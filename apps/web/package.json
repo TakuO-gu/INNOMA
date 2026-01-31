@@ -6,13 +6,22 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "build:lock": "./scripts/with-lock.sh npm run build",
     "start": "next start",
     "lint": "next lint",
+    "lint:lock": "./scripts/with-lock.sh npm run lint",
     "test": "vitest run",
+    "test:lock": "./scripts/with-lock.sh npm run test",
     "test:watch": "vitest",
     "validate:artifacts": "npx tsx scripts/validate-artifacts.ts",
+    "bot": "npx tsx scripts/auto-update-bot.ts",
+    "bot:inspect": "npx tsx scripts/auto-update-bot.ts inspect --headed",
+    "bot:review": "npx tsx scripts/auto-update-bot.ts review --headed",
+    "bot:screenshot": "npx tsx scripts/auto-update-bot.ts screenshot",
     "build:search-index": "npx tsx scripts/build-search-index.ts",
-    "ci": "npm run lint && npm run test && npm run validate:artifacts && npm run build"
+    "ci": "npm run lint && npm run test && npm run validate:artifacts && npm run build",
+    "ci:lock": "./scripts/with-lock.sh npm run ci",
+    "check": "./scripts/with-lock.sh bash -c 'npm run lint && npm run test && npm run build'"
   },
   "dependencies": {
     "@digital-go-jp/design-tokens": "^1.1.2",
@@ -27,6 +36,7 @@
   },
   "devDependencies": {
     "@digital-go-jp/tailwind-theme-plugin": "^0.3.3",
+    "@playwright/test": "^1.58.1",
     "@types/node": "^22.0.0",
     "@types/pdf-parse": "^1.1.5",
     "@types/react": "^18.3.1",
@@ -37,6 +47,7 @@
     "eslint": "^9.0.0",
     "eslint-config-next": "^15.1.3",
     "jsdom": "^27.4.0",
+    "playwright": "^1.58.1",
     "postcss": "^8.5.6",
     "tailwindcss": "^3.4.17",
     "tsx": "^4.21.0",

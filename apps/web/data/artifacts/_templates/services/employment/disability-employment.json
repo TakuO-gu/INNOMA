@@ -7,7 +7,9 @@
   "description": "障害者就労支援、特例子会社、就労継続支援",
   "content_type": "guide",
   "service_category": "business",
-  "audience": ["residents"],
+  "audience": [
+    "residents"
+  ],
   "topic": [],
   "source": {
     "source_url": "template://sample/services/employment/disability-employment",
@@ -25,10 +27,18 @@
       "type": "Breadcrumbs",
       "props": {
         "items": [
-          { "label": "ホーム", "href": "/" },
-          { "label": "くらしの情報", "href": "/topics" },
-          { "label": "仕事・労働", "href": "/topics/employment" },
-          { "label": "障害者雇用支援", "href": "/services/employment/disability-employment" }
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "仕事・労働",
+            "href": "/topics/employment"
+          },
+          {
+            "label": "障害者雇用支援",
+            "href": "/services/employment/disability-employment"
+          }
         ]
       }
     },
@@ -47,34 +57,129 @@
       }
     },
     {
-      "id": "richtext-1",
-      "type": "RichText",
+      "id": "section-duadby67u",
+      "type": "Section",
       "props": {
+        "heading": "ハローワークの障害者専門窓口",
+        "level": 2,
         "content": [
-          { "type": "heading", "level": 2, "text": "ハローワークの障害者専門窓口" },
           {
             "type": "paragraph",
             "runs": [
-              { "text": "障害者専門援助部門（専門援助第二部門）で、障害特性に応じた職業紹介、職場定着支援を行います。" }
+              {
+                "text": "障害者専門援助部門（専門援助第二部門）で、障害特性に応じた職業紹介、職場定着支援を行います。"
+              }
             ]
-          },
-          { "type": "heading", "level": 2, "text": "障害者就労支援サービス" },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-1ivmnynzp",
+      "type": "Section",
+      "props": {
+        "heading": "障害者就労支援サービス",
+        "level": 2,
+        "content": [
           {
             "type": "list",
             "ordered": false,
             "items": [
-              [{ "type": "paragraph", "runs": [{ "text": "就労移行支援", "bold": true }, { "text": "：一般企業への就職を目指す訓練（利用期間：原則2年）" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "就労継続支援A型", "bold": true }, { "text": "：雇用契約を結んで働く（最低賃金保障）" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "就労継続支援B型", "bold": true }, { "text": "：雇用契約を結ばず、自分のペースで働く" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "就労定着支援", "bold": true }, { "text": "：就職後の職場定着をサポート（最長3年）" }] }]
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "就労移行支援",
+                      "bold": true
+                    },
+                    {
+                      "text": "：一般企業への就職を目指す訓練（利用期間：原則2年）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "就労継続支援A型",
+                      "bold": true
+                    },
+                    {
+                      "text": "：雇用契約を結んで働く（最低賃金保障）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "就労継続支援B型",
+                      "bold": true
+                    },
+                    {
+                      "text": "：雇用契約を結ばず、自分のペースで働く"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "就労定着支援",
+                      "bold": true
+                    },
+                    {
+                      "text": "：就職後の職場定着をサポート（最長3年）"
+                    }
+                  ]
+                }
+              ]
             ]
-          },
-          { "type": "heading", "level": 2, "text": "障害者雇用率制度" },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-a5mb28dja",
+      "type": "Section",
+      "props": {
+        "heading": "障害者雇用率制度",
+        "level": 2,
+        "content": [
           {
             "type": "paragraph",
             "runs": [
-              { "text": "従業員43.5人以上の企業は、2.3%以上の障害者を雇用する義務があります。" }
+              {
+                "text": "従業員43.5人以上の企業は、2.3%以上の障害者を雇用する義務があります。"
+              }
             ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "related-links-mxjthr0sp",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "障害者福祉",
+            "href": "/services/welfare/shogai"
+          },
+          {
+            "title": "ハローワーク",
+            "href": "/services/employment/hello-work"
+          },
+          {
+            "title": "就職支援",
+            "href": "/services/employment/career-support"
           }
         ]
       }
@@ -89,11 +194,25 @@
         "hours": "{{city_hall_hours}}",
         "address": "{{city_hall_address}}"
       }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
+      }
     }
   ],
   "search": {
     "summary": "障害者雇用支援の案内。就労移行支援、就労継続支援A型・B型、就労定着支援。",
-    "keywords": ["障害者雇用", "就労移行支援", "就労継続支援", "A型", "B型", "障害者就労"],
+    "keywords": [
+      "障害者雇用",
+      "就労移行支援",
+      "就労継続支援",
+      "A型",
+      "B型",
+      "障害者就労"
+    ],
     "plain_text": "障害者雇用支援。就労移行支援で一般就労を目指す訓練。就労継続支援A型・B型で福祉的就労。就労定着支援で職場定着をサポート。"
   }
 }

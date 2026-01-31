@@ -32,10 +32,6 @@
             "href": "/"
           },
           {
-            "label": "くらしの情報",
-            "href": "/topics"
-          },
-          {
             "label": "土地・農林水産",
             "href": "/topics/land"
           },
@@ -61,125 +57,62 @@
       }
     },
     {
-      "id": "richtext-1",
-      "type": "RichText",
+      "id": "section-ty1fh4ida-step",
+      "type": "StepNavigation",
       "props": {
+        "steps": [
+          {
+            "title": "ステップ1",
+            "body": "情報収集・相談（農業委員会、JAなど）"
+          },
+          {
+            "title": "ステップ2",
+            "body": "体験・研修（農業大学校、先進農家研修）"
+          },
+          {
+            "title": "ステップ3",
+            "body": "就農計画の作成"
+          },
+          {
+            "title": "ステップ4",
+            "body": "農地の確保"
+          },
+          {
+            "title": "ステップ5",
+            "body": "資金の確保"
+          },
+          {
+            "title": "ステップ6",
+            "body": "就農開始"
+          }
+        ],
+        "heading": "新規就農までの流れ"
+      }
+    },
+    {
+      "id": "section-ho57hx8ks-desclist",
+      "type": "DescriptionList",
+      "props": {
+        "items": [
+          {
+            "term": "準備型",
+            "description": "研修期間中、年間最大150万円（最長2年）"
+          },
+          {
+            "term": "経営開始型",
+            "description": "経営開始後、年間最大150万円（最長5年）"
+          }
+        ],
+        "heading": "農業次世代人材投資資金（旧・青年就農給付金）"
+      }
+    },
+    {
+      "id": "section-ykei1uflm",
+      "type": "Section",
+      "props": {
+        "heading": "対象要件",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "新規就農までの流れ"
-          },
-          {
-            "type": "list",
-            "ordered": true,
-            "items": [
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "情報収集・相談（農業委員会、JAなど）"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "体験・研修（農業大学校、先進農家研修）"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "就農計画の作成"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "農地の確保"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "資金の確保"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "就農開始"
-                    }
-                  ]
-                }
-              ]
-            ]
-          },
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "農業次世代人材投資資金（旧・青年就農給付金）"
-          },
-          {
-            "type": "list",
-            "ordered": false,
-            "items": [
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "準備型",
-                      "bold": true
-                    },
-                    {
-                      "text": "：研修期間中、年間最大150万円（最長2年）"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "経営開始型",
-                      "bold": true
-                    },
-                    {
-                      "text": "：経営開始後、年間最大150万円（最長5年）"
-                    }
-                  ]
-                }
-              ]
-            ]
-          },
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "対象要件"
-          },
           {
             "type": "list",
             "ordered": false,
@@ -215,12 +148,17 @@
                 }
               ]
             ]
-          },
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "{{municipality_name}}の支援制度"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-1r65n455n",
+      "type": "Section",
+      "props": {
+        "heading": "{{municipality_name}}の支援制度",
+        "level": 2,
+        "content": [
           {
             "type": "list",
             "ordered": false,
@@ -261,6 +199,26 @@
       }
     },
     {
+      "id": "related-links-tu35qfffc",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "農業委員会",
+            "href": "/services/land/agricultural-committee"
+          },
+          {
+            "title": "農業補助金",
+            "href": "/services/land/agriculture-subsidy"
+          },
+          {
+            "title": "補助金・助成金",
+            "href": "/services/business/subsidies"
+          }
+        ]
+      }
+    },
+    {
       "id": "contact-1",
       "type": "Contact",
       "props": {
@@ -269,6 +227,13 @@
         "email": "{{agriculture_email}}",
         "hours": "{{city_hall_hours}}",
         "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
       }
     }
   ],

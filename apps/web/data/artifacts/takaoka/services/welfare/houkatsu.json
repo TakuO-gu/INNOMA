@@ -33,10 +33,6 @@
             "href": "/"
           },
           {
-            "label": "くらしの情報",
-            "href": "/topics"
-          },
-          {
             "label": "福祉・介護",
             "href": "/topics/welfare"
           },
@@ -62,15 +58,12 @@
       }
     },
     {
-      "id": "richtext-overview",
-      "type": "RichText",
+      "id": "section-byulr9nu1",
+      "type": "Section",
       "props": {
+        "heading": "地域包括支援センターとは",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "地域包括支援センターとは"
-          },
           {
             "type": "paragraph",
             "runs": [
@@ -91,20 +84,21 @@
       }
     },
     {
-      "id": "richtext-soudan",
-      "type": "RichText",
+      "id": "section-8a9ohhsl7",
+      "type": "Section",
       "props": {
+        "heading": "相談できること",
+        "level": 2,
+        "content": []
+      }
+    },
+    {
+      "id": "section-iqr63ak7f",
+      "type": "Section",
+      "props": {
+        "heading": "介護に関すること",
+        "level": 3,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "相談できること"
-          },
-          {
-            "type": "heading",
-            "level": 3,
-            "text": "介護に関すること"
-          },
           {
             "type": "list",
             "ordered": false,
@@ -140,12 +134,17 @@
                 }
               ]
             ]
-          },
-          {
-            "type": "heading",
-            "level": 3,
-            "text": "健康に関すること"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-wnmsq3ktb",
+      "type": "Section",
+      "props": {
+        "heading": "健康に関すること",
+        "level": 3,
+        "content": [
           {
             "type": "list",
             "ordered": false,
@@ -181,12 +180,17 @@
                 }
               ]
             ]
-          },
-          {
-            "type": "heading",
-            "level": 3,
-            "text": "生活に関すること"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-w73t06p6e",
+      "type": "Section",
+      "props": {
+        "heading": "生活に関すること",
+        "level": 3,
+        "content": [
           {
             "type": "list",
             "ordered": false,
@@ -222,12 +226,17 @@
                 }
               ]
             ]
-          },
-          {
-            "type": "heading",
-            "level": 3,
-            "text": "権利擁護に関すること"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-fgqbv6cc8",
+      "type": "Section",
+      "props": {
+        "heading": "権利擁護に関すること",
+        "level": 3,
+        "content": [
           {
             "type": "list",
             "ordered": false,
@@ -268,20 +277,21 @@
       }
     },
     {
-      "id": "richtext-gyomu",
-      "type": "RichText",
+      "id": "section-kn8tfzfg2",
+      "type": "Section",
       "props": {
+        "heading": "主な業務",
+        "level": 2,
+        "content": []
+      }
+    },
+    {
+      "id": "section-pmxmc3hzb",
+      "type": "Section",
+      "props": {
+        "heading": "総合相談支援",
+        "level": 3,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "主な業務"
-          },
-          {
-            "type": "heading",
-            "level": 3,
-            "text": "総合相談支援"
-          },
           {
             "type": "paragraph",
             "runs": [
@@ -289,12 +299,17 @@
                 "text": "高齢者やその家族からの相談に応じ、適切なサービスや機関につなぎます。"
               }
             ]
-          },
-          {
-            "type": "heading",
-            "level": 3,
-            "text": "介護予防ケアマネジメント"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-ofhkoh9vh",
+      "type": "Section",
+      "props": {
+        "heading": "介護予防ケアマネジメント",
+        "level": 3,
+        "content": [
           {
             "type": "paragraph",
             "runs": [
@@ -302,12 +317,17 @@
                 "text": "要支援1・2の方や、介護予防・日常生活支援総合事業対象者のケアプランを作成します。"
               }
             ]
-          },
-          {
-            "type": "heading",
-            "level": 3,
-            "text": "権利擁護"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-sz57ymlph",
+      "type": "Section",
+      "props": {
+        "heading": "権利擁護",
+        "level": 3,
+        "content": [
           {
             "type": "paragraph",
             "runs": [
@@ -315,12 +335,17 @@
                 "text": "高齢者虐待の防止・早期発見、成年後見制度の利用支援、消費者被害の防止などを行います。"
               }
             ]
-          },
-          {
-            "type": "heading",
-            "level": 3,
-            "text": "包括的・継続的ケアマネジメント支援"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-nazv50miv",
+      "type": "Section",
+      "props": {
+        "heading": "包括的・継続的ケアマネジメント支援",
+        "level": 3,
+        "content": [
           {
             "type": "paragraph",
             "runs": [
@@ -333,15 +358,12 @@
       }
     },
     {
-      "id": "richtext-ichiran",
-      "type": "RichText",
+      "id": "section-s2s30qibx",
+      "type": "Section",
       "props": {
+        "heading": "市内の地域包括支援センター",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "市内の地域包括支援センター"
-          },
           {
             "type": "paragraph",
             "runs": [
@@ -376,8 +398,16 @@
             "href": "/services/welfare/koureisha"
           },
           {
-            "title": "成年後見制度",
-            "href": "/services/welfare/kouken"
+            "title": "障害者福祉",
+            "href": "/services/welfare/shogai"
+          },
+          {
+            "title": "生活保護",
+            "href": "/services/welfare/seikatsu-hogo"
+          },
+          {
+            "title": "後期高齢者医療",
+            "href": "/services/health/kouki"
           }
         ]
       }
@@ -391,6 +421,13 @@
         "email": "{{houkatsu_email}}",
         "hours": "{{city_hall_hours}}",
         "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
       }
     }
   ],

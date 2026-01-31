@@ -32,10 +32,6 @@
             "href": "/"
           },
           {
-            "label": "くらしの情報",
-            "href": "/topics"
-          },
-          {
             "label": "運転・車両",
             "href": "/topics/driving"
           },
@@ -61,15 +57,12 @@
       }
     },
     {
-      "id": "richtext-1",
-      "type": "RichText",
+      "id": "section-vv457yckk",
+      "type": "Section",
       "props": {
+        "heading": "車検（継続検査）",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "車検（継続検査）"
-          },
           {
             "type": "list",
             "ordered": false,
@@ -95,12 +88,17 @@
                 }
               ]
             ]
-          },
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "自動車登録の種類"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-466lzyeel",
+      "type": "Section",
+      "props": {
+        "heading": "自動車登録の種類",
+        "level": 2,
+        "content": [
           {
             "type": "list",
             "ordered": false,
@@ -167,12 +165,51 @@
       }
     },
     {
+      "id": "related-links-waw7ijxh9",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "運転免許証",
+            "href": "/services/driving/license"
+          },
+          {
+            "title": "車庫証明",
+            "href": "/services/driving/garage-certificate"
+          },
+          {
+            "title": "自動車税",
+            "href": "/services/driving/vehicle-tax"
+          },
+          {
+            "title": "自動車重量税",
+            "href": "/services/driving/weight-tax"
+          },
+          {
+            "title": "自賠責保険",
+            "href": "/services/driving/liability-insurance"
+          },
+          {
+            "title": "軽自動車税",
+            "href": "/services/tax/keijidosha"
+          }
+        ]
+      }
+    },
+    {
       "id": "contact-1",
       "type": "Contact",
       "props": {
         "department": "関東運輸局東京運輸支局",
         "phone": "050-5540-2030",
         "address": "東京都品川区東大井1-12-17"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
       }
     }
   ],

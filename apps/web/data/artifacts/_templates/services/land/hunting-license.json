@@ -32,10 +32,6 @@
             "href": "/"
           },
           {
-            "label": "くらしの情報",
-            "href": "/topics"
-          },
-          {
             "label": "土地・農林水産",
             "href": "/topics/land"
           },
@@ -61,15 +57,12 @@
       }
     },
     {
-      "id": "richtext-1",
-      "type": "RichText",
+      "id": "section-7mvfzbups",
+      "type": "Section",
       "props": {
+        "heading": "狩猟免許の種類",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "狩猟免許の種類"
-          },
           {
             "type": "list",
             "ordered": false,
@@ -131,12 +124,17 @@
                 }
               ]
             ]
-          },
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "受験資格"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-qukgg5lc2",
+      "type": "Section",
+      "props": {
+        "heading": "受験資格",
+        "level": 2,
+        "content": [
           {
             "type": "list",
             "ordered": false,
@@ -162,12 +160,17 @@
                 }
               ]
             ]
-          },
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "試験内容"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-rcu6822tt",
+      "type": "Section",
+      "props": {
+        "heading": "試験内容",
+        "level": 2,
+        "content": [
           {
             "type": "list",
             "ordered": false,
@@ -203,12 +206,17 @@
                 }
               ]
             ]
-          },
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "狩猟者登録"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-ibxwgcljw",
+      "type": "Section",
+      "props": {
+        "heading": "狩猟者登録",
+        "level": 2,
+        "content": [
           {
             "type": "paragraph",
             "runs": [
@@ -216,12 +224,17 @@
                 "text": "狩猟免許を取得した後、狩猟を行う都道府県で毎年「狩猟者登録」を受ける必要があります。登録には狩猟税の納付が必要です。"
               }
             ]
-          },
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "狩猟期間"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-01p4qdeo3",
+      "type": "Section",
+      "props": {
+        "heading": "狩猟期間",
+        "level": 2,
+        "content": [
           {
             "type": "paragraph",
             "runs": [
@@ -229,12 +242,17 @@
                 "text": "11月15日から翌年2月15日まで（北海道は10月1日から翌年1月31日まで）。一部の鳥獣は3月15日まで延長されます。"
               }
             ]
-          },
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "免許取得支援"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-jo52ptxy5",
+      "type": "Section",
+      "props": {
+        "heading": "免許取得支援",
+        "level": 2,
+        "content": [
           {
             "type": "paragraph",
             "runs": [
@@ -242,6 +260,22 @@
                 "text": "有害鳥獣捕獲の担い手確保のため、狩猟免許取得費用を助成する制度があります。詳しくはお問い合わせください。"
               }
             ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "related-links-serjylkfs",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "鳥獣被害対策",
+            "href": "/services/land/wildlife-damage"
+          },
+          {
+            "title": "林業",
+            "href": "/services/land/forestry"
           }
         ]
       }
@@ -255,6 +289,13 @@
         "email": "{{wildlife_email}}",
         "hours": "{{city_hall_hours}}",
         "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
       }
     }
   ],

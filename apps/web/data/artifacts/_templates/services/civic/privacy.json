@@ -32,10 +32,6 @@
             "href": "/"
           },
           {
-            "label": "くらしの情報",
-            "href": "/topics"
-          },
-          {
             "label": "市民参加・権利行使",
             "href": "/topics/civic"
           },
@@ -61,68 +57,33 @@
       }
     },
     {
-      "id": "richtext-1",
-      "type": "RichText",
+      "id": "section-svv96zck7-desclist",
+      "type": "DescriptionList",
       "props": {
+        "items": [
+          {
+            "term": "開示請求",
+            "description": "自己に関する個人情報の開示を求める"
+          },
+          {
+            "term": "訂正請求",
+            "description": "事実に誤りがある場合の訂正を求める"
+          },
+          {
+            "term": "利用停止請求",
+            "description": "不適正な取得・利用の停止を求める"
+          }
+        ],
+        "heading": "請求できる権利"
+      }
+    },
+    {
+      "id": "section-pkxjkj02c",
+      "type": "Section",
+      "props": {
+        "heading": "請求できる方",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "請求できる権利"
-          },
-          {
-            "type": "list",
-            "ordered": false,
-            "items": [
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "開示請求",
-                      "bold": true
-                    },
-                    {
-                      "text": "：自己に関する個人情報の開示を求める"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "訂正請求",
-                      "bold": true
-                    },
-                    {
-                      "text": "：事実に誤りがある場合の訂正を求める"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "利用停止請求",
-                      "bold": true
-                    },
-                    {
-                      "text": "：不適正な取得・利用の停止を求める"
-                    }
-                  ]
-                }
-              ]
-            ]
-          },
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "請求できる方"
-          },
           {
             "type": "paragraph",
             "runs": [
@@ -130,53 +91,38 @@
                 "text": "本人または法定代理人（未成年者の親権者、成年後見人など）"
               }
             ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-u3lkv49kh-step",
+      "type": "StepNavigation",
+      "props": {
+        "steps": [
+          {
+            "title": "ステップ1",
+            "body": "請求書に必要事項を記入"
           },
           {
-            "type": "heading",
-            "level": 2,
-            "text": "請求方法"
+            "title": "ステップ2",
+            "body": "本人確認書類（運転免許証、マイナンバーカードなど）を添付"
           },
           {
-            "type": "list",
-            "ordered": true,
-            "items": [
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "請求書に必要事項を記入"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "本人確認書類（運転免許証、マイナンバーカードなど）を添付"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "担当課または総務課に提出"
-                    }
-                  ]
-                }
-              ]
-            ]
-          },
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "手数料"
-          },
+            "title": "ステップ3",
+            "body": "担当課または総務課に提出"
+          }
+        ],
+        "heading": "請求方法"
+      }
+    },
+    {
+      "id": "section-j78v74xhw",
+      "type": "Section",
+      "props": {
+        "heading": "手数料",
+        "level": 2,
+        "content": [
           {
             "type": "paragraph",
             "runs": [
@@ -184,12 +130,17 @@
                 "text": "開示請求は無料（ただし写しの交付には実費が必要）"
               }
             ]
-          },
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "決定までの期間"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-qw2z90ifr",
+      "type": "Section",
+      "props": {
+        "heading": "決定までの期間",
+        "level": 2,
+        "content": [
           {
             "type": "paragraph",
             "runs": [
@@ -197,6 +148,22 @@
                 "text": "請求を受けた日から原則15日以内に開示・非開示等の決定を行います。"
               }
             ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "related-links-wzt1m6d6q",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "情報公開",
+            "href": "/services/civic/information-disclosure"
+          },
+          {
+            "title": "マイナンバーカード",
+            "href": "/services/registration/mynumber"
           }
         ]
       }
@@ -210,6 +177,13 @@
         "email": "{{privacy_email}}",
         "hours": "{{city_hall_hours}}",
         "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
       }
     }
   ],

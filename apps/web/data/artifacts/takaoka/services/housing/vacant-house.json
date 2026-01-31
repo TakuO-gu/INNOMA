@@ -32,10 +32,6 @@
             "href": "/"
           },
           {
-            "label": "くらしの情報",
-            "href": "/topics"
-          },
-          {
             "label": "住まい・引越し",
             "href": "/topics/housing"
           },
@@ -61,15 +57,12 @@
       }
     },
     {
-      "id": "richtext-1",
-      "type": "RichText",
+      "id": "section-1sl2yrmlj",
+      "type": "Section",
       "props": {
+        "heading": "空き家バンク",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "空き家バンク"
-          },
           {
             "type": "paragraph",
             "runs": [
@@ -103,12 +96,17 @@
                 }
               ]
             ]
-          },
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "空き家解体補助"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-68toeevej",
+      "type": "Section",
+      "props": {
+        "heading": "空き家解体補助",
+        "level": 2,
+        "content": [
           {
             "type": "paragraph",
             "runs": [
@@ -142,12 +140,17 @@
                 }
               ]
             ]
-          },
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "空き家の適正管理"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-1o7688i3u",
+      "type": "Section",
+      "props": {
+        "heading": "空き家の適正管理",
+        "level": 2,
+        "content": [
           {
             "type": "paragraph",
             "runs": [
@@ -155,6 +158,30 @@
                 "text": "空き家を所有している方は、適正に管理する義務があります。管理不全の空き家は「特定空家」に指定される場合があります。"
               }
             ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "related-links-ejp6siqcb",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "住宅購入",
+            "href": "/services/housing/home-purchase"
+          },
+          {
+            "title": "固定資産税",
+            "href": "/services/tax/kotei"
+          },
+          {
+            "title": "都市計画",
+            "href": "/services/land/urban-planning"
+          },
+          {
+            "title": "リフォーム補助",
+            "href": "/services/housing/reform-subsidy"
           }
         ]
       }
@@ -168,6 +195,13 @@
         "email": "{{housing_email}}",
         "hours": "{{city_hall_hours}}",
         "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
       }
     }
   ],

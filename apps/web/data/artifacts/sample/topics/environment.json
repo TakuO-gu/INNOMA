@@ -7,7 +7,9 @@
   "description": "ごみの分別、粗大ごみ、リサイクル、省エネルギーに関する情報",
   "content_type": "directory",
   "service_category": "environment",
-  "audience": ["residents"],
+  "audience": [
+    "residents"
+  ],
   "topic": [],
   "source": {
     "source_url": "template://sample/topics/environment",
@@ -25,9 +27,14 @@
       "type": "Breadcrumbs",
       "props": {
         "items": [
-          { "label": "ホーム", "href": "/" },
-          { "label": "くらしの情報", "href": "/topics" },
-          { "label": "環境・ごみ・リサイクル", "href": "/topics/environment" }
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "環境・ごみ・リサイクル",
+            "href": "/topics/environment"
+          }
         ]
       }
     },
@@ -78,11 +85,27 @@
         "hours": "平日 8:30〜17:15（土日祝日・年末年始を除く）",
         "address": "〒100-0001 東京都サンプル市中央1-1-1"
       }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
+      }
     }
   ],
   "search": {
     "summary": "環境・ごみ・リサイクルに関する情報。ごみの分別、粗大ごみ、資源回収、家電リサイクルの案内。",
-    "keywords": ["環境", "ごみ", "分別", "粗大ごみ", "リサイクル", "資源", "家電リサイクル", "収集日"],
+    "keywords": [
+      "環境",
+      "ごみ",
+      "分別",
+      "粗大ごみ",
+      "リサイクル",
+      "資源",
+      "家電リサイクル",
+      "収集日"
+    ],
     "plain_text": "環境・ごみ・リサイクル。ごみの分別、粗大ごみ、リサイクル、省エネルギーに関する情報。ごみの分別・出し方、粗大ごみ、資源・リサイクル、家電リサイクル、ごみ収集カレンダー、し尿くみ取り、環境保全。"
   }
 }

@@ -33,10 +33,6 @@
             "href": "/"
           },
           {
-            "label": "くらしの情報",
-            "href": "/topics"
-          },
-          {
             "label": "土地・農林水産",
             "href": "/topics/land"
           },
@@ -62,15 +58,12 @@
       }
     },
     {
-      "id": "richtext-1",
-      "type": "RichText",
+      "id": "section-c3zse6a0c",
+      "type": "Section",
       "props": {
+        "heading": "農業委員会の主な業務",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "農業委員会の主な業務"
-          },
           {
             "type": "list",
             "ordered": false,
@@ -126,12 +119,17 @@
                 }
               ]
             ]
-          },
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "農地の売買・賃貸借（農地法3条許可）"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-clc3gh1hr",
+      "type": "Section",
+      "props": {
+        "heading": "農地の売買・賃貸借（農地法3条許可）",
+        "level": 2,
+        "content": [
           {
             "type": "paragraph",
             "runs": [
@@ -165,12 +163,17 @@
                 }
               ]
             ]
-          },
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "農地中間管理事業"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-c1w5wkm90",
+      "type": "Section",
+      "props": {
+        "heading": "農地中間管理事業",
+        "level": 2,
+        "content": [
           {
             "type": "paragraph",
             "runs": [
@@ -178,12 +181,17 @@
                 "text": "農地中間管理機構（農地バンク）を通じて、農地の貸し借りを円滑に行うことができます。"
               }
             ]
-          },
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "農業委員会総会"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-cv8lsqggq",
+      "type": "Section",
+      "props": {
+        "heading": "農業委員会総会",
+        "level": 2,
+        "content": [
           {
             "type": "paragraph",
             "runs": [
@@ -191,6 +199,26 @@
                 "text": "毎月開催（{{agricultural_commission_meeting_day}}）。許可申請は総会で審議されます。"
               }
             ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "related-links-nok3li556",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "農地転用",
+            "href": "/services/land/farmland-conversion"
+          },
+          {
+            "title": "新規就農",
+            "href": "/services/land/new-farmer"
+          },
+          {
+            "title": "農業補助金",
+            "href": "/services/land/agriculture-subsidy"
           }
         ]
       }
@@ -204,6 +232,13 @@
         "email": "{{agricultural_commission_email}}",
         "hours": "{{city_hall_hours}}",
         "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
       }
     }
   ],

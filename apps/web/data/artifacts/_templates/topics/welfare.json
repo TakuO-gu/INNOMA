@@ -7,7 +7,11 @@
   "description": "高齢者福祉、介護サービス、障害者福祉、生活困窮者支援に関する情報",
   "content_type": "directory",
   "service_category": "welfare",
-  "audience": ["residents", "elderly", "disabled"],
+  "audience": [
+    "residents",
+    "elderly",
+    "disabled"
+  ],
   "topic": [],
   "source": {
     "source_url": "template://sample/topics/welfare",
@@ -25,9 +29,14 @@
       "type": "Breadcrumbs",
       "props": {
         "items": [
-          { "label": "ホーム", "href": "/" },
-          { "label": "くらしの情報", "href": "/topics" },
-          { "label": "福祉・介護", "href": "/topics/welfare" }
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "福祉・介護",
+            "href": "/topics/welfare"
+          }
         ]
       }
     },
@@ -88,11 +97,26 @@
         "hours": "{{city_hall_hours}}",
         "address": "{{city_hall_address}}"
       }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
+      }
     }
   ],
   "search": {
     "summary": "福祉・介護に関する情報。介護保険、高齢者福祉、障害者福祉、生活保護の案内。",
-    "keywords": ["福祉", "介護", "介護保険", "高齢者福祉", "障害者福祉", "生活保護", "地域包括支援センター"],
+    "keywords": [
+      "福祉",
+      "介護",
+      "介護保険",
+      "高齢者福祉",
+      "障害者福祉",
+      "生活保護",
+      "地域包括支援センター"
+    ],
     "plain_text": "福祉・介護。高齢者福祉、介護サービス、障害者福祉、生活困窮者支援に関する情報。介護保険、高齢者福祉、障害者福祉、生活保護、地域包括支援センター、成年後見制度。"
   }
 }

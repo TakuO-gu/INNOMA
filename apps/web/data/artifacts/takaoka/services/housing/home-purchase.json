@@ -32,10 +32,6 @@
             "href": "/"
           },
           {
-            "label": "くらしの情報",
-            "href": "/topics"
-          },
-          {
             "label": "住まい・引越し",
             "href": "/topics/housing"
           },
@@ -61,15 +57,12 @@
       }
     },
     {
-      "id": "richtext-1",
-      "type": "RichText",
+      "id": "section-w8tpw8gy2",
+      "type": "Section",
       "props": {
+        "heading": "住宅ローン減税（住宅借入金等特別控除）",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "住宅ローン減税（住宅借入金等特別控除）"
-          },
           {
             "type": "paragraph",
             "runs": [
@@ -113,12 +106,17 @@
                 }
               ]
             ]
-          },
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "住宅取得等資金贈与の非課税"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-2hubo8swn",
+      "type": "Section",
+      "props": {
+        "heading": "住宅取得等資金贈与の非課税",
+        "level": 2,
+        "content": [
           {
             "type": "paragraph",
             "runs": [
@@ -157,6 +155,38 @@
       }
     },
     {
+      "id": "related-links-jycgyiju6",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "不動産登記",
+            "href": "/services/housing/property-registration"
+          },
+          {
+            "title": "建築確認申請",
+            "href": "/services/housing/building-permit"
+          },
+          {
+            "title": "固定資産税",
+            "href": "/services/tax/kotei"
+          },
+          {
+            "title": "印鑑登録",
+            "href": "/services/registration/inkan"
+          },
+          {
+            "title": "リフォーム補助",
+            "href": "/services/housing/reform-subsidy"
+          },
+          {
+            "title": "耐震改修",
+            "href": "/services/housing/seismic-retrofit"
+          }
+        ]
+      }
+    },
+    {
       "id": "contact-1",
       "type": "Contact",
       "props": {
@@ -165,6 +195,13 @@
         "email": "{{tax_email}}",
         "hours": "{{city_hall_hours}}",
         "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
       }
     }
   ],

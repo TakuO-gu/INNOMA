@@ -33,10 +33,6 @@
             "href": "/"
           },
           {
-            "label": "くらしの情報",
-            "href": "/topics"
-          },
-          {
             "label": "健康・医療",
             "href": "/topics/health"
           },
@@ -62,15 +58,12 @@
       }
     },
     {
-      "id": "richtext-kodomo",
-      "type": "RichText",
+      "id": "section-nf71tgieb",
+      "type": "Section",
       "props": {
+        "heading": "子どもの定期予防接種",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "子どもの定期予防接種"
-          },
           {
             "type": "paragraph",
             "runs": [
@@ -135,20 +128,21 @@
       }
     },
     {
-      "id": "richtext-koureisha",
-      "type": "RichText",
+      "id": "section-zlu4ozw3o",
+      "type": "Section",
       "props": {
+        "heading": "高齢者の予防接種",
+        "level": 2,
+        "content": []
+      }
+    },
+    {
+      "id": "section-sx0be0my5",
+      "type": "Section",
+      "props": {
+        "heading": "高齢者インフルエンザ",
+        "level": 3,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "高齢者の予防接種"
-          },
-          {
-            "type": "heading",
-            "level": 3,
-            "text": "高齢者インフルエンザ"
-          },
           {
             "type": "paragraph",
             "runs": [
@@ -181,15 +175,12 @@
       }
     },
     {
-      "id": "richtext-haienkyukin",
-      "type": "RichText",
+      "id": "section-7mr882y78",
+      "type": "Section",
       "props": {
+        "heading": "高齢者肺炎球菌",
+        "level": 3,
         "content": [
-          {
-            "type": "heading",
-            "level": 3,
-            "text": "高齢者肺炎球菌"
-          },
           {
             "type": "paragraph",
             "runs": [
@@ -218,15 +209,12 @@
       }
     },
     {
-      "id": "richtext-taijohosin",
-      "type": "RichText",
+      "id": "section-9vgu58m9a",
+      "type": "Section",
       "props": {
+        "heading": "帯状疱疹ワクチン",
+        "level": 3,
         "content": [
-          {
-            "type": "heading",
-            "level": 3,
-            "text": "帯状疱疹ワクチン"
-          },
           {
             "type": "paragraph",
             "runs": [
@@ -293,19 +281,21 @@
       "id": "richtext-warning",
       "type": "RichText",
       "props": {
+        "content": []
+      }
+    },
+    {
+      "id": "richtext-warning-notification-0",
+      "type": "NotificationBanner",
+      "props": {
+        "severity": "warning",
+        "title": "接種間隔にご注意ください",
         "content": [
           {
-            "type": "callout",
-            "severity": "warning",
-            "title": "接種間隔にご注意ください",
-            "content": [
+            "type": "paragraph",
+            "runs": [
               {
-                "type": "paragraph",
-                "runs": [
-                  {
-                    "text": "注射生ワクチン（MR、水痘、BCGなど）を接種した後、別の注射生ワクチンを接種する場合は、27日以上の間隔をあけてください。"
-                  }
-                ]
+                "text": "注射生ワクチン（MR、水痘、BCGなど）を接種した後、別の注射生ワクチンを接種する場合は、27日以上の間隔をあけてください。"
               }
             ]
           }
@@ -318,16 +308,20 @@
       "props": {
         "items": [
           {
-            "title": "健康診査・がん検診",
+            "title": "健康診断・検診",
             "href": "/services/health/kenshin"
+          },
+          {
+            "title": "国民健康保険",
+            "href": "/services/health/kokuho"
           },
           {
             "title": "母子保健",
             "href": "/services/childcare/boshi"
           },
           {
-            "title": "後期高齢者医療",
-            "href": "/services/health/kouki"
+            "title": "高齢者福祉",
+            "href": "/services/welfare/koureisha"
           }
         ]
       }
@@ -341,6 +335,13 @@
         "email": "{{yobosesshu_email}}",
         "hours": "{{city_hall_hours}}",
         "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
       }
     }
   ],

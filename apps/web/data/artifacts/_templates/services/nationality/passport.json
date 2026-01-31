@@ -32,10 +32,6 @@
             "href": "/"
           },
           {
-            "label": "くらしの情報",
-            "href": "/topics"
-          },
-          {
             "label": "戸籍・国籍・在留",
             "href": "/topics/nationality"
           },
@@ -61,15 +57,12 @@
       }
     },
     {
-      "id": "richtext-1",
-      "type": "RichText",
+      "id": "section-raqdrcc5n",
+      "type": "Section",
       "props": {
+        "heading": "パスポートの種類",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "パスポートの種類"
-          },
           {
             "type": "list",
             "ordered": false,
@@ -105,73 +98,46 @@
                 }
               ]
             ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-7zomds0oe-table",
+      "type": "Table",
+      "props": {
+        "rows": [
+          {
+            "label": "一般旅券発給申請書",
+            "value": ""
           },
           {
-            "type": "heading",
-            "level": 2,
-            "text": "必要書類"
+            "label": "戸籍謄本（6か月以内）",
+            "value": ""
           },
           {
-            "type": "list",
-            "ordered": false,
-            "items": [
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "一般旅券発給申請書"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "戸籍謄本（6か月以内）"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "写真（6か月以内、縦45mm×横35mm）"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "本人確認書類"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "有効中のパスポート（更新の場合）"
-                    }
-                  ]
-                }
-              ]
-            ]
+            "label": "写真（6か月以内、縦45mm×横35mm）",
+            "value": ""
           },
           {
-            "type": "heading",
-            "level": 2,
-            "text": "受け取り"
+            "label": "本人確認書類",
+            "value": ""
           },
+          {
+            "label": "有効中のパスポート（更新の場合）",
+            "value": ""
+          }
+        ],
+        "heading": "必要書類"
+      }
+    },
+    {
+      "id": "section-lpi9mknfu",
+      "type": "Section",
+      "props": {
+        "heading": "受け取り",
+        "level": 2,
+        "content": [
           {
             "type": "paragraph",
             "runs": [
@@ -184,12 +150,39 @@
       }
     },
     {
+      "id": "related-links-aurz48vtc",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "戸籍",
+            "href": "/services/registration/koseki"
+          },
+          {
+            "title": "住民票",
+            "href": "/services/registration/juminhyo"
+          },
+          {
+            "title": "ビザ・在留資格",
+            "href": "/services/nationality/visa"
+          }
+        ]
+      }
+    },
+    {
       "id": "contact-1",
       "type": "Contact",
       "props": {
         "department": "{{passport_office_name}}",
         "phone": "{{passport_office_phone}}",
         "address": "{{passport_office_address}}"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
       }
     }
   ],

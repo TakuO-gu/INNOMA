@@ -32,10 +32,6 @@
             "href": "/"
           },
           {
-            "label": "くらしの情報",
-            "href": "/topics"
-          },
-          {
             "label": "社会保障・給付金",
             "href": "/topics/benefits"
           },
@@ -61,20 +57,21 @@
       }
     },
     {
-      "id": "richtext-overview",
-      "type": "RichText",
+      "id": "section-9kis44m82",
+      "type": "Section",
       "props": {
+        "heading": "国民年金の被保険者",
+        "level": 2,
+        "content": []
+      }
+    },
+    {
+      "id": "section-d2dm826f8",
+      "type": "Section",
+      "props": {
+        "heading": "第1号被保険者",
+        "level": 3,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "国民年金の被保険者"
-          },
-          {
-            "type": "heading",
-            "level": 3,
-            "text": "第1号被保険者"
-          },
           {
             "type": "paragraph",
             "runs": [
@@ -82,12 +79,17 @@
                 "text": "自営業者、学生、無職の方など。市区町村の窓口で届出を行い、自分で保険料を納付します。"
               }
             ]
-          },
-          {
-            "type": "heading",
-            "level": 3,
-            "text": "第2号被保険者"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-xnkikv7g6",
+      "type": "Section",
+      "props": {
+        "heading": "第2号被保険者",
+        "level": 3,
+        "content": [
           {
             "type": "paragraph",
             "runs": [
@@ -95,12 +97,17 @@
                 "text": "会社員や公務員など、厚生年金に加入している方。国民年金にも同時に加入しています。"
               }
             ]
-          },
-          {
-            "type": "heading",
-            "level": 3,
-            "text": "第3号被保険者"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-qr2xdgipp",
+      "type": "Section",
+      "props": {
+        "heading": "第3号被保険者",
+        "level": 3,
+        "content": [
           {
             "type": "paragraph",
             "runs": [
@@ -113,15 +120,12 @@
       }
     },
     {
-      "id": "richtext-todoke",
-      "type": "RichText",
+      "id": "section-8d6xy0qsk",
+      "type": "Section",
       "props": {
+        "heading": "届出が必要なとき",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "届出が必要なとき"
-          },
           {
             "type": "list",
             "ordered": false,
@@ -179,34 +183,24 @@
                 }
               ]
             ]
-          },
-          {
-            "type": "callout",
-            "severity": "warning",
-            "title": "注意",
-            "content": [
-              {
-                "type": "paragraph",
-                "runs": [
-                  {
-                    "text": "届出が遅れると、年金を受け取れなくなる場合があります。届出は事由が生じてから14日以内に行ってください。"
-                  }
-                ]
-              }
-            ]
           }
         ]
       }
     },
     {
-      "id": "richtext-hokenryo",
-      "type": "RichText",
+      "id": "section-8d6xy0qsk-notification-0",
+      "type": "NotificationBanner",
       "props": {
+        "severity": "warning",
+        "title": "注意",
         "content": [
           {
-            "type": "heading",
-            "level": 2,
-            "text": "保険料"
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "届出が遅れると、年金を受け取れなくなる場合があります。届出は事由が生じてから14日以内に行ってください。"
+              }
+            ]
           }
         ]
       }
@@ -232,19 +226,17 @@
             "label": "前納割引",
             "value": "1年前納で約4,000円、2年前納で約16,000円割引"
           }
-        ]
+        ],
+        "heading": "保険料"
       }
     },
     {
-      "id": "richtext-menjo",
-      "type": "RichText",
+      "id": "section-fgqwi2oh6",
+      "type": "Section",
       "props": {
+        "heading": "保険料の免除・猶予",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "保険料の免除・猶予"
-          },
           {
             "type": "paragraph",
             "runs": [
@@ -252,12 +244,17 @@
                 "text": "経済的な理由で保険料を納めることが困難な方は、以下の制度を利用できます。"
               }
             ]
-          },
-          {
-            "type": "heading",
-            "level": 3,
-            "text": "保険料免除制度"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-xo9u564u8",
+      "type": "Section",
+      "props": {
+        "heading": "保険料免除制度",
+        "level": 3,
+        "content": [
           {
             "type": "paragraph",
             "runs": [
@@ -265,12 +262,17 @@
                 "text": "所得が一定以下の方は、申請により保険料が全額または一部（4分の3、半額、4分の1）免除されます。"
               }
             ]
-          },
-          {
-            "type": "heading",
-            "level": 3,
-            "text": "学生納付特例制度"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-vgrsh7ar0",
+      "type": "Section",
+      "props": {
+        "heading": "学生納付特例制度",
+        "level": 3,
+        "content": [
           {
             "type": "paragraph",
             "runs": [
@@ -278,12 +280,17 @@
                 "text": "学生の方で本人の所得が一定以下の場合、在学中の保険料の納付が猶予されます。"
               }
             ]
-          },
-          {
-            "type": "heading",
-            "level": 3,
-            "text": "納付猶予制度"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-u9xcyhk7e",
+      "type": "Section",
+      "props": {
+        "heading": "納付猶予制度",
+        "level": 3,
+        "content": [
           {
             "type": "paragraph",
             "runs": [
@@ -296,20 +303,21 @@
       }
     },
     {
-      "id": "richtext-kyufu",
-      "type": "RichText",
+      "id": "section-yg9d4ceiq",
+      "type": "Section",
       "props": {
+        "heading": "受け取れる年金",
+        "level": 2,
+        "content": []
+      }
+    },
+    {
+      "id": "section-5ec5vgcwm",
+      "type": "Section",
+      "props": {
+        "heading": "老齢基礎年金",
+        "level": 3,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "受け取れる年金"
-          },
-          {
-            "type": "heading",
-            "level": 3,
-            "text": "老齢基礎年金"
-          },
           {
             "type": "paragraph",
             "runs": [
@@ -317,12 +325,17 @@
                 "text": "65歳から受け取る老後の年金。40年間保険料を納付した場合、満額で年額816,000円（令和6年度）"
               }
             ]
-          },
-          {
-            "type": "heading",
-            "level": 3,
-            "text": "障害基礎年金"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-j27sj0zs8",
+      "type": "Section",
+      "props": {
+        "heading": "障害基礎年金",
+        "level": 3,
+        "content": [
           {
             "type": "paragraph",
             "runs": [
@@ -330,12 +343,17 @@
                 "text": "病気やけがで障害が残ったときに受け取る年金。1級は年額1,020,000円、2級は年額816,000円"
               }
             ]
-          },
-          {
-            "type": "heading",
-            "level": 3,
-            "text": "遺族基礎年金"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-wh56trhyu",
+      "type": "Section",
+      "props": {
+        "heading": "遺族基礎年金",
+        "level": 3,
+        "content": [
           {
             "type": "paragraph",
             "runs": [
@@ -357,12 +375,24 @@
             "href": "/services/health/kokuho"
           },
           {
+            "title": "後期高齢者医療",
+            "href": "/services/health/kouki"
+          },
+          {
             "title": "介護保険",
             "href": "/services/welfare/kaigo"
           },
           {
-            "title": "障害者福祉",
-            "href": "/services/welfare/shogai"
+            "title": "死亡届",
+            "href": "/services/registration/shibou"
+          },
+          {
+            "title": "マイナンバーカード",
+            "href": "/services/registration/mynumber"
+          },
+          {
+            "title": "住民税",
+            "href": "/services/tax/juminzei"
           }
         ]
       }
@@ -376,6 +406,13 @@
         "email": "nenkin@sample-city.lg.jp",
         "hours": "平日 8:30〜17:15（土日祝日・年末年始を除く）",
         "address": "〒100-0001 東京都サンプル市中央1-1-1"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
       }
     }
   ],

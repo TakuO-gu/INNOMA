@@ -32,10 +32,6 @@
             "href": "/"
           },
           {
-            "label": "くらしの情報",
-            "href": "/topics"
-          },
-          {
             "label": "届出・証明",
             "href": "/topics/registration"
           },
@@ -61,15 +57,12 @@
       }
     },
     {
-      "id": "richtext-overview",
-      "type": "RichText",
+      "id": "section-2k95ecuax",
+      "type": "Section",
       "props": {
+        "heading": "届出期間",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "届出期間"
-          },
           {
             "type": "paragraph",
             "runs": [
@@ -77,23 +70,35 @@
                 "text": "引っ越しの14日前から届出できます。引っ越し後は速やかに届け出てください。"
               }
             ]
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-2k95ecuax-notification-0",
+      "type": "NotificationBanner",
+      "props": {
+        "severity": "info",
+        "title": "マイナポータルからオンライン申請可能",
+        "content": [
           {
-            "type": "callout",
-            "severity": "info",
-            "title": "マイナポータルからオンライン申請可能",
-            "content": [
+            "type": "paragraph",
+            "runs": [
               {
-                "type": "paragraph",
-                "runs": [
-                  {
-                    "text": "マイナンバーカードをお持ちの方は、マイナポータルから転出届をオンラインで届出できます。転入届の予約もできるため、引っ越し先での手続きがスムーズです。"
-                  }
-                ]
+                "text": "マイナンバーカードをお持ちの方は、マイナポータルから転出届をオンラインで届出できます。転入届の予約もできるため、引っ越し先での手続きがスムーズです。"
               }
             ]
           }
         ]
+      }
+    },
+    {
+      "id": "task-button-myna-portal",
+      "type": "TaskButton",
+      "props": {
+        "label": "マイナポータルで転出届を届出する",
+        "href": "https://myna.go.jp/",
+        "isTopTask": true
       }
     },
     {
@@ -127,104 +132,41 @@
       }
     },
     {
-      "id": "richtext-shorui",
-      "type": "RichText",
+      "id": "section-ipej88dfx-table",
+      "type": "Table",
       "props": {
-        "content": [
+        "rows": [
           {
-            "type": "heading",
-            "level": 2,
-            "text": "届出に必要なもの"
+            "label": "届出人の本人確認書類（マイナンバーカード、運転免許証など）",
+            "value": ""
           },
           {
-            "type": "list",
-            "ordered": false,
-            "items": [
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "届出人の本人確認書類",
-                      "bold": true
-                    },
-                    {
-                      "text": "（マイナンバーカード、運転免許証など）"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "マイナンバーカード",
-                      "bold": true
-                    },
-                    {
-                      "text": "（お持ちの方は転出届に必要。オンライン申請の場合は必須）"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "国民健康保険証",
-                      "bold": true
-                    },
-                    {
-                      "text": "（加入している場合は返却）"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "印鑑登録証",
-                      "bold": true
-                    },
-                    {
-                      "text": "（登録している場合は返却）"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "介護保険被保険者証",
-                      "bold": true
-                    },
-                    {
-                      "text": "（該当する場合）"
-                    }
-                  ]
-                }
-              ]
-            ]
+            "label": "マイナンバーカード（お持ちの方は転出届に必要。オンライン申請の場合は必須）",
+            "value": ""
+          },
+          {
+            "label": "国民健康保険証（加入している場合は返却）",
+            "value": ""
+          },
+          {
+            "label": "印鑑登録証（登録している場合は返却）",
+            "value": ""
+          },
+          {
+            "label": "介護保険被保険者証（該当する場合）",
+            "value": ""
           }
-        ]
+        ],
+        "heading": "届出に必要なもの"
       }
     },
     {
-      "id": "richtext-online",
-      "type": "RichText",
+      "id": "section-yahhd0icj",
+      "type": "Section",
       "props": {
+        "heading": "マイナポータルからの届出",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "マイナポータルからの届出"
-          },
           {
             "type": "paragraph",
             "runs": [
@@ -282,15 +224,12 @@
       }
     },
     {
-      "id": "richtext-sonota",
-      "type": "RichText",
+      "id": "section-b71oe0n3h",
+      "type": "Section",
       "props": {
+        "heading": "転出に伴うその他の手続き",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "転出に伴うその他の手続き"
-          },
           {
             "type": "paragraph",
             "runs": [
@@ -378,16 +317,28 @@
             "href": "/services/registration/tennyu"
           },
           {
-            "title": "転居届",
-            "href": "/services/registration/tenkyo"
+            "title": "住民票",
+            "href": "/services/registration/juminhyo"
           },
           {
             "title": "マイナンバーカード",
             "href": "/services/registration/mynumber"
           },
           {
+            "title": "印鑑登録",
+            "href": "/services/registration/inkan"
+          },
+          {
             "title": "国民健康保険",
             "href": "/services/health/kokuho"
+          },
+          {
+            "title": "児童手当",
+            "href": "/services/childcare/jidou-teate"
+          },
+          {
+            "title": "引越し手続き一覧",
+            "href": "/services/housing/moving-checklist"
           }
         ]
       }
@@ -401,6 +352,13 @@
         "email": "{{shimin_email}}",
         "hours": "{{city_hall_hours}}",
         "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
       }
     }
   ],

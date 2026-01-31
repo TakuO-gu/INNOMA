@@ -32,10 +32,6 @@
             "href": "/"
           },
           {
-            "label": "くらしの情報",
-            "href": "/topics"
-          },
-          {
             "label": "住まい・引越し",
             "href": "/topics/housing"
           },
@@ -61,15 +57,12 @@
       }
     },
     {
-      "id": "richtext-1",
-      "type": "RichText",
+      "id": "section-tzdcmje1l",
+      "type": "Section",
       "props": {
+        "heading": "対象となる工事",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "対象となる工事"
-          },
           {
             "type": "list",
             "ordered": false,
@@ -117,40 +110,43 @@
                 }
               ]
             ]
-          },
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "補助金額"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-npx6kxs7w",
+      "type": "Section",
+      "props": {
+        "heading": "補助金額",
+        "level": 2,
+        "content": [
           {
             "type": "paragraph",
             "runs": [
               {
-                "text": "工事費用の{{reform_subsidy_rate}}（上限{{reform_subsidy_max}}円）"
+                "text": "補助金額は制度や工事内容によって異なります。詳しくは担当窓口にお問い合わせください。"
               }
             ]
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "notification-important",
+      "type": "NotificationBanner",
+      "props": {
+        "severity": "warning",
+        "content": [
           {
-            "type": "heading",
-            "level": 2,
-            "text": "申請の注意点"
-          },
-          {
-            "type": "callout",
-            "severity": "warning",
-            "content": [
+            "type": "paragraph",
+            "runs": [
               {
-                "type": "paragraph",
-                "runs": [
-                  {
-                    "text": "工事着手前に申請が必要です。",
-                    "bold": true
-                  },
-                  {
-                    "text": "工事後の申請は受け付けられません。"
-                  }
-                ]
+                "text": "工事着手前に申請が必要です。",
+                "bold": true
+              },
+              {
+                "text": "工事後の申請は受け付けられませんのでご注意ください。"
               }
             ]
           }
@@ -164,15 +160,39 @@
         "rows": [
           {
             "label": "申請期間",
-            "value": "{{reform_application_period}}"
+            "value": "予算がなくなり次第終了"
           },
           {
             "label": "補助率",
-            "value": "{{reform_subsidy_rate}}"
+            "value": "制度により異なる"
           },
           {
             "label": "上限額",
-            "value": "{{reform_subsidy_max}}円"
+            "value": "制度により異なる"
+          }
+        ]
+      }
+    },
+    {
+      "id": "related-links-gdnwx2c3p",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "耐震改修",
+            "href": "/services/housing/seismic-retrofit"
+          },
+          {
+            "title": "住宅購入",
+            "href": "/services/housing/home-purchase"
+          },
+          {
+            "title": "介護保険",
+            "href": "/services/welfare/kaigo"
+          },
+          {
+            "title": "障害者福祉",
+            "href": "/services/welfare/shogai"
           }
         ]
       }
@@ -186,6 +206,13 @@
         "email": "{{housing_email}}",
         "hours": "{{city_hall_hours}}",
         "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
       }
     }
   ],

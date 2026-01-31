@@ -32,10 +32,6 @@
             "href": "/"
           },
           {
-            "label": "くらしの情報",
-            "href": "/topics"
-          },
-          {
             "label": "戸籍・国籍・在留",
             "href": "/topics/nationality"
           },
@@ -61,15 +57,12 @@
       }
     },
     {
-      "id": "richtext-1",
-      "type": "RichText",
+      "id": "section-5nr6huab3",
+      "type": "Section",
       "props": {
+        "heading": "住居地届出",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "住居地届出"
-          },
           {
             "type": "paragraph",
             "runs": [
@@ -81,12 +74,17 @@
                 "text": "に市区町村の窓口で届出が必要です。引越しの場合も同様です。"
               }
             ]
-          },
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "在留カードの届出が必要な場合"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-8aio8crfq",
+      "type": "Section",
+      "props": {
+        "heading": "在留カードの届出が必要な場合",
+        "level": 2,
+        "content": [
           {
             "type": "list",
             "ordered": false,
@@ -132,12 +130,17 @@
                 }
               ]
             ]
-          },
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "在留カードの有効期間更新"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-ante3s2m1",
+      "type": "Section",
+      "props": {
+        "heading": "在留カードの有効期間更新",
+        "level": 2,
+        "content": [
           {
             "type": "paragraph",
             "runs": [
@@ -145,6 +148,30 @@
                 "text": "永住者の在留カードは7年ごと、16歳未満の方は16歳の誕生日まで有効です。有効期間前に更新申請が必要です。"
               }
             ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "related-links-tpmephmqm",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "ビザ・在留資格",
+            "href": "/services/nationality/visa"
+          },
+          {
+            "title": "外国人登録",
+            "href": "/services/nationality/foreign-registration"
+          },
+          {
+            "title": "外国人相談",
+            "href": "/services/nationality/consultation"
+          },
+          {
+            "title": "住民票",
+            "href": "/services/registration/juminhyo"
           }
         ]
       }
@@ -158,6 +185,13 @@
         "email": "todokede@sample-city.lg.jp",
         "hours": "平日 8:30〜17:15（土日祝日・年末年始を除く）",
         "address": "〒100-0001 東京都サンプル市中央1-1-1"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
       }
     }
   ],

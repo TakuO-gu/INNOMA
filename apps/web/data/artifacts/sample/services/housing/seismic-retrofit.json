@@ -7,7 +7,9 @@
   "description": "木造住宅の耐震診断・耐震改修費用の補助",
   "content_type": "guide",
   "service_category": "housing",
-  "audience": ["residents"],
+  "audience": [
+    "residents"
+  ],
   "topic": [],
   "source": {
     "source_url": "template://sample/services/housing/seismic-retrofit",
@@ -25,10 +27,18 @@
       "type": "Breadcrumbs",
       "props": {
         "items": [
-          { "label": "ホーム", "href": "/" },
-          { "label": "くらしの情報", "href": "/topics" },
-          { "label": "住まい・引越し", "href": "/topics/housing" },
-          { "label": "耐震診断・耐震改修補助", "href": "/services/housing/seismic-retrofit" }
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "住まい・引越し",
+            "href": "/topics/housing"
+          },
+          {
+            "label": "耐震診断・耐震改修補助",
+            "href": "/services/housing/seismic-retrofit"
+          }
         ]
       }
     },
@@ -47,33 +57,92 @@
       }
     },
     {
-      "id": "richtext-1",
-      "type": "RichText",
+      "id": "section-0c4uw9veb",
+      "type": "Section",
       "props": {
+        "heading": "対象となる住宅",
+        "level": 2,
         "content": [
-          { "type": "heading", "level": 2, "text": "対象となる住宅" },
           {
             "type": "list",
             "ordered": false,
             "items": [
-              [{ "type": "paragraph", "runs": [{ "text": "昭和56年5月31日以前に着工した木造住宅" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "2階建て以下" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "在来軸組工法または伝統工法" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "現に居住している住宅" }] }]
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "昭和56年5月31日以前に着工した木造住宅"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "2階建て以下"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "在来軸組工法または伝統工法"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "現に居住している住宅"
+                    }
+                  ]
+                }
+              ]
             ]
-          },
-          { "type": "heading", "level": 2, "text": "耐震診断補助" },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-r20j0s6mp",
+      "type": "Section",
+      "props": {
+        "heading": "耐震診断補助",
+        "level": 2,
+        "content": [
           {
             "type": "paragraph",
             "runs": [
-              { "text": "耐震診断費用の2/3を補助（上限10万円）" }
+              {
+                "text": "耐震診断費用の2/3を補助（上限10万円）"
+              }
             ]
-          },
-          { "type": "heading", "level": 2, "text": "耐震改修補助" },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-q2vb2h9m0",
+      "type": "Section",
+      "props": {
+        "heading": "耐震改修補助",
+        "level": 2,
+        "content": [
           {
             "type": "paragraph",
             "runs": [
-              { "text": "耐震改修工事工事費の23%を補助（上限100万円）" }
+              {
+                "text": "耐震改修工事工事費の23%を補助（上限100万円）"
+              }
             ]
           }
         ]
@@ -89,8 +158,34 @@
           {
             "type": "paragraph",
             "runs": [
-              { "text": "サンプル市では、木造住宅の無料耐震診断を実施しています。詳しくはお問い合わせください。" }
+              {
+                "text": "サンプル市では、木造住宅の無料耐震診断を実施しています。詳しくはお問い合わせください。"
+              }
             ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "related-links-40riidp28",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "リフォーム補助",
+            "href": "/services/housing/reform-subsidy"
+          },
+          {
+            "title": "建築確認申請",
+            "href": "/services/housing/building-permit"
+          },
+          {
+            "title": "ハザードマップ",
+            "href": "/services/disaster/hazard-map"
+          },
+          {
+            "title": "避難所",
+            "href": "/services/disaster/hinanjo"
           }
         ]
       }
@@ -105,11 +200,25 @@
         "hours": "平日 8:30〜17:15（土日祝日・年末年始を除く）",
         "address": "〒100-0001 東京都サンプル市中央1-1-1"
       }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
+      }
     }
   ],
   "search": {
     "summary": "耐震診断・耐震改修補助の案内。昭和56年以前の木造住宅の耐震化支援。",
-    "keywords": ["耐震診断", "耐震改修", "木造住宅", "耐震化", "補助金", "地震対策"],
+    "keywords": [
+      "耐震診断",
+      "耐震改修",
+      "木造住宅",
+      "耐震化",
+      "補助金",
+      "地震対策"
+    ],
     "plain_text": "耐震診断・耐震改修補助。昭和56年5月以前の木造住宅が対象。耐震診断・耐震改修工事費用の一部を補助。"
   }
 }

@@ -32,10 +32,6 @@
             "href": "/"
           },
           {
-            "label": "くらしの情報",
-            "href": "/topics"
-          },
-          {
             "label": "運転・車両",
             "href": "/topics/driving"
           },
@@ -61,15 +57,12 @@
       }
     },
     {
-      "id": "richtext-1",
-      "type": "RichText",
+      "id": "section-6gstgb2on",
+      "type": "Section",
       "props": {
+        "heading": "自転車保険",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "自転車保険"
-          },
           {
             "type": "paragraph",
             "runs": [
@@ -77,12 +70,17 @@
                 "text": "富山県では自転車保険への加入が義務化されています。自転車事故で加害者になった場合の損害賠償に備えましょう。"
               }
             ]
-          },
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "チャイルドシート購入補助"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-mbnjrqts0",
+      "type": "Section",
+      "props": {
+        "heading": "チャイルドシート購入補助",
+        "level": 2,
+        "content": [
           {
             "type": "paragraph",
             "runs": [
@@ -90,12 +88,17 @@
                 "text": "{{childseat_subsidy_description}}"
               }
             ]
-          },
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "交通安全運動"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-v3czhjv65",
+      "type": "Section",
+      "props": {
+        "heading": "交通安全運動",
+        "level": 2,
+        "content": [
           {
             "type": "list",
             "ordered": false,
@@ -136,6 +139,30 @@
       }
     },
     {
+      "id": "related-links-gt80d2m9j",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "運転免許証",
+            "href": "/services/driving/license"
+          },
+          {
+            "title": "高齢者運転",
+            "href": "/services/driving/senior-driving"
+          },
+          {
+            "title": "交通事故",
+            "href": "/services/driving/accident"
+          },
+          {
+            "title": "駐車場",
+            "href": "/services/driving/parking"
+          }
+        ]
+      }
+    },
+    {
       "id": "contact-1",
       "type": "Contact",
       "props": {
@@ -144,6 +171,13 @@
         "email": "{{driving_email}}",
         "hours": "{{city_hall_hours}}",
         "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
       }
     }
   ],

@@ -32,10 +32,6 @@
             "href": "/"
           },
           {
-            "label": "くらしの情報",
-            "href": "/topics"
-          },
-          {
             "label": "健康・医療",
             "href": "/topics/health"
           },
@@ -61,15 +57,12 @@
       }
     },
     {
-      "id": "richtext-tokutei",
-      "type": "RichText",
+      "id": "section-7nnenq9dz",
+      "type": "Section",
       "props": {
+        "heading": "特定健康診査",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "特定健康診査"
-          },
           {
             "type": "paragraph",
             "runs": [
@@ -106,15 +99,12 @@
       }
     },
     {
-      "id": "richtext-kouki-kenshin",
-      "type": "RichText",
+      "id": "section-s9o77h128",
+      "type": "Section",
       "props": {
+        "heading": "後期高齢者健康診査",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "後期高齢者健康診査"
-          },
           {
             "type": "paragraph",
             "runs": [
@@ -147,15 +137,12 @@
       }
     },
     {
-      "id": "richtext-gan",
-      "type": "RichText",
+      "id": "section-i5uvgleji",
+      "type": "Section",
       "props": {
+        "heading": "がん検診",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "がん検診"
-          },
           {
             "type": "paragraph",
             "runs": [
@@ -200,19 +187,6 @@
       }
     },
     {
-      "id": "richtext-fee",
-      "type": "RichText",
-      "props": {
-        "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "検診費用"
-          }
-        ]
-      }
-    },
-    {
       "id": "table-fee",
       "type": "Table",
       "props": {
@@ -241,19 +215,17 @@
             "label": "子宮頸がん検診",
             "value": "{{gan_shikyukei_fee}}"
           }
-        ]
+        ],
+        "heading": "検診費用"
       }
     },
     {
-      "id": "richtext-menjo",
-      "type": "RichText",
+      "id": "section-dj99454h2",
+      "type": "Section",
       "props": {
+        "heading": "費用が無料になる方",
+        "level": 3,
         "content": [
-          {
-            "type": "heading",
-            "level": 3,
-            "text": "費用が無料になる方"
-          },
           {
             "type": "paragraph",
             "runs": [
@@ -341,16 +313,24 @@
       "props": {
         "items": [
           {
-            "title": "予防接種",
-            "href": "/services/health/yobosesshu"
-          },
-          {
             "title": "国民健康保険",
             "href": "/services/health/kokuho"
           },
           {
             "title": "後期高齢者医療",
             "href": "/services/health/kouki"
+          },
+          {
+            "title": "予防接種",
+            "href": "/services/health/yobosesshu"
+          },
+          {
+            "title": "高齢者福祉",
+            "href": "/services/welfare/koureisha"
+          },
+          {
+            "title": "母子保健",
+            "href": "/services/childcare/boshi"
           }
         ]
       }
@@ -364,6 +344,13 @@
         "email": "{{kenshin_email}}",
         "hours": "{{city_hall_hours}}",
         "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
       }
     }
   ],

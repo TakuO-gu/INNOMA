@@ -32,10 +32,6 @@
             "href": "/"
           },
           {
-            "label": "くらしの情報",
-            "href": "/topics"
-          },
-          {
             "label": "防災・安全",
             "href": "/topics/disaster"
           },
@@ -61,20 +57,21 @@
       }
     },
     {
-      "id": "richtext-shurui",
-      "type": "RichText",
+      "id": "section-g1q6r38x3",
+      "type": "Section",
       "props": {
+        "heading": "避難場所・避難所の種類",
+        "level": 2,
+        "content": []
+      }
+    },
+    {
+      "id": "section-27ttzj082",
+      "type": "Section",
+      "props": {
+        "heading": "指定緊急避難場所",
+        "level": 3,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "避難場所・避難所の種類"
-          },
-          {
-            "type": "heading",
-            "level": 3,
-            "text": "指定緊急避難場所"
-          },
           {
             "type": "paragraph",
             "runs": [
@@ -82,12 +79,17 @@
                 "text": "災害が発生し、または発生するおそれがある場合に、一時的に身を守るために避難する場所です。災害の種類（洪水、土砂災害、地震など）ごとに指定されています。"
               }
             ]
-          },
-          {
-            "type": "heading",
-            "level": 3,
-            "text": "指定避難所"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-ln6diuk0r",
+      "type": "Section",
+      "props": {
+        "heading": "指定避難所",
+        "level": 3,
+        "content": [
           {
             "type": "paragraph",
             "runs": [
@@ -95,12 +97,17 @@
                 "text": "災害により住居を失った方が、一定期間避難生活を送る施設です。学校の体育館や公民館などが指定されています。"
               }
             ]
-          },
-          {
-            "type": "heading",
-            "level": 3,
-            "text": "福祉避難所"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-fu0edqm5c",
+      "type": "Section",
+      "props": {
+        "heading": "福祉避難所",
+        "level": 3,
+        "content": [
           {
             "type": "paragraph",
             "runs": [
@@ -113,15 +120,12 @@
       }
     },
     {
-      "id": "richtext-ichiran",
-      "type": "RichText",
+      "id": "section-vzmcrjbam",
+      "type": "Section",
       "props": {
+        "heading": "主な避難所一覧",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "主な避難所一覧"
-          },
           {
             "type": "paragraph",
             "runs": [
@@ -163,15 +167,12 @@
       }
     },
     {
-      "id": "richtext-kaisetsu",
-      "type": "RichText",
+      "id": "section-r1yjbur4t",
+      "type": "Section",
       "props": {
+        "heading": "避難所の開設情報",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "避難所の開設情報"
-          },
           {
             "type": "paragraph",
             "runs": [
@@ -193,88 +194,44 @@
       }
     },
     {
-      "id": "richtext-hinan",
-      "type": "RichText",
+      "id": "section-21ob4myda-table",
+      "type": "Table",
       "props": {
-        "content": [
+        "rows": [
           {
-            "type": "heading",
-            "level": 2,
-            "text": "避難の心得"
+            "label": "避難場所・避難所への移動ルートを事前に確認しておきましょう",
+            "value": ""
           },
           {
-            "type": "list",
-            "ordered": false,
-            "items": [
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "避難場所・避難所への移動ルートを事前に確認しておきましょう"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "非常持出品を準備しておきましょう（水、食料、薬、携帯電話充電器など）"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "避難情報が出たら、早めの避難を心がけましょう"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "ペットを連れて避難する場合は、事前にルールを確認してください"
-                    }
-                  ]
-                }
-              ]
-            ]
+            "label": "非常持出品を準備しておきましょう（水、食料、薬、携帯電話充電器など）",
+            "value": ""
           },
           {
-            "type": "callout",
-            "severity": "warning",
-            "title": "在宅避難・分散避難のお願い",
-            "content": [
-              {
-                "type": "paragraph",
-                "runs": [
-                  {
-                    "text": "自宅が安全な場合は「在宅避難」、親戚・知人宅への避難も選択肢です。避難所の混雑を避けるため、分散避難へのご協力をお願いします。"
-                  }
-                ]
-              }
-            ]
+            "label": "避難情報が出たら、早めの避難を心がけましょう",
+            "value": ""
+          },
+          {
+            "label": "ペットを連れて避難する場合は、事前にルールを確認してください",
+            "value": ""
           }
-        ]
+        ],
+        "heading": "避難の心得"
       }
     },
     {
-      "id": "richtext-joho",
-      "type": "RichText",
+      "id": "section-21ob4myda-notification-0",
+      "type": "NotificationBanner",
       "props": {
+        "severity": "warning",
+        "title": "在宅避難・分散避難のお願い",
         "content": [
           {
-            "type": "heading",
-            "level": 2,
-            "text": "避難情報の種類"
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "自宅が安全な場合は「在宅避難」、親戚・知人宅への避難も選択肢です。避難所の混雑を避けるため、分散避難へのご協力をお願いします。"
+              }
+            ]
           }
         ]
       }
@@ -296,7 +253,8 @@
             "label": "警戒レベル5（緊急安全確保）",
             "value": "命を守る最善の行動を"
           }
-        ]
+        ],
+        "heading": "避難情報の種類"
       }
     },
     {
@@ -332,6 +290,13 @@
         "email": "bosai@sample-city.lg.jp",
         "hours": "平日 8:30〜17:15（土日祝日・年末年始を除く）",
         "address": "〒100-0001 東京都サンプル市中央1-1-1"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
       }
     }
   ],

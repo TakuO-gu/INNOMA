@@ -32,10 +32,6 @@
             "href": "/"
           },
           {
-            "label": "くらしの情報",
-            "href": "/topics"
-          },
-          {
             "label": "仕事・労働",
             "href": "/topics/employment"
           },
@@ -61,15 +57,12 @@
       }
     },
     {
-      "id": "richtext-1",
-      "type": "RichText",
+      "id": "section-j23tsh0s1",
+      "type": "Section",
       "props": {
+        "heading": "入会資格",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "入会資格"
-          },
           {
             "type": "list",
             "ordered": false,
@@ -105,12 +98,17 @@
                 }
               ]
             ]
-          },
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "主な仕事の種類"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-mjr2gtbw2",
+      "type": "Section",
+      "props": {
+        "heading": "主な仕事の種類",
+        "level": 2,
+        "content": [
           {
             "type": "list",
             "ordered": false,
@@ -166,12 +164,17 @@
                 }
               ]
             ]
-          },
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "会費"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-ahfmlamxd",
+      "type": "Section",
+      "props": {
+        "heading": "会費",
+        "level": 2,
+        "content": [
           {
             "type": "paragraph",
             "runs": [
@@ -184,6 +187,26 @@
       }
     },
     {
+      "id": "related-links-2avqlzh03",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "高齢者福祉",
+            "href": "/services/welfare/koureisha"
+          },
+          {
+            "title": "ハローワーク",
+            "href": "/services/employment/hello-work"
+          },
+          {
+            "title": "年金",
+            "href": "/services/benefits/nenkin"
+          }
+        ]
+      }
+    },
+    {
       "id": "contact-1",
       "type": "Contact",
       "props": {
@@ -191,6 +214,13 @@
         "phone": "{{silver_center_phone}}",
         "email": "{{silver_center_email}}",
         "address": "{{silver_center_address}}"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
       }
     }
   ],

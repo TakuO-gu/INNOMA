@@ -32,10 +32,6 @@
             "href": "/"
           },
           {
-            "label": "くらしの情報",
-            "href": "/topics"
-          },
-          {
             "label": "防災・安全",
             "href": "/topics/disaster"
           },
@@ -61,15 +57,12 @@
       }
     },
     {
-      "id": "richtext-naiyo",
-      "type": "RichText",
+      "id": "section-1a9rrfba4",
+      "type": "Section",
       "props": {
+        "heading": "配信される情報",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "配信される情報"
-          },
           {
             "type": "list",
             "ordered": false,
@@ -179,20 +172,21 @@
       }
     },
     {
-      "id": "richtext-touroku",
-      "type": "RichText",
+      "id": "section-xro9nmafh",
+      "type": "Section",
       "props": {
+        "heading": "登録方法",
+        "level": 2,
+        "content": []
+      }
+    },
+    {
+      "id": "section-oycvt84ra",
+      "type": "Section",
+      "props": {
+        "heading": "メールで登録",
+        "level": 3,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "登録方法"
-          },
-          {
-            "type": "heading",
-            "level": 3,
-            "text": "メールで登録"
-          },
           {
             "type": "paragraph",
             "runs": [
@@ -206,17 +200,53 @@
             ]
           },
           {
-            "type": "callout",
-            "severity": "info",
-            "title": "お知らせ",
-            "content": [
+            "type": "paragraph",
+            "runs": [
               {
-                "type": "paragraph",
-                "runs": [
-                  {
-                    "text": "迷惑メール対策をしている方は、上記ドメインからのメールを受信できるよう設定してください。"
-                  }
-                ]
+                "text": "お知らせ",
+                "bold": true
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "迷惑メール対策をしている方は、上記ドメインからのメールを受信できるよう設定してください。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-qr-registration",
+      "type": "Section",
+      "props": {
+        "heading": "QRコードで登録",
+        "level": 3,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "スマートフォンのカメラでQRコードを読み取り、表示されたURLにアクセスして登録できます。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "登録用URL："
+              },
+              {
+                "text": "https://www.sample-city.lg.jp/bosai/qr-register",
+                "bold": true,
+                "link": {
+                  "href": "https://www.sample-city.lg.jp/bosai/qr-register",
+                  "external": true
+                }
               }
             ]
           }
@@ -233,20 +263,21 @@
       }
     },
     {
-      "id": "richtext-sonota",
-      "type": "RichText",
+      "id": "section-q1b4vvy02",
+      "type": "Section",
       "props": {
+        "heading": "その他の情報入手手段",
+        "level": 2,
+        "content": []
+      }
+    },
+    {
+      "id": "section-2xrmtqfm7",
+      "type": "Section",
+      "props": {
+        "heading": "防災行政無線",
+        "level": 3,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "その他の情報入手手段"
-          },
-          {
-            "type": "heading",
-            "level": 3,
-            "text": "防災行政無線"
-          },
           {
             "type": "paragraph",
             "runs": [
@@ -254,12 +285,17 @@
                 "text": "屋外スピーカーから避難情報などをお知らせします。聞き取れなかった場合は、テレホンサービス（0120-xxx-xxx）で確認できます。"
               }
             ]
-          },
-          {
-            "type": "heading",
-            "level": 3,
-            "text": "市公式SNS"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-l5oct6wxl",
+      "type": "Section",
+      "props": {
+        "heading": "市公式SNS",
+        "level": 3,
+        "content": [
           {
             "type": "paragraph",
             "runs": [
@@ -267,12 +303,17 @@
                 "text": "X（旧Twitter）やLINEでも防災情報を配信しています。"
               }
             ]
-          },
-          {
-            "type": "heading",
-            "level": 3,
-            "text": "緊急速報メール"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-94rq4hear",
+      "type": "Section",
+      "props": {
+        "heading": "緊急速報メール",
+        "level": 3,
+        "content": [
           {
             "type": "paragraph",
             "runs": [
@@ -313,6 +354,13 @@
         "email": "bosai@sample-city.lg.jp",
         "hours": "平日 8:30〜17:15（土日祝日・年末年始を除く）",
         "address": "〒100-0001 東京都サンプル市中央1-1-1"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
       }
     }
   ],

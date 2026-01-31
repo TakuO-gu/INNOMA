@@ -9,7 +9,6 @@ import type { RichTextContent } from "@/lib/artifact/types";
 import type { RichTextNodeType } from "@/lib/artifact/schema";
 import { useMunicipality, prefixInternalLink } from "./MunicipalityContext";
 import type { RichTextNode } from "./types";
-import { renderNotificationBanner } from "./components/NotificationBannerRenderer";
 import { budouxParse } from "@/components/BudouX";
 
 export function RichTextRenderer({ content }: { content: RichTextContent | RichTextNodeType[] }) {
@@ -59,6 +58,26 @@ export function RichTextRenderer({ content }: { content: RichTextContent | RichT
   return null;
 }
 
+/**
+ * テキスト内に未解決の変数（{{...}}）が含まれているかチェック
+ */
+function containsUnresolvedVariable(text: string): boolean {
+  return /\{\{[^}]+\}\}/.test(text);
+}
+
+/**
+ * ノードに未解決の変数が含まれているかチェック（再帰的）
+ */
+function nodeContainsUnresolvedVariable(node: RichTextNode): boolean {
+  if (node.type === "paragraph" && node.runs) {
+    return node.runs.some(run => containsUnresolvedVariable(run.text || ""));
+  }
+  if (node.type === "heading" && node.text) {
+    return containsUnresolvedVariable(node.text);
+  }
+  return false;
+}
+
 function renderNodes(nodes: RichTextNode[], municipalityId: string): React.ReactNode[] {
   return nodes.map((node, idx) => renderNode(node, idx, municipalityId));
 }
@@ -85,22 +104,40 @@ function renderNode(node: RichTextNode, key: number, municipalityId: string): Re
       );
     }
 
-    case "paragraph":
+    case "paragraph": {
+      // 未解決変数を含む段落は非表示
+      if (nodeContainsUnresolvedVariable(node)) {
+        return null;
+      }
       return (
         <p key={key} className="text-std-16N-170 text-solid-gray-800 budoux">
           {node.runs?.map((run, runIdx) => renderRun(run, runIdx, municipalityId))}
         </p>
       );
+    }
 
     case "list": {
       const ListTag = node.ordered ? "ol" : "ul";
       // DADS推奨: pl-8でインデント、list-[revert]でブラウザデフォルトのマーカー表示
+      // my-4 でリストの前後にスペースを追加（段落との間隔を確保）
       const listClass = node.ordered
-        ? "pl-8 list-decimal space-y-1 text-std-16N-170 text-solid-gray-800"
-        : "pl-8 list-disc space-y-1 text-std-16N-170 text-solid-gray-800";
+        ? "pl-8 list-decimal space-y-1 text-std-16N-170 text-solid-gray-800 my-4"
+        : "pl-8 list-disc space-y-1 text-std-16N-170 text-solid-gray-800 my-4";
+
+      // 未解決変数を含むアイテムをフィルタリング
+      const filteredItems = node.items?.filter(item => {
+        // アイテム内のノードに未解決変数が含まれていないかチェック
+        return !item.some(subNode => nodeContainsUnresolvedVariable(subNode));
+      });
+
+      // フィルタリング後にアイテムがない場合はnullを返す
+      if (!filteredItems || filteredItems.length === 0) {
+        return null;
+      }
+
       return (
         <ListTag key={key} className={listClass}>
-          {node.items?.map((item, itemIdx) => (
+          {filteredItems.map((item, itemIdx) => (
             <li key={itemIdx}>
               {item.map((subNode, subIdx) => renderNode(subNode, subIdx, municipalityId))}
             </li>
@@ -110,18 +147,25 @@ function renderNode(node: RichTextNode, key: number, municipalityId: string): Re
     }
 
     case "callout": {
-      // 共通のrenderNotificationBanner関数を使用
-      return (
-        <React.Fragment key={key}>
-          {renderNotificationBanner({
-            severity: node.severity as "info" | "warning" | "danger" | "success",
-            title: node.title,
-            content: node.content as RichTextNodeType[] | undefined,
-            municipalityId,
-            contentRenderer: (content) => content.map((subNode, subIdx) => renderNode(subNode as RichTextNode, subIdx, municipalityId)),
-          })}
-        </React.Fragment>
-      );
+      // 廃止: calloutはDADSに存在しないため、contentのみを表示
+      // 既存データの後方互換性のために残す
+      if (node.content) {
+        return (
+          <div key={key} className="my-4">
+            {node.title && (
+              <p className="text-std-16B-170 text-solid-gray-900 mb-2">
+                {node.title}
+              </p>
+            )}
+            <div className="text-std-16N-170 text-solid-gray-800">
+              {(node.content as RichTextNode[]).map((subNode, subIdx) =>
+                renderNode(subNode, subIdx, municipalityId)
+              )}
+            </div>
+          </div>
+        );
+      }
+      return null;
     }
 
     case "divider":

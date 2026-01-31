@@ -33,10 +33,6 @@
             "href": "/"
           },
           {
-            "label": "くらしの情報",
-            "href": "/topics"
-          },
-          {
             "label": "福祉・介護",
             "href": "/topics/welfare"
           },
@@ -62,20 +58,21 @@
       }
     },
     {
-      "id": "richtext-overview",
-      "type": "RichText",
+      "id": "section-a1clmhsok",
+      "type": "Section",
       "props": {
+        "heading": "介護保険の対象者",
+        "level": 2,
+        "content": []
+      }
+    },
+    {
+      "id": "section-n1yzzmr0c",
+      "type": "Section",
+      "props": {
+        "heading": "第1号被保険者（65歳以上の方）",
+        "level": 3,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "介護保険の対象者"
-          },
-          {
-            "type": "heading",
-            "level": 3,
-            "text": "第1号被保険者（65歳以上の方）"
-          },
           {
             "type": "paragraph",
             "runs": [
@@ -83,12 +80,17 @@
                 "text": "原因を問わず、介護や日常生活の支援が必要と認定された場合にサービスを利用できます。"
               }
             ]
-          },
-          {
-            "type": "heading",
-            "level": 3,
-            "text": "第2号被保険者（40〜64歳の方）"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-xylit2rym",
+      "type": "Section",
+      "props": {
+        "heading": "第2号被保険者（40〜64歳の方）",
+        "level": 3,
+        "content": [
           {
             "type": "paragraph",
             "runs": [
@@ -144,19 +146,6 @@
       }
     },
     {
-      "id": "richtext-nintei",
-      "type": "RichText",
-      "props": {
-        "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "要介護度と利用できるサービス"
-          }
-        ]
-      }
-    },
-    {
       "id": "table-nintei",
       "type": "Table",
       "props": {
@@ -189,24 +178,26 @@
             "label": "要介護5",
             "value": "意思の伝達も困難で、介護なしでは日常生活が送れない"
           }
-        ]
+        ],
+        "heading": "要介護度と利用できるサービス"
       }
     },
     {
-      "id": "richtext-services",
-      "type": "RichText",
+      "id": "section-00rxvs7gi",
+      "type": "Section",
       "props": {
+        "heading": "利用できる介護サービス",
+        "level": 2,
+        "content": []
+      }
+    },
+    {
+      "id": "section-779ohaahf",
+      "type": "Section",
+      "props": {
+        "heading": "在宅サービス",
+        "level": 3,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "利用できる介護サービス"
-          },
-          {
-            "type": "heading",
-            "level": 3,
-            "text": "在宅サービス"
-          },
           {
             "type": "list",
             "ordered": false,
@@ -272,12 +263,17 @@
                 }
               ]
             ]
-          },
-          {
-            "type": "heading",
-            "level": 3,
-            "text": "施設サービス"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-fgo76eawe",
+      "type": "Section",
+      "props": {
+        "heading": "施設サービス",
+        "level": 3,
+        "content": [
           {
             "type": "list",
             "ordered": false,
@@ -313,12 +309,17 @@
                 }
               ]
             ]
-          },
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "自己負担"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-ik2jwsq2p",
+      "type": "Section",
+      "props": {
+        "heading": "自己負担",
+        "level": 2,
+        "content": [
           {
             "type": "paragraph",
             "runs": [
@@ -345,15 +346,12 @@
       }
     },
     {
-      "id": "richtext-hoken",
-      "type": "RichText",
+      "id": "section-4nvbqq7pw",
+      "type": "Section",
       "props": {
+        "heading": "介護保険料",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "介護保険料"
-          },
           {
             "type": "paragraph",
             "runs": [
@@ -387,20 +385,28 @@
       "props": {
         "items": [
           {
+            "title": "高齢者福祉",
+            "href": "/services/welfare/koureisha"
+          },
+          {
             "title": "地域包括支援センター",
             "href": "/services/welfare/houkatsu"
           },
           {
-            "title": "高齢者福祉",
-            "href": "/services/welfare/koureisha"
+            "title": "後期高齢者医療",
+            "href": "/services/health/kouki"
+          },
+          {
+            "title": "国民健康保険",
+            "href": "/services/health/kokuho"
           },
           {
             "title": "障害者福祉",
             "href": "/services/welfare/shogai"
           },
           {
-            "title": "国民健康保険",
-            "href": "/services/health/kokuho"
+            "title": "年金",
+            "href": "/services/benefits/nenkin"
           }
         ]
       }
@@ -414,6 +420,13 @@
         "email": "{{kaigo_email}}",
         "hours": "{{city_hall_hours}}",
         "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
       }
     }
   ],

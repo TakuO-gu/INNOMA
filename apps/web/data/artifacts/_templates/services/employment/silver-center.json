@@ -7,7 +7,9 @@
   "description": "{{municipality_name}}シルバー人材センターの入会・仕事案内",
   "content_type": "guide",
   "service_category": "business",
-  "audience": ["residents"],
+  "audience": [
+    "residents"
+  ],
   "topic": [],
   "source": {
     "source_url": "template://sample/services/employment/silver-center",
@@ -25,10 +27,18 @@
       "type": "Breadcrumbs",
       "props": {
         "items": [
-          { "label": "ホーム", "href": "/" },
-          { "label": "くらしの情報", "href": "/topics" },
-          { "label": "仕事・労働", "href": "/topics/employment" },
-          { "label": "シルバー人材センター", "href": "/services/employment/silver-center" }
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "仕事・労働",
+            "href": "/topics/employment"
+          },
+          {
+            "label": "シルバー人材センター",
+            "href": "/services/employment/silver-center"
+          }
         ]
       }
     },
@@ -47,38 +57,151 @@
       }
     },
     {
-      "id": "richtext-1",
-      "type": "RichText",
+      "id": "section-nc7dmo5zl",
+      "type": "Section",
       "props": {
+        "heading": "入会資格",
+        "level": 2,
         "content": [
-          { "type": "heading", "level": 2, "text": "入会資格" },
           {
             "type": "list",
             "ordered": false,
             "items": [
-              [{ "type": "paragraph", "runs": [{ "text": "おおむね60歳以上の方" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "{{municipality_name}}に在住の方" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "健康で働く意欲のある方" }] }]
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "おおむね60歳以上の方"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "{{municipality_name}}に在住の方"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "健康で働く意欲のある方"
+                    }
+                  ]
+                }
+              ]
             ]
-          },
-          { "type": "heading", "level": 2, "text": "主な仕事の種類" },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-rz3mesbp4",
+      "type": "Section",
+      "props": {
+        "heading": "主な仕事の種類",
+        "level": 2,
+        "content": [
           {
             "type": "list",
             "ordered": false,
             "items": [
-              [{ "type": "paragraph", "runs": [{ "text": "一般作業（除草、清掃、軽作業など）" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "技能作業（大工、塗装、植木剪定など）" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "管理作業（施設管理、駐車場管理など）" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "サービス作業（家事援助、子育て支援など）" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "事務作業（一般事務、経理など）" }] }]
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "一般作業（除草、清掃、軽作業など）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "技能作業（大工、塗装、植木剪定など）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "管理作業（施設管理、駐車場管理など）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "サービス作業（家事援助、子育て支援など）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "事務作業（一般事務、経理など）"
+                    }
+                  ]
+                }
+              ]
             ]
-          },
-          { "type": "heading", "level": 2, "text": "会費" },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-wbwhm4oue",
+      "type": "Section",
+      "props": {
+        "heading": "会費",
+        "level": 2,
+        "content": [
           {
             "type": "paragraph",
             "runs": [
-              { "text": "年会費：{{silver_center_fee}}円" }
+              {
+                "text": "年会費：{{silver_center_fee}}円"
+              }
             ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "related-links-cs51wad78",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "高齢者福祉",
+            "href": "/services/welfare/koureisha"
+          },
+          {
+            "title": "ハローワーク",
+            "href": "/services/employment/hello-work"
+          },
+          {
+            "title": "年金",
+            "href": "/services/benefits/nenkin"
           }
         ]
       }
@@ -92,11 +215,24 @@
         "email": "{{silver_center_email}}",
         "address": "{{silver_center_address}}"
       }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
+      }
     }
   ],
   "search": {
     "summary": "シルバー人材センターの案内。入会資格、主な仕事の種類、会費。",
-    "keywords": ["シルバー人材センター", "高齢者就労", "60歳以上", "臨時仕事", "短期仕事"],
+    "keywords": [
+      "シルバー人材センター",
+      "高齢者就労",
+      "60歳以上",
+      "臨時仕事",
+      "短期仕事"
+    ],
     "plain_text": "シルバー人材センター。60歳以上の方が経験を活かして働く。除草、清掃、植木剪定、家事援助など様々な仕事。"
   }
 }

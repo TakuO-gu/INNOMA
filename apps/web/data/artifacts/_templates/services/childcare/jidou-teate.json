@@ -7,7 +7,10 @@
   "description": "児童手当の対象者、支給額、申請手続きについて",
   "content_type": "guide",
   "service_category": "children",
-  "audience": ["residents", "children_families"],
+  "audience": [
+    "residents",
+    "children_families"
+  ],
   "topic": [],
   "source": {
     "source_url": "template://sample/services/childcare/jidou-teate",
@@ -25,10 +28,18 @@
       "type": "Breadcrumbs",
       "props": {
         "items": [
-          { "label": "ホーム", "href": "/" },
-          { "label": "くらしの情報", "href": "/topics" },
-          { "label": "子育て・教育", "href": "/topics/children" },
-          { "label": "児童手当", "href": "/services/childcare/jidou-teate" }
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "子育て・教育",
+            "href": "/topics/childcare"
+          },
+          {
+            "label": "児童手当",
+            "href": "/services/childcare/jidou-teate"
+          }
         ]
       }
     },
@@ -56,39 +67,37 @@
           {
             "type": "paragraph",
             "runs": [
-              { "text": "所得制限の撤廃、対象年齢の高校生年代までの拡大、第3子以降の支給額増額、支給回数の年6回への変更などが行われました。" }
+              {
+                "text": "所得制限の撤廃、対象年齢の高校生年代までの拡大、第3子以降の支給額増額、支給回数の年6回への変更などが行われました。"
+              }
             ]
           }
         ]
       }
     },
     {
-      "id": "richtext-taisho",
-      "type": "RichText",
+      "id": "section-2xtaf6cpe",
+      "type": "Section",
       "props": {
+        "heading": "対象となる方",
+        "level": 2,
         "content": [
-          { "type": "heading", "level": 2, "text": "対象となる方" },
           {
             "type": "paragraph",
             "runs": [
-              { "text": "市内に住所があり、高校生年代まで（18歳到達後の最初の3月31日まで）の児童を養育している方" }
+              {
+                "text": "市内に住所があり、高校生年代まで（18歳到達後の最初の3月31日まで）の児童を養育している方"
+              }
             ]
           },
           {
             "type": "paragraph",
             "runs": [
-              { "text": "令和6年10月から所得制限が撤廃されました。所得にかかわらず支給されます。公務員の方は勤務先から支給されますので、勤務先で手続きしてください。" }
+              {
+                "text": "令和6年10月から所得制限が撤廃されました。所得にかかわらず支給されます。公務員の方は勤務先から支給されますので、勤務先で手続きしてください。"
+              }
             ]
           }
-        ]
-      }
-    },
-    {
-      "id": "richtext-gaku",
-      "type": "RichText",
-      "props": {
-        "content": [
-          { "type": "heading", "level": 2, "text": "支給額（月額）" }
         ]
       }
     },
@@ -97,11 +106,24 @@
       "type": "Table",
       "props": {
         "rows": [
-          { "label": "3歳未満（第1子・第2子）", "value": "15,000円" },
-          { "label": "3歳未満（第3子以降）", "value": "30,000円" },
-          { "label": "3歳〜高校生年代（第1子・第2子）", "value": "10,000円" },
-          { "label": "3歳〜高校生年代（第3子以降）", "value": "30,000円" }
-        ]
+          {
+            "label": "3歳未満（第1子・第2子）",
+            "value": "15,000円"
+          },
+          {
+            "label": "3歳未満（第3子以降）",
+            "value": "30,000円"
+          },
+          {
+            "label": "3歳〜高校生年代（第1子・第2子）",
+            "value": "10,000円"
+          },
+          {
+            "label": "3歳〜高校生年代（第3子以降）",
+            "value": "30,000円"
+          }
+        ],
+        "heading": "支給額（月額）"
       }
     },
     {
@@ -112,22 +134,27 @@
           {
             "type": "paragraph",
             "runs": [
-              { "text": "※「第3子以降」のカウントは、22歳に達する日以後の最初の3月31日までの子（大学生年代まで）を含めて数えます（令和6年10月から変更）。" }
+              {
+                "text": "※「第3子以降」のカウントは、22歳に達する日以後の最初の3月31日までの子（大学生年代まで）を含めて数えます（令和6年10月から変更）。"
+              }
             ]
           }
         ]
       }
     },
     {
-      "id": "richtext-shikyuhi",
-      "type": "RichText",
+      "id": "section-sanisw975",
+      "type": "Section",
       "props": {
+        "heading": "支給日",
+        "level": 2,
         "content": [
-          { "type": "heading", "level": 2, "text": "支給日" },
           {
             "type": "paragraph",
             "runs": [
-              { "text": "年6回（偶数月：2月・4月・6月・8月・10月・12月）に、前月分までをまとめて支給します。" }
+              {
+                "text": "年6回（偶数月：2月・4月・6月・8月・10月・12月）に、前月分までをまとめて支給します。"
+              }
             ]
           }
         ]
@@ -138,46 +165,107 @@
       "type": "Table",
       "props": {
         "rows": [
-          { "label": "2月支給", "value": "12月〜1月分" },
-          { "label": "4月支給", "value": "2月〜3月分" },
-          { "label": "6月支給", "value": "4月〜5月分" },
-          { "label": "8月支給", "value": "6月〜7月分" },
-          { "label": "10月支給", "value": "8月〜9月分" },
-          { "label": "12月支給", "value": "10月〜11月分" }
+          {
+            "label": "2月支給",
+            "value": "12月〜1月分"
+          },
+          {
+            "label": "4月支給",
+            "value": "2月〜3月分"
+          },
+          {
+            "label": "6月支給",
+            "value": "4月〜5月分"
+          },
+          {
+            "label": "8月支給",
+            "value": "6月〜7月分"
+          },
+          {
+            "label": "10月支給",
+            "value": "8月〜9月分"
+          },
+          {
+            "label": "12月支給",
+            "value": "10月〜11月分"
+          }
         ]
       }
     },
     {
-      "id": "richtext-shinsei",
-      "type": "RichText",
+      "id": "section-tozg4j4ef",
+      "type": "Section",
       "props": {
+        "heading": "申請手続き",
+        "level": 2,
+        "content": []
+      }
+    },
+    {
+      "id": "section-daovrpzuu",
+      "type": "Section",
+      "props": {
+        "heading": "認定請求（新規申請）",
+        "level": 3,
         "content": [
-          { "type": "heading", "level": 2, "text": "申請手続き" },
-          { "type": "heading", "level": 3, "text": "認定請求（新規申請）" },
           {
             "type": "paragraph",
             "runs": [
-              { "text": "以下の場合は、申請が必要です。" }
+              {
+                "text": "以下の場合は、申請が必要です。"
+              }
             ]
           },
           {
             "type": "list",
             "ordered": false,
             "items": [
-              [{ "type": "paragraph", "runs": [{ "text": "お子さんが生まれたとき" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "他の市区町村から転入したとき" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "公務員でなくなったとき" }] }]
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "お子さんが生まれたとき"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "他の市区町村から転入したとき"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "公務員でなくなったとき"
+                    }
+                  ]
+                }
+              ]
             ]
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-daovrpzuu-notification-0",
+      "type": "NotificationBanner",
+      "props": {
+        "severity": "warning",
+        "content": [
           {
-            "type": "callout",
-            "severity": "warning",
-            "content": [
+            "type": "paragraph",
+            "runs": [
               {
-                "type": "paragraph",
-                "runs": [
-                  { "text": "原則として、申請月の翌月分から支給開始となります。出生・転入から15日以内に申請してください（15日特例）。" }
-                ]
+                "text": "原則として、申請月の翌月分から支給開始となります。出生・転入から15日以内に申請してください（15日特例）。"
               }
             ]
           }
@@ -185,73 +273,224 @@
       }
     },
     {
-      "id": "richtext-hitsuyoshorui",
-      "type": "RichText",
+      "id": "section-a4j3ecx0g",
+      "type": "Section",
       "props": {
+        "heading": "申請に必要なもの",
+        "level": 3,
         "content": [
-          { "type": "heading", "level": 3, "text": "申請に必要なもの" },
           {
             "type": "list",
             "ordered": false,
             "items": [
-              [{ "type": "paragraph", "runs": [{ "text": "認定請求書" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "請求者名義の口座がわかるもの（通帳またはキャッシュカード）" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "請求者と配偶者のマイナンバーがわかるもの" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "請求者の本人確認書類" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "健康保険証の写し（3歳未満の児童がいる場合）" }] }]
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "認定請求書"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "請求者名義の口座がわかるもの（通帳またはキャッシュカード）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "請求者と配偶者のマイナンバーがわかるもの"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "請求者の本人確認書類"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "健康保険証の写し（3歳未満の児童がいる場合）"
+                    }
+                  ]
+                }
+              ]
             ]
           }
         ]
       }
     },
     {
-      "id": "richtext-henkou",
-      "type": "RichText",
+      "id": "section-egu57kx3i",
+      "type": "Section",
       "props": {
+        "heading": "届出が必要なとき",
+        "level": 2,
         "content": [
-          { "type": "heading", "level": 2, "text": "届出が必要なとき" },
           {
             "type": "paragraph",
             "runs": [
-              { "text": "以下の場合は届出が必要です。届出が遅れると、手当の支給が遅れたり、返還が必要になる場合があります。" }
+              {
+                "text": "以下の場合は届出が必要です。届出が遅れると、手当の支給が遅れたり、返還が必要になる場合があります。"
+              }
             ]
           },
           {
             "type": "list",
             "ordered": false,
             "items": [
-              [{ "type": "paragraph", "runs": [{ "text": "第2子以降が生まれたとき（額改定）" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "児童と別居するようになったとき" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "受給者または児童の住所が変わったとき" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "振込口座を変更するとき" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "離婚・婚姻したとき" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "公務員になったとき（受給事由消滅届）" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "他の市区町村へ転出するとき（受給事由消滅届）" }] }]
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "第2子以降が生まれたとき（額改定）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "児童と別居するようになったとき"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "受給者または児童の住所が変わったとき"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "振込口座を変更するとき"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "離婚・婚姻したとき"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "公務員になったとき（受給事由消滅届）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "他の市区町村へ転出するとき（受給事由消滅届）"
+                    }
+                  ]
+                }
+              ]
             ]
           }
         ]
       }
     },
     {
-      "id": "richtext-genkyo",
-      "type": "RichText",
+      "id": "section-g2taxvwkj",
+      "type": "Section",
       "props": {
+        "heading": "現況届",
+        "level": 2,
         "content": [
-          { "type": "heading", "level": 2, "text": "現況届" },
           {
             "type": "paragraph",
             "runs": [
-              { "text": "令和4年度から、多くの方は現況届の提出が不要になりました。ただし、以下に該当する方は引き続き提出が必要です。" }
+              {
+                "text": "令和4年度から、多くの方は現況届の提出が不要になりました。ただし、以下に該当する方は引き続き提出が必要です。"
+              }
             ]
           },
           {
             "type": "list",
             "ordered": false,
             "items": [
-              [{ "type": "paragraph", "runs": [{ "text": "配偶者からの暴力により住民票の住所と異なる市区町村で受給している方" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "支給要件児童の戸籍がない方" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "離婚協議中で配偶者と別居している方" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "その他、市から提出の依頼があった方" }] }]
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "配偶者からの暴力により住民票の住所と異なる市区町村で受給している方"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "支給要件児童の戸籍がない方"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "離婚協議中で配偶者と別居している方"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "その他、市から提出の依頼があった方"
+                    }
+                  ]
+                }
+              ]
             ]
           }
         ]
@@ -262,10 +501,30 @@
       "type": "RelatedLinks",
       "props": {
         "items": [
-          { "title": "子ども医療費助成", "href": "/services/childcare/kodomo-iryohi" },
-          { "title": "児童扶養手当", "href": "/services/childcare/jidou-fuyou-teate" },
-          { "title": "母子保健", "href": "/services/childcare/boshi" },
-          { "title": "保育園・幼稚園", "href": "/services/childcare/hoikuen" }
+          {
+            "title": "母子保健",
+            "href": "/services/childcare/boshi"
+          },
+          {
+            "title": "保育所入所申請",
+            "href": "/services/childcare/nursery-apply"
+          },
+          {
+            "title": "出生届",
+            "href": "/services/registration/shussei"
+          },
+          {
+            "title": "転入届",
+            "href": "/services/registration/tennyu"
+          },
+          {
+            "title": "国民健康保険",
+            "href": "/services/health/kokuho"
+          },
+          {
+            "title": "予防接種",
+            "href": "/services/health/yobosesshu"
+          }
         ]
       }
     },
@@ -279,11 +538,25 @@
         "hours": "{{city_hall_hours}}",
         "address": "{{city_hall_address}}"
       }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
+      }
     }
   ],
   "search": {
     "summary": "児童手当の案内。高校生年代までの児童を養育している方に支給。所得制限なし。3歳未満15,000円、3歳〜高校生10,000円（第3子以降は30,000円）。",
-    "keywords": ["児童手当", "子育て支援", "高校生", "支給額", "申請", "第3子"],
+    "keywords": [
+      "児童手当",
+      "子育て支援",
+      "高校生",
+      "支給額",
+      "申請",
+      "第3子"
+    ],
     "plain_text": "児童手当。高校生年代までの児童を養育している方に支給。所得制限は撤廃。月額は3歳未満15,000円（第3子以降30,000円）、3歳〜高校生10,000円（第3子以降30,000円）。偶数月（年6回）に支給。出生・転入時に申請が必要。"
   }
 }

@@ -32,10 +32,6 @@
             "href": "/"
           },
           {
-            "label": "くらしの情報",
-            "href": "/topics"
-          },
-          {
             "label": "事業・経営",
             "href": "/topics/business"
           },
@@ -61,68 +57,33 @@
       }
     },
     {
-      "id": "richtext-1",
-      "type": "RichText",
+      "id": "section-b087rgeds-desclist",
+      "type": "DescriptionList",
       "props": {
+        "items": [
+          {
+            "term": "親族内承継",
+            "description": "子や親族への承継"
+          },
+          {
+            "term": "従業員承継",
+            "description": "役員・従業員への承継"
+          },
+          {
+            "term": "M&A",
+            "description": "第三者への売却・譲渡"
+          }
+        ],
+        "heading": "事業承継の方法"
+      }
+    },
+    {
+      "id": "section-6rs00edq0",
+      "type": "Section",
+      "props": {
+        "heading": "事業承継税制",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "事業承継の方法"
-          },
-          {
-            "type": "list",
-            "ordered": false,
-            "items": [
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "親族内承継",
-                      "bold": true
-                    },
-                    {
-                      "text": "：子や親族への承継"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "従業員承継",
-                      "bold": true
-                    },
-                    {
-                      "text": "：役員・従業員への承継"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "M&A",
-                      "bold": true
-                    },
-                    {
-                      "text": "：第三者への売却・譲渡"
-                    }
-                  ]
-                }
-              ]
-            ]
-          },
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "事業承継税制"
-          },
           {
             "type": "paragraph",
             "runs": [
@@ -130,12 +91,17 @@
                 "text": "一定の要件を満たすと、株式等の贈与税・相続税の納税が猶予・免除される特例措置があります。"
               }
             ]
-          },
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "相談窓口"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-0ypdtnlif",
+      "type": "Section",
+      "props": {
+        "heading": "相談窓口",
+        "level": 2,
+        "content": [
           {
             "type": "list",
             "ordered": false,
@@ -176,6 +142,26 @@
       }
     },
     {
+      "id": "related-links-v6npi66xv",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "法人設立",
+            "href": "/services/business/incorporation"
+          },
+          {
+            "title": "廃業届",
+            "href": "/services/business/closure"
+          },
+          {
+            "title": "固定資産税",
+            "href": "/services/tax/kotei"
+          }
+        ]
+      }
+    },
+    {
       "id": "contact-1",
       "type": "Contact",
       "props": {
@@ -184,6 +170,13 @@
         "email": "sangyo@sample-city.lg.jp",
         "hours": "平日 8:30〜17:15（土日祝日・年末年始を除く）",
         "address": "〒100-0001 東京都サンプル市中央1-1-1"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
       }
     }
   ],

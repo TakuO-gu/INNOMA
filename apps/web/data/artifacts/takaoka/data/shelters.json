@@ -1,0 +1,184 @@
+{
+  "municipalityId": "takaoka",
+  "districts": [
+    {
+      "id": "fushiki",
+      "name": "伏木地区",
+      "areas": ["伏木古府", "伏木矢田", "伏木中央町", "伏木湊町", "伏木錦町", "伏木本町", "伏木磯町"],
+      "shelters": [
+        {
+          "id": "shelter-001",
+          "name": "伏木小学校",
+          "address": "高岡市伏木古府1-1",
+          "type": "shitei",
+          "capacity": 250,
+          "hazardTypes": ["earthquake", "flood"],
+          "note": "体育館を避難所として使用"
+        },
+        {
+          "id": "shelter-002",
+          "name": "伏木中学校",
+          "address": "高岡市伏木矢田3-1",
+          "type": "shitei",
+          "capacity": 400,
+          "hazardTypes": ["earthquake", "flood", "landslide"]
+        },
+        {
+          "id": "shelter-003",
+          "name": "伏木コミュニティセンター",
+          "address": "高岡市伏木中央町12-3",
+          "type": "kinkyu",
+          "capacity": 100,
+          "hazardTypes": ["earthquake"]
+        }
+      ]
+    },
+    {
+      "id": "takaoka-chuo",
+      "name": "高岡中心部",
+      "areas": ["末広町", "片原町", "御旅屋町", "大手町", "下関町", "御馬出町", "利屋町", "木舟町", "小馬出町", "坂下町", "源平町", "博労本町", "宮脇町"],
+      "shelters": [
+        {
+          "id": "shelter-101",
+          "name": "高岡市役所",
+          "address": "高岡市広小路7-50",
+          "type": "kinkyu",
+          "capacity": 300,
+          "hazardTypes": ["earthquake", "flood"]
+        },
+        {
+          "id": "shelter-102",
+          "name": "高岡小学校",
+          "address": "高岡市大手町11-55",
+          "type": "shitei",
+          "capacity": 350,
+          "hazardTypes": ["earthquake", "flood"]
+        },
+        {
+          "id": "shelter-103",
+          "name": "高岡市民体育館",
+          "address": "高岡市末広町1-7",
+          "type": "shitei",
+          "capacity": 500,
+          "hazardTypes": ["earthquake", "flood"]
+        },
+        {
+          "id": "shelter-104",
+          "name": "高岡福祉保健センター",
+          "address": "高岡市本丸町7-25",
+          "type": "fukushi",
+          "capacity": 50,
+          "hazardTypes": ["earthquake"],
+          "note": "高齢者・障害者優先"
+        }
+      ]
+    },
+    {
+      "id": "takaoka-nishi",
+      "name": "高岡西部",
+      "areas": ["野村", "横田", "横田本町", "二塚", "守山町", "二塚新", "江尻", "西広谷", "立野"],
+      "shelters": [
+        {
+          "id": "shelter-201",
+          "name": "野村小学校",
+          "address": "高岡市野村3-32",
+          "type": "shitei",
+          "capacity": 280,
+          "hazardTypes": ["earthquake", "flood"]
+        },
+        {
+          "id": "shelter-202",
+          "name": "二塚小学校",
+          "address": "高岡市二塚336",
+          "type": "shitei",
+          "capacity": 300,
+          "hazardTypes": ["earthquake", "flood", "landslide"]
+        },
+        {
+          "id": "shelter-203",
+          "name": "西部福祉センター",
+          "address": "高岡市横田本町2-15",
+          "type": "fukushi",
+          "capacity": 40,
+          "hazardTypes": ["earthquake"]
+        }
+      ]
+    },
+    {
+      "id": "takaoka-minami",
+      "name": "高岡南部",
+      "areas": ["中川", "中川本町", "中川栄町", "中川上町", "南星町", "下牧野", "上牧野", "姫野"],
+      "shelters": [
+        {
+          "id": "shelter-301",
+          "name": "中川小学校",
+          "address": "高岡市中川上町8-1",
+          "type": "shitei",
+          "capacity": 320,
+          "hazardTypes": ["earthquake", "flood"]
+        },
+        {
+          "id": "shelter-302",
+          "name": "南星中学校",
+          "address": "高岡市南星町90",
+          "type": "shitei",
+          "capacity": 450,
+          "hazardTypes": ["earthquake"]
+        },
+        {
+          "id": "shelter-303",
+          "name": "南部公民館",
+          "address": "高岡市中川本町5-5",
+          "type": "kinkyu",
+          "capacity": 80,
+          "hazardTypes": ["earthquake"]
+        }
+      ]
+    },
+    {
+      "id": "takaoka-higashi",
+      "name": "高岡東部",
+      "areas": ["蓮花寺", "石堤", "国吉", "福岡町", "福岡町下蓑", "福岡町上蓑"],
+      "shelters": [
+        {
+          "id": "shelter-401",
+          "name": "石堤小学校",
+          "address": "高岡市石堤1000",
+          "type": "shitei",
+          "capacity": 200,
+          "hazardTypes": ["earthquake", "flood"]
+        },
+        {
+          "id": "shelter-402",
+          "name": "国吉中学校",
+          "address": "高岡市国吉1320",
+          "type": "shitei",
+          "capacity": 380,
+          "hazardTypes": ["earthquake", "landslide"]
+        },
+        {
+          "id": "shelter-403",
+          "name": "福岡総合体育館",
+          "address": "高岡市福岡町下蓑80",
+          "type": "shitei",
+          "capacity": 600,
+          "hazardTypes": ["earthquake", "flood"]
+        },
+        {
+          "id": "shelter-404",
+          "name": "福岡福祉センター",
+          "address": "高岡市福岡町上蓑215",
+          "type": "fukushi",
+          "capacity": 60,
+          "hazardTypes": ["earthquake"],
+          "note": "バリアフリー対応完備"
+        }
+      ]
+    }
+  ],
+  "updatedAt": "2026-01-31T00:00:00.000Z",
+  "source": {
+    "url": "https://www.city.takaoka.toyama.jp/gyosei/kurashi_tetsuzuki/anzen_anshin/8/2/6781.html",
+    "note": "サンプルデータ - 実際のデータはPDF解析による更新が必要"
+  }
+}

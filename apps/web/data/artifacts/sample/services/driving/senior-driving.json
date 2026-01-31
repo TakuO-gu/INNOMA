@@ -32,10 +32,6 @@
             "href": "/"
           },
           {
-            "label": "くらしの情報",
-            "href": "/topics"
-          },
-          {
             "label": "運転・車両",
             "href": "/topics/driving"
           },
@@ -61,15 +57,12 @@
       }
     },
     {
-      "id": "richtext-1",
-      "type": "RichText",
+      "id": "section-0flu7jqe9",
+      "type": "Section",
       "props": {
+        "heading": "高齢者講習",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "高齢者講習"
-          },
           {
             "type": "paragraph",
             "runs": [
@@ -77,12 +70,17 @@
                 "text": "70歳以上の方は免許更新時に高齢者講習の受講が必要です。75歳以上は認知機能検査も必要です。"
               }
             ]
-          },
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "運転免許証の自主返納"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-9fpbfdh3u",
+      "type": "Section",
+      "props": {
+        "heading": "運転免許証の自主返納",
+        "level": 2,
+        "content": [
           {
             "type": "paragraph",
             "runs": [
@@ -90,12 +88,17 @@
                 "text": "運転に不安を感じる方は、運転免許証を自主的に返納できます。返納後は「運転経歴証明書」を申請でき、身分証明書として使用できます。"
               }
             ]
-          },
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "自主返納者への支援"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-bw5nnykjt",
+      "type": "Section",
+      "props": {
+        "heading": "自主返納者への支援",
+        "level": 2,
+        "content": [
           {
             "type": "paragraph",
             "runs": [
@@ -134,6 +137,30 @@
       }
     },
     {
+      "id": "related-links-ssm17c2uv",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "運転免許証",
+            "href": "/services/driving/license"
+          },
+          {
+            "title": "交通安全",
+            "href": "/services/driving/traffic-safety"
+          },
+          {
+            "title": "高齢者福祉",
+            "href": "/services/welfare/koureisha"
+          },
+          {
+            "title": "地域包括支援センター",
+            "href": "/services/welfare/houkatsu"
+          }
+        ]
+      }
+    },
+    {
       "id": "contact-1",
       "type": "Contact",
       "props": {
@@ -142,6 +169,13 @@
         "email": "todokede@sample-city.lg.jp",
         "hours": "平日 8:30〜17:15（土日祝日・年末年始を除く）",
         "address": "〒100-0001 東京都サンプル市中央1-1-1"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
       }
     }
   ],

@@ -32,10 +32,6 @@
             "href": "/"
           },
           {
-            "label": "くらしの情報",
-            "href": "/topics"
-          },
-          {
             "label": "事業・経営",
             "href": "/topics/business"
           },
@@ -61,15 +57,12 @@
       }
     },
     {
-      "id": "richtext-1",
-      "type": "RichText",
+      "id": "section-dnle9s52h",
+      "type": "Section",
       "props": {
+        "heading": "個人事業の廃業届出",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "個人事業の廃業届出"
-          },
           {
             "type": "list",
             "ordered": false,
@@ -95,12 +88,17 @@
                 }
               ]
             ]
-          },
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "法人の解散・清算"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-5x4hp1dns",
+      "type": "Section",
+      "props": {
+        "heading": "法人の解散・清算",
+        "level": 2,
+        "content": [
           {
             "type": "list",
             "ordered": true,
@@ -146,12 +144,17 @@
                 }
               ]
             ]
-          },
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "経営難の相談窓口"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-w7rdl9q38",
+      "type": "Section",
+      "props": {
+        "heading": "経営難の相談窓口",
+        "level": 2,
+        "content": [
           {
             "type": "paragraph",
             "runs": [
@@ -159,6 +162,30 @@
                 "text": "経営が厳しい場合は、早めに専門家に相談することをお勧めします。"
               }
             ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "related-links-z3vaos5wn",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "事業承継",
+            "href": "/services/business/succession"
+          },
+          {
+            "title": "個人事業主",
+            "href": "/services/business/sole-proprietor"
+          },
+          {
+            "title": "雇用保険",
+            "href": "/services/employment/unemployment-insurance"
+          },
+          {
+            "title": "ハローワーク",
+            "href": "/services/employment/hello-work"
           }
         ]
       }
@@ -172,6 +199,13 @@
         "email": "{{business_email}}",
         "hours": "{{city_hall_hours}}",
         "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
       }
     }
   ],

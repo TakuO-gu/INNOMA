@@ -32,10 +32,6 @@
             "href": "/"
           },
           {
-            "label": "くらしの情報",
-            "href": "/topics"
-          },
-          {
             "label": "環境・ごみ",
             "href": "/topics/environment"
           },
@@ -80,20 +76,21 @@
       }
     },
     {
-      "id": "richtext-bunbetsu",
-      "type": "RichText",
+      "id": "section-wjogfacdc",
+      "type": "Section",
       "props": {
+        "heading": "ごみの分別",
+        "level": 2,
+        "content": []
+      }
+    },
+    {
+      "id": "section-drhfwtl9b",
+      "type": "Section",
+      "props": {
+        "heading": "燃やせるごみ",
+        "level": 3,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "ごみの分別"
-          },
-          {
-            "type": "heading",
-            "level": 3,
-            "text": "燃やせるごみ"
-          },
           {
             "type": "paragraph",
             "runs": [
@@ -127,12 +124,17 @@
                 }
               ]
             ]
-          },
-          {
-            "type": "heading",
-            "level": 3,
-            "text": "燃やせないごみ"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-9pfsc4uyc",
+      "type": "Section",
+      "props": {
+        "heading": "燃やせないごみ",
+        "level": 3,
+        "content": [
           {
             "type": "paragraph",
             "runs": [
@@ -166,12 +168,17 @@
                 }
               ]
             ]
-          },
-          {
-            "type": "heading",
-            "level": 3,
-            "text": "資源ごみ"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-3tfjjd2tk",
+      "type": "Section",
+      "props": {
+        "heading": "資源ごみ",
+        "level": 3,
+        "content": [
           {
             "type": "paragraph",
             "runs": [
@@ -210,15 +217,12 @@
       }
     },
     {
-      "id": "richtext-plastic",
-      "type": "RichText",
+      "id": "section-w4zx5ug25",
+      "type": "Section",
       "props": {
+        "heading": "プラスチックの分別",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "プラスチックの分別"
-          },
           {
             "type": "paragraph",
             "runs": [
@@ -257,15 +261,12 @@
       }
     },
     {
-      "id": "richtext-sodai",
-      "type": "RichText",
+      "id": "section-1mnsjc3o0",
+      "type": "Section",
       "props": {
+        "heading": "粗大ごみ",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "粗大ごみ"
-          },
           {
             "type": "paragraph",
             "runs": [
@@ -287,108 +288,95 @@
       }
     },
     {
-      "id": "richtext-shushu-funou",
-      "type": "RichText",
+      "id": "section-nirgldj8z-notification-0",
+      "type": "NotificationBanner",
       "props": {
+        "severity": "warning",
         "content": [
           {
-            "type": "heading",
-            "level": 2,
-            "text": "収集できないもの"
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "以下のものは市では収集できません。販売店や専門業者にお問い合わせください。"
+              }
+            ]
           },
           {
-            "type": "callout",
-            "severity": "warning",
-            "content": [
-              {
-                "type": "paragraph",
-                "runs": [
-                  {
-                    "text": "以下のものは市では収集できません。販売店や専門業者にお問い合わせください。"
-                  }
-                ]
-              },
-              {
-                "type": "list",
-                "ordered": false,
-                "items": [
-                  [
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
                     {
-                      "type": "paragraph",
-                      "runs": [
-                        {
-                          "text": "家電リサイクル法対象品（エアコン、テレビ、冷蔵庫・冷凍庫、洗濯機・衣類乾燥機）"
-                        }
-                      ]
-                    }
-                  ],
-                  [
-                    {
-                      "type": "paragraph",
-                      "runs": [
-                        {
-                          "text": "パソコン"
-                        }
-                      ]
-                    }
-                  ],
-                  [
-                    {
-                      "type": "paragraph",
-                      "runs": [
-                        {
-                          "text": "タイヤ、バッテリー"
-                        }
-                      ]
-                    }
-                  ],
-                  [
-                    {
-                      "type": "paragraph",
-                      "runs": [
-                        {
-                          "text": "消火器"
-                        }
-                      ]
-                    }
-                  ],
-                  [
-                    {
-                      "type": "paragraph",
-                      "runs": [
-                        {
-                          "text": "ガスボンベ"
-                        }
-                      ]
-                    }
-                  ],
-                  [
-                    {
-                      "type": "paragraph",
-                      "runs": [
-                        {
-                          "text": "農薬、劇薬"
-                        }
-                      ]
+                      "text": "家電リサイクル法対象品（エアコン、テレビ、冷蔵庫・冷凍庫、洗濯機・衣類乾燥機）"
                     }
                   ]
-                ]
-              }
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "パソコン"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "タイヤ、バッテリー"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "消火器"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "ガスボンベ"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "農薬、劇薬"
+                    }
+                  ]
+                }
+              ]
             ]
           }
         ]
       }
     },
     {
-      "id": "richtext-app",
-      "type": "RichText",
+      "id": "section-cibzlkwn5",
+      "type": "Section",
       "props": {
+        "heading": "ごみ分別アプリ",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "ごみ分別アプリ"
-          },
           {
             "type": "paragraph",
             "runs": [
@@ -406,7 +394,7 @@
       "props": {
         "items": [
           {
-            "title": "粗大ごみの出し方",
+            "title": "粗大ごみ",
             "href": "/services/environment/sodaigomi"
           },
           {
@@ -414,8 +402,12 @@
             "href": "/services/environment/kaden-recycle"
           },
           {
-            "title": "不用品のリユース",
-            "href": "/services/environment/reuse"
+            "title": "引越し手続き一覧",
+            "href": "/services/housing/moving-checklist"
+          },
+          {
+            "title": "転入届",
+            "href": "/services/registration/tennyu"
           }
         ]
       }
@@ -429,6 +421,13 @@
         "email": "{{environment_email}}",
         "hours": "{{city_hall_hours}}",
         "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
       }
     }
   ],

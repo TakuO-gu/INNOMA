@@ -7,7 +7,9 @@
   "description": "妊娠届、保育所、幼稚園、小中学校、奨学金に関する情報",
   "content_type": "directory",
   "service_category": "children",
-  "audience": ["children_families"],
+  "audience": [
+    "children_families"
+  ],
   "topic": [],
   "source": {
     "source_url": "template://sample/topics/childcare",
@@ -25,9 +27,14 @@
       "type": "Breadcrumbs",
       "props": {
         "items": [
-          { "label": "ホーム", "href": "/" },
-          { "label": "くらしの情報", "href": "/topics" },
-          { "label": "子育て・教育", "href": "/topics/childcare" }
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "子育て・教育",
+            "href": "/topics/childcare"
+          }
         ]
       }
     },
@@ -88,11 +95,29 @@
         "hours": "平日 8:30〜17:15（土日祝日・年末年始を除く）",
         "address": "〒100-0001 東京都サンプル市中央1-1-1"
       }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
+      }
     }
   ],
   "search": {
     "summary": "子育て・教育に関する情報。妊娠届、出生届、児童手当、保育所、幼稚園、小中学校の手続き案内。",
-    "keywords": ["子育て", "教育", "妊娠", "出産", "児童手当", "保育所", "幼稚園", "小学校", "中学校", "予防接種"],
+    "keywords": [
+      "子育て",
+      "教育",
+      "妊娠",
+      "出産",
+      "児童手当",
+      "保育所",
+      "幼稚園",
+      "小学校",
+      "中学校",
+      "予防接種"
+    ],
     "plain_text": "子育て・教育。妊娠届、保育所、幼稚園、小中学校、奨学金に関する情報。妊娠届・母子健康手帳、出産・出生届、児童手当、保育所・認定こども園、幼稚園、小学校・中学校、子育て支援、予防接種。"
   }
 }

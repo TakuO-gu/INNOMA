@@ -32,10 +32,6 @@
             "href": "/"
           },
           {
-            "label": "くらしの情報",
-            "href": "/topics"
-          },
-          {
             "label": "住まい・引越し",
             "href": "/topics/housing"
           },
@@ -61,15 +57,12 @@
       }
     },
     {
-      "id": "richtext-1",
-      "type": "RichText",
+      "id": "section-23rxzaobw",
+      "type": "Section",
       "props": {
+        "heading": "対象となる住宅",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "対象となる住宅"
-          },
           {
             "type": "list",
             "ordered": false,
@@ -115,12 +108,17 @@
                 }
               ]
             ]
-          },
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "耐震診断補助"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-rlwjb7i00",
+      "type": "Section",
+      "props": {
+        "heading": "耐震診断補助",
+        "level": 2,
+        "content": [
           {
             "type": "paragraph",
             "runs": [
@@ -128,12 +126,17 @@
                 "text": "耐震診断費用の{{seismic_diagnosis_rate}}を補助（上限{{seismic_diagnosis_max}}円）"
               }
             ]
-          },
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "耐震改修補助"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-yv40wd06d",
+      "type": "Section",
+      "props": {
+        "heading": "耐震改修補助",
+        "level": 2,
+        "content": [
           {
             "type": "paragraph",
             "runs": [
@@ -164,6 +167,30 @@
       }
     },
     {
+      "id": "related-links-2b4j3o00c",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "リフォーム補助",
+            "href": "/services/housing/reform-subsidy"
+          },
+          {
+            "title": "建築確認申請",
+            "href": "/services/housing/building-permit"
+          },
+          {
+            "title": "ハザードマップ",
+            "href": "/services/disaster/hazard-map"
+          },
+          {
+            "title": "避難所",
+            "href": "/services/disaster/hinanjo"
+          }
+        ]
+      }
+    },
+    {
       "id": "contact-1",
       "type": "Contact",
       "props": {
@@ -172,6 +199,13 @@
         "email": "{{building_email}}",
         "hours": "{{city_hall_hours}}",
         "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
       }
     }
   ],

@@ -7,7 +7,9 @@
   "description": "{{municipality_name}}の行政情報ポータルサイト",
   "content_type": "service",
   "service_category": "government",
-  "audience": ["residents"],
+  "audience": [
+    "residents"
+  ],
   "topic": [],
   "source": {
     "source_url": "template://sample/home",
@@ -121,11 +123,28 @@
         "hours": "{{city_hall_hours}}",
         "address": "{{city_hall_address}}"
       }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
+      }
     }
   ],
   "search": {
     "summary": "{{municipality_name}}の行政情報ポータルサイト。届出、子育て、福祉、健康、税金、環境など各種行政サービスの案内。",
-    "keywords": ["{{municipality_name}}", "行政", "届出", "子育て", "福祉", "健康", "税金", "ごみ", "防災"],
+    "keywords": [
+      "{{municipality_name}}",
+      "行政",
+      "届出",
+      "子育て",
+      "福祉",
+      "健康",
+      "税金",
+      "ごみ",
+      "防災"
+    ],
     "plain_text": "{{municipality_name}}へようこそ。市民の皆さまの暮らしをサポートする行政情報をお届けします。届出・申請・証明書、子育て、福祉・介護、健康・医療、税金、環境・ごみ、住まい・施設、防災・災害などの情報を提供しています。"
   }
 }

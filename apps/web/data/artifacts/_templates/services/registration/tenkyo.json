@@ -7,7 +7,9 @@
   "description": "市内で住所が変わったときの転居届の届出方法について",
   "content_type": "step_by_step",
   "service_category": "government",
-  "audience": ["residents"],
+  "audience": [
+    "residents"
+  ],
   "topic": [],
   "source": {
     "source_url": "template://sample/services/registration/tenkyo",
@@ -25,10 +27,18 @@
       "type": "Breadcrumbs",
       "props": {
         "items": [
-          { "label": "ホーム", "href": "/" },
-          { "label": "くらしの情報", "href": "/topics" },
-          { "label": "届出・証明", "href": "/topics/registration" },
-          { "label": "転居届", "href": "/services/registration/tenkyo" }
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "届出・証明",
+            "href": "/topics/registration"
+          },
+          {
+            "label": "転居届",
+            "href": "/services/registration/tenkyo"
+          }
         ]
       }
     },
@@ -47,17 +57,25 @@
       }
     },
     {
-      "id": "richtext-overview",
-      "type": "RichText",
+      "id": "section-c84ab0mh7",
+      "type": "Section",
       "props": {
+        "heading": "届出期間",
+        "level": 2,
         "content": [
-          { "type": "heading", "level": 2, "text": "届出期間" },
           {
             "type": "paragraph",
             "runs": [
-              { "text": "新しい住所に住み始めた日から" },
-              { "text": "14日以内", "bold": true },
-              { "text": "に届け出てください。届出が遅れると、過料（最高5万円）の対象となる場合があります。" }
+              {
+                "text": "新しい住所に住み始めた日から"
+              },
+              {
+                "text": "14日以内",
+                "bold": true
+              },
+              {
+                "text": "に届け出てください。届出が遅れると、過料（最高5万円）の対象となる場合があります。"
+              }
             ]
           }
         ]
@@ -72,7 +90,10 @@
           {
             "title": "必要書類の準備",
             "body": "本人確認書類、マイナンバーカードなどを準備します。",
-            "documents": ["本人確認書類", "マイナンバーカード"]
+            "documents": [
+              "本人確認書類",
+              "マイナンバーカード"
+            ]
           },
           {
             "title": "窓口で届出",
@@ -88,72 +109,149 @@
       }
     },
     {
-      "id": "richtext-shorui",
-      "type": "RichText",
+      "id": "section-ktad8b33c",
+      "type": "Section",
       "props": {
+        "heading": "届出に必要なもの",
+        "level": 2,
         "content": [
-          { "type": "heading", "level": 2, "text": "届出に必要なもの" },
-          {
-            "type": "list",
-            "ordered": false,
-            "items": [
-              [{ "type": "paragraph", "runs": [{ "text": "届出人の本人確認書類", "bold": true }, { "text": "（マイナンバーカード、運転免許証など）" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "マイナンバーカード", "bold": true }, { "text": "（転居する方全員分。住所変更が必要）" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "国民健康保険証・資格確認書", "bold": true }, { "text": "（加入している場合。住所変更が必要）" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "後期高齢者医療資格確認書", "bold": true }, { "text": "（該当する場合）" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "介護保険被保険者証", "bold": true }, { "text": "（該当する場合）" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "在留カード", "bold": true }, { "text": "（外国籍の方）" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "印鑑", "bold": true }, { "text": "（自治体により必要な場合があります）" }] }]
-            ]
-          },
           {
             "type": "paragraph",
             "runs": [
-              { "text": "必要書類は自治体により異なる場合があります。事前にお住まいの市区町村にご確認ください。" }
+              {
+                "text": "必要書類は自治体により異なる場合があります。事前にお住まいの市区町村にご確認ください。"
+              }
             ]
           }
         ]
       }
     },
     {
-      "id": "richtext-todokenin",
-      "type": "RichText",
+      "id": "section-ktad8b33c-table",
+      "type": "Table",
       "props": {
-        "content": [
-          { "type": "heading", "level": 2, "text": "届出できる人" },
+        "rows": [
           {
-            "type": "list",
-            "ordered": false,
-            "items": [
-              [{ "type": "paragraph", "runs": [{ "text": "本人" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "同一世帯の方" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "代理人（委任状が必要）" }] }]
-            ]
+            "label": "届出人の本人確認書類（マイナンバーカード、運転免許証など）",
+            "value": ""
+          },
+          {
+            "label": "マイナンバーカード（転居する方全員分。住所変更が必要）",
+            "value": ""
+          },
+          {
+            "label": "国民健康保険証・資格確認書（加入している場合。住所変更が必要）",
+            "value": ""
+          },
+          {
+            "label": "後期高齢者医療資格確認書（該当する場合）",
+            "value": ""
+          },
+          {
+            "label": "介護保険被保険者証（該当する場合）",
+            "value": ""
+          },
+          {
+            "label": "在留カード（外国籍の方）",
+            "value": ""
+          },
+          {
+            "label": "印鑑（自治体により必要な場合があります）",
+            "value": ""
           }
         ]
       }
     },
     {
-      "id": "richtext-sonota",
-      "type": "RichText",
+      "id": "section-jh69drl28-table",
+      "type": "Table",
       "props": {
+        "rows": [
+          {
+            "label": "本人",
+            "value": ""
+          },
+          {
+            "label": "同一世帯の方",
+            "value": ""
+          },
+          {
+            "label": "代理人（委任状が必要）",
+            "value": ""
+          }
+        ],
+        "heading": "届出できる人"
+      }
+    },
+    {
+      "id": "section-ju99kd0om",
+      "type": "Section",
+      "props": {
+        "heading": "転居に伴うその他の手続き",
+        "level": 2,
         "content": [
-          { "type": "heading", "level": 2, "text": "転居に伴うその他の手続き" },
           {
             "type": "paragraph",
             "runs": [
-              { "text": "以下の手続きも必要に応じて行ってください。" }
+              {
+                "text": "以下の手続きも必要に応じて行ってください。"
+              }
             ]
           },
           {
             "type": "list",
             "ordered": false,
             "items": [
-              [{ "type": "paragraph", "runs": [{ "text": "小中学校の転校手続き（学区が変わる場合）" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "児童手当の届出（住所変更届）" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "運転免許証の住所変更（警察署または運転免許センター）" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "水道・ガス・電気の届出" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "郵便局への転送届" }] }]
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "小中学校の転校手続き（学区が変わる場合）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "児童手当の届出（住所変更届）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "運転免許証の住所変更（警察署または運転免許センター）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "水道・ガス・電気の届出"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "郵便局への転送届"
+                    }
+                  ]
+                }
+              ]
             ]
           }
         ]
@@ -164,10 +262,30 @@
       "type": "RelatedLinks",
       "props": {
         "items": [
-          { "title": "転入届", "href": "/services/registration/tennyu" },
-          { "title": "転出届", "href": "/services/registration/tenshutsu" },
-          { "title": "マイナンバーカード", "href": "/services/registration/mynumber" },
-          { "title": "国民健康保険", "href": "/services/health/kokuho" }
+          {
+            "title": "住民票",
+            "href": "/services/registration/juminhyo"
+          },
+          {
+            "title": "マイナンバーカード",
+            "href": "/services/registration/mynumber"
+          },
+          {
+            "title": "印鑑登録",
+            "href": "/services/registration/inkan"
+          },
+          {
+            "title": "国民健康保険",
+            "href": "/services/health/kokuho"
+          },
+          {
+            "title": "児童手当",
+            "href": "/services/childcare/jidou-teate"
+          },
+          {
+            "title": "引越し手続き一覧",
+            "href": "/services/housing/moving-checklist"
+          }
         ]
       }
     },
@@ -181,11 +299,23 @@
         "hours": "{{city_hall_hours}}",
         "address": "{{city_hall_address}}"
       }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
+      }
     }
   ],
   "search": {
     "summary": "転居届の届出方法。市内で住所が変わったときに届出。引っ越し後14日以内。",
-    "keywords": ["転居届", "引っ越し", "住所変更", "市内"],
+    "keywords": [
+      "転居届",
+      "引っ越し",
+      "住所変更",
+      "市内"
+    ],
     "plain_text": "転居届。市内で住所が変わったときに届出。引っ越し後14日以内に届出。本人確認書類、マイナンバーカード、国民健康保険証などが必要。"
   }
 }

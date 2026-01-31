@@ -61,7 +61,7 @@ export default async function ArtifactPage({ params }: PageProps) {
     throw new Error(result.message);
   }
 
-  const { artifact, unreplacedVariables } = result;
+  const { artifact, unreplacedVariables, sources } = result;
 
   // 未取得の変数があるページはエンドユーザーには表示しない
   // リンク側でフィルタリングするが、直接URLアクセスされた場合の保険としてnotFoundを返す
@@ -75,9 +75,6 @@ export default async function ArtifactPage({ params }: PageProps) {
 
   // artifact.municipality_id または URL パラメータを使用
   const municipalityId = artifact.municipality_id || municipality;
-
-  // sourcesがある場合はBlockRendererに渡す（Wikipedia風参照表示用）
-  const sources = (artifact as { sources?: Array<{ id: number; url: string; title?: string; accessedAt?: string; variables?: string[] }> }).sources;
 
   // 完成済みページのリストを取得（リンク表示フィルタリング用）
   const completedPages = await getCompletedPages(municipalityId);

@@ -161,3 +161,156 @@ export function AccordionBlock({ props }: { props: Record<string, unknown> }) {
     </div>
   );
 }
+
+/**
+ * DescriptionListBlock - シンプルな名前-値ペアの表示
+ * Tableより軽量で、3項目以下のシンプルな情報に適切
+ */
+export function DescriptionListBlock({ props }: { props: Record<string, unknown> }) {
+  const heading = props.heading as string | undefined;
+  const items = (props.items as Array<{ term: string; description: string }>) || [];
+
+  return (
+    <div className="description-list-block mb-6">
+      {heading && (
+        <h3 className="text-std-20B-150 text-solid-gray-900 mb-4">{heading}</h3>
+      )}
+      <dl className="space-y-3">
+        {items.map((item, i) => (
+          <div key={i} className="flex flex-col sm:flex-row sm:gap-4">
+            <dt className="text-std-16B-170 text-solid-gray-700 sm:w-1/3 sm:flex-shrink-0">
+              {item.term}
+            </dt>
+            <dd className="text-std-16N-170 text-solid-gray-800 mt-1 sm:mt-0">
+              {item.description}
+            </dd>
+          </div>
+        ))}
+      </dl>
+    </div>
+  );
+}
+
+/**
+ * BlockquoteBlock - 法令引用・規則の表示
+ */
+export function BlockquoteBlock({ props }: { props: Record<string, unknown> }) {
+  const content = (props.content as string) || "";
+  const cite = props.cite as string | undefined;
+
+  return (
+    <figure className="blockquote-block mb-6">
+      <blockquote className="border-l-4 border-solid-gray-400 pl-4 py-2 italic text-std-16N-170 text-solid-gray-700">
+        {content}
+      </blockquote>
+      {cite && (
+        <figcaption className="mt-2 text-std-14N-170 text-solid-gray-500">
+          — {cite}
+        </figcaption>
+      )}
+    </figure>
+  );
+}
+
+/**
+ * StatusBadgeBlock - ステータス表示
+ */
+export function StatusBadgeBlock({ props }: { props: Record<string, unknown> }) {
+  const label = (props.label as string) || "";
+  const variant = (props.variant as "success" | "warning" | "error" | "info") || "info";
+
+  const variantStyles: Record<string, string> = {
+    success: "bg-green-100 text-green-800 border-green-300",
+    warning: "bg-yellow-100 text-yellow-800 border-yellow-300",
+    error: "bg-red-100 text-red-800 border-red-300",
+    info: "bg-blue-100 text-blue-800 border-blue-300",
+  };
+
+  return (
+    <span
+      className={`inline-flex items-center px-3 py-1 rounded-full text-std-14B-170 border ${variantStyles[variant]}`}
+    >
+      {label}
+    </span>
+  );
+}
+
+/**
+ * CardBlock - 関連サービス、複数窓口のカード表示
+ */
+export function CardBlock({ props }: { props: Record<string, unknown> }) {
+  const { municipalityId } = useMunicipality();
+  const title = (props.title as string) || "";
+  const description = props.description as string | undefined;
+  const href = props.href as string | undefined;
+  const image = props.image as string | undefined;
+
+  const content = (
+    <div className="card-block border border-solid-gray-300 rounded-lg overflow-hidden hover:shadow-md transition-shadow">
+      {image && (
+        <div className="aspect-video bg-solid-gray-100">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src={image} alt="" className="w-full h-full object-cover" />
+        </div>
+      )}
+      <div className="p-4">
+        <h3 className="text-std-17B-170 text-solid-gray-900 mb-2">{title}</h3>
+        {description && (
+          <p className="text-std-14N-170 text-solid-gray-600">{description}</p>
+        )}
+      </div>
+    </div>
+  );
+
+  if (href) {
+    const isExternal = href.startsWith("http");
+    const resolvedHref = isExternal ? href : prefixInternalLink(href, municipalityId);
+
+    if (isExternal) {
+      return (
+        <a href={resolvedHref} target="_blank" rel="noopener noreferrer" className="block">
+          {content}
+        </a>
+      );
+    }
+    return (
+      <NextLink href={resolvedHref} className="block">
+        {content}
+      </NextLink>
+    );
+  }
+
+  return content;
+}
+
+/**
+ * SectionBlock - h2/h3レベルのセクションを明示的に表現
+ *
+ * スペーシングは親（BlockRenderer）で制御
+ */
+export function SectionBlock({ props }: { props: Record<string, unknown> }) {
+  const heading = (props.heading as string) || "";
+  const level = (props.level as 2 | 3 | 4) || 2;
+  const content = props.content;
+
+  const HeadingTag = `h${level}` as "h2" | "h3" | "h4";
+
+  const headingStyles: Record<number, string> = {
+    2: "text-std-32B-150 text-solid-gray-900 mb-6",
+    3: "text-std-24B-150 text-solid-gray-900 mb-4",
+    4: "text-std-20B-150 text-solid-gray-900 mb-4",
+  };
+
+  return (
+    <section>
+      <HeadingTag className={`${headingStyles[level]} budoux`}>
+        {budouxParse(heading)}
+      </HeadingTag>
+      {content != null && (
+        <div className="section-content">
+          <RichTextRenderer content={content as RichTextContent | RichTextNodeType[]} />
+        </div>
+      )}
+    </section>
+  );
+}

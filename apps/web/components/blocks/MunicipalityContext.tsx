@@ -33,6 +33,11 @@ export function MunicipalityProvider({
       return true;
     }
 
+    // ホームページ（/）は常に存在するのでOK
+    if (path === "/" || path === "") {
+      return true;
+    }
+
     // 内部リンクは完成済みページリストをチェック
     // パスの正規化: 先頭に/がない場合は追加
     const normalizedPath = path.startsWith("/") ? path : `/${path}`;

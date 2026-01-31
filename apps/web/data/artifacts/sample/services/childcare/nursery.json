@@ -7,7 +7,9 @@
   "description": "保育園・幼稚園に関する情報。入園申込、保育園一覧、一時保育など。",
   "content_type": "directory",
   "service_category": "children",
-  "audience": ["children_families"],
+  "audience": [
+    "children_families"
+  ],
   "topic": [],
   "source": {
     "source_url": "template://sample/services/childcare/nursery",
@@ -25,9 +27,18 @@
       "type": "Breadcrumbs",
       "props": {
         "items": [
-          { "label": "ホーム", "href": "/" },
-          { "label": "子育て", "href": "/services/childcare" },
-          { "label": "保育園・幼稚園", "href": "/services/childcare/nursery" }
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "子育て",
+            "href": "/services/childcare"
+          },
+          {
+            "label": "保育園・幼稚園",
+            "href": "/services/childcare/nursery"
+          }
         ]
       }
     },
@@ -113,9 +124,18 @@
       "type": "RelatedLinks",
       "props": {
         "items": [
-          { "title": "児童手当", "href": "/services/childcare/allowance" },
-          { "title": "子ども医療費助成", "href": "/services/childcare/medical" },
-          { "title": "学童保育", "href": "/services/childcare/after-school" }
+          {
+            "title": "児童手当",
+            "href": "/services/childcare/allowance"
+          },
+          {
+            "title": "子ども医療費助成",
+            "href": "/services/childcare/medical"
+          },
+          {
+            "title": "学童保育",
+            "href": "/services/childcare/after-school"
+          }
         ]
       }
     },
@@ -129,11 +149,27 @@
         "hours": "平日 8:30〜17:15（土日祝日・年末年始を除く）",
         "address": "〒100-0001 東京都サンプル市中央1-1-1"
       }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
+      }
     }
   ],
   "search": {
     "summary": "保育園・幼稚園情報。入園申込、認可保育園一覧、認定こども園、保育料、一時保育など。",
-    "keywords": ["保育園", "幼稚園", "入園申込", "認可保育園", "認定こども園", "保育料", "無償化", "一時保育"],
+    "keywords": [
+      "保育園",
+      "幼稚園",
+      "入園申込",
+      "認可保育園",
+      "認定こども園",
+      "保育料",
+      "無償化",
+      "一時保育"
+    ],
     "plain_text": "保育園・幼稚園情報。認可保育園の入園申込、年度途中の入園、幼稚園の入園、認可保育園一覧、認定こども園一覧、小規模保育事業所、保育料、幼児教育・保育の無償化、一時保育、病児・病後児保育、延長保育。"
   }
 }

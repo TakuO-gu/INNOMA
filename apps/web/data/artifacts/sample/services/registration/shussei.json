@@ -33,10 +33,6 @@
             "href": "/"
           },
           {
-            "label": "くらしの情報",
-            "href": "/topics"
-          },
-          {
             "label": "届出・申請・証明書",
             "href": "/topics/registration"
           },
@@ -62,15 +58,12 @@
       }
     },
     {
-      "id": "richtext-when",
-      "type": "RichText",
+      "id": "section-bt3rczhv7",
+      "type": "Section",
       "props": {
+        "heading": "届出期間",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "届出期間"
-          },
           {
             "type": "paragraph",
             "runs": [
@@ -85,12 +78,17 @@
                 "text": "（国外で生まれた場合は3か月以内）。届出期限が土日祝日の場合は、翌開庁日までに届け出てください。"
               }
             ]
-          },
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "届出場所"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-6db5yrdva",
+      "type": "Section",
+      "props": {
+        "heading": "届出場所",
+        "level": 2,
+        "content": [
           {
             "type": "list",
             "ordered": false,
@@ -166,79 +164,37 @@
       }
     },
     {
-      "id": "richtext-documents",
-      "type": "RichText",
+      "id": "section-laaehluvy-table",
+      "type": "Table",
       "props": {
+        "rows": [
+          {
+            "label": "出生届（出生証明書が記入されたもの）",
+            "value": ""
+          },
+          {
+            "label": "母子健康手帳",
+            "value": ""
+          },
+          {
+            "label": "届出人の本人確認書類（マイナンバーカード、運転免許証など）",
+            "value": ""
+          },
+          {
+            "label": "届出人の印鑑（任意）",
+            "value": ""
+          }
+        ],
+        "heading": "届出に必要なもの"
+      }
+    },
+    {
+      "id": "section-5nrtz3zbp",
+      "type": "Section",
+      "props": {
+        "heading": "届出人",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "届出に必要なもの"
-          },
-          {
-            "type": "list",
-            "ordered": false,
-            "items": [
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "出生届",
-                      "bold": true
-                    },
-                    {
-                      "text": "（出生証明書が記入されたもの）"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "母子健康手帳",
-                      "bold": true
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "届出人の本人確認書類",
-                      "bold": true
-                    },
-                    {
-                      "text": "（マイナンバーカード、運転免許証など）"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "届出人の印鑑",
-                      "bold": true
-                    },
-                    {
-                      "text": "（任意）"
-                    }
-                  ]
-                }
-              ]
-            ]
-          },
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "届出人"
-          },
           {
             "type": "paragraph",
             "runs": [
@@ -315,15 +271,12 @@
       }
     },
     {
-      "id": "richtext-related",
-      "type": "RichText",
+      "id": "section-2e1xxaoyj",
+      "type": "Section",
       "props": {
+        "heading": "出生届と一緒に行う手続き",
+        "level": 2,
         "content": [
-          {
-            "type": "heading",
-            "level": 2,
-            "text": "出生届と一緒に行う手続き"
-          },
           {
             "type": "list",
             "ordered": false,
@@ -387,20 +340,28 @@
       "props": {
         "items": [
           {
-            "title": "児童手当",
-            "href": "/services/childcare/allowance"
+            "title": "戸籍",
+            "href": "/services/registration/koseki"
           },
           {
-            "title": "子ども医療費助成",
-            "href": "/services/childcare/medical"
+            "title": "住民票",
+            "href": "/services/registration/juminhyo"
+          },
+          {
+            "title": "児童手当",
+            "href": "/services/childcare/jidou-teate"
+          },
+          {
+            "title": "母子保健",
+            "href": "/services/childcare/boshi"
           },
           {
             "title": "国民健康保険",
             "href": "/services/health/kokuho"
           },
           {
-            "title": "母子健康手帳",
-            "href": "/services/childcare/pregnancy"
+            "title": "予防接種",
+            "href": "/services/health/yobosesshu"
           }
         ]
       }
@@ -414,6 +375,13 @@
         "email": "todokede@sample-city.lg.jp",
         "hours": "平日 8:30〜17:15（土日祝日・年末年始を除く）",
         "address": "〒100-0001 東京都サンプル市中央1-1-1"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
       }
     }
   ],
