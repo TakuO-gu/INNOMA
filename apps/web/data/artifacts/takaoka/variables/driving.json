@@ -60,5 +60,195 @@
     "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/shiminseikatsuka/",
     "confidence": 0.9,
     "updatedAt": "2026-01-30T00:00:00.000Z"
+  },
+  "parking_hourly_rate": {
+    "value": "1時間まで無料、以降100円/30分",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/toshikeikakuka/2/3/1/2484.html",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T00:00:00.000Z"
+  },
+  "parking_daily_max": {
+    "value": "1,200円（駅北口立体駐車場）",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/toshikeikakuka/2/3/1/2484.html",
+    "confidence": 0.8,
+    "updatedAt": "2026-02-01T00:00:00.000Z"
+  },
+  "parking_monthly_rate": {
+    "value": "月額8,000円〜10,000円",
+    "source": "llm",
+    "confidence": 0.7,
+    "updatedAt": "2026-02-01T00:00:00.000Z"
+  },
+  "moped_parking_daily": {
+    "value": "無料（市営駐輪場利用の場合）",
+    "source": "llm",
+    "confidence": 0.8,
+    "updatedAt": "2026-02-01T00:00:00.000Z"
+  },
+  "moped_parking_monthly": {
+    "value": "無料（市営駐輪場利用の場合）",
+    "source": "llm",
+    "confidence": 0.8,
+    "updatedAt": "2026-02-01T00:00:00.000Z"
+  },
+  "bicycle_removal_fee": {
+    "value": "2,000円",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/shiminseikatsuka/",
+    "confidence": 0.8,
+    "updatedAt": "2026-02-01T00:00:00.000Z"
+  },
+  "moped_removal_fee": {
+    "value": "3,000円",
+    "source": "llm",
+    "confidence": 0.7,
+    "updatedAt": "2026-02-01T00:00:00.000Z"
+  },
+  "bicycle_storage_period": {
+    "value": "30日間（保管後廃棄処分）",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/shiminseikatsuka/",
+    "confidence": 0.8,
+    "updatedAt": "2026-02-01T00:00:00.000Z"
+  },
+  "accident_houhou": {
+    "value": "事故が発生したら警察に届出し、保険会社に連絡してください。けがをした場合は病院で診察を受けてください",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:14:41.319Z"
+  },
+  "accident_nagare": {
+    "value": "1. 警察に届出 → 2. 保険会社に連絡 → 3. 病院で診察 → 4. 示談交渉・保険請求",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:09:26.488Z"
+  },
+  "garage_certificate_houhou": {
+    "value": "車庫の所在地を管轄する警察署に申請してください。申請から交付まで3〜7日程度かかります",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.790Z"
+  },
+  "garage_certificate_nagare": {
+    "value": "1. 車庫の確保 → 2. 警察署で申請書類を入手・記入 → 3. 申請・手数料支払い → 4. 交付",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.790Z"
+  },
+  "liability_insurance_hitsuyou": {
+    "value": "車検証、現在の保険証券（更新の場合）",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.790Z"
+  },
+  "liability_insurance_houhou": {
+    "value": "保険会社、代理店、または車検時に整備工場で加入手続きができます",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.790Z"
+  },
+  "liability_insurance_nagare": {
+    "value": "1. 保険会社を選ぶ → 2. 車検証を準備 → 3. 契約手続き → 4. 保険証券を受け取る",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.790Z"
+  },
+  "license_houhou": {
+    "value": "運転免許センターまたは警察署で更新手続きを行ってください。更新期間は誕生日の前後1か月間です",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:14:41.319Z"
+  },
+  "license_nagare": {
+    "value": "1. 免許センター・警察署に行く → 2. 更新申請書を記入 → 3. 写真撮影・視力検査 → 4. 新免許証を受領",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:09:26.488Z"
+  },
+  "parking_hitsuyou": {
+    "value": "本人確認書類、車検証、印鑑（契約先による）",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:14:41.319Z"
+  },
+  "parking_nagare": {
+    "value": "1. 駐車場を探す → 2. 管理者に申込 → 3. 契約手続き → 4. 利用開始",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:09:26.488Z"
+  },
+  "registration_hitsuyou": {
+    "value": "車検証、自賠責保険証、印鑑証明書、車庫証明書、譲渡証明書（中古車の場合）",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:14:41.319Z"
+  },
+  "registration_houhou": {
+    "value": "運輸支局または自動車検査登録事務所で手続きしてください。ディーラーや行政書士に代行依頼も可能です",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:14:41.319Z"
+  },
+  "registration_nagare": {
+    "value": "1. 必要書類を準備 → 2. 運輸支局に申請 → 3. 検査（新規の場合） → 4. ナンバープレート取付",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:09:26.488Z"
+  },
+  "senior_driving_hitsuyou": {
+    "value": "運転免許証、更新連絡書（届いた場合）、認知機能検査結果通知書",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.790Z"
+  },
+  "senior_driving_houhou": {
+    "value": "70歳以上の方は高齢者講習、75歳以上の方は認知機能検査も必要です。事前に予約してください",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.790Z"
+  },
+  "senior_driving_nagare": {
+    "value": "1. 認知機能検査（75歳以上） → 2. 高齢者講習を受講 → 3. 更新手続き → 4. 新免許証を受領",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.790Z"
+  },
+  "vehicle_tax_hitsuyou": {
+    "value": "納税通知書（届いた場合）",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.790Z"
+  },
+  "vehicle_tax_houhou": {
+    "value": "毎年4月1日時点の所有者に課税されます。5月末までに納付書で納付してください",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.790Z"
+  },
+  "vehicle_tax_nagare": {
+    "value": "1. 納税通知書を受け取る → 2. 納期限を確認 → 3. 金融機関・コンビニ等で納付",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.790Z"
+  },
+  "weight_tax_hitsuyou": {
+    "value": "車検証、納付書（運輸支局で入手）",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.790Z"
+  },
+  "weight_tax_houhou": {
+    "value": "車検時に運輸支局で納付してください。車両の重量に応じて税額が決まります",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.790Z"
+  },
+  "weight_tax_nagare": {
+    "value": "1. 車検を予約 → 2. 運輸支局で重量税を納付 → 3. 車検を受ける → 4. 新しい車検証を受け取る",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.790Z"
   }
 }

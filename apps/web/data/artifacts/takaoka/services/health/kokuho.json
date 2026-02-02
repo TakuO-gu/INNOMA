@@ -93,7 +93,10 @@
             "type": "paragraph",
             "runs": [
               {
-                "text": "国民皆保険制度のもと、すべての国民が何らかの医療保険に加入することが義務付けられています。会社の健康保険（社会保険）や後期高齢者医療制度、生活保護を受けている方以外は、国民健康保険に加入する必要があります。"
+                "text": "国民皆保険制度のもと、すべての国民が何らかの医療保険に加入することが義務付けられています。"
+              },
+              {
+                "text": "会社の健康保険（社会保険）や後期高齢者医療制度、生活保護を受けている方以外は、国民健康保険に加入する必要があります。"
               }
             ]
           }
@@ -390,7 +393,13 @@
             "type": "paragraph",
             "runs": [
               {
-                "text": "市区町村の国民健康保険担当窓口で届け出てください。届出は原則として世帯主が行いますが、同一世帯の方であれば届出が可能です。別世帯の方が届け出る場合は委任状が必要です。"
+                "text": "市区町村の国民健康保険担当窓口で届け出てください。"
+              },
+              {
+                "text": "届出は原則として世帯主が行いますが、同一世帯の方であれば届出が可能です。"
+              },
+              {
+                "text": "別世帯の方が届け出る場合は委任状が必要です。"
               }
             ]
           }
@@ -630,6 +639,40 @@
       }
     },
     {
+      "id": "section-対象-1769918445581",
+      "type": "Section",
+      "props": {
+        "heading": "国民健康保険の対象となる方",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "詳細は{{shimin_department}}（{{shimin_phone}}）にお問い合わせください。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-手順-1769918445581",
+      "type": "Section",
+      "props": {
+        "heading": "国民健康保険の申請の流れ",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "{{kokuho_nagare}}"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
       "id": "contact-1",
       "type": "Contact",
       "props": {
@@ -638,6 +681,120 @@
         "email": "{{kokuho_email}}",
         "address": "{{kokuho_address}}",
         "hours": "{{kokuho_hours}}"
+      }
+    },
+    {
+      "id": "terms-1769899964499",
+      "type": "Section",
+      "props": {
+        "heading": "用語の説明",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "被保険者",
+                "bold": true
+              },
+              {
+                "text": "：保険に加入している方"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "所得割",
+                "bold": true
+              },
+              {
+                "text": "：収入に応じて計算される部分"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "均等割",
+                "bold": true
+              },
+              {
+                "text": "：全員同じ金額の部分"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "terms-1769919343267",
+      "type": "Section",
+      "props": {
+        "heading": "用語の説明",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "住民票",
+                "bold": true
+              },
+              {
+                "text": "：住所を証明する書類"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "委任状",
+                "bold": true
+              },
+              {
+                "text": "：代理人にお願いするための書類"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "本人確認書類",
+                "bold": true
+              },
+              {
+                "text": "：運転免許証やマイナンバーカードなど"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "扶養",
+                "bold": true
+              },
+              {
+                "text": "：養っていること"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "被扶養者",
+                "bold": true
+              },
+              {
+                "text": "：養われている人"
+              }
+            ]
+          }
+        ]
       }
     },
     {

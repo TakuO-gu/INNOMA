@@ -1,7 +1,7 @@
 # LLM情報取得システム 詳細仕様
 
 **作成日**: 2026-01-20
-**最終更新**: 2026-01-27
+**最終更新**: 2026-02-02
 
 ---
 
@@ -141,13 +141,46 @@
 
 ### 5.1 使用API
 
+#### Web検索API（デュアルプロバイダー対応）
+
+| API | 用途 | 無料枠 | 有料価格 |
+|-----|------|--------|----------|
+| **Brave Search** (推奨) | Web検索 | 2,000クエリ/月 | $5/1,000クエリ |
+| Google Custom Search | Web検索（フォールバック） | 100クエリ/日 | $5/1,000クエリ |
+
+**プロバイダー選択ロジック:**
+1. `SEARCH_PROVIDER=brave` → Brave優先、Google フォールバック
+2. `SEARCH_PROVIDER=google` → Google優先、Braveフォールバック
+3. 未設定（auto） → 利用可能なAPIキーから自動選択（Brave優先）
+
+**フォールバック動作:**
+- プライマリプロバイダーで結果0件 → フォールバックプロバイダーで再検索
+- プライマリプロバイダーでエラー → フォールバックプロバイダーで再検索
+- 両方失敗 → エラーを返す
+
+#### その他のAPI
+
 | API | 用途 | 無料枠 |
 |-----|------|--------|
-| Google Custom Search | Web検索 | 100クエリ/日 |
 | Google Gemini | クエリ生成、情報抽出 | 15リクエスト/分、1500/日 |
 | Google Vision API | PDF/画像OCR | 1000リクエスト/月 |
 
-### 5.2 無料枠モード
+### 5.2 環境変数
+
+```bash
+# Web検索API（少なくとも1つは必須）
+BRAVE_SEARCH_API_KEY=your_brave_api_key          # 推奨
+GOOGLE_CUSTOM_SEARCH_API_KEY=your_google_api_key # フォールバック用
+GOOGLE_CUSTOM_SEARCH_ENGINE_ID=your_engine_id    # Google使用時は必須
+
+# プロバイダー選択（オプション）
+SEARCH_PROVIDER=auto  # 'brave' | 'google' | 'auto'
+
+# LLM・OCR
+GOOGLE_GEMINI_API_KEY=your_gemini_api_key
+```
+
+### 5.3 無料枠モード
 
 CLIで無料枠内に制限して実行可能:
 
@@ -157,12 +190,13 @@ npx tsx scripts/pipeline.ts run --id takaoka --name 高岡市 --prefecture 富�
 
 | 設定 | デフォルト | 保守的 |
 |------|-----------|--------|
-| 検索API | 100/日 | 10/日 |
+| 検索API（Brave） | 2,000/月 | 100/月 |
+| 検索API（Google） | 100/日 | 10/日 |
 | Gemini | 1500/日 | 50/日 |
 | Vision | 1000/月 | 100/月 |
 | ページ取得/サービス | 5 | 2 |
 
-### 5.3 エラーハンドリング
+### 5.4 エラーハンドリング
 
 | エラー種別 | 対応 |
 |-----------|------|
@@ -378,10 +412,81 @@ data/artifacts/_jobs/{municipalityId}/latest.json
 
 ---
 
-## 12. 今後の検討事項
+## 12. Playwrightクローラー
+
+### 12.1 概要
+
+JavaScriptで動的に生成されるページに対応するため、Playwrightでブラウザを自動操作して情報を取得。
+
+### 12.2 処理フロー
+
+```
+1. 通常の取得で変数が取得できない場合に発動
+2. Playwrightでページを開く
+3. ページ内のリンクをLLMで評価（関連性スコア）
+4. 高スコアのリンクをクリックして遷移
+5. 各ページでExtractorを実行
+6. 最大3ページまで横断探索
+```
+
+### 12.3 設定オプション
+
+```typescript
+interface CrawlerOptions {
+  maxPages?: number;        // 最大探索ページ数（デフォルト: 3）
+  maxLinksPerPage?: number; // ページあたりの最大リンク評価数（デフォルト: 5）
+  timeout?: number;         // ページ読み込みタイムアウト（デフォルト: 30000ms）
+  headed?: boolean;         // ブラウザ表示（デバッグ用）
+  officialUrl?: string;     // 公式サイトURL（ドメイン判定用）
+}
+```
+
+### 12.4 ファイル
+
+- `lib/llm/playwright-crawler.ts` - メインクローラー実装
+- `lib/llm/deep-search.ts` - 値の具体性判定
+
+---
+
+## 13. 値の具体性判定
+
+### 13.1 概要
+
+LLMが抽出した値が具体的かどうかを判定。曖昧な値は除外する。
+
+### 13.2 判定ルール
+
+```typescript
+// 曖昧な表現のパターン（除外対象）
+const vaguePatterns = [
+  /^詳細は/,
+  /^お問い合わせ/,
+  /による$/,
+  /^要確認/,
+  /^未定/,
+  /参照$/,
+  /をご確認/,
+  /によって異なる/,
+];
+
+// 手数料: 金額が含まれているか
+if (variableName.includes('fee')) {
+  return /\d+円/.test(value) || /無料/.test(value);
+}
+
+// 電話番号: フォーマットチェック
+if (variableName.includes('phone')) {
+  return /\d{2,5}-\d{2,4}-\d{4}/.test(value);
+}
+```
+
+---
+
+## 14. 今後の検討事項
 
 - [x] PDF内の情報取得対応 ✅
-- [ ] 多言語ページ対応
-- [ ] 検索API変更時の抽象化レイヤー
 - [x] キャッシュ戦略の最適化 ✅（PDF OCRキャッシュ）
+- [x] 検索API抽象化レイヤー ✅（Brave/Googleデュアルプロバイダー）
+- [x] JS重いサイト対応 ✅（Playwrightクローラー）
+- [ ] 多言語ページ対応
 - [ ] 複数LLMプロバイダー対応

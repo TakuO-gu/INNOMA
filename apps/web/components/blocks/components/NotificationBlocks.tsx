@@ -40,7 +40,7 @@ export function EmergencyBannerBlock({ props }: { props: Record<string, unknown>
     : "bg-amber-50 border-amber-500 text-amber-900";
 
   return (
-    <div className={`emergency-banner p-4 rounded-lg border-l-4 mb-6 ${severityClasses}`}>
+    <div className={`mt-6 emergency-banner p-4 rounded-lg border-l-4 mb-6 ${severityClasses}`}>
       <h2 className="font-bold text-std-17B-170 mb-2">{title}</h2>
       <RichTextRenderer content={content} />
       {href && (

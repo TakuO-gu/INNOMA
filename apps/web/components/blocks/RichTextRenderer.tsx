@@ -58,22 +58,23 @@ export function RichTextRenderer({ content }: { content: RichTextContent | RichT
   return null;
 }
 
-/**
- * テキスト内に未解決の変数（{{...}}）が含まれているかチェック
- */
-function containsUnresolvedVariable(text: string): boolean {
-  return /\{\{[^}]+\}\}/.test(text);
-}
+/** 未解決変数パターン: {{...}} */
+const UNRESOLVED_VARIABLE_PATTERN = /\{\{[^}]+\}\}/;
 
 /**
- * ノードに未解決の変数が含まれているかチェック（再帰的）
+ * テキストまたはノードに未解決の変数（{{...}}）が含まれているかチェック
  */
-function nodeContainsUnresolvedVariable(node: RichTextNode): boolean {
+function hasUnresolvedVariable(target: string | RichTextNode): boolean {
+  if (typeof target === "string") {
+    return UNRESOLVED_VARIABLE_PATTERN.test(target);
+  }
+  // RichTextNode の場合
+  const node = target;
   if (node.type === "paragraph" && node.runs) {
-    return node.runs.some(run => containsUnresolvedVariable(run.text || ""));
+    return node.runs.some(run => hasUnresolvedVariable(run.text || ""));
   }
   if (node.type === "heading" && node.text) {
-    return containsUnresolvedVariable(node.text);
+    return hasUnresolvedVariable(node.text);
   }
   return false;
 }
@@ -106,7 +107,7 @@ function renderNode(node: RichTextNode, key: number, municipalityId: string): Re
 
     case "paragraph": {
       // 未解決変数を含む段落は非表示
-      if (nodeContainsUnresolvedVariable(node)) {
+      if (hasUnresolvedVariable(node)) {
         return null;
       }
       return (
@@ -127,7 +128,7 @@ function renderNode(node: RichTextNode, key: number, municipalityId: string): Re
       // 未解決変数を含むアイテムをフィルタリング
       const filteredItems = node.items?.filter(item => {
         // アイテム内のノードに未解決変数が含まれていないかチェック
-        return !item.some(subNode => nodeContainsUnresolvedVariable(subNode));
+        return !item.some(subNode => hasUnresolvedVariable(subNode));
       });
 
       // フィルタリング後にアイテムがない場合はnullを返す
@@ -144,28 +145,6 @@ function renderNode(node: RichTextNode, key: number, municipalityId: string): Re
           ))}
         </ListTag>
       );
-    }
-
-    case "callout": {
-      // 廃止: calloutはDADSに存在しないため、contentのみを表示
-      // 既存データの後方互換性のために残す
-      if (node.content) {
-        return (
-          <div key={key} className="my-4">
-            {node.title && (
-              <p className="text-std-16B-170 text-solid-gray-900 mb-2">
-                {node.title}
-              </p>
-            )}
-            <div className="text-std-16N-170 text-solid-gray-800">
-              {(node.content as RichTextNode[]).map((subNode, subIdx) =>
-                renderNode(subNode, subIdx, municipalityId)
-              )}
-            </div>
-          </div>
-        );
-      }
-      return null;
     }
 
     case "divider":

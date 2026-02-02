@@ -148,98 +148,59 @@ export function hasUnreplacedVariables(content: string): boolean {
   return VARIABLE_PATTERN.test(content);
 }
 
+// =============================================================================
+// 変数値の検証 - lib/llm/validators.ts への委譲
+// =============================================================================
+
+import {
+  validatePhone,
+  validateEmail,
+  validateUrl,
+  validateFee,
+  validateDate,
+  validateTime,
+  validatePercent,
+  getValidator,
+  validateVariable,
+} from "@/lib/llm/validators";
+
 /**
- * 変数値の検証
+ * 変数値の検証（boolean版 - lib/llm/validators.ts のラッパー）
+ * @deprecated 新しいコードでは lib/llm/validators.ts を直接使用してください
  */
 export const validators = {
-  /** 電話番号の検証 */
-  phone: (value: string): boolean => {
-    return /^\d{2,5}-\d{2,4}-\d{4}$/.test(value);
-  },
-
-  /** メールアドレスの検証 */
-  email: (value: string): boolean => {
-    if (/^[\w.-]+@[\w.-]+\.[a-z]{2,}$/i.test(value)) {
-      return true;
-    }
-    return /^https?:\/\/.+/i.test(value);
-  },
-
-  /** URLの検証 */
-  url: (value: string): boolean => {
-    return /^https?:\/\/.+/.test(value);
-  },
-
-  /** 金額の検証（例: 300円, 1,000円） */
-  fee: (value: string): boolean => {
-    return /^[\d,]+円$/.test(value);
-  },
-
-  /** 日付の検証（例: 1月1日） */
-  date: (value: string): boolean => {
-    return /^\d{1,2}月\d{1,2}日/.test(value);
-  },
-
-  /** 時刻の検証（例: 9:00） */
-  time: (value: string): boolean => {
-    return /^\d{1,2}:\d{2}/.test(value);
-  },
-
-  /** パーセントの検証（例: 10%, 0.5%） */
-  percent: (value: string): boolean => {
-    return /^\d+(\.\d+)?%$/.test(value);
-  },
+  phone: (value: string): boolean => validatePhone(value).valid,
+  email: (value: string): boolean => validateEmail(value).valid,
+  url: (value: string): boolean => validateUrl(value).valid,
+  fee: (value: string): boolean => validateFee(value).valid,
+  date: (value: string): boolean => validateDate(value).valid,
+  time: (value: string): boolean => validateTime(value).valid,
+  percent: (value: string): boolean => validatePercent(value).valid,
 };
 
 /**
  * 変数名から適切なバリデーターを推定
- *
- * @param variableName 変数名
- * @returns バリデーター関数、または推定できない場合はnull
+ * @deprecated 新しいコードでは lib/llm/validators.ts の getValidator() を使用してください
  */
 export function inferValidator(
   variableName: string
 ): ((value: string) => boolean) | null {
-  const name = variableName.toLowerCase();
-
-  if (name.endsWith("_phone") || name.endsWith("_tel")) {
-    return validators.phone;
-  }
-  if (name.endsWith("_email") || name.endsWith("_mail")) {
-    return validators.email;
-  }
-  if (name.endsWith("_url")) {
-    return validators.url;
-  }
-  if (name.endsWith("_fee") || name.includes("_fee_")) {
-    return validators.fee;
-  }
-  if (name.endsWith("_rate") && !name.includes("subsidy")) {
-    return validators.percent;
-  }
-  if (name.endsWith("_kigen") || name.endsWith("_deadline")) {
-    return validators.date;
-  }
-
-  return null;
+  const validator = getValidator(variableName);
+  if (!validator) return null;
+  return (value: string) => validator(value).valid;
 }
 
 /**
  * 変数値を検証
- *
- * @param variableName 変数名
- * @param value 値
- * @returns 有効な場合はtrue、無効な場合はfalse、検証できない場合はnull
+ * @deprecated 新しいコードでは lib/llm/validators.ts の validateVariable() を使用してください
  */
 export function validateVariableValue(
   variableName: string,
   value: string
 ): boolean | null {
-  const validator = inferValidator(variableName);
-  if (!validator) {
-    return null; // 検証できない
-  }
-  return validator(value);
+  const validator = getValidator(variableName);
+  if (!validator) return null;
+  return validateVariable(variableName, value).valid;
 }
 
 /**

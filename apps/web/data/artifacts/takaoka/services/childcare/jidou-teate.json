@@ -61,7 +61,7 @@
       "id": "section-zjum2teka",
       "type": "Section",
       "props": {
-        "heading": "対象となる方",
+        "heading": "児童手当の対象となる方",
         "level": 2,
         "content": [
           {
@@ -535,6 +535,40 @@
           {
             "title": "予防接種",
             "href": "/services/health/yobosesshu"
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-方法-1769918445539",
+      "type": "Section",
+      "props": {
+        "heading": "児童手当の手続き方法",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "{{jidou_teate_houhou}}"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-手順-1769918445539",
+      "type": "Section",
+      "props": {
+        "heading": "児童手当の申請の流れ",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "{{jidou_teate_nagare}}"
+              }
+            ]
           }
         ]
       }

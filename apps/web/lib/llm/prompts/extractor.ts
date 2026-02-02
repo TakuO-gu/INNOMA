@@ -41,31 +41,17 @@ export async function extractVariables(
     .map((v) => {
       let line = `- ${v.variableName}: ${v.description}`;
       if (v.validationHint) {
-        line += ` (形式: ${v.validationHint})`;
-      }
-      if (v.examples && v.examples.length > 0) {
-        line += ` (例: ${v.examples.join(', ')})`;
+        line += ` (${v.validationHint})`;
       }
       return line;
     })
     .join('\n');
 
-  const prompt = `以下のWebページから、指定された情報を抽出してください。
-
-【Webページ内容】
-${truncatedContent}
-
-【抽出する情報】
+  const prompt = `ページから以下を抽出しJSON出力。見つからなければnull。
 ${variableList}
 
-【出力形式】
-JSON形式で出力してください。
-情報が見つからない場合は null としてください。
-値は正確に抽出し、余分な説明は含めないでください。
-
-{
-${variables.map((v) => `  "${v.variableName}": "値またはnull"`).join(',\n')}
-}`;
+ページ:
+${truncatedContent}`;
 
   const response = await generateJSON<ExtractionResponse>(prompt);
   const now = new Date().toISOString();
@@ -94,37 +80,16 @@ export async function extractFromSnippets(
     .join('\n\n');
 
   const variableList = variables
-    .map((v) => {
-      let line = `- ${v.variableName}: ${v.description}`;
-      if (v.examples && v.examples.length > 0) {
-        line += ` (例: ${v.examples.join(', ')})`;
-      }
-      return line;
-    })
+    .map((v) => `- ${v.variableName}: ${v.description}`)
     .join('\n');
 
-  const prompt = `以下の検索結果から、指定された情報を抽出してください。
-
-【検索結果】
-${snippetText}
-
-【抽出する情報】
+  const prompt = `検索結果から以下を抽出しJSON出力。不確かならneedsPageFetchに追加。
 ${variableList}
 
-【出力形式】
-JSON形式で出力してください。
+検索結果:
+${snippetText}
 
-{
-  "extracted": {
-    "変数名": { "value": "値", "sourceIndex": 検索結果番号 },
-    ...
-  },
-  "needsPageFetch": ["ページ取得が必要な変数名のリスト"]
-}
-
-注意:
-- スニペットから確実に読み取れる情報のみ抽出
-- 不確かな場合は needsPageFetch に追加`;
+出力形式: { "extracted": { "変数名": { "value": "値", "sourceIndex": 番号 } }, "needsPageFetch": ["変数名"] }`;
 
   interface SnippetExtractionResponse {
     extracted: Record<string, { value: string; sourceIndex: number }>;

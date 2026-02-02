@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0.0",
-  "page_id": "sample-services-registration-tenshutsu",
-  "municipality_id": "sample",
+  "page_id": "takaoka-services-registration-tenshutsu",
+  "municipality_id": "takaoka",
   "path": "/services/registration/tenshutsu",
   "title": "転出届",
   "description": "市外へ引っ越すときの転出届の届出方法、必要書類について",
@@ -13,12 +13,12 @@
   "topic": [],
   "source": {
     "source_url": "template://sample/services/registration/tenshutsu",
-    "fetched_at": "{{generated_at}}",
+    "fetched_at": "2026-01-20T10:33:17.311Z",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "{{generated_at}}",
+    "generated_at": "2026-01-20T10:33:17.311Z",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -57,7 +57,7 @@
       }
     },
     {
-      "id": "section-2k95ecuax",
+      "id": "section-ww2edguqk",
       "type": "Section",
       "props": {
         "heading": "届出期間",
@@ -75,7 +75,7 @@
       }
     },
     {
-      "id": "section-2k95ecuax-notification-0",
+      "id": "section-ww2edguqk-notification-0",
       "type": "NotificationBanner",
       "props": {
         "severity": "info",
@@ -132,36 +132,72 @@
       }
     },
     {
-      "id": "section-ipej88dfx-table",
-      "type": "Table",
+      "id": "section-2rv2uhq9i-table",
+      "type": "Section",
       "props": {
-        "rows": [
+        "heading": "届出に必要なもの",
+        "content": [
           {
-            "label": "届出人の本人確認書類（マイナンバーカード、運転免許証など）",
-            "value": ""
-          },
-          {
-            "label": "マイナンバーカード（お持ちの方は転出届に必要。オンライン申請の場合は必須）",
-            "value": ""
-          },
-          {
-            "label": "国民健康保険証（加入している場合は返却）",
-            "value": ""
-          },
-          {
-            "label": "印鑑登録証（登録している場合は返却）",
-            "value": ""
-          },
-          {
-            "label": "介護保険被保険者証（該当する場合）",
-            "value": ""
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "届出人の本人確認書類（マイナンバーカード、運転免許証など）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "マイナンバーカード（お持ちの方は転出届に必要。オンライン申請の場合は必須）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "国民健康保険証（加入している場合は返却）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "印鑑登録証（登録している場合は返却）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "介護保険被保険者証（該当する場合）"
+                    }
+                  ]
+                }
+              ]
+            ]
           }
-        ],
-        "heading": "届出に必要なもの"
+        ]
       }
     },
     {
-      "id": "section-yahhd0icj",
+      "id": "section-1ljzx2r64",
       "type": "Section",
       "props": {
         "heading": "マイナポータルからの届出",
@@ -171,7 +207,10 @@
             "type": "paragraph",
             "runs": [
               {
-                "text": "マイナンバーカードをお持ちの方は、マイナポータルから転出届をオンラインで届出できます。この場合、転出証明書は発行されず、マイナンバーカードが転出証明書の代わりとなります。"
+                "text": "マイナンバーカードをお持ちの方は、マイナポータルから転出届をオンラインで届出できます。"
+              },
+              {
+                "text": "この場合、転出証明書は発行されず、マイナンバーカードが転出証明書の代わりとなります。"
               }
             ]
           },
@@ -224,7 +263,7 @@
       }
     },
     {
-      "id": "section-b71oe0n3h",
+      "id": "section-7muhsdj48",
       "type": "Section",
       "props": {
         "heading": "転出に伴うその他の手続き",
@@ -344,6 +383,68 @@
       }
     },
     {
+      "id": "section-対象-1769919363212",
+      "type": "Section",
+      "props": {
+        "heading": "転出届の対象となる方",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "詳細は担当課にお問い合わせください。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-方法-1769919363212",
+      "type": "Section",
+      "props": {
+        "heading": "転出届の手続き方法",
+        "content": [
+          {
+            "type": "list",
+            "ordered": true,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "必要書類を準備します。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "窓口で申請書を記入します。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "書類を提出し、確認を受けます。"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
       "id": "contact-1",
       "type": "Contact",
       "props": {
@@ -352,6 +453,27 @@
         "email": "{{shimin_email}}",
         "hours": "{{city_hall_hours}}",
         "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "terms-1769899964520",
+      "type": "Section",
+      "props": {
+        "heading": "用語の説明",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "被保険者",
+                "bold": true
+              },
+              {
+                "text": "：保険に加入している方"
+              }
+            ]
+          }
+        ]
       }
     },
     {

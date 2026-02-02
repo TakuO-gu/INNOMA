@@ -18,5 +18,17 @@
     "source": "llm",
     "confidence": 0.7,
     "updatedAt": "2026-01-30T00:00:00.000Z"
+  },
+  "nenkin_houhou": {
+    "value": "年金事務所または市区町村窓口で相談・申請してください。オンラインでの届出も一部可能です",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:14:41.316Z"
+  },
+  "nenkin_nagare": {
+    "value": "1. 年金事務所または市区町村で相談 → 2. 必要書類を準備 → 3. 申請書を提出 → 4. 審査・決定通知",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:09:26.482Z"
   }
 }

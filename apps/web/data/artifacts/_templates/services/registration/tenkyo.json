@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0.0",
-  "page_id": "sample-services-registration-tenkyo",
-  "municipality_id": "sample",
+  "page_id": "takaoka-services-registration-tenkyo",
+  "municipality_id": "takaoka",
   "path": "/services/registration/tenkyo",
   "title": "転居届",
   "description": "市内で住所が変わったときの転居届の届出方法について",
@@ -13,12 +13,12 @@
   "topic": [],
   "source": {
     "source_url": "template://sample/services/registration/tenkyo",
-    "fetched_at": "{{generated_at}}",
+    "fetched_at": "2026-01-20T10:33:17.311Z",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "{{generated_at}}",
+    "generated_at": "2026-01-20T10:33:17.311Z",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -57,7 +57,7 @@
       }
     },
     {
-      "id": "section-c84ab0mh7",
+      "id": "section-gx2aa29kz",
       "type": "Section",
       "props": {
         "heading": "届出期間",
@@ -109,82 +109,117 @@
       }
     },
     {
-      "id": "section-ktad8b33c",
+      "id": "section-oh3sewykh-table",
       "type": "Section",
       "props": {
         "heading": "届出に必要なもの",
-        "level": 2,
         "content": [
           {
-            "type": "paragraph",
-            "runs": [
-              {
-                "text": "必要書類は自治体により異なる場合があります。事前にお住まいの市区町村にご確認ください。"
-              }
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "届出人の本人確認書類（マイナンバーカード、運転免許証など）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "マイナンバーカード（転居する方全員分。住所変更が必要）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "国民健康保険証（加入している場合。住所変更が必要）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "介護保険被保険者証（該当する場合）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "在留カード（外国籍の方）"
+                    }
+                  ]
+                }
+              ]
             ]
           }
         ]
       }
     },
     {
-      "id": "section-ktad8b33c-table",
-      "type": "Table",
+      "id": "section-idmysukv5-table",
+      "type": "Section",
       "props": {
-        "rows": [
+        "heading": "届出できる人",
+        "content": [
           {
-            "label": "届出人の本人確認書類（マイナンバーカード、運転免許証など）",
-            "value": ""
-          },
-          {
-            "label": "マイナンバーカード（転居する方全員分。住所変更が必要）",
-            "value": ""
-          },
-          {
-            "label": "国民健康保険証・資格確認書（加入している場合。住所変更が必要）",
-            "value": ""
-          },
-          {
-            "label": "後期高齢者医療資格確認書（該当する場合）",
-            "value": ""
-          },
-          {
-            "label": "介護保険被保険者証（該当する場合）",
-            "value": ""
-          },
-          {
-            "label": "在留カード（外国籍の方）",
-            "value": ""
-          },
-          {
-            "label": "印鑑（自治体により必要な場合があります）",
-            "value": ""
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "本人"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "同一世帯の方"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "代理人（委任状が必要）"
+                    }
+                  ]
+                }
+              ]
+            ]
           }
         ]
       }
     },
     {
-      "id": "section-jh69drl28-table",
-      "type": "Table",
-      "props": {
-        "rows": [
-          {
-            "label": "本人",
-            "value": ""
-          },
-          {
-            "label": "同一世帯の方",
-            "value": ""
-          },
-          {
-            "label": "代理人（委任状が必要）",
-            "value": ""
-          }
-        ],
-        "heading": "届出できる人"
-      }
-    },
-    {
-      "id": "section-ju99kd0om",
+      "id": "section-qbtbkd5lq",
       "type": "Section",
       "props": {
         "heading": "転居に伴うその他の手続き",
@@ -290,6 +325,68 @@
       }
     },
     {
+      "id": "section-対象-1769919363209",
+      "type": "Section",
+      "props": {
+        "heading": "転居届の対象となる方",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "詳細は担当課にお問い合わせください。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-方法-1769919363209",
+      "type": "Section",
+      "props": {
+        "heading": "転居届の手続き方法",
+        "content": [
+          {
+            "type": "list",
+            "ordered": true,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "必要書類を準備します。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "窓口で申請書を記入します。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "書類を提出し、確認を受けます。"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
       "id": "contact-1",
       "type": "Contact",
       "props": {
@@ -298,6 +395,27 @@
         "email": "{{shimin_email}}",
         "hours": "{{city_hall_hours}}",
         "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "terms-1769899964518",
+      "type": "Section",
+      "props": {
+        "heading": "用語の説明",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "被保険者",
+                "bold": true
+              },
+              {
+                "text": "：保険に加入している方"
+              }
+            ]
+          }
+        ]
       }
     },
     {

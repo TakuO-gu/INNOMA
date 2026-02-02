@@ -307,47 +307,102 @@
     },
     {
       "id": "section-i9aptvii0-table",
-      "type": "Table",
+      "type": "Section",
       "props": {
-        "rows": [
+        "heading": "",
+        "content": [
           {
-            "label": "申請書（ダウンロード可）",
-            "value": ""
-          },
-          {
-            "label": "本人確認書類のコピー",
-            "value": ""
-          },
-          {
-            "label": "手数料分の定額小為替",
-            "value": ""
-          },
-          {
-            "label": "返信用封筒（切手貼付）",
-            "value": ""
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "申請書（ダウンロード可）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "本人確認書類のコピー"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "手数料分の定額小為替"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "返信用封筒（切手貼付）"
+                    }
+                  ]
+                }
+              ]
+            ]
           }
         ]
       }
     },
     {
       "id": "section-bfz0njz1b-table",
-      "type": "Table",
+      "type": "Section",
       "props": {
-        "rows": [
+        "heading": "申請に必要なもの",
+        "content": [
           {
-            "label": "本人確認書類（マイナンバーカード、運転免許証、パスポートなど）",
-            "value": ""
-          },
-          {
-            "label": "手数料",
-            "value": ""
-          },
-          {
-            "label": "委任状（代理人が申請する場合）",
-            "value": ""
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "本人確認書類（マイナンバーカード、運転免許証、パスポートなど）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "手数料"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "委任状（代理人が申請する場合）"
+                    }
+                  ]
+                }
+              ]
+            ]
           }
-        ],
-        "heading": "申請に必要なもの"
+        ]
       }
     },
     {
@@ -361,48 +416,102 @@
     },
     {
       "id": "section-n1tqe3uze-table",
-      "type": "Table",
+      "type": "Section",
       "props": {
-        "rows": [
+        "heading": "戸籍謄本・抄本",
+        "content": [
           {
-            "label": "戸籍に記載されている方",
-            "value": ""
-          },
-          {
-            "label": "配偶者",
-            "value": ""
-          },
-          {
-            "label": "直系の親族（親、祖父母、子、孫など）",
-            "value": ""
-          },
-          {
-            "label": "代理人（委任状が必要）",
-            "value": ""
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "戸籍に記載されている方"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "配偶者"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "直系の親族（親、祖父母、子、孫など）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "代理人（委任状が必要）"
+                    }
+                  ]
+                }
+              ]
+            ]
           }
-        ],
-        "heading": "戸籍謄本・抄本"
+        ]
       }
     },
     {
       "id": "section-hqrz56fhm-table",
-      "type": "Table",
+      "type": "Section",
       "props": {
-        "rows": [
+        "heading": "住民票の写し",
+        "content": [
           {
-            "label": "本人",
-            "value": ""
-          },
-          {
-            "label": "同一世帯の方",
-            "value": ""
-          },
-          {
-            "label": "代理人（委任状が必要）",
-            "value": ""
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "本人"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "同一世帯の方"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "代理人（委任状が必要）"
+                    }
+                  ]
+                }
+              ]
+            ]
           }
-        ],
-        "heading": "住民票の写し"
+        ]
       }
     },
     {
@@ -457,6 +566,23 @@
       }
     },
     {
+      "id": "section-対象-1769919373811",
+      "type": "Section",
+      "props": {
+        "heading": "戸籍謄本・住民票取得の対象となる方",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "詳細は担当課にお問い合わせください。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
       "id": "contact-1",
       "type": "Contact",
       "props": {
@@ -465,6 +591,39 @@
         "email": "todokede@sample-city.lg.jp",
         "hours": "平日 8:30〜17:15（土日祝日・年末年始を除く）",
         "address": "〒100-0001 東京都サンプル市中央1-1-1"
+      }
+    },
+    {
+      "id": "terms-1769919373811",
+      "type": "Section",
+      "props": {
+        "heading": "用語の説明",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "戸籍謄本",
+                "bold": true
+              },
+              {
+                "text": "：家族全員の戸籍の写し"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "戸籍抄本",
+                "bold": true
+              },
+              {
+                "text": "：本人だけの戸籍の写し"
+              }
+            ]
+          }
+        ]
       }
     },
     {

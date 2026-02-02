@@ -18,12 +18,32 @@ interface GenerationConfig {
 }
 
 /**
+ * Generate content result with metadata
+ */
+interface GenerateContentResult {
+  text: string;
+  finishReason: string;
+  truncated: boolean;
+}
+
+/**
  * Generate content using Gemini
  */
 export async function generateContent(
   prompt: string,
   config: GenerationConfig = {}
 ): Promise<string> {
+  const result = await generateContentWithMetadata(prompt, config);
+  return result.text;
+}
+
+/**
+ * Generate content with metadata (including finish reason)
+ */
+async function generateContentWithMetadata(
+  prompt: string,
+  config: GenerationConfig = {}
+): Promise<GenerateContentResult> {
   const apiKey = process.env.GOOGLE_GEMINI_API_KEY;
 
   if (!apiKey) {
@@ -69,7 +89,14 @@ export async function generateContent(
     throw new Error('Invalid response format from Gemini');
   }
 
-  return candidate.content.parts[0].text;
+  const finishReason = candidate.finishReason || 'UNKNOWN';
+  const truncated = finishReason === 'MAX_TOKENS' || finishReason === 'LENGTH';
+
+  return {
+    text: candidate.content.parts[0].text,
+    finishReason,
+    truncated,
+  };
 }
 
 /**
@@ -83,13 +110,22 @@ export async function generateJSON<T>(
 
 重要: JSON形式のみで回答してください。説明文やマークダウンは含めないでください。`;
 
-  const result = await generateContent(jsonPrompt, {
+  // デフォルトで8192トークンを確保（JSONは長くなりがち）
+  const effectiveConfig = {
     ...config,
-    temperature: config.temperature ?? 0.1, // Lower temperature for structured output
-  });
+    temperature: config.temperature ?? 0.1,
+    maxOutputTokens: config.maxOutputTokens ?? 8192,
+  };
+
+  const result = await generateContentWithMetadata(jsonPrompt, effectiveConfig);
+
+  // 出力が途中で切れた場合は警告
+  if (result.truncated) {
+    console.warn(`[Gemini] Output truncated (finishReason: ${result.finishReason}). Consider increasing maxOutputTokens.`);
+  }
 
   // Clean up response (remove markdown code blocks if present)
-  let jsonString = result.trim();
+  let jsonString = result.text.trim();
   if (jsonString.startsWith('```json')) {
     jsonString = jsonString.slice(7);
   } else if (jsonString.startsWith('```')) {
@@ -103,6 +139,13 @@ export async function generateJSON<T>(
   try {
     return JSON.parse(jsonString) as T;
   } catch {
+    // 出力が途中で切れた場合は明確なエラーメッセージ
+    if (result.truncated) {
+      throw new Error(
+        `Failed to parse Gemini response as JSON (output was truncated at ${result.finishReason}). ` +
+        `Try increasing maxOutputTokens. Partial output: ${jsonString.slice(0, 200)}`
+      );
+    }
     throw new Error(`Failed to parse Gemini response as JSON: ${jsonString.slice(0, 200)}`);
   }
 }

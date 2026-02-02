@@ -135,7 +135,6 @@ export type RichTextNodeType =
   | { type: "heading"; level: 2 | 3 | 4; text: string; sourceRef?: number }
   | { type: "paragraph"; runs: TextRun[] }
   | { type: "list"; ordered: boolean; items: RichTextNodeType[][] }
-  | { type: "callout"; severity: "info" | "warning" | "danger"; title?: string; content: RichTextNodeType[] }
   | { type: "divider" };
 
 /* =============================================================================
@@ -166,12 +165,6 @@ export const RichTextNode: z.ZodType<RichTextNodeType> = z.discriminatedUnion("t
     type: z.literal("list"),
     ordered: z.boolean(),
     items: z.array(z.array(z.lazy(() => RichTextNode))),
-  }),
-  z.object({
-    type: z.literal("callout"),
-    severity: z.enum(["info", "warning", "danger"]),
-    title: z.string().optional(),
-    content: z.array(z.lazy(() => RichTextNode)),
   }),
   z.object({
     type: z.literal("divider"),

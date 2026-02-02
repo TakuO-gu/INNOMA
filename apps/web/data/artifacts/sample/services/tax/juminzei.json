@@ -384,6 +384,58 @@
       }
     },
     {
+      "id": "section-対象-1769919373821",
+      "type": "Section",
+      "props": {
+        "heading": "住民税（市民税・県民税）の対象となる方",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "詳細は担当課にお問い合わせください。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-必要-1769919373821",
+      "type": "Section",
+      "props": {
+        "heading": "住民税（市民税・県民税）に必要なもの",
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "本人確認書類（マイナンバーカード、運転免許証など）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "印鑑（認印可）"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
       "id": "contact-1",
       "type": "Contact",
       "props": {
@@ -392,6 +444,51 @@
         "email": "zeimu@sample-city.lg.jp",
         "hours": "平日 8:30〜17:15（土日祝日・年末年始を除く）",
         "address": "〒100-0001 東京都サンプル市中央1-1-1"
+      }
+    },
+    {
+      "id": "terms-1769919373821",
+      "type": "Section",
+      "props": {
+        "heading": "用語の説明",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "賦課",
+                "bold": true
+              },
+              {
+                "text": "：税金を課すこと"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "所得割",
+                "bold": true
+              },
+              {
+                "text": "：収入に応じて計算される部分"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "均等割",
+                "bold": true
+              },
+              {
+                "text": "：全員同じ金額の部分"
+              }
+            ]
+          }
+        ]
       }
     },
     {

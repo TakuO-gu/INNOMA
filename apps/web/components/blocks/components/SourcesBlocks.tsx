@@ -24,7 +24,7 @@ export function SourcesBlock({ props, sources }: SourcesBlockProps) {
   const heading = (props.heading as string) || "出典";
 
   return (
-    <section className="sources-block mt-12 pt-8 border-t border-solid-gray-300">
+    <section className="sources-block mt-16 pt-8 border-t border-solid-gray-300">
       <h2 className="text-std-20B-150 text-solid-gray-900 mb-4">{heading}</h2>
       <ol className="list-none space-y-2 text-std-14N-170 text-solid-gray-700">
         {sources

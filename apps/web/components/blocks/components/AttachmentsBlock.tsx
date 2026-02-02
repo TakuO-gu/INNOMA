@@ -63,7 +63,7 @@ export function AttachmentsBlock({ props }: AttachmentsBlockProps) {
 
   if (validItems.length === 0) {
     return (
-      <div className="attachments-block">
+      <div className="mt-12 attachments-block">
         <h3 className="text-std-17B-170 text-solid-gray-900 mb-3">{title}</h3>
         <p className="text-sm text-solid-gray-500">
           関連書類のURLは現在設定されていません。
@@ -73,7 +73,7 @@ export function AttachmentsBlock({ props }: AttachmentsBlockProps) {
   }
 
   return (
-    <div className="attachments-block">
+    <div className="mt-12 attachments-block">
       <h3 className="text-std-17B-170 text-solid-gray-900 mb-3">{title}</h3>
       <ul className="space-y-2">
         {validItems.map((item, index) => {

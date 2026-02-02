@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0.0",
-  "page_id": "sample-services-childcare-nursery-apply",
-  "municipality_id": "sample",
+  "page_id": "takaoka-services-childcare-nursery-apply",
+  "municipality_id": "takaoka",
   "path": "/services/childcare/nursery-apply",
   "title": "認可保育園の入園申込",
   "description": "認可保育園への入園申込方法。必要書類、申込期間、選考基準など。",
@@ -13,12 +13,12 @@
   "topic": [],
   "source": {
     "source_url": "template://sample/services/childcare/nursery/apply",
-    "fetched_at": "{{generated_at}}",
+    "fetched_at": "2026-01-20T10:33:17.311Z",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "{{generated_at}}",
+    "generated_at": "2026-01-20T10:33:17.311Z",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -53,7 +53,7 @@
       "id": "summary-1",
       "type": "Summary",
       "props": {
-        "text": "{{municipality_name}}内の認可保育園（認定こども園の保育園部分を含む）への入園申込についてご案内します。"
+        "text": "高岡市内の認可保育園（認定こども園の保育園部分を含む）への入園申込についてご案内します。"
       }
     },
     {
@@ -79,7 +79,7 @@
       }
     },
     {
-      "id": "section-ht41exkou",
+      "id": "section-51ebwtqio",
       "type": "Section",
       "props": {
         "heading": "申込できる方",
@@ -89,7 +89,7 @@
             "type": "paragraph",
             "runs": [
               {
-                "text": "{{municipality_name}}に住民登録があり、保護者のいずれもが次のいずれかに該当し、家庭で保育ができない状態にあるお子さま"
+                "text": "高岡市に住民登録があり、保護者のいずれもが次のいずれかに該当し、家庭で保育ができない状態にあるお子さま"
               }
             ]
           },
@@ -173,32 +173,62 @@
       }
     },
     {
-      "id": "section-6cxov9if9-table",
-      "type": "Table",
+      "id": "section-eqefwo9pq-table",
+      "type": "Section",
       "props": {
-        "rows": [
+        "heading": "必要書類",
+        "content": [
           {
-            "label": "保育所等利用申込書（様式第1号）",
-            "value": ""
-          },
-          {
-            "label": "保育を必要とする証明書（就労証明書など）",
-            "value": ""
-          },
-          {
-            "label": "マイナンバー確認書類",
-            "value": ""
-          },
-          {
-            "label": "本人確認書類（運転免許証、パスポート等）",
-            "value": ""
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "保育所等利用申込書（様式第1号）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "保育を必要とする証明書（就労証明書など）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "マイナンバー確認書類"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "本人確認書類（運転免許証、パスポート等）"
+                    }
+                  ]
+                }
+              ]
+            ]
           }
-        ],
-        "heading": "必要書類"
+        ]
       }
     },
     {
-      "id": "section-gir5ssn0o",
+      "id": "section-yg2zewwnx",
       "type": "Section",
       "props": {
         "heading": "申込方法",
@@ -264,7 +294,7 @@
       }
     },
     {
-      "id": "section-gqnlk03e3",
+      "id": "section-x1de14u7b",
       "type": "Section",
       "props": {
         "heading": "選考について",
@@ -362,6 +392,23 @@
           {
             "title": "育児・介護休業",
             "href": "/services/employment/family-leave"
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-対象-1769919363151",
+      "type": "Section",
+      "props": {
+        "heading": "認可保育園の入園申込の対象となる方",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "詳細は担当課にお問い合わせください。"
+              }
+            ]
           }
         ]
       }

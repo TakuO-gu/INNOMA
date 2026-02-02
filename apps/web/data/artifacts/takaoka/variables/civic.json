@@ -198,5 +198,161 @@
     "source": "llm",
     "confidence": 0.7,
     "updatedAt": "2026-01-30T00:00:00.000Z"
+  },
+  "administrative_appeal_hitsuyou": {
+    "value": "審査請求書、処分通知書の写し、本人確認書類",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.788Z"
+  },
+  "administrative_appeal_houhou": {
+    "value": "処分があったことを知った日の翌日から3か月以内に審査請求書を提出してください",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.789Z"
+  },
+  "administrative_appeal_nagare": {
+    "value": "1. 審査請求書を作成 → 2. 審査庁に提出 → 3. 審理 → 4. 裁決",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.789Z"
+  },
+  "audit_request_hitsuyou": {
+    "value": "監査請求書、関係資料、請求人の住所・氏名を証する書類",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.789Z"
+  },
+  "audit_request_houhou": {
+    "value": "違法・不当な行為があった日から1年以内に監査請求書を監査委員に提出してください",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.789Z"
+  },
+  "audit_request_nagare": {
+    "value": "1. 監査請求書を作成 → 2. 監査委員に提出 → 3. 監査実施 → 4. 結果通知",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.789Z"
+  },
+  "direct_democracy_hitsuyou": {
+    "value": "請求書、署名簿、代表者証明書",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.789Z"
+  },
+  "direct_democracy_houhou": {
+    "value": "有権者の一定数以上の署名を集め、選挙管理委員会に請求書を提出してください",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.789Z"
+  },
+  "direct_democracy_nagare": {
+    "value": "1. 代表者証明書を請求 → 2. 署名を集める → 3. 選挙管理委員会に提出 → 4. 審査・実施",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.789Z"
+  },
+  "election_hitsuyou": {
+    "value": "投票所入場券（届いた場合）、本人確認書類（入場券がない場合）",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:14:41.318Z"
+  },
+  "election_houhou": {
+    "value": "投票日当日に指定された投票所で投票するか、期日前投票・不在者投票を利用してください",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:14:41.318Z"
+  },
+  "election_nagare": {
+    "value": "1. 選挙公報を確認 → 2. 投票所入場券を持参 → 3. 投票所で本人確認 → 4. 投票",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:09:26.486Z"
+  },
+  "legal_support_hitsuyou": {
+    "value": "相談内容をまとめたメモ、関係書類（契約書、通知書等）",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.789Z"
+  },
+  "legal_support_houhou": {
+    "value": "法テラス（0570-078374）に電話するか、最寄りの法テラスに来所してください",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.789Z"
+  },
+  "legal_support_nagare": {
+    "value": "1. 法テラスに電話または来所 → 2. 相談内容を説明 → 3. 弁護士等の紹介 → 4. 相談・依頼",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.789Z"
+  },
+  "public_comment_hitsuyou": {
+    "value": "意見書（住所・氏名を記載）",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.789Z"
+  },
+  "public_comment_nagare": {
+    "value": "1. 意見募集の公告を確認 → 2. 案の内容を確認 → 3. 意見書を作成・提出 → 4. 結果公表を確認",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.789Z"
+  },
+  "public_housing_hitsuyou": {
+    "value": "入居申込書、住民票、所得証明書、その他必要書類（募集案内で確認）",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.789Z"
+  },
+  "public_housing_houhou": {
+    "value": "募集期間中に申込書と必要書類を提出してください。抽選または審査により入居者が決定されます",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.789Z"
+  },
+  "public_housing_nagare": {
+    "value": "1. 募集案内を確認 → 2. 申込書・必要書類を提出 → 3. 抽選・審査 → 4. 当選者は契約手続き",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.789Z"
+  },
+  "victim_support_hitsuyou": {
+    "value": "相談内容に関する資料（任意）。秘密は厳守されます",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.789Z"
+  },
+  "victim_support_houhou": {
+    "value": "犯罪被害者支援センターまたは市区町村の相談窓口に連絡してください。匿名での相談も可能です",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.789Z"
+  },
+  "victim_support_nagare": {
+    "value": "1. 相談窓口に連絡 → 2. 状況を説明 → 3. 支援内容の説明 → 4. 各種支援の利用",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.789Z"
+  },
+  "voter_registration_hitsuyou": {
+    "value": "転居届・転入届を提出した際に自動的に選挙人名簿に登録されます",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.789Z"
+  },
+  "voter_registration_houhou": {
+    "value": "住民登録をしていれば、転入届から3か月経過後に選挙人名簿に登録されます",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.789Z"
+  },
+  "voter_registration_nagare": {
+    "value": "1. 転入届を提出 → 2. 3か月経過後に選挙人名簿に登録 → 3. 選挙時に投票所入場券が届く",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.789Z"
   }
 }

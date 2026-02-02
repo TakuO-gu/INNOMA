@@ -80,7 +80,4 @@ export interface RichTextNode {
   runs?: Array<{ text: string; bold?: boolean; link?: { href: string; label?: string; external?: boolean } }>;
   ordered?: boolean;
   items?: RichTextNode[][];
-  severity?: "info" | "warning" | "danger";
-  title?: string;
-  content?: RichTextNode[];
 }

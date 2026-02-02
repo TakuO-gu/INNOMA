@@ -211,7 +211,7 @@ export function DistrictSelectorBlock({ props }: DistrictSelectorProps) {
   };
 
   return (
-    <div className="district-selector my-6">
+    <div className="district-selector mt-12 mb-6">
       <div className="mb-2">
         <Label htmlFor={`district-search-${variableGroup || variableName}`}>
           {label}

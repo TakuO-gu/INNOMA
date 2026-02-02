@@ -209,7 +209,7 @@ export function ShelterListBlock({ props }: ShelterListProps) {
   }, [selectedDistrict]);
 
   return (
-    <div className="shelter-list my-6">
+    <div className="shelter-list mt-12 mb-6">
       <div className="mb-2">
         <Label htmlFor="shelter-district-search">{label}</Label>
       </div>

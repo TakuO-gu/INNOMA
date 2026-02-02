@@ -219,6 +219,57 @@
       }
     },
     {
+      "id": "section-必要-1769918445596",
+      "type": "Section",
+      "props": {
+        "heading": "新規就農支援に必要なもの",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "{{new_farmer_hitsuyou}}"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-方法-1769918445596",
+      "type": "Section",
+      "props": {
+        "heading": "新規就農支援の手続き方法",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "{{new_farmer_houhou}}"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-手順-1769918445596",
+      "type": "Section",
+      "props": {
+        "heading": "新規就農支援の申請の流れ",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "{{new_farmer_nagare}}"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
       "id": "contact-1",
       "type": "Contact",
       "props": {

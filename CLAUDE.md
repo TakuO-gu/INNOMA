@@ -16,12 +16,13 @@
 |-------------|---------------|
 | [docs/PROJECT.md](docs/PROJECT.md) | プロジェクト構造を確認したいとき |
 | [docs/REQUIREMENTS.md](docs/REQUIREMENTS.md) | 要件を確認したいとき |
-| [docs/IMPLEMENTATION_PLAN.md](docs/IMPLEMENTATION_PLAN.md) | 実装の優先順位を確認したいとき |
-| [docs/ADMIN_PANEL_SPEC.md](docs/ADMIN_PANEL_SPEC.md) | 管理画面を実装するとき |
-| [docs/LLM_FETCHER_SPEC.md](docs/LLM_FETCHER_SPEC.md) | LLM情報取得を実装するとき |
-| [docs/TEMPLATE_VARIABLES.md](docs/TEMPLATE_VARIABLES.md) | テンプレート変数を扱うとき |
-| [docs/API_REFERENCE.md](docs/API_REFERENCE.md) | APIを実装するとき |
-| [docs/DATA_STRUCTURES.md](docs/DATA_STRUCTURES.md) | データ構造を扱うとき |
+| [docs/specs/ADMIN_PANEL_SPEC.md](docs/specs/ADMIN_PANEL_SPEC.md) | 管理画面を実装するとき |
+| [docs/specs/LLM_FETCHER_SPEC.md](docs/specs/LLM_FETCHER_SPEC.md) | LLM情報取得を実装するとき |
+| [docs/guides/TEMPLATE_VARIABLES.md](docs/guides/TEMPLATE_VARIABLES.md) | テンプレート変数を扱うとき |
+| [docs/specs/API_REFERENCE.md](docs/specs/API_REFERENCE.md) | APIを実装するとき |
+| [docs/specs/DATA_STRUCTURES.md](docs/specs/DATA_STRUCTURES.md) | データ構造を扱うとき |
+| [docs/guides/COMPONENT_SELECTION_LOGIC.md](docs/guides/COMPONENT_SELECTION_LOGIC.md) | コンポーネント選択時 |
+| [docs/architecture/INNOMA_FlowChart.md](docs/architecture/INNOMA_FlowChart.md) | アーキテクチャを確認したいとき |
 
 ---
 
@@ -115,7 +116,7 @@ Task tool: subagent_type=template-validity-checker
 
 ### 3. コンポーネント最適化
 
-[docs/COMPONENT_SELECTION_LOGIC.md](docs/COMPONENT_SELECTION_LOGIC.md) のルールに従い、コンポーネント構成を最適化する:
+[docs/guides/COMPONENT_SELECTION_LOGIC.md](docs/guides/COMPONENT_SELECTION_LOGIC.md) のルールに従い、コンポーネント構成を最適化する:
 
 **確認項目**:
 - 手順（3ステップ以上）→ `StepNavigation` を使用しているか
@@ -123,7 +124,7 @@ Task tool: subagent_type=template-validity-checker
 - 単純なリスト → `RichText (unordered list)` を使用しているか
 - `Table` の `value` が空でないか（空なら `RichText` に変更）
 - 重要な注意事項 → `NotificationBanner` を使用しているか
-- セクション順序が [ドキュメント記載の順序](docs/COMPONENT_SELECTION_LOGIC.md#3-セクション順序) に従っているか
+- セクション順序が [ドキュメント記載の順序](docs/guides/COMPONENT_SELECTION_LOGIC.md#3-セクション順序) に従っているか
 
 ---
 

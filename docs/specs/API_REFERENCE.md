@@ -1,6 +1,6 @@
 # API リファレンス
 
-**最終更新**: 2026-01-20
+**最終更新**: 2026-02-02
 
 ---
 
@@ -295,7 +295,7 @@ LLM情報取得を実行。
 
 ---
 
-### GET /api/admin/drafts/[id]
+### GET /api/admin/drafts/[municipalityId]/[service]
 
 下書き詳細を取得。
 
@@ -335,20 +335,29 @@ LLM情報取得を実行。
 
 ---
 
-### POST /api/admin/drafts/[id]/approve
+### PUT /api/admin/drafts/[municipalityId]/[service]
 
-下書きを承認。
+下書きを承認または却下。
 
-**リクエスト**:
+**リクエスト（承認）**:
 ```json
 {
+  "action": "approve",
   "modifications": {
-    "kokuho_hours": "平日8:30-17:00"  // 修正して承認
+    "kokuho_hours": "平日8:30-17:00"
   }
 }
 ```
 
-**レスポンス**:
+**リクエスト（却下）**:
+```json
+{
+  "action": "reject",
+  "reason": "情報が古い可能性がある"
+}
+```
+
+**レスポンス（承認）**:
 ```json
 {
   "success": true,
@@ -365,22 +374,46 @@ LLM情報取得を実行。
 
 ---
 
-### POST /api/admin/drafts/[id]/reject
+### DELETE /api/admin/drafts/[municipalityId]/[service]
 
-下書きを却下。
-
-**リクエスト**:
-```json
-{
-  "reason": "情報が古い可能性がある"
-}
-```
+下書きを削除。
 
 **レスポンス**:
 ```json
 {
-  "success": true,
-  "rejectedId": "draft-123"
+  "success": true
+}
+```
+
+---
+
+### GET /api/admin/drafts/[municipalityId]/[service]/source
+
+ソースコンテンツ（取得元のWebページ）を取得。
+
+**レスポンス**:
+```json
+{
+  "sources": [
+    {
+      "url": "https://...",
+      "title": "国民健康保険について",
+      "content": "..."
+    }
+  ]
+}
+```
+
+---
+
+### GET /api/admin/drafts/[municipalityId]/[service]/template
+
+サンプルページのHTMLプレビューを取得。
+
+**レスポンス**:
+```json
+{
+  "html": "<div>...</div>"
 }
 ```
 
@@ -452,3 +485,59 @@ LLM情報取得を実行。
 | /fetch | 10リクエスト/分 |
 
 制限超過時は `429 Too Many Requests` を返却。
+
+---
+
+## 地区依存変数 API
+
+### GET /api/districts/[municipalityId]/[variableName]
+
+地区依存変数の地区一覧を取得。
+
+**レスポンス**:
+```json
+{
+  "variableName": "sodai_gomi_collection_center",
+  "districts": [
+    {
+      "id": "district-1",
+      "name": "中央地区",
+      "value": "中央クリーンセンター",
+      "areas": ["中央町", "本町", "駅前"]
+    },
+    {
+      "id": "district-2",
+      "name": "北部地区",
+      "value": "北部環境センター",
+      "areas": ["北町", "緑ヶ丘"]
+    }
+  ],
+  "defaultValue": "お住まいの地区を選択してください",
+  "selectPrompt": "地区を選択"
+}
+```
+
+---
+
+## コンテンツ生成 API
+
+### POST /api/admin/generate
+
+LLMを使ってコンテンツを生成。
+
+**リクエスト**:
+```json
+{
+  "municipalityId": "takaoka",
+  "service": "kokuho",
+  "variables": ["kokuho_phone", "kokuho_hours"]
+}
+```
+
+**レスポンス**（SSEストリーミング）:
+```
+data: {"type":"progress","service":"kokuho","variable":"kokuho_phone","status":"searching"}
+data: {"type":"progress","service":"kokuho","variable":"kokuho_phone","status":"extracting"}
+data: {"type":"result","variable":"kokuho_phone","value":"0766-20-1234","confidence":0.95}
+data: {"type":"complete","success":true}
+```

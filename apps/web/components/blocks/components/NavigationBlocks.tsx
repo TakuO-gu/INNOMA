@@ -29,7 +29,7 @@ export function BreadcrumbsBlock({ props }: { props: Record<string, unknown> }) 
   });
 
   return (
-    <Breadcrumbs aria-label="パンくずリスト" className="mb-6">
+    <Breadcrumbs aria-label="パンくずリスト" className="mt-0 mb-6">
       <BreadcrumbList>
         {completedItems.map((it, i) => {
           const isLast = i === completedItems.length - 1;
@@ -79,7 +79,7 @@ export function ResourceListBlock({ props }: { props: Record<string, unknown> })
   if (completedItems.length === 0) return null;
 
   return (
-    <div className="resource-list-wrapper mb-6">
+    <div className="mt-12 resource-list-wrapper mb-6">
       {heading && <h3 className="text-std-17B-170 text-solid-gray-900 mb-3">{heading}</h3>}
       <ResourceList aria-label={heading}>
         {completedItems.map((it, i) => {
@@ -124,7 +124,7 @@ export function RelatedLinksBlock({ props }: { props: Record<string, unknown> })
   if (completedItems.length === 0) return null;
 
   return (
-    <div className="related-links mt-8 pt-6 border-t border-solid-gray-300">
+    <div className="mt-12 related-links pt-6 border-t border-solid-gray-300">
       <h2 className="text-std-20B-150 text-solid-gray-900 mb-4">関連リンク</h2>
       <ul className="space-y-2">
         {completedItems.map((item, i) => {

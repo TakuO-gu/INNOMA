@@ -144,7 +144,10 @@
             "type": "paragraph",
             "runs": [
               {
-                "text": "海での釣りは原則自由ですが、漁業権が設定された区域でのアワビ・ウニ等の採取は禁止されています。また、漁業調整規則により、禁止されている漁法や禁漁期間がありますのでご注意ください。"
+                "text": "海での釣りは原則自由ですが、漁業権が設定された区域でのアワビ・ウニ等の採取は禁止されています。"
+              },
+              {
+                "text": "また、漁業調整規則により、禁止されている漁法や禁漁期間がありますのでご注意ください。"
               }
             ]
           }
@@ -163,6 +166,103 @@
           {
             "title": "許認可申請",
             "href": "/services/business/permits"
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-対象-1769919373797",
+      "type": "Section",
+      "props": {
+        "heading": "漁業・水産業の対象となる方",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "詳細は担当課にお問い合わせください。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-必要-1769919373798",
+      "type": "Section",
+      "props": {
+        "heading": "漁業・水産業に必要なもの",
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "本人確認書類（マイナンバーカード、運転免許証など）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "印鑑（認印可）"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-方法-1769919373798",
+      "type": "Section",
+      "props": {
+        "heading": "漁業・水産業の手続き方法",
+        "content": [
+          {
+            "type": "list",
+            "ordered": true,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "必要書類を準備します。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "窓口で申請書を記入します。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "書類を提出し、確認を受けます。"
+                    }
+                  ]
+                }
+              ]
+            ]
           }
         ]
       }

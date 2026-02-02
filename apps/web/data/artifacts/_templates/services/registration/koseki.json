@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0.0",
-  "page_id": "sample-services-registration-koseki",
-  "municipality_id": "sample",
+  "page_id": "takaoka-services-registration-koseki",
+  "municipality_id": "takaoka",
   "path": "/services/registration/koseki",
   "title": "戸籍謄本・住民票の取得",
   "description": "戸籍謄本（戸籍全部事項証明書）・住民票の写しの取得方法と手数料",
@@ -13,12 +13,12 @@
   "topic": [],
   "source": {
     "source_url": "template://sample/services/registration/koseki",
-    "fetched_at": "{{generated_at}}",
+    "fetched_at": "2026-01-20T10:33:17.311Z",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "{{generated_at}}",
+    "generated_at": "2026-01-20T10:33:17.311Z",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -57,7 +57,7 @@
       }
     },
     {
-      "id": "section-h8aq7ekfk",
+      "id": "section-87wwnk8jq",
       "type": "Section",
       "props": {
         "heading": "取得できる証明書",
@@ -66,7 +66,7 @@
       }
     },
     {
-      "id": "section-qc7nojbx3",
+      "id": "section-w7d4c42sx",
       "type": "Section",
       "props": {
         "heading": "戸籍に関する証明書",
@@ -138,7 +138,7 @@
       }
     },
     {
-      "id": "section-40myslgl8-desclist",
+      "id": "section-5tf6pkei4-desclist",
       "type": "DescriptionList",
       "props": {
         "items": [
@@ -191,7 +191,7 @@
       }
     },
     {
-      "id": "section-o8ev8mv3u",
+      "id": "section-62l0394vh",
       "type": "Section",
       "props": {
         "heading": "取得方法",
@@ -200,7 +200,7 @@
       }
     },
     {
-      "id": "section-l1m3nkvk2",
+      "id": "section-tqnh5z2tq",
       "type": "Section",
       "props": {
         "heading": "窓口での取得",
@@ -244,7 +244,7 @@
       }
     },
     {
-      "id": "section-tm546zllr",
+      "id": "section-tcaj1lxvj",
       "type": "Section",
       "props": {
         "heading": "コンビニ交付",
@@ -288,7 +288,7 @@
       }
     },
     {
-      "id": "section-t7x7j5f84",
+      "id": "section-x7lp17swn",
       "type": "Section",
       "props": {
         "heading": "郵送での取得",
@@ -306,52 +306,107 @@
       }
     },
     {
-      "id": "section-t7x7j5f84-table",
-      "type": "Table",
+      "id": "section-x7lp17swn-table",
+      "type": "Section",
       "props": {
-        "rows": [
+        "heading": "",
+        "content": [
           {
-            "label": "申請書（ダウンロード可）",
-            "value": ""
-          },
-          {
-            "label": "本人確認書類のコピー",
-            "value": ""
-          },
-          {
-            "label": "手数料分の定額小為替",
-            "value": ""
-          },
-          {
-            "label": "返信用封筒（切手貼付）",
-            "value": ""
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "申請書（ダウンロード可）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "本人確認書類のコピー"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "手数料分の定額小為替"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "返信用封筒（切手貼付）"
+                    }
+                  ]
+                }
+              ]
+            ]
           }
         ]
       }
     },
     {
-      "id": "section-p2a20vlck-table",
-      "type": "Table",
+      "id": "section-is2fddg7p-table",
+      "type": "Section",
       "props": {
-        "rows": [
+        "heading": "申請に必要なもの",
+        "content": [
           {
-            "label": "本人確認書類（マイナンバーカード、運転免許証、パスポートなど）",
-            "value": ""
-          },
-          {
-            "label": "手数料",
-            "value": ""
-          },
-          {
-            "label": "委任状（代理人が申請する場合）",
-            "value": ""
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "本人確認書類（マイナンバーカード、運転免許証、パスポートなど）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "手数料"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "委任状（代理人が申請する場合）"
+                    }
+                  ]
+                }
+              ]
+            ]
           }
-        ],
-        "heading": "申請に必要なもの"
+        ]
       }
     },
     {
-      "id": "section-mfshjqoxd",
+      "id": "section-m4ysc81ey",
       "type": "Section",
       "props": {
         "heading": "申請できる方",
@@ -360,49 +415,103 @@
       }
     },
     {
-      "id": "section-tzs9y3y80-table",
-      "type": "Table",
+      "id": "section-lhwqjmxue-table",
+      "type": "Section",
       "props": {
-        "rows": [
+        "heading": "戸籍謄本・抄本",
+        "content": [
           {
-            "label": "戸籍に記載されている方",
-            "value": ""
-          },
-          {
-            "label": "配偶者",
-            "value": ""
-          },
-          {
-            "label": "直系の親族（親、祖父母、子、孫など）",
-            "value": ""
-          },
-          {
-            "label": "代理人（委任状が必要）",
-            "value": ""
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "戸籍に記載されている方"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "配偶者"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "直系の親族（親、祖父母、子、孫など）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "代理人（委任状が必要）"
+                    }
+                  ]
+                }
+              ]
+            ]
           }
-        ],
-        "heading": "戸籍謄本・抄本"
+        ]
       }
     },
     {
-      "id": "section-jjq8etjg5-table",
-      "type": "Table",
+      "id": "section-h2buh9vm7-table",
+      "type": "Section",
       "props": {
-        "rows": [
+        "heading": "住民票の写し",
+        "content": [
           {
-            "label": "本人",
-            "value": ""
-          },
-          {
-            "label": "同一世帯の方",
-            "value": ""
-          },
-          {
-            "label": "代理人（委任状が必要）",
-            "value": ""
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "本人"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "同一世帯の方"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "代理人（委任状が必要）"
+                    }
+                  ]
+                }
+              ]
+            ]
           }
-        ],
-        "heading": "住民票の写し"
+        ]
       }
     },
     {
@@ -457,6 +566,23 @@
       }
     },
     {
+      "id": "section-対象-1769919363204",
+      "type": "Section",
+      "props": {
+        "heading": "戸籍謄本・住民票取得の対象となる方",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "詳細は担当課にお問い合わせください。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
       "id": "contact-1",
       "type": "Contact",
       "props": {
@@ -465,6 +591,39 @@
         "email": "{{registration_email}}",
         "hours": "{{city_hall_hours}}",
         "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "terms-1769899964514",
+      "type": "Section",
+      "props": {
+        "heading": "用語の説明",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "戸籍謄本",
+                "bold": true
+              },
+              {
+                "text": "：家族全員の戸籍の写し"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "戸籍抄本",
+                "bold": true
+              },
+              {
+                "text": "：本人だけの戸籍の写し"
+              }
+            ]
+          }
+        ]
       }
     },
     {

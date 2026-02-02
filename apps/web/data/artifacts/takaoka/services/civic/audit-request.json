@@ -221,6 +221,57 @@
       }
     },
     {
+      "id": "section-必要-1769918445544",
+      "type": "Section",
+      "props": {
+        "heading": "住民監査請求に必要なもの",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "{{audit_request_hitsuyou}}"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-方法-1769918445544",
+      "type": "Section",
+      "props": {
+        "heading": "住民監査請求の手続き方法",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "{{audit_request_houhou}}"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-手順-1769918445544",
+      "type": "Section",
+      "props": {
+        "heading": "住民監査請求の申請の流れ",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "{{audit_request_nagare}}"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
       "id": "contact-1",
       "type": "Contact",
       "props": {
@@ -229,6 +280,51 @@
         "email": "{{audit_commission_email}}",
         "hours": "{{city_hall_hours}}",
         "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "terms-1769899964484",
+      "type": "Section",
+      "props": {
+        "heading": "用語の説明",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "賦課",
+                "bold": true
+              },
+              {
+                "text": "：税金を課すこと"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "処分",
+                "bold": true
+              },
+              {
+                "text": "：行政が決定を下すこと"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "不服申立て",
+                "bold": true
+              },
+              {
+                "text": "：決定に納得できない場合の申し出"
+              }
+            ]
+          }
+        ]
       }
     },
     {

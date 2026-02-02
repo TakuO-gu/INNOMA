@@ -191,28 +191,28 @@
     "confidence": 0.9,
     "updatedAt": "2026-01-30T00:00:00.000Z"
   },
-  "1sai6month_kenshin_basho": {
+  "kenshin_1sai6month_basho": {
     "value": "高岡市保健センター（本丸町7-25）",
     "source": "llm",
     "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kenkozoshinka/3/10/3/2667.html",
     "confidence": 0.95,
     "updatedAt": "2026-01-30T00:00:00.000Z"
   },
-  "3sai_kenshin_basho": {
+  "kenshin_3sai_basho": {
     "value": "高岡市保健センター（本丸町7-25）",
     "source": "llm",
     "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kenkozoshinka/3/10/3/index.html",
     "confidence": 0.95,
     "updatedAt": "2026-01-30T00:00:00.000Z"
   },
-  "34month_kenshin_basho": {
+  "kenshin_34month_basho": {
     "value": "高岡市保健センター（本丸町7-25）",
     "source": "llm",
     "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kenkozoshinka/3/10/3/3038.html",
     "confidence": 0.95,
     "updatedAt": "2026-01-30T00:00:00.000Z"
   },
-  "910month_kenshin_basho": {
+  "kenshin_910month_basho": {
     "value": "県内の委託医療機関（生後6～7か月、9～10か月健診は医療機関で実施）",
     "source": "llm",
     "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kenkozoshinka/3/10/3/index.html",
@@ -246,5 +246,59 @@
     "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kenkozoshinka/",
     "confidence": 0.95,
     "updatedAt": "2026-01-30T00:00:00.000Z"
+  },
+  "kenshin_hitsuyou": {
+    "value": "健診受診券、健康保険証、問診票（事前に届く場合）",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:09:26.490Z"
+  },
+  "kenshin_houhou": {
+    "value": "健診受診券を持って指定医療機関で受診。受診券は対象者に郵送されます",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:09:26.490Z"
+  },
+  "kenshin_nagare": {
+    "value": "1. 受診券を受け取る → 2. 医療機関を予約 → 3. 受診 → 4. 結果通知を受け取る",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:09:26.490Z"
+  },
+  "kokuho_nagare": {
+    "value": "1. 届出書に記入 → 2. 必要書類を添付 → 3. 窓口で届出 → 4. 保険証を受け取る",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:09:26.490Z"
+  },
+  "kouki_houhou": {
+    "value": "75歳になると自動的に後期高齢者医療制度に加入します。保険証は誕生月の前月に届きます",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:09:26.490Z"
+  },
+  "kouki_nagare": {
+    "value": "1. 75歳の誕生日前に保険証が届く → 2. 誕生日から新しい保険証を使用 → 3. それまでの保険証は返却",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:09:26.490Z"
+  },
+  "yobosesshu_hitsuyou": {
+    "value": "予診票、母子健康手帳（乳幼児）、健康保険証",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:09:26.490Z"
+  },
+  "yobosesshu_houhou": {
+    "value": "指定医療機関で接種。予診票は対象時期に届きます。事前予約が必要な場合があります",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:09:26.490Z"
+  },
+  "yobosesshu_nagare": {
+    "value": "1. 予診票を受け取る → 2. 医療機関を予約 → 3. 接種を受ける → 4. 母子手帳に記録",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:09:26.490Z"
   }
 }

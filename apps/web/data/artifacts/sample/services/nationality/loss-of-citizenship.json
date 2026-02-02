@@ -140,48 +140,102 @@
     },
     {
       "id": "section-1afxerma3-table",
-      "type": "Table",
+      "type": "Section",
       "props": {
-        "rows": [
+        "heading": "届出先",
+        "content": [
           {
-            "label": "国籍を喪失した者の本籍地の市区町村役場",
-            "value": ""
-          },
-          {
-            "label": "届出人の所在地の市区町村役場",
-            "value": ""
-          },
-          {
-            "label": "国外の場合は在外公館（大使館・領事館）",
-            "value": ""
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "国籍を喪失した者の本籍地の市区町村役場"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "届出人の所在地の市区町村役場"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "国外の場合は在外公館（大使館・領事館）"
+                    }
+                  ]
+                }
+              ]
+            ]
           }
-        ],
-        "heading": "届出先"
+        ]
       }
     },
     {
       "id": "section-rvnq19fvv-table",
-      "type": "Table",
+      "type": "Section",
       "props": {
-        "rows": [
+        "heading": "必要書類",
+        "content": [
           {
-            "label": "国籍喪失届（届出書）",
-            "value": ""
-          },
-          {
-            "label": "国籍喪失の原因を証する書面（外国の国籍証明書など）",
-            "value": ""
-          },
-          {
-            "label": "上記書類の日本語訳",
-            "value": ""
-          },
-          {
-            "label": "届出人の本人確認書類",
-            "value": ""
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "国籍喪失届（届出書）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "国籍喪失の原因を証する書面（外国の国籍証明書など）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "上記書類の日本語訳"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "届出人の本人確認書類"
+                    }
+                  ]
+                }
+              ]
+            ]
           }
-        ],
-        "heading": "必要書類"
+        ]
       }
     },
     {
@@ -200,6 +254,68 @@
           {
             "title": "パスポート",
             "href": "/services/nationality/passport"
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-対象-1769919373804",
+      "type": "Section",
+      "props": {
+        "heading": "国籍喪失届の対象となる方",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "詳細は担当課にお問い合わせください。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-方法-1769919373804",
+      "type": "Section",
+      "props": {
+        "heading": "国籍喪失届の手続き方法",
+        "content": [
+          {
+            "type": "list",
+            "ordered": true,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "必要書類を準備します。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "窓口で申請書を記入します。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "書類を提出し、確認を受けます。"
+                    }
+                  ]
+                }
+              ]
+            ]
           }
         ]
       }

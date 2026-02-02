@@ -220,5 +220,95 @@
     "source": "llm",
     "confidence": 0.8,
     "updatedAt": "2026-01-30T00:00:00.000Z"
+  },
+  "houkatsu_hitsuyou": {
+    "value": "特になし。お気軽にご相談ください",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:14:41.324Z"
+  },
+  "houkatsu_houhou": {
+    "value": "お住まいの地域を担当する地域包括支援センターに電話または来所でご相談ください",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:14:41.324Z"
+  },
+  "houkatsu_nagare": {
+    "value": "1. 電話または来所で相談 → 2. 状況の確認 → 3. 必要なサービスの紹介 → 4. 関係機関との連携",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:09:26.496Z"
+  },
+  "kaigo_hitsuyou": {
+    "value": "要介護認定申請書、介護保険被保険者証、マイナンバー確認書類、本人確認書類",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:14:41.324Z"
+  },
+  "kaigo_houhou": {
+    "value": "市区町村の介護保険窓口または地域包括支援センターに申請してください",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:14:41.324Z"
+  },
+  "kaigo_nagare": {
+    "value": "1. 要介護認定の申請 → 2. 認定調査・主治医意見書 → 3. 認定結果通知 → 4. ケアプラン作成・サービス利用",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:09:26.496Z"
+  },
+  "koureisha_hitsuyou": {
+    "value": "相談内容により異なります。まずはお気軽にご相談ください",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:14:41.324Z"
+  },
+  "koureisha_houhou": {
+    "value": "地域包括支援センターまたは市区町村の高齢福祉窓口に相談してください",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:14:41.324Z"
+  },
+  "koureisha_nagare": {
+    "value": "1. 相談窓口に連絡 → 2. サービス内容の説明 → 3. 利用申請 → 4. サービス開始",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:09:26.496Z"
+  },
+  "seikatsu_hogo_hitsuyou": {
+    "value": "申請書、収入・資産がわかる書類、住民票、本人確認書類",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.796Z"
+  },
+  "seikatsu_hogo_houhou": {
+    "value": "福祉事務所に相談してください。生活に困窮している方の相談は随時受け付けています",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.796Z"
+  },
+  "seikatsu_hogo_nagare": {
+    "value": "1. 福祉事務所に相談 → 2. 申請書を提出 → 3. 調査（家庭訪問等） → 4. 保護の決定",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.796Z"
+  },
+  "shogai_hitsuyou": {
+    "value": "障害者手帳交付申請書、診断書・意見書、写真、マイナンバー確認書類",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:14:41.324Z"
+  },
+  "shogai_houhou": {
+    "value": "市区町村の障がい福祉窓口に申請してください。診断書は指定医療機関で作成してもらいます",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:14:41.324Z"
+  },
+  "shogai_nagare": {
+    "value": "1. 障害者手帳の申請 → 2. 判定・審査 → 3. 手帳交付 → 4. 各種サービスの申請",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:09:26.496Z"
   }
 }

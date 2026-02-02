@@ -189,6 +189,74 @@
       }
     },
     {
+      "id": "section-対象-1769918445559",
+      "type": "Section",
+      "props": {
+        "heading": "自動車税・軽自動車税の対象となる方",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "詳細は{{shimin_department}}（{{shimin_phone}}）にお問い合わせください。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-必要-1769918445559",
+      "type": "Section",
+      "props": {
+        "heading": "自動車税・軽自動車税に必要なもの",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "{{vehicle_tax_hitsuyou}}"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-方法-1769918445559",
+      "type": "Section",
+      "props": {
+        "heading": "自動車税・軽自動車税の手続き方法",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "{{vehicle_tax_houhou}}"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-手順-1769918445559",
+      "type": "Section",
+      "props": {
+        "heading": "自動車税・軽自動車税の申請の流れ",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "{{vehicle_tax_nagare}}"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
       "id": "contact-1",
       "type": "Contact",
       "props": {

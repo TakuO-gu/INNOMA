@@ -112,93 +112,9 @@ const blockRegistry: Record<string, BlockComponent> = {
 };
 
 /* =============================================================================
- * Spacing Rules - ブロックタイプごとのスペーシング定義
- *
- * margin-top のみで制御（margin-bottom は使わない）
- * 最初のブロックは mt-0
- * ============================================================================= */
-
-type SpacingSize = "none" | "sm" | "md" | "lg" | "xl" | "2xl";
-
-const spacingClasses: Record<SpacingSize, string> = {
-  none: "mt-0",
-  sm: "mt-4",    // 16px
-  md: "mt-6",    // 24px
-  lg: "mt-12",   // 48px
-  xl: "mt-16",   // 64px
-  "2xl": "mt-24", // 96px
-};
-
-/**
- * ブロックタイプごとの上部スペーシング
- */
-const blockSpacing: Record<string, SpacingSize> = {
-  // ヘッダー系 - スペースなし
-  Breadcrumbs: "none",
-  Title: "md",
-  Summary: "md",
-
-  // セクション - 大きなスペース
-  Section: "2xl",
-
-  // コンテンツ系 - 中程度
-  RichText: "lg",
-  RawContent: "lg",
-  Table: "lg",
-  Accordion: "lg",
-  StepNavigation: "lg",
-  DescriptionList: "lg",
-  Blockquote: "lg",
-  Card: "lg",
-
-  // ステータス系 - 小さめ
-  StatusBadge: "sm",
-
-  // 通知系 - 中程度
-  NotificationBanner: "md",
-  EmergencyBanner: "md",
-
-  // ナビゲーション・リンク系
-  ResourceList: "lg",
-  RelatedLinks: "lg",
-
-  // インタラクティブ
-  Contact: "xl",
-  ContactCard: "xl",
-  ActionButton: "lg",
-  TaskButton: "lg",
-  DirectoryList: "lg",
-  NewsMeta: "md",
-
-  // ホームページ系
-  Hero: "none",
-  TopicGrid: "lg",
-  TopicList: "lg",
-  QuickLinks: "lg",
-  NewsList: "lg",
-
-  // その他
-  Sources: "xl",
-  DistrictSelector: "lg",
-  InfoCard: "lg",
-  InfoCardGrid: "lg",
-  ShelterList: "lg",
-  HazardMapViewer: "lg",
-  Attachments: "lg",
-  CardGrid: "lg",
-};
-
-/**
- * スペーシングクラスを取得
- */
-function getSpacingClass(blockType: string, isFirst: boolean): string {
-  if (isFirst) return spacingClasses.none;
-  const size = blockSpacing[blockType] || "md";
-  return spacingClasses[size];
-}
-
-/* =============================================================================
  * BlockRenderer
+ *
+ * 各ブロックコンポーネントが自身のスペーシングを持つ設計
  * ============================================================================= */
 
 interface BlockRendererProps {
@@ -215,12 +131,11 @@ export function BlockRenderer({ blocks, municipalityId, sources, completedPages 
   return (
     <MunicipalityProvider municipalityId={municipalityId} completedPages={completedPagesSet}>
       <div className="dads-page">
-        {blocks.map((block, index) => (
+        {blocks.map((block) => (
           <BlockWrapper
             key={block.id}
             block={block}
             sources={sources}
-            isFirst={index === 0}
           />
         ))}
       </div>
@@ -229,25 +144,22 @@ export function BlockRenderer({ blocks, municipalityId, sources, completedPages 
 }
 
 /**
- * ブロックをラップしてスペーシングを適用
+ * ブロックをラップ（スペーシングは各コンポーネントが持つ）
  */
 function BlockWrapper({
   block,
   sources,
-  isFirst
 }: {
   block: BaseBlock;
   sources?: Source[];
-  isFirst: boolean;
 }) {
   const { type, props, id } = block;
   const Component = blockRegistry[type];
-  const spacingClass = getSpacingClass(type, isFirst);
 
   if (!Component) {
     return (
       <div
-        className={`block-unknown ${spacingClass}`}
+        className="block-unknown mt-6"
         data-type={type}
         data-block-type={type}
         data-block-id={id}
@@ -259,7 +171,6 @@ function BlockWrapper({
 
   return (
     <div
-      className={spacingClass}
       data-block-type={type}
       data-block-id={id}
     >

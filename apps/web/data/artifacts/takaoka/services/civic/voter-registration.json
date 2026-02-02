@@ -223,6 +223,74 @@
       }
     },
     {
+      "id": "section-対象-1769918445549",
+      "type": "Section",
+      "props": {
+        "heading": "選挙人名簿登録の対象となる方",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "詳細は{{shimin_department}}（{{shimin_phone}}）にお問い合わせください。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-必要-1769918445549",
+      "type": "Section",
+      "props": {
+        "heading": "選挙人名簿登録に必要なもの",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "{{voter_registration_hitsuyou}}"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-方法-1769918445549",
+      "type": "Section",
+      "props": {
+        "heading": "選挙人名簿登録の手続き方法",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "{{voter_registration_houhou}}"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-手順-1769918445549",
+      "type": "Section",
+      "props": {
+        "heading": "選挙人名簿登録の申請の流れ",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "{{voter_registration_nagare}}"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
       "id": "contact-1",
       "type": "Contact",
       "props": {

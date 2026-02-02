@@ -115,5 +115,149 @@
     "source": "llm",
     "confidence": 0.7,
     "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "career_support_hitsuyou": {
+    "value": "履歴書、職務経歴書（作成支援も受けられます）",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.790Z"
+  },
+  "career_support_houhou": {
+    "value": "ハローワークまたは市区町村の就労支援窓口に相談してください",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.790Z"
+  },
+  "career_support_nagare": {
+    "value": "1. 窓口に相談 → 2. 適性検査・カウンセリング → 3. 求人情報の紹介 → 4. 応募・面接",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.790Z"
+  },
+  "disability_employment_hitsuyou": {
+    "value": "障害者手帳、履歴書、職務経歴書",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.791Z"
+  },
+  "disability_employment_houhou": {
+    "value": "ハローワークの障害者専門窓口に相談してください。職業訓練や就労支援も受けられます",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.791Z"
+  },
+  "disability_employment_nagare": {
+    "value": "1. ハローワークに相談 → 2. 職業相談・職業評価 → 3. 求人紹介 → 4. 就労・定着支援",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.791Z"
+  },
+  "family_leave_hitsuyou": {
+    "value": "育児・介護休業申出書（勤務先の様式）、出生届出書の写し（育児の場合）",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.791Z"
+  },
+  "family_leave_houhou": {
+    "value": "休業開始予定日の1か月前までに勤務先に申し出てください",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.791Z"
+  },
+  "family_leave_nagare": {
+    "value": "1. 勤務先に申出 → 2. 必要書類を提出 → 3. 承認 → 4. 休業開始",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.791Z"
+  },
+  "harassment_hitsuyou": {
+    "value": "相談内容のメモ、証拠となる資料（メール、音声記録等）があれば持参",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:14:41.320Z"
+  },
+  "harassment_houhou": {
+    "value": "労働局の総合労働相談コーナーまたは社内相談窓口に相談してください。匿名での相談も可能です",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:14:41.320Z"
+  },
+  "harassment_nagare": {
+    "value": "1. 相談窓口に連絡 → 2. 状況を説明 → 3. 対応策の相談 → 4. 解決に向けた支援",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:09:26.489Z"
+  },
+  "labor_consultation_hitsuyou": {
+    "value": "相談内容に関する資料（雇用契約書、給与明細、就業規則等）",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.791Z"
+  },
+  "labor_consultation_houhou": {
+    "value": "労働基準監督署または労働局の総合労働相談コーナーに相談してください",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.791Z"
+  },
+  "labor_consultation_nagare": {
+    "value": "1. 相談窓口に連絡 → 2. 状況を説明 → 3. 助言・指導 → 4. 解決に向けた対応",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.791Z"
+  },
+  "labor_standards_hitsuyou": {
+    "value": "相談内容に関する資料（雇用契約書、給与明細、タイムカード等）",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.791Z"
+  },
+  "labor_standards_houhou": {
+    "value": "労働基準監督署に相談・申告してください。法令違反がある場合は指導・是正勧告が行われます",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.791Z"
+  },
+  "labor_standards_nagare": {
+    "value": "1. 労働基準監督署に相談 → 2. 申告書を提出 → 3. 調査 → 4. 是正勧告・指導",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.791Z"
+  },
+  "unemployment_insurance_hitsuyou": {
+    "value": "離職票（1、2）、マイナンバー確認書類、本人確認書類、写真2枚、預金通帳",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.791Z"
+  },
+  "unemployment_insurance_houhou": {
+    "value": "離職後すぐにハローワークで求職の申込みと受給資格の決定を受けてください",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.791Z"
+  },
+  "unemployment_insurance_nagare": {
+    "value": "1. ハローワークで求職申込 → 2. 受給資格決定 → 3. 説明会に参加 → 4. 認定日に来所・受給",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.791Z"
+  },
+  "vocational_training_hitsuyou": {
+    "value": "求職申込書（ハローワークで作成）、本人確認書類",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.791Z"
+  },
+  "vocational_training_houhou": {
+    "value": "ハローワークで職業訓練の相談・申込みを行ってください。受講料は無料の訓練もあります",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.791Z"
+  },
+  "vocational_training_nagare": {
+    "value": "1. ハローワークで相談 → 2. 訓練コースを選択 → 3. 受講申込・選考 → 4. 訓練開始",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.791Z"
   }
 }

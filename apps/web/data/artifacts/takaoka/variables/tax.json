@@ -155,5 +155,271 @@
     "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/nozeika/2/3/3/2221.html",
     "confidence": 0.95,
     "updatedAt": "2026-01-30T00:00:00.000Z"
+  },
+  "furusato_department": {
+    "value": "企画調整課 ふるさと納税担当",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kikakuchoseika/",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T00:00:00.000Z"
+  },
+  "furusato_phone": {
+    "value": "0766-20-1225",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kikakuchoseika/",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T00:00:00.000Z"
+  },
+  "furusato_email": {
+    "value": "furusato@city.takaoka.lg.jp",
+    "source": "llm",
+    "confidence": 0.7,
+    "updatedAt": "2026-02-01T00:00:00.000Z"
+  },
+  "furusato_portal_url": {
+    "value": "https://www.furusato-tax.jp/city/product/16202",
+    "source": "llm",
+    "sourceUrl": "https://www.furusato-tax.jp/city/product/16202",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-01T00:00:00.000Z"
+  },
+  "furusato_tsukaimichi_1": {
+    "value": "地域産業の振興",
+    "source": "llm",
+    "confidence": 0.8,
+    "updatedAt": "2026-02-01T00:00:00.000Z"
+  },
+  "furusato_tsukaimichi_2": {
+    "value": "歴史・文化の保存",
+    "source": "llm",
+    "confidence": 0.8,
+    "updatedAt": "2026-02-01T00:00:00.000Z"
+  },
+  "furusato_tsukaimichi_3": {
+    "value": "子育て支援",
+    "source": "llm",
+    "confidence": 0.8,
+    "updatedAt": "2026-02-01T00:00:00.000Z"
+  },
+  "nouzei_department": {
+    "value": "納税課",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/nozeika/",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-01T00:00:00.000Z"
+  },
+  "nouzei_phone": {
+    "value": "0766-20-1271",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/nozeika/",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T00:00:00.000Z"
+  },
+  "nouzei_email": {
+    "value": "nozei@city.takaoka.lg.jp",
+    "source": "llm",
+    "confidence": 0.7,
+    "updatedAt": "2026-02-01T00:00:00.000Z"
+  },
+  "nouzei_bank": {
+    "value": "北陸銀行、富山銀行、富山第一銀行、北國銀行",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/nozeika/2/3/3/2221.html",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T00:00:00.000Z"
+  },
+  "nouzei_shinkin": {
+    "value": "高岡信用金庫、氷見伏木信用金庫",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/nozeika/2/3/3/2221.html",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T00:00:00.000Z"
+  },
+  "nouzei_ja": {
+    "value": "JAとなみ野、JAたかおか",
+    "source": "llm",
+    "confidence": 0.7,
+    "updatedAt": "2026-02-01T00:00:00.000Z"
+  },
+  "nouzei_paypay": {
+    "value": "利用可能",
+    "source": "llm",
+    "confidence": 0.8,
+    "updatedAt": "2026-02-01T00:00:00.000Z"
+  },
+  "nouzei_linepay": {
+    "value": "利用可能",
+    "source": "llm",
+    "confidence": 0.8,
+    "updatedAt": "2026-02-01T00:00:00.000Z"
+  },
+  "nouzei_aupay": {
+    "value": "利用可能",
+    "source": "llm",
+    "confidence": 0.8,
+    "updatedAt": "2026-02-01T00:00:00.000Z"
+  },
+  "nouzei_dpay": {
+    "value": "利用可能",
+    "source": "llm",
+    "confidence": 0.8,
+    "updatedAt": "2026-02-01T00:00:00.000Z"
+  },
+  "nouzei_rakutenpay": {
+    "value": "利用可能",
+    "source": "llm",
+    "confidence": 0.8,
+    "updatedAt": "2026-02-01T00:00:00.000Z"
+  },
+  "zeishoumei_shotoku_fee": {
+    "value": "1通 300円",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/shiminzeika/",
+    "confidence": 0.9,
+    "updatedAt": "2026-02-01T00:00:00.000Z"
+  },
+  "zeishoumei_shotoku_cvs_fee": {
+    "value": "1通 300円",
+    "source": "llm",
+    "confidence": 0.8,
+    "updatedAt": "2026-02-01T00:00:00.000Z"
+  },
+  "zeishoumei_nouzei_fee": {
+    "value": "1通 300円",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/shiminzeika/",
+    "confidence": 0.9,
+    "updatedAt": "2026-02-01T00:00:00.000Z"
+  },
+  "zeishoumei_madoguchi": {
+    "value": "市民課、各支所",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/shiminzeika/",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T00:00:00.000Z"
+  },
+  "kakutei_zeimusho_kaijo": {
+    "value": "高岡税務署",
+    "source": "llm",
+    "sourceUrl": "https://www.nta.go.jp/about/organization/kanazawa/location/toyama/takaoka/index.htm",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-01T00:00:00.000Z"
+  },
+  "kakutei_shiyakusho_kaijo": {
+    "value": "高岡市役所 市民税課",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/shiminzeika/",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T00:00:00.000Z"
+  },
+  "kakutei_kikan": {
+    "value": "2月16日〜3月15日",
+    "source": "llm",
+    "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/shinkoku/kakutei.htm",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-01T00:00:00.000Z"
+  },
+  "kakutei_jikan": {
+    "value": "午前9時〜午後4時",
+    "source": "llm",
+    "confidence": 0.8,
+    "updatedAt": "2026-02-01T00:00:00.000Z"
+  },
+  "juminzei_shinkoku_kikan": {
+    "value": "2月1日〜3月15日",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T00:00:00.000Z"
+  },
+  "juminzei_shinkoku_basho": {
+    "value": "市役所 市民税課窓口、各支所",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/shiminzeika/",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T00:00:00.000Z"
+  },
+  "furusato_hitsuyou": {
+    "value": "寄附金受領証明書（確定申告の場合）、ワンストップ特例申請書（特例制度利用の場合）",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:14:41.323Z"
+  },
+  "furusato_houhou": {
+    "value": "ふるさと納税ポータルサイトまたは自治体に直接申し込んでください",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:14:41.323Z"
+  },
+  "furusato_nagare": {
+    "value": "1. 寄附先を選ぶ → 2. 寄附を申し込む → 3. 返礼品を受け取る → 4. 確定申告またはワンストップ特例申請",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:09:26.496Z"
+  },
+  "juminzei_hitsuyou": {
+    "value": "特になし（給与所得者は会社が手続き）。確定申告が必要な方は申告書類",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:14:41.323Z"
+  },
+  "juminzei_nagare": {
+    "value": "1. 税額決定通知書を確認 → 2. 納付書で納付またはロ座振替の手続き → 3. 納期限までに納付",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:09:26.496Z"
+  },
+  "kakuteishinkoku_houhou": {
+    "value": "2月16日から3月15日までに税務署に申告書を提出してください。e-Taxでの申告も可能です",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:14:41.323Z"
+  },
+  "kakuteishinkoku_nagare": {
+    "value": "1. 必要書類を準備 → 2. 申告書を作成 → 3. 税務署に提出 → 4. 還付金を受け取る（該当者）",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:09:26.496Z"
+  },
+  "keijidosha_nagare": {
+    "value": "1. 納税通知書を受け取る → 2. 納期限までに納付 → 3. 車検時に納税証明書を使用",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:09:26.496Z"
+  },
+  "kotei_nagare": {
+    "value": "1. 納税通知書を確認 → 2. 課税明細書で内容を確認 → 3. 納期限までに納付",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:09:26.496Z"
+  },
+  "nouzei_hitsuyou": {
+    "value": "納付書（届いた場合）。口座振替の場合は届出書と通帳・届出印",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:14:41.323Z"
+  },
+  "nouzei_houhou": {
+    "value": "金融機関、コンビニ、市区町村窓口で納付してください。口座振替やスマホ決済も利用可能です",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:14:41.323Z"
+  },
+  "zeishoumei_hitsuyou": {
+    "value": "申請書、本人確認書類。代理人の場合は委任状も必要です",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:14:41.323Z"
+  },
+  "zeishoumei_houhou": {
+    "value": "市区町村の税務窓口で申請してください。マイナンバーカードがあればコンビニ交付も可能です",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:14:41.323Z"
+  },
+  "zeishoumei_nagare": {
+    "value": "1. 申請書に記入 → 2. 本人確認書類を提示 → 3. 手数料を支払い → 4. 証明書を受け取る",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:09:26.496Z"
   }
 }

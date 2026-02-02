@@ -115,5 +115,155 @@
     "sourceUrl": "https://takaoka-iec.jimdofree.com/",
     "confidence": 0.9,
     "updatedAt": "2026-01-30T00:00:00.000Z"
+  },
+  "consultation_hitsuyou": {
+    "value": "相談内容に関する資料（任意）。通訳が必要な場合は事前にお知らせください",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:14:41.322Z"
+  },
+  "consultation_houhou": {
+    "value": "市区町村の国際交流協会または多文化共生センターに相談してください",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:14:41.322Z"
+  },
+  "consultation_nagare": {
+    "value": "1. 相談窓口に連絡 → 2. 相談日時を予約 → 3. 相談内容を整理 → 4. 相談・アドバイス",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:09:26.494Z"
+  },
+  "foreign_registration_hitsuyou": {
+    "value": "在留カード、パスポート、届出書",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.794Z"
+  },
+  "foreign_registration_houhou": {
+    "value": "住所変更は14日以内に届け出てください。在留カードの住所変更も同時に行えます",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.794Z"
+  },
+  "foreign_registration_nagare": {
+    "value": "1. 窓口に届出 → 2. 本人確認・在留カード確認 → 3. 届出受理 → 4. 在留カード裏面に記載",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.794Z"
+  },
+  "international_marriage_houhou": {
+    "value": "婚姻届と必要書類を市区町村に提出してください。外国人配偶者の書類は大使館で取得します",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.794Z"
+  },
+  "international_marriage_nagare": {
+    "value": "1. 必要書類を準備 → 2. 婚姻届を記入 → 3. 窓口で届出 → 4. 在留資格の変更申請",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.794Z"
+  },
+  "japanese_class_hitsuyou": {
+    "value": "申込書、在留カードまたはパスポート",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.794Z"
+  },
+  "japanese_class_houhou": {
+    "value": "市区町村の国際交流協会や地域の日本語教室に申し込んでください",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.794Z"
+  },
+  "japanese_class_nagare": {
+    "value": "1. 教室情報を確認 → 2. 参加申込 → 3. レベルチェック → 4. 教室参加",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.794Z"
+  },
+  "loss_of_citizenship_houhou": {
+    "value": "国籍喪失届を法務局または在外公館に届け出てください",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.794Z"
+  },
+  "loss_of_citizenship_nagare": {
+    "value": "1. 法務局に届出 → 2. 必要書類を提出 → 3. 届出受理 → 4. 戸籍への記載",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.794Z"
+  },
+  "naturalization_hitsuyou": {
+    "value": "帰化許可申請書、履歴書、宣誓書、国籍証明書、出生証明書、住民票、収入証明等",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:14:41.322Z"
+  },
+  "naturalization_houhou": {
+    "value": "法務局に相談し、必要書類を準備して申請してください。審査には1年程度かかります",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:14:41.322Z"
+  },
+  "naturalization_nagare": {
+    "value": "1. 法務局に相談 → 2. 必要書類を準備 → 3. 帰化許可申請 → 4. 面接・審査 → 5. 許可・届出",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:09:26.494Z"
+  },
+  "passport_houhou": {
+    "value": "パスポートセンターまたは旅券窓口で申請してください。申請から受取まで1週間程度かかります",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:14:41.322Z"
+  },
+  "passport_nagare": {
+    "value": "1. 申請書・写真を準備 → 2. 戸籍謄本を取得 → 3. パスポートセンターで申請 → 4. 受取日に受領",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:09:26.494Z"
+  },
+  "residence_card_houhou": {
+    "value": "出入国在留管理局で手続きしてください。在留期間の更新は期間満了の3か月前から可能です",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.794Z"
+  },
+  "residence_card_nagare": {
+    "value": "1. 申請書類を準備 → 2. 出入国在留管理局に申請 → 3. 審査 → 4. 新しい在留カードを受取",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.794Z"
+  },
+  "special_permanent_resident_houhou": {
+    "value": "特別永住者証明書の更新は期間満了の2か月前から市区町村で申請できます",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.794Z"
+  },
+  "special_permanent_resident_nagare": {
+    "value": "1. 市区町村窓口で申請 → 2. 必要書類を提出 → 3. 審査 → 4. 新しい証明書を受取",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.794Z"
+  },
+  "visa_hitsuyou": {
+    "value": "在留資格変更許可申請書、パスポート、在留カード、資格を証明する書類",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:14:41.322Z"
+  },
+  "visa_houhou": {
+    "value": "出入国在留管理局に申請してください。在留資格によって必要書類が異なります",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:14:41.322Z"
+  },
+  "visa_nagare": {
+    "value": "1. 出入国在留管理局に申請 → 2. 必要書類を提出 → 3. 審査 → 4. 結果通知・在留カード受取",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:09:26.494Z"
   }
 }

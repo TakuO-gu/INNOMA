@@ -61,7 +61,7 @@
       "id": "section-e698i3zjc",
       "type": "Section",
       "props": {
-        "heading": "対象となる方",
+        "heading": "後期高齢者医療制度の対象となる方",
         "level": 2,
         "content": [
           {
@@ -387,6 +387,40 @@
       }
     },
     {
+      "id": "section-方法-1769918445583",
+      "type": "Section",
+      "props": {
+        "heading": "後期高齢者医療制度の手続き方法",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "{{kouki_houhou}}"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-手順-1769918445583",
+      "type": "Section",
+      "props": {
+        "heading": "後期高齢者医療制度の申請の流れ",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "{{kouki_nagare}}"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
       "id": "contact-1",
       "type": "Contact",
       "props": {
@@ -395,6 +429,63 @@
         "email": "{{kouki_email}}",
         "hours": "{{city_hall_hours}}",
         "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "terms-1769899964500",
+      "type": "Section",
+      "props": {
+        "heading": "用語の説明",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "被保険者",
+                "bold": true
+              },
+              {
+                "text": "：保険に加入している方"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "賦課",
+                "bold": true
+              },
+              {
+                "text": "：税金を課すこと"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "所得割",
+                "bold": true
+              },
+              {
+                "text": "：収入に応じて計算される部分"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "均等割",
+                "bold": true
+              },
+              {
+                "text": "：全員同じ金額の部分"
+              }
+            ]
+          }
+        ]
       }
     },
     {

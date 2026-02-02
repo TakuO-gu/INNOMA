@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0.0",
-  "page_id": "sample-services-disaster-hinanjo",
-  "municipality_id": "sample",
+  "page_id": "takaoka-services-disaster-hinanjo",
+  "municipality_id": "takaoka",
   "path": "/services/disaster/hinanjo",
   "title": "避難所・避難場所",
   "description": "指定避難所、指定緊急避難場所、福祉避難所の一覧と開設情報",
@@ -13,12 +13,12 @@
   "topic": [],
   "source": {
     "source_url": "template://sample/services/disaster/hinanjo",
-    "fetched_at": "{{generated_at}}",
+    "fetched_at": "2026-01-20T10:33:17.311Z",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "{{generated_at}}",
+    "generated_at": "2026-01-20T10:33:17.311Z",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -154,27 +154,57 @@
     },
     {
       "id": "section-kokoroe-table",
-      "type": "Table",
+      "type": "Section",
       "props": {
-        "rows": [
+        "heading": "避難の心得",
+        "content": [
           {
-            "label": "避難場所・避難所への移動ルートを事前に確認しておきましょう",
-            "value": ""
-          },
-          {
-            "label": "非常持出品を準備しておきましょう（水、食料、薬、携帯電話充電器など）",
-            "value": ""
-          },
-          {
-            "label": "避難情報が出たら、早めの避難を心がけましょう",
-            "value": ""
-          },
-          {
-            "label": "ペットを連れて避難する場合は、事前にルールを確認してください",
-            "value": ""
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "避難場所・避難所への移動ルートを事前に確認しておきましょう"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "非常持出品を準備しておきましょう（水、食料、薬、携帯電話充電器など）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "避難情報が出たら、早めの避難を心がけましょう"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "ペットを連れて避難する場合は、事前にルールを確認してください"
+                    }
+                  ]
+                }
+              ]
+            ]
           }
-        ],
-        "heading": "避難の心得"
+        ]
       }
     },
     {

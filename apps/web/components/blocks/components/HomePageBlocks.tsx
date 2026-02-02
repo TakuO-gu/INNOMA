@@ -11,7 +11,7 @@ export function HeroBlock({ props }: { props: Record<string, unknown> }) {
   const subtitle = (props.subtitle as string) || "";
 
   return (
-    <div className="hero-block py-8 mb-8 border-b border-solid-gray-200">
+    <div className="mt-0 hero-block py-8 mb-8 border-b border-solid-gray-200">
       <h1 className="text-std-45B-140 text-solid-gray-900 budoux">{budouxParse(title)}</h1>
       {subtitle && (
         <p className="mt-4 text-std-20N-150 text-solid-gray-600 budoux">{budouxParse(subtitle)}</p>
@@ -30,7 +30,7 @@ export function TopicGridBlock({ props }: { props: Record<string, unknown> }) {
   if (completedItems.length === 0) return null;
 
   return (
-    <div className="topic-grid mb-10">
+    <div className="mt-12 topic-grid mb-10">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         {completedItems.map((item, i) => (
           <NextLink
@@ -63,7 +63,7 @@ export function TopicListBlock({ props }: { props: Record<string, unknown> }) {
   if (completedItems.length === 0) return null;
 
   return (
-    <div className="topic-list mb-8">
+    <div className="mt-12 topic-list mb-8">
       <ul className="divide-y divide-solid-gray-100">
         {completedItems.map((item, i) => (
           <li key={i}>
@@ -95,7 +95,7 @@ export function QuickLinksBlock({ props }: { props: Record<string, unknown> }) {
   if (completedItems.length === 0) return null;
 
   return (
-    <div className="quick-links mb-8">
+    <div className="mt-12 quick-links mb-8">
       <div className="flex flex-wrap gap-3">
         {completedItems.map((item, i) => (
           <NextLink
@@ -133,7 +133,7 @@ export function NewsListBlock({ props }: { props: Record<string, unknown> }) {
   };
 
   return (
-    <div className="news-list mb-8">
+    <div className="mt-12 news-list mb-8">
       <h2 className="text-std-24B-150 text-solid-gray-900 mb-4">お知らせ</h2>
       <ul className="divide-y divide-solid-gray-100">
         {completedItems.map((item, i) => (

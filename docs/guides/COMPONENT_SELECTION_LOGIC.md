@@ -105,9 +105,24 @@ ELSE:
 
 | 情報の特徴 | 推奨ブロック | 理由 |
 |-----------|-------------|------|
-| 関連サービスへのリンク | `ResourceList` | 説明付きリンク |
-| 外部サイトリンク | `RelatedLinks` | シンプルなリンク集 |
+| シンプルなリンクのリスト（テキストのみ、説明なし） | `RelatedLinks` | 軽量なリンク集 |
+| 説明付きのリソース一覧（タイトル・説明・リンク） | `ResourceList` | 詳細情報付きリンク |
 | アクション誘導（申請開始等） | `ActionButton` | 目立つCTA |
+
+**RelatedLinks vs ResourceList の使い分け**:
+```
+RelatedLinks（シンプルなリンク集）:
+- 「関連ページ」「このページを見た人はこちらも」
+- テキストリンクのみ、説明文なし
+- 例: [住民票の写し] [印鑑登録] [戸籍証明書]
+
+ResourceList（詳細説明付きリソース一覧）:
+- 「申請に必要な書類」「関連する制度の詳細」
+- タイトル + 説明文 + リンク
+- 例:
+  - 申請書（様式A）: 窓口で記入するか、こちらからダウンロード
+  - 委任状: 代理人が申請する場合に必要です
+```
 
 ### 8. FAQ・よくある質問
 
@@ -152,22 +167,23 @@ ELSE IF データ比較・分析が必要:
 
 ## content_type別 デフォルト構成
 
+> **注意**: `Breadcrumbs` はディレクトリ構造から自動生成されるため、コンテンツ構造化では扱わない。
+> 以下の構成例には `Breadcrumbs` を含めていないが、実際のページには自動で挿入される。
+
 ### service（サービスハブページ）
 
 ```
-Breadcrumbs
 Title
 Summary（サービスの概要）
 NotificationBanner?（重要なお知らせがあれば）
-ResourceList（関連手続きへのリンク）
+ResourceList（関連手続きへのリンク - 説明付き）
 Contact
-RelatedLinks
+RelatedLinks（シンプルな関連リンク）
 ```
 
 ### guide（詳細説明ページ）
 
 ```
-Breadcrumbs
 Title
 Summary
 NotificationBanner?
@@ -183,14 +199,13 @@ Section: 注意事項
   → RichText with callout
 Accordion?（FAQ）
 Contact
-RelatedLinks
+RelatedLinks（シンプルな関連リンク）
 Sources
 ```
 
 ### step_by_step（段階的手順ガイド）
 
 ```
-Breadcrumbs
 Title
 Summary
 StepNavigation（メインコンテンツ）
@@ -202,13 +217,12 @@ RelatedLinks
 ### form（申請・届出ページ）
 
 ```
-Breadcrumbs
 Title
 Summary
 NotificationBanner?
 Table（申請情報まとめ）
 ActionButton（申請開始）
-ResourceList（関連書類）
+ResourceList（関連書類 - 説明付きダウンロードリンク）
 Contact
 RelatedLinks
 ```
@@ -216,7 +230,6 @@ RelatedLinks
 ### contact（問い合わせ窓口ページ）
 
 ```
-Breadcrumbs
 Title
 Summary
 ContactCard または DirectoryList
@@ -304,8 +317,8 @@ LLMが情報を取得した際、以下のルールでセクションを自動�
    - YES & 複数 → DirectoryList
 
 8. リンク集？
-   - YES & 説明付き → ResourceList
-   - YES & シンプル → RelatedLinks
+   - YES & 説明付き（タイトル+説明+リンク）→ ResourceList
+   - YES & シンプル（テキストリンクのみ）→ RelatedLinks
    - YES & CTA → ActionButton
 
 9. 一覧・グリッド表示？
@@ -347,6 +360,8 @@ LLMが情報を取得した際、以下のルールでセクションを自動�
 
 ## 更新履歴
 
+- 2026-02-01: RelatedLinksとResourceListの使い分けを明確化
+- 2026-02-01: Breadcrumbsはディレクトリ構造から自動生成されるため、コンテンツ構造化ルールから除外
 - 2026-02-01: CardGridコンポーネントの選択ロジックを追加（一覧・グリッド表示用）
 - 2026-02-01: Tableコンポーネントの使用条件を明確化（valueが空の場合はリストを使用すべき）
 - 2026-02-01: 初版作成

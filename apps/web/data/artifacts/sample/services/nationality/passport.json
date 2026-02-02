@@ -104,31 +104,67 @@
     },
     {
       "id": "section-29nc67pxj-table",
-      "type": "Table",
+      "type": "Section",
       "props": {
-        "rows": [
+        "heading": "必要書類",
+        "content": [
           {
-            "label": "一般旅券発給申請書",
-            "value": ""
-          },
-          {
-            "label": "戸籍謄本（6か月以内）",
-            "value": ""
-          },
-          {
-            "label": "写真（6か月以内、縦45mm×横35mm）",
-            "value": ""
-          },
-          {
-            "label": "本人確認書類",
-            "value": ""
-          },
-          {
-            "label": "有効中のパスポート（更新の場合）",
-            "value": ""
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "一般旅券発給申請書"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "戸籍謄本（6か月以内）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "写真（6か月以内、縦45mm×横35mm）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "本人確認書類"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "有効中のパスポート（更新の場合）"
+                    }
+                  ]
+                }
+              ]
+            ]
           }
-        ],
-        "heading": "必要書類"
+        ]
       }
     },
     {
@@ -170,12 +206,95 @@
       }
     },
     {
+      "id": "section-対象-1769919373805",
+      "type": "Section",
+      "props": {
+        "heading": "パスポート（旅券）の対象となる方",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "詳細は担当課にお問い合わせください。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-方法-1769919373805",
+      "type": "Section",
+      "props": {
+        "heading": "パスポート（旅券）の手続き方法",
+        "content": [
+          {
+            "type": "list",
+            "ordered": true,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "必要書類を準備します。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "窓口で申請書を記入します。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "書類を提出し、確認を受けます。"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
       "id": "contact-1",
       "type": "Contact",
       "props": {
         "department": "東京都パスポートセンター",
         "phone": "03-5321-7711",
         "address": "東京都新宿区西新宿2-8-1"
+      }
+    },
+    {
+      "id": "terms-1769919373805",
+      "type": "Section",
+      "props": {
+        "heading": "用語の説明",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "戸籍謄本",
+                "bold": true
+              },
+              {
+                "text": "：家族全員の戸籍の写し"
+              }
+            ]
+          }
+        ]
       }
     },
     {

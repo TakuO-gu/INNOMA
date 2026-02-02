@@ -138,5 +138,47 @@
     "sourceUrl": "https://www.moj.go.jp/isa/about/region/nagoya/index.html",
     "confidence": 0.95,
     "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "health_center": {
+    "value": "高岡厚生センター（富山県高岡保健所）",
+    "source": "llm",
+    "sourceUrl": "https://www.pref.toyama.jp/120506/kenkou/kenkou/hoken/shisetsu/takaoka.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-01T00:00:00.000Z"
+  },
+  "health_center_phone": {
+    "value": "0766-26-8414",
+    "source": "llm",
+    "sourceUrl": "https://www.pref.toyama.jp/120506/kenkou/kenkou/hoken/shisetsu/takaoka.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-01T00:00:00.000Z"
+  },
+  "health_center_address": {
+    "value": "〒933-0806 富山県高岡市赤祖父211",
+    "source": "llm",
+    "sourceUrl": "https://www.pref.toyama.jp/120506/kenkou/kenkou/hoken/shisetsu/takaoka.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-01T00:00:00.000Z"
+  },
+  "transport_bureau": {
+    "value": "北陸信越運輸局富山運輸支局",
+    "source": "llm",
+    "sourceUrl": "https://wwwtb.mlit.go.jp/hokushin/toyama/index.shtml",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-01T00:00:00.000Z"
+  },
+  "transport_bureau_phone": {
+    "value": "050-5540-2044",
+    "source": "llm",
+    "sourceUrl": "https://wwwtb.mlit.go.jp/hokushin/toyama/index.shtml",
+    "confidence": 0.9,
+    "updatedAt": "2026-02-01T00:00:00.000Z"
+  },
+  "pension_office": {
+    "value": "高岡年金事務所",
+    "source": "llm",
+    "sourceUrl": "https://www.nenkin.go.jp/section/soudan/toyama/takaoka.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-01T00:00:00.000Z"
   }
 }

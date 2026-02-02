@@ -1,6 +1,6 @@
 # INNOMA プロジェクト概要
 
-**最終更新**: 2026-01-27
+**最終更新**: 2026-02-02
 
 ---
 
@@ -74,15 +74,24 @@ INNOMA/
 │               ├── sample/       # サンプル自治体
 │               └── {municipality}/ # 各自治体データ
 ├── docs/                         # 詳細ドキュメント
+│   ├── README.md                 # ドキュメントインデックス
 │   ├── PROJECT.md                # このファイル
 │   ├── REQUIREMENTS.md           # 要件定義書
-│   ├── LLM_FETCHER_SPEC.md       # LLM情報取得仕様
-│   ├── TEMPLATE_VARIABLES.md     # テンプレート変数定義
-│   ├── ADMIN_PANEL_SPEC.md       # 管理画面設計
-│   ├── API_REFERENCE.md          # API仕様
-│   ├── DATA_STRUCTURES.md        # データ構造定義
-│   ├── UI_SPEC.md                # UI・CSS仕様
-│   ├── IMPLEMENTATION_PLAN.md    # 実装計画
+│   ├── specs/                    # 仕様書
+│   │   ├── API_REFERENCE.md          # API仕様
+│   │   ├── ADMIN_PANEL_SPEC.md       # 管理画面設計
+│   │   ├── LLM_FETCHER_SPEC.md       # LLM情報取得仕様
+│   │   ├── UI_SPEC.md                # UI・CSS仕様
+│   │   └── DATA_STRUCTURES.md        # データ構造定義
+│   ├── guides/                   # 開発ガイド
+│   │   ├── TEMPLATE_VARIABLES.md     # テンプレート変数定義
+│   │   ├── DISTRICT_DEPENDENT_VARIABLES.md # 地区依存変数
+│   │   ├── COMPONENT_SELECTION_LOGIC.md # コンポーネント選択
+│   │   └── DADS_COMPONENTS.md        # DADSコンポーネント
+│   ├── architecture/             # アーキテクチャ図
+│   │   ├── INNOMA_FlowChart.md       # システム全体フロー
+│   │   └── FETCH_TO_SHOW_FLOWCHART.md # 情報取得〜表示フロー
+│   ├── reports/                  # 自治体レポート
 │   └── updates/                  # 更新履歴
 └── archive/                      # アーカイブ済みコード（参照不要）
 ```
@@ -98,8 +107,9 @@ INNOMA/
 | スタイリング | Tailwind CSS + DA-DS Tokens |
 | スキーマ検証 | Zod |
 | LLM | Google Gemini |
-| Web検索 | Google Custom Search API |
+| Web検索 | Brave Search API（推奨）/ Google Custom Search API |
 | PDF OCR | Google Vision API |
+| ブラウザ自動化 | Playwright（JS重いサイト対応） |
 | デプロイ | Vercel |
 
 ---
@@ -138,6 +148,12 @@ INNOMA/
 - DADSコンポーネントTailwind統一
 - StepNavigation・NotificationBanner DADS準拠
 
+### ✅ Phase 6: 高度な情報取得（完了）
+- Brave Search API対応（デュアルプロバイダー）
+- Playwrightクローラー（JS重いサイト対応）
+- 地区依存変数（町丁目別の値管理）
+- 複数自治体対応（テンプレート・変数の拡張）
+
 ### 🚧 今後の課題
 - 認証機能（Vercel Password Protection等）
 - 多言語対応
@@ -159,9 +175,13 @@ INNOMA/
 
 ### LLM情報取得
 - `lib/llm/fetcher.ts` - メイン取得ロジック
-- `lib/llm/google-search.ts` - Custom Search APIクライアント
+- `lib/llm/google-search.ts` - 検索APIクライアント（Brave/Google統合）
+- `lib/llm/brave-search.ts` - Brave Search API専用クライアント
 - `lib/llm/gemini.ts` - Gemini APIクライアント
 - `lib/llm/page-fetcher.ts` - ページ取得・PDF OCR統合
+- `lib/llm/playwright-crawler.ts` - Playwrightクローラー（JS重いサイト対応）
+- `lib/llm/deep-search.ts` - 値の具体性判定ユーティリティ
+- `lib/llm/validators.ts` - 変数値バリデーター
 - `lib/llm/variable-priority.ts` - 変数定義・説明（約200変数）
 
 ### PDF OCR
@@ -191,10 +211,17 @@ INNOMA/
 ## 環境変数
 
 ```env
-# Google APIs
+# Web検索API（少なくとも1つは必須）
+BRAVE_SEARCH_API_KEY=xxx           # Brave Search API（推奨）
+GOOGLE_CUSTOM_SEARCH_API_KEY=xxx   # Custom Search API（フォールバック）
+GOOGLE_CUSTOM_SEARCH_ENGINE_ID=xxx # Google使用時は必須
+
+# LLM・OCR
 GOOGLE_GEMINI_API_KEY=xxx          # Gemini API（LLM用）
-GOOGLE_CUSTOM_SEARCH_API_KEY=xxx   # Custom Search API（ウェブ検索用）
 GOOGLE_VISION_API_KEY=xxx          # Vision API（PDF OCR用）
+
+# 検索プロバイダー選択（オプション）
+SEARCH_PROVIDER=auto               # 'brave' | 'google' | 'auto'
 
 # オプション
 STORAGE_TYPE=local                 # local または s3
@@ -207,7 +234,7 @@ STORAGE_BASE_PATH=./data/artifacts
 
 テンプレートでは `{{variable_name}}` 形式の変数を使用。
 変数総数は343個（テンプレートから動的に計算）。
-全変数の定義は [TEMPLATE_VARIABLES.md](TEMPLATE_VARIABLES.md) を参照。
+全変数の定義は [guides/TEMPLATE_VARIABLES.md](guides/TEMPLATE_VARIABLES.md) を参照。
 
 ### サービス別変数（15カテゴリ）
 | カテゴリ | 日本語名 | 変数数 |
@@ -236,15 +263,18 @@ STORAGE_BASE_PATH=./data/artifacts
 1. 検索クエリ生成（Gemini）
    └─ 変数説明を参照して最適なクエリを生成
 
-2. Google Custom Search実行
+2. Web検索実行（Brave / Google）
+   └─ デュアルプロバイダー対応（自動フォールバック）
    └─ スニペット + URL取得
 
 3. ページ取得
    └─ HTMLページ → テキスト抽出
    └─ PDF/画像 → Vision APIでOCR（キャッシュあり）
+   └─ JS重いサイト → Playwrightで動的取得
 
 4. 情報抽出（Gemini）
    └─ 変数定義・例を参照して構造化抽出
+   └─ 具体性判定（deep-search.ts）で曖昧な値を除外
 
 5. 下書き保存
    └─ _drafts/{municipality}/{service}.json
@@ -259,7 +289,7 @@ STORAGE_BASE_PATH=./data/artifacts
 - 中断後にページを開くと「続きから再開」オプションを表示
 - 完了済みサービスをスキップして再開可能
 
-詳細は [LLM_FETCHER_SPEC.md](LLM_FETCHER_SPEC.md) を参照。
+詳細は [specs/LLM_FETCHER_SPEC.md](specs/LLM_FETCHER_SPEC.md) を参照。
 
 ---
 
@@ -295,7 +325,7 @@ GET/PUT/DELETE  /api/admin/drafts/[municipalityId]/[service]
 GET       /api/admin/notifications
 ```
 
-詳細は [ADMIN_PANEL_SPEC.md](ADMIN_PANEL_SPEC.md) を参照。
+詳細は [specs/ADMIN_PANEL_SPEC.md](specs/ADMIN_PANEL_SPEC.md) を参照。
 
 ---
 

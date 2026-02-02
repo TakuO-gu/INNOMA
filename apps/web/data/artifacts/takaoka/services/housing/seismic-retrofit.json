@@ -191,6 +191,57 @@
       }
     },
     {
+      "id": "section-必要-1769918445591",
+      "type": "Section",
+      "props": {
+        "heading": "耐震診断・耐震改修補助に必要なもの",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "{{seismic_retrofit_hitsuyou}}"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-方法-1769918445591",
+      "type": "Section",
+      "props": {
+        "heading": "耐震診断・耐震改修補助の手続き方法",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "{{seismic_retrofit_houhou}}"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-手順-1769918445591",
+      "type": "Section",
+      "props": {
+        "heading": "耐震診断・耐震改修補助の申請の流れ",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "{{seismic_retrofit_nagare}}"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
       "id": "contact-1",
       "type": "Contact",
       "props": {

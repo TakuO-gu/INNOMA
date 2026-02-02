@@ -173,15 +173,17 @@ export function InfoCardBlock({ props }: { props: Record<string, unknown> }) {
   const href = props.href as string | undefined;
 
   return (
-    <InfoCard
-      title={title}
-      description={description}
-      icon={icon}
-      variant={variant}
-      count={count}
-      countLabel={countLabel}
-      href={href}
-    />
+    <div className="mt-12">
+      <InfoCard
+        title={title}
+        description={description}
+        icon={icon}
+        variant={variant}
+        count={count}
+        countLabel={countLabel}
+        href={href}
+      />
+    </div>
   );
 }
 
@@ -267,7 +269,7 @@ export function InfoCardGridBlock({ props }: { props: Record<string, unknown> })
   });
 
   return (
-    <div className={`grid ${gridColsClass[columns]} gap-4`}>
+    <div className={`mt-12 grid ${gridColsClass[columns]} gap-4`}>
       {enrichedCards.map((card, index) => (
         <InfoCard key={index} {...card} />
       ))}

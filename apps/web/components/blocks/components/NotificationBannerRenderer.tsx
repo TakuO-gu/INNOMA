@@ -66,8 +66,8 @@ export function renderNotificationBanner({
   const finalTitle = title || DEFAULT_TITLES[severity] || "お知らせ";
   const type = SEVERITY_TO_TYPE_MAP[severity] || "info1";
 
-  // classNameにmy-4を追加（既存のclassNameがあれば結合）
-  const finalClassName = className ? `my-4 ${className}` : "my-4";
+  // classNameにmt-6を追加（既存のclassNameがあれば結合）
+  const finalClassName = className ? `mt-6 ${className}` : "mt-6";
 
   return (
     <NotificationBanner bannerStyle="standard" type={type} title={finalTitle} className={`${finalClassName} no-heading-margin`}>

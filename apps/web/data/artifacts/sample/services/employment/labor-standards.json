@@ -84,23 +84,47 @@
     },
     {
       "id": "section-7w7zmzk5a-table",
-      "type": "Table",
+      "type": "Section",
       "props": {
-        "rows": [
+        "heading": "法定労働時間",
+        "content": [
           {
-            "label": "1日8時間、1週40時間が上限",
-            "value": ""
-          },
-          {
-            "label": "法定労働時間を超える場合は36協定の締結が必要",
-            "value": ""
-          },
-          {
-            "label": "時間外労働は原則月45時間、年360時間が上限",
-            "value": ""
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "1日8時間、1週40時間が上限"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "法定労働時間を超える場合は36協定の締結が必要"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "時間外労働は原則月45時間、年360時間が上限"
+                    }
+                  ]
+                }
+              ]
+            ]
           }
-        ],
-        "heading": "法定労働時間"
+        ]
       }
     },
     {

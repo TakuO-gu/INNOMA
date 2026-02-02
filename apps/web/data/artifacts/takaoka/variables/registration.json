@@ -227,5 +227,131 @@
     "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/shiminka/",
     "confidence": 0.8,
     "updatedAt": "2026-01-30T00:00:00.000Z"
+  },
+  "inkan_houhou": {
+    "value": "印鑑登録は本人が窓口で申請してください。登録する印鑑と本人確認書類が必要です",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:09:26.495Z"
+  },
+  "inkan_nagare": {
+    "value": "1. 登録する印鑑を持参 → 2. 申請書に記入 → 3. 本人確認 → 4. 印鑑登録証（カード）を受け取る",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:09:26.495Z"
+  },
+  "juminhyo_hitsuyou": {
+    "value": "本人確認書類（マイナンバーカード、運転免許証等）。代理人の場合は委任状も必要",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:09:26.495Z"
+  },
+  "juminhyo_houhou": {
+    "value": "窓口での申請のほか、マイナンバーカードをお持ちの方はコンビニ交付サービスも利用可能",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:09:26.495Z"
+  },
+  "juminhyo_nagare": {
+    "value": "1. 申請書に記入 → 2. 本人確認書類を提示 → 3. 手数料を支払い → 4. 住民票を受け取る",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:09:26.495Z"
+  },
+  "konin_houhou": {
+    "value": "婚姻届を市区町村の窓口に届け出てください。届出は24時間受け付けています",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:09:26.495Z"
+  },
+  "konin_nagare": {
+    "value": "1. 婚姻届を入手・記入 → 2. 証人2名の署名を受ける → 3. 戸籍謄本を準備 → 4. 窓口で届出",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:09:26.495Z"
+  },
+  "koseki_nagare": {
+    "value": "1. 申請書に必要事項を記入 → 2. 本人確認書類を提示 → 3. 手数料を支払い → 4. 証明書を受け取る",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:09:26.495Z"
+  },
+  "shibou_houhou": {
+    "value": "死亡届は死亡の事実を知った日から7日以内に届け出てください。届出は24時間受け付けています",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:09:26.495Z"
+  },
+  "shibou_nagare": {
+    "value": "1. 医師から死亡診断書を受け取る → 2. 届出人欄を記入 → 3. 窓口で届出 → 4. 火葬許可証を受け取る",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:09:26.495Z"
+  },
+  "shussei_hitsuyou": {
+    "value": "出生届（出生証明書欄に医師・助産師の証明があるもの）、母子健康手帳、届出人の本人確認書類（運転免許証・マイナンバーカード等）",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:09:26.495Z"
+  },
+  "shussei_houhou": {
+    "value": "市区町村の窓口に届出。生まれた日を含めて14日以内に届け出てください。届出は24時間受け付けています",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:09:26.495Z"
+  },
+  "shussei_nagare": {
+    "value": "1. 病院で出生証明書付きの出生届を受け取る → 2. 届出人欄を記入 → 3. 窓口で届出 → 4. 母子健康手帳に出生届出済証明を受ける",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:09:26.495Z"
+  },
+  "tenkyo_hitsuyou": {
+    "value": "届出人の本人確認書類、マイナンバーカード（お持ちの方）、国民健康保険証（加入者）",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:09:26.495Z"
+  },
+  "tenkyo_houhou": {
+    "value": "引越し後14日以内に届け出てください。届出は世帯主または同一世帯員が行えます",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:09:26.495Z"
+  },
+  "tenkyo_nagare": {
+    "value": "1. 転居届に記入 → 2. 本人確認書類を提示 → 3. マイナンバーカードの住所変更 → 4. 届出完了",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:09:26.495Z"
+  },
+  "tennyu_houhou": {
+    "value": "転入届は引越し後14日以内に届け出てください。転出届と転入届のセットで手続きが完了します",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:09:26.495Z"
+  },
+  "tennyu_nagare": {
+    "value": "1. 転出証明書を持参 → 2. 転入届に記入 → 3. 本人確認書類を提示 → 4. 各種住所変更手続き",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:09:26.495Z"
+  },
+  "tenshutsu_hitsuyou": {
+    "value": "届出人の本人確認書類、マイナンバーカード（お持ちの方）、国民健康保険証（加入者）",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:09:26.495Z"
+  },
+  "tenshutsu_houhou": {
+    "value": "引越し前に届け出てください（届出は引越し予定日の14日前から可能）。転出届を提出すると転出証明書が発行されます",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:09:26.495Z"
+  },
+  "tenshutsu_nagare": {
+    "value": "1. 転出届に記入 → 2. 本人確認書類を提示 → 3. 転出証明書を受け取る → 4. 新住所地で転入届",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:09:26.495Z"
   }
 }

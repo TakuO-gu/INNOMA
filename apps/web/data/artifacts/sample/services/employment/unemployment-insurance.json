@@ -58,23 +58,47 @@
     },
     {
       "id": "section-dno8sictl-table",
-      "type": "Table",
+      "type": "Section",
       "props": {
-        "rows": [
+        "heading": "失業給付（基本手当）の受給要件",
+        "content": [
           {
-            "label": "離職前2年間に雇用保険に12か月以上加入していたこと（倒産・解雇の場合は6か月）",
-            "value": ""
-          },
-          {
-            "label": "働く意思と能力があり、求職活動を行っていること",
-            "value": ""
-          },
-          {
-            "label": "ハローワークで求職の申込みを行っていること",
-            "value": ""
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "離職前2年間に雇用保険に12か月以上加入していたこと（倒産・解雇の場合は6か月）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "働く意思と能力があり、求職活動を行っていること"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "ハローワークで求職の申込みを行っていること"
+                    }
+                  ]
+                }
+              ]
+            ]
           }
-        ],
-        "heading": "失業給付（基本手当）の受給要件"
+        ]
       }
     },
     {
@@ -166,6 +190,103 @@
           {
             "title": "年金",
             "href": "/services/benefits/nenkin"
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-対象-1769919373780",
+      "type": "Section",
+      "props": {
+        "heading": "雇用保険・失業給付の対象となる方",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "詳細は担当課にお問い合わせください。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-必要-1769919373780",
+      "type": "Section",
+      "props": {
+        "heading": "雇用保険・失業給付に必要なもの",
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "本人確認書類（マイナンバーカード、運転免許証など）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "印鑑（認印可）"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-方法-1769919373780",
+      "type": "Section",
+      "props": {
+        "heading": "雇用保険・失業給付の手続き方法",
+        "content": [
+          {
+            "type": "list",
+            "ordered": true,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "必要書類を準備します。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "窓口で申請書を記入します。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "書類を提出し、確認を受けます。"
+                    }
+                  ]
+                }
+              ]
+            ]
           }
         ]
       }

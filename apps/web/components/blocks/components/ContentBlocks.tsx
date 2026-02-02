@@ -13,14 +13,14 @@ import { budouxParse } from "@/components/BudouX";
 export function TitleBlock({ props }: { props: Record<string, unknown> }) {
   const text = (props.text as string) || (props.title as string) || "";
   return (
-    <h1 className="text-std-45B-140 text-solid-gray-900 budoux">{budouxParse(text)}</h1>
+    <h1 className="mt-6 text-std-45B-140 text-solid-gray-900 budoux">{budouxParse(text)}</h1>
   );
 }
 
 export function SummaryBlock({ props }: { props: Record<string, unknown> }) {
   const text = (props.text as string) || "";
   return (
-    <p className="text-std-17N-170 text-solid-gray-700 mb-8 leading-relaxed budoux">{budouxParse(text)}</p>
+    <p className="mt-6 text-std-17N-170 text-solid-gray-700 mb-8 leading-relaxed budoux">{budouxParse(text)}</p>
   );
 }
 
@@ -28,7 +28,7 @@ export function RichTextBlock({ props }: { props: Record<string, unknown> }) {
   const content = props.content;
   if (!content) return null;
   return (
-    <div className="mb-6">
+    <div className="mt-12 mb-6">
       <RichTextRenderer content={content as RichTextContent | RichTextNodeType[]} />
     </div>
   );
@@ -41,7 +41,7 @@ export function RawContentBlock({ props }: { props: Record<string, unknown> }) {
   const links = (props.links as Array<{ text: string; href: string }>) || [];
 
   return (
-    <div className="raw-content space-y-4 mb-6">
+    <div className="mt-12 raw-content space-y-4 mb-6">
       {headings.map((h, i) => {
         const Tag = `h${Math.min(h.level + 1, 6)}` as keyof JSX.IntrinsicElements;
         const sizeClass = getHeadingSizeClass(h.level + 1);
@@ -120,7 +120,7 @@ export function TableBlock({ props }: { props: Record<string, unknown> }) {
   const rawRows = (props.rows as TableRow[]) || [];
 
   return (
-    <div className="overflow-x-auto mb-6">
+    <div className="mt-12 overflow-x-auto mb-6">
       <table className="min-w-full">
         <tbody className="divide-y divide-solid-gray-300">
           {rawRows.map((row, i) => (
@@ -147,7 +147,7 @@ export function AccordionBlock({ props }: { props: Record<string, unknown> }) {
   const items = (props.items as AccordionItem[]) || [];
 
   return (
-    <div className="accordion-block mb-6">
+    <div className="mt-12 accordion-block mb-6">
       {items.map((item, i) => (
         <Accordion key={i}>
           <AccordionSummary>
@@ -171,7 +171,7 @@ export function DescriptionListBlock({ props }: { props: Record<string, unknown>
   const items = (props.items as Array<{ term: string; description: string }>) || [];
 
   return (
-    <div className="description-list-block mb-6">
+    <div className="mt-12 description-list-block mb-6">
       {heading && (
         <h3 className="text-std-20B-150 text-solid-gray-900 mb-4">{heading}</h3>
       )}
@@ -199,7 +199,7 @@ export function BlockquoteBlock({ props }: { props: Record<string, unknown> }) {
   const cite = props.cite as string | undefined;
 
   return (
-    <figure className="blockquote-block mb-6">
+    <figure className="mt-12 blockquote-block mb-6">
       <blockquote className="border-l-4 border-solid-gray-400 pl-4 py-2 italic text-std-16N-170 text-solid-gray-700">
         {content}
       </blockquote>
@@ -228,7 +228,7 @@ export function StatusBadgeBlock({ props }: { props: Record<string, unknown> }) 
 
   return (
     <span
-      className={`inline-flex items-center px-3 py-1 rounded-full text-std-14B-170 border ${variantStyles[variant]}`}
+      className={`mt-4 inline-flex items-center px-3 py-1 rounded-full text-std-14B-170 border ${variantStyles[variant]}`}
     >
       {label}
     </span>
@@ -246,7 +246,7 @@ export function CardBlock({ props }: { props: Record<string, unknown> }) {
   const image = props.image as string | undefined;
 
   const content = (
-    <div className="card-block border border-solid-gray-300 rounded-lg overflow-hidden hover:shadow-md transition-shadow">
+    <div className="mt-12 card-block border border-solid-gray-300 rounded-lg overflow-hidden hover:shadow-md transition-shadow">
       {image && (
         <div className="aspect-video bg-solid-gray-100">
           {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -285,8 +285,6 @@ export function CardBlock({ props }: { props: Record<string, unknown> }) {
 
 /**
  * SectionBlock - h2/h3レベルのセクションを明示的に表現
- *
- * スペーシングは親（BlockRenderer）で制御
  */
 export function SectionBlock({ props }: { props: Record<string, unknown> }) {
   const heading = (props.heading as string) || "";
@@ -302,7 +300,7 @@ export function SectionBlock({ props }: { props: Record<string, unknown> }) {
   };
 
   return (
-    <section>
+    <section className="mt-24">
       <HeadingTag className={`${headingStyles[level]} budoux`}>
         {budouxParse(heading)}
       </HeadingTag>

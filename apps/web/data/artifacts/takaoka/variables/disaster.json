@@ -137,5 +137,12 @@
     "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kikikanrika/2/1/1/3/5433.html",
     "confidence": 0.9,
     "updatedAt": "2026-01-30T00:00:00.000Z"
+  },
+  "bosai_mail_qr_url": {
+    "value": "https://www.city.takaoka.toyama.jp/soshiki/kikikanrika/2/1/1/3/5433.html",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kikikanrika/2/1/1/3/5433.html",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T00:00:00.000Z"
   }
 }

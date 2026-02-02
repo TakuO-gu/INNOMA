@@ -144,14 +144,6 @@
         "heading": "請求できる人",
         "rows": [
           {
-            "label": "本人",
-            "value": ""
-          },
-          {
-            "label": "同一世帯の親族",
-            "value": ""
-          },
-          {
             "label": "代理人",
             "value": "委任状が必要"
           }
@@ -171,10 +163,6 @@
           {
             "label": "委任状",
             "value": "代理人が請求する場合"
-          },
-          {
-            "label": "手数料",
-            "value": ""
           }
         ]
       }
@@ -306,10 +294,6 @@
             "value": "市ホームページからダウンロード、または便せん等に必要事項を記入"
           },
           {
-            "label": "本人確認書類のコピー",
-            "value": ""
-          },
-          {
             "label": "定額小為替",
             "value": "手数料分（郵便局で購入）"
           },
@@ -405,7 +389,10 @@
             "type": "paragraph",
             "runs": [
               {
-                "text": "令和5年1月から、軽自動車税納付確認システム（軽JNKS）の運用開始により、車検時の納税証明書の提示が原則不要になりました。ただし、納付後すぐ（2〜3週間程度）は確認できない場合がありますので、納税証明書をお持ちください。"
+                "text": "令和5年1月から、軽自動車税納付確認システム（軽JNKS）の運用開始により、車検時の納税証明書の提示が原則不要になりました。"
+              },
+              {
+                "text": "ただし、納付後すぐ（2〜3週間程度）は確認できない場合がありますので、納税証明書をお持ちください。"
               }
             ]
           }
@@ -437,6 +424,103 @@
       }
     },
     {
+      "id": "section-対象-1769919373826",
+      "type": "Section",
+      "props": {
+        "heading": "税証明書の対象となる方",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "詳細は担当課にお問い合わせください。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-必要-1769919373826",
+      "type": "Section",
+      "props": {
+        "heading": "税証明書に必要なもの",
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "本人確認書類（マイナンバーカード、運転免許証など）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "印鑑（認印可）"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-方法-1769919373826",
+      "type": "Section",
+      "props": {
+        "heading": "税証明書の手続き方法",
+        "content": [
+          {
+            "type": "list",
+            "ordered": true,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "必要書類を準備します。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "窓口で申請書を記入します。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "書類を提出し、確認を受けます。"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
       "id": "contact-1",
       "type": "Contact",
       "props": {
@@ -445,6 +529,39 @@
         "email": "{{zeimu_email}}",
         "hours": "{{city_hall_hours}}",
         "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "terms-1769919373826",
+      "type": "Section",
+      "props": {
+        "heading": "用語の説明",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "課税証明書",
+                "bold": true
+              },
+              {
+                "text": "：税金がいくらか証明する書類"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "非課税証明書",
+                "bold": true
+              },
+              {
+                "text": "：税金がかからないことを証明する書類"
+              }
+            ]
+          }
+        ]
       }
     },
     {

@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0.0",
-  "page_id": "sample-services-registration-shussei",
-  "municipality_id": "sample",
+  "page_id": "takaoka-services-registration-shussei",
+  "municipality_id": "takaoka",
   "path": "/services/registration/shussei",
   "title": "出生届",
   "description": "子どもが生まれたときの届出（出生届）の手続き案内",
@@ -14,12 +14,12 @@
   "topic": [],
   "source": {
     "source_url": "template://sample/services/registration/shussei",
-    "fetched_at": "{{generated_at}}",
+    "fetched_at": "2026-01-20T10:33:17.311Z",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "{{generated_at}}",
+    "generated_at": "2026-01-20T10:33:17.311Z",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -165,27 +165,57 @@
     },
     {
       "id": "section-documents-table",
-      "type": "Table",
+      "type": "Section",
       "props": {
-        "rows": [
+        "heading": "届出に必要なもの",
+        "content": [
           {
-            "label": "出生届（出生証明書が記入されたもの）",
-            "value": ""
-          },
-          {
-            "label": "母子健康手帳",
-            "value": ""
-          },
-          {
-            "label": "届出人の本人確認書類（マイナンバーカード、運転免許証など）",
-            "value": ""
-          },
-          {
-            "label": "届出人の印鑑（任意）",
-            "value": ""
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "出生届（出生証明書が記入されたもの）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "母子健康手帳"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "届出人の本人確認書類（マイナンバーカード、運転免許証など）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "届出人の印鑑（任意）"
+                    }
+                  ]
+                }
+              ]
+            ]
           }
-        ],
-        "heading": "届出に必要なもの"
+        ]
       }
     },
     {
@@ -362,6 +392,68 @@
           {
             "title": "予防接種",
             "href": "/services/health/yobosesshu"
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-対象-1769919363209",
+      "type": "Section",
+      "props": {
+        "heading": "出生届の対象となる方",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "詳細は担当課にお問い合わせください。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-方法-1769919363209",
+      "type": "Section",
+      "props": {
+        "heading": "出生届の手続き方法",
+        "content": [
+          {
+            "type": "list",
+            "ordered": true,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "必要書類を準備します。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "窓口で申請書を記入します。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "書類を提出し、確認を受けます。"
+                    }
+                  ]
+                }
+              ]
+            ]
           }
         ]
       }

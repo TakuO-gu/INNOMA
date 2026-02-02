@@ -1,7 +1,7 @@
 # 管理画面 設計書
 
 **作成日**: 2026-01-20
-**最終更新**: 2026-01-27
+**最終更新**: 2026-02-02
 
 ---
 
@@ -14,13 +14,17 @@ INNOMAの運用を行うための管理画面。
 
 ## 2. 認証
 
-### 2.1 開発フェーズ
-- **認証なし**（開発中のため）
-- `/admin` に直接アクセス可能
+### 2.1 現在の認証
+- **Basic認証**: `middleware.ts` で `/admin/*` と `/api/admin/*` を保護
+- 環境変数 `ADMIN_BASIC_AUTH` で `user:pass` を設定
 
-### 2.2 将来の認証方式（検討）
+### 2.2 Cron認証
+- `/api/cron/*` は Bearer Token認証
+- 環境変数 `CRON_SECRET` で設定
+
+### 2.3 将来の認証方式（検討）
 - Vercel Password Protection（デプロイ時）
-- または NextAuth.js + Google OAuth
+- NextAuth.js + Google OAuth
 
 ---
 
@@ -34,6 +38,7 @@ INNOMAの運用を行うための管理画面。
 ├── /municipalities/[id]           # 自治体詳細
 ├── /drafts                        # 下書き一覧
 ├── /drafts/[municipalityId]/[service]  # 下書き詳細・承認（3分割ビュー）
+├── /generate                      # コンテンツ生成
 ├── /notifications                 # 通知一覧
 └── /settings                      # 設定（将来）
 ```

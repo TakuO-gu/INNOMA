@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0.0",
-  "page_id": "sample-services-registration-juminhyo",
-  "municipality_id": "sample",
+  "page_id": "takaoka-services-registration-juminhyo",
+  "municipality_id": "takaoka",
   "path": "/services/registration/juminhyo",
   "title": "住民票の写し",
   "description": "住民票の写しの取得方法、必要書類、手数料について",
@@ -13,12 +13,12 @@
   "topic": [],
   "source": {
     "source_url": "template://sample/services/registration/juminhyo",
-    "fetched_at": "{{generated_at}}",
+    "fetched_at": "2026-01-20T10:33:17.311Z",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "{{generated_at}}",
+    "generated_at": "2026-01-20T10:33:17.311Z",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -57,7 +57,7 @@
       }
     },
     {
-      "id": "section-hzcxhob0n",
+      "id": "section-epbwjn717",
       "type": "Section",
       "props": {
         "heading": "住民票の種類",
@@ -75,7 +75,7 @@
       }
     },
     {
-      "id": "section-hzcxhob0n-desclist",
+      "id": "section-epbwjn717-desclist",
       "type": "DescriptionList",
       "props": {
         "items": [
@@ -116,7 +116,7 @@
       }
     },
     {
-      "id": "section-9rbppdygf",
+      "id": "section-u94e6o72x",
       "type": "Section",
       "props": {
         "heading": "窓口で請求する",
@@ -125,45 +125,87 @@
       }
     },
     {
-      "id": "section-p5udpyf0y-table",
-      "type": "Table",
+      "id": "section-fxlp1k01e-table",
+      "type": "Section",
       "props": {
-        "rows": [
+        "heading": "請求できる人",
+        "content": [
           {
-            "label": "本人",
-            "value": ""
-          },
-          {
-            "label": "同一世帯の方",
-            "value": ""
-          },
-          {
-            "label": "代理人（委任状が必要）",
-            "value": ""
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "本人"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "同一世帯の方"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "代理人（委任状が必要）"
+                    }
+                  ]
+                }
+              ]
+            ]
           }
-        ],
-        "heading": "請求できる人"
+        ]
       }
     },
     {
-      "id": "section-4tdcl62k9-table",
-      "type": "Table",
+      "id": "section-7yzimc95r-table",
+      "type": "Section",
       "props": {
-        "rows": [
+        "heading": "住民票の写しに必要なもの",
+        "content": [
           {
-            "label": "本人確認書類（マイナンバーカード、運転免許証など）",
-            "value": ""
-          },
-          {
-            "label": "委任状（代理人が請求する場合）",
-            "value": ""
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "本人確認書類（マイナンバーカード、運転免許証など）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "委任状（代理人が請求する場合）"
+                    }
+                  ]
+                }
+              ]
+            ]
           }
-        ],
-        "heading": "必要なもの"
+        ]
       }
     },
     {
-      "id": "section-8x31obukr",
+      "id": "section-k75x9slfc",
       "type": "Section",
       "props": {
         "heading": "受付場所・時間",
@@ -181,7 +223,7 @@
       }
     },
     {
-      "id": "section-w87oie6u4",
+      "id": "section-f269vsz5d",
       "type": "Section",
       "props": {
         "heading": "コンビニで取得する",
@@ -233,7 +275,7 @@
       }
     },
     {
-      "id": "section-l3jkb0cgv",
+      "id": "section-y92wg3bp6",
       "type": "Section",
       "props": {
         "heading": "郵送で請求する",
@@ -251,28 +293,58 @@
       }
     },
     {
-      "id": "section-zo58zez88-table",
-      "type": "Table",
+      "id": "section-6lz0e7e5k-table",
+      "type": "Section",
       "props": {
-        "rows": [
+        "heading": "送付するもの",
+        "content": [
           {
-            "label": "請求書（市ホームページからダウンロード、または便せん等に必要事項を記入）",
-            "value": ""
-          },
-          {
-            "label": "本人確認書類のコピー",
-            "value": ""
-          },
-          {
-            "label": "定額小為替（手数料分、郵便局で購入）",
-            "value": ""
-          },
-          {
-            "label": "返信用封筒（切手貼付、住民登録地宛て）",
-            "value": ""
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "請求書（市ホームページからダウンロード、または便せん等に必要事項を記入）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "本人確認書類のコピー"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "定額小為替（手数料分、郵便局で購入）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "返信用封筒（切手貼付、住民登録地宛て）"
+                    }
+                  ]
+                }
+              ]
+            ]
           }
-        ],
-        "heading": "送付するもの"
+        ]
       }
     },
     {
@@ -299,6 +371,68 @@
           {
             "title": "転出届",
             "href": "/services/registration/tenshutsu"
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-対象-1769919363201",
+      "type": "Section",
+      "props": {
+        "heading": "住民票の写しの対象となる方",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "詳細は担当課にお問い合わせください。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-方法-1769919363201",
+      "type": "Section",
+      "props": {
+        "heading": "住民票の写しの手続き方法",
+        "content": [
+          {
+            "type": "list",
+            "ordered": true,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "必要書類を準備します。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "窓口で申請書を記入します。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "書類を提出し、確認を受けます。"
+                    }
+                  ]
+                }
+              ]
+            ]
           }
         ]
       }

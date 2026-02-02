@@ -155,5 +155,113 @@
     "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/fukushika/",
     "confidence": 0.6,
     "updatedAt": "2026-01-30T00:00:00.000Z"
+  },
+  "building_permit_houhou": {
+    "value": "建築確認申請は指定確認検査機関または市区町村の建築指導課に提出してください",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.792Z"
+  },
+  "building_permit_nagare": {
+    "value": "1. 事前相談 → 2. 確認申請書類の作成 → 3. 申請・審査 → 4. 確認済証の交付",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.792Z"
+  },
+  "home_purchase_hitsuyou": {
+    "value": "本人確認書類、収入証明書、住民票、印鑑証明書（ローン利用時）",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.792Z"
+  },
+  "home_purchase_houhou": {
+    "value": "不動産会社、住宅展示場、または市区町村の住宅相談窓口で情報収集してください",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.792Z"
+  },
+  "home_purchase_nagare": {
+    "value": "1. 物件を探す → 2. 資金計画を立てる → 3. 売買契約 → 4. 住宅ローン・登記手続き → 5. 入居",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.792Z"
+  },
+  "housing_benefit_hitsuyou": {
+    "value": "申請書、住民票、所得証明書、賃貸借契約書の写し、求職活動状況報告書",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.792Z"
+  },
+  "housing_benefit_houhou": {
+    "value": "市区町村の福祉窓口に申請してください。支給には収入・資産要件があります",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.792Z"
+  },
+  "housing_benefit_nagare": {
+    "value": "1. 福祉窓口に相談 → 2. 申請書類を提出 → 3. 審査 → 4. 支給決定・家賃代理納付",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.792Z"
+  },
+  "property_registration_nagare": {
+    "value": "1. 登記申請書を作成 → 2. 必要書類を準備 → 3. 法務局に申請 → 4. 登記完了証を受領",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.792Z"
+  },
+  "reform_subsidy_hitsuyou": {
+    "value": "申請書、工事見積書、工事図面、住民票、納税証明書",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.792Z"
+  },
+  "reform_subsidy_houhou": {
+    "value": "工事着工前に市区町村に申請してください。工事後では補助金が受けられない場合があります",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.792Z"
+  },
+  "reform_subsidy_nagare": {
+    "value": "1. 事前相談 → 2. 補助金申請 → 3. 交付決定 → 4. 工事実施 → 5. 完了報告・補助金交付",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.792Z"
+  },
+  "seismic_retrofit_hitsuyou": {
+    "value": "耐震診断結果報告書、工事見積書、工事図面、住民票",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.792Z"
+  },
+  "seismic_retrofit_houhou": {
+    "value": "まず耐震診断を受け、その結果に基づいて耐震改修工事の補助金を申請してください",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.792Z"
+  },
+  "seismic_retrofit_nagare": {
+    "value": "1. 耐震診断を申請 → 2. 診断結果を確認 → 3. 改修計画を作成 → 4. 補助金申請・工事",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.792Z"
+  },
+  "vacant_house_hitsuyou": {
+    "value": "空き家バンク登録申込書、物件調査票、同意書、登記事項証明書",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.792Z"
+  },
+  "vacant_house_houhou": {
+    "value": "市区町村の空き家対策窓口に相談してください。空き家バンクへの登録は無料です",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.792Z"
+  },
+  "vacant_house_nagare": {
+    "value": "1. 空き家バンクに登録申込 → 2. 物件調査 → 3. 登録・公開 → 4. 購入希望者とマッチング",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.792Z"
   }
 }

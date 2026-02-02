@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0.0",
-  "page_id": "sample-services-registration-konin",
-  "municipality_id": "sample",
+  "page_id": "takaoka-services-registration-konin",
+  "municipality_id": "takaoka",
   "path": "/services/registration/konin",
   "title": "婚姻届",
   "description": "婚姻届の届出方法、必要書類、届出先について",
@@ -13,12 +13,12 @@
   "topic": [],
   "source": {
     "source_url": "template://sample/services/registration/konin",
-    "fetched_at": "{{generated_at}}",
+    "fetched_at": "2026-01-20T10:33:17.311Z",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "{{generated_at}}",
+    "generated_at": "2026-01-20T10:33:17.311Z",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -57,7 +57,7 @@
       }
     },
     {
-      "id": "section-izc6n2ama",
+      "id": "section-1m8spear6",
       "type": "Section",
       "props": {
         "heading": "届出できる人",
@@ -117,11 +117,56 @@
       }
     },
     {
-      "id": "section-vanisgx3m",
+      "id": "section-q9jwny80r-table",
       "type": "Section",
       "props": {
         "heading": "必要書類",
-        "level": 2,
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "婚姻届（証人2人の署名が必要）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "戸籍謄本（本籍地以外に届出する場合、夫・妻それぞれ1通ずつ）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "届出人の本人確認書類（運転免許証、マイナンバーカードなど）"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-v090jg6i5",
+      "type": "Section",
+      "props": {
+        "heading": "戸籍謄本について",
+        "level": 3,
         "content": [
           {
             "type": "paragraph",
@@ -135,27 +180,7 @@
       }
     },
     {
-      "id": "section-vanisgx3m-table",
-      "type": "Table",
-      "props": {
-        "rows": [
-          {
-            "label": "婚姻届（証人2人の署名が必要）",
-            "value": ""
-          },
-          {
-            "label": "戸籍謄本（本籍地以外に届出する場合、夫・妻それぞれ1通ずつ）",
-            "value": ""
-          },
-          {
-            "label": "届出人の本人確認書類（運転免許証、マイナンバーカードなど）",
-            "value": ""
-          }
-        ]
-      }
-    },
-    {
-      "id": "section-j3ykl37mg",
+      "id": "section-4vbyqoze6",
       "type": "Section",
       "props": {
         "heading": "届出先・届出時間",
@@ -225,7 +250,7 @@
       }
     },
     {
-      "id": "section-ihh5x0246",
+      "id": "section-kjbwdvkx0",
       "type": "Section",
       "props": {
         "heading": "届出後の手続き",
@@ -327,6 +352,68 @@
       }
     },
     {
+      "id": "section-対象-1769919363203",
+      "type": "Section",
+      "props": {
+        "heading": "婚姻届の対象となる方",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "詳細は担当課にお問い合わせください。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-方法-1769919363203",
+      "type": "Section",
+      "props": {
+        "heading": "婚姻届の手続き方法",
+        "content": [
+          {
+            "type": "list",
+            "ordered": true,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "必要書類を準備します。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "窓口で申請書を記入します。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "書類を提出し、確認を受けます。"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
       "id": "contact-1",
       "type": "Contact",
       "props": {
@@ -335,6 +422,27 @@
         "email": "{{shimin_email}}",
         "hours": "{{city_hall_hours}}",
         "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "terms-1769899964513",
+      "type": "Section",
+      "props": {
+        "heading": "用語の説明",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "戸籍謄本",
+                "bold": true
+              },
+              {
+                "text": "：家族全員の戸籍の写し"
+              }
+            ]
+          }
+        ]
       }
     },
     {

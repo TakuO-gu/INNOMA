@@ -51,7 +51,9 @@ export interface ExtractedVariable {
 
 // SearchAttempt is defined in @/lib/drafts/types.ts
 import type { SearchAttempt } from '../drafts/types';
-// Re-export with alias for backwards compatibility
+/**
+ * @deprecated 直接 @/lib/drafts/types から SearchAttempt をインポートしてください
+ */
 export type { SearchAttempt as SearchAttemptRecord } from '../drafts/types';
 
 /**
@@ -78,7 +80,9 @@ export interface ExtractionError {
 }
 
 // Draft types are defined in @/lib/drafts/types.ts
-// Re-export for backwards compatibility
+/**
+ * @deprecated 直接 @/lib/drafts/types から Draft, DraftVariableEntry をインポートしてください
+ */
 export type { Draft, DraftVariableEntry as DraftVariable } from '../drafts/types';
 
 /**

@@ -210,10 +210,6 @@
         "heading": "ワンストップ特例申請に必要なもの",
         "rows": [
           {
-            "label": "寄附金税額控除に係る申告特例申請書",
-            "value": ""
-          },
-          {
             "label": "本人確認書類のコピー",
             "value": "マイナンバーカード両面、または通知カード＋身分証明書"
           }
@@ -329,25 +325,55 @@
     },
     {
       "id": "table-tsukai",
-      "type": "Table",
+      "type": "Section",
       "props": {
         "heading": "寄附金の使い道",
-        "rows": [
+        "content": [
           {
-            "label": "{{furusato_tsukaimichi_1}}",
-            "value": ""
-          },
-          {
-            "label": "{{furusato_tsukaimichi_2}}",
-            "value": ""
-          },
-          {
-            "label": "{{furusato_tsukaimichi_3}}",
-            "value": ""
-          },
-          {
-            "label": "市長におまかせ",
-            "value": ""
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "{{furusato_tsukaimichi_1}}"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "{{furusato_tsukaimichi_2}}"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "{{furusato_tsukaimichi_3}}"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "市長におまかせ"
+                    }
+                  ]
+                }
+              ]
+            ]
           }
         ]
       }
@@ -368,6 +394,103 @@
           {
             "title": "税証明書",
             "href": "/services/tax/zeishoumei"
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-対象-1769919373820",
+      "type": "Section",
+      "props": {
+        "heading": "ふるさと納税の対象となる方",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "詳細は担当課にお問い合わせください。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-必要-1769919373820",
+      "type": "Section",
+      "props": {
+        "heading": "ふるさと納税に必要なもの",
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "本人確認書類（マイナンバーカード、運転免許証など）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "印鑑（認印可）"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-方法-1769919373820",
+      "type": "Section",
+      "props": {
+        "heading": "ふるさと納税の手続き方法",
+        "content": [
+          {
+            "type": "list",
+            "ordered": true,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "必要書類を準備します。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "窓口で申請書を記入します。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "書類を提出し、確認を受けます。"
+                    }
+                  ]
+                }
+              ]
+            ]
           }
         ]
       }

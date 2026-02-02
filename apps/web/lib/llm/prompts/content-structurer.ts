@@ -38,62 +38,96 @@ export interface StructuredInfo {
 }
 
 /**
- * コンポーネント選択ルール
+ * コンポーネント選択ルール（DADS準拠 31種類対応）
+ *
+ * docs/FETCH_TO_SHOW_FLOWCHART.md の「コンポーネント選択ロジック（DADS準拠）」と同期
+ *
+ * 注意: Breadcrumbsはディレクトリ構造から自動生成されるため、このルールには含まない
  */
 export const COMPONENT_SELECTION_RULES = `
-## コンポーネント選択ルール
+## コンポーネント選択ルール（DADS準拠 31種類）
 
-### 1. 手続きの流れ（procedure）
-- 3ステップ以上で各ステップに詳細説明がある → StepNavigation
-- 2ステップ以下またはシンプル → RichText (ordered list)
+### ページ構造
+- ページタイトル → Title
+- 概要・要約 → Summary
+- セクション見出し（h2）→ Section (level: 2)
+- セクション見出し（h3/h4）→ RichText (heading node)
+- ※パンくず（Breadcrumbs）はディレクトリ構造から自動生成されるため、コンテンツ構造化では扱わない
 
-### 2. 必要書類（requirements）
-- 条件分岐あり（本人/代理人等）で2-4条件 → Table
-- 条件分岐あり（5条件以上）→ Accordion
-- シンプルなリスト（3項目以下）→ DescriptionList
-- シンプルなリスト（4項目以上）→ RichText (unordered list)
+### ナビゲーション・リンク
+- **RelatedLinks**: シンプルな関連リンクのリスト（テキストリンクのみ、説明なし）
+  - 例: 「関連ページ」「このページを見た人はこちらも」
+- **ResourceList**: 詳細説明付きのリソース一覧（タイトル・説明・リンク）
+  - 例: 「申請に必要な書類」「関連する制度の詳細」「外部サービスへのリンク」
+- **QuickLinks**: ページ内アンカーやトップへのクイックアクセス
 
-### 3. 費用・料金（fees）
-- 2パターン以上 → Table
-- 1パターン → DescriptionList または RichText (強調テキスト)
+### 手順・フロー
+- 3ステップ以上 → StepNavigation
+- 1〜2ステップ → RichText (ordered list)
+- ※1ステップしかない場合は手順UIではなく、RichText (paragraph)で説明
 
-### 4. 対象者・条件（eligibility）
-- 対象/対象外の区別がある → Table
-- シンプルな条件 → RichText (unordered list)
+### リスト・データ
+- 条件分岐あり かつ 折りたたみ必要 → Accordion
+- シンプルなリスト → RichText (unordered list)
+- 定義リスト（用語説明）→ DescriptionList
+- キー・バリューペア → DescriptionList
 
-### 5. 問い合わせ先（contact）
-- 単一窓口 → Contact
-- 複数窓口（2-3箇所）→ DirectoryList
-- 複数窓口（4箇所以上）→ Card形式でグリッド表示
+### 表（Table）
+- **Tableは以下の場合のみ使用**:
+  1. 項目を並べて比較する必要がある場合（例: 複数プランの比較、条件別の料金表）
+  2. 大量のデータを一覧表示する場合（5項目以上）
+- 単純なキー・バリューはDescriptionListを使用
+- 手数料が1〜4項目程度 → DescriptionList
 
-### 6. 注意事項（warning）
-- 重要 かつ 説明文が50文字以上 → NotificationBanner (severity: warning)
-- 短い注意事項（50文字未満）→ RichText (unordered list)
-- 補足的な注意 → RichText (paragraph)
-
-### 7. 緊急情報（emergency）
-- 災害情報、臨時休業等 → EmergencyBanner（最優先で表示）
-
-### 8. FAQ（faq）
+### Q&A・FAQ
 - Q&A形式 → Accordion
 
-### 9. 関連リンク（links）
-- 説明付き → ResourceList
-- シンプル → RelatedLinks
-- アクション誘導 → ActionButton
+### 通知・警告
+- 緊急（災害、臨時休業等）→ EmergencyBanner
+- 重要度: 高（危険）→ NotificationBanner (severity: danger)
+- 重要度: 中（警告）→ NotificationBanner (severity: warning)
+- 重要度: 低（情報）→ NotificationBanner (severity: info)
+- 成功通知 → NotificationBanner (severity: success)
 
-### 10. 関連サービス（related）
-- 関連する他サービスへの誘導 → Card（グリッド表示）
+### 連絡先・施設
+- 1件の連絡先 → Contact
+- 複数の連絡先 → DirectoryList
+- 避難所情報 → ShelterList
+- ハザードマップ → HazardMapViewer
 
-### 11. 法令引用・規則（quote）
-- 法令の引用、重要な規則 → Blockquote
+### カード・グリッド
+- **類似したクリック可能なアイテムを並べる場合** → CardGrid (variant: link)
+- 比較・詳細表示（5項目以上）→ Table
+- 画像+テキスト → CardGrid (variant: media)
+- アイコン+説明 → CardGrid (variant: info)
+- 統計・数値（複数）→ InfoCardGrid
+- 統計・数値（単体）→ InfoCard
+- 関連サービス・リンク（2項目以上）→ CardGrid
 
-### 12. ステータス情報（status）
-- 受付中、準備中等の状態表示 → StatusBadge
+### トピック・ニュース
+- トピック（グリッド）→ TopicGrid
+- トピック（リスト）→ TopicList
+- ニュース一覧 → NewsList
+- ニュースメタ情報 → NewsMeta
 
-### 13. 用語説明・名前-値ペア（definition）
-- シンプルな定義リスト → DescriptionList
-- Tableほど複雑でない場合に使用
+### アクション
+- 主要CTAボタン → ActionButton
+- 補助アクション → TaskButton
+- 添付ファイル → Attachments
+
+### 地区・変数
+- 地区選択UI → DistrictSelector
+
+### テキスト・引用
+- 本文 → RichText
+- 引用（法令等）→ Blockquote
+- ステータス表示 → StatusBadge
+
+### ホームページ専用
+- ヒーローセクション → Hero
+
+### 参照
+- 出典・参照元 → Sources (Wikipedia形式)
 `;
 
 /**
@@ -268,17 +302,17 @@ ${COMPONENT_SELECTION_RULES}
 - { "type": "heading", "level": 2|3|4, "text": "見出し" }
 - { "type": "paragraph", "runs": [{ "text": "テキスト", "bold": true/false }] }
 - { "type": "list", "ordered": true/false, "items": [[RichTextNode]] }
-- { "type": "callout", "severity": "info"|"warning"|"danger", "title": "タイトル", "content": [RichTextNode] }
+- { "type": "divider" }
 
 【セクション順序】
 1. 概要 (RichText)
 2. 重要なお知らせ (NotificationBanner) ※該当する場合のみ
 3. 対象となる方 (Section)
 4. 必要なもの (Section)
-5. 手続きの流れ (StepNavigation または Section)
+5. 手続きの流れ (3ステップ以上: StepNavigation、1-2ステップ: RichText)
 6. 費用 (Section または Table)
 7. 届出先・受付時間 (Section)
-8. ご注意ください (Section with callout)
+8. ご注意ください (NotificationBanner または RichText)
 9. よくある質問 (Accordion)
 10. 問い合わせ先 (Contact)
 11. 関連情報 (ResourceList または RelatedLinks)
@@ -379,55 +413,25 @@ function enrichWithBlockRecommendations(
 }
 
 /**
- * ブロック生成プロンプト（改善版）
+ * ブロック定義（JSON形式の例）
  */
-function buildEnhancedBlockPrompt(sections: AnalyzedSection[]): string {
-  const sectionsWithRecommendations = sections.map(s => ({
-    type: s.type,
-    title: s.title,
-    content: s.content,
-    importance: s.importance,
-    hasConditions: s.hasConditions,
-    itemCount: s.itemCount,
-    stepCount: s.stepCount,
-    recommendedBlock: s.recommendedBlock,
-    alternativeBlocks: s.alternativeBlocks,
-  }));
-
-  return `以下の分析結果を、指定されたブロックタイプに変換してください。
-
-【重要】
-- 各セクションの「recommendedBlock」を優先的に使用してください
-- Sectionは使用しないでください（代わりにTable, StepNavigation, Accordion等を使う）
-- RichTextを使う場合は、calloutやlistを積極的に活用してください
-
-【分析結果】
-${JSON.stringify(sectionsWithRecommendations, null, 2)}
-
-【出力形式】
-{
-  "blocks": [
-    {
-      "id": "一意のID",
-      "type": "ブロックタイプ（recommendedBlockまたはalternativeBlocksから選択）",
-      "props": { ... }
-    }
-  ]
-}
-
-【ブロックタイプと使い分け】
-
-## StepNavigation（手順が3つ以上ある場合に必須）
+const BLOCK_DEFINITIONS = `
+## StepNavigation（手順が3つ以上ある場合のみ使用）
+- 1〜2ステップの場合はRichText (ordered list)を使用すること
+- 1ステップしかない場合はStepNavigationもordered listも使わず、RichText (paragraph)で説明
 {
   "type": "StepNavigation",
   "props": {
     "steps": [
-      { "title": "ステップ1: 申請書に記入", "body": [RichTextNode] }
+      { "title": "ステップ1: 申請書に記入", "body": [RichTextNode] },
+      { "title": "ステップ2: 窓口に提出", "body": [RichTextNode] },
+      { "title": "ステップ3: 交付を受け取る", "body": [RichTextNode] }
     ]
   }
 }
 
-## Table（比較・条件分岐がある場合に必須）
+## Table（比較・条件分岐がある場合）
+- 値が空の場合はTableを使用せず、RichText (unordered list)を使用
 {
   "type": "Table",
   "props": {
@@ -438,7 +442,7 @@ ${JSON.stringify(sectionsWithRecommendations, null, 2)}
   }
 }
 
-## Accordion（FAQ、詳細情報がある場合）
+## Accordion（FAQ、条件分岐あり かつ 折りたたみが必要な場合）
 {
   "type": "Accordion",
   "props": {
@@ -449,8 +453,8 @@ ${JSON.stringify(sectionsWithRecommendations, null, 2)}
 }
 
 ## NotificationBanner（重要な注意事項 かつ 50文字以上の説明がある場合のみ）
-- 短い注意事項（50文字未満）はRichText with calloutを使用すること
-- titleとcontentの両方が必要
+- 短い注意事項（50文字未満）はRichText (unordered list)を使用すること
+- severityはinfo/warning/danger/successから選択
 {
   "type": "NotificationBanner",
   "props": {
@@ -460,7 +464,17 @@ ${JSON.stringify(sectionsWithRecommendations, null, 2)}
   }
 }
 
-## Contact（問い合わせ先）
+## EmergencyBanner（緊急情報・災害時のみ）
+{
+  "type": "EmergencyBanner",
+  "props": {
+    "title": "緊急のお知らせ",
+    "content": [RichTextNode],
+    "link": { "href": "#", "text": "詳細はこちら" }
+  }
+}
+
+## Contact（1件の連絡先）
 {
   "type": "Contact",
   "props": {
@@ -471,7 +485,19 @@ ${JSON.stringify(sectionsWithRecommendations, null, 2)}
   }
 }
 
-## ResourceList（関連リンク）
+## DirectoryList（複数の連絡先）
+{
+  "type": "DirectoryList",
+  "props": {
+    "heading": "届出先一覧",
+    "items": [
+      { "name": "市民課", "phone": "0766-20-1234", "address": "市役所1階" },
+      { "name": "支所窓口", "phone": "0766-20-5678", "address": "支所1階" }
+    ]
+  }
+}
+
+## ResourceList（関連リンク - カード形式・説明付き）
 {
   "type": "ResourceList",
   "props": {
@@ -482,8 +508,18 @@ ${JSON.stringify(sectionsWithRecommendations, null, 2)}
   }
 }
 
-## DescriptionList（シンプルな名前-値ペア、3項目以下の場合）
-- Tableより軽量で、シンプルな情報に適切
+## RelatedLinks（関連リンク - リスト形式・説明なし）
+{
+  "type": "RelatedLinks",
+  "props": {
+    "heading": "関連リンク",
+    "items": [
+      { "text": "リンクテキスト", "href": "#", "external": false }
+    ]
+  }
+}
+
+## DescriptionList（定義リスト・用語説明）
 {
   "type": "DescriptionList",
   "props": {
@@ -494,34 +530,74 @@ ${JSON.stringify(sectionsWithRecommendations, null, 2)}
   }
 }
 
-## EmergencyBanner（緊急情報・災害時）
-- 最優先で表示される
-- 災害情報、臨時休業等に使用
+## ActionButton（主要CTAボタン）
 {
-  "type": "EmergencyBanner",
+  "type": "ActionButton",
   "props": {
-    "title": "緊急のお知らせ",
-    "content": [RichTextNode],
-    "link": { "href": "#", "text": "詳細はこちら" }
+    "label": "ボタンテキスト",
+    "href": "#",
+    "variant": "primary" | "secondary"
   }
 }
 
-## Card（関連サービス、複数窓口のグリッド表示）
-- 関連サービスへの誘導
-- 4箇所以上の窓口案内
+## TaskButton（補助アクションボタン）
 {
-  "type": "Card",
+  "type": "TaskButton",
   "props": {
-    "title": "カードタイトル",
-    "description": "説明文",
-    "href": "リンク先（オプション）",
-    "image": "画像URL（オプション）"
+    "label": "ボタンテキスト",
+    "href": "#"
   }
 }
 
-## Blockquote（法令引用・規則）
-- 法律や条例の引用
-- 重要な規則の明示
+## Attachments（添付ファイル）
+{
+  "type": "Attachments",
+  "props": {
+    "title": "関連書類",
+    "items": [
+      { "title": "申請書", "href": "#", "content_type": "application/pdf" }
+    ]
+  }
+}
+
+## CardGrid（カードグリッド - 画像+テキスト / リンクカード / アイコン+説明）
+{
+  "type": "CardGrid",
+  "props": {
+    "heading": "見出し（オプション）",
+    "variant": "media" | "link" | "info",
+    "columns": 2 | 3 | 4,
+    "items": [
+      { "title": "タイトル", "description": "説明", "href": "#", "image": "画像URL" }
+    ]
+  }
+}
+
+## InfoCard（統計・数値 - 単体）
+{
+  "type": "InfoCard",
+  "props": {
+    "title": "タイトル",
+    "description": "説明",
+    "count": "10",
+    "countLabel": "か所",
+    "icon": "info",
+    "variant": "default"
+  }
+}
+
+## InfoCardGrid（統計・数値 - 複数）
+{
+  "type": "InfoCardGrid",
+  "props": {
+    "columns": 2 | 3 | 4,
+    "cards": [
+      { "title": "タイトル", "count": "10", "countLabel": "か所" }
+    ]
+  }
+}
+
+## Blockquote（引用・法令等）
 {
   "type": "Blockquote",
   "props": {
@@ -531,7 +607,6 @@ ${JSON.stringify(sectionsWithRecommendations, null, 2)}
 }
 
 ## StatusBadge（ステータス表示）
-- 受付中、準備中等の状態表示
 {
   "type": "StatusBadge",
   "props": {
@@ -540,15 +615,12 @@ ${JSON.stringify(sectionsWithRecommendations, null, 2)}
   }
 }
 
-## DirectoryList（複数窓口の一覧表示、2-3箇所の場合）
-- 複数の問い合わせ先を一覧表示
+## Sources（出典・参照元）
 {
-  "type": "DirectoryList",
+  "type": "Sources",
   "props": {
-    "heading": "届出先一覧",
     "items": [
-      { "name": "市民課", "phone": "0766-20-1234", "address": "市役所1階" },
-      { "name": "支所窓口", "phone": "0766-20-5678", "address": "支所1階" }
+      { "id": 1, "title": "出典タイトル", "url": "#", "accessed": "2024-01-01" }
     ]
   }
 }
@@ -565,24 +637,76 @@ ${JSON.stringify(sectionsWithRecommendations, null, 2)}
     ]
   }
 }
+`;
 
+/**
+ * RichTextNodeの形式定義
+ */
+const RICHTEXT_NODE_FORMAT = `
 【RichTextNodeの形式】
 - { "type": "paragraph", "runs": [{ "text": "テキスト", "bold": true/false }] }
 - { "type": "list", "ordered": true/false, "items": [[RichTextNode, ...], ...] }
 - { "type": "heading", "level": 3, "text": "見出し" }
+- { "type": "divider" }
+`;
 
+/**
+ * セクション順序定義（参照用）
+ */
+const _SECTION_ORDER = `
 【セクション順序】
 1. 概要 (RichText with paragraph)
-2. 重要なお知らせ (NotificationBanner - 50文字以上の場合のみ)
+2. 重要なお知らせ (NotificationBanner - 50文字以上の場合のみ、それ以外はRichText)
 3. 対象となる方 (Table または RichText with list)
 4. 必要なもの (Table または Accordion)
-5. 手続きの流れ (StepNavigation)
+5. 手続きの流れ (3ステップ以上: StepNavigation、1-2ステップ: RichText ordered list、1ステップのみ: RichText paragraph)
 6. 費用 (Table または DescriptionList)
 7. 届出先・受付時間 (Contact または DirectoryList)
-8. ご注意ください (NotificationBanner - 50文字以上、または RichText with list)
+8. ご注意ください (NotificationBanner - 50文字以上、それ以外はRichText with list)
 9. よくある質問 (Accordion)
 10. 問い合わせ先 (Contact または DirectoryList)
-11. 関連情報 (ResourceList)
+11. 関連情報 (ResourceList または RelatedLinks)
+12. 関連書類 (Attachments)
+13. 出典・参照元 (Sources)
+`;
+
+/**
+ * ブロック生成プロンプト（改善版）
+ * recommendedBlockを必ず使用させる
+ */
+function buildEnhancedBlockPrompt(sections: AnalyzedSection[]): string {
+  // セクションごとに必要な情報のみを抽出
+  const sectionsForLLM = sections.map(s => ({
+    title: s.title,
+    content: s.content,
+    blockType: s.recommendedBlock, // 必ずこのタイプを使用
+    stepCount: s.stepCount,
+    itemCount: s.itemCount,
+    hasConditions: s.hasConditions,
+  }));
+
+  return `各セクションを指定されたblockTypeに変換してください。
+
+【重要】各セクションの「blockType」を必ず使用してください。変更は禁止です。
+
+【変換対象】
+${JSON.stringify(sectionsForLLM, null, 2)}
+
+【ブロック定義】
+${BLOCK_DEFINITIONS}
+
+${RICHTEXT_NODE_FORMAT}
+
+【出力形式】
+{
+  "blocks": [
+    {
+      "id": "block-1",
+      "type": "blockTypeの値をそのまま使用",
+      "props": { ... }
+    }
+  ]
+}
 `;
 }
 
@@ -611,7 +735,7 @@ export async function analyzeAndStructure(
   }
 
   const analysis = await generateJSON<AnalysisResult>(analysisPrompt, {
-    maxOutputTokens: 4000,
+    maxOutputTokens: 8192,
   });
 
   // Step 2: コードでブロックタイプ候補を決定
@@ -625,7 +749,7 @@ export async function analyzeAndStructure(
   }
 
   const result = await generateJSON<BlockResult>(blockPrompt, {
-    maxOutputTokens: 8000,
+    maxOutputTokens: 16384,
   });
 
   return {
@@ -655,24 +779,30 @@ export function getRecommendedBlockType(
       return 'RichText'; // ordered list
 
     case 'requirements':
+      // Tableは「項目を並べて比較する必要がある時」のみ使用
+      // 通常の必要書類リストはRichTextまたはDescriptionList
       if (hasConditions) {
-        if (itemCount <= 4) return 'Table';
-        return 'Accordion';
+        // 条件付きでも比較が必要な場合のみTable（大量データ=5項目以上）
+        if (itemCount >= 5) return 'Accordion';
+        return 'DescriptionList';
       }
-      // シンプルなリストは項目数で判断
       if (itemCount <= 3) return 'DescriptionList';
       return 'RichText'; // unordered list
 
     case 'eligibility':
-      if (hasConditions) return 'Table';
+      // 対象者条件はシンプルなリストで十分
       return 'RichText'; // unordered list
 
     case 'fees':
-      if (itemCount >= 2) return 'Table';
+      // 手数料は「比較が必要」または「大量データ（5項目以上）」の場合のみTable
+      if (itemCount >= 5) return 'Table';
       return 'DescriptionList';
 
     case 'schedule':
-      return 'Table';
+      // スケジュールは比較が必要な場合（複数の時間帯・曜日など）のみTable
+      // 単純な営業時間等はDescriptionListで十分
+      if (itemCount >= 3) return 'Table';
+      return 'DescriptionList';
 
     case 'contact':
       if (itemCount >= 4) return 'Card'; // 多数の窓口はカード形式
@@ -696,10 +826,13 @@ export function getRecommendedBlockType(
 
     case 'links':
       if (importance === 'high') return 'ActionButton';
+      // 類似したクリック可能なアイテムが複数ある場合はCardGrid
+      if (itemCount >= 3) return 'CardGrid';
       return 'ResourceList';
 
     case 'related':
-      // 関連サービスはカード形式
+      // 関連サービス・類似したクリック可能アイテムはカード形式
+      if (itemCount >= 2) return 'CardGrid';
       return 'Card';
 
     case 'quote':

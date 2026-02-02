@@ -317,7 +317,7 @@ export function CardGridBlock({ props }: CardGridBlockProps) {
   }[variant];
 
   return (
-    <div className="card-grid-block mb-8">
+    <div className="card-grid-block mt-12 mb-8">
       {heading && (
         <h2 className="text-std-24B-150 text-solid-gray-900 mb-6">{heading}</h2>
       )}

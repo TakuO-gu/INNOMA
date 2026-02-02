@@ -183,7 +183,7 @@ export function HazardMapViewerBlock({ props }: HazardMapViewerProps) {
   };
 
   return (
-    <div className="hazard-map-viewer my-6">
+    <div className="hazard-map-viewer mt-12 mb-6">
       <div className="mb-2">
         <Label htmlFor="hazard-map-district-select">{label}</Label>
       </div>

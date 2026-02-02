@@ -161,5 +161,62 @@
     "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kodomo_kosodateka/",
     "confidence": 0.6,
     "updatedAt": "2026-01-30T00:00:00.000Z"
+  },
+  "kodomoen_count": {
+    "value": "19園",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kodomo_kosodateka/2/11/2197.html",
+    "confidence": 0.9,
+    "updatedAt": "2026-02-01T00:00:00.000Z"
+  },
+  "kindergarten_count": {
+    "value": "3園（私立のみ）",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kodomo_kosodateka/2/11/2197.html",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T00:00:00.000Z"
+  },
+  "small_nursery_count": {
+    "value": "6施設",
+    "source": "llm",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kodomo_kosodateka/2/11/2197.html",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T00:00:00.000Z"
+  },
+  "boshi_hitsuyou": {
+    "value": "母子健康手帳、本人確認書類。サービスにより必要書類が異なります",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:09:26.485Z"
+  },
+  "boshi_houhou": {
+    "value": "妊娠届出時に母子健康手帳と各種助成券を交付します。健診は指定医療機関で受診してください",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:09:26.485Z"
+  },
+  "boshi_nagare": {
+    "value": "1. 妊娠届を提出 → 2. 母子健康手帳を受け取る → 3. 妊婦健診を受診 → 4. 出産後の届出・申請",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:09:26.485Z"
+  },
+  "jidou_teate_houhou": {
+    "value": "出生届と同時に申請するか、出生日の翌日から15日以内に申請してください。公務員の方は勤務先での申請となります",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:09:26.485Z"
+  },
+  "jidou_teate_nagare": {
+    "value": "1. 認定請求書に記入 → 2. 必要書類を添付 → 3. 窓口で申請 → 4. 審査後に支給開始",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:09:26.485Z"
+  },
+  "nursery_apply_nagare": {
+    "value": "1. 入園申込書を入手 → 2. 就労証明書等を準備 → 3. 申込期間内に提出 → 4. 利用調整・結果通知",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:09:26.485Z"
   }
 }

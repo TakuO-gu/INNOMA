@@ -100,5 +100,23 @@
     "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/hokennenkinka/2/3/1/3016.html",
     "confidence": 0.95,
     "updatedAt": "2026-01-30T00:00:00.000Z"
+  },
+  "business_insurance_hitsuyou": {
+    "value": "届出書、事業所の概要書、従業員名簿、賃金台帳",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.792Z"
+  },
+  "business_insurance_houhou": {
+    "value": "事業所を管轄する年金事務所または健康保険組合に届け出てください",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.792Z"
+  },
+  "business_insurance_nagare": {
+    "value": "1. 年金事務所に届出 → 2. 必要書類を提出 → 3. 審査 → 4. 適用開始",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.792Z"
   }
 }

@@ -1,7 +1,8 @@
 # テンプレート変数定義書
 
 **作成日**: 2026-01-20
-**総変数数**: 353個
+**最終更新**: 2026-02-02
+**総変数数**: 343個（動的計算: `getTotalVariableCount()`）
 
 ---
 
@@ -355,12 +356,102 @@ LLM情報取得システムが自動で埋める対象となる。
 
 ## 5. 検証ルール
 
-| 変数タイプ | 正規表現 |
-|-----------|---------|
-| 電話番号 | `^\d{2,5}-\d{2,4}-\d{4}$` |
-| メール | `^[\w.-]+@[\w.-]+\.[a-z]{2,}$` |
-| URL | `^https?://` |
-| 金額 | `^[\d,]+円$` |
-| 日付 | `^\d{1,2}月\d{1,2}日` |
-| 時間 | `^\d{1,2}:\d{2}` |
-| パーセント | `^\d+(\.\d+)?%$` |
+| 変数タイプ | 正規表現 | validationType |
+|-----------|---------|----------------|
+| 電話番号 | `^\d{2,5}-\d{2,4}-\d{4}$` | `phone` |
+| メール | `^[\w.-]+@[\w.-]+\.[a-z]{2,}$` | `email` |
+| URL | `^https?://` | `url` |
+| 金額 | `^[\d,]+円$` | `fee` |
+| 日付 | `^\d{1,2}月\d{1,2}日` | `date` |
+| 時間 | `^\d{1,2}:\d{2}` | `time` |
+| パーセント | `^\d+(\.\d+)?%$` | `percent` |
+| 郵便番号 | `^〒?\d{3}-\d{4}$` | `postal` |
+| カウント | `^\d+$` | `count` |
+| テキスト | （常にtrue） | `text` |
+
+### 5.1 validationType の指定
+
+変数定義で明示的にバリデーションタイプを指定可能:
+
+```typescript
+interface VariableDefinition {
+  name: string;
+  description: string;
+  validationType?: VariableValidationType;
+  examples?: string[];
+}
+```
+
+---
+
+## 6. 地区依存変数
+
+同一自治体内でも地区（町丁目）によって値が異なる変数。
+
+### 6.1 地区依存変数の例
+
+| 変数名 | 説明 |
+|--------|------|
+| `sodai_gomi_collection_center` | 粗大ごみ収集センター |
+| `hinanjo_list` | 避難所一覧 |
+| `elementary_school_district` | 小学校区 |
+| `garbage_collection_day` | ごみ収集日 |
+
+### 6.2 データ構造
+
+```json
+{
+  "sodai_gomi_collection_center": {
+    "value": "{{district_dependent}}",
+    "districtDependent": {
+      "districts": [
+        { "id": "central", "name": "中央地区", "value": "中央クリーンセンター" },
+        { "id": "north", "name": "北部地区", "value": "北部環境センター" }
+      ],
+      "defaultValue": "地区を選択してください"
+    }
+  }
+}
+```
+
+### 6.3 画面表示
+
+ユーザーがページを表示すると、地区選択UIが表示される。
+地区を選択すると、対応する値が動的に表示される。
+
+---
+
+## 7. 変数ストアの構造
+
+### 7.1 カテゴリ別ファイル
+
+変数はカテゴリ別に分割して保存:
+
+```
+{municipality}/variables/
+├── core.json           # 基本情報
+├── health.json         # 健康・医療
+├── tax.json            # 税金
+├── childcare.json      # 子育て
+├── welfare.json        # 福祉
+├── environment.json    # 環境・ごみ
+├── disaster.json       # 防災
+├── housing.json        # 住宅
+├── employment.json     # 雇用
+├── driving.json        # 運転・車
+├── business.json       # 事業
+├── land.json           # 土地・農林水産
+├── nationality.json    # 外国人・国籍
+├── civic.json          # 市民参加・選挙
+├── benefits.json       # 年金・給付
+├── registration.json   # 届出・申請
+├── insurance.json      # 保険
+├── mynumber.json       # マイナンバー
+├── misc.json           # その他
+└── external.json       # 外部機関
+```
+
+### 7.2 テンプレート変数の複数配置
+
+同じ変数がテンプレートとサンプル両方に存在する場合、
+サービスページから適切なソースを参照。

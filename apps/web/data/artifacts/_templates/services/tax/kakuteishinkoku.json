@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0.0",
-  "page_id": "sample-services-tax-kakuteishinkoku",
-  "municipality_id": "sample",
+  "page_id": "takaoka-services-tax-kakuteishinkoku",
+  "municipality_id": "takaoka",
   "path": "/services/tax/kakuteishinkoku",
   "title": "確定申告・税の相談",
   "description": "確定申告の受付期間、会場、申告が必要な方、住民税の申告について",
@@ -290,14 +290,6 @@
       "type": "Table",
       "props": {
         "rows": [
-          {
-            "label": "マイナンバーカードまたは通知カード＋本人確認書類",
-            "value": ""
-          },
-          {
-            "label": "源泉徴収票（給与・年金）",
-            "value": ""
-          },
           {
             "label": "各種控除の証明書",
             "value": "生命保険料、地震保険料、社会保険料など"

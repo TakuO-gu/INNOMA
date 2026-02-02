@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0.0",
-  "page_id": "sample-services-registration-inkan",
-  "municipality_id": "sample",
+  "page_id": "takaoka-services-registration-inkan",
+  "municipality_id": "takaoka",
   "path": "/services/registration/inkan",
   "title": "印鑑登録",
   "description": "印鑑登録の方法、印鑑登録証明書の取得について",
@@ -13,12 +13,12 @@
   "topic": [],
   "source": {
     "source_url": "template://sample/services/registration/inkan",
-    "fetched_at": "{{generated_at}}",
+    "fetched_at": "2026-01-20T10:33:17.311Z",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "{{generated_at}}",
+    "generated_at": "2026-01-20T10:33:17.311Z",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -57,7 +57,7 @@
       }
     },
     {
-      "id": "section-2ddor3x63",
+      "id": "section-py2w6l8mw",
       "type": "Section",
       "props": {
         "heading": "登録できる人",
@@ -75,7 +75,7 @@
       }
     },
     {
-      "id": "section-i6xxvu0wb",
+      "id": "section-inc00v807",
       "type": "Section",
       "props": {
         "heading": "登録できる印鑑",
@@ -121,7 +121,7 @@
       }
     },
     {
-      "id": "section-i6xxvu0wb-notification-0",
+      "id": "section-inc00v807-notification-0",
       "type": "NotificationBanner",
       "props": {
         "severity": "warning",
@@ -204,7 +204,7 @@
       }
     },
     {
-      "id": "section-l4drofj8j",
+      "id": "section-uz2aamnn4",
       "type": "Section",
       "props": {
         "heading": "必要書類",
@@ -213,24 +213,42 @@
       }
     },
     {
-      "id": "section-uf15efu0e-table",
-      "type": "Table",
+      "id": "section-bxi282nqh-table",
+      "type": "Section",
       "props": {
-        "rows": [
+        "heading": "即日登録の場合",
+        "content": [
           {
-            "label": "登録する印鑑",
-            "value": ""
-          },
-          {
-            "label": "顔写真付き本人確認書類（マイナンバーカード、運転免許証、パスポートなど）",
-            "value": ""
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "登録する印鑑"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "顔写真付き本人確認書類（マイナンバーカード、運転免許証、パスポートなど）"
+                    }
+                  ]
+                }
+              ]
+            ]
           }
-        ],
-        "heading": "即日登録の場合"
+        ]
       }
     },
     {
-      "id": "section-tiwxtfogu",
+      "id": "section-kmxt71vgy",
       "type": "Section",
       "props": {
         "heading": "照会書による登録の場合",
@@ -269,7 +287,7 @@
       }
     },
     {
-      "id": "section-tjnfg566e",
+      "id": "section-h8819n8au",
       "type": "Section",
       "props": {
         "heading": "印鑑登録証明書の取得",
@@ -287,7 +305,7 @@
       }
     },
     {
-      "id": "section-jo1h0djjw",
+      "id": "section-l97oem9u7",
       "type": "Section",
       "props": {
         "heading": "窓口で取得",
@@ -305,7 +323,7 @@
       }
     },
     {
-      "id": "section-uap9tkss2",
+      "id": "section-yjbclw6gu",
       "type": "Section",
       "props": {
         "heading": "コンビニ交付",
@@ -346,6 +364,68 @@
           {
             "title": "自動車登録",
             "href": "/services/driving/registration"
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-対象-1769919363198",
+      "type": "Section",
+      "props": {
+        "heading": "印鑑登録の対象となる方",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "詳細は担当課にお問い合わせください。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-方法-1769919363198",
+      "type": "Section",
+      "props": {
+        "heading": "印鑑登録の手続き方法",
+        "content": [
+          {
+            "type": "list",
+            "ordered": true,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "必要書類を準備します。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "窓口で申請書を記入します。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "書類を提出し、確認を受けます。"
+                    }
+                  ]
+                }
+              ]
+            ]
           }
         ]
       }

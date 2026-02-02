@@ -168,5 +168,179 @@
     "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/sangyokikakuka/",
     "confidence": 0.6,
     "updatedAt": "2026-01-30T00:00:00.000Z"
+  },
+  "agricultural_committee_hitsuyou": {
+    "value": "申請書、土地の登記事項証明書、位置図、計画書",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.793Z"
+  },
+  "agricultural_committee_houhou": {
+    "value": "農業委員会の窓口に相談してください。許可申請は毎月の締切日があります",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.793Z"
+  },
+  "agricultural_committee_nagare": {
+    "value": "1. 農業委員会に相談 → 2. 申請書類を準備 → 3. 許可申請 → 4. 審査・許可",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.793Z"
+  },
+  "agriculture_subsidy_hitsuyou": {
+    "value": "申請書、経営計画書、土地の利用状況、認定農業者証明書（該当者）",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.793Z"
+  },
+  "agriculture_subsidy_houhou": {
+    "value": "市区町村の農政担当課またはJAに相談してください。申請には期限があります",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.793Z"
+  },
+  "agriculture_subsidy_nagare": {
+    "value": "1. 補助金情報を確認 → 2. 担当課に相談 → 3. 申請書類を提出 → 4. 審査・交付決定",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.793Z"
+  },
+  "development_permit_houhou": {
+    "value": "市街化調整区域等での開発行為は許可が必要です。事前相談から行ってください",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.793Z"
+  },
+  "development_permit_nagare": {
+    "value": "1. 事前相談 → 2. 開発許可申請 → 3. 審査 → 4. 許可・工事着手",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.793Z"
+  },
+  "farmland_conversion_hitsuyou": {
+    "value": "農地転用許可申請書、土地の登記事項証明書、位置図、転用計画書",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.793Z"
+  },
+  "farmland_conversion_houhou": {
+    "value": "農地を農地以外の用途に使う場合は、農業委員会を通じて許可申請が必要です",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.793Z"
+  },
+  "farmland_conversion_nagare": {
+    "value": "1. 農業委員会に相談 → 2. 申請書類を準備 → 3. 許可申請 → 4. 審査・許可",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.793Z"
+  },
+  "fishery_hitsuyou": {
+    "value": "漁業許可申請書、漁船登録証、漁業協同組合の同意書",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:14:41.320Z"
+  },
+  "fishery_houhou": {
+    "value": "漁業を行うには漁業権または許可が必要です。漁業協同組合に相談してください",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:14:41.320Z"
+  },
+  "fishery_nagare": {
+    "value": "1. 漁業協同組合に相談 → 2. 必要な許可を確認 → 3. 申請手続き → 4. 許可・免許交付",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:09:26.493Z"
+  },
+  "forestry_hitsuyou": {
+    "value": "届出書、伐採計画書、森林の位置図",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:14:41.320Z"
+  },
+  "forestry_houhou": {
+    "value": "森林を伐採する場合は事前に届出が必要です。市区町村の林務担当課に届け出てください",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:14:41.320Z"
+  },
+  "forestry_nagare": {
+    "value": "1. 林務担当課に相談 → 2. 届出書類を準備 → 3. 届出・申請 → 4. 受理・許可",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:09:26.493Z"
+  },
+  "hunting_license_hitsuyou": {
+    "value": "狩猟免許申請書、医師の診断書、写真、住民票",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.793Z"
+  },
+  "hunting_license_houhou": {
+    "value": "狩猟を行うには狩猟免許と狩猟者登録が必要です。都道府県の窓口に申請してください",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.793Z"
+  },
+  "hunting_license_nagare": {
+    "value": "1. 狩猟免許試験に合格 → 2. 狩猟者登録申請 → 3. 狩猟税納付 → 4. 登録証・バッジ交付",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.793Z"
+  },
+  "new_farmer_hitsuyou": {
+    "value": "就農計画書、本人確認書類、農地の確保状況がわかる書類",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.793Z"
+  },
+  "new_farmer_houhou": {
+    "value": "新規就農を希望する方は市区町村の農政担当課または農業委員会に相談してください",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.793Z"
+  },
+  "new_farmer_nagare": {
+    "value": "1. 就農相談 → 2. 就農計画を作成 → 3. 認定申請 → 4. 支援事業の利用",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.793Z"
+  },
+  "urban_planning_hitsuyou": {
+    "value": "相談内容により異なります。まずは都市計画課に相談してください",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.793Z"
+  },
+  "urban_planning_houhou": {
+    "value": "都市計画の内容確認や用途地域の相談は市区町村の都市計画課で対応しています",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.793Z"
+  },
+  "urban_planning_nagare": {
+    "value": "1. 都市計画課に相談 → 2. 都市計画の内容確認 → 3. 必要な手続きの案内",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.793Z"
+  },
+  "wildlife_damage_hitsuyou": {
+    "value": "被害届、被害状況の写真、位置図",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.793Z"
+  },
+  "wildlife_damage_houhou": {
+    "value": "有害鳥獣による被害がある場合は市区町村の農政担当課に届け出てください",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.793Z"
+  },
+  "wildlife_damage_nagare": {
+    "value": "1. 被害状況を記録 → 2. 担当課に届出 → 3. 捕獲許可等の手続き → 4. 対策実施",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.793Z"
   }
 }

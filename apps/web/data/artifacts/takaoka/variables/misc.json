@@ -18,5 +18,161 @@
     "source": "llm",
     "confidence": 0.7,
     "updatedAt": "2026-01-30T00:00:00.000Z"
+  },
+  "closure_hitsuyou": {
+    "value": "廃業届、許認可証（返納する場合）、届出人の本人確認書類",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:14:41.321Z"
+  },
+  "closure_houhou": {
+    "value": "税務署、市区町村、関係省庁に廃業届を提出してください。許認可の返納も必要です",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:14:41.321Z"
+  },
+  "closure_nagare": {
+    "value": "1. 廃業届等を準備 → 2. 関係機関に届出 → 3. 許認可の返納 → 4. 各種届出の完了",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:09:26.494Z"
+  },
+  "corporate_tax_hitsuyou": {
+    "value": "法人税申告書、決算書類、勘定科目内訳書、法人事業概況説明書",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.794Z"
+  },
+  "corporate_tax_houhou": {
+    "value": "事業年度終了後2か月以内に確定申告書を税務署に提出してください",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.794Z"
+  },
+  "corporate_tax_nagare": {
+    "value": "1. 決算書類を作成 → 2. 申告書を作成 → 3. 税務署に提出 → 4. 納税",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.794Z"
+  },
+  "financing_hitsuyou": {
+    "value": "事業計画書、決算書類（過去3期分）、資金繰り表、担保・保証人に関する書類",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:14:41.321Z"
+  },
+  "financing_houhou": {
+    "value": "金融機関、信用保証協会、日本政策金融公庫等に相談してください",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:14:41.321Z"
+  },
+  "financing_nagare": {
+    "value": "1. 金融機関に相談 → 2. 事業計画書を作成 → 3. 融資申込 → 4. 審査・融資実行",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:09:26.494Z"
+  },
+  "incorporation_houhou": {
+    "value": "定款を作成し公証役場で認証を受けた後、法務局で設立登記を行ってください",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:14:41.321Z"
+  },
+  "incorporation_nagare": {
+    "value": "1. 定款を作成 → 2. 公証役場で認証 → 3. 出資金の払込 → 4. 法務局で登記",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:09:26.494Z"
+  },
+  "permits_hitsuyou": {
+    "value": "許可申請書、事業計画書、図面、資格証明書（必要な業種）",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:14:41.321Z"
+  },
+  "permits_houhou": {
+    "value": "業種によって必要な許認可が異なります。担当課に相談してください",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:14:41.321Z"
+  },
+  "permits_nagare": {
+    "value": "1. 担当課に相談 → 2. 申請書類を準備 → 3. 許可申請 → 4. 審査・許可交付",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:09:26.494Z"
+  },
+  "sole_proprietor_hitsuyou": {
+    "value": "個人事業の開業届出書、マイナンバー確認書類、本人確認書類",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.794Z"
+  },
+  "sole_proprietor_houhou": {
+    "value": "開業から1か月以内に税務署に開業届を提出してください",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.794Z"
+  },
+  "sole_proprietor_nagare": {
+    "value": "1. 開業届を作成 → 2. 税務署に提出 → 3. 必要に応じて許認可を取得 → 4. 事業開始",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:12:12.794Z"
+  },
+  "startup_hitsuyou": {
+    "value": "事業計画書、創業計画書、本人確認書類",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:14:41.321Z"
+  },
+  "startup_houhou": {
+    "value": "創業支援センターや商工会議所で無料相談を受けられます",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:14:41.321Z"
+  },
+  "startup_nagare": {
+    "value": "1. 創業相談を受ける → 2. 事業計画を作成 → 3. 補助金・融資に申請 → 4. 事業開始",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:09:26.494Z"
+  },
+  "subsidies_hitsuyou": {
+    "value": "申請書、事業計画書、経費明細書、見積書",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:14:41.321Z"
+  },
+  "subsidies_houhou": {
+    "value": "補助金には公募期間があります。事前に要件を確認し、期限内に申請してください",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:14:41.321Z"
+  },
+  "subsidies_nagare": {
+    "value": "1. 補助金情報を確認 → 2. 申請書類を準備 → 3. 申請 → 4. 審査・交付決定",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:09:26.494Z"
+  },
+  "succession_hitsuyou": {
+    "value": "事業の概要、財務状況、後継者候補の情報（ある場合）",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:14:41.321Z"
+  },
+  "succession_houhou": {
+    "value": "事業承継・引継ぎ支援センターや商工会議所に相談してください。無料で相談できます",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:14:41.321Z"
+  },
+  "succession_nagare": {
+    "value": "1. 相談窓口に連絡 → 2. 事業の現状分析 → 3. 後継者とのマッチング → 4. 引継ぎ支援",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:09:26.494Z"
   }
 }

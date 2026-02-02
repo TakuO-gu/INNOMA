@@ -127,23 +127,47 @@
     },
     {
       "id": "section-uiykhml46-table",
-      "type": "Table",
+      "type": "Section",
       "props": {
-        "rows": [
+        "heading": "必要書類",
+        "content": [
           {
-            "label": "婚姻届（証人2人の署名が必要）",
-            "value": ""
-          },
-          {
-            "label": "戸籍謄本（本籍地以外に届出する場合、夫・妻それぞれ1通ずつ）",
-            "value": ""
-          },
-          {
-            "label": "届出人の本人確認書類（運転免許証、マイナンバーカードなど）",
-            "value": ""
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "婚姻届（証人2人の署名が必要）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "戸籍謄本（本籍地以外に届出する場合、夫・妻それぞれ1通ずつ）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "届出人の本人確認書類（運転免許証、マイナンバーカードなど）"
+                    }
+                  ]
+                }
+              ]
+            ]
           }
-        ],
-        "heading": "必要書類"
+        ]
       }
     },
     {
@@ -337,6 +361,68 @@
       }
     },
     {
+      "id": "section-対象-1769919373810",
+      "type": "Section",
+      "props": {
+        "heading": "婚姻届の対象となる方",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "詳細は担当課にお問い合わせください。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-方法-1769919373810",
+      "type": "Section",
+      "props": {
+        "heading": "婚姻届の手続き方法",
+        "content": [
+          {
+            "type": "list",
+            "ordered": true,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "必要書類を準備します。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "窓口で申請書を記入します。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "書類を提出し、確認を受けます。"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
       "id": "contact-1",
       "type": "Contact",
       "props": {
@@ -345,6 +431,27 @@
         "email": "shimin@sample-city.lg.jp",
         "hours": "平日 8:30〜17:15（土日祝日・年末年始を除く）",
         "address": "〒100-0001 東京都サンプル市中央1-1-1"
+      }
+    },
+    {
+      "id": "terms-1769919373810",
+      "type": "Section",
+      "props": {
+        "heading": "用語の説明",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "戸籍謄本",
+                "bold": true
+              },
+              {
+                "text": "：家族全員の戸籍の写し"
+              }
+            ]
+          }
+        ]
       }
     },
     {

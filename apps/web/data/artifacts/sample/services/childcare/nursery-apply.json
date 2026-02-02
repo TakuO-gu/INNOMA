@@ -174,27 +174,57 @@
     },
     {
       "id": "section-d69fe1vwk-table",
-      "type": "Table",
+      "type": "Section",
       "props": {
-        "rows": [
+        "heading": "必要書類",
+        "content": [
           {
-            "label": "保育所等利用申込書（様式第1号）",
-            "value": ""
-          },
-          {
-            "label": "保育を必要とする証明書（就労証明書など）",
-            "value": ""
-          },
-          {
-            "label": "マイナンバー確認書類",
-            "value": ""
-          },
-          {
-            "label": "本人確認書類（運転免許証、パスポート等）",
-            "value": ""
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "保育所等利用申込書（様式第1号）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "保育を必要とする証明書（就労証明書など）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "マイナンバー確認書類"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "本人確認書類（運転免許証、パスポート等）"
+                    }
+                  ]
+                }
+              ]
+            ]
           }
-        ],
-        "heading": "必要書類"
+        ]
       }
     },
     {
@@ -362,6 +392,23 @@
           {
             "title": "育児・介護休業",
             "href": "/services/employment/family-leave"
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-対象-1769919373761",
+      "type": "Section",
+      "props": {
+        "heading": "認可保育園の入園申込の対象となる方",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "詳細は担当課にお問い合わせください。"
+              }
+            ]
           }
         ]
       }

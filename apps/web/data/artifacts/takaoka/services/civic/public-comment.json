@@ -277,6 +277,40 @@
       }
     },
     {
+      "id": "section-必要-1769918445547",
+      "type": "Section",
+      "props": {
+        "heading": "パブリックコメントに必要なもの",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "{{public_comment_hitsuyou}}"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-手順-1769918445547",
+      "type": "Section",
+      "props": {
+        "heading": "パブリックコメントの申請の流れ",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "{{public_comment_nagare}}"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
       "id": "contact-1",
       "type": "Contact",
       "props": {

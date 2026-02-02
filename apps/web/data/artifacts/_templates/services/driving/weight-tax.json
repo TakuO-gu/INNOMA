@@ -239,7 +239,10 @@
             "type": "paragraph",
             "runs": [
               {
-                "text": "車検の有効期間が1か月以上残っている自動車を廃車（永久抹消登録・解体届出）した場合、残りの期間に応じた自動車重量税が還付されます。運輸支局等で手続きを行ってください。"
+                "text": "車検の有効期間が1か月以上残っている自動車を廃車（永久抹消登録・解体届出）した場合、残りの期間に応じた自動車重量税が還付されます。"
+              },
+              {
+                "text": "運輸支局等で手続きを行ってください。"
               }
             ]
           }
@@ -280,6 +283,103 @@
           {
             "title": "自賠責保険",
             "href": "/services/driving/liability-insurance"
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-対象-1769919363165",
+      "type": "Section",
+      "props": {
+        "heading": "自動車重量税の対象となる方",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "詳細は担当課にお問い合わせください。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-必要-1769919363165",
+      "type": "Section",
+      "props": {
+        "heading": "自動車重量税に必要なもの",
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "本人確認書類（マイナンバーカード、運転免許証など）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "印鑑（認印可）"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-方法-1769919363165",
+      "type": "Section",
+      "props": {
+        "heading": "自動車重量税の手続き方法",
+        "content": [
+          {
+            "type": "list",
+            "ordered": true,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "必要書類を準備します。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "窓口で申請書を記入します。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "書類を提出し、確認を受けます。"
+                    }
+                  ]
+                }
+              ]
+            ]
           }
         ]
       }

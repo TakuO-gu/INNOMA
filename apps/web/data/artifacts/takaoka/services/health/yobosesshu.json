@@ -327,6 +327,74 @@
       }
     },
     {
+      "id": "section-対象-1769918445584",
+      "type": "Section",
+      "props": {
+        "heading": "予防接種の対象となる方",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "詳細は{{shimin_department}}（{{shimin_phone}}）にお問い合わせください。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-必要-1769918445584",
+      "type": "Section",
+      "props": {
+        "heading": "予防接種に必要なもの",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "{{yobosesshu_hitsuyou}}"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-方法-1769918445584",
+      "type": "Section",
+      "props": {
+        "heading": "予防接種の手続き方法",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "{{yobosesshu_houhou}}"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-手順-1769918445584",
+      "type": "Section",
+      "props": {
+        "heading": "予防接種の申請の流れ",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "{{yobosesshu_nagare}}"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
       "id": "contact-1",
       "type": "Contact",
       "props": {

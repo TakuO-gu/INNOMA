@@ -124,7 +124,7 @@
       "id": "section-aapamorey",
       "type": "Section",
       "props": {
-        "heading": "必要なもの",
+        "heading": "運転免許証に必要なもの",
         "level": 2,
         "content": [
           {
@@ -200,6 +200,68 @@
           {
             "title": "引越し手続き一覧",
             "href": "/services/housing/moving-checklist"
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-対象-1769919373772",
+      "type": "Section",
+      "props": {
+        "heading": "運転免許証の対象となる方",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "詳細は担当課にお問い合わせください。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-方法-1769919373772",
+      "type": "Section",
+      "props": {
+        "heading": "運転免許証の手続き方法",
+        "content": [
+          {
+            "type": "list",
+            "ordered": true,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "必要書類を準備します。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "窓口で申請書を記入します。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "書類を提出し、確認を受けます。"
+                    }
+                  ]
+                }
+              ]
+            ]
           }
         ]
       }

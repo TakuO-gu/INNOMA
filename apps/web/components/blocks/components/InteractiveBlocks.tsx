@@ -24,7 +24,7 @@ export function ContactBlock({ props }: { props: Record<string, unknown> }) {
   const mapUrl = props.map_url as string | undefined;
 
   return (
-    <div className="contact-card bg-solid-gray-50 rounded-lg p-6 mb-6">
+    <div className="mt-16 contact-card bg-solid-gray-50 rounded-lg p-6 mb-6">
       {department && (
         <h3 className="text-std-17B-170 text-solid-gray-900 mb-4">{department}</h3>
       )}
@@ -97,7 +97,7 @@ export function ActionButtonBlock({ props }: { props: Record<string, unknown> })
   const resolvedHref = isExternal ? href : prefixInternalLink(href, municipalityId);
 
   return (
-    <div className="action-button my-6">
+    <div className="mt-12 action-button mb-6">
       <a
         href={resolvedHref}
         target={isExternal ? "_blank" : undefined}
@@ -138,7 +138,7 @@ export function TaskButtonBlock({ props }: { props: Record<string, unknown> }) {
   const normalTaskClasses = "px-4 py-2 bg-solid-gray-100 text-blue-1000 hover:bg-solid-gray-200 border border-solid-gray-300";
 
   return (
-    <div className={`task-button ${isTopTask ? "my-6" : "my-4"}`}>
+    <div className={`task-button ${isTopTask ? "mt-12 mb-6" : "mt-12 mb-4"}`}>
       <a
         href={resolvedHref}
         target={isExternal ? "_blank" : undefined}
@@ -177,7 +177,7 @@ export function StepNavigationBlock({ props }: { props: Record<string, unknown> 
   };
 
   return (
-    <div className="mb-6">
+    <div className="mt-12 mb-6">
       <StepNavigation orientation={orientation} size={size} aria-label="手続きの流れ">
         {steps.map((step, i) => {
           const state = getStepState(i, step.state);
@@ -214,7 +214,7 @@ export function DirectoryListBlock({ props }: { props: Record<string, unknown> }
   const items = (props.items as DirectoryItem[]) || [];
 
   return (
-    <div className="directory-list space-y-4 mb-6">
+    <div className="mt-12 directory-list space-y-4 mb-6">
       {items.map((item, i) => (
         <div key={i} className="bg-white border border-solid-gray-300 rounded-lg p-4 shadow-sm">
           <h3 className="font-medium text-std-17B-170 text-solid-gray-900 mb-2">
@@ -271,7 +271,7 @@ export function NewsMetaBlock({ props }: { props: Record<string, unknown> }) {
   };
 
   return (
-    <div className="news-meta flex flex-wrap gap-4 text-sm text-solid-gray-600 mb-6 pb-4 border-b border-solid-gray-300">
+    <div className="mt-6 news-meta flex flex-wrap gap-4 text-sm text-solid-gray-600 mb-6 pb-4 border-b border-solid-gray-300">
       {publishedAt && <span>公開日: {formatDate(publishedAt)}</span>}
       {updatedAt && <span>更新日: {formatDate(updatedAt)}</span>}
       {category && <span className="px-2 py-1 bg-solid-gray-100 rounded">{category}</span>}

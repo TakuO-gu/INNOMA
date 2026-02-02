@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0.0",
-  "page_id": "sample-services-registration-mynumber",
-  "municipality_id": "sample",
+  "page_id": "takaoka-services-registration-mynumber",
+  "municipality_id": "takaoka",
   "path": "/services/registration/mynumber",
   "title": "マイナンバーカード",
   "description": "マイナンバーカードの申請方法、受け取り、更新、利用方法について",
@@ -13,12 +13,12 @@
   "topic": [],
   "source": {
     "source_url": "template://sample/services/registration/mynumber",
-    "fetched_at": "{{generated_at}}",
+    "fetched_at": "2026-01-20T10:33:17.311Z",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "{{generated_at}}",
+    "generated_at": "2026-01-20T10:33:17.311Z",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -57,40 +57,82 @@
       }
     },
     {
-      "id": "section-l2ewjyd9t-table",
-      "type": "Table",
+      "id": "section-6pnw09wpr-table",
+      "type": "Section",
       "props": {
-        "rows": [
+        "heading": "マイナンバーカードでできること",
+        "content": [
           {
-            "label": "本人確認書類として利用（運転免許証と同等）",
-            "value": ""
-          },
-          {
-            "label": "健康保険証として利用（マイナ保険証）",
-            "value": ""
-          },
-          {
-            "label": "コンビニで住民票・印鑑証明書などを取得",
-            "value": ""
-          },
-          {
-            "label": "マイナポータルで行政手続きのオンライン申請",
-            "value": ""
-          },
-          {
-            "label": "確定申告（e-Tax）の電子申告",
-            "value": ""
-          },
-          {
-            "label": "公金受取口座の登録",
-            "value": ""
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "本人確認書類として利用（運転免許証と同等）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "健康保険証として利用（マイナ保険証）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "コンビニで住民票・印鑑証明書などを取得"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "マイナポータルで行政手続きのオンライン申請"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "確定申告（e-Tax）の電子申告"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "公金受取口座の登録"
+                    }
+                  ]
+                }
+              ]
+            ]
           }
-        ],
-        "heading": "マイナンバーカードでできること"
+        ]
       }
     },
     {
-      "id": "section-56l6zjoxv",
+      "id": "section-bl8g3540g",
       "type": "Section",
       "props": {
         "heading": "申請方法",
@@ -99,7 +141,7 @@
       }
     },
     {
-      "id": "section-i5ursnc25",
+      "id": "section-6n1yap4gb",
       "type": "Section",
       "props": {
         "heading": "オンライン申請（スマートフォン・パソコン）",
@@ -126,7 +168,7 @@
       }
     },
     {
-      "id": "section-e8258qk2v",
+      "id": "section-tljshblni",
       "type": "Section",
       "props": {
         "heading": "郵送申請",
@@ -144,7 +186,7 @@
       }
     },
     {
-      "id": "section-jt3afegfh",
+      "id": "section-3xbfy5aru",
       "type": "Section",
       "props": {
         "heading": "窓口申請",
@@ -193,36 +235,65 @@
       }
     },
     {
-      "id": "section-34sc2aryx-table",
-      "type": "Table",
+      "id": "section-xuoyn5unm-table",
+      "type": "Section",
       "props": {
-        "rows": [
+        "heading": "受け取りに必要なもの",
+        "content": [
           {
-            "label": "交付通知書（届いたはがき）",
-            "value": ""
-          },
-          {
-            "label": "通知カード（お持ちの場合）",
-            "value": ""
-          },
-          {
-            "label": "本人確認書類（運転免許証、パスポートなど顔写真付き1点、または健康保険証＋年金手帳など2点）",
-            "value": ""
-          },
-          {
-            "label": "住民基本台帳カード（お持ちの場合）",
-            "value": ""
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "交付通知書（届いたはがき）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "通知カード（お持ちの場合）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "本人確認書類（運転免許証、パスポートなど顔写真付き1点、または健康保険証＋年金手帳など2点）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "住民基本台帳カード（お持ちの場合）"
+                    }
+                  ]
+                }
+              ]
+            ]
           }
-        ],
-        "heading": "受け取りに必要なもの"
+        ]
       }
     },
     {
-      "id": "section-34sc2aryx-notification-0",
+      "id": "section-xuoyn5unm-notification-0",
       "type": "NotificationBanner",
       "props": {
         "severity": "warning",
-        "title": "注意",
         "content": [
           {
             "type": "paragraph",
@@ -236,7 +307,7 @@
       }
     },
     {
-      "id": "section-uq0kjmxne",
+      "id": "section-krc7p91ob",
       "type": "Section",
       "props": {
         "heading": "更新・再発行",
@@ -245,7 +316,7 @@
       }
     },
     {
-      "id": "section-quup5yuqc",
+      "id": "section-6tlv2r6qt",
       "type": "Section",
       "props": {
         "heading": "電子証明書の更新",
@@ -263,7 +334,7 @@
       }
     },
     {
-      "id": "section-xd36deo2k",
+      "id": "section-pf2ddxk6v",
       "type": "Section",
       "props": {
         "heading": "カードの更新",
@@ -281,7 +352,7 @@
       }
     },
     {
-      "id": "section-57hzrlftc",
+      "id": "section-pliv8hon5",
       "type": "Section",
       "props": {
         "heading": "紛失・破損",
@@ -291,7 +362,10 @@
             "type": "paragraph",
             "runs": [
               {
-                "text": "紛失した場合は、まずマイナンバー総合フリーダイヤル（0120-95-0178）で一時停止してください。その後、窓口で再発行の手続きを行います（手数料がかかります）。"
+                "text": "紛失した場合は、まずマイナンバー総合フリーダイヤル（0120-95-0178）で一時停止してください。"
+              },
+              {
+                "text": "その後、窓口で再発行の手続きを行います（手数料がかかります）。"
               }
             ]
           }
@@ -346,6 +420,23 @@
           {
             "title": "年金",
             "href": "/services/benefits/nenkin"
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-対象-1769919363206",
+      "type": "Section",
+      "props": {
+        "heading": "マイナンバーカードの対象となる方",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "詳細は担当課にお問い合わせください。"
+              }
+            ]
           }
         ]
       }

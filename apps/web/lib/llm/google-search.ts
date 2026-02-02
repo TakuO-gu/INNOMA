@@ -1,7 +1,11 @@
 /**
  * Search API Client
  * Supports both Brave Search API and Google Custom Search API
- * Default: Brave Search API (recommended)
+ * Features:
+ * - Dual provider support with automatic fallback
+ * - Primary: Brave Search API (2,000 free queries/month)
+ * - Secondary: Google Custom Search API (100 free queries/day)
+ * - Configurable via SEARCH_PROVIDER env var
  */
 
 import { SearchResult } from './types';
@@ -10,20 +14,84 @@ import { braveSearch as braveSearchImpl, searchMunicipalitySite as braveSearchMu
 /**
  * Search provider type
  */
-type SearchProvider = 'brave' | 'google';
+export type SearchProvider = 'brave' | 'google' | 'auto';
 
 /**
- * Get the configured search provider
+ * Search provider status
  */
-function getSearchProvider(): SearchProvider {
-  // Use Brave by default, fallback to Google if BRAVE_SEARCH_API_KEY is not set
-  if (process.env.BRAVE_SEARCH_API_KEY) {
-    return 'brave';
+export interface SearchProviderStatus {
+  brave: {
+    available: boolean;
+    apiKey: boolean;
+  };
+  google: {
+    available: boolean;
+    apiKey: boolean;
+    engineId: boolean;
+  };
+  primary: SearchProvider | null;
+  fallback: SearchProvider | null;
+}
+
+/**
+ * Get configured search providers status
+ */
+export function getSearchProviderStatus(): SearchProviderStatus {
+  const braveKey = !!process.env.BRAVE_SEARCH_API_KEY;
+  const googleKey = !!process.env.GOOGLE_CUSTOM_SEARCH_API_KEY;
+  const googleEngineId = !!process.env.GOOGLE_CUSTOM_SEARCH_ENGINE_ID;
+
+  const braveAvailable = braveKey;
+  const googleAvailable = googleKey && googleEngineId;
+
+  // Determine primary and fallback based on configuration
+  const configuredProvider = process.env.SEARCH_PROVIDER as SearchProvider | undefined;
+
+  let primary: SearchProvider | null = null;
+  let fallback: SearchProvider | null = null;
+
+  if (configuredProvider === 'brave' && braveAvailable) {
+    primary = 'brave';
+    fallback = googleAvailable ? 'google' : null;
+  } else if (configuredProvider === 'google' && googleAvailable) {
+    primary = 'google';
+    fallback = braveAvailable ? 'brave' : null;
+  } else {
+    // Auto mode: prefer Brave, fallback to Google
+    if (braveAvailable) {
+      primary = 'brave';
+      fallback = googleAvailable ? 'google' : null;
+    } else if (googleAvailable) {
+      primary = 'google';
+      fallback = null;
+    }
   }
-  if (process.env.GOOGLE_CUSTOM_SEARCH_API_KEY) {
-    return 'google';
+
+  return {
+    brave: { available: braveAvailable, apiKey: braveKey },
+    google: { available: googleAvailable, apiKey: googleKey, engineId: googleEngineId },
+    primary,
+    fallback,
+  };
+}
+
+/**
+ * Get the primary search provider
+ */
+function getPrimaryProvider(): SearchProvider {
+  const status = getSearchProviderStatus();
+  if (status.primary) {
+    return status.primary;
   }
-  throw new Error('No search API configured. Set BRAVE_SEARCH_API_KEY or GOOGLE_CUSTOM_SEARCH_API_KEY');
+  throw new Error('No search API configured. Set BRAVE_SEARCH_API_KEY or (GOOGLE_CUSTOM_SEARCH_API_KEY + GOOGLE_CUSTOM_SEARCH_ENGINE_ID)');
+}
+
+/**
+ * Get the fallback search provider (if available)
+ */
+function getFallbackProvider(): SearchProvider | null {
+  const status = getSearchProviderStatus();
+  return status.fallback;
 }
 
 /**
@@ -94,39 +162,112 @@ async function googleSearchImpl(
 }
 
 /**
- * Execute search using configured provider
+ * Extended search configuration with fallback options
+ */
+interface ExtendedSearchConfig extends SearchConfig {
+  /** Disable fallback to secondary provider */
+  disableFallback?: boolean;
+  /** Force specific provider */
+  forceProvider?: SearchProvider;
+}
+
+/**
+ * Common fallback options interface
+ */
+interface FallbackOptions {
+  disableFallback?: boolean;
+  forceProvider?: SearchProvider;
+}
+
+/**
+ * Execute operation with provider fallback support
+ * Reduces code duplication across search functions
+ */
+async function executeWithFallback<T>(
+  operation: (provider: SearchProvider) => Promise<T[]>,
+  options: FallbackOptions,
+  context: string
+): Promise<T[]> {
+  const primaryProvider = options.forceProvider || getPrimaryProvider();
+  const fallbackProvider = options.disableFallback ? null : getFallbackProvider();
+
+  try {
+    const results = await operation(primaryProvider);
+    if (results.length > 0) {
+      return results;
+    }
+    // If no results and fallback is available, try fallback
+    if (fallbackProvider && fallbackProvider !== primaryProvider) {
+      console.log(`[Search] No ${context} results from ${primaryProvider}, trying fallback: ${fallbackProvider}`);
+      return operation(fallbackProvider);
+    }
+    return results;
+  } catch (error) {
+    // On error, try fallback if available
+    if (fallbackProvider && fallbackProvider !== primaryProvider) {
+      console.warn(`[Search] ${primaryProvider} failed for ${context}, trying fallback: ${fallbackProvider}`, error);
+      try {
+        return await operation(fallbackProvider);
+      } catch (fallbackError) {
+        console.error(`[Search] Fallback ${fallbackProvider} also failed for ${context}`, fallbackError);
+        throw fallbackError;
+      }
+    }
+    throw error;
+  }
+}
+
+/**
+ * Execute search using configured provider with automatic fallback
  */
 export async function googleSearch(
   query: string,
-  config: SearchConfig = {}
+  config: ExtendedSearchConfig = {}
 ): Promise<SearchResult[]> {
-  const provider = getSearchProvider();
+  return executeWithFallback(
+    (provider) => executeSearch(query, config, provider),
+    config,
+    'search'
+  );
+}
 
+/**
+ * Execute search with specific provider
+ */
+async function executeSearch(
+  query: string,
+  config: SearchConfig,
+  provider: SearchProvider
+): Promise<SearchResult[]> {
   if (provider === 'brave') {
     return braveSearchImpl(query, {
       siteRestrict: config.siteRestrict,
       count: config.num,
     });
   }
-
   return googleSearchImpl(query, config);
 }
 
 /**
- * Search within municipality official site
+ * Search options for municipality site search
+ */
+interface MunicipalitySiteSearchOptions {
+  /** Disable fallback to secondary provider */
+  disableFallback?: boolean;
+  /** Force specific provider */
+  forceProvider?: SearchProvider;
+}
+
+/**
+ * Search within municipality official site with fallback support
  */
 export async function searchMunicipalitySite(
   municipalityName: string,
   query: string,
-  officialUrl?: string
+  officialUrl?: string,
+  options: MunicipalitySiteSearchOptions = {}
 ): Promise<SearchResult[]> {
-  const provider = getSearchProvider();
-
-  if (provider === 'brave') {
-    return braveSearchMunicipalitySite(municipalityName, query, officialUrl);
-  }
-
-  // Google implementation
+  // Extract domain from official URL if provided
   let siteRestrict: string | undefined;
   if (officialUrl) {
     try {
@@ -137,6 +278,28 @@ export async function searchMunicipalitySite(
     }
   }
 
+  return executeWithFallback(
+    (provider) => executeMunicipalitySiteSearch(municipalityName, query, officialUrl, siteRestrict, provider),
+    options,
+    'municipality'
+  );
+}
+
+/**
+ * Execute municipality site search with specific provider
+ */
+async function executeMunicipalitySiteSearch(
+  municipalityName: string,
+  query: string,
+  officialUrl: string | undefined,
+  siteRestrict: string | undefined,
+  provider: SearchProvider
+): Promise<SearchResult[]> {
+  if (provider === 'brave') {
+    return braveSearchMunicipalitySite(municipalityName, query, officialUrl);
+  }
+
+  // Google implementation
   const fullQuery = siteRestrict
     ? query
     : `${municipalityName} ${query} site:.lg.jp OR site:.go.jp`;
@@ -144,20 +307,47 @@ export async function searchMunicipalitySite(
   return googleSearch(fullQuery, {
     siteRestrict,
     num: 5,
+    disableFallback: true, // Already in fallback context
   });
 }
 
 /**
- * Search for specific service information
+ * Search options for service info search
+ */
+interface ServiceInfoSearchOptions {
+  /** Disable fallback to secondary provider */
+  disableFallback?: boolean;
+  /** Force specific provider */
+  forceProvider?: SearchProvider;
+}
+
+/**
+ * Search for specific service information with fallback support
  */
 export async function searchServiceInfo(
   municipalityName: string,
   serviceName: string,
   targetInfo: string[],
-  officialUrl?: string
+  officialUrl?: string,
+  options: ServiceInfoSearchOptions = {}
 ): Promise<SearchResult[]> {
-  const provider = getSearchProvider();
+  return executeWithFallback(
+    (provider) => executeServiceInfoSearch(municipalityName, serviceName, targetInfo, officialUrl, provider),
+    options,
+    'service info'
+  );
+}
 
+/**
+ * Execute service info search with specific provider
+ */
+async function executeServiceInfoSearch(
+  municipalityName: string,
+  serviceName: string,
+  targetInfo: string[],
+  officialUrl: string | undefined,
+  provider: SearchProvider
+): Promise<SearchResult[]> {
   if (provider === 'brave') {
     return braveSearchServiceInfo(municipalityName, serviceName, targetInfo, officialUrl);
   }
@@ -165,7 +355,9 @@ export async function searchServiceInfo(
   const infoKeywords = targetInfo.join(' ');
   const query = `${municipalityName} ${serviceName} ${infoKeywords}`;
 
-  return searchMunicipalitySite(municipalityName, query, officialUrl);
+  return searchMunicipalitySite(municipalityName, query, officialUrl, {
+    disableFallback: true, // Already in fallback context
+  });
 }
 
 /**

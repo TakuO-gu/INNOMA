@@ -18,5 +18,11 @@
     "source": "llm",
     "confidence": 0.7,
     "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "mynumber_nagare": {
+    "value": "1. 交付通知書を持参 → 2. 本人確認書類を提示 → 3. 暗証番号を設定 → 4. カードを受け取る",
+    "source": "llm",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-01T05:09:26.494Z"
   }
 }

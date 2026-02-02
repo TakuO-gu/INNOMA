@@ -408,6 +408,23 @@
       }
     },
     {
+      "id": "section-手順-1769918445629",
+      "type": "Section",
+      "props": {
+        "heading": "固定資産税・都市計画税の申請の流れ",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "{{kotei_nagare}}"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
       "id": "contact-1",
       "type": "Contact",
       "props": {

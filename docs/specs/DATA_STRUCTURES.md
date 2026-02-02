@@ -1,6 +1,6 @@
 # データ構造定義
 
-**最終更新**: 2026-01-27
+**最終更新**: 2026-02-02
 
 ---
 
@@ -17,6 +17,10 @@ INNOMAで使用するデータ構造の定義。
 apps/web/data/artifacts/
 ├── _templates/           # ベーステンプレート
 │   ├── index.json
+│   ├── variables/        # テンプレート変数定義（カテゴリ別）
+│   │   ├── core.json
+│   │   ├── health.json
+│   │   └── ...
 │   ├── topics/
 │   └── services/
 ├── _drafts/              # 下書き
@@ -27,7 +31,11 @@ apps/web/data/artifacts/
 │       └── latest.json
 └── {municipality}/       # 各自治体のデータ
     ├── meta.json         # メタデータ
-    ├── variables.json    # 変数値
+    ├── variables/        # 変数値（カテゴリ別）
+    │   ├── core.json     # 基本変数
+    │   ├── health.json   # 健康・医療
+    │   ├── tax.json      # 税金
+    │   └── ...
     ├── history/          # 編集履歴
     │   └── {year-month}.json
     ├── index.json        # トップページ
@@ -107,9 +115,10 @@ type FetchInterval =
 
 ## 2. 変数値ストア
 
-`{municipality}/variables.json`
+`{municipality}/variables/*.json`
 
-全変数の現在の値を保存。
+全変数の現在の値をカテゴリ別に保存。
+（後方互換性のため `variables.json` 単体ファイルもサポート）
 
 ```typescript
 interface VariablesStore {
@@ -557,3 +566,79 @@ const missingCount = serviceDef.variables.filter(
 
 テンプレートファイルから`{{variable_name}}`形式の変数を抽出。
 ハードコードせず、`getTotalVariableCount()`で取得。
+
+---
+
+## 10. 地区依存変数
+
+`{municipality}/variables/*.json` 内で地区ごとに異なる値を管理。
+
+```typescript
+/**
+ * 地区（町丁目）の定義
+ */
+interface District {
+  id: string;          // 地区ID
+  name: string;        // 地区名（表示用）
+  value: string;       // この地区での値
+  areas: string[];     // 含まれる町名・地名
+}
+
+/**
+ * 地区依存変数のデータ構造
+ */
+interface DistrictDependentVariable {
+  variableName: string;
+  districts: District[];
+  defaultValue?: string;      // 地区未選択時の値
+  selectPrompt: string;       // 選択を促すメッセージ
+  sourceUrl?: string;
+  updatedAt?: string;
+}
+```
+
+**例**（ごみ収集センター）:
+```json
+{
+  "sodai_gomi_collection_center": {
+    "value": "{{district_dependent}}",
+    "source": "llm",
+    "districtDependent": {
+      "variableName": "sodai_gomi_collection_center",
+      "districts": [
+        {
+          "id": "central",
+          "name": "中央地区",
+          "value": "中央クリーンセンター（電話: 0766-XX-XXXX）",
+          "areas": ["中央町", "本町", "駅前"]
+        },
+        {
+          "id": "north",
+          "name": "北部地区",
+          "value": "北部環境センター（電話: 0766-YY-YYYY）",
+          "areas": ["北町", "緑ヶ丘"]
+        }
+      ],
+      "defaultValue": "お住まいの地区を選択してください",
+      "selectPrompt": "お住まいの地区を選択"
+    }
+  }
+}
+```
+
+### 地区依存変数の判定
+
+`lib/llm/variable-priority.ts` で定義:
+
+```typescript
+const districtDependentVariables = [
+  'sodai_gomi_collection_center',
+  'hinanjo_list',
+  'elementary_school_district',
+  // ...
+];
+
+function isDistrictDependentVariable(variableName: string): boolean {
+  return districtDependentVariables.includes(variableName);
+}
+```

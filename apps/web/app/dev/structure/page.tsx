@@ -342,29 +342,53 @@ function BlockPreview({ block }: { block: Block }) {
   const [expanded, setExpanded] = useState(false);
 
   const typeColors: Record<string, string> = {
-    // 手順・ナビゲーション
-    StepNavigation: "bg-purple-100 text-purple-800",
-    // 構造
+    // ページ構造（青系）
+    Title: "bg-blue-100 text-blue-800",
+    Summary: "bg-blue-100 text-blue-800",
     Section: "bg-blue-100 text-blue-800",
+    Breadcrumbs: "bg-blue-100 text-blue-800",
+    // ナビゲーション（紫系）
+    RelatedLinks: "bg-purple-100 text-purple-800",
+    ResourceList: "bg-purple-100 text-purple-800",
+    QuickLinks: "bg-purple-100 text-purple-800",
+    // 手順・フロー（緑系）
+    StepNavigation: "bg-green-100 text-green-800",
+    // データ・リスト（黄系）
     Table: "bg-yellow-100 text-yellow-800",
     Accordion: "bg-orange-100 text-orange-800",
     DescriptionList: "bg-amber-100 text-amber-800",
-    // 連絡先
-    Contact: "bg-green-100 text-green-800",
-    DirectoryList: "bg-green-100 text-green-800",
-    // 通知
+    // 通知・警告（赤系）
     NotificationBanner: "bg-red-100 text-red-800",
     EmergencyBanner: "bg-red-200 text-red-900",
-    // リンク
-    ResourceList: "bg-teal-100 text-teal-800",
-    RelatedLinks: "bg-teal-100 text-teal-800",
+    // 連絡先・施設（シアン系）
+    Contact: "bg-cyan-100 text-cyan-800",
+    DirectoryList: "bg-cyan-100 text-cyan-800",
+    ShelterList: "bg-cyan-100 text-cyan-800",
+    HazardMapViewer: "bg-cyan-100 text-cyan-800",
+    // カード（ピンク系）
+    Card: "bg-pink-100 text-pink-800",
+    CardGrid: "bg-pink-100 text-pink-800",
+    InfoCard: "bg-pink-100 text-pink-800",
+    InfoCardGrid: "bg-pink-100 text-pink-800",
+    // トピック・ニュース（黄緑系）
+    TopicGrid: "bg-lime-100 text-lime-800",
+    TopicList: "bg-lime-100 text-lime-800",
+    NewsList: "bg-lime-100 text-lime-800",
+    NewsMeta: "bg-lime-100 text-lime-800",
+    // アクション（インディゴ系）
     ActionButton: "bg-indigo-100 text-indigo-800",
-    // 新規追加
-    Card: "bg-cyan-100 text-cyan-800",
+    TaskButton: "bg-indigo-100 text-indigo-800",
+    Attachments: "bg-indigo-100 text-indigo-800",
+    // 地区・変数（茶系）
+    DistrictSelector: "bg-stone-100 text-stone-800",
+    // テキスト・引用（グレー系）
+    RichText: "bg-gray-100 text-gray-800",
     Blockquote: "bg-slate-100 text-slate-800",
     StatusBadge: "bg-emerald-100 text-emerald-800",
-    // 汎用
-    RichText: "bg-gray-100 text-gray-800",
+    // ホームページ（深緑系）
+    Hero: "bg-teal-100 text-teal-800",
+    // 参照（グレー系）
+    Sources: "bg-neutral-100 text-neutral-800",
   };
 
   const colorClass = typeColors[block.type] || "bg-gray-100 text-gray-800";

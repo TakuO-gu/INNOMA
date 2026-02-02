@@ -286,19 +286,19 @@
         "rows": [
           {
             "label": "3〜4か月児健診",
-            "value": "{{34month_kenshin_basho}}"
+            "value": "{{kenshin_34month_basho}}"
           },
           {
             "label": "9〜10か月児健診",
-            "value": "{{910month_kenshin_basho}}"
+            "value": "{{kenshin_910month_basho}}"
           },
           {
             "label": "1歳6か月児健診",
-            "value": "{{1sai6month_kenshin_basho}}"
+            "value": "{{kenshin_1sai6month_basho}}"
           },
           {
             "label": "3歳児健診",
-            "value": "{{3sai_kenshin_basho}}"
+            "value": "{{kenshin_3sai_basho}}"
           }
         ]
       }
@@ -554,6 +554,74 @@
           {
             "title": "健康診断・検診",
             "href": "/services/health/kenshin"
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-対象-1769918445538",
+      "type": "Section",
+      "props": {
+        "heading": "母子保健の対象となる方",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "詳細は{{shimin_department}}（{{shimin_phone}}）にお問い合わせください。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-必要-1769918445538",
+      "type": "Section",
+      "props": {
+        "heading": "母子保健に必要なもの",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "{{boshi_hitsuyou}}"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-方法-1769918445538",
+      "type": "Section",
+      "props": {
+        "heading": "母子保健の手続き方法",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "{{boshi_houhou}}"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-手順-1769918445538",
+      "type": "Section",
+      "props": {
+        "heading": "母子保健の申請の流れ",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "{{boshi_nagare}}"
+              }
+            ]
           }
         ]
       }

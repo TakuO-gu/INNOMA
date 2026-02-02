@@ -167,7 +167,10 @@
             "type": "paragraph",
             "runs": [
               {
-                "text": "{{prefecture_name}}や{{municipality_name}}が金融機関・信用保証協会と連携して行う融資制度です。自治体が利子補給や保証料補助を行うことで、低金利での借入が可能です。"
+                "text": "{{prefecture_name}}や{{municipality_name}}が金融機関・信用保証協会と連携して行う融資制度です。"
+              },
+              {
+                "text": "自治体が利子補給や保証料補助を行うことで、低金利での借入が可能です。"
               }
             ]
           }
@@ -344,6 +347,58 @@
           {
             "title": "法人設立",
             "href": "/services/business/incorporation"
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-対象-1769919363142",
+      "type": "Section",
+      "props": {
+        "heading": "融資・資金調達の対象となる方",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "詳細は担当課にお問い合わせください。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-必要-1769919363142",
+      "type": "Section",
+      "props": {
+        "heading": "融資・資金調達に必要なもの",
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "本人確認書類（マイナンバーカード、運転免許証など）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "印鑑（認印可）"
+                    }
+                  ]
+                }
+              ]
+            ]
           }
         ]
       }

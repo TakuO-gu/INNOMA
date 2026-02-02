@@ -7,7 +7,16 @@
 export * from './types';
 
 // API Clients
-export { googleSearch, searchMunicipalitySite, searchServiceInfo, isOfficialDomain, calculateUrlCredibility } from './google-search';
+export {
+  googleSearch,
+  searchMunicipalitySite,
+  searchServiceInfo,
+  isOfficialDomain,
+  calculateUrlCredibility,
+  getSearchProviderStatus,
+  type SearchProvider,
+  type SearchProviderStatus,
+} from './google-search';
 export { generateContent, generateJSON } from './gemini';
 
 // Prompts

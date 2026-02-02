@@ -241,6 +241,57 @@
       }
     },
     {
+      "id": "section-必要-1769918445599",
+      "type": "Section",
+      "props": {
+        "heading": "外国人住民届出に必要なもの",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "{{foreign_registration_hitsuyou}}"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-方法-1769918445599",
+      "type": "Section",
+      "props": {
+        "heading": "外国人住民届出の手続き方法",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "{{foreign_registration_houhou}}"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-手順-1769918445599",
+      "type": "Section",
+      "props": {
+        "heading": "外国人住民届出の申請の流れ",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "{{foreign_registration_nagare}}"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
       "id": "contact-1",
       "type": "Contact",
       "props": {

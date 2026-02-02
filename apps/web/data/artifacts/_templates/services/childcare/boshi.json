@@ -286,19 +286,19 @@
         "rows": [
           {
             "label": "3〜4か月児健診",
-            "value": "{{34month_kenshin_basho}}"
+            "value": "{{kenshin_34month_basho}}"
           },
           {
             "label": "9〜10か月児健診",
-            "value": "{{910month_kenshin_basho}}"
+            "value": "{{kenshin_910month_basho}}"
           },
           {
             "label": "1歳6か月児健診",
-            "value": "{{1sai6month_kenshin_basho}}"
+            "value": "{{kenshin_1sai6month_basho}}"
           },
           {
             "label": "3歳児健診",
-            "value": "{{3sai_kenshin_basho}}"
+            "value": "{{kenshin_3sai_basho}}"
           }
         ]
       }
@@ -554,6 +554,103 @@
           {
             "title": "健康診断・検診",
             "href": "/services/health/kenshin"
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-対象-1769919363148",
+      "type": "Section",
+      "props": {
+        "heading": "母子保健の対象となる方",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "詳細は担当課にお問い合わせください。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-必要-1769919363148",
+      "type": "Section",
+      "props": {
+        "heading": "母子保健に必要なもの",
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "本人確認書類（マイナンバーカード、運転免許証など）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "印鑑（認印可）"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-方法-1769919363149",
+      "type": "Section",
+      "props": {
+        "heading": "母子保健の手続き方法",
+        "content": [
+          {
+            "type": "list",
+            "ordered": true,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "必要書類を準備します。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "窓口で申請書を記入します。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "書類を提出し、確認を受けます。"
+                    }
+                  ]
+                }
+              ]
+            ]
           }
         ]
       }
