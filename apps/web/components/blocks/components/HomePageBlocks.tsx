@@ -25,7 +25,7 @@ export function HeroBlock({ props }: { props: Record<string, unknown> }) {
   const subtitle = (props.subtitle as string) || "";
 
   return (
-    <div className="mt-0 hero-block py-8 mb-8 border-b border-solid-gray-200">
+    <div className="mt-0 hero-block py-8 mb-8">
       <h1 className="text-std-45B-140 text-solid-gray-900 budoux">{budouxParse(title)}</h1>
       {subtitle && (
         <p className="mt-4 text-std-20N-150 text-solid-gray-600 budoux">{budouxParse(subtitle)}</p>

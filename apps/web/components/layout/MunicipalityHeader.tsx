@@ -35,7 +35,8 @@ export default function MunicipalityHeader({
               <img
                 src="/images/logo.svg"
                 alt="INNOMA"
-                className="h-8 w-auto"
+                className="w-auto"
+                style={{ height: "18px" }}
               />
             </NextLink>
             <span
