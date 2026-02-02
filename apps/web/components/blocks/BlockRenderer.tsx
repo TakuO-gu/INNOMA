@@ -52,6 +52,8 @@ import {
   AttachmentsBlock,
   // Card Grid
   CardGridBlock,
+  // Search Box
+  SearchBoxBlock,
 } from "./components";
 
 /* =============================================================================
@@ -109,6 +111,8 @@ const blockRegistry: Record<string, BlockComponent> = {
   Attachments: AttachmentsBlock,
   // Card Grid
   CardGrid: CardGridBlock,
+  // Search Box
+  SearchBox: SearchBoxBlock,
 };
 
 /* =============================================================================

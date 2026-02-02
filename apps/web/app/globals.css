@@ -94,7 +94,13 @@
 /* Page container */
 @layer components {
   .dads-page {
-    @apply max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12;
+    max-width: 928px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 48px;
+    padding-bottom: 48px;
   }
 }
 
@@ -245,6 +251,127 @@
   /* Visually hidden (for screen readers) */
   .dads-u-visually-hidden {
     @apply sr-only;
+  }
+
+  /* =====================================================================
+   * DADS Search Box Component
+   * @see https://design.digital.go.jp/components/search-box/
+   * ===================================================================== */
+  .dads-search-box {
+    display: flex;
+    gap: 1rem;
+    color: var(--color-neutral-solid-gray-900);
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 1;
+    font-family: var(--font-family-sans);
+    letter-spacing: 0.02em;
+  }
+
+  .dads-search-box__fields {
+    position: relative;
+    z-index: 0;
+    display: flex;
+    flex-grow: 1;
+  }
+
+  .dads-search-box__input {
+    flex-grow: 1;
+    position: relative;
+    display: flex;
+  }
+
+  .dads-search-box__input > svg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 1rem;
+    z-index: 1;
+    margin: auto 0;
+    width: 1.5rem;
+    height: 1.5rem;
+    color: var(--color-neutral-solid-gray-600);
+    pointer-events: none;
+  }
+
+  @media (forced-colors: active) {
+    .dads-search-box__input > svg {
+      color: CanvasText;
+    }
+  }
+
+  .dads-search-box__input > input {
+    flex-grow: 1;
+    box-sizing: border-box;
+    width: 8rem;
+    border: 1px solid var(--color-neutral-solid-gray-600);
+    border-radius: 0.5rem;
+    background-color: var(--color-neutral-white);
+    padding: 0.75rem 1rem 0.75rem 3rem;
+    color: inherit;
+    font: inherit;
+  }
+
+  .dads-search-box__input > input.compact {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-size: 0.875rem;
+  }
+
+  @media (hover: hover) {
+    .dads-search-box__input > input:hover {
+      border-color: var(--color-neutral-black);
+    }
+  }
+
+  .dads-search-box__input > input::-webkit-search-cancel-button {
+    display: none;
+  }
+
+  .dads-search-box__input > input::placeholder {
+    color: var(--color-neutral-solid-gray-600);
+  }
+
+  .dads-search-box__input > input:focus-visible {
+    position: relative;
+    outline: 0.25rem solid var(--color-neutral-black);
+    outline-offset: 0.125rem;
+    box-shadow: 0 0 0 0.125rem var(--color-primitive-yellow-300);
+  }
+
+  /* Search box button overrides */
+  .dads-search-box > .dads-button {
+    cursor: pointer;
+    flex-shrink: 0;
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    transition: background-color 0.15s ease;
+  }
+
+  .dads-search-box > .dads-button[data-type="solid-fill"] {
+    background-color: var(--color-primitive-blue-900);
+    color: var(--color-neutral-white);
+  }
+
+  .dads-search-box > .dads-button[data-type="solid-fill"]:hover {
+    background-color: var(--color-primitive-blue-1000);
+  }
+
+  .dads-search-box > .dads-button[data-type="solid-fill"]:focus-visible {
+    outline: 0.25rem solid var(--color-neutral-black);
+    outline-offset: 0.125rem;
+    box-shadow: 0 0 0 0.125rem var(--color-primitive-yellow-300);
+  }
+
+  .dads-search-box > .dads-button[data-size="lg"] {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+  }
+
+  .dads-search-box > .dads-button[data-size="md"] {
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
   }
 }
 

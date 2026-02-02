@@ -31,84 +31,122 @@
       }
     },
     {
+      "id": "search-box-1",
+      "type": "SearchBox",
+      "props": {
+        "placeholder": "届出、証明書、ごみなどキーワードで検索..."
+      }
+    },
+    {
+      "id": "popular-services-1",
+      "type": "CardGrid",
+      "props": {
+        "heading": "よく訪問されるサービス",
+        "variant": "link",
+        "columns": 4,
+        "items": [
+          {
+            "title": "住民票の写し",
+            "description": "住民票の取得方法・必要書類",
+            "href": "/services/registration/juminhyo"
+          },
+          {
+            "title": "戸籍謄本",
+            "description": "戸籍全部事項証明書の取得",
+            "href": "/services/registration/koseki"
+          },
+          {
+            "title": "マイナンバーカード",
+            "description": "申請・受取・更新の手続き",
+            "href": "/services/registration/mynumber"
+          },
+          {
+            "title": "転入届",
+            "description": "市外からの引越し手続き",
+            "href": "/services/registration/tennyu"
+          },
+          {
+            "title": "印鑑登録",
+            "description": "印鑑登録・証明書の取得",
+            "href": "/services/registration/inkan"
+          },
+          {
+            "title": "ごみの分別・収集",
+            "description": "ごみの出し方・収集日",
+            "href": "/services/environment/gomi"
+          },
+          {
+            "title": "児童手当",
+            "description": "支給要件・申請方法",
+            "href": "/services/childcare/jidou-teate"
+          },
+          {
+            "title": "国民健康保険",
+            "description": "加入・届出・保険料",
+            "href": "/services/health/kokuho"
+          }
+        ]
+      }
+    },
+    {
       "id": "topic-grid-1",
       "type": "TopicGrid",
       "props": {
+        "heading": "カテゴリから探す",
         "items": [
           {
-            "title": "届出・申請・証明書",
+            "title": "届出・証明書",
             "href": "/topics/registration",
-            "description": "出生届、婚姻届、転入届、戸籍謄本、住民票、マイナンバーカード"
-          },
-          {
-            "title": "社会保障・給付金",
-            "href": "/topics/benefits",
-            "description": "年金、医療保険、介護保険、児童手当、生活保護"
+            "description": "転入届、戸籍謄本、住民票、パスポート",
+            "icon": "certification"
           },
           {
             "title": "税金",
             "href": "/topics/tax",
-            "description": "住民税、固定資産税、確定申告、ふるさと納税"
+            "description": "住民税、固定資産税、確定申告、ふるさと納税",
+            "icon": "tax"
           },
           {
             "title": "子育て・教育",
             "href": "/topics/childcare",
-            "description": "妊娠届、保育所、幼稚園、小中学校、奨学金"
+            "description": "保育所、幼稚園、児童手当、母子健康",
+            "icon": "child"
           },
           {
             "title": "健康・医療",
             "href": "/topics/health",
-            "description": "健康診断、予防接種、医療機関、救急医療"
+            "description": "健康診断、予防接種、国民健康保険",
+            "icon": "health"
           },
           {
-            "title": "福祉・介護",
+            "title": "福祉・介護・年金",
             "href": "/topics/welfare",
-            "description": "高齢者福祉、介護サービス、障害者福祉、生活困窮者支援"
+            "description": "高齢者福祉、介護、障害者福祉、年金",
+            "icon": "pension"
           },
           {
             "title": "住まい・引越し",
             "href": "/topics/housing",
-            "description": "公営住宅、住宅ローン、引越し手続き、建築確認"
+            "description": "公営住宅、引越し手続き、住宅支援",
+            "icon": "house"
           },
           {
             "title": "仕事・労働",
             "href": "/topics/employment",
-            "description": "求人、就職支援、職業訓練、育児休業、労働相談"
+            "description": "求人、就職支援、職業訓練、労働相談",
+            "icon": "work"
           },
           {
-            "title": "事業・経営",
-            "href": "/topics/business",
-            "description": "起業支援、法人設立、許認可、補助金、融資"
-          },
-          {
-            "title": "運転・車両",
-            "href": "/topics/driving",
-            "description": "運転免許、車検、自動車税、駐車場、車庫証明"
-          },
-          {
-            "title": "環境・ごみ・リサイクル",
+            "title": "環境・ごみ",
             "href": "/topics/environment",
-            "description": "ごみの分別、粗大ごみ、リサイクル、省エネルギー"
+            "description": "ごみの分別、粗大ごみ、リサイクル",
+            "icon": "trash.svg"
           },
           {
             "title": "防災・安全",
             "href": "/topics/disaster",
-            "description": "地震・台風対策、避難所、ハザードマップ、防犯"
-          },
-          {
-            "title": "戸籍・国籍・在留",
-            "href": "/topics/nationality",
-            "description": "日本国籍、帰化申請、在留資格、外国人登録"
-          },
-          {
-            "title": "市民参加・権利行使",
-            "href": "/topics/civic",
-            "description": "選挙・投票、情報公開請求、行政不服申立て"
-          },
-          {
-            "title": "土地・農林水産",
-            "href": "/topics/land",
-            "description": "農業・林業・漁業、農地転用、土地利用、都市計画"
+            "description": "避難所、ハザードマップ、防災情報",
+            "icon": "attention"
           }
         ]
       }

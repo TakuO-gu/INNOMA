@@ -38,7 +38,18 @@ export default function Footer() {
             </p>
           </div>
         </div>
-        <div className="border-t border-solid-gray-700 mt-8 pt-8 text-center text-solid-gray-536 text-sm">
+        <div className="border-t border-solid-gray-700 mt-8 pt-8 text-center text-solid-gray-536 text-sm space-y-2">
+          <p>
+            <a
+              href="https://design.digital.go.jp/dads/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-white transition-colors underline"
+            >
+              デジタル庁デザインシステムウェブサイト
+            </a>
+            のコンテンツを加工して作成
+          </p>
           <p>&copy; {new Date().getFullYear()} INNOMA Project</p>
         </div>
       </div>

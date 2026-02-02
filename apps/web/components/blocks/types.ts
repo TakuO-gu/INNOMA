@@ -59,6 +59,7 @@ export interface TopicGridItem {
   href: string;
   description?: string;
   category?: string;
+  icon?: string;
 }
 
 export interface QuickLinkItem {

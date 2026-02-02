@@ -1,8 +1,9 @@
 "use client";
 
 import NextLink from "next/link";
-import { usePathname, useRouter } from "next/navigation";
-import { useState, useCallback } from "react";
+import { usePathname } from "next/navigation";
+import { useState } from "react";
+import { SearchBox } from "@/components/ui/SearchBox";
 
 interface MunicipalityHeaderProps {
   municipalityId: string;
@@ -14,21 +15,11 @@ export default function MunicipalityHeader({
   municipalityName,
 }: MunicipalityHeaderProps) {
   const pathname = usePathname();
-  const router = useRouter();
-  const [searchQuery, setSearchQuery] = useState("");
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  const handleSearch = useCallback(
-    (e: React.FormEvent) => {
-      e.preventDefault();
-      if (searchQuery.trim()) {
-        router.push(`/${municipalityId}/search?q=${encodeURIComponent(searchQuery.trim())}`);
-        setSearchQuery("");
-        setMobileMenuOpen(false);
-      }
-    },
-    [searchQuery, router, municipalityId]
-  );
+  // トップページかどうかを判定（/[municipality] または /[municipality]/）
+  const isTopPage =
+    pathname === `/${municipalityId}` || pathname === `/${municipalityId}/`;
 
   return (
     <header className="bg-white border-b border-solid-gray-300 sticky top-0 z-50">
@@ -38,48 +29,39 @@ export default function MunicipalityHeader({
           <div className="flex items-center gap-3 shrink-0">
             <NextLink
               href="/"
-              className="text-xl font-bold text-blue-600 hover:text-blue-700 transition-colors"
+              className="flex items-center hover:opacity-80 transition-opacity"
               title="INNOMA トップページ"
             >
-              INNOMA
+              <img
+                src="/images/logo.svg"
+                alt="INNOMA"
+                className="h-8 w-auto"
+              />
             </NextLink>
-            <span className="text-solid-gray-400" aria-hidden="true">
+            <span
+              className="text-solid-gray-400 self-stretch flex items-center"
+              aria-hidden="true"
+            >
               |
             </span>
             <NextLink
               href={`/${municipalityId}`}
-              className="text-lg font-semibold text-solid-gray-900 hover:text-solid-gray-700 transition-colors"
+              className="text-lg font-semibold text-solid-gray-900 hover:text-solid-gray-700 transition-colors flex items-center"
             >
               {municipalityName}
             </NextLink>
           </div>
 
-          {/* Search - Desktop */}
-          <form onSubmit={handleSearch} className="hidden md:block flex-1 max-w-md">
-            <div className="relative">
-              <input
-                type="search"
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-                placeholder={`${municipalityName}内を検索...`}
-                className="w-full px-4 py-2 pl-10 border border-solid-gray-300 rounded-lg text-sm bg-white text-solid-gray-900 placeholder:text-solid-gray-420 focus:outline-none focus:ring-4 focus:ring-yellow-300 focus:border-black"
+          {/* Search Box - Desktop (トップページ以外で表示) */}
+          {!isTopPage && (
+            <div className="hidden md:block flex-1 max-w-md mx-4">
+              <SearchBox
+                municipalityId={municipalityId}
+                placeholder="キーワードで検索"
+                compact
               />
-              <svg
-                className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-solid-gray-420"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                aria-hidden="true"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                />
-              </svg>
             </div>
-          </form>
+          )}
 
           {/* Nav - Desktop */}
           <nav className="hidden md:flex items-center gap-4">
@@ -109,12 +91,32 @@ export default function MunicipalityHeader({
             aria-expanded={mobileMenuOpen}
           >
             {mobileMenuOpen ? (
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              <svg
+                className="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M6 18L18 6M6 6l12 12"
+                />
               </svg>
             ) : (
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+              <svg
+                className="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
               </svg>
             )}
           </button>
@@ -123,33 +125,16 @@ export default function MunicipalityHeader({
         {/* Mobile Menu */}
         {mobileMenuOpen && (
           <div className="md:hidden mt-4 pb-4 border-t border-solid-gray-200 pt-4">
-            {/* Search - Mobile */}
-            <form onSubmit={handleSearch} className="mb-4">
-              <div className="relative">
-                <input
-                  type="search"
-                  value={searchQuery}
-                  onChange={(e) => setSearchQuery(e.target.value)}
-                  placeholder={`${municipalityName}内を検索...`}
-                  className="w-full px-4 py-2 pl-10 border border-solid-gray-300 rounded-lg text-sm bg-white text-solid-gray-900 placeholder:text-solid-gray-420 focus:outline-none focus:ring-4 focus:ring-yellow-300 focus:border-black"
+            {/* Search Box - Mobile (トップページ以外で表示) */}
+            {!isTopPage && (
+              <div className="mb-4">
+                <SearchBox
+                  municipalityId={municipalityId}
+                  placeholder="キーワードで検索"
+                  compact
                 />
-                <svg
-                  className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-solid-gray-420"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  aria-hidden="true"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                  />
-                </svg>
               </div>
-            </form>
-
+            )}
             {/* Nav Links - Mobile */}
             <nav className="flex flex-col gap-3">
               <NextLink

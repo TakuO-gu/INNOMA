@@ -1,17 +1,15 @@
 /**
- * CardGridBlock - DADS準拠のカードグリッドコンポーネント
+ * CardGridBlock - デジタル庁デザインシステム準拠のカードグリッドコンポーネント
  *
- * DADSカードコンポーネント（https://design.digital.go.jp/dads/components/card/）に準拠
- * HTML実装参照: https://github.com/digital-go-jp/design-system-example-components-html/tree/main/src/components/card
- *
- * 用途:
- * - データの比較・分析ではなく、一覧やグリッド形式でコンテンツを提示
- * - 記事、商品、画像ギャラリーなどを並べて表示し、視覚的な比較・選択を容易に
- *
- * バリエーション:
- * - media: 画像+テキストのグループ化
- * - link: タイトル+説明+リンク（シンプル）
- * - info: アイコン+タイトル+説明
+ * 参照: デジタル庁ウェブサイトのカードコンポーネント
+ * 構造:
+ * - mdcontainer-card-inner: カード全体のリンクラッパー
+ * - mdcontainer-card__thumb: サムネイル画像エリア
+ * - mdcontainer-card__body: コンテンツエリア
+ *   - mdcontainer-card__title: タイトル（黒文字）
+ *   - mdcontainer-card__desc: 説明文（グレー文字）
+ *   - mdcontainer-card__meta: メタ情報
+ *   - icon--arrow-rightwards: 右矢印アイコン
  */
 
 "use client";
@@ -25,7 +23,6 @@ interface CardItem {
   description?: string;
   href?: string;
   image?: string;
-  icon?: string;
   meta?: string;
   external?: boolean;
 }
@@ -46,28 +43,24 @@ const gridColsClass = {
   4: "grid-cols-1 sm:grid-cols-2 lg:grid-cols-4",
 };
 
-// デフォルトアイコン
-const DefaultIcon = () => (
-  <svg
-    className="w-6 h-6"
-    fill="none"
-    stroke="currentColor"
-    viewBox="0 0 24 24"
-    aria-hidden="true"
-  >
-    <path
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
-    />
-  </svg>
+// 右矢印アイコン（デジタル庁仕様）
+const ArrowRightIcon = () => (
+  <span className="inline-flex items-center justify-center w-4 h-4 ml-auto flex-shrink-0">
+    <svg
+      aria-hidden="true"
+      role="img"
+      className="w-3 h-3 fill-current"
+      viewBox="0 0 14 14"
+    >
+      <path d="M7.3813 1.67358L12.3591 6.59668L7.3813 11.5198L6.4582 10.5967L9.85825 7.19663H2.08008V5.99663H9.85816L6.4582 2.59668L7.3813 1.67358Z" />
+    </svg>
+  </span>
 );
 
 // 外部リンクアイコン
 const ExternalLinkIcon = () => (
   <svg
-    className="w-4 h-4 ml-1 inline-block"
+    className="w-3 h-3 ml-1 inline-block"
     fill="none"
     stroke="currentColor"
     viewBox="0 0 24 24"
@@ -84,7 +77,7 @@ const ExternalLinkIcon = () => (
 
 /**
  * メディアカード（画像+テキスト）
- * DADS example-1, example-2 参照
+ * デジタル庁仕様: サムネイル + タイトル + 説明 + 矢印
  */
 function MediaCard({
   item,
@@ -101,10 +94,10 @@ function MediaCard({
     : undefined;
 
   const cardContent = (
-    <article className="dads-card-media flex flex-col h-full border border-solid-gray-200 rounded-lg overflow-hidden bg-white hover:shadow-md transition-shadow">
-      {/* 画像エリア */}
+    <article className="mdcontainer-card flex flex-col h-full border border-solid-gray-200 rounded-lg overflow-hidden bg-white hover:bg-solid-gray-50 transition-colors">
+      {/* サムネイル */}
       {item.image && (
-        <div className="dads-card-media__image aspect-[3/2] bg-solid-gray-100 overflow-hidden">
+        <div className="mdcontainer-card__thumb aspect-[3/2] bg-solid-gray-100 overflow-hidden">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src={item.image}
@@ -113,22 +106,23 @@ function MediaCard({
           />
         </div>
       )}
-      {/* コンテンツエリア */}
-      <div className="dads-card-media__main flex-1 p-4">
-        {item.meta && (
-          <p className="text-std-12N-170 text-solid-gray-500 mb-2">
-            {item.meta}
-          </p>
-        )}
-        <h3 className="text-std-17B-170 text-solid-gray-900 mb-2 group-hover:underline">
+      {/* ボディ */}
+      <div className="mdcontainer-card__body flex flex-col flex-1 p-4">
+        <span className="mdcontainer-card__title text-std-17B-170 text-solid-gray-900 mb-2">
           {item.title}
           {isExternal && <ExternalLinkIcon />}
-        </h3>
+        </span>
         {item.description && (
-          <p className="text-std-14N-170 text-solid-gray-600 line-clamp-3">
+          <span className="mdcontainer-card__desc text-std-14N-170 text-solid-gray-600 flex-1 line-clamp-2">
             {item.description}
-          </p>
+          </span>
         )}
+        {item.meta && (
+          <div className="mdcontainer-card__meta text-std-12N-170 text-solid-gray-500 mt-2">
+            {item.meta}
+          </div>
+        )}
+        {resolvedHref && <ArrowRightIcon />}
       </div>
     </article>
   );
@@ -140,14 +134,14 @@ function MediaCard({
           href={resolvedHref}
           target="_blank"
           rel="noopener noreferrer"
-          className="block group"
+          className="mdcontainer-card-inner block h-full"
         >
           {cardContent}
         </a>
       );
     }
     return (
-      <NextLink href={resolvedHref} className="block group">
+      <NextLink href={resolvedHref} className="mdcontainer-card-inner block h-full">
         {cardContent}
       </NextLink>
     );
@@ -157,8 +151,8 @@ function MediaCard({
 }
 
 /**
- * リンクカード（タイトル+説明+リンク）
- * シンプルなリンクリスト用
+ * リンクカード（タイトル+説明+矢印）
+ * デジタル庁仕様: タイトル（黒） + 説明（グレー） + 右矢印
  */
 function LinkCard({
   item,
@@ -175,24 +169,26 @@ function LinkCard({
     : undefined;
 
   const cardContent = (
-    <article className="dads-card-link flex flex-col h-full border border-solid-gray-200 rounded-lg bg-white hover:shadow-md hover:border-blue-400 transition-all p-4">
-      {item.meta && (
-        <p className="text-std-12N-170 text-solid-gray-500 mb-2">{item.meta}</p>
-      )}
-      <h3 className="text-std-17B-170 text-blue-900 mb-2 group-hover:underline">
-        {item.title}
-        {isExternal && <ExternalLinkIcon />}
-      </h3>
-      {item.description && (
-        <p className="text-std-14N-170 text-solid-gray-600 flex-1">
-          {item.description}
-        </p>
-      )}
-      {resolvedHref && (
-        <div className="mt-3 pt-3 border-t border-solid-gray-200">
-          <span className="text-std-14B-170 text-blue-900 group-hover:underline">
-            詳しくみる →
+    <article className="mdcontainer-card flex flex-col h-full border border-solid-gray-200 rounded-lg bg-white hover:bg-solid-gray-50 transition-colors p-4">
+      <div className="mdcontainer-card__body flex flex-col flex-1">
+        <span className="mdcontainer-card__title text-std-17B-170 text-solid-gray-900 mb-2">
+          {item.title}
+          {isExternal && <ExternalLinkIcon />}
+        </span>
+        {item.description && (
+          <span className="mdcontainer-card__desc text-std-14N-170 text-solid-gray-600 flex-1">
+            {item.description}
           </span>
+        )}
+        {item.meta && (
+          <div className="mdcontainer-card__meta text-std-12N-170 text-solid-gray-500 mt-2">
+            {item.meta}
+          </div>
+        )}
+      </div>
+      {resolvedHref && (
+        <div className="flex justify-end mt-3">
+          <ArrowRightIcon />
         </div>
       )}
     </article>
@@ -205,14 +201,14 @@ function LinkCard({
           href={resolvedHref}
           target="_blank"
           rel="noopener noreferrer"
-          className="block group"
+          className="mdcontainer-card-inner block h-full"
         >
           {cardContent}
         </a>
       );
     }
     return (
-      <NextLink href={resolvedHref} className="block group">
+      <NextLink href={resolvedHref} className="mdcontainer-card-inner block h-full">
         {cardContent}
       </NextLink>
     );
@@ -222,8 +218,7 @@ function LinkCard({
 }
 
 /**
- * 情報カード（アイコン+タイトル+説明）
- * DADS example-1（アイコンバージョン）参照
+ * 情報カード（横並び: タイトル + 説明 + 矢印）
  */
 function InfoCard({
   item,
@@ -240,36 +235,24 @@ function InfoCard({
     : undefined;
 
   const cardContent = (
-    <article className="dads-card-info flex h-full border border-solid-gray-200 rounded-lg bg-white hover:shadow-md transition-shadow p-4">
-      {/* アイコンエリア */}
-      <div className="dads-card-info__icon flex-shrink-0 w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center text-blue-700 mr-4">
-        <DefaultIcon />
-      </div>
-      {/* コンテンツエリア */}
-      <div className="dads-card-info__main flex-1 min-w-0">
+    <article className="mdcontainer-card flex items-center h-full border border-solid-gray-200 rounded-lg bg-white hover:bg-solid-gray-50 transition-colors p-4">
+      <div className="mdcontainer-card__body flex-1 min-w-0">
         {item.meta && (
-          <p className="text-std-12N-170 text-solid-gray-500 mb-1">
+          <div className="mdcontainer-card__meta text-std-12N-170 text-solid-gray-500 mb-1">
             {item.meta}
-          </p>
+          </div>
         )}
-        <h3 className="text-std-17B-170 text-solid-gray-900 mb-1 group-hover:underline">
+        <span className="mdcontainer-card__title text-std-17B-170 text-solid-gray-900 block">
           {item.title}
           {isExternal && <ExternalLinkIcon />}
-        </h3>
+        </span>
         {item.description && (
-          <p className="text-std-14N-170 text-solid-gray-600">
+          <span className="mdcontainer-card__desc text-std-14N-170 text-solid-gray-600 block mt-1">
             {item.description}
-          </p>
+          </span>
         )}
       </div>
-      {/* 矢印アイコン */}
-      {resolvedHref && (
-        <div className="flex-shrink-0 ml-2 text-solid-gray-400">
-          <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-          </svg>
-        </div>
-      )}
+      {resolvedHref && <ArrowRightIcon />}
     </article>
   );
 
@@ -280,14 +263,14 @@ function InfoCard({
           href={resolvedHref}
           target="_blank"
           rel="noopener noreferrer"
-          className="block group"
+          className="mdcontainer-card-inner block h-full"
         >
           {cardContent}
         </a>
       );
     }
     return (
-      <NextLink href={resolvedHref} className="block group">
+      <NextLink href={resolvedHref} className="mdcontainer-card-inner block h-full">
         {cardContent}
       </NextLink>
     );
