@@ -1,10 +1,10 @@
 {
   "schema_version": "2.0.0",
-  "page_id": "sample-topics-environment",
+  "page_id": "sample-environment",
   "municipality_id": "sample",
-  "path": "/topics/environment",
-  "title": "環境・ごみ・リサイクル",
-  "description": "ごみの分別、粗大ごみ、リサイクル、省エネルギーに関する情報",
+  "path": "/environment",
+  "title": "ごみ・リサイクル",
+  "description": "ごみの分別、収集日、粗大ごみ、リサイクルに関する情報",
   "content_type": "directory",
   "service_category": "environment",
   "audience": [
@@ -12,7 +12,7 @@
   ],
   "topic": [],
   "source": {
-    "source_url": "template://sample/topics/environment",
+    "source_url": "template://sample/environment",
     "fetched_at": "{{generated_at}}",
     "content_hash": "template"
   },
@@ -32,8 +32,8 @@
             "href": "/"
           },
           {
-            "label": "環境・ごみ・リサイクル",
-            "href": "/topics/environment"
+            "label": "ごみ・リサイクル",
+            "href": "/environment"
           }
         ]
       }
@@ -42,34 +42,36 @@
       "id": "title-1",
       "type": "Title",
       "props": {
-        "text": "環境・ごみ・リサイクル"
+        "text": "ごみ・リサイクル"
       }
     },
     {
       "id": "summary-1",
       "type": "Summary",
       "props": {
-        "text": "ごみの分別、粗大ごみ、リサイクル、省エネルギーに関する情報をまとめています"
+        "text": "ごみの分別、収集日、粗大ごみ、リサイクルに関する情報をまとめています"
       }
     },
     {
       "id": "topic-list-1",
-      "type": "TopicList",
+      "type": "CardGrid",
       "props": {
+        "variant": "link",
+        "columns": 4,
         "items": [
           {
             "title": "ごみの分別・出し方",
-            "href": "/services/environment/gomi",
+            "href": "/gomi",
             "description": "家庭ごみの分別方法と収集日"
           },
           {
             "title": "粗大ごみ",
-            "href": "/services/environment/sodaigomi",
+            "href": "/sodaigomi",
             "description": "粗大ごみの申込・出し方・手数料"
           },
           {
             "title": "家電リサイクル",
-            "href": "/services/environment/kaden-recycle",
+            "href": "/kaden-recycle",
             "description": "テレビ、冷蔵庫、洗濯機、エアコンの処分"
           }
         ]
@@ -95,17 +97,16 @@
     }
   ],
   "search": {
-    "summary": "環境・ごみ・リサイクルに関する情報。ごみの分別、粗大ごみ、資源回収、家電リサイクルの案内。",
+    "summary": "ごみ・リサイクルに関する情報。ごみの分別、収集日、粗大ごみ、家電リサイクルの案内。",
     "keywords": [
-      "環境",
       "ごみ",
       "分別",
+      "収集日",
       "粗大ごみ",
       "リサイクル",
-      "資源",
       "家電リサイクル",
-      "収集日"
+      "資源"
     ],
-    "plain_text": "環境・ごみ・リサイクル。ごみの分別、粗大ごみ、リサイクル、省エネルギーに関する情報。ごみの分別・出し方、粗大ごみ、資源・リサイクル、家電リサイクル、ごみ収集カレンダー、し尿くみ取り、環境保全。"
+    "plain_text": "ごみ・リサイクル。ごみの分別、収集日、粗大ごみ、リサイクルに関する情報。ごみの分別・出し方、粗大ごみ、家電リサイクル。"
   }
 }

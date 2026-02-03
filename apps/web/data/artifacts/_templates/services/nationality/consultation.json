@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "page_id": "sample-services-nationality-consultation",
   "municipality_id": "sample",
-  "path": "/services/nationality/consultation",
+  "path": "/consultation",
   "title": "外国人のための相談窓口",
   "description": "多言語相談、生活相談、{{municipality_name}}国際交流協会",
   "content_type": "guide",
@@ -33,11 +33,11 @@
           },
           {
             "label": "戸籍・国籍・在留",
-            "href": "/topics/nationality"
+            "href": "/nationality"
           },
           {
             "label": "外国人相談窓口",
-            "href": "/services/nationality/consultation"
+            "href": "/consultation"
           }
         ]
       }
@@ -117,19 +117,19 @@
         "items": [
           {
             "title": "ビザ・在留資格",
-            "href": "/services/nationality/visa"
+            "href": "/visa"
           },
           {
             "title": "外国人登録",
-            "href": "/services/nationality/foreign-registration"
+            "href": "/foreign-registration"
           },
           {
             "title": "日本語教室",
-            "href": "/services/nationality/japanese-class"
+            "href": "/japanese-class"
           },
           {
             "title": "法律相談",
-            "href": "/services/civic/legal-support"
+            "href": "/legal-support"
           }
         ]
       }

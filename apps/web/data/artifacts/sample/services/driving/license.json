@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "page_id": "sample-services-driving-license",
   "municipality_id": "sample",
-  "path": "/services/driving/license",
+  "path": "/license",
   "title": "運転免許証",
   "description": "運転免許試験場・更新センターの案内、更新・住所変更手続き",
   "content_type": "guide",
@@ -33,11 +33,11 @@
           },
           {
             "label": "運転・車両",
-            "href": "/topics/driving"
+            "href": "/driving"
           },
           {
             "label": "運転免許証",
-            "href": "/services/driving/license"
+            "href": "/license"
           }
         ]
       }
@@ -183,23 +183,23 @@
         "items": [
           {
             "title": "自動車登録",
-            "href": "/services/driving/registration"
+            "href": "/registration"
           },
           {
             "title": "車庫証明",
-            "href": "/services/driving/garage-certificate"
+            "href": "/garage-certificate"
           },
           {
             "title": "高齢者運転",
-            "href": "/services/driving/senior-driving"
+            "href": "/senior-driving"
           },
           {
             "title": "住民票",
-            "href": "/services/registration/juminhyo"
+            "href": "/juminhyo"
           },
           {
             "title": "引越し手続き一覧",
-            "href": "/services/housing/moving-checklist"
+            "href": "/moving-checklist"
           }
         ]
       }

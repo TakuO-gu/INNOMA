@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "page_id": "sample-services-civic-privacy",
   "municipality_id": "sample",
-  "path": "/services/civic/privacy",
+  "path": "/privacy",
   "title": "個人情報保護",
   "description": "個人情報保護制度、自己情報の開示・訂正請求",
   "content_type": "guide",
@@ -33,11 +33,11 @@
           },
           {
             "label": "市民参加・権利行使",
-            "href": "/topics/civic"
+            "href": "/civic"
           },
           {
             "label": "個人情報保護",
-            "href": "/services/civic/privacy"
+            "href": "/privacy"
           }
         ]
       }
@@ -159,11 +159,11 @@
         "items": [
           {
             "title": "情報公開",
-            "href": "/services/civic/information-disclosure"
+            "href": "/information-disclosure"
           },
           {
             "title": "マイナンバーカード",
-            "href": "/services/registration/mynumber"
+            "href": "/mynumber"
           }
         ]
       }

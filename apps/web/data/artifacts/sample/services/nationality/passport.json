@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "page_id": "sample-services-nationality-passport",
   "municipality_id": "sample",
-  "path": "/services/nationality/passport",
+  "path": "/passport",
   "title": "パスポート（旅券）",
   "description": "パスポートの申請・更新・届出、東京都パスポートセンター",
   "content_type": "guide",
@@ -33,11 +33,11 @@
           },
           {
             "label": "戸籍・国籍・在留",
-            "href": "/topics/nationality"
+            "href": "/nationality"
           },
           {
             "label": "パスポート",
-            "href": "/services/nationality/passport"
+            "href": "/passport"
           }
         ]
       }
@@ -192,15 +192,15 @@
         "items": [
           {
             "title": "戸籍",
-            "href": "/services/registration/koseki"
+            "href": "/koseki"
           },
           {
             "title": "住民票",
-            "href": "/services/registration/juminhyo"
+            "href": "/juminhyo"
           },
           {
             "title": "ビザ・在留資格",
-            "href": "/services/nationality/visa"
+            "href": "/visa"
           }
         ]
       }

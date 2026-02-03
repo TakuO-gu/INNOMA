@@ -1,0 +1,523 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "shimoichi-services-health-kouki",
+  "municipality_id": "shimoichi",
+  "path": "/kouki",
+  "title": "後期高齢者医療制度",
+  "description": "後期高齢者医療制度の対象者、届出、保険料、医療費負担について",
+  "content_type": "guide",
+  "service_category": "health",
+  "audience": [
+    "residents",
+    "elderly"
+  ],
+  "topic": [],
+  "source": {
+    "source_url": "template://shimoichi/services/health/kouki",
+    "fetched_at": "2026-02-03T01:50:20.304Z",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "2026-02-03T01:50:20.304Z",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "健康・医療",
+            "href": "/health"
+          },
+          {
+            "label": "後期高齢者医療制度",
+            "href": "/kouki"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "後期高齢者医療制度"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "後期高齢者医療制度は、75歳以上の方（および65歳以上74歳以下で一定の障害がある方）を対象とした医療保険制度です。都道府県単位の広域連合が運営しています。"
+      }
+    },
+    {
+      "id": "section-2cl1tlqbd",
+      "type": "Section",
+      "props": {
+        "heading": "後期高齢者医療制度の対象となる方",
+        "level": 2,
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "75歳以上の方",
+                      "bold": true
+                    },
+                    {
+                      "text": "（75歳の誕生日から自動的に加入）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "65歳以上74歳以下で一定の障害がある方",
+                      "bold": true
+                    },
+                    {
+                      "text": "（申請により加入）"
+                    }
+                  ]
+                }
+              ]
+            ]
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "75歳の誕生日が近づくと、被保険者証が届きます。届出の手続きは不要です。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-82kvbsvzq",
+      "type": "Section",
+      "props": {
+        "heading": "届出が必要なとき",
+        "level": 2,
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "他の市区町村から転入したとき"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "他の市区町村へ転出するとき"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "氏名、住所が変わったとき"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "被保険者証を紛失・破損したとき（再交付）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "被保険者が亡くなったとき"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "生活保護を受けるようになったとき/受けなくなったとき"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-y4wchjj91",
+      "type": "Section",
+      "props": {
+        "heading": "医療費の自己負担",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "医療機関で支払う自己負担割合は、所得に応じて異なります。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "table-hutan",
+      "type": "Table",
+      "props": {
+        "rows": [
+          {
+            "label": "一般所得者",
+            "value": "1割負担"
+          },
+          {
+            "label": "一定以上所得者",
+            "value": "2割負担（課税所得28万円以上かつ年収200万円以上）"
+          },
+          {
+            "label": "現役並み所得者",
+            "value": "3割負担（課税所得145万円以上かつ年収383万円以上）"
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-46hpy2dao",
+      "type": "Section",
+      "props": {
+        "heading": "保険料",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "保険料は被保険者一人ひとりが納めます。所得に応じた「所得割」と、全員が等しく負担する「均等割」を合計して計算されます。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "保険料率は2年ごとに見直されます。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "table-hokenryo",
+      "type": "Table",
+      "props": {
+        "rows": [
+          {
+            "label": "均等割額",
+            "value": "{{kouki_kinto_wari}}"
+          },
+          {
+            "label": "所得割率",
+            "value": "{{kouki_shotoku_wari_rate}}"
+          },
+          {
+            "label": "賦課限度額",
+            "value": "80万円（令和6・7年度）"
+          },
+          {
+            "label": "納付方法",
+            "value": "特別徴収（年金天引き）または普通徴収（納付書・口座振替）"
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-cvcu1iy1l",
+      "type": "Section",
+      "props": {
+        "heading": "保険料の軽減",
+        "level": 3,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "所得が一定以下の方は、均等割が軽減されます（7割・5割・2割軽減）。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-0ru2513j0",
+      "type": "Section",
+      "props": {
+        "heading": "主な給付",
+        "level": 2,
+        "content": []
+      }
+    },
+    {
+      "id": "section-fomldcl67",
+      "type": "Section",
+      "props": {
+        "heading": "高額療養費",
+        "level": 3,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "1か月の医療費の自己負担額が限度額を超えた場合、超えた分が払い戻されます。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-gyq1xcr50",
+      "type": "Section",
+      "props": {
+        "heading": "葬祭費",
+        "level": 3,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "被保険者が亡くなったとき、葬祭を行った方に{{kouki_sousaihi}}が支給されます。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-nl76mxnaz",
+      "type": "Section",
+      "props": {
+        "heading": "療養費",
+        "level": 3,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "やむを得ず保険証を持参できずに受診した場合など、いったん全額自己負担した医療費の一部が払い戻されます。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "related-links-1",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "国民健康保険",
+            "href": "/kokuho"
+          },
+          {
+            "title": "健康診断・検診",
+            "href": "/kenshin"
+          },
+          {
+            "title": "介護保険",
+            "href": "/kaigo"
+          },
+          {
+            "title": "高齢者福祉",
+            "href": "/koureisha"
+          },
+          {
+            "title": "地域包括支援センター",
+            "href": "/houkatsu"
+          },
+          {
+            "title": "年金",
+            "href": "/nenkin"
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-方法-1769919363175",
+      "type": "Section",
+      "props": {
+        "heading": "後期高齢者医療制度の手続き方法",
+        "content": [
+          {
+            "type": "list",
+            "ordered": true,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "必要書類を準備します。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "窓口で申請書を記入します。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "書類を提出し、確認を受けます。"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{kouki_department}}",
+        "phone": "{{kouki_phone}}",
+        "email": "{{kouki_email}}",
+        "hours": "{{city_hall_hours}}",
+        "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "terms-1769919363175",
+      "type": "Section",
+      "props": {
+        "heading": "用語の説明",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "被保険者",
+                "bold": true
+              },
+              {
+                "text": "：保険に加入している方"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "賦課",
+                "bold": true
+              },
+              {
+                "text": "：税金を課すこと"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "所得割",
+                "bold": true
+              },
+              {
+                "text": "：収入に応じて計算される部分"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "均等割",
+                "bold": true
+              },
+              {
+                "text": "：全員同じ金額の部分"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
+      }
+    }
+  ],
+  "search": {
+    "summary": "後期高齢者医療制度の案内。75歳以上の方が対象。届出、保険料、医療費負担、給付について。",
+    "keywords": [
+      "後期高齢者医療",
+      "高齢者医療",
+      "75歳",
+      "医療費",
+      "保険料",
+      "高額療養費",
+      "葬祭費"
+    ],
+    "plain_text": "後期高齢者医療制度。75歳以上の方が対象。医療費の自己負担は1割〜3割（所得による）。保険料は均等割と所得割で計算。高額療養費、葬祭費などの給付あり。"
+  }
+}

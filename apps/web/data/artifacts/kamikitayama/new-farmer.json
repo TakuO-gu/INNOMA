@@ -1,0 +1,251 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "kamikitayama-services-land-new-farmer",
+  "municipality_id": "kamikitayama",
+  "path": "/new-farmer",
+  "title": "新規就農支援",
+  "description": "農業を始めたい方向けの支援制度、研修、補助金",
+  "content_type": "guide",
+  "service_category": "environment",
+  "audience": [
+    "residents"
+  ],
+  "topic": [],
+  "source": {
+    "source_url": "template://kamikitayama/services/land/new-farmer",
+    "fetched_at": "2026-02-03T01:50:19.763Z",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "2026-02-03T01:50:19.763Z",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "土地・農林水産",
+            "href": "/land"
+          },
+          {
+            "label": "新規就農支援",
+            "href": "/new-farmer"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "新規就農支援"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "農業を始めたい方向けの研修制度、資金支援、農地確保支援についてご案内します。"
+      }
+    },
+    {
+      "id": "section-ty1fh4ida-step",
+      "type": "StepNavigation",
+      "props": {
+        "steps": [
+          {
+            "title": "ステップ1",
+            "body": "情報収集・相談（農業委員会、JAなど）"
+          },
+          {
+            "title": "ステップ2",
+            "body": "体験・研修（農業大学校、先進農家研修）"
+          },
+          {
+            "title": "ステップ3",
+            "body": "就農計画の作成"
+          },
+          {
+            "title": "ステップ4",
+            "body": "農地の確保"
+          },
+          {
+            "title": "ステップ5",
+            "body": "資金の確保"
+          },
+          {
+            "title": "ステップ6",
+            "body": "就農開始"
+          }
+        ],
+        "heading": "新規就農までの流れ"
+      }
+    },
+    {
+      "id": "section-ho57hx8ks-desclist",
+      "type": "DescriptionList",
+      "props": {
+        "items": [
+          {
+            "term": "準備型",
+            "description": "研修期間中、年間最大150万円（最長2年）"
+          },
+          {
+            "term": "経営開始型",
+            "description": "経営開始後、年間最大150万円（最長5年）"
+          }
+        ],
+        "heading": "農業次世代人材投資資金（旧・青年就農給付金）"
+      }
+    },
+    {
+      "id": "section-ykei1uflm",
+      "type": "Section",
+      "props": {
+        "heading": "対象要件",
+        "level": 2,
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "原則50歳未満で独立・自営就農すること"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "農業経営に関する知識・技術を習得すること"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "市町村が認める「認定新規就農者」となること"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-1r65n455n",
+      "type": "Section",
+      "props": {
+        "heading": "上北山村の支援制度",
+        "level": 2,
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "就農相談窓口：{{new_farmer_consultation}}"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "新規就農者育成総合対策：{{new_farmer_support_program}}"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "農地斡旋：農業委員会による農地情報提供"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "related-links-tu35qfffc",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "農業委員会",
+            "href": "/agricultural-committee"
+          },
+          {
+            "title": "農業補助金",
+            "href": "/agriculture-subsidy"
+          },
+          {
+            "title": "補助金・助成金",
+            "href": "/subsidies"
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{agriculture_department}}",
+        "phone": "{{agriculture_phone}}",
+        "email": "{{agriculture_email}}",
+        "hours": "{{city_hall_hours}}",
+        "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
+      }
+    }
+  ],
+  "search": {
+    "summary": "新規就農支援の案内。研修制度、農業次世代人材投資資金、農地確保支援。",
+    "keywords": [
+      "新規就農",
+      "就農支援",
+      "農業次世代人材投資資金",
+      "認定新規就農者",
+      "農業研修"
+    ],
+    "plain_text": "新規就農支援。農業を始めたい方向けの研修、資金支援。50歳未満対象の農業次世代人材投資資金は年間最大150万円。"
+  }
+}

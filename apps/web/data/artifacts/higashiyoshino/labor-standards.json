@@ -1,0 +1,235 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "takaoka-services-employment-labor-standards",
+  "municipality_id": "takaoka",
+  "path": "/labor-standards",
+  "title": "労働条件・最低賃金",
+  "description": "富山県の最低賃金、労働時間、残業規制",
+  "content_type": "guide",
+  "service_category": "business",
+  "audience": [
+    "residents"
+  ],
+  "topic": [],
+  "source": {
+    "source_url": "template://higashiyoshino/services/employment/labor-standards",
+    "fetched_at": "2026-01-20T10:33:17.311Z",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "2026-01-20T10:33:17.311Z",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "仕事・労働",
+            "href": "/employment"
+          },
+          {
+            "label": "労働条件・最低賃金",
+            "href": "/labor-standards"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "労働条件・最低賃金"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "労働基準法で定められた労働条件の基準と、富山県の最低賃金についてご案内します。"
+      }
+    },
+    {
+      "id": "section-5u1vl8d7f",
+      "type": "Section",
+      "props": {
+        "heading": "富山県の最低賃金",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "富山県の地域別最低賃金は",
+                "bold": false
+              },
+              {
+                "text": "{{minimum_wage}}円/時間",
+                "bold": true
+              },
+              {
+                "text": "（{{minimum_wage_effective_date}}発効）"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-cqwxj22lz-table",
+      "type": "Section",
+      "props": {
+        "heading": "法定労働時間",
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "1日8時間、1週40時間が上限"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "法定労働時間を超える場合は36協定の締結が必要"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "時間外労働は原則月45時間、年360時間が上限"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-oq7u10m3y",
+      "type": "Section",
+      "props": {
+        "heading": "割増賃金",
+        "level": 2,
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "時間外労働：25%以上"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "深夜労働（22時〜5時）：25%以上"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "休日労働：35%以上"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "月60時間超の時間外労働：50%以上"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "related-links-i441c4x9y",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "労働相談",
+            "href": "/labor-consultation"
+          },
+          {
+            "title": "ハラスメント",
+            "href": "/harassment"
+          },
+          {
+            "title": "育児・介護休業",
+            "href": "/family-leave"
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{labor_standards_office}}",
+        "phone": "{{labor_standards_office_phone}}",
+        "address": "{{labor_standards_office_address}}"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
+      }
+    }
+  ],
+  "search": {
+    "summary": "労働条件・最低賃金の案内。富山県の最低賃金、法定労働時間、割増賃金。",
+    "keywords": [
+      "最低賃金",
+      "労働条件",
+      "労働時間",
+      "残業",
+      "割増賃金",
+      "36協定"
+    ],
+    "plain_text": "労働条件・最低賃金。法定労働時間は1日8時間、週40時間。時間外労働は割増賃金25%以上。"
+  }
+}

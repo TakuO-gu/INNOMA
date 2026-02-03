@@ -61,3 +61,6 @@ export { CardGridBlock } from "./CardGridBlock";
 
 // Search Box Block
 export { SearchBoxBlock } from "./SearchBoxBlock";
+
+// Smart Answer Block
+export { SmartAnswerBlock } from "./SmartAnswerBlock";

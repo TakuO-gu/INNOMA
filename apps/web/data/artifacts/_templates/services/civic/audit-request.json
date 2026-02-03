@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "page_id": "sample-services-civic-audit-request",
   "municipality_id": "sample",
-  "path": "/services/civic/audit-request",
+  "path": "/audit-request",
   "title": "住民監査請求",
   "description": "住民監査請求の要件、手続き、監査結果",
   "content_type": "guide",
@@ -33,11 +33,11 @@
           },
           {
             "label": "市民参加・権利行使",
-            "href": "/topics/civic"
+            "href": "/civic"
           },
           {
             "label": "住民監査請求",
-            "href": "/services/civic/audit-request"
+            "href": "/audit-request"
           }
         ]
       }
@@ -211,11 +211,11 @@
         "items": [
           {
             "title": "行政不服申立て",
-            "href": "/services/civic/administrative-appeal"
+            "href": "/administrative-appeal"
           },
           {
             "title": "情報公開",
-            "href": "/services/civic/information-disclosure"
+            "href": "/information-disclosure"
           }
         ]
       }

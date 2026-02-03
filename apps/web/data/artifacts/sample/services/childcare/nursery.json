@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "page_id": "sample-services-childcare-nursery",
   "municipality_id": "sample",
-  "path": "/services/childcare/nursery",
+  "path": "/nursery",
   "title": "保育園・幼稚園",
   "description": "保育園・幼稚園に関する情報。入園申込、保育園一覧、一時保育など。",
   "content_type": "directory",
@@ -33,11 +33,11 @@
           },
           {
             "label": "子育て",
-            "href": "/services/childcare"
+            "href": "/childcare"
           },
           {
             "label": "保育園・幼稚園",
-            "href": "/services/childcare/nursery"
+            "href": "/nursery"
           }
         ]
       }
@@ -73,7 +73,7 @@
           },
           {
             "title": "幼稚園の入園",
-            "href": "/services/childcare/kindergarten",
+            "href": "/kindergarten",
             "description": "市立・私立幼稚園への入園手続き"
           },
           {
@@ -103,17 +103,17 @@
           },
           {
             "title": "一時保育",
-            "href": "/services/childcare/temporary",
+            "href": "/temporary",
             "description": "緊急時や一時的な保育が必要な方"
           },
           {
             "title": "病児・病後児保育",
-            "href": "/services/childcare/sick-child",
+            "href": "/sick-child",
             "description": "お子さまが病気のときの保育"
           },
           {
             "title": "延長保育",
-            "href": "/services/childcare/extended",
+            "href": "/extended",
             "description": "通常の保育時間を超えた保育"
           }
         ]
@@ -126,15 +126,15 @@
         "items": [
           {
             "title": "児童手当",
-            "href": "/services/childcare/allowance"
+            "href": "/allowance"
           },
           {
             "title": "子ども医療費助成",
-            "href": "/services/childcare/medical"
+            "href": "/medical"
           },
           {
             "title": "学童保育",
-            "href": "/services/childcare/after-school"
+            "href": "/after-school"
           }
         ]
       }

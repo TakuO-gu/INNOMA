@@ -1,0 +1,189 @@
+{
+  "bosai-mail": {
+    "filePath": "bosai-mail",
+    "categories": ["disaster"]
+  },
+  "boshi": {
+    "filePath": "boshi",
+    "categories": ["childcare"]
+  },
+  "childcare": {
+    "filePath": "childcare",
+    "categories": ["childcare"],
+    "type": "topic"
+  },
+  "contacts": {
+    "filePath": "contacts",
+    "categories": ["government"],
+    "type": "topic"
+  },
+  "disaster": {
+    "filePath": "disaster",
+    "categories": ["disaster"],
+    "type": "topic"
+  },
+  "environment": {
+    "filePath": "environment",
+    "categories": ["environment"],
+    "type": "topic"
+  },
+  "furusato": {
+    "filePath": "furusato",
+    "categories": ["tax"]
+  },
+  "gomi": {
+    "filePath": "gomi",
+    "categories": ["environment"]
+  },
+  "hazard-map": {
+    "filePath": "hazard-map",
+    "categories": ["disaster"]
+  },
+  "hinanjo": {
+    "filePath": "hinanjo",
+    "categories": ["disaster"]
+  },
+  "houkatsu": {
+    "filePath": "houkatsu",
+    "categories": ["welfare"]
+  },
+  "inkan": {
+    "filePath": "inkan",
+    "categories": ["registration"]
+  },
+  "jidou-teate": {
+    "filePath": "jidou-teate",
+    "categories": ["childcare"]
+  },
+  "jidou-teate-apply": {
+    "filePath": "jidou-teate-apply",
+    "categories": ["childcare"]
+  },
+  "jidou-teate-check": {
+    "filePath": "jidou-teate-check",
+    "categories": ["childcare"]
+  },
+  "juminhyo": {
+    "filePath": "juminhyo",
+    "categories": ["registration"]
+  },
+  "juminzei": {
+    "filePath": "juminzei",
+    "categories": ["tax"]
+  },
+  "kaden-recycle": {
+    "filePath": "kaden-recycle",
+    "categories": ["environment"]
+  },
+  "kaigo": {
+    "filePath": "kaigo",
+    "categories": ["welfare"]
+  },
+  "kaigo-apply": {
+    "filePath": "kaigo-apply",
+    "categories": ["welfare"]
+  },
+  "kaigo-check": {
+    "filePath": "kaigo-check",
+    "categories": ["welfare"]
+  },
+  "keijidosha": {
+    "filePath": "keijidosha",
+    "categories": ["tax"]
+  },
+  "kokuho": {
+    "filePath": "kokuho",
+    "categories": ["health"]
+  },
+  "kokuho-apply": {
+    "filePath": "kokuho-apply",
+    "categories": ["health"]
+  },
+  "kokuho-check": {
+    "filePath": "kokuho-check",
+    "categories": ["health"]
+  },
+  "koseki": {
+    "filePath": "koseki",
+    "categories": ["registration"]
+  },
+  "kotei": {
+    "filePath": "kotei",
+    "categories": ["tax"]
+  },
+  "kouki": {
+    "filePath": "kouki",
+    "categories": ["health"]
+  },
+  "kouki-check": {
+    "filePath": "kouki-check",
+    "categories": ["health"]
+  },
+  "koureisha": {
+    "filePath": "koureisha",
+    "categories": ["welfare"]
+  },
+  "moving": {
+    "filePath": "moving",
+    "categories": ["registration"],
+    "type": "topic"
+  },
+  "moving-checklist": {
+    "filePath": "moving-checklist",
+    "categories": ["housing"]
+  },
+  "mynumber": {
+    "filePath": "mynumber",
+    "categories": ["registration"]
+  },
+  "nouzei": {
+    "filePath": "nouzei",
+    "categories": ["tax"]
+  },
+  "nursery": {
+    "filePath": "nursery",
+    "categories": ["childcare"]
+  },
+  "nursery-apply": {
+    "filePath": "nursery-apply",
+    "categories": ["childcare"]
+  },
+  "shussei": {
+    "filePath": "shussei",
+    "categories": ["registration"]
+  },
+  "sodaigomi": {
+    "filePath": "sodaigomi",
+    "categories": ["environment"]
+  },
+  "tax": {
+    "filePath": "tax",
+    "categories": ["tax"],
+    "type": "topic"
+  },
+  "tenkyo": {
+    "filePath": "tenkyo",
+    "categories": ["registration"]
+  },
+  "tennyu": {
+    "filePath": "tennyu",
+    "categories": ["registration"]
+  },
+  "tenshutsu": {
+    "filePath": "tenshutsu",
+    "categories": ["registration"]
+  },
+  "welfare": {
+    "filePath": "welfare",
+    "categories": ["welfare"],
+    "type": "topic"
+  },
+  "yobosesshu": {
+    "filePath": "yobosesshu",
+    "categories": ["health"]
+  },
+  "zeishoumei": {
+    "filePath": "zeishoumei",
+    "categories": ["tax"]
+  }
+}

@@ -13,6 +13,7 @@
 import { notFound } from "next/navigation";
 import { loadArtifact, getCompletedPages } from "@/lib/artifact/loader";
 import { hasEmergencyContent, hasHighPriorityEmergency } from "@/lib/artifact/cache";
+import { resolveArtifactPath } from "@/lib/artifact/page-registry";
 import BlockRenderer from "@/components/blocks/BlockRenderer";
 
 // ISR設定
@@ -35,16 +36,31 @@ interface PageProps {
 
 /**
  * Artifactキーを生成
+ *
+ * GOV.UK式フラットURL対応:
+ *   - /kokuho → {municipality}/services/health/kokuho.json
+ *   - /topics/health → {municipality}/topics/health.json
+ *   - / → {municipality}/index.json
+ *
  * Note: Next.js App Router already decodes URL params, but we decode again for safety
  */
 function buildArtifactKey(municipality: string, path?: string[]): string {
   // Decode municipality and path components
   const decodedMunicipality = decodeURIComponent(municipality);
-  if (!path || path.length === 0) {
-    return `${decodedMunicipality}/index.json`;
+  const decodedPath = path?.map(p => decodeURIComponent(p)) ?? [];
+
+  // page-registryを使用してパスを解決
+  const artifactPath = resolveArtifactPath(decodedPath);
+
+  if (!artifactPath) {
+    // 解決できない場合は従来通りの処理
+    if (decodedPath.length === 0) {
+      return `${decodedMunicipality}/index.json`;
+    }
+    return `${decodedMunicipality}/${decodedPath.join("/")}.json`;
   }
-  const decodedPath = path.map(p => decodeURIComponent(p));
-  return `${decodedMunicipality}/${decodedPath.join("/")}.json`;
+
+  return `${decodedMunicipality}/${artifactPath}.json`;
 }
 
 export default async function ArtifactPage({ params }: PageProps) {

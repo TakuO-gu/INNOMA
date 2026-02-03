@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "page_id": "sample-services-employment-labor-consultation",
   "municipality_id": "sample",
-  "path": "/services/employment/labor-consultation",
+  "path": "/labor-consultation",
   "title": "労働相談・労働紛争",
   "description": "総合労働相談コーナー、あっせん、労働審判",
   "content_type": "guide",
@@ -33,11 +33,11 @@
           },
           {
             "label": "仕事・労働",
-            "href": "/topics/employment"
+            "href": "/employment"
           },
           {
             "label": "労働相談・労働紛争",
-            "href": "/services/employment/labor-consultation"
+            "href": "/labor-consultation"
           }
         ]
       }
@@ -111,15 +111,15 @@
         "items": [
           {
             "title": "労働基準",
-            "href": "/services/employment/labor-standards"
+            "href": "/labor-standards"
           },
           {
             "title": "ハラスメント",
-            "href": "/services/employment/harassment"
+            "href": "/harassment"
           },
           {
             "title": "法律相談",
-            "href": "/services/civic/legal-support"
+            "href": "/legal-support"
           }
         ]
       }

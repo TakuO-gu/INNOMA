@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "page_id": "sample-services-business-succession",
   "municipality_id": "sample",
-  "path": "/services/business/succession",
+  "path": "/succession",
   "title": "事業承継・M&A",
   "description": "事業承継税制、後継者育成、M&A支援",
   "content_type": "guide",
@@ -33,11 +33,11 @@
           },
           {
             "label": "事業・経営",
-            "href": "/topics/business"
+            "href": "/business"
           },
           {
             "label": "事業承継・M&A",
-            "href": "/services/business/succession"
+            "href": "/succession"
           }
         ]
       }
@@ -148,15 +148,15 @@
         "items": [
           {
             "title": "法人設立",
-            "href": "/services/business/incorporation"
+            "href": "/incorporation"
           },
           {
             "title": "廃業届",
-            "href": "/services/business/closure"
+            "href": "/closure"
           },
           {
             "title": "固定資産税",
-            "href": "/services/tax/kotei"
+            "href": "/kotei"
           }
         ]
       }

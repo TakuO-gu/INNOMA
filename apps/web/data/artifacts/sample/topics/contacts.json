@@ -1,0 +1,94 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "sample-contacts",
+  "municipality_id": "sample",
+  "path": "/contacts",
+  "title": "問い合わせ先一覧",
+  "description": "各課窓口、電話番号、受付時間、アクセスに関する情報",
+  "content_type": "directory",
+  "service_category": "government",
+  "audience": [
+    "residents"
+  ],
+  "topic": [],
+  "source": {
+    "source_url": "template://sample/contacts",
+    "fetched_at": "2026-01-20T10:33:17.311Z",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "2026-01-20T10:33:17.311Z",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "問い合わせ先一覧",
+            "href": "/contacts"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "問い合わせ先一覧"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "サンプル市役所の各課窓口、電話番号、受付時間をご案内しています"
+      }
+    },
+    {
+      "id": "contact-list-1",
+      "type": "RichText",
+      "props": {
+        "content": "<p>お問い合わせ内容に応じた担当窓口をご案内します。</p>"
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "総務課",
+        "phone": "03-1234-5678",
+        "email": "info@sample-city.lg.jp",
+        "hours": "平日 8:30〜17:15（土日祝日・年末年始を除く）",
+        "address": "〒100-0001 東京都サンプル市中央1-1-1"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
+      }
+    }
+  ],
+  "search": {
+    "summary": "サンプル市役所の問い合わせ先一覧。各課窓口、電話番号、受付時間、アクセス情報。",
+    "keywords": [
+      "問い合わせ",
+      "連絡先",
+      "電話番号",
+      "窓口",
+      "受付時間",
+      "市役所",
+      "アクセス"
+    ],
+    "plain_text": "問い合わせ先一覧。サンプル市役所の各課窓口、電話番号、受付時間、アクセス情報。"
+  }
+}

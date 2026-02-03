@@ -33,7 +33,7 @@
           },
           {
             "label": "届出・申請・証明書",
-            "href": "/topics/registration"
+            "href": "/registration"
           }
         ]
       }
@@ -59,52 +59,52 @@
         "items": [
           {
             "title": "転入届",
-            "href": "/services/registration/tennyu",
+            "href": "/tennyu",
             "description": "他の市区町村から引っ越してきたとき"
           },
           {
             "title": "転出届",
-            "href": "/services/registration/tenshutsu",
+            "href": "/tenshutsu",
             "description": "他の市区町村へ引っ越すとき"
           },
           {
             "title": "転居届",
-            "href": "/services/registration/tenkyo",
+            "href": "/tenkyo",
             "description": "市内で住所が変わったとき"
           },
           {
             "title": "出生届",
-            "href": "/services/registration/shussei",
+            "href": "/shussei",
             "description": "お子さんが生まれたときの届出"
           },
           {
             "title": "婚姻届",
-            "href": "/services/registration/konin",
+            "href": "/konin",
             "description": "結婚の届出手続き"
           },
           {
             "title": "死亡届",
-            "href": "/services/registration/shibou",
+            "href": "/shibou",
             "description": "ご家族が亡くなられたときの届出"
           },
           {
             "title": "戸籍謄本・住民票",
-            "href": "/services/registration/koseki",
+            "href": "/koseki",
             "description": "戸籍・住民票の取得方法"
           },
           {
             "title": "住民票の写し",
-            "href": "/services/registration/juminhyo",
+            "href": "/juminhyo",
             "description": "住民票の取得方法"
           },
           {
             "title": "印鑑登録",
-            "href": "/services/registration/inkan",
+            "href": "/inkan",
             "description": "印鑑登録と証明書の取得"
           },
           {
             "title": "マイナンバーカード",
-            "href": "/services/registration/mynumber",
+            "href": "/mynumber",
             "description": "マイナンバーカードの申請・更新"
           }
         ]

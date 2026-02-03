@@ -1,0 +1,588 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "takaoka-services-tax-zeishoumei",
+  "municipality_id": "takaoka",
+  "path": "/zeishoumei",
+  "title": "税証明書",
+  "description": "所得証明書、課税証明書、納税証明書の取得方法、必要書類、手数料について",
+  "content_type": "guide",
+  "service_category": "government",
+  "audience": [
+    "residents"
+  ],
+  "topic": [],
+  "source": {
+    "source_url": "template://utashinai/services/tax/zeishoumei",
+    "fetched_at": "2026-02-03T01:50:20.555Z",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "2026-02-03T01:50:20.555Z",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "税金",
+            "href": "/tax"
+          },
+          {
+            "label": "税証明書",
+            "href": "/zeishoumei"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "税証明書"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "所得証明書、課税証明書、納税証明書など、税に関する各種証明書を発行しています。窓口、郵送、コンビニで取得できます。"
+      }
+    },
+    {
+      "id": "section-shurui",
+      "type": "Section",
+      "props": {
+        "heading": "証明書の種類",
+        "level": 2,
+        "content": []
+      }
+    },
+    {
+      "id": "desclist-shurui",
+      "type": "DescriptionList",
+      "props": {
+        "items": [
+          {
+            "term": "所得証明書",
+            "description": "前年中の所得金額を証明するもの。扶養申請、児童手当、奨学金申請などに使用"
+          },
+          {
+            "term": "課税証明書",
+            "description": "住民税の課税額を証明するもの。所得金額も記載。ローン審査、公営住宅申込などに使用"
+          },
+          {
+            "term": "非課税証明書",
+            "description": "住民税が課税されていないことを証明するもの"
+          },
+          {
+            "term": "納税証明書",
+            "description": "市税（住民税、固定資産税、軽自動車税など）の納付状況を証明するもの。車検、入札参加などに使用"
+          }
+        ]
+      }
+    },
+    {
+      "id": "notification-nendo",
+      "type": "NotificationBanner",
+      "props": {
+        "severity": "info",
+        "title": "証明年度について",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "所得証明書・課税証明書は、毎年6月から新年度分が発行可能になります。例：令和6年度の証明書（令和5年中の所得）は令和6年6月から発行。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "table-tesuryo",
+      "type": "Table",
+      "props": {
+        "heading": "手数料",
+        "rows": [
+          {
+            "label": "所得証明書・課税証明書（窓口）",
+            "value": "{{zeishoumei_shotoku_fee}}"
+          },
+          {
+            "label": "所得証明書・課税証明書（コンビニ）",
+            "value": "{{zeishoumei_shotoku_cvs_fee}}"
+          },
+          {
+            "label": "納税証明書",
+            "value": "{{zeishoumei_nouzei_fee}}"
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-madoguchi",
+      "type": "Section",
+      "props": {
+        "heading": "窓口で請求する",
+        "level": 2,
+        "content": []
+      }
+    },
+    {
+      "id": "table-seikyusha",
+      "type": "Table",
+      "props": {
+        "heading": "請求できる人",
+        "rows": [
+          {
+            "label": "代理人",
+            "value": "委任状が必要"
+          }
+        ]
+      }
+    },
+    {
+      "id": "table-hitsuyou",
+      "type": "Table",
+      "props": {
+        "heading": "必要なもの",
+        "rows": [
+          {
+            "label": "本人確認書類",
+            "value": "マイナンバーカード、運転免許証など"
+          },
+          {
+            "label": "委任状",
+            "value": "代理人が請求する場合"
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-basho",
+      "type": "Section",
+      "props": {
+        "heading": "受付場所・時間",
+        "level": 3,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "{{zeishoumei_madoguchi}}"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-cvs",
+      "type": "Section",
+      "props": {
+        "heading": "コンビニで取得する",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "マイナンバーカードがあれば、全国のコンビニのマルチコピー機で取得できます。"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "利用時間：6:30〜23:00（年末年始・メンテナンス時を除く）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "必要なもの：マイナンバーカード、4桁の暗証番号"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "取得可能：所得証明書、課税証明書"
+                    }
+                  ]
+                }
+              ]
+            ]
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "コンビニ交付は窓口より手数料が安くなります。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "notification-cvs",
+      "type": "NotificationBanner",
+      "props": {
+        "severity": "warning",
+        "title": "コンビニで取得できない場合",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "納税証明書はコンビニでは取得できません。窓口または郵送で請求してください。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-yuso",
+      "type": "Section",
+      "props": {
+        "heading": "郵送で請求する",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "窓口に来庁できない場合は、郵送で請求できます。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "table-yuso",
+      "type": "Table",
+      "props": {
+        "heading": "送付するもの",
+        "rows": [
+          {
+            "label": "申請書",
+            "value": "市ホームページからダウンロード、または便せん等に必要事項を記入"
+          },
+          {
+            "label": "定額小為替",
+            "value": "手数料分（郵便局で購入）"
+          },
+          {
+            "label": "返信用封筒",
+            "value": "切手貼付、住民登録地宛て"
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-yuso-kisai",
+      "type": "Section",
+      "props": {
+        "heading": "申請書の記載事項",
+        "level": 3,
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "住所・氏名・生年月日・電話番号"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "必要な証明書の種類"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "証明が必要な年度"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "必要通数"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "使用目的"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-shaken",
+      "type": "Section",
+      "props": {
+        "heading": "車検用納税証明書について",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "軽自動車税（種別割）の納税証明書は、車検時に必要です。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "令和5年1月から、軽自動車税納付確認システム（軽JNKS）の運用開始により、車検時の納税証明書の提示が原則不要になりました。"
+              },
+              {
+                "text": "ただし、納付後すぐ（2〜3週間程度）は確認できない場合がありますので、納税証明書をお持ちください。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "related-links-1",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "住民税",
+            "href": "/juminzei"
+          },
+          {
+            "title": "固定資産税",
+            "href": "/kotei"
+          },
+          {
+            "title": "軽自動車税",
+            "href": "/keijidosha"
+          },
+          {
+            "title": "住民票の写し",
+            "href": "/juminhyo"
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-対象-1769919363219",
+      "type": "Section",
+      "props": {
+        "heading": "税証明書の対象となる方",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "詳細は担当課にお問い合わせください。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-必要-1769919363219",
+      "type": "Section",
+      "props": {
+        "heading": "税証明書に必要なもの",
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "本人確認書類（マイナンバーカード、運転免許証など）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "印鑑（認印可）"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-方法-1769919363219",
+      "type": "Section",
+      "props": {
+        "heading": "税証明書の手続き方法",
+        "content": [
+          {
+            "type": "list",
+            "ordered": true,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "必要書類を準備します。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "窓口で申請書を記入します。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "書類を提出し、確認を受けます。"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{zeimu_department}}",
+        "phone": "{{zeimu_phone}}",
+        "email": "{{zeimu_email}}",
+        "hours": "{{city_hall_hours}}",
+        "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "terms-1769899964526",
+      "type": "Section",
+      "props": {
+        "heading": "用語の説明",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "課税証明書",
+                "bold": true
+              },
+              {
+                "text": "：税金がいくらか証明する書類"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "非課税証明書",
+                "bold": true
+              },
+              {
+                "text": "：税金がかからないことを証明する書類"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
+      }
+    }
+  ],
+  "search": {
+    "summary": "税証明書の発行。所得証明書、課税証明書、納税証明書を窓口・コンビニ・郵送で取得可能。",
+    "keywords": [
+      "税証明書",
+      "所得証明書",
+      "課税証明書",
+      "納税証明書",
+      "非課税証明書",
+      "証明書",
+      "コンビニ交付"
+    ],
+    "plain_text": "税証明書。所得証明書、課税証明書、納税証明書を発行。窓口、コンビニ、郵送で取得可能。本人確認書類が必要。コンビニはマイナンバーカードで利用可能。"
+  }
+}

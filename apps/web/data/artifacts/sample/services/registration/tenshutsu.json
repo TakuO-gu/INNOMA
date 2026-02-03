@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "page_id": "sample-services-registration-tenshutsu",
   "municipality_id": "sample",
-  "path": "/services/registration/tenshutsu",
+  "path": "/tenshutsu",
   "title": "転出届",
   "description": "市外へ引っ越すときの転出届の届出方法、必要書類について",
   "content_type": "step_by_step",
@@ -33,11 +33,11 @@
           },
           {
             "label": "届出・証明",
-            "href": "/topics/registration"
+            "href": "/registration"
           },
           {
             "label": "転出届",
-            "href": "/services/registration/tenshutsu"
+            "href": "/tenshutsu"
           }
         ]
       }
@@ -353,31 +353,31 @@
         "items": [
           {
             "title": "転入届",
-            "href": "/services/registration/tennyu"
+            "href": "/tennyu"
           },
           {
             "title": "住民票",
-            "href": "/services/registration/juminhyo"
+            "href": "/juminhyo"
           },
           {
             "title": "マイナンバーカード",
-            "href": "/services/registration/mynumber"
+            "href": "/mynumber"
           },
           {
             "title": "印鑑登録",
-            "href": "/services/registration/inkan"
+            "href": "/inkan"
           },
           {
             "title": "国民健康保険",
-            "href": "/services/health/kokuho"
+            "href": "/kokuho"
           },
           {
             "title": "児童手当",
-            "href": "/services/childcare/jidou-teate"
+            "href": "/jidou-teate"
           },
           {
             "title": "引越し手続き一覧",
-            "href": "/services/housing/moving-checklist"
+            "href": "/moving-checklist"
           }
         ]
       }

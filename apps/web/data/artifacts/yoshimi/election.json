@@ -1,0 +1,278 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "yoshimi-services-civic-election",
+  "municipality_id": "yoshimi",
+  "path": "/election",
+  "title": "選挙・投票",
+  "description": "選挙日程、投票所一覧、不在者投票、期日前投票",
+  "content_type": "guide",
+  "service_category": "community",
+  "audience": [
+    "residents"
+  ],
+  "topic": [],
+  "source": {
+    "source_url": "template://yoshimi/services/civic/election",
+    "fetched_at": "2026-02-03T01:50:20.576Z",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "2026-02-03T01:50:20.576Z",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "市民参加・権利行使",
+            "href": "/civic"
+          },
+          {
+            "label": "選挙・投票",
+            "href": "/election"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "選挙・投票"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "選挙の投票方法、期日前投票、不在者投票についてご案内します。"
+      }
+    },
+    {
+      "id": "section-geihhgjyh",
+      "type": "Section",
+      "props": {
+        "heading": "投票できる方",
+        "level": 2,
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "日本国民で満18歳以上の方"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "選挙人名簿に登録されている方（吉見町に3か月以上居住）"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-orwda4ntu",
+      "type": "Section",
+      "props": {
+        "heading": "期日前投票",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "投票日に仕事や旅行などで投票所に行けない方は、公示日（告示日）の翌日から投票日前日まで期日前投票ができます。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-g26wav6cf",
+      "type": "Section",
+      "props": {
+        "heading": "不在者投票",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "出張や入院などで吉見町以外の場所にいる方は、滞在先の選挙管理委員会で投票できます。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "related-links-mk7u3h3gy",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "選挙人名簿",
+            "href": "/voter-registration"
+          },
+          {
+            "title": "転入届",
+            "href": "/tennyu"
+          },
+          {
+            "title": "転出届",
+            "href": "/tenshutsu"
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-対象-1769919363155",
+      "type": "Section",
+      "props": {
+        "heading": "選挙・投票の対象となる方",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "詳細は担当課にお問い合わせください。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-必要-1769919363155",
+      "type": "Section",
+      "props": {
+        "heading": "選挙・投票に必要なもの",
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "本人確認書類（マイナンバーカード、運転免許証など）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "印鑑（認印可）"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-方法-1769919363155",
+      "type": "Section",
+      "props": {
+        "heading": "選挙・投票の手続き方法",
+        "content": [
+          {
+            "type": "list",
+            "ordered": true,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "必要書類を準備します。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "窓口で申請書を記入します。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "書類を提出し、確認を受けます。"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{election_commission}}",
+        "phone": "{{election_commission_phone}}",
+        "email": "{{election_commission_email}}",
+        "hours": "{{city_hall_hours}}",
+        "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
+      }
+    }
+  ],
+  "search": {
+    "summary": "選挙・投票の案内。投票資格、期日前投票、不在者投票。",
+    "keywords": [
+      "選挙",
+      "投票",
+      "期日前投票",
+      "不在者投票",
+      "選挙権"
+    ],
+    "plain_text": "選挙・投票。18歳以上の日本国民で選挙人名簿に登録されている方が投票可能。期日前投票、不在者投票も可能。"
+  }
+}

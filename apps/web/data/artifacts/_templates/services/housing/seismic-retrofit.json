@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "page_id": "sample-services-housing-seismic-retrofit",
   "municipality_id": "sample",
-  "path": "/services/housing/seismic-retrofit",
+  "path": "/seismic-retrofit",
   "title": "耐震診断・耐震改修補助",
   "description": "木造住宅の耐震診断・耐震改修費用の補助",
   "content_type": "guide",
@@ -33,11 +33,11 @@
           },
           {
             "label": "住まい・引越し",
-            "href": "/topics/housing"
+            "href": "/housing"
           },
           {
             "label": "耐震診断・耐震改修補助",
-            "href": "/services/housing/seismic-retrofit"
+            "href": "/seismic-retrofit"
           }
         ]
       }
@@ -173,19 +173,19 @@
         "items": [
           {
             "title": "リフォーム補助",
-            "href": "/services/housing/reform-subsidy"
+            "href": "/reform-subsidy"
           },
           {
             "title": "建築確認申請",
-            "href": "/services/housing/building-permit"
+            "href": "/building-permit"
           },
           {
             "title": "ハザードマップ",
-            "href": "/services/disaster/hazard-map"
+            "href": "/hazard-map"
           },
           {
             "title": "避難所",
-            "href": "/services/disaster/hinanjo"
+            "href": "/hinanjo"
           }
         ]
       }

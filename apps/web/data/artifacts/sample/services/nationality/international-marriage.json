@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "page_id": "sample-services-nationality-international-marriage",
   "municipality_id": "sample",
-  "path": "/services/nationality/international-marriage",
+  "path": "/international-marriage",
   "title": "国際結婚",
   "description": "外国人との婚姻届、婚姻要件具備証明書、在留資格変更",
   "content_type": "guide",
@@ -34,11 +34,11 @@
           },
           {
             "label": "戸籍・国籍・在留",
-            "href": "/topics/nationality"
+            "href": "/nationality"
           },
           {
             "label": "国際結婚",
-            "href": "/services/nationality/international-marriage"
+            "href": "/international-marriage"
           }
         ]
       }
@@ -196,19 +196,19 @@
         "items": [
           {
             "title": "婚姻届",
-            "href": "/services/registration/konin"
+            "href": "/konin"
           },
           {
             "title": "ビザ・在留資格",
-            "href": "/services/nationality/visa"
+            "href": "/visa"
           },
           {
             "title": "外国人相談",
-            "href": "/services/nationality/consultation"
+            "href": "/consultation"
           },
           {
             "title": "戸籍",
-            "href": "/services/registration/koseki"
+            "href": "/koseki"
           }
         ]
       }

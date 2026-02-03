@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "page_id": "sample-services-environment-sodaigomi",
   "municipality_id": "sample",
-  "path": "/services/environment/sodaigomi",
+  "path": "/sodaigomi",
   "title": "粗大ごみの出し方",
   "description": "粗大ごみの出し方。申込方法、手数料、収集日など。",
   "content_type": "step_by_step",
@@ -33,11 +33,11 @@
           },
           {
             "label": "環境・ごみ",
-            "href": "/topics/environment"
+            "href": "/environment"
           },
           {
             "label": "粗大ごみの出し方",
-            "href": "/services/environment/sodaigomi"
+            "href": "/sodaigomi"
           }
         ]
       }
@@ -269,15 +269,15 @@
         "items": [
           {
             "title": "ごみの出し方（分別ガイド）",
-            "href": "/services/environment/gomi"
+            "href": "/gomi"
           },
           {
             "title": "家電リサイクル",
-            "href": "/services/environment/kaden-recycle"
+            "href": "/kaden-recycle"
           },
           {
             "title": "不用品のリユース",
-            "href": "/services/environment/reuse"
+            "href": "/reuse"
           }
         ]
       }

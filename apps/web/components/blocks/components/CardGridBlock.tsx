@@ -17,6 +17,7 @@
 import React from "react";
 import NextLink from "next/link";
 import { useMunicipality, prefixInternalLink } from "../MunicipalityContext";
+import { budouxParse } from "@/components/BudouX";
 
 interface CardItem {
   title: string;
@@ -302,7 +303,7 @@ export function CardGridBlock({ props }: CardGridBlockProps) {
   return (
     <div className="card-grid-block mt-12 mb-8">
       {heading && (
-        <h2 className="text-std-24B-150 text-solid-gray-900 mb-6">{heading}</h2>
+        <h2 className="text-std-24B-150 text-solid-gray-900 mb-6 budoux">{budouxParse(heading)}</h2>
       )}
       <ul className={`grid ${gridColsClass[columns]} gap-4 list-none p-0 m-0`}>
         {items.map((item, index) => (

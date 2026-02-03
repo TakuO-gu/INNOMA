@@ -1,0 +1,439 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "takaoka-services-registration-tenkyo",
+  "municipality_id": "takaoka",
+  "path": "/tenkyo",
+  "title": "転居届",
+  "description": "市内で住所が変わったときの転居届の届出方法について",
+  "content_type": "step_by_step",
+  "service_category": "government",
+  "audience": [
+    "residents"
+  ],
+  "topic": [],
+  "source": {
+    "source_url": "template://atami/services/registration/tenkyo",
+    "fetched_at": "2026-01-20T10:33:17.311Z",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "2026-01-20T10:33:17.311Z",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "届出・証明",
+            "href": "/registration"
+          },
+          {
+            "label": "転居届",
+            "href": "/tenkyo"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "転居届"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "市内で住所が変わったときは、転居届を届け出てください。引っ越し後14日以内に届出が必要です。"
+      }
+    },
+    {
+      "id": "section-gx2aa29kz",
+      "type": "Section",
+      "props": {
+        "heading": "届出期間",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "新しい住所に住み始めた日から"
+              },
+              {
+                "text": "14日以内",
+                "bold": true
+              },
+              {
+                "text": "に届け出てください。届出が遅れると、過料（最高5万円）の対象となる場合があります。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "step-nav-1",
+      "type": "StepNavigation",
+      "props": {
+        "currentStep": 0,
+        "steps": [
+          {
+            "title": "必要書類の準備",
+            "body": "本人確認書類、マイナンバーカードなどを準備します。",
+            "documents": [
+              "本人確認書類",
+              "マイナンバーカード"
+            ]
+          },
+          {
+            "title": "窓口で届出",
+            "body": "市民課窓口で転居届を届出します。",
+            "documents": []
+          },
+          {
+            "title": "住所変更の手続き",
+            "body": "マイナンバーカード、国民健康保険証などの住所変更を行います。",
+            "documents": []
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-oh3sewykh-table",
+      "type": "Section",
+      "props": {
+        "heading": "届出に必要なもの",
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "届出人の本人確認書類（マイナンバーカード、運転免許証など）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "マイナンバーカード（転居する方全員分。住所変更が必要）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "国民健康保険証（加入している場合。住所変更が必要）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "介護保険被保険者証（該当する場合）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "在留カード（外国籍の方）"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-idmysukv5-table",
+      "type": "Section",
+      "props": {
+        "heading": "届出できる人",
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "本人"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "同一世帯の方"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "代理人（委任状が必要）"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-qbtbkd5lq",
+      "type": "Section",
+      "props": {
+        "heading": "転居に伴うその他の手続き",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "以下の手続きも必要に応じて行ってください。"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "小中学校の転校手続き（学区が変わる場合）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "児童手当の届出（住所変更届）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "運転免許証の住所変更（警察署または運転免許センター）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "水道・ガス・電気の届出"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "郵便局への転送届"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "related-links-1",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "住民票",
+            "href": "/juminhyo"
+          },
+          {
+            "title": "マイナンバーカード",
+            "href": "/mynumber"
+          },
+          {
+            "title": "印鑑登録",
+            "href": "/inkan"
+          },
+          {
+            "title": "国民健康保険",
+            "href": "/kokuho"
+          },
+          {
+            "title": "児童手当",
+            "href": "/jidou-teate"
+          },
+          {
+            "title": "引越し手続き一覧",
+            "href": "/moving-checklist"
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-対象-1769919363209",
+      "type": "Section",
+      "props": {
+        "heading": "転居届の対象となる方",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "詳細は担当課にお問い合わせください。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-方法-1769919363209",
+      "type": "Section",
+      "props": {
+        "heading": "転居届の手続き方法",
+        "content": [
+          {
+            "type": "list",
+            "ordered": true,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "必要書類を準備します。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "窓口で申請書を記入します。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "書類を提出し、確認を受けます。"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{shimin_department}}",
+        "phone": "{{shimin_phone}}",
+        "email": "{{shimin_email}}",
+        "hours": "{{city_hall_hours}}",
+        "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "terms-1769899964518",
+      "type": "Section",
+      "props": {
+        "heading": "用語の説明",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "被保険者",
+                "bold": true
+              },
+              {
+                "text": "：保険に加入している方"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
+      }
+    }
+  ],
+  "search": {
+    "summary": "転居届の届出方法。市内で住所が変わったときに届出。引っ越し後14日以内。",
+    "keywords": [
+      "転居届",
+      "引っ越し",
+      "住所変更",
+      "市内"
+    ],
+    "plain_text": "転居届。市内で住所が変わったときに届出。引っ越し後14日以内に届出。本人確認書類、マイナンバーカード、国民健康保険証などが必要。"
+  }
+}

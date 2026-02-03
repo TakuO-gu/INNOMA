@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "page_id": "sample-services-land-fishery",
   "municipality_id": "sample",
-  "path": "/services/land/fishery",
+  "path": "/fishery",
   "title": "漁業・水産業",
   "description": "漁業権、漁業許可、漁業補助金、水産資源管理",
   "content_type": "guide",
@@ -33,11 +33,11 @@
           },
           {
             "label": "土地・農林水産",
-            "href": "/topics/land"
+            "href": "/land"
           },
           {
             "label": "漁業・水産業",
-            "href": "/services/land/fishery"
+            "href": "/fishery"
           }
         ]
       }
@@ -161,11 +161,11 @@
         "items": [
           {
             "title": "農業補助金",
-            "href": "/services/land/agriculture-subsidy"
+            "href": "/agriculture-subsidy"
           },
           {
             "title": "許認可申請",
-            "href": "/services/business/permits"
+            "href": "/permits"
           }
         ]
       }

@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "page_id": "sample-services-nationality-japanese-class",
   "municipality_id": "sample",
-  "path": "/services/nationality/japanese-class",
+  "path": "/japanese-class",
   "title": "日本語教室・多文化共生",
   "description": "外国人向け日本語教室、多文化共生センター、国際交流",
   "content_type": "guide",
@@ -33,11 +33,11 @@
           },
           {
             "label": "戸籍・国籍・在留",
-            "href": "/topics/nationality"
+            "href": "/nationality"
           },
           {
             "label": "日本語教室・多文化共生",
-            "href": "/services/nationality/japanese-class"
+            "href": "/japanese-class"
           }
         ]
       }
@@ -210,15 +210,15 @@
         "items": [
           {
             "title": "外国人相談",
-            "href": "/services/nationality/consultation"
+            "href": "/consultation"
           },
           {
             "title": "ビザ・在留資格",
-            "href": "/services/nationality/visa"
+            "href": "/visa"
           },
           {
             "title": "外国人登録",
-            "href": "/services/nationality/foreign-registration"
+            "href": "/foreign-registration"
           }
         ]
       }

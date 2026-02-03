@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "page_id": "sample-services-driving-parking",
   "municipality_id": "sample",
-  "path": "/services/driving/parking",
+  "path": "/parking",
   "title": "市営駐車場・駐輪場",
   "description": "{{municipality_name}}の公営駐車場・駐輪場の利用案内",
   "content_type": "guide",
@@ -33,11 +33,11 @@
           },
           {
             "label": "運転・車両",
-            "href": "/topics/driving"
+            "href": "/driving"
           },
           {
             "label": "市営駐車場・駐輪場",
-            "href": "/services/driving/parking"
+            "href": "/parking"
           }
         ]
       }
@@ -331,15 +331,15 @@
         "items": [
           {
             "title": "車庫証明",
-            "href": "/services/driving/garage-certificate"
+            "href": "/garage-certificate"
           },
           {
             "title": "自動車登録",
-            "href": "/services/driving/registration"
+            "href": "/registration"
           },
           {
             "title": "交通安全",
-            "href": "/services/driving/traffic-safety"
+            "href": "/traffic-safety"
           }
         ]
       }

@@ -1,0 +1,194 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "hayakawa-services-driving-traffic-safety",
+  "municipality_id": "hayakawa",
+  "path": "/traffic-safety",
+  "title": "交通安全対策",
+  "description": "交通安全運動、自転車保険、チャイルドシート助成",
+  "content_type": "guide",
+  "service_category": "government",
+  "audience": [
+    "residents"
+  ],
+  "topic": [],
+  "source": {
+    "source_url": "template://hayakawa/services/driving/traffic-safety",
+    "fetched_at": "2026-02-03T01:50:19.595Z",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "2026-02-03T01:50:19.595Z",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "運転・車両",
+            "href": "/driving"
+          },
+          {
+            "label": "交通安全対策",
+            "href": "/traffic-safety"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "交通安全対策"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "早川町の交通安全に関する取組みと支援制度をご案内します。"
+      }
+    },
+    {
+      "id": "section-v3d2hsnn8",
+      "type": "Section",
+      "props": {
+        "heading": "自転車保険",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "{{prefecture_name}}では自転車保険への加入が義務化されています。自転車事故で加害者になった場合の損害賠償に備えましょう。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-d7ky0nds8",
+      "type": "Section",
+      "props": {
+        "heading": "チャイルドシート購入補助",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "{{childseat_subsidy_description}}"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-tldvkh2al",
+      "type": "Section",
+      "props": {
+        "heading": "交通安全運動",
+        "level": 2,
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "春の全国交通安全運動（4月）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "秋の全国交通安全運動（9月）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "年末の交通安全運動（12月）"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "related-links-6q0vt3fxz",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "運転免許証",
+            "href": "/license"
+          },
+          {
+            "title": "高齢者運転",
+            "href": "/senior-driving"
+          },
+          {
+            "title": "交通事故",
+            "href": "/accident"
+          },
+          {
+            "title": "駐車場",
+            "href": "/parking"
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{driving_department}}",
+        "phone": "{{driving_phone}}",
+        "email": "{{driving_email}}",
+        "hours": "{{city_hall_hours}}",
+        "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
+      }
+    }
+  ],
+  "search": {
+    "summary": "交通安全対策の案内。自転車保険、チャイルドシート補助、交通安全運動。",
+    "keywords": [
+      "交通安全",
+      "自転車保険",
+      "チャイルドシート",
+      "交通安全運動"
+    ],
+    "plain_text": "交通安全対策。自転車保険の加入義務化。チャイルドシート購入補助。春・秋・年末の交通安全運動。"
+  }
+}

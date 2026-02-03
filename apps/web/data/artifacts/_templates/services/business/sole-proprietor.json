@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "page_id": "sample-services-business-sole-proprietor",
   "municipality_id": "sample",
-  "path": "/services/business/sole-proprietor",
+  "path": "/sole-proprietor",
   "title": "個人事業主・開業届",
   "description": "開業届、青色申告承認申請、屋号の届出",
   "content_type": "guide",
@@ -34,11 +34,11 @@
           },
           {
             "label": "事業・経営",
-            "href": "/topics/business"
+            "href": "/business"
           },
           {
             "label": "個人事業主・開業届",
-            "href": "/services/business/sole-proprietor"
+            "href": "/sole-proprietor"
           }
         ]
       }
@@ -190,27 +190,27 @@
         "items": [
           {
             "title": "許認可申請",
-            "href": "/services/business/permits"
+            "href": "/permits"
           },
           {
             "title": "補助金・助成金",
-            "href": "/services/business/subsidies"
+            "href": "/subsidies"
           },
           {
             "title": "融資制度",
-            "href": "/services/business/financing"
+            "href": "/financing"
           },
           {
             "title": "国民健康保険",
-            "href": "/services/health/kokuho"
+            "href": "/kokuho"
           },
           {
             "title": "年金",
-            "href": "/services/benefits/nenkin"
+            "href": "/nenkin"
           },
           {
             "title": "住民税",
-            "href": "/services/tax/juminzei"
+            "href": "/juminzei"
           }
         ]
       }

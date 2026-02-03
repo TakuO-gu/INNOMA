@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "page_id": "sample-services-tax-zeishoumei",
   "municipality_id": "sample",
-  "path": "/services/tax/zeishoumei",
+  "path": "/zeishoumei",
   "title": "税証明書",
   "description": "所得証明書、課税証明書、納税証明書の取得方法、必要書類、手数料について",
   "content_type": "guide",
@@ -33,11 +33,11 @@
           },
           {
             "label": "税金",
-            "href": "/topics/tax"
+            "href": "/tax"
           },
           {
             "label": "税証明書",
-            "href": "/services/tax/zeishoumei"
+            "href": "/zeishoumei"
           }
         ]
       }
@@ -406,19 +406,19 @@
         "items": [
           {
             "title": "住民税",
-            "href": "/services/tax/juminzei"
+            "href": "/juminzei"
           },
           {
             "title": "固定資産税",
-            "href": "/services/tax/kotei"
+            "href": "/kotei"
           },
           {
             "title": "軽自動車税",
-            "href": "/services/tax/keijidosha"
+            "href": "/keijidosha"
           },
           {
             "title": "住民票の写し",
-            "href": "/services/registration/juminhyo"
+            "href": "/juminhyo"
           }
         ]
       }

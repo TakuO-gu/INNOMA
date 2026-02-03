@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "page_id": "sample-services-business-incorporation",
   "municipality_id": "sample",
-  "path": "/services/business/incorporation",
+  "path": "/incorporation",
   "title": "法人設立（株式会社・合同会社）",
   "description": "会社設立の手続き、定款認証、登記申請",
   "content_type": "guide",
@@ -33,11 +33,11 @@
           },
           {
             "label": "事業・経営",
-            "href": "/topics/business"
+            "href": "/business"
           },
           {
             "label": "法人設立",
-            "href": "/services/business/incorporation"
+            "href": "/incorporation"
           }
         ]
       }
@@ -371,27 +371,27 @@
         "items": [
           {
             "title": "許認可申請",
-            "href": "/services/business/permits"
+            "href": "/permits"
           },
           {
             "title": "法人税",
-            "href": "/services/business/corporate-tax"
+            "href": "/corporate-tax"
           },
           {
             "title": "社会保険",
-            "href": "/services/business/business-insurance"
+            "href": "/business-insurance"
           },
           {
             "title": "補助金・助成金",
-            "href": "/services/business/subsidies"
+            "href": "/subsidies"
           },
           {
             "title": "融資制度",
-            "href": "/services/business/financing"
+            "href": "/financing"
           },
           {
             "title": "印鑑登録",
-            "href": "/services/registration/inkan"
+            "href": "/inkan"
           }
         ]
       }

@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "page_id": "sample-services-housing-public-housing",
   "municipality_id": "sample",
-  "path": "/services/housing/public-housing",
+  "path": "/public-housing",
   "title": "公営住宅（市営・県営住宅）",
   "description": "市営住宅・県営住宅の入居申込み・抽選案内",
   "content_type": "guide",
@@ -33,11 +33,11 @@
           },
           {
             "label": "住まい・引越し",
-            "href": "/topics/housing"
+            "href": "/housing"
           },
           {
             "label": "公営住宅",
-            "href": "/services/housing/public-housing"
+            "href": "/public-housing"
           }
         ]
       }
@@ -197,19 +197,19 @@
         "items": [
           {
             "title": "住宅手当",
-            "href": "/services/housing/housing-benefit"
+            "href": "/housing-benefit"
           },
           {
             "title": "引越し手続き一覧",
-            "href": "/services/housing/moving-checklist"
+            "href": "/moving-checklist"
           },
           {
             "title": "生活保護",
-            "href": "/services/welfare/seikatsu-hogo"
+            "href": "/seikatsu-hogo"
           },
           {
             "title": "転入届",
-            "href": "/services/registration/tennyu"
+            "href": "/tennyu"
           }
         ]
       }

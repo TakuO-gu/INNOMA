@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "page_id": "sample-services-health-kokuho",
   "municipality_id": "sample",
-  "path": "/services/health/kokuho",
+  "path": "/kokuho",
   "title": "国民健康保険",
   "description": "国民健康保険の加入・脱退・届出に関する情報",
   "content_type": "guide",
@@ -33,11 +33,11 @@
           },
           {
             "label": "社会保障・給付金",
-            "href": "/topics/benefits"
+            "href": "/benefits"
           },
           {
             "label": "国民健康保険",
-            "href": "/services/health/kokuho"
+            "href": "/kokuho"
           }
         ]
       }
@@ -615,31 +615,31 @@
         "items": [
           {
             "title": "後期高齢者医療",
-            "href": "/services/health/kouki"
+            "href": "/kouki"
           },
           {
             "title": "健康診断・検診",
-            "href": "/services/health/kenshin"
+            "href": "/kenshin"
           },
           {
             "title": "予防接種",
-            "href": "/services/health/yobosesshu"
+            "href": "/yobosesshu"
           },
           {
             "title": "転入届",
-            "href": "/services/registration/tennyu"
+            "href": "/tennyu"
           },
           {
             "title": "転出届",
-            "href": "/services/registration/tenshutsu"
+            "href": "/tenshutsu"
           },
           {
             "title": "年金",
-            "href": "/services/benefits/nenkin"
+            "href": "/nenkin"
           },
           {
             "title": "介護保険",
-            "href": "/services/welfare/kaigo"
+            "href": "/kaigo"
           }
         ]
       }

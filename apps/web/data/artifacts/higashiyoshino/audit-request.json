@@ -1,0 +1,253 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "higashiyoshino-services-civic-audit-request",
+  "municipality_id": "higashiyoshino",
+  "path": "/audit-request",
+  "title": "住民監査請求",
+  "description": "住民監査請求の要件、手続き、監査結果",
+  "content_type": "guide",
+  "service_category": "community",
+  "audience": [
+    "residents"
+  ],
+  "topic": [],
+  "source": {
+    "source_url": "template://higashiyoshino/services/civic/audit-request",
+    "fetched_at": "2026-02-03T01:50:19.637Z",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "2026-02-03T01:50:19.637Z",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "市民参加・権利行使",
+            "href": "/civic"
+          },
+          {
+            "label": "住民監査請求",
+            "href": "/audit-request"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "住民監査請求"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "東吉野村の財務に関する違法・不当な行為について、監査委員に監査を求めることができます。"
+      }
+    },
+    {
+      "id": "section-qs57m4lrp",
+      "type": "Section",
+      "props": {
+        "heading": "住民監査請求とは",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "地方自治体の長や職員による違法・不当な財務会計上の行為（公金の支出、財産の取得・処分、契約の締結など）について、監査委員に監査を求め、是正措置を講じるよう請求する制度です。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-ahoj6zq23",
+      "type": "Section",
+      "props": {
+        "heading": "請求できる人",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "東吉野村の住民であれば、1人でも請求できます。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-o61btyb5b",
+      "type": "Section",
+      "props": {
+        "heading": "請求対象となる行為",
+        "level": 2,
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "違法・不当な公金の支出"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "違法・不当な財産の取得・管理・処分"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "違法・不当な契約の締結・履行"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "違法・不当な債務その他の義務の負担"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "違法・不当に公金の賦課徴収を怠る事実"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "違法・不当に財産の管理を怠る事実"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-ck1nb88k0",
+      "type": "Section",
+      "props": {
+        "heading": "請求期間",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "当該行為のあった日または終わった日から1年以内（正当な理由があれば1年経過後も可能な場合あり）"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-2qdye4sa7",
+      "type": "Section",
+      "props": {
+        "heading": "監査結果に不服がある場合",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "監査結果に不服がある場合、住民訴訟を提起することができます。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "related-links-bwm8wuuit",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "行政不服申立て",
+            "href": "/administrative-appeal"
+          },
+          {
+            "title": "情報公開",
+            "href": "/information-disclosure"
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{audit_commission}}",
+        "phone": "{{audit_commission_phone}}",
+        "email": "{{audit_commission_email}}",
+        "hours": "{{city_hall_hours}}",
+        "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
+      }
+    }
+  ],
+  "search": {
+    "summary": "住民監査請求の案内。財務会計上の違法・不当行為の監査請求。",
+    "keywords": [
+      "住民監査請求",
+      "監査委員",
+      "住民訴訟",
+      "財務監査",
+      "公金"
+    ],
+    "plain_text": "住民監査請求。違法・不当な財務会計行為について監査を請求可能。住民1人でも請求できる。行為から1年以内。"
+  }
+}

@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "page_id": "sample-services-welfare-kaigo",
   "municipality_id": "sample",
-  "path": "/services/welfare/kaigo",
+  "path": "/kaigo",
   "title": "介護保険",
   "description": "介護保険制度の概要、要介護認定の申請方法、介護サービスの利用について",
   "content_type": "guide",
@@ -34,11 +34,11 @@
           },
           {
             "label": "福祉・介護",
-            "href": "/topics/welfare"
+            "href": "/welfare"
           },
           {
             "label": "介護保険",
-            "href": "/services/welfare/kaigo"
+            "href": "/kaigo"
           }
         ]
       }
@@ -386,27 +386,27 @@
         "items": [
           {
             "title": "高齢者福祉",
-            "href": "/services/welfare/koureisha"
+            "href": "/koureisha"
           },
           {
             "title": "地域包括支援センター",
-            "href": "/services/welfare/houkatsu"
+            "href": "/houkatsu"
           },
           {
             "title": "後期高齢者医療",
-            "href": "/services/health/kouki"
+            "href": "/kouki"
           },
           {
             "title": "国民健康保険",
-            "href": "/services/health/kokuho"
+            "href": "/kokuho"
           },
           {
             "title": "障害者福祉",
-            "href": "/services/welfare/shogai"
+            "href": "/shogai"
           },
           {
             "title": "年金",
-            "href": "/services/benefits/nenkin"
+            "href": "/nenkin"
           }
         ]
       }

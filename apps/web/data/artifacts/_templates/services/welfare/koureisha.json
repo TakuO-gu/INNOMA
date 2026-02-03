@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "page_id": "sample-services-welfare-koureisha",
   "municipality_id": "sample",
-  "path": "/services/welfare/koureisha",
+  "path": "/koureisha",
   "title": "高齢者福祉",
   "description": "高齢者向けの福祉サービス、支援制度の一覧",
   "content_type": "directory",
@@ -34,11 +34,11 @@
           },
           {
             "label": "福祉・介護",
-            "href": "/topics/welfare"
+            "href": "/welfare"
           },
           {
             "label": "高齢者福祉",
-            "href": "/services/welfare/koureisha"
+            "href": "/koureisha"
           }
         ]
       }
@@ -343,27 +343,27 @@
         "items": [
           {
             "title": "介護保険",
-            "href": "/services/welfare/kaigo"
+            "href": "/kaigo"
           },
           {
             "title": "地域包括支援センター",
-            "href": "/services/welfare/houkatsu"
+            "href": "/houkatsu"
           },
           {
             "title": "後期高齢者医療",
-            "href": "/services/health/kouki"
+            "href": "/kouki"
           },
           {
             "title": "健康診断・検診",
-            "href": "/services/health/kenshin"
+            "href": "/kenshin"
           },
           {
             "title": "高齢者運転",
-            "href": "/services/driving/senior-driving"
+            "href": "/senior-driving"
           },
           {
             "title": "シルバー人材センター",
-            "href": "/services/employment/silver-center"
+            "href": "/silver-center"
           }
         ]
       }

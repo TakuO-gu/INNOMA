@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "page_id": "sample-services-childcare-jidou-teate",
   "municipality_id": "sample",
-  "path": "/services/childcare/jidou-teate",
+  "path": "/jidou-teate",
   "title": "児童手当",
   "description": "児童手当の対象者、支給額、申請手続きについて",
   "content_type": "guide",
@@ -34,11 +34,11 @@
           },
           {
             "label": "子育て・教育",
-            "href": "/topics/childcare"
+            "href": "/childcare"
           },
           {
             "label": "児童手当",
-            "href": "/services/childcare/jidou-teate"
+            "href": "/jidou-teate"
           }
         ]
       }
@@ -521,27 +521,27 @@
         "items": [
           {
             "title": "母子保健",
-            "href": "/services/childcare/boshi"
+            "href": "/boshi"
           },
           {
             "title": "保育所入所申請",
-            "href": "/services/childcare/nursery-apply"
+            "href": "/nursery-apply"
           },
           {
             "title": "出生届",
-            "href": "/services/registration/shussei"
+            "href": "/shussei"
           },
           {
             "title": "転入届",
-            "href": "/services/registration/tennyu"
+            "href": "/tennyu"
           },
           {
             "title": "国民健康保険",
-            "href": "/services/health/kokuho"
+            "href": "/kokuho"
           },
           {
             "title": "予防接種",
-            "href": "/services/health/yobosesshu"
+            "href": "/yobosesshu"
           }
         ]
       }

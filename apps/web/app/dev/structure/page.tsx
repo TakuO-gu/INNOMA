@@ -1,7 +1,9 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import BlockRenderer from "@/components/blocks/BlockRenderer";
+
+type ContentType = "service" | "guide" | "answer";
 
 interface Block {
   id: string;
@@ -9,26 +11,83 @@ interface Block {
   props: Record<string, unknown>;
 }
 
+interface LongTextInfo {
+  blockIndex: number;
+  blockId: string;
+  blockType: string;
+  nodeIndex: number;
+  nodeType: string;
+  text: string;
+  itemIndex?: number;
+  rowIndex?: number;
+}
+
+interface PassInfo {
+  initialBlockCount: number;
+  pass1BlockCount: number;
+  pass1LongTextCount: number;
+  pass1LongTexts: LongTextInfo[];
+  pass2BlockCount: number;
+  pass2LongTextCount: number;
+  pass2LongTexts: LongTextInfo[];
+  initialBlocks: Block[];
+  pass1Blocks: Block[];
+  pass2Blocks: Block[];
+}
+
 interface StructureResult {
   success: boolean;
   sourceUrl?: string;
+  contentType?: ContentType;
   summary?: string;
   blocks?: Block[];
   blockCount?: number;
   processingTimeMs?: number;
   error?: string;
   details?: string;
+  passInfo?: PassInfo;
 }
+
+const CONTENT_TYPE_INFO: Record<ContentType, { label: string; description: string; color: string }> = {
+  service: {
+    label: "Service",
+    description: "行動させる",
+    color: "bg-green-100 text-green-800 border-green-300",
+  },
+  guide: {
+    label: "Guide",
+    description: "理解させる",
+    color: "bg-blue-100 text-blue-800 border-blue-300",
+  },
+  answer: {
+    label: "Answer",
+    description: "判定する",
+    color: "bg-purple-100 text-purple-800 border-purple-300",
+  },
+};
 
 export default function StructurePage() {
   const [url, setUrl] = useState("");
   const [content, setContent] = useState("");
   const [serviceName, setServiceName] = useState("");
   const [municipalityName, setMunicipalityName] = useState("高岡市");
+  const [contentType, setContentType] = useState<ContentType>("guide");
   const [inputMode, setInputMode] = useState<"url" | "content">("content");
   const [loading, setLoading] = useState(false);
   const [result, setResult] = useState<StructureResult | null>(null);
-  const [viewMode, setViewMode] = useState<"preview" | "blocks" | "json">("preview");
+  const [viewMode, setViewMode] = useState<"preview" | "blocks" | "json" | "pass">("preview");
+  const [fullscreen, setFullscreen] = useState(false);
+
+  // ESCキーで全画面を閉じる
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape" && fullscreen) {
+        setFullscreen(false);
+      }
+    };
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [fullscreen]);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -38,8 +97,8 @@ export default function StructurePage() {
     try {
       const body =
         inputMode === "url"
-          ? { url, serviceName, municipalityName }
-          : { content, serviceName, municipalityName };
+          ? { url, serviceName, municipalityName, contentType }
+          : { content, serviceName, municipalityName, contentType };
 
       const res = await fetch("/api/dev/structure", {
         method: "POST",
@@ -60,7 +119,8 @@ export default function StructurePage() {
     }
   };
 
-  const sampleContent = `住民票の写しの交付
+  // サンプルコンテンツ（Service用）
+  const sampleServiceContent = `住民票の写しの交付
 
 【現在の受付状況】
 受付中
@@ -80,34 +140,82 @@ export default function StructurePage() {
 電話：0766-20-1234
 受付時間：平日8:30〜17:15
 
-手続きの流れ
-1. 市民課窓口で申請書に記入
-2. 本人確認書類を提示
-3. 手数料を支払い
-4. 住民票を受け取り
-
 注意事項
-本人以外の方が申請する場合は委任状が必要です。委任状には委任者の住所、氏名、生年月日、委任する内容、代理人の住所、氏名を記載し、委任者が自署・押印してください。
-
-根拠法令
-「住民基本台帳法第12条」に基づき、住民票の写しを交付します。
+本人以外の方が申請する場合は委任状が必要です。
 
 関連サービス
 ・印鑑登録証明書の交付
-・戸籍謄本の交付
-・マイナンバーカードの申請
+・戸籍謄本の交付`;
 
-よくある質問
-Q: コンビニでも取得できますか？
-A: マイナンバーカードをお持ちの方は、全国のコンビニで取得できます。
+  // サンプルコンテンツ（Guide用）
+  const sampleGuideContent = `児童手当
 
-Q: 郵送で請求できますか？
-A: はい、郵送でも請求可能です。申請書、本人確認書類のコピー、手数料分の定額小為替、返信用封筒を同封してください。`;
+児童手当とは
+子育て世帯の生活の安定と、次代を担う児童の健全な育成を目的とした国の制度です。
 
-  const loadSample = () => {
-    setContent(sampleContent);
-    setServiceName("住民票の写しの交付");
+受け取れる人
+・市内に住所がある
+・18歳の年度末までのお子さんを養育している
+・公務員ではない（公務員は勤務先から支給）
+
+いくら受け取れるか
+お子さんの年齢と人数で決まります。
+・3歳未満：月15,000円（第3子以降は30,000円）
+・3歳以上：月10,000円（第3子以降は30,000円）
+
+いつ届くか
+年6回、偶数月の10日に届きます（2月・4月・6月・8月・10月・12月）。
+
+申請が必要なとき
+・お子さんが生まれたとき
+・他の市区町村から転入したとき
+・公務員でなくなったとき
+
+注意
+申請が遅れると、受け取れない月が発生します。15日以内に申請してください。
+
+問い合わせ先
+子育て支援課
+電話：03-1234-5720
+受付時間：平日 8:30〜17:15`;
+
+  // サンプルコンテンツ（Answer用）
+  const sampleAnswerContent = `児童手当の対象者判定
+
+対象条件
+・18歳の年度末（3月31日）までのお子さんを養育している
+・市内に住民登録がある
+・公務員以外である（公務員は勤務先から支給）
+
+対象外のケース
+・お子さんが18歳の年度末を過ぎている
+・住民登録が他の市区町村にある（住民登録のある市区町村で申請）
+・公務員である（勤務先の担当部署で手続き）
+
+結果
+・すべての条件を満たす → 受け取れます。申請手続きを開始してください。
+・住民登録が他市区町村 → 住民登録のある市区町村で申請してください。
+・公務員 → 勤務先で申請してください。
+・年齢条件を満たさない → 受け取れません。`;
+
+  const loadSample = (type: ContentType) => {
+    setContentType(type);
     setInputMode("content");
+
+    switch (type) {
+      case "service":
+        setContent(sampleServiceContent);
+        setServiceName("住民票の写しを請求する");
+        break;
+      case "guide":
+        setContent(sampleGuideContent);
+        setServiceName("児童手当");
+        break;
+      case "answer":
+        setContent(sampleAnswerContent);
+        setServiceName("児童手当を受け取れますか？");
+        break;
+    }
   };
 
   return (
@@ -122,6 +230,36 @@ A: はい、郵送でも請求可能です。申請書、本人確認書類の�
           {/* 入力フォーム */}
           <div className="bg-white rounded-lg shadow p-6">
             <form onSubmit={handleSubmit}>
+              {/* ページタイプ選択 */}
+              <div className="mb-4">
+                <label className="block text-sm font-medium mb-2">ページタイプ</label>
+                <div className="grid grid-cols-3 gap-2">
+                  {(Object.keys(CONTENT_TYPE_INFO) as ContentType[]).map((type) => {
+                    const info = CONTENT_TYPE_INFO[type];
+                    const isSelected = contentType === type;
+                    return (
+                      <button
+                        key={type}
+                        type="button"
+                        onClick={() => setContentType(type)}
+                        className={`p-3 rounded-lg border-2 transition-all ${
+                          isSelected
+                            ? `${info.color} border-current`
+                            : "bg-white border-gray-200 hover:border-gray-300"
+                        }`}
+                      >
+                        <div className={`font-medium ${isSelected ? "" : "text-gray-700"}`}>
+                          {info.label}
+                        </div>
+                        <div className={`text-xs ${isSelected ? "" : "text-gray-500"}`}>
+                          {info.description}
+                        </div>
+                      </button>
+                    );
+                  })}
+                </div>
+              </div>
+
               {/* 入力モード切替 */}
               <div className="flex gap-4 mb-4">
                 <label className="flex items-center gap-2">
@@ -140,13 +278,29 @@ A: はい、郵送でも請求可能です。申請書、本人確認書類の�
                   />
                   URL取得
                 </label>
-                <button
-                  type="button"
-                  onClick={loadSample}
-                  className="ml-auto text-sm text-blue-600 hover:underline"
-                >
-                  サンプルを読み込む
-                </button>
+                <div className="ml-auto flex gap-2">
+                  <button
+                    type="button"
+                    onClick={() => loadSample("service")}
+                    className="text-xs px-2 py-1 bg-green-50 text-green-700 rounded hover:bg-green-100"
+                  >
+                    Service例
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => loadSample("guide")}
+                    className="text-xs px-2 py-1 bg-blue-50 text-blue-700 rounded hover:bg-blue-100"
+                  >
+                    Guide例
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => loadSample("answer")}
+                    className="text-xs px-2 py-1 bg-purple-50 text-purple-700 rounded hover:bg-purple-100"
+                  >
+                    Answer例
+                  </button>
+                </div>
               </div>
 
               {/* URL入力 */}
@@ -189,7 +343,11 @@ A: はい、郵送でも請求可能です。申請書、本人確認書類の�
                     type="text"
                     value={serviceName}
                     onChange={(e) => setServiceName(e.target.value)}
-                    placeholder="住民票の写しの交付"
+                    placeholder={
+                      contentType === "service" ? "〜を申請する" :
+                      contentType === "guide" ? "制度名" :
+                      "〜ですか？"
+                    }
                     className="w-full border rounded p-2"
                     required
                   />
@@ -255,6 +413,18 @@ A: はい、郵送でも請求可能です。申請書、本人確認書類の�
                   >
                     JSON
                   </button>
+                  {result?.passInfo && (
+                    <button
+                      onClick={() => setViewMode("pass")}
+                      className={`px-3 py-1 text-sm rounded ${
+                        viewMode === "pass"
+                          ? "bg-white shadow text-orange-600"
+                          : "text-gray-600 hover:text-gray-900"
+                      }`}
+                    >
+                      Pass詳細
+                    </button>
+                  )}
                 </div>
               )}
             </div>
@@ -279,9 +449,19 @@ A: はい、郵送でも請求可能です。申請書、本人確認書類の�
                     </div>
 
                     {/* メタ情報 */}
-                    <div className="text-sm text-gray-500 mb-4">
-                      {result.blockCount}ブロック生成 /{" "}
-                      {result.processingTimeMs}ms
+                    <div className="flex items-center gap-2 text-sm text-gray-500 mb-4">
+                      {result.contentType && (
+                        <span
+                          className={`px-2 py-0.5 rounded text-xs font-medium ${
+                            CONTENT_TYPE_INFO[result.contentType].color
+                          }`}
+                        >
+                          {CONTENT_TYPE_INFO[result.contentType].label}
+                        </span>
+                      )}
+                      <span>
+                        {result.blockCount}ブロック / {result.processingTimeMs}ms
+                      </span>
                     </div>
 
                     {/* ビューモード別表示 */}
@@ -301,8 +481,17 @@ A: はい、郵送でも請求可能です。申請書、本人確認書類の�
 
                     {viewMode === "preview" && result.blocks && (
                       <div className="border rounded-lg overflow-hidden">
-                        <div className="bg-gray-100 px-3 py-2 text-xs text-gray-500 border-b">
-                          DADSコンポーネントプレビュー
+                        <div className="bg-gray-100 px-3 py-2 text-xs text-gray-500 border-b flex items-center justify-between">
+                          <span>DADSコンポーネントプレビュー</span>
+                          <button
+                            onClick={() => setFullscreen(true)}
+                            className="p-1 hover:bg-gray-200 rounded transition-colors"
+                            title="全画面表示"
+                          >
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                              <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3" />
+                            </svg>
+                          </button>
                         </div>
                         <div className="p-4 bg-white max-h-[600px] overflow-y-auto">
                           <BlockRenderer
@@ -311,6 +500,10 @@ A: はい、郵送でも請求可能です。申請書、本人確認書類の�
                           />
                         </div>
                       </div>
+                    )}
+
+                    {viewMode === "pass" && result.passInfo && (
+                      <PassInfoView passInfo={result.passInfo} />
                     )}
                   </div>
                 ) : (
@@ -332,6 +525,170 @@ A: はい、郵送でも請求可能です。申請書、本人確認書類の�
               </p>
             )}
           </div>
+        </div>
+      </div>
+
+      {/* 全画面プレビューモーダル */}
+      {fullscreen && result?.blocks && (
+        <div className="fixed inset-0 z-50 bg-white">
+          <div className="h-full flex flex-col">
+            {/* ヘッダー */}
+            <div className="flex items-center justify-between px-4 py-3 border-b bg-gray-50">
+              <div className="flex items-center gap-3">
+                <h2 className="font-medium">プレビュー</h2>
+                {result.contentType && (
+                  <span
+                    className={`px-2 py-0.5 rounded text-xs font-medium ${
+                      CONTENT_TYPE_INFO[result.contentType].color
+                    }`}
+                  >
+                    {CONTENT_TYPE_INFO[result.contentType].label}
+                  </span>
+                )}
+                <span className="text-sm text-gray-500">
+                  {serviceName} - {municipalityName}
+                </span>
+              </div>
+              <button
+                onClick={() => setFullscreen(false)}
+                className="p-2 hover:bg-gray-200 rounded transition-colors"
+                title="閉じる"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <line x1="18" y1="6" x2="6" y2="18" />
+                  <line x1="6" y1="6" x2="18" y2="18" />
+                </svg>
+              </button>
+            </div>
+            {/* コンテンツ */}
+            <div className="flex-1 overflow-y-auto">
+              <div className="max-w-3xl mx-auto py-8 px-4">
+                <BlockRenderer
+                  blocks={result.blocks as Parameters<typeof BlockRenderer>[0]["blocks"]}
+                  municipalityId="sample"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}
+
+/**
+ * Pass情報の表示コンポーネント
+ */
+function PassInfoView({ passInfo }: { passInfo: PassInfo }) {
+  const [selectedPass, setSelectedPass] = useState<"initial" | "pass1" | "pass2">("pass1");
+
+  const getBlocks = () => {
+    switch (selectedPass) {
+      case "initial":
+        return passInfo.initialBlocks;
+      case "pass1":
+        return passInfo.pass1Blocks;
+      case "pass2":
+        return passInfo.pass2Blocks;
+    }
+  };
+
+  const getLongTexts = () => {
+    switch (selectedPass) {
+      case "initial":
+        return [];
+      case "pass1":
+        return passInfo.pass1LongTexts;
+      case "pass2":
+        return passInfo.pass2LongTexts;
+    }
+  };
+
+  return (
+    <div className="space-y-4">
+      {/* サマリー */}
+      <div className="grid grid-cols-3 gap-4">
+        <div className="bg-gray-50 p-3 rounded">
+          <p className="text-xs text-gray-500">Initial</p>
+          <p className="text-lg font-bold">{passInfo.initialBlockCount} blocks</p>
+        </div>
+        <div className="bg-orange-50 p-3 rounded">
+          <p className="text-xs text-orange-600">Pass 1 (Pattern)</p>
+          <p className="text-lg font-bold">{passInfo.pass1BlockCount} blocks</p>
+          <p className="text-xs text-orange-500">{passInfo.pass1LongTextCount} long texts</p>
+        </div>
+        <div className="bg-green-50 p-3 rounded">
+          <p className="text-xs text-green-600">Pass 2 (LLM)</p>
+          <p className="text-lg font-bold">{passInfo.pass2BlockCount} blocks</p>
+          <p className="text-xs text-green-500">{passInfo.pass2LongTextCount} remaining</p>
+        </div>
+      </div>
+
+      {/* Pass選択タブ */}
+      <div className="flex gap-1 bg-gray-100 rounded-lg p-1">
+        <button
+          onClick={() => setSelectedPass("initial")}
+          className={`flex-1 px-3 py-1 text-sm rounded ${
+            selectedPass === "initial"
+              ? "bg-white shadow text-gray-700"
+              : "text-gray-500 hover:text-gray-700"
+          }`}
+        >
+          Initial ({passInfo.initialBlockCount})
+        </button>
+        <button
+          onClick={() => setSelectedPass("pass1")}
+          className={`flex-1 px-3 py-1 text-sm rounded ${
+            selectedPass === "pass1"
+              ? "bg-white shadow text-orange-600"
+              : "text-gray-500 hover:text-gray-700"
+          }`}
+        >
+          Pass 1 ({passInfo.pass1BlockCount})
+        </button>
+        <button
+          onClick={() => setSelectedPass("pass2")}
+          className={`flex-1 px-3 py-1 text-sm rounded ${
+            selectedPass === "pass2"
+              ? "bg-white shadow text-green-600"
+              : "text-gray-500 hover:text-gray-700"
+          }`}
+        >
+          Pass 2 ({passInfo.pass2BlockCount})
+        </button>
+      </div>
+
+      {/* 長いテキスト一覧 */}
+      {getLongTexts().length > 0 && (
+        <div className="border border-orange-200 rounded-lg p-3 bg-orange-50">
+          <h4 className="text-sm font-medium text-orange-800 mb-2">
+            40文字超えテキスト ({getLongTexts().length}件)
+          </h4>
+          <div className="space-y-2 max-h-48 overflow-y-auto">
+            {getLongTexts().map((lt, i) => (
+              <div key={i} className="bg-white p-2 rounded text-xs">
+                <div className="flex items-center gap-2 text-orange-600 mb-1">
+                  <span className="font-medium">{lt.blockType}</span>
+                  <span className="text-gray-400">→</span>
+                  <span>{lt.nodeType}</span>
+                  <span className="text-gray-400">({lt.text.length}文字)</span>
+                </div>
+                <p className="text-gray-700 truncate">{lt.text}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {/* ブロック一覧 */}
+      <div className="border rounded-lg overflow-hidden">
+        <div className="bg-gray-100 px-3 py-2 text-xs text-gray-500 border-b">
+          {selectedPass === "initial" ? "Initial Blocks" : selectedPass === "pass1" ? "Pass 1 Blocks" : "Pass 2 Blocks"}
+        </div>
+        <div className="max-h-96 overflow-y-auto">
+          {getBlocks().map((block, i) => (
+            <BlockPreview key={block.id || i} block={block} />
+          ))}
         </div>
       </div>
     </div>
@@ -389,6 +746,8 @@ function BlockPreview({ block }: { block: Block }) {
     Hero: "bg-teal-100 text-teal-800",
     // 参照（グレー系）
     Sources: "bg-neutral-100 text-neutral-800",
+    // SmartAnswer（紫系）
+    SmartAnswer: "bg-violet-100 text-violet-800",
   };
 
   const colorClass = typeColors[block.type] || "bg-gray-100 text-gray-800";
@@ -398,6 +757,7 @@ function BlockPreview({ block }: { block: Block }) {
     const props = block.props;
     if (props.heading) return String(props.heading);
     if (props.title) return String(props.title);
+    if (props.text) return String(props.text).slice(0, 40) + (String(props.text).length > 40 ? "..." : "");
     if (props.department) return `問い合わせ: ${props.department}`;
     if (props.label) return String(props.label); // StatusBadge
     if (props.content && typeof props.content === "string") {
@@ -408,6 +768,9 @@ function BlockPreview({ block }: { block: Block }) {
     if (props.term) return String(props.term); // DescriptionList item
     if (props.steps && Array.isArray(props.steps)) {
       return `${props.steps.length}ステップ`;
+    }
+    if (props.questions && Array.isArray(props.questions)) {
+      return `${props.questions.length}問 → ${(props.results as unknown[])?.length || 0}結果`;
     }
     if (props.rows && Array.isArray(props.rows)) {
       return `${props.rows.length}行`;

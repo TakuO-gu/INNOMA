@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "page_id": "sample-services-nationality-naturalization",
   "municipality_id": "sample",
-  "path": "/services/nationality/naturalization",
+  "path": "/naturalization",
   "title": "日本国籍の取得（帰化）",
   "description": "帰化申請の要件、手続き、法務局案内",
   "content_type": "guide",
@@ -33,11 +33,11 @@
           },
           {
             "label": "戸籍・国籍・在留",
-            "href": "/topics/nationality"
+            "href": "/nationality"
           },
           {
             "label": "帰化申請",
-            "href": "/services/nationality/naturalization"
+            "href": "/naturalization"
           }
         ]
       }
@@ -157,19 +157,19 @@
         "items": [
           {
             "title": "ビザ・在留資格",
-            "href": "/services/nationality/visa"
+            "href": "/visa"
           },
           {
             "title": "在留カード",
-            "href": "/services/nationality/residence-card"
+            "href": "/residence-card"
           },
           {
             "title": "戸籍",
-            "href": "/services/registration/koseki"
+            "href": "/koseki"
           },
           {
             "title": "外国人相談",
-            "href": "/services/nationality/consultation"
+            "href": "/consultation"
           }
         ]
       }

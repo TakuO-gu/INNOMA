@@ -167,5 +167,61 @@
     "sourceUrl": "https://www.town.kawasaki.miyagi.jp/soshiki/chomin/286.html",
     "confidence": 0.95,
     "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "city_hall_hours": {
+    "value": "午前8時30分から午後5時15分まで（土曜日、日曜日、祝日、年末年始を除く）",
+    "source": "llm",
+    "sourceUrl": "https://www.town.kawasaki.miyagi.jp/",
+    "confidence": 0.9,
+    "updatedAt": "2026-02-03T00:00:00.000Z"
+  },
+  "kaigo_department": {
+    "value": "保健福祉課",
+    "source": "llm",
+    "sourceUrl": "https://www.town.kawasaki.miyagi.jp/soshiki/",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-03T00:00:00.000Z"
+  },
+  "kaigo_phone": {
+    "value": "0224-84-2111（代表）",
+    "source": "llm",
+    "sourceUrl": "https://www.town.kawasaki.miyagi.jp/soshiki/",
+    "confidence": 0.8,
+    "updatedAt": "2026-02-03T00:00:00.000Z"
+  },
+  "tax_phone": {
+    "value": "0224-84-2111（代表）",
+    "source": "llm",
+    "sourceUrl": "https://www.town.kawasaki.miyagi.jp/soshiki/",
+    "confidence": 0.8,
+    "updatedAt": "2026-02-03T00:00:00.000Z"
+  },
+  "hoken_department": {
+    "value": "町民生活課",
+    "source": "llm",
+    "sourceUrl": "https://www.town.kawasaki.miyagi.jp/soshiki/",
+    "confidence": 0.9,
+    "updatedAt": "2026-02-03T00:00:00.000Z"
+  },
+  "hoken_phone": {
+    "value": "0224-84-2112",
+    "source": "llm",
+    "sourceUrl": "https://www.town.kawasaki.miyagi.jp/soshiki/chomin/286.html",
+    "confidence": 0.9,
+    "updatedAt": "2026-02-03T00:00:00.000Z"
+  },
+  "environment_department": {
+    "value": "町民生活課",
+    "source": "llm",
+    "sourceUrl": "https://www.town.kawasaki.miyagi.jp/soshiki/",
+    "confidence": 0.9,
+    "updatedAt": "2026-02-03T00:00:00.000Z"
+  },
+  "environment_phone": {
+    "value": "0224-84-2112",
+    "source": "llm",
+    "sourceUrl": "https://www.town.kawasaki.miyagi.jp/soshiki/chomin/286.html",
+    "confidence": 0.9,
+    "updatedAt": "2026-02-03T00:00:00.000Z"
   }
 }

@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "page_id": "sample-services-tax-keijidosha",
   "municipality_id": "sample",
-  "path": "/services/tax/keijidosha",
+  "path": "/keijidosha",
   "title": "軽自動車税（種別割）",
   "description": "軽自動車税の対象車両、税額、届出について",
   "content_type": "guide",
@@ -33,11 +33,11 @@
           },
           {
             "label": "税金",
-            "href": "/topics/tax"
+            "href": "/tax"
           },
           {
             "label": "軽自動車税",
-            "href": "/services/tax/keijidosha"
+            "href": "/keijidosha"
           }
         ]
       }
@@ -374,19 +374,19 @@
         "items": [
           {
             "title": "自動車登録",
-            "href": "/services/driving/registration"
+            "href": "/registration"
           },
           {
             "title": "自動車税",
-            "href": "/services/driving/vehicle-tax"
+            "href": "/vehicle-tax"
           },
           {
             "title": "住民税",
-            "href": "/services/tax/juminzei"
+            "href": "/juminzei"
           },
           {
             "title": "車庫証明",
-            "href": "/services/driving/garage-certificate"
+            "href": "/garage-certificate"
           }
         ]
       }

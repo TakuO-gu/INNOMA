@@ -33,7 +33,7 @@
           },
           {
             "label": "運転・車両",
-            "href": "/topics/driving"
+            "href": "/driving"
           }
         ]
       }
@@ -59,52 +59,52 @@
         "items": [
           {
             "title": "運転免許証",
-            "href": "/services/driving/license",
+            "href": "/license",
             "description": "運転免許試験場・更新センターの案内、更新・住所変更手続き"
           },
           {
             "title": "車検・自動車登録",
-            "href": "/services/driving/registration",
+            "href": "/registration",
             "description": "新規登録、移転登録（名義変更）、変更登録、抹消登録"
           },
           {
             "title": "自動車税・軽自動車税",
-            "href": "/services/driving/vehicle-tax",
+            "href": "/vehicle-tax",
             "description": "自動車税種別割、軽自動車税種別割、納税証明書"
           },
           {
             "title": "自動車重量税",
-            "href": "/services/driving/weight-tax",
+            "href": "/weight-tax",
             "description": "車検時に課税される自動車重量税について"
           },
           {
             "title": "自賠責保険",
-            "href": "/services/driving/liability-insurance",
+            "href": "/liability-insurance",
             "description": "自動車損害賠償責任保険（自賠責）の加入案内"
           },
           {
             "title": "車庫証明（保管場所証明）",
-            "href": "/services/driving/garage-certificate",
+            "href": "/garage-certificate",
             "description": "自動車保管場所証明書の申請手続き（警察署案内）"
           },
           {
             "title": "市営駐車場・駐輪場",
-            "href": "/services/driving/parking",
+            "href": "/parking",
             "description": "サンプル市の公営駐車場・駐輪場の利用案内"
           },
           {
             "title": "高齢者運転支援",
-            "href": "/services/driving/senior-driving",
+            "href": "/senior-driving",
             "description": "運転免許証自主返納、高齢者講習、安全運転相談"
           },
           {
             "title": "交通事故相談",
-            "href": "/services/driving/accident",
+            "href": "/accident",
             "description": "交通事故の届出、損害賠償相談、交通事故相談所"
           },
           {
             "title": "交通安全対策",
-            "href": "/services/driving/traffic-safety",
+            "href": "/traffic-safety",
             "description": "交通安全運動、自転車保険、チャイルドシート助成"
           }
         ]

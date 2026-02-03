@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "page_id": "sample-services-land-agricultural-committee",
   "municipality_id": "sample",
-  "path": "/services/land/agricultural-committee",
+  "path": "/agricultural-committee",
   "title": "農業委員会",
   "description": "農業委員会の役割、農地の売買・賃貸借許可、農地利用最適化",
   "content_type": "guide",
@@ -34,11 +34,11 @@
           },
           {
             "label": "土地・農林水産",
-            "href": "/topics/land"
+            "href": "/land"
           },
           {
             "label": "農業委員会",
-            "href": "/services/land/agricultural-committee"
+            "href": "/agricultural-committee"
           }
         ]
       }
@@ -210,15 +210,15 @@
         "items": [
           {
             "title": "農地転用",
-            "href": "/services/land/farmland-conversion"
+            "href": "/farmland-conversion"
           },
           {
             "title": "新規就農",
-            "href": "/services/land/new-farmer"
+            "href": "/new-farmer"
           },
           {
             "title": "農業補助金",
-            "href": "/services/land/agriculture-subsidy"
+            "href": "/agriculture-subsidy"
           }
         ]
       }

@@ -34,7 +34,7 @@
           },
           {
             "label": "戸籍・国籍・在留",
-            "href": "/topics/nationality"
+            "href": "/nationality"
           }
         ]
       }
@@ -60,52 +60,52 @@
         "items": [
           {
             "title": "日本国籍の取得（帰化）",
-            "href": "/services/nationality/naturalization",
+            "href": "/naturalization",
             "description": "帰化申請の要件、手続き、法務局案内"
           },
           {
             "title": "日本国籍の離脱・喪失",
-            "href": "/services/nationality/loss-of-citizenship",
+            "href": "/loss-of-citizenship",
             "description": "国籍離脱届、二重国籍の解消、国籍選択届"
           },
           {
             "title": "在留資格・ビザ",
-            "href": "/services/nationality/visa",
+            "href": "/visa",
             "description": "在留資格の種類、在留資格変更・更新、入国管理局案内"
           },
           {
             "title": "在留カード",
-            "href": "/services/nationality/residence-card",
+            "href": "/residence-card",
             "description": "在留カードの交付・更新・届出、住居地届出"
           },
           {
             "title": "特別永住者証明書",
-            "href": "/services/nationality/special-permanent-resident",
+            "href": "/special-permanent-resident",
             "description": "特別永住者証明書の交付・更新・届出"
           },
           {
             "title": "外国人住民の届出",
-            "href": "/services/nationality/foreign-registration",
+            "href": "/foreign-registration",
             "description": "転入届、転出届、世帯変更届、氏名変更届"
           },
           {
             "title": "国際結婚・国際離婚",
-            "href": "/services/nationality/international-marriage",
+            "href": "/international-marriage",
             "description": "渉外婚姻届、渉外離婚届、外国での手続き"
           },
           {
             "title": "外国人のための相談窓口",
-            "href": "/services/nationality/consultation",
+            "href": "/consultation",
             "description": "多言語相談、生活相談、{{municipality_name}}国際交流協会"
           },
           {
             "title": "日本語教室",
-            "href": "/services/nationality/japanese-class",
+            "href": "/japanese-class",
             "description": "日本語学習支援、地域日本語教室、日本語能力試験"
           },
           {
             "title": "パスポート（旅券）",
-            "href": "/services/nationality/passport",
+            "href": "/passport",
             "description": "パスポートの申請・更新・届出、{{passport_office_name}}"
           }
         ]

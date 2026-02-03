@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "page_id": "sample-services-land-urban-planning",
   "municipality_id": "sample",
-  "path": "/services/land/urban-planning",
+  "path": "/urban-planning",
   "title": "都市計画・用途地域",
   "description": "都市計画区域、用途地域、建ぺい率・容積率",
   "content_type": "guide",
@@ -34,11 +34,11 @@
           },
           {
             "label": "土地・農林水産",
-            "href": "/topics/land"
+            "href": "/land"
           },
           {
             "label": "都市計画・用途地域",
-            "href": "/services/land/urban-planning"
+            "href": "/urban-planning"
           }
         ]
       }
@@ -159,19 +159,19 @@
         "items": [
           {
             "title": "開発許可",
-            "href": "/services/land/development-permit"
+            "href": "/development-permit"
           },
           {
             "title": "建築確認申請",
-            "href": "/services/housing/building-permit"
+            "href": "/building-permit"
           },
           {
             "title": "農地転用",
-            "href": "/services/land/farmland-conversion"
+            "href": "/farmland-conversion"
           },
           {
             "title": "固定資産税",
-            "href": "/services/tax/kotei"
+            "href": "/kotei"
           }
         ]
       }

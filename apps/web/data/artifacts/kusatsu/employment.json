@@ -1,0 +1,154 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "kusatsu-topics-employment",
+  "municipality_id": "kusatsu",
+  "path": "/topics/employment",
+  "title": "仕事・労働",
+  "description": "求人、就職支援、職業訓練、育児休業、労働相談などの仕事・労働に関する情報",
+  "content_type": "directory",
+  "service_category": "business",
+  "audience": [
+    "residents"
+  ],
+  "topic": [],
+  "source": {
+    "source_url": "template://kusatsu/topics/employment",
+    "fetched_at": "2026-02-03T01:50:20.094Z",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "2026-02-03T01:50:20.094Z",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "仕事・労働",
+            "href": "/employment"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "仕事・労働"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "求人、就職支援、職業訓練、育児休業、労働相談などの仕事・労働に関する情報をまとめています"
+      }
+    },
+    {
+      "id": "topic-list-1",
+      "type": "TopicList",
+      "props": {
+        "items": [
+          {
+            "title": "ハローワーク・求人情報",
+            "href": "/hello-work",
+            "description": "{{prefecture_name}}内のハローワーク所在地、求人検索案内"
+          },
+          {
+            "title": "就職支援・キャリア相談",
+            "href": "/career-support",
+            "description": "若者サポートステーション、ジョブカフェ、就職氷河期世代支援"
+          },
+          {
+            "title": "職業訓練（ハロートレーニング）",
+            "href": "/vocational-training",
+            "description": "公共職業訓練、求職者支援訓練、教育訓練給付"
+          },
+          {
+            "title": "雇用保険・失業給付",
+            "href": "/unemployment-insurance",
+            "description": "失業給付（基本手当）、再就職手当、教育訓練給付金"
+          },
+          {
+            "title": "育児休業・介護休業",
+            "href": "/family-leave",
+            "description": "育児休業給付金、介護休業給付金、育休取得の手続き"
+          },
+          {
+            "title": "労働条件・最低賃金",
+            "href": "/labor-standards",
+            "description": "{{prefecture_name}}の最低賃金、労働時間、残業規制"
+          },
+          {
+            "title": "労働相談・労働紛争",
+            "href": "/labor-consultation",
+            "description": "総合労働相談コーナー、あっせん、労働審判"
+          },
+          {
+            "title": "ハラスメント対策",
+            "href": "/harassment",
+            "description": "パワハラ・セクハラ・マタハラ等の相談窓口"
+          },
+          {
+            "title": "シルバー人材センター",
+            "href": "/silver-center",
+            "description": "草津町シルバー人材センターの入会・仕事案内"
+          },
+          {
+            "title": "障害者雇用支援",
+            "href": "/disability-employment",
+            "description": "障害者就労支援、特例子会社、就労継続支援"
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{employment_department}}",
+        "phone": "{{employment_phone}}",
+        "email": "{{employment_email}}",
+        "hours": "{{city_hall_hours}}",
+        "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
+      }
+    }
+  ],
+  "search": {
+    "summary": "仕事・労働に関する情報。求人、就職支援、ハローワーク、職業訓練、労働条件、育児休業、介護休業、ハラスメント対策、労働紛争、外国人雇用、テレワークの案内。",
+    "keywords": [
+      "仕事",
+      "労働",
+      "求人",
+      "就職支援",
+      "ハローワーク",
+      "職業訓練",
+      "キャリアアップ",
+      "労働条件",
+      "労働基準",
+      "育児休業",
+      "介護休業",
+      "ハラスメント",
+      "解雇",
+      "退職",
+      "外国人雇用",
+      "テレワーク"
+    ],
+    "plain_text": "仕事・労働。就職・転職・労働環境に関する情報。求人・就職支援、職業訓練・キャリアアップ、労働条件・労働基準、育児休業・介護休業、ハラスメント対策、解雇・退職・労働紛争、外国人雇用、働き方改革・テレワーク。"
+  }
+}

@@ -6,6 +6,7 @@ import type { RichTextNodeType } from "@/lib/artifact/schema";
 import { useMunicipality, prefixInternalLink } from "../MunicipalityContext";
 import { RichTextRenderer } from "../RichTextRenderer";
 import { renderNotificationBanner } from "./NotificationBannerRenderer";
+import { budouxParse } from "@/components/BudouX";
 
 export function NotificationBannerBlock({ props }: { props: Record<string, unknown> }) {
   const { municipalityId } = useMunicipality();
@@ -41,7 +42,7 @@ export function EmergencyBannerBlock({ props }: { props: Record<string, unknown>
 
   return (
     <div className={`mt-6 emergency-banner p-4 rounded-lg border-l-4 mb-6 ${severityClasses}`}>
-      <h2 className="font-bold text-std-17B-170 mb-2">{title}</h2>
+      <h2 className="font-bold text-std-17B-170 mb-2 budoux">{budouxParse(title)}</h2>
       <RichTextRenderer content={content} />
       {href && (
         <NextLink

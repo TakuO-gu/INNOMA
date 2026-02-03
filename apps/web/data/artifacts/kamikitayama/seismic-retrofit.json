@@ -1,0 +1,304 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "kamikitayama-services-housing-seismic-retrofit",
+  "municipality_id": "kamikitayama",
+  "path": "/seismic-retrofit",
+  "title": "耐震診断・耐震改修補助",
+  "description": "木造住宅の耐震診断・耐震改修費用の補助",
+  "content_type": "guide",
+  "service_category": "housing",
+  "audience": [
+    "residents"
+  ],
+  "topic": [],
+  "source": {
+    "source_url": "template://kamikitayama/services/housing/seismic-retrofit",
+    "fetched_at": "2026-02-03T01:50:19.760Z",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "2026-02-03T01:50:19.760Z",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "住まい・引越し",
+            "href": "/housing"
+          },
+          {
+            "label": "耐震診断・耐震改修補助",
+            "href": "/seismic-retrofit"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "耐震診断・耐震改修補助"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "昭和56年5月31日以前に着工した木造住宅の耐震診断・耐震改修工事に対して補助を行っています。"
+      }
+    },
+    {
+      "id": "section-on4c0spgc",
+      "type": "Section",
+      "props": {
+        "heading": "対象となる住宅",
+        "level": 2,
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "昭和56年5月31日以前に着工した木造住宅"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "2階建て以下"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "在来軸組工法または伝統工法"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "現に居住している住宅"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-0m49ijr9j",
+      "type": "Section",
+      "props": {
+        "heading": "耐震診断補助",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "耐震診断費用の{{seismic_diagnosis_rate}}を補助（上限{{seismic_diagnosis_max}}円）"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-oycccqc7f",
+      "type": "Section",
+      "props": {
+        "heading": "耐震改修補助",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "耐震改修工事費用の{{seismic_retrofit_rate}}を補助（上限{{seismic_retrofit_max}}円）"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "notification-1",
+      "type": "NotificationBanner",
+      "props": {
+        "severity": "info",
+        "title": "無料耐震診断",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "上北山村では、木造住宅の無料耐震診断を実施しています。詳しくはお問い合わせください。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "related-links-3aivzk6bj",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "リフォーム補助",
+            "href": "/reform-subsidy"
+          },
+          {
+            "title": "建築確認申請",
+            "href": "/building-permit"
+          },
+          {
+            "title": "ハザードマップ",
+            "href": "/hazard-map"
+          },
+          {
+            "title": "避難所",
+            "href": "/hinanjo"
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-必要-1769919363180",
+      "type": "Section",
+      "props": {
+        "heading": "耐震診断・耐震改修補助に必要なもの",
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "本人確認書類（マイナンバーカード、運転免許証など）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "印鑑（認印可）"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-方法-1769919363180",
+      "type": "Section",
+      "props": {
+        "heading": "耐震診断・耐震改修補助の手続き方法",
+        "content": [
+          {
+            "type": "list",
+            "ordered": true,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "必要書類を準備します。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "窓口で申請書を記入します。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "書類を提出し、確認を受けます。"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{building_department}}",
+        "phone": "{{building_phone}}",
+        "email": "{{building_email}}",
+        "hours": "{{city_hall_hours}}",
+        "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
+      }
+    }
+  ],
+  "search": {
+    "summary": "耐震診断・耐震改修補助の案内。昭和56年以前の木造住宅の耐震化支援。",
+    "keywords": [
+      "耐震診断",
+      "耐震改修",
+      "木造住宅",
+      "耐震化",
+      "補助金",
+      "地震対策"
+    ],
+    "plain_text": "耐震診断・耐震改修補助。昭和56年5月以前の木造住宅が対象。耐震診断・耐震改修工事費用の一部を補助。"
+  }
+}

@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "page_id": "sample-services-business-permits",
   "municipality_id": "sample",
-  "path": "/services/business/permits",
+  "path": "/permits",
   "title": "許認可・届出",
   "description": "飲食店営業、古物商、建設業、宅建業などの許認可",
   "content_type": "guide",
@@ -33,11 +33,11 @@
           },
           {
             "label": "事業・経営",
-            "href": "/topics/business"
+            "href": "/business"
           },
           {
             "label": "許認可・届出",
-            "href": "/services/business/permits"
+            "href": "/permits"
           }
         ]
       }

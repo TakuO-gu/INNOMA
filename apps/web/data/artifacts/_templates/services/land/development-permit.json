@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "page_id": "sample-services-land-development-permit",
   "municipality_id": "sample",
-  "path": "/services/land/development-permit",
+  "path": "/development-permit",
   "title": "開発許可",
   "description": "開発行為の許可申請、宅地造成許可、盛土規制",
   "content_type": "guide",
@@ -33,11 +33,11 @@
           },
           {
             "label": "土地・農林水産",
-            "href": "/topics/land"
+            "href": "/land"
           },
           {
             "label": "開発許可",
-            "href": "/services/land/development-permit"
+            "href": "/development-permit"
           }
         ]
       }
@@ -235,15 +235,15 @@
         "items": [
           {
             "title": "都市計画",
-            "href": "/services/land/urban-planning"
+            "href": "/urban-planning"
           },
           {
             "title": "建築確認申請",
-            "href": "/services/housing/building-permit"
+            "href": "/building-permit"
           },
           {
             "title": "農地転用",
-            "href": "/services/land/farmland-conversion"
+            "href": "/farmland-conversion"
           }
         ]
       }

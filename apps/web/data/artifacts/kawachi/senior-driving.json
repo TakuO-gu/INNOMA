@@ -1,0 +1,290 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "kawachi-services-driving-senior-driving",
+  "municipality_id": "kawachi",
+  "path": "/senior-driving",
+  "title": "高齢者運転支援",
+  "description": "運転免許証自主返納、高齢者講習、安全運転相談",
+  "content_type": "guide",
+  "service_category": "government",
+  "audience": [
+    "residents"
+  ],
+  "topic": [],
+  "source": {
+    "source_url": "template://kawachi/services/driving/senior-driving",
+    "fetched_at": "2026-02-03T01:50:19.889Z",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "2026-02-03T01:50:19.889Z",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "運転・車両",
+            "href": "/driving"
+          },
+          {
+            "label": "高齢者運転支援",
+            "href": "/senior-driving"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "高齢者運転支援"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "高齢ドライバーの安全運転支援と運転免許証の自主返納についてご案内します。"
+      }
+    },
+    {
+      "id": "section-0bu3ml9zi",
+      "type": "Section",
+      "props": {
+        "heading": "高齢者講習",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "70歳以上の方は免許更新時に高齢者講習の受講が必要です。75歳以上は認知機能検査も必要です。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-2xwrc8g20",
+      "type": "Section",
+      "props": {
+        "heading": "運転免許証の自主返納",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "運転に不安を感じる方は、運転免許証を自主的に返納できます。返納後は「運転経歴証明書」を申請でき、身分証明書として使用できます。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-qbydl6s61",
+      "type": "Section",
+      "props": {
+        "heading": "自主返納者への支援",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "河内町では、自主返納された方に以下の支援を行っています。"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "{{license_return_support_1}}"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "{{license_return_support_2}}"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "related-links-rvjqdmac0",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "運転免許証",
+            "href": "/license"
+          },
+          {
+            "title": "交通安全",
+            "href": "/traffic-safety"
+          },
+          {
+            "title": "高齢者福祉",
+            "href": "/koureisha"
+          },
+          {
+            "title": "地域包括支援センター",
+            "href": "/houkatsu"
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-対象-1769919363164",
+      "type": "Section",
+      "props": {
+        "heading": "高齢者運転支援の対象となる方",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "詳細は担当課にお問い合わせください。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-必要-1769919363164",
+      "type": "Section",
+      "props": {
+        "heading": "高齢者運転支援に必要なもの",
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "本人確認書類（マイナンバーカード、運転免許証など）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "印鑑（認印可）"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-方法-1769919363164",
+      "type": "Section",
+      "props": {
+        "heading": "高齢者運転支援の手続き方法",
+        "content": [
+          {
+            "type": "list",
+            "ordered": true,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "必要書類を準備します。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "窓口で申請書を記入します。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "書類を提出し、確認を受けます。"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{driving_department}}",
+        "phone": "{{driving_phone}}",
+        "email": "{{driving_email}}",
+        "hours": "{{city_hall_hours}}",
+        "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
+      }
+    }
+  ],
+  "search": {
+    "summary": "高齢者運転支援の案内。高齢者講習、認知機能検査、運転免許自主返納。",
+    "keywords": [
+      "高齢者運転",
+      "自主返納",
+      "高齢者講習",
+      "認知機能検査",
+      "運転経歴証明書"
+    ],
+    "plain_text": "高齢者運転支援。70歳以上は高齢者講習、75歳以上は認知機能検査が必要。運転免許証の自主返納も可能。"
+  }
+}

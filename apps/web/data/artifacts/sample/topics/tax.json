@@ -1,25 +1,24 @@
 {
   "schema_version": "2.0.0",
-  "page_id": "sample-topics-tax",
+  "page_id": "sample-tax",
   "municipality_id": "sample",
-  "path": "/topics/tax",
+  "path": "/tax",
   "title": "税金",
-  "description": "住民税、固定資産税、確定申告、ふるさと納税に関する情報",
+  "description": "住民税、固定資産税、軽自動車税、納税方法、税証明書に関する情報",
   "content_type": "directory",
   "service_category": "government",
   "audience": [
-    "residents",
-    "businesses"
+    "residents"
   ],
   "topic": [],
   "source": {
-    "source_url": "template://sample/topics/tax",
-    "fetched_at": "2026-01-20",
+    "source_url": "template://sample/tax",
+    "fetched_at": "2026-01-20T10:33:17.311Z",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "2026-01-20",
+    "generated_at": "2026-01-20T10:33:17.311Z",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -34,7 +33,7 @@
           },
           {
             "label": "税金",
-            "href": "/topics/tax"
+            "href": "/tax"
           }
         ]
       }
@@ -50,47 +49,44 @@
       "id": "summary-1",
       "type": "Summary",
       "props": {
-        "text": "住民税、固定資産税、確定申告、ふるさと納税に関する情報をまとめています"
+        "text": "住民税、固定資産税、軽自動車税、納税方法、税証明書に関する情報をまとめています"
       }
     },
     {
       "id": "topic-list-1",
-      "type": "TopicList",
+      "type": "CardGrid",
       "props": {
+        "variant": "link",
+        "columns": 4,
         "items": [
           {
             "title": "住民税",
-            "href": "/services/tax/juminzei",
+            "href": "/juminzei",
             "description": "住民税の課税・納付・届出"
           },
           {
             "title": "固定資産税",
-            "href": "/services/tax/kotei",
+            "href": "/kotei",
             "description": "固定資産税・都市計画税の課税・納付"
           },
           {
             "title": "軽自動車税",
-            "href": "/services/tax/keijidosha",
+            "href": "/keijidosha",
             "description": "軽自動車・バイクの税金"
           },
           {
-            "title": "税証明書",
-            "href": "/services/tax/zeishoumei",
-            "description": "所得証明書・課税証明書・納税証明書の取得"
-          },
-          {
             "title": "納税方法",
-            "href": "/services/tax/nouzei",
+            "href": "/nouzei",
             "description": "口座振替・コンビニ・スマホ決済での納付"
           },
           {
-            "title": "確定申告・税の相談",
-            "href": "/services/tax/kakuteishinkoku",
-            "description": "確定申告会場・住民税の申告"
+            "title": "税証明書",
+            "href": "/zeishoumei",
+            "description": "所得証明書・課税証明書・納税証明書の取得"
           },
           {
             "title": "ふるさと納税",
-            "href": "/services/tax/furusato",
+            "href": "/furusato",
             "description": "ふるさと納税・ワンストップ特例"
           }
         ]
@@ -101,7 +97,7 @@
       "type": "Contact",
       "props": {
         "department": "税務課",
-        "phone": "03-1234-5690",
+        "phone": "03-1234-5682",
         "email": "zeimu@sample-city.lg.jp",
         "hours": "平日 8:30〜17:15（土日祝日・年末年始を除く）",
         "address": "〒100-0001 東京都サンプル市中央1-1-1"
@@ -116,16 +112,16 @@
     }
   ],
   "search": {
-    "summary": "税金に関する情報。住民税、固定資産税、軽自動車税、確定申告、ふるさと納税の案内。",
+    "summary": "税金に関する情報。住民税、固定資産税、軽自動車税、納税方法、税証明書の案内。",
     "keywords": [
       "税金",
       "住民税",
       "固定資産税",
       "軽自動車税",
-      "確定申告",
-      "ふるさと納税",
-      "税証明書"
+      "納税",
+      "税証明書",
+      "ふるさと納税"
     ],
-    "plain_text": "税金。住民税、固定資産税、確定申告、ふるさと納税に関する情報。住民税、固定資産税、軽自動車税、確定申告、ふるさと納税、税証明書。"
+    "plain_text": "税金。住民税、固定資産税、軽自動車税に関する情報。住民税、固定資産税、軽自動車税、納税方法、税証明書、ふるさと納税。"
   }
 }

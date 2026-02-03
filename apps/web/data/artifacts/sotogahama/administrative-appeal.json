@@ -1,0 +1,325 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "sotogahama-services-civic-administrative-appeal",
+  "municipality_id": "sotogahama",
+  "path": "/administrative-appeal",
+  "title": "行政不服審査",
+  "description": "行政処分に対する審査請求、不服申立ての手続き",
+  "content_type": "guide",
+  "service_category": "community",
+  "audience": [
+    "residents"
+  ],
+  "topic": [],
+  "source": {
+    "source_url": "template://sotogahama/services/civic/administrative-appeal",
+    "fetched_at": "2026-02-03T01:50:20.337Z",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "2026-02-03T01:50:20.337Z",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "市民参加・権利行使",
+            "href": "/civic"
+          },
+          {
+            "label": "行政不服審査",
+            "href": "/administrative-appeal"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "行政不服審査"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "行政庁の処分に不服がある場合、行政不服審査法に基づき審査請求をすることができます。"
+      }
+    },
+    {
+      "id": "section-kg78ua88d",
+      "type": "Section",
+      "props": {
+        "heading": "審査請求とは",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "行政庁の処分（許可の取消し、不許可処分など）に不服がある場合に、その処分の取消しや変更を求める手続きです。裁判所に訴える行政訴訟とは別の制度です。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-33ppw1av1",
+      "type": "Section",
+      "props": {
+        "heading": "審査請求ができる人",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "処分によって直接自己の権利利益を侵害された人"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-l1mri77b2",
+      "type": "Section",
+      "props": {
+        "heading": "審査請求期間",
+        "level": 2,
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "処分があったことを知った日の翌日から3か月以内"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "処分があった日の翌日から1年以内"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-laodafed7-step",
+      "type": "StepNavigation",
+      "props": {
+        "steps": [
+          {
+            "title": "ステップ1",
+            "body": "審査請求書を作成（処分の内容、審査請求の趣旨・理由等を記載）"
+          },
+          {
+            "title": "ステップ2",
+            "body": "処分庁または審査庁に提出"
+          },
+          {
+            "title": "ステップ3",
+            "body": "審理員による審理"
+          },
+          {
+            "title": "ステップ4",
+            "body": "行政不服審査会への諮問（必要な場合）"
+          },
+          {
+            "title": "ステップ5",
+            "body": "裁決（認容・棄却・却下）"
+          }
+        ],
+        "heading": "審査請求の方法"
+      }
+    },
+    {
+      "id": "section-bybu3brk1",
+      "type": "Section",
+      "props": {
+        "heading": "手数料",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "無料（行政訴訟と異なり、訴訟費用はかかりません）"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "related-links-wye8oqv55",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "監査請求",
+            "href": "/audit-request"
+          },
+          {
+            "title": "法律相談",
+            "href": "/legal-support"
+          },
+          {
+            "title": "情報公開",
+            "href": "/information-disclosure"
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-対象-1769919363153",
+      "type": "Section",
+      "props": {
+        "heading": "行政不服審査の対象となる方",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "詳細は担当課にお問い合わせください。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-必要-1769919363153",
+      "type": "Section",
+      "props": {
+        "heading": "行政不服審査に必要なもの",
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "本人確認書類（マイナンバーカード、運転免許証など）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "印鑑（認印可）"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-方法-1769919363153",
+      "type": "Section",
+      "props": {
+        "heading": "行政不服審査の手続き方法",
+        "content": [
+          {
+            "type": "list",
+            "ordered": true,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "必要書類を準備します。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "窓口で申請書を記入します。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "書類を提出し、確認を受けます。"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{legal_department}}",
+        "phone": "{{legal_phone}}",
+        "email": "{{legal_email}}",
+        "hours": "{{city_hall_hours}}",
+        "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
+      }
+    }
+  ],
+  "search": {
+    "summary": "行政不服審査の案内。行政処分に対する審査請求の手続き。",
+    "keywords": [
+      "行政不服審査",
+      "審査請求",
+      "不服申立て",
+      "行政処分",
+      "行政訴訟"
+    ],
+    "plain_text": "行政不服審査。行政処分に不服がある場合、処分を知った日から3か月以内に審査請求可能。手数料無料。"
+  }
+}

@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "page_id": "sample-services-driving-vehicle-tax",
   "municipality_id": "sample",
-  "path": "/services/driving/vehicle-tax",
+  "path": "/vehicle-tax",
   "title": "自動車税・軽自動車税",
   "description": "自動車税種別割、軽自動車税種別割、納税証明書",
   "content_type": "guide",
@@ -33,11 +33,11 @@
           },
           {
             "label": "運転・車両",
-            "href": "/topics/driving"
+            "href": "/driving"
           },
           {
             "label": "自動車税・軽自動車税",
-            "href": "/services/driving/vehicle-tax"
+            "href": "/vehicle-tax"
           }
         ]
       }
@@ -171,19 +171,19 @@
         "items": [
           {
             "title": "自動車登録",
-            "href": "/services/driving/registration"
+            "href": "/registration"
           },
           {
             "title": "自動車重量税",
-            "href": "/services/driving/weight-tax"
+            "href": "/weight-tax"
           },
           {
             "title": "軽自動車税",
-            "href": "/services/tax/keijidosha"
+            "href": "/keijidosha"
           },
           {
             "title": "自賠責保険",
-            "href": "/services/driving/liability-insurance"
+            "href": "/liability-insurance"
           }
         ]
       }

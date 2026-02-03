@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "page_id": "sample-services-housing-property-registration",
   "municipality_id": "sample",
-  "path": "/services/housing/property-registration",
+  "path": "/property-registration",
   "title": "不動産登記",
   "description": "土地・建物の登記手続き（法務局案内）",
   "content_type": "guide",
@@ -33,11 +33,11 @@
           },
           {
             "label": "住まい・引越し",
-            "href": "/topics/housing"
+            "href": "/housing"
           },
           {
             "label": "不動産登記",
-            "href": "/services/housing/property-registration"
+            "href": "/property-registration"
           }
         ]
       }
@@ -341,19 +341,19 @@
         "items": [
           {
             "title": "住宅購入",
-            "href": "/services/housing/home-purchase"
+            "href": "/home-purchase"
           },
           {
             "title": "固定資産税",
-            "href": "/services/tax/kotei"
+            "href": "/kotei"
           },
           {
             "title": "印鑑登録",
-            "href": "/services/registration/inkan"
+            "href": "/inkan"
           },
           {
             "title": "住民票",
-            "href": "/services/registration/juminhyo"
+            "href": "/juminhyo"
           }
         ]
       }

@@ -1,0 +1,203 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "kawachi-services-business-subsidies",
+  "municipality_id": "kawachi",
+  "path": "/subsidies",
+  "title": "補助金・助成金",
+  "description": "河内町の中小企業向け補助金、国・県の助成制度",
+  "content_type": "guide",
+  "service_category": "business",
+  "audience": [
+    "businesses"
+  ],
+  "topic": [],
+  "source": {
+    "source_url": "template://kawachi/services/business/subsidies",
+    "fetched_at": "2026-02-03T01:50:19.878Z",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "2026-02-03T01:50:19.878Z",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "事業・経営",
+            "href": "/business"
+          },
+          {
+            "label": "補助金・助成金",
+            "href": "/subsidies"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "補助金・助成金"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "中小企業・小規模事業者向けの補助金・助成金制度をご案内します。"
+      }
+    },
+    {
+      "id": "section-mrhayjbgk",
+      "type": "Section",
+      "props": {
+        "heading": "国の主な補助金",
+        "level": 2,
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "小規模事業者持続化補助金",
+                      "bold": true
+                    },
+                    {
+                      "text": "：販路開拓等の経費を補助（最大200万円）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "ものづくり補助金",
+                      "bold": true
+                    },
+                    {
+                      "text": "：革新的な製品・サービス開発を支援（最大1,250万円）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "IT導入補助金",
+                      "bold": true
+                    },
+                    {
+                      "text": "：ITツール導入費用を補助（最大450万円）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "事業再構築補助金",
+                      "bold": true
+                    },
+                    {
+                      "text": "：事業転換・業種転換等を支援"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-auq7459kx",
+      "type": "Section",
+      "props": {
+        "heading": "河内町の補助金",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "{{local_business_subsidy_description}}"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "related-links-h090ksc3o",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "融資制度",
+            "href": "/financing"
+          },
+          {
+            "title": "創業支援",
+            "href": "/startup"
+          },
+          {
+            "title": "法人設立",
+            "href": "/incorporation"
+          },
+          {
+            "title": "職業訓練",
+            "href": "/vocational-training"
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{business_department}}",
+        "phone": "{{business_phone}}",
+        "email": "{{business_email}}",
+        "hours": "{{city_hall_hours}}",
+        "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
+      }
+    }
+  ],
+  "search": {
+    "summary": "補助金・助成金の案内。小規模事業者持続化補助金、ものづくり補助金、IT導入補助金など。",
+    "keywords": [
+      "補助金",
+      "助成金",
+      "持続化補助金",
+      "ものづくり補助金",
+      "IT導入補助金"
+    ],
+    "plain_text": "補助金・助成金。小規模事業者持続化補助金、ものづくり補助金、IT導入補助金、事業再構築補助金など。"
+  }
+}

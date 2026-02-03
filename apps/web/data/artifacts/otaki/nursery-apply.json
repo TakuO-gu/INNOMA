@@ -1,0 +1,448 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "takaoka-services-childcare-nursery-apply",
+  "municipality_id": "takaoka",
+  "path": "/nursery-apply",
+  "title": "認可保育園の入園申込",
+  "description": "認可保育園への入園申込方法。必要書類、申込期間、選考基準など。",
+  "content_type": "step_by_step",
+  "service_category": "children",
+  "audience": [
+    "children_families"
+  ],
+  "topic": [],
+  "source": {
+    "source_url": "template://otaki/services/childcare/nursery/apply",
+    "fetched_at": "2026-01-20T10:33:17.311Z",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "2026-01-20T10:33:17.311Z",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "子育て・教育",
+            "href": "/childcare"
+          },
+          {
+            "label": "認可保育園の入園申込",
+            "href": "/nursery-apply"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "認可保育園の入園申込"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "高岡市内の認可保育園（認定こども園の保育園部分を含む）への入園申込についてご案内します。"
+      }
+    },
+    {
+      "id": "notification-1",
+      "type": "NotificationBanner",
+      "props": {
+        "severity": "info",
+        "title": "{{nursery_apply_year}}度{{nursery_apply_month}}月入園の申込受付中",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "一次申込締切：",
+                "bold": true
+              },
+              {
+                "text": "{{nursery_apply_deadline}}"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-51ebwtqio",
+      "type": "Section",
+      "props": {
+        "heading": "申込できる方",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "高岡市に住民登録があり、保護者のいずれもが次のいずれかに該当し、家庭で保育ができない状態にあるお子さま"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "月64時間以上就労している"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "妊娠中または出産後間もない"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "疾病・障害がある"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "親族を常時介護・看護している"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "災害復旧にあたっている"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "求職活動中（入園後3か月以内に就労開始が条件）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "就学している（職業訓練を含む）"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-eqefwo9pq-table",
+      "type": "Section",
+      "props": {
+        "heading": "必要書類",
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "保育所等利用申込書（様式第1号）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "保育を必要とする証明書（就労証明書など）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "マイナンバー確認書類"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "本人確認書類（運転免許証、パスポート等）"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-yg2zewwnx",
+      "type": "Section",
+      "props": {
+        "heading": "申込方法",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "以下のいずれかの方法でお申し込みください。"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "オンライン申請",
+                      "bold": true
+                    },
+                    {
+                      "text": "（推奨）：電子申請システムから24時間申込可能"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "窓口申請",
+                      "bold": true
+                    },
+                    {
+                      "text": "：保育課窓口へ直接提出"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "郵送申請",
+                      "bold": true
+                    },
+                    {
+                      "text": "：保育課宛に簡易書留で郵送"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-x1de14u7b",
+      "type": "Section",
+      "props": {
+        "heading": "選考について",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "申込多数の場合は、保育の必要性の高い方から優先的に入園を決定します。選考は「利用調整基準」に基づく指数により行います。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "task-button-1",
+      "type": "TaskButton",
+      "props": {
+        "label": "オンラインで申込む",
+        "href": "{{nursery_online_apply_url}}",
+        "isTopTask": true
+      }
+    },
+    {
+      "id": "table-info",
+      "type": "Table",
+      "props": {
+        "rows": [
+          {
+            "label": "申込期間",
+            "value": "{{nursery_apply_period}}"
+          },
+          {
+            "label": "結果通知",
+            "value": "{{nursery_result_notice}}"
+          },
+          {
+            "label": "手数料",
+            "value": "無料"
+          }
+        ]
+      }
+    },
+    {
+      "id": "attachments-1",
+      "type": "Attachments",
+      "props": {
+        "items": [
+          {
+            "title": "保育所等利用申込書（様式第1号）",
+            "href": "{{nursery_form_application_url}}",
+            "content_type": "application/pdf"
+          },
+          {
+            "title": "就労証明書",
+            "href": "{{nursery_form_employment_url}}",
+            "content_type": "application/pdf"
+          },
+          {
+            "title": "利用調整基準表",
+            "href": "{{nursery_form_criteria_url}}",
+            "content_type": "application/pdf"
+          },
+          {
+            "title": "保育園入園のしおり",
+            "href": "{{nursery_form_guide_url}}",
+            "content_type": "application/pdf"
+          }
+        ]
+      }
+    },
+    {
+      "id": "related-links-1",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "児童手当",
+            "href": "/jidou-teate"
+          },
+          {
+            "title": "母子保健",
+            "href": "/boshi"
+          },
+          {
+            "title": "住民票",
+            "href": "/juminhyo"
+          },
+          {
+            "title": "住民税",
+            "href": "/juminzei"
+          },
+          {
+            "title": "育児・介護休業",
+            "href": "/family-leave"
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-対象-1769919363151",
+      "type": "Section",
+      "props": {
+        "heading": "認可保育園の入園申込の対象となる方",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "詳細は担当課にお問い合わせください。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{nursery_apply_department}}",
+        "phone": "{{nursery_apply_phone}}",
+        "email": "{{nursery_apply_email}}",
+        "hours": "{{city_hall_hours}}",
+        "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
+      }
+    }
+  ],
+  "search": {
+    "summary": "認可保育園への入園申込方法。申込資格、必要書類、申込方法、選考基準など。オンライン申請可能。",
+    "keywords": [
+      "保育園",
+      "入園申込",
+      "認可保育園",
+      "申込書",
+      "就労証明書",
+      "保育の必要性",
+      "利用調整"
+    ],
+    "plain_text": "認可保育園への入園申込。申込できる方：住民登録があり、保護者が就労、妊娠・出産、疾病・障害、介護・看護、災害復旧、求職活動、就学のいずれかに該当する方。必要書類：保育所等利用申込書、就労証明書、マイナンバー確認書類、本人確認書類。申込方法：オンライン申請、窓口申請、郵送申請。選考は利用調整基準に基づく指数により行います。"
+  }
+}

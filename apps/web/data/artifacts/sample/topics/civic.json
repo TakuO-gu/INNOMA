@@ -33,7 +33,7 @@
           },
           {
             "label": "市民参加・権利行使",
-            "href": "/topics/civic"
+            "href": "/civic"
           }
         ]
       }
@@ -59,52 +59,52 @@
         "items": [
           {
             "title": "選挙・投票",
-            "href": "/services/civic/election",
+            "href": "/election",
             "description": "選挙日程、投票所一覧、不在者投票、期日前投票"
           },
           {
             "title": "選挙人名簿・在外選挙",
-            "href": "/services/civic/voter-registration",
+            "href": "/voter-registration",
             "description": "選挙人名簿への登録、在外選挙人名簿、投票権の確認"
           },
           {
             "title": "情報公開請求",
-            "href": "/services/civic/information-disclosure",
+            "href": "/information-disclosure",
             "description": "公文書の開示請求、情報公開条例、開示手続き"
           },
           {
             "title": "個人情報保護",
-            "href": "/services/civic/privacy",
+            "href": "/privacy",
             "description": "個人情報の開示・訂正・利用停止請求"
           },
           {
             "title": "行政不服申立て",
-            "href": "/services/civic/administrative-appeal",
+            "href": "/administrative-appeal",
             "description": "審査請求、行政事件訴訟、オンブズマン制度"
           },
           {
             "title": "住民監査請求",
-            "href": "/services/civic/audit-request",
+            "href": "/audit-request",
             "description": "住民監査請求、住民訴訟の手続き"
           },
           {
             "title": "パブリックコメント",
-            "href": "/services/civic/public-comment",
+            "href": "/public-comment",
             "description": "意見公募手続き、パブリックコメントの募集案内"
           },
           {
             "title": "住民投票・直接請求",
-            "href": "/services/civic/direct-democracy",
+            "href": "/direct-democracy",
             "description": "住民投票、条例制定請求、解職請求（リコール）"
           },
           {
             "title": "法律相談・法テラス",
-            "href": "/services/civic/legal-support",
+            "href": "/legal-support",
             "description": "無料法律相談、法テラス（日本司法支援センター）案内"
           },
           {
             "title": "犯罪被害者支援",
-            "href": "/services/civic/victim-support",
+            "href": "/victim-support",
             "description": "犯罪被害者等支援、被害者支援センター、見舞金"
           }
         ]

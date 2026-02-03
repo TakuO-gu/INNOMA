@@ -1,0 +1,150 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "hakone-topics-civic",
+  "municipality_id": "hakone",
+  "path": "/topics/civic",
+  "title": "市民参加・権利行使",
+  "description": "選挙・投票、情報公開請求、行政不服申立てなどの市民参加・権利行使に関する情報",
+  "content_type": "directory",
+  "service_category": "community",
+  "audience": [
+    "residents"
+  ],
+  "topic": [],
+  "source": {
+    "source_url": "template://hakone/topics/civic",
+    "fetched_at": "2026-02-03T01:50:19.573Z",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "2026-02-03T01:50:19.573Z",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "市民参加・権利行使",
+            "href": "/civic"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "市民参加・権利行使"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "選挙・投票、情報公開請求、行政不服申立てなどの市民参加・権利行使に関する情報をまとめています"
+      }
+    },
+    {
+      "id": "topic-list-1",
+      "type": "TopicList",
+      "props": {
+        "items": [
+          {
+            "title": "選挙・投票",
+            "href": "/election",
+            "description": "選挙日程、投票所一覧、不在者投票、期日前投票"
+          },
+          {
+            "title": "選挙人名簿・在外選挙",
+            "href": "/voter-registration",
+            "description": "選挙人名簿への登録、在外選挙人名簿、投票権の確認"
+          },
+          {
+            "title": "情報公開請求",
+            "href": "/information-disclosure",
+            "description": "公文書の開示請求、情報公開条例、開示手続き"
+          },
+          {
+            "title": "個人情報保護",
+            "href": "/privacy",
+            "description": "個人情報の開示・訂正・利用停止請求"
+          },
+          {
+            "title": "行政不服申立て",
+            "href": "/administrative-appeal",
+            "description": "審査請求、行政事件訴訟、オンブズマン制度"
+          },
+          {
+            "title": "住民監査請求",
+            "href": "/audit-request",
+            "description": "住民監査請求、住民訴訟の手続き"
+          },
+          {
+            "title": "パブリックコメント",
+            "href": "/public-comment",
+            "description": "意見公募手続き、パブリックコメントの募集案内"
+          },
+          {
+            "title": "住民投票・直接請求",
+            "href": "/direct-democracy",
+            "description": "住民投票、条例制定請求、解職請求（リコール）"
+          },
+          {
+            "title": "法律相談・法テラス",
+            "href": "/legal-support",
+            "description": "無料法律相談、法テラス（日本司法支援センター）案内"
+          },
+          {
+            "title": "犯罪被害者支援",
+            "href": "/victim-support",
+            "description": "犯罪被害者等支援、被害者支援センター、見舞金"
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{civic_department}}",
+        "phone": "{{civic_phone}}",
+        "email": "{{civic_email}}",
+        "hours": "{{city_hall_hours}}",
+        "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
+      }
+    }
+  ],
+  "search": {
+    "summary": "市民参加・権利行使に関する情報。選挙、投票、裁判、法的支援、犯罪被害者支援、情報公開請求、行政不服申立て、国民審査、住民監査請求の案内。",
+    "keywords": [
+      "市民参加",
+      "権利行使",
+      "選挙",
+      "投票",
+      "裁判",
+      "法的支援",
+      "法テラス",
+      "犯罪被害者支援",
+      "情報公開",
+      "行政不服申立て",
+      "国民審査",
+      "住民監査請求"
+    ],
+    "plain_text": "市民参加・権利行使。選挙・情報公開・行政手続きに関する情報。選挙・投票、裁判・法的支援、犯罪被害者支援、情報公開請求、行政不服申立て、国民審査、住民監査請求。"
+  }
+}

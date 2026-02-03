@@ -1,0 +1,110 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "tobetsu-moving",
+  "municipality_id": "tobetsu",
+  "path": "/moving",
+  "title": "引っ越し",
+  "description": "転入届、転出届、転居届、住所変更に必要な手続きに関する情報",
+  "content_type": "directory",
+  "service_category": "housing",
+  "audience": [
+    "residents"
+  ],
+  "topic": [],
+  "source": {
+    "source_url": "template://tobetsu/moving",
+    "fetched_at": "2026-02-03T01:50:20.454Z",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "2026-02-03T01:50:20.454Z",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "引っ越し",
+            "href": "/moving"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "引っ越し"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "転入届、転出届、転居届、住所変更に必要な手続きをまとめています"
+      }
+    },
+    {
+      "id": "topic-list-1",
+      "type": "CardGrid",
+      "props": {
+        "variant": "link",
+        "columns": 4,
+        "items": [
+          {
+            "title": "転入届",
+            "href": "/tennyu",
+            "description": "他の市区町村から引っ越してきたとき"
+          },
+          {
+            "title": "転出届",
+            "href": "/tenshutsu",
+            "description": "他の市区町村へ引っ越すとき"
+          },
+          {
+            "title": "転居届",
+            "href": "/tenkyo",
+            "description": "市内で住所が変わったとき"
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{registration_department}}",
+        "phone": "{{registration_phone}}",
+        "email": "{{registration_email}}",
+        "hours": "{{city_hall_hours}}",
+        "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
+      }
+    }
+  ],
+  "search": {
+    "summary": "引っ越しに関する情報。転入届、転出届、転居届、住所変更の手続き案内。",
+    "keywords": [
+      "引っ越し",
+      "転入届",
+      "転出届",
+      "転居届",
+      "住所変更"
+    ],
+    "plain_text": "引っ越し。転入届、転出届、転居届、住所変更に必要な手続き。転入届、転出届、転居届、引越し手続き一覧。"
+  }
+}

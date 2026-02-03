@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "page_id": "sample-services-business-financing",
   "municipality_id": "sample",
-  "path": "/services/business/financing",
+  "path": "/financing",
   "title": "融資・資金調達",
   "description": "制度融資、信用保証協会、日本政策金融公庫",
   "content_type": "guide",
@@ -33,11 +33,11 @@
           },
           {
             "label": "事業・経営",
-            "href": "/topics/business"
+            "href": "/business"
           },
           {
             "label": "融資・資金調達",
-            "href": "/services/business/financing"
+            "href": "/financing"
           }
         ]
       }
@@ -338,15 +338,15 @@
         "items": [
           {
             "title": "創業支援・スタートアップ",
-            "href": "/services/business/startup"
+            "href": "/startup"
           },
           {
             "title": "補助金・助成金",
-            "href": "/services/business/subsidies"
+            "href": "/subsidies"
           },
           {
             "title": "法人設立",
-            "href": "/services/business/incorporation"
+            "href": "/incorporation"
           }
         ]
       }

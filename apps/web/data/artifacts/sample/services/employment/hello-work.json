@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "page_id": "sample-services-employment-hello-work",
   "municipality_id": "sample",
-  "path": "/services/employment/hello-work",
+  "path": "/hello-work",
   "title": "ハローワーク・求人情報",
   "description": "東京都内のハローワーク所在地、求人検索案内",
   "content_type": "guide",
@@ -33,11 +33,11 @@
           },
           {
             "label": "仕事・労働",
-            "href": "/topics/employment"
+            "href": "/employment"
           },
           {
             "label": "ハローワーク",
-            "href": "/services/employment/hello-work"
+            "href": "/hello-work"
           }
         ]
       }
@@ -171,23 +171,23 @@
         "items": [
           {
             "title": "雇用保険",
-            "href": "/services/employment/unemployment-insurance"
+            "href": "/unemployment-insurance"
           },
           {
             "title": "職業訓練",
-            "href": "/services/employment/vocational-training"
+            "href": "/vocational-training"
           },
           {
             "title": "就職支援",
-            "href": "/services/employment/career-support"
+            "href": "/career-support"
           },
           {
             "title": "生活保護",
-            "href": "/services/welfare/seikatsu-hogo"
+            "href": "/seikatsu-hogo"
           },
           {
             "title": "住宅手当",
-            "href": "/services/housing/housing-benefit"
+            "href": "/housing-benefit"
           }
         ]
       }

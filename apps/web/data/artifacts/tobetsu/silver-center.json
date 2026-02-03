@@ -1,0 +1,238 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "tobetsu-services-employment-silver-center",
+  "municipality_id": "tobetsu",
+  "path": "/silver-center",
+  "title": "シルバー人材センター",
+  "description": "当別町シルバー人材センターの入会・仕事案内",
+  "content_type": "guide",
+  "service_category": "business",
+  "audience": [
+    "residents"
+  ],
+  "topic": [],
+  "source": {
+    "source_url": "template://tobetsu/services/employment/silver-center",
+    "fetched_at": "2026-02-03T01:50:20.417Z",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "2026-02-03T01:50:20.417Z",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "仕事・労働",
+            "href": "/employment"
+          },
+          {
+            "label": "シルバー人材センター",
+            "href": "/silver-center"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "シルバー人材センター"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "おおむね60歳以上の方が、これまでの経験や能力を活かして働くための公益法人です。臨時的・短期的な仕事を提供しています。"
+      }
+    },
+    {
+      "id": "section-nc7dmo5zl",
+      "type": "Section",
+      "props": {
+        "heading": "入会資格",
+        "level": 2,
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "おおむね60歳以上の方"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "当別町に在住の方"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "健康で働く意欲のある方"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-rz3mesbp4",
+      "type": "Section",
+      "props": {
+        "heading": "主な仕事の種類",
+        "level": 2,
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "一般作業（除草、清掃、軽作業など）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "技能作業（大工、塗装、植木剪定など）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "管理作業（施設管理、駐車場管理など）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "サービス作業（家事援助、子育て支援など）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "事務作業（一般事務、経理など）"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-wbwhm4oue",
+      "type": "Section",
+      "props": {
+        "heading": "会費",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "年会費：{{silver_center_fee}}円"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "related-links-cs51wad78",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "高齢者福祉",
+            "href": "/koureisha"
+          },
+          {
+            "title": "ハローワーク",
+            "href": "/hello-work"
+          },
+          {
+            "title": "年金",
+            "href": "/nenkin"
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "当別町シルバー人材センター",
+        "phone": "{{silver_center_phone}}",
+        "email": "{{silver_center_email}}",
+        "address": "{{silver_center_address}}"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
+      }
+    }
+  ],
+  "search": {
+    "summary": "シルバー人材センターの案内。入会資格、主な仕事の種類、会費。",
+    "keywords": [
+      "シルバー人材センター",
+      "高齢者就労",
+      "60歳以上",
+      "臨時仕事",
+      "短期仕事"
+    ],
+    "plain_text": "シルバー人材センター。60歳以上の方が経験を活かして働く。除草、清掃、植木剪定、家事援助など様々な仕事。"
+  }
+}

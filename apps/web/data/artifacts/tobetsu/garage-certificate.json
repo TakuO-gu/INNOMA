@@ -1,0 +1,311 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "tobetsu-services-driving-garage-certificate",
+  "municipality_id": "tobetsu",
+  "path": "/garage-certificate",
+  "title": "車庫証明（保管場所証明）",
+  "description": "自動車保管場所証明書の申請手続き（警察署案内）",
+  "content_type": "guide",
+  "service_category": "government",
+  "audience": [
+    "residents"
+  ],
+  "topic": [],
+  "source": {
+    "source_url": "template://tobetsu/services/driving/garage-certificate",
+    "fetched_at": "2026-02-03T01:50:20.409Z",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "2026-02-03T01:50:20.409Z",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "運転・車両",
+            "href": "/driving"
+          },
+          {
+            "label": "車庫証明",
+            "href": "/garage-certificate"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "車庫証明（保管場所証明）"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "自動車を購入・住所変更する際に必要な車庫証明（自動車保管場所証明書）の申請手続きをご案内します。"
+      }
+    },
+    {
+      "id": "section-aqq9jb4wl",
+      "type": "Section",
+      "props": {
+        "heading": "車庫証明が必要な場合",
+        "level": 2,
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "自動車の新規登録"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "移転登録（名義変更）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "変更登録（住所変更）"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-r7w8lpr9m",
+      "type": "Section",
+      "props": {
+        "heading": "必要書類",
+        "level": 2,
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "自動車保管場所証明申請書"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "保管場所の所在図・配置図"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "保管場所使用権原疎明書面（自認書または使用承諾書）"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-8tsc780dq",
+      "type": "Section",
+      "props": {
+        "heading": "手数料・期間",
+        "level": 2,
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "申請手数料：2,100円程度"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "標章交付手数料：500円程度"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "交付まで：3〜7日程度"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "related-links-1wbsv9yp2",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "自動車登録",
+            "href": "/registration"
+          },
+          {
+            "title": "運転免許証",
+            "href": "/license"
+          },
+          {
+            "title": "駐車場",
+            "href": "/parking"
+          },
+          {
+            "title": "印鑑登録",
+            "href": "/inkan"
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-対象-1769919363160",
+      "type": "Section",
+      "props": {
+        "heading": "車庫証明（保管場所証明）の対象となる方",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "詳細は担当課にお問い合わせください。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-方法-1769919363160",
+      "type": "Section",
+      "props": {
+        "heading": "車庫証明（保管場所証明）の手続き方法",
+        "content": [
+          {
+            "type": "list",
+            "ordered": true,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "必要書類を準備します。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "窓口で申請書を記入します。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "書類を提出し、確認を受けます。"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{police_station}}",
+        "phone": "{{police_station_phone}}",
+        "address": "{{police_station_address}}"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
+      }
+    }
+  ],
+  "search": {
+    "summary": "車庫証明の申請手続き。必要書類、手数料、申請先。",
+    "keywords": [
+      "車庫証明",
+      "保管場所証明",
+      "自動車",
+      "駐車場",
+      "警察署"
+    ],
+    "plain_text": "車庫証明（保管場所証明）。自動車購入・住所変更時に必要。警察署で申請、交付まで3〜7日。"
+  }
+}

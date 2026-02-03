@@ -1,0 +1,408 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "hakone-services-welfare-seikatsu-hogo",
+  "municipality_id": "hakone",
+  "path": "/seikatsu-hogo",
+  "title": "生活保護",
+  "description": "生活保護制度の概要、申請方法、受けられる扶助について",
+  "content_type": "guide",
+  "service_category": "welfare",
+  "audience": [
+    "residents"
+  ],
+  "topic": [],
+  "source": {
+    "source_url": "template://hakone/services/welfare/seikatsu-hogo",
+    "fetched_at": "2026-02-03T01:50:19.572Z",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "2026-02-03T01:50:19.572Z",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "福祉・介護",
+            "href": "/welfare"
+          },
+          {
+            "label": "生活保護",
+            "href": "/seikatsu-hogo"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "生活保護"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "生活保護は、病気や失業などで生活に困っている方に対し、最低限度の生活を保障し、自立を支援する制度です。生活に困ったときは、まずご相談ください。"
+      }
+    },
+    {
+      "id": "section-5uhf5dede",
+      "type": "Section",
+      "props": {
+        "heading": "生活保護とは",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "生活保護は、憲法第25条に基づく国民の権利です。"
+              },
+              {
+                "text": "利用できる資産や能力、他の制度を活用してもなお生活に困窮する場合に、困窮の程度に応じて必要な保護を行い、最低限度の生活を保障するとともに、自立を助長することを目的としています。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-7cj7r02sh",
+      "type": "Section",
+      "props": {
+        "heading": "生活保護を受けるための要件",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "生活保護は、以下の要件を満たす場合に受けることができます。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-7cj7r02sh-table",
+      "type": "Table",
+      "props": {
+        "rows": [
+          {
+            "label": "資産の活用",
+            "value": "預貯金、土地・建物、生命保険など、活用できる資産は生活費に充てること"
+          },
+          {
+            "label": "能力の活用",
+            "value": "働ける方は、その能力に応じて働くこと"
+          },
+          {
+            "label": "他の制度の活用",
+            "value": "年金、児童手当、雇用保険など、他の制度で受けられる給付は受けること"
+          },
+          {
+            "label": "扶養義務者からの援助",
+            "value": "親族からの援助が可能な場合は、援助を受けること"
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-7cj7r02sh-notification-0",
+      "type": "NotificationBanner",
+      "props": {
+        "severity": "info",
+        "title": "お知らせ",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "持ち家に住んでいる、車を持っている、働いている、という理由だけで生活保護を受けられないわけではありません。まずはご相談ください。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "table-fujo",
+      "type": "Table",
+      "props": {
+        "rows": [
+          {
+            "label": "生活扶助",
+            "value": "日常生活に必要な費用（食費、被服費、光熱費など）"
+          },
+          {
+            "label": "住宅扶助",
+            "value": "家賃、地代など"
+          },
+          {
+            "label": "教育扶助",
+            "value": "義務教育に必要な学用品、給食費など"
+          },
+          {
+            "label": "医療扶助",
+            "value": "医療費（現物給付）"
+          },
+          {
+            "label": "介護扶助",
+            "value": "介護サービス費（現物給付）"
+          },
+          {
+            "label": "出産扶助",
+            "value": "出産に必要な費用"
+          },
+          {
+            "label": "生業扶助",
+            "value": "就労に必要な技能習得費用など"
+          },
+          {
+            "label": "葬祭扶助",
+            "value": "葬祭に必要な費用"
+          }
+        ],
+        "heading": "受けられる扶助の種類"
+      }
+    },
+    {
+      "id": "step-nav-1",
+      "type": "StepNavigation",
+      "props": {
+        "currentStep": 0,
+        "steps": [
+          {
+            "title": "相談",
+            "body": "福祉事務所（市役所福祉課）に相談してください。生活状況を伺い、制度について説明します。",
+            "documents": []
+          },
+          {
+            "title": "申請",
+            "body": "申請書を提出します。申請は国民の権利であり、申請を拒否することはできません。",
+            "documents": [
+              "申請書"
+            ]
+          },
+          {
+            "title": "調査",
+            "body": "ケースワーカーが家庭訪問や資産調査を行います。",
+            "documents": []
+          },
+          {
+            "title": "決定",
+            "body": "申請から原則14日以内（最長30日）に保護の要否が決定されます。",
+            "documents": []
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-29whp5e50",
+      "type": "Section",
+      "props": {
+        "heading": "相談窓口",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "生活にお困りの方は、まず福祉事務所にご相談ください。相談は無料で、秘密は厳守します。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-29whp5e50-notification-0",
+      "type": "NotificationBanner",
+      "props": {
+        "severity": "warning",
+        "title": "申請は権利です",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "生活保護の申請は国民の権利です。窓口で申請を拒否されることはありません。「まだ働ける」「親族に援助を頼め」などと言われて申請を諦める必要はありません。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "related-links-1",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "障害者福祉",
+            "href": "/shogai"
+          },
+          {
+            "title": "地域包括支援センター",
+            "href": "/houkatsu"
+          },
+          {
+            "title": "国民健康保険",
+            "href": "/kokuho"
+          },
+          {
+            "title": "住宅手当",
+            "href": "/housing-benefit"
+          },
+          {
+            "title": "ハローワーク",
+            "href": "/hello-work"
+          },
+          {
+            "title": "法律相談",
+            "href": "/legal-support"
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-対象-1769919363223",
+      "type": "Section",
+      "props": {
+        "heading": "生活保護の対象となる方",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "詳細は担当課にお問い合わせください。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-必要-1769919363223",
+      "type": "Section",
+      "props": {
+        "heading": "生活保護に必要なもの",
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "本人確認書類（マイナンバーカード、運転免許証など）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "印鑑（認印可）"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-方法-1769919363223",
+      "type": "Section",
+      "props": {
+        "heading": "生活保護の手続き方法",
+        "content": [
+          {
+            "type": "list",
+            "ordered": true,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "必要書類を準備します。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "窓口で申請書を記入します。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "書類を提出し、確認を受けます。"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{seikatsu_hogo_department}}",
+        "phone": "{{seikatsu_hogo_phone}}",
+        "email": "{{seikatsu_hogo_email}}",
+        "hours": "{{city_hall_hours}}",
+        "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
+      }
+    }
+  ],
+  "search": {
+    "summary": "生活保護制度の案内。申請方法、受けられる扶助の種類について。",
+    "keywords": [
+      "生活保護",
+      "生活困窮",
+      "生活扶助",
+      "医療扶助",
+      "住宅扶助",
+      "福祉事務所"
+    ],
+    "plain_text": "生活保護。生活に困っている方への最低限度の生活保障と自立支援。生活扶助、住宅扶助、医療扶助など。申請は国民の権利。まずは福祉事務所に相談。"
+  }
+}

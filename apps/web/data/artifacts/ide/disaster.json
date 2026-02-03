@@ -1,0 +1,117 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "ide-disaster",
+  "municipality_id": "ide",
+  "path": "/disaster",
+  "title": "災害・緊急情報",
+  "description": "避難所、ハザードマップ、防災メール、地震・台風対策に関する情報",
+  "content_type": "directory",
+  "service_category": "safety",
+  "audience": [
+    "residents"
+  ],
+  "topic": [
+    "emergency"
+  ],
+  "source": {
+    "source_url": "template://ide/disaster",
+    "fetched_at": "2026-02-03T01:50:19.728Z",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "2026-02-03T01:50:19.728Z",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "災害・緊急情報",
+            "href": "/disaster"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "災害・緊急情報"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "避難所、ハザードマップ、防災メール、地震・台風対策に関する情報をまとめています"
+      }
+    },
+    {
+      "id": "topic-list-1",
+      "type": "CardGrid",
+      "props": {
+        "variant": "link",
+        "columns": 4,
+        "items": [
+          {
+            "title": "避難所・避難場所",
+            "href": "/hinanjo",
+            "description": "避難所の場所・開設状況"
+          },
+          {
+            "title": "ハザードマップ",
+            "href": "/hazard-map",
+            "description": "洪水・土砂災害・津波のハザードマップ"
+          },
+          {
+            "title": "防災メール",
+            "href": "/bosai-mail",
+            "description": "防災情報メールの登録"
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{disaster_department}}",
+        "phone": "{{disaster_phone}}",
+        "email": "{{disaster_email}}",
+        "hours": "{{city_hall_hours}}",
+        "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
+      }
+    }
+  ],
+  "search": {
+    "summary": "災害・緊急情報に関する情報。避難所、ハザードマップ、地震・風水害対策、防災メールの案内。",
+    "keywords": [
+      "災害",
+      "緊急",
+      "避難所",
+      "ハザードマップ",
+      "地震",
+      "台風",
+      "洪水",
+      "防災メール",
+      "消防",
+      "救急"
+    ],
+    "plain_text": "災害・緊急情報。避難所、ハザードマップ、防災メール、地震・台風対策に関する情報。避難所・避難場所、ハザードマップ、防災メール。"
+  }
+}

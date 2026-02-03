@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "page_id": "sample-services-housing-building-permit",
   "municipality_id": "sample",
-  "path": "/services/housing/building-permit",
+  "path": "/building-permit",
   "title": "建築確認申請",
   "description": "新築・増改築の建築確認申請手続き",
   "content_type": "guide",
@@ -34,11 +34,11 @@
           },
           {
             "label": "住まい・引越し",
-            "href": "/topics/housing"
+            "href": "/housing"
           },
           {
             "label": "建築確認申請",
-            "href": "/services/housing/building-permit"
+            "href": "/building-permit"
           }
         ]
       }
@@ -214,19 +214,19 @@
         "items": [
           {
             "title": "住宅購入",
-            "href": "/services/housing/home-purchase"
+            "href": "/home-purchase"
           },
           {
             "title": "都市計画",
-            "href": "/services/land/urban-planning"
+            "href": "/urban-planning"
           },
           {
             "title": "開発許可",
-            "href": "/services/land/development-permit"
+            "href": "/development-permit"
           },
           {
             "title": "耐震改修",
-            "href": "/services/housing/seismic-retrofit"
+            "href": "/seismic-retrofit"
           }
         ]
       }

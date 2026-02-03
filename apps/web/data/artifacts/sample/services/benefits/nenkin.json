@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "page_id": "sample-services-benefits-nenkin",
   "municipality_id": "sample",
-  "path": "/services/benefits/nenkin",
+  "path": "/nenkin",
   "title": "国民年金",
   "description": "国民年金の加入・届出、保険料、受給手続きについて",
   "content_type": "guide",
@@ -33,11 +33,11 @@
           },
           {
             "label": "社会保障・給付金",
-            "href": "/topics/benefits"
+            "href": "/benefits"
           },
           {
             "label": "国民年金",
-            "href": "/services/benefits/nenkin"
+            "href": "/nenkin"
           }
         ]
       }
@@ -372,27 +372,27 @@
         "items": [
           {
             "title": "国民健康保険",
-            "href": "/services/health/kokuho"
+            "href": "/kokuho"
           },
           {
             "title": "後期高齢者医療",
-            "href": "/services/health/kouki"
+            "href": "/kouki"
           },
           {
             "title": "介護保険",
-            "href": "/services/welfare/kaigo"
+            "href": "/kaigo"
           },
           {
             "title": "死亡届",
-            "href": "/services/registration/shibou"
+            "href": "/shibou"
           },
           {
             "title": "マイナンバーカード",
-            "href": "/services/registration/mynumber"
+            "href": "/mynumber"
           },
           {
             "title": "住民税",
-            "href": "/services/tax/juminzei"
+            "href": "/juminzei"
           }
         ]
       }

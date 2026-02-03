@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "page_id": "sample-services-driving-senior-driving",
   "municipality_id": "sample",
-  "path": "/services/driving/senior-driving",
+  "path": "/senior-driving",
   "title": "高齢者運転支援",
   "description": "運転免許証自主返納、高齢者講習、安全運転相談",
   "content_type": "guide",
@@ -33,11 +33,11 @@
           },
           {
             "label": "運転・車両",
-            "href": "/topics/driving"
+            "href": "/driving"
           },
           {
             "label": "高齢者運転支援",
-            "href": "/services/driving/senior-driving"
+            "href": "/senior-driving"
           }
         ]
       }
@@ -143,19 +143,19 @@
         "items": [
           {
             "title": "運転免許証",
-            "href": "/services/driving/license"
+            "href": "/license"
           },
           {
             "title": "交通安全",
-            "href": "/services/driving/traffic-safety"
+            "href": "/traffic-safety"
           },
           {
             "title": "高齢者福祉",
-            "href": "/services/welfare/koureisha"
+            "href": "/koureisha"
           },
           {
             "title": "地域包括支援センター",
-            "href": "/services/welfare/houkatsu"
+            "href": "/houkatsu"
           }
         ]
       }

@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "page_id": "sample-services-civic-victim-support",
   "municipality_id": "sample",
-  "path": "/services/civic/victim-support",
+  "path": "/victim-support",
   "title": "犯罪被害者支援",
   "description": "犯罪被害者支援制度、相談窓口、給付金",
   "content_type": "guide",
@@ -33,11 +33,11 @@
           },
           {
             "label": "市民参加・権利行使",
-            "href": "/topics/civic"
+            "href": "/civic"
           },
           {
             "label": "犯罪被害者支援",
-            "href": "/services/civic/victim-support"
+            "href": "/victim-support"
           }
         ]
       }
@@ -263,11 +263,11 @@
         "items": [
           {
             "title": "法律相談",
-            "href": "/services/civic/legal-support"
+            "href": "/legal-support"
           },
           {
             "title": "交通事故",
-            "href": "/services/driving/accident"
+            "href": "/accident"
           }
         ]
       }

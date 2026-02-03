@@ -1,0 +1,329 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "kitagawa-services-disaster-hazard-map",
+  "municipality_id": "kitagawa",
+  "path": "/hazard-map",
+  "title": "ハザードマップ",
+  "description": "洪水、土砂災害、津波、地震などのハザードマップと見方",
+  "content_type": "guide",
+  "service_category": "safety",
+  "audience": [
+    "residents"
+  ],
+  "topic": [],
+  "source": {
+    "source_url": "template://kitagawa/services/disaster/hazard-map",
+    "fetched_at": "2026-02-03T01:50:19.993Z",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "2026-02-03T01:50:19.993Z",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "防災・安全",
+            "href": "/disaster"
+          },
+          {
+            "label": "ハザードマップ",
+            "href": "/hazard-map"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "ハザードマップ"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "ハザードマップは、自然災害による被害を予測し、被害範囲や避難場所などを地図上に示したものです。お住まいの地域の危険箇所を事前に確認しておきましょう。"
+      }
+    },
+    {
+      "id": "richtext-intro",
+      "type": "RichText",
+      "props": {
+        "content": []
+      }
+    },
+    {
+      "id": "richtext-intro-notification-0",
+      "type": "NotificationBanner",
+      "props": {
+        "severity": "warning",
+        "title": "ハザードマップを活用しましょう",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "ハザードマップで示された区域以外でも災害が発生する可能性があります。マップを参考に、日頃から避難場所や避難経路を確認しておくことが大切です。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-l3aq8689q",
+      "type": "Section",
+      "props": {
+        "heading": "洪水ハザードマップ",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "河川が氾濫した場合の浸水想定区域と浸水深を示しています。想定される最大規模の降雨（{{kozui_soutei_uryou}}）による浸水を想定しています。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "table-kozui",
+      "type": "Table",
+      "props": {
+        "rows": [
+          {
+            "label": "浸水深0.5m未満",
+            "value": "床下浸水程度"
+          },
+          {
+            "label": "浸水深0.5〜3m",
+            "value": "床上浸水〜1階天井程度"
+          },
+          {
+            "label": "浸水深3〜5m",
+            "value": "2階天井程度"
+          },
+          {
+            "label": "浸水深5m以上",
+            "value": "2階以上が浸水"
+          }
+        ]
+      }
+    },
+    {
+      "id": "task-button-kozui",
+      "type": "TaskButton",
+      "props": {
+        "label": "洪水ハザードマップを見る",
+        "href": "{{kozui_hazard_map_url}}",
+        "isTopTask": true
+      }
+    },
+    {
+      "id": "section-mmtinpl1q",
+      "type": "Section",
+      "props": {
+        "heading": "土砂災害ハザードマップ",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "土砂災害警戒区域（イエローゾーン）と土砂災害特別警戒区域（レッドゾーン）を示しています。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-mmtinpl1q-desclist",
+      "type": "DescriptionList",
+      "props": {
+        "items": [
+          {
+            "term": "土石流危険渓流",
+            "description": "谷や沢沿いに土石流が流れ出るおそれのある区域"
+          },
+          {
+            "term": "急傾斜地崩壊危険箇所",
+            "description": "がけ崩れが発生するおそれのある区域"
+          },
+          {
+            "term": "地すべり危険箇所",
+            "description": "地すべりが発生するおそれのある区域"
+          }
+        ]
+      }
+    },
+    {
+      "id": "task-button-dosha",
+      "type": "TaskButton",
+      "props": {
+        "label": "土砂災害ハザードマップを見る",
+        "href": "{{dosha_hazard_map_url}}",
+        "isTopTask": false
+      }
+    },
+    {
+      "id": "section-iezsv0n1b",
+      "type": "Section",
+      "props": {
+        "heading": "地震ハザードマップ",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "想定される地震による揺れやすさ、液状化の危険度を示しています。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-iezsv0n1b-desclist",
+      "type": "DescriptionList",
+      "props": {
+        "items": [
+          {
+            "term": "揺れやすさマップ",
+            "description": "地盤の揺れやすさを示す"
+          },
+          {
+            "term": "液状化マップ",
+            "description": "液状化の可能性を示す"
+          },
+          {
+            "term": "建物倒壊危険度マップ",
+            "description": "建物の被害程度を示す"
+          }
+        ]
+      }
+    },
+    {
+      "id": "task-button-jishin",
+      "type": "TaskButton",
+      "props": {
+        "label": "地震ハザードマップを見る",
+        "href": "{{jishin_hazard_map_url}}",
+        "isTopTask": false
+      }
+    },
+    {
+      "id": "section-7exyezh01-step",
+      "type": "StepNavigation",
+      "props": {
+        "steps": [
+          {
+            "title": "ステップ1",
+            "body": "自宅の位置を確認：自宅がどの危険区域にあるか確認しましょう"
+          },
+          {
+            "title": "ステップ2",
+            "body": "避難場所を確認：最寄りの避難場所と経路を確認しましょう"
+          },
+          {
+            "title": "ステップ3",
+            "body": "避難経路の安全確認：避難経路上に危険な箇所がないか確認しましょう"
+          },
+          {
+            "title": "ステップ4",
+            "body": "家族で共有：避難場所や連絡方法を家族で話し合いましょう"
+          }
+        ],
+        "heading": "ハザードマップの活用方法"
+      }
+    },
+    {
+      "id": "section-zilntroxh",
+      "type": "Section",
+      "props": {
+        "heading": "ハザードマップの配布",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "紙のハザードマップは、{{hazard_map_haifu_basho}}で配布しています。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "related-links-1",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "避難所・避難場所",
+            "href": "/hinanjo"
+          },
+          {
+            "title": "防災情報メール",
+            "href": "/bosai-mail"
+          },
+          {
+            "title": "非常持出品",
+            "href": "/mochidashi"
+          },
+          {
+            "title": "重ねるハザードマップ（国土交通省）",
+            "href": "https://disaportal.gsi.go.jp/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{bosai_department}}",
+        "phone": "{{bosai_phone}}",
+        "email": "{{bosai_email}}",
+        "hours": "{{city_hall_hours}}",
+        "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
+      }
+    }
+  ],
+  "search": {
+    "summary": "ハザードマップの案内。洪水、土砂災害、地震のハザードマップと活用方法について。",
+    "keywords": [
+      "ハザードマップ",
+      "洪水",
+      "浸水",
+      "土砂災害",
+      "地震",
+      "液状化",
+      "避難",
+      "防災"
+    ],
+    "plain_text": "ハザードマップ。洪水ハザードマップは河川氾濫時の浸水想定区域を表示。土砂災害ハザードマップは警戒区域を表示。地震ハザードマップは揺れやすさ、液状化危険度を表示。避難場所・避難経路の確認に活用を。"
+  }
+}

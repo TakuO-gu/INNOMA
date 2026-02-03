@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "page_id": "sample-services-registration-konin",
   "municipality_id": "sample",
-  "path": "/services/registration/konin",
+  "path": "/konin",
   "title": "婚姻届",
   "description": "婚姻届の届出方法、必要書類、届出先について",
   "content_type": "step_by_step",
@@ -33,11 +33,11 @@
           },
           {
             "label": "届出・証明",
-            "href": "/topics/registration"
+            "href": "/registration"
           },
           {
             "label": "婚姻届",
-            "href": "/services/registration/konin"
+            "href": "/konin"
           }
         ]
       }
@@ -339,23 +339,23 @@
         "items": [
           {
             "title": "戸籍",
-            "href": "/services/registration/koseki"
+            "href": "/koseki"
           },
           {
             "title": "住民票",
-            "href": "/services/registration/juminhyo"
+            "href": "/juminhyo"
           },
           {
             "title": "マイナンバーカード",
-            "href": "/services/registration/mynumber"
+            "href": "/mynumber"
           },
           {
             "title": "国民健康保険",
-            "href": "/services/health/kokuho"
+            "href": "/kokuho"
           },
           {
             "title": "国際結婚",
-            "href": "/services/nationality/international-marriage"
+            "href": "/international-marriage"
           }
         ]
       }

@@ -1,0 +1,153 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "kitagawa-topics-nationality",
+  "municipality_id": "kitagawa",
+  "path": "/topics/nationality",
+  "title": "戸籍・国籍・在留",
+  "description": "日本国籍、帰化申請、在留資格、外国人登録などの戸籍・国籍・在留に関する情報",
+  "content_type": "directory",
+  "service_category": "government",
+  "audience": [
+    "residents",
+    "foreigners"
+  ],
+  "topic": [],
+  "source": {
+    "source_url": "template://kitagawa/topics/nationality",
+    "fetched_at": "2026-02-03T01:50:20.036Z",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "2026-02-03T01:50:20.036Z",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "戸籍・国籍・在留",
+            "href": "/nationality"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "戸籍・国籍・在留"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "日本国籍、帰化申請、在留資格、外国人登録などの戸籍・国籍・在留に関する情報をまとめています"
+      }
+    },
+    {
+      "id": "topic-list-1",
+      "type": "TopicList",
+      "props": {
+        "items": [
+          {
+            "title": "日本国籍の取得（帰化）",
+            "href": "/naturalization",
+            "description": "帰化申請の要件、手続き、法務局案内"
+          },
+          {
+            "title": "日本国籍の離脱・喪失",
+            "href": "/loss-of-citizenship",
+            "description": "国籍離脱届、二重国籍の解消、国籍選択届"
+          },
+          {
+            "title": "在留資格・ビザ",
+            "href": "/visa",
+            "description": "在留資格の種類、在留資格変更・更新、入国管理局案内"
+          },
+          {
+            "title": "在留カード",
+            "href": "/residence-card",
+            "description": "在留カードの交付・更新・届出、住居地届出"
+          },
+          {
+            "title": "特別永住者証明書",
+            "href": "/special-permanent-resident",
+            "description": "特別永住者証明書の交付・更新・届出"
+          },
+          {
+            "title": "外国人住民の届出",
+            "href": "/foreign-registration",
+            "description": "転入届、転出届、世帯変更届、氏名変更届"
+          },
+          {
+            "title": "国際結婚・国際離婚",
+            "href": "/international-marriage",
+            "description": "渉外婚姻届、渉外離婚届、外国での手続き"
+          },
+          {
+            "title": "外国人のための相談窓口",
+            "href": "/consultation",
+            "description": "多言語相談、生活相談、北川村国際交流協会"
+          },
+          {
+            "title": "日本語教室",
+            "href": "/japanese-class",
+            "description": "日本語学習支援、地域日本語教室、日本語能力試験"
+          },
+          {
+            "title": "パスポート（旅券）",
+            "href": "/passport",
+            "description": "パスポートの申請・更新・届出、{{passport_office_name}}"
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{nationality_department}}",
+        "phone": "{{nationality_phone}}",
+        "email": "{{nationality_email}}",
+        "hours": "{{city_hall_hours}}",
+        "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
+      }
+    }
+  ],
+  "search": {
+    "summary": "戸籍・国籍・在留に関する情報。日本国籍、帰化申請、在留資格、ビザ、在留カード、特別永住者証明書、外国人登録、入国、出国、難民認定、国際結婚の案内。",
+    "keywords": [
+      "戸籍",
+      "国籍",
+      "在留",
+      "日本国籍",
+      "帰化",
+      "在留資格",
+      "ビザ",
+      "在留カード",
+      "特別永住者",
+      "外国人登録",
+      "入国",
+      "出国",
+      "難民認定",
+      "国際結婚"
+    ],
+    "plain_text": "戸籍・国籍・在留。国籍・在留資格・外国人の届出に関する情報。日本国籍の取得・離脱、帰化申請、在留資格・ビザ、在留カード・特別永住者証明書、外国人登録、入国・出国手続き、難民認定、国際結婚・渉外戸籍。"
+  }
+}

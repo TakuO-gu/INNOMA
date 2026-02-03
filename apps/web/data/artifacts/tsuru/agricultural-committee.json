@@ -1,0 +1,353 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "tsuru-services-land-agricultural-committee",
+  "municipality_id": "tsuru",
+  "path": "/agricultural-committee",
+  "title": "農業委員会",
+  "description": "農業委員会の役割、農地の売買・賃貸借許可、農地利用最適化",
+  "content_type": "guide",
+  "service_category": "environment",
+  "audience": [
+    "residents",
+    "businesses"
+  ],
+  "topic": [],
+  "source": {
+    "source_url": "template://sample/services/land/agricultural-committee",
+    "fetched_at": "{{generated_at}}",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "{{generated_at}}",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "土地・農林水産",
+            "href": "/land"
+          },
+          {
+            "label": "農業委員会",
+            "href": "/agricultural-committee"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "農業委員会"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "農業委員会は、農地の売買・賃貸借の許可、農地転用の許可など、農地に関する事務を行う行政委員会です。"
+      }
+    },
+    {
+      "id": "section-2dxjg1o04",
+      "type": "Section",
+      "props": {
+        "heading": "農業委員会の主な業務",
+        "level": 2,
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "農地の売買・貸借の許可（農地法3条）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "農地転用の許可（農地法4条・5条）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "農地利用の最適化推進（遊休農地対策、新規参入促進）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "農地台帳の整備"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "農地に関する相談"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-3h2uzlz12",
+      "type": "Section",
+      "props": {
+        "heading": "農地の売買・賃貸借（農地法3条許可）",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "農地を農地のまま売買・賃貸借する場合は、農業委員会の許可が必要です。"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "許可要件：取得者が農業経営を行う見込みがあること"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "必要書類：申請書、土地登記事項証明書、営農計画書など"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-l4n6ktjth",
+      "type": "Section",
+      "props": {
+        "heading": "農地中間管理事業",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "農地中間管理機構（農地バンク）を通じて、農地の貸し借りを円滑に行うことができます。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-gww0g5eym",
+      "type": "Section",
+      "props": {
+        "heading": "農業委員会総会",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "毎月開催（{{agricultural_commission_meeting_day}}）。許可申請は総会で審議されます。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "related-links-3g1s1xpdn",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "農地転用",
+            "href": "/farmland-conversion"
+          },
+          {
+            "title": "新規就農",
+            "href": "/new-farmer"
+          },
+          {
+            "title": "農業補助金",
+            "href": "/agriculture-subsidy"
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-対象-1769919363181",
+      "type": "Section",
+      "props": {
+        "heading": "農業委員会の対象となる方",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "詳細は担当課にお問い合わせください。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-必要-1769919363181",
+      "type": "Section",
+      "props": {
+        "heading": "農業委員会に必要なもの",
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "本人確認書類（マイナンバーカード、運転免許証など）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "印鑑（認印可）"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-方法-1769919363181",
+      "type": "Section",
+      "props": {
+        "heading": "農業委員会の手続き方法",
+        "content": [
+          {
+            "type": "list",
+            "ordered": true,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "必要書類を準備します。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "窓口で申請書を記入します。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "書類を提出し、確認を受けます。"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{agricultural_commission}}",
+        "phone": "{{agricultural_commission_phone}}",
+        "email": "{{agricultural_commission_email}}",
+        "hours": "{{city_hall_hours}}",
+        "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
+      }
+    }
+  ],
+  "search": {
+    "summary": "農業委員会の案内。農地の売買・賃貸借許可、農地転用許可、農地利用最適化。",
+    "keywords": [
+      "農業委員会",
+      "農地法",
+      "3条許可",
+      "農地売買",
+      "農地賃貸借"
+    ],
+    "plain_text": "農業委員会。農地の売買・賃貸借・転用の許可を行う行政委員会。農地中間管理機構による農地貸借も可能。"
+  }
+}

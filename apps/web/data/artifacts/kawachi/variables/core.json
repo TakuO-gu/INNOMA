@@ -153,5 +153,61 @@
     "sourceUrl": "https://www.town.ibaraki-kawachi.lg.jp/section.php",
     "confidence": 0.95,
     "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "kaigo_department": {
+    "value": "福祉課",
+    "source": "llm",
+    "sourceUrl": "https://www.town.ibaraki-kawachi.lg.jp/section.php",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-03T00:00:00.000Z"
+  },
+  "kaigo_phone": {
+    "value": "0297-84-2111（代表）",
+    "source": "llm",
+    "sourceUrl": "https://www.town.ibaraki-kawachi.lg.jp/section.php",
+    "confidence": 0.8,
+    "updatedAt": "2026-02-03T00:00:00.000Z"
+  },
+  "tax_phone": {
+    "value": "0297-84-2111（代表）",
+    "source": "llm",
+    "sourceUrl": "https://www.town.ibaraki-kawachi.lg.jp/section.php",
+    "confidence": 0.8,
+    "updatedAt": "2026-02-03T00:00:00.000Z"
+  },
+  "kosodate_department": {
+    "value": "福祉課",
+    "source": "llm",
+    "sourceUrl": "https://www.town.ibaraki-kawachi.lg.jp/section.php",
+    "confidence": 0.9,
+    "updatedAt": "2026-02-03T00:00:00.000Z"
+  },
+  "kosodate_phone": {
+    "value": "0297-84-2111（代表）",
+    "source": "llm",
+    "sourceUrl": "https://www.town.ibaraki-kawachi.lg.jp/section.php",
+    "confidence": 0.8,
+    "updatedAt": "2026-02-03T00:00:00.000Z"
+  },
+  "hoken_department": {
+    "value": "町民課",
+    "source": "llm",
+    "sourceUrl": "https://www.town.ibaraki-kawachi.lg.jp/section.php",
+    "confidence": 0.9,
+    "updatedAt": "2026-02-03T00:00:00.000Z"
+  },
+  "hoken_phone": {
+    "value": "0297-84-2111（代表）",
+    "source": "llm",
+    "sourceUrl": "https://www.town.ibaraki-kawachi.lg.jp/section.php",
+    "confidence": 0.8,
+    "updatedAt": "2026-02-03T00:00:00.000Z"
+  },
+  "environment_phone": {
+    "value": "0297-84-2111（代表）",
+    "source": "llm",
+    "sourceUrl": "https://www.town.ibaraki-kawachi.lg.jp/section.php",
+    "confidence": 0.8,
+    "updatedAt": "2026-02-03T00:00:00.000Z"
   }
 }

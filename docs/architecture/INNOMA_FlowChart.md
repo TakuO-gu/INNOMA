@@ -69,7 +69,63 @@ flowchart TB
 
 ## 2. ページレンダリングフロー
 
-### 2.1 メインレンダリングパイプライン
+### 2.1 GOV.UK方式 URL解決フロー
+
+INNOMAはGOV.UK方式のフラットURLを採用しています。URLとファイル構造が独立しており、
+`page-registry.json`でマッピングを管理します。
+
+```mermaid
+flowchart TD
+    subgraph URL["ユーザーリクエスト"]
+        U1["/takaoka/kokuho"]
+        U2["/takaoka/topics/health"]
+        U3["/takaoka/"]
+    end
+
+    subgraph Resolve["URL解決 - lib/artifact/page-registry.ts"]
+        R1["resolveArtifactPath(pathSegments)"]
+        R2{"パスの種類?"}
+        R3["getPageRegistry()<br/>page-registry.json読込"]
+        R4["resolvePagePath(slug)<br/>スラッグ→ファイルパス"]
+    end
+
+    subgraph Registry["ページレジストリ"]
+        REG["page-registry.json<br/>106エントリ"]
+        REG1["kokuho → services/health/kokuho"]
+        REG2["juminhyo → services/registration/juminhyo"]
+        REG3["gomi → services/environment/gomi"]
+    end
+
+    subgraph Output["アーティファクトキー"]
+        O1["takaoka/services/health/kokuho.json"]
+        O2["takaoka/topics/health.json"]
+        O3["takaoka/index.json"]
+    end
+
+    U1 --> R1
+    U2 --> R1
+    U3 --> R1
+    R1 --> R2
+    R2 -->|"フラットURL (/kokuho)"| R3
+    R2 -->|"/topics/*"| O2
+    R2 -->|"/"| O3
+    R3 --> R4
+    R4 --> REG
+    REG --> REG1
+    REG --> REG2
+    REG --> REG3
+    REG1 --> O1
+```
+
+**URL構造の比較:**
+
+| パターン | 旧URL | 新URL (GOV.UK方式) |
+|---------|-------|-------------------|
+| Content Item | `/takaoka/services/health/kokuho` | `/takaoka/kokuho` |
+| トピックページ | `/takaoka/topics/health` | `/takaoka/topics/health` (変更なし) |
+| ホームページ | `/takaoka/` | `/takaoka/` (変更なし) |
+
+### 2.2 メインレンダリングパイプライン
 
 ```mermaid
 flowchart TD
@@ -77,8 +133,13 @@ flowchart TD
         P1["app/[municipality]/[[...path]]/page.tsx<br/>ArtifactPage()"]
     end
 
+    subgraph URLResolve["URL解決（GOV.UK方式）"]
+        UR1["buildArtifactKey(municipality, path)"]
+        UR2["resolveArtifactPath(pathSegments)<br/>lib/artifact/page-registry.ts"]
+        UR3["page-registry.json参照"]
+    end
+
     subgraph ArtifactLoading["アーティファクト読込"]
-        AL1["buildArtifactKey()<br/>URLからキー生成"]
         AL2["loadArtifact()<br/>lib/artifact/index.ts"]
         AL3["loadArtifactInternal()<br/>lib/artifact/loader.ts"]
         AL4["getFromCache()<br/>lib/artifact/cache.ts"]
@@ -90,14 +151,16 @@ flowchart TD
     end
 
     subgraph Rendering["レンダリング"]
-        R1["getCompletedPages()<br/>lib/artifact/index.ts"]
+        R1["getCompletedPages()<br/>lib/artifact/loader.ts"]
         R2["BlockRenderer<br/>components/blocks/BlockRenderer.tsx"]
         R3["MunicipalityProvider<br/>components/blocks/MunicipalityContext.tsx"]
         R4["各Blockコンポーネント<br/>components/blocks/components/"]
     end
 
-    P1 --> AL1
-    AL1 --> AL2
+    P1 --> UR1
+    UR1 --> UR2
+    UR2 --> UR3
+    UR3 --> AL2
     AL2 --> AL3
     AL3 --> AL4
     AL4 -->|キャッシュヒット| AL9
@@ -452,7 +515,54 @@ flowchart LR
 
 ## 5. テンプレート・変数システム
 
-### 5.1 テンプレートクローン処理
+### 5.1 ページレジストリ（GOV.UK方式タクソノミー）
+
+URLとコンテンツ分類を分離するため、`page-registry.json`でマッピングを管理します。
+
+```mermaid
+flowchart LR
+    subgraph Registry["page-registry.json"]
+        R1["ページスラッグ → ファイルパス"]
+        R2["カテゴリ情報（タクソノミー）"]
+    end
+
+    subgraph Entry["エントリ例"]
+        E1["kokuho:<br/>filePath: services/health/kokuho<br/>categories: [health]"]
+        E2["juminhyo:<br/>filePath: services/registration/juminhyo<br/>categories: [registration]"]
+        E3["gomi:<br/>filePath: services/environment/gomi<br/>categories: [environment]"]
+    end
+
+    subgraph Functions["lib/artifact/page-registry.ts"]
+        F1["getPageRegistry()<br/>レジストリ読込（キャッシュ）"]
+        F2["resolvePagePath(slug)<br/>スラッグ→パス解決"]
+        F3["isRegisteredPage(slug)<br/>存在確認"]
+        F4["getPageCategories(slug)<br/>カテゴリ取得"]
+        F5["getSlugFromFilePath(path)<br/>逆引き"]
+        F6["resolveArtifactPath(segments)<br/>URL→ファイルパス"]
+    end
+
+    R1 --> E1
+    R1 --> E2
+    R1 --> E3
+    R2 --> E1
+    F1 --> R1
+    F2 --> F1
+    F3 --> F1
+    F4 --> R2
+    F5 --> R1
+    F6 --> F2
+```
+
+**GOV.UK方式の特徴:**
+
+| 項目 | 説明 |
+|------|------|
+| **フラットURL** | `/takaoka/kokuho`（階層を含まない） |
+| **タクソノミー分離** | URLに分類情報を含めず、メタデータで管理 |
+| **複数カテゴリ対応** | 1ページが複数カテゴリに属することが可能 |
+| **後方互換性** | 旧形式（`/services/category/page`）もサポート |
+
+### 5.2 テンプレートクローン処理
 
 ```mermaid
 flowchart TD
@@ -474,7 +584,7 @@ flowchart TD
     subgraph Output["出力"]
         O1["meta.json<br/>自治体メタデータ"]
         O2["variables.json<br/>変数ストア"]
-        O3["services/**/*.json<br/>サービスページ"]
+        O3["services/**/*.json<br/>Content Item"]
     end
 
     A1 --> C1
@@ -828,6 +938,7 @@ flowchart LR
 | `lib/artifact/loader.ts` | `loadArtifactInternal` | キャッシュ付き読込実装 |
 | `lib/artifact/schema.ts` | `validateArtifact`, `safeValidateArtifact` | Zodスキーマ検証 |
 | `lib/artifact/cache.ts` | `getFromCache`, `setInCache`, `invalidateCache` | インメモリキャッシュ |
+| `lib/artifact/page-registry.ts` | `resolveArtifactPath`, `resolvePagePath`, `getPageCategories` | GOV.UK方式URL解決 |
 | `lib/template/clone.ts` | `cloneTemplate`, `deleteMunicipality` | テンプレート複製 |
 | `lib/template/replace.ts` | `replaceVariables`, `replaceVariablesWithSources` | 変数置換 |
 | `lib/template/storage.ts` | `getMunicipalities`, `getVariableStore`, `updateVariableStore` | 自治体データCRUD |
@@ -851,4 +962,4 @@ flowchart LR
 
 ---
 
-*このドキュメントは2026-02-02に更新されました。*
+*このドキュメントは2026-02-03に更新されました。（GOV.UK方式フラットURL対応を追加）*

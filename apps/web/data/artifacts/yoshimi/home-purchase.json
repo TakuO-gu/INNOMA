@@ -1,0 +1,316 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "yoshimi-services-housing-home-purchase",
+  "municipality_id": "yoshimi",
+  "path": "/home-purchase",
+  "title": "住宅取得支援",
+  "description": "住宅ローン減税、すまい給付金、住宅取得等資金贈与の非課税",
+  "content_type": "guide",
+  "service_category": "housing",
+  "audience": [
+    "residents"
+  ],
+  "topic": [],
+  "source": {
+    "source_url": "template://yoshimi/services/housing/home-purchase",
+    "fetched_at": "2026-02-03T01:50:20.590Z",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "2026-02-03T01:50:20.590Z",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "住まい・引越し",
+            "href": "/housing"
+          },
+          {
+            "label": "住宅取得支援",
+            "href": "/home-purchase"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "住宅取得支援"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "住宅を購入・新築する際に利用できる税制優遇や給付金制度をご案内します。"
+      }
+    },
+    {
+      "id": "section-izxhybwz5",
+      "type": "Section",
+      "props": {
+        "heading": "住宅ローン減税（住宅借入金等特別控除）",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "住宅ローンを利用して住宅を取得した場合、年末ローン残高の0.7%を所得税から最長13年間控除できます。"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "控除率：年末ローン残高の0.7%"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "控除期間：新築は最長13年、中古は最長10年"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "申請先：確定申告（税務署）"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-6gfovjcoj",
+      "type": "Section",
+      "props": {
+        "heading": "住宅取得等資金贈与の非課税",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "父母・祖父母から住宅取得資金の贈与を受けた場合、一定額まで贈与税が非課税になります。"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "省エネ等住宅：最大1,000万円まで非課税"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "それ以外の住宅：最大500万円まで非課税"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "related-links-ajw6kwzcs",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "不動産登記",
+            "href": "/property-registration"
+          },
+          {
+            "title": "建築確認申請",
+            "href": "/building-permit"
+          },
+          {
+            "title": "固定資産税",
+            "href": "/kotei"
+          },
+          {
+            "title": "印鑑登録",
+            "href": "/inkan"
+          },
+          {
+            "title": "リフォーム補助",
+            "href": "/reform-subsidy"
+          },
+          {
+            "title": "耐震改修",
+            "href": "/seismic-retrofit"
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-対象-1769919363177",
+      "type": "Section",
+      "props": {
+        "heading": "住宅取得支援の対象となる方",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "詳細は担当課にお問い合わせください。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-必要-1769919363177",
+      "type": "Section",
+      "props": {
+        "heading": "住宅取得支援に必要なもの",
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "本人確認書類（マイナンバーカード、運転免許証など）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "印鑑（認印可）"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-方法-1769919363177",
+      "type": "Section",
+      "props": {
+        "heading": "住宅取得支援の手続き方法",
+        "content": [
+          {
+            "type": "list",
+            "ordered": true,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "必要書類を準備します。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "窓口で申請書を記入します。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "書類を提出し、確認を受けます。"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{tax_department}}",
+        "phone": "{{tax_phone}}",
+        "email": "{{tax_email}}",
+        "hours": "{{city_hall_hours}}",
+        "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
+      }
+    }
+  ],
+  "search": {
+    "summary": "住宅取得支援制度の案内。住宅ローン減税、住宅取得等資金贈与の非課税など。",
+    "keywords": [
+      "住宅ローン減税",
+      "住宅取得",
+      "贈与税",
+      "非課税",
+      "住宅購入"
+    ],
+    "plain_text": "住宅取得支援。住宅ローン減税は年末ローン残高の0.7%を最長13年間控除。住宅取得等資金贈与は最大1,000万円まで非課税。"
+  }
+}

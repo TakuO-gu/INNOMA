@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "page_id": "sample-services-welfare-shogai",
   "municipality_id": "sample",
-  "path": "/services/welfare/shogai",
+  "path": "/shogai",
   "title": "障害者福祉",
   "description": "障害者手帳の取得、障害福祉サービス、各種手当・助成制度について",
   "content_type": "guide",
@@ -34,11 +34,11 @@
           },
           {
             "label": "福祉・介護",
-            "href": "/topics/welfare"
+            "href": "/welfare"
           },
           {
             "label": "障害者福祉",
-            "href": "/services/welfare/shogai"
+            "href": "/shogai"
           }
         ]
       }
@@ -419,27 +419,27 @@
         "items": [
           {
             "title": "介護保険",
-            "href": "/services/welfare/kaigo"
+            "href": "/kaigo"
           },
           {
             "title": "生活保護",
-            "href": "/services/welfare/seikatsu-hogo"
+            "href": "/seikatsu-hogo"
           },
           {
             "title": "国民健康保険",
-            "href": "/services/health/kokuho"
+            "href": "/kokuho"
           },
           {
             "title": "障害者雇用",
-            "href": "/services/employment/disability-employment"
+            "href": "/disability-employment"
           },
           {
             "title": "年金",
-            "href": "/services/benefits/nenkin"
+            "href": "/nenkin"
           },
           {
             "title": "住民税",
-            "href": "/services/tax/juminzei"
+            "href": "/juminzei"
           }
         ]
       }

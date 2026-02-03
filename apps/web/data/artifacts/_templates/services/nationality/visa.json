@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "page_id": "sample-services-nationality-visa",
   "municipality_id": "sample",
-  "path": "/services/nationality/visa",
+  "path": "/visa",
   "title": "在留資格・ビザ",
   "description": "在留資格の種類、在留資格変更・更新、入国管理局案内",
   "content_type": "guide",
@@ -33,11 +33,11 @@
           },
           {
             "label": "戸籍・国籍・在留",
-            "href": "/topics/nationality"
+            "href": "/nationality"
           },
           {
             "label": "在留資格・ビザ",
-            "href": "/services/nationality/visa"
+            "href": "/visa"
           }
         ]
       }
@@ -346,19 +346,19 @@
         "items": [
           {
             "title": "在留カード",
-            "href": "/services/nationality/residence-card"
+            "href": "/residence-card"
           },
           {
             "title": "外国人登録・届出",
-            "href": "/services/nationality/foreign-registration"
+            "href": "/foreign-registration"
           },
           {
             "title": "外国人相談窓口",
-            "href": "/services/nationality/consultation"
+            "href": "/consultation"
           },
           {
             "title": "日本語教室",
-            "href": "/services/nationality/japanese-class"
+            "href": "/japanese-class"
           }
         ]
       }

@@ -1,0 +1,468 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "takaoka-services-registration-konin",
+  "municipality_id": "takaoka",
+  "path": "/konin",
+  "title": "婚姻届",
+  "description": "婚姻届の届出方法、必要書類、届出先について",
+  "content_type": "step_by_step",
+  "service_category": "government",
+  "audience": [
+    "residents"
+  ],
+  "topic": [],
+  "source": {
+    "source_url": "template://utashinai/services/registration/konin",
+    "fetched_at": "2026-01-20T10:33:17.311Z",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "2026-01-20T10:33:17.311Z",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "届出・証明",
+            "href": "/registration"
+          },
+          {
+            "label": "婚姻届",
+            "href": "/konin"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "婚姻届"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "婚姻届は、届出日から法律上の婚姻が成立します。届出先は夫または妻の本籍地、もしくは届出人の所在地の市区町村窓口です。"
+      }
+    },
+    {
+      "id": "section-1m8spear6",
+      "type": "Section",
+      "props": {
+        "heading": "届出できる人",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "婚姻届は、結婚する本人2人が届出人となります。届出の際には、成年の証人2人の署名が必要です。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "婚姻届は休日・夜間でも届出できます。届出日が婚姻成立日となります。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "step-nav-1",
+      "type": "StepNavigation",
+      "props": {
+        "currentStep": 0,
+        "steps": [
+          {
+            "title": "婚姻届の入手",
+            "body": "婚姻届は全国共通の様式です。市区町村窓口でもらうか、ダウンロードして印刷してください。",
+            "documents": []
+          },
+          {
+            "title": "届書の記入",
+            "body": "夫・妻それぞれが署名し、証人2人にも署名してもらいます。",
+            "documents": [
+              "婚姻届"
+            ]
+          },
+          {
+            "title": "必要書類の準備",
+            "body": "戸籍謄本（本籍地以外に届出する場合）、本人確認書類を準備します。",
+            "documents": [
+              "戸籍謄本",
+              "本人確認書類"
+            ]
+          },
+          {
+            "title": "届出",
+            "body": "市区町村の窓口に届出します。受理されれば届出日に婚姻が成立します。",
+            "documents": []
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-q9jwny80r-table",
+      "type": "Section",
+      "props": {
+        "heading": "必要書類",
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "婚姻届（証人2人の署名が必要）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "戸籍謄本（本籍地以外に届出する場合、夫・妻それぞれ1通ずつ）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "届出人の本人確認書類（運転免許証、マイナンバーカードなど）"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-v090jg6i5",
+      "type": "Section",
+      "props": {
+        "heading": "戸籍謄本について",
+        "level": 3,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "令和6年3月1日から戸籍法改正により、本籍地以外の市区町村でも戸籍謄本の添付が不要となる場合があります（戸籍情報連携の開始後）。詳しくはお問い合わせください。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-4vbyqoze6",
+      "type": "Section",
+      "props": {
+        "heading": "届出先・届出時間",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "以下のいずれかの市区町村に届出できます。"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "夫の本籍地"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "妻の本籍地"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "届出人の所在地（一時的な滞在地でも可）"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "table-jikan",
+      "type": "Table",
+      "props": {
+        "rows": [
+          {
+            "label": "平日",
+            "value": "{{city_hall_hours}}"
+          },
+          {
+            "label": "休日・夜間",
+            "value": "宿直窓口で届出を受け付けます（届出日が婚姻成立日となります）"
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-kjbwdvkx0",
+      "type": "Section",
+      "props": {
+        "heading": "届出後の手続き",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "婚姻届が受理されると、新しい戸籍が作成されます。氏名や本籍が変わった場合は、以下の手続きが必要になることがあります。"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "マイナンバーカードの氏名・住所変更"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "運転免許証の記載事項変更"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "パスポートの変更"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "銀行口座・保険の名義変更"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "国民健康保険・国民年金の届出（該当する場合）"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "related-links-1",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "戸籍",
+            "href": "/koseki"
+          },
+          {
+            "title": "住民票",
+            "href": "/juminhyo"
+          },
+          {
+            "title": "マイナンバーカード",
+            "href": "/mynumber"
+          },
+          {
+            "title": "国民健康保険",
+            "href": "/kokuho"
+          },
+          {
+            "title": "国際結婚",
+            "href": "/international-marriage"
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-対象-1769919363203",
+      "type": "Section",
+      "props": {
+        "heading": "婚姻届の対象となる方",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "詳細は担当課にお問い合わせください。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-方法-1769919363203",
+      "type": "Section",
+      "props": {
+        "heading": "婚姻届の手続き方法",
+        "content": [
+          {
+            "type": "list",
+            "ordered": true,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "必要書類を準備します。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "窓口で申請書を記入します。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "書類を提出し、確認を受けます。"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{shimin_department}}",
+        "phone": "{{shimin_phone}}",
+        "email": "{{shimin_email}}",
+        "hours": "{{city_hall_hours}}",
+        "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "terms-1769899964513",
+      "type": "Section",
+      "props": {
+        "heading": "用語の説明",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "戸籍謄本",
+                "bold": true
+              },
+              {
+                "text": "：家族全員の戸籍の写し"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
+      }
+    }
+  ],
+  "search": {
+    "summary": "婚姻届の届出方法。必要書類、届出先、届出時間について。",
+    "keywords": [
+      "婚姻届",
+      "結婚届",
+      "結婚",
+      "入籍",
+      "戸籍",
+      "届出"
+    ],
+    "plain_text": "婚姻届。届出日に婚姻成立。届出先は夫または妻の本籍地、もしくは届出人の所在地。必要書類は婚姻届、戸籍謄本（本籍地以外の場合）、本人確認書類。休日・夜間も届出可能。"
+  }
+}

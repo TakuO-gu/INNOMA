@@ -1,0 +1,170 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "kawasaki-miyagi-home",
+  "municipality_id": "kawasaki-miyagi",
+  "path": "/",
+  "title": "川崎町",
+  "description": "川崎町の行政情報ポータルサイト",
+  "content_type": "service",
+  "service_category": "government",
+  "audience": [
+    "residents"
+  ],
+  "topic": [],
+  "source": {
+    "source_url": "template://kawasaki-miyagi/home",
+    "fetched_at": "2026-02-03T01:50:19.928Z",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "2026-02-03T01:50:19.928Z",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "hero-1",
+      "type": "Hero",
+      "props": {
+        "title": "川崎町へようこそ",
+        "subtitle": "市民の皆さまの暮らしをサポートする行政情報をお届けします"
+      }
+    },
+    {
+      "id": "search-box-1",
+      "type": "SearchBox",
+      "props": {
+        "placeholder": "届出、証明書、ごみなどキーワードで検索..."
+      }
+    },
+    {
+      "id": "popular-services-1",
+      "type": "ResourceList",
+      "props": {
+        "heading": "よく訪問されるサービス",
+        "columns": 3,
+        "bordered": true,
+        "items": [
+          {
+            "title": "住民票の写し",
+            "description": "住民票の取得方法・必要書類",
+            "href": "/juminhyo"
+          },
+          {
+            "title": "戸籍謄本",
+            "description": "戸籍全部事項証明書の取得",
+            "href": "/koseki"
+          },
+          {
+            "title": "マイナンバーカード",
+            "description": "申請・受取・更新の手続き",
+            "href": "/mynumber"
+          },
+          {
+            "title": "転入届",
+            "description": "市外からの引越し手続き",
+            "href": "/tennyu"
+          },
+          {
+            "title": "印鑑登録",
+            "description": "印鑑登録・証明書の取得",
+            "href": "/inkan"
+          },
+          {
+            "title": "ごみの分別・収集",
+            "description": "ごみの出し方・収集日",
+            "href": "/gomi"
+          },
+          {
+            "title": "児童手当",
+            "description": "支給要件・申請方法",
+            "href": "/jidou-teate"
+          },
+          {
+            "title": "国民健康保険",
+            "description": "加入・届出・保険料",
+            "href": "/kokuho"
+          }
+        ]
+      }
+    },
+    {
+      "id": "topic-grid-1",
+      "type": "TopicGrid",
+      "props": {
+        "heading": "カテゴリから探す",
+        "items": [
+          {
+            "title": "災害・緊急情報",
+            "href": "/disaster",
+            "description": "避難所、ハザードマップ、防災メール、地震・台風対策",
+            "icon": "attention"
+          },
+          {
+            "title": "引っ越し",
+            "href": "/moving",
+            "description": "転入届、転出届、転居届、住所変更に必要な手続き",
+            "icon": "house"
+          },
+          {
+            "title": "子育て・出産",
+            "href": "/childcare",
+            "description": "妊娠届、出生届、児童手当、保育所、子育て支援",
+            "icon": "child"
+          },
+          {
+            "title": "高齢者向け支援",
+            "href": "/welfare",
+            "description": "介護保険、高齢者福祉サービス、地域包括支援センター",
+            "icon": "pension"
+          },
+          {
+            "title": "ごみ・リサイクル",
+            "href": "/environment",
+            "description": "ごみの分別、収集日、粗大ごみ、リサイクル",
+            "icon": "trash.svg"
+          },
+          {
+            "title": "税金",
+            "href": "/tax",
+            "description": "住民税、固定資産税、軽自動車税、納税方法、税証明書",
+            "icon": "tax"
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{city_hall_department}}",
+        "phone": "{{city_hall_phone}}",
+        "email": "{{city_hall_email}}",
+        "hours": "{{city_hall_hours}}",
+        "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
+      }
+    }
+  ],
+  "search": {
+    "summary": "川崎町の行政情報ポータルサイト。届出、子育て、福祉、健康、税金、環境など各種行政サービスの案内。",
+    "keywords": [
+      "川崎町",
+      "行政",
+      "届出",
+      "子育て",
+      "福祉",
+      "健康",
+      "税金",
+      "ごみ",
+      "防災"
+    ],
+    "plain_text": "川崎町へようこそ。市民の皆さまの暮らしをサポートする行政情報をお届けします。届出・申請・証明書、子育て、福祉・介護、健康・医療、税金、環境・ごみ、住まい・施設、防災・災害などの情報を提供しています。"
+  }
+}

@@ -13,6 +13,7 @@ import {
 import { useMunicipality, prefixInternalLink } from "../MunicipalityContext";
 import { RichTextRenderer } from "../RichTextRenderer";
 import type { StepItem, DirectoryItem, StepItemState } from "../types";
+import { budouxParse } from "@/components/BudouX";
 
 export function ContactBlock({ props }: { props: Record<string, unknown> }) {
   const department = props.department as string | undefined;
@@ -26,7 +27,7 @@ export function ContactBlock({ props }: { props: Record<string, unknown> }) {
   return (
     <div className="mt-16 contact-card bg-solid-gray-50 rounded-lg p-6 mb-6">
       {department && (
-        <h3 className="text-std-17B-170 text-solid-gray-900 mb-4">{department}</h3>
+        <h3 className="text-std-17B-170 text-solid-gray-900 mb-4 budoux">{budouxParse(department)}</h3>
       )}
       <dl className="space-y-2 text-std-16N-170">
         {phone && (
@@ -195,7 +196,7 @@ export function StepNavigationBlock({ props }: { props: Record<string, unknown> 
             >
               <StepNavigationHeader>
                 <StepNavigationNumber number={i + 1} />
-                <StepNavigationTitle>{step.title}</StepNavigationTitle>
+                <StepNavigationTitle><span className="budoux">{budouxParse(step.title)}</span></StepNavigationTitle>
               </StepNavigationHeader>
               {step.body && step.body.length > 0 && (
                 <StepNavigationDescription>
@@ -217,11 +218,11 @@ export function DirectoryListBlock({ props }: { props: Record<string, unknown> }
     <div className="mt-12 directory-list space-y-4 mb-6">
       {items.map((item, i) => (
         <div key={i} className="bg-white border border-solid-gray-300 rounded-lg p-4 shadow-sm">
-          <h3 className="font-medium text-std-17B-170 text-solid-gray-900 mb-2">
+          <h3 className="font-medium text-std-17B-170 text-solid-gray-900 mb-2 budoux">
             {item.url ? (
-              <Link href={item.url} target="_blank" rel="noopener noreferrer">{item.name}</Link>
+              <Link href={item.url} target="_blank" rel="noopener noreferrer">{budouxParse(item.name)}</Link>
             ) : (
-              item.name
+              budouxParse(item.name)
             )}
           </h3>
           {item.description && (

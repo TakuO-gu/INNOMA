@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "page_id": "sample-services-disaster-bosai-mail",
   "municipality_id": "sample",
-  "path": "/services/disaster/bosai-mail",
+  "path": "/bosai-mail",
   "title": "防災情報メール",
   "description": "防災情報メールの登録方法と配信される情報について",
   "content_type": "step_by_step",
@@ -33,11 +33,11 @@
           },
           {
             "label": "防災・安全",
-            "href": "/topics/disaster"
+            "href": "/disaster"
           },
           {
             "label": "防災情報メール",
-            "href": "/services/disaster/bosai-mail"
+            "href": "/bosai-mail"
           }
         ]
       }
@@ -332,15 +332,15 @@
         "items": [
           {
             "title": "避難所・避難場所",
-            "href": "/services/disaster/hinanjo"
+            "href": "/hinanjo"
           },
           {
             "title": "ハザードマップ",
-            "href": "/services/disaster/hazard-map"
+            "href": "/hazard-map"
           },
           {
             "title": "非常持出品",
-            "href": "/services/disaster/mochidashi"
+            "href": "/mochidashi"
           }
         ]
       }

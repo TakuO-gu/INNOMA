@@ -54,6 +54,8 @@ import {
   CardGridBlock,
   // Search Box
   SearchBoxBlock,
+  // Smart Answer
+  SmartAnswerBlock,
 } from "./components";
 
 /* =============================================================================
@@ -113,6 +115,8 @@ const blockRegistry: Record<string, BlockComponent> = {
   CardGrid: CardGridBlock,
   // Search Box
   SearchBox: SearchBoxBlock,
+  // Smart Answer
+  SmartAnswer: SmartAnswerBlock,
 };
 
 /* =============================================================================

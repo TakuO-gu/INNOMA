@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "page_id": "sample-services-driving-liability-insurance",
   "municipality_id": "sample",
-  "path": "/services/driving/liability-insurance",
+  "path": "/liability-insurance",
   "title": "自賠責保険",
   "description": "自動車損害賠償責任保険（自賠責）の加入案内",
   "content_type": "guide",
@@ -33,11 +33,11 @@
           },
           {
             "label": "運転・車両",
-            "href": "/topics/driving"
+            "href": "/driving"
           },
           {
             "label": "自賠責保険",
-            "href": "/services/driving/liability-insurance"
+            "href": "/liability-insurance"
           }
         ]
       }
@@ -163,15 +163,15 @@
         "items": [
           {
             "title": "自動車登録",
-            "href": "/services/driving/registration"
+            "href": "/registration"
           },
           {
             "title": "自動車税",
-            "href": "/services/driving/vehicle-tax"
+            "href": "/vehicle-tax"
           },
           {
             "title": "交通事故",
-            "href": "/services/driving/accident"
+            "href": "/accident"
           }
         ]
       }

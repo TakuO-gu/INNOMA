@@ -1,0 +1,324 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "kanna-services-employment-unemployment-insurance",
+  "municipality_id": "kanna",
+  "path": "/unemployment-insurance",
+  "title": "雇用保険・失業給付",
+  "description": "失業給付（基本手当）、再就職手当、教育訓練給付金",
+  "content_type": "guide",
+  "service_category": "business",
+  "audience": [
+    "residents"
+  ],
+  "topic": [],
+  "source": {
+    "source_url": "template://kanna/services/employment/unemployment-insurance",
+    "fetched_at": "2026-02-03T01:50:19.805Z",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "2026-02-03T01:50:19.805Z",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "仕事・労働",
+            "href": "/employment"
+          },
+          {
+            "label": "雇用保険・失業給付",
+            "href": "/unemployment-insurance"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "雇用保険・失業給付"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "離職した方が次の就職先を探す間、生活を支えるための失業給付（基本手当）を受けることができます。"
+      }
+    },
+    {
+      "id": "section-9p1f2ybnm-table",
+      "type": "Section",
+      "props": {
+        "heading": "失業給付（基本手当）の受給要件",
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "離職前2年間に雇用保険に12か月以上加入していたこと（倒産・解雇の場合は6か月）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "働く意思と能力があり、求職活動を行っていること"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "ハローワークで求職の申込みを行っていること"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-rjrmz07ic",
+      "type": "Section",
+      "props": {
+        "heading": "給付日数",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "年齢、雇用保険の加入期間、離職理由により90日〜330日"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-w8gyyy33f",
+      "type": "Section",
+      "props": {
+        "heading": "再就職手当",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "失業給付の受給中に早期に再就職した場合、残りの給付日数に応じた再就職手当が支給されます。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "step-nav-1",
+      "type": "StepNavigation",
+      "props": {
+        "currentStep": 0,
+        "steps": [
+          {
+            "title": "離職票を受け取る",
+            "body": "会社から離職票（1・2）を受け取ります。通常、退職後10日〜2週間で届きます。"
+          },
+          {
+            "title": "ハローワークで求職申込み",
+            "body": "住所地を管轄するハローワークで求職の申込みと受給資格の決定を受けます。"
+          },
+          {
+            "title": "雇用保険説明会に参加",
+            "body": "受給資格決定後、雇用保険説明会に参加します。"
+          },
+          {
+            "title": "認定日にハローワークへ",
+            "body": "4週間に1回の認定日にハローワークで求職活動実績を報告し、失業認定を受けます。"
+          },
+          {
+            "title": "失業給付の振込",
+            "body": "認定後、約1週間で指定口座に振り込まれます。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "related-links-rs1wscl2i",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "ハローワーク",
+            "href": "/hello-work"
+          },
+          {
+            "title": "職業訓練",
+            "href": "/vocational-training"
+          },
+          {
+            "title": "就職支援",
+            "href": "/career-support"
+          },
+          {
+            "title": "国民健康保険",
+            "href": "/kokuho"
+          },
+          {
+            "title": "年金",
+            "href": "/nenkin"
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-対象-1769919363169",
+      "type": "Section",
+      "props": {
+        "heading": "雇用保険・失業給付の対象となる方",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "詳細は担当課にお問い合わせください。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-必要-1769919363169",
+      "type": "Section",
+      "props": {
+        "heading": "雇用保険・失業給付に必要なもの",
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "本人確認書類（マイナンバーカード、運転免許証など）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "印鑑（認印可）"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-方法-1769919363169",
+      "type": "Section",
+      "props": {
+        "heading": "雇用保険・失業給付の手続き方法",
+        "content": [
+          {
+            "type": "list",
+            "ordered": true,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "必要書類を準備します。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "窓口で申請書を記入します。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "書類を提出し、確認を受けます。"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{hello_work_name}}",
+        "phone": "{{hello_work_phone}}",
+        "address": "{{hello_work_address}}",
+        "hours": "平日8:30〜17:15"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
+      }
+    }
+  ],
+  "search": {
+    "summary": "雇用保険・失業給付の案内。基本手当の受給要件、手続きの流れ、再就職手当。",
+    "keywords": [
+      "雇用保険",
+      "失業給付",
+      "基本手当",
+      "失業手当",
+      "再就職手当",
+      "離職票"
+    ],
+    "plain_text": "雇用保険・失業給付。離職前2年間に12か月以上加入で受給可能。給付日数は90日〜330日。ハローワークで手続き。"
+  }
+}

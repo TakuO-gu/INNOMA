@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "page_id": "sample-services-environment-gomi",
   "municipality_id": "sample",
-  "path": "/services/environment/gomi",
+  "path": "/gomi",
   "title": "ごみの出し方（分別ガイド）",
   "description": "ごみの分別方法、収集日、出し方のルールについて",
   "content_type": "guide",
@@ -33,11 +33,11 @@
           },
           {
             "label": "環境・ごみ",
-            "href": "/topics/environment"
+            "href": "/environment"
           },
           {
             "label": "ごみの出し方",
-            "href": "/services/environment/gomi"
+            "href": "/gomi"
           }
         ]
       }
@@ -273,7 +273,7 @@
       "type": "TaskButton",
       "props": {
         "label": "粗大ごみの申込方法を見る",
-        "href": "/services/environment/sodaigomi",
+        "href": "/sodaigomi",
         "isTopTask": false
       }
     },
@@ -386,19 +386,19 @@
         "items": [
           {
             "title": "粗大ごみ",
-            "href": "/services/environment/sodaigomi"
+            "href": "/sodaigomi"
           },
           {
             "title": "家電リサイクル",
-            "href": "/services/environment/kaden-recycle"
+            "href": "/kaden-recycle"
           },
           {
             "title": "引越し手続き一覧",
-            "href": "/services/housing/moving-checklist"
+            "href": "/moving-checklist"
           },
           {
             "title": "転入届",
-            "href": "/services/registration/tennyu"
+            "href": "/tennyu"
           }
         ]
       }

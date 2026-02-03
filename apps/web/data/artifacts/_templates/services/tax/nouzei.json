@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "page_id": "sample-services-tax-nouzei",
   "municipality_id": "sample",
-  "path": "/services/tax/nouzei",
+  "path": "/nouzei",
   "title": "納税方法",
   "description": "市税の納付方法、口座振替、コンビニ納付、スマートフォン決済、滞納時の対応について",
   "content_type": "guide",
@@ -33,11 +33,11 @@
           },
           {
             "label": "税金",
-            "href": "/topics/tax"
+            "href": "/tax"
           },
           {
             "label": "納税方法",
-            "href": "/services/tax/nouzei"
+            "href": "/nouzei"
           }
         ]
       }
@@ -339,19 +339,19 @@
         "items": [
           {
             "title": "住民税",
-            "href": "/services/tax/juminzei"
+            "href": "/juminzei"
           },
           {
             "title": "固定資産税",
-            "href": "/services/tax/kotei"
+            "href": "/kotei"
           },
           {
             "title": "軽自動車税",
-            "href": "/services/tax/keijidosha"
+            "href": "/keijidosha"
           },
           {
             "title": "税証明書",
-            "href": "/services/tax/zeishoumei"
+            "href": "/zeishoumei"
           }
         ]
       }

@@ -1,0 +1,297 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "hayakawa-services-driving-license",
+  "municipality_id": "hayakawa",
+  "path": "/license",
+  "title": "運転免許証",
+  "description": "運転免許試験場・更新センターの案内、更新・住所変更手続き",
+  "content_type": "guide",
+  "service_category": "government",
+  "audience": [
+    "residents"
+  ],
+  "topic": [],
+  "source": {
+    "source_url": "template://hayakawa/services/driving/license",
+    "fetched_at": "2026-02-03T01:50:19.593Z",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "2026-02-03T01:50:19.593Z",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "運転・車両",
+            "href": "/driving"
+          },
+          {
+            "label": "運転免許証",
+            "href": "/license"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "運転免許証"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "運転免許証の更新、住所変更、再交付などの手続きをご案内します。手続きは運転免許試験場または警察署で行います。"
+      }
+    },
+    {
+      "id": "section-e7zgpbhfu",
+      "type": "Section",
+      "props": {
+        "heading": "免許証の更新",
+        "level": 2,
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "更新期間：誕生日の前後1か月間"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "更新場所：運転免許センター、警察署"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "講習区分：優良、一般、違反、初回"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-dggd2jjj8",
+      "type": "Section",
+      "props": {
+        "heading": "住所変更",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "引越しで住所が変わった場合は、新住所地の警察署または運転免許センターで変更手続きを行ってください。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-hnpw3r6bp",
+      "type": "Section",
+      "props": {
+        "heading": "運転免許証に必要なもの",
+        "level": 2,
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "運転免許証"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "更新連絡書（届いている場合）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "更新手数料（2,500円〜3,850円）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "写真（持参の場合）"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "related-links-55boe5hpk",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "自動車登録",
+            "href": "/registration"
+          },
+          {
+            "title": "車庫証明",
+            "href": "/garage-certificate"
+          },
+          {
+            "title": "高齢者運転",
+            "href": "/senior-driving"
+          },
+          {
+            "title": "住民票",
+            "href": "/juminhyo"
+          },
+          {
+            "title": "引越し手続き一覧",
+            "href": "/moving-checklist"
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-対象-1769919363162",
+      "type": "Section",
+      "props": {
+        "heading": "運転免許証の対象となる方",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "詳細は担当課にお問い合わせください。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-方法-1769919363162",
+      "type": "Section",
+      "props": {
+        "heading": "運転免許証の手続き方法",
+        "content": [
+          {
+            "type": "list",
+            "ordered": true,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "必要書類を準備します。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "窓口で申請書を記入します。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "書類を提出し、確認を受けます。"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{driver_license_center}}",
+        "phone": "{{driver_license_center_phone}}",
+        "address": "{{driver_license_center_address}}"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
+      }
+    }
+  ],
+  "search": {
+    "summary": "運転免許証の更新・住所変更の案内。更新期間、更新場所、必要書類。",
+    "keywords": [
+      "運転免許証",
+      "免許更新",
+      "住所変更",
+      "運転免許",
+      "免許証"
+    ],
+    "plain_text": "運転免許証。更新期間は誕生日の前後1か月。運転免許センターまたは警察署で手続き。"
+  }
+}

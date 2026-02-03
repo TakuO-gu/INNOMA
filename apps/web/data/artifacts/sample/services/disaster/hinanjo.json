@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "page_id": "sample-services-disaster-hinanjo",
   "municipality_id": "sample",
-  "path": "/services/disaster/hinanjo",
+  "path": "/hinanjo",
   "title": "避難所・避難場所",
   "description": "指定避難所、指定緊急避難場所、福祉避難所の一覧と開設情報",
   "content_type": "directory",
@@ -33,11 +33,11 @@
           },
           {
             "label": "防災・安全",
-            "href": "/topics/disaster"
+            "href": "/disaster"
           },
           {
             "label": "避難所・避難場所",
-            "href": "/services/disaster/hinanjo"
+            "href": "/hinanjo"
           }
         ]
       }
@@ -294,19 +294,19 @@
         "items": [
           {
             "title": "ハザードマップ",
-            "href": "/services/disaster/hazard-map"
+            "href": "/hazard-map"
           },
           {
             "title": "防災情報メール",
-            "href": "/services/disaster/bosai-mail"
+            "href": "/bosai-mail"
           },
           {
             "title": "非常持出品",
-            "href": "/services/disaster/mochidashi"
+            "href": "/mochidashi"
           },
           {
             "title": "地域防災計画",
-            "href": "/services/disaster/bosai-keikaku"
+            "href": "/bosai-keikaku"
           }
         ]
       }

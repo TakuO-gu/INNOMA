@@ -1,0 +1,447 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "toyono-services-business-incorporation",
+  "municipality_id": "toyono",
+  "path": "/incorporation",
+  "title": "法人設立（株式会社・合同会社）",
+  "description": "会社設立の手続き、定款認証、登記申請",
+  "content_type": "guide",
+  "service_category": "business",
+  "audience": [
+    "businesses"
+  ],
+  "topic": [],
+  "source": {
+    "source_url": "template://toyono/services/business/incorporation",
+    "fetched_at": "2026-02-03T01:50:20.461Z",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "2026-02-03T01:50:20.461Z",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "事業・経営",
+            "href": "/business"
+          },
+          {
+            "label": "法人設立",
+            "href": "/incorporation"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "法人設立（株式会社・合同会社）"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "株式会社・合同会社の設立手続きの流れと必要な届出をご案内します。"
+      }
+    },
+    {
+      "id": "section-comparison",
+      "type": "Section",
+      "props": {
+        "heading": "株式会社と合同会社の違い",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "設立する法人形態によって、設立費用や運営方法が異なります。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "table-comparison",
+      "type": "Table",
+      "props": {
+        "rows": [
+          {
+            "label": "設立費用の目安",
+            "value": "株式会社：約25万円〜 / 合同会社：約10万円〜"
+          },
+          {
+            "label": "定款認証",
+            "value": "株式会社：必要（約5万円） / 合同会社：不要"
+          },
+          {
+            "label": "登録免許税",
+            "value": "株式会社：15万円〜 / 合同会社：6万円〜"
+          },
+          {
+            "label": "役員の任期",
+            "value": "株式会社：最長10年 / 合同会社：任期なし"
+          },
+          {
+            "label": "決算公告",
+            "value": "株式会社：義務あり / 合同会社：義務なし"
+          },
+          {
+            "label": "社会的信用度",
+            "value": "株式会社：高い / 合同会社：やや低い傾向"
+          }
+        ],
+        "heading": "比較表"
+      }
+    },
+    {
+      "id": "section-procedure",
+      "type": "Section",
+      "props": {
+        "heading": "設立の流れ",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "以下の手順で法人を設立します。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "step-nav-1",
+      "type": "StepNavigation",
+      "props": {
+        "currentStep": 0,
+        "steps": [
+          {
+            "title": "定款の作成",
+            "body": "会社の基本的なルールを定めた定款を作成します。商号、事業目的、本店所在地、資本金などを記載します。"
+          },
+          {
+            "title": "定款の認証（株式会社のみ）",
+            "body": "公証役場で定款の認証を受けます。合同会社は不要です。電子定款の場合は印紙代4万円が不要。"
+          },
+          {
+            "title": "資本金の払込み",
+            "body": "発起人の個人口座に資本金を払い込み、払込証明書を作成します。"
+          },
+          {
+            "title": "設立登記",
+            "body": "法務局に設立登記を申請します。登録免許税は株式会社15万円〜、合同会社6万円〜。"
+          },
+          {
+            "title": "各種届出",
+            "body": "税務署、都道府県、市区町村、年金事務所、ハローワーク等への届出を行います。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-notification",
+      "type": "Section",
+      "props": {
+        "heading": "設立後の届出一覧",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "法人設立後は、以下の届出が必要です。届出期限に注意してください。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "table-tax",
+      "type": "Table",
+      "props": {
+        "rows": [
+          {
+            "label": "法人設立届出書",
+            "value": "設立後2か月以内"
+          },
+          {
+            "label": "青色申告の承認申請書",
+            "value": "設立後3か月以内または最初の事業年度終了日のいずれか早い日"
+          },
+          {
+            "label": "給与支払事務所等の開設届出書",
+            "value": "開設後1か月以内"
+          },
+          {
+            "label": "源泉所得税の納期の特例の承認申請書",
+            "value": "随時（給与支給人員10人未満の場合）"
+          }
+        ],
+        "heading": "税務署への届出"
+      }
+    },
+    {
+      "id": "table-local",
+      "type": "Table",
+      "props": {
+        "rows": [
+          {
+            "label": "法人設立届出書（都道府県）",
+            "value": "{{prefecture_name}}：設立後15日以内"
+          },
+          {
+            "label": "法人設立届出書（市町村）",
+            "value": "豊能町：設立後15日以内"
+          }
+        ],
+        "heading": "地方自治体への届出"
+      }
+    },
+    {
+      "id": "table-social",
+      "type": "Table",
+      "props": {
+        "rows": [
+          {
+            "label": "健康保険・厚生年金保険新規適用届",
+            "value": "事業所設置後5日以内（年金事務所）"
+          },
+          {
+            "label": "雇用保険適用事業所設置届",
+            "value": "設置後10日以内（ハローワーク）"
+          },
+          {
+            "label": "労働保険関係成立届",
+            "value": "保険関係成立後10日以内（労働基準監督署）"
+          }
+        ],
+        "heading": "社会保険・労働保険の届出（従業員を雇用する場合）"
+      }
+    },
+    {
+      "id": "section-documents",
+      "type": "Section",
+      "props": {
+        "heading": "設立登記の必要書類",
+        "level": 2,
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "設立登記申請書"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "定款（認証済み・株式会社の場合）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "発起人決定書（本店所在地決定書）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "取締役・代表取締役就任承諾書"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "払込証明書（資本金の払込みを証明）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "印鑑届出書"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "登記すべき事項を記録した電磁的記録媒体"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "info-tip",
+      "type": "InfoCard",
+      "props": {
+        "type": "tip",
+        "heading": "オンライン申請について",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "法人設立登記は、法務局の「登記・供託オンライン申請システム」で電子申請が可能です。電子定款と併用すると印紙代4万円が不要になります。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "table-where",
+      "type": "Table",
+      "props": {
+        "rows": [
+          {
+            "label": "定款認証",
+            "value": "公証役場（株式会社のみ）"
+          },
+          {
+            "label": "設立登記",
+            "value": "{{legal_affairs_bureau}}"
+          },
+          {
+            "label": "国税の届出",
+            "value": "{{tax_office}}"
+          },
+          {
+            "label": "社会保険",
+            "value": "{{pension_office}}"
+          }
+        ],
+        "heading": "申請・届出先"
+      }
+    },
+    {
+      "id": "related-links-1",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "許認可申請",
+            "href": "/permits"
+          },
+          {
+            "title": "法人税",
+            "href": "/corporate-tax"
+          },
+          {
+            "title": "社会保険",
+            "href": "/business-insurance"
+          },
+          {
+            "title": "補助金・助成金",
+            "href": "/subsidies"
+          },
+          {
+            "title": "融資制度",
+            "href": "/financing"
+          },
+          {
+            "title": "印鑑登録",
+            "href": "/inkan"
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-対象-1769919363144",
+      "type": "Section",
+      "props": {
+        "heading": "法人設立（株式会社・合同会社）の対象となる方",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "詳細は担当課にお問い合わせください。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{legal_affairs_bureau}}",
+        "phone": "{{legal_affairs_bureau_phone}}",
+        "address": "{{legal_affairs_bureau_address}}"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
+      }
+    }
+  ],
+  "search": {
+    "summary": "法人設立の手続き案内。株式会社・合同会社の設立登記、定款認証、設立後の届出一覧。",
+    "keywords": [
+      "法人設立",
+      "株式会社",
+      "合同会社",
+      "定款",
+      "設立登記",
+      "会社設立",
+      "法人設立届出",
+      "青色申告"
+    ],
+    "plain_text": "法人設立。定款作成→定款認証（株式会社）→資本金払込み→設立登記→各種届出の流れ。株式会社と合同会社の比較、設立後の届出一覧。"
+  }
+}

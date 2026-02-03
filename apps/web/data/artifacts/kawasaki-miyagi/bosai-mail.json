@@ -1,0 +1,370 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "kawasaki-miyagi-services-disaster-bosai-mail",
+  "municipality_id": "kawasaki-miyagi",
+  "path": "/bosai-mail",
+  "title": "防災情報メール",
+  "description": "防災情報メールの登録方法と配信される情報について",
+  "content_type": "step_by_step",
+  "service_category": "safety",
+  "audience": [
+    "residents"
+  ],
+  "topic": [],
+  "source": {
+    "source_url": "template://kawasaki-miyagi/services/disaster/bosai-mail",
+    "fetched_at": "2026-02-03T01:50:19.939Z",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "2026-02-03T01:50:19.939Z",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "防災・安全",
+            "href": "/disaster"
+          },
+          {
+            "label": "防災情報メール",
+            "href": "/bosai-mail"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "防災情報メール"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "災害時の避難情報や気象警報、その他緊急情報をメールでお届けします。登録は無料です。いざというときのために、ぜひご登録ください。"
+      }
+    },
+    {
+      "id": "section-uobaxsbnc",
+      "type": "Section",
+      "props": {
+        "heading": "配信される情報",
+        "level": 2,
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "避難情報（警戒レベル3〜5）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "気象警報・注意報（大雨、暴風、土砂災害警戒情報など）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "地震情報（震度3以上）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "津波情報"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "国民保護情報（Jアラート連携）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "避難所開設情報"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "その他緊急情報"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "step-nav-1",
+      "type": "StepNavigation",
+      "props": {
+        "currentStep": 0,
+        "steps": [
+          {
+            "title": "空メールを送信",
+            "body": "下記のメールアドレスに空メールを送信してください。",
+            "documents": []
+          },
+          {
+            "title": "返信メールを確認",
+            "body": "登録用URLが記載されたメールが届きます。",
+            "documents": []
+          },
+          {
+            "title": "URLにアクセス",
+            "body": "メールに記載されたURLにアクセスして登録画面を開きます。",
+            "documents": []
+          },
+          {
+            "title": "配信内容を選択",
+            "body": "受け取りたい情報を選択して登録完了です。",
+            "documents": []
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-w13l7slw2",
+      "type": "Section",
+      "props": {
+        "heading": "登録方法",
+        "level": 2,
+        "content": []
+      }
+    },
+    {
+      "id": "section-5iwpkocs2",
+      "type": "Section",
+      "props": {
+        "heading": "メールで登録",
+        "level": 3,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "登録用メールアドレス："
+              },
+              {
+                "text": "{{bosai_mail_address}}",
+                "bold": true
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "迷惑メール対策をしている方は、上記ドメインからのメールを受信できるよう設定してください。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-qr-registration",
+      "type": "Section",
+      "props": {
+        "heading": "QRコードで登録",
+        "level": 3,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "スマートフォンのカメラでQRコードを読み取り、表示されたURLにアクセスして登録できます。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "登録用URL："
+              },
+              {
+                "text": "{{bosai_mail_qr_url}}",
+                "bold": true,
+                "link": {
+                  "href": "{{bosai_mail_qr_url}}",
+                  "external": true
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "task-button-1",
+      "type": "TaskButton",
+      "props": {
+        "label": "防災情報メールに登録する",
+        "href": "{{bosai_mail_touroku_url}}",
+        "isTopTask": true
+      }
+    },
+    {
+      "id": "section-kttcotdib",
+      "type": "Section",
+      "props": {
+        "heading": "その他の情報入手手段",
+        "level": 2,
+        "content": []
+      }
+    },
+    {
+      "id": "section-oomkr5986",
+      "type": "Section",
+      "props": {
+        "heading": "防災行政無線",
+        "level": 3,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "屋外スピーカーから避難情報などをお知らせします。聞き取れなかった場合は、テレホンサービス（{{bosai_telephone}}）で確認できます。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-0cvz30eo6",
+      "type": "Section",
+      "props": {
+        "heading": "市公式SNS",
+        "level": 3,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "X（旧Twitter）やLINEでも防災情報を配信しています。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-5biugn2tk",
+      "type": "Section",
+      "props": {
+        "heading": "緊急速報メール",
+        "level": 3,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "携帯電話会社が提供するエリアメール・緊急速報メールでも避難情報をお届けします（登録不要）。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "related-links-1",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "避難所・避難場所",
+            "href": "/hinanjo"
+          },
+          {
+            "title": "ハザードマップ",
+            "href": "/hazard-map"
+          },
+          {
+            "title": "非常持出品",
+            "href": "/mochidashi"
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{bosai_department}}",
+        "phone": "{{bosai_phone}}",
+        "email": "{{bosai_email}}",
+        "hours": "{{city_hall_hours}}",
+        "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
+      }
+    }
+  ],
+  "search": {
+    "summary": "防災情報メールの登録案内。避難情報、気象警報、地震情報などをメールで配信。",
+    "keywords": [
+      "防災情報メール",
+      "防災メール",
+      "避難情報",
+      "気象警報",
+      "緊急情報",
+      "登録"
+    ],
+    "plain_text": "防災情報メール。避難情報、気象警報、地震情報などを配信。登録用メールアドレスに空メールを送信して登録。無料。"
+  }
+}

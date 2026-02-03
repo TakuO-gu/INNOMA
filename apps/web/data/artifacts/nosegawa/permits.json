@@ -1,0 +1,605 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "nosegawa-services-business-permits",
+  "municipality_id": "nosegawa",
+  "path": "/permits",
+  "title": "許認可・届出",
+  "description": "飲食店営業、古物商、建設業、宅建業などの許認可",
+  "content_type": "guide",
+  "service_category": "business",
+  "audience": [
+    "businesses"
+  ],
+  "topic": [],
+  "source": {
+    "source_url": "template://nosegawa/services/business/permits",
+    "fetched_at": "2026-02-03T01:50:20.182Z",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "2026-02-03T01:50:20.182Z",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "事業・経営",
+            "href": "/business"
+          },
+          {
+            "label": "許認可・届出",
+            "href": "/permits"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "許認可・届出"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "業種によって必要な許認可・届出の一覧です。事業を始める前に必要な手続きを確認してください。"
+      }
+    },
+    {
+      "id": "section-food-service",
+      "type": "Section",
+      "props": {
+        "heading": "飲食店・食品関係",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "飲食店や食品製造・販売を行う場合は、保健所への許可申請が必要です。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "table-food",
+      "type": "Table",
+      "props": {
+        "rows": [
+          {
+            "label": "飲食店営業許可",
+            "value": "レストラン、居酒屋、カフェ等の営業"
+          },
+          {
+            "label": "菓子製造業許可",
+            "value": "パン、ケーキ、和菓子等の製造・販売"
+          },
+          {
+            "label": "食品販売業届出",
+            "value": "弁当、惣菜、生鮮食品等の販売"
+          },
+          {
+            "label": "深夜酒類提供飲食店届出",
+            "value": "深夜0時以降に酒類を提供する飲食店"
+          }
+        ],
+        "heading": "主な許可・届出"
+      }
+    },
+    {
+      "id": "info-food",
+      "type": "InfoCard",
+      "props": {
+        "type": "info",
+        "heading": "申請先",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "{{health_center}}（{{health_center_phone}}）"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-retail",
+      "type": "Section",
+      "props": {
+        "heading": "小売・サービス業",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "取り扱う商品やサービスによって、各種許可・届出が必要です。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "table-retail",
+      "type": "Table",
+      "props": {
+        "rows": [
+          {
+            "label": "古物商許可",
+            "value": "中古品の売買・交換（リサイクルショップ、古本屋等）"
+          },
+          {
+            "label": "酒類販売業免許",
+            "value": "酒類の小売・卸売"
+          },
+          {
+            "label": "たばこ小売販売業許可",
+            "value": "たばこの小売販売"
+          },
+          {
+            "label": "薬局開設許可",
+            "value": "調剤薬局の開設"
+          },
+          {
+            "label": "クリーニング所届出",
+            "value": "クリーニング店の開業"
+          }
+        ],
+        "heading": "主な許可・届出"
+      }
+    },
+    {
+      "id": "table-retail-where",
+      "type": "Table",
+      "props": {
+        "rows": [
+          {
+            "label": "古物商許可",
+            "value": "管轄警察署"
+          },
+          {
+            "label": "酒類販売業免許",
+            "value": "管轄税務署"
+          },
+          {
+            "label": "たばこ小売販売業許可",
+            "value": "日本たばこ産業（JT）"
+          },
+          {
+            "label": "薬局開設許可",
+            "value": "保健所"
+          },
+          {
+            "label": "クリーニング所届出",
+            "value": "保健所"
+          }
+        ],
+        "heading": "申請・届出先"
+      }
+    },
+    {
+      "id": "section-construction",
+      "type": "Section",
+      "props": {
+        "heading": "建設・不動産業",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "建設業や不動産業を営む場合は、規模や営業範囲によって許可・免許が必要です。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "table-construction",
+      "type": "Table",
+      "props": {
+        "rows": [
+          {
+            "label": "建設業許可",
+            "value": "500万円以上（建築一式は1,500万円以上）の工事を請け負う場合"
+          },
+          {
+            "label": "宅地建物取引業免許",
+            "value": "不動産の売買・仲介業"
+          },
+          {
+            "label": "電気工事業登録",
+            "value": "電気工事業を営む場合"
+          },
+          {
+            "label": "解体工事業登録",
+            "value": "建設業許可を持たない解体工事業者"
+          }
+        ],
+        "heading": "主な許可・免許"
+      }
+    },
+    {
+      "id": "table-construction-where",
+      "type": "Table",
+      "props": {
+        "rows": [
+          {
+            "label": "建設業許可（知事許可）",
+            "value": "{{prefecture_name}}土木部"
+          },
+          {
+            "label": "宅地建物取引業免許（知事免許）",
+            "value": "{{prefecture_name}}土木部"
+          },
+          {
+            "label": "電気工事業登録",
+            "value": "{{prefecture_name}}商工労働部"
+          }
+        ],
+        "heading": "申請先（1都道府県内のみで営業する場合）"
+      }
+    },
+    {
+      "id": "section-transport",
+      "type": "Section",
+      "props": {
+        "heading": "運送・倉庫業",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "旅客や貨物の運送業を営む場合は、運輸支局への許可申請が必要です。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "table-transport",
+      "type": "Table",
+      "props": {
+        "rows": [
+          {
+            "label": "一般貨物自動車運送事業許可",
+            "value": "トラック運送業（緑ナンバー）"
+          },
+          {
+            "label": "貨物軽自動車運送事業届出",
+            "value": "軽貨物運送業（黒ナンバー）"
+          },
+          {
+            "label": "一般乗用旅客自動車運送事業許可",
+            "value": "タクシー事業"
+          },
+          {
+            "label": "自家用自動車有償貸渡業許可",
+            "value": "レンタカー事業"
+          },
+          {
+            "label": "倉庫業登録",
+            "value": "営業倉庫の運営"
+          }
+        ],
+        "heading": "主な許可・届出"
+      }
+    },
+    {
+      "id": "info-transport",
+      "type": "InfoCard",
+      "props": {
+        "type": "info",
+        "heading": "申請先",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "{{transport_bureau}}（{{transport_bureau_phone}}）"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-accommodation",
+      "type": "Section",
+      "props": {
+        "heading": "宿泊・民泊",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "宿泊施設を営む場合は、施設の形態によって必要な許可・届出が異なります。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "table-accommodation",
+      "type": "Table",
+      "props": {
+        "rows": [
+          {
+            "label": "旅館業許可（旅館・ホテル営業）",
+            "value": "旅館、ホテルの営業"
+          },
+          {
+            "label": "旅館業許可（簡易宿所営業）",
+            "value": "ゲストハウス、カプセルホテル等"
+          },
+          {
+            "label": "住宅宿泊事業届出（民泊）",
+            "value": "年間180日以内の住宅宿泊事業"
+          }
+        ],
+        "heading": "主な許可・届出"
+      }
+    },
+    {
+      "id": "info-accommodation",
+      "type": "InfoCard",
+      "props": {
+        "type": "info",
+        "heading": "申請先",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "旅館業許可：{{health_center}}"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "住宅宿泊事業届出：{{prefecture_name}}または野迫川村"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-procedure",
+      "type": "Section",
+      "props": {
+        "heading": "手続きの流れ",
+        "level": 2,
+        "content": [
+          {
+            "type": "list",
+            "ordered": true,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "事前相談",
+                      "bold": true
+                    },
+                    {
+                      "text": "：申請先窓口で必要な許可・届出を確認"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "書類準備",
+                      "bold": true
+                    },
+                    {
+                      "text": "：申請書、図面、登記事項証明書等を準備"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "申請・届出",
+                      "bold": true
+                    },
+                    {
+                      "text": "：窓口または電子申請で提出"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "審査・検査",
+                      "bold": true
+                    },
+                    {
+                      "text": "：書類審査、現地検査等（許可の場合）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "許可証交付",
+                      "bold": true
+                    },
+                    {
+                      "text": "：許可証・届出済証の受領"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "info-tip",
+      "type": "InfoCard",
+      "props": {
+        "type": "tip",
+        "heading": "開業前に確認を",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "許可・届出が必要な業種で無許可営業を行うと、罰則の対象となります。開業前に必ず各窓口にご相談ください。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "related-links-1",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "法人設立",
+            "href": "/incorporation"
+          },
+          {
+            "title": "個人事業主",
+            "href": "/sole-proprietor"
+          },
+          {
+            "title": "創業支援",
+            "href": "/startup"
+          },
+          {
+            "title": "開発許可",
+            "href": "/development-permit"
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-対象-1769919363145",
+      "type": "Section",
+      "props": {
+        "heading": "許認可・届出の対象となる方",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "詳細は担当課にお問い合わせください。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-必要-1769919363145",
+      "type": "Section",
+      "props": {
+        "heading": "許認可・届出に必要なもの",
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "本人確認書類（マイナンバーカード、運転免許証など）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "印鑑（認印可）"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{business_department}}",
+        "phone": "{{business_phone}}",
+        "email": "{{business_email}}",
+        "hours": "{{city_hall_hours}}",
+        "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
+      }
+    }
+  ],
+  "search": {
+    "summary": "許認可・届出の案内。飲食店営業、古物商、建設業、宅建業、運送業、旅館業などの許可申請先一覧。",
+    "keywords": [
+      "許認可",
+      "許可",
+      "届出",
+      "飲食店営業",
+      "古物商",
+      "建設業",
+      "宅建業",
+      "運送業",
+      "旅館業",
+      "民泊"
+    ],
+    "plain_text": "許認可・届出。業種により保健所、警察署、税務署、都道府県、運輸支局などへの許可申請が必要。飲食店営業、古物商、建設業、宅建業、運送業、旅館業、民泊など業種別に申請先を案内。"
+  }
+}

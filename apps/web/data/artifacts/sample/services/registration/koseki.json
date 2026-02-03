@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "page_id": "sample-services-registration-koseki",
   "municipality_id": "sample",
-  "path": "/services/registration/koseki",
+  "path": "/koseki",
   "title": "戸籍謄本・住民票の取得",
   "description": "戸籍謄本（戸籍全部事項証明書）・住民票の写しの取得方法と手数料",
   "content_type": "guide",
@@ -33,11 +33,11 @@
           },
           {
             "label": "届出・申請・証明書",
-            "href": "/topics/registration"
+            "href": "/registration"
           },
           {
             "label": "戸籍謄本・住民票の取得",
-            "href": "/services/registration/koseki"
+            "href": "/koseki"
           }
         ]
       }
@@ -544,23 +544,23 @@
         "items": [
           {
             "title": "住民票",
-            "href": "/services/registration/juminhyo"
+            "href": "/juminhyo"
           },
           {
             "title": "出生届",
-            "href": "/services/registration/shussei"
+            "href": "/shussei"
           },
           {
             "title": "死亡届",
-            "href": "/services/registration/shibou"
+            "href": "/shibou"
           },
           {
             "title": "婚姻届",
-            "href": "/services/registration/konin"
+            "href": "/konin"
           },
           {
             "title": "パスポート",
-            "href": "/services/nationality/passport"
+            "href": "/passport"
           }
         ]
       }

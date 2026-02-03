@@ -1,0 +1,316 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "kawachi-services-housing-vacant-house",
+  "municipality_id": "kawachi",
+  "path": "/vacant-house",
+  "title": "空き家対策",
+  "description": "空き家バンク、空き家の適正管理、解体補助",
+  "content_type": "guide",
+  "service_category": "housing",
+  "audience": [
+    "residents"
+  ],
+  "topic": [],
+  "source": {
+    "source_url": "template://kawachi/services/housing/vacant-house",
+    "fetched_at": "2026-02-03T01:50:19.901Z",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "2026-02-03T01:50:19.901Z",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "住まい・引越し",
+            "href": "/housing"
+          },
+          {
+            "label": "空き家対策",
+            "href": "/vacant-house"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "空き家対策"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "河内町では、空き家の有効活用と適正管理を推進しています。空き家バンクへの登録、解体補助などをご案内します。"
+      }
+    },
+    {
+      "id": "section-zkmte9u7r",
+      "type": "Section",
+      "props": {
+        "heading": "空き家バンク",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "空き家の売却・賃貸を希望する所有者と、空き家を探している方をマッチングする制度です。"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "登録料：無料"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "仲介は協定不動産事業者が行います"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-zv8p6mkbd",
+      "type": "Section",
+      "props": {
+        "heading": "空き家解体補助",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "老朽化した空き家の解体費用を補助します。"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "補助額：解体費用の{{vacant_house_subsidy_rate}}（上限{{vacant_house_subsidy_max}}円）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "対象：1年以上使用されていない住宅"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-r3b46t6hl",
+      "type": "Section",
+      "props": {
+        "heading": "空き家の適正管理",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "空き家を所有している方は、適正に管理する義務があります。管理不全の空き家は「特定空家」に指定される場合があります。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "related-links-kx73fgvko",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "住宅購入",
+            "href": "/home-purchase"
+          },
+          {
+            "title": "固定資産税",
+            "href": "/kotei"
+          },
+          {
+            "title": "都市計画",
+            "href": "/urban-planning"
+          },
+          {
+            "title": "リフォーム補助",
+            "href": "/reform-subsidy"
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-対象-1769919363181",
+      "type": "Section",
+      "props": {
+        "heading": "空き家対策の対象となる方",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "詳細は担当課にお問い合わせください。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-必要-1769919363181",
+      "type": "Section",
+      "props": {
+        "heading": "空き家対策に必要なもの",
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "本人確認書類（マイナンバーカード、運転免許証など）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "印鑑（認印可）"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-方法-1769919363181",
+      "type": "Section",
+      "props": {
+        "heading": "空き家対策の手続き方法",
+        "content": [
+          {
+            "type": "list",
+            "ordered": true,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "必要書類を準備します。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "窓口で申請書を記入します。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "書類を提出し、確認を受けます。"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{housing_department}}",
+        "phone": "{{housing_phone}}",
+        "email": "{{housing_email}}",
+        "hours": "{{city_hall_hours}}",
+        "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
+      }
+    }
+  ],
+  "search": {
+    "summary": "空き家対策の案内。空き家バンク、解体補助、適正管理について。",
+    "keywords": [
+      "空き家",
+      "空き家バンク",
+      "解体補助",
+      "特定空家",
+      "空き家対策"
+    ],
+    "plain_text": "空き家対策。空き家バンクで売却・賃貸のマッチング。老朽空き家の解体補助。適正管理の義務。"
+  }
+}

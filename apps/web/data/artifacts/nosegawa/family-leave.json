@@ -1,0 +1,306 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "nosegawa-services-employment-family-leave",
+  "municipality_id": "nosegawa",
+  "path": "/family-leave",
+  "title": "育児休業・介護休業",
+  "description": "育児休業給付金、介護休業給付金、育休取得の手続き",
+  "content_type": "guide",
+  "service_category": "business",
+  "audience": [
+    "residents"
+  ],
+  "topic": [],
+  "source": {
+    "source_url": "template://nosegawa/services/employment/family-leave",
+    "fetched_at": "2026-02-03T01:50:20.195Z",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "2026-02-03T01:50:20.195Z",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "仕事・労働",
+            "href": "/employment"
+          },
+          {
+            "label": "育児休業・介護休業",
+            "href": "/family-leave"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "育児休業・介護休業"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "育児や介護のために休業する労働者に対して、育児休業給付金・介護休業給付金が支給されます。"
+      }
+    },
+    {
+      "id": "section-gmm82257m-table",
+      "type": "Table",
+      "props": {
+        "rows": [
+          {
+            "label": "支給額",
+            "value": "休業開始時賃金の67%（180日経過後は50%）"
+          },
+          {
+            "label": "支給期間",
+            "value": "子が1歳になるまで（保育所に入れない場合は最長2歳まで）"
+          },
+          {
+            "label": "要件",
+            "value": "雇用保険に加入し、休業前2年間に12か月以上の被保険者期間があること"
+          }
+        ],
+        "heading": "育児休業給付金"
+      }
+    },
+    {
+      "id": "section-7b5j9q8s1",
+      "type": "Section",
+      "props": {
+        "heading": "産後パパ育休（出生時育児休業）",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "子の出生後8週間以内に最大4週間取得可能。2回に分割して取得できます。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-ojupc4da4",
+      "type": "Section",
+      "props": {
+        "heading": "介護休業給付金",
+        "level": 2,
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "支給額：休業開始時賃金の67%"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "支給期間：対象家族1人につき通算93日まで（3回まで分割可能）"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "related-links-jnv8cu3wn",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "保育所入所申請",
+            "href": "/nursery-apply"
+          },
+          {
+            "title": "介護保険",
+            "href": "/kaigo"
+          },
+          {
+            "title": "労働基準",
+            "href": "/labor-standards"
+          },
+          {
+            "title": "社会保険",
+            "href": "/business-insurance"
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-対象-1769919363166",
+      "type": "Section",
+      "props": {
+        "heading": "育児休業・介護休業の対象となる方",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "詳細は担当課にお問い合わせください。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-必要-1769919363166",
+      "type": "Section",
+      "props": {
+        "heading": "育児休業・介護休業に必要なもの",
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "本人確認書類（マイナンバーカード、運転免許証など）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "印鑑（認印可）"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-方法-1769919363166",
+      "type": "Section",
+      "props": {
+        "heading": "育児休業・介護休業の手続き方法",
+        "content": [
+          {
+            "type": "list",
+            "ordered": true,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "必要書類を準備します。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "窓口で申請書を記入します。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "書類を提出し、確認を受けます。"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{hello_work_name}}",
+        "phone": "{{hello_work_phone}}",
+        "address": "{{hello_work_address}}",
+        "hours": "平日8:30〜17:15"
+      }
+    },
+    {
+      "id": "terms-1769919363166",
+      "type": "Section",
+      "props": {
+        "heading": "用語の説明",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "被保険者",
+                "bold": true
+              },
+              {
+                "text": "：保険に加入している方"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
+      }
+    }
+  ],
+  "search": {
+    "summary": "育児休業・介護休業給付金の案内。支給額、支給期間、取得要件。",
+    "keywords": [
+      "育児休業",
+      "育休",
+      "介護休業",
+      "育児休業給付金",
+      "介護休業給付金",
+      "産後パパ育休"
+    ],
+    "plain_text": "育児休業・介護休業。育児休業給付金は賃金の67%、子が1歳まで。介護休業給付金は93日まで。"
+  }
+}

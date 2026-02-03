@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "page_id": "sample-services-registration-tennyu",
   "municipality_id": "sample",
-  "path": "/services/registration/tennyu",
+  "path": "/tennyu",
   "title": "転入届",
   "description": "他の市区町村から引っ越してきたときの届出（転入届）の手続き案内",
   "content_type": "step_by_step",
@@ -33,11 +33,11 @@
           },
           {
             "label": "届出・申請・証明書",
-            "href": "/topics/registration"
+            "href": "/registration"
           },
           {
             "label": "転入届",
-            "href": "/services/registration/tennyu"
+            "href": "/tennyu"
           }
         ]
       }
@@ -385,35 +385,35 @@
         "items": [
           {
             "title": "住民票",
-            "href": "/services/registration/juminhyo"
+            "href": "/juminhyo"
           },
           {
             "title": "マイナンバーカード",
-            "href": "/services/registration/mynumber"
+            "href": "/mynumber"
           },
           {
             "title": "印鑑登録",
-            "href": "/services/registration/inkan"
+            "href": "/inkan"
           },
           {
             "title": "国民健康保険",
-            "href": "/services/health/kokuho"
+            "href": "/kokuho"
           },
           {
             "title": "児童手当",
-            "href": "/services/childcare/jidou-teate"
+            "href": "/jidou-teate"
           },
           {
             "title": "住民税",
-            "href": "/services/tax/juminzei"
+            "href": "/juminzei"
           },
           {
             "title": "ごみの出し方",
-            "href": "/services/environment/gomi"
+            "href": "/gomi"
           },
           {
             "title": "引越し手続き一覧",
-            "href": "/services/housing/moving-checklist"
+            "href": "/moving-checklist"
           }
         ]
       }

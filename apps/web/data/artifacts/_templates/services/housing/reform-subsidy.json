@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "page_id": "sample-services-housing-reform-subsidy",
   "municipality_id": "sample",
-  "path": "/services/housing/reform-subsidy",
+  "path": "/reform-subsidy",
   "title": "住宅リフォーム補助",
   "description": "{{municipality_name}}独自の住宅リフォーム補助制度",
   "content_type": "guide",
@@ -33,11 +33,11 @@
           },
           {
             "label": "住まい・引越し",
-            "href": "/topics/housing"
+            "href": "/housing"
           },
           {
             "label": "住宅リフォーム補助",
-            "href": "/services/housing/reform-subsidy"
+            "href": "/reform-subsidy"
           }
         ]
       }
@@ -181,19 +181,19 @@
         "items": [
           {
             "title": "耐震改修",
-            "href": "/services/housing/seismic-retrofit"
+            "href": "/seismic-retrofit"
           },
           {
             "title": "住宅購入",
-            "href": "/services/housing/home-purchase"
+            "href": "/home-purchase"
           },
           {
             "title": "介護保険",
-            "href": "/services/welfare/kaigo"
+            "href": "/kaigo"
           },
           {
             "title": "障害者福祉",
-            "href": "/services/welfare/shogai"
+            "href": "/shogai"
           }
         ]
       }

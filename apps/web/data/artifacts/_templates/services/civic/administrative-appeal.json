@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "page_id": "sample-services-civic-administrative-appeal",
   "municipality_id": "sample",
-  "path": "/services/civic/administrative-appeal",
+  "path": "/administrative-appeal",
   "title": "行政不服審査",
   "description": "行政処分に対する審査請求、不服申立ての手続き",
   "content_type": "guide",
@@ -33,11 +33,11 @@
           },
           {
             "label": "市民参加・権利行使",
-            "href": "/topics/civic"
+            "href": "/civic"
           },
           {
             "label": "行政不服審査",
-            "href": "/services/civic/administrative-appeal"
+            "href": "/administrative-appeal"
           }
         ]
       }
@@ -182,15 +182,15 @@
         "items": [
           {
             "title": "監査請求",
-            "href": "/services/civic/audit-request"
+            "href": "/audit-request"
           },
           {
             "title": "法律相談",
-            "href": "/services/civic/legal-support"
+            "href": "/legal-support"
           },
           {
             "title": "情報公開",
-            "href": "/services/civic/information-disclosure"
+            "href": "/information-disclosure"
           }
         ]
       }

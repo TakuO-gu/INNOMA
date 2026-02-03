@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "page_id": "sample-services-land-agriculture-subsidy",
   "municipality_id": "sample",
-  "path": "/services/land/agriculture-subsidy",
+  "path": "/agriculture-subsidy",
   "title": "農業補助金・支援制度",
   "description": "農業経営支援、機械導入補助、経営所得安定対策",
   "content_type": "guide",
@@ -33,11 +33,11 @@
           },
           {
             "label": "土地・農林水産",
-            "href": "/topics/land"
+            "href": "/land"
           },
           {
             "label": "農業補助金・支援制度",
-            "href": "/services/land/agriculture-subsidy"
+            "href": "/agriculture-subsidy"
           }
         ]
       }
@@ -136,15 +136,15 @@
         "items": [
           {
             "title": "農業委員会",
-            "href": "/services/land/agricultural-committee"
+            "href": "/agricultural-committee"
           },
           {
             "title": "新規就農",
-            "href": "/services/land/new-farmer"
+            "href": "/new-farmer"
           },
           {
             "title": "補助金・助成金",
-            "href": "/services/business/subsidies"
+            "href": "/subsidies"
           }
         ]
       }

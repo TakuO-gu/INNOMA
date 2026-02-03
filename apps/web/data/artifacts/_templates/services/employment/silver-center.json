@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "page_id": "sample-services-employment-silver-center",
   "municipality_id": "sample",
-  "path": "/services/employment/silver-center",
+  "path": "/silver-center",
   "title": "シルバー人材センター",
   "description": "{{municipality_name}}シルバー人材センターの入会・仕事案内",
   "content_type": "guide",
@@ -33,11 +33,11 @@
           },
           {
             "label": "仕事・労働",
-            "href": "/topics/employment"
+            "href": "/employment"
           },
           {
             "label": "シルバー人材センター",
-            "href": "/services/employment/silver-center"
+            "href": "/silver-center"
           }
         ]
       }
@@ -193,15 +193,15 @@
         "items": [
           {
             "title": "高齢者福祉",
-            "href": "/services/welfare/koureisha"
+            "href": "/koureisha"
           },
           {
             "title": "ハローワーク",
-            "href": "/services/employment/hello-work"
+            "href": "/hello-work"
           },
           {
             "title": "年金",
-            "href": "/services/benefits/nenkin"
+            "href": "/nenkin"
           }
         ]
       }

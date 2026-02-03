@@ -104,5 +104,82 @@
     "sourceUrl": "https://www.town.yoshino.nara.jp/soshiki/index.html",
     "confidence": 0.95,
     "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "city_hall_hours": {
+    "value": "午前8時30分から午後5時15分（祝日、休日、年末年始を除く月曜日から金曜日）",
+    "source": "llm",
+    "sourceUrl": "https://www.town.yoshino.nara.jp/",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-03T00:00:00.000Z"
+  },
+  "kaigo_department": {
+    "value": "長寿福祉課",
+    "source": "llm",
+    "sourceUrl": "https://www.town.yoshino.nara.jp/soshiki/index.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-03T00:00:00.000Z"
+  },
+  "kaigo_phone": {
+    "value": "0746-32-3081（代表）",
+    "source": "llm",
+    "sourceUrl": "https://www.town.yoshino.nara.jp/",
+    "confidence": 0.7,
+    "updatedAt": "2026-02-03T00:00:00.000Z"
+  },
+  "tax_phone": {
+    "value": "0746-32-3081（代表）",
+    "source": "llm",
+    "sourceUrl": "https://www.town.yoshino.nara.jp/",
+    "confidence": 0.7,
+    "updatedAt": "2026-02-03T00:00:00.000Z"
+  },
+  "kosodate_department": {
+    "value": "長寿福祉課",
+    "source": "llm",
+    "sourceUrl": "https://www.town.yoshino.nara.jp/soshiki/index.html",
+    "confidence": 0.8,
+    "updatedAt": "2026-02-03T00:00:00.000Z"
+  },
+  "kosodate_phone": {
+    "value": "0746-32-3081（代表）",
+    "source": "llm",
+    "sourceUrl": "https://www.town.yoshino.nara.jp/",
+    "confidence": 0.7,
+    "updatedAt": "2026-02-03T00:00:00.000Z"
+  },
+  "hoken_department": {
+    "value": "町民税務課",
+    "source": "llm",
+    "sourceUrl": "https://www.town.yoshino.nara.jp/soshiki/index.html",
+    "confidence": 0.8,
+    "updatedAt": "2026-02-03T00:00:00.000Z"
+  },
+  "hoken_phone": {
+    "value": "0746-32-3081（代表）",
+    "source": "llm",
+    "sourceUrl": "https://www.town.yoshino.nara.jp/",
+    "confidence": 0.7,
+    "updatedAt": "2026-02-03T00:00:00.000Z"
+  },
+  "building_department": {
+    "value": "暮らし環境整備課",
+    "source": "llm",
+    "sourceUrl": "https://www.town.yoshino.nara.jp/soshiki/index.html",
+    "confidence": 0.8,
+    "updatedAt": "2026-02-03T00:00:00.000Z"
+  },
+  "building_phone": {
+    "value": "0746-32-3081（代表）",
+    "source": "llm",
+    "sourceUrl": "https://www.town.yoshino.nara.jp/",
+    "confidence": 0.7,
+    "updatedAt": "2026-02-03T00:00:00.000Z"
+  },
+  "environment_phone": {
+    "value": "0746-32-3081（代表）",
+    "source": "llm",
+    "sourceUrl": "https://www.town.yoshino.nara.jp/",
+    "confidence": 0.7,
+    "updatedAt": "2026-02-03T00:00:00.000Z"
   }
 }

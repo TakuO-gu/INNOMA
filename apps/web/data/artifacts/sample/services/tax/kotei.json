@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "page_id": "sample-services-tax-kotei",
   "municipality_id": "sample",
-  "path": "/services/tax/kotei",
+  "path": "/kotei",
   "title": "固定資産税・都市計画税",
   "description": "固定資産税・都市計画税の対象、税額の計算方法、納付方法について",
   "content_type": "guide",
@@ -33,11 +33,11 @@
           },
           {
             "label": "税金",
-            "href": "/topics/tax"
+            "href": "/tax"
           },
           {
             "label": "固定資産税・都市計画税",
-            "href": "/services/tax/kotei"
+            "href": "/kotei"
           }
         ]
       }
@@ -399,19 +399,19 @@
         "items": [
           {
             "title": "住民税",
-            "href": "/services/tax/juminzei"
+            "href": "/juminzei"
           },
           {
             "title": "住宅購入",
-            "href": "/services/housing/home-purchase"
+            "href": "/home-purchase"
           },
           {
             "title": "不動産登記",
-            "href": "/services/housing/property-registration"
+            "href": "/property-registration"
           },
           {
             "title": "都市計画",
-            "href": "/services/land/urban-planning"
+            "href": "/urban-planning"
           }
         ]
       }

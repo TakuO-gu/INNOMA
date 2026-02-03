@@ -1,0 +1,449 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "kawachi-services-environment-gomi",
+  "municipality_id": "kawachi",
+  "path": "/gomi",
+  "title": "ごみの出し方（分別ガイド）",
+  "description": "ごみの分別方法、収集日、出し方のルールについて",
+  "content_type": "guide",
+  "service_category": "environment",
+  "audience": [
+    "residents"
+  ],
+  "topic": [],
+  "source": {
+    "source_url": "template://kawachi/services/environment/gomi",
+    "fetched_at": "2026-02-03T01:50:19.895Z",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "2026-02-03T01:50:19.895Z",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "環境・ごみ",
+            "href": "/environment"
+          },
+          {
+            "label": "ごみの出し方",
+            "href": "/gomi"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "ごみの出し方（分別ガイド）"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "ごみは正しく分別し、決められた日の朝{{gomi_dashijikan}}までに出してください。分別ルールを守ることで、リサイクルが進み、環境負荷を減らすことができます。"
+      }
+    },
+    {
+      "id": "task-button-1",
+      "type": "TaskButton",
+      "props": {
+        "label": "ごみ収集日カレンダーを見る",
+        "href": "{{gomi_calendar_url}}",
+        "isTopTask": true
+      }
+    },
+    {
+      "id": "district-selector-1",
+      "type": "DistrictSelector",
+      "props": {
+        "variableGroup": "gomi_shushu",
+        "label": "お住まいの地区を選択してください",
+        "placeholder": "地区を選択",
+        "helpText": "収集日は地区によって異なります。正確な収集日を確認するため、お住まいの地区を選択してください。"
+      }
+    },
+    {
+      "id": "section-khnq172x8",
+      "type": "Section",
+      "props": {
+        "heading": "ごみの分別",
+        "level": 2,
+        "content": []
+      }
+    },
+    {
+      "id": "section-sdojpdn1e",
+      "type": "Section",
+      "props": {
+        "heading": "燃やせるごみ",
+        "level": 3,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "生ごみ、紙くず、布類、プラスチック製品（リサイクルマークのないもの）、木くずなど"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "収集日：週2回"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "出し方：{{moeru_gomi_dashikata}}"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-fxqavc6du",
+      "type": "Section",
+      "props": {
+        "heading": "燃やせないごみ",
+        "level": 3,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "金属類、ガラス、陶磁器、小型家電（一辺30cm未満）など"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "収集日：{{moenai_gomi_shushuhi}}"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "出し方：{{moenai_gomi_dashikata}}"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-c7liyivlu",
+      "type": "Section",
+      "props": {
+        "heading": "資源ごみ",
+        "level": 3,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "空き缶、空きびん、ペットボトル、新聞・雑誌・段ボール、プラスチック製容器包装（リサイクルマークのあるもの）など"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "収集日：{{shigen_gomi_shushuhi}}"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "出し方：種類ごとに分けて出してください"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-w8mf9msy9",
+      "type": "Section",
+      "props": {
+        "heading": "プラスチックの分別",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "プラスチック製品は、リサイクルマーク（プラマーク）の有無で分別が変わります。"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "プラマークあり → 資源ごみ（プラスチック製容器包装）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "プラマークなし → 燃やせるごみ"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-9l74s25pg",
+      "type": "Section",
+      "props": {
+        "heading": "粗大ごみ",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "一辺が30cm以上の大型ごみは「粗大ごみ」として、事前申込制で有料収集を行っています。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "task-button-2",
+      "type": "TaskButton",
+      "props": {
+        "label": "粗大ごみの申込方法を見る",
+        "href": "/sodaigomi",
+        "isTopTask": false
+      }
+    },
+    {
+      "id": "section-pkllhe8hn-notification-0",
+      "type": "NotificationBanner",
+      "props": {
+        "severity": "warning",
+        "title": "注意",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "以下のものは市では収集できません。販売店や専門業者にお問い合わせください。"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "家電リサイクル法対象品（エアコン、テレビ、冷蔵庫・冷凍庫、洗濯機・衣類乾燥機）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "パソコン"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "タイヤ、バッテリー"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "消火器"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "ガスボンベ"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "農薬、劇薬"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-tmr74u4ek",
+      "type": "Section",
+      "props": {
+        "heading": "ごみ分別アプリ",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "{{gomi_app_description}}"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "related-links-1",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "粗大ごみ",
+            "href": "/sodaigomi"
+          },
+          {
+            "title": "家電リサイクル",
+            "href": "/kaden-recycle"
+          },
+          {
+            "title": "引越し手続き一覧",
+            "href": "/moving-checklist"
+          },
+          {
+            "title": "転入届",
+            "href": "/tennyu"
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{environment_department}}",
+        "phone": "{{environment_phone}}",
+        "email": "{{environment_email}}",
+        "hours": "{{city_hall_hours}}",
+        "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
+      }
+    }
+  ],
+  "search": {
+    "summary": "ごみの分別方法と出し方のガイド。燃やせるごみ、燃やせないごみ、資源ごみの分別と収集日。",
+    "keywords": [
+      "ごみ",
+      "分別",
+      "収集日",
+      "燃やせるごみ",
+      "燃やせないごみ",
+      "資源ごみ",
+      "リサイクル",
+      "プラスチック"
+    ],
+    "plain_text": "ごみの出し方。燃やせるごみは週2回。燃やせないごみ、資源ごみは地区ごとに収集日が異なる。プラマークありは資源ごみ。粗大ごみは事前申込制。家電リサイクル法対象品は収集不可。"
+  }
+}

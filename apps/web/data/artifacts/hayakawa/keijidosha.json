@@ -1,0 +1,435 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "hayakawa-services-tax-keijidosha",
+  "municipality_id": "hayakawa",
+  "path": "/keijidosha",
+  "title": "軽自動車税（種別割）",
+  "description": "軽自動車税の対象車両、税額、届出について",
+  "content_type": "guide",
+  "service_category": "government",
+  "audience": [
+    "residents"
+  ],
+  "topic": [],
+  "source": {
+    "source_url": "template://hayakawa/services/tax/keijidosha",
+    "fetched_at": "2026-02-03T01:50:19.617Z",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "2026-02-03T01:50:19.617Z",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "税金",
+            "href": "/tax"
+          },
+          {
+            "label": "軽自動車税",
+            "href": "/keijidosha"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "軽自動車税（種別割）"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "軽自動車税（種別割）は、毎年4月1日時点で原動機付自転車、軽自動車、小型特殊自動車、二輪の小型自動車を所有している方にかかる税金です。"
+      }
+    },
+    {
+      "id": "section-2vxwnl6q6",
+      "type": "Section",
+      "props": {
+        "heading": "納税義務者",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "毎年4月1日時点で車両を所有している方に課税されます。年度途中で取得・廃車しても、その年度の税額は変わりません（月割なし）。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-2vxwnl6q6-notification-0",
+      "type": "NotificationBanner",
+      "props": {
+        "severity": "warning",
+        "title": "注意",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "3月末までに廃車届を出さないと、4月1日時点の所有者に1年分の税金がかかります。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-egeugvxf4",
+      "type": "Section",
+      "props": {
+        "heading": "税額",
+        "level": 2,
+        "content": []
+      }
+    },
+    {
+      "id": "table-gentsuki",
+      "type": "Table",
+      "props": {
+        "rows": [
+          {
+            "label": "原付（50cc以下）",
+            "value": "2,000円"
+          },
+          {
+            "label": "原付（50cc超〜90cc以下）",
+            "value": "2,000円"
+          },
+          {
+            "label": "原付（90cc超〜125cc以下）",
+            "value": "2,400円"
+          },
+          {
+            "label": "ミニカー",
+            "value": "3,700円"
+          },
+          {
+            "label": "小型特殊（農耕用）",
+            "value": "2,400円"
+          },
+          {
+            "label": "小型特殊（その他）",
+            "value": "5,900円"
+          }
+        ],
+        "heading": "原動機付自転車・小型特殊自動車"
+      }
+    },
+    {
+      "id": "table-keiyonrin",
+      "type": "Table",
+      "props": {
+        "rows": [
+          {
+            "label": "軽四輪乗用（自家用）",
+            "value": "10,800円"
+          },
+          {
+            "label": "軽四輪乗用（営業用）",
+            "value": "6,900円"
+          },
+          {
+            "label": "軽四輪貨物（自家用）",
+            "value": "5,000円"
+          },
+          {
+            "label": "軽四輪貨物（営業用）",
+            "value": "3,800円"
+          },
+          {
+            "label": "軽三輪",
+            "value": "3,900円"
+          }
+        ],
+        "heading": "軽自動車"
+      }
+    },
+    {
+      "id": "table-nirin",
+      "type": "Table",
+      "props": {
+        "rows": [
+          {
+            "label": "二輪（125cc超〜250cc以下）",
+            "value": "3,600円"
+          },
+          {
+            "label": "二輪の小型自動車（250cc超）",
+            "value": "6,000円"
+          }
+        ],
+        "heading": "二輪車"
+      }
+    },
+    {
+      "id": "section-2m2w560oq",
+      "type": "Section",
+      "props": {
+        "heading": "グリーン化特例（軽課・重課）",
+        "level": 2,
+        "content": []
+      }
+    },
+    {
+      "id": "section-h1w1btszf",
+      "type": "Section",
+      "props": {
+        "heading": "軽課（減税）",
+        "level": 3,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "電気自動車、天然ガス自動車は、新規登録の翌年度に限り税額が75%軽減されます。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-vhkuq4nbt",
+      "type": "Section",
+      "props": {
+        "heading": "重課（増税）",
+        "level": 3,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "初度検査から13年を経過した軽四輪は、税額が約20%重課されます。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-ohuy8v0ze",
+      "type": "Section",
+      "props": {
+        "heading": "納付方法",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "毎年5月上旬に納税通知書をお届けします。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "table-nofu",
+      "type": "Table",
+      "props": {
+        "rows": [
+          {
+            "label": "納期限",
+            "value": "{{keijidosha_kigen}}"
+          },
+          {
+            "label": "納付場所",
+            "value": "金融機関、コンビニ、口座振替、スマートフォン決済など"
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-valr4jts1",
+      "type": "Section",
+      "props": {
+        "heading": "届出が必要なとき",
+        "level": 2,
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "原動機付自転車・小型特殊自動車を購入・譲り受けたとき",
+                      "bold": true
+                    },
+                    {
+                      "text": "→市役所で登録"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "原動機付自転車・小型特殊自動車を廃車・譲渡するとき",
+                      "bold": true
+                    },
+                    {
+                      "text": "→市役所で届出"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "軽自動車・二輪車を購入・譲り受けたとき",
+                      "bold": true
+                    },
+                    {
+                      "text": "→軽自動車検査協会等で登録"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "市外へ転出するとき",
+                      "bold": true
+                    },
+                    {
+                      "text": "→転出先で登録変更"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-w28bac6q9",
+      "type": "Section",
+      "props": {
+        "heading": "車検用の納税証明書",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "軽自動車の車検には納税証明書が必要です。納税後すぐに車検を受ける場合は、金融機関等で領収印を押してもらった納税証明書をお使いください。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "令和5年1月から、軽自動車税の納税確認が電子化されました。継続検査時の納税証明書の提示が原則不要になりました。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "related-links-1",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "自動車登録",
+            "href": "/registration"
+          },
+          {
+            "title": "自動車税",
+            "href": "/vehicle-tax"
+          },
+          {
+            "title": "住民税",
+            "href": "/juminzei"
+          },
+          {
+            "title": "車庫証明",
+            "href": "/garage-certificate"
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-対象-1769919363217",
+      "type": "Section",
+      "props": {
+        "heading": "軽自動車税（種別割）の対象となる方",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "詳細は担当課にお問い合わせください。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{zeimu_department}}",
+        "phone": "{{zeimu_phone}}",
+        "email": "{{zeimu_email}}",
+        "hours": "{{city_hall_hours}}",
+        "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
+      }
+    }
+  ],
+  "search": {
+    "summary": "軽自動車税（種別割）の案内。原付、軽自動車、二輪車の税額と届出について。",
+    "keywords": [
+      "軽自動車税",
+      "原付",
+      "バイク",
+      "軽四輪",
+      "二輪車",
+      "税額",
+      "届出",
+      "車検",
+      "納税証明書"
+    ],
+    "plain_text": "軽自動車税。4月1日時点の所有者に課税。原付2,000円〜、軽四輪自家用10,800円。5月納期限。原付・小型特殊は市役所で登録。"
+  }
+}

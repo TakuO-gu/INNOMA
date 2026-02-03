@@ -1,0 +1,498 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "kawachi-services-tax-juminzei",
+  "municipality_id": "kawachi",
+  "path": "/juminzei",
+  "title": "住民税（市民税・県民税）",
+  "description": "住民税の概要、納税義務者、税額の計算方法、納付方法について",
+  "content_type": "guide",
+  "service_category": "government",
+  "audience": [
+    "residents"
+  ],
+  "topic": [],
+  "source": {
+    "source_url": "template://kawachi/services/tax/juminzei",
+    "fetched_at": "2026-02-03T01:50:19.914Z",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "2026-02-03T01:50:19.914Z",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "税金",
+            "href": "/tax"
+          },
+          {
+            "label": "住民税",
+            "href": "/juminzei"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "住民税（市民税・県民税）"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "住民税は、毎年1月1日時点でお住まいの市区町村に納める税金です。前年の所得に応じて課税されます。市民税と県民税（都民税）を合わせて「住民税」といいます。"
+      }
+    },
+    {
+      "id": "section-upv8rarz3",
+      "type": "Section",
+      "props": {
+        "heading": "納税義務者",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "毎年1月1日時点で市内に住所がある方が対象です。前年中（1月1日〜12月31日）の所得に基づいて税額が計算されます。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "1月2日以降に転入・転出された方も、1月1日時点でお住まいだった市区町村に住民税を納めます。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-e5u718ijf",
+      "type": "Section",
+      "props": {
+        "heading": "非課税となる方",
+        "level": 2,
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "生活保護法による生活扶助を受けている方"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "障害者、未成年者、寡婦またはひとり親で、前年の合計所得金額が135万円以下の方"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "前年の合計所得金額が一定額以下の方"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-d4yoisaxz",
+      "type": "Section",
+      "props": {
+        "heading": "税額の計算",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "住民税は、「所得割」と「均等割」を合計して計算されます。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "table-keisan",
+      "type": "Table",
+      "props": {
+        "rows": [
+          {
+            "label": "所得割",
+            "value": "（前年の所得−所得控除）× 10%（市民税6%・県民税4%）"
+          },
+          {
+            "label": "均等割（市民税）",
+            "value": "{{juminzei_kinto_shi}}"
+          },
+          {
+            "label": "均等割（県民税）",
+            "value": "{{juminzei_kinto_ken}}"
+          },
+          {
+            "label": "森林環境税",
+            "value": "1,000円（令和6年度から国税として賦課）"
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-mm1vfxkus",
+      "type": "Section",
+      "props": {
+        "heading": "納付方法",
+        "level": 2,
+        "content": []
+      }
+    },
+    {
+      "id": "section-3x8cf7hi2",
+      "type": "Section",
+      "props": {
+        "heading": "特別徴収（給与天引き）",
+        "level": 3,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "会社員の方は、6月から翌年5月まで毎月の給与から天引きされます。勤務先が手続きを行います。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-8c5snjsh5",
+      "type": "Section",
+      "props": {
+        "heading": "普通徴収（納付書払い）",
+        "level": 3,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "自営業の方などは、市から届く納税通知書で納付します。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "table-nofu",
+      "type": "Table",
+      "props": {
+        "rows": [
+          {
+            "label": "第1期",
+            "value": "{{juminzei_kigen_1}}"
+          },
+          {
+            "label": "第2期",
+            "value": "{{juminzei_kigen_2}}"
+          },
+          {
+            "label": "第3期",
+            "value": "{{juminzei_kigen_3}}"
+          },
+          {
+            "label": "第4期",
+            "value": "{{juminzei_kigen_4}}"
+          },
+          {
+            "label": "納付場所",
+            "value": "金融機関、コンビニ、口座振替、クレジットカード、スマートフォン決済など"
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-5zovw1h9y",
+      "type": "Section",
+      "props": {
+        "heading": "年金特別徴収",
+        "level": 3,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "65歳以上で公的年金を受給している方は、年金から住民税が天引きされます。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-n2xdj5c8a",
+      "type": "Section",
+      "props": {
+        "heading": "申告について",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "以下の方は、確定申告または住民税の申告が必要です。"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "給与所得以外に所得がある方"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "2か所以上から給与を受けている方"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "年末調整をしていない方"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "医療費控除、住宅ローン控除などを受ける方"
+                    }
+                  ]
+                }
+              ]
+            ]
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "所得税の確定申告をした方は、住民税の申告は不要です。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "related-links-1",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "固定資産税",
+            "href": "/kotei"
+          },
+          {
+            "title": "転入届",
+            "href": "/tennyu"
+          },
+          {
+            "title": "転出届",
+            "href": "/tenshutsu"
+          },
+          {
+            "title": "マイナンバーカード",
+            "href": "/mynumber"
+          },
+          {
+            "title": "年金",
+            "href": "/nenkin"
+          },
+          {
+            "title": "保育所入所申請",
+            "href": "/nursery-apply"
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-対象-1769919363214",
+      "type": "Section",
+      "props": {
+        "heading": "住民税（市民税・県民税）の対象となる方",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "詳細は担当課にお問い合わせください。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-必要-1769919363214",
+      "type": "Section",
+      "props": {
+        "heading": "住民税（市民税・県民税）に必要なもの",
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "本人確認書類（マイナンバーカード、運転免許証など）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "印鑑（認印可）"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{zeimu_department}}",
+        "phone": "{{zeimu_phone}}",
+        "email": "{{zeimu_email}}",
+        "hours": "{{city_hall_hours}}",
+        "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "terms-1769919363214",
+      "type": "Section",
+      "props": {
+        "heading": "用語の説明",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "賦課",
+                "bold": true
+              },
+              {
+                "text": "：税金を課すこと"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "所得割",
+                "bold": true
+              },
+              {
+                "text": "：収入に応じて計算される部分"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "均等割",
+                "bold": true
+              },
+              {
+                "text": "：全員同じ金額の部分"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
+      }
+    }
+  ],
+  "search": {
+    "summary": "住民税（市民税・県民税）の案内。納税義務者、税額の計算方法、納付方法について。",
+    "keywords": [
+      "住民税",
+      "市民税",
+      "県民税",
+      "所得割",
+      "均等割",
+      "特別徴収",
+      "普通徴収",
+      "納税"
+    ],
+    "plain_text": "住民税。1月1日時点で市内に住所がある方が対象。前年の所得に応じて課税。所得割10%と均等割で計算。会社員は給与天引き、自営業は納付書で納付。"
+  }
+}

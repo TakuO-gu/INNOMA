@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "page_id": "sample-services-housing-vacant-house",
   "municipality_id": "sample",
-  "path": "/services/housing/vacant-house",
+  "path": "/vacant-house",
   "title": "空き家対策",
   "description": "空き家バンク、空き家の適正管理、解体補助",
   "content_type": "guide",
@@ -33,11 +33,11 @@
           },
           {
             "label": "住まい・引越し",
-            "href": "/topics/housing"
+            "href": "/housing"
           },
           {
             "label": "空き家対策",
-            "href": "/services/housing/vacant-house"
+            "href": "/vacant-house"
           }
         ]
       }
@@ -169,19 +169,19 @@
         "items": [
           {
             "title": "住宅購入",
-            "href": "/services/housing/home-purchase"
+            "href": "/home-purchase"
           },
           {
             "title": "固定資産税",
-            "href": "/services/tax/kotei"
+            "href": "/kotei"
           },
           {
             "title": "都市計画",
-            "href": "/services/land/urban-planning"
+            "href": "/urban-planning"
           },
           {
             "title": "リフォーム補助",
-            "href": "/services/housing/reform-subsidy"
+            "href": "/reform-subsidy"
           }
         ]
       }

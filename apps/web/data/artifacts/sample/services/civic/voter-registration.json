@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "page_id": "sample-services-civic-voter-registration",
   "municipality_id": "sample",
-  "path": "/services/civic/voter-registration",
+  "path": "/voter-registration",
   "title": "選挙人名簿登録",
   "description": "選挙人名簿への登録、在外選挙人名簿、選挙権",
   "content_type": "guide",
@@ -33,11 +33,11 @@
           },
           {
             "label": "市民参加・権利行使",
-            "href": "/topics/civic"
+            "href": "/civic"
           },
           {
             "label": "選挙人名簿登録",
-            "href": "/services/civic/voter-registration"
+            "href": "/voter-registration"
           }
         ]
       }
@@ -209,15 +209,15 @@
         "items": [
           {
             "title": "選挙",
-            "href": "/services/civic/election"
+            "href": "/election"
           },
           {
             "title": "転入届",
-            "href": "/services/registration/tennyu"
+            "href": "/tennyu"
           },
           {
             "title": "住民票",
-            "href": "/services/registration/juminhyo"
+            "href": "/juminhyo"
           }
         ]
       }

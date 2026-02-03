@@ -14,7 +14,6 @@ import {
   ContentType,
   ServiceCategory,
   Audience,
-  Topic,
   HeadingSchema,
   LinkSchema,
   type Block,
@@ -47,7 +46,6 @@ export const InnomaArtifactSchema = z.object({
   service_category: z.union([ServiceCategory, z.string()]).optional(),
   category: z.union([ServiceCategory, z.string()]).optional(), // v1互換
   audience: z.array(z.union([Audience, z.string()])).optional(),
-  topic: z.array(z.union([Topic, z.string()])).optional(),
   source: z.object({
     source_url: z.string(),
     crawl_file: z.string().optional(),

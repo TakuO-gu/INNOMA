@@ -76,5 +76,103 @@
     "sourceUrl": "https://www.town.kusatsu.gunma.jp/www/contents/1513640181830/index.html",
     "confidence": 0.95,
     "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "tax_department": {
+    "value": "愛町部 税務課",
+    "source": "llm",
+    "sourceUrl": "https://www.town.kusatsu.gunma.jp/www/contents/1513640181830/index.html",
+    "confidence": 0.8,
+    "updatedAt": "2026-02-03T00:00:00.000Z"
+  },
+  "tax_phone": {
+    "value": "0279-88-0001（代表）",
+    "source": "llm",
+    "sourceUrl": "https://www.town.kusatsu.gunma.jp/www/contents/1513640181830/index.html",
+    "confidence": 0.7,
+    "updatedAt": "2026-02-03T00:00:00.000Z"
+  },
+  "welfare_department": {
+    "value": "愛町部 健康推進課",
+    "source": "llm",
+    "sourceUrl": "https://www.town.kusatsu.gunma.jp/www/contents/1513640181830/index.html",
+    "confidence": 0.8,
+    "updatedAt": "2026-02-03T00:00:00.000Z"
+  },
+  "welfare_phone": {
+    "value": "0279-88-0001（代表）",
+    "source": "llm",
+    "sourceUrl": "https://www.town.kusatsu.gunma.jp/www/contents/1513640181830/index.html",
+    "confidence": 0.7,
+    "updatedAt": "2026-02-03T00:00:00.000Z"
+  },
+  "kaigo_department": {
+    "value": "愛町部 健康推進課",
+    "source": "llm",
+    "sourceUrl": "https://www.town.kusatsu.gunma.jp/www/contents/1513640181830/index.html",
+    "confidence": 0.8,
+    "updatedAt": "2026-02-03T00:00:00.000Z"
+  },
+  "kaigo_phone": {
+    "value": "0279-88-0001（代表）",
+    "source": "llm",
+    "sourceUrl": "https://www.town.kusatsu.gunma.jp/www/contents/1513640181830/index.html",
+    "confidence": 0.7,
+    "updatedAt": "2026-02-03T00:00:00.000Z"
+  },
+  "hoken_department": {
+    "value": "愛町部 住民課",
+    "source": "llm",
+    "sourceUrl": "https://www.town.kusatsu.gunma.jp/www/contents/1513640181830/index.html",
+    "confidence": 0.8,
+    "updatedAt": "2026-02-03T00:00:00.000Z"
+  },
+  "hoken_phone": {
+    "value": "0279-88-7192",
+    "source": "llm",
+    "sourceUrl": "https://www.town.kusatsu.gunma.jp/www/contents/1513640181830/index.html",
+    "confidence": 0.8,
+    "updatedAt": "2026-02-03T00:00:00.000Z"
+  },
+  "kosodate_department": {
+    "value": "愛町部 健康推進課",
+    "source": "llm",
+    "sourceUrl": "https://www.town.kusatsu.gunma.jp/www/contents/1513640181830/index.html",
+    "confidence": 0.8,
+    "updatedAt": "2026-02-03T00:00:00.000Z"
+  },
+  "kosodate_phone": {
+    "value": "0279-88-0001（代表）",
+    "source": "llm",
+    "sourceUrl": "https://www.town.kusatsu.gunma.jp/www/contents/1513640181830/index.html",
+    "confidence": 0.7,
+    "updatedAt": "2026-02-03T00:00:00.000Z"
+  },
+  "environment_department": {
+    "value": "愛町部 住民課",
+    "source": "llm",
+    "sourceUrl": "https://www.town.kusatsu.gunma.jp/www/contents/1513640181830/index.html",
+    "confidence": 0.8,
+    "updatedAt": "2026-02-03T00:00:00.000Z"
+  },
+  "environment_phone": {
+    "value": "0279-88-7192",
+    "source": "llm",
+    "sourceUrl": "https://www.town.kusatsu.gunma.jp/www/contents/1513640181830/index.html",
+    "confidence": 0.8,
+    "updatedAt": "2026-02-03T00:00:00.000Z"
+  },
+  "building_department": {
+    "value": "建設部 建設課",
+    "source": "llm",
+    "sourceUrl": "https://www.town.kusatsu.gunma.jp/www/contents/1513640181830/index.html",
+    "confidence": 0.8,
+    "updatedAt": "2026-02-03T00:00:00.000Z"
+  },
+  "building_phone": {
+    "value": "0279-88-0001（代表）",
+    "source": "llm",
+    "sourceUrl": "https://www.town.kusatsu.gunma.jp/www/contents/1513640181830/index.html",
+    "confidence": 0.7,
+    "updatedAt": "2026-02-03T00:00:00.000Z"
   }
 }

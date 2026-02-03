@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "page_id": "sample-services-employment-labor-standards",
   "municipality_id": "sample",
-  "path": "/services/employment/labor-standards",
+  "path": "/labor-standards",
   "title": "労働条件・最低賃金",
   "description": "東京都の最低賃金、労働時間、残業規制",
   "content_type": "guide",
@@ -33,11 +33,11 @@
           },
           {
             "label": "仕事・労働",
-            "href": "/topics/employment"
+            "href": "/employment"
           },
           {
             "label": "労働条件・最低賃金",
-            "href": "/services/employment/labor-standards"
+            "href": "/labor-standards"
           }
         ]
       }
@@ -190,15 +190,15 @@
         "items": [
           {
             "title": "労働相談",
-            "href": "/services/employment/labor-consultation"
+            "href": "/labor-consultation"
           },
           {
             "title": "ハラスメント",
-            "href": "/services/employment/harassment"
+            "href": "/harassment"
           },
           {
             "title": "育児・介護休業",
-            "href": "/services/employment/family-leave"
+            "href": "/family-leave"
           }
         ]
       }

@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "page_id": "sample-services-business-business-insurance",
   "municipality_id": "sample",
-  "path": "/services/business/business-insurance",
+  "path": "/business-insurance",
   "title": "社会保険・労働保険",
   "description": "社会保険加入、労働保険成立届、雇用保険",
   "content_type": "guide",
@@ -33,11 +33,11 @@
           },
           {
             "label": "事業・経営",
-            "href": "/topics/business"
+            "href": "/business"
           },
           {
             "label": "社会保険・労働保険",
-            "href": "/services/business/business-insurance"
+            "href": "/business-insurance"
           }
         ]
       }

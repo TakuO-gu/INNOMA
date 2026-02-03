@@ -1,0 +1,407 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "kanna-services-housing-property-registration",
+  "municipality_id": "kanna",
+  "path": "/property-registration",
+  "title": "不動産登記",
+  "description": "土地・建物の登記手続き（法務局案内）",
+  "content_type": "guide",
+  "service_category": "housing",
+  "audience": [
+    "residents"
+  ],
+  "topic": [],
+  "source": {
+    "source_url": "template://kanna/services/housing/property-registration",
+    "fetched_at": "2026-02-03T01:50:19.810Z",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "2026-02-03T01:50:19.810Z",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "住まい・引越し",
+            "href": "/housing"
+          },
+          {
+            "label": "不動産登記",
+            "href": "/property-registration"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "不動産登記"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "土地・建物の登記手続きは法務局で行います。所有権移転、抵当権設定、建物新築登記などの手続きをご案内します。"
+      }
+    },
+    {
+      "id": "section-bq9m4vhgl",
+      "type": "Section",
+      "props": {
+        "heading": "主な登記の種類",
+        "level": 2,
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "所有権保存登記",
+                      "bold": true
+                    },
+                    {
+                      "text": "：新築建物の最初の登記"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "所有権移転登記",
+                      "bold": true
+                    },
+                    {
+                      "text": "：売買・贈与・相続による名義変更"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "抵当権設定登記",
+                      "bold": true
+                    },
+                    {
+                      "text": "：住宅ローン借入時"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "抵当権抹消登記",
+                      "bold": true
+                    },
+                    {
+                      "text": "：住宅ローン完済時"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "住所変更登記",
+                      "bold": true
+                    },
+                    {
+                      "text": "：所有者の住所が変わったとき"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-pi3q5kgry-notification-0",
+      "type": "NotificationBanner",
+      "props": {
+        "severity": "warning",
+        "title": "注意",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "2024年4月1日から相続登記が義務化されました。",
+                "bold": true
+              },
+              {
+                "text": "相続により不動産を取得した場合、3年以内に登記が必要です。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-how-to-register",
+      "type": "Section",
+      "props": {
+        "heading": "登記の手続き方法",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "不動産登記は、管轄の法務局で行います。手続きには以下の方法があります。"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "司法書士に依頼する",
+                      "bold": true
+                    },
+                    {
+                      "text": "（一般的な方法）：売買や住宅ローン借入時は、不動産会社や金融機関が手配する司法書士が手続きを代行します。相続登記も司法書士に依頼できます。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "自分で申請する",
+                      "bold": true
+                    },
+                    {
+                      "text": "：法務局の窓口または郵送で申請書類を提出します。相続登記など比較的シンプルな登記は自分で行うことも可能です。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "オンライン申請",
+                      "bold": true
+                    },
+                    {
+                      "text": "：「登記・供託オンライン申請システム」を利用して申請できます。電子署名が必要です。"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-required-documents",
+      "type": "Section",
+      "props": {
+        "heading": "主な必要書類",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "登記の種類によって必要書類が異なります。詳しくは法務局にお問い合わせください。"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "登記申請書"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "登記原因証明情報（売買契約書、遺産分割協議書など）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "権利証または登記識別情報"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "印鑑証明書"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "住民票"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "固定資産評価証明書（税額計算用）"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "table-1",
+      "type": "Table",
+      "props": {
+        "rows": [
+          {
+            "label": "申請先",
+            "value": "{{legal_affairs_bureau}}"
+          },
+          {
+            "label": "所在地",
+            "value": "{{legal_affairs_bureau_address}}"
+          },
+          {
+            "label": "電話番号",
+            "value": "{{legal_affairs_bureau_phone}}"
+          }
+        ]
+      }
+    },
+    {
+      "id": "related-links-2fuiy4tr9",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "住宅購入",
+            "href": "/home-purchase"
+          },
+          {
+            "title": "固定資産税",
+            "href": "/kotei"
+          },
+          {
+            "title": "印鑑登録",
+            "href": "/inkan"
+          },
+          {
+            "title": "住民票",
+            "href": "/juminhyo"
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-対象-1769919363178",
+      "type": "Section",
+      "props": {
+        "heading": "不動産登記の対象となる方",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "詳細は担当課にお問い合わせください。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{legal_affairs_bureau}}",
+        "phone": "{{legal_affairs_bureau_phone}}",
+        "address": "{{legal_affairs_bureau_address}}"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
+      }
+    }
+  ],
+  "search": {
+    "summary": "不動産登記の案内。所有権移転、抵当権設定・抹消、相続登記の義務化について。",
+    "keywords": [
+      "不動産登記",
+      "所有権移転",
+      "抵当権",
+      "相続登記",
+      "法務局",
+      "登記"
+    ],
+    "plain_text": "不動産登記。土地・建物の登記手続きは法務局で行う。2024年4月から相続登記が義務化、3年以内に登記が必要。"
+  }
+}

@@ -1,0 +1,352 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "ide-services-civic-voter-registration",
+  "municipality_id": "ide",
+  "path": "/voter-registration",
+  "title": "選挙人名簿登録",
+  "description": "選挙人名簿への登録、在外選挙人名簿、選挙権",
+  "content_type": "guide",
+  "service_category": "community",
+  "audience": [
+    "residents"
+  ],
+  "topic": [],
+  "source": {
+    "source_url": "template://ide/services/civic/voter-registration",
+    "fetched_at": "2026-02-03T01:50:19.692Z",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "2026-02-03T01:50:19.692Z",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "市民参加・権利行使",
+            "href": "/civic"
+          },
+          {
+            "label": "選挙人名簿登録",
+            "href": "/voter-registration"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "選挙人名簿登録"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "選挙で投票するには選挙人名簿への登録が必要です。登録要件と手続きをご案内します。"
+      }
+    },
+    {
+      "id": "section-d49jrrqs7",
+      "type": "Section",
+      "props": {
+        "heading": "選挙人名簿への登録",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "選挙人名簿は、住民基本台帳に基づき自動的に登録されます。特別な届出は不要です。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-gs4uh4acb",
+      "type": "Section",
+      "props": {
+        "heading": "登録要件",
+        "level": 2,
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "日本国民であること"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "満18歳以上であること"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "井手町に3か月以上居住していること"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "欠格事由（禁錮以上の刑の執行中など）に該当しないこと"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-uh9hagjkp",
+      "type": "Section",
+      "props": {
+        "heading": "登録時期",
+        "level": 2,
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "定時登録：毎年3月・6月・9月・12月の1日"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "選挙時登録：選挙のつど基準日を設けて登録"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-7opz7m7aj",
+      "type": "Section",
+      "props": {
+        "heading": "在外選挙人名簿",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "海外に居住する日本人の方は、在外選挙人名簿に登録することで国政選挙に投票できます。在外公館（大使館・領事館）で申請してください。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-9nyqrhvvs",
+      "type": "Section",
+      "props": {
+        "heading": "選挙人名簿の閲覧",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "選挙人名簿は、選挙管理委員会で閲覧できます（政治活動、選挙運動、統計調査など一定の目的に限る）。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "related-links-e6l8duyj7",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "選挙",
+            "href": "/election"
+          },
+          {
+            "title": "転入届",
+            "href": "/tennyu"
+          },
+          {
+            "title": "住民票",
+            "href": "/juminhyo"
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-対象-1769919363157",
+      "type": "Section",
+      "props": {
+        "heading": "選挙人名簿登録の対象となる方",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "詳細は担当課にお問い合わせください。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-必要-1769919363157",
+      "type": "Section",
+      "props": {
+        "heading": "選挙人名簿登録に必要なもの",
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "本人確認書類（マイナンバーカード、運転免許証など）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "印鑑（認印可）"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-方法-1769919363157",
+      "type": "Section",
+      "props": {
+        "heading": "選挙人名簿登録の手続き方法",
+        "content": [
+          {
+            "type": "list",
+            "ordered": true,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "必要書類を準備します。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "窓口で申請書を記入します。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "書類を提出し、確認を受けます。"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{election_commission}}",
+        "phone": "{{election_commission_phone}}",
+        "email": "{{election_commission_email}}",
+        "hours": "{{city_hall_hours}}",
+        "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
+      }
+    }
+  ],
+  "search": {
+    "summary": "選挙人名簿登録の案内。登録要件、在外選挙人名簿、名簿閲覧。",
+    "keywords": [
+      "選挙人名簿",
+      "選挙権",
+      "在外選挙",
+      "登録",
+      "投票"
+    ],
+    "plain_text": "選挙人名簿登録。日本国民で18歳以上、3か月以上居住で自動登録。海外居住者は在外選挙人名簿に登録可能。"
+  }
+}

@@ -55,6 +55,8 @@ export function BreadcrumbsBlock({ props }: { props: Record<string, unknown> }) 
 export function ResourceListBlock({ props }: { props: Record<string, unknown> }) {
   const { municipalityId, isPageCompleted } = useMunicipality();
   const heading = props.heading as string | undefined;
+  const columns = (props.columns as number) || 1;
+  const bordered = props.bordered as boolean | undefined;
   const rawItems = (props.items as Array<{
     title?: string;
     text?: string;
@@ -78,9 +80,48 @@ export function ResourceListBlock({ props }: { props: Record<string, unknown> })
 
   if (completedItems.length === 0) return null;
 
+  // グリッドレイアウトの場合
+  const isGrid = columns > 1;
+  const gridClass = isGrid
+    ? `grid gap-4 ${columns === 2 ? 'grid-cols-1 sm:grid-cols-2' : columns === 3 ? 'grid-cols-1 sm:grid-cols-2 lg:grid-cols-3' : 'grid-cols-1 sm:grid-cols-2 lg:grid-cols-4'}`
+    : '';
+  const itemClass = isGrid && bordered ? 'border border-solid-gray-300 rounded-lg p-4 hover:bg-solid-gray-50 transition-colors' : '';
+
+  if (isGrid) {
+    return (
+      <section className="mt-12 resource-list-wrapper mb-6">
+        {heading && <p className="text-[1.0625rem] font-bold leading-[1.7] tracking-[0.02em] mb-3" style={{ color: 'var(--color-neutral-solid-gray-900)' }}>{heading}</p>}
+        <div className={gridClass}>
+          {completedItems.map((it, i) => {
+            const isExternal = it.external || it.href.startsWith("http") || it.href.startsWith("mailto:");
+            const resolvedHref = prefixInternalLink(it.href, municipalityId);
+
+            const content = (
+              <div className={itemClass}>
+                <span className="block text-std-17B-170 text-blue-1000 underline underline-offset-[calc(3/16*1rem)]">{it.title}</span>
+                {it.description && <span className="block mt-1 text-std-16N-170 text-solid-gray-700">{it.description}</span>}
+                {it.meta && <span className="block mt-1 text-std-14N-170 text-solid-gray-600">{it.meta}</span>}
+              </div>
+            );
+
+            return isExternal ? (
+              <a key={i} href={resolvedHref} target="_blank" rel="noopener noreferrer" className="block">
+                {content}
+              </a>
+            ) : (
+              <NextLink key={i} href={resolvedHref} className="block">
+                {content}
+              </NextLink>
+            );
+          })}
+        </div>
+      </section>
+    );
+  }
+
   return (
     <div className="mt-12 resource-list-wrapper mb-6">
-      {heading && <h3 className="text-std-17B-170 text-solid-gray-900 mb-3">{heading}</h3>}
+      {heading && <p className="text-[1.0625rem] font-bold leading-[1.7] tracking-[0.02em] mb-3" style={{ color: 'var(--color-neutral-solid-gray-900)' }}>{heading}</p>}
       <ResourceList aria-label={heading}>
         {completedItems.map((it, i) => {
           const isExternal = it.external || it.href.startsWith("http") || it.href.startsWith("mailto:");

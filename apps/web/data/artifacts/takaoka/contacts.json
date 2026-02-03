@@ -1,0 +1,94 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "takaoka-contacts",
+  "municipality_id": "takaoka",
+  "path": "/contacts",
+  "title": "問い合わせ先一覧",
+  "description": "各課窓口、電話番号、受付時間、アクセスに関する情報",
+  "content_type": "directory",
+  "service_category": "government",
+  "audience": [
+    "residents"
+  ],
+  "topic": [],
+  "source": {
+    "source_url": "template://sample/contacts",
+    "fetched_at": "2026-01-20T10:33:17.311Z",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "2026-01-20T10:33:17.311Z",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "問い合わせ先一覧",
+            "href": "/contacts"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "問い合わせ先一覧"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "高岡市役所の各課窓口、電話番号、受付時間をご案内しています"
+      }
+    },
+    {
+      "id": "contact-list-1",
+      "type": "RichText",
+      "props": {
+        "content": "<p>お問い合わせ内容に応じた担当窓口をご案内します。</p>"
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{city_hall_department}}",
+        "phone": "{{city_hall_phone}}",
+        "email": "{{city_hall_email}}",
+        "hours": "{{city_hall_hours}}",
+        "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
+      }
+    }
+  ],
+  "search": {
+    "summary": "高岡市役所の問い合わせ先一覧。各課窓口、電話番号、受付時間、アクセス情報。",
+    "keywords": [
+      "問い合わせ",
+      "連絡先",
+      "電話番号",
+      "窓口",
+      "受付時間",
+      "市役所",
+      "アクセス"
+    ],
+    "plain_text": "問い合わせ先一覧。高岡市役所の各課窓口、電話番号、受付時間、アクセス情報。"
+  }
+}

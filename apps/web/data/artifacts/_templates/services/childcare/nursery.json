@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "page_id": "sample-services-childcare-nursery",
   "municipality_id": "sample",
-  "path": "/services/childcare/nursery",
+  "path": "/nursery",
   "title": "保育園・幼稚園",
   "description": "保育園・幼稚園に関する情報。保育施設の種類、保育認定、入園申込の流れなど。",
   "content_type": "guide",
@@ -33,11 +33,11 @@
           },
           {
             "label": "子育て",
-            "href": "/topics/childcare"
+            "href": "/childcare"
           },
           {
             "label": "保育園・幼稚園",
-            "href": "/services/childcare/nursery"
+            "href": "/nursery"
           }
         ]
       }
@@ -617,15 +617,15 @@
         "items": [
           {
             "title": "認可保育園の入園申込",
-            "href": "/services/childcare/nursery-apply"
+            "href": "/nursery-apply"
           },
           {
             "title": "児童手当",
-            "href": "/services/childcare/jidou-teate"
+            "href": "/jidou-teate"
           },
           {
             "title": "母子保健",
-            "href": "/services/childcare/boshi"
+            "href": "/boshi"
           }
         ]
       }

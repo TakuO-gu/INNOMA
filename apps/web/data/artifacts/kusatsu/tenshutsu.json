@@ -1,0 +1,498 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "takaoka-services-registration-tenshutsu",
+  "municipality_id": "takaoka",
+  "path": "/tenshutsu",
+  "title": "転出届",
+  "description": "市外へ引っ越すときの転出届の届出方法、必要書類について",
+  "content_type": "step_by_step",
+  "service_category": "government",
+  "audience": [
+    "residents"
+  ],
+  "topic": [],
+  "source": {
+    "source_url": "template://kusatsu/services/registration/tenshutsu",
+    "fetched_at": "2026-01-20T10:33:17.311Z",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "2026-01-20T10:33:17.311Z",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "届出・証明",
+            "href": "/registration"
+          },
+          {
+            "label": "転出届",
+            "href": "/tenshutsu"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "転出届"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "市外へ引っ越すときは、転出届を届け出てください。届出後に発行される「転出証明書」は、転入届の際に必要となります。"
+      }
+    },
+    {
+      "id": "section-ww2edguqk",
+      "type": "Section",
+      "props": {
+        "heading": "届出期間",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "引っ越しの14日前から届出できます。引っ越し後は速やかに届け出てください。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-ww2edguqk-notification-0",
+      "type": "NotificationBanner",
+      "props": {
+        "severity": "info",
+        "title": "マイナポータルからオンライン申請可能",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "マイナンバーカードをお持ちの方は、マイナポータルから転出届をオンラインで届出できます。転入届の予約もできるため、引っ越し先での手続きがスムーズです。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "task-button-myna-portal",
+      "type": "TaskButton",
+      "props": {
+        "label": "マイナポータルで転出届を届出する",
+        "href": "https://myna.go.jp/",
+        "isTopTask": true
+      }
+    },
+    {
+      "id": "step-nav-1",
+      "type": "StepNavigation",
+      "props": {
+        "currentStep": 0,
+        "steps": [
+          {
+            "title": "転出届の届出",
+            "body": "窓口またはマイナポータルから届出します。",
+            "documents": [
+              "本人確認書類",
+              "マイナンバーカード（お持ちの場合）"
+            ]
+          },
+          {
+            "title": "転出証明書の受け取り",
+            "body": "窓口の場合、その場で転出証明書が発行されます。マイナンバーカードをお持ちの場合は不要です。",
+            "documents": []
+          },
+          {
+            "title": "転入届の届出",
+            "body": "引っ越し先の市区町村で転入届を届出してください（引っ越し後14日以内）。",
+            "documents": [
+              "転出証明書",
+              "本人確認書類"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-2rv2uhq9i-table",
+      "type": "Section",
+      "props": {
+        "heading": "届出に必要なもの",
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "届出人の本人確認書類（マイナンバーカード、運転免許証など）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "マイナンバーカード（お持ちの方は転出届に必要。オンライン申請の場合は必須）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "国民健康保険証（加入している場合は返却）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "印鑑登録証（登録している場合は返却）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "介護保険被保険者証（該当する場合）"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-1ljzx2r64",
+      "type": "Section",
+      "props": {
+        "heading": "マイナポータルからの届出",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "マイナンバーカードをお持ちの方は、マイナポータルから転出届をオンラインで届出できます。"
+              },
+              {
+                "text": "この場合、転出証明書は発行されず、マイナンバーカードが転出証明書の代わりとなります。"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "窓口に行かずに手続きが完了"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "転入届の来庁予約も可能"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "転出証明書を紛失する心配がない"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "task-button-1",
+      "type": "TaskButton",
+      "props": {
+        "label": "マイナポータルで転出届を届出する",
+        "href": "https://myna.go.jp/",
+        "isTopTask": true
+      }
+    },
+    {
+      "id": "section-7muhsdj48",
+      "type": "Section",
+      "props": {
+        "heading": "転出に伴うその他の手続き",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "以下の手続きも必要に応じて行ってください。"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "国民健康保険の資格喪失届"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "児童手当の受給事由消滅届"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "介護保険の資格喪失届"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "小中学校の転校手続き"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "水道・ガス・電気の停止"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "郵便局への転送届"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "related-links-1",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "転入届",
+            "href": "/tennyu"
+          },
+          {
+            "title": "住民票",
+            "href": "/juminhyo"
+          },
+          {
+            "title": "マイナンバーカード",
+            "href": "/mynumber"
+          },
+          {
+            "title": "印鑑登録",
+            "href": "/inkan"
+          },
+          {
+            "title": "国民健康保険",
+            "href": "/kokuho"
+          },
+          {
+            "title": "児童手当",
+            "href": "/jidou-teate"
+          },
+          {
+            "title": "引越し手続き一覧",
+            "href": "/moving-checklist"
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-対象-1769919363212",
+      "type": "Section",
+      "props": {
+        "heading": "転出届の対象となる方",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "詳細は担当課にお問い合わせください。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-方法-1769919363212",
+      "type": "Section",
+      "props": {
+        "heading": "転出届の手続き方法",
+        "content": [
+          {
+            "type": "list",
+            "ordered": true,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "必要書類を準備します。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "窓口で申請書を記入します。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "書類を提出し、確認を受けます。"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{shimin_department}}",
+        "phone": "{{shimin_phone}}",
+        "email": "{{shimin_email}}",
+        "hours": "{{city_hall_hours}}",
+        "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "terms-1769899964520",
+      "type": "Section",
+      "props": {
+        "heading": "用語の説明",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "被保険者",
+                "bold": true
+              },
+              {
+                "text": "：保険に加入している方"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
+      }
+    }
+  ],
+  "search": {
+    "summary": "転出届の届出方法。市外へ引っ越すときに届出。マイナポータルからオンライン申請可能。",
+    "keywords": [
+      "転出届",
+      "引っ越し",
+      "転出証明書",
+      "マイナポータル",
+      "オンライン申請"
+    ],
+    "plain_text": "転出届。市外へ引っ越すときに届出。引っ越しの14日前から届出可能。マイナンバーカードがあればマイナポータルからオンライン申請可能。窓口の場合は転出証明書を発行。"
+  }
+}

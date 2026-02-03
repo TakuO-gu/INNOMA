@@ -1,0 +1,154 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "sample-examples-service-page",
+  "municipality_id": "sample",
+  "path": "/examples/service-page",
+  "title": "住民票の写しを請求する",
+  "description": "住民票の写しの請求手続きページ",
+  "content_type": "service",
+  "service_category": "registration",
+  "audience": ["residents"],
+  "source": {
+    "source_url": "template://sample/examples/service-page",
+    "fetched_at": "2026-02-03",
+    "content_hash": "example"
+  },
+  "pipeline": {
+    "run_id": "example-001",
+    "generated_at": "2026-02-03",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          { "label": "ホーム", "href": "/" },
+          { "label": "届出・証明", "href": "/registration" },
+          { "label": "住民票の写しを請求する", "href": "/examples/service-page" }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "住民票の写しを請求する"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "市内に住民登録のある方が、住民票の写しを窓口で請求する手続きです。"
+      }
+    },
+    {
+      "id": "notification-1",
+      "type": "NotificationBanner",
+      "props": {
+        "severity": "info",
+        "title": "コンビニ交付がお得です",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              { "text": "マイナンバーカードをお持ちの方は、コンビニで" },
+              { "text": "200円", "bold": true },
+              { "text": "で取得できます（窓口は300円）。" }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-taisho",
+      "type": "Section",
+      "props": {
+        "heading": "請求できる人",
+        "level": 2,
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [{ "type": "paragraph", "runs": [{ "text": "本人" }] }],
+              [{ "type": "paragraph", "runs": [{ "text": "同一世帯の方" }] }],
+              [{ "type": "paragraph", "runs": [{ "text": "代理人（委任状が必要）" }] }]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-hitsuyou",
+      "type": "Section",
+      "props": {
+        "heading": "必要なもの",
+        "level": 2,
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [{ "type": "paragraph", "runs": [{ "text": "本人確認書類（マイナンバーカード、運転免許証など）" }] }],
+              [{ "type": "paragraph", "runs": [{ "text": "委任状（代理人が請求する場合）" }] }]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-tesuryo",
+      "type": "Section",
+      "props": {
+        "heading": "手数料",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              { "text": "1通 " },
+              { "text": "300円", "bold": true }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "action-button-1",
+      "type": "ActionButton",
+      "props": {
+        "label": "オンラインで請求する",
+        "href": "https://example.lg.jp/form/juminhyo",
+        "action_type": "web_form"
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "市民課",
+        "phone": "03-1234-5678",
+        "hours": "平日 8:30〜17:15",
+        "address": "市役所1階"
+      }
+    },
+    {
+      "id": "related-links-1",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          { "title": "住民票の写しについて詳しく知る", "href": "/juminhyo" },
+          { "title": "印鑑登録証明書を請求する", "href": "/inkan-request" }
+        ]
+      }
+    }
+  ],
+  "search": {
+    "summary": "住民票の写しを窓口で請求する手続き。本人確認書類が必要。手数料300円。",
+    "keywords": ["住民票", "請求", "申請", "証明書"],
+    "plain_text": "住民票の写しを請求する。本人確認書類が必要。手数料1通300円。平日8:30〜17:15受付。"
+  }
+}

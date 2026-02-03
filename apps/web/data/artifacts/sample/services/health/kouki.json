@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "page_id": "sample-services-health-kouki",
   "municipality_id": "sample",
-  "path": "/services/health/kouki",
+  "path": "/kouki",
   "title": "後期高齢者医療制度",
   "description": "後期高齢者医療制度の対象者、届出、保険料、医療費負担について",
   "content_type": "guide",
@@ -34,11 +34,11 @@
           },
           {
             "label": "健康・医療",
-            "href": "/topics/health"
+            "href": "/health"
           },
           {
             "label": "後期高齢者医療制度",
-            "href": "/services/health/kouki"
+            "href": "/kouki"
           }
         ]
       }
@@ -370,27 +370,27 @@
         "items": [
           {
             "title": "国民健康保険",
-            "href": "/services/health/kokuho"
+            "href": "/kokuho"
           },
           {
             "title": "健康診断・検診",
-            "href": "/services/health/kenshin"
+            "href": "/kenshin"
           },
           {
             "title": "介護保険",
-            "href": "/services/welfare/kaigo"
+            "href": "/kaigo"
           },
           {
             "title": "高齢者福祉",
-            "href": "/services/welfare/koureisha"
+            "href": "/koureisha"
           },
           {
             "title": "地域包括支援センター",
-            "href": "/services/welfare/houkatsu"
+            "href": "/houkatsu"
           },
           {
             "title": "年金",
-            "href": "/services/benefits/nenkin"
+            "href": "/nenkin"
           }
         ]
       }

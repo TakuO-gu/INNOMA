@@ -1,0 +1,305 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "shimoichi-services-driving-liability-insurance",
+  "municipality_id": "shimoichi",
+  "path": "/liability-insurance",
+  "title": "自賠責保険",
+  "description": "自動車損害賠償責任保険（自賠責）の加入案内",
+  "content_type": "guide",
+  "service_category": "government",
+  "audience": [
+    "residents"
+  ],
+  "topic": [],
+  "source": {
+    "source_url": "template://shimoichi/services/driving/liability-insurance",
+    "fetched_at": "2026-02-03T01:50:20.297Z",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "2026-02-03T01:50:20.297Z",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "運転・車両",
+            "href": "/driving"
+          },
+          {
+            "label": "自賠責保険",
+            "href": "/liability-insurance"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "自賠責保険"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "自賠責保険（自動車損害賠償責任保険）は、すべての自動車に加入が義務付けられている強制保険です。"
+      }
+    },
+    {
+      "id": "section-dkazozmr2",
+      "type": "Section",
+      "props": {
+        "heading": "補償内容",
+        "level": 2,
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "死亡：3,000万円まで"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "後遺障害：4,000万円まで（等級による）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "傷害：120万円まで"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-m0n3z8ows",
+      "type": "Section",
+      "props": {
+        "heading": "保険料（24か月）",
+        "level": 2,
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "自家用乗用車：17,650円"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "軽自動車：17,540円"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-m0n3z8ows-notification-0",
+      "type": "NotificationBanner",
+      "props": {
+        "severity": "warning",
+        "title": "注意",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "自賠責保険に未加入で運行した場合、1年以下の懲役または50万円以下の罰金です。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "related-links-pzakyaxn2",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "自動車登録",
+            "href": "/registration"
+          },
+          {
+            "title": "自動車税",
+            "href": "/vehicle-tax"
+          },
+          {
+            "title": "交通事故",
+            "href": "/accident"
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-対象-1769919363161",
+      "type": "Section",
+      "props": {
+        "heading": "自賠責保険の対象となる方",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "詳細は担当課にお問い合わせください。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-必要-1769919363161",
+      "type": "Section",
+      "props": {
+        "heading": "自賠責保険に必要なもの",
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "本人確認書類（マイナンバーカード、運転免許証など）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "印鑑（認印可）"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-方法-1769919363161",
+      "type": "Section",
+      "props": {
+        "heading": "自賠責保険の手続き方法",
+        "content": [
+          {
+            "type": "list",
+            "ordered": true,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "必要書類を準備します。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "窓口で申請書を記入します。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "書類を提出し、確認を受けます。"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{driving_department}}",
+        "phone": "{{driving_phone}}",
+        "email": "{{driving_email}}",
+        "hours": "{{city_hall_hours}}",
+        "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
+      }
+    }
+  ],
+  "search": {
+    "summary": "自賠責保険の案内。強制保険、補償内容、保険料。",
+    "keywords": [
+      "自賠責保険",
+      "強制保険",
+      "自動車保険",
+      "補償"
+    ],
+    "plain_text": "自賠責保険。すべての自動車に加入義務。死亡3,000万円、後遺障害4,000万円、傷害120万円まで補償。"
+  }
+}

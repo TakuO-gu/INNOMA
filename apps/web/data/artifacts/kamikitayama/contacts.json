@@ -1,0 +1,94 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "kamikitayama-contacts",
+  "municipality_id": "kamikitayama",
+  "path": "/contacts",
+  "title": "問い合わせ先一覧",
+  "description": "各課窓口、電話番号、受付時間、アクセスに関する情報",
+  "content_type": "directory",
+  "service_category": "government",
+  "audience": [
+    "residents"
+  ],
+  "topic": [],
+  "source": {
+    "source_url": "template://kamikitayama/contacts",
+    "fetched_at": "2026-02-03T01:50:19.783Z",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "2026-02-03T01:50:19.783Z",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "問い合わせ先一覧",
+            "href": "/contacts"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "問い合わせ先一覧"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "上北山村の各課窓口、電話番号、受付時間をご案内しています"
+      }
+    },
+    {
+      "id": "contact-list-1",
+      "type": "RichText",
+      "props": {
+        "content": "<p>お問い合わせ内容に応じた担当窓口をご案内します。</p>"
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{city_hall_department}}",
+        "phone": "{{city_hall_phone}}",
+        "email": "{{city_hall_email}}",
+        "hours": "{{city_hall_hours}}",
+        "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
+      }
+    }
+  ],
+  "search": {
+    "summary": "上北山村の問い合わせ先一覧。各課窓口、電話番号、受付時間、アクセス情報。",
+    "keywords": [
+      "問い合わせ",
+      "連絡先",
+      "電話番号",
+      "窓口",
+      "受付時間",
+      "市役所",
+      "アクセス"
+    ],
+    "plain_text": "問い合わせ先一覧。上北山村の各課窓口、電話番号、受付時間、アクセス情報。"
+  }
+}

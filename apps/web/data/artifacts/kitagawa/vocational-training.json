@@ -1,0 +1,214 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "kitagawa-services-employment-vocational-training",
+  "municipality_id": "kitagawa",
+  "path": "/vocational-training",
+  "title": "職業訓練（ハロートレーニング）",
+  "description": "公共職業訓練、求職者支援訓練、教育訓練給付",
+  "content_type": "guide",
+  "service_category": "business",
+  "audience": [
+    "residents"
+  ],
+  "topic": [],
+  "source": {
+    "source_url": "template://kitagawa/services/employment/vocational-training",
+    "fetched_at": "2026-02-03T01:50:19.999Z",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "2026-02-03T01:50:19.999Z",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "仕事・労働",
+            "href": "/employment"
+          },
+          {
+            "label": "職業訓練",
+            "href": "/vocational-training"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "職業訓練（ハロートレーニング）"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "新しい仕事に就くために必要な知識・技能を習得するための職業訓練です。受講料は原則無料です。"
+      }
+    },
+    {
+      "id": "section-lpaaz4cvk",
+      "type": "Section",
+      "props": {
+        "heading": "公共職業訓練",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "雇用保険を受給している方向け。機械、電気、建築、IT、介護など様々なコースがあります。訓練期間中も失業給付を受けられます。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-9bv6sjzwn",
+      "type": "Section",
+      "props": {
+        "heading": "求職者支援訓練",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "雇用保険を受給できない方向け。基礎コースと実践コースがあります。一定の要件を満たすと「職業訓練受講給付金」（月額10万円）が支給されます。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-740v7ye1x",
+      "type": "Section",
+      "props": {
+        "heading": "主な訓練コース",
+        "level": 2,
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "IT・Web・プログラミング"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "介護・福祉"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "医療事務・調剤事務"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "簿記・経理・事務"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "機械・電気・設備"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "related-links-xklb72svc",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "ハローワーク",
+            "href": "/hello-work"
+          },
+          {
+            "title": "雇用保険",
+            "href": "/unemployment-insurance"
+          },
+          {
+            "title": "就職支援",
+            "href": "/career-support"
+          },
+          {
+            "title": "補助金・助成金",
+            "href": "/subsidies"
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{hello_work_name}}",
+        "phone": "{{hello_work_phone}}",
+        "address": "{{hello_work_address}}",
+        "hours": "平日8:30〜17:15"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
+      }
+    }
+  ],
+  "search": {
+    "summary": "職業訓練（ハロートレーニング）の案内。公共職業訓練、求職者支援訓練、主なコース。",
+    "keywords": [
+      "職業訓練",
+      "ハロートレーニング",
+      "公共職業訓練",
+      "求職者支援訓練",
+      "スキルアップ"
+    ],
+    "plain_text": "職業訓練（ハロートレーニング）。受講料無料。公共職業訓練は雇用保険受給者向け、求職者支援訓練は雇用保険を受給できない方向け。"
+  }
+}

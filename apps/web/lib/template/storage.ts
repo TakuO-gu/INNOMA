@@ -64,7 +64,7 @@ export async function getMunicipalities(): Promise<MunicipalitySummary[]> {
       id,
       name: meta?.name ?? id,
       prefecture: meta?.prefecture ?? "",
-      status: meta?.status ?? (id === "sample" ? "published" : "draft"),
+      status: meta?.status ?? "draft",
       updatedAt: meta?.updatedAt ?? new Date().toISOString(),
       variableStats: {
         total: totalVariables,
@@ -144,7 +144,7 @@ export async function getMunicipalityMeta(
         prefecture: "東京都",
         createdAt: "2026-01-01T00:00:00Z",
         updatedAt: new Date().toISOString(),
-        status: "published",
+        status: "draft",
         settings: {
           autoPublish: false,
           fetchInterval: "manual",

@@ -1,0 +1,470 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "takaoka-services-registration-juminhyo",
+  "municipality_id": "takaoka",
+  "path": "/juminhyo",
+  "title": "住民票の写し",
+  "description": "住民票の写しの取得方法、必要書類、手数料について",
+  "content_type": "guide",
+  "service_category": "government",
+  "audience": [
+    "residents"
+  ],
+  "topic": [],
+  "source": {
+    "source_url": "template://kanna/services/registration/juminhyo",
+    "fetched_at": "2026-01-20T10:33:17.311Z",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "2026-01-20T10:33:17.311Z",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "届出・証明",
+            "href": "/registration"
+          },
+          {
+            "label": "住民票の写し",
+            "href": "/juminhyo"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "住民票の写し"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "住民票の写しは、住所、氏名、生年月日、世帯構成などを証明する書類です。窓口、郵送、コンビニで取得できます。"
+      }
+    },
+    {
+      "id": "section-epbwjn717",
+      "type": "Section",
+      "props": {
+        "heading": "住民票の種類",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "本籍・筆頭者、世帯主・続柄、マイナンバーなどは、必要に応じて記載の有無を選択できます。提出先に確認してから請求してください。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-epbwjn717-desclist",
+      "type": "DescriptionList",
+      "props": {
+        "items": [
+          {
+            "term": "住民票の写し（世帯全員）",
+            "description": "世帯全員の情報が記載されたもの"
+          },
+          {
+            "term": "住民票の写し（一部）",
+            "description": "必要な方のみの情報が記載されたもの"
+          },
+          {
+            "term": "住民票記載事項証明書",
+            "description": "住民票の一部の事項を証明するもの"
+          }
+        ]
+      }
+    },
+    {
+      "id": "table-tesuryo",
+      "type": "Table",
+      "props": {
+        "rows": [
+          {
+            "label": "住民票の写し（窓口）",
+            "value": "{{juminhyo_fee}}"
+          },
+          {
+            "label": "住民票の写し（コンビニ）",
+            "value": "{{juminhyo_convenience_fee}}"
+          },
+          {
+            "label": "住民票記載事項証明書",
+            "value": "{{juminhyo_kisai_fee}}"
+          }
+        ],
+        "heading": "手数料"
+      }
+    },
+    {
+      "id": "section-u94e6o72x",
+      "type": "Section",
+      "props": {
+        "heading": "窓口で請求する",
+        "level": 2,
+        "content": []
+      }
+    },
+    {
+      "id": "section-fxlp1k01e-table",
+      "type": "Section",
+      "props": {
+        "heading": "請求できる人",
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "本人"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "同一世帯の方"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "代理人（委任状が必要）"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-7yzimc95r-table",
+      "type": "Section",
+      "props": {
+        "heading": "住民票の写しに必要なもの",
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "本人確認書類（マイナンバーカード、運転免許証など）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "委任状（代理人が請求する場合）"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-k75x9slfc",
+      "type": "Section",
+      "props": {
+        "heading": "受付場所・時間",
+        "level": 3,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "{{juminhyo_madoguchi}}"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-f269vsz5d",
+      "type": "Section",
+      "props": {
+        "heading": "コンビニで取得する",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "マイナンバーカードがあれば、全国のコンビニのマルチコピー機で取得できます。"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "利用時間：6:30〜23:00（年末年始・メンテナンス時を除く）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "必要なもの：マイナンバーカード、4桁の暗証番号"
+                    }
+                  ]
+                }
+              ]
+            ]
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "コンビニ交付は窓口より手数料が安くなります。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-y92wg3bp6",
+      "type": "Section",
+      "props": {
+        "heading": "郵送で請求する",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "窓口に来庁できない場合は、郵送で請求できます。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-6lz0e7e5k-table",
+      "type": "Section",
+      "props": {
+        "heading": "送付するもの",
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "請求書（市ホームページからダウンロード、または便せん等に必要事項を記入）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "本人確認書類のコピー"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "定額小為替（手数料分、郵便局で購入）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "返信用封筒（切手貼付、住民登録地宛て）"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "related-links-1",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "印鑑登録",
+            "href": "/inkan"
+          },
+          {
+            "title": "戸籍",
+            "href": "/koseki"
+          },
+          {
+            "title": "マイナンバーカード",
+            "href": "/mynumber"
+          },
+          {
+            "title": "転入届",
+            "href": "/tennyu"
+          },
+          {
+            "title": "転出届",
+            "href": "/tenshutsu"
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-対象-1769919363201",
+      "type": "Section",
+      "props": {
+        "heading": "住民票の写しの対象となる方",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "詳細は担当課にお問い合わせください。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-方法-1769919363201",
+      "type": "Section",
+      "props": {
+        "heading": "住民票の写しの手続き方法",
+        "content": [
+          {
+            "type": "list",
+            "ordered": true,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "必要書類を準備します。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "窓口で申請書を記入します。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "書類を提出し、確認を受けます。"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{shimin_department}}",
+        "phone": "{{shimin_phone}}",
+        "email": "{{shimin_email}}",
+        "hours": "{{city_hall_hours}}",
+        "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
+      }
+    }
+  ],
+  "search": {
+    "summary": "住民票の写しの取得方法。窓口、コンビニ、郵送で請求可能。手数料、必要書類について。",
+    "keywords": [
+      "住民票",
+      "住民票の写し",
+      "証明書",
+      "コンビニ交付",
+      "マイナンバーカード"
+    ],
+    "plain_text": "住民票の写し。住所、氏名、世帯構成を証明。窓口、コンビニ、郵送で取得可能。本人確認書類が必要。コンビニはマイナンバーカードで6:30〜23:00利用可能。"
+  }
+}

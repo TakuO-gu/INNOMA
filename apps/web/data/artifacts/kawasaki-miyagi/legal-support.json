@@ -1,0 +1,193 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "kawasaki-miyagi-services-civic-legal-support",
+  "municipality_id": "kawasaki-miyagi",
+  "path": "/legal-support",
+  "title": "法律相談・法テラス",
+  "description": "無料法律相談、法テラス（日本司法支援センター）案内",
+  "content_type": "guide",
+  "service_category": "community",
+  "audience": [
+    "residents"
+  ],
+  "topic": [],
+  "source": {
+    "source_url": "template://kawasaki-miyagi/services/civic/legal-support",
+    "fetched_at": "2026-02-03T01:50:19.937Z",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "2026-02-03T01:50:19.937Z",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "市民参加・権利行使",
+            "href": "/civic"
+          },
+          {
+            "label": "法律相談・法テラス",
+            "href": "/legal-support"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "法律相談・法テラス"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "弁護士による法律相談や、法テラス（日本司法支援センター）の利用方法をご案内します。"
+      }
+    },
+    {
+      "id": "section-bpcrebf22",
+      "type": "Section",
+      "props": {
+        "heading": "市民法律相談",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "川崎町では、弁護士による無料法律相談を実施しています。"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "相談日：{{legal_consultation_schedule}}"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "予約：{{legal_consultation_reservation}}"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "相談時間：1人30分程度"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-fp54v2n92",
+      "type": "Section",
+      "props": {
+        "heading": "法テラス（日本司法支援センター）",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "収入や資産が一定以下の方は、法テラスで弁護士費用の立替制度（民事法律扶助）を利用できます。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "法テラス・サポートダイヤル：0570-078374"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "related-links-trffmfnfr",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "犯罪被害者支援",
+            "href": "/victim-support"
+          },
+          {
+            "title": "行政不服申立て",
+            "href": "/administrative-appeal"
+          },
+          {
+            "title": "労働相談",
+            "href": "/labor-consultation"
+          },
+          {
+            "title": "生活保護",
+            "href": "/seikatsu-hogo"
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{civic_department}}",
+        "phone": "{{civic_phone}}",
+        "email": "{{civic_email}}",
+        "hours": "{{city_hall_hours}}",
+        "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
+      }
+    }
+  ],
+  "search": {
+    "summary": "法律相談・法テラスの案内。無料法律相談、民事法律扶助。",
+    "keywords": [
+      "法律相談",
+      "法テラス",
+      "弁護士",
+      "無料相談",
+      "民事法律扶助"
+    ],
+    "plain_text": "法律相談・法テラス。市民法律相談は弁護士による無料相談。法テラスで弁護士費用の立替制度も利用可能。"
+  }
+}

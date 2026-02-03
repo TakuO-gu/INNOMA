@@ -1,0 +1,182 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "sample-examples-guide-page",
+  "municipality_id": "sample",
+  "path": "/examples/guide-page",
+  "title": "児童手当",
+  "description": "児童手当制度の概要",
+  "content_type": "guide",
+  "service_category": "childcare",
+  "audience": ["residents", "children_families"],
+  "source": {
+    "source_url": "template://sample/examples/guide-page",
+    "fetched_at": "2026-02-03",
+    "content_hash": "example"
+  },
+  "pipeline": {
+    "run_id": "example-002",
+    "generated_at": "2026-02-03",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          { "label": "ホーム", "href": "/" },
+          { "label": "子育て", "href": "/childcare" },
+          { "label": "児童手当", "href": "/examples/guide-page" }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "児童手当"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "高校生年代までのお子さんを養育している方に支給される手当です。令和6年10月から所得制限が撤廃されました。"
+      }
+    },
+    {
+      "id": "section-what",
+      "type": "Section",
+      "props": {
+        "heading": "児童手当とは",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              { "text": "子育て世帯の生活の安定と、次代を担う児童の健全な育成を目的とした国の制度です。" }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-who",
+      "type": "Section",
+      "props": {
+        "heading": "受け取れる人",
+        "level": 2,
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [{ "type": "paragraph", "runs": [{ "text": "市内に住所がある" }] }],
+              [{ "type": "paragraph", "runs": [{ "text": "18歳の年度末までのお子さんを養育している" }] }],
+              [{ "type": "paragraph", "runs": [{ "text": "公務員ではない（公務員は勤務先から支給）" }] }]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-amount",
+      "type": "Section",
+      "props": {
+        "heading": "いくら受け取れるか",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              { "text": "お子さんの年齢と人数で決まります。" }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [{ "type": "paragraph", "runs": [{ "text": "3歳未満：月15,000円（第3子以降は30,000円）" }] }],
+              [{ "type": "paragraph", "runs": [{ "text": "3歳以上：月10,000円（第3子以降は30,000円）" }] }]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-when",
+      "type": "Section",
+      "props": {
+        "heading": "いつ届くか",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              { "text": "年6回、偶数月の10日に届きます（2月・4月・6月・8月・10月・12月）。" }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-sinsei",
+      "type": "Section",
+      "props": {
+        "heading": "申請が必要なとき",
+        "level": 2,
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [{ "type": "paragraph", "runs": [{ "text": "お子さんが生まれたとき" }] }],
+              [{ "type": "paragraph", "runs": [{ "text": "他の市区町村から転入したとき" }] }],
+              [{ "type": "paragraph", "runs": [{ "text": "公務員でなくなったとき" }] }]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "notification-1",
+      "type": "NotificationBanner",
+      "props": {
+        "severity": "warning",
+        "title": "15日以内に申請してください",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              { "text": "申請が遅れると、受け取れない月が発生します。" }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "related-links-1",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          { "title": "受け取れるか確認する", "href": "/examples/answer-page" },
+          { "title": "申請手続きを開始する", "href": "/examples/service-page" }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "子育て支援課",
+        "phone": "03-1234-5720",
+        "hours": "平日 8:30〜17:15"
+      }
+    }
+  ],
+  "search": {
+    "summary": "児童手当制度の概要。高校生年代までの児童を養育している方に支給。",
+    "keywords": ["児童手当", "子育て支援", "支給額"],
+    "plain_text": "児童手当。高校生年代までの児童を養育している方に支給。3歳未満15,000円、3歳以上10,000円。"
+  }
+}

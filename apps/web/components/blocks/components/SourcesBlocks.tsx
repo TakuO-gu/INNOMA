@@ -3,6 +3,7 @@
 import React from "react";
 import type { Source } from "@/lib/artifact/innoma-artifact-schema.v2";
 import { Link } from "@/components/dads";
+import { budouxParse } from "@/components/BudouX";
 
 interface SourcesBlockProps {
   props: Record<string, unknown>;
@@ -25,7 +26,7 @@ export function SourcesBlock({ props, sources }: SourcesBlockProps) {
 
   return (
     <section className="sources-block mt-16 pt-8 border-t border-solid-gray-300">
-      <h2 className="text-std-20B-150 text-solid-gray-900 mb-4">{heading}</h2>
+      <h2 className="text-std-20B-150 text-solid-gray-900 mb-4 budoux">{budouxParse(heading)}</h2>
       <ol className="list-none space-y-2 text-std-14N-170 text-solid-gray-700">
         {sources
           .sort((a, b) => a.id - b.id)

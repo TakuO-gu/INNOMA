@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "page_id": "sample-services-civic-information-disclosure",
   "municipality_id": "sample",
-  "path": "/services/civic/information-disclosure",
+  "path": "/information-disclosure",
   "title": "情報公開請求",
   "description": "公文書の開示請求、情報公開条例、開示手続き",
   "content_type": "guide",
@@ -33,11 +33,11 @@
           },
           {
             "label": "市民参加・権利行使",
-            "href": "/topics/civic"
+            "href": "/civic"
           },
           {
             "label": "情報公開請求",
-            "href": "/services/civic/information-disclosure"
+            "href": "/information-disclosure"
           }
         ]
       }
@@ -155,15 +155,15 @@
         "items": [
           {
             "title": "個人情報保護",
-            "href": "/services/civic/privacy"
+            "href": "/privacy"
           },
           {
             "title": "パブリックコメント",
-            "href": "/services/civic/public-comment"
+            "href": "/public-comment"
           },
           {
             "title": "行政不服申立て",
-            "href": "/services/civic/administrative-appeal"
+            "href": "/administrative-appeal"
           }
         ]
       }

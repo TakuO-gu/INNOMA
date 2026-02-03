@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "page_id": "sample-services-environment-kaden-recycle",
   "municipality_id": "sample",
-  "path": "/services/environment/kaden-recycle",
+  "path": "/kaden-recycle",
   "title": "家電リサイクル",
   "description": "テレビ、エアコン、冷蔵庫、洗濯機の処分方法について",
   "content_type": "guide",
@@ -33,11 +33,11 @@
           },
           {
             "label": "環境・ごみ",
-            "href": "/topics/environment"
+            "href": "/environment"
           },
           {
             "label": "家電リサイクル",
-            "href": "/services/environment/kaden-recycle"
+            "href": "/kaden-recycle"
           }
         ]
       }
@@ -445,15 +445,15 @@
         "items": [
           {
             "title": "ごみの出し方（分別ガイド）",
-            "href": "/services/environment/gomi"
+            "href": "/gomi"
           },
           {
             "title": "粗大ごみの出し方",
-            "href": "/services/environment/sodaigomi"
+            "href": "/sodaigomi"
           },
           {
             "title": "不用品のリユース",
-            "href": "/services/environment/reuse"
+            "href": "/reuse"
           }
         ]
       }

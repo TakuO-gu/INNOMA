@@ -39,51 +39,51 @@
     },
     {
       "id": "popular-services-1",
-      "type": "CardGrid",
+      "type": "ResourceList",
       "props": {
         "heading": "よく訪問されるサービス",
-        "variant": "link",
-        "columns": 4,
+        "columns": 3,
+        "bordered": true,
         "items": [
           {
             "title": "住民票の写し",
             "description": "住民票の取得方法・必要書類",
-            "href": "/services/registration/juminhyo"
+            "href": "/juminhyo"
           },
           {
             "title": "戸籍謄本",
             "description": "戸籍全部事項証明書の取得",
-            "href": "/services/registration/koseki"
+            "href": "/koseki"
           },
           {
             "title": "マイナンバーカード",
             "description": "申請・受取・更新の手続き",
-            "href": "/services/registration/mynumber"
+            "href": "/mynumber"
           },
           {
             "title": "転入届",
             "description": "市外からの引越し手続き",
-            "href": "/services/registration/tennyu"
+            "href": "/tennyu"
           },
           {
             "title": "印鑑登録",
             "description": "印鑑登録・証明書の取得",
-            "href": "/services/registration/inkan"
+            "href": "/inkan"
           },
           {
             "title": "ごみの分別・収集",
             "description": "ごみの出し方・収集日",
-            "href": "/services/environment/gomi"
+            "href": "/gomi"
           },
           {
             "title": "児童手当",
             "description": "支給要件・申請方法",
-            "href": "/services/childcare/jidou-teate"
+            "href": "/jidou-teate"
           },
           {
             "title": "国民健康保険",
             "description": "加入・届出・保険料",
-            "href": "/services/health/kokuho"
+            "href": "/kokuho"
           }
         ]
       }
@@ -95,58 +95,40 @@
         "heading": "カテゴリから探す",
         "items": [
           {
-            "title": "届出・証明書",
-            "href": "/topics/registration",
-            "description": "転入届、戸籍謄本、住民票、パスポート",
-            "icon": "certification"
+            "title": "災害・緊急情報",
+            "href": "/disaster",
+            "description": "避難所、ハザードマップ、防災メール、地震・台風対策",
+            "icon": "attention"
           },
           {
-            "title": "税金",
-            "href": "/topics/tax",
-            "description": "住民税、固定資産税、確定申告、ふるさと納税",
-            "icon": "tax"
-          },
-          {
-            "title": "子育て・教育",
-            "href": "/topics/childcare",
-            "description": "保育所、幼稚園、児童手当、母子健康",
-            "icon": "child"
-          },
-          {
-            "title": "健康・医療",
-            "href": "/topics/health",
-            "description": "健康診断、予防接種、国民健康保険",
-            "icon": "health"
-          },
-          {
-            "title": "福祉・介護・年金",
-            "href": "/topics/welfare",
-            "description": "高齢者福祉、介護、障害者福祉、年金",
-            "icon": "pension"
-          },
-          {
-            "title": "住まい・引越し",
-            "href": "/topics/housing",
-            "description": "公営住宅、引越し手続き、住宅支援",
+            "title": "引っ越し",
+            "href": "/moving",
+            "description": "転入届、転出届、転居届、住所変更に必要な手続き",
             "icon": "house"
           },
           {
-            "title": "仕事・労働",
-            "href": "/topics/employment",
-            "description": "求人、就職支援、職業訓練、労働相談",
-            "icon": "work"
+            "title": "子育て・出産",
+            "href": "/childcare",
+            "description": "妊娠届、出生届、児童手当、保育所、子育て支援",
+            "icon": "child"
           },
           {
-            "title": "環境・ごみ",
-            "href": "/topics/environment",
-            "description": "ごみの分別、粗大ごみ、リサイクル",
+            "title": "高齢者向け支援",
+            "href": "/welfare",
+            "description": "介護保険、高齢者福祉サービス、地域包括支援センター",
+            "icon": "pension"
+          },
+          {
+            "title": "ごみ・リサイクル",
+            "href": "/environment",
+            "description": "ごみの分別、収集日、粗大ごみ、リサイクル",
             "icon": "trash.svg"
           },
           {
-            "title": "防災・安全",
-            "href": "/topics/disaster",
-            "description": "避難所、ハザードマップ、防災情報",
-            "icon": "attention"
+            "title": "税金",
+            "href": "/tax",
+            "description": "住民税、固定資産税、軽自動車税、納税方法、税証明書",
+            "icon": "tax"
           }
         ]
       }

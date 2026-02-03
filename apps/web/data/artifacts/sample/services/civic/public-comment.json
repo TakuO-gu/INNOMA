@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "page_id": "sample-services-civic-public-comment",
   "municipality_id": "sample",
-  "path": "/services/civic/public-comment",
+  "path": "/public-comment",
   "title": "パブリックコメント",
   "description": "パブリックコメント制度、意見募集、政策への市民参加",
   "content_type": "guide",
@@ -33,11 +33,11 @@
           },
           {
             "label": "市民参加・権利行使",
-            "href": "/topics/civic"
+            "href": "/civic"
           },
           {
             "label": "パブリックコメント",
-            "href": "/services/civic/public-comment"
+            "href": "/public-comment"
           }
         ]
       }
@@ -267,11 +267,11 @@
         "items": [
           {
             "title": "情報公開",
-            "href": "/services/civic/information-disclosure"
+            "href": "/information-disclosure"
           },
           {
             "title": "直接請求",
-            "href": "/services/civic/direct-democracy"
+            "href": "/direct-democracy"
           }
         ]
       }

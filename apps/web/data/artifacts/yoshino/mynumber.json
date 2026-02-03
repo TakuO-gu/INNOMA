@@ -1,0 +1,477 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "takaoka-services-registration-mynumber",
+  "municipality_id": "takaoka",
+  "path": "/mynumber",
+  "title": "マイナンバーカード",
+  "description": "マイナンバーカードの申請方法、受け取り、更新、利用方法について",
+  "content_type": "guide",
+  "service_category": "government",
+  "audience": [
+    "residents"
+  ],
+  "topic": [],
+  "source": {
+    "source_url": "template://yoshino/services/registration/mynumber",
+    "fetched_at": "2026-01-20T10:33:17.311Z",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "2026-01-20T10:33:17.311Z",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "届出・証明",
+            "href": "/registration"
+          },
+          {
+            "label": "マイナンバーカード",
+            "href": "/mynumber"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "マイナンバーカード"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "マイナンバーカードは、マイナンバー（個人番号）が記載された顔写真付きのICカードです。本人確認書類として使えるほか、健康保険証やコンビニ交付など様々なサービスに利用できます。"
+      }
+    },
+    {
+      "id": "section-6pnw09wpr-table",
+      "type": "Section",
+      "props": {
+        "heading": "マイナンバーカードでできること",
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "本人確認書類として利用（運転免許証と同等）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "健康保険証として利用（マイナ保険証）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "コンビニで住民票・印鑑証明書などを取得"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "マイナポータルで行政手続きのオンライン申請"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "確定申告（e-Tax）の電子申告"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "公金受取口座の登録"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-bl8g3540g",
+      "type": "Section",
+      "props": {
+        "heading": "申請方法",
+        "level": 2,
+        "content": []
+      }
+    },
+    {
+      "id": "section-6n1yap4gb",
+      "type": "Section",
+      "props": {
+        "heading": "オンライン申請（スマートフォン・パソコン）",
+        "level": 3,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "交付申請書のQRコードを読み取り、スマートフォンやパソコンから申請できます。顔写真をアップロードするだけで簡単に申請できます。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "task-button-mynumber-online",
+      "type": "TaskButton",
+      "props": {
+        "label": "マイナンバーカード総合サイトで申請",
+        "href": "https://www.kojinbango-card.go.jp/",
+        "isTopTask": true
+      }
+    },
+    {
+      "id": "section-tljshblni",
+      "type": "Section",
+      "props": {
+        "heading": "郵送申請",
+        "level": 3,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "交付申請書に顔写真を貼り付けて郵送します。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-3xbfy5aru",
+      "type": "Section",
+      "props": {
+        "heading": "窓口申請",
+        "level": 3,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "市区町村窓口で申請できます。写真撮影サービスを行っている場合もあります。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "step-nav-1",
+      "type": "StepNavigation",
+      "props": {
+        "currentStep": 0,
+        "steps": [
+          {
+            "title": "申請",
+            "body": "オンライン、郵送、または窓口で申請します。",
+            "documents": [
+              "交付申請書",
+              "顔写真"
+            ]
+          },
+          {
+            "title": "交付通知書の受け取り",
+            "body": "約1か月後に交付通知書（はがき）が届きます。",
+            "documents": []
+          },
+          {
+            "title": "窓口で受け取り",
+            "body": "本人が窓口に来庁し、暗証番号を設定してカードを受け取ります。",
+            "documents": [
+              "交付通知書",
+              "通知カード",
+              "本人確認書類"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-xuoyn5unm-table",
+      "type": "Section",
+      "props": {
+        "heading": "受け取りに必要なもの",
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "交付通知書（届いたはがき）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "通知カード（お持ちの場合）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "本人確認書類（運転免許証、パスポートなど顔写真付き1点、または健康保険証＋年金手帳など2点）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "住民基本台帳カード（お持ちの場合）"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-xuoyn5unm-notification-0",
+      "type": "NotificationBanner",
+      "props": {
+        "severity": "warning",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "カードの受け取りは原則本人のみです。15歳未満のお子さんや成年被後見人の場合は、法定代理人が同行してください。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-krc7p91ob",
+      "type": "Section",
+      "props": {
+        "heading": "更新・再発行",
+        "level": 2,
+        "content": []
+      }
+    },
+    {
+      "id": "section-6tlv2r6qt",
+      "type": "Section",
+      "props": {
+        "heading": "電子証明書の更新",
+        "level": 3,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "電子証明書（署名用・利用者証明用）の有効期限は発行から5回目の誕生日までです。更新のお知らせが届いたら、窓口で更新手続きを行ってください（無料）。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-pf2ddxk6v",
+      "type": "Section",
+      "props": {
+        "heading": "カードの更新",
+        "level": 3,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "カード本体の有効期限は、発行から10回目の誕生日（18歳未満は5回目）までです。更新の際は再申請が必要です（無料）。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-pliv8hon5",
+      "type": "Section",
+      "props": {
+        "heading": "紛失・破損",
+        "level": 3,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "紛失した場合は、まずマイナンバー総合フリーダイヤル（0120-95-0178）で一時停止してください。"
+              },
+              {
+                "text": "その後、窓口で再発行の手続きを行います（手数料がかかります）。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "table-tesuryo",
+      "type": "Table",
+      "props": {
+        "rows": [
+          {
+            "label": "初回発行",
+            "value": "無料"
+          },
+          {
+            "label": "再発行（紛失・破損）",
+            "value": "1,000円（電子証明書搭載の場合）"
+          },
+          {
+            "label": "電子証明書の更新",
+            "value": "無料"
+          }
+        ]
+      }
+    },
+    {
+      "id": "related-links-1",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "住民票",
+            "href": "/juminhyo"
+          },
+          {
+            "title": "印鑑登録",
+            "href": "/inkan"
+          },
+          {
+            "title": "転入届",
+            "href": "/tennyu"
+          },
+          {
+            "title": "国民健康保険",
+            "href": "/kokuho"
+          },
+          {
+            "title": "住民税",
+            "href": "/juminzei"
+          },
+          {
+            "title": "年金",
+            "href": "/nenkin"
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-対象-1769919363206",
+      "type": "Section",
+      "props": {
+        "heading": "マイナンバーカードの対象となる方",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "詳細は担当課にお問い合わせください。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{mynumber_department}}",
+        "phone": "{{mynumber_phone}}",
+        "email": "{{mynumber_email}}",
+        "hours": "{{city_hall_hours}}",
+        "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
+      }
+    }
+  ],
+  "search": {
+    "summary": "マイナンバーカードの申請方法、受け取り、更新について。健康保険証やコンビニ交付にも利用可能。",
+    "keywords": [
+      "マイナンバーカード",
+      "マイナカード",
+      "個人番号カード",
+      "申請",
+      "受け取り",
+      "更新",
+      "マイナ保険証",
+      "コンビニ交付"
+    ],
+    "plain_text": "マイナンバーカード。本人確認書類として利用可能。健康保険証、コンビニ交付、マイナポータル、e-Taxに利用可能。申請はオンライン、郵送、窓口で可能。受け取りは本人が窓口で。初回発行は無料。"
+  }
+}

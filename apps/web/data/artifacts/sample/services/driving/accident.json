@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "page_id": "sample-services-driving-accident",
   "municipality_id": "sample",
-  "path": "/services/driving/accident",
+  "path": "/accident",
   "title": "交通事故相談",
   "description": "交通事故の届出、損害賠償相談、交通事故相談所",
   "content_type": "guide",
@@ -33,11 +33,11 @@
           },
           {
             "label": "運転・車両",
-            "href": "/topics/driving"
+            "href": "/driving"
           },
           {
             "label": "交通事故相談",
-            "href": "/services/driving/accident"
+            "href": "/accident"
           }
         ]
       }

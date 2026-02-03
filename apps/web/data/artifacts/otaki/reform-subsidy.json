@@ -1,0 +1,312 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "otaki-services-housing-reform-subsidy",
+  "municipality_id": "otaki",
+  "path": "/reform-subsidy",
+  "title": "住宅リフォーム補助",
+  "description": "王滝村独自の住宅リフォーム補助制度",
+  "content_type": "guide",
+  "service_category": "housing",
+  "audience": [
+    "residents"
+  ],
+  "topic": [],
+  "source": {
+    "source_url": "template://otaki/services/housing/reform-subsidy",
+    "fetched_at": "2026-02-03T01:50:20.257Z",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "2026-02-03T01:50:20.257Z",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "住まい・引越し",
+            "href": "/housing"
+          },
+          {
+            "label": "住宅リフォーム補助",
+            "href": "/reform-subsidy"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "住宅リフォーム補助"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "王滝村では、住宅の改修工事に対する補助制度を設けています。対象となる工事や補助金額は制度により異なります。"
+      }
+    },
+    {
+      "id": "section-5g8nx9yc5",
+      "type": "Section",
+      "props": {
+        "heading": "対象となる工事",
+        "level": 2,
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "バリアフリー改修",
+                      "bold": true
+                    },
+                    {
+                      "text": "（手すり設置、段差解消、浴室改修など）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "省エネ改修",
+                      "bold": true
+                    },
+                    {
+                      "text": "（断熱工事、高効率給湯器設置など）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "一般リフォーム",
+                      "bold": true
+                    },
+                    {
+                      "text": "（{{reform_general_eligible}}）"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-li0y5jkoq",
+      "type": "Section",
+      "props": {
+        "heading": "補助金額",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "補助金額は制度や工事内容によって異なります。詳しくは担当窓口にお問い合わせください。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-94wxs7cnl-notification-0",
+      "type": "NotificationBanner",
+      "props": {
+        "severity": "warning",
+        "title": "注意",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "工事着手前に申請が必要です。",
+                "bold": true
+              },
+              {
+                "text": "工事後の申請は受け付けられません。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "table-1",
+      "type": "Table",
+      "props": {
+        "rows": [
+          {
+            "label": "申請期間",
+            "value": "予算がなくなり次第終了"
+          },
+          {
+            "label": "補助率",
+            "value": "制度により異なる"
+          },
+          {
+            "label": "上限額",
+            "value": "制度により異なる"
+          }
+        ]
+      }
+    },
+    {
+      "id": "related-links-ke17afbpt",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "耐震改修",
+            "href": "/seismic-retrofit"
+          },
+          {
+            "title": "住宅購入",
+            "href": "/home-purchase"
+          },
+          {
+            "title": "介護保険",
+            "href": "/kaigo"
+          },
+          {
+            "title": "障害者福祉",
+            "href": "/shogai"
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-必要-1769919363180",
+      "type": "Section",
+      "props": {
+        "heading": "住宅リフォーム補助に必要なもの",
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "本人確認書類（マイナンバーカード、運転免許証など）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "印鑑（認印可）"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-方法-1769919363180",
+      "type": "Section",
+      "props": {
+        "heading": "住宅リフォーム補助の手続き方法",
+        "content": [
+          {
+            "type": "list",
+            "ordered": true,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "必要書類を準備します。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "窓口で申請書を記入します。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "書類を提出し、確認を受けます。"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{housing_department}}",
+        "phone": "{{housing_phone}}",
+        "email": "{{housing_email}}",
+        "hours": "{{city_hall_hours}}",
+        "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
+      }
+    }
+  ],
+  "search": {
+    "summary": "住宅リフォーム補助制度の案内。バリアフリー改修、省エネ改修、一般リフォームへの補助。",
+    "keywords": [
+      "リフォーム",
+      "住宅改修",
+      "補助金",
+      "バリアフリー",
+      "省エネ",
+      "断熱"
+    ],
+    "plain_text": "住宅リフォーム補助。バリアフリー改修、省エネ改修、一般リフォームへの補助制度。工事着手前に申請が必要。"
+  }
+}

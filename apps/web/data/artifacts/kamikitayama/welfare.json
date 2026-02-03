@@ -1,0 +1,117 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "kamikitayama-welfare",
+  "municipality_id": "kamikitayama",
+  "path": "/welfare",
+  "title": "高齢者向け支援",
+  "description": "介護保険、高齢者福祉サービス、地域包括支援センターに関する情報",
+  "content_type": "directory",
+  "service_category": "welfare",
+  "audience": [
+    "residents",
+    "elderly"
+  ],
+  "topic": [],
+  "source": {
+    "source_url": "template://kamikitayama/welfare",
+    "fetched_at": "2026-02-03T01:50:19.786Z",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "2026-02-03T01:50:19.786Z",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "高齢者向け支援",
+            "href": "/welfare"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "高齢者向け支援"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "介護保険、高齢者福祉サービス、地域包括支援センターに関する情報をまとめています"
+      }
+    },
+    {
+      "id": "topic-list-1",
+      "type": "CardGrid",
+      "props": {
+        "variant": "link",
+        "columns": 4,
+        "items": [
+          {
+            "title": "介護保険",
+            "href": "/kaigo",
+            "description": "介護保険の加入・届出・サービス利用"
+          },
+          {
+            "title": "高齢者福祉",
+            "href": "/koureisha",
+            "description": "高齢者向けの福祉サービス・支援"
+          },
+          {
+            "title": "地域包括支援センター",
+            "href": "/houkatsu",
+            "description": "高齢者の総合相談窓口"
+          },
+          {
+            "title": "後期高齢者医療",
+            "href": "/kouki",
+            "description": "75歳以上の方の医療保険制度"
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{welfare_department}}",
+        "phone": "{{welfare_phone}}",
+        "email": "{{welfare_email}}",
+        "hours": "{{city_hall_hours}}",
+        "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
+      }
+    }
+  ],
+  "search": {
+    "summary": "高齢者向け支援に関する情報。介護保険、高齢者福祉、地域包括支援センター、後期高齢者医療の案内。",
+    "keywords": [
+      "高齢者",
+      "介護保険",
+      "高齢者福祉",
+      "地域包括支援センター",
+      "後期高齢者医療",
+      "介護サービス"
+    ],
+    "plain_text": "高齢者向け支援。介護保険、高齢者福祉サービス、地域包括支援センターに関する情報。介護保険、高齢者福祉、地域包括支援センター、後期高齢者医療。"
+  }
+}

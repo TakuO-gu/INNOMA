@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "page_id": "sample-services-disaster-hazard-map",
   "municipality_id": "sample",
-  "path": "/services/disaster/hazard-map",
+  "path": "/hazard-map",
   "title": "ハザードマップ",
   "description": "洪水、土砂災害、津波、地震などのハザードマップと見方",
   "content_type": "guide",
@@ -33,11 +33,11 @@
           },
           {
             "label": "防災・安全",
-            "href": "/topics/disaster"
+            "href": "/disaster"
           },
           {
             "label": "ハザードマップ",
-            "href": "/services/disaster/hazard-map"
+            "href": "/hazard-map"
           }
         ]
       }
@@ -276,15 +276,15 @@
         "items": [
           {
             "title": "避難所・避難場所",
-            "href": "/services/disaster/hinanjo"
+            "href": "/hinanjo"
           },
           {
             "title": "防災情報メール",
-            "href": "/services/disaster/bosai-mail"
+            "href": "/bosai-mail"
           },
           {
             "title": "非常持出品",
-            "href": "/services/disaster/mochidashi"
+            "href": "/mochidashi"
           },
           {
             "title": "重ねるハザードマップ（国土交通省）",

@@ -1,0 +1,213 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "kawachi-jidou-teate-apply",
+  "municipality_id": "kawachi",
+  "path": "/jidou-teate-apply",
+  "title": "児童手当を申請する",
+  "description": "児童手当の申請手続き。必要書類と申請窓口をご案内します。オンライン申請も可能です。",
+  "content_type": "service",
+  "service_category": "children",
+  "audience": ["residents", "children_families"],
+  "topic": [],
+  "source": {
+    "source_url": "template://kawachi/jidou-teate-apply",
+    "fetched_at": "2026-02-03T01:50:19.879Z",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "2026-02-03T01:50:19.879Z",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          { "label": "ホーム", "href": "/" },
+          { "label": "子育て・出産", "href": "/childcare" },
+          { "label": "児童手当", "href": "/jidou-teate" },
+          { "label": "児童手当を申請する", "href": "/jidou-teate-apply" }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "児童手当を申請する"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "高校生年代までのお子さんを養育している方が、児童手当を新規に申請する手続きです。"
+      }
+    },
+    {
+      "id": "notification-15days",
+      "type": "NotificationBanner",
+      "props": {
+        "severity": "warning",
+        "title": "出生・転入から15日以内に申請してください",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              { "text": "申請が遅れると、受け取れない月が発生します。15日以内に申請すれば、出生・転入の翌月分から受け取れます。" }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-taisho",
+      "type": "Section",
+      "props": {
+        "heading": "申請が必要な方",
+        "level": 2,
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [{ "type": "paragraph", "runs": [{ "text": "お子さんが生まれた方" }] }],
+              [{ "type": "paragraph", "runs": [{ "text": "他の市区町村から転入した方" }] }],
+              [{ "type": "paragraph", "runs": [{ "text": "公務員でなくなった方" }] }]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-hitsuyou",
+      "type": "Section",
+      "props": {
+        "heading": "必要なもの",
+        "level": 2,
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [{ "type": "paragraph", "runs": [{ "text": "申請者（保護者）の本人確認書類（マイナンバーカード、運転免許証など）" }] }],
+              [{ "type": "paragraph", "runs": [{ "text": "申請者名義の口座がわかるもの（通帳またはキャッシュカード）" }] }],
+              [{ "type": "paragraph", "runs": [{ "text": "申請者と配偶者のマイナンバーがわかるもの" }] }],
+              [{ "type": "paragraph", "runs": [{ "text": "健康保険証（被保険者情報がわかるもの）" }] }]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-tesuryo",
+      "type": "Section",
+      "props": {
+        "heading": "手数料",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [{ "text": "無料" }]
+          }
+        ]
+      }
+    },
+    {
+      "id": "step-nav-1",
+      "type": "StepNavigation",
+      "props": {
+        "heading": "申請の流れ",
+        "steps": [
+          {
+            "title": "必要書類を準備する",
+            "description": "本人確認書類、口座情報、マイナンバーを用意します"
+          },
+          {
+            "title": "申請する",
+            "description": "窓口またはオンラインで申請します"
+          },
+          {
+            "title": "審査",
+            "description": "河内町で審査を行います"
+          },
+          {
+            "title": "支給開始",
+            "description": "認定後、次の偶数月から振り込みが始まります"
+          }
+        ]
+      }
+    },
+    {
+      "id": "action-button-1",
+      "type": "ActionButton",
+      "props": {
+        "label": "オンラインで申請する",
+        "href": "{{jidou_teate_online_url}}",
+        "variant": "primary"
+      }
+    },
+    {
+      "id": "richtext-online-note",
+      "type": "RichText",
+      "props": {
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              { "text": "マイナポータル（ぴったりサービス）でオンライン申請できます。マイナンバーカードとスマートフォン（またはICカードリーダー）が必要です。" }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-madoguchi",
+      "type": "Section",
+      "props": {
+        "heading": "窓口で申請する場合",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [{ "text": "{{childcare_department}}（{{city_hall_location}}）で申請できます。" }]
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{childcare_department}}",
+        "phone": "{{childcare_phone}}",
+        "hours": "{{city_hall_hours}}",
+        "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "related-links-1",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          { "title": "児童手当について詳しく見る", "href": "/jidou-teate" },
+          { "title": "受け取れるか確認する", "href": "/jidou-teate-check" }
+        ]
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
+      }
+    }
+  ],
+  "search": {
+    "summary": "児童手当の申請手続き。出生・転入から15日以内に申請。口座情報、マイナンバー、本人確認書類が必要。手数料無料。オンライン申請可能。",
+    "keywords": ["児童手当", "申請", "手続き", "必要書類", "出生届", "転入届", "オンライン申請"],
+    "plain_text": "児童手当を申請する。高校生年代までのお子さんを養育している方が対象。出生・転入から15日以内に申請。口座情報、マイナンバー、本人確認書類が必要。手数料無料。マイナポータルでオンライン申請可能。"
+  }
+}

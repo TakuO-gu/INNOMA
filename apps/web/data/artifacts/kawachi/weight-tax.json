@@ -1,0 +1,416 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "kawachi-services-driving-weight-tax",
+  "municipality_id": "kawachi",
+  "path": "/weight-tax",
+  "title": "自動車重量税",
+  "description": "車検時に課税される自動車重量税について",
+  "content_type": "guide",
+  "service_category": "government",
+  "audience": [
+    "residents"
+  ],
+  "topic": [],
+  "source": {
+    "source_url": "template://kawachi/services/driving/weight-tax",
+    "fetched_at": "2026-02-03T01:50:19.890Z",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "2026-02-03T01:50:19.890Z",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "運転・車両",
+            "href": "/driving"
+          },
+          {
+            "label": "自動車重量税",
+            "href": "/weight-tax"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "自動車重量税"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "自動車重量税は、新規登録時および車検時に納付する国税です。車両重量に応じて税額が決まります。"
+      }
+    },
+    {
+      "id": "section-overview",
+      "type": "Section",
+      "props": {
+        "heading": "自動車重量税とは",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "自動車重量税は、自動車の区分や重量に応じて課税される国税です。道路整備費用等に充てられています。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "table-timing",
+      "type": "Table",
+      "props": {
+        "rows": [
+          {
+            "label": "新規登録時（新車購入時）",
+            "value": "3年分を納付（乗用車の場合）"
+          },
+          {
+            "label": "継続検査時（車検時）",
+            "value": "2年分を納付（乗用車の場合）"
+          }
+        ],
+        "heading": "納付時期"
+      }
+    },
+    {
+      "id": "section-rate",
+      "type": "Section",
+      "props": {
+        "heading": "税額一覧",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "乗用車（自家用）の継続検査時（2年分）の税額は以下のとおりです。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "table-rate-normal",
+      "type": "Table",
+      "props": {
+        "rows": [
+          {
+            "label": "〜0.5トン",
+            "value": "8,200円"
+          },
+          {
+            "label": "〜1.0トン",
+            "value": "16,400円"
+          },
+          {
+            "label": "〜1.5トン",
+            "value": "24,600円"
+          },
+          {
+            "label": "〜2.0トン",
+            "value": "32,800円"
+          },
+          {
+            "label": "〜2.5トン",
+            "value": "41,000円"
+          },
+          {
+            "label": "〜3.0トン",
+            "value": "49,200円"
+          }
+        ],
+        "heading": "2年分の税額（エコカー以外・13年未満）"
+      }
+    },
+    {
+      "id": "section-eco",
+      "type": "Section",
+      "props": {
+        "heading": "エコカー減税",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "環境性能に優れた自動車は、エコカー減税により自動車重量税が軽減または免除されます。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "table-eco",
+      "type": "Table",
+      "props": {
+        "rows": [
+          {
+            "label": "電気自動車・燃料電池車",
+            "value": "免税"
+          },
+          {
+            "label": "プラグインハイブリッド車",
+            "value": "免税"
+          },
+          {
+            "label": "2030年度燃費基準120%達成車",
+            "value": "免税"
+          },
+          {
+            "label": "2030年度燃費基準90%達成車",
+            "value": "50%軽減"
+          },
+          {
+            "label": "2030年度燃費基準75%達成車",
+            "value": "25%軽減"
+          }
+        ],
+        "heading": "エコカー減税率"
+      }
+    },
+    {
+      "id": "section-old",
+      "type": "Section",
+      "props": {
+        "heading": "経過年数による重課",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "新規登録から13年または18年を経過した自動車は、税額が増額されます（重課）。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "table-old",
+      "type": "Table",
+      "props": {
+        "rows": [
+          {
+            "label": "13年未満",
+            "value": "通常税率"
+          },
+          {
+            "label": "13年経過",
+            "value": "約1.4倍に重課"
+          },
+          {
+            "label": "18年経過",
+            "value": "約1.5倍に重課"
+          }
+        ],
+        "heading": "経過年数と税率"
+      }
+    },
+    {
+      "id": "section-refund",
+      "type": "Section",
+      "props": {
+        "heading": "廃車時の還付",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "車検の有効期間が1か月以上残っている自動車を廃車（永久抹消登録・解体届出）した場合、残りの期間に応じた自動車重量税が還付されます。"
+              },
+              {
+                "text": "運輸支局等で手続きを行ってください。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "info-payment",
+      "type": "InfoCard",
+      "props": {
+        "type": "info",
+        "heading": "納付方法",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "自動車重量税は、車検時に自動車重量税印紙を購入して納付します。通常は車検を依頼した整備工場やディーラーが代行します。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "related-links-1",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "自動車税",
+            "href": "/vehicle-tax"
+          },
+          {
+            "title": "自動車登録",
+            "href": "/registration"
+          },
+          {
+            "title": "自賠責保険",
+            "href": "/liability-insurance"
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-対象-1769919363165",
+      "type": "Section",
+      "props": {
+        "heading": "自動車重量税の対象となる方",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "詳細は担当課にお問い合わせください。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-必要-1769919363165",
+      "type": "Section",
+      "props": {
+        "heading": "自動車重量税に必要なもの",
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "本人確認書類（マイナンバーカード、運転免許証など）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "印鑑（認印可）"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-方法-1769919363165",
+      "type": "Section",
+      "props": {
+        "heading": "自動車重量税の手続き方法",
+        "content": [
+          {
+            "type": "list",
+            "ordered": true,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "必要書類を準備します。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "窓口で申請書を記入します。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "書類を提出し、確認を受けます。"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{tax_office}}",
+        "phone": "{{tax_office_phone}}",
+        "address": "{{tax_office_address}}"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
+      }
+    }
+  ],
+  "search": {
+    "summary": "自動車重量税の案内。車検時に納付、車両重量に応じた税額、エコカー減税、経過年数による重課。",
+    "keywords": [
+      "自動車重量税",
+      "重量税",
+      "車検",
+      "エコカー減税",
+      "還付",
+      "重課"
+    ],
+    "plain_text": "自動車重量税。新規登録時と車検時に納付。車両重量に応じて税額が決まる。エコカー減税対象車は軽減または免税。13年・18年経過車は重課。廃車時は残期間分が還付。"
+  }
+}

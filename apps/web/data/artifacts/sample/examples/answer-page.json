@@ -1,0 +1,111 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "sample-examples-answer-page",
+  "municipality_id": "sample",
+  "path": "/examples/answer-page",
+  "title": "児童手当を受け取れますか？",
+  "description": "児童手当の対象かどうかを判定",
+  "content_type": "answer",
+  "service_category": "childcare",
+  "audience": ["residents", "children_families"],
+  "source": {
+    "source_url": "template://sample/examples/answer-page",
+    "fetched_at": "2026-02-03",
+    "content_hash": "example"
+  },
+  "pipeline": {
+    "run_id": "example-003",
+    "generated_at": "2026-02-03",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          { "label": "ホーム", "href": "/" },
+          { "label": "子育て", "href": "/childcare" },
+          { "label": "児童手当を受け取れますか？", "href": "/examples/answer-page" }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "児童手当を受け取れますか？"
+      }
+    },
+    {
+      "id": "smart-answer-1",
+      "type": "SmartAnswer",
+      "props": {
+        "questions": [
+          {
+            "id": "q1",
+            "text": "お子さんは18歳の年度末（3月31日）までですか？",
+            "options": [
+              { "label": "はい", "nextQuestionId": "q2" },
+              { "label": "いいえ", "resultId": "result-no-age" }
+            ]
+          },
+          {
+            "id": "q2",
+            "text": "この市に住民登録がありますか？",
+            "options": [
+              { "label": "はい", "nextQuestionId": "q3" },
+              { "label": "いいえ", "resultId": "result-other-city" }
+            ]
+          },
+          {
+            "id": "q3",
+            "text": "公務員以外ですか？",
+            "options": [
+              { "label": "はい", "resultId": "result-yes" },
+              { "label": "いいえ", "resultId": "result-koumuin" }
+            ]
+          }
+        ],
+        "results": [
+          {
+            "id": "result-yes",
+            "title": "受け取れます",
+            "description": "あなたは児童手当の対象です。出生・転入から15日以内に申請すると、さかのぼって支給されます。",
+            "actionLabel": "申請手続きを開始する",
+            "actionHref": "/jidou-teate-apply",
+            "relatedLinks": [
+              { "title": "児童手当について詳しく見る", "href": "/examples/guide-page" }
+            ]
+          },
+          {
+            "id": "result-koumuin",
+            "title": "勤務先で申請してください",
+            "description": "公務員の方は市役所ではなく勤務先から支給されます。お勤め先の担当部署で手続きしてください。",
+            "relatedLinks": [
+              { "title": "児童手当について詳しく見る", "href": "/examples/guide-page" }
+            ]
+          },
+          {
+            "id": "result-no-age",
+            "title": "受け取れません",
+            "description": "児童手当は18歳の年度末（3月31日）までのお子さんが対象です。",
+            "relatedLinks": [
+              { "title": "他の子育て支援制度を見る", "href": "/childcare" }
+            ]
+          },
+          {
+            "id": "result-other-city",
+            "title": "住民登録のある市区町村で申請してください",
+            "description": "児童手当は住民票のある市区町村で申請します。お住まいの市区町村にお問い合わせください。"
+          }
+        ]
+      }
+    }
+  ],
+  "search": {
+    "summary": "児童手当の対象者判定。質問に答えて対象かどうか確認。",
+    "keywords": ["児童手当", "対象", "判定"],
+    "plain_text": "児童手当を受け取れますか？質問に答えて判定します。"
+  }
+}

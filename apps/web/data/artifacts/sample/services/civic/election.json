@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "page_id": "sample-services-civic-election",
   "municipality_id": "sample",
-  "path": "/services/civic/election",
+  "path": "/election",
   "title": "選挙・投票",
   "description": "選挙日程、投票所一覧、不在者投票、期日前投票",
   "content_type": "guide",
@@ -33,11 +33,11 @@
           },
           {
             "label": "市民参加・権利行使",
-            "href": "/topics/civic"
+            "href": "/civic"
           },
           {
             "label": "選挙・投票",
-            "href": "/services/civic/election"
+            "href": "/election"
           }
         ]
       }
@@ -135,15 +135,15 @@
         "items": [
           {
             "title": "選挙人名簿",
-            "href": "/services/civic/voter-registration"
+            "href": "/voter-registration"
           },
           {
             "title": "転入届",
-            "href": "/services/registration/tennyu"
+            "href": "/tennyu"
           },
           {
             "title": "転出届",
-            "href": "/services/registration/tenshutsu"
+            "href": "/tenshutsu"
           }
         ]
       }

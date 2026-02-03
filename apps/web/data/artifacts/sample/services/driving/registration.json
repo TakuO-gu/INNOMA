@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "page_id": "sample-services-driving-registration",
   "municipality_id": "sample",
-  "path": "/services/driving/registration",
+  "path": "/registration",
   "title": "車検・自動車登録",
   "description": "新規登録、移転登録（名義変更）、変更登録、抹消登録",
   "content_type": "guide",
@@ -33,11 +33,11 @@
           },
           {
             "label": "運転・車両",
-            "href": "/topics/driving"
+            "href": "/driving"
           },
           {
             "label": "車検・自動車登録",
-            "href": "/services/driving/registration"
+            "href": "/registration"
           }
         ]
       }
@@ -171,27 +171,27 @@
         "items": [
           {
             "title": "運転免許証",
-            "href": "/services/driving/license"
+            "href": "/license"
           },
           {
             "title": "車庫証明",
-            "href": "/services/driving/garage-certificate"
+            "href": "/garage-certificate"
           },
           {
             "title": "自動車税",
-            "href": "/services/driving/vehicle-tax"
+            "href": "/vehicle-tax"
           },
           {
             "title": "自動車重量税",
-            "href": "/services/driving/weight-tax"
+            "href": "/weight-tax"
           },
           {
             "title": "自賠責保険",
-            "href": "/services/driving/liability-insurance"
+            "href": "/liability-insurance"
           },
           {
             "title": "軽自動車税",
-            "href": "/services/tax/keijidosha"
+            "href": "/keijidosha"
           }
         ]
       }

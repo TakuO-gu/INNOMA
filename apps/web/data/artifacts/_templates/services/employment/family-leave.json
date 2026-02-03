@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "page_id": "sample-services-employment-family-leave",
   "municipality_id": "sample",
-  "path": "/services/employment/family-leave",
+  "path": "/family-leave",
   "title": "育児休業・介護休業",
   "description": "育児休業給付金、介護休業給付金、育休取得の手続き",
   "content_type": "guide",
@@ -33,11 +33,11 @@
           },
           {
             "label": "仕事・労働",
-            "href": "/topics/employment"
+            "href": "/employment"
           },
           {
             "label": "育児休業・介護休業",
-            "href": "/services/employment/family-leave"
+            "href": "/family-leave"
           }
         ]
       }
@@ -138,19 +138,19 @@
         "items": [
           {
             "title": "保育所入所申請",
-            "href": "/services/childcare/nursery-apply"
+            "href": "/nursery-apply"
           },
           {
             "title": "介護保険",
-            "href": "/services/welfare/kaigo"
+            "href": "/kaigo"
           },
           {
             "title": "労働基準",
-            "href": "/services/employment/labor-standards"
+            "href": "/labor-standards"
           },
           {
             "title": "社会保険",
-            "href": "/services/business/business-insurance"
+            "href": "/business-insurance"
           }
         ]
       }

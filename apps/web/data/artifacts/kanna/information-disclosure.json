@@ -1,0 +1,200 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "kanna-services-civic-information-disclosure",
+  "municipality_id": "kanna",
+  "path": "/information-disclosure",
+  "title": "情報公開請求",
+  "description": "公文書の開示請求、情報公開条例、開示手続き",
+  "content_type": "guide",
+  "service_category": "community",
+  "audience": [
+    "residents"
+  ],
+  "topic": [],
+  "source": {
+    "source_url": "template://kanna/services/civic/information-disclosure",
+    "fetched_at": "2026-02-03T01:50:19.796Z",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "2026-02-03T01:50:19.796Z",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "市民参加・権利行使",
+            "href": "/civic"
+          },
+          {
+            "label": "情報公開請求",
+            "href": "/information-disclosure"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "情報公開請求"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "神流町が保有する公文書の開示を請求することができます。情報公開条例に基づく手続きをご案内します。"
+      }
+    },
+    {
+      "id": "section-rccgnam3y",
+      "type": "Section",
+      "props": {
+        "heading": "請求できる方",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "どなたでも請求できます（住民以外の方も可）。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-z5hz9v720",
+      "type": "Section",
+      "props": {
+        "heading": "開示できない情報",
+        "level": 2,
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "個人情報（プライバシー）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "法人等の事業情報"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "審議・検討中の情報"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "行政運営情報"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-veukz1wao",
+      "type": "Section",
+      "props": {
+        "heading": "手数料",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "閲覧は無料。コピー（写しの交付）は1枚10円程度。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "related-links-d3nuk8t6s",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "個人情報保護",
+            "href": "/privacy"
+          },
+          {
+            "title": "パブリックコメント",
+            "href": "/public-comment"
+          },
+          {
+            "title": "行政不服申立て",
+            "href": "/administrative-appeal"
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{disclosure_department}}",
+        "phone": "{{disclosure_phone}}",
+        "email": "{{disclosure_email}}",
+        "hours": "{{city_hall_hours}}",
+        "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
+      }
+    }
+  ],
+  "search": {
+    "summary": "情報公開請求の案内。公文書の開示請求、開示できない情報、手数料。",
+    "keywords": [
+      "情報公開",
+      "公文書",
+      "開示請求",
+      "情報公開条例"
+    ],
+    "plain_text": "情報公開請求。どなたでも公文書の開示を請求可能。閲覧無料、コピーは1枚10円程度。"
+  }
+}

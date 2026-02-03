@@ -34,7 +34,7 @@
           },
           {
             "label": "土地・農林水産",
-            "href": "/topics/land"
+            "href": "/land"
           }
         ]
       }
@@ -60,52 +60,52 @@
         "items": [
           {
             "title": "農地転用",
-            "href": "/services/land/farmland-conversion",
+            "href": "/farmland-conversion",
             "description": "農地を宅地・駐車場等に転用する手続き（農業委員会）"
           },
           {
             "title": "農業委員会",
-            "href": "/services/land/agricultural-committee",
+            "href": "/agricultural-committee",
             "description": "農地の売買・賃借、農地利用集積、農業者年金"
           },
           {
             "title": "新規就農支援",
-            "href": "/services/land/new-farmer",
+            "href": "/new-farmer",
             "description": "農業次世代人材投資資金、就農準備資金、新規就農相談"
           },
           {
             "title": "農業振興・補助金",
-            "href": "/services/land/agriculture-subsidy",
+            "href": "/agriculture-subsidy",
             "description": "{{municipality_name}}の農業振興策、各種補助金・助成制度"
           },
           {
             "title": "林業振興",
-            "href": "/services/land/forestry",
+            "href": "/forestry",
             "description": "森林経営計画、林地開発許可、造林補助、木材利用促進"
           },
           {
             "title": "漁業権・漁業許可",
-            "href": "/services/land/fishery",
+            "href": "/fishery",
             "description": "漁業権、遊漁船業登録、特定水産資源の採捕許可"
           },
           {
             "title": "有害鳥獣対策",
-            "href": "/services/land/wildlife-damage",
+            "href": "/wildlife-damage",
             "description": "有害鳥獣の駆除、防護柵設置補助、捕獲許可"
           },
           {
             "title": "狩猟免許",
-            "href": "/services/land/hunting-license",
+            "href": "/hunting-license",
             "description": "狩猟免許試験、狩猟者登録、わな猟免許"
           },
           {
             "title": "都市計画・用途地域",
-            "href": "/services/land/urban-planning",
+            "href": "/urban-planning",
             "description": "用途地域、都市計画図、都市計画審議会"
           },
           {
             "title": "開発許可",
-            "href": "/services/land/development-permit",
+            "href": "/development-permit",
             "description": "市街化調整区域の開発許可、宅地造成工事規制"
           }
         ]

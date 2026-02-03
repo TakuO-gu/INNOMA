@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "page_id": "sample-services-driving-weight-tax",
   "municipality_id": "sample",
-  "path": "/services/driving/weight-tax",
+  "path": "/weight-tax",
   "title": "自動車重量税",
   "description": "車検時に課税される自動車重量税について",
   "content_type": "guide",
@@ -33,11 +33,11 @@
           },
           {
             "label": "運転・車両",
-            "href": "/topics/driving"
+            "href": "/driving"
           },
           {
             "label": "自動車重量税",
-            "href": "/services/driving/weight-tax"
+            "href": "/weight-tax"
           }
         ]
       }

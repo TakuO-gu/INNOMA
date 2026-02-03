@@ -1,0 +1,325 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "nanmoku-services-driving-registration",
+  "municipality_id": "nanmoku",
+  "path": "/registration",
+  "title": "車検・自動車登録",
+  "description": "新規登録、移転登録（名義変更）、変更登録、抹消登録",
+  "content_type": "guide",
+  "service_category": "government",
+  "audience": [
+    "residents"
+  ],
+  "topic": [],
+  "source": {
+    "source_url": "template://nanmoku/services/driving/registration",
+    "fetched_at": "2026-02-03T01:50:20.112Z",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "2026-02-03T01:50:20.112Z",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "運転・車両",
+            "href": "/driving"
+          },
+          {
+            "label": "車検・自動車登録",
+            "href": "/registration"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "車検・自動車登録"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "自動車の車検（継続検査）および各種登録手続きは運輸支局で行います。"
+      }
+    },
+    {
+      "id": "section-2fuzvgmag",
+      "type": "Section",
+      "props": {
+        "heading": "車検（継続検査）",
+        "level": 2,
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "有効期間：新車は3年、以降は2年"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "車検満了日の1か月前から受検可能"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-p4d4aspfp",
+      "type": "Section",
+      "props": {
+        "heading": "自動車登録の種類",
+        "level": 2,
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "新規登録",
+                      "bold": true
+                    },
+                    {
+                      "text": "：新車や中古新規の登録"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "移転登録",
+                      "bold": true
+                    },
+                    {
+                      "text": "：売買による名義変更"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "変更登録",
+                      "bold": true
+                    },
+                    {
+                      "text": "：住所変更など"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "抹消登録",
+                      "bold": true
+                    },
+                    {
+                      "text": "：廃車、一時使用中止"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "related-links-uyyknjhc7",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "運転免許証",
+            "href": "/license"
+          },
+          {
+            "title": "車庫証明",
+            "href": "/garage-certificate"
+          },
+          {
+            "title": "自動車税",
+            "href": "/vehicle-tax"
+          },
+          {
+            "title": "自動車重量税",
+            "href": "/weight-tax"
+          },
+          {
+            "title": "自賠責保険",
+            "href": "/liability-insurance"
+          },
+          {
+            "title": "軽自動車税",
+            "href": "/keijidosha"
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-対象-1769919363163",
+      "type": "Section",
+      "props": {
+        "heading": "車検・自動車登録の対象となる方",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "詳細は担当課にお問い合わせください。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-必要-1769919363163",
+      "type": "Section",
+      "props": {
+        "heading": "車検・自動車登録に必要なもの",
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "本人確認書類（マイナンバーカード、運転免許証など）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "印鑑（認印可）"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-方法-1769919363163",
+      "type": "Section",
+      "props": {
+        "heading": "車検・自動車登録の手続き方法",
+        "content": [
+          {
+            "type": "list",
+            "ordered": true,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "必要書類を準備します。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "窓口で申請書を記入します。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "書類を提出し、確認を受けます。"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{transport_branch}}",
+        "phone": "{{transport_branch_phone}}",
+        "address": "{{transport_branch_address}}"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
+      }
+    }
+  ],
+  "search": {
+    "summary": "車検・自動車登録の案内。継続検査、新規登録、移転登録、変更登録、抹消登録。",
+    "keywords": [
+      "車検",
+      "自動車登録",
+      "名義変更",
+      "移転登録",
+      "変更登録",
+      "抹消登録"
+    ],
+    "plain_text": "車検・自動車登録。車検は満了日の1か月前から受検可能。登録手続きは運輸支局で。"
+  }
+}

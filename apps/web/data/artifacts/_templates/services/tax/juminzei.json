@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "page_id": "sample-services-tax-juminzei",
   "municipality_id": "sample",
-  "path": "/services/tax/juminzei",
+  "path": "/juminzei",
   "title": "住民税（市民税・県民税）",
   "description": "住民税の概要、納税義務者、税額の計算方法、納付方法について",
   "content_type": "guide",
@@ -33,11 +33,11 @@
           },
           {
             "label": "税金",
-            "href": "/topics/tax"
+            "href": "/tax"
           },
           {
             "label": "住民税",
-            "href": "/services/tax/juminzei"
+            "href": "/juminzei"
           }
         ]
       }
@@ -340,27 +340,27 @@
         "items": [
           {
             "title": "固定資産税",
-            "href": "/services/tax/kotei"
+            "href": "/kotei"
           },
           {
             "title": "転入届",
-            "href": "/services/registration/tennyu"
+            "href": "/tennyu"
           },
           {
             "title": "転出届",
-            "href": "/services/registration/tenshutsu"
+            "href": "/tenshutsu"
           },
           {
             "title": "マイナンバーカード",
-            "href": "/services/registration/mynumber"
+            "href": "/mynumber"
           },
           {
             "title": "年金",
-            "href": "/services/benefits/nenkin"
+            "href": "/nenkin"
           },
           {
             "title": "保育所入所申請",
-            "href": "/services/childcare/nursery-apply"
+            "href": "/nursery-apply"
           }
         ]
       }

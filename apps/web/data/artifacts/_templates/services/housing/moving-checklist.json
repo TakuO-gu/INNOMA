@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "page_id": "sample-services-housing-moving-checklist",
   "municipality_id": "sample",
-  "path": "/services/housing/moving-checklist",
+  "path": "/moving-checklist",
   "title": "引越し手続き一覧",
   "description": "転入届、転出届、ライフラインの手続き一覧",
   "content_type": "guide",
@@ -33,11 +33,11 @@
           },
           {
             "label": "住まい・引越し",
-            "href": "/topics/housing"
+            "href": "/housing"
           },
           {
             "label": "引越し手続き一覧",
-            "href": "/services/housing/moving-checklist"
+            "href": "/moving-checklist"
           }
         ]
       }
@@ -264,51 +264,51 @@
         "items": [
           {
             "title": "転入届",
-            "href": "/services/registration/tennyu"
+            "href": "/tennyu"
           },
           {
             "title": "転出届",
-            "href": "/services/registration/tenshutsu"
+            "href": "/tenshutsu"
           },
           {
             "title": "転居届",
-            "href": "/services/registration/tenkyo"
+            "href": "/tenkyo"
           },
           {
             "title": "マイナンバーカード",
-            "href": "/services/registration/mynumber"
+            "href": "/mynumber"
           },
           {
             "title": "国民健康保険",
-            "href": "/services/health/kokuho"
+            "href": "/kokuho"
           },
           {
             "title": "国民年金",
-            "href": "/services/benefits/nenkin"
+            "href": "/nenkin"
           },
           {
             "title": "児童手当",
-            "href": "/services/childcare/jidou-teate"
+            "href": "/jidou-teate"
           },
           {
             "title": "印鑑登録",
-            "href": "/services/registration/inkan"
+            "href": "/inkan"
           },
           {
             "title": "運転免許証",
-            "href": "/services/driving/license"
+            "href": "/license"
           },
           {
             "title": "自動車の変更登録",
-            "href": "/services/driving/registration"
+            "href": "/registration"
           },
           {
             "title": "住民票",
-            "href": "/services/registration/juminhyo"
+            "href": "/juminhyo"
           },
           {
             "title": "ごみの出し方",
-            "href": "/services/environment/gomi"
+            "href": "/gomi"
           }
         ]
       }

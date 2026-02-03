@@ -1,0 +1,477 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "nanmoku-services-tax-nouzei",
+  "municipality_id": "nanmoku",
+  "path": "/nouzei",
+  "title": "納税方法",
+  "description": "市税の納付方法、口座振替、コンビニ納付、スマートフォン決済、滞納時の対応について",
+  "content_type": "guide",
+  "service_category": "government",
+  "audience": [
+    "residents"
+  ],
+  "topic": [],
+  "source": {
+    "source_url": "template://nanmoku/services/tax/nouzei",
+    "fetched_at": "2026-02-03T01:50:20.166Z",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "2026-02-03T01:50:20.166Z",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "税金",
+            "href": "/tax"
+          },
+          {
+            "label": "納税方法",
+            "href": "/nouzei"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "納税方法"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "市税（住民税、固定資産税、軽自動車税など）は、口座振替、金融機関窓口、コンビニ、スマートフォン決済など、さまざまな方法で納付できます。"
+      }
+    },
+    {
+      "id": "section-hoho",
+      "type": "Section",
+      "props": {
+        "heading": "納付方法",
+        "level": 2,
+        "content": []
+      }
+    },
+    {
+      "id": "desclist-hoho",
+      "type": "DescriptionList",
+      "props": {
+        "items": [
+          {
+            "term": "口座振替",
+            "description": "指定の金融機関口座から自動引き落とし。納め忘れがなく便利"
+          },
+          {
+            "term": "金融機関窓口",
+            "description": "納付書を持参し、銀行・信用金庫・郵便局などで納付"
+          },
+          {
+            "term": "コンビニ納付",
+            "description": "バーコード付き納付書で24時間納付可能"
+          },
+          {
+            "term": "スマートフォン決済",
+            "description": "PayPay、LINE Pay、au PAYなどで納付"
+          },
+          {
+            "term": "クレジットカード",
+            "description": "専用サイトで納付。別途手数料がかかります"
+          },
+          {
+            "term": "ペイジー（Pay-easy）",
+            "description": "ATMやインターネットバンキングで納付"
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-kozafurikae",
+      "type": "Section",
+      "props": {
+        "heading": "口座振替",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "口座振替は、納め忘れがなく便利です。一度手続きすれば、翌年度以降も継続されます。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "step-kozafurikae",
+      "type": "StepNavigation",
+      "props": {
+        "steps": [
+          {
+            "title": "申込書を入手",
+            "body": "市役所窓口、金融機関窓口、または市ホームページからダウンロード"
+          },
+          {
+            "title": "必要事項を記入",
+            "body": "口座情報、届出印、対象税目を記入"
+          },
+          {
+            "title": "金融機関または市役所へ提出",
+            "body": "金融機関窓口で届出印の照合が必要"
+          },
+          {
+            "title": "振替開始",
+            "body": "手続完了後、約1〜2か月後から振替開始"
+          }
+        ]
+      }
+    },
+    {
+      "id": "table-kinyu",
+      "type": "Table",
+      "props": {
+        "heading": "利用可能な金融機関",
+        "rows": [
+          {
+            "label": "都市銀行・地方銀行",
+            "value": "{{nouzei_bank}}"
+          },
+          {
+            "label": "信用金庫・信用組合",
+            "value": "{{nouzei_shinkin}}"
+          },
+          {
+            "label": "農協・漁協",
+            "value": "{{nouzei_ja}}"
+          },
+          {
+            "label": "ゆうちょ銀行",
+            "value": "○"
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-cvs",
+      "type": "Section",
+      "props": {
+        "heading": "コンビニ納付",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "バーコード付きの納付書であれば、24時間いつでもコンビニで納付できます。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "table-cvs",
+      "type": "Table",
+      "props": {
+        "heading": "利用可能なコンビニ",
+        "rows": [
+          {
+            "label": "セブン-イレブン",
+            "value": "○"
+          },
+          {
+            "label": "ローソン",
+            "value": "○"
+          },
+          {
+            "label": "ファミリーマート",
+            "value": "○"
+          },
+          {
+            "label": "ミニストップ",
+            "value": "○"
+          },
+          {
+            "label": "その他",
+            "value": "デイリーヤマザキ、ポプラ等"
+          }
+        ]
+      }
+    },
+    {
+      "id": "notification-cvs",
+      "type": "NotificationBanner",
+      "props": {
+        "severity": "warning",
+        "title": "コンビニ納付の注意事項",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "納付金額が30万円を超える場合、バーコードがない納付書、納期限を過ぎた納付書はコンビニでは使用できません。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-smartphone",
+      "type": "Section",
+      "props": {
+        "heading": "スマートフォン決済",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "納付書のバーコードをスマートフォンで読み取り、アプリで納付できます。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "table-smartphone",
+      "type": "Table",
+      "props": {
+        "heading": "利用可能なアプリ",
+        "rows": [
+          {
+            "label": "PayPay",
+            "value": "{{nouzei_paypay}}"
+          },
+          {
+            "label": "LINE Pay",
+            "value": "{{nouzei_linepay}}"
+          },
+          {
+            "label": "au PAY",
+            "value": "{{nouzei_aupay}}"
+          },
+          {
+            "label": "d払い",
+            "value": "{{nouzei_dpay}}"
+          },
+          {
+            "label": "楽天ペイ",
+            "value": "{{nouzei_rakutenpay}}"
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-taino",
+      "type": "Section",
+      "props": {
+        "heading": "納付が困難なとき",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "病気、失業、災害などにより納付が困難な場合は、早めにご相談ください。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "desclist-taino",
+      "type": "DescriptionList",
+      "props": {
+        "items": [
+          {
+            "term": "分割納付",
+            "description": "一括での納付が難しい場合、分割して納付する方法"
+          },
+          {
+            "term": "徴収猶予",
+            "description": "災害、病気、事業の廃止などで一時的に納付が困難な場合"
+          },
+          {
+            "term": "換価の猶予",
+            "description": "誠実に納付する意思があり、財産を差し押さえると事業継続や生活が困難になる場合"
+          }
+        ]
+      }
+    },
+    {
+      "id": "notification-taino",
+      "type": "NotificationBanner",
+      "props": {
+        "severity": "warning",
+        "title": "滞納すると",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "納期限を過ぎると延滞金が発生します。督促状発送後も納付がない場合、財産（給与、預金、不動産など）の差押えを行うことがあります。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "related-links-1",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "住民税",
+            "href": "/juminzei"
+          },
+          {
+            "title": "固定資産税",
+            "href": "/kotei"
+          },
+          {
+            "title": "軽自動車税",
+            "href": "/keijidosha"
+          },
+          {
+            "title": "税証明書",
+            "href": "/zeishoumei"
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-対象-1769919363218",
+      "type": "Section",
+      "props": {
+        "heading": "納税方法の対象となる方",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "詳細は担当課にお問い合わせください。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-必要-1769919363218",
+      "type": "Section",
+      "props": {
+        "heading": "納税方法に必要なもの",
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "本人確認書類（マイナンバーカード、運転免許証など）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "印鑑（認印可）"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{nouzei_department}}",
+        "phone": "{{nouzei_phone}}",
+        "email": "{{nouzei_email}}",
+        "hours": "{{city_hall_hours}}",
+        "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "terms-1769919363218",
+      "type": "Section",
+      "props": {
+        "heading": "用語の説明",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "猶予",
+                "bold": true
+              },
+              {
+                "text": "：支払いを待ってもらうこと"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "督促",
+                "bold": true
+              },
+              {
+                "text": "：支払いを促すこと"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
+      }
+    }
+  ],
+  "search": {
+    "summary": "市税の納付方法。口座振替、コンビニ、スマートフォン決済など。滞納時の相談。",
+    "keywords": [
+      "納税",
+      "納付",
+      "口座振替",
+      "コンビニ",
+      "スマホ決済",
+      "PayPay",
+      "滞納",
+      "分割"
+    ],
+    "plain_text": "市税の納付方法。口座振替、金融機関窓口、コンビニ、スマートフォン決済で納付可能。納付が困難な場合は分割納付や猶予の相談可能。"
+  }
+}

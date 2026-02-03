@@ -1,0 +1,692 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "kusatsu-services-childcare-boshi",
+  "municipality_id": "kusatsu",
+  "path": "/boshi",
+  "title": "母子保健",
+  "description": "妊娠届から乳幼児健診まで、母子の健康を支える制度の案内",
+  "content_type": "directory",
+  "service_category": "children",
+  "audience": [
+    "residents",
+    "children_families"
+  ],
+  "topic": [],
+  "source": {
+    "source_url": "template://kusatsu/services/childcare/boshi",
+    "fetched_at": "2026-02-03T01:50:20.044Z",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "2026-02-03T01:50:20.044Z",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "子育て・教育",
+            "href": "/childcare"
+          },
+          {
+            "label": "母子保健",
+            "href": "/boshi"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "母子保健"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "妊娠・出産・育児を支援するため、各種健診や相談、教室を実施しています。お気軽にご相談ください。"
+      }
+    },
+    {
+      "id": "section-y3t0gqnrf",
+      "type": "Section",
+      "props": {
+        "heading": "妊娠がわかったら",
+        "level": 2,
+        "content": []
+      }
+    },
+    {
+      "id": "section-3gdb84ax8",
+      "type": "Section",
+      "props": {
+        "heading": "妊娠届・母子健康手帳の交付",
+        "level": 3,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "妊娠がわかったら、早めに妊娠届を提出してください。母子健康手帳と妊婦健康診査の受診票をお渡しします。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-3gdb84ax8-table",
+      "type": "Table",
+      "props": {
+        "rows": [
+          {
+            "label": "届出場所",
+            "value": "{{boshi_madoguchi}}"
+          },
+          {
+            "label": "届出に必要なもの",
+            "value": "本人確認書類、マイナンバーがわかるもの"
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-p8yf47ksy",
+      "type": "Section",
+      "props": {
+        "heading": "妊婦健康診査",
+        "level": 3,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "妊婦健康診査費用の一部を助成します。受診票を使って、県内の医療機関で健診を受けてください。"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "助成回数：14回"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "助成額：{{ninpu_kenshin_josei}}"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-xe92f57tc",
+      "type": "Section",
+      "props": {
+        "heading": "出産前後",
+        "level": 2,
+        "content": []
+      }
+    },
+    {
+      "id": "section-04as5p50o",
+      "type": "Section",
+      "props": {
+        "heading": "出産・子育て応援給付金",
+        "level": 3,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "妊娠届出時と出生届出後に面談を行い、給付金を支給します。"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "出産応援給付金：5万円（妊娠届出時の面談後）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "子育て応援給付金：5万円（出生届出後の面談後）"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-1zrfvhlte",
+      "type": "Section",
+      "props": {
+        "heading": "産後ケア事業",
+        "level": 3,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "出産後、心身の不調や育児に不安がある方に、助産師等によるケアを提供します。"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "対象：産後1年未満の母子"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "内容：授乳指導、沐浴指導、育児相談、心身のケアなど"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "種類：宿泊型、デイサービス型、訪問型"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "利用料：{{sango_care_fee}}"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-vxy43hjlq",
+      "type": "Section",
+      "props": {
+        "heading": "乳幼児健康診査",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "お子さんの発育・発達の確認と、育児の相談を行います。対象者には個別に通知します。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "table-kenshin",
+      "type": "Table",
+      "props": {
+        "rows": [
+          {
+            "label": "3〜4か月児健診",
+            "value": "{{kenshin_34month_basho}}"
+          },
+          {
+            "label": "9〜10か月児健診",
+            "value": "{{kenshin_910month_basho}}"
+          },
+          {
+            "label": "1歳6か月児健診",
+            "value": "{{kenshin_1sai6month_basho}}"
+          },
+          {
+            "label": "3歳児健診",
+            "value": "{{kenshin_3sai_basho}}"
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-45h3volrl",
+      "type": "Section",
+      "props": {
+        "heading": "予防接種",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "定期予防接種は無料で受けられます。予防接種スケジュールに沿って接種を受けてください。"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "ロタウイルス、B型肝炎、Hib、小児用肺炎球菌"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "四種混合（ジフテリア・百日せき・破傷風・ポリオ）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "BCG、麻しん風しん（MR）、水痘"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "日本脳炎、二種混合（ジフテリア・破傷風）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "HPV（子宮頸がん予防）"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "task-button-1",
+      "type": "TaskButton",
+      "props": {
+        "label": "予防接種スケジュールを見る",
+        "href": "/yobosesshu",
+        "isTopTask": false
+      }
+    },
+    {
+      "id": "section-wxa6kslmp",
+      "type": "Section",
+      "props": {
+        "heading": "相談・教室",
+        "level": 2,
+        "content": []
+      }
+    },
+    {
+      "id": "section-jp502cgfo",
+      "type": "Section",
+      "props": {
+        "heading": "育児相談",
+        "level": 3,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "保健師・栄養士・歯科衛生士が、お子さんの発育・発達、離乳食、歯のケアなどのご相談に応じます。"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "日時：{{ikuji_sodan_schedule}}"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "場所：{{ikuji_sodan_basho}}"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "予約：{{ikuji_sodan_yoyaku}}"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-g2206c9pm",
+      "type": "Section",
+      "props": {
+        "heading": "両親学級（プレパパママ教室）",
+        "level": 3,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "初めて出産を迎える方を対象に、妊娠・出産・育児について学ぶ教室を開催しています。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-5nq9kbn7y",
+      "type": "Section",
+      "props": {
+        "heading": "離乳食教室",
+        "level": 3,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "離乳食の進め方について、調理実習や試食を通して学びます。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-sh54zr1n9",
+      "type": "Section",
+      "props": {
+        "heading": "訪問事業",
+        "level": 2,
+        "content": []
+      }
+    },
+    {
+      "id": "section-1sq16zfyq",
+      "type": "Section",
+      "props": {
+        "heading": "こんにちは赤ちゃん訪問",
+        "level": 3,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "生後4か月までの赤ちゃんがいるすべての家庭を訪問し、育児相談や子育て情報の提供を行います。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-uj84le2pj",
+      "type": "Section",
+      "props": {
+        "heading": "養育支援訪問",
+        "level": 3,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "育児に対する不安が強い家庭や、養育支援が必要な家庭に対し、保健師等が訪問して相談・支援を行います。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "related-links-1",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "児童手当",
+            "href": "/jidou-teate"
+          },
+          {
+            "title": "保育所入所申請",
+            "href": "/nursery-apply"
+          },
+          {
+            "title": "出生届",
+            "href": "/shussei"
+          },
+          {
+            "title": "予防接種",
+            "href": "/yobosesshu"
+          },
+          {
+            "title": "健康診断・検診",
+            "href": "/kenshin"
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-対象-1769919363148",
+      "type": "Section",
+      "props": {
+        "heading": "母子保健の対象となる方",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "詳細は担当課にお問い合わせください。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-必要-1769919363148",
+      "type": "Section",
+      "props": {
+        "heading": "母子保健に必要なもの",
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "本人確認書類（マイナンバーカード、運転免許証など）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "印鑑（認印可）"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-方法-1769919363149",
+      "type": "Section",
+      "props": {
+        "heading": "母子保健の手続き方法",
+        "content": [
+          {
+            "type": "list",
+            "ordered": true,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "必要書類を準備します。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "窓口で申請書を記入します。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "書類を提出し、確認を受けます。"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{boshi_department}}",
+        "phone": "{{boshi_phone}}",
+        "email": "{{boshi_email}}",
+        "hours": "{{city_hall_hours}}",
+        "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
+      }
+    }
+  ],
+  "search": {
+    "summary": "母子保健事業の案内。妊娠届、母子健康手帳、妊婦健診、乳幼児健診、予防接種、育児相談、産後ケアなど。",
+    "keywords": [
+      "母子保健",
+      "妊娠届",
+      "母子健康手帳",
+      "妊婦健診",
+      "乳幼児健診",
+      "予防接種",
+      "育児相談",
+      "産後ケア",
+      "こんにちは赤ちゃん"
+    ],
+    "plain_text": "母子保健。妊娠届を出すと母子健康手帳と妊婦健診受診票を交付。乳幼児健診（3〜4か月、9〜10か月、1歳6か月、3歳）。育児相談、両親学級、離乳食教室。こんにちは赤ちゃん訪問。"
+  }
+}

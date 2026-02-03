@@ -1,0 +1,305 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "takaoka-services-disaster-hinanjo",
+  "municipality_id": "takaoka",
+  "path": "/hinanjo",
+  "title": "避難所・避難場所",
+  "description": "指定避難所、指定緊急避難場所、福祉避難所の一覧と開設情報",
+  "content_type": "directory",
+  "service_category": "safety",
+  "audience": [
+    "residents"
+  ],
+  "topic": [],
+  "source": {
+    "source_url": "template://shimoichi/services/disaster/hinanjo",
+    "fetched_at": "2026-01-20T10:33:17.311Z",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "2026-01-20T10:33:17.311Z",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "防災・安全",
+            "href": "/disaster"
+          },
+          {
+            "label": "避難所・避難場所",
+            "href": "/hinanjo"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "避難所・避難場所"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "災害時に身を守るための避難場所と、避難生活を送るための避難所を紹介します。お住まいの地域の避難場所・避難所を事前に確認しておきましょう。"
+      }
+    },
+    {
+      "id": "section-types",
+      "type": "Section",
+      "props": {
+        "heading": "避難場所・避難所の種類",
+        "level": 2,
+        "content": []
+      }
+    },
+    {
+      "id": "info-cards-types",
+      "type": "InfoCardGrid",
+      "props": {
+        "columns": 3,
+        "cards": [
+          {
+            "title": "指定緊急避難場所",
+            "description": "災害が発生し、または発生するおそれがある場合に、一時的に身を守るために避難する場所です。災害の種類ごとに指定されています。",
+            "icon": "emergency",
+            "variant": "default",
+            "count": "{{kinkyu_hinanbasho_count}}",
+            "countLabel": "か所"
+          },
+          {
+            "title": "指定避難所",
+            "description": "災害により住居を失った方が、一定期間避難生活を送る施設です。学校の体育館や公民館などが指定されています。",
+            "icon": "shelter",
+            "variant": "default",
+            "count": "{{shitei_hinanjo_count}}",
+            "countLabel": "か所"
+          },
+          {
+            "title": "福祉避難所",
+            "description": "高齢者、障害者、妊産婦など、一般の避難所での生活が困難な方のための避難所です。必要に応じて開設されます。",
+            "icon": "welfare",
+            "variant": "default",
+            "count": "{{fukushi_hinanjo_count}}",
+            "countLabel": "か所"
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-search",
+      "type": "Section",
+      "props": {
+        "heading": "お住まいの地域の避難所を検索",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "町名を入力して、お住まいの地域の避難所を確認しましょう。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "shelter-list-1",
+      "type": "ShelterList",
+      "props": {
+        "label": "地区を選択してください",
+        "placeholder": "例：伏木、高岡、野村...",
+        "helpText": "お住まいの町名を入力または選択してください"
+      }
+    },
+    {
+      "id": "section-kaisetsu",
+      "type": "Section",
+      "props": {
+        "heading": "避難所の開設情報",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "災害発生時は、市ホームページ、防災メール、防災行政無線などでお知らせします。開設している避難所は下記のリンクから確認できます。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "task-button-status",
+      "type": "TaskButton",
+      "props": {
+        "label": "避難所の開設状況を確認する",
+        "href": "{{hinanjo_status_url}}",
+        "isTopTask": true
+      }
+    },
+    {
+      "id": "section-kokoroe-table",
+      "type": "Section",
+      "props": {
+        "heading": "避難の心得",
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "避難場所・避難所への移動ルートを事前に確認しておきましょう"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "非常持出品を準備しておきましょう（水、食料、薬、携帯電話充電器など）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "避難情報が出たら、早めの避難を心がけましょう"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "ペットを連れて避難する場合は、事前にルールを確認してください"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-kokoroe-notification-0",
+      "type": "NotificationBanner",
+      "props": {
+        "severity": "warning",
+        "title": "在宅避難・分散避難のお願い",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "自宅が安全な場合は「在宅避難」、親戚・知人宅への避難も選択肢です。避難所の混雑を避けるため、分散避難へのご協力をお願いします。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "table-joho",
+      "type": "Table",
+      "props": {
+        "rows": [
+          {
+            "label": "警戒レベル3（高齢者等避難）",
+            "value": "高齢者や障害のある方など避難に時間がかかる方は避難開始"
+          },
+          {
+            "label": "警戒レベル4（避難指示）",
+            "value": "危険な場所にいる全員が避難"
+          },
+          {
+            "label": "警戒レベル5（緊急安全確保）",
+            "value": "命を守る最善の行動を"
+          }
+        ],
+        "heading": "避難情報の種類"
+      }
+    },
+    {
+      "id": "related-links-1",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "ハザードマップ",
+            "href": "/hazard-map"
+          },
+          {
+            "title": "防災情報メール",
+            "href": "/bosai-mail"
+          },
+          {
+            "title": "非常持出品",
+            "href": "/mochidashi"
+          },
+          {
+            "title": "地域防災計画",
+            "href": "/bosai-keikaku"
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{bosai_department}}",
+        "phone": "{{bosai_phone}}",
+        "email": "{{bosai_email}}",
+        "hours": "{{city_hall_hours}}",
+        "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
+      }
+    }
+  ],
+  "search": {
+    "summary": "避難所・避難場所の案内。指定緊急避難場所、指定避難所、福祉避難所の一覧と開設情報。",
+    "keywords": [
+      "避難所",
+      "避難場所",
+      "指定緊急避難場所",
+      "福祉避難所",
+      "避難情報",
+      "警戒レベル",
+      "防災"
+    ],
+    "plain_text": "避難所・避難場所。指定緊急避難場所は一時的に身を守る場所。指定避難所は避難生活を送る施設。福祉避難所は高齢者・障害者向け。避難情報（警戒レベル3〜5）に注意。"
+  }
+}

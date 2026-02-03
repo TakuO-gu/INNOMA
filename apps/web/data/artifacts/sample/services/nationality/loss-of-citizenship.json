@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "page_id": "sample-services-nationality-loss-of-citizenship",
   "municipality_id": "sample",
-  "path": "/services/nationality/loss-of-citizenship",
+  "path": "/loss-of-citizenship",
   "title": "国籍喪失届",
   "description": "日本国籍を喪失した場合の届出手続き",
   "content_type": "guide",
@@ -33,11 +33,11 @@
           },
           {
             "label": "戸籍・国籍・在留",
-            "href": "/topics/nationality"
+            "href": "/nationality"
           },
           {
             "label": "国籍喪失届",
-            "href": "/services/nationality/loss-of-citizenship"
+            "href": "/loss-of-citizenship"
           }
         ]
       }
@@ -245,15 +245,15 @@
         "items": [
           {
             "title": "帰化申請",
-            "href": "/services/nationality/naturalization"
+            "href": "/naturalization"
           },
           {
             "title": "戸籍",
-            "href": "/services/registration/koseki"
+            "href": "/koseki"
           },
           {
             "title": "パスポート",
-            "href": "/services/nationality/passport"
+            "href": "/passport"
           }
         ]
       }

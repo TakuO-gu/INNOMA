@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "page_id": "sample-services-nationality-special-permanent-resident",
   "municipality_id": "sample",
-  "path": "/services/nationality/special-permanent-resident",
+  "path": "/special-permanent-resident",
   "title": "特別永住者",
   "description": "特別永住者証明書の申請・更新、紛失時の手続き",
   "content_type": "guide",
@@ -33,11 +33,11 @@
           },
           {
             "label": "戸籍・国籍・在留",
-            "href": "/topics/nationality"
+            "href": "/nationality"
           },
           {
             "label": "特別永住者",
-            "href": "/services/nationality/special-permanent-resident"
+            "href": "/special-permanent-resident"
           }
         ]
       }
@@ -235,15 +235,15 @@
         "items": [
           {
             "title": "在留カード",
-            "href": "/services/nationality/residence-card"
+            "href": "/residence-card"
           },
           {
             "title": "外国人相談",
-            "href": "/services/nationality/consultation"
+            "href": "/consultation"
           },
           {
             "title": "住民票",
-            "href": "/services/registration/juminhyo"
+            "href": "/juminhyo"
           }
         ]
       }

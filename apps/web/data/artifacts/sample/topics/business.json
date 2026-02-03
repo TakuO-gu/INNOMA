@@ -33,7 +33,7 @@
           },
           {
             "label": "事業・経営",
-            "href": "/topics/business"
+            "href": "/business"
           }
         ]
       }
@@ -59,52 +59,52 @@
         "items": [
           {
             "title": "起業・創業支援",
-            "href": "/services/business/startup",
+            "href": "/startup",
             "description": "創業相談、起業セミナー、インキュベーション施設"
           },
           {
             "title": "法人設立（株式会社・合同会社）",
-            "href": "/services/business/incorporation",
+            "href": "/incorporation",
             "description": "会社設立の手続き、定款認証、登記申請"
           },
           {
             "title": "個人事業主・開業届",
-            "href": "/services/business/sole-proprietor",
+            "href": "/sole-proprietor",
             "description": "開業届、青色申告承認申請、屋号の届出"
           },
           {
             "title": "許認可・届出",
-            "href": "/services/business/permits",
+            "href": "/permits",
             "description": "飲食店営業、古物商、建設業、宅建業などの許認可"
           },
           {
             "title": "補助金・助成金",
-            "href": "/services/business/subsidies",
+            "href": "/subsidies",
             "description": "サンプル市の中小企業向け補助金、国・県の助成制度"
           },
           {
             "title": "融資・資金調達",
-            "href": "/services/business/financing",
+            "href": "/financing",
             "description": "制度融資、信用保証協会、日本政策金融公庫"
           },
           {
             "title": "法人税・事業税",
-            "href": "/services/business/corporate-tax",
+            "href": "/corporate-tax",
             "description": "法人市民税、法人事業税、消費税の申告"
           },
           {
             "title": "社会保険・労働保険",
-            "href": "/services/business/business-insurance",
+            "href": "/business-insurance",
             "description": "社会保険加入、労働保険成立届、雇用保険"
           },
           {
             "title": "事業承継・M&A",
-            "href": "/services/business/succession",
+            "href": "/succession",
             "description": "事業承継税制、後継者育成、M&A支援"
           },
           {
             "title": "廃業・倒産",
-            "href": "/services/business/closure",
+            "href": "/closure",
             "description": "廃業届、解散・清算手続き、破産申立て"
           }
         ]

@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "page_id": "sample-services-civic-legal-support",
   "municipality_id": "sample",
-  "path": "/services/civic/legal-support",
+  "path": "/legal-support",
   "title": "法律相談・法テラス",
   "description": "無料法律相談、法テラス（日本司法支援センター）案内",
   "content_type": "guide",
@@ -33,11 +33,11 @@
           },
           {
             "label": "市民参加・権利行使",
-            "href": "/topics/civic"
+            "href": "/civic"
           },
           {
             "label": "法律相談・法テラス",
-            "href": "/services/civic/legal-support"
+            "href": "/legal-support"
           }
         ]
       }
@@ -143,19 +143,19 @@
         "items": [
           {
             "title": "犯罪被害者支援",
-            "href": "/services/civic/victim-support"
+            "href": "/victim-support"
           },
           {
             "title": "行政不服申立て",
-            "href": "/services/civic/administrative-appeal"
+            "href": "/administrative-appeal"
           },
           {
             "title": "労働相談",
-            "href": "/services/employment/labor-consultation"
+            "href": "/labor-consultation"
           },
           {
             "title": "生活保護",
-            "href": "/services/welfare/seikatsu-hogo"
+            "href": "/seikatsu-hogo"
           }
         ]
       }

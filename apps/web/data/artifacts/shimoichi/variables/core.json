@@ -27,5 +27,124 @@
     "sourceUrl": "https://www.town.shimoichi.lg.jp/",
     "confidence": 0.95,
     "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "city_hall_hours": {
+    "value": "午前8時30分から午後5時15分まで（土曜日、日曜日、祝日、年末年始を除く）",
+    "source": "llm",
+    "sourceUrl": "https://www.town.shimoichi.lg.jp/",
+    "confidence": 0.9,
+    "updatedAt": "2026-02-03T00:00:00.000Z"
+  },
+  "shimin_department": {
+    "value": "住民保険課",
+    "source": "llm",
+    "sourceUrl": "https://www.town.shimoichi.lg.jp/soshiki_list.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-03T00:00:00.000Z"
+  },
+  "shimin_phone": {
+    "value": "0747-52-0001",
+    "source": "llm",
+    "sourceUrl": "https://www.town.shimoichi.lg.jp/soshiki_list.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-03T00:00:00.000Z"
+  },
+  "registration_department": {
+    "value": "住民保険課",
+    "source": "llm",
+    "sourceUrl": "https://www.town.shimoichi.lg.jp/soshiki_list.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-03T00:00:00.000Z"
+  },
+  "registration_phone": {
+    "value": "0747-52-0001",
+    "source": "llm",
+    "sourceUrl": "https://www.town.shimoichi.lg.jp/soshiki_list.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-03T00:00:00.000Z"
+  },
+  "tax_department": {
+    "value": "税務課",
+    "source": "llm",
+    "sourceUrl": "https://www.town.shimoichi.lg.jp/soshiki_list.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-03T00:00:00.000Z"
+  },
+  "tax_phone": {
+    "value": "0747-52-0001",
+    "source": "llm",
+    "sourceUrl": "https://www.town.shimoichi.lg.jp/soshiki_list.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-03T00:00:00.000Z"
+  },
+  "welfare_department": {
+    "value": "健康福祉課",
+    "source": "llm",
+    "sourceUrl": "https://www.town.shimoichi.lg.jp/soshiki_list.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-03T00:00:00.000Z"
+  },
+  "welfare_phone": {
+    "value": "0747-52-0001",
+    "source": "llm",
+    "sourceUrl": "https://www.town.shimoichi.lg.jp/soshiki_list.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-03T00:00:00.000Z"
+  },
+  "kosodate_department": {
+    "value": "健康福祉課",
+    "source": "llm",
+    "sourceUrl": "https://www.town.shimoichi.lg.jp/soshiki_list.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-03T00:00:00.000Z"
+  },
+  "kosodate_phone": {
+    "value": "0747-52-0001",
+    "source": "llm",
+    "sourceUrl": "https://www.town.shimoichi.lg.jp/soshiki_list.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-03T00:00:00.000Z"
+  },
+  "kaigo_department": {
+    "value": "健康福祉課",
+    "source": "llm",
+    "sourceUrl": "https://www.town.shimoichi.lg.jp/soshiki_list.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-03T00:00:00.000Z"
+  },
+  "kaigo_phone": {
+    "value": "0747-52-0001",
+    "source": "llm",
+    "sourceUrl": "https://www.town.shimoichi.lg.jp/soshiki_list.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-03T00:00:00.000Z"
+  },
+  "hoken_department": {
+    "value": "住民保険課",
+    "source": "llm",
+    "sourceUrl": "https://www.town.shimoichi.lg.jp/soshiki_list.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-03T00:00:00.000Z"
+  },
+  "hoken_phone": {
+    "value": "0747-52-0001",
+    "source": "llm",
+    "sourceUrl": "https://www.town.shimoichi.lg.jp/soshiki_list.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-03T00:00:00.000Z"
+  },
+  "environment_department": {
+    "value": "生活環境課",
+    "source": "llm",
+    "sourceUrl": "https://www.town.shimoichi.lg.jp/soshiki_list.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-03T00:00:00.000Z"
+  },
+  "environment_phone": {
+    "value": "0747-52-5901",
+    "source": "llm",
+    "sourceUrl": "https://www.town.shimoichi.lg.jp/soshiki_list.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-03T00:00:00.000Z"
   }
 }

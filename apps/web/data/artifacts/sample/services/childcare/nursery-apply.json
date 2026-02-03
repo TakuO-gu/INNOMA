@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "page_id": "sample-services-childcare-nursery-apply",
   "municipality_id": "sample",
-  "path": "/services/childcare/nursery-apply",
+  "path": "/nursery-apply",
   "title": "認可保育園の入園申込",
   "description": "認可保育園への入園申込方法。必要書類、申込期間、選考基準など。",
   "content_type": "step_by_step",
@@ -33,11 +33,11 @@
           },
           {
             "label": "子育て・教育",
-            "href": "/topics/childcare"
+            "href": "/childcare"
           },
           {
             "label": "認可保育園の入園申込",
-            "href": "/services/childcare/nursery-apply"
+            "href": "/nursery-apply"
           }
         ]
       }
@@ -375,23 +375,23 @@
         "items": [
           {
             "title": "児童手当",
-            "href": "/services/childcare/jidou-teate"
+            "href": "/jidou-teate"
           },
           {
             "title": "母子保健",
-            "href": "/services/childcare/boshi"
+            "href": "/boshi"
           },
           {
             "title": "住民票",
-            "href": "/services/registration/juminhyo"
+            "href": "/juminhyo"
           },
           {
             "title": "住民税",
-            "href": "/services/tax/juminzei"
+            "href": "/juminzei"
           },
           {
             "title": "育児・介護休業",
-            "href": "/services/employment/family-leave"
+            "href": "/family-leave"
           }
         ]
       }

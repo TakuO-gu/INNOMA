@@ -9,6 +9,7 @@
 
 import React, { useEffect, useState } from "react";
 import { useMunicipality } from "../MunicipalityContext";
+import { budouxParse } from "@/components/BudouX";
 
 // アイコン定義
 const ICONS = {
@@ -113,7 +114,7 @@ function InfoCard({
     <div className="flex items-start gap-4">
       <div className={`flex-shrink-0 ${styles.icon}`}>{IconComponent}</div>
       <div className="flex-1 min-w-0">
-        <h3 className="text-std-17B-170 text-solid-gray-900 mb-2">{title}</h3>
+        <h3 className="text-std-17B-170 text-solid-gray-900 mb-2 budoux">{budouxParse(title)}</h3>
         <p className="text-sm text-solid-gray-600 mb-2">{description}</p>
         {count && countIsValid && (
           <p className="text-lg font-bold text-blue-1000">

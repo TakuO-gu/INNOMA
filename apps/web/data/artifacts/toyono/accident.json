@@ -1,0 +1,376 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "toyono-services-driving-accident",
+  "municipality_id": "toyono",
+  "path": "/accident",
+  "title": "交通事故相談",
+  "description": "交通事故の届出、損害賠償相談、交通事故相談所",
+  "content_type": "guide",
+  "service_category": "government",
+  "audience": [
+    "residents"
+  ],
+  "topic": [],
+  "source": {
+    "source_url": "template://toyono/services/driving/accident",
+    "fetched_at": "2026-02-03T01:50:20.472Z",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "2026-02-03T01:50:20.472Z",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "運転・車両",
+            "href": "/driving"
+          },
+          {
+            "label": "交通事故相談",
+            "href": "/accident"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "交通事故相談"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "交通事故に遭われた方への相談窓口と手続きをご案内します。"
+      }
+    },
+    {
+      "id": "section-immediate",
+      "type": "Section",
+      "props": {
+        "heading": "事故直後の対応",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "交通事故が発生したら、以下の順序で対応してください。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "step-nav-1",
+      "type": "StepNavigation",
+      "props": {
+        "currentStep": 0,
+        "steps": [
+          {
+            "title": "けが人の救護",
+            "body": "けが人がいる場合は、安全な場所に移動させ、119番で救急車を呼んでください。"
+          },
+          {
+            "title": "警察への届出",
+            "body": "110番に連絡し、事故の届出を行います。物損事故でも必ず届出が必要です（交通事故証明書の発行に必要）。"
+          },
+          {
+            "title": "相手方の情報確認",
+            "body": "相手の氏名、住所、連絡先、車両ナンバー、加入保険会社を確認してください。"
+          },
+          {
+            "title": "事故状況の記録",
+            "body": "スマートフォン等で事故現場の写真を撮影。目撃者がいれば連絡先を聞いておきましょう。"
+          },
+          {
+            "title": "保険会社への連絡",
+            "body": "ご自身の加入する任意保険会社に連絡し、事故の報告と今後の対応を相談します。"
+          },
+          {
+            "title": "医療機関の受診",
+            "body": "事故直後は症状がなくても、後から痛みが出ることがあります。必ず医療機関を受診してください。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "info-warning",
+      "type": "InfoCard",
+      "props": {
+        "type": "warning",
+        "heading": "その場での示談は避けてください",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "事故直後にその場で示談（「修理代は後で払う」等）をすると、後から痛みや損害が判明しても請求できなくなる場合があります。必ず保険会社を通じて対応してください。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-documents",
+      "type": "Section",
+      "props": {
+        "heading": "事故後に必要となる書類",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "保険請求や損害賠償請求に必要な書類を準備してください。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "table-documents",
+      "type": "Table",
+      "props": {
+        "rows": [
+          {
+            "label": "交通事故証明書",
+            "value": "自動車安全運転センターで発行（郵便局・コンビニから申請可）"
+          },
+          {
+            "label": "診断書・診療報酬明細書",
+            "value": "受診した医療機関で発行"
+          },
+          {
+            "label": "休業損害証明書",
+            "value": "勤務先に依頼（休業した場合）"
+          },
+          {
+            "label": "修理見積書",
+            "value": "修理工場で発行（車両損害の場合）"
+          }
+        ],
+        "heading": "主な必要書類"
+      }
+    },
+    {
+      "id": "section-consultation",
+      "type": "Section",
+      "props": {
+        "heading": "交通事故相談窓口",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "示談交渉や損害賠償について、無料で相談できる窓口があります。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "table-consultation",
+      "type": "Table",
+      "props": {
+        "rows": [
+          {
+            "label": "{{prefecture_name}}交通事故相談所",
+            "value": "損害賠償額の算定、示談の進め方、保険請求の相談"
+          },
+          {
+            "label": "日弁連交通事故相談センター",
+            "value": "弁護士による無料法律相談（予約制）"
+          },
+          {
+            "label": "交通事故紛争処理センター",
+            "value": "示談あっせん、審査（保険会社との交渉が難航した場合）"
+          },
+          {
+            "label": "そんぽADRセンター",
+            "value": "損害保険に関する相談・紛争解決"
+          }
+        ],
+        "heading": "相談窓口一覧"
+      }
+    },
+    {
+      "id": "section-compensation",
+      "type": "Section",
+      "props": {
+        "heading": "損害賠償の種類",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "交通事故の被害者が請求できる損害賠償には以下のものがあります。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "table-compensation",
+      "type": "Table",
+      "props": {
+        "rows": [
+          {
+            "label": "治療費",
+            "value": "入院・通院にかかった医療費"
+          },
+          {
+            "label": "休業損害",
+            "value": "事故により仕事を休んだ期間の収入補償"
+          },
+          {
+            "label": "慰謝料",
+            "value": "精神的苦痛に対する補償"
+          },
+          {
+            "label": "後遺障害慰謝料",
+            "value": "後遺症が残った場合の補償"
+          },
+          {
+            "label": "物的損害",
+            "value": "車両の修理費、代車費用など"
+          }
+        ],
+        "heading": "請求できる損害"
+      }
+    },
+    {
+      "id": "related-links-1",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "自賠責保険",
+            "href": "/liability-insurance"
+          },
+          {
+            "title": "運転免許証",
+            "href": "/license"
+          },
+          {
+            "title": "法律相談",
+            "href": "/legal-support"
+          },
+          {
+            "title": "犯罪被害者支援",
+            "href": "/victim-support"
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-対象-1769919363160",
+      "type": "Section",
+      "props": {
+        "heading": "交通事故相談の対象となる方",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "詳細は担当課にお問い合わせください。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-方法-1769919363160",
+      "type": "Section",
+      "props": {
+        "heading": "交通事故相談の手続き方法",
+        "content": [
+          {
+            "type": "list",
+            "ordered": true,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "必要書類を準備します。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "窓口で申請書を記入します。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "書類を提出し、確認を受けます。"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{prefecture_name}}交通事故相談所",
+        "phone": "{{traffic_accident_consultation_phone}}"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
+      }
+    }
+  ],
+  "search": {
+    "summary": "交通事故相談の案内。事故直後の対応、必要書類、相談窓口、損害賠償の種類。",
+    "keywords": [
+      "交通事故",
+      "交通事故相談",
+      "損害賠償",
+      "示談",
+      "事故届出",
+      "交通事故証明書",
+      "慰謝料"
+    ],
+    "plain_text": "交通事故相談。事故直後はけが人救護→警察届出→保険会社連絡。交通事故証明書の取得、損害賠償請求、示談交渉は交通事故相談所で相談。"
+  }
+}

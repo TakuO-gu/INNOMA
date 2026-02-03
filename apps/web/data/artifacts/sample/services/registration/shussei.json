@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "page_id": "sample-services-registration-shussei",
   "municipality_id": "sample",
-  "path": "/services/registration/shussei",
+  "path": "/shussei",
   "title": "出生届",
   "description": "子どもが生まれたときの届出（出生届）の手続き案内",
   "content_type": "step_by_step",
@@ -34,11 +34,11 @@
           },
           {
             "label": "届出・申請・証明書",
-            "href": "/topics/registration"
+            "href": "/registration"
           },
           {
             "label": "出生届",
-            "href": "/services/registration/shussei"
+            "href": "/shussei"
           }
         ]
       }
@@ -371,27 +371,27 @@
         "items": [
           {
             "title": "戸籍",
-            "href": "/services/registration/koseki"
+            "href": "/koseki"
           },
           {
             "title": "住民票",
-            "href": "/services/registration/juminhyo"
+            "href": "/juminhyo"
           },
           {
             "title": "児童手当",
-            "href": "/services/childcare/jidou-teate"
+            "href": "/jidou-teate"
           },
           {
             "title": "母子保健",
-            "href": "/services/childcare/boshi"
+            "href": "/boshi"
           },
           {
             "title": "国民健康保険",
-            "href": "/services/health/kokuho"
+            "href": "/kokuho"
           },
           {
             "title": "予防接種",
-            "href": "/services/health/yobosesshu"
+            "href": "/yobosesshu"
           }
         ]
       }

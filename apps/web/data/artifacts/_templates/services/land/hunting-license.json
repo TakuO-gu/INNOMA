@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "page_id": "sample-services-land-hunting-license",
   "municipality_id": "sample",
-  "path": "/services/land/hunting-license",
+  "path": "/hunting-license",
   "title": "狩猟免許",
   "description": "狩猟免許の取得、更新、狩猟者登録",
   "content_type": "guide",
@@ -33,11 +33,11 @@
           },
           {
             "label": "土地・農林水産",
-            "href": "/topics/land"
+            "href": "/land"
           },
           {
             "label": "狩猟免許",
-            "href": "/services/land/hunting-license"
+            "href": "/hunting-license"
           }
         ]
       }
@@ -271,11 +271,11 @@
         "items": [
           {
             "title": "鳥獣被害対策",
-            "href": "/services/land/wildlife-damage"
+            "href": "/wildlife-damage"
           },
           {
             "title": "林業",
-            "href": "/services/land/forestry"
+            "href": "/forestry"
           }
         ]
       }

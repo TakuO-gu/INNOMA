@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "page_id": "sample-services-registration-mynumber",
   "municipality_id": "sample",
-  "path": "/services/registration/mynumber",
+  "path": "/mynumber",
   "title": "マイナンバーカード",
   "description": "マイナンバーカードの申請方法、受け取り、更新、利用方法について",
   "content_type": "guide",
@@ -33,11 +33,11 @@
           },
           {
             "label": "届出・証明",
-            "href": "/topics/registration"
+            "href": "/registration"
           },
           {
             "label": "マイナンバーカード",
-            "href": "/services/registration/mynumber"
+            "href": "/mynumber"
           }
         ]
       }
@@ -400,27 +400,27 @@
         "items": [
           {
             "title": "住民票",
-            "href": "/services/registration/juminhyo"
+            "href": "/juminhyo"
           },
           {
             "title": "印鑑登録",
-            "href": "/services/registration/inkan"
+            "href": "/inkan"
           },
           {
             "title": "転入届",
-            "href": "/services/registration/tennyu"
+            "href": "/tennyu"
           },
           {
             "title": "国民健康保険",
-            "href": "/services/health/kokuho"
+            "href": "/kokuho"
           },
           {
             "title": "住民税",
-            "href": "/services/tax/juminzei"
+            "href": "/juminzei"
           },
           {
             "title": "年金",
-            "href": "/services/benefits/nenkin"
+            "href": "/nenkin"
           }
         ]
       }

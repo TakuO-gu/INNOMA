@@ -8,41 +8,26 @@
 import { z } from "zod";
 
 /* =============================================================================
- * 1) ContentType（ページ種別）- Classifier出力と一致
+ * 1) ContentType（ページ種別）- GOV.UK方式の3タイプ
  * ============================================================================= */
 
 export const ContentType = z.enum([
-  "service",      // IAの中心。市民の「やりたいこと」を表すハブページ
-  "guide",        // サービスの詳細説明（手順・条件・注意事項）
-  "form",         // 申請・届出ページ（PDF/Web/外部リンク）
-  "step_by_step", // 段階的手順のウィザード型ガイド
-  "contact",      // 問い合わせ・相談窓口情報
-  "news",         // お知らせ・告知
-  "directory",    // 施設リスト・一覧ページ
-  "other",        // その他
+  "service",  // 行動ページ: 申請・登録・支払い等の行動を促す
+  "guide",    // 理解ページ: 制度・仕組み・条件を説明する
+  "answer",   // 判定ページ: 対象かどうかをYes/Noで判定する
 ]);
 export type ContentType = z.infer<typeof ContentType>;
 
 /* =============================================================================
- * 2) ServiceCategory（サービスカテゴリ）- Classifier出力と一致
+ * 2) ServiceCategory（サービスカテゴリ）- タクソノミーから柔軟に設定
  * ============================================================================= */
 
-export const ServiceCategory = z.enum([
-  "welfare",      // 福祉・介護・障害者支援
-  "health",       // 健康・医療・保健
-  "children",     // 子育て・教育・学校
-  "housing",      // 住まい・引越し・届出
-  "environment",  // 環境・ごみ・リサイクル
-  "business",     // 産業・商工・観光
-  "community",    // 地域・コミュニティ・文化
-  "safety",       // 防災・安全・消防
-  "government",   // 行政・議会・選挙
-  "other",        // その他
-]);
+// タクソノミーから渡される値を柔軟に受け入れる（文字列型）
+export const ServiceCategory = z.string();
 export type ServiceCategory = z.infer<typeof ServiceCategory>;
 
 /* =============================================================================
- * 3) Audience / Topic - Classifier出力と一致
+ * 3) Audience（対象者）
  * ============================================================================= */
 
 export const Audience = z.enum([
@@ -54,14 +39,6 @@ export const Audience = z.enum([
   "foreigners",        // 外国人
 ]);
 export type Audience = z.infer<typeof Audience>;
-
-export const Topic = z.enum([
-  "emergency",  // 緊急・災害
-  "seasonal",   // 季節・時期限定
-  "covid",      // 感染症対策
-  "digital",    // デジタル化・オンライン
-]);
-export type Topic = z.infer<typeof Topic>;
 
 /* =============================================================================
  * 4) Crawler出力の構造
@@ -105,7 +82,6 @@ export const ClassifierOutput = z.object({
   content_type: ContentType,
   service_category: ServiceCategory,
   audience: z.array(Audience).default([]),
-  topic: z.array(Topic).default([]),
   confidence: z.number().min(0).max(1),
   reasoning: z.string().optional(),
   url: z.string(),
@@ -427,6 +403,36 @@ const CardGridBlock = BaseBlock.extend({
   }),
 });
 
+// ===== Smart Answer ブロック =====
+// GOV.UK Smart Answer 形式のインタラクティブな判定フロー
+// 1問ずつ表示し、回答に応じて分岐、最終的に結果を表示
+
+const SmartAnswerBlock = BaseBlock.extend({
+  type: z.literal("SmartAnswer"),
+  props: z.object({
+    questions: z.array(z.object({
+      id: z.string(),
+      text: z.string(),                    // 質問文
+      options: z.array(z.object({
+        label: z.string(),                 // 選択肢のラベル
+        nextQuestionId: z.string().optional(), // 次の質問ID（なければ結果へ）
+        resultId: z.string().optional(),   // 結果ID（次の質問がない場合）
+      })),
+    })),
+    results: z.array(z.object({
+      id: z.string(),
+      title: z.string(),                   // 結果タイトル（h2）
+      description: z.string().optional(),  // 結果の説明（1-2行）
+      actionLabel: z.string().optional(),  // CTAボタンのラベル
+      actionHref: z.string().optional(),   // CTAボタンのリンク
+      relatedLinks: z.array(z.object({
+        title: z.string(),
+        href: z.string(),
+      })).optional(),
+    })),
+  }),
+});
+
 // ===== 情報ソースブロック =====
 
 const SourcesBlock = BaseBlock.extend({
@@ -463,6 +469,8 @@ export const Block = z.discriminatedUnion("type", [
   DirectoryListBlock,
   // カードグリッドブロック
   CardGridBlock,
+  // Smart Answer ブロック
+  SmartAnswerBlock,
   // 情報ソースブロック
   SourcesBlock,
 ]);
@@ -539,12 +547,18 @@ const ArtifactV2 = z.object({
   content_type: ContentType,
   service_category: ServiceCategory,
   audience: z.array(Audience).default([]),
-  topic: z.array(Topic).default([]),
 
   // 分類メタ
   classification: z.object({
     confidence: z.number().min(0).max(1),
     reasoning: z.string().optional(),
+  }).optional(),
+
+  // タクソノミー（GOV.UK方式：URLから独立した分類情報）
+  taxonomy: z.object({
+    primaryCategory: z.string(),
+    secondaryCategories: z.array(z.string()).optional(),
+    tags: z.array(z.string()).optional(),
   }).optional(),
 
   // ソース情報（Crawler出力から）
@@ -660,7 +674,6 @@ export function createArtifactFromCrawlerAndClassifier(
     content_type: classifier.content_type,
     service_category: classifier.service_category,
     audience: classifier.audience,
-    topic: classifier.topic,
     classification: {
       confidence: classifier.confidence,
       reasoning: classifier.reasoning,
@@ -706,7 +719,6 @@ export function createArtifactFromCrawlerAndClassifier(
         classifier.content_type,
         classifier.service_category,
         ...classifier.audience,
-        ...classifier.topic,
       ],
       plain_text: plainText,
     },
@@ -718,14 +730,10 @@ export function createArtifactFromCrawlerAndClassifier(
  * ============================================================================= */
 
 export const Skeletons = {
-  service: ["Breadcrumbs", "Title", "Summary", "ResourceList", "RelatedLinks", "Contact"] as const,
-  guide: ["Breadcrumbs", "Title", "Summary", "RichText", "Table", "Accordion", "RelatedLinks", "Contact"] as const,
-  form: ["Breadcrumbs", "Title", "Summary", "Table", "ActionButton", "ResourceList", "RelatedLinks", "Contact"] as const,
-  step_by_step: ["Breadcrumbs", "Title", "Summary", "StepNavigation", "RelatedLinks", "Contact"] as const,
-  contact: ["Breadcrumbs", "Title", "Summary", "ContactCard", "Table", "Accordion", "RelatedLinks"] as const,
-  news: ["Breadcrumbs", "Title", "NewsMeta", "RichText", "ResourceList", "RelatedLinks", "Contact"] as const,
-  directory: ["Breadcrumbs", "Title", "Summary", "DirectoryList", "TopicGrid", "TopicList", "RichText", "RelatedLinks", "Contact"] as const,
-  other: ["Breadcrumbs", "Title", "Summary", "RawContent", "RelatedLinks", "Contact"] as const,
+  // GOV.UK方式の3タイプ
+  service: ["Breadcrumbs", "Title", "Summary", "NotificationBanner", "Table", "ActionButton", "Contact"] as const,
+  guide: ["Breadcrumbs", "Title", "Summary", "NotificationBanner", "RichText", "Table", "Accordion", "StepNavigation", "Contact", "RelatedLinks", "Sources"] as const,
+  answer: ["Breadcrumbs", "Title", "Summary", "Accordion", "Table", "RelatedLinks"] as const,
   // ホーム・ハブページ用
   home: ["Hero", "TopicGrid", "Contact"] as const,
   hub: ["Breadcrumbs", "Hero", "TopicGrid", "TopicList"] as const,
@@ -737,58 +745,42 @@ export const Skeletons = {
 
 export const CONTENT_TYPE_GUIDE = {
   service: {
-    description: "サービスハブページ",
-    purpose: "市民の「やりたいこと」を表すIAの中心",
-    example: "「保育園の入園」「粗大ごみの出し方」",
+    description: "行動ページ（Service Page）",
+    purpose: "申請・登録・支払い等の具体的な行動を起こさせる",
+    example: "「住民票を申請する」「転入届を届け出る」",
+    titleFormat: "動詞で始まる（〜を申請する、〜を届け出る）",
   },
   guide: {
-    description: "詳細説明ページ",
-    purpose: "サービスの詳細説明（手順・条件・注意事項）",
-    example: "「保育園入園の条件と必要書類」",
+    description: "理解ページ（Guide Page）",
+    purpose: "制度・仕組み・条件を理解させる",
+    example: "「国民健康保険」「介護保険制度」",
+    titleFormat: "名詞（制度名・テーマ名）",
   },
-  form: {
-    description: "申請・届出ページ",
-    purpose: "申請・届出の入口（PDF/Web/外部リンク）",
-    example: "「保育園入園申込」「住民票の写しの交付申請」",
-  },
-  step_by_step: {
-    description: "段階的手順ガイド",
-    purpose: "ウィザード型の手順説明",
-    example: "「転入届の出し方」",
-  },
-  contact: {
-    description: "問い合わせ窓口ページ",
-    purpose: "問い合わせ・相談窓口情報",
-    example: "「保育課へのお問い合わせ」",
-  },
-  news: {
-    description: "お知らせ・告知",
-    purpose: "お知らせ・告知記事",
-    example: "「保育園入園申込受付開始」",
-  },
-  directory: {
-    description: "施設リスト・一覧ページ",
-    purpose: "施設・事業者リスト",
-    example: "「市内保育園一覧」",
-  },
-  other: {
-    description: "その他",
-    purpose: "上記に分類できないページ",
-    example: "「プライバシーポリシー」",
+  answer: {
+    description: "判定ページ（Answer Page）",
+    purpose: "対象かどうかをYes/Noで判定する",
+    example: "「児童手当の対象ですか？」「国保に加入する必要がありますか？」",
+    titleFormat: "質問形式（〜ですか？〜が必要ですか？）",
   },
 } as const;
 
-export const SERVICE_CATEGORY_GUIDE = {
-  welfare: { description: "福祉・介護・障害者支援" },
-  health: { description: "健康・医療・保健" },
-  children: { description: "子育て・教育・学校" },
-  housing: { description: "住まい・引越し・届出" },
-  environment: { description: "環境・ごみ・リサイクル" },
-  business: { description: "産業・商工・観光" },
-  community: { description: "地域・コミュニティ・文化" },
-  safety: { description: "防災・安全・消防" },
-  government: { description: "行政・議会・選挙" },
-  other: { description: "その他" },
+// ServiceCategoryはタクソノミーから動的に設定されるため、ガイドは参考情報のみ
+export const SERVICE_CATEGORY_EXAMPLES = {
+  registration: "届出・証明（戸籍、住民票、印鑑登録など）",
+  childcare: "子育て・出産（妊娠、出産、保育所、児童手当など）",
+  welfare: "福祉・介護（高齢者福祉、介護保険、障害者支援など）",
+  health: "健康・医療（国民健康保険、健診、予防接種など）",
+  tax: "税金（住民税、固定資産税、納税など）",
+  environment: "環境・ごみ（ごみの分別・収集、リサイクルなど）",
+  housing: "住まい・土地（住宅、公営住宅、空き家など）",
+  disaster: "防災・安全（避難所、ハザードマップ、防犯など）",
+  business: "産業・事業者（起業、融資、補助金など）",
+  employment: "就労・雇用（就職支援、労働相談など）",
+  driving: "自動車・運転（運転免許、車検、駐車場など）",
+  nationality: "国籍・在留（外国人登録、在留資格など）",
+  civic: "市民参加・行政（選挙、情報公開、市民相談など）",
+  land: "農林水産（農業、林業、漁業など）",
+  benefits: "給付・助成（各種給付金、助成金、年金など）",
 } as const;
 
 /* =============================================================================
@@ -834,7 +826,20 @@ export function getFirstBlockByType<T extends Block["type"]>(
  * ============================================================================= */
 
 // v1との互換性のための型エイリアス
-/** @deprecated CategoryはServiceCategoryに変更されました */
+/** @deprecated CategoryはServiceCategory（string型）に変更されました */
 export const Category = ServiceCategory;
-/** @deprecated CategoryはServiceCategoryに変更されました */
+/** @deprecated CategoryはServiceCategory（string型）に変更されました */
 export type Category = ServiceCategory;
+
+// 旧content_type値から新content_type値へのマッピング
+export const LEGACY_CONTENT_TYPE_MAP: Record<string, ContentType> = {
+  "service": "service",
+  "form": "service",
+  "guide": "guide",
+  "step_by_step": "guide",
+  "contact": "guide",
+  "news": "guide",
+  "directory": "guide",
+  "other": "guide",
+  "answer": "answer",
+};

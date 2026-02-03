@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "page_id": "sample-services-tax-kakuteishinkoku",
   "municipality_id": "sample",
-  "path": "/services/tax/kakuteishinkoku",
+  "path": "/kakuteishinkoku",
   "title": "確定申告・税の相談",
   "description": "確定申告の受付期間、会場、申告が必要な方、住民税の申告について",
   "content_type": "guide",
@@ -33,11 +33,11 @@
           },
           {
             "label": "税金",
-            "href": "/topics/tax"
+            "href": "/tax"
           },
           {
             "label": "確定申告・税の相談",
-            "href": "/services/tax/kakuteishinkoku"
+            "href": "/kakuteishinkoku"
           }
         ]
       }
@@ -448,19 +448,19 @@
         "items": [
           {
             "title": "住民税",
-            "href": "/services/tax/juminzei"
+            "href": "/juminzei"
           },
           {
             "title": "税証明書",
-            "href": "/services/tax/zeishoumei"
+            "href": "/zeishoumei"
           },
           {
             "title": "ふるさと納税",
-            "href": "/services/tax/furusato"
+            "href": "/furusato"
           },
           {
             "title": "納税方法",
-            "href": "/services/tax/nouzei"
+            "href": "/nouzei"
           }
         ]
       }

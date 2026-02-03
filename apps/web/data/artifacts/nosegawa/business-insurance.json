@@ -1,0 +1,469 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "nosegawa-services-business-business-insurance",
+  "municipality_id": "nosegawa",
+  "path": "/business-insurance",
+  "title": "社会保険・労働保険",
+  "description": "社会保険加入、労働保険成立届、雇用保険",
+  "content_type": "guide",
+  "service_category": "business",
+  "audience": [
+    "businesses"
+  ],
+  "topic": [],
+  "source": {
+    "source_url": "template://nosegawa/services/business/business-insurance",
+    "fetched_at": "2026-02-03T01:50:20.179Z",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "2026-02-03T01:50:20.179Z",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "事業・経営",
+            "href": "/business"
+          },
+          {
+            "label": "社会保険・労働保険",
+            "href": "/business-insurance"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "社会保険・労働保険"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "従業員を雇用する事業主が加入すべき社会保険・労働保険の手続きをご案内します。"
+      }
+    },
+    {
+      "id": "section-overview",
+      "type": "Section",
+      "props": {
+        "heading": "保険制度の概要",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "従業員を雇用すると、事業主には各種保険への加入義務が生じます。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "table-overview",
+      "type": "Table",
+      "props": {
+        "rows": [
+          {
+            "label": "健康保険",
+            "value": "病気・けが・出産等の医療費負担軽減"
+          },
+          {
+            "label": "厚生年金保険",
+            "value": "老齢・障害・遺族年金の給付"
+          },
+          {
+            "label": "労災保険",
+            "value": "業務中・通勤中のけが・病気への補償"
+          },
+          {
+            "label": "雇用保険",
+            "value": "失業時の給付、育児・介護休業給付等"
+          }
+        ],
+        "heading": "各保険の役割"
+      }
+    },
+    {
+      "id": "section-social",
+      "type": "Section",
+      "props": {
+        "heading": "社会保険（健康保険・厚生年金保険）",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "法人事業所は従業員数に関わらず強制適用です。個人事業所は常時5人以上の従業員を雇用する場合に加入義務があります（一部業種を除く）。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "table-social-target",
+      "type": "Table",
+      "props": {
+        "rows": [
+          {
+            "label": "法人事業所",
+            "value": "従業員数に関わらず強制適用"
+          },
+          {
+            "label": "個人事業所（5人以上）",
+            "value": "常時5人以上雇用で強制適用"
+          },
+          {
+            "label": "個人事業所（5人未満）",
+            "value": "任意適用（届出により加入可能）"
+          }
+        ],
+        "heading": "適用事業所"
+      }
+    },
+    {
+      "id": "table-social-docs",
+      "type": "Table",
+      "props": {
+        "rows": [
+          {
+            "label": "健康保険・厚生年金保険新規適用届",
+            "value": "事業所設置後5日以内"
+          },
+          {
+            "label": "被保険者資格取得届",
+            "value": "従業員入社後5日以内"
+          },
+          {
+            "label": "被扶養者（異動）届",
+            "value": "扶養家族がいる場合"
+          }
+        ],
+        "heading": "届出書類と期限"
+      }
+    },
+    {
+      "id": "info-social",
+      "type": "InfoCard",
+      "props": {
+        "type": "info",
+        "heading": "届出先",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "{{pension_office}}（{{pension_office_phone}}）"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-labor",
+      "type": "Section",
+      "props": {
+        "heading": "労働保険（労災保険・雇用保険）",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "労働者を1人でも雇用する事業所は労災保険の加入が必要です。週20時間以上働く従業員を雇用する場合は雇用保険も加入義務があります。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "table-labor-workers",
+      "type": "Table",
+      "props": {
+        "rows": [
+          {
+            "label": "労災保険関係成立届",
+            "value": "保険関係成立後10日以内（労働基準監督署）"
+          },
+          {
+            "label": "労働保険概算保険料申告書",
+            "value": "保険関係成立後50日以内（労働基準監督署）"
+          },
+          {
+            "label": "雇用保険適用事業所設置届",
+            "value": "設置後10日以内（ハローワーク）"
+          },
+          {
+            "label": "雇用保険被保険者資格取得届",
+            "value": "入社翌月10日まで（ハローワーク）"
+          }
+        ],
+        "heading": "届出書類と届出先"
+      }
+    },
+    {
+      "id": "section-premium",
+      "type": "Section",
+      "props": {
+        "heading": "保険料の負担",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "保険料は事業主と従業員が分担して負担します（労災保険は全額事業主負担）。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "table-premium",
+      "type": "Table",
+      "props": {
+        "rows": [
+          {
+            "label": "健康保険",
+            "value": "事業主・従業員で折半"
+          },
+          {
+            "label": "厚生年金保険",
+            "value": "事業主・従業員で折半"
+          },
+          {
+            "label": "労災保険",
+            "value": "全額事業主負担"
+          },
+          {
+            "label": "雇用保険",
+            "value": "事業主・従業員で分担（事業主負担が多い）"
+          }
+        ],
+        "heading": "保険料負担割合"
+      }
+    },
+    {
+      "id": "info-penalty",
+      "type": "InfoCard",
+      "props": {
+        "type": "warning",
+        "heading": "未加入のリスク",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "社会保険・労働保険に未加入の場合、過去2年分の保険料を遡及徴収される場合があります。また、労災事故が発生した場合は事業主が補償責任を負うことになります。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "related-links-1",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "法人設立",
+            "href": "/incorporation"
+          },
+          {
+            "title": "法人税",
+            "href": "/corporate-tax"
+          },
+          {
+            "title": "雇用保険",
+            "href": "/unemployment-insurance"
+          },
+          {
+            "title": "育児・介護休業",
+            "href": "/family-leave"
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-対象-1769919363139",
+      "type": "Section",
+      "props": {
+        "heading": "社会保険・労働保険の対象となる方",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "詳細は担当課にお問い合わせください。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-必要-1769919363139",
+      "type": "Section",
+      "props": {
+        "heading": "社会保険・労働保険に必要なもの",
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "本人確認書類（マイナンバーカード、運転免許証など）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "印鑑（認印可）"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-方法-1769919363139",
+      "type": "Section",
+      "props": {
+        "heading": "社会保険・労働保険の手続き方法",
+        "content": [
+          {
+            "type": "list",
+            "ordered": true,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "必要書類を準備します。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "窓口で申請書を記入します。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "書類を提出し、確認を受けます。"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{pension_office}}",
+        "phone": "{{pension_office_phone}}",
+        "address": "{{pension_office_address}}"
+      }
+    },
+    {
+      "id": "terms-1769919363139",
+      "type": "Section",
+      "props": {
+        "heading": "用語の説明",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "被保険者",
+                "bold": true
+              },
+              {
+                "text": "：保険に加入している方"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "被扶養者",
+                "bold": true
+              },
+              {
+                "text": "：養われている人"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
+      }
+    }
+  ],
+  "search": {
+    "summary": "社会保険・労働保険の案内。健康保険、厚生年金、労災保険、雇用保険の加入手続きと届出先。",
+    "keywords": [
+      "社会保険",
+      "労働保険",
+      "健康保険",
+      "厚生年金",
+      "労災保険",
+      "雇用保険",
+      "新規適用届",
+      "資格取得届"
+    ],
+    "plain_text": "社会保険・労働保険。社会保険は年金事務所、労災保険は労働基準監督署、雇用保険はハローワークへ届出。法人事業所は強制適用、個人事業所は5人以上で強制適用。"
+  }
+}

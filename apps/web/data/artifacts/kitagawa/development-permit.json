@@ -1,0 +1,343 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "kitagawa-services-land-development-permit",
+  "municipality_id": "kitagawa",
+  "path": "/development-permit",
+  "title": "開発許可",
+  "description": "開発行為の許可申請、宅地造成許可、盛土規制",
+  "content_type": "guide",
+  "service_category": "environment",
+  "audience": [
+    "businesses"
+  ],
+  "topic": [],
+  "source": {
+    "source_url": "template://kitagawa/services/land/development-permit",
+    "fetched_at": "2026-02-03T01:50:20.009Z",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "2026-02-03T01:50:20.009Z",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "土地・農林水産",
+            "href": "/land"
+          },
+          {
+            "label": "開発許可",
+            "href": "/development-permit"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "開発許可"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "建物の建築を目的とした土地の区画形質の変更（開発行為）には、許可が必要な場合があります。"
+      }
+    },
+    {
+      "id": "section-yyop3o2ov",
+      "type": "Section",
+      "props": {
+        "heading": "開発許可とは",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "都市計画法に基づき、建築物の建築を目的とした土地の区画形質の変更（切土・盛土、道路築造など）を行う場合に必要な許可です。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-noif8qlcb",
+      "type": "Section",
+      "props": {
+        "heading": "許可が必要な規模",
+        "level": 2,
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "市街化区域",
+                      "bold": true
+                    },
+                    {
+                      "text": "：1,000㎡以上（三大都市圏は500㎡以上）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "市街化調整区域",
+                      "bold": true
+                    },
+                    {
+                      "text": "：原則としてすべての開発行為"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "非線引き区域",
+                      "bold": true
+                    },
+                    {
+                      "text": "：3,000㎡以上"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "都市計画区域外",
+                      "bold": true
+                    },
+                    {
+                      "text": "：10,000㎡以上"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-dyw9qkrih",
+      "type": "Section",
+      "props": {
+        "heading": "許可基準",
+        "level": 2,
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "道路、公園、排水施設等の整備"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "地盤の安全性（切土・盛土の勾配基準など）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "申請者に開発を完了させる資力・信用"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-0qgg17lwp",
+      "type": "Section",
+      "props": {
+        "heading": "盛土規制法",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "令和5年5月施行の盛土規制法により、盛土等を行う場合は規制区域の確認と許可申請が必要な場合があります。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-hlknqfkal",
+      "type": "Section",
+      "props": {
+        "heading": "事前相談",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "開発計画がある場合は、事業着手前にご相談ください。許可の要否、必要書類などをご案内します。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "related-links-jwntw3896",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "都市計画",
+            "href": "/urban-planning"
+          },
+          {
+            "title": "建築確認申請",
+            "href": "/building-permit"
+          },
+          {
+            "title": "農地転用",
+            "href": "/farmland-conversion"
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-対象-1769919363182",
+      "type": "Section",
+      "props": {
+        "heading": "開発許可の対象となる方",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "詳細は担当課にお問い合わせください。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-方法-1769919363182",
+      "type": "Section",
+      "props": {
+        "heading": "開発許可の手続き方法",
+        "content": [
+          {
+            "type": "list",
+            "ordered": true,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "必要書類を準備します。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "窓口で申請書を記入します。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "書類を提出し、確認を受けます。"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{development_department}}",
+        "phone": "{{development_phone}}",
+        "email": "{{development_email}}",
+        "hours": "{{city_hall_hours}}",
+        "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
+      }
+    }
+  ],
+  "search": {
+    "summary": "開発許可の案内。開発行為の許可申請、許可基準、盛土規制。",
+    "keywords": [
+      "開発許可",
+      "開発行為",
+      "宅地造成",
+      "盛土規制",
+      "都市計画法"
+    ],
+    "plain_text": "開発許可。建築目的の土地の区画形質変更には許可が必要。市街化区域1000㎡以上、市街化調整区域は原則すべて。"
+  }
+}

@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "page_id": "sample-services-employment-harassment",
   "municipality_id": "sample",
-  "path": "/services/employment/harassment",
+  "path": "/harassment",
   "title": "ハラスメント対策",
   "description": "パワハラ・セクハラ・マタハラ等の相談窓口",
   "content_type": "guide",
@@ -33,11 +33,11 @@
           },
           {
             "label": "仕事・労働",
-            "href": "/topics/employment"
+            "href": "/employment"
           },
           {
             "label": "ハラスメント対策",
-            "href": "/services/employment/harassment"
+            "href": "/harassment"
           }
         ]
       }
@@ -199,15 +199,15 @@
         "items": [
           {
             "title": "労働相談",
-            "href": "/services/employment/labor-consultation"
+            "href": "/labor-consultation"
           },
           {
             "title": "労働基準",
-            "href": "/services/employment/labor-standards"
+            "href": "/labor-standards"
           },
           {
             "title": "法律相談",
-            "href": "/services/civic/legal-support"
+            "href": "/legal-support"
           }
         ]
       }

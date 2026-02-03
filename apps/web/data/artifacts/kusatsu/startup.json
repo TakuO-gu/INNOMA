@@ -1,0 +1,304 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "kusatsu-services-business-startup",
+  "municipality_id": "kusatsu",
+  "path": "/startup",
+  "title": "起業・創業支援",
+  "description": "創業相談、起業セミナー、インキュベーション施設",
+  "content_type": "guide",
+  "service_category": "business",
+  "audience": [
+    "residents",
+    "businesses"
+  ],
+  "topic": [],
+  "source": {
+    "source_url": "template://kusatsu/services/business/startup",
+    "fetched_at": "2026-02-03T01:50:20.043Z",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "2026-02-03T01:50:20.043Z",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "事業・経営",
+            "href": "/business"
+          },
+          {
+            "label": "起業・創業支援",
+            "href": "/startup"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "起業・創業支援"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "草津町では、新たに事業を始める方を様々な形で支援しています。創業相談、セミナー、補助金、融資制度などをご活用ください。"
+      }
+    },
+    {
+      "id": "section-vbhbzr4bv",
+      "type": "Section",
+      "props": {
+        "heading": "創業相談",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "商工会・商工会議所、中小企業診断士などの専門家が、事業計画の作成、資金調達、販路開拓などの相談に応じます。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-6p5apejux",
+      "type": "Section",
+      "props": {
+        "heading": "創業セミナー・スクール",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "創業に必要な知識（経営、財務、マーケティング、法務など）を学べるセミナーを開催しています。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-28ydxm0t8",
+      "type": "Section",
+      "props": {
+        "heading": "創業融資",
+        "level": 2,
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "日本政策金融公庫「新創業融資制度」",
+                      "bold": true
+                    },
+                    {
+                      "text": "：無担保・無保証人で最大3,000万円"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "{{prefecture_name}}制度融資「創業支援資金」",
+                      "bold": true
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "草津町創業支援融資",
+                      "bold": true
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "related-links-pejebmv0d",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "法人設立",
+            "href": "/incorporation"
+          },
+          {
+            "title": "個人事業主",
+            "href": "/sole-proprietor"
+          },
+          {
+            "title": "補助金・助成金",
+            "href": "/subsidies"
+          },
+          {
+            "title": "融資制度",
+            "href": "/financing"
+          },
+          {
+            "title": "許認可申請",
+            "href": "/permits"
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-対象-1769919363147",
+      "type": "Section",
+      "props": {
+        "heading": "起業・創業支援の対象となる方",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "詳細は担当課にお問い合わせください。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-必要-1769919363147",
+      "type": "Section",
+      "props": {
+        "heading": "起業・創業支援に必要なもの",
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "本人確認書類（マイナンバーカード、運転免許証など）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "印鑑（認印可）"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-方法-1769919363147",
+      "type": "Section",
+      "props": {
+        "heading": "起業・創業支援の手続き方法",
+        "content": [
+          {
+            "type": "list",
+            "ordered": true,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "必要書類を準備します。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "窓口で申請書を記入します。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "書類を提出し、確認を受けます。"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{business_department}}",
+        "phone": "{{business_phone}}",
+        "email": "{{business_email}}",
+        "hours": "{{city_hall_hours}}",
+        "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
+      }
+    }
+  ],
+  "search": {
+    "summary": "起業・創業支援の案内。創業相談、創業セミナー、創業融資。",
+    "keywords": [
+      "起業",
+      "創業",
+      "スタートアップ",
+      "創業融資",
+      "創業相談",
+      "創業支援"
+    ],
+    "plain_text": "起業・創業支援。創業相談、創業セミナー、創業融資（日本政策金融公庫、制度融資）のご案内。"
+  }
+}

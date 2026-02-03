@@ -1,0 +1,307 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "atami-services-land-urban-planning",
+  "municipality_id": "atami",
+  "path": "/urban-planning",
+  "title": "都市計画・用途地域",
+  "description": "都市計画区域、用途地域、建ぺい率・容積率",
+  "content_type": "guide",
+  "service_category": "environment",
+  "audience": [
+    "residents",
+    "businesses"
+  ],
+  "topic": [],
+  "source": {
+    "source_url": "template://atami/services/land/urban-planning",
+    "fetched_at": "2026-02-03T01:50:19.434Z",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "2026-02-03T01:50:19.434Z",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "土地・農林水産",
+            "href": "/land"
+          },
+          {
+            "label": "都市計画・用途地域",
+            "href": "/urban-planning"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "都市計画・用途地域"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "土地を利用する際に関係する都市計画、用途地域、建築制限についてご案内します。"
+      }
+    },
+    {
+      "id": "section-32oaretr1-desclist",
+      "type": "DescriptionList",
+      "props": {
+        "items": [
+          {
+            "term": "市街化区域",
+            "description": "すでに市街地または優先的に市街化すべき区域"
+          },
+          {
+            "term": "市街化調整区域",
+            "description": "市街化を抑制すべき区域（原則として建物を建てられない）"
+          },
+          {
+            "term": "非線引き区域",
+            "description": "区域区分が定められていない区域"
+          }
+        ],
+        "heading": "都市計画区域"
+      }
+    },
+    {
+      "id": "section-zrwi58a73",
+      "type": "Section",
+      "props": {
+        "heading": "用途地域",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "市街化区域では、土地の用途に応じて13種類の用途地域が指定されています。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-zrwi58a73-desclist",
+      "type": "DescriptionList",
+      "props": {
+        "items": [
+          {
+            "term": "住居系（8種）",
+            "description": "第一種低層住居専用地域など"
+          },
+          {
+            "term": "商業系（2種）",
+            "description": "近隣商業地域、商業地域"
+          },
+          {
+            "term": "工業系（3種）",
+            "description": "準工業地域、工業地域、工業専用地域"
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-oh76btqob",
+      "type": "Section",
+      "props": {
+        "heading": "建ぺい率・容積率",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "用途地域ごとに、敷地に対する建築面積の割合（建ぺい率）と延べ床面積の割合（容積率）が定められています。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-b6a8nknug",
+      "type": "Section",
+      "props": {
+        "heading": "都市計画の確認",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "土地の都市計画情報（用途地域、建ぺい率、容積率、道路幅員など）は、都市計画課窓口または都市計画図でご確認いただけます。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "related-links-snun9kszq",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "開発許可",
+            "href": "/development-permit"
+          },
+          {
+            "title": "建築確認申請",
+            "href": "/building-permit"
+          },
+          {
+            "title": "農地転用",
+            "href": "/farmland-conversion"
+          },
+          {
+            "title": "固定資産税",
+            "href": "/kotei"
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-対象-1769919363186",
+      "type": "Section",
+      "props": {
+        "heading": "都市計画・用途地域の対象となる方",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "詳細は担当課にお問い合わせください。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-必要-1769919363186",
+      "type": "Section",
+      "props": {
+        "heading": "都市計画・用途地域に必要なもの",
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "本人確認書類（マイナンバーカード、運転免許証など）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "印鑑（認印可）"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-方法-1769919363186",
+      "type": "Section",
+      "props": {
+        "heading": "都市計画・用途地域の手続き方法",
+        "content": [
+          {
+            "type": "list",
+            "ordered": true,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "必要書類を準備します。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "窓口で申請書を記入します。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "書類を提出し、確認を受けます。"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{urban_planning_department}}",
+        "phone": "{{urban_planning_phone}}",
+        "email": "{{urban_planning_email}}",
+        "hours": "{{city_hall_hours}}",
+        "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
+      }
+    }
+  ],
+  "search": {
+    "summary": "都市計画・用途地域の案内。市街化区域、用途地域、建ぺい率・容積率。",
+    "keywords": [
+      "都市計画",
+      "用途地域",
+      "建ぺい率",
+      "容積率",
+      "市街化区域",
+      "市街化調整区域"
+    ],
+    "plain_text": "都市計画・用途地域。市街化区域、市街化調整区域、用途地域の説明。建ぺい率・容積率の制限あり。"
+  }
+}

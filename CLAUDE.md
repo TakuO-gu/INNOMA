@@ -22,6 +22,7 @@
 | [docs/specs/API_REFERENCE.md](docs/specs/API_REFERENCE.md) | APIを実装するとき |
 | [docs/specs/DATA_STRUCTURES.md](docs/specs/DATA_STRUCTURES.md) | データ構造を扱うとき |
 | [docs/guides/COMPONENT_SELECTION_LOGIC.md](docs/guides/COMPONENT_SELECTION_LOGIC.md) | コンポーネント選択時 |
+| [docs/guides/CONTENT_ITEM_CREATION.md](docs/guides/CONTENT_ITEM_CREATION.md) | Content Item作成時 |
 | [docs/architecture/INNOMA_FlowChart.md](docs/architecture/INNOMA_FlowChart.md) | アーキテクチャを確認したいとき |
 
 ---
@@ -89,9 +90,9 @@ UIコンポーネント実装時はデジタル庁デザインシステム（DAD
 
 ---
 
-## サービスページ作成チェックリスト
+## Content Item 作成チェックリスト
 
-**新しいサービスページを作成したら、以下の3ステップを必ず実行すること:**
+**新しい Content Item（末端ページ）を作成したら、以下の3ステップを必ず実行すること:**
 
 ### 1. コンテンツ整合性チェック
 

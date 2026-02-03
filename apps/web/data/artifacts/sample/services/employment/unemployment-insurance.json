@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "page_id": "sample-services-employment-unemployment-insurance",
   "municipality_id": "sample",
-  "path": "/services/employment/unemployment-insurance",
+  "path": "/unemployment-insurance",
   "title": "雇用保険・失業給付",
   "description": "失業給付（基本手当）、再就職手当、教育訓練給付金",
   "content_type": "guide",
@@ -33,11 +33,11 @@
           },
           {
             "label": "仕事・労働",
-            "href": "/topics/employment"
+            "href": "/employment"
           },
           {
             "label": "雇用保険・失業給付",
-            "href": "/services/employment/unemployment-insurance"
+            "href": "/unemployment-insurance"
           }
         ]
       }
@@ -173,23 +173,23 @@
         "items": [
           {
             "title": "ハローワーク",
-            "href": "/services/employment/hello-work"
+            "href": "/hello-work"
           },
           {
             "title": "職業訓練",
-            "href": "/services/employment/vocational-training"
+            "href": "/vocational-training"
           },
           {
             "title": "就職支援",
-            "href": "/services/employment/career-support"
+            "href": "/career-support"
           },
           {
             "title": "国民健康保険",
-            "href": "/services/health/kokuho"
+            "href": "/kokuho"
           },
           {
             "title": "年金",
-            "href": "/services/benefits/nenkin"
+            "href": "/nenkin"
           }
         ]
       }

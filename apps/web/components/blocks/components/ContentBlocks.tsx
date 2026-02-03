@@ -46,7 +46,7 @@ export function RawContentBlock({ props }: { props: Record<string, unknown> }) {
         const Tag = `h${Math.min(h.level + 1, 6)}` as keyof JSX.IntrinsicElements;
         const sizeClass = getHeadingSizeClass(h.level + 1);
         return (
-          <Tag key={`h-${i}`} className={sizeClass}>{h.text}</Tag>
+          <Tag key={`h-${i}`} className={`${sizeClass} budoux`}>{budouxParse(h.text)}</Tag>
         );
       })}
 
@@ -90,7 +90,7 @@ export function RawContentBlock({ props }: { props: Record<string, unknown> }) {
 
       {links.length > 0 && (
         <div className="mt-4">
-          <h3 className="text-std-17B-170 text-solid-gray-900 mb-2">関連リンク</h3>
+          <h3 className="text-std-17B-170 text-solid-gray-900 mb-2 budoux">{budouxParse("関連リンク")}</h3>
           <ul className="space-y-1">
             {links.map((link, i) => {
               const isExternal = link.href.startsWith("mailto:") || link.href.startsWith("http");
@@ -173,7 +173,7 @@ export function DescriptionListBlock({ props }: { props: Record<string, unknown>
   return (
     <div className="mt-12 description-list-block mb-6">
       {heading && (
-        <h3 className="text-std-20B-150 text-solid-gray-900 mb-4">{heading}</h3>
+        <h3 className="text-std-20B-150 text-solid-gray-900 mb-4 budoux">{budouxParse(heading)}</h3>
       )}
       <dl className="space-y-3">
         {items.map((item, i) => (
@@ -254,7 +254,7 @@ export function CardBlock({ props }: { props: Record<string, unknown> }) {
         </div>
       )}
       <div className="p-4">
-        <h3 className="text-std-17B-170 text-solid-gray-900 mb-2">{title}</h3>
+        <h3 className="text-std-17B-170 text-solid-gray-900 mb-2 budoux">{budouxParse(title)}</h3>
         {description && (
           <p className="text-std-14N-170 text-solid-gray-600">{description}</p>
         )}

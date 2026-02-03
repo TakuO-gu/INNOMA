@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "page_id": "sample-services-driving-parking",
   "municipality_id": "sample",
-  "path": "/services/driving/parking",
+  "path": "/parking",
   "title": "市営駐車場・駐輪場",
   "description": "サンプル市の公営駐車場・駐輪場の利用案内",
   "content_type": "guide",
@@ -33,11 +33,11 @@
           },
           {
             "label": "運転・車両",
-            "href": "/topics/driving"
+            "href": "/driving"
           },
           {
             "label": "市営駐車場・駐輪場",
-            "href": "/services/driving/parking"
+            "href": "/parking"
           }
         ]
       }

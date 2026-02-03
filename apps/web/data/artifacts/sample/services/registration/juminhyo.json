@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "page_id": "sample-services-registration-juminhyo",
   "municipality_id": "sample",
-  "path": "/services/registration/juminhyo",
+  "path": "/juminhyo",
   "title": "住民票の写し",
   "description": "住民票の写しの取得方法、必要書類、手数料について",
   "content_type": "guide",
@@ -33,11 +33,11 @@
           },
           {
             "label": "届出・証明",
-            "href": "/topics/registration"
+            "href": "/registration"
           },
           {
             "label": "住民票の写し",
-            "href": "/services/registration/juminhyo"
+            "href": "/juminhyo"
           }
         ]
       }
@@ -364,23 +364,23 @@
         "items": [
           {
             "title": "印鑑登録",
-            "href": "/services/registration/inkan"
+            "href": "/inkan"
           },
           {
             "title": "戸籍",
-            "href": "/services/registration/koseki"
+            "href": "/koseki"
           },
           {
             "title": "マイナンバーカード",
-            "href": "/services/registration/mynumber"
+            "href": "/mynumber"
           },
           {
             "title": "転入届",
-            "href": "/services/registration/tennyu"
+            "href": "/tennyu"
           },
           {
             "title": "転出届",
-            "href": "/services/registration/tenshutsu"
+            "href": "/tenshutsu"
           }
         ]
       }

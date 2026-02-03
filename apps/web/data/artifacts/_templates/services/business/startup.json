@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "page_id": "sample-services-business-startup",
   "municipality_id": "sample",
-  "path": "/services/business/startup",
+  "path": "/startup",
   "title": "起業・創業支援",
   "description": "創業相談、起業セミナー、インキュベーション施設",
   "content_type": "guide",
@@ -34,11 +34,11 @@
           },
           {
             "label": "事業・経営",
-            "href": "/topics/business"
+            "href": "/business"
           },
           {
             "label": "起業・創業支援",
-            "href": "/services/business/startup"
+            "href": "/startup"
           }
         ]
       }
@@ -152,23 +152,23 @@
         "items": [
           {
             "title": "法人設立",
-            "href": "/services/business/incorporation"
+            "href": "/incorporation"
           },
           {
             "title": "個人事業主",
-            "href": "/services/business/sole-proprietor"
+            "href": "/sole-proprietor"
           },
           {
             "title": "補助金・助成金",
-            "href": "/services/business/subsidies"
+            "href": "/subsidies"
           },
           {
             "title": "融資制度",
-            "href": "/services/business/financing"
+            "href": "/financing"
           },
           {
             "title": "許認可申請",
-            "href": "/services/business/permits"
+            "href": "/permits"
           }
         ]
       }

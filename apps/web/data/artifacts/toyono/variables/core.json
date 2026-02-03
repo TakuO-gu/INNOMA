@@ -237,5 +237,40 @@
     "sourceUrl": "https://www.town.toyono.osaka.jp/section.php",
     "confidence": 0.95,
     "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "city_hall_hours": {
+    "value": "午前9時から午後5時30分まで（土曜日、日曜日、祝日、12月29日～1月3日を除く）",
+    "source": "llm",
+    "sourceUrl": "https://www.town.toyono.osaka.jp/",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-03T00:00:00.000Z"
+  },
+  "kaigo_department": {
+    "value": "保険課",
+    "source": "llm",
+    "sourceUrl": "https://www.town.toyono.osaka.jp/section.php",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-03T00:00:00.000Z"
+  },
+  "kaigo_phone": {
+    "value": "072-739-3421",
+    "source": "llm",
+    "sourceUrl": "https://www.town.toyono.osaka.jp/section.php",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-03T00:00:00.000Z"
+  },
+  "zeimu_department": {
+    "value": "税務課",
+    "source": "llm",
+    "sourceUrl": "https://www.town.toyono.osaka.jp/section.php",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-03T00:00:00.000Z"
+  },
+  "zeimu_phone": {
+    "value": "072-739-3417",
+    "source": "llm",
+    "sourceUrl": "https://www.town.toyono.osaka.jp/section.php",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-03T00:00:00.000Z"
   }
 }

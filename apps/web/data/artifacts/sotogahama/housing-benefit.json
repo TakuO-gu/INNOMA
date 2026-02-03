@@ -1,0 +1,314 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "sotogahama-services-housing-housing-benefit",
+  "municipality_id": "sotogahama",
+  "path": "/housing-benefit",
+  "title": "住居確保給付金",
+  "description": "離職等により住居を失うおそれがある方への家賃相当額の支給",
+  "content_type": "guide",
+  "service_category": "housing",
+  "audience": [
+    "residents"
+  ],
+  "topic": [],
+  "source": {
+    "source_url": "template://sotogahama/services/housing/housing-benefit",
+    "fetched_at": "2026-02-03T01:50:20.363Z",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "2026-02-03T01:50:20.363Z",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "住まい・引越し",
+            "href": "/housing"
+          },
+          {
+            "label": "住居確保給付金",
+            "href": "/housing-benefit"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "住居確保給付金"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "離職・廃業から2年以内の方、または休業等により収入が減少した方で、住居を失うおそれがある場合に、家賃相当額を支給します。"
+      }
+    },
+    {
+      "id": "section-q4k1uqm5n",
+      "type": "Section",
+      "props": {
+        "heading": "支給対象者",
+        "level": 2,
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "離職・廃業後2年以内の方"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "または、休業等により収入が減少し、離職等と同程度の状況にある方"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "収入・資産が一定額以下の方"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "ハローワークへの求職申込み・誠実かつ熱心に求職活動を行う方"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-r27eafeqo",
+      "type": "Section",
+      "props": {
+        "heading": "支給額",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "家賃相当額を支給します（世帯人数に応じた上限額があります）。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "支給上限額：単身世帯 {{housing_benefit_single}}円、2人世帯 {{housing_benefit_couple}}円"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-a2jl6tszy",
+      "type": "Section",
+      "props": {
+        "heading": "支給期間",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "原則3か月（最長9か月まで延長可能）"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "table-1",
+      "type": "Table",
+      "props": {
+        "rows": [
+          {
+            "label": "支給期間",
+            "value": "原則3か月（最長9か月）"
+          },
+          {
+            "label": "支給方法",
+            "value": "家主または不動産会社へ直接振込"
+          },
+          {
+            "label": "申請先",
+            "value": "自立相談支援窓口"
+          }
+        ]
+      }
+    },
+    {
+      "id": "related-links-t5reitbze",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "公営住宅",
+            "href": "/public-housing"
+          },
+          {
+            "title": "生活保護",
+            "href": "/seikatsu-hogo"
+          },
+          {
+            "title": "ハローワーク",
+            "href": "/hello-work"
+          },
+          {
+            "title": "雇用保険",
+            "href": "/unemployment-insurance"
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-必要-1769919363177",
+      "type": "Section",
+      "props": {
+        "heading": "住居確保給付金に必要なもの",
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "本人確認書類（マイナンバーカード、運転免許証など）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "印鑑（認印可）"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-方法-1769919363177",
+      "type": "Section",
+      "props": {
+        "heading": "住居確保給付金の手続き方法",
+        "content": [
+          {
+            "type": "list",
+            "ordered": true,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "必要書類を準備します。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "窓口で申請書を記入します。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "書類を提出し、確認を受けます。"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{welfare_department}}",
+        "phone": "{{welfare_phone}}",
+        "email": "{{welfare_email}}",
+        "hours": "{{city_hall_hours}}",
+        "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
+      }
+    }
+  ],
+  "search": {
+    "summary": "住居確保給付金の案内。離職・廃業・休業等で収入が減少し住居を失うおそれがある方への家賃支援。",
+    "keywords": [
+      "住居確保給付金",
+      "家賃支援",
+      "離職",
+      "失業",
+      "休業",
+      "家賃補助"
+    ],
+    "plain_text": "住居確保給付金。離職・廃業後2年以内または休業等で収入減少した方に家賃相当額を支給。原則3か月、最長9か月。"
+  }
+}

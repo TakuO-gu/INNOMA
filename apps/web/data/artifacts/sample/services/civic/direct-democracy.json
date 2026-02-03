@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "page_id": "sample-services-civic-direct-democracy",
   "municipality_id": "sample",
-  "path": "/services/civic/direct-democracy",
+  "path": "/direct-democracy",
   "title": "直接請求",
   "description": "条例の制定・改廃請求、解職請求、住民投票",
   "content_type": "guide",
@@ -33,11 +33,11 @@
           },
           {
             "label": "市民参加・権利行使",
-            "href": "/topics/civic"
+            "href": "/civic"
           },
           {
             "label": "直接請求",
-            "href": "/services/civic/direct-democracy"
+            "href": "/direct-democracy"
           }
         ]
       }
@@ -265,15 +265,15 @@
         "items": [
           {
             "title": "パブリックコメント",
-            "href": "/services/civic/public-comment"
+            "href": "/public-comment"
           },
           {
             "title": "選挙",
-            "href": "/services/civic/election"
+            "href": "/election"
           },
           {
             "title": "監査請求",
-            "href": "/services/civic/audit-request"
+            "href": "/audit-request"
           }
         ]
       }

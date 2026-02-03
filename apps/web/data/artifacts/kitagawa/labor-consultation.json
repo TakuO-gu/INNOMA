@@ -1,0 +1,253 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "kitagawa-services-employment-labor-consultation",
+  "municipality_id": "kitagawa",
+  "path": "/labor-consultation",
+  "title": "労働相談・労働紛争",
+  "description": "総合労働相談コーナー、あっせん、労働審判",
+  "content_type": "guide",
+  "service_category": "business",
+  "audience": [
+    "residents"
+  ],
+  "topic": [],
+  "source": {
+    "source_url": "template://kitagawa/services/employment/labor-consultation",
+    "fetched_at": "2026-02-03T01:50:19.998Z",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "2026-02-03T01:50:19.998Z",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "仕事・労働",
+            "href": "/employment"
+          },
+          {
+            "label": "労働相談・労働紛争",
+            "href": "/labor-consultation"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "労働相談・労働紛争"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "職場のトラブル、解雇、賃金未払い、ハラスメントなど労働問題についての相談窓口と解決手段をご案内します。"
+      }
+    },
+    {
+      "id": "section-wjm283qh5",
+      "type": "Section",
+      "props": {
+        "heading": "総合労働相談コーナー",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "労働局や労働基準監督署に設置。"
+              },
+              {
+                "text": "労働問題全般について、専門の相談員が対応します。"
+              },
+              {
+                "text": "解雇、賃金不払い、配置転換、いじめ・嫌がらせなど、あらゆる労働問題を相談できます。"
+              },
+              {
+                "text": "相談無料。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-snk9jn0pw-desclist",
+      "type": "DescriptionList",
+      "props": {
+        "items": [
+          {
+            "term": "労働局のあっせん",
+            "description": "中立的な第三者が間に入り話し合いで解決。無料。"
+          },
+          {
+            "term": "労働審判",
+            "description": "裁判所で行う簡易迅速な紛争解決手続き。原則3回以内で審理。"
+          },
+          {
+            "term": "民事訴訟",
+            "description": "裁判所での訴訟。"
+          }
+        ],
+        "heading": "労働問題の解決手段"
+      }
+    },
+    {
+      "id": "related-links-zia4fslrf",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "労働基準",
+            "href": "/labor-standards"
+          },
+          {
+            "title": "ハラスメント",
+            "href": "/harassment"
+          },
+          {
+            "title": "法律相談",
+            "href": "/legal-support"
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-対象-1769919363168",
+      "type": "Section",
+      "props": {
+        "heading": "労働相談・労働紛争の対象となる方",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "詳細は担当課にお問い合わせください。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-必要-1769919363168",
+      "type": "Section",
+      "props": {
+        "heading": "労働相談・労働紛争に必要なもの",
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "本人確認書類（マイナンバーカード、運転免許証など）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "印鑑（認印可）"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-方法-1769919363168",
+      "type": "Section",
+      "props": {
+        "heading": "労働相談・労働紛争の手続き方法",
+        "content": [
+          {
+            "type": "list",
+            "ordered": true,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "必要書類を準備します。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "窓口で申請書を記入します。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "書類を提出し、確認を受けます。"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{labor_bureau}}総合労働相談コーナー",
+        "phone": "{{labor_bureau_phone}}",
+        "address": "{{labor_bureau_address}}"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
+      }
+    }
+  ],
+  "search": {
+    "summary": "労働相談・労働紛争の案内。総合労働相談コーナー、あっせん、労働審判。",
+    "keywords": [
+      "労働相談",
+      "労働紛争",
+      "解雇",
+      "賃金未払い",
+      "あっせん",
+      "労働審判"
+    ],
+    "plain_text": "労働相談・労働紛争。総合労働相談コーナーで労働問題全般を相談可能。あっせん、労働審判、民事訴訟で解決。"
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "registration_department": {
+    "value": "住民課",
+    "source": "llm",
+    "sourceUrl": "https://www.kitagawamura.jp/soshiki/",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-03T00:00:00.000Z"
+  },
+  "registration_phone": {
+    "value": "0887-32-1214",
+    "source": "llm",
+    "sourceUrl": "https://www.kitagawamura.jp/soshiki/",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-03T00:00:00.000Z"
+  },
+  "tax_department": {
+    "value": "住民課",
+    "source": "llm",
+    "sourceUrl": "https://www.kitagawamura.jp/soshiki/",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-03T00:00:00.000Z"
+  },
+  "tax_phone": {
+    "value": "0887-32-1214",
+    "source": "llm",
+    "sourceUrl": "https://www.kitagawamura.jp/soshiki/",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-03T00:00:00.000Z"
+  },
+  "welfare_department": {
+    "value": "住民課",
+    "source": "llm",
+    "sourceUrl": "https://www.kitagawamura.jp/soshiki/",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-03T00:00:00.000Z"
+  },
+  "welfare_phone": {
+    "value": "0887-32-1214",
+    "source": "llm",
+    "sourceUrl": "https://www.kitagawamura.jp/soshiki/",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-03T00:00:00.000Z"
+  },
+  "kaigo_department": {
+    "value": "住民課",
+    "source": "llm",
+    "sourceUrl": "https://www.kitagawamura.jp/soshiki/",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-03T00:00:00.000Z"
+  },
+  "kaigo_phone": {
+    "value": "0887-32-1214",
+    "source": "llm",
+    "sourceUrl": "https://www.kitagawamura.jp/soshiki/",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-03T00:00:00.000Z"
+  },
+  "kosodate_department": {
+    "value": "教育委員会",
+    "source": "llm",
+    "sourceUrl": "https://www.kitagawamura.jp/soshiki/",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-03T00:00:00.000Z"
+  },
+  "kosodate_phone": {
+    "value": "0887-32-1223",
+    "source": "llm",
+    "sourceUrl": "https://www.kitagawamura.jp/soshiki/",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-03T00:00:00.000Z"
+  },
+  "hoken_department": {
+    "value": "住民課",
+    "source": "llm",
+    "sourceUrl": "https://www.kitagawamura.jp/soshiki/",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-03T00:00:00.000Z"
+  },
+  "hoken_phone": {
+    "value": "0887-32-1214",
+    "source": "llm",
+    "sourceUrl": "https://www.kitagawamura.jp/soshiki/",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-03T00:00:00.000Z"
+  },
+  "environment_department": {
+    "value": "住民課",
+    "source": "llm",
+    "sourceUrl": "https://www.kitagawamura.jp/soshiki/",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-03T00:00:00.000Z"
+  },
+  "environment_phone": {
+    "value": "0887-32-1214",
+    "source": "llm",
+    "sourceUrl": "https://www.kitagawamura.jp/soshiki/",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-03T00:00:00.000Z"
+  }
+}

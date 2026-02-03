@@ -1,0 +1,291 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "otaki-services-business-succession",
+  "municipality_id": "otaki",
+  "path": "/succession",
+  "title": "事業承継・M&A",
+  "description": "事業承継税制、後継者育成、M&A支援",
+  "content_type": "guide",
+  "service_category": "business",
+  "audience": [
+    "businesses"
+  ],
+  "topic": [],
+  "source": {
+    "source_url": "template://otaki/services/business/succession",
+    "fetched_at": "2026-02-03T01:50:20.239Z",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "2026-02-03T01:50:20.239Z",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "事業・経営",
+            "href": "/business"
+          },
+          {
+            "label": "事業承継・M&A",
+            "href": "/succession"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "事業承継・M&A"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "事業の引継ぎ（事業承継）やM&Aに関する支援制度をご案内します。早めの準備が円滑な承継につながります。"
+      }
+    },
+    {
+      "id": "section-djbuni3tr-desclist",
+      "type": "DescriptionList",
+      "props": {
+        "items": [
+          {
+            "term": "親族内承継",
+            "description": "子や親族への承継"
+          },
+          {
+            "term": "従業員承継",
+            "description": "役員・従業員への承継"
+          },
+          {
+            "term": "M&A",
+            "description": "第三者への売却・譲渡"
+          }
+        ],
+        "heading": "事業承継の方法"
+      }
+    },
+    {
+      "id": "section-ip2b63piw",
+      "type": "Section",
+      "props": {
+        "heading": "事業承継税制",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "一定の要件を満たすと、株式等の贈与税・相続税の納税が猶予・免除される特例措置があります。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-sv7qol1pk",
+      "type": "Section",
+      "props": {
+        "heading": "相談窓口",
+        "level": 2,
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "{{prefecture_name}}事業承継・引継ぎ支援センター"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "商工会・商工会議所"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "中小企業診断士・税理士"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "related-links-lwslk9nxd",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "法人設立",
+            "href": "/incorporation"
+          },
+          {
+            "title": "廃業届",
+            "href": "/closure"
+          },
+          {
+            "title": "固定資産税",
+            "href": "/kotei"
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-対象-1769919363148",
+      "type": "Section",
+      "props": {
+        "heading": "事業承継・M&Aの対象となる方",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "詳細は担当課にお問い合わせください。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-必要-1769919363148",
+      "type": "Section",
+      "props": {
+        "heading": "事業承継・M&Aに必要なもの",
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "本人確認書類（マイナンバーカード、運転免許証など）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "印鑑（認印可）"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-方法-1769919363148",
+      "type": "Section",
+      "props": {
+        "heading": "事業承継・M&Aの手続き方法",
+        "content": [
+          {
+            "type": "list",
+            "ordered": true,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "必要書類を準備します。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "窓口で申請書を記入します。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "書類を提出し、確認を受けます。"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{business_department}}",
+        "phone": "{{business_phone}}",
+        "email": "{{business_email}}",
+        "hours": "{{city_hall_hours}}",
+        "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
+      }
+    }
+  ],
+  "search": {
+    "summary": "事業承継・M&Aの案内。親族内承継、従業員承継、M&A、事業承継税制。",
+    "keywords": [
+      "事業承継",
+      "M&A",
+      "後継者",
+      "事業承継税制",
+      "事業引継ぎ"
+    ],
+    "plain_text": "事業承継・M&A。親族内承継、従業員承継、M&Aの3つの方法。事業承継税制で贈与税・相続税の猶予・免除。"
+  }
+}

@@ -1,6 +1,7 @@
 "use client";
 
 import { Link } from "@/components/dads";
+import { budouxParse } from "@/components/BudouX";
 
 interface AttachmentItem {
   title: string;
@@ -64,7 +65,7 @@ export function AttachmentsBlock({ props }: AttachmentsBlockProps) {
   if (validItems.length === 0) {
     return (
       <div className="mt-12 attachments-block">
-        <h3 className="text-std-17B-170 text-solid-gray-900 mb-3">{title}</h3>
+        <h3 className="text-std-17B-170 text-solid-gray-900 mb-3 budoux">{budouxParse(title)}</h3>
         <p className="text-sm text-solid-gray-500">
           関連書類のURLは現在設定されていません。
         </p>
@@ -74,7 +75,7 @@ export function AttachmentsBlock({ props }: AttachmentsBlockProps) {
 
   return (
     <div className="mt-12 attachments-block">
-      <h3 className="text-std-17B-170 text-solid-gray-900 mb-3">{title}</h3>
+      <h3 className="text-std-17B-170 text-solid-gray-900 mb-3 budoux">{budouxParse(title)}</h3>
       <ul className="space-y-2">
         {validItems.map((item, index) => {
           const icon = getFileIcon(item.content_type);

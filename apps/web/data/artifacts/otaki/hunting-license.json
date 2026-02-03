@@ -1,0 +1,410 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "otaki-services-land-hunting-license",
+  "municipality_id": "otaki",
+  "path": "/hunting-license",
+  "title": "狩猟免許",
+  "description": "狩猟免許の取得、更新、狩猟者登録",
+  "content_type": "guide",
+  "service_category": "environment",
+  "audience": [
+    "residents"
+  ],
+  "topic": [],
+  "source": {
+    "source_url": "template://otaki/services/land/hunting-license",
+    "fetched_at": "2026-02-03T01:50:20.260Z",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "2026-02-03T01:50:20.260Z",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "土地・農林水産",
+            "href": "/land"
+          },
+          {
+            "label": "狩猟免許",
+            "href": "/hunting-license"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "狩猟免許"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "狩猟を行うために必要な狩猟免許の取得手続きについてご案内します。"
+      }
+    },
+    {
+      "id": "section-7mvfzbups",
+      "type": "Section",
+      "props": {
+        "heading": "狩猟免許の種類",
+        "level": 2,
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "網猟免許",
+                      "bold": true
+                    },
+                    {
+                      "text": "：網を使用した狩猟"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "わな猟免許",
+                      "bold": true
+                    },
+                    {
+                      "text": "：わなを使用した狩猟"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "第一種銃猟免許",
+                      "bold": true
+                    },
+                    {
+                      "text": "：装薬銃（ライフル銃・散弾銃）を使用した狩猟"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "第二種銃猟免許",
+                      "bold": true
+                    },
+                    {
+                      "text": "：空気銃を使用した狩猟"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-qukgg5lc2",
+      "type": "Section",
+      "props": {
+        "heading": "受験資格",
+        "level": 2,
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "網猟・わな猟：18歳以上"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "銃猟：20歳以上"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-rcu6822tt",
+      "type": "Section",
+      "props": {
+        "heading": "試験内容",
+        "level": 2,
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "知識試験（鳥獣の保護管理、関係法令など）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "適性試験（視力、聴力、運動能力）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "技能試験（猟具の取扱い、鳥獣の判別など）"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-ibxwgcljw",
+      "type": "Section",
+      "props": {
+        "heading": "狩猟者登録",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "狩猟免許を取得した後、狩猟を行う都道府県で毎年「狩猟者登録」を受ける必要があります。登録には狩猟税の納付が必要です。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-01p4qdeo3",
+      "type": "Section",
+      "props": {
+        "heading": "狩猟期間",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "11月15日から翌年2月15日まで（北海道は10月1日から翌年1月31日まで）。一部の鳥獣は3月15日まで延長されます。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-jo52ptxy5",
+      "type": "Section",
+      "props": {
+        "heading": "免許取得支援",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "有害鳥獣捕獲の担い手確保のため、狩猟免許取得費用を助成する制度があります。詳しくはお問い合わせください。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "related-links-serjylkfs",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "鳥獣被害対策",
+            "href": "/wildlife-damage"
+          },
+          {
+            "title": "林業",
+            "href": "/forestry"
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-対象-1769919363185",
+      "type": "Section",
+      "props": {
+        "heading": "狩猟免許の対象となる方",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "詳細は担当課にお問い合わせください。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-必要-1769919363185",
+      "type": "Section",
+      "props": {
+        "heading": "狩猟免許に必要なもの",
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "本人確認書類（マイナンバーカード、運転免許証など）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "印鑑（認印可）"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-方法-1769919363185",
+      "type": "Section",
+      "props": {
+        "heading": "狩猟免許の手続き方法",
+        "content": [
+          {
+            "type": "list",
+            "ordered": true,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "必要書類を準備します。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "窓口で申請書を記入します。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "書類を提出し、確認を受けます。"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{wildlife_department}}",
+        "phone": "{{wildlife_phone}}",
+        "email": "{{wildlife_email}}",
+        "hours": "{{city_hall_hours}}",
+        "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
+      }
+    }
+  ],
+  "search": {
+    "summary": "狩猟免許の案内。免許の種類、試験内容、狩猟者登録、取得費用助成。",
+    "keywords": [
+      "狩猟免許",
+      "狩猟者登録",
+      "わな猟",
+      "銃猟",
+      "狩猟税"
+    ],
+    "plain_text": "狩猟免許。わな猟は18歳以上、銃猟は20歳以上。知識・適性・技能試験に合格後、毎年狩猟者登録が必要。"
+  }
+}

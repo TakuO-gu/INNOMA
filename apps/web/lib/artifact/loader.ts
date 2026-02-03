@@ -26,6 +26,7 @@ import {
 import { artifactLogger } from "./logger";
 import { getVariableStore, replaceVariablesWithSources, type VariableSourceInfo } from "@/lib/template";
 import type { Source } from "./innoma-artifact-schema.v2";
+import { getSlugFromFilePath } from "./page-registry";
 
 export type { InnomaArtifactValidated };
 export { invalidateCache, invalidateCacheByPrefix, makeCacheKey };
@@ -255,6 +256,11 @@ export async function listArtifacts(prefix: string = ""): Promise<string[]> {
 /**
  * 完成済みページのパス一覧を取得
  * 未取得変数がないページのみを返す
+ *
+ * GOV.UK方式フラットURL対応:
+ *   - services/health/kokuho.json → /kokuho（page-registry経由）
+ *   - topics/health.json → /health（フラット化）
+ *   - index.json → /
  */
 export const getCompletedPages = cache(async (municipalityId: string): Promise<Set<string>> => {
   const completedPages = new Set<string>();
@@ -267,12 +273,44 @@ export const getCompletedPages = cache(async (municipalityId: string): Promise<S
       allKeys.map(async (key) => {
         const result = await loadArtifact(key, { skipCache: false });
         if (result.success && result.unreplacedVariables.length === 0) {
-          // keyからpathを抽出: "takaoka/services/environment/gomi.json" -> "/services/environment/gomi"
-          const path = "/" + key
+          // keyからファイルパスを抽出: "takaoka/services/health/kokuho.json" -> "services/health/kokuho"
+          const filePath = key
             .replace(`${municipalityId}/`, "")
-            .replace(/\.json$/, "")
-            .replace(/^index$/, "");
-          return path === "/" ? "/" : path;
+            .replace(/\.json$/, "");
+
+          // index.json → /
+          if (filePath === "index") {
+            return "/";
+          }
+
+          // topics/category → /category (フラットURL)
+          if (filePath.startsWith("topics/")) {
+            const slug = getSlugFromFilePath(filePath);
+            if (slug) {
+              return `/${slug}`;
+            }
+            // レジストリにない場合はtopics/以降をスラッグとして使用
+            const parts = filePath.split("/");
+            if (parts.length === 2) {
+              return `/${parts[1]}`;
+            }
+          }
+
+          // services/category/page → /page (フラットURL)
+          if (filePath.startsWith("services/")) {
+            const slug = getSlugFromFilePath(filePath);
+            if (slug) {
+              return `/${slug}`;
+            }
+            // レジストリにない場合はファイル名をスラッグとして使用
+            const parts = filePath.split("/");
+            if (parts.length === 3) {
+              return `/${parts[2]}`;
+            }
+          }
+
+          // その他はそのまま
+          return `/${filePath}`;
         }
         return null;
       })

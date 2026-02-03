@@ -1,8 +1,13 @@
 {
-  "municipalityId": "choshi",
-  "municipalityName": "銚子市",
-  "prefectureName": "千葉県",
-  "officialWebsite": "https://www.city.choshi.chiba.jp/",
+  "id": "choshi",
+  "name": "銚子市",
+  "prefecture": "千葉県",
+  "officialUrl": "https://www.city.choshi.chiba.jp/",
   "createdAt": "2026-01-31T00:00:00.000Z",
-  "updatedAt": "2026-01-31T00:00:00.000Z"
+  "updatedAt": "2026-01-31T00:00:00.000Z",
+  "status": "published",
+  "settings": {
+    "autoPublish": false,
+    "fetchInterval": "manual"
+  }
 }

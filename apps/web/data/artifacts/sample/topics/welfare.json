@@ -1,26 +1,25 @@
 {
   "schema_version": "2.0.0",
-  "page_id": "sample-topics-welfare",
+  "page_id": "sample-welfare",
   "municipality_id": "sample",
-  "path": "/topics/welfare",
-  "title": "福祉・介護",
-  "description": "高齢者福祉、介護サービス、障害者福祉、生活困窮者支援に関する情報",
+  "path": "/welfare",
+  "title": "高齢者向け支援",
+  "description": "介護保険、高齢者福祉サービス、地域包括支援センターに関する情報",
   "content_type": "directory",
   "service_category": "welfare",
   "audience": [
     "residents",
-    "elderly",
-    "disabled"
+    "elderly"
   ],
   "topic": [],
   "source": {
-    "source_url": "template://sample/topics/welfare",
-    "fetched_at": "2026-01-20",
+    "source_url": "template://sample/welfare",
+    "fetched_at": "2026-01-20T10:33:17.311Z",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "2026-01-20",
+    "generated_at": "2026-01-20T10:33:17.311Z",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -34,8 +33,8 @@
             "href": "/"
           },
           {
-            "label": "福祉・介護",
-            "href": "/topics/welfare"
+            "label": "高齢者向け支援",
+            "href": "/welfare"
           }
         ]
       }
@@ -44,45 +43,42 @@
       "id": "title-1",
       "type": "Title",
       "props": {
-        "text": "福祉・介護"
+        "text": "高齢者向け支援"
       }
     },
     {
       "id": "summary-1",
       "type": "Summary",
       "props": {
-        "text": "高齢者福祉、介護サービス、障害者福祉、生活困窮者支援に関する情報をまとめています"
+        "text": "介護保険、高齢者福祉サービス、地域包括支援センターに関する情報をまとめています"
       }
     },
     {
       "id": "topic-list-1",
-      "type": "TopicList",
+      "type": "CardGrid",
       "props": {
+        "variant": "link",
+        "columns": 4,
         "items": [
           {
             "title": "介護保険",
-            "href": "/services/welfare/kaigo",
+            "href": "/kaigo",
             "description": "介護保険の加入・届出・サービス利用"
           },
           {
             "title": "高齢者福祉",
-            "href": "/services/welfare/koureisha",
+            "href": "/koureisha",
             "description": "高齢者向けの福祉サービス・支援"
           },
           {
-            "title": "障害者福祉",
-            "href": "/services/welfare/shogai",
-            "description": "障害者手帳の取得・福祉サービス"
-          },
-          {
-            "title": "生活保護",
-            "href": "/services/welfare/seikatsu-hogo",
-            "description": "生活に困窮したときの支援制度"
-          },
-          {
             "title": "地域包括支援センター",
-            "href": "/services/welfare/houkatsu",
+            "href": "/houkatsu",
             "description": "高齢者の総合相談窓口"
+          },
+          {
+            "title": "後期高齢者医療",
+            "href": "/kouki",
+            "description": "75歳以上の方の医療保険制度"
           }
         ]
       }
@@ -91,9 +87,9 @@
       "id": "contact-1",
       "type": "Contact",
       "props": {
-        "department": "福祉課",
-        "phone": "03-1234-5710",
-        "email": "fukushi@sample-city.lg.jp",
+        "department": "高齢介護課",
+        "phone": "03-1234-5684",
+        "email": "kaigo@sample-city.lg.jp",
         "hours": "平日 8:30〜17:15（土日祝日・年末年始を除く）",
         "address": "〒100-0001 東京都サンプル市中央1-1-1"
       }
@@ -107,16 +103,15 @@
     }
   ],
   "search": {
-    "summary": "福祉・介護に関する情報。介護保険、高齢者福祉、障害者福祉、生活保護の案内。",
+    "summary": "高齢者向け支援に関する情報。介護保険、高齢者福祉、地域包括支援センター、後期高齢者医療の案内。",
     "keywords": [
-      "福祉",
-      "介護",
+      "高齢者",
       "介護保険",
       "高齢者福祉",
-      "障害者福祉",
-      "生活保護",
-      "地域包括支援センター"
+      "地域包括支援センター",
+      "後期高齢者医療",
+      "介護サービス"
     ],
-    "plain_text": "福祉・介護。高齢者福祉、介護サービス、障害者福祉、生活困窮者支援に関する情報。介護保険、高齢者福祉、障害者福祉、生活保護、地域包括支援センター、成年後見制度。"
+    "plain_text": "高齢者向け支援。介護保険、高齢者福祉サービス、地域包括支援センターに関する情報。介護保険、高齢者福祉、地域包括支援センター、後期高齢者医療。"
   }
 }

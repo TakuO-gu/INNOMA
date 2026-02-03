@@ -1,0 +1,30 @@
+{
+  "kaigo_department": {
+    "value": "高齢福祉課",
+    "source": "llm",
+    "sourceUrl": "https://www.town.ide.kyoto.jp/soshiki/index.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-03T00:00:00.000Z"
+  },
+  "kaigo_phone": {
+    "value": "0774-82-2001",
+    "source": "llm",
+    "sourceUrl": "https://www.town.ide.kyoto.jp/soshiki/index.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-03T00:00:00.000Z"
+  },
+  "kosodate_department": {
+    "value": "住民福祉課",
+    "source": "llm",
+    "sourceUrl": "https://www.town.ide.kyoto.jp/soshiki/index.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-03T00:00:00.000Z"
+  },
+  "kosodate_phone": {
+    "value": "0774-82-2001",
+    "source": "llm",
+    "sourceUrl": "https://www.town.ide.kyoto.jp/soshiki/index.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-03T00:00:00.000Z"
+  }
+}

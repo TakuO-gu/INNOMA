@@ -258,5 +258,12 @@
     "sourceUrl": "https://www.town.yoshimi.saitama.jp/gyosei/534.html",
     "confidence": 0.95,
     "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "city_hall_hours": {
+    "value": "月曜日から金曜日（祝日及び年末年始を除く）午前8時30分から午後5時15分",
+    "source": "llm",
+    "sourceUrl": "https://www.town.yoshimi.saitama.jp/",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-03T00:00:00.000Z"
   }
 }

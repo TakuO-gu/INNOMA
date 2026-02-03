@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "page_id": "sample-services-business-subsidies",
   "municipality_id": "sample",
-  "path": "/services/business/subsidies",
+  "path": "/subsidies",
   "title": "補助金・助成金",
   "description": "サンプル市の中小企業向け補助金、国・県の助成制度",
   "content_type": "guide",
@@ -33,11 +33,11 @@
           },
           {
             "label": "事業・経営",
-            "href": "/topics/business"
+            "href": "/business"
           },
           {
             "label": "補助金・助成金",
-            "href": "/services/business/subsidies"
+            "href": "/subsidies"
           }
         ]
       }
@@ -153,19 +153,19 @@
         "items": [
           {
             "title": "融資制度",
-            "href": "/services/business/financing"
+            "href": "/financing"
           },
           {
             "title": "創業支援",
-            "href": "/services/business/startup"
+            "href": "/startup"
           },
           {
             "title": "法人設立",
-            "href": "/services/business/incorporation"
+            "href": "/incorporation"
           },
           {
             "title": "職業訓練",
-            "href": "/services/employment/vocational-training"
+            "href": "/vocational-training"
           }
         ]
       }

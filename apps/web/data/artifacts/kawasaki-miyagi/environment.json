@@ -1,0 +1,112 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "kawasaki-miyagi-environment",
+  "municipality_id": "kawasaki-miyagi",
+  "path": "/environment",
+  "title": "ごみ・リサイクル",
+  "description": "ごみの分別、収集日、粗大ごみ、リサイクルに関する情報",
+  "content_type": "directory",
+  "service_category": "environment",
+  "audience": [
+    "residents"
+  ],
+  "topic": [],
+  "source": {
+    "source_url": "template://kawasaki-miyagi/environment",
+    "fetched_at": "2026-02-03T01:50:19.977Z",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "2026-02-03T01:50:19.977Z",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "ごみ・リサイクル",
+            "href": "/environment"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "ごみ・リサイクル"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "ごみの分別、収集日、粗大ごみ、リサイクルに関する情報をまとめています"
+      }
+    },
+    {
+      "id": "topic-list-1",
+      "type": "CardGrid",
+      "props": {
+        "variant": "link",
+        "columns": 4,
+        "items": [
+          {
+            "title": "ごみの分別・出し方",
+            "href": "/gomi",
+            "description": "家庭ごみの分別方法と収集日"
+          },
+          {
+            "title": "粗大ごみ",
+            "href": "/sodaigomi",
+            "description": "粗大ごみの申込・出し方・手数料"
+          },
+          {
+            "title": "家電リサイクル",
+            "href": "/kaden-recycle",
+            "description": "テレビ、冷蔵庫、洗濯機、エアコンの処分"
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{environment_department}}",
+        "phone": "{{environment_phone}}",
+        "email": "{{environment_email}}",
+        "hours": "{{city_hall_hours}}",
+        "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
+      }
+    }
+  ],
+  "search": {
+    "summary": "ごみ・リサイクルに関する情報。ごみの分別、収集日、粗大ごみ、家電リサイクルの案内。",
+    "keywords": [
+      "ごみ",
+      "分別",
+      "収集日",
+      "粗大ごみ",
+      "リサイクル",
+      "家電リサイクル",
+      "資源"
+    ],
+    "plain_text": "ごみ・リサイクル。ごみの分別、収集日、粗大ごみ、リサイクルに関する情報。ごみの分別・出し方、粗大ごみ、家電リサイクル。"
+  }
+}

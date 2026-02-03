@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "page_id": "sample-services-land-farmland-conversion",
   "municipality_id": "sample",
-  "path": "/services/land/farmland-conversion",
+  "path": "/farmland-conversion",
   "title": "農地転用",
   "description": "農地転用許可、届出、農振除外の手続き",
   "content_type": "guide",
@@ -34,11 +34,11 @@
           },
           {
             "label": "土地・農林水産",
-            "href": "/topics/land"
+            "href": "/land"
           },
           {
             "label": "農地転用",
-            "href": "/services/land/farmland-conversion"
+            "href": "/farmland-conversion"
           }
         ]
       }
@@ -181,15 +181,15 @@
         "items": [
           {
             "title": "農業委員会",
-            "href": "/services/land/agricultural-committee"
+            "href": "/agricultural-committee"
           },
           {
             "title": "開発許可",
-            "href": "/services/land/development-permit"
+            "href": "/development-permit"
           },
           {
             "title": "都市計画",
-            "href": "/services/land/urban-planning"
+            "href": "/urban-planning"
           }
         ]
       }

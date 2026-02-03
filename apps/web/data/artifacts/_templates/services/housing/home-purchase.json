@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "page_id": "sample-services-housing-home-purchase",
   "municipality_id": "sample",
-  "path": "/services/housing/home-purchase",
+  "path": "/home-purchase",
   "title": "住宅取得支援",
   "description": "住宅ローン減税、すまい給付金、住宅取得等資金贈与の非課税",
   "content_type": "guide",
@@ -33,11 +33,11 @@
           },
           {
             "label": "住まい・引越し",
-            "href": "/topics/housing"
+            "href": "/housing"
           },
           {
             "label": "住宅取得支援",
-            "href": "/services/housing/home-purchase"
+            "href": "/home-purchase"
           }
         ]
       }
@@ -161,27 +161,27 @@
         "items": [
           {
             "title": "不動産登記",
-            "href": "/services/housing/property-registration"
+            "href": "/property-registration"
           },
           {
             "title": "建築確認申請",
-            "href": "/services/housing/building-permit"
+            "href": "/building-permit"
           },
           {
             "title": "固定資産税",
-            "href": "/services/tax/kotei"
+            "href": "/kotei"
           },
           {
             "title": "印鑑登録",
-            "href": "/services/registration/inkan"
+            "href": "/inkan"
           },
           {
             "title": "リフォーム補助",
-            "href": "/services/housing/reform-subsidy"
+            "href": "/reform-subsidy"
           },
           {
             "title": "耐震改修",
-            "href": "/services/housing/seismic-retrofit"
+            "href": "/seismic-retrofit"
           }
         ]
       }

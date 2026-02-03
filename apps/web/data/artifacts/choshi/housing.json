@@ -1,0 +1,148 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "choshi-topics-housing",
+  "municipality_id": "choshi",
+  "path": "/topics/housing",
+  "title": "住まい・引越し",
+  "description": "公営住宅、住宅ローン、引越し手続き、建築確認などの住まい・引越しに関する情報",
+  "content_type": "directory",
+  "service_category": "housing",
+  "audience": [
+    "residents"
+  ],
+  "topic": [],
+  "source": {
+    "source_url": "template://choshi/topics/housing",
+    "fetched_at": "2026-02-03T01:50:19.508Z",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "2026-02-03T01:50:19.508Z",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "住まい・引越し",
+            "href": "/housing"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "住まい・引越し"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "公営住宅、住宅ローン、引越し手続き、建築確認などの住まい・引越しに関する情報をまとめています"
+      }
+    },
+    {
+      "id": "topic-list-1",
+      "type": "TopicList",
+      "props": {
+        "items": [
+          {
+            "title": "公営住宅（市営・県営住宅）",
+            "href": "/public-housing",
+            "description": "市営住宅・県営住宅の入居申込み・抽選案内"
+          },
+          {
+            "title": "住宅取得支援",
+            "href": "/home-purchase",
+            "description": "住宅ローン減税、すまい給付金、住宅取得等資金贈与の非課税"
+          },
+          {
+            "title": "住居確保給付金",
+            "href": "/housing-benefit",
+            "description": "離職等により住居を失うおそれがある方への家賃相当額の支給"
+          },
+          {
+            "title": "引越し手続き一覧",
+            "href": "/moving-checklist",
+            "description": "転入届、転出届、ライフラインの手続き一覧"
+          },
+          {
+            "title": "建築確認申請",
+            "href": "/building-permit",
+            "description": "新築・増改築の建築確認申請手続き"
+          },
+          {
+            "title": "住宅リフォーム補助",
+            "href": "/reform-subsidy",
+            "description": "銚子市独自の住宅リフォーム補助制度"
+          },
+          {
+            "title": "耐震診断・耐震改修補助",
+            "href": "/seismic-retrofit",
+            "description": "木造住宅の耐震診断・耐震改修費用の補助"
+          },
+          {
+            "title": "空き家対策",
+            "href": "/vacant-house",
+            "description": "空き家バンク、空き家の適正管理、解体補助"
+          },
+          {
+            "title": "不動産登記",
+            "href": "/property-registration",
+            "description": "土地・建物の登記手続き（法務局案内）"
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{housing_department}}",
+        "phone": "{{housing_phone}}",
+        "email": "{{housing_email}}",
+        "hours": "{{city_hall_hours}}",
+        "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
+      }
+    }
+  ],
+  "search": {
+    "summary": "住まい・引越しに関する情報。公営住宅、市営住宅、住宅ローン、賃貸住宅、家賃補助、引越し手続き、建築確認、空き家対策、住居確保給付金、不動産登記の案内。",
+    "keywords": [
+      "住まい",
+      "引越し",
+      "公営住宅",
+      "市営住宅",
+      "県営住宅",
+      "住宅ローン",
+      "住宅取得支援",
+      "賃貸住宅",
+      "家賃補助",
+      "ライフライン",
+      "建築確認",
+      "リフォーム",
+      "空き家",
+      "住居確保給付金",
+      "不動産登記"
+    ],
+    "plain_text": "住まい・引越し。住宅・引越しに関する届出・手続き情報。公営住宅・市営住宅・県営住宅、住宅ローン・住宅取得支援、賃貸住宅・家賃補助、引越し手続き、建築確認・リフォーム、空き家対策、住居確保給付金、不動産登記。"
+  }
+}

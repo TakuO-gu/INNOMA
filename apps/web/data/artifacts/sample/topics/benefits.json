@@ -33,7 +33,7 @@
           },
           {
             "label": "社会保障・給付金",
-            "href": "/topics/benefits"
+            "href": "/benefits"
           }
         ]
       }
@@ -59,37 +59,37 @@
         "items": [
           {
             "title": "国民健康保険",
-            "href": "/services/health/kokuho",
+            "href": "/kokuho",
             "description": "国民健康保険の加入・届出・給付"
           },
           {
             "title": "国民年金",
-            "href": "/services/benefits/nenkin",
+            "href": "/nenkin",
             "description": "国民年金の加入・届出・受給手続き"
           },
           {
             "title": "介護保険",
-            "href": "/services/welfare/kaigo",
+            "href": "/kaigo",
             "description": "介護保険の加入・届出・サービス利用"
           },
           {
             "title": "後期高齢者医療",
-            "href": "/services/health/kouki",
+            "href": "/kouki",
             "description": "75歳以上の方の医療保険制度"
           },
           {
             "title": "児童手当・児童扶養手当",
-            "href": "/services/childcare/jidou-teate",
+            "href": "/jidou-teate",
             "description": "子育て世帯への手当支給"
           },
           {
             "title": "生活保護",
-            "href": "/services/welfare/seikatsu-hogo",
+            "href": "/seikatsu-hogo",
             "description": "生活に困窮したときの支援制度"
           },
           {
             "title": "障害者福祉",
-            "href": "/services/welfare/shogai",
+            "href": "/shogai",
             "description": "障害のある方への支援制度"
           }
         ]

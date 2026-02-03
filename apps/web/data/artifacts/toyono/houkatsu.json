@@ -1,0 +1,546 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "toyono-services-welfare-houkatsu",
+  "municipality_id": "toyono",
+  "path": "/houkatsu",
+  "title": "地域包括支援センター",
+  "description": "地域包括支援センターの役割、相談内容、利用方法について",
+  "content_type": "guide",
+  "service_category": "welfare",
+  "audience": [
+    "residents",
+    "elderly"
+  ],
+  "topic": [],
+  "source": {
+    "source_url": "template://toyono/services/welfare/houkatsu",
+    "fetched_at": "2026-02-03T01:50:20.500Z",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "2026-02-03T01:50:20.500Z",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "福祉・介護",
+            "href": "/welfare"
+          },
+          {
+            "label": "地域包括支援センター",
+            "href": "/houkatsu"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "地域包括支援センター"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "地域包括支援センターは、高齢者の皆さんが住み慣れた地域で安心して暮らせるよう、介護・福祉・健康・医療などの様々な相談に応じる総合相談窓口です。"
+      }
+    },
+    {
+      "id": "section-57zdwsuys",
+      "type": "Section",
+      "props": {
+        "heading": "地域包括支援センターとは",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "地域包括支援センターは、介護保険法に基づいて設置された、高齢者のための総合相談窓口です。"
+              },
+              {
+                "text": "保健師、社会福祉士、主任ケアマネジャーなどの専門職が配置され、様々な相談に応じています。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "相談は無料です。お気軽にご相談ください。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-h9tyuzfg1",
+      "type": "Section",
+      "props": {
+        "heading": "相談できること",
+        "level": 2,
+        "content": []
+      }
+    },
+    {
+      "id": "section-b6o0swt56",
+      "type": "Section",
+      "props": {
+        "heading": "介護に関すること",
+        "level": 3,
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "介護保険の申請方法がわからない"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "介護サービスを利用したい"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "家族の介護が大変で困っている"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-m3raihwy9",
+      "type": "Section",
+      "props": {
+        "heading": "健康に関すること",
+        "level": 3,
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "もの忘れが気になる"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "体力の衰えを感じる"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "介護予防のための活動に参加したい"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-u9uoh0e9a",
+      "type": "Section",
+      "props": {
+        "heading": "生活に関すること",
+        "level": 3,
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "一人暮らしで不安がある"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "お金の管理が難しくなってきた"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "近所に気になる高齢者がいる"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-y4um6u8os",
+      "type": "Section",
+      "props": {
+        "heading": "権利擁護に関すること",
+        "level": 3,
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "成年後見制度について知りたい"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "悪質商法の被害にあった"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "虐待を受けている・見かけた"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-86shq9w0n",
+      "type": "Section",
+      "props": {
+        "heading": "主な業務",
+        "level": 2,
+        "content": []
+      }
+    },
+    {
+      "id": "section-ne7vs5gfi",
+      "type": "Section",
+      "props": {
+        "heading": "総合相談支援",
+        "level": 3,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "高齢者やその家族からの相談に応じ、適切なサービスや機関につなぎます。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-68zotaqm3",
+      "type": "Section",
+      "props": {
+        "heading": "介護予防ケアマネジメント",
+        "level": 3,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "要支援1・2の方や、介護予防・日常生活支援総合事業対象者のケアプランを作成します。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-m52jiomvs",
+      "type": "Section",
+      "props": {
+        "heading": "権利擁護",
+        "level": 3,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "高齢者虐待の防止・早期発見、成年後見制度の利用支援、消費者被害の防止などを行います。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-rxt7ilest",
+      "type": "Section",
+      "props": {
+        "heading": "包括的・継続的ケアマネジメント支援",
+        "level": 3,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "地域のケアマネジャーへの支援や、医療・介護の連携を図ります。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-o02qfl55f",
+      "type": "Section",
+      "props": {
+        "heading": "市内の地域包括支援センター",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "市内には{{houkatsu_count}}か所の地域包括支援センターがあります。お住まいの地区を担当するセンターにご相談ください。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "task-button-1",
+      "type": "TaskButton",
+      "props": {
+        "label": "地域包括支援センター一覧を見る",
+        "href": "{{houkatsu_list_url}}",
+        "isTopTask": true
+      }
+    },
+    {
+      "id": "related-links-1",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "介護保険",
+            "href": "/kaigo"
+          },
+          {
+            "title": "高齢者福祉",
+            "href": "/koureisha"
+          },
+          {
+            "title": "障害者福祉",
+            "href": "/shogai"
+          },
+          {
+            "title": "生活保護",
+            "href": "/seikatsu-hogo"
+          },
+          {
+            "title": "後期高齢者医療",
+            "href": "/kouki"
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-対象-1769919363220",
+      "type": "Section",
+      "props": {
+        "heading": "地域包括支援センターの対象となる方",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "詳細は担当課にお問い合わせください。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-必要-1769919363220",
+      "type": "Section",
+      "props": {
+        "heading": "地域包括支援センターに必要なもの",
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "本人確認書類（マイナンバーカード、運転免許証など）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "印鑑（認印可）"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-方法-1769919363220",
+      "type": "Section",
+      "props": {
+        "heading": "地域包括支援センターの手続き方法",
+        "content": [
+          {
+            "type": "list",
+            "ordered": true,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "必要書類を準備します。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "窓口で申請書を記入します。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "書類を提出し、確認を受けます。"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{houkatsu_department}}",
+        "phone": "{{houkatsu_phone}}",
+        "email": "{{houkatsu_email}}",
+        "hours": "{{city_hall_hours}}",
+        "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
+      }
+    }
+  ],
+  "search": {
+    "summary": "地域包括支援センターの案内。高齢者の介護・福祉・健康の総合相談窓口。",
+    "keywords": [
+      "地域包括支援センター",
+      "高齢者",
+      "介護相談",
+      "介護予防",
+      "権利擁護",
+      "ケアマネジメント"
+    ],
+    "plain_text": "地域包括支援センター。高齢者の総合相談窓口。介護、健康、生活、権利擁護の相談に対応。相談無料。要支援者のケアプラン作成も実施。"
+  }
+}

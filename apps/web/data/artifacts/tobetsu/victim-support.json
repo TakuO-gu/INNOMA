@@ -1,0 +1,305 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "tobetsu-services-civic-victim-support",
+  "municipality_id": "tobetsu",
+  "path": "/victim-support",
+  "title": "犯罪被害者支援",
+  "description": "犯罪被害者支援制度、相談窓口、給付金",
+  "content_type": "guide",
+  "service_category": "community",
+  "audience": [
+    "residents"
+  ],
+  "topic": [],
+  "source": {
+    "source_url": "template://tobetsu/services/civic/victim-support",
+    "fetched_at": "2026-02-03T01:50:20.407Z",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "2026-02-03T01:50:20.407Z",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "市民参加・権利行使",
+            "href": "/civic"
+          },
+          {
+            "label": "犯罪被害者支援",
+            "href": "/victim-support"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "犯罪被害者支援"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "犯罪の被害に遭われた方やそのご家族に対する支援制度、相談窓口をご案内します。"
+      }
+    },
+    {
+      "id": "section-pd7pufyme",
+      "type": "Section",
+      "props": {
+        "heading": "相談窓口",
+        "level": 2,
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "警察の被害者相談：#9110（全国共通）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "{{prefecture_name}}犯罪被害者支援センター：{{victim_support_center_phone}}"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "法テラス犯罪被害者支援ダイヤル：0570-079714"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-q1wlhx4k4",
+      "type": "Section",
+      "props": {
+        "heading": "犯罪被害給付制度",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "殺人・傷害などの犯罪行為により、亡くなられた方のご遺族や重傷病・障害を負った方に対して、国が給付金を支給する制度です。"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "遺族給付金：320万円～2,964万円"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "重傷病給付金：最高120万円"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "障害給付金：18万円～3,974万円"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-p7lb79fbw",
+      "type": "Section",
+      "props": {
+        "heading": "当別町の支援制度",
+        "level": 2,
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "見舞金の支給（{{victim_support_benefit}}）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "日常生活支援（家事援助、一時保育など）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "転居費用の助成"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "法律相談の紹介"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-tpmyaf13m",
+      "type": "Section",
+      "props": {
+        "heading": "DV・性犯罪被害",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "DV（配偶者暴力）や性犯罪の被害については、専門の相談窓口があります。"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "DV相談ナビ：#8008"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "性犯罪被害相談電話：#8103（ハートさん）"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "related-links-ewe5uj8k2",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "法律相談",
+            "href": "/legal-support"
+          },
+          {
+            "title": "交通事故",
+            "href": "/accident"
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{victim_support_department}}",
+        "phone": "{{victim_support_phone}}",
+        "email": "{{victim_support_email}}",
+        "hours": "{{city_hall_hours}}",
+        "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
+      }
+    }
+  ],
+  "search": {
+    "summary": "犯罪被害者支援の案内。相談窓口、犯罪被害給付制度、見舞金。",
+    "keywords": [
+      "犯罪被害者",
+      "被害者支援",
+      "給付金",
+      "DV",
+      "性犯罪"
+    ],
+    "plain_text": "犯罪被害者支援。警察相談#9110、犯罪被害給付制度、市の見舞金・日常生活支援。DV相談#8008。"
+  }
+}

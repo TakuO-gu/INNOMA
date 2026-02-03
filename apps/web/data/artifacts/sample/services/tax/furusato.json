@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "page_id": "sample-services-tax-furusato",
   "municipality_id": "sample",
-  "path": "/services/tax/furusato",
+  "path": "/furusato",
   "title": "ふるさと納税",
   "description": "ふるさと納税の仕組み、ワンストップ特例制度、寄附金控除の申請方法について",
   "content_type": "guide",
@@ -33,11 +33,11 @@
           },
           {
             "label": "税金",
-            "href": "/topics/tax"
+            "href": "/tax"
           },
           {
             "label": "ふるさと納税",
-            "href": "/services/tax/furusato"
+            "href": "/furusato"
           }
         ]
       }
@@ -385,15 +385,15 @@
         "items": [
           {
             "title": "確定申告・税の相談",
-            "href": "/services/tax/kakuteishinkoku"
+            "href": "/kakuteishinkoku"
           },
           {
             "title": "住民税",
-            "href": "/services/tax/juminzei"
+            "href": "/juminzei"
           },
           {
             "title": "税証明書",
-            "href": "/services/tax/zeishoumei"
+            "href": "/zeishoumei"
           }
         ]
       }

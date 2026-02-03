@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "page_id": "sample-services-housing-housing-benefit",
   "municipality_id": "sample",
-  "path": "/services/housing/housing-benefit",
+  "path": "/housing-benefit",
   "title": "住居確保給付金",
   "description": "離職等により住居を失うおそれがある方への家賃相当額の支給",
   "content_type": "guide",
@@ -33,11 +33,11 @@
           },
           {
             "label": "住まい・引越し",
-            "href": "/topics/housing"
+            "href": "/housing"
           },
           {
             "label": "住居確保給付金",
-            "href": "/services/housing/housing-benefit"
+            "href": "/housing-benefit"
           }
         ]
       }
@@ -175,19 +175,19 @@
         "items": [
           {
             "title": "公営住宅",
-            "href": "/services/housing/public-housing"
+            "href": "/public-housing"
           },
           {
             "title": "生活保護",
-            "href": "/services/welfare/seikatsu-hogo"
+            "href": "/seikatsu-hogo"
           },
           {
             "title": "ハローワーク",
-            "href": "/services/employment/hello-work"
+            "href": "/hello-work"
           },
           {
             "title": "雇用保険",
-            "href": "/services/employment/unemployment-insurance"
+            "href": "/unemployment-insurance"
           }
         ]
       }

@@ -1,0 +1,548 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "higashiyoshino-services-welfare-kaigo",
+  "municipality_id": "higashiyoshino",
+  "path": "/kaigo",
+  "title": "介護保険",
+  "description": "介護保険制度の概要、要介護認定の申請方法、介護サービスの利用について",
+  "content_type": "guide",
+  "service_category": "welfare",
+  "audience": [
+    "residents",
+    "elderly"
+  ],
+  "topic": [],
+  "source": {
+    "source_url": "template://higashiyoshino/services/welfare/kaigo",
+    "fetched_at": "2026-02-03T01:50:19.672Z",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "2026-02-03T01:50:19.672Z",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "福祉・介護",
+            "href": "/welfare"
+          },
+          {
+            "label": "介護保険",
+            "href": "/kaigo"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "介護保険"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "介護保険は、介護が必要になったときに、介護サービスを利用できる社会保険制度です。40歳以上の方が加入し、65歳以上の方（第1号被保険者）は介護が必要と認定されるとサービスを利用できます。"
+      }
+    },
+    {
+      "id": "section-sebhokpvz",
+      "type": "Section",
+      "props": {
+        "heading": "介護保険の対象者",
+        "level": 2,
+        "content": []
+      }
+    },
+    {
+      "id": "section-ntnqf82db",
+      "type": "Section",
+      "props": {
+        "heading": "第1号被保険者（65歳以上の方）",
+        "level": 3,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "原因を問わず、介護や日常生活の支援が必要と認定された場合にサービスを利用できます。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-73cai5z36",
+      "type": "Section",
+      "props": {
+        "heading": "第2号被保険者（40〜64歳の方）",
+        "level": 3,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "特定疾病（がん末期、関節リウマチ、初老期における認知症など16疾病）が原因で介護が必要と認定された場合にサービスを利用できます。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "step-nav-1",
+      "type": "StepNavigation",
+      "props": {
+        "currentStep": 0,
+        "steps": [
+          {
+            "title": "要介護認定の申請",
+            "body": "市区町村の窓口または地域包括支援センターで申請します。本人または家族が申請できます。",
+            "documents": [
+              "要介護認定申請書",
+              "介護保険被保険者証",
+              "本人確認書類"
+            ]
+          },
+          {
+            "title": "認定調査",
+            "body": "市区町村の認定調査員がご自宅などを訪問し、心身の状態を調査します。主治医の意見書も取得します。",
+            "documents": []
+          },
+          {
+            "title": "審査・判定",
+            "body": "コンピュータによる一次判定と、介護認定審査会による二次判定を経て、要介護度が決定されます。",
+            "documents": []
+          },
+          {
+            "title": "認定結果の通知",
+            "body": "申請から原則30日以内に、要支援1・2または要介護1〜5の認定結果が通知されます。",
+            "documents": []
+          },
+          {
+            "title": "ケアプランの作成",
+            "body": "ケアマネジャーと相談し、利用するサービスの計画（ケアプラン）を作成します。",
+            "documents": []
+          },
+          {
+            "title": "サービス利用開始",
+            "body": "ケアプランに基づいて、介護サービスを利用します。自己負担は原則1〜3割です。",
+            "documents": []
+          }
+        ]
+      }
+    },
+    {
+      "id": "table-nintei",
+      "type": "Table",
+      "props": {
+        "rows": [
+          {
+            "label": "要支援1",
+            "value": "日常生活に一部支援が必要。介護予防サービスが利用可能"
+          },
+          {
+            "label": "要支援2",
+            "value": "日常生活に支援が必要だが、改善の可能性あり"
+          },
+          {
+            "label": "要介護1",
+            "value": "立ち上がりや歩行に不安定さがある"
+          },
+          {
+            "label": "要介護2",
+            "value": "立ち上がりや歩行が自力では困難"
+          },
+          {
+            "label": "要介護3",
+            "value": "立ち上がりや歩行が自力ではできない"
+          },
+          {
+            "label": "要介護4",
+            "value": "日常生活のほぼ全般に介護が必要"
+          },
+          {
+            "label": "要介護5",
+            "value": "意思の伝達も困難で、介護なしでは日常生活が送れない"
+          }
+        ],
+        "heading": "要介護度と利用できるサービス"
+      }
+    },
+    {
+      "id": "section-lp70zrvqj",
+      "type": "Section",
+      "props": {
+        "heading": "利用できる介護サービス",
+        "level": 2,
+        "content": []
+      }
+    },
+    {
+      "id": "section-y7v477usl",
+      "type": "Section",
+      "props": {
+        "heading": "在宅サービス",
+        "level": 3,
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "訪問介護（ホームヘルプ）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "訪問看護"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "通所介護（デイサービス）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "短期入所（ショートステイ）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "福祉用具貸与・購入"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "住宅改修"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-ryinzs9ci",
+      "type": "Section",
+      "props": {
+        "heading": "施設サービス",
+        "level": 3,
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "介護老人福祉施設（特別養護老人ホーム）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "介護老人保健施設（老健）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "介護医療院"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-rm7kurrhi",
+      "type": "Section",
+      "props": {
+        "heading": "自己負担",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "介護サービスの自己負担は原則"
+              },
+              {
+                "text": "1割",
+                "bold": true
+              },
+              {
+                "text": "です。一定以上の所得がある方は"
+              },
+              {
+                "text": "2割または3割",
+                "bold": true
+              },
+              {
+                "text": "となります。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-z6ce8udxo",
+      "type": "Section",
+      "props": {
+        "heading": "介護保険料",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "65歳以上の方（第1号被保険者）の介護保険料は、所得に応じて段階的に設定されています。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "table-hoken",
+      "type": "Table",
+      "props": {
+        "rows": [
+          {
+            "label": "基準額（第5段階）",
+            "value": "{{kaigo_kijun_gaku}}"
+          },
+          {
+            "label": "納付方法",
+            "value": "特別徴収（年金天引き）または普通徴収（納付書）"
+          }
+        ]
+      }
+    },
+    {
+      "id": "related-links-1",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "高齢者福祉",
+            "href": "/koureisha"
+          },
+          {
+            "title": "地域包括支援センター",
+            "href": "/houkatsu"
+          },
+          {
+            "title": "後期高齢者医療",
+            "href": "/kouki"
+          },
+          {
+            "title": "国民健康保険",
+            "href": "/kokuho"
+          },
+          {
+            "title": "障害者福祉",
+            "href": "/shogai"
+          },
+          {
+            "title": "年金",
+            "href": "/nenkin"
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-必要-1769919363221",
+      "type": "Section",
+      "props": {
+        "heading": "介護保険に必要なもの",
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "本人確認書類（マイナンバーカード、運転免許証など）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "印鑑（認印可）"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-方法-1769919363221",
+      "type": "Section",
+      "props": {
+        "heading": "介護保険の手続き方法",
+        "content": [
+          {
+            "type": "list",
+            "ordered": true,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "必要書類を準備します。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "窓口で申請書を記入します。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "書類を提出し、確認を受けます。"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{kaigo_department}}",
+        "phone": "{{kaigo_phone}}",
+        "email": "{{kaigo_email}}",
+        "hours": "{{city_hall_hours}}",
+        "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "terms-1769919363222",
+      "type": "Section",
+      "props": {
+        "heading": "用語の説明",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "被保険者",
+                "bold": true
+              },
+              {
+                "text": "：保険に加入している方"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
+      }
+    }
+  ],
+  "search": {
+    "summary": "介護保険制度の概要。要介護認定の申請方法、利用できる介護サービス、自己負担、保険料について。",
+    "keywords": [
+      "介護保険",
+      "要介護認定",
+      "介護サービス",
+      "デイサービス",
+      "訪問介護",
+      "ショートステイ",
+      "ケアプラン",
+      "地域包括支援センター"
+    ],
+    "plain_text": "介護保険。40歳以上の方が加入する社会保険制度。65歳以上で介護が必要と認定されるとサービスを利用可能。要介護認定の申請、認定調査、審査判定を経て認定。自己負担は原則1割。"
+  }
+}

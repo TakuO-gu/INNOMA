@@ -181,5 +181,26 @@
     "sourceUrl": "https://www.town.hakone.kanagawa.jp/www/contents/1100000000507/index.html",
     "confidence": 0.95,
     "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "city_hall_hours": {
+    "value": "8時30分～17時15分（月曜日～金曜日、土・日曜日、祝日、12月29日～1月3日を除く）",
+    "source": "llm",
+    "sourceUrl": "https://www.town.hakone.kanagawa.jp/www/contents/1100000001240/index.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-03T00:00:00.000Z"
+  },
+  "kaigo_department": {
+    "value": "福祉課",
+    "source": "llm",
+    "sourceUrl": "https://www.town.hakone.kanagawa.jp/www/contents/1100000000507/index.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-03T00:00:00.000Z"
+  },
+  "kaigo_phone": {
+    "value": "0460-85-7790",
+    "source": "llm",
+    "sourceUrl": "https://www.town.hakone.kanagawa.jp/www/contents/1100000000507/index.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-03T00:00:00.000Z"
   }
 }

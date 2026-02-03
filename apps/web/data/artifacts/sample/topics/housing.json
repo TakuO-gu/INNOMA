@@ -33,7 +33,7 @@
           },
           {
             "label": "住まい・引越し",
-            "href": "/topics/housing"
+            "href": "/housing"
           }
         ]
       }
@@ -59,47 +59,47 @@
         "items": [
           {
             "title": "公営住宅（市営・県営住宅）",
-            "href": "/services/housing/public-housing",
+            "href": "/public-housing",
             "description": "市営住宅・県営住宅の入居申込み・抽選案内"
           },
           {
             "title": "住宅取得支援",
-            "href": "/services/housing/home-purchase",
+            "href": "/home-purchase",
             "description": "住宅ローン減税、すまい給付金、住宅取得等資金贈与の非課税"
           },
           {
             "title": "住居確保給付金",
-            "href": "/services/housing/housing-benefit",
+            "href": "/housing-benefit",
             "description": "離職等により住居を失うおそれがある方への家賃相当額の支給"
           },
           {
             "title": "引越し手続き一覧",
-            "href": "/services/housing/moving-checklist",
+            "href": "/moving-checklist",
             "description": "転入届、転出届、ライフラインの手続き一覧"
           },
           {
             "title": "建築確認申請",
-            "href": "/services/housing/building-permit",
+            "href": "/building-permit",
             "description": "新築・増改築の建築確認申請手続き"
           },
           {
             "title": "住宅リフォーム補助",
-            "href": "/services/housing/reform-subsidy",
+            "href": "/reform-subsidy",
             "description": "サンプル市独自の住宅リフォーム補助制度"
           },
           {
             "title": "耐震診断・耐震改修補助",
-            "href": "/services/housing/seismic-retrofit",
+            "href": "/seismic-retrofit",
             "description": "木造住宅の耐震診断・耐震改修費用の補助"
           },
           {
             "title": "空き家対策",
-            "href": "/services/housing/vacant-house",
+            "href": "/vacant-house",
             "description": "空き家バンク、空き家の適正管理、解体補助"
           },
           {
             "title": "不動産登記",
-            "href": "/services/housing/property-registration",
+            "href": "/property-registration",
             "description": "土地・建物の登記手続き（法務局案内）"
           }
         ]

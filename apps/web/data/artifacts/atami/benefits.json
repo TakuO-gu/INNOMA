@@ -1,0 +1,138 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "atami-topics-benefits",
+  "municipality_id": "atami",
+  "path": "/topics/benefits",
+  "title": "社会保障・給付金",
+  "description": "年金、医療保険、介護保険、児童手当、生活保護などの社会保障・給付金に関する情報",
+  "content_type": "directory",
+  "service_category": "welfare",
+  "audience": [
+    "residents"
+  ],
+  "topic": [],
+  "source": {
+    "source_url": "template://atami/topics/benefits",
+    "fetched_at": "2026-02-03T01:50:19.450Z",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "2026-02-03T01:50:19.450Z",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "社会保障・給付金",
+            "href": "/benefits"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "社会保障・給付金"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "年金・医療保険・介護保険・各種給付金に関する情報"
+      }
+    },
+    {
+      "id": "topic-list-1",
+      "type": "TopicList",
+      "props": {
+        "items": [
+          {
+            "title": "国民健康保険",
+            "href": "/kokuho",
+            "description": "国民健康保険の加入・届出・給付"
+          },
+          {
+            "title": "国民年金",
+            "href": "/nenkin",
+            "description": "国民年金の加入・届出・受給手続き"
+          },
+          {
+            "title": "介護保険",
+            "href": "/kaigo",
+            "description": "介護保険の加入・届出・サービス利用"
+          },
+          {
+            "title": "後期高齢者医療",
+            "href": "/kouki",
+            "description": "75歳以上の方の医療保険制度"
+          },
+          {
+            "title": "児童手当・児童扶養手当",
+            "href": "/jidou-teate",
+            "description": "子育て世帯への手当支給"
+          },
+          {
+            "title": "生活保護",
+            "href": "/seikatsu-hogo",
+            "description": "生活に困窮したときの支援制度"
+          },
+          {
+            "title": "障害者福祉",
+            "href": "/shogai",
+            "description": "障害のある方への支援制度"
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{benefits_department}}",
+        "phone": "{{benefits_phone}}",
+        "email": "{{benefits_email}}",
+        "hours": "{{city_hall_hours}}",
+        "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
+      }
+    }
+  ],
+  "search": {
+    "summary": "社会保障・給付金に関する情報。年金、医療保険、介護保険、雇用保険、労災保険、生活保護、児童手当、障害者手当、遺族年金の手続き案内。",
+    "keywords": [
+      "社会保障",
+      "給付金",
+      "年金",
+      "国民年金",
+      "厚生年金",
+      "医療保険",
+      "国民健康保険",
+      "介護保険",
+      "雇用保険",
+      "失業給付",
+      "労災保険",
+      "生活保護",
+      "児童手当",
+      "障害者手当",
+      "遺族年金"
+    ],
+    "plain_text": "社会保障・給付金。年金・医療保険・介護保険・各種給付金に関する情報。年金、医療保険、介護保険、雇用保険・失業給付、労災保険、生活保護、児童手当・児童扶養手当、障害者手当・障害年金、遺族年金・死亡一時金。"
+  }
+}

@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "page_id": "sample-services-driving-traffic-safety",
   "municipality_id": "sample",
-  "path": "/services/driving/traffic-safety",
+  "path": "/traffic-safety",
   "title": "交通安全対策",
   "description": "交通安全運動、自転車保険、チャイルドシート助成",
   "content_type": "guide",
@@ -33,11 +33,11 @@
           },
           {
             "label": "運転・車両",
-            "href": "/topics/driving"
+            "href": "/driving"
           },
           {
             "label": "交通安全対策",
-            "href": "/services/driving/traffic-safety"
+            "href": "/traffic-safety"
           }
         ]
       }
@@ -145,19 +145,19 @@
         "items": [
           {
             "title": "運転免許証",
-            "href": "/services/driving/license"
+            "href": "/license"
           },
           {
             "title": "高齢者運転",
-            "href": "/services/driving/senior-driving"
+            "href": "/senior-driving"
           },
           {
             "title": "交通事故",
-            "href": "/services/driving/accident"
+            "href": "/accident"
           },
           {
             "title": "駐車場",
-            "href": "/services/driving/parking"
+            "href": "/parking"
           }
         ]
       }

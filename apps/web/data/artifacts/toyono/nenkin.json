@@ -1,0 +1,528 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "toyono-services-benefits-nenkin",
+  "municipality_id": "toyono",
+  "path": "/nenkin",
+  "title": "国民年金",
+  "description": "国民年金の加入・届出、保険料、受給手続きについて",
+  "content_type": "guide",
+  "service_category": "welfare",
+  "audience": [
+    "residents"
+  ],
+  "topic": [],
+  "source": {
+    "source_url": "template://toyono/services/benefits/nenkin",
+    "fetched_at": "2026-02-03T01:50:20.459Z",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "2026-02-03T01:50:20.459Z",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "社会保障・給付金",
+            "href": "/benefits"
+          },
+          {
+            "label": "国民年金",
+            "href": "/nenkin"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "国民年金"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "国民年金は、日本に住む20歳以上60歳未満のすべての方が加入する公的年金制度です。老後の生活、障害を負ったとき、家族が亡くなったときに年金が支給されます。"
+      }
+    },
+    {
+      "id": "section-j9hoh4kuq",
+      "type": "Section",
+      "props": {
+        "heading": "国民年金の被保険者",
+        "level": 2,
+        "content": []
+      }
+    },
+    {
+      "id": "section-i6ym13egr",
+      "type": "Section",
+      "props": {
+        "heading": "第1号被保険者",
+        "level": 3,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "自営業者、学生、無職の方など。市区町村の窓口で届出を行い、自分で保険料を納付します。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-ueil1rvff",
+      "type": "Section",
+      "props": {
+        "heading": "第2号被保険者",
+        "level": 3,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "会社員や公務員など、厚生年金に加入している方。国民年金にも同時に加入しています。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-zvhqxwqy1",
+      "type": "Section",
+      "props": {
+        "heading": "第3号被保険者",
+        "level": 3,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "第2号被保険者に扶養されている配偶者。保険料の負担はありません。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-hsxlqnxzb",
+      "type": "Section",
+      "props": {
+        "heading": "届出が必要なとき",
+        "level": 2,
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "20歳になったとき",
+                      "bold": true
+                    },
+                    {
+                      "text": "（学生や無職の方）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "会社を退職したとき",
+                      "bold": true
+                    },
+                    {
+                      "text": "（厚生年金から国民年金への切り替え）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "配偶者の扶養から外れたとき",
+                      "bold": true
+                    },
+                    {
+                      "text": "（第3号から第1号への切り替え）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "海外から帰国したとき"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-hsxlqnxzb-notification-0",
+      "type": "NotificationBanner",
+      "props": {
+        "severity": "warning",
+        "title": "注意",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "届出が遅れると、年金を受け取れなくなる場合があります。届出は事由が生じてから14日以内に行ってください。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "table-hokenryo",
+      "type": "Table",
+      "props": {
+        "rows": [
+          {
+            "label": "令和6年度保険料",
+            "value": "月額16,980円"
+          },
+          {
+            "label": "令和7年度保険料",
+            "value": "月額17,510円"
+          },
+          {
+            "label": "納付方法",
+            "value": "口座振替、納付書、クレジットカード"
+          },
+          {
+            "label": "前納割引",
+            "value": "1年前納で約4,000円、2年前納で約16,000円割引"
+          }
+        ],
+        "heading": "保険料"
+      }
+    },
+    {
+      "id": "section-mt8zrukzn",
+      "type": "Section",
+      "props": {
+        "heading": "保険料の免除・猶予",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "経済的な理由で保険料を納めることが困難な方は、以下の制度を利用できます。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-gakhxqgqn",
+      "type": "Section",
+      "props": {
+        "heading": "保険料免除制度",
+        "level": 3,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "所得が一定以下の方は、申請により保険料が全額または一部（4分の3、半額、4分の1）免除されます。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-mw6stw2na",
+      "type": "Section",
+      "props": {
+        "heading": "学生納付特例制度",
+        "level": 3,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "学生の方で本人の所得が一定以下の場合、在学中の保険料の納付が猶予されます。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-kd7mt3hg8",
+      "type": "Section",
+      "props": {
+        "heading": "納付猶予制度",
+        "level": 3,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "50歳未満の方で本人・配偶者の所得が一定以下の場合、保険料の納付が猶予されます。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-2uiphhojh",
+      "type": "Section",
+      "props": {
+        "heading": "受け取れる年金",
+        "level": 2,
+        "content": []
+      }
+    },
+    {
+      "id": "section-s0acw8v2i",
+      "type": "Section",
+      "props": {
+        "heading": "老齢基礎年金",
+        "level": 3,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "65歳から受け取る老後の年金。40年間保険料を納付した場合、満額で年額816,000円（令和6年度）"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-yi91nw52v",
+      "type": "Section",
+      "props": {
+        "heading": "障害基礎年金",
+        "level": 3,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "病気やけがで障害が残ったときに受け取る年金。1級は年額1,020,000円、2級は年額816,000円"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-pl8jayl4j",
+      "type": "Section",
+      "props": {
+        "heading": "遺族基礎年金",
+        "level": 3,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "被保険者が亡くなったとき、子のある配偶者または子が受け取る年金"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "related-links-1",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "国民健康保険",
+            "href": "/kokuho"
+          },
+          {
+            "title": "後期高齢者医療",
+            "href": "/kouki"
+          },
+          {
+            "title": "介護保険",
+            "href": "/kaigo"
+          },
+          {
+            "title": "死亡届",
+            "href": "/shibou"
+          },
+          {
+            "title": "マイナンバーカード",
+            "href": "/mynumber"
+          },
+          {
+            "title": "住民税",
+            "href": "/juminzei"
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-対象-1769919363136",
+      "type": "Section",
+      "props": {
+        "heading": "国民年金の対象となる方",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "詳細は担当課にお問い合わせください。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-方法-1769919363136",
+      "type": "Section",
+      "props": {
+        "heading": "国民年金の手続き方法",
+        "content": [
+          {
+            "type": "list",
+            "ordered": true,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "必要書類を準備します。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "窓口で申請書を記入します。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "書類を提出し、確認を受けます。"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{nenkin_department}}",
+        "phone": "{{nenkin_phone}}",
+        "email": "{{nenkin_email}}",
+        "hours": "{{city_hall_hours}}",
+        "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "terms-1769919363136",
+      "type": "Section",
+      "props": {
+        "heading": "用語の説明",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "被保険者",
+                "bold": true
+              },
+              {
+                "text": "：保険に加入している方"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "猶予",
+                "bold": true
+              },
+              {
+                "text": "：支払いを待ってもらうこと"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
+      }
+    }
+  ],
+  "search": {
+    "summary": "国民年金制度の案内。加入・届出、保険料と免除制度、受け取れる年金について。",
+    "keywords": [
+      "国民年金",
+      "年金",
+      "保険料",
+      "免除",
+      "学生納付特例",
+      "老齢基礎年金",
+      "障害基礎年金",
+      "遺族基礎年金"
+    ],
+    "plain_text": "国民年金。20歳以上60歳未満のすべての方が加入。保険料は月額約17,000円。免除・猶予制度あり。老齢基礎年金、障害基礎年金、遺族基礎年金を受け取れる。"
+  }
+}

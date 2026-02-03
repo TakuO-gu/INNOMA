@@ -1,0 +1,152 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "kawasaki-miyagi-topics-driving",
+  "municipality_id": "kawasaki-miyagi",
+  "path": "/topics/driving",
+  "title": "運転・車両",
+  "description": "運転免許、車検、自動車税、駐車場、車庫証明などの運転・車両に関する情報",
+  "content_type": "directory",
+  "service_category": "government",
+  "audience": [
+    "residents"
+  ],
+  "topic": [],
+  "source": {
+    "source_url": "template://kawasaki-miyagi/topics/driving",
+    "fetched_at": "2026-02-03T01:50:19.977Z",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "2026-02-03T01:50:19.977Z",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "運転・車両",
+            "href": "/driving"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "運転・車両"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "運転免許、車検、自動車税、駐車場、車庫証明などの運転・車両に関する情報をまとめています"
+      }
+    },
+    {
+      "id": "topic-list-1",
+      "type": "TopicList",
+      "props": {
+        "items": [
+          {
+            "title": "運転免許証",
+            "href": "/license",
+            "description": "運転免許試験場・更新センターの案内、更新・住所変更手続き"
+          },
+          {
+            "title": "車検・自動車登録",
+            "href": "/registration",
+            "description": "新規登録、移転登録（名義変更）、変更登録、抹消登録"
+          },
+          {
+            "title": "自動車税・軽自動車税",
+            "href": "/vehicle-tax",
+            "description": "自動車税種別割、軽自動車税種別割、納税証明書"
+          },
+          {
+            "title": "自動車重量税",
+            "href": "/weight-tax",
+            "description": "車検時に課税される自動車重量税について"
+          },
+          {
+            "title": "自賠責保険",
+            "href": "/liability-insurance",
+            "description": "自動車損害賠償責任保険（自賠責）の加入案内"
+          },
+          {
+            "title": "車庫証明（保管場所証明）",
+            "href": "/garage-certificate",
+            "description": "自動車保管場所証明書の申請手続き（警察署案内）"
+          },
+          {
+            "title": "市営駐車場・駐輪場",
+            "href": "/parking",
+            "description": "川崎町の公営駐車場・駐輪場の利用案内"
+          },
+          {
+            "title": "高齢者運転支援",
+            "href": "/senior-driving",
+            "description": "運転免許証自主返納、高齢者講習、安全運転相談"
+          },
+          {
+            "title": "交通事故相談",
+            "href": "/accident",
+            "description": "交通事故の届出、損害賠償相談、交通事故相談所"
+          },
+          {
+            "title": "交通安全対策",
+            "href": "/traffic-safety",
+            "description": "交通安全運動、自転車保険、チャイルドシート助成"
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{driving_department}}",
+        "phone": "{{driving_phone}}",
+        "email": "{{driving_email}}",
+        "hours": "{{city_hall_hours}}",
+        "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
+      }
+    }
+  ],
+  "search": {
+    "summary": "運転・車両に関する情報。運転免許、車検、自動車登録、自動車税、重量税、自賠責保険、車庫証明、交通違反、交通事故、高齢者運転の案内。",
+    "keywords": [
+      "運転",
+      "車両",
+      "運転免許",
+      "車検",
+      "自動車登録",
+      "自動車税",
+      "重量税",
+      "自賠責保険",
+      "駐車場",
+      "車庫証明",
+      "交通違反",
+      "反則金",
+      "交通事故",
+      "高齢者運転"
+    ],
+    "plain_text": "運転・車両。運転免許・自動車登録・税金に関する情報。運転免許証、車検・自動車登録、自動車税・重量税、自賠責保険、駐車場・車庫証明、交通違反・反則金、交通事故、高齢者運転・運転適性。"
+  }
+}

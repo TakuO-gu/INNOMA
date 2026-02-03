@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "page_id": "sample-services-welfare-seikatsu-hogo",
   "municipality_id": "sample",
-  "path": "/services/welfare/seikatsu-hogo",
+  "path": "/seikatsu-hogo",
   "title": "生活保護",
   "description": "生活保護制度の概要、申請方法、受けられる扶助について",
   "content_type": "guide",
@@ -33,11 +33,11 @@
           },
           {
             "label": "福祉・介護",
-            "href": "/topics/welfare"
+            "href": "/welfare"
           },
           {
             "label": "生活保護",
-            "href": "/services/welfare/seikatsu-hogo"
+            "href": "/seikatsu-hogo"
           }
         ]
       }
@@ -252,27 +252,27 @@
         "items": [
           {
             "title": "障害者福祉",
-            "href": "/services/welfare/shogai"
+            "href": "/shogai"
           },
           {
             "title": "地域包括支援センター",
-            "href": "/services/welfare/houkatsu"
+            "href": "/houkatsu"
           },
           {
             "title": "国民健康保険",
-            "href": "/services/health/kokuho"
+            "href": "/kokuho"
           },
           {
             "title": "住宅手当",
-            "href": "/services/housing/housing-benefit"
+            "href": "/housing-benefit"
           },
           {
             "title": "ハローワーク",
-            "href": "/services/employment/hello-work"
+            "href": "/hello-work"
           },
           {
             "title": "法律相談",
-            "href": "/services/civic/legal-support"
+            "href": "/legal-support"
           }
         ]
       }

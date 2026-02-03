@@ -1,0 +1,667 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "hayakawa-services-childcare-nursery",
+  "municipality_id": "hayakawa",
+  "path": "/nursery",
+  "title": "保育園・幼稚園",
+  "description": "保育園・幼稚園に関する情報。保育施設の種類、保育認定、入園申込の流れなど。",
+  "content_type": "guide",
+  "service_category": "children",
+  "audience": [
+    "children_families"
+  ],
+  "topic": [],
+  "source": {
+    "source_url": "template://hayakawa/services/childcare/nursery",
+    "fetched_at": "2026-02-03T01:50:19.587Z",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "2026-02-03T01:50:19.587Z",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "子育て",
+            "href": "/childcare"
+          },
+          {
+            "label": "保育園・幼稚園",
+            "href": "/nursery"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "保育園・幼稚園"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "早川町の保育園・幼稚園についてご案内します。お子さまの年齢や保護者の就労状況に応じた施設をお選びいただけます。"
+      }
+    },
+    {
+      "id": "section-types",
+      "type": "Section",
+      "props": {
+        "heading": "保育施設の種類",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "お子さまを預けられる施設には、以下の種類があります。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "table-types",
+      "type": "Table",
+      "props": {
+        "rows": [
+          {
+            "label": "認可保育園（保育所）",
+            "value": "0〜5歳児対象。保護者が就労等で保育が必要な場合に利用。"
+          },
+          {
+            "label": "認定こども園",
+            "value": "0〜5歳児対象。保育園と幼稚園の機能を併せ持つ施設。"
+          },
+          {
+            "label": "幼稚園",
+            "value": "3〜5歳児対象。教育を目的とした施設。保護者の就労は不問。"
+          },
+          {
+            "label": "小規模保育事業所",
+            "value": "0〜2歳児対象。定員6〜19人の少人数保育。"
+          },
+          {
+            "label": "家庭的保育事業（保育ママ）",
+            "value": "0〜2歳児対象。保育者の自宅等で少人数保育。"
+          },
+          {
+            "label": "事業所内保育事業",
+            "value": "企業が従業員向けに設置する保育施設。"
+          }
+        ],
+        "heading": "施設の種類と特徴"
+      }
+    },
+    {
+      "id": "section-certification",
+      "type": "Section",
+      "props": {
+        "heading": "保育認定について",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "保育施設を利用するには、お子さまの年齢と保育の必要性に応じた「支給認定」を受ける必要があります。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "table-certification",
+      "type": "Table",
+      "props": {
+        "rows": [
+          {
+            "label": "1号認定（教育標準時間認定）",
+            "value": "3〜5歳児。教育を希望する場合（幼稚園・認定こども園の教育部分）"
+          },
+          {
+            "label": "2号認定（保育認定）",
+            "value": "3〜5歳児。保育が必要な場合（保育園・認定こども園の保育部分）"
+          },
+          {
+            "label": "3号認定（保育認定）",
+            "value": "0〜2歳児。保育が必要な場合（保育園・小規模保育等）"
+          }
+        ],
+        "heading": "認定区分"
+      }
+    },
+    {
+      "id": "section-requirement",
+      "type": "Section",
+      "props": {
+        "heading": "保育の必要性の事由",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "2号・3号認定を受けるには、以下のいずれかの事由に該当する必要があります。"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "就労（月48時間以上）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "妊娠・出産"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "保護者の疾病・障がい"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "親族の介護・看護"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "災害復旧"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "求職活動"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "就学（職業訓練含む）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "虐待・DVのおそれ"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "育児休業中の継続利用"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-hours",
+      "type": "Section",
+      "props": {
+        "heading": "保育時間",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "保護者の就労時間等により、利用できる保育時間が異なります。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "table-hours",
+      "type": "Table",
+      "props": {
+        "rows": [
+          {
+            "label": "保育標準時間",
+            "value": "最大11時間（フルタイム就労を想定）"
+          },
+          {
+            "label": "保育短時間",
+            "value": "最大8時間（パートタイム就労等を想定）"
+          }
+        ],
+        "heading": "保育時間区分"
+      }
+    },
+    {
+      "id": "info-extended",
+      "type": "InfoCard",
+      "props": {
+        "icon": "info",
+        "variant": "default",
+        "title": "延長保育について",
+        "description": "保育時間を超えて保育が必要な場合は、延長保育をご利用いただけます（別途料金がかかります）。実施状況は施設によって異なります。"
+      }
+    },
+    {
+      "id": "section-apply-flow",
+      "type": "Section",
+      "props": {
+        "heading": "入園申込の流れ（認可保育施設）",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "認可保育園・認定こども園（保育部分）・小規模保育等への入園申込は、以下の流れで行います。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "step-nav-apply",
+      "type": "StepNavigation",
+      "props": {
+        "currentStep": 0,
+        "steps": [
+          {
+            "title": "施設見学・情報収集",
+            "body": "入園を希望する施設を見学し、保育方針や雰囲気を確認しましょう。"
+          },
+          {
+            "title": "申込書類の入手",
+            "body": "早川町の窓口またはウェブサイトで申込書類一式を入手します。"
+          },
+          {
+            "title": "申込書類の提出",
+            "body": "必要書類を揃えて、{{nursery_department}}へ提出します。4月入園の場合は{{nursery_apply_deadline}}が締切です。"
+          },
+          {
+            "title": "利用調整（選考）",
+            "body": "申込状況に応じて、保育の必要性を点数化し、利用調整を行います。"
+          },
+          {
+            "title": "結果通知",
+            "body": "利用調整の結果を郵送でお知らせします。"
+          },
+          {
+            "title": "入園準備・面談",
+            "body": "入園が決まったら、施設との面談や準備を行います。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-documents",
+      "type": "Section",
+      "props": {
+        "heading": "申込に必要な書類",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "保育の必要性を証明する書類が必要です。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "table-documents",
+      "type": "Table",
+      "props": {
+        "rows": [
+          {
+            "label": "支給認定申請書・入園申込書",
+            "value": "全員必要"
+          },
+          {
+            "label": "就労証明書",
+            "value": "就労の場合（勤務先で証明）"
+          },
+          {
+            "label": "診断書",
+            "value": "疾病・障がいの場合"
+          },
+          {
+            "label": "介護・看護状況申告書",
+            "value": "介護・看護の場合"
+          },
+          {
+            "label": "在学証明書・時間割",
+            "value": "就学の場合"
+          },
+          {
+            "label": "求職活動申立書",
+            "value": "求職活動の場合"
+          },
+          {
+            "label": "母子健康手帳の写し",
+            "value": "妊娠・出産の場合"
+          }
+        ],
+        "heading": "主な必要書類"
+      }
+    },
+    {
+      "id": "section-fee",
+      "type": "Section",
+      "props": {
+        "heading": "保育料について",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "保育料は、世帯の市町村民税額に基づいて決定されます。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "table-fee",
+      "type": "Table",
+      "props": {
+        "rows": [
+          {
+            "label": "3〜5歳児（2号認定）",
+            "value": "無償（幼児教育・保育の無償化）"
+          },
+          {
+            "label": "0〜2歳児（3号認定）",
+            "value": "世帯の所得に応じた保育料"
+          },
+          {
+            "label": "0〜2歳児（住民税非課税世帯）",
+            "value": "無償"
+          }
+        ],
+        "heading": "保育料の目安"
+      }
+    },
+    {
+      "id": "info-fee-note",
+      "type": "InfoCard",
+      "props": {
+        "icon": "info",
+        "variant": "default",
+        "title": "給食費・実費について",
+        "description": "3〜5歳児の保育料は無償ですが、給食費（主食費・副食費）は別途負担があります。年収360万円未満相当世帯と第3子以降は副食費が免除されます。"
+      }
+    },
+    {
+      "id": "section-kindergarten",
+      "type": "Section",
+      "props": {
+        "heading": "幼稚園について",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "幼稚園は、満3歳から小学校就学前までのお子さまを対象とした教育施設です。保護者の就労状況に関わらず利用できます。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "table-kindergarten",
+      "type": "Table",
+      "props": {
+        "rows": [
+          {
+            "label": "対象年齢",
+            "value": "満3歳〜5歳児"
+          },
+          {
+            "label": "教育時間",
+            "value": "1日4時間程度（標準）"
+          },
+          {
+            "label": "預かり保育",
+            "value": "教育時間前後や長期休暇中の預かり（園による）"
+          },
+          {
+            "label": "保育料",
+            "value": "無償（月額25,700円まで）"
+          }
+        ],
+        "heading": "幼稚園の概要"
+      }
+    },
+    {
+      "id": "section-list",
+      "type": "Section",
+      "props": {
+        "heading": "早川町の保育施設",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "早川町には以下の保育施設があります。"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "認可保育園：{{nursery_count}}施設"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "認定こども園：{{kodomoen_count}}施設"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "幼稚園：{{kindergarten_count}}施設"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "小規模保育事業所：{{small_nursery_count}}施設"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-other",
+      "type": "Section",
+      "props": {
+        "heading": "その他の保育サービス",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "通常の保育以外にも、以下のサービスをご利用いただけます。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "table-other",
+      "type": "Table",
+      "props": {
+        "rows": [
+          {
+            "label": "一時保育",
+            "value": "緊急時や保護者のリフレッシュ等で一時的に保育が必要な場合"
+          },
+          {
+            "label": "病児・病後児保育",
+            "value": "お子さまが病気または病気回復期の場合"
+          },
+          {
+            "label": "休日保育",
+            "value": "日曜・祝日に保育が必要な場合"
+          },
+          {
+            "label": "夜間保育",
+            "value": "夜間に保育が必要な場合（実施施設限定）"
+          }
+        ],
+        "heading": "その他の保育サービス"
+      }
+    },
+    {
+      "id": "related-links-1",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "認可保育園の入園申込",
+            "href": "/nursery-apply"
+          },
+          {
+            "title": "児童手当",
+            "href": "/jidou-teate"
+          },
+          {
+            "title": "母子保健",
+            "href": "/boshi"
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{nursery_department}}",
+        "phone": "{{nursery_phone}}",
+        "email": "{{nursery_email}}",
+        "hours": "{{city_hall_hours}}",
+        "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
+      }
+    }
+  ],
+  "search": {
+    "summary": "保育園・幼稚園の案内。保育施設の種類、保育認定、入園申込の流れ、保育料、その他の保育サービス。",
+    "keywords": [
+      "保育園",
+      "幼稚園",
+      "認定こども園",
+      "入園申込",
+      "保育認定",
+      "保育料",
+      "無償化",
+      "一時保育",
+      "小規模保育"
+    ],
+    "plain_text": "保育園・幼稚園。認可保育園、認定こども園、幼稚園、小規模保育事業所などの種類と特徴。1号・2号・3号認定の違い。入園申込の流れと必要書類。保育料と無償化制度。一時保育、病児保育などのサービス。"
+  }
+}

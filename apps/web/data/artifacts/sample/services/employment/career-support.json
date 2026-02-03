@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "page_id": "sample-services-employment-career-support",
   "municipality_id": "sample",
-  "path": "/services/employment/career-support",
+  "path": "/career-support",
   "title": "就職支援・キャリア相談",
   "description": "若者サポートステーション、ジョブカフェ、就職氷河期世代支援",
   "content_type": "guide",
@@ -33,11 +33,11 @@
           },
           {
             "label": "仕事・労働",
-            "href": "/topics/employment"
+            "href": "/employment"
           },
           {
             "label": "就職支援・キャリア相談",
-            "href": "/services/employment/career-support"
+            "href": "/career-support"
           }
         ]
       }
@@ -135,19 +135,19 @@
         "items": [
           {
             "title": "ハローワーク",
-            "href": "/services/employment/hello-work"
+            "href": "/hello-work"
           },
           {
             "title": "職業訓練",
-            "href": "/services/employment/vocational-training"
+            "href": "/vocational-training"
           },
           {
             "title": "障害者雇用",
-            "href": "/services/employment/disability-employment"
+            "href": "/disability-employment"
           },
           {
             "title": "シルバー人材センター",
-            "href": "/services/employment/silver-center"
+            "href": "/silver-center"
           }
         ]
       }

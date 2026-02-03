@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "page_id": "sample-services-business-closure",
   "municipality_id": "sample",
-  "path": "/services/business/closure",
+  "path": "/closure",
   "title": "廃業・倒産",
   "description": "廃業届、解散・清算手続き、破産申立て",
   "content_type": "guide",
@@ -33,11 +33,11 @@
           },
           {
             "label": "事業・経営",
-            "href": "/topics/business"
+            "href": "/business"
           },
           {
             "label": "廃業・倒産",
-            "href": "/services/business/closure"
+            "href": "/closure"
           }
         ]
       }
@@ -173,19 +173,19 @@
         "items": [
           {
             "title": "事業承継",
-            "href": "/services/business/succession"
+            "href": "/succession"
           },
           {
             "title": "個人事業主",
-            "href": "/services/business/sole-proprietor"
+            "href": "/sole-proprietor"
           },
           {
             "title": "雇用保険",
-            "href": "/services/employment/unemployment-insurance"
+            "href": "/unemployment-insurance"
           },
           {
             "title": "ハローワーク",
-            "href": "/services/employment/hello-work"
+            "href": "/hello-work"
           }
         ]
       }

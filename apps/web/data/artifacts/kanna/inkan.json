@@ -1,0 +1,463 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "takaoka-services-registration-inkan",
+  "municipality_id": "takaoka",
+  "path": "/inkan",
+  "title": "印鑑登録",
+  "description": "印鑑登録の方法、印鑑登録証明書の取得について",
+  "content_type": "step_by_step",
+  "service_category": "government",
+  "audience": [
+    "residents"
+  ],
+  "topic": [],
+  "source": {
+    "source_url": "template://kanna/services/registration/inkan",
+    "fetched_at": "2026-01-20T10:33:17.311Z",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "2026-01-20T10:33:17.311Z",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "届出・証明",
+            "href": "/registration"
+          },
+          {
+            "label": "印鑑登録",
+            "href": "/inkan"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "印鑑登録"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "印鑑登録とは、住民登録をしている市区町村に印鑑を届け出ることです。登録した印鑑は「実印」として、不動産取引や自動車登録などの重要な契約に使用できます。"
+      }
+    },
+    {
+      "id": "section-py2w6l8mw",
+      "type": "Section",
+      "props": {
+        "heading": "登録できる人",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "当市に住民登録のある15歳以上の方（成年被後見人を除く）"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-inc00v807",
+      "type": "Section",
+      "props": {
+        "heading": "登録できる印鑑",
+        "level": 2,
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "住民票に記載されている氏名、氏、名、または氏名の一部を組み合わせたもの"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "印影の大きさが一辺8mm以上25mm以下の正方形に収まるもの"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "印影が鮮明なもの"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-inc00v807-notification-0",
+      "type": "NotificationBanner",
+      "props": {
+        "severity": "warning",
+        "title": "登録できない印鑑",
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "ゴム印など変形しやすいもの"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "印影が不鮮明なもの"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "氏名以外の事項（職業、資格など）が刻まれているもの"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "同一世帯で既に登録されている印鑑と同じもの"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "step-nav-1",
+      "type": "StepNavigation",
+      "props": {
+        "currentStep": 0,
+        "steps": [
+          {
+            "title": "窓口で申請",
+            "body": "登録する印鑑と本人確認書類を持参して窓口で申請します。",
+            "documents": [
+              "登録する印鑑",
+              "本人確認書類"
+            ]
+          },
+          {
+            "title": "本人確認",
+            "body": "顔写真付き本人確認書類があれば即日登録。ない場合は照会書による確認を行います。",
+            "documents": []
+          },
+          {
+            "title": "印鑑登録証の交付",
+            "body": "登録が完了すると印鑑登録証（カード）が交付されます。",
+            "documents": []
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-uz2aamnn4",
+      "type": "Section",
+      "props": {
+        "heading": "必要書類",
+        "level": 2,
+        "content": []
+      }
+    },
+    {
+      "id": "section-bxi282nqh-table",
+      "type": "Section",
+      "props": {
+        "heading": "即日登録の場合",
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "登録する印鑑"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "顔写真付き本人確認書類（マイナンバーカード、運転免許証、パスポートなど）"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-kmxt71vgy",
+      "type": "Section",
+      "props": {
+        "heading": "照会書による登録の場合",
+        "level": 3,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "顔写真付き本人確認書類がない場合は、照会書を郵送します。届いた照会書に必要事項を記入し、窓口にお持ちください（数日かかります）。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "table-tesuryo",
+      "type": "Table",
+      "props": {
+        "rows": [
+          {
+            "label": "印鑑登録",
+            "value": "{{inkan_touroku_fee}}"
+          },
+          {
+            "label": "印鑑登録証明書（窓口）",
+            "value": "{{inkan_shomei_fee}}"
+          },
+          {
+            "label": "印鑑登録証明書（コンビニ）",
+            "value": "{{inkan_shomei_convenience_fee}}"
+          }
+        ],
+        "heading": "手数料"
+      }
+    },
+    {
+      "id": "section-h8819n8au",
+      "type": "Section",
+      "props": {
+        "heading": "印鑑登録証明書の取得",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "印鑑登録証明書を取得するには、必ず印鑑登録証（カード）が必要です。印鑑そのものでは証明書を取得できません。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-l97oem9u7",
+      "type": "Section",
+      "props": {
+        "heading": "窓口で取得",
+        "level": 3,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "印鑑登録証と本人確認書類を持参してください。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-yjbclw6gu",
+      "type": "Section",
+      "props": {
+        "heading": "コンビニ交付",
+        "level": 3,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "マイナンバーカードがあれば、全国のコンビニのマルチコピー機で取得できます。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "related-links-1",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "住民票",
+            "href": "/juminhyo"
+          },
+          {
+            "title": "マイナンバーカード",
+            "href": "/mynumber"
+          },
+          {
+            "title": "転入届",
+            "href": "/tennyu"
+          },
+          {
+            "title": "住宅購入",
+            "href": "/home-purchase"
+          },
+          {
+            "title": "自動車登録",
+            "href": "/registration"
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-対象-1769919363198",
+      "type": "Section",
+      "props": {
+        "heading": "印鑑登録の対象となる方",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "詳細は担当課にお問い合わせください。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-方法-1769919363198",
+      "type": "Section",
+      "props": {
+        "heading": "印鑑登録の手続き方法",
+        "content": [
+          {
+            "type": "list",
+            "ordered": true,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "必要書類を準備します。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "窓口で申請書を記入します。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "書類を提出し、確認を受けます。"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{shimin_department}}",
+        "phone": "{{shimin_phone}}",
+        "email": "{{shimin_email}}",
+        "hours": "{{city_hall_hours}}",
+        "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
+      }
+    }
+  ],
+  "search": {
+    "summary": "印鑑登録の方法。登録できる印鑑、必要書類、印鑑登録証明書の取得について。",
+    "keywords": [
+      "印鑑登録",
+      "実印",
+      "印鑑証明",
+      "印鑑登録証明書",
+      "印鑑登録証"
+    ],
+    "plain_text": "印鑑登録。15歳以上の住民が対象。顔写真付き本人確認書類があれば即日登録可能。印鑑登録証明書は窓口またはコンビニで取得可能。"
+  }
+}

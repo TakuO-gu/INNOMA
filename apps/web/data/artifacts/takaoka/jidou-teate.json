@@ -1,0 +1,260 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "takaoka-jidou-teate",
+  "municipality_id": "takaoka",
+  "path": "/jidou-teate",
+  "title": "児童手当",
+  "description": "児童手当の対象者、支給額、申請手続きについて。令和6年10月より所得制限撤廃・高校生年代まで拡大。",
+  "content_type": "guide",
+  "service_category": "children",
+  "audience": ["residents", "children_families"],
+  "topic": [],
+  "source": {
+    "source_url": "https://www.city.takaoka.toyama.jp/soshiki/kodomo_kosodateka/2/4/1/2/1/5149.html",
+    "fetched_at": "2026-02-03T00:00:00.000Z",
+    "content_hash": "updated-r6-reform"
+  },
+  "pipeline": {
+    "run_id": "manual-update-001",
+    "generated_at": "2026-02-03T00:00:00.000Z",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          { "label": "ホーム", "href": "/" },
+          { "label": "子育て・出産", "href": "/childcare" },
+          { "label": "児童手当", "href": "/jidou-teate" }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "児童手当"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "高校生年代まで（18歳到達後の最初の3月31日まで）のお子さんを養育している方に支給される手当です。令和6年10月から所得制限が撤廃され、すべての方が対象となりました。"
+      }
+    },
+    {
+      "id": "notification-reform",
+      "type": "NotificationBanner",
+      "props": {
+        "severity": "info",
+        "title": "令和6年10月から制度が変わりました",
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [{ "type": "paragraph", "runs": [{ "text": "所得制限が撤廃されました（すべての方が対象）" }] }],
+              [{ "type": "paragraph", "runs": [{ "text": "高校生年代まで支給対象が拡大されました" }] }],
+              [{ "type": "paragraph", "runs": [{ "text": "第3子以降の支給額が30,000円に増額されました" }] }],
+              [{ "type": "paragraph", "runs": [{ "text": "支給回数が年6回（偶数月）に変更されました" }] }]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-taisho",
+      "type": "Section",
+      "props": {
+        "heading": "受け取れる人",
+        "level": 2,
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [{ "type": "paragraph", "runs": [{ "text": "高岡市に住所がある" }] }],
+              [{ "type": "paragraph", "runs": [{ "text": "高校生年代まで（18歳の年度末まで）のお子さんを養育している" }] }],
+              [{ "type": "paragraph", "runs": [{ "text": "公務員ではない（公務員は勤務先から支給）" }] }]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-gaku",
+      "type": "Section",
+      "props": {
+        "heading": "いくら受け取れるか",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [{ "text": "お子さんの年齢と人数で決まります。" }]
+          }
+        ]
+      }
+    },
+    {
+      "id": "table-gaku",
+      "type": "Table",
+      "props": {
+        "heading": "支給額（月額）",
+        "rows": [
+          { "label": "3歳未満", "value": "15,000円（第3子以降：30,000円）" },
+          { "label": "3歳〜高校生年代", "value": "10,000円（第3子以降：30,000円）" }
+        ]
+      }
+    },
+    {
+      "id": "richtext-daisan",
+      "type": "RichText",
+      "props": {
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              { "text": "「第3子以降」のカウントは、", "bold": true },
+              { "text": "22歳の年度末まで（大学生年代）のお子さんを含めて数えます。" }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-itsu",
+      "type": "Section",
+      "props": {
+        "heading": "いつ届くか",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [{ "text": "年6回、偶数月の10日に届きます（10日が土日祝日の場合は直前の平日）。" }]
+          }
+        ]
+      }
+    },
+    {
+      "id": "table-shikyubi",
+      "type": "Table",
+      "props": {
+        "rows": [
+          { "label": "2月10日", "value": "12月〜1月分" },
+          { "label": "4月10日", "value": "2月〜3月分" },
+          { "label": "6月10日", "value": "4月〜5月分" },
+          { "label": "8月10日", "value": "6月〜7月分" },
+          { "label": "10月10日", "value": "8月〜9月分" },
+          { "label": "12月10日", "value": "10月〜11月分" }
+        ]
+      }
+    },
+    {
+      "id": "section-shinsei",
+      "type": "Section",
+      "props": {
+        "heading": "申請が必要なとき",
+        "level": 2,
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [{ "type": "paragraph", "runs": [{ "text": "お子さんが生まれたとき" }] }],
+              [{ "type": "paragraph", "runs": [{ "text": "他の市区町村から転入したとき" }] }],
+              [{ "type": "paragraph", "runs": [{ "text": "公務員でなくなったとき" }] }]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "notification-15days",
+      "type": "NotificationBanner",
+      "props": {
+        "severity": "warning",
+        "title": "出生・転入から15日以内に申請してください",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [{ "text": "申請が遅れると、受け取れない月が発生します。15日以内なら、出生・転入の翌月分から受け取れます。" }]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-todokede",
+      "type": "Section",
+      "props": {
+        "heading": "届出が必要なとき",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [{ "text": "届出が遅れると、手当の支給が遅れたり、返還が必要になる場合があります。" }]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [{ "type": "paragraph", "runs": [{ "text": "第2子以降が生まれたとき（額改定届）" }] }],
+              [{ "type": "paragraph", "runs": [{ "text": "振込口座を変更するとき" }] }],
+              [{ "type": "paragraph", "runs": [{ "text": "受給者または児童の住所が変わったとき" }] }],
+              [{ "type": "paragraph", "runs": [{ "text": "他の市区町村へ転出するとき（受給事由消滅届）" }] }],
+              [{ "type": "paragraph", "runs": [{ "text": "公務員になったとき（受給事由消滅届）" }] }]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "related-links-1",
+      "type": "RelatedLinks",
+      "props": {
+        "heading": "児童手当の手続き",
+        "items": [
+          { "title": "受け取れるか確認する", "href": "/jidou-teate-check" },
+          { "title": "児童手当を申請する", "href": "/jidou-teate-apply" }
+        ]
+      }
+    },
+    {
+      "id": "related-links-2",
+      "type": "RelatedLinks",
+      "props": {
+        "heading": "関連する手続き",
+        "items": [
+          { "title": "出生届", "href": "/shussei" },
+          { "title": "転入届", "href": "/tennyu" },
+          { "title": "母子保健", "href": "/boshi" },
+          { "title": "保育所入所申請", "href": "/nursery-apply" }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "子ども・子育て課",
+        "phone": "0766-20-1381",
+        "hours": "午前8時30分〜午後5時15分（土日祝日・年末年始除く）",
+        "address": "高岡市広小路7-50"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
+      }
+    }
+  ],
+  "search": {
+    "summary": "児童手当の案内。高校生年代まで支給。3歳未満15,000円、3歳以上10,000円（第3子以降30,000円）。令和6年10月から所得制限撤廃。",
+    "keywords": ["児童手当", "子育て支援", "高校生", "支給額", "申請", "所得制限撤廃"],
+    "plain_text": "児童手当。高校生年代までのお子さんを養育している方に支給。月額は3歳未満15,000円、3歳以上10,000円（第3子以降30,000円）。年6回偶数月に支給。令和6年10月から所得制限撤廃。出生・転入から15日以内に申請。"
+  }
+}
