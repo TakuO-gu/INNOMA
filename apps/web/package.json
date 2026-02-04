@@ -25,6 +25,7 @@
     "bot:watch": "npx tsx scripts/auto-update-bot.ts watch --auto-fix --interval 300000",
     "bot:populate": "npx tsx scripts/auto-update-bot.ts populate",
     "build:search-index": "npx tsx scripts/build-search-index.ts",
+    "generate:taxonomy": "npx tsx scripts/generate-taxonomy-overview.ts",
     "ci": "npm run lint && npm run test && npm run validate:artifacts && npm run build",
     "ci:lock": "./scripts/with-lock.sh npm run ci",
     "check": "./scripts/with-lock.sh bash -c 'npm run lint && npm run test && npm run build'"
