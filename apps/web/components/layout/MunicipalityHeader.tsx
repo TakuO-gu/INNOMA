@@ -1,6 +1,7 @@
 "use client";
 
 import NextLink from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { SearchBox } from "@/components/ui/SearchBox";
@@ -32,9 +33,11 @@ export default function MunicipalityHeader({
               className="flex items-center hover:opacity-80 transition-opacity"
               title="INNOMA トップページ"
             >
-              <img
+              <Image
                 src="/images/logo.svg"
                 alt="INNOMA"
+                width={72}
+                height={18}
                 className="w-auto"
                 style={{ height: "18px" }}
               />

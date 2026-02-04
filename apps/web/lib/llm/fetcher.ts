@@ -266,6 +266,70 @@ export async function fetchServiceVariables(
             variables.push(crawledVar);
           }
         }
+
+        // Step 5b: Playwrightクローラーで発見したPDFから変数を抽出
+        if (crawlerResult.pdfUrls && crawlerResult.pdfUrls.length > 0) {
+          // まだ取得できていない変数を確認
+          const stillMissingAfterCrawl = targetVars.filter(
+            v => !variables.some(ev => ev.variableName === v.name && ev.value && isConcreteValue(v.name, ev.value))
+          );
+
+          if (stillMissingAfterCrawl.length > 0) {
+            console.log(`[Fetcher] Processing ${crawlerResult.pdfUrls.length} PDFs found by crawler for ${stillMissingAfterCrawl.length} missing variables`);
+
+            for (const pdfUrl of crawlerResult.pdfUrls.slice(0, 5)) {
+              if (stillMissingAfterCrawl.length === 0) break;
+
+              try {
+                const pdfContent = await fetchPage(pdfUrl);
+                if (pdfContent.error) continue;
+
+                relatedPdfUrls.add(pdfUrl);
+
+                const pdfExtracted = await extractVariables(
+                  pdfContent.content,
+                  pdfUrl,
+                  stillMissingAfterCrawl.map(v => ({
+                    variableName: v.name,
+                    description: v.description,
+                    examples: v.examples,
+                  }))
+                );
+
+                for (const extracted of pdfExtracted) {
+                  if (extracted.value && isConcreteValue(extracted.variableName, extracted.value)) {
+                    const urlCredibility = calculateUrlCredibility(pdfUrl);
+                    const validationResult = validateVariable(extracted.variableName, extracted.value);
+
+                    if (validationResult.valid) {
+                      extracted.confidence = Math.min(extracted.confidence + 0.2, 1.0);
+                      if (validationResult.normalized) {
+                        extracted.value = validationResult.normalized;
+                      }
+                    }
+
+                    extracted.confidence = Math.min((extracted.confidence + urlCredibility) / 2, 1.0);
+
+                    const existingIdx = variables.findIndex(v => v.variableName === extracted.variableName);
+                    if (existingIdx >= 0) {
+                      variables[existingIdx] = extracted;
+                    } else {
+                      variables.push(extracted);
+                    }
+
+                    // 取得できた変数をリストから除外
+                    const idx = stillMissingAfterCrawl.findIndex(v => v.name === extracted.variableName);
+                    if (idx >= 0) stillMissingAfterCrawl.splice(idx, 1);
+
+                    console.log(`[Fetcher] Extracted from PDF: ${extracted.variableName} = ${extracted.value}`);
+                  }
+                }
+              } catch (error) {
+                console.error(`[Fetcher] Failed to process PDF ${pdfUrl}:`, error);
+              }
+            }
+          }
+        }
       }
     }
 
@@ -374,6 +438,66 @@ export async function fetchServiceVariables(
         } catch {
           // Variable-specific search failed
           recordSearchAttempt([varName], varSpecificQuery, [], 'not_found');
+        }
+      }
+    }
+
+    // Step 6b: これまでに収集したすべてのPDFから、まだ取得できていない変数を抽出
+    const afterStep6ExtractedVarNames = new Set(variables.filter(v => v.value).map(v => v.variableName));
+    const afterStep6MissingVarNames = service.variables.filter(name => !afterStep6ExtractedVarNames.has(name));
+
+    if (afterStep6MissingVarNames.length > 0 && relatedPdfUrls.size > 0) {
+      console.log(`[Fetcher] Final PDF pass: ${relatedPdfUrls.size} PDFs for ${afterStep6MissingVarNames.length} missing variables`);
+
+      const remainingVarsForPdf = afterStep6MissingVarNames.map(name => {
+        const def = getVariableDefinition(name);
+        return {
+          variableName: name,
+          description: def?.description || name,
+          examples: def?.examples,
+        };
+      });
+
+      // 未処理のPDFを優先（すでに抽出を試みたPDFは除外）
+      for (const pdfUrl of Array.from(relatedPdfUrls).slice(0, 8)) {
+        if (remainingVarsForPdf.length === 0) break;
+
+        try {
+          const pdfContent = await fetchPage(pdfUrl);
+          if (pdfContent.error) continue;
+
+          const pdfExtracted = await extractVariables(
+            pdfContent.content,
+            pdfUrl,
+            remainingVarsForPdf
+          );
+
+          for (const extracted of pdfExtracted) {
+            if (extracted.value && isConcreteValue(extracted.variableName, extracted.value)) {
+              const urlCredibility = calculateUrlCredibility(pdfUrl);
+              const validationResult = validateVariable(extracted.variableName, extracted.value);
+
+              if (validationResult.valid) {
+                extracted.confidence = Math.min(extracted.confidence + 0.2, 1.0);
+                if (validationResult.normalized) {
+                  extracted.value = validationResult.normalized;
+                }
+              }
+
+              extracted.confidence = Math.min((extracted.confidence + urlCredibility) / 2, 1.0);
+
+              if (!variables.some(v => v.variableName === extracted.variableName && v.value)) {
+                variables.push(extracted);
+                // 取得できた変数をリストから除外
+                const idx = remainingVarsForPdf.findIndex(v => v.variableName === extracted.variableName);
+                if (idx >= 0) remainingVarsForPdf.splice(idx, 1);
+
+                console.log(`[Fetcher] Final PDF extraction: ${extracted.variableName} = ${extracted.value}`);
+              }
+            }
+          }
+        } catch (error) {
+          console.error(`[Fetcher] Final PDF pass failed for ${pdfUrl}:`, error);
         }
       }
     }

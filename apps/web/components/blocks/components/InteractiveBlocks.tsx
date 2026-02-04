@@ -11,9 +11,16 @@ import {
   StepNavigationDescription,
 } from "@/components/dads";
 import { useMunicipality, prefixInternalLink } from "../MunicipalityContext";
-import { RichTextRenderer } from "../RichTextRenderer";
+import { RichTextRenderer, renderTextWithSourceRefs } from "../RichTextRenderer";
 import type { StepItem, DirectoryItem, StepItemState } from "../types";
 import { budouxParse } from "@/components/BudouX";
+
+/**
+ * 参照番号マーカー(⟦N⟧)を除去してプレーンテキストを取得
+ */
+function stripSourceRefs(text: string): string {
+  return text.replace(/⟦\d+⟧/g, "");
+}
 
 export function ContactBlock({ props }: { props: Record<string, unknown> }) {
   const department = props.department as string | undefined;
@@ -34,14 +41,18 @@ export function ContactBlock({ props }: { props: Record<string, unknown> }) {
           <div className="flex">
             <dt className="w-24 font-medium text-solid-gray-600">電話</dt>
             <dd>
-              <Link href={`tel:${phone}`}>{phone}</Link>
+              <Link href={`tel:${stripSourceRefs(phone)}`}>
+                {renderTextWithSourceRefs(phone, "contact-phone")}
+              </Link>
             </dd>
           </div>
         )}
         {fax && (
           <div className="flex">
             <dt className="w-24 font-medium text-solid-gray-600">FAX</dt>
-            <dd className="text-solid-gray-800">{fax}</dd>
+            <dd className="text-solid-gray-800">
+              {renderTextWithSourceRefs(fax, "contact-fax")}
+            </dd>
           </div>
         )}
         {email && (
@@ -49,11 +60,13 @@ export function ContactBlock({ props }: { props: Record<string, unknown> }) {
             <dt className="w-24 font-medium text-solid-gray-600">メール</dt>
             <dd>
               {email.startsWith("http://") || email.startsWith("https://") ? (
-                <Link href={email} target="_blank" rel="noopener noreferrer">
-                  問い合わせフォーム
+                <Link href={stripSourceRefs(email)} target="_blank" rel="noopener noreferrer">
+                  問い合わせフォーム{renderTextWithSourceRefs(email.match(/⟦\d+⟧/)?.[0] || "", "contact-email-ref")}
                 </Link>
               ) : (
-                <Link href={`mailto:${email}`}>{email}</Link>
+                <Link href={`mailto:${stripSourceRefs(email)}`}>
+                  {renderTextWithSourceRefs(email, "contact-email")}
+                </Link>
               )}
             </dd>
           </div>
@@ -61,7 +74,9 @@ export function ContactBlock({ props }: { props: Record<string, unknown> }) {
         {hours && (
           <div className="flex">
             <dt className="w-24 font-medium text-solid-gray-600">受付時間</dt>
-            <dd className="text-solid-gray-800">{hours}</dd>
+            <dd className="text-solid-gray-800">
+              {renderTextWithSourceRefs(hours, "contact-hours")}
+            </dd>
           </div>
         )}
         {address && (
@@ -69,9 +84,13 @@ export function ContactBlock({ props }: { props: Record<string, unknown> }) {
             <dt className="w-24 font-medium text-solid-gray-600">住所</dt>
             <dd>
               {mapUrl ? (
-                <Link href={mapUrl} target="_blank" rel="noopener noreferrer">{address}</Link>
+                <Link href={mapUrl} target="_blank" rel="noopener noreferrer">
+                  {renderTextWithSourceRefs(address, "contact-address")}
+                </Link>
               ) : (
-                <span className="text-solid-gray-800">{address}</span>
+                <span className="text-solid-gray-800">
+                  {renderTextWithSourceRefs(address, "contact-address")}
+                </span>
               )}
             </dd>
           </div>

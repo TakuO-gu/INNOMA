@@ -8,6 +8,7 @@
 import { generateJSON } from '../gemini';
 import type { Block } from '../../artifact/innoma-artifact-schema.v2';
 import type { ContentType } from './content-type-classifier';
+import { TEXT_LENGTH_THRESHOLD } from '../text-length-rules';
 
 /**
  * 情報タイプの定義
@@ -149,7 +150,7 @@ export const SERVICE_PAGE_RULES = `
 
 ### 必須構成（上から順に）
 1. Title（動詞で始まる：「〜を申請する」「〜を届け出る」）
-2. Summary（1-2行、40-60字、誰が・何をするかだけ）
+2. Summary（1-2行、50-70字、誰が・何をするかだけ）
 3. NotificationBanner?（重要な注意1つだけ、省略可）
 4. Section: 対象者（箇条書き、3項目以内）
 5. Section: 必要なもの（箇条書き、3項目以内）
@@ -883,9 +884,10 @@ ${RICHTEXT_NODE_FORMAT}
 }
 
 /**
- * 40文字ルール検証の結果（Pass情報付き）
+ * テキスト文字数ルール検証の結果（Pass情報付き）
+ * 閾値: TEXT_LENGTH_THRESHOLD (60文字)
  */
-export interface Validate40CharResult {
+export interface ValidateTextLengthResult {
   blocks: Block[];
   pass1Blocks: Block[];
   pass2Blocks: Block[];
@@ -953,8 +955,8 @@ export async function analyzeAndStructure(
     maxOutputTokens: 16384,
   });
 
-  // Step 4: 40文字ルール検証・修正（LLM使用の非同期処理、Pass情報付き）
-  const validationResult = await validate40CharRule(result.blocks);
+  // Step 4: テキスト文字数ルール検証・修正（LLM使用の非同期処理、Pass情報付き）
+  const validationResult = await validateTextLengthRule(result.blocks);
 
   return {
     blocks: validationResult.blocks,
@@ -970,13 +972,14 @@ export async function analyzeAndStructure(
 }
 
 /**
- * 40文字ルールを検証し、違反があれば別コンポーネントへの変換を検討
+ * テキスト文字数ルールを検証し、違反があれば別コンポーネントへの変換を検討
  * テキストの単純分割は行わない（コンポーネント変換のみ）
+ * 閾値: TEXT_LENGTH_THRESHOLD (60文字)
  *
  * Pass 1: 標準的なパターンマッチングで変換を試みる（全ブロックタイプ対象）
- * Pass 2: まだ40文字超えが残っていれば、LLMを使ってより積極的な変換を試みる
+ * Pass 2: まだ閾値超えが残っていれば、LLMを使ってより積極的な変換を試みる
  */
-async function validate40CharRule(blocks: Block[]): Promise<Validate40CharResult> {
+async function validateTextLengthRule(blocks: Block[]): Promise<ValidateTextLengthResult> {
   // Pass 1: 標準変換（同期処理）- 全ブロックタイプを対象
   const pass1Result: Block[] = [];
   for (const block of blocks) {
@@ -987,7 +990,7 @@ async function validate40CharRule(blocks: Block[]): Promise<Validate40CharResult
   // Pass 1後の長いテキストを収集（デバッグ用）
   const pass1LongTexts = collectLongTextsFromAllBlocks(pass1Result);
 
-  // Pass 2: まだ40文字超えが残っていれば、LLMを使って積極的に変換
+  // Pass 2: まだ閾値超えが残っていれば、LLMを使って積極的に変換
   let pass2Result = pass1Result;
   const pass2LongTexts: LongTextInfo[] = [];
 
@@ -1012,7 +1015,7 @@ async function validate40CharRule(blocks: Block[]): Promise<Validate40CharResult
 }
 
 /**
- * 40文字を超えるテキストの情報（Pass 2用）
+ * 閾値（TEXT_LENGTH_THRESHOLD）を超えるテキストの情報（Pass 2用）
  */
 export interface LongTextInfo {
   blockIndex: number;
@@ -1028,7 +1031,7 @@ export interface LongTextInfo {
 }
 
 /**
- * 全ブロックタイプから40文字を超えるテキストを収集
+ * 全ブロックタイプから閾値（TEXT_LENGTH_THRESHOLD）を超えるテキストを収集
  * DescriptionListなどスキーマ外のブロックタイプも対応するため、block.typeをstring扱い
  */
 function collectLongTextsFromAllBlocks(blocks: Block[]): LongTextInfo[] {
@@ -1052,7 +1055,7 @@ function collectLongTextsFromAllBlocks(blocks: Block[]): LongTextInfo[] {
 
           if (node.type === 'paragraph' && node.runs) {
             const fullText = node.runs.map(r => r.text).join('');
-            if (fullText.length > 40) {
+            if (fullText.length > TEXT_LENGTH_THRESHOLD) {
               longTexts.push({
                 blockIndex,
                 blockId: block.id,
@@ -1068,7 +1071,7 @@ function collectLongTextsFromAllBlocks(blocks: Block[]): LongTextInfo[] {
             for (let itemIndex = 0; itemIndex < node.items.length; itemIndex++) {
               const item = node.items[itemIndex];
               const itemText = extractTextFromItem(item as unknown[]);
-              if (itemText.length > 40) {
+              if (itemText.length > TEXT_LENGTH_THRESHOLD) {
                 longTexts.push({
                   blockIndex,
                   blockId: block.id,
@@ -1092,7 +1095,7 @@ function collectLongTextsFromAllBlocks(blocks: Block[]): LongTextInfo[] {
         for (let rowIndex = 0; rowIndex < rows.length; rowIndex++) {
           const row = rows[rowIndex];
           // valueが文字列の場合
-          if (typeof row.value === 'string' && row.value.length > 40) {
+          if (typeof row.value === 'string' && row.value.length > TEXT_LENGTH_THRESHOLD) {
             longTexts.push({
               blockIndex,
               blockId: block.id,
@@ -1104,7 +1107,7 @@ function collectLongTextsFromAllBlocks(blocks: Block[]): LongTextInfo[] {
             });
           }
           // labelも長い場合
-          if (row.label.length > 40) {
+          if (row.label.length > TEXT_LENGTH_THRESHOLD) {
             longTexts.push({
               blockIndex,
               blockId: block.id,
@@ -1127,7 +1130,7 @@ function collectLongTextsFromAllBlocks(blocks: Block[]): LongTextInfo[] {
           const item = items[itemIndex];
           // contentからテキストを抽出
           const contentText = extractTextFromRichTextNodes(item.content);
-          if (contentText.length > 40) {
+          if (contentText.length > TEXT_LENGTH_THRESHOLD) {
             longTexts.push({
               blockIndex,
               blockId: block.id,
@@ -1147,7 +1150,7 @@ function collectLongTextsFromAllBlocks(blocks: Block[]): LongTextInfo[] {
         if (!Array.isArray(content)) break;
 
         const contentText = extractTextFromRichTextNodes(content);
-        if (contentText.length > 40) {
+        if (contentText.length > TEXT_LENGTH_THRESHOLD) {
           longTexts.push({
             blockIndex,
             blockId: block.id,
@@ -1167,7 +1170,7 @@ function collectLongTextsFromAllBlocks(blocks: Block[]): LongTextInfo[] {
         for (let itemIndex = 0; itemIndex < items.length; itemIndex++) {
           const item = items[itemIndex];
           // descriptionが長い場合
-          if (item.description && item.description.length > 40) {
+          if (item.description && item.description.length > TEXT_LENGTH_THRESHOLD) {
             longTexts.push({
               blockIndex,
               blockId: block.id,
@@ -1179,7 +1182,7 @@ function collectLongTextsFromAllBlocks(blocks: Block[]): LongTextInfo[] {
             });
           }
           // termも長い場合
-          if (item.term && item.term.length > 40) {
+          if (item.term && item.term.length > TEXT_LENGTH_THRESHOLD) {
             longTexts.push({
               blockIndex,
               blockId: block.id,
@@ -1253,7 +1256,7 @@ function transformLongTable(block: Block): Block[] {
   if (!props.rows) return [block];
 
   const hasLongValue = props.rows.some(row =>
-    typeof row.value === 'string' && row.value.length > 40
+    typeof row.value === 'string' && row.value.length > TEXT_LENGTH_THRESHOLD
   );
 
   if (!hasLongValue) return [block];
@@ -1261,7 +1264,7 @@ function transformLongTable(block: Block): Block[] {
   // 長いvalueを持つ行をAccordionに変換することを検討
   // ただし、3行以上ある場合のみ
   if (props.rows.length >= 3) {
-    const longRows = props.rows.filter(row => typeof row.value === 'string' && row.value.length > 40);
+    const longRows = props.rows.filter(row => typeof row.value === 'string' && row.value.length > TEXT_LENGTH_THRESHOLD);
     const shortRows = props.rows.filter(row => typeof row.value !== 'string' || row.value.length <= 40);
 
     if (longRows.length >= 2) {
@@ -1343,7 +1346,7 @@ async function convertLongTextsWithLLM(longTexts: LongTextInfo[]): Promise<Map<s
   }));
 
   const prompt = `以下のテキストを、より適切なコンポーネントに変換してください。
-各テキストは40文字を超えており、別のコンポーネントで表現することで読みやすくなります。
+各テキストは${TEXT_LENGTH_THRESHOLD}文字を超えており、別のコンポーネントで表現することで読みやすくなります。
 
 【変換対象テキスト】
 ${JSON.stringify(textsForLLM, null, 2)}
@@ -1734,7 +1737,7 @@ function transformLongRichText(block: Block): Block[] {
       const fullText = node.runs.map(r => r.text).join('');
 
       // 40文字以下ならそのまま
-      if (fullText.length <= 40) {
+      if (fullText.length <= TEXT_LENGTH_THRESHOLD) {
         remainingContent.push(node);
         continue;
       }
@@ -1815,7 +1818,7 @@ function transformLongListItems(
   for (const item of items) {
     const itemText = extractTextFromItem(item);
 
-    if (itemText.length <= 40) {
+    if (itemText.length <= TEXT_LENGTH_THRESHOLD) {
       remainingItems.push(item);
       continue;
     }
@@ -2027,8 +2030,8 @@ export function getRecommendedBlockType(
 ): string {
   const { hasConditions, itemCount = 0, stepCount = 0, importance = 'medium', contentType, maxItemLength = 0 } = options;
 
-  // 40文字ルール: リスト項目が長い場合はより適切なコンポーネントに変更
-  const hasLongItems = maxItemLength > 40;
+  // テキスト文字数ルール: リスト項目が長い場合はより適切なコンポーネントに変更
+  const hasLongItems = maxItemLength > TEXT_LENGTH_THRESHOLD;
 
   // 推奨ブロックを決定
   let recommended: string;
@@ -2053,7 +2056,7 @@ export function getRecommendedBlockType(
           recommended = 'DescriptionList';
         }
       } else if (hasLongItems) {
-        // 40文字超: 長い項目はDescriptionListで見やすく
+        // 閾値超: 長い項目はDescriptionListで見やすく
         recommended = 'DescriptionList';
       } else if (itemCount <= 3) {
         recommended = 'DescriptionList';
@@ -2065,7 +2068,7 @@ export function getRecommendedBlockType(
     case 'eligibility':
       // 対象者条件
       if (hasLongItems) {
-        // 40文字超: 長い条件はDescriptionListで見やすく
+        // 閾値超: 長い条件はDescriptionListで見やすく
         recommended = 'DescriptionList';
       } else {
         recommended = 'RichText'; // unordered list
@@ -2157,7 +2160,7 @@ export function getRecommendedBlockType(
 
     case 'description':
     default:
-      // 40文字超の説明はSectionに分割を検討
+      // 閾値超の説明はSectionに分割を検討
       if (hasLongItems && itemCount >= 2) {
         // 複数の長い段落 → Accordionで整理
         recommended = 'Accordion';

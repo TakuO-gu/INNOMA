@@ -6,13 +6,13 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4">
         <div className="grid md:grid-cols-3 gap-8">
           <div>
-            <h3 className="text-xl font-bold mb-4">INNOMA</h3>
+            <p className="text-xl font-bold mb-4">INNOMA</p>
             <p className="text-solid-gray-420 text-sm">
               日本の自治体情報をオープンに、アクセスしやすく。
             </p>
           </div>
           <div>
-            <h4 className="font-semibold mb-4">リンク</h4>
+            <p className="font-semibold mb-4">リンク</p>
             <ul className="space-y-2 text-solid-gray-420 text-sm">
               <li>
                 <NextLink href="/municipalities" className="hover:text-white transition-colors">
@@ -32,7 +32,7 @@ export default function Footer() {
             </ul>
           </div>
           <div>
-            <h4 className="font-semibold mb-4">プロジェクトについて</h4>
+            <p className="font-semibold mb-4">プロジェクトについて</p>
             <p className="text-solid-gray-420 text-sm">
               INNOMAはオープンソースプロジェクトです。貢献を歓迎します。
             </p>

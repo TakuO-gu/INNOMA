@@ -21,6 +21,7 @@ export {
 export {
   replaceVariables,
   replaceVariablesWithSources,
+  replaceVariablesWithSourceRefs,
   variableStoreToMap,
   variableStoreToMapForJson,
   escapeForJson,
@@ -34,6 +35,7 @@ export {
 export type {
   VariableSourceInfo,
   ReplaceResultWithSources,
+  ReplaceResultWithSourcesAndRefs,
 } from "./replace";
 
 // 自治体データ操作

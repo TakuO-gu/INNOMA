@@ -79,9 +79,12 @@ export default async function ArtifactPage({ params }: PageProps) {
 
   const { artifact, unreplacedVariables, sources } = result;
 
+  // トピックページ（ディレクトリ）は変数チェックを緩和
+  const isDirectoryPage = artifact.content_type === "directory";
+
   // 未取得の変数があるページはエンドユーザーには表示しない
-  // リンク側でフィルタリングするが、直接URLアクセスされた場合の保険としてnotFoundを返す
-  if (unreplacedVariables.length > 0) {
+  // ただしディレクトリページは例外として表示を許可（リンク側でcontent-itemをフィルタリング）
+  if (unreplacedVariables.length > 0 && !isDirectoryPage) {
     notFound();
   }
 
@@ -98,6 +101,7 @@ export default async function ArtifactPage({ params }: PageProps) {
 
   return (
     <main
+      id="main"
       data-emergency={isEmergency ? "true" : undefined}
       data-priority={isHighPriority ? "high" : undefined}
     >

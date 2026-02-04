@@ -6,7 +6,7 @@ import { Link, Accordion, AccordionSummary, AccordionContent } from "@/component
 import type { RichTextContent } from "@/lib/artifact/types";
 import type { RichTextNodeType } from "@/lib/artifact/schema";
 import { useMunicipality, prefixInternalLink } from "../MunicipalityContext";
-import { RichTextRenderer, getHeadingSizeClass } from "../RichTextRenderer";
+import { RichTextRenderer, getHeadingSizeClass, renderTextWithSourceRefs } from "../RichTextRenderer";
 import type { TableRow, AccordionItem } from "../types";
 import { budouxParse } from "@/components/BudouX";
 
@@ -126,13 +126,13 @@ export function TableBlock({ props }: { props: Record<string, unknown> }) {
           {rawRows.map((row, i) => (
             <tr key={i}>
               <th scope="row" className="px-4 py-3 text-left text-std-16N-170 font-medium text-solid-gray-700 bg-solid-gray-50 w-1/3">
-                {row.label}
+                {renderTextWithSourceRefs(row.label, `table-label-${i}`)}
               </th>
               <td className="px-4 py-3 text-std-16N-170 text-solid-gray-800">
                 {Array.isArray(row.value) ? (
                   <RichTextRenderer content={row.value as RichTextNodeType[]} />
                 ) : (
-                  row.value
+                  renderTextWithSourceRefs(row.value as string, `table-value-${i}`)
                 )}
               </td>
             </tr>
@@ -179,10 +179,10 @@ export function DescriptionListBlock({ props }: { props: Record<string, unknown>
         {items.map((item, i) => (
           <div key={i} className="flex flex-col sm:flex-row sm:gap-4">
             <dt className="text-std-16B-170 text-solid-gray-700 sm:w-1/3 sm:flex-shrink-0">
-              {item.term}
+              {renderTextWithSourceRefs(item.term, `dl-term-${i}`)}
             </dt>
             <dd className="text-std-16N-170 text-solid-gray-800 mt-1 sm:mt-0">
-              {item.description}
+              {renderTextWithSourceRefs(item.description, `dl-desc-${i}`)}
             </dd>
           </div>
         ))}

@@ -35,7 +35,6 @@ export {
   type StructuredInfo,
   type StructureResultWithPassInfo,
   type LongTextInfo,
-  type Validate40CharResult,
 } from './prompts/content-structurer';
 
 // Validators

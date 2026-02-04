@@ -122,7 +122,7 @@ export default async function SearchPage({
     <div className="min-h-screen bg-solid-gray-50 flex flex-col">
       <Header />
 
-      <main className="flex-1">
+      <main id="main" className="flex-1">
         {/* Search Header */}
         <section className="bg-white border-b border-solid-gray-300">
           <div className="max-w-4xl mx-auto px-4 py-8">

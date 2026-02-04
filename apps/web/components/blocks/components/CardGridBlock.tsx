@@ -284,11 +284,17 @@ function InfoCard({
  * CardGridBlock - カードのグリッド配置
  */
 export function CardGridBlock({ props }: CardGridBlockProps) {
-  const { municipalityId } = useMunicipality();
+  const { municipalityId, isPageCompleted } = useMunicipality();
   const heading = props.heading;
   const variant = props.variant || "link";
   const columns = props.columns || 3;
-  const items = props.items || [];
+  const rawItems = props.items || [];
+
+  // 完成済みページのみをフィルタリング（外部リンクは常に表示）
+  const items = rawItems.filter((item) => {
+    if (!item.href) return true; // hrefがない場合は表示
+    return isPageCompleted(item.href);
+  });
 
   if (items.length === 0) {
     return null;

@@ -2,6 +2,7 @@
 
 import React from "react";
 import NextLink from "next/link";
+import Image from "next/image";
 import { useMunicipality, prefixInternalLink } from "../MunicipalityContext";
 import type { TopicGridItem, QuickLinkItem, NewsItem } from "../types";
 import { budouxParse } from "@/components/BudouX";
@@ -60,7 +61,7 @@ export function TopicGridBlock({ props }: { props: Record<string, unknown> }) {
                 <div className="mdcontainer-card__body flex flex-col flex-1">
                   <div className="flex items-start gap-3">
                     {item.icon && (
-                      <img
+                      <Image
                         src={
                           item.icon.includes(".")
                             ? `/icons/${item.icon}`
@@ -68,6 +69,8 @@ export function TopicGridBlock({ props }: { props: Record<string, unknown> }) {
                         }
                         alt=""
                         aria-hidden="true"
+                        width={40}
+                        height={40}
                         className="w-10 h-10 flex-shrink-0"
                       />
                     )}

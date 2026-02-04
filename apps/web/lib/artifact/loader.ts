@@ -24,7 +24,7 @@ import {
   hasEmergencyContent,
 } from "./cache";
 import { artifactLogger } from "./logger";
-import { getVariableStore, replaceVariablesWithSources, type VariableSourceInfo } from "@/lib/template";
+import { getVariableStore, replaceVariablesWithSourceRefs, type VariableSourceInfo } from "@/lib/template";
 import type { Source } from "./innoma-artifact-schema.v2";
 import { getSlugFromFilePath } from "./page-registry";
 
@@ -113,7 +113,8 @@ async function loadArtifactInternal(
     try {
       const variableStore = await getVariableStore(municipalityId);
       if (Object.keys(variableStore).length > 0) {
-        const replaceResult = replaceVariablesWithSources(data, variableStore, true);
+        // 参照番号付きで変数を置換（⟦N⟧形式でマーキング）
+        const replaceResult = replaceVariablesWithSourceRefs(data, variableStore, true, true);
         processedData = replaceResult.content;
         unreplacedVariables = replaceResult.unreplacedVariables;
         variableSources = replaceResult.variableSources;
@@ -272,47 +273,57 @@ export const getCompletedPages = cache(async (municipalityId: string): Promise<S
     const results = await Promise.all(
       allKeys.map(async (key) => {
         const result = await loadArtifact(key, { skipCache: false });
-        if (result.success && result.unreplacedVariables.length === 0) {
-          // keyからファイルパスを抽出: "takaoka/services/health/kokuho.json" -> "services/health/kokuho"
-          const filePath = key
-            .replace(`${municipalityId}/`, "")
-            .replace(/\.json$/, "");
-
-          // index.json → /
-          if (filePath === "index") {
-            return "/";
-          }
-
-          // topics/category → /category (フラットURL)
-          if (filePath.startsWith("topics/")) {
-            const slug = getSlugFromFilePath(filePath);
-            if (slug) {
-              return `/${slug}`;
-            }
-            // レジストリにない場合はtopics/以降をスラッグとして使用
-            const parts = filePath.split("/");
-            if (parts.length === 2) {
-              return `/${parts[1]}`;
-            }
-          }
-
-          // services/category/page → /page (フラットURL)
-          if (filePath.startsWith("services/")) {
-            const slug = getSlugFromFilePath(filePath);
-            if (slug) {
-              return `/${slug}`;
-            }
-            // レジストリにない場合はファイル名をスラッグとして使用
-            const parts = filePath.split("/");
-            if (parts.length === 3) {
-              return `/${parts[2]}`;
-            }
-          }
-
-          // その他はそのまま
-          return `/${filePath}`;
+        if (!result.success) {
+          return null;
         }
-        return null;
+
+        // keyからファイルパスを抽出: "takaoka/services/health/kokuho.json" -> "services/health/kokuho"
+        const filePath = key
+          .replace(`${municipalityId}/`, "")
+          .replace(/\.json$/, "");
+
+        // トピックページ（ディレクトリ）は変数チェックを緩和
+        // content_type: "directory" のページは未置換変数があっても完成とみなす
+        const isDirectoryPage = result.artifact.content_type === "directory";
+
+        // 通常ページは未置換変数があれば除外
+        if (!isDirectoryPage && result.unreplacedVariables.length > 0) {
+          return null;
+        }
+
+        // index.json → /
+        if (filePath === "index") {
+          return "/";
+        }
+
+        // topics/category → /category (フラットURL)
+        if (filePath.startsWith("topics/")) {
+          const slug = getSlugFromFilePath(filePath);
+          if (slug) {
+            return `/${slug}`;
+          }
+          // レジストリにない場合はtopics/以降をスラッグとして使用
+          const parts = filePath.split("/");
+          if (parts.length === 2) {
+            return `/${parts[1]}`;
+          }
+        }
+
+        // services/category/page → /page (フラットURL)
+        if (filePath.startsWith("services/")) {
+          const slug = getSlugFromFilePath(filePath);
+          if (slug) {
+            return `/${slug}`;
+          }
+          // レジストリにない場合はファイル名をスラッグとして使用
+          const parts = filePath.split("/");
+          if (parts.length === 3) {
+            return `/${parts[2]}`;
+          }
+        }
+
+        // その他はそのまま
+        return `/${filePath}`;
       })
     );
 

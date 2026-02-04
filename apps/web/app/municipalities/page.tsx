@@ -44,7 +44,7 @@ export default async function MunicipalitiesPage() {
     <div className="min-h-screen bg-solid-gray-50 flex flex-col">
       <Header />
 
-      <main className="flex-1">
+      <main id="main" className="flex-1">
         {/* Hero */}
         <section className="bg-white border-b border-solid-gray-300">
           <div className="max-w-7xl mx-auto px-4 py-12">
@@ -88,9 +88,9 @@ export default async function MunicipalitiesPage() {
 
           {/* Info Box */}
           <div className="mt-12 p-6 bg-blue-100 border border-blue-200 rounded-xl">
-            <h3 className="font-semibold text-blue-1100 mb-2">
+            <h2 className="font-semibold text-blue-1100 mb-2">
               自治体データの追加について
-            </h3>
+            </h2>
             <p className="text-blue-1000 text-sm mb-4">
               現在、INNOMAはデモ段階です。より多くの自治体データを追加するには、
               Crawlerでウェブサイトをクロールし、Transformerで構造化データに変換する必要があります。

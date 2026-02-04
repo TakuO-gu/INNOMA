@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import BlockRenderer from "@/components/blocks/BlockRenderer";
+import { TEXT_LENGTH_THRESHOLD } from "@/lib/llm/text-length-rules";
 
 type ContentType = "service" | "guide" | "answer";
 
@@ -662,7 +663,7 @@ function PassInfoView({ passInfo }: { passInfo: PassInfo }) {
       {getLongTexts().length > 0 && (
         <div className="border border-orange-200 rounded-lg p-3 bg-orange-50">
           <h4 className="text-sm font-medium text-orange-800 mb-2">
-            40文字超えテキスト ({getLongTexts().length}件)
+            {TEXT_LENGTH_THRESHOLD}文字超えテキスト ({getLongTexts().length}件)
           </h4>
           <div className="space-y-2 max-h-48 overflow-y-auto">
             {getLongTexts().map((lt, i) => (

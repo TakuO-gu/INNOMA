@@ -6,6 +6,7 @@
 
 import { getMunicipalityMeta } from "@/lib/template";
 import MunicipalityHeader from "@/components/layout/MunicipalityHeader";
+import Footer from "@/components/layout/Footer";
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -32,6 +33,7 @@ export default async function MunicipalityLayout({
         municipalityName={municipalityName}
       />
       {children}
+      <Footer />
     </>
   );
 }

@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React from "react";
 
 const _img = "https://www.figma.com/api/mcp/asset/defebdf3-1d9f-4a50-bcc7-d2bff09ab04e";

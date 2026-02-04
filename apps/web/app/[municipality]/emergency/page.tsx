@@ -51,7 +51,7 @@ export default async function EmergencyPage({ params }: PageProps) {
   if (emergencyBlocks.length === 0) {
     // Emergency情報がない場合は「現在緊急情報はありません」表示
     return (
-      <main>
+      <main id="main">
         <div className="dads-page">
           <header>
             <h1 className="dads-heading dads-heading--xl">緊急情報</h1>
@@ -65,7 +65,7 @@ export default async function EmergencyPage({ params }: PageProps) {
   }
 
   return (
-    <main>
+    <main id="main">
       <div className="dads-page">
         <header>
           <h1 className="dads-heading dads-heading--xl">緊急情報</h1>

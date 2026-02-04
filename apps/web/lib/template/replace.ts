@@ -204,6 +204,14 @@ export function validateVariableValue(
 }
 
 /**
+ * ソース情報付き置換結果（参照番号マッピング付き）
+ */
+export interface ReplaceResultWithSourcesAndRefs extends ReplaceResultWithSources {
+  /** URL→参照番号のマッピング */
+  sourceRefMap: Map<string, number>;
+}
+
+/**
  * コンテンツ内の変数を置換し、ソース情報も収集
  *
  * @param content 置換対象のコンテンツ
@@ -216,16 +224,56 @@ export function replaceVariablesWithSources(
   variableStore: VariableStore,
   escapeJson: boolean = true
 ): ReplaceResultWithSources {
+  const result = replaceVariablesWithSourceRefs(content, variableStore, escapeJson, false);
+  return {
+    content: result.content,
+    replacedVariables: result.replacedVariables,
+    unreplacedVariables: result.unreplacedVariables,
+    variableSources: result.variableSources,
+  };
+}
+
+/**
+ * コンテンツ内の変数を置換し、ソース情報も収集（参照番号付与オプション付き）
+ *
+ * @param content 置換対象のコンテンツ
+ * @param variableStore 変数ストア（ソース情報を含む）
+ * @param escapeJson JSON用にエスケープするかどうか
+ * @param appendSourceRef 変数値の後に参照番号[N]を付与するかどうか
+ * @returns ソース情報付き置換結果（参照番号マッピング付き）
+ */
+export function replaceVariablesWithSourceRefs(
+  content: string,
+  variableStore: VariableStore,
+  escapeJson: boolean = true,
+  appendSourceRef: boolean = true
+): ReplaceResultWithSourcesAndRefs {
   const replacedVariables: string[] = [];
   const unreplacedVariables: string[] = [];
   const variableSources: VariableSourceInfo[] = [];
   const processedVariables = new Set<string>();
+
+  // URL→参照番号のマッピングを作成
+  const sourceRefMap = new Map<string, number>();
+  let nextRefId = 1;
 
   // 変数を小文字に正規化したマップを作成
   const normalizedStore: Record<string, VariableValue> = {};
   for (const [key, value] of Object.entries(variableStore)) {
     normalizedStore[key.toLowerCase()] = value;
   }
+
+  // 最初のパス: ソースURLを収集して参照番号を割り当て
+  content.replace(VARIABLE_PATTERN, (match, varName) => {
+    const normalizedName = varName.toLowerCase();
+    if (normalizedName in normalizedStore) {
+      const varData = normalizedStore[normalizedName];
+      if (varData.sourceUrl && !sourceRefMap.has(varData.sourceUrl)) {
+        sourceRefMap.set(varData.sourceUrl, nextRefId++);
+      }
+    }
+    return match;
+  });
 
   // 変数を置換
   const result = content.replace(VARIABLE_PATTERN, (match, varName) => {
@@ -249,7 +297,19 @@ export function replaceVariablesWithSources(
         processedVariables.add(normalizedName);
       }
 
-      return escapeJson ? escapeForJson(varData.value) : varData.value;
+      // 値を取得
+      const value = escapeJson ? escapeForJson(varData.value) : varData.value;
+
+      // 参照番号を付与（ソースURLがある場合のみ）
+      if (appendSourceRef && varData.sourceUrl) {
+        const refId = sourceRefMap.get(varData.sourceUrl);
+        if (refId !== undefined) {
+          // JSON内で使う場合は⟦N⟧形式（括弧は後でRichTextRendererでパース）
+          return `${value}⟦${refId}⟧`;
+        }
+      }
+
+      return value;
     } else {
       if (!unreplacedVariables.includes(normalizedName)) {
         unreplacedVariables.push(normalizedName);
@@ -263,5 +323,6 @@ export function replaceVariablesWithSources(
     replacedVariables,
     unreplacedVariables,
     variableSources,
+    sourceRefMap,
   };
 }

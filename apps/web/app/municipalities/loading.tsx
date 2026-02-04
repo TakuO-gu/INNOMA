@@ -5,7 +5,7 @@ export default function MunicipalitiesLoading() {
     <div className="min-h-screen bg-solid-gray-50 flex flex-col">
       <Header />
 
-      <main className="flex-1">
+      <main id="main" className="flex-1">
         {/* Hero Skeleton */}
         <section className="bg-white border-b border-solid-gray-300">
           <div className="max-w-7xl mx-auto px-4 py-12">

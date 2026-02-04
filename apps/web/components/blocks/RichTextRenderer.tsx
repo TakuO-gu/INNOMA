@@ -11,6 +11,69 @@ import { useMunicipality, prefixInternalLink } from "./MunicipalityContext";
 import type { RichTextNode } from "./types";
 import { budouxParse } from "@/components/BudouX";
 
+/**
+ * 参照番号マーカーパターン: ⟦N⟧ 形式
+ * 変数置換時に挿入され、ここで上付き参照リンクに変換
+ */
+const SOURCE_REF_PATTERN = /⟦(\d+)⟧/g;
+
+/**
+ * テキスト内の参照番号マーカー(⟦N⟧)を上付きリンクに変換
+ * @param text 処理対象のテキスト
+ * @param keyPrefix Reactキーのプレフィックス
+ * @returns React要素の配列
+ */
+export function renderTextWithSourceRefs(text: string, keyPrefix: string): React.ReactNode[] {
+  const parts: React.ReactNode[] = [];
+  let lastIndex = 0;
+  let match: RegExpExecArray | null;
+
+  // パターンをリセット
+  SOURCE_REF_PATTERN.lastIndex = 0;
+
+  while ((match = SOURCE_REF_PATTERN.exec(text)) !== null) {
+    // マッチ前のテキスト
+    if (match.index > lastIndex) {
+      const beforeText = text.slice(lastIndex, match.index);
+      parts.push(
+        <React.Fragment key={`${keyPrefix}-text-${lastIndex}`}>
+          {budouxParse(beforeText)}
+        </React.Fragment>
+      );
+    }
+
+    // 参照番号リンク
+    const refId = parseInt(match[1], 10);
+    parts.push(
+      <a
+        key={`${keyPrefix}-ref-${match.index}`}
+        href={`#source-${refId}`}
+        className="text-blue-600 hover:text-blue-800 no-underline"
+      >
+        <sup className="text-xs font-normal">[{refId}]</sup>
+      </a>
+    );
+
+    lastIndex = match.index + match[0].length;
+  }
+
+  // 残りのテキスト
+  if (lastIndex < text.length) {
+    parts.push(
+      <React.Fragment key={`${keyPrefix}-text-end`}>
+        {budouxParse(text.slice(lastIndex))}
+      </React.Fragment>
+    );
+  }
+
+  // マッチがない場合は元のテキストをそのまま返す
+  if (parts.length === 0) {
+    return [<React.Fragment key={keyPrefix}>{budouxParse(text)}</React.Fragment>];
+  }
+
+  return parts;
+}
+
 export function RichTextRenderer({ content }: { content: RichTextContent | RichTextNodeType[] }) {
   const { municipalityId } = useMunicipality();
 
@@ -90,9 +153,11 @@ function renderNode(node: RichTextNode, key: number, municipalityId: string): Re
       const Tag = `h${level}` as keyof JSX.IntrinsicElements;
       const sizeClass = getHeadingSizeClass(level);
       const sourceRef = (node as { sourceRef?: number }).sourceRef;
+      // テキスト内の参照番号マーカー(⟦N⟧)を処理
+      const textContent = renderTextWithSourceRefs(node.text || "", `heading-${key}`);
       return (
         <Tag key={key} className={`${sizeClass} budoux`}>
-          {budouxParse(node.text || "")}
+          {textContent}
           {sourceRef !== undefined && (
             <a
               href={`#source-${sourceRef}`}
@@ -160,7 +225,13 @@ function renderRun(
   key: number,
   municipalityId: string
 ): React.ReactNode {
-  let content: React.ReactNode = budouxParse(run.text);
+  // テキスト内の参照番号マーカー(⟦N⟧)を処理
+  let content: React.ReactNode = renderTextWithSourceRefs(run.text, `run-${key}`);
+
+  // 配列の場合はFragmentでラップ
+  if (Array.isArray(content)) {
+    content = <React.Fragment key={`content-${key}`}>{content}</React.Fragment>;
+  }
 
   if (run.bold) {
     content = <strong key={`bold-${key}`}>{content}</strong>;
@@ -190,7 +261,7 @@ function renderRun(
     }
   }
 
-  // 参照番号がある場合、Wikipedia風の上付き文字で表示
+  // 手動で設定されたsourceRef（スキーマ定義のもの）がある場合も処理
   if (run.sourceRef !== undefined) {
     content = (
       <React.Fragment key={`source-${key}`}>

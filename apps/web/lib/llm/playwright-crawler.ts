@@ -44,6 +44,7 @@ export interface CrawlerResult {
   variables: ExtractedVariable[];
   visitedUrls: string[];
   totalPages: number;
+  pdfUrls: string[];  // 発見したPDFリンク
 }
 
 /**
@@ -194,6 +195,7 @@ export async function crawlForVariables(
 
   const variables: ExtractedVariable[] = [];
   const visitedUrls = new Set<string>();
+  const pdfUrls = new Set<string>();  // PDFリンクを収集
   const pendingVariables = new Map(
     targetVariables.map(v => [v.name, v])
   );
@@ -275,6 +277,18 @@ export async function crawlForVariables(
         // まだ取得できていない変数があり、探索余地がある場合はリンクを評価
         if (pendingVariables.size > 0 && pagesVisited < maxPages) {
           const links = await extractLinksFromPage(page);
+
+          // PDFリンクを収集（後で処理するため）
+          for (const link of links) {
+            const lowerHref = link.href.toLowerCase();
+            if (lowerHref.endsWith('.pdf') || lowerHref.includes('.pdf?')) {
+              if (isOfficialDomain(link.href)) {
+                pdfUrls.add(link.href);
+                console.log(`[Crawler] Found PDF: ${link.text} -> ${link.href}`);
+              }
+            }
+          }
+
           const evaluatedLinks = await evaluateLinks(
             links,
             Array.from(pendingVariables.values()),
@@ -306,5 +320,6 @@ export async function crawlForVariables(
     variables,
     visitedUrls: Array.from(visitedUrls),
     totalPages: visitedUrls.size,
+    pdfUrls: Array.from(pdfUrls),
   };
 }

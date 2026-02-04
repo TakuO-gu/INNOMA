@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useCallback } from "react";
+import React, { useState, useCallback, useMemo } from "react";
 import { Link } from "@/components/dads";
 import { useMunicipality, prefixInternalLink } from "../MunicipalityContext";
 
@@ -32,8 +32,14 @@ interface SmartAnswerResult {
 
 export function SmartAnswerBlock({ props }: { props: Record<string, unknown> }) {
   const { municipalityId } = useMunicipality();
-  const questions = (props.questions as SmartAnswerQuestion[]) || [];
-  const results = (props.results as SmartAnswerResult[]) || [];
+  const questions = useMemo(
+    () => (props.questions as SmartAnswerQuestion[]) || [],
+    [props.questions]
+  );
+  const results = useMemo(
+    () => (props.results as SmartAnswerResult[]) || [],
+    [props.results]
+  );
 
   // 回答履歴: { questionId, selectedOptionIndex }[]
   const [history, setHistory] = useState<{ questionId: string; selectedIndex: number }[]>([]);

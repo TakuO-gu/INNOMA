@@ -136,6 +136,12 @@ interface BlockRendererProps {
 export function BlockRenderer({ blocks, municipalityId, sources, completedPages = [] }: BlockRendererProps) {
   const completedPagesSet = new Set(completedPages);
 
+  // SourcesBlockがblocks内に既に存在するかチェック
+  const hasSourcesBlock = blocks.some((block) => block.type === "Sources");
+
+  // sourcesがあり、SourcesBlockがない場合は自動追加
+  const shouldAutoAddSources = sources && sources.length > 0 && !hasSourcesBlock;
+
   return (
     <MunicipalityProvider municipalityId={municipalityId} completedPages={completedPagesSet}>
       <div className="dads-page">
@@ -146,6 +152,14 @@ export function BlockRenderer({ blocks, municipalityId, sources, completedPages 
             sources={sources}
           />
         ))}
+        {/* 出典情報がある場合は自動的にSourcesBlockを追加 */}
+        {shouldAutoAddSources && (
+          <BlockWrapper
+            key="auto-sources"
+            block={{ id: "auto-sources", type: "Sources", props: { heading: "出典" } }}
+            sources={sources}
+          />
+        )}
       </div>
     </MunicipalityProvider>
   );
