@@ -27,6 +27,7 @@ import { artifactLogger } from "./logger";
 import { getVariableStore, replaceVariablesWithSourceRefs, type VariableSourceInfo } from "@/lib/template";
 import type { Source } from "./innoma-artifact-schema.v2";
 import { getSlugFromFilePath } from "./page-registry";
+import { getVisibilityConfig, isPageVisible } from "@/lib/visibility";
 
 export type { InnomaArtifactValidated };
 export { invalidateCache, invalidateCacheByPrefix, makeCacheKey };
@@ -36,7 +37,7 @@ export { invalidateCache, invalidateCacheByPrefix, makeCacheKey };
  */
 export type ArtifactLoadResult =
   | { success: true; artifact: InnomaArtifactValidated; cached: boolean; unreplacedVariables: string[]; sources: Source[] }
-  | { success: false; error: "not_found" | "invalid_json" | "validation_failed" | "timeout"; message: string };
+  | { success: false; error: "not_found" | "invalid_json" | "validation_failed" | "timeout" | "page_not_visible"; message: string };
 
 /**
  * ロードオプション
@@ -53,12 +54,52 @@ const DEFAULT_TIMEOUT_MS = 10000; // 10秒
 /**
  * Artifactを読み込む（キャッシュ対応）
  */
+/**
+ * Artifactキーからページスラッグを抽出
+ * 例: "takaoka/services/health/kokuho.json" → "kokuho"
+ *     "takaoka/topics/health.json" → "health"
+ */
+function getSlugFromArtifactKey(key: string): string | null {
+  // keyからファイルパスを抽出: "takaoka/services/health/kokuho.json" -> "services/health/kokuho"
+  const parts = key.split("/");
+  if (parts.length < 2) return null;
+
+  const filePath = parts.slice(1).join("/").replace(/\.json$/, "");
+
+  // page-registryから逆引き
+  const slug = getSlugFromFilePath(filePath);
+  if (slug) return slug;
+
+  // レジストリにない場合はファイル名をスラッグとして使用
+  const fileName = filePath.split("/").pop();
+  return fileName ?? null;
+}
+
 async function loadArtifactInternal(
   key: string,
   options: LoadOptions = {}
 ): Promise<ArtifactLoadResult> {
   const { skipCache = false, timeoutMs = DEFAULT_TIMEOUT_MS } = options;
   const startTime = Date.now();
+
+  // Extract municipality ID from key (e.g., "takaoka/services/health/kokuho.json" -> "takaoka")
+  const municipalityId = key.split("/")[0];
+
+  // グローバル公開設定のチェック（_templates, sample は除外）
+  if (!municipalityId.startsWith("_") && municipalityId !== "sample") {
+    const slug = getSlugFromArtifactKey(key);
+    if (slug) {
+      const visibilityConfig = await getVisibilityConfig();
+      if (!isPageVisible(visibilityConfig, slug)) {
+        artifactLogger.debug("page_not_visible", { key, slug });
+        return {
+          success: false,
+          error: "page_not_visible",
+          message: `Page "${slug}" is not visible globally`,
+        };
+      }
+    }
+  }
 
   // キャッシュチェック
   if (!skipCache) {

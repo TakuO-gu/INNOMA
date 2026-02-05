@@ -3,7 +3,6 @@ import Image from "next/image";
 import { Link, Button } from "@/components/dads";
 import { getMunicipalities } from "@/lib/template";
 import { ScrollAnimations } from "@/components/landing/ScrollAnimations";
-import { Particles } from "@/components/landing/Particles";
 import { AnimatedCounter } from "@/components/landing/AnimatedCounter";
 
 // 3種のページタイプ
@@ -85,8 +84,8 @@ const UI_FEATURES = [
 const TECH_FEATURES = [
   {
     title: "テンプレートベース",
-    description: "一度テンプレートを作れば、全国すべての自治体に適用可能。343個の変数で自治体固有の情報を差し替えます。",
-    stat: "343",
+    description: "一度テンプレートを作れば、全国すべての自治体に適用可能。650以上の変数で自治体固有の情報を差し替えます。",
+    stat: "650",
     statLabel: "変数",
     icon: (
       <svg className="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
@@ -129,9 +128,7 @@ export default async function Home() {
       <ScrollAnimations />
 
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center animated-gradient grid-pattern overflow-hidden">
-        <Particles />
-
+      <section className="relative min-h-screen flex items-center justify-center bg-solid-gray-50 overflow-hidden">
         {/* Header */}
         <header className="absolute top-0 left-0 right-0 z-20">
           <div className="max-w-7xl mx-auto px-6 py-6 flex items-center justify-between">
@@ -141,17 +138,17 @@ export default async function Home() {
                 alt="INNOMA"
                 width={120}
                 height={40}
-                className="h-8 w-auto brightness-0 invert"
+                className="h-8 w-auto"
                 priority
               />
             </div>
             <nav className="flex items-center gap-6">
               <Link asChild>
-                <NextLink href="/municipalities" className="text-white/80 hover:text-white transition-colors text-sm font-medium">
+                <NextLink href="/municipalities" className="text-solid-gray-600 hover:text-solid-gray-900 transition-colors text-sm font-medium">
                   自治体一覧
                 </NextLink>
               </Link>
-              <Button asChild size="md" variant="outline" className="!bg-transparent !text-white !border-white/50 hover:!bg-white/10 hover:!border-white">
+              <Button asChild size="md" variant="outline" className="flex items-center justify-center">
                 <NextLink href="/admin">管理画面</NextLink>
               </Button>
             </nav>
@@ -160,45 +157,29 @@ export default async function Home() {
 
         {/* Hero Content */}
         <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
-          <div className="logo-grid mb-8">
+          <div className="mb-8">
             <Image
               src="/images/logo.svg"
               alt="INNOMA"
               width={280}
               height={100}
-              className="mx-auto h-20 md:h-28 w-auto brightness-0 invert animate-float"
+              className="mx-auto h-20 md:h-28 w-auto"
               priority
             />
           </div>
 
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 animate-fade-in-up [animation-delay:200ms] opacity-0">
-            誰しもが情報に
-            <br />
-            <span className="text-gradient">アクセスできる</span>
-            <br />
-            プラットフォーム
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-solid-gray-900 mb-6 animate-fade-in-up [animation-delay:200ms] opacity-0 leading-tight">
+            誰しもが情報を<span className="text-blue-600">理解できる</span>
           </h1>
 
-          <p className="text-lg md:text-xl text-white/80 mb-10 max-w-2xl mx-auto animate-fade-in-up [animation-delay:400ms] opacity-0 leading-relaxed">
-            INNOMAは、日本全国の自治体情報を
-            <br className="hidden md:block" />
-            誰もが理解しやすい形で届けるオープンソースプロジェクトです
+          <p className="text-base md:text-lg text-solid-gray-600 mb-8 max-w-xl mx-auto animate-fade-in-up [animation-delay:400ms] opacity-0">
+            自治体情報を分かりやすく届けるオープンソースプロジェクト
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up [animation-delay:600ms] opacity-0">
-            <Button asChild size="lg" variant="solid-fill" className="!bg-white !text-blue-900 hover:!bg-blue-50 !px-8 !py-4 !text-lg font-semibold glow">
+          <div className="flex justify-center animate-fade-in-up [animation-delay:600ms] opacity-0">
+            <Button asChild size="lg" variant="solid-fill" className="!px-8 !py-4 !text-lg font-semibold flex items-center justify-center">
               <NextLink href="/municipalities">自治体を探す</NextLink>
             </Button>
-            <Button asChild size="lg" variant="outline" className="!bg-transparent !text-white !border-white hover:!bg-white/10 !px-8 !py-4 !text-lg">
-              <a href="#philosophy">詳しく見る</a>
-            </Button>
-          </div>
-
-          {/* Scroll Indicator */}
-          <div className="absolute bottom-12 left-1/2 -translate-x-1/2 scroll-indicator">
-            <svg className="w-6 h-6 text-white/60" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-            </svg>
           </div>
         </div>
       </section>
@@ -253,7 +234,7 @@ export default async function Home() {
               { value: 13.8, suffix: "%", label: "長文理解が難しい日本人" },
               { value: 4, suffix: "倍", label: "55-65歳 vs 16-34歳" },
               { value: 1741, suffix: "", label: "日本の自治体数" },
-              { value: 343, suffix: "", label: "テンプレート変数" },
+              { value: 650, suffix: "+", label: "テンプレート変数" },
             ].map((stat, i) => (
               <div key={i} className="animate-on-scroll text-center p-6 bg-white rounded-xl border border-solid-gray-200">
                 <div className="text-3xl md:text-4xl font-bold text-blue-600 stat-number">
@@ -521,14 +502,11 @@ export default async function Home() {
               INNOMAはオープンソースプロジェクトです。
               開発への貢献、フィードバック、導入のご相談をお待ちしています。
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button asChild size="lg" variant="solid-fill" className="!bg-white !text-blue-700 hover:!bg-blue-50 !px-8 !py-4 !text-lg font-semibold">
+            <div className="flex justify-center">
+              <Button asChild size="lg" variant="solid-fill" className="!bg-white !text-blue-700 hover:!bg-blue-50 !px-8 !py-4 !text-lg font-semibold flex items-center justify-center">
                 <a href="https://github.com/TakuO-gu/INNOMA" target="_blank" rel="noopener noreferrer">
                   GitHubで見る
                 </a>
-              </Button>
-              <Button asChild size="lg" variant="outline" className="!bg-transparent !text-white !border-white hover:!bg-white/10 !px-8 !py-4 !text-lg">
-                <NextLink href="/municipalities">自治体一覧へ</NextLink>
               </Button>
             </div>
           </div>

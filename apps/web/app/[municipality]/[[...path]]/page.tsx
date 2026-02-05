@@ -73,7 +73,7 @@ export default async function ArtifactPage({ params }: PageProps) {
   const result = await loadArtifact(artifactKey);
 
   if (!result.success) {
-    if (result.error === "not_found") {
+    if (result.error === "not_found" || result.error === "page_not_visible") {
       notFound();
     }
     // その他のエラーはエラーページで処理

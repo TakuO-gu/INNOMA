@@ -29,11 +29,11 @@
     "updatedAt": "2026-01-31T00:00:00.000Z"
   },
   "shimin_department": {
-    "value": "市民生活課",
+    "value": "市民生活課市民室",
     "source": "llm",
-    "sourceUrl": "https://www.city.atami.lg.jp/shisei/soshiki/1001545/index.html",
-    "confidence": 0.95,
-    "updatedAt": "2026-01-31T00:00:00.000Z"
+    "sourceUrl": "https://www.city.atami.lg.jp/kurashi/juminhyo/1000615/1000617.html",
+    "confidence": 0.7999999999999999,
+    "updatedAt": "2026-02-05T01:11:58.000Z"
   },
   "shimin_phone": {
     "value": "0557-86-6254",

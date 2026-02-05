@@ -1,0 +1,16 @@
+{
+  "juminhyo_madoguchi": {
+    "value": "市役所第1庁舎1階市民生活課市民室、南熱海支所、泉支所",
+    "source": "llm",
+    "sourceUrl": "https://www.city.atami.lg.jp/kurashi/juminhyo/1000615/1000617.html",
+    "confidence": 0.7999999999999999,
+    "updatedAt": "2026-02-05T01:11:58.000Z"
+  },
+  "registration_window": {
+    "value": "月曜日から金曜日：午前8時30分～午後5時15分（祝日、年末年始などの閉庁日を除く）",
+    "source": "llm",
+    "sourceUrl": "https://www.city.atami.lg.jp/kurashi/juminhyo/1000615/1000617.html",
+    "confidence": 0.7999999999999999,
+    "updatedAt": "2026-02-05T01:11:58.000Z"
+  }
+}

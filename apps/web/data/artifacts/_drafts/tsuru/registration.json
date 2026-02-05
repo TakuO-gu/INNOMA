@@ -1,0 +1,552 @@
+{
+  "id": "tsuru-registration",
+  "municipalityId": "tsuru",
+  "service": "registration",
+  "status": "approved",
+  "createdAt": "2026-02-05T01:10:32.141Z",
+  "updatedAt": "2026-02-05T01:10:54.602Z",
+  "variables": {
+    "shimin_phone": {
+      "value": "03-3981-4782",
+      "sourceUrl": "https://www.city.toshima.lg.jp/096/tetsuzuki/todokede/kiroku/index.html",
+      "confidence": 1,
+      "extractedAt": "2026-02-05T01:09:38.098Z",
+      "validated": true
+    },
+    "registration_department": {
+      "value": "総合窓口課住民記録第一グループ",
+      "sourceUrl": "https://www.city.toshima.lg.jp/096/tetsuzuki/todokede/kiroku/index.html",
+      "confidence": 0.95,
+      "extractedAt": "2026-02-05T01:08:50.757Z",
+      "validated": true
+    },
+    "registration_phone": {
+      "value": "03-3981-4782",
+      "sourceUrl": "https://www.city.toshima.lg.jp/096/tetsuzuki/todokede/kiroku/index.html",
+      "confidence": 0.95,
+      "extractedAt": "2026-02-05T01:08:50.757Z",
+      "validated": true
+    },
+    "registration_window": {
+      "value": "文京シビックセンター2階",
+      "sourceUrl": "https://www.city.bunkyo.lg.jp/b013/p000266.html",
+      "confidence": 0.95,
+      "extractedAt": "2026-02-05T01:09:08.661Z",
+      "validated": true
+    },
+    "inin_form_url": {
+      "value": "委任状",
+      "sourceUrl": "https://www.city.bunkyo.lg.jp/b013/p000266.html",
+      "confidence": 0.8500000000000001,
+      "extractedAt": "2026-02-05T01:09:08.661Z",
+      "validated": true
+    },
+    "shimin_department": {
+      "value": "区民部 戸籍住民課",
+      "sourceUrl": "https://www.city.kita.lg.jp/living/registration/1001564/1001568.html",
+      "confidence": 0.95,
+      "extractedAt": "2026-02-05T01:09:22.001Z",
+      "validated": true
+    },
+    "inkan_shomei_fee": {
+      "value": "1通　300円",
+      "sourceUrl": "https://www.city.higashikurume.lg.jp/kurashi/todokede/inkan/1000285.html",
+      "confidence": 0.8500000000000001,
+      "extractedAt": "2026-02-05T01:10:05.172Z",
+      "validated": true
+    }
+  },
+  "missingVariables": [
+    "registration_email",
+    "shimin_email",
+    "mynumber_department",
+    "mynumber_email",
+    "mynumber_phone",
+    "juminhyo_fee",
+    "juminhyo_convenience_fee",
+    "juminhyo_kisai_fee",
+    "juminhyo_madoguchi",
+    "jyuminhyo_fee",
+    "jyuminhyo_form_url",
+    "jyuminhyo_kisai_fee",
+    "koseki_fee",
+    "koseki_form_url",
+    "kaisei_koseki_fee",
+    "jokoseki_fee",
+    "inkan_touroku_fee",
+    "inkan_shomei_convenience_fee",
+    "fuhyo_fee",
+    "convenience_discount",
+    "after_hours_shussei",
+    "okuyami_madoguchi_description"
+  ],
+  "searchAttempts": {
+    "juminhyo_fee": [
+      {
+        "query": "都留市 住民票手数料",
+        "searchedAt": "2026-02-05T01:09:56.859Z",
+        "resultsCount": 5,
+        "urls": [
+          "https://www.kokusen.go.jp/map/19/center5313.html",
+          "https://www.nta.go.jp/about/organization/tokyo/location/yamanashi/otsuki/index.htm",
+          "http://www.vill.doshi.lg.jp/ka/info.php?if_id=821&ka_id=1",
+          "https://jsite.mhlw.go.jp/yamanashi-roudoukyoku/hw/2-3-7.html",
+          "https://www.lg-waps.go.jp/01-04.html"
+        ],
+        "snippets": [
+          "採用情報Englishサイトマップ · 現在の位置：トップページ &gt; 相談・紛争解決／情報受付 &gt; 全国の消費生活センター等 &gt; 山梨県の消費生活センター等 &gt; 都留市役所市民課消費生活相談窓口",
+          "管轄区域 大月市、富士吉田市、都留市、上野原市、南都留郡（道志村、西桂町、忍野村、山中湖村、鳴沢村、富士河口湖町）、北都留郡（小菅村、丹波山村）",
+          "令和元年10月1日から法人税割税率の変更および地方税共通納税システム稼働開始、令和2年4月1日から大法人の電子申告義務化が始まります。申告および納付の際にはご注意ください。 ■法人申告書（確定・修正・中間申告） ・法人申告書（第20号様式） ・法人申告書（第20号の3様式） ■法人住民税 納付書 ・納入通知書 ■法人住民税 設立（設置）届 ・設立（設置）届出書 ※ 法人住民税の税率はこちらを参照してください。 · 納付場所は以下のとおりです。 指定金融機関：都留信用組合 平野支店 （普）11722 収納代理金融機関： 山梨中央銀行 都留支店 （普）18091 山梨県民信用組合 都留支店 （普）3036448 山梨信用金庫 上谷支店 （普）119805 ゆうちょ銀行 00240-5-960350"
+        ],
+        "reason": "no_match"
+      }
+    ],
+    "koseki_fee": [
+      {
+        "query": "都留市 戸籍謄本手数料",
+        "searchedAt": "2026-02-05T01:10:02.754Z",
+        "resultsCount": 5,
+        "urls": [
+          "https://www.kokusen.go.jp/map/19/center5313.html",
+          "https://www.lg-waps.go.jp/01-04.html",
+          "https://jsite.mhlw.go.jp/yamanashi-roudoukyoku/hw/2-3-7.html",
+          "https://houmukyoku.moj.go.jp/kofu/table/shikyokutou/all/ootuki.html",
+          "https://www.nta.go.jp/about/organization/tokyo/location/yamanashi/otsuki/index.htm"
+        ],
+        "snippets": [
+          "採用情報Englishサイトマップ · 現在の位置：トップページ &gt; 相談・紛争解決／情報受付 &gt; 全国の消費生活センター等 &gt; 山梨県の消費生活センター等 &gt; 都留市役所市民課消費生活相談窓口",
+          "現在の場所：利用できる市区町村 · お住まいの市区町村または本籍地がコンビニ交付サービスを提供しているかを確認できます。 都道府県、市区町村を選択し、検索してください。",
+          "都留市、南都留郡のうち西桂町、道志村"
+        ],
+        "reason": "no_match"
+      }
+    ],
+    "inkan_shomei_fee": [
+      {
+        "query": "都留市 印鑑証明手数料",
+        "searchedAt": "2026-02-05T01:10:05.172Z",
+        "resultsCount": 5,
+        "urls": [
+          "https://www.city.higashikurume.lg.jp/kurashi/todokede/inkan/1000285.html",
+          "https://www.lg-waps.go.jp/01-04.html",
+          "https://houmukyoku.moj.go.jp/kofu/table/shikyokutou/all/ootuki.html",
+          "https://www.j-lis.go.jp/file/conveni_koufu20240115.pdf",
+          "https://www.city.higashikurume.lg.jp/shinseisho/juminhyo/1001520.html"
+        ],
+        "snippets": [
+          "都内に印鑑登録をしている人に印鑑登録申請書の保証人欄に署名・押印（実印）をしてもらった申請書（保証人が東久留米市以外に印鑑登録をしている場合はその保証人の印鑑証明書〈発行して3カ月以内のもの〉が必要） ... 上記のもの（いずれか一点）がある場合は、即日登録、証明書の交付も可能です。",
+          "現在の場所：利用できる市区町村 · お住まいの市区町村または本籍地がコンビニ交付サービスを提供しているかを確認できます。 都道府県、市区町村を選択し、検索してください。",
+          "ページトップへ · Copyright (C) KofuDistrict Legal Affairs Bureau. All Rights Reserved"
+        ],
+        "reason": "no_match"
+      }
+    ],
+    "registration_email": [
+      {
+        "query": "都留市 住民票 戸籍 印鑑証明 転入届 転出届 マイナンバー 届出 証明書",
+        "searchedAt": "2026-02-05T01:10:22.878Z",
+        "resultsCount": 5,
+        "urls": [
+          "https://www.city.toshima.lg.jp/096/tetsuzuki/todokede/kiroku/index.html",
+          "https://www.city.bunkyo.lg.jp/b013/p000266.html",
+          "https://www.city.kita.lg.jp/living/registration/1001564/1001568.html",
+          "https://www.digital.go.jp/policies/moving_onestop_service/faq-01",
+          "https://www.city.tokyo-nakano.lg.jp/dept/213000/d006852.html"
+        ],
+        "snippets": [
+          "ホーム &gt; 手続き・届出 &gt; 届出・証明・登録（戸籍・住民票など） &gt; 住所や世帯を変更したときの届出（転入届・転出届など）",
+          "転出手続をされますと、マイナンバーカードを交付することができません。カードの受け取りは転出手続前にお願いします。 · 転出予定日の前日までは住民票および印鑑登録証明書を発行することができます。必ず住民票の写し等、印鑑登録証明書のページをご確認ください。",
+          "転入される方のマイナンバーカード（お持ちの方） · 本人確認書類（運転免許証・在留カードなど） · 外国人住民の方は、入国管理法に基づく住居地の届出を一緒に出していただきますので、在留カードまたは特別永住者証明書を窓口へお持ちください。カードの裏面に新しい住所を記載し、お返しします。お持ちでない場合はページ下部の「お問い合わせ先」までご連絡ください。"
+        ],
+        "reason": "no_match"
+      }
+    ],
+    "shimin_email": [
+      {
+        "query": "都留市 住民票 戸籍 印鑑証明 転入届 転出届 マイナンバー 届出 証明書",
+        "searchedAt": "2026-02-05T01:10:22.878Z",
+        "resultsCount": 5,
+        "urls": [
+          "https://www.city.toshima.lg.jp/096/tetsuzuki/todokede/kiroku/index.html",
+          "https://www.city.bunkyo.lg.jp/b013/p000266.html",
+          "https://www.city.kita.lg.jp/living/registration/1001564/1001568.html",
+          "https://www.digital.go.jp/policies/moving_onestop_service/faq-01",
+          "https://www.city.tokyo-nakano.lg.jp/dept/213000/d006852.html"
+        ],
+        "snippets": [
+          "ホーム &gt; 手続き・届出 &gt; 届出・証明・登録（戸籍・住民票など） &gt; 住所や世帯を変更したときの届出（転入届・転出届など）",
+          "転出手続をされますと、マイナンバーカードを交付することができません。カードの受け取りは転出手続前にお願いします。 · 転出予定日の前日までは住民票および印鑑登録証明書を発行することができます。必ず住民票の写し等、印鑑登録証明書のページをご確認ください。",
+          "転入される方のマイナンバーカード（お持ちの方） · 本人確認書類（運転免許証・在留カードなど） · 外国人住民の方は、入国管理法に基づく住居地の届出を一緒に出していただきますので、在留カードまたは特別永住者証明書を窓口へお持ちください。カードの裏面に新しい住所を記載し、お返しします。お持ちでない場合はページ下部の「お問い合わせ先」までご連絡ください。"
+        ],
+        "reason": "no_match"
+      }
+    ],
+    "mynumber_department": [
+      {
+        "query": "都留市 住民票 戸籍 印鑑証明 転入届 転出届 マイナンバー 届出 証明書",
+        "searchedAt": "2026-02-05T01:10:22.878Z",
+        "resultsCount": 5,
+        "urls": [
+          "https://www.city.toshima.lg.jp/096/tetsuzuki/todokede/kiroku/index.html",
+          "https://www.city.bunkyo.lg.jp/b013/p000266.html",
+          "https://www.city.kita.lg.jp/living/registration/1001564/1001568.html",
+          "https://www.digital.go.jp/policies/moving_onestop_service/faq-01",
+          "https://www.city.tokyo-nakano.lg.jp/dept/213000/d006852.html"
+        ],
+        "snippets": [
+          "ホーム &gt; 手続き・届出 &gt; 届出・証明・登録（戸籍・住民票など） &gt; 住所や世帯を変更したときの届出（転入届・転出届など）",
+          "転出手続をされますと、マイナンバーカードを交付することができません。カードの受け取りは転出手続前にお願いします。 · 転出予定日の前日までは住民票および印鑑登録証明書を発行することができます。必ず住民票の写し等、印鑑登録証明書のページをご確認ください。",
+          "転入される方のマイナンバーカード（お持ちの方） · 本人確認書類（運転免許証・在留カードなど） · 外国人住民の方は、入国管理法に基づく住居地の届出を一緒に出していただきますので、在留カードまたは特別永住者証明書を窓口へお持ちください。カードの裏面に新しい住所を記載し、お返しします。お持ちでない場合はページ下部の「お問い合わせ先」までご連絡ください。"
+        ],
+        "reason": "no_match"
+      }
+    ],
+    "mynumber_email": [
+      {
+        "query": "都留市 住民票 戸籍 印鑑証明 転入届 転出届 マイナンバー 届出 証明書",
+        "searchedAt": "2026-02-05T01:10:22.878Z",
+        "resultsCount": 5,
+        "urls": [
+          "https://www.city.toshima.lg.jp/096/tetsuzuki/todokede/kiroku/index.html",
+          "https://www.city.bunkyo.lg.jp/b013/p000266.html",
+          "https://www.city.kita.lg.jp/living/registration/1001564/1001568.html",
+          "https://www.digital.go.jp/policies/moving_onestop_service/faq-01",
+          "https://www.city.tokyo-nakano.lg.jp/dept/213000/d006852.html"
+        ],
+        "snippets": [
+          "ホーム &gt; 手続き・届出 &gt; 届出・証明・登録（戸籍・住民票など） &gt; 住所や世帯を変更したときの届出（転入届・転出届など）",
+          "転出手続をされますと、マイナンバーカードを交付することができません。カードの受け取りは転出手続前にお願いします。 · 転出予定日の前日までは住民票および印鑑登録証明書を発行することができます。必ず住民票の写し等、印鑑登録証明書のページをご確認ください。",
+          "転入される方のマイナンバーカード（お持ちの方） · 本人確認書類（運転免許証・在留カードなど） · 外国人住民の方は、入国管理法に基づく住居地の届出を一緒に出していただきますので、在留カードまたは特別永住者証明書を窓口へお持ちください。カードの裏面に新しい住所を記載し、お返しします。お持ちでない場合はページ下部の「お問い合わせ先」までご連絡ください。"
+        ],
+        "reason": "no_match"
+      }
+    ],
+    "mynumber_phone": [
+      {
+        "query": "都留市 住民票 戸籍 印鑑証明 転入届 転出届 マイナンバー 届出 証明書",
+        "searchedAt": "2026-02-05T01:10:22.878Z",
+        "resultsCount": 5,
+        "urls": [
+          "https://www.city.toshima.lg.jp/096/tetsuzuki/todokede/kiroku/index.html",
+          "https://www.city.bunkyo.lg.jp/b013/p000266.html",
+          "https://www.city.kita.lg.jp/living/registration/1001564/1001568.html",
+          "https://www.digital.go.jp/policies/moving_onestop_service/faq-01",
+          "https://www.city.tokyo-nakano.lg.jp/dept/213000/d006852.html"
+        ],
+        "snippets": [
+          "ホーム &gt; 手続き・届出 &gt; 届出・証明・登録（戸籍・住民票など） &gt; 住所や世帯を変更したときの届出（転入届・転出届など）",
+          "転出手続をされますと、マイナンバーカードを交付することができません。カードの受け取りは転出手続前にお願いします。 · 転出予定日の前日までは住民票および印鑑登録証明書を発行することができます。必ず住民票の写し等、印鑑登録証明書のページをご確認ください。",
+          "転入される方のマイナンバーカード（お持ちの方） · 本人確認書類（運転免許証・在留カードなど） · 外国人住民の方は、入国管理法に基づく住居地の届出を一緒に出していただきますので、在留カードまたは特別永住者証明書を窓口へお持ちください。カードの裏面に新しい住所を記載し、お返しします。お持ちでない場合はページ下部の「お問い合わせ先」までご連絡ください。"
+        ],
+        "reason": "no_match"
+      }
+    ],
+    "juminhyo_convenience_fee": [
+      {
+        "query": "都留市 住民票 戸籍 印鑑証明 転入届 転出届 マイナンバー 届出 証明書",
+        "searchedAt": "2026-02-05T01:10:22.878Z",
+        "resultsCount": 5,
+        "urls": [
+          "https://www.city.toshima.lg.jp/096/tetsuzuki/todokede/kiroku/index.html",
+          "https://www.city.bunkyo.lg.jp/b013/p000266.html",
+          "https://www.city.kita.lg.jp/living/registration/1001564/1001568.html",
+          "https://www.digital.go.jp/policies/moving_onestop_service/faq-01",
+          "https://www.city.tokyo-nakano.lg.jp/dept/213000/d006852.html"
+        ],
+        "snippets": [
+          "ホーム &gt; 手続き・届出 &gt; 届出・証明・登録（戸籍・住民票など） &gt; 住所や世帯を変更したときの届出（転入届・転出届など）",
+          "転出手続をされますと、マイナンバーカードを交付することができません。カードの受け取りは転出手続前にお願いします。 · 転出予定日の前日までは住民票および印鑑登録証明書を発行することができます。必ず住民票の写し等、印鑑登録証明書のページをご確認ください。",
+          "転入される方のマイナンバーカード（お持ちの方） · 本人確認書類（運転免許証・在留カードなど） · 外国人住民の方は、入国管理法に基づく住居地の届出を一緒に出していただきますので、在留カードまたは特別永住者証明書を窓口へお持ちください。カードの裏面に新しい住所を記載し、お返しします。お持ちでない場合はページ下部の「お問い合わせ先」までご連絡ください。"
+        ],
+        "reason": "no_match"
+      }
+    ],
+    "juminhyo_kisai_fee": [
+      {
+        "query": "都留市 住民票 戸籍 印鑑証明 転入届 転出届 マイナンバー 届出 証明書",
+        "searchedAt": "2026-02-05T01:10:22.878Z",
+        "resultsCount": 5,
+        "urls": [
+          "https://www.city.toshima.lg.jp/096/tetsuzuki/todokede/kiroku/index.html",
+          "https://www.city.bunkyo.lg.jp/b013/p000266.html",
+          "https://www.city.kita.lg.jp/living/registration/1001564/1001568.html",
+          "https://www.digital.go.jp/policies/moving_onestop_service/faq-01",
+          "https://www.city.tokyo-nakano.lg.jp/dept/213000/d006852.html"
+        ],
+        "snippets": [
+          "ホーム &gt; 手続き・届出 &gt; 届出・証明・登録（戸籍・住民票など） &gt; 住所や世帯を変更したときの届出（転入届・転出届など）",
+          "転出手続をされますと、マイナンバーカードを交付することができません。カードの受け取りは転出手続前にお願いします。 · 転出予定日の前日までは住民票および印鑑登録証明書を発行することができます。必ず住民票の写し等、印鑑登録証明書のページをご確認ください。",
+          "転入される方のマイナンバーカード（お持ちの方） · 本人確認書類（運転免許証・在留カードなど） · 外国人住民の方は、入国管理法に基づく住居地の届出を一緒に出していただきますので、在留カードまたは特別永住者証明書を窓口へお持ちください。カードの裏面に新しい住所を記載し、お返しします。お持ちでない場合はページ下部の「お問い合わせ先」までご連絡ください。"
+        ],
+        "reason": "no_match"
+      }
+    ],
+    "juminhyo_madoguchi": [
+      {
+        "query": "都留市 住民票 戸籍 印鑑証明 転入届 転出届 マイナンバー 届出 証明書",
+        "searchedAt": "2026-02-05T01:10:22.878Z",
+        "resultsCount": 5,
+        "urls": [
+          "https://www.city.toshima.lg.jp/096/tetsuzuki/todokede/kiroku/index.html",
+          "https://www.city.bunkyo.lg.jp/b013/p000266.html",
+          "https://www.city.kita.lg.jp/living/registration/1001564/1001568.html",
+          "https://www.digital.go.jp/policies/moving_onestop_service/faq-01",
+          "https://www.city.tokyo-nakano.lg.jp/dept/213000/d006852.html"
+        ],
+        "snippets": [
+          "ホーム &gt; 手続き・届出 &gt; 届出・証明・登録（戸籍・住民票など） &gt; 住所や世帯を変更したときの届出（転入届・転出届など）",
+          "転出手続をされますと、マイナンバーカードを交付することができません。カードの受け取りは転出手続前にお願いします。 · 転出予定日の前日までは住民票および印鑑登録証明書を発行することができます。必ず住民票の写し等、印鑑登録証明書のページをご確認ください。",
+          "転入される方のマイナンバーカード（お持ちの方） · 本人確認書類（運転免許証・在留カードなど） · 外国人住民の方は、入国管理法に基づく住居地の届出を一緒に出していただきますので、在留カードまたは特別永住者証明書を窓口へお持ちください。カードの裏面に新しい住所を記載し、お返しします。お持ちでない場合はページ下部の「お問い合わせ先」までご連絡ください。"
+        ],
+        "reason": "no_match"
+      }
+    ],
+    "jyuminhyo_fee": [
+      {
+        "query": "都留市 住民票 戸籍 印鑑証明 転入届 転出届 マイナンバー 届出 証明書",
+        "searchedAt": "2026-02-05T01:10:22.878Z",
+        "resultsCount": 5,
+        "urls": [
+          "https://www.city.toshima.lg.jp/096/tetsuzuki/todokede/kiroku/index.html",
+          "https://www.city.bunkyo.lg.jp/b013/p000266.html",
+          "https://www.city.kita.lg.jp/living/registration/1001564/1001568.html",
+          "https://www.digital.go.jp/policies/moving_onestop_service/faq-01",
+          "https://www.city.tokyo-nakano.lg.jp/dept/213000/d006852.html"
+        ],
+        "snippets": [
+          "ホーム &gt; 手続き・届出 &gt; 届出・証明・登録（戸籍・住民票など） &gt; 住所や世帯を変更したときの届出（転入届・転出届など）",
+          "転出手続をされますと、マイナンバーカードを交付することができません。カードの受け取りは転出手続前にお願いします。 · 転出予定日の前日までは住民票および印鑑登録証明書を発行することができます。必ず住民票の写し等、印鑑登録証明書のページをご確認ください。",
+          "転入される方のマイナンバーカード（お持ちの方） · 本人確認書類（運転免許証・在留カードなど） · 外国人住民の方は、入国管理法に基づく住居地の届出を一緒に出していただきますので、在留カードまたは特別永住者証明書を窓口へお持ちください。カードの裏面に新しい住所を記載し、お返しします。お持ちでない場合はページ下部の「お問い合わせ先」までご連絡ください。"
+        ],
+        "reason": "no_match"
+      }
+    ],
+    "jyuminhyo_form_url": [
+      {
+        "query": "都留市 住民票 戸籍 印鑑証明 転入届 転出届 マイナンバー 届出 証明書",
+        "searchedAt": "2026-02-05T01:10:22.878Z",
+        "resultsCount": 5,
+        "urls": [
+          "https://www.city.toshima.lg.jp/096/tetsuzuki/todokede/kiroku/index.html",
+          "https://www.city.bunkyo.lg.jp/b013/p000266.html",
+          "https://www.city.kita.lg.jp/living/registration/1001564/1001568.html",
+          "https://www.digital.go.jp/policies/moving_onestop_service/faq-01",
+          "https://www.city.tokyo-nakano.lg.jp/dept/213000/d006852.html"
+        ],
+        "snippets": [
+          "ホーム &gt; 手続き・届出 &gt; 届出・証明・登録（戸籍・住民票など） &gt; 住所や世帯を変更したときの届出（転入届・転出届など）",
+          "転出手続をされますと、マイナンバーカードを交付することができません。カードの受け取りは転出手続前にお願いします。 · 転出予定日の前日までは住民票および印鑑登録証明書を発行することができます。必ず住民票の写し等、印鑑登録証明書のページをご確認ください。",
+          "転入される方のマイナンバーカード（お持ちの方） · 本人確認書類（運転免許証・在留カードなど） · 外国人住民の方は、入国管理法に基づく住居地の届出を一緒に出していただきますので、在留カードまたは特別永住者証明書を窓口へお持ちください。カードの裏面に新しい住所を記載し、お返しします。お持ちでない場合はページ下部の「お問い合わせ先」までご連絡ください。"
+        ],
+        "reason": "no_match"
+      }
+    ],
+    "jyuminhyo_kisai_fee": [
+      {
+        "query": "都留市 住民票 戸籍 印鑑証明 転入届 転出届 マイナンバー 届出 証明書",
+        "searchedAt": "2026-02-05T01:10:22.878Z",
+        "resultsCount": 5,
+        "urls": [
+          "https://www.city.toshima.lg.jp/096/tetsuzuki/todokede/kiroku/index.html",
+          "https://www.city.bunkyo.lg.jp/b013/p000266.html",
+          "https://www.city.kita.lg.jp/living/registration/1001564/1001568.html",
+          "https://www.digital.go.jp/policies/moving_onestop_service/faq-01",
+          "https://www.city.tokyo-nakano.lg.jp/dept/213000/d006852.html"
+        ],
+        "snippets": [
+          "ホーム &gt; 手続き・届出 &gt; 届出・証明・登録（戸籍・住民票など） &gt; 住所や世帯を変更したときの届出（転入届・転出届など）",
+          "転出手続をされますと、マイナンバーカードを交付することができません。カードの受け取りは転出手続前にお願いします。 · 転出予定日の前日までは住民票および印鑑登録証明書を発行することができます。必ず住民票の写し等、印鑑登録証明書のページをご確認ください。",
+          "転入される方のマイナンバーカード（お持ちの方） · 本人確認書類（運転免許証・在留カードなど） · 外国人住民の方は、入国管理法に基づく住居地の届出を一緒に出していただきますので、在留カードまたは特別永住者証明書を窓口へお持ちください。カードの裏面に新しい住所を記載し、お返しします。お持ちでない場合はページ下部の「お問い合わせ先」までご連絡ください。"
+        ],
+        "reason": "no_match"
+      }
+    ],
+    "koseki_form_url": [
+      {
+        "query": "都留市 住民票 戸籍 印鑑証明 転入届 転出届 マイナンバー 届出 証明書",
+        "searchedAt": "2026-02-05T01:10:22.878Z",
+        "resultsCount": 5,
+        "urls": [
+          "https://www.city.toshima.lg.jp/096/tetsuzuki/todokede/kiroku/index.html",
+          "https://www.city.bunkyo.lg.jp/b013/p000266.html",
+          "https://www.city.kita.lg.jp/living/registration/1001564/1001568.html",
+          "https://www.digital.go.jp/policies/moving_onestop_service/faq-01",
+          "https://www.city.tokyo-nakano.lg.jp/dept/213000/d006852.html"
+        ],
+        "snippets": [
+          "ホーム &gt; 手続き・届出 &gt; 届出・証明・登録（戸籍・住民票など） &gt; 住所や世帯を変更したときの届出（転入届・転出届など）",
+          "転出手続をされますと、マイナンバーカードを交付することができません。カードの受け取りは転出手続前にお願いします。 · 転出予定日の前日までは住民票および印鑑登録証明書を発行することができます。必ず住民票の写し等、印鑑登録証明書のページをご確認ください。",
+          "転入される方のマイナンバーカード（お持ちの方） · 本人確認書類（運転免許証・在留カードなど） · 外国人住民の方は、入国管理法に基づく住居地の届出を一緒に出していただきますので、在留カードまたは特別永住者証明書を窓口へお持ちください。カードの裏面に新しい住所を記載し、お返しします。お持ちでない場合はページ下部の「お問い合わせ先」までご連絡ください。"
+        ],
+        "reason": "no_match"
+      }
+    ],
+    "kaisei_koseki_fee": [
+      {
+        "query": "都留市 住民票 戸籍 印鑑証明 転入届 転出届 マイナンバー 届出 証明書",
+        "searchedAt": "2026-02-05T01:10:22.878Z",
+        "resultsCount": 5,
+        "urls": [
+          "https://www.city.toshima.lg.jp/096/tetsuzuki/todokede/kiroku/index.html",
+          "https://www.city.bunkyo.lg.jp/b013/p000266.html",
+          "https://www.city.kita.lg.jp/living/registration/1001564/1001568.html",
+          "https://www.digital.go.jp/policies/moving_onestop_service/faq-01",
+          "https://www.city.tokyo-nakano.lg.jp/dept/213000/d006852.html"
+        ],
+        "snippets": [
+          "ホーム &gt; 手続き・届出 &gt; 届出・証明・登録（戸籍・住民票など） &gt; 住所や世帯を変更したときの届出（転入届・転出届など）",
+          "転出手続をされますと、マイナンバーカードを交付することができません。カードの受け取りは転出手続前にお願いします。 · 転出予定日の前日までは住民票および印鑑登録証明書を発行することができます。必ず住民票の写し等、印鑑登録証明書のページをご確認ください。",
+          "転入される方のマイナンバーカード（お持ちの方） · 本人確認書類（運転免許証・在留カードなど） · 外国人住民の方は、入国管理法に基づく住居地の届出を一緒に出していただきますので、在留カードまたは特別永住者証明書を窓口へお持ちください。カードの裏面に新しい住所を記載し、お返しします。お持ちでない場合はページ下部の「お問い合わせ先」までご連絡ください。"
+        ],
+        "reason": "no_match"
+      }
+    ],
+    "jokoseki_fee": [
+      {
+        "query": "都留市 住民票 戸籍 印鑑証明 転入届 転出届 マイナンバー 届出 証明書",
+        "searchedAt": "2026-02-05T01:10:22.878Z",
+        "resultsCount": 5,
+        "urls": [
+          "https://www.city.toshima.lg.jp/096/tetsuzuki/todokede/kiroku/index.html",
+          "https://www.city.bunkyo.lg.jp/b013/p000266.html",
+          "https://www.city.kita.lg.jp/living/registration/1001564/1001568.html",
+          "https://www.digital.go.jp/policies/moving_onestop_service/faq-01",
+          "https://www.city.tokyo-nakano.lg.jp/dept/213000/d006852.html"
+        ],
+        "snippets": [
+          "ホーム &gt; 手続き・届出 &gt; 届出・証明・登録（戸籍・住民票など） &gt; 住所や世帯を変更したときの届出（転入届・転出届など）",
+          "転出手続をされますと、マイナンバーカードを交付することができません。カードの受け取りは転出手続前にお願いします。 · 転出予定日の前日までは住民票および印鑑登録証明書を発行することができます。必ず住民票の写し等、印鑑登録証明書のページをご確認ください。",
+          "転入される方のマイナンバーカード（お持ちの方） · 本人確認書類（運転免許証・在留カードなど） · 外国人住民の方は、入国管理法に基づく住居地の届出を一緒に出していただきますので、在留カードまたは特別永住者証明書を窓口へお持ちください。カードの裏面に新しい住所を記載し、お返しします。お持ちでない場合はページ下部の「お問い合わせ先」までご連絡ください。"
+        ],
+        "reason": "no_match"
+      }
+    ],
+    "inkan_touroku_fee": [
+      {
+        "query": "都留市 住民票 戸籍 印鑑証明 転入届 転出届 マイナンバー 届出 証明書",
+        "searchedAt": "2026-02-05T01:10:22.878Z",
+        "resultsCount": 5,
+        "urls": [
+          "https://www.city.toshima.lg.jp/096/tetsuzuki/todokede/kiroku/index.html",
+          "https://www.city.bunkyo.lg.jp/b013/p000266.html",
+          "https://www.city.kita.lg.jp/living/registration/1001564/1001568.html",
+          "https://www.digital.go.jp/policies/moving_onestop_service/faq-01",
+          "https://www.city.tokyo-nakano.lg.jp/dept/213000/d006852.html"
+        ],
+        "snippets": [
+          "ホーム &gt; 手続き・届出 &gt; 届出・証明・登録（戸籍・住民票など） &gt; 住所や世帯を変更したときの届出（転入届・転出届など）",
+          "転出手続をされますと、マイナンバーカードを交付することができません。カードの受け取りは転出手続前にお願いします。 · 転出予定日の前日までは住民票および印鑑登録証明書を発行することができます。必ず住民票の写し等、印鑑登録証明書のページをご確認ください。",
+          "転入される方のマイナンバーカード（お持ちの方） · 本人確認書類（運転免許証・在留カードなど） · 外国人住民の方は、入国管理法に基づく住居地の届出を一緒に出していただきますので、在留カードまたは特別永住者証明書を窓口へお持ちください。カードの裏面に新しい住所を記載し、お返しします。お持ちでない場合はページ下部の「お問い合わせ先」までご連絡ください。"
+        ],
+        "reason": "no_match"
+      }
+    ],
+    "inkan_shomei_convenience_fee": [
+      {
+        "query": "都留市 住民票 戸籍 印鑑証明 転入届 転出届 マイナンバー 届出 証明書",
+        "searchedAt": "2026-02-05T01:10:22.878Z",
+        "resultsCount": 5,
+        "urls": [
+          "https://www.city.toshima.lg.jp/096/tetsuzuki/todokede/kiroku/index.html",
+          "https://www.city.bunkyo.lg.jp/b013/p000266.html",
+          "https://www.city.kita.lg.jp/living/registration/1001564/1001568.html",
+          "https://www.digital.go.jp/policies/moving_onestop_service/faq-01",
+          "https://www.city.tokyo-nakano.lg.jp/dept/213000/d006852.html"
+        ],
+        "snippets": [
+          "ホーム &gt; 手続き・届出 &gt; 届出・証明・登録（戸籍・住民票など） &gt; 住所や世帯を変更したときの届出（転入届・転出届など）",
+          "転出手続をされますと、マイナンバーカードを交付することができません。カードの受け取りは転出手続前にお願いします。 · 転出予定日の前日までは住民票および印鑑登録証明書を発行することができます。必ず住民票の写し等、印鑑登録証明書のページをご確認ください。",
+          "転入される方のマイナンバーカード（お持ちの方） · 本人確認書類（運転免許証・在留カードなど） · 外国人住民の方は、入国管理法に基づく住居地の届出を一緒に出していただきますので、在留カードまたは特別永住者証明書を窓口へお持ちください。カードの裏面に新しい住所を記載し、お返しします。お持ちでない場合はページ下部の「お問い合わせ先」までご連絡ください。"
+        ],
+        "reason": "no_match"
+      }
+    ],
+    "fuhyo_fee": [
+      {
+        "query": "都留市 住民票 戸籍 印鑑証明 転入届 転出届 マイナンバー 届出 証明書",
+        "searchedAt": "2026-02-05T01:10:22.878Z",
+        "resultsCount": 5,
+        "urls": [
+          "https://www.city.toshima.lg.jp/096/tetsuzuki/todokede/kiroku/index.html",
+          "https://www.city.bunkyo.lg.jp/b013/p000266.html",
+          "https://www.city.kita.lg.jp/living/registration/1001564/1001568.html",
+          "https://www.digital.go.jp/policies/moving_onestop_service/faq-01",
+          "https://www.city.tokyo-nakano.lg.jp/dept/213000/d006852.html"
+        ],
+        "snippets": [
+          "ホーム &gt; 手続き・届出 &gt; 届出・証明・登録（戸籍・住民票など） &gt; 住所や世帯を変更したときの届出（転入届・転出届など）",
+          "転出手続をされますと、マイナンバーカードを交付することができません。カードの受け取りは転出手続前にお願いします。 · 転出予定日の前日までは住民票および印鑑登録証明書を発行することができます。必ず住民票の写し等、印鑑登録証明書のページをご確認ください。",
+          "転入される方のマイナンバーカード（お持ちの方） · 本人確認書類（運転免許証・在留カードなど） · 外国人住民の方は、入国管理法に基づく住居地の届出を一緒に出していただきますので、在留カードまたは特別永住者証明書を窓口へお持ちください。カードの裏面に新しい住所を記載し、お返しします。お持ちでない場合はページ下部の「お問い合わせ先」までご連絡ください。"
+        ],
+        "reason": "no_match"
+      }
+    ],
+    "convenience_discount": [
+      {
+        "query": "都留市 住民票 戸籍 印鑑証明 転入届 転出届 マイナンバー 届出 証明書",
+        "searchedAt": "2026-02-05T01:10:22.878Z",
+        "resultsCount": 5,
+        "urls": [
+          "https://www.city.toshima.lg.jp/096/tetsuzuki/todokede/kiroku/index.html",
+          "https://www.city.bunkyo.lg.jp/b013/p000266.html",
+          "https://www.city.kita.lg.jp/living/registration/1001564/1001568.html",
+          "https://www.digital.go.jp/policies/moving_onestop_service/faq-01",
+          "https://www.city.tokyo-nakano.lg.jp/dept/213000/d006852.html"
+        ],
+        "snippets": [
+          "ホーム &gt; 手続き・届出 &gt; 届出・証明・登録（戸籍・住民票など） &gt; 住所や世帯を変更したときの届出（転入届・転出届など）",
+          "転出手続をされますと、マイナンバーカードを交付することができません。カードの受け取りは転出手続前にお願いします。 · 転出予定日の前日までは住民票および印鑑登録証明書を発行することができます。必ず住民票の写し等、印鑑登録証明書のページをご確認ください。",
+          "転入される方のマイナンバーカード（お持ちの方） · 本人確認書類（運転免許証・在留カードなど） · 外国人住民の方は、入国管理法に基づく住居地の届出を一緒に出していただきますので、在留カードまたは特別永住者証明書を窓口へお持ちください。カードの裏面に新しい住所を記載し、お返しします。お持ちでない場合はページ下部の「お問い合わせ先」までご連絡ください。"
+        ],
+        "reason": "no_match"
+      }
+    ],
+    "after_hours_shussei": [
+      {
+        "query": "都留市 住民票 戸籍 印鑑証明 転入届 転出届 マイナンバー 届出 証明書",
+        "searchedAt": "2026-02-05T01:10:22.878Z",
+        "resultsCount": 5,
+        "urls": [
+          "https://www.city.toshima.lg.jp/096/tetsuzuki/todokede/kiroku/index.html",
+          "https://www.city.bunkyo.lg.jp/b013/p000266.html",
+          "https://www.city.kita.lg.jp/living/registration/1001564/1001568.html",
+          "https://www.digital.go.jp/policies/moving_onestop_service/faq-01",
+          "https://www.city.tokyo-nakano.lg.jp/dept/213000/d006852.html"
+        ],
+        "snippets": [
+          "ホーム &gt; 手続き・届出 &gt; 届出・証明・登録（戸籍・住民票など） &gt; 住所や世帯を変更したときの届出（転入届・転出届など）",
+          "転出手続をされますと、マイナンバーカードを交付することができません。カードの受け取りは転出手続前にお願いします。 · 転出予定日の前日までは住民票および印鑑登録証明書を発行することができます。必ず住民票の写し等、印鑑登録証明書のページをご確認ください。",
+          "転入される方のマイナンバーカード（お持ちの方） · 本人確認書類（運転免許証・在留カードなど） · 外国人住民の方は、入国管理法に基づく住居地の届出を一緒に出していただきますので、在留カードまたは特別永住者証明書を窓口へお持ちください。カードの裏面に新しい住所を記載し、お返しします。お持ちでない場合はページ下部の「お問い合わせ先」までご連絡ください。"
+        ],
+        "reason": "no_match"
+      }
+    ],
+    "okuyami_madoguchi_description": [
+      {
+        "query": "都留市 住民票 戸籍 印鑑証明 転入届 転出届 マイナンバー 届出 証明書",
+        "searchedAt": "2026-02-05T01:10:22.878Z",
+        "resultsCount": 5,
+        "urls": [
+          "https://www.city.toshima.lg.jp/096/tetsuzuki/todokede/kiroku/index.html",
+          "https://www.city.bunkyo.lg.jp/b013/p000266.html",
+          "https://www.city.kita.lg.jp/living/registration/1001564/1001568.html",
+          "https://www.digital.go.jp/policies/moving_onestop_service/faq-01",
+          "https://www.city.tokyo-nakano.lg.jp/dept/213000/d006852.html"
+        ],
+        "snippets": [
+          "ホーム &gt; 手続き・届出 &gt; 届出・証明・登録（戸籍・住民票など） &gt; 住所や世帯を変更したときの届出（転入届・転出届など）",
+          "転出手続をされますと、マイナンバーカードを交付することができません。カードの受け取りは転出手続前にお願いします。 · 転出予定日の前日までは住民票および印鑑登録証明書を発行することができます。必ず住民票の写し等、印鑑登録証明書のページをご確認ください。",
+          "転入される方のマイナンバーカード（お持ちの方） · 本人確認書類（運転免許証・在留カードなど） · 外国人住民の方は、入国管理法に基づく住居地の届出を一緒に出していただきますので、在留カードまたは特別永住者証明書を窓口へお持ちください。カードの裏面に新しい住所を記載し、お返しします。お持ちでない場合はページ下部の「お問い合わせ先」までご連絡ください。"
+        ],
+        "reason": "no_match"
+      }
+    ]
+  },
+  "errors": [],
+  "metadata": {
+    "totalVariables": 29,
+    "filledVariables": 7,
+    "autoApproved": true,
+    "approvedAt": "2026-02-05T01:10:54.601Z"
+  }
+}

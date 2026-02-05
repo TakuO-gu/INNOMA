@@ -1,0 +1,574 @@
+{
+  "id": "atami-registration",
+  "municipalityId": "atami",
+  "service": "registration",
+  "status": "approved",
+  "createdAt": "2026-02-04T21:55:07.592Z",
+  "updatedAt": "2026-02-05T01:11:57.994Z",
+  "variables": {
+    "juminhyo_madoguchi": {
+      "value": "市役所第1庁舎1階市民生活課市民室、南熱海支所、泉支所",
+      "sourceUrl": "https://www.city.atami.lg.jp/kurashi/juminhyo/1000615/1000617.html",
+      "confidence": 0.7999999999999999,
+      "extractedAt": "2026-02-04T21:54:32.753Z",
+      "validated": true
+    },
+    "shimin_department": {
+      "value": "市民生活課市民室",
+      "sourceUrl": "https://www.city.atami.lg.jp/kurashi/juminhyo/1000615/1000617.html",
+      "confidence": 0.7999999999999999,
+      "extractedAt": "2026-02-04T21:54:32.753Z",
+      "validated": true
+    },
+    "registration_window": {
+      "value": "月曜日から金曜日：午前8時30分～午後5時15分（祝日、年末年始などの閉庁日を除く）",
+      "sourceUrl": "https://www.city.atami.lg.jp/kurashi/juminhyo/1000615/1000617.html",
+      "confidence": 0.7999999999999999,
+      "extractedAt": "2026-02-04T21:54:32.753Z",
+      "validated": true
+    }
+  },
+  "missingVariables": [
+    "registration_department",
+    "registration_email",
+    "registration_phone",
+    "shimin_email",
+    "shimin_phone",
+    "mynumber_department",
+    "mynumber_email",
+    "mynumber_phone",
+    "juminhyo_fee",
+    "juminhyo_convenience_fee",
+    "juminhyo_kisai_fee",
+    "jyuminhyo_fee",
+    "jyuminhyo_form_url",
+    "jyuminhyo_kisai_fee",
+    "koseki_fee",
+    "koseki_form_url",
+    "kaisei_koseki_fee",
+    "jokoseki_fee",
+    "inkan_touroku_fee",
+    "inkan_shomei_fee",
+    "inkan_shomei_convenience_fee",
+    "fuhyo_fee",
+    "inin_form_url",
+    "convenience_discount",
+    "after_hours_shussei",
+    "okuyami_madoguchi_description"
+  ],
+  "searchAttempts": {
+    "shimin_phone": [
+      {
+        "query": "熱海市 市民課電話番号",
+        "searchedAt": "2026-02-04T21:55:07.516Z",
+        "resultsCount": 0,
+        "urls": [],
+        "snippets": [],
+        "reason": "not_found"
+      }
+    ],
+    "juminhyo_fee": [
+      {
+        "query": "熱海市 住民票手数料",
+        "searchedAt": "2026-02-04T21:55:07.540Z",
+        "resultsCount": 0,
+        "urls": [],
+        "snippets": [],
+        "reason": "not_found"
+      }
+    ],
+    "koseki_fee": [
+      {
+        "query": "熱海市 戸籍謄本手数料",
+        "searchedAt": "2026-02-04T21:55:07.562Z",
+        "resultsCount": 0,
+        "urls": [],
+        "snippets": [],
+        "reason": "not_found"
+      }
+    ],
+    "inkan_shomei_fee": [
+      {
+        "query": "熱海市 印鑑証明手数料",
+        "searchedAt": "2026-02-04T21:55:07.582Z",
+        "resultsCount": 0,
+        "urls": [],
+        "snippets": [],
+        "reason": "not_found"
+      }
+    ],
+    "registration_department": [
+      {
+        "query": "熱海市 住民票 戸籍 印鑑証明 転入届 転出届 マイナンバー 届出 証明書",
+        "searchedAt": "2026-02-04T21:55:07.582Z",
+        "resultsCount": 5,
+        "urls": [
+          "https://www.city.atami.lg.jp/kurashi/juminhyo/index.html",
+          "https://www.city.atami.lg.jp/kurashi/juminhyo/1000615/1000618.html",
+          "https://www.city.atami.lg.jp/kurashi/juminhyo/1000615/1000616.html",
+          "https://www.city.atami.lg.jp/kurashi/juminhyo/1000626/index.html",
+          "https://www.city.atami.lg.jp/kurashi/juminhyo/1000615/1000617.html"
+        ],
+        "snippets": [
+          "マイナンバーカード・住民基本台帳カード · 番号案内表示システム · 印鑑登録・印鑑証明 · パスポート · 外国人住民の方 · 前のページへ戻る · トップページへ戻る · 表示 · PC ·",
+          "熱海市から市外へ引越す場合の転出届については、マイナポータルを通じたオンラインでの届出が可能です。署名用電子証明書及び利用者証明用電子証明書が有効なマイナンバーカードをお持ちの方で、日本国内で引越しをする方がご利用いただけます。このサービスを利用する方は、転出に当たり熱海市の窓口への来庁が原則不要となります。 ※マイナポータルを通じて転出届の提出をした後は、別途、転入先市区町村の窓口で転入届の手続が",
+          "転出証明書（前住所地の市区町村長が発行したもの） · マイナンバーカード（交付を受けている方のみ） · 住民基本台帳カード（交付を受けている方のみ） · 在留カードまたは特別永住者証明書（外国籍の方のみ） ·"
+        ],
+        "reason": "no_match"
+      }
+    ],
+    "registration_email": [
+      {
+        "query": "熱海市 住民票 戸籍 印鑑証明 転入届 転出届 マイナンバー 届出 証明書",
+        "searchedAt": "2026-02-04T21:55:07.582Z",
+        "resultsCount": 5,
+        "urls": [
+          "https://www.city.atami.lg.jp/kurashi/juminhyo/index.html",
+          "https://www.city.atami.lg.jp/kurashi/juminhyo/1000615/1000618.html",
+          "https://www.city.atami.lg.jp/kurashi/juminhyo/1000615/1000616.html",
+          "https://www.city.atami.lg.jp/kurashi/juminhyo/1000626/index.html",
+          "https://www.city.atami.lg.jp/kurashi/juminhyo/1000615/1000617.html"
+        ],
+        "snippets": [
+          "マイナンバーカード・住民基本台帳カード · 番号案内表示システム · 印鑑登録・印鑑証明 · パスポート · 外国人住民の方 · 前のページへ戻る · トップページへ戻る · 表示 · PC ·",
+          "熱海市から市外へ引越す場合の転出届については、マイナポータルを通じたオンラインでの届出が可能です。署名用電子証明書及び利用者証明用電子証明書が有効なマイナンバーカードをお持ちの方で、日本国内で引越しをする方がご利用いただけます。このサービスを利用する方は、転出に当たり熱海市の窓口への来庁が原則不要となります。 ※マイナポータルを通じて転出届の提出をした後は、別途、転入先市区町村の窓口で転入届の手続が",
+          "転出証明書（前住所地の市区町村長が発行したもの） · マイナンバーカード（交付を受けている方のみ） · 住民基本台帳カード（交付を受けている方のみ） · 在留カードまたは特別永住者証明書（外国籍の方のみ） ·"
+        ],
+        "reason": "no_match"
+      }
+    ],
+    "registration_phone": [
+      {
+        "query": "熱海市 住民票 戸籍 印鑑証明 転入届 転出届 マイナンバー 届出 証明書",
+        "searchedAt": "2026-02-04T21:55:07.582Z",
+        "resultsCount": 5,
+        "urls": [
+          "https://www.city.atami.lg.jp/kurashi/juminhyo/index.html",
+          "https://www.city.atami.lg.jp/kurashi/juminhyo/1000615/1000618.html",
+          "https://www.city.atami.lg.jp/kurashi/juminhyo/1000615/1000616.html",
+          "https://www.city.atami.lg.jp/kurashi/juminhyo/1000626/index.html",
+          "https://www.city.atami.lg.jp/kurashi/juminhyo/1000615/1000617.html"
+        ],
+        "snippets": [
+          "マイナンバーカード・住民基本台帳カード · 番号案内表示システム · 印鑑登録・印鑑証明 · パスポート · 外国人住民の方 · 前のページへ戻る · トップページへ戻る · 表示 · PC ·",
+          "熱海市から市外へ引越す場合の転出届については、マイナポータルを通じたオンラインでの届出が可能です。署名用電子証明書及び利用者証明用電子証明書が有効なマイナンバーカードをお持ちの方で、日本国内で引越しをする方がご利用いただけます。このサービスを利用する方は、転出に当たり熱海市の窓口への来庁が原則不要となります。 ※マイナポータルを通じて転出届の提出をした後は、別途、転入先市区町村の窓口で転入届の手続が",
+          "転出証明書（前住所地の市区町村長が発行したもの） · マイナンバーカード（交付を受けている方のみ） · 住民基本台帳カード（交付を受けている方のみ） · 在留カードまたは特別永住者証明書（外国籍の方のみ） ·"
+        ],
+        "reason": "no_match"
+      }
+    ],
+    "shimin_email": [
+      {
+        "query": "熱海市 住民票 戸籍 印鑑証明 転入届 転出届 マイナンバー 届出 証明書",
+        "searchedAt": "2026-02-04T21:55:07.582Z",
+        "resultsCount": 5,
+        "urls": [
+          "https://www.city.atami.lg.jp/kurashi/juminhyo/index.html",
+          "https://www.city.atami.lg.jp/kurashi/juminhyo/1000615/1000618.html",
+          "https://www.city.atami.lg.jp/kurashi/juminhyo/1000615/1000616.html",
+          "https://www.city.atami.lg.jp/kurashi/juminhyo/1000626/index.html",
+          "https://www.city.atami.lg.jp/kurashi/juminhyo/1000615/1000617.html"
+        ],
+        "snippets": [
+          "マイナンバーカード・住民基本台帳カード · 番号案内表示システム · 印鑑登録・印鑑証明 · パスポート · 外国人住民の方 · 前のページへ戻る · トップページへ戻る · 表示 · PC ·",
+          "熱海市から市外へ引越す場合の転出届については、マイナポータルを通じたオンラインでの届出が可能です。署名用電子証明書及び利用者証明用電子証明書が有効なマイナンバーカードをお持ちの方で、日本国内で引越しをする方がご利用いただけます。このサービスを利用する方は、転出に当たり熱海市の窓口への来庁が原則不要となります。 ※マイナポータルを通じて転出届の提出をした後は、別途、転入先市区町村の窓口で転入届の手続が",
+          "転出証明書（前住所地の市区町村長が発行したもの） · マイナンバーカード（交付を受けている方のみ） · 住民基本台帳カード（交付を受けている方のみ） · 在留カードまたは特別永住者証明書（外国籍の方のみ） ·"
+        ],
+        "reason": "no_match"
+      }
+    ],
+    "mynumber_department": [
+      {
+        "query": "熱海市 住民票 戸籍 印鑑証明 転入届 転出届 マイナンバー 届出 証明書",
+        "searchedAt": "2026-02-04T21:55:07.582Z",
+        "resultsCount": 5,
+        "urls": [
+          "https://www.city.atami.lg.jp/kurashi/juminhyo/index.html",
+          "https://www.city.atami.lg.jp/kurashi/juminhyo/1000615/1000618.html",
+          "https://www.city.atami.lg.jp/kurashi/juminhyo/1000615/1000616.html",
+          "https://www.city.atami.lg.jp/kurashi/juminhyo/1000626/index.html",
+          "https://www.city.atami.lg.jp/kurashi/juminhyo/1000615/1000617.html"
+        ],
+        "snippets": [
+          "マイナンバーカード・住民基本台帳カード · 番号案内表示システム · 印鑑登録・印鑑証明 · パスポート · 外国人住民の方 · 前のページへ戻る · トップページへ戻る · 表示 · PC ·",
+          "熱海市から市外へ引越す場合の転出届については、マイナポータルを通じたオンラインでの届出が可能です。署名用電子証明書及び利用者証明用電子証明書が有効なマイナンバーカードをお持ちの方で、日本国内で引越しをする方がご利用いただけます。このサービスを利用する方は、転出に当たり熱海市の窓口への来庁が原則不要となります。 ※マイナポータルを通じて転出届の提出をした後は、別途、転入先市区町村の窓口で転入届の手続が",
+          "転出証明書（前住所地の市区町村長が発行したもの） · マイナンバーカード（交付を受けている方のみ） · 住民基本台帳カード（交付を受けている方のみ） · 在留カードまたは特別永住者証明書（外国籍の方のみ） ·"
+        ],
+        "reason": "no_match"
+      }
+    ],
+    "mynumber_email": [
+      {
+        "query": "熱海市 住民票 戸籍 印鑑証明 転入届 転出届 マイナンバー 届出 証明書",
+        "searchedAt": "2026-02-04T21:55:07.582Z",
+        "resultsCount": 5,
+        "urls": [
+          "https://www.city.atami.lg.jp/kurashi/juminhyo/index.html",
+          "https://www.city.atami.lg.jp/kurashi/juminhyo/1000615/1000618.html",
+          "https://www.city.atami.lg.jp/kurashi/juminhyo/1000615/1000616.html",
+          "https://www.city.atami.lg.jp/kurashi/juminhyo/1000626/index.html",
+          "https://www.city.atami.lg.jp/kurashi/juminhyo/1000615/1000617.html"
+        ],
+        "snippets": [
+          "マイナンバーカード・住民基本台帳カード · 番号案内表示システム · 印鑑登録・印鑑証明 · パスポート · 外国人住民の方 · 前のページへ戻る · トップページへ戻る · 表示 · PC ·",
+          "熱海市から市外へ引越す場合の転出届については、マイナポータルを通じたオンラインでの届出が可能です。署名用電子証明書及び利用者証明用電子証明書が有効なマイナンバーカードをお持ちの方で、日本国内で引越しをする方がご利用いただけます。このサービスを利用する方は、転出に当たり熱海市の窓口への来庁が原則不要となります。 ※マイナポータルを通じて転出届の提出をした後は、別途、転入先市区町村の窓口で転入届の手続が",
+          "転出証明書（前住所地の市区町村長が発行したもの） · マイナンバーカード（交付を受けている方のみ） · 住民基本台帳カード（交付を受けている方のみ） · 在留カードまたは特別永住者証明書（外国籍の方のみ） ·"
+        ],
+        "reason": "no_match"
+      }
+    ],
+    "mynumber_phone": [
+      {
+        "query": "熱海市 住民票 戸籍 印鑑証明 転入届 転出届 マイナンバー 届出 証明書",
+        "searchedAt": "2026-02-04T21:55:07.582Z",
+        "resultsCount": 5,
+        "urls": [
+          "https://www.city.atami.lg.jp/kurashi/juminhyo/index.html",
+          "https://www.city.atami.lg.jp/kurashi/juminhyo/1000615/1000618.html",
+          "https://www.city.atami.lg.jp/kurashi/juminhyo/1000615/1000616.html",
+          "https://www.city.atami.lg.jp/kurashi/juminhyo/1000626/index.html",
+          "https://www.city.atami.lg.jp/kurashi/juminhyo/1000615/1000617.html"
+        ],
+        "snippets": [
+          "マイナンバーカード・住民基本台帳カード · 番号案内表示システム · 印鑑登録・印鑑証明 · パスポート · 外国人住民の方 · 前のページへ戻る · トップページへ戻る · 表示 · PC ·",
+          "熱海市から市外へ引越す場合の転出届については、マイナポータルを通じたオンラインでの届出が可能です。署名用電子証明書及び利用者証明用電子証明書が有効なマイナンバーカードをお持ちの方で、日本国内で引越しをする方がご利用いただけます。このサービスを利用する方は、転出に当たり熱海市の窓口への来庁が原則不要となります。 ※マイナポータルを通じて転出届の提出をした後は、別途、転入先市区町村の窓口で転入届の手続が",
+          "転出証明書（前住所地の市区町村長が発行したもの） · マイナンバーカード（交付を受けている方のみ） · 住民基本台帳カード（交付を受けている方のみ） · 在留カードまたは特別永住者証明書（外国籍の方のみ） ·"
+        ],
+        "reason": "no_match"
+      }
+    ],
+    "juminhyo_convenience_fee": [
+      {
+        "query": "熱海市 住民票 戸籍 印鑑証明 転入届 転出届 マイナンバー 届出 証明書",
+        "searchedAt": "2026-02-04T21:55:07.582Z",
+        "resultsCount": 5,
+        "urls": [
+          "https://www.city.atami.lg.jp/kurashi/juminhyo/index.html",
+          "https://www.city.atami.lg.jp/kurashi/juminhyo/1000615/1000618.html",
+          "https://www.city.atami.lg.jp/kurashi/juminhyo/1000615/1000616.html",
+          "https://www.city.atami.lg.jp/kurashi/juminhyo/1000626/index.html",
+          "https://www.city.atami.lg.jp/kurashi/juminhyo/1000615/1000617.html"
+        ],
+        "snippets": [
+          "マイナンバーカード・住民基本台帳カード · 番号案内表示システム · 印鑑登録・印鑑証明 · パスポート · 外国人住民の方 · 前のページへ戻る · トップページへ戻る · 表示 · PC ·",
+          "熱海市から市外へ引越す場合の転出届については、マイナポータルを通じたオンラインでの届出が可能です。署名用電子証明書及び利用者証明用電子証明書が有効なマイナンバーカードをお持ちの方で、日本国内で引越しをする方がご利用いただけます。このサービスを利用する方は、転出に当たり熱海市の窓口への来庁が原則不要となります。 ※マイナポータルを通じて転出届の提出をした後は、別途、転入先市区町村の窓口で転入届の手続が",
+          "転出証明書（前住所地の市区町村長が発行したもの） · マイナンバーカード（交付を受けている方のみ） · 住民基本台帳カード（交付を受けている方のみ） · 在留カードまたは特別永住者証明書（外国籍の方のみ） ·"
+        ],
+        "reason": "no_match"
+      }
+    ],
+    "juminhyo_kisai_fee": [
+      {
+        "query": "熱海市 住民票 戸籍 印鑑証明 転入届 転出届 マイナンバー 届出 証明書",
+        "searchedAt": "2026-02-04T21:55:07.582Z",
+        "resultsCount": 5,
+        "urls": [
+          "https://www.city.atami.lg.jp/kurashi/juminhyo/index.html",
+          "https://www.city.atami.lg.jp/kurashi/juminhyo/1000615/1000618.html",
+          "https://www.city.atami.lg.jp/kurashi/juminhyo/1000615/1000616.html",
+          "https://www.city.atami.lg.jp/kurashi/juminhyo/1000626/index.html",
+          "https://www.city.atami.lg.jp/kurashi/juminhyo/1000615/1000617.html"
+        ],
+        "snippets": [
+          "マイナンバーカード・住民基本台帳カード · 番号案内表示システム · 印鑑登録・印鑑証明 · パスポート · 外国人住民の方 · 前のページへ戻る · トップページへ戻る · 表示 · PC ·",
+          "熱海市から市外へ引越す場合の転出届については、マイナポータルを通じたオンラインでの届出が可能です。署名用電子証明書及び利用者証明用電子証明書が有効なマイナンバーカードをお持ちの方で、日本国内で引越しをする方がご利用いただけます。このサービスを利用する方は、転出に当たり熱海市の窓口への来庁が原則不要となります。 ※マイナポータルを通じて転出届の提出をした後は、別途、転入先市区町村の窓口で転入届の手続が",
+          "転出証明書（前住所地の市区町村長が発行したもの） · マイナンバーカード（交付を受けている方のみ） · 住民基本台帳カード（交付を受けている方のみ） · 在留カードまたは特別永住者証明書（外国籍の方のみ） ·"
+        ],
+        "reason": "no_match"
+      }
+    ],
+    "jyuminhyo_fee": [
+      {
+        "query": "熱海市 住民票 戸籍 印鑑証明 転入届 転出届 マイナンバー 届出 証明書",
+        "searchedAt": "2026-02-04T21:55:07.582Z",
+        "resultsCount": 5,
+        "urls": [
+          "https://www.city.atami.lg.jp/kurashi/juminhyo/index.html",
+          "https://www.city.atami.lg.jp/kurashi/juminhyo/1000615/1000618.html",
+          "https://www.city.atami.lg.jp/kurashi/juminhyo/1000615/1000616.html",
+          "https://www.city.atami.lg.jp/kurashi/juminhyo/1000626/index.html",
+          "https://www.city.atami.lg.jp/kurashi/juminhyo/1000615/1000617.html"
+        ],
+        "snippets": [
+          "マイナンバーカード・住民基本台帳カード · 番号案内表示システム · 印鑑登録・印鑑証明 · パスポート · 外国人住民の方 · 前のページへ戻る · トップページへ戻る · 表示 · PC ·",
+          "熱海市から市外へ引越す場合の転出届については、マイナポータルを通じたオンラインでの届出が可能です。署名用電子証明書及び利用者証明用電子証明書が有効なマイナンバーカードをお持ちの方で、日本国内で引越しをする方がご利用いただけます。このサービスを利用する方は、転出に当たり熱海市の窓口への来庁が原則不要となります。 ※マイナポータルを通じて転出届の提出をした後は、別途、転入先市区町村の窓口で転入届の手続が",
+          "転出証明書（前住所地の市区町村長が発行したもの） · マイナンバーカード（交付を受けている方のみ） · 住民基本台帳カード（交付を受けている方のみ） · 在留カードまたは特別永住者証明書（外国籍の方のみ） ·"
+        ],
+        "reason": "no_match"
+      }
+    ],
+    "jyuminhyo_form_url": [
+      {
+        "query": "熱海市 住民票 戸籍 印鑑証明 転入届 転出届 マイナンバー 届出 証明書",
+        "searchedAt": "2026-02-04T21:55:07.582Z",
+        "resultsCount": 5,
+        "urls": [
+          "https://www.city.atami.lg.jp/kurashi/juminhyo/index.html",
+          "https://www.city.atami.lg.jp/kurashi/juminhyo/1000615/1000618.html",
+          "https://www.city.atami.lg.jp/kurashi/juminhyo/1000615/1000616.html",
+          "https://www.city.atami.lg.jp/kurashi/juminhyo/1000626/index.html",
+          "https://www.city.atami.lg.jp/kurashi/juminhyo/1000615/1000617.html"
+        ],
+        "snippets": [
+          "マイナンバーカード・住民基本台帳カード · 番号案内表示システム · 印鑑登録・印鑑証明 · パスポート · 外国人住民の方 · 前のページへ戻る · トップページへ戻る · 表示 · PC ·",
+          "熱海市から市外へ引越す場合の転出届については、マイナポータルを通じたオンラインでの届出が可能です。署名用電子証明書及び利用者証明用電子証明書が有効なマイナンバーカードをお持ちの方で、日本国内で引越しをする方がご利用いただけます。このサービスを利用する方は、転出に当たり熱海市の窓口への来庁が原則不要となります。 ※マイナポータルを通じて転出届の提出をした後は、別途、転入先市区町村の窓口で転入届の手続が",
+          "転出証明書（前住所地の市区町村長が発行したもの） · マイナンバーカード（交付を受けている方のみ） · 住民基本台帳カード（交付を受けている方のみ） · 在留カードまたは特別永住者証明書（外国籍の方のみ） ·"
+        ],
+        "reason": "no_match"
+      }
+    ],
+    "jyuminhyo_kisai_fee": [
+      {
+        "query": "熱海市 住民票 戸籍 印鑑証明 転入届 転出届 マイナンバー 届出 証明書",
+        "searchedAt": "2026-02-04T21:55:07.582Z",
+        "resultsCount": 5,
+        "urls": [
+          "https://www.city.atami.lg.jp/kurashi/juminhyo/index.html",
+          "https://www.city.atami.lg.jp/kurashi/juminhyo/1000615/1000618.html",
+          "https://www.city.atami.lg.jp/kurashi/juminhyo/1000615/1000616.html",
+          "https://www.city.atami.lg.jp/kurashi/juminhyo/1000626/index.html",
+          "https://www.city.atami.lg.jp/kurashi/juminhyo/1000615/1000617.html"
+        ],
+        "snippets": [
+          "マイナンバーカード・住民基本台帳カード · 番号案内表示システム · 印鑑登録・印鑑証明 · パスポート · 外国人住民の方 · 前のページへ戻る · トップページへ戻る · 表示 · PC ·",
+          "熱海市から市外へ引越す場合の転出届については、マイナポータルを通じたオンラインでの届出が可能です。署名用電子証明書及び利用者証明用電子証明書が有効なマイナンバーカードをお持ちの方で、日本国内で引越しをする方がご利用いただけます。このサービスを利用する方は、転出に当たり熱海市の窓口への来庁が原則不要となります。 ※マイナポータルを通じて転出届の提出をした後は、別途、転入先市区町村の窓口で転入届の手続が",
+          "転出証明書（前住所地の市区町村長が発行したもの） · マイナンバーカード（交付を受けている方のみ） · 住民基本台帳カード（交付を受けている方のみ） · 在留カードまたは特別永住者証明書（外国籍の方のみ） ·"
+        ],
+        "reason": "no_match"
+      }
+    ],
+    "koseki_form_url": [
+      {
+        "query": "熱海市 住民票 戸籍 印鑑証明 転入届 転出届 マイナンバー 届出 証明書",
+        "searchedAt": "2026-02-04T21:55:07.582Z",
+        "resultsCount": 5,
+        "urls": [
+          "https://www.city.atami.lg.jp/kurashi/juminhyo/index.html",
+          "https://www.city.atami.lg.jp/kurashi/juminhyo/1000615/1000618.html",
+          "https://www.city.atami.lg.jp/kurashi/juminhyo/1000615/1000616.html",
+          "https://www.city.atami.lg.jp/kurashi/juminhyo/1000626/index.html",
+          "https://www.city.atami.lg.jp/kurashi/juminhyo/1000615/1000617.html"
+        ],
+        "snippets": [
+          "マイナンバーカード・住民基本台帳カード · 番号案内表示システム · 印鑑登録・印鑑証明 · パスポート · 外国人住民の方 · 前のページへ戻る · トップページへ戻る · 表示 · PC ·",
+          "熱海市から市外へ引越す場合の転出届については、マイナポータルを通じたオンラインでの届出が可能です。署名用電子証明書及び利用者証明用電子証明書が有効なマイナンバーカードをお持ちの方で、日本国内で引越しをする方がご利用いただけます。このサービスを利用する方は、転出に当たり熱海市の窓口への来庁が原則不要となります。 ※マイナポータルを通じて転出届の提出をした後は、別途、転入先市区町村の窓口で転入届の手続が",
+          "転出証明書（前住所地の市区町村長が発行したもの） · マイナンバーカード（交付を受けている方のみ） · 住民基本台帳カード（交付を受けている方のみ） · 在留カードまたは特別永住者証明書（外国籍の方のみ） ·"
+        ],
+        "reason": "no_match"
+      }
+    ],
+    "kaisei_koseki_fee": [
+      {
+        "query": "熱海市 住民票 戸籍 印鑑証明 転入届 転出届 マイナンバー 届出 証明書",
+        "searchedAt": "2026-02-04T21:55:07.582Z",
+        "resultsCount": 5,
+        "urls": [
+          "https://www.city.atami.lg.jp/kurashi/juminhyo/index.html",
+          "https://www.city.atami.lg.jp/kurashi/juminhyo/1000615/1000618.html",
+          "https://www.city.atami.lg.jp/kurashi/juminhyo/1000615/1000616.html",
+          "https://www.city.atami.lg.jp/kurashi/juminhyo/1000626/index.html",
+          "https://www.city.atami.lg.jp/kurashi/juminhyo/1000615/1000617.html"
+        ],
+        "snippets": [
+          "マイナンバーカード・住民基本台帳カード · 番号案内表示システム · 印鑑登録・印鑑証明 · パスポート · 外国人住民の方 · 前のページへ戻る · トップページへ戻る · 表示 · PC ·",
+          "熱海市から市外へ引越す場合の転出届については、マイナポータルを通じたオンラインでの届出が可能です。署名用電子証明書及び利用者証明用電子証明書が有効なマイナンバーカードをお持ちの方で、日本国内で引越しをする方がご利用いただけます。このサービスを利用する方は、転出に当たり熱海市の窓口への来庁が原則不要となります。 ※マイナポータルを通じて転出届の提出をした後は、別途、転入先市区町村の窓口で転入届の手続が",
+          "転出証明書（前住所地の市区町村長が発行したもの） · マイナンバーカード（交付を受けている方のみ） · 住民基本台帳カード（交付を受けている方のみ） · 在留カードまたは特別永住者証明書（外国籍の方のみ） ·"
+        ],
+        "reason": "no_match"
+      }
+    ],
+    "jokoseki_fee": [
+      {
+        "query": "熱海市 住民票 戸籍 印鑑証明 転入届 転出届 マイナンバー 届出 証明書",
+        "searchedAt": "2026-02-04T21:55:07.582Z",
+        "resultsCount": 5,
+        "urls": [
+          "https://www.city.atami.lg.jp/kurashi/juminhyo/index.html",
+          "https://www.city.atami.lg.jp/kurashi/juminhyo/1000615/1000618.html",
+          "https://www.city.atami.lg.jp/kurashi/juminhyo/1000615/1000616.html",
+          "https://www.city.atami.lg.jp/kurashi/juminhyo/1000626/index.html",
+          "https://www.city.atami.lg.jp/kurashi/juminhyo/1000615/1000617.html"
+        ],
+        "snippets": [
+          "マイナンバーカード・住民基本台帳カード · 番号案内表示システム · 印鑑登録・印鑑証明 · パスポート · 外国人住民の方 · 前のページへ戻る · トップページへ戻る · 表示 · PC ·",
+          "熱海市から市外へ引越す場合の転出届については、マイナポータルを通じたオンラインでの届出が可能です。署名用電子証明書及び利用者証明用電子証明書が有効なマイナンバーカードをお持ちの方で、日本国内で引越しをする方がご利用いただけます。このサービスを利用する方は、転出に当たり熱海市の窓口への来庁が原則不要となります。 ※マイナポータルを通じて転出届の提出をした後は、別途、転入先市区町村の窓口で転入届の手続が",
+          "転出証明書（前住所地の市区町村長が発行したもの） · マイナンバーカード（交付を受けている方のみ） · 住民基本台帳カード（交付を受けている方のみ） · 在留カードまたは特別永住者証明書（外国籍の方のみ） ·"
+        ],
+        "reason": "no_match"
+      }
+    ],
+    "inkan_touroku_fee": [
+      {
+        "query": "熱海市 住民票 戸籍 印鑑証明 転入届 転出届 マイナンバー 届出 証明書",
+        "searchedAt": "2026-02-04T21:55:07.582Z",
+        "resultsCount": 5,
+        "urls": [
+          "https://www.city.atami.lg.jp/kurashi/juminhyo/index.html",
+          "https://www.city.atami.lg.jp/kurashi/juminhyo/1000615/1000618.html",
+          "https://www.city.atami.lg.jp/kurashi/juminhyo/1000615/1000616.html",
+          "https://www.city.atami.lg.jp/kurashi/juminhyo/1000626/index.html",
+          "https://www.city.atami.lg.jp/kurashi/juminhyo/1000615/1000617.html"
+        ],
+        "snippets": [
+          "マイナンバーカード・住民基本台帳カード · 番号案内表示システム · 印鑑登録・印鑑証明 · パスポート · 外国人住民の方 · 前のページへ戻る · トップページへ戻る · 表示 · PC ·",
+          "熱海市から市外へ引越す場合の転出届については、マイナポータルを通じたオンラインでの届出が可能です。署名用電子証明書及び利用者証明用電子証明書が有効なマイナンバーカードをお持ちの方で、日本国内で引越しをする方がご利用いただけます。このサービスを利用する方は、転出に当たり熱海市の窓口への来庁が原則不要となります。 ※マイナポータルを通じて転出届の提出をした後は、別途、転入先市区町村の窓口で転入届の手続が",
+          "転出証明書（前住所地の市区町村長が発行したもの） · マイナンバーカード（交付を受けている方のみ） · 住民基本台帳カード（交付を受けている方のみ） · 在留カードまたは特別永住者証明書（外国籍の方のみ） ·"
+        ],
+        "reason": "no_match"
+      }
+    ],
+    "inkan_shomei_convenience_fee": [
+      {
+        "query": "熱海市 住民票 戸籍 印鑑証明 転入届 転出届 マイナンバー 届出 証明書",
+        "searchedAt": "2026-02-04T21:55:07.582Z",
+        "resultsCount": 5,
+        "urls": [
+          "https://www.city.atami.lg.jp/kurashi/juminhyo/index.html",
+          "https://www.city.atami.lg.jp/kurashi/juminhyo/1000615/1000618.html",
+          "https://www.city.atami.lg.jp/kurashi/juminhyo/1000615/1000616.html",
+          "https://www.city.atami.lg.jp/kurashi/juminhyo/1000626/index.html",
+          "https://www.city.atami.lg.jp/kurashi/juminhyo/1000615/1000617.html"
+        ],
+        "snippets": [
+          "マイナンバーカード・住民基本台帳カード · 番号案内表示システム · 印鑑登録・印鑑証明 · パスポート · 外国人住民の方 · 前のページへ戻る · トップページへ戻る · 表示 · PC ·",
+          "熱海市から市外へ引越す場合の転出届については、マイナポータルを通じたオンラインでの届出が可能です。署名用電子証明書及び利用者証明用電子証明書が有効なマイナンバーカードをお持ちの方で、日本国内で引越しをする方がご利用いただけます。このサービスを利用する方は、転出に当たり熱海市の窓口への来庁が原則不要となります。 ※マイナポータルを通じて転出届の提出をした後は、別途、転入先市区町村の窓口で転入届の手続が",
+          "転出証明書（前住所地の市区町村長が発行したもの） · マイナンバーカード（交付を受けている方のみ） · 住民基本台帳カード（交付を受けている方のみ） · 在留カードまたは特別永住者証明書（外国籍の方のみ） ·"
+        ],
+        "reason": "no_match"
+      }
+    ],
+    "fuhyo_fee": [
+      {
+        "query": "熱海市 住民票 戸籍 印鑑証明 転入届 転出届 マイナンバー 届出 証明書",
+        "searchedAt": "2026-02-04T21:55:07.582Z",
+        "resultsCount": 5,
+        "urls": [
+          "https://www.city.atami.lg.jp/kurashi/juminhyo/index.html",
+          "https://www.city.atami.lg.jp/kurashi/juminhyo/1000615/1000618.html",
+          "https://www.city.atami.lg.jp/kurashi/juminhyo/1000615/1000616.html",
+          "https://www.city.atami.lg.jp/kurashi/juminhyo/1000626/index.html",
+          "https://www.city.atami.lg.jp/kurashi/juminhyo/1000615/1000617.html"
+        ],
+        "snippets": [
+          "マイナンバーカード・住民基本台帳カード · 番号案内表示システム · 印鑑登録・印鑑証明 · パスポート · 外国人住民の方 · 前のページへ戻る · トップページへ戻る · 表示 · PC ·",
+          "熱海市から市外へ引越す場合の転出届については、マイナポータルを通じたオンラインでの届出が可能です。署名用電子証明書及び利用者証明用電子証明書が有効なマイナンバーカードをお持ちの方で、日本国内で引越しをする方がご利用いただけます。このサービスを利用する方は、転出に当たり熱海市の窓口への来庁が原則不要となります。 ※マイナポータルを通じて転出届の提出をした後は、別途、転入先市区町村の窓口で転入届の手続が",
+          "転出証明書（前住所地の市区町村長が発行したもの） · マイナンバーカード（交付を受けている方のみ） · 住民基本台帳カード（交付を受けている方のみ） · 在留カードまたは特別永住者証明書（外国籍の方のみ） ·"
+        ],
+        "reason": "no_match"
+      }
+    ],
+    "inin_form_url": [
+      {
+        "query": "熱海市 住民票 戸籍 印鑑証明 転入届 転出届 マイナンバー 届出 証明書",
+        "searchedAt": "2026-02-04T21:55:07.582Z",
+        "resultsCount": 5,
+        "urls": [
+          "https://www.city.atami.lg.jp/kurashi/juminhyo/index.html",
+          "https://www.city.atami.lg.jp/kurashi/juminhyo/1000615/1000618.html",
+          "https://www.city.atami.lg.jp/kurashi/juminhyo/1000615/1000616.html",
+          "https://www.city.atami.lg.jp/kurashi/juminhyo/1000626/index.html",
+          "https://www.city.atami.lg.jp/kurashi/juminhyo/1000615/1000617.html"
+        ],
+        "snippets": [
+          "マイナンバーカード・住民基本台帳カード · 番号案内表示システム · 印鑑登録・印鑑証明 · パスポート · 外国人住民の方 · 前のページへ戻る · トップページへ戻る · 表示 · PC ·",
+          "熱海市から市外へ引越す場合の転出届については、マイナポータルを通じたオンラインでの届出が可能です。署名用電子証明書及び利用者証明用電子証明書が有効なマイナンバーカードをお持ちの方で、日本国内で引越しをする方がご利用いただけます。このサービスを利用する方は、転出に当たり熱海市の窓口への来庁が原則不要となります。 ※マイナポータルを通じて転出届の提出をした後は、別途、転入先市区町村の窓口で転入届の手続が",
+          "転出証明書（前住所地の市区町村長が発行したもの） · マイナンバーカード（交付を受けている方のみ） · 住民基本台帳カード（交付を受けている方のみ） · 在留カードまたは特別永住者証明書（外国籍の方のみ） ·"
+        ],
+        "reason": "no_match"
+      }
+    ],
+    "convenience_discount": [
+      {
+        "query": "熱海市 住民票 戸籍 印鑑証明 転入届 転出届 マイナンバー 届出 証明書",
+        "searchedAt": "2026-02-04T21:55:07.582Z",
+        "resultsCount": 5,
+        "urls": [
+          "https://www.city.atami.lg.jp/kurashi/juminhyo/index.html",
+          "https://www.city.atami.lg.jp/kurashi/juminhyo/1000615/1000618.html",
+          "https://www.city.atami.lg.jp/kurashi/juminhyo/1000615/1000616.html",
+          "https://www.city.atami.lg.jp/kurashi/juminhyo/1000626/index.html",
+          "https://www.city.atami.lg.jp/kurashi/juminhyo/1000615/1000617.html"
+        ],
+        "snippets": [
+          "マイナンバーカード・住民基本台帳カード · 番号案内表示システム · 印鑑登録・印鑑証明 · パスポート · 外国人住民の方 · 前のページへ戻る · トップページへ戻る · 表示 · PC ·",
+          "熱海市から市外へ引越す場合の転出届については、マイナポータルを通じたオンラインでの届出が可能です。署名用電子証明書及び利用者証明用電子証明書が有効なマイナンバーカードをお持ちの方で、日本国内で引越しをする方がご利用いただけます。このサービスを利用する方は、転出に当たり熱海市の窓口への来庁が原則不要となります。 ※マイナポータルを通じて転出届の提出をした後は、別途、転入先市区町村の窓口で転入届の手続が",
+          "転出証明書（前住所地の市区町村長が発行したもの） · マイナンバーカード（交付を受けている方のみ） · 住民基本台帳カード（交付を受けている方のみ） · 在留カードまたは特別永住者証明書（外国籍の方のみ） ·"
+        ],
+        "reason": "no_match"
+      }
+    ],
+    "after_hours_shussei": [
+      {
+        "query": "熱海市 住民票 戸籍 印鑑証明 転入届 転出届 マイナンバー 届出 証明書",
+        "searchedAt": "2026-02-04T21:55:07.582Z",
+        "resultsCount": 5,
+        "urls": [
+          "https://www.city.atami.lg.jp/kurashi/juminhyo/index.html",
+          "https://www.city.atami.lg.jp/kurashi/juminhyo/1000615/1000618.html",
+          "https://www.city.atami.lg.jp/kurashi/juminhyo/1000615/1000616.html",
+          "https://www.city.atami.lg.jp/kurashi/juminhyo/1000626/index.html",
+          "https://www.city.atami.lg.jp/kurashi/juminhyo/1000615/1000617.html"
+        ],
+        "snippets": [
+          "マイナンバーカード・住民基本台帳カード · 番号案内表示システム · 印鑑登録・印鑑証明 · パスポート · 外国人住民の方 · 前のページへ戻る · トップページへ戻る · 表示 · PC ·",
+          "熱海市から市外へ引越す場合の転出届については、マイナポータルを通じたオンラインでの届出が可能です。署名用電子証明書及び利用者証明用電子証明書が有効なマイナンバーカードをお持ちの方で、日本国内で引越しをする方がご利用いただけます。このサービスを利用する方は、転出に当たり熱海市の窓口への来庁が原則不要となります。 ※マイナポータルを通じて転出届の提出をした後は、別途、転入先市区町村の窓口で転入届の手続が",
+          "転出証明書（前住所地の市区町村長が発行したもの） · マイナンバーカード（交付を受けている方のみ） · 住民基本台帳カード（交付を受けている方のみ） · 在留カードまたは特別永住者証明書（外国籍の方のみ） ·"
+        ],
+        "reason": "no_match"
+      }
+    ],
+    "okuyami_madoguchi_description": [
+      {
+        "query": "熱海市 住民票 戸籍 印鑑証明 転入届 転出届 マイナンバー 届出 証明書",
+        "searchedAt": "2026-02-04T21:55:07.582Z",
+        "resultsCount": 5,
+        "urls": [
+          "https://www.city.atami.lg.jp/kurashi/juminhyo/index.html",
+          "https://www.city.atami.lg.jp/kurashi/juminhyo/1000615/1000618.html",
+          "https://www.city.atami.lg.jp/kurashi/juminhyo/1000615/1000616.html",
+          "https://www.city.atami.lg.jp/kurashi/juminhyo/1000626/index.html",
+          "https://www.city.atami.lg.jp/kurashi/juminhyo/1000615/1000617.html"
+        ],
+        "snippets": [
+          "マイナンバーカード・住民基本台帳カード · 番号案内表示システム · 印鑑登録・印鑑証明 · パスポート · 外国人住民の方 · 前のページへ戻る · トップページへ戻る · 表示 · PC ·",
+          "熱海市から市外へ引越す場合の転出届については、マイナポータルを通じたオンラインでの届出が可能です。署名用電子証明書及び利用者証明用電子証明書が有効なマイナンバーカードをお持ちの方で、日本国内で引越しをする方がご利用いただけます。このサービスを利用する方は、転出に当たり熱海市の窓口への来庁が原則不要となります。 ※マイナポータルを通じて転出届の提出をした後は、別途、転入先市区町村の窓口で転入届の手続が",
+          "転出証明書（前住所地の市区町村長が発行したもの） · マイナンバーカード（交付を受けている方のみ） · 住民基本台帳カード（交付を受けている方のみ） · 在留カードまたは特別永住者証明書（外国籍の方のみ） ·"
+        ],
+        "reason": "no_match"
+      }
+    ]
+  },
+  "errors": [
+    {
+      "code": "PAGE_FETCH_FAILED",
+      "message": "Failed to fetch https://www.city.atami.lg.jp/kurashi/juminhyo/index.html: fetch failed",
+      "timestamp": "2026-02-04T21:55:07.592Z"
+    },
+    {
+      "code": "PAGE_FETCH_FAILED",
+      "message": "Failed to fetch https://www.city.atami.lg.jp/kurashi/juminhyo/1000615/1000618.html: fetch failed",
+      "timestamp": "2026-02-04T21:55:07.592Z"
+    },
+    {
+      "code": "PAGE_FETCH_FAILED",
+      "message": "Failed to fetch https://www.city.atami.lg.jp/kurashi/juminhyo/1000615/1000616.html: fetch failed",
+      "timestamp": "2026-02-04T21:55:07.592Z"
+    },
+    {
+      "code": "PAGE_FETCH_FAILED",
+      "message": "Failed to fetch https://www.city.atami.lg.jp/kurashi/juminhyo/1000626/index.html: fetch failed",
+      "timestamp": "2026-02-04T21:55:07.592Z"
+    },
+    {
+      "code": "PAGE_FETCH_FAILED",
+      "message": "Failed to fetch https://www.city.atami.lg.jp/kurashi/juminhyo/1000615/1000617.html: fetch failed",
+      "timestamp": "2026-02-04T21:55:07.592Z"
+    }
+  ],
+  "metadata": {
+    "totalVariables": 29,
+    "filledVariables": 3,
+    "autoApproved": true,
+    "approvedAt": "2026-02-05T01:11:57.993Z"
+  }
+}

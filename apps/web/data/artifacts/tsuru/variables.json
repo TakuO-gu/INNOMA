@@ -56,18 +56,18 @@
     "updatedAt": "2026-01-29T00:00:00.000Z"
   },
   "shimin_department": {
-    "value": "市民課",
+    "value": "区民部 戸籍住民課",
     "source": "llm",
-    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/shimin/",
+    "sourceUrl": "https://www.city.kita.lg.jp/living/registration/1001564/1001568.html",
     "confidence": 0.95,
-    "updatedAt": "2026-01-29T00:00:00.000Z"
+    "updatedAt": "2026-02-05T01:10:54.607Z"
   },
   "shimin_phone": {
-    "value": "0554-43-1111（内線108・112・114・115・119）",
+    "value": "03-3981-4782",
     "source": "llm",
-    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/shimin/shiminmado_t/",
-    "confidence": 0.95,
-    "updatedAt": "2026-01-29T00:00:00.000Z"
+    "sourceUrl": "https://www.city.toshima.lg.jp/096/tetsuzuki/todokede/kiroku/index.html",
+    "confidence": 1,
+    "updatedAt": "2026-02-05T01:10:54.607Z"
   },
   "shimin_fax": {
     "value": "0554-20-3622",
@@ -131,11 +131,11 @@
     "updatedAt": "2026-01-29T00:00:00.000Z"
   },
   "inkan_shomei_fee": {
-    "value": "300円",
+    "value": "1通　300円",
     "source": "llm",
-    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/shimin/shiminmado_t/",
-    "confidence": 0.9,
-    "updatedAt": "2026-01-29T00:00:00.000Z"
+    "sourceUrl": "https://www.city.higashikurume.lg.jp/kurashi/todokede/inkan/1000285.html",
+    "confidence": 0.8500000000000001,
+    "updatedAt": "2026-02-05T01:10:54.607Z"
   },
   "inkan_shomei_convenience_fee": {
     "value": "200円",
@@ -166,18 +166,18 @@
     "updatedAt": "2026-01-29T00:00:00.000Z"
   },
   "registration_department": {
-    "value": "市民課",
+    "value": "総合窓口課住民記録第一グループ",
     "source": "llm",
-    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/shimin/",
+    "sourceUrl": "https://www.city.toshima.lg.jp/096/tetsuzuki/todokede/kiroku/index.html",
     "confidence": 0.95,
-    "updatedAt": "2026-01-29T00:00:00.000Z"
+    "updatedAt": "2026-02-05T01:10:54.607Z"
   },
   "registration_phone": {
-    "value": "0554-43-1111（内線108・112・114・115・119）",
+    "value": "03-3981-4782",
     "source": "llm",
-    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/shimin/",
+    "sourceUrl": "https://www.city.toshima.lg.jp/096/tetsuzuki/todokede/kiroku/index.html",
     "confidence": 0.95,
-    "updatedAt": "2026-01-29T00:00:00.000Z"
+    "updatedAt": "2026-02-05T01:10:54.607Z"
   },
   "registration_email": {
     "value": "shimin@city.tsuru.yamanashi.jp",
@@ -186,11 +186,11 @@
     "updatedAt": "2026-01-29T00:00:00.000Z"
   },
   "registration_window": {
-    "value": "市民課（市役所1階）",
+    "value": "文京シビックセンター2階",
     "source": "llm",
-    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/shimin/",
-    "confidence": 0.9,
-    "updatedAt": "2026-01-29T00:00:00.000Z"
+    "sourceUrl": "https://www.city.bunkyo.lg.jp/b013/p000266.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-05T01:10:54.607Z"
   },
   "kokuho_department": {
     "value": "市民課 保険年金担当",
@@ -1551,5 +1551,12 @@
     "source": "llm",
     "confidence": 0.7,
     "updatedAt": "2026-01-29T00:00:00.000Z"
+  },
+  "inin_form_url": {
+    "value": "委任状",
+    "source": "llm",
+    "sourceUrl": "https://www.city.bunkyo.lg.jp/b013/p000266.html",
+    "confidence": 0.8500000000000001,
+    "updatedAt": "2026-02-05T01:10:54.607Z"
   }
 }
