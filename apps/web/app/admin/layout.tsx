@@ -44,6 +44,7 @@ export default function AdminLayout({
                 <NavLink href="/admin/municipalities">自治体一覧</NavLink>
                 <NavLink href="/admin/municipalities/new">新規追加</NavLink>
                 <NavLink href="/admin/drafts">下書き</NavLink>
+                <NavLink href="/admin/reviews">レビュー</NavLink>
               </nav>
             </div>
             <div className="flex items-center gap-4">

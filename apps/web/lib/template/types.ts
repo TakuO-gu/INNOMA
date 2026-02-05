@@ -23,6 +23,16 @@ export interface VariableValue {
   confidence?: number;
   /** 最終更新日時 */
   updatedAt: string;
+
+  // ソース変更検知用
+  /** ソースURLのコンテンツハッシュ（SHA-256） */
+  sourceContentHash?: string;
+  /** 最後にソースを確認した日時 */
+  lastSourceCheckAt?: string;
+  /** ソースが変更されたか（レビュー待ち） */
+  sourceChanged?: boolean;
+  /** 変更が検出された日時 */
+  sourceChangedAt?: string;
 }
 
 /**
@@ -69,6 +79,11 @@ export type MunicipalityStatus =
   | "error"; // エラー
 
 /**
+ * ソースチェック間隔
+ */
+export type SourceCheckInterval = "disabled" | "daily" | "weekly" | "monthly";
+
+/**
  * 自治体の設定
  */
 export interface MunicipalitySettings {
@@ -76,6 +91,8 @@ export interface MunicipalitySettings {
   autoPublish: boolean;
   /** 取得間隔 */
   fetchInterval: "manual" | "daily" | "weekly" | "monthly";
+  /** ソース変更チェック間隔（デフォルト: weekly） */
+  sourceCheckInterval?: SourceCheckInterval;
 }
 
 /**

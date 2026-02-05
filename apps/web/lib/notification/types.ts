@@ -13,7 +13,10 @@ export type NotificationType =
   | "cron_completed"     // 定期更新が完了
   | "cron_failed"        // 定期更新が失敗
   | "fetch_completed"    // LLM取得が完了
-  | "fetch_failed";      // LLM取得が失敗
+  | "fetch_failed"       // LLM取得が失敗
+  | "source_changed"     // ソース変更検出
+  | "review_approved"    // ソース変更レビュー承認
+  | "review_dismissed";  // ソース変更レビュー却下（誤検知）
 
 /**
  * 通知の重要度

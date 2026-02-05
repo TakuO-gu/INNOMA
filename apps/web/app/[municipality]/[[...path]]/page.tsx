@@ -15,6 +15,9 @@ import { loadArtifact, getCompletedPages } from "@/lib/artifact/loader";
 import { hasEmergencyContent, hasHighPriorityEmergency } from "@/lib/artifact/cache";
 import { resolveArtifactPath } from "@/lib/artifact/page-registry";
 import BlockRenderer from "@/components/blocks/BlockRenderer";
+import ReviewPendingMessage from "@/components/blocks/ReviewPendingMessage";
+import { isPagePendingReview } from "@/lib/review";
+import { getMunicipalityMeta } from "@/lib/template";
 
 // ISR設定
 // Next.js App Routerでは、ページ単位ではなくセグメント単位でrevalidateを設定
@@ -88,12 +91,28 @@ export default async function ArtifactPage({ params }: PageProps) {
     notFound();
   }
 
+  // artifact.municipality_id または URL パラメータを使用
+  const municipalityId = artifact.municipality_id || municipality;
+
+  // レビュー待ちページのチェック（ディレクトリページとトップページは除外）
+  const pagePath = path?.join("/") || "";
+  if (!isDirectoryPage && pagePath !== "") {
+    const isPendingReview = await isPagePendingReview(municipalityId, pagePath);
+    if (isPendingReview) {
+      // レビュー待ちの場合は専用メッセージを表示
+      const meta = await getMunicipalityMeta(municipalityId);
+      return (
+        <ReviewPendingMessage
+          municipalityId={municipalityId}
+          officialUrl={meta?.officialUrl}
+        />
+      );
+    }
+  }
+
   // Emergency検出でヘッダー情報を追加（クライアントサイドでの更新頻度調整用）
   const isEmergency = hasEmergencyContent(artifact);
   const isHighPriority = hasHighPriorityEmergency(artifact);
-
-  // artifact.municipality_id または URL パラメータを使用
-  const municipalityId = artifact.municipality_id || municipality;
 
   // 完成済みページのリストを取得（リンク表示フィルタリング用）
   const completedPages = await getCompletedPages(municipalityId);
