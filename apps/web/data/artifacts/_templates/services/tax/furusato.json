@@ -101,11 +101,20 @@
             "type": "paragraph",
             "runs": [
               {
-                "text": "総務省のふるさと納税ポータルサイトや各ふるさと納税サイトで、上限額のシミュレーションができます。"
+                "text": "総務省のふるさと納税ポータルサイトや各ふるさと納税サイトで、上限額のシミュレーションができます。詳しくは総務省「ふるさと納税ポータルサイト」をご確認ください。"
               }
             ]
           }
         ]
+      }
+    },
+    {
+      "id": "btn-soumu-portal",
+      "type": "TaskButton",
+      "props": {
+        "label": "総務省ふるさと納税ポータルサイト",
+        "href": "https://www.soumu.go.jp/main_sosiki/jichi_zeisei/czaisei/czaisei_seido/furusato/mechanism/deduction.html",
+        "isTopTask": false
       }
     },
     {
@@ -394,103 +403,6 @@
           {
             "title": "税証明書",
             "href": "/zeishoumei"
-          }
-        ]
-      }
-    },
-    {
-      "id": "section-対象-1769919363213",
-      "type": "Section",
-      "props": {
-        "heading": "ふるさと納税の対象となる方",
-        "content": [
-          {
-            "type": "paragraph",
-            "runs": [
-              {
-                "text": "詳細は担当課にお問い合わせください。"
-              }
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "section-必要-1769919363213",
-      "type": "Section",
-      "props": {
-        "heading": "ふるさと納税に必要なもの",
-        "content": [
-          {
-            "type": "list",
-            "ordered": false,
-            "items": [
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "本人確認書類（マイナンバーカード、運転免許証など）"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "印鑑（認印可）"
-                    }
-                  ]
-                }
-              ]
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "section-方法-1769919363213",
-      "type": "Section",
-      "props": {
-        "heading": "ふるさと納税の手続き方法",
-        "content": [
-          {
-            "type": "list",
-            "ordered": true,
-            "items": [
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "必要書類を準備します。"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "窓口で申請書を記入します。"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "書類を提出し、確認を受けます。"
-                    }
-                  ]
-                }
-              ]
-            ]
           }
         ]
       }

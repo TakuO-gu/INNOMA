@@ -33,7 +33,7 @@
           },
           {
             "label": "届出・証明",
-            "href": "/registration"
+            "href": "/topics/registration"
           },
           {
             "label": "転居届",
@@ -320,68 +320,6 @@
           {
             "title": "引越し手続き一覧",
             "href": "/moving-checklist"
-          }
-        ]
-      }
-    },
-    {
-      "id": "section-対象-1769919363209",
-      "type": "Section",
-      "props": {
-        "heading": "転居届の対象となる方",
-        "content": [
-          {
-            "type": "paragraph",
-            "runs": [
-              {
-                "text": "詳細は担当課にお問い合わせください。"
-              }
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "section-方法-1769919363209",
-      "type": "Section",
-      "props": {
-        "heading": "転居届の手続き方法",
-        "content": [
-          {
-            "type": "list",
-            "ordered": true,
-            "items": [
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "必要書類を準備します。"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "窓口で申請書を記入します。"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "書類を提出し、確認を受けます。"
-                    }
-                  ]
-                }
-              ]
-            ]
           }
         ]
       }

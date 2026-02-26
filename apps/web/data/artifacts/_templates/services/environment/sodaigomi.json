@@ -263,6 +263,52 @@
       }
     },
     {
+      "id": "section-jiko-hannyu",
+      "type": "Section",
+      "props": {
+        "heading": "自己搬入（直接持ち込み）",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "ご自身で処理施設に直接持ち込むこともできます。処理券の購入は不要ですが、搬入手数料がかかります。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "table-jiko-hannyu",
+      "type": "Table",
+      "props": {
+        "rows": [
+          {
+            "label": "搬入先",
+            "value": "{{sodaigomi_jiko_hannyu_basho}}"
+          },
+          {
+            "label": "住所",
+            "value": "{{sodaigomi_jiko_hannyu_address}}"
+          },
+          {
+            "label": "電話番号",
+            "value": "{{sodaigomi_jiko_hannyu_phone}}"
+          },
+          {
+            "label": "受付時間",
+            "value": "{{sodaigomi_jiko_hannyu_hours}}"
+          },
+          {
+            "label": "手数料",
+            "value": "{{sodaigomi_jiko_hannyu_fee}}"
+          }
+        ]
+      }
+    },
+    {
       "id": "related-links-1",
       "type": "RelatedLinks",
       "props": {

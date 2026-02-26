@@ -32,8 +32,8 @@
             "href": "/"
           },
           {
-            "label": "届出・申請・証明書",
-            "href": "/registration"
+            "label": "届出・証明",
+            "href": "/topics/registration"
           },
           {
             "label": "戸籍謄本・住民票の取得",
@@ -561,23 +561,6 @@
           {
             "title": "パスポート",
             "href": "/passport"
-          }
-        ]
-      }
-    },
-    {
-      "id": "section-対象-1769919363204",
-      "type": "Section",
-      "props": {
-        "heading": "戸籍謄本・住民票取得の対象となる方",
-        "content": [
-          {
-            "type": "paragraph",
-            "runs": [
-              {
-                "text": "詳細は担当課にお問い合わせください。"
-              }
-            ]
           }
         ]
       }
