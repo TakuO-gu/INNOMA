@@ -4,21 +4,21 @@
   "municipality_id": "tsuru",
   "path": "/silver-center",
   "title": "シルバー人材センター",
-  "description": "{{municipality_name}}シルバー人材センターの入会・仕事案内",
+  "description": "都留市シルバー人材センターの入会・仕事案内",
   "content_type": "guide",
-  "service_category": "business",
+  "service_category": "employment",
   "audience": [
     "residents"
   ],
   "topic": [],
   "source": {
-    "source_url": "template://sample/services/employment/silver-center",
-    "fetched_at": "{{generated_at}}",
+    "source_url": "template://tsuru/services/employment/silver-center",
+    "fetched_at": "2026-02-26T05:47:37.007Z",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "{{generated_at}}",
+    "generated_at": "2026-02-26T05:47:37.007Z",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -82,7 +82,7 @@
                   "type": "paragraph",
                   "runs": [
                     {
-                      "text": "{{municipality_name}}に在住の方"
+                      "text": "都留市に在住の方"
                     }
                   ]
                 }
@@ -196,11 +196,11 @@
             "href": "/koureisha"
           },
           {
-            "title": "ハローワーク",
-            "href": "/hello-work"
+            "title": "雇用保険・失業給付",
+            "href": "/unemployment-insurance"
           },
           {
-            "title": "年金",
+            "title": "国民年金",
             "href": "/nenkin"
           }
         ]
@@ -210,7 +210,7 @@
       "id": "contact-1",
       "type": "Contact",
       "props": {
-        "department": "{{municipality_name}}シルバー人材センター",
+        "department": "都留市シルバー人材センター",
         "phone": "{{silver_center_phone}}",
         "email": "{{silver_center_email}}",
         "address": "{{silver_center_address}}"

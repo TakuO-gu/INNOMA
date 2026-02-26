@@ -37,7 +37,7 @@
           },
           {
             "label": "固定資産税・都市計画税",
-            "href": "/kotei"
+            "href": "/tax/kotei"
           }
         ]
       }
@@ -399,7 +399,7 @@
         "items": [
           {
             "title": "住民税",
-            "href": "/juminzei"
+            "href": "/tax/juminzei"
           },
           {
             "title": "住宅購入",

@@ -16,10 +16,8 @@
   },
   "city_hall_address": {
     "value": "〒639-3192 奈良県吉野郡吉野町大字上市80番地の1",
-    "source": "llm",
-    "sourceUrl": "https://www.town.yoshino.nara.jp/",
-    "confidence": 0.95,
-    "updatedAt": "2026-01-31T00:00:00.000Z"
+    "source": "manual",
+    "updatedAt": "2026-02-25T18:49:36.392Z"
   },
   "city_hall_phone": {
     "value": "0746-32-3081",
@@ -106,11 +104,9 @@
     "updatedAt": "2026-01-31T00:00:00.000Z"
   },
   "city_hall_hours": {
-    "value": "午前8時30分から午後5時15分（祝日、休日、年末年始を除く月曜日から金曜日）",
-    "source": "llm",
-    "sourceUrl": "https://www.town.yoshino.nara.jp/",
-    "confidence": 0.95,
-    "updatedAt": "2026-02-03T00:00:00.000Z"
+    "value": "平日 8:30〜17:15（土日祝日・年末年始を除く）",
+    "source": "manual",
+    "updatedAt": "2026-02-25T12:47:19.797Z"
   },
   "kaigo_department": {
     "value": "長寿福祉課",
@@ -181,5 +177,200 @@
     "sourceUrl": "https://www.town.yoshino.nara.jp/",
     "confidence": 0.7,
     "updatedAt": "2026-02-03T00:00:00.000Z"
+  },
+  "city_hall_email": {
+    "value": "",
+    "source": "manual",
+    "updatedAt": "2026-02-25T12:47:19.797Z"
+  },
+  "traffic_accident_consultation_phone": {
+    "value": "0742-27-8731",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:07:04.476Z"
+  },
+  "hello_work_name": {
+    "value": "ハローワーク下市",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:07:04.476Z"
+  },
+  "hello_work_phone": {
+    "value": "0747-52-3867",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:07:04.476Z"
+  },
+  "hello_work_address": {
+    "value": "〒638-0041 奈良県吉野郡下市町下市2772-1",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:07:04.476Z"
+  },
+  "police_station": {
+    "value": "吉野警察署",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:07:04.476Z"
+  },
+  "police_station_phone": {
+    "value": "0747-53-0110",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:07:04.476Z"
+  },
+  "police_station_address": {
+    "value": "〒638-0821 奈良県吉野郡大淀町大字下渕389番地の1",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:07:04.476Z"
+  },
+  "labor_bureau": {
+    "value": "奈良労働局",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:07:04.476Z"
+  },
+  "labor_bureau_phone": {
+    "value": "0742-32-0208",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:07:04.476Z"
+  },
+  "labor_bureau_address": {
+    "value": "〒630-8570 奈良県奈良市法蓮町387 奈良第3地方合同庁舎",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:07:04.476Z"
+  },
+  "driver_license_center": {
+    "value": "奈良県警察運転免許センター",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:07:04.476Z"
+  },
+  "driver_license_center_phone": {
+    "value": "0744-22-5541",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:07:04.476Z"
+  },
+  "driver_license_center_address": {
+    "value": "〒634-0007 奈良県橿原市葛本町120番地の3",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:07:04.476Z"
+  },
+  "legal_affairs_bureau": {
+    "value": "奈良地方法務局",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:07:04.476Z"
+  },
+  "legal_affairs_bureau_phone": {
+    "value": "0742-23-5534",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:07:04.476Z"
+  },
+  "legal_affairs_bureau_address": {
+    "value": "〒630-8301 奈良市高畑町552",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:07:04.476Z"
+  },
+  "transport_branch": {
+    "value": "奈良運輸支局",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:07:04.476Z"
+  },
+  "transport_branch_phone": {
+    "value": "0743-59-2151",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:07:04.476Z"
+  },
+  "transport_branch_address": {
+    "value": "〒639-1037 奈良県大和郡山市小泉町2104-16",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:07:04.476Z"
+  },
+  "tax_office": {
+    "value": "吉野税務署",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:07:04.476Z"
+  },
+  "tax_office_phone": {
+    "value": "0746-32-3385",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:07:04.476Z"
+  },
+  "tax_office_address": {
+    "value": "〒639-3194 吉野郡吉野町丹治200-1",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:07:04.476Z"
+  },
+  "passport_office_name": {
+    "value": "奈良県旅券事務所",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:19:06.938Z"
+  },
+  "passport_office_phone": {
+    "value": "0742-20-0100",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:19:06.938Z"
+  },
+  "passport_office_address": {
+    "value": "〒630-8213 奈良県奈良市登大路町30 奈良県庁",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:19:06.938Z"
+  },
+  "immigration_bureau": {
+    "value": "大阪出入国在留管理局奈良出張所",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:19:06.938Z"
+  },
+  "immigration_bureau_phone": {
+    "value": "0742-23-6501",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:19:06.938Z"
+  },
+  "immigration_bureau_address": {
+    "value": "〒630-8301 奈良県奈良市東紀寺町3-4-1 奈良第二法務総合庁舎",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:19:06.938Z"
+  },
+  "silver_center_fee": {
+    "value": "年会費2,000円",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:19:06.938Z"
+  },
+  "silver_center_phone": {
+    "value": "0746-32-3800",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:19:06.938Z"
+  },
+  "silver_center_address": {
+    "value": "〒639-3107 奈良県吉野郡吉野町大字佐々羅174",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:19:06.938Z"
+  },
+  "juminhyo_fee": {
+    "value": "300円",
+    "source": "llm",
+    "sourceUrl": "https://www.town.yoshino.nara.jp/soshiki/chominzeimu/juminhyo-koseki-shomei/240.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "juminhyo_convenience_fee": {
+    "value": "200円",
+    "source": "llm",
+    "sourceUrl": "https://www.town.yoshino.nara.jp/soshiki/chominzeimu/juminhyo-koseki-shomei/82.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "juminhyo_kisai_fee": {
+    "value": "300円",
+    "source": "llm",
+    "sourceUrl": "https://www.town.yoshino.nara.jp/soshiki/chominzeimu/juminhyo-koseki-shomei/240.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "registration_window": {
+    "value": "町民税務課",
+    "source": "official",
+    "sourceUrl": "https://www.town.yoshino.nara.jp/soshiki/chominzeimu/juminhyo-koseki-shomei/186.html",
+    "confidence": 1.0,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "shimin_email": {
+    "value": "",
+    "source": "manual",
+    "sourceUrl": "https://www.town.yoshino.nara.jp/soshiki/chominzeimu/1366.html",
+    "note": "メールアドレス非公開。お問い合わせフォームのみ: https://www.town.yoshino.nara.jp/cgi-bin/inquiry.php/14?page_no=1366",
+    "updatedAt": "2026-02-26T00:00:00.000Z"
   }
 }

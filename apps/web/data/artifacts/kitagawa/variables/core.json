@@ -202,5 +202,35 @@
     "sourceUrl": "https://www.kitagawamura.jp/soshiki/",
     "confidence": 0.95,
     "updatedAt": "2026-02-03T00:00:00.000Z"
+  },
+  "juminhyo_fee": {
+    "value": "300円",
+    "source": "llm",
+    "sourceUrl": "https://www.kitagawamura.jp/life/dtl.php?hdnKey=516",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "juminhyo_kisai_fee": {
+    "value": "300円",
+    "source": "llm",
+    "sourceUrl": "https://www.kitagawamura.jp/life/dtl.php?hdnKey=516",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "shimin_email": {
+    "value": "",
+    "source": "not_available",
+    "sourceUrl": "https://www.kitagawamura.jp/soshiki/",
+    "note": "メールアドレスは画像ファイル（/img/mail03.jpg）として提供されており、テキストとして取得できませんでした。公式サイトのお問い合わせフォーム（https://www.kitagawamura.jp/mail/）の利用または電話（0887-32-1214）での問い合わせが推奨されています。",
+    "confidence": 0,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "juminhyo_convenience_fee": {
+    "value": "",
+    "source": "not_available",
+    "sourceUrl": "https://www.kitagawamura.jp/life/dtl.php?hdnKey=516",
+    "note": "コンビニ交付サービスについての記載が見つかりませんでした。北川村ではコンビニ交付が提供されていない可能性があります。",
+    "confidence": 0,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
   }
 }

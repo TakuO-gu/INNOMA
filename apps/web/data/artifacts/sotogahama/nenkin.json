@@ -6,19 +6,19 @@
   "title": "国民年金",
   "description": "国民年金の加入・届出、保険料、受給手続きについて",
   "content_type": "guide",
-  "service_category": "welfare",
+  "service_category": "benefits",
   "audience": [
     "residents"
   ],
   "topic": [],
   "source": {
     "source_url": "template://sotogahama/services/benefits/nenkin",
-    "fetched_at": "2026-02-03T01:50:20.331Z",
+    "fetched_at": "2026-02-26T05:47:36.278Z",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "2026-02-03T01:50:20.331Z",
+    "generated_at": "2026-02-26T05:47:36.278Z",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -393,68 +393,6 @@
           {
             "title": "住民税",
             "href": "/juminzei"
-          }
-        ]
-      }
-    },
-    {
-      "id": "section-対象-1769919363136",
-      "type": "Section",
-      "props": {
-        "heading": "国民年金の対象となる方",
-        "content": [
-          {
-            "type": "paragraph",
-            "runs": [
-              {
-                "text": "詳細は担当課にお問い合わせください。"
-              }
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "section-方法-1769919363136",
-      "type": "Section",
-      "props": {
-        "heading": "国民年金の手続き方法",
-        "content": [
-          {
-            "type": "list",
-            "ordered": true,
-            "items": [
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "必要書類を準備します。"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "窓口で申請書を記入します。"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "書類を提出し、確認を受けます。"
-                    }
-                  ]
-                }
-              ]
-            ]
           }
         ]
       }

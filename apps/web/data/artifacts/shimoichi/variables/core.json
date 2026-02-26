@@ -146,5 +146,31 @@
     "sourceUrl": "https://www.town.shimoichi.lg.jp/soshiki_list.html",
     "confidence": 0.95,
     "updatedAt": "2026-02-03T00:00:00.000Z"
+  },
+  "juminhyo_fee": {
+    "value": "300円",
+    "source": "llm",
+    "sourceUrl": "https://www.town.shimoichi.lg.jp/0000000323.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "juminhyo_convenience_fee": {
+    "value": null,
+    "source": "manual",
+    "note": "コンビニ交付サービスは提供されていません",
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "juminhyo_kisai_fee": {
+    "value": "300円",
+    "source": "llm",
+    "sourceUrl": "https://www.town.shimoichi.lg.jp/0000000323.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "shimin_email": {
+    "value": null,
+    "source": "manual",
+    "note": "メールアドレスは公開されていません。お問い合わせフォームをご利用ください。",
+    "updatedAt": "2026-02-26T00:00:00.000Z"
   }
 }

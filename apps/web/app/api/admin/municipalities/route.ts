@@ -78,9 +78,9 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({
       success: true,
       municipality: {
-        id: meta.id,
-        name: meta.name,
-        prefecture: meta.prefecture,
+        id: meta.municipalityId || meta.id,
+        name: meta.municipalityName || meta.name,
+        prefecture: meta.prefectureName || meta.prefecture,
         status: meta.status,
         createdAt: meta.createdAt,
       },

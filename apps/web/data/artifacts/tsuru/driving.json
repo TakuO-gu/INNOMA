@@ -12,13 +12,13 @@
   ],
   "topic": [],
   "source": {
-    "source_url": "template://sample/topics/driving",
-    "fetched_at": "{{generated_at}}",
+    "source_url": "template://tsuru/topics/driving",
+    "fetched_at": "2026-02-26T05:47:37.071Z",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "{{generated_at}}",
+    "generated_at": "2026-02-26T05:47:37.071Z",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -90,7 +90,7 @@
           {
             "title": "市営駐車場・駐輪場",
             "href": "/parking",
-            "description": "{{municipality_name}}の公営駐車場・駐輪場の利用案内"
+            "description": "都留市の公営駐車場・駐輪場の利用案内"
           },
           {
             "title": "高齢者運転支援",

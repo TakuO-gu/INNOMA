@@ -61,32 +61,32 @@
         "items": [
           {
             "title": "母子保健（妊娠届・健診）",
-            "href": "/boshi",
+            "href": "/childcare/boshi",
             "description": "妊娠届出、母子健康手帳、乳幼児健診"
           },
           {
             "title": "出生届",
-            "href": "/shussei",
+            "href": "/registration/shussei",
             "description": "お子さんが生まれたときの届出"
           },
           {
             "title": "児童手当",
-            "href": "/jidou-teate",
+            "href": "/childcare/jidou-teate",
             "description": "児童手当の申請・届出"
           },
           {
             "title": "保育所・認定こども園",
-            "href": "/nursery",
+            "href": "/childcare/nursery",
             "description": "保育所、認定こども園の入園申込"
           },
           {
             "title": "保育所入園申請",
-            "href": "/nursery-apply",
+            "href": "/childcare/nursery-apply",
             "description": "保育所入園の申請方法・必要書類"
           },
           {
             "title": "予防接種",
-            "href": "/yobosesshu",
+            "href": "/health/yobosesshu",
             "description": "定期予防接種、任意予防接種の案内"
           }
         ]

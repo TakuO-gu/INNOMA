@@ -37,7 +37,7 @@
           },
           {
             "label": "家電リサイクル",
-            "href": "/kaden-recycle"
+            "href": "/environment/kaden-recycle"
           }
         ]
       }
@@ -451,11 +451,11 @@
         "items": [
           {
             "title": "ごみの出し方（分別ガイド）",
-            "href": "/gomi"
+            "href": "/environment/gomi"
           },
           {
             "title": "粗大ごみの出し方",
-            "href": "/sodaigomi"
+            "href": "/environment/sodaigomi"
           },
           {
             "title": "不用品のリユース",

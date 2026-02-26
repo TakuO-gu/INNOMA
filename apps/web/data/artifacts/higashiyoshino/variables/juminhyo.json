@@ -1,0 +1,37 @@
+{
+  "juminhyo_fee": {
+    "value": "200円",
+    "source": "llm",
+    "sourceUrl": "http://www.vill.higashiyoshino.nara.jp/life/%E6%88%B8%E7%B1%8D%E3%83%BB%E4%BD%8F%E6%B0%91%E7%A5%A8%E7%AD%89%E3%81%AE%E7%94%B3%E8%AB%8B%E6%96%B9%E6%B3%95/",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "juminhyo_convenience_fee": {
+    "value": "",
+    "source": "manual",
+    "note": "東吉野村ではコンビニ交付サービスは提供されていません。",
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "juminhyo_kisai_fee": {
+    "value": "200円",
+    "source": "llm",
+    "sourceUrl": "http://www.vill.higashiyoshino.nara.jp/life/%E6%88%B8%E7%B1%8D%E3%83%BB%E4%BD%8F%E6%B0%91%E7%A5%A8%E7%AD%89%E3%81%AE%E7%94%B3%E8%AB%8B%E6%96%B9%E6%B3%95/",
+    "confidence": 0.9,
+    "note": "公式ページには「住民票記載事項証明書」の明示的な記載はありませんが、一般的に住民票の写しと同額です。",
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "city_hall_hours": {
+    "value": "午前8時30分から午後5時15分まで（土曜日、日曜日、祝日、年末年始を除く）",
+    "source": "llm",
+    "sourceUrl": "https://www.vill.higashiyoshino.nara.jp/",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "shimin_email": {
+    "value": "juuminhukushi@vill.higashiyoshino.lg.jp",
+    "source": "llm",
+    "sourceUrl": "http://www.vill.higashiyoshino.nara.jp/contact/",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  }
+}

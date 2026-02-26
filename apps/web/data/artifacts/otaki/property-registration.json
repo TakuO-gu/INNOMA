@@ -13,12 +13,12 @@
   "topic": [],
   "source": {
     "source_url": "template://otaki/services/housing/property-registration",
-    "fetched_at": "2026-02-03T01:50:20.256Z",
+    "fetched_at": "2026-02-26T05:47:36.099Z",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "2026-02-03T01:50:20.256Z",
+    "generated_at": "2026-02-26T05:47:36.099Z",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -32,7 +32,7 @@
             "href": "/"
           },
           {
-            "label": "住まい・引越し",
+            "label": "住まい",
             "href": "/housing"
           },
           {
@@ -354,23 +354,6 @@
           {
             "title": "住民票",
             "href": "/juminhyo"
-          }
-        ]
-      }
-    },
-    {
-      "id": "section-対象-1769919363178",
-      "type": "Section",
-      "props": {
-        "heading": "不動産登記の対象となる方",
-        "content": [
-          {
-            "type": "paragraph",
-            "runs": [
-              {
-                "text": "詳細は担当課にお問い合わせください。"
-              }
-            ]
           }
         ]
       }

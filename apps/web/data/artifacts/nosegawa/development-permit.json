@@ -13,12 +13,12 @@
   "topic": [],
   "source": {
     "source_url": "template://nosegawa/services/land/development-permit",
-    "fetched_at": "2026-02-03T01:50:20.203Z",
+    "fetched_at": "2026-02-26T05:47:36.035Z",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "2026-02-03T01:50:20.203Z",
+    "generated_at": "2026-02-26T05:47:36.035Z",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -244,68 +244,6 @@
           {
             "title": "農地転用",
             "href": "/farmland-conversion"
-          }
-        ]
-      }
-    },
-    {
-      "id": "section-対象-1769919363182",
-      "type": "Section",
-      "props": {
-        "heading": "開発許可の対象となる方",
-        "content": [
-          {
-            "type": "paragraph",
-            "runs": [
-              {
-                "text": "詳細は担当課にお問い合わせください。"
-              }
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "section-方法-1769919363182",
-      "type": "Section",
-      "props": {
-        "heading": "開発許可の手続き方法",
-        "content": [
-          {
-            "type": "list",
-            "ordered": true,
-            "items": [
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "必要書類を準備します。"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "窓口で申請書を記入します。"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "書類を提出し、確認を受けます。"
-                    }
-                  ]
-                }
-              ]
-            ]
           }
         ]
       }

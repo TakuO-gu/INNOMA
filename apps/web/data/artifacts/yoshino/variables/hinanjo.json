@@ -1,0 +1,62 @@
+{
+  "kinkyu_hinanbasho_count": {
+    "value": "57",
+    "source": "pdf",
+    "sourceUrl": "https://www.town.yoshino.nara.jp/material/files/group/7/74f6eeca272d3ff88eebc033e466cbecabaa57ec.pdf",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-26T00:00:00.000Z",
+    "note": "令和3年11月現在の吉野町地域防災計画（資料編）より。土砂災害時の指定緊急避難場所として57施設が記載（洪水時47施設、地震時53施設）。防災マップ（17-18ページ）では独立した指定緊急避難場所として14施設が別途掲載されている。土砂災害区分が最も施設数が多く代表値として採用。"
+  },
+  "shitei_hinanjo_count": {
+    "value": "59",
+    "source": "web",
+    "sourceUrl": "https://www.town.yoshino.nara.jp/soshiki/kikikanri/bosai-anzen/396.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z",
+    "note": "指定避難所一覧ページに59施設が掲載されています。"
+  },
+  "hinanjo_status_url": {
+    "value": "https://www.town.yoshino.nara.jp/kurashi/bosai-anzen/index.html",
+    "source": "web",
+    "sourceUrl": "https://www.town.yoshino.nara.jp/kurashi/bosai-anzen/index.html",
+    "confidence": 0.7,
+    "updatedAt": "2026-02-26T00:00:00.000Z",
+    "note": "専用の開設状況確認ページは見つかりませんでした。災害時は防災・安全トップページで告知される形式と思われます。"
+  },
+  "bosai_department": {
+    "value": "総務課 危機管理室",
+    "source": "web",
+    "sourceUrl": "https://www.town.yoshino.nara.jp/soshiki/kikikanri/index.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "bosai_phone": {
+    "value": "0746-32-3081",
+    "source": "web",
+    "sourceUrl": "https://www.town.yoshino.nara.jp/soshiki/kikikanri/index.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "bosai_email": {
+    "value": "bousai@town.yoshino.lg.jp",
+    "source": "web",
+    "sourceUrl": "https://www.town.yoshino.nara.jp/soshiki/kikikanri/index.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "city_hall_hours": {
+    "value": "月曜日～金曜日：午前8時30分～午後5時15分（土日祝日・年末年始を除く）",
+    "source": "web",
+    "sourceUrl": "https://www.town.yoshino.nara.jp/soshiki/somu/yoshinochonogaiyo/34.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "city_hall_address": {
+    "value": "〒639-3192 奈良県吉野郡吉野町大字上市80番地の1",
+    "source": "web",
+    "sourceUrl": "https://www.town.yoshino.nara.jp/soshiki/somu/yoshinochonogaiyo/34.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z",
+    "note": "core.jsonにも同じ値が存在します。"
+  }
+}

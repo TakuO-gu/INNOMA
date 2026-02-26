@@ -37,7 +37,7 @@
           },
           {
             "label": "国民健康保険",
-            "href": "/kokuho"
+            "href": "/health/kokuho"
           }
         ]
       }
@@ -634,7 +634,7 @@
         "items": [
           {
             "title": "後期高齢者医療",
-            "href": "/kouki"
+            "href": "/health/kouki"
           },
           {
             "title": "健康診断・検診",
@@ -642,15 +642,15 @@
           },
           {
             "title": "予防接種",
-            "href": "/yobosesshu"
+            "href": "/health/yobosesshu"
           },
           {
             "title": "転入届",
-            "href": "/tennyu"
+            "href": "/registration/tennyu"
           },
           {
             "title": "転出届",
-            "href": "/tenshutsu"
+            "href": "/registration/tenshutsu"
           },
           {
             "title": "年金",
@@ -658,7 +658,7 @@
           },
           {
             "title": "介護保険",
-            "href": "/kaigo"
+            "href": "/welfare/kaigo"
           }
         ]
       }

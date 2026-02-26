@@ -14,12 +14,12 @@
   "topic": [],
   "source": {
     "source_url": "template://hakone/services/welfare/shogai",
-    "fetched_at": "2026-02-03T01:50:19.572Z",
+    "fetched_at": "2026-02-26T05:47:34.165Z",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "2026-02-03T01:50:19.572Z",
+    "generated_at": "2026-02-26T05:47:34.165Z",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -413,6 +413,23 @@
       }
     },
     {
+      "id": "related-links-tetsuzuki",
+      "type": "RelatedLinks",
+      "props": {
+        "heading": "障害者福祉の手続き",
+        "items": [
+          {
+            "title": "障害者手帳を申請する",
+            "href": "/shogai-apply"
+          },
+          {
+            "title": "障害者手帳の対象か確認する",
+            "href": "/shogai-check"
+          }
+        ]
+      }
+    },
+    {
       "id": "related-links-1",
       "type": "RelatedLinks",
       "props": {
@@ -428,10 +445,6 @@
           {
             "title": "国民健康保険",
             "href": "/kokuho"
-          },
-          {
-            "title": "障害者雇用",
-            "href": "/disability-employment"
           },
           {
             "title": "年金",

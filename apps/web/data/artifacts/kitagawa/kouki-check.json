@@ -1,0 +1,167 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "kitagawa-services-health-kouki-check",
+  "municipality_id": "kitagawa",
+  "path": "/kouki-check",
+  "title": "後期高齢者医療制度の対象ですか？",
+  "description": "後期高齢者医療制度への加入が必要かどうかを確認できます。質問に答えるだけで、あなたが対象かどうかを判定します。",
+  "content_type": "answer",
+  "service_category": "health",
+  "audience": [
+    "residents",
+    "elderly"
+  ],
+  "topic": [],
+  "source": {
+    "source_url": "template://kitagawa/services/health/kouki-check",
+    "fetched_at": "2026-02-26T05:47:35.484Z",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "2026-02-26T05:47:35.484Z",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "健康・医療",
+            "href": "/health"
+          },
+          {
+            "label": "後期高齢者医療制度",
+            "href": "/kouki"
+          },
+          {
+            "label": "後期高齢者医療制度の対象ですか？",
+            "href": "/kouki-check"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "後期高齢者医療制度の対象ですか？"
+      }
+    },
+    {
+      "id": "smart-answer-1",
+      "type": "SmartAnswer",
+      "props": {
+        "questions": [
+          {
+            "id": "q1",
+            "text": "あなたの年齢は？",
+            "options": [
+              {
+                "label": "75歳以上",
+                "resultId": "result-yes-75"
+              },
+              {
+                "label": "65〜74歳",
+                "nextQuestionId": "q2"
+              },
+              {
+                "label": "65歳未満",
+                "resultId": "result-no-age"
+              }
+            ]
+          },
+          {
+            "id": "q2",
+            "text": "一定の障害（身体障害者手帳1〜3級、4級の一部、精神障害者保健福祉手帳1・2級、療育手帳A等）がありますか？",
+            "options": [
+              {
+                "label": "はい",
+                "resultId": "result-yes-shogai"
+              },
+              {
+                "label": "いいえ・わからない",
+                "resultId": "result-no-shogai"
+              }
+            ]
+          }
+        ],
+        "results": [
+          {
+            "id": "result-yes-75",
+            "title": "後期高齢者医療制度の対象です",
+            "description": "75歳以上の方は、75歳の誕生日から自動的に後期高齢者医療制度に加入します。届出や申請は不要です。誕生月の前月までに被保険者証が届きます。",
+            "relatedLinks": [
+              {
+                "title": "後期高齢者医療制度について詳しく見る",
+                "href": "/kouki"
+              }
+            ]
+          },
+          {
+            "id": "result-yes-shogai",
+            "title": "後期高齢者医療制度に加入できます",
+            "description": "65〜74歳で一定の障害がある方は、申請により後期高齢者医療制度に加入できます。申請は任意であり、加入しない選択も可能です。詳しくは窓口にご相談ください。",
+            "actionLabel": "後期高齢者医療制度について詳しく見る",
+            "actionHref": "/health/kouki",
+            "relatedLinks": [
+              {
+                "title": "後期高齢者医療制度について詳しく見る",
+                "href": "/kouki"
+              }
+            ]
+          },
+          {
+            "id": "result-no-age",
+            "title": "後期高齢者医療制度の対象ではありません",
+            "description": "後期高齢者医療制度は75歳以上の方（または65〜74歳で一定の障害がある方）が対象です。現在は国民健康保険または職場の健康保険に加入してください。",
+            "relatedLinks": [
+              {
+                "title": "国民健康保険について",
+                "href": "/kokuho"
+              },
+              {
+                "title": "国民健康保険に加入が必要か確認する",
+                "href": "/kokuho-check"
+              }
+            ]
+          },
+          {
+            "id": "result-no-shogai",
+            "title": "後期高齢者医療制度の対象ではありません",
+            "description": "65〜74歳で一定の障害がない方は、75歳になるまで現在の医療保険（国民健康保険または職場の健康保険）に加入し続けます。75歳の誕生日から自動的に切り替わります。",
+            "relatedLinks": [
+              {
+                "title": "後期高齢者医療制度について詳しく見る",
+                "href": "/kouki"
+              },
+              {
+                "title": "国民健康保険について",
+                "href": "/kokuho"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "search": {
+    "summary": "後期高齢者医療制度の対象者を判定。75歳以上は自動加入。65〜74歳で一定の障害がある方は申請により加入可能。",
+    "keywords": [
+      "後期高齢者医療制度",
+      "対象",
+      "75歳",
+      "判定",
+      "確認",
+      "障害",
+      "高齢者医療"
+    ],
+    "plain_text": "後期高齢者医療制度の対象ですか？75歳以上の方は自動的に対象。65〜74歳で一定の障害がある方は申請により加入可能。65歳未満は対象外。"
+  }
+}

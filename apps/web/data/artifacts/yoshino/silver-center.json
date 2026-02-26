@@ -6,19 +6,19 @@
   "title": "シルバー人材センター",
   "description": "吉野町シルバー人材センターの入会・仕事案内",
   "content_type": "guide",
-  "service_category": "business",
+  "service_category": "employment",
   "audience": [
     "residents"
   ],
   "topic": [],
   "source": {
     "source_url": "template://yoshino/services/employment/silver-center",
-    "fetched_at": "2026-02-03T01:50:20.641Z",
+    "fetched_at": "2026-02-26T05:47:36.909Z",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "2026-02-03T01:50:20.641Z",
+    "generated_at": "2026-02-26T05:47:36.909Z",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -196,11 +196,11 @@
             "href": "/koureisha"
           },
           {
-            "title": "ハローワーク",
-            "href": "/hello-work"
+            "title": "雇用保険・失業給付",
+            "href": "/unemployment-insurance"
           },
           {
-            "title": "年金",
+            "title": "国民年金",
             "href": "/nenkin"
           }
         ]

@@ -32,7 +32,7 @@
             "href": "/"
           },
           {
-            "label": "住まい・引越し",
+            "label": "住まい",
             "href": "/housing"
           },
           {
@@ -188,10 +188,6 @@
           {
             "title": "生活保護",
             "href": "/seikatsu-hogo"
-          },
-          {
-            "title": "ハローワーク",
-            "href": "/hello-work"
           },
           {
             "title": "雇用保険",

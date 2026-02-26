@@ -146,5 +146,11 @@
     "sourceUrl": "https://www.vill.kamikitayama.nara.jp/kurashi_tetsuduki/yakusho_madoguchiannnai/484.html",
     "confidence": 0.95,
     "updatedAt": "2026-02-03T00:00:00.000Z"
+  },
+  "shimin_email": {
+    "value": "",
+    "source": "manual",
+    "updatedAt": "2026-02-26T00:00:00.000Z",
+    "notes": "上北山村の公式Webサイトで住民課の直接のメールアドレスは公開されていません。お問い合わせフォームが利用可能です。"
   }
 }

@@ -1,0 +1,262 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "kawasaki-miyagi-services-housing-seismic-retrofit-apply",
+  "municipality_id": "kawasaki-miyagi",
+  "path": "/seismic-retrofit-apply",
+  "title": "耐震診断・改修補助を申請する",
+  "description": "木造住宅の耐震診断・耐震改修工事に対する補助金の申請手続き案内",
+  "content_type": "service",
+  "service_category": "housing",
+  "audience": [
+    "residents"
+  ],
+  "topic": [],
+  "source": {
+    "source_url": "template://kawasaki-miyagi/services/housing/seismic-retrofit-apply",
+    "fetched_at": "2026-02-26T05:47:35.385Z",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "2026-02-26T05:47:35.385Z",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "住まい",
+            "href": "/housing"
+          },
+          {
+            "label": "耐震診断・改修補助",
+            "href": "/seismic-retrofit"
+          },
+          {
+            "label": "耐震診断・改修補助を申請する",
+            "href": "/seismic-retrofit-apply"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "耐震診断・改修補助を申請する"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "木造住宅の耐震診断や耐震改修工事に対する補助金を申請する手続きです。"
+      }
+    },
+    {
+      "id": "notification-1",
+      "type": "NotificationBanner",
+      "props": {
+        "severity": "warning",
+        "title": "注意",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "工事着手前に申請が必要です。",
+                "bold": true
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-taisho",
+      "type": "Section",
+      "props": {
+        "heading": "申請できる方",
+        "level": 2,
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "昭和56年5月31日以前に建築された木造住宅の所有者"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "川崎町に住所がある方"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-hitsuyou",
+      "type": "Section",
+      "props": {
+        "heading": "必要なもの",
+        "level": 2,
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "申請書"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "建築確認通知書または固定資産税課税明細書"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "住民票の写し"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-hojogaku",
+      "type": "Section",
+      "props": {
+        "heading": "補助額",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "耐震診断：{{seismic_diagnosis_subsidy}}、耐震改修：{{seismic_retrofit_subsidy}}"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "step-nav-1",
+      "type": "StepNavigation",
+      "props": {
+        "heading": "申請の流れ",
+        "steps": [
+          {
+            "title": "事前相談",
+            "description": "住宅の状況について窓口に相談します"
+          },
+          {
+            "title": "耐震診断",
+            "description": "専門家による耐震診断を受けます"
+          },
+          {
+            "title": "改修計画",
+            "description": "診断結果に基づき、改修計画を作成します"
+          },
+          {
+            "title": "補助申請",
+            "description": "必要書類を揃えて補助金の申請を行います"
+          },
+          {
+            "title": "工事実施",
+            "description": "交付決定後に耐震改修工事を実施します"
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{housing_department}}",
+        "phone": "{{housing_phone}}",
+        "email": "{{housing_email}}",
+        "hours": "{{city_hall_hours}}",
+        "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "related-links-1",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "耐震診断・耐震改修補助について詳しく見る",
+            "href": "/seismic-retrofit"
+          },
+          {
+            "title": "住宅リフォーム補助",
+            "href": "/reform-subsidy"
+          },
+          {
+            "title": "ハザードマップ",
+            "href": "/hazard-map"
+          }
+        ]
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
+      }
+    }
+  ],
+  "search": {
+    "summary": "耐震診断・耐震改修補助金の申請手続き。昭和56年以前の木造住宅が対象。申請の流れを案内。",
+    "keywords": [
+      "耐震診断",
+      "耐震改修",
+      "補助金",
+      "申請",
+      "木造住宅",
+      "耐震化"
+    ],
+    "plain_text": "耐震診断・改修補助を申請する。昭和56年5月以前の木造住宅の所有者が対象。申請書、建築確認通知書、住民票が必要。事前相談→耐震診断→改修計画→補助申請→工事実施。"
+  }
+}

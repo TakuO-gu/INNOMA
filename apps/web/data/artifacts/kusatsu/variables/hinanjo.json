@@ -1,0 +1,58 @@
+{
+  "kinkyu_hinanbasho_count": {
+    "value": "11",
+    "source": "web",
+    "sourceUrl": "https://www.town.kusatsu.gunma.jp/www/contents/1525994966899/files/hinan.pdf",
+    "confidence": 0.5,
+    "updatedAt": "2026-02-26T00:00:00.000Z",
+    "note": "避難場所一覧マップPDF（hinan.pdf）より11施設を確認。指定緊急避難場所と指定避難所の区別が不明瞭。公式への直接確認推奨。"
+  },
+  "shitei_hinanjo_count": {
+    "value": "11",
+    "source": "web",
+    "sourceUrl": "https://www.town.kusatsu.gunma.jp/www/contents/1525994966899/files/hinan.pdf",
+    "confidence": 0.5,
+    "updatedAt": "2026-02-26T00:00:00.000Z",
+    "note": "避難場所一覧マップPDF（hinan.pdf）より11施設を確認。指定緊急避難場所と指定避難所の区別が不明瞭。公式への直接確認推奨。"
+  },
+  "hinanjo_status_url": {
+    "value": "https://www.town.kusatsu.gunma.jp/www/genre/1484893184795/index.html",
+    "source": "web",
+    "sourceUrl": "https://www.town.kusatsu.gunma.jp/www/genre/1484893184795/index.html",
+    "confidence": 0.7,
+    "updatedAt": "2026-02-26T00:00:00.000Z",
+    "note": "専用の開設状況確認ページは見つかりませんでした。災害時は防災トップページで告知される形式と思われます。"
+  },
+  "bosai_department": {
+    "value": "総務課",
+    "source": "web",
+    "sourceUrl": "https://www.town.kusatsu.gunma.jp/www/genre/1484893184795/index.html",
+    "confidence": 0.8,
+    "updatedAt": "2026-02-26T00:00:00.000Z",
+    "note": "防災を担当する部署として総務課が想定されます。"
+  },
+  "bosai_phone": {
+    "value": "0279-88-0001",
+    "source": "web",
+    "sourceUrl": "https://www.town.kusatsu.gunma.jp/www/genre/1484893184795/index.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z",
+    "note": "草津町役場代表電話番号です。"
+  },
+  "city_hall_hours": {
+    "value": "平日 8:30〜17:15（土日祝日・年末年始を除く）",
+    "source": "web",
+    "sourceUrl": "https://www.town.kusatsu.gunma.jp/www/genre/1484893184795/index.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z",
+    "note": "core.jsonにも同じ値が存在します。"
+  },
+  "city_hall_address": {
+    "value": "〒377-1792 群馬県吾妻郡草津町大字草津28番地",
+    "source": "web",
+    "sourceUrl": "https://www.town.kusatsu.gunma.jp/www/genre/1484893184795/index.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z",
+    "note": "core.jsonにも同じ値が存在します。"
+  }
+}

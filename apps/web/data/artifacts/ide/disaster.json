@@ -15,12 +15,12 @@
   ],
   "source": {
     "source_url": "template://ide/disaster",
-    "fetched_at": "2026-02-03T01:50:19.728Z",
+    "fetched_at": "2026-02-26T05:47:34.791Z",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "2026-02-03T01:50:19.728Z",
+    "generated_at": "2026-02-26T05:47:34.791Z",
     "schema_version": "2.0.0"
   },
   "blocks": [

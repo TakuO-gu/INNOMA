@@ -37,7 +37,7 @@
           },
           {
             "label": "住民票の写し",
-            "href": "/juminhyo"
+            "href": "/registration/juminhyo"
           }
         ]
       }
@@ -364,23 +364,23 @@
         "items": [
           {
             "title": "印鑑登録",
-            "href": "/inkan"
+            "href": "/registration/inkan"
           },
           {
             "title": "戸籍",
-            "href": "/koseki"
+            "href": "/registration/koseki"
           },
           {
             "title": "マイナンバーカード",
-            "href": "/mynumber"
+            "href": "/registration/mynumber"
           },
           {
             "title": "転入届",
-            "href": "/tennyu"
+            "href": "/registration/tennyu"
           },
           {
             "title": "転出届",
-            "href": "/tenshutsu"
+            "href": "/registration/tenshutsu"
           }
         ]
       }

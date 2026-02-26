@@ -37,7 +37,7 @@
           },
           {
             "label": "認可保育園の入園申込",
-            "href": "/nursery-apply"
+            "href": "/childcare/nursery-apply"
           }
         ]
       }
@@ -375,19 +375,19 @@
         "items": [
           {
             "title": "児童手当",
-            "href": "/jidou-teate"
+            "href": "/childcare/jidou-teate"
           },
           {
             "title": "母子保健",
-            "href": "/boshi"
+            "href": "/childcare/boshi"
           },
           {
             "title": "住民票",
-            "href": "/juminhyo"
+            "href": "/registration/juminhyo"
           },
           {
             "title": "住民税",
-            "href": "/juminzei"
+            "href": "/tax/juminzei"
           },
           {
             "title": "育児・介護休業",

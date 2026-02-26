@@ -13,12 +13,12 @@
   "topic": [],
   "source": {
     "source_url": "template://yoshimi/services/business/financing",
-    "fetched_at": "2026-02-03T01:50:20.568Z",
+    "fetched_at": "2026-02-26T05:47:36.800Z",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "2026-02-03T01:50:20.568Z",
+    "generated_at": "2026-02-26T05:47:36.800Z",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -347,58 +347,6 @@
           {
             "title": "法人設立",
             "href": "/incorporation"
-          }
-        ]
-      }
-    },
-    {
-      "id": "section-対象-1769919363142",
-      "type": "Section",
-      "props": {
-        "heading": "融資・資金調達の対象となる方",
-        "content": [
-          {
-            "type": "paragraph",
-            "runs": [
-              {
-                "text": "詳細は担当課にお問い合わせください。"
-              }
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "section-必要-1769919363142",
-      "type": "Section",
-      "props": {
-        "heading": "融資・資金調達に必要なもの",
-        "content": [
-          {
-            "type": "list",
-            "ordered": false,
-            "items": [
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "本人確認書類（マイナンバーカード、運転免許証など）"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "印鑑（認印可）"
-                    }
-                  ]
-                }
-              ]
-            ]
           }
         ]
       }

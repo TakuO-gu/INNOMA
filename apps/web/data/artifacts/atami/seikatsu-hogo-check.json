@@ -1,0 +1,156 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "atami-services-welfare-seikatsu-hogo-check",
+  "municipality_id": "atami",
+  "path": "/seikatsu-hogo-check",
+  "title": "生活保護を受けられますか？",
+  "description": "生活保護の受給資格を確認できます。質問に答えるだけで、あなたが対象かどうかを判定します。",
+  "content_type": "answer",
+  "service_category": "welfare",
+  "audience": [
+    "residents"
+  ],
+  "topic": [],
+  "source": {
+    "source_url": "template://atami/services/welfare/seikatsu-hogo-check",
+    "fetched_at": "2026-02-26T05:47:33.934Z",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "2026-02-26T05:47:33.934Z",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "福祉・介護",
+            "href": "/welfare"
+          },
+          {
+            "label": "生活保護",
+            "href": "/seikatsu-hogo"
+          },
+          {
+            "label": "生活保護を受けられますか？",
+            "href": "/seikatsu-hogo-check"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "生活保護を受けられますか？"
+      }
+    },
+    {
+      "id": "smart-answer-1",
+      "type": "SmartAnswer",
+      "props": {
+        "questions": [
+          {
+            "id": "q1",
+            "text": "現在、生活費（食費、家賃、光熱費など）の支払いに困っていますか？",
+            "options": [
+              {
+                "label": "はい",
+                "nextQuestionId": "q2"
+              },
+              {
+                "label": "いいえ",
+                "resultId": "result-no-konkyuu"
+              }
+            ]
+          },
+          {
+            "id": "q2",
+            "text": "預貯金など、すぐに使える資産はありますか？",
+            "options": [
+              {
+                "label": "はい（十分にある）",
+                "resultId": "result-shisan"
+              },
+              {
+                "label": "いいえ（ほとんどない）",
+                "nextQuestionId": "q3"
+              }
+            ]
+          },
+          {
+            "id": "q3",
+            "text": "働くことはできますか？",
+            "options": [
+              {
+                "label": "はい（働いている/働ける）",
+                "resultId": "result-hataraki"
+              },
+              {
+                "label": "いいえ（病気・障害等で働けない）",
+                "resultId": "result-yes"
+              }
+            ]
+          }
+        ],
+        "results": [
+          {
+            "id": "result-yes",
+            "title": "生活保護を受けられる可能性があります",
+            "description": "お話を伺った上で判断します。まずは福祉事務所にご相談ください。",
+            "actionLabel": "生活保護を申請する",
+            "actionHref": "/welfare/seikatsu-hogo-apply"
+          },
+          {
+            "id": "result-hataraki",
+            "title": "生活保護を受けられる可能性があります",
+            "description": "働いていても、収入が最低生活費を下回る場合は生活保護を受けられます。まずは福祉事務所にご相談ください。",
+            "actionLabel": "生活保護を申請する",
+            "actionHref": "/welfare/seikatsu-hogo-apply"
+          },
+          {
+            "id": "result-shisan",
+            "title": "まず資産を活用してください",
+            "description": "預貯金等の資産がある場合は、まずそれを生活費に充ててください。資産を使い切ってもなお生活に困る場合は、改めてご相談ください。",
+            "relatedLinks": [
+              {
+                "title": "生活保護について詳しく見る",
+                "href": "/seikatsu-hogo"
+              }
+            ]
+          },
+          {
+            "id": "result-no-konkyuu",
+            "title": "現時点では生活保護の対象にならない可能性があります",
+            "description": "生活保護は生活に困窮している方が対象です。将来的に困ったときはいつでもご相談ください。",
+            "relatedLinks": [
+              {
+                "title": "生活保護について詳しく見る",
+                "href": "/seikatsu-hogo"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "search": {
+    "summary": "生活保護の受給資格を判定。生活費の支払い困難、資産の有無、就労可否を確認し、対象かどうかをご案内。",
+    "keywords": [
+      "生活保護",
+      "受給資格",
+      "判定",
+      "生活困窮",
+      "申請"
+    ],
+    "plain_text": "生活保護を受けられますか？生活保護の受給資格を確認。生活費の支払い困難、預貯金等の資産、就労可否を確認。働いていても収入が最低生活費を下回る場合は対象。まずは福祉事務所に相談。"
+  }
+}

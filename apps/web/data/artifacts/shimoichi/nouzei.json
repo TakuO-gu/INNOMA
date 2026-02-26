@@ -13,12 +13,12 @@
   "topic": [],
   "source": {
     "source_url": "template://shimoichi/services/tax/nouzei",
-    "fetched_at": "2026-02-03T01:50:20.321Z",
+    "fetched_at": "2026-02-26T05:47:36.256Z",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "2026-02-03T01:50:20.321Z",
+    "generated_at": "2026-02-26T05:47:36.256Z",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -72,27 +72,27 @@
         "items": [
           {
             "term": "口座振替",
-            "description": "指定の金融機関口座から自動引き落とし。納め忘れがなく便利"
+            "description": "指定の金融機関口座から自動引き落とし。納め忘れがなく便利。対象：住民税・固定資産税・軽自動車税・国民健康保険税"
           },
           {
             "term": "金融機関窓口",
-            "description": "納付書を持参し、銀行・信用金庫・郵便局などで納付"
+            "description": "納付書を持参し、銀行・信用金庫・郵便局などで納付。対象：全税目"
           },
           {
             "term": "コンビニ納付",
-            "description": "バーコード付き納付書で24時間納付可能"
+            "description": "バーコード付き納付書で24時間納付可能。対象：住民税・固定資産税・軽自動車税・国民健康保険税（30万円以下）"
           },
           {
             "term": "スマートフォン決済",
-            "description": "PayPay、LINE Pay、au PAYなどで納付"
+            "description": "PayPay、LINE Pay、au PAYなどで納付。対象：{{nouzei_smartphone_taisho}}"
           },
           {
             "term": "クレジットカード",
-            "description": "専用サイトで納付。別途手数料がかかります"
+            "description": "専用サイトで納付。別途手数料がかかります。対象：{{nouzei_credit_taisho}}"
           },
           {
             "term": "ペイジー（Pay-easy）",
-            "description": "ATMやインターネットバンキングで納付"
+            "description": "ATMやインターネットバンキングで納付。対象：{{nouzei_payeasy_taisho}}"
           }
         ]
       }
@@ -111,30 +111,76 @@
                 "text": "口座振替は、納め忘れがなく便利です。一度手続きすれば、翌年度以降も継続されます。"
               }
             ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "step-kozafurikae",
-      "type": "StepNavigation",
-      "props": {
-        "steps": [
-          {
-            "title": "申込書を入手",
-            "body": "市役所窓口、金融機関窓口、または市ホームページからダウンロード"
           },
           {
-            "title": "必要事項を記入",
-            "body": "口座情報、届出印、対象税目を記入"
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "口座振替の手続きの流れは次のとおりです。"
+              }
+            ]
           },
           {
-            "title": "金融機関または市役所へ提出",
-            "body": "金融機関窓口で届出印の照合が必要"
-          },
-          {
-            "title": "振替開始",
-            "body": "手続完了後、約1〜2か月後から振替開始"
+            "type": "list",
+            "ordered": true,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "申込書を入手",
+                      "bold": true
+                    },
+                    {
+                      "text": "：市役所窓口、金融機関窓口、または市ホームページからダウンロード"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "必要事項を記入",
+                      "bold": true
+                    },
+                    {
+                      "text": "：口座情報、届出印、対象税目を記入"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "金融機関または市役所へ提出",
+                      "bold": true
+                    },
+                    {
+                      "text": "：金融機関窓口で届出印の照合が必要"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "振替開始",
+                      "bold": true
+                    },
+                    {
+                      "text": "：手続完了後、約1〜2か月後から振替開始"
+                    }
+                  ]
+                }
+              ]
+            ]
           }
         ]
       }
@@ -352,58 +398,6 @@
           {
             "title": "税証明書",
             "href": "/zeishoumei"
-          }
-        ]
-      }
-    },
-    {
-      "id": "section-対象-1769919363218",
-      "type": "Section",
-      "props": {
-        "heading": "納税方法の対象となる方",
-        "content": [
-          {
-            "type": "paragraph",
-            "runs": [
-              {
-                "text": "詳細は担当課にお問い合わせください。"
-              }
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "section-必要-1769919363218",
-      "type": "Section",
-      "props": {
-        "heading": "納税方法に必要なもの",
-        "content": [
-          {
-            "type": "list",
-            "ordered": false,
-            "items": [
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "本人確認書類（マイナンバーカード、運転免許証など）"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "印鑑（認印可）"
-                    }
-                  ]
-                }
-              ]
-            ]
           }
         ]
       }

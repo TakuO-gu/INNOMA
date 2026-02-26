@@ -13,12 +13,12 @@
   "topic": [],
   "source": {
     "source_url": "template://hakone/services/childcare/nursery",
-    "fetched_at": "2026-02-03T01:50:19.522Z",
+    "fetched_at": "2026-02-26T05:47:34.071Z",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "2026-02-03T01:50:19.522Z",
+    "generated_at": "2026-02-26T05:47:34.071Z",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -32,7 +32,7 @@
             "href": "/"
           },
           {
-            "label": "子育て",
+            "label": "子育て・教育",
             "href": "/childcare"
           },
           {
@@ -324,34 +324,99 @@
       }
     },
     {
-      "id": "step-nav-apply",
-      "type": "StepNavigation",
+      "id": "richtext-apply-flow",
+      "type": "RichText",
       "props": {
-        "currentStep": 0,
-        "steps": [
+        "content": [
           {
-            "title": "施設見学・情報収集",
-            "body": "入園を希望する施設を見学し、保育方針や雰囲気を確認しましょう。"
-          },
-          {
-            "title": "申込書類の入手",
-            "body": "箱根町の窓口またはウェブサイトで申込書類一式を入手します。"
-          },
-          {
-            "title": "申込書類の提出",
-            "body": "必要書類を揃えて、{{nursery_department}}へ提出します。4月入園の場合は{{nursery_apply_deadline}}が締切です。"
-          },
-          {
-            "title": "利用調整（選考）",
-            "body": "申込状況に応じて、保育の必要性を点数化し、利用調整を行います。"
-          },
-          {
-            "title": "結果通知",
-            "body": "利用調整の結果を郵送でお知らせします。"
-          },
-          {
-            "title": "入園準備・面談",
-            "body": "入園が決まったら、施設との面談や準備を行います。"
+            "type": "list",
+            "ordered": true,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "施設見学・情報収集",
+                      "bold": true
+                    },
+                    {
+                      "text": "：入園を希望する施設を見学し、保育方針や雰囲気を確認しましょう。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "申込書類の入手",
+                      "bold": true
+                    },
+                    {
+                      "text": "：箱根町の窓口またはウェブサイトで申込書類一式を入手します。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "申込書類の提出",
+                      "bold": true
+                    },
+                    {
+                      "text": "：必要書類を揃えて、{{nursery_department}}へ提出します。4月入園の場合は{{nursery_apply_deadline}}が締切です。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "利用調整（選考）",
+                      "bold": true
+                    },
+                    {
+                      "text": "：申込状況に応じて、保育の必要性を点数化し、利用調整を行います。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "結果通知",
+                      "bold": true
+                    },
+                    {
+                      "text": "：利用調整の結果を郵送でお知らせします。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "入園準備・面談",
+                      "bold": true
+                    },
+                    {
+                      "text": "：入園が決まったら、施設との面談や準備を行います。"
+                    }
+                  ]
+                }
+              ]
+            ]
           }
         ]
       }

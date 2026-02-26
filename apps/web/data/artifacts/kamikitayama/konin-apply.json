@@ -1,0 +1,213 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "kamikitayama-services-registration-konin-apply",
+  "municipality_id": "kamikitayama",
+  "path": "/konin-apply",
+  "title": "婚姻届を届け出る",
+  "description": "婚姻届を届け出る手続きです。届出日が婚姻成立日になります。",
+  "content_type": "service",
+  "service_category": "government",
+  "audience": [
+    "residents"
+  ],
+  "topic": [],
+  "source": {
+    "source_url": "template://kamikitayama/services/registration/konin-apply",
+    "fetched_at": "2026-02-26T05:47:34.891Z",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "2026-02-26T05:47:34.891Z",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "届出・証明",
+            "href": "/registration"
+          },
+          {
+            "label": "婚姻届",
+            "href": "/konin"
+          },
+          {
+            "label": "婚姻届を届け出る",
+            "href": "/konin-apply"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "婚姻届を届け出る"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "婚姻届を届け出る手続きです。届出日が婚姻成立日になります。"
+      }
+    },
+    {
+      "id": "section-taisho",
+      "type": "Section",
+      "props": {
+        "heading": "対象者",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "結婚するお二人（成年者2人の証人が必要）"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-hitsuyou",
+      "type": "Section",
+      "props": {
+        "heading": "必要なもの",
+        "level": 2,
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "婚姻届"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "届出人の本人確認書類"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "戸籍謄本（本籍地以外に届け出る場合）"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-tesuryo",
+      "type": "Section",
+      "props": {
+        "heading": "手数料",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "無料"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "step-nav-1",
+      "type": "StepNavigation",
+      "props": {
+        "heading": "届出の流れ",
+        "steps": [
+          {
+            "title": "婚姻届を入手・記入する",
+            "description": "婚姻届は全国共通の様式です。市区町村窓口でもらうか、ダウンロードして印刷してください。夫・妻それぞれが署名します。"
+          },
+          {
+            "title": "証人欄に署名をもらう",
+            "description": "成年の証人2人に署名してもらいます。"
+          },
+          {
+            "title": "窓口で届出する",
+            "description": "市区町村の窓口に届出します。受理されれば届出日に婚姻が成立します。休日・夜間も届出できます。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{registration_department}}",
+        "phone": "{{registration_phone}}",
+        "email": "{{registration_email}}",
+        "hours": "{{city_hall_hours}}",
+        "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "related-links-1",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "婚姻届について詳しく見る",
+            "href": "/konin"
+          },
+          {
+            "title": "戸籍",
+            "href": "/koseki"
+          }
+        ]
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
+      }
+    }
+  ],
+  "search": {
+    "summary": "婚姻届の届出手続き。届出日が婚姻成立日。証人2人の署名が必要。",
+    "keywords": [
+      "婚姻届",
+      "結婚届",
+      "届出",
+      "結婚",
+      "入籍",
+      "手続き"
+    ],
+    "plain_text": "婚姻届を届け出る。結婚する本人2人が届出。成年の証人2人が必要。必要書類は婚姻届、本人確認書類、戸籍謄本（本籍地以外の場合）。手数料は無料。届出日が婚姻成立日。"
+  }
+}

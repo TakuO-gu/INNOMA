@@ -6,19 +6,19 @@
   "title": "自動車税・軽自動車税",
   "description": "自動車税種別割、軽自動車税種別割、納税証明書",
   "content_type": "guide",
-  "service_category": "government",
+  "service_category": "driving",
   "audience": [
     "residents"
   ],
   "topic": [],
   "source": {
     "source_url": "template://yoshino/services/driving/vehicle-tax",
-    "fetched_at": "2026-02-03T01:50:20.636Z",
+    "fetched_at": "2026-02-26T05:47:36.904Z",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "2026-02-03T01:50:20.636Z",
+    "generated_at": "2026-02-26T05:47:36.904Z",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -170,117 +170,16 @@
       "props": {
         "items": [
           {
-            "title": "自動車登録",
+            "title": "車検・自動車登録",
             "href": "/registration"
           },
           {
-            "title": "自動車重量税",
-            "href": "/weight-tax"
-          },
-          {
-            "title": "軽自動車税",
+            "title": "軽自動車税（種別割）",
             "href": "/keijidosha"
           },
           {
-            "title": "自賠責保険",
-            "href": "/liability-insurance"
-          }
-        ]
-      }
-    },
-    {
-      "id": "section-対象-1769919363164",
-      "type": "Section",
-      "props": {
-        "heading": "自動車税・軽自動車税の対象となる方",
-        "content": [
-          {
-            "type": "paragraph",
-            "runs": [
-              {
-                "text": "詳細は担当課にお問い合わせください。"
-              }
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "section-必要-1769919363164",
-      "type": "Section",
-      "props": {
-        "heading": "自動車税・軽自動車税に必要なもの",
-        "content": [
-          {
-            "type": "list",
-            "ordered": false,
-            "items": [
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "本人確認書類（マイナンバーカード、運転免許証など）"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "印鑑（認印可）"
-                    }
-                  ]
-                }
-              ]
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "section-方法-1769919363164",
-      "type": "Section",
-      "props": {
-        "heading": "自動車税・軽自動車税の手続き方法",
-        "content": [
-          {
-            "type": "list",
-            "ordered": true,
-            "items": [
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "必要書類を準備します。"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "窓口で申請書を記入します。"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "書類を提出し、確認を受けます。"
-                    }
-                  ]
-                }
-              ]
-            ]
+            "title": "車庫証明",
+            "href": "/garage-certificate"
           }
         ]
       }

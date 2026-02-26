@@ -38,7 +38,7 @@
           },
           {
             "label": "後期高齢者医療制度",
-            "href": "/kouki"
+            "href": "/health/kouki"
           }
         ]
       }
@@ -370,7 +370,7 @@
         "items": [
           {
             "title": "国民健康保険",
-            "href": "/kokuho"
+            "href": "/health/kokuho"
           },
           {
             "title": "健康診断・検診",
@@ -378,15 +378,15 @@
           },
           {
             "title": "介護保険",
-            "href": "/kaigo"
+            "href": "/welfare/kaigo"
           },
           {
             "title": "高齢者福祉",
-            "href": "/koureisha"
+            "href": "/welfare/koureisha"
           },
           {
             "title": "地域包括支援センター",
-            "href": "/houkatsu"
+            "href": "/welfare/houkatsu"
           },
           {
             "title": "年金",

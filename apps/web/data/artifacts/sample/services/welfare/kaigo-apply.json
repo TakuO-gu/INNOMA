@@ -27,8 +27,8 @@
         "items": [
           { "label": "ホーム", "href": "/" },
           { "label": "高齢者向け支援", "href": "/welfare" },
-          { "label": "介護保険", "href": "/kaigo" },
-          { "label": "要介護認定を申請する", "href": "/kaigo-apply" }
+          { "label": "介護保険", "href": "/welfare/kaigo" },
+          { "label": "要介護認定を申請する", "href": "/welfare/kaigo-apply" }
         ]
       }
     },
@@ -176,9 +176,9 @@
       "type": "RelatedLinks",
       "props": {
         "items": [
-          { "title": "介護保険について詳しく見る", "href": "/kaigo" },
-          { "title": "介護サービスを利用できるか確認する", "href": "/kaigo-check" },
-          { "title": "地域包括支援センター", "href": "/houkatsu" }
+          { "title": "介護保険について詳しく見る", "href": "/welfare/kaigo" },
+          { "title": "介護サービスを利用できるか確認する", "href": "/welfare/kaigo-check" },
+          { "title": "地域包括支援センター", "href": "/welfare/houkatsu" }
         ]
       }
     },

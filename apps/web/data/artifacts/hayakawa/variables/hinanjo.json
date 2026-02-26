@@ -1,0 +1,56 @@
+{
+  "kinkyu_hinanbasho_count": {
+    "value": "6",
+    "source": "web",
+    "sourceUrl": "https://www.bosai-map.com/shelters/yamanashi/hayakawa-town",
+    "confidence": 0.6,
+    "updatedAt": "2026-02-26T00:00:00.000Z",
+    "note": "公式サイトに具体的な数が掲載されていないため、第三者サイトの情報を参考にしています。地域防災計画PDFで確認が必要です。"
+  },
+  "shitei_hinanjo_count": {
+    "value": "6",
+    "source": "web",
+    "sourceUrl": "https://www.bosai-map.com/shelters/yamanashi/hayakawa-town",
+    "confidence": 0.6,
+    "updatedAt": "2026-02-26T00:00:00.000Z",
+    "note": "公式サイトに具体的な数が掲載されていないため、第三者サイトの情報を参考にしています。地域防災計画PDFで確認が必要です。"
+  },
+  "hinanjo_status_url": {
+    "value": "https://www.town.hayakawa.yamanashi.jp/people/disaster/disaster-info.html",
+    "source": "web",
+    "sourceUrl": "https://www.town.hayakawa.yamanashi.jp/people/disaster/disaster-info.html",
+    "confidence": 0.7,
+    "updatedAt": "2026-02-26T00:00:00.000Z",
+    "note": "専用の開設状況確認ページは見つかりませんでした。災害時は災害情報ページで告知される形式と思われます。"
+  },
+  "bosai_department": {
+    "value": "総務課",
+    "source": "web",
+    "sourceUrl": "https://www.town.hayakawa.yamanashi.jp/people/disaster/disaster-info.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "bosai_phone": {
+    "value": "0556-45-2511",
+    "source": "web",
+    "sourceUrl": "https://www.town.hayakawa.yamanashi.jp/town/organization/general-affairs.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "city_hall_hours": {
+    "value": "平日：午前8時30分～午後5時15分",
+    "source": "web",
+    "sourceUrl": "https://www.kurunavi.jp/municipality/193640.html",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-26T00:00:00.000Z",
+    "note": "公式サイトに明記されていないため、一般的な役場窓口時間を記載しています。"
+  },
+  "city_hall_address": {
+    "value": "〒409-2732 山梨県南巨摩郡早川町高住758番地",
+    "source": "web",
+    "sourceUrl": "https://www.town.hayakawa.yamanashi.jp/town/organization/general-affairs.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z",
+    "note": "core.jsonにも同じ値が存在します。"
+  }
+}

@@ -26,7 +26,7 @@ import {
 import { artifactLogger } from "./logger";
 import { getVariableStore, replaceVariablesWithSourceRefs, type VariableSourceInfo } from "@/lib/template";
 import type { Source } from "./innoma-artifact-schema.v2";
-import { getSlugFromFilePath } from "./page-registry";
+import { getSlugFromFilePath, getUrlPathForSlug } from "./page-registry";
 import { getVisibilityConfig, isPageVisible } from "@/lib/visibility";
 
 export type { InnomaArtifactValidated };
@@ -299,9 +299,9 @@ export async function listArtifacts(prefix: string = ""): Promise<string[]> {
  * 完成済みページのパス一覧を取得
  * 未取得変数がないページのみを返す
  *
- * GOV.UK方式フラットURL対応:
- *   - services/health/kokuho.json → /kokuho（page-registry経由）
- *   - topics/health.json → /health（フラット化）
+ * カテゴリベースURL対応:
+ *   - kokuho.json → /health/kokuho（page-registry経由）
+ *   - registration.json → /registration（トピックページ）
  *   - index.json → /
  */
 export const getCompletedPages = cache(async (municipalityId: string): Promise<Set<string>> => {
@@ -323,47 +323,28 @@ export const getCompletedPages = cache(async (municipalityId: string): Promise<S
           .replace(`${municipalityId}/`, "")
           .replace(/\.json$/, "");
 
-        // トピックページ（ディレクトリ）は変数チェックを緩和
+        // トピックページ（ディレクトリ）とトップページは変数チェックを緩和
         // content_type: "directory" のページは未置換変数があっても完成とみなす
         const isDirectoryPage = result.artifact.content_type === "directory";
+        const isTopPage = filePath === "index";
 
-        // 通常ページは未置換変数があれば除外
-        if (!isDirectoryPage && result.unreplacedVariables.length > 0) {
+        // 通常ページは未置換変数があれば除外（ディレクトリページとトップページは例外）
+        if (!isDirectoryPage && !isTopPage && result.unreplacedVariables.length > 0) {
           return null;
         }
 
         // index.json → /
-        if (filePath === "index") {
+        if (isTopPage) {
           return "/";
         }
 
-        // topics/category → /category (フラットURL)
-        if (filePath.startsWith("topics/")) {
-          const slug = getSlugFromFilePath(filePath);
-          if (slug) {
-            return `/${slug}`;
-          }
-          // レジストリにない場合はtopics/以降をスラッグとして使用
-          const parts = filePath.split("/");
-          if (parts.length === 2) {
-            return `/${parts[1]}`;
-          }
+        // page-registryでスラッグを逆引きしてカテゴリベースURLを構築
+        const slug = getSlugFromFilePath(filePath);
+        if (slug) {
+          return getUrlPathForSlug(slug);
         }
 
-        // services/category/page → /page (フラットURL)
-        if (filePath.startsWith("services/")) {
-          const slug = getSlugFromFilePath(filePath);
-          if (slug) {
-            return `/${slug}`;
-          }
-          // レジストリにない場合はファイル名をスラッグとして使用
-          const parts = filePath.split("/");
-          if (parts.length === 3) {
-            return `/${parts[2]}`;
-          }
-        }
-
-        // その他はそのまま
+        // レジストリにない場合はファイルパスをそのまま使用
         return `/${filePath}`;
       })
     );

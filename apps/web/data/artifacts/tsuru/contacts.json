@@ -12,13 +12,13 @@
   ],
   "topic": [],
   "source": {
-    "source_url": "template://sample/contacts",
-    "fetched_at": "{{generated_at}}",
+    "source_url": "template://tsuru/contacts",
+    "fetched_at": "2026-02-26T05:47:37.070Z",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "{{generated_at}}",
+    "generated_at": "2026-02-26T05:47:37.070Z",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -49,7 +49,7 @@
       "id": "summary-1",
       "type": "Summary",
       "props": {
-        "text": "{{municipality_name}}の各課窓口、電話番号、受付時間をご案内しています"
+        "text": "都留市の各課窓口、電話番号、受付時間をご案内しています"
       }
     },
     {
@@ -79,7 +79,7 @@
     }
   ],
   "search": {
-    "summary": "{{municipality_name}}の問い合わせ先一覧。各課窓口、電話番号、受付時間、アクセス情報。",
+    "summary": "都留市の問い合わせ先一覧。各課窓口、電話番号、受付時間、アクセス情報。",
     "keywords": [
       "問い合わせ",
       "連絡先",
@@ -89,6 +89,6 @@
       "市役所",
       "アクセス"
     ],
-    "plain_text": "問い合わせ先一覧。{{municipality_name}}の各課窓口、電話番号、受付時間、アクセス情報。"
+    "plain_text": "問い合わせ先一覧。都留市の各課窓口、電話番号、受付時間、アクセス情報。"
   }
 }

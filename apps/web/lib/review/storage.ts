@@ -168,7 +168,7 @@ export async function getReviewPendingPages(): Promise<ReviewPendingPage[]> {
           if (review.status === "review_required" || review.status === "under_review") {
             pendingPages.push({
               municipalityId,
-              municipalityName: meta.name,
+              municipalityName: meta.municipalityName || meta.municipalityId || "",
               pagePath,
               pageTitle: pagePath.split("/").pop() || pagePath,
               status: review.status,

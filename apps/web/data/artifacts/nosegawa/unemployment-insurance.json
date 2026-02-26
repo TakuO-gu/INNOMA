@@ -6,19 +6,19 @@
   "title": "雇用保険・失業給付",
   "description": "失業給付（基本手当）、再就職手当、教育訓練給付金",
   "content_type": "guide",
-  "service_category": "business",
+  "service_category": "employment",
   "audience": [
     "residents"
   ],
   "topic": [],
   "source": {
     "source_url": "template://nosegawa/services/employment/unemployment-insurance",
-    "fetched_at": "2026-02-03T01:50:20.197Z",
+    "fetched_at": "2026-02-26T05:47:35.887Z",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "2026-02-03T01:50:20.197Z",
+    "generated_at": "2026-02-26T05:47:35.887Z",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -138,119 +138,11 @@
       }
     },
     {
-      "id": "step-nav-1",
-      "type": "StepNavigation",
-      "props": {
-        "currentStep": 0,
-        "steps": [
-          {
-            "title": "離職票を受け取る",
-            "body": "会社から離職票（1・2）を受け取ります。通常、退職後10日〜2週間で届きます。"
-          },
-          {
-            "title": "ハローワークで求職申込み",
-            "body": "住所地を管轄するハローワークで求職の申込みと受給資格の決定を受けます。"
-          },
-          {
-            "title": "雇用保険説明会に参加",
-            "body": "受給資格決定後、雇用保険説明会に参加します。"
-          },
-          {
-            "title": "認定日にハローワークへ",
-            "body": "4週間に1回の認定日にハローワークで求職活動実績を報告し、失業認定を受けます。"
-          },
-          {
-            "title": "失業給付の振込",
-            "body": "認定後、約1週間で指定口座に振り込まれます。"
-          }
-        ]
-      }
-    },
-    {
-      "id": "related-links-rs1wscl2i",
-      "type": "RelatedLinks",
-      "props": {
-        "items": [
-          {
-            "title": "ハローワーク",
-            "href": "/hello-work"
-          },
-          {
-            "title": "職業訓練",
-            "href": "/vocational-training"
-          },
-          {
-            "title": "就職支援",
-            "href": "/career-support"
-          },
-          {
-            "title": "国民健康保険",
-            "href": "/kokuho"
-          },
-          {
-            "title": "年金",
-            "href": "/nenkin"
-          }
-        ]
-      }
-    },
-    {
-      "id": "section-対象-1769919363169",
+      "id": "section-procedure",
       "type": "Section",
       "props": {
-        "heading": "雇用保険・失業給付の対象となる方",
-        "content": [
-          {
-            "type": "paragraph",
-            "runs": [
-              {
-                "text": "詳細は担当課にお問い合わせください。"
-              }
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "section-必要-1769919363169",
-      "type": "Section",
-      "props": {
-        "heading": "雇用保険・失業給付に必要なもの",
-        "content": [
-          {
-            "type": "list",
-            "ordered": false,
-            "items": [
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "本人確認書類（マイナンバーカード、運転免許証など）"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "印鑑（認印可）"
-                    }
-                  ]
-                }
-              ]
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "section-方法-1769919363169",
-      "type": "Section",
-      "props": {
-        "heading": "雇用保険・失業給付の手続き方法",
+        "heading": "手続きの流れ",
+        "level": 2,
         "content": [
           {
             "type": "list",
@@ -261,7 +153,11 @@
                   "type": "paragraph",
                   "runs": [
                     {
-                      "text": "必要書類を準備します。"
+                      "text": "離職票を受け取る",
+                      "bold": true
+                    },
+                    {
+                      "text": "：会社から離職票（1・2）を受け取ります。通常、退職後10日〜2週間で届きます。"
                     }
                   ]
                 }
@@ -271,7 +167,11 @@
                   "type": "paragraph",
                   "runs": [
                     {
-                      "text": "窓口で申請書を記入します。"
+                      "text": "ハローワークで求職申込み",
+                      "bold": true
+                    },
+                    {
+                      "text": "：住所地を管轄するハローワークで求職の申込みと受給資格の決定を受けます。"
                     }
                   ]
                 }
@@ -281,12 +181,68 @@
                   "type": "paragraph",
                   "runs": [
                     {
-                      "text": "書類を提出し、確認を受けます。"
+                      "text": "雇用保険説明会に参加",
+                      "bold": true
+                    },
+                    {
+                      "text": "：受給資格決定後、雇用保険説明会に参加します。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "認定日にハローワークへ",
+                      "bold": true
+                    },
+                    {
+                      "text": "：4週間に1回の認定日にハローワークで求職活動実績を報告し、失業認定を受けます。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "失業給付の振込",
+                      "bold": true
+                    },
+                    {
+                      "text": "：認定後、約1週間で指定口座に振り込まれます。"
                     }
                   ]
                 }
               ]
             ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "related-links-rs1wscl2i",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "国民健康保険",
+            "href": "/kokuho"
+          },
+          {
+            "title": "国民年金",
+            "href": "/nenkin"
+          },
+          {
+            "title": "育児休業・介護休業",
+            "href": "/family-leave"
+          },
+          {
+            "title": "労働条件・最低賃金",
+            "href": "/labor-standards"
           }
         ]
       }

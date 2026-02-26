@@ -12,13 +12,13 @@
   ],
   "topic": [],
   "source": {
-    "source_url": "template://sample/contacts",
-    "fetched_at": "2026-01-20T10:33:17.311Z",
+    "source_url": "template://takaoka/contacts",
+    "fetched_at": "2026-02-26T05:47:37.404Z",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "2026-01-20T10:33:17.311Z",
+    "generated_at": "2026-02-26T05:47:37.404Z",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -49,7 +49,7 @@
       "id": "summary-1",
       "type": "Summary",
       "props": {
-        "text": "高岡市役所の各課窓口、電話番号、受付時間をご案内しています"
+        "text": "高岡市の各課窓口、電話番号、受付時間をご案内しています"
       }
     },
     {
@@ -79,7 +79,7 @@
     }
   ],
   "search": {
-    "summary": "高岡市役所の問い合わせ先一覧。各課窓口、電話番号、受付時間、アクセス情報。",
+    "summary": "高岡市の問い合わせ先一覧。各課窓口、電話番号、受付時間、アクセス情報。",
     "keywords": [
       "問い合わせ",
       "連絡先",
@@ -89,6 +89,6 @@
       "市役所",
       "アクセス"
     ],
-    "plain_text": "問い合わせ先一覧。高岡市役所の各課窓口、電話番号、受付時間、アクセス情報。"
+    "plain_text": "問い合わせ先一覧。高岡市の各課窓口、電話番号、受付時間、アクセス情報。"
   }
 }

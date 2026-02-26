@@ -14,12 +14,12 @@
   "topic": [],
   "source": {
     "source_url": "template://utashinai/services/land/farmland-conversion",
-    "fetched_at": "2026-02-03T01:50:20.541Z",
+    "fetched_at": "2026-02-26T05:47:36.764Z",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "2026-02-03T01:50:20.541Z",
+    "generated_at": "2026-02-26T05:47:36.764Z",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -190,103 +190,6 @@
           {
             "title": "都市計画",
             "href": "/urban-planning"
-          }
-        ]
-      }
-    },
-    {
-      "id": "section-対象-1769919363183",
-      "type": "Section",
-      "props": {
-        "heading": "農地転用の対象となる方",
-        "content": [
-          {
-            "type": "paragraph",
-            "runs": [
-              {
-                "text": "詳細は担当課にお問い合わせください。"
-              }
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "section-必要-1769919363183",
-      "type": "Section",
-      "props": {
-        "heading": "農地転用に必要なもの",
-        "content": [
-          {
-            "type": "list",
-            "ordered": false,
-            "items": [
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "本人確認書類（マイナンバーカード、運転免許証など）"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "印鑑（認印可）"
-                    }
-                  ]
-                }
-              ]
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "section-方法-1769919363183",
-      "type": "Section",
-      "props": {
-        "heading": "農地転用の手続き方法",
-        "content": [
-          {
-            "type": "list",
-            "ordered": true,
-            "items": [
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "必要書類を準備します。"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "窓口で申請書を記入します。"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "書類を提出し、確認を受けます。"
-                    }
-                  ]
-                }
-              ]
-            ]
           }
         ]
       }

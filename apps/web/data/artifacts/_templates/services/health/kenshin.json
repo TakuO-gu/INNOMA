@@ -274,35 +274,14 @@
       }
     },
     {
-      "id": "step-nav-1",
-      "type": "StepNavigation",
+      "id": "related-links-kenshin-procedures",
+      "type": "RelatedLinks",
       "props": {
-        "currentStep": 0,
-        "steps": [
+        "heading": "健康診査・がん検診の手続き",
+        "items": [
           {
-            "title": "受診券の確認",
-            "body": "対象の方には受診券をお送りします。届いていない方はお問い合わせください。",
-            "documents": [
-              "受診券"
-            ]
-          },
-          {
-            "title": "医療機関の予約",
-            "body": "指定医療機関に直接予約してください。",
-            "documents": []
-          },
-          {
-            "title": "受診",
-            "body": "受診券と保険証を持参して受診してください。",
-            "documents": [
-              "受診券",
-              "保険証"
-            ]
-          },
-          {
-            "title": "結果通知",
-            "body": "約2〜3週間後に結果をお知らせします。",
-            "documents": []
+            "title": "健康診査・がん検診を予約する",
+            "href": "/kenshin-apply"
           }
         ]
       }

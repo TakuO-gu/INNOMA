@@ -38,7 +38,7 @@
           },
           {
             "label": "高齢者福祉",
-            "href": "/koureisha"
+            "href": "/welfare/koureisha"
           }
         ]
       }
@@ -343,15 +343,15 @@
         "items": [
           {
             "title": "介護保険",
-            "href": "/kaigo"
+            "href": "/welfare/kaigo"
           },
           {
             "title": "地域包括支援センター",
-            "href": "/houkatsu"
+            "href": "/welfare/houkatsu"
           },
           {
             "title": "後期高齢者医療",
-            "href": "/kouki"
+            "href": "/health/kouki"
           },
           {
             "title": "健康診断・検診",

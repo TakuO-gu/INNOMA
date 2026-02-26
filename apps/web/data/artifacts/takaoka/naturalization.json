@@ -1,0 +1,326 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "takaoka-services-nationality-naturalization",
+  "municipality_id": "takaoka",
+  "path": "/naturalization",
+  "title": "日本国籍の取得（帰化）",
+  "description": "帰化申請の要件、手続き、法務局案内",
+  "content_type": "guide",
+  "service_category": "nationality",
+  "audience": [
+    "foreigners"
+  ],
+  "topic": [],
+  "source": {
+    "source_url": "template://takaoka/services/nationality/naturalization",
+    "fetched_at": "2026-02-26T05:47:37.337Z",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "2026-02-26T05:47:37.337Z",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "戸籍・国籍・在留",
+            "href": "/nationality"
+          },
+          {
+            "label": "日本国籍の取得（帰化）",
+            "href": "/naturalization"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "日本国籍の取得（帰化）"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "外国籍の方が日本国籍を取得する（帰化する）ための要件と手続きをご案内します。"
+      }
+    },
+    {
+      "id": "section-taisho",
+      "type": "Section",
+      "props": {
+        "heading": "帰化の要件（普通帰化）",
+        "level": 2,
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "引き続き5年以上日本に住所を有すること"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "20歳以上で、本国法によって行為能力を有すること"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "素行が善良であること"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "自己または生計を同じにする者の資産・技能により生計を営むことができること"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "国籍を有しないか、日本国籍取得により従前の国籍を失うこと"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "憲法・政府を暴力で破壊することを企てたことがないこと"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-hitsuyou",
+      "type": "Section",
+      "props": {
+        "heading": "主な必要書類",
+        "level": 2,
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "帰化許可申請書"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "国籍を証する書面（本国の戸籍謄本等とその日本語訳）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "身分関係を証する書面（出生証明書、婚姻証明書等）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "住民票の写し、在留カードの写し"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "納税証明書、給与明細書など収入を証明する書類"
+                    }
+                  ]
+                }
+              ]
+            ]
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "必要書類は個別の状況により異なります。法務局で事前相談のうえご確認ください。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-todokede",
+      "type": "Section",
+      "props": {
+        "heading": "申請先",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "住所地を管轄する法務局または地方法務局"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-chuui",
+      "type": "Section",
+      "props": {
+        "heading": "ご注意ください",
+        "level": 2,
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "帰化申請は市区町村ではなく法務局で行います"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "審査には通常1年程度かかります"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "日本人の配偶者等、特別永住者の方は要件が緩和されます（簡易帰化）"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "related-links-1",
+      "type": "RelatedLinks",
+      "props": {
+        "heading": "関連ページ",
+        "items": [
+          {
+            "title": "在留カード",
+            "href": "/residence-card"
+          },
+          {
+            "title": "特別永住者",
+            "href": "/special-permanent-resident"
+          },
+          {
+            "title": "戸籍",
+            "href": "/koseki"
+          },
+          {
+            "title": "法務省 帰化許可申請",
+            "href": "https://www.moj.go.jp/MINJI/minji06.html"
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{legal_affairs_bureau}}",
+        "phone": "{{legal_affairs_bureau_phone}}",
+        "address": "{{legal_affairs_bureau_address}}"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
+      }
+    }
+  ],
+  "search": {
+    "summary": "帰化申請の案内。日本国籍取得の要件、手続き、申請先。",
+    "keywords": [
+      "帰化",
+      "日本国籍",
+      "帰化申請",
+      "国籍取得",
+      "法務局"
+    ],
+    "plain_text": "日本国籍の取得（帰化）。引き続き5年以上日本に住所を有することなどの要件。法務局で申請。審査には通常1年程度。"
+  }
+}

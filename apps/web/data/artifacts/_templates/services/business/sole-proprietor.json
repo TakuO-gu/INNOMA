@@ -189,24 +189,24 @@
       "props": {
         "items": [
           {
-            "title": "許認可申請",
-            "href": "/permits"
+            "title": "法人設立（株式会社・合同会社）",
+            "href": "/incorporation"
           },
           {
-            "title": "補助金・助成金",
-            "href": "/subsidies"
-          },
-          {
-            "title": "融資制度",
-            "href": "/financing"
+            "title": "法人税・事業税",
+            "href": "/corporate-tax"
           },
           {
             "title": "国民健康保険",
             "href": "/kokuho"
           },
           {
-            "title": "年金",
+            "title": "国民年金",
             "href": "/nenkin"
+          },
+          {
+            "title": "確定申告",
+            "href": "/kakuteishinkoku"
           },
           {
             "title": "住民税",

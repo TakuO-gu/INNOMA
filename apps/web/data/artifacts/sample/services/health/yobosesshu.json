@@ -38,7 +38,7 @@
           },
           {
             "label": "予防接種",
-            "href": "/yobosesshu"
+            "href": "/health/yobosesshu"
           }
         ]
       }
@@ -313,15 +313,15 @@
           },
           {
             "title": "国民健康保険",
-            "href": "/kokuho"
+            "href": "/health/kokuho"
           },
           {
             "title": "母子保健",
-            "href": "/boshi"
+            "href": "/childcare/boshi"
           },
           {
             "title": "高齢者福祉",
-            "href": "/koureisha"
+            "href": "/welfare/koureisha"
           }
         ]
       }

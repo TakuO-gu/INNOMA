@@ -14,12 +14,12 @@
   "topic": [],
   "source": {
     "source_url": "template://utashinai/services/childcare/jidou-teate",
-    "fetched_at": "2026-02-03T01:50:20.518Z",
+    "fetched_at": "2026-02-26T05:47:36.734Z",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "2026-02-03T01:50:20.518Z",
+    "generated_at": "2026-02-26T05:47:36.734Z",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -542,51 +542,6 @@
           {
             "title": "予防接種",
             "href": "/yobosesshu"
-          }
-        ]
-      }
-    },
-    {
-      "id": "section-方法-1769919363150",
-      "type": "Section",
-      "props": {
-        "heading": "児童手当の手続き方法",
-        "content": [
-          {
-            "type": "list",
-            "ordered": true,
-            "items": [
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "必要書類を準備します。"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "窓口で申請書を記入します。"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "書類を提出し、確認を受けます。"
-                    }
-                  ]
-                }
-              ]
-            ]
           }
         ]
       }

@@ -40,9 +40,9 @@ interface PageProps {
 /**
  * Artifactキーを生成
  *
- * GOV.UK式フラットURL対応:
- *   - /kokuho → {municipality}/services/health/kokuho.json
- *   - /topics/health → {municipality}/topics/health.json
+ * フラットURL対応:
+ *   - /kokuho → {municipality}/kokuho.json
+ *   - /registration → {municipality}/registration.json (トピックページ)
  *   - / → {municipality}/index.json
  *
  * Note: Next.js App Router already decodes URL params, but we decode again for safety
@@ -82,12 +82,13 @@ export default async function ArtifactPage({ params }: PageProps) {
 
   const { artifact, unreplacedVariables, sources } = result;
 
-  // トピックページ（ディレクトリ）は変数チェックを緩和
+  // トピックページ（ディレクトリ）とトップページ（index）は変数チェックを緩和
   const isDirectoryPage = artifact.content_type === "directory";
+  const isTopPage = path === undefined || path.length === 0;
 
   // 未取得の変数があるページはエンドユーザーには表示しない
-  // ただしディレクトリページは例外として表示を許可（リンク側でcontent-itemをフィルタリング）
-  if (unreplacedVariables.length > 0 && !isDirectoryPage) {
+  // ただしディレクトリページとトップページは例外として表示を許可（リンク側でcontent-itemをフィルタリング）
+  if (unreplacedVariables.length > 0 && !isDirectoryPage && !isTopPage) {
     notFound();
   }
 

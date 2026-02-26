@@ -12,13 +12,13 @@
   ],
   "topic": [],
   "source": {
-    "source_url": "template://sample/services/employment/hello-work",
-    "fetched_at": "{{generated_at}}",
+    "source_url": "template://tsuru/services/employment/hello-work",
+    "fetched_at": "2026-02-26T05:47:37.006Z",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "{{generated_at}}",
+    "generated_at": "2026-02-26T05:47:37.006Z",
     "schema_version": "2.0.0"
   },
   "blocks": [

@@ -1,24 +1,24 @@
 {
   "schema_version": "2.0.0",
-  "page_id": "takaoka-services-employment-labor-standards",
-  "municipality_id": "takaoka",
+  "page_id": "higashiyoshino-services-employment-labor-standards",
+  "municipality_id": "higashiyoshino",
   "path": "/labor-standards",
   "title": "労働条件・最低賃金",
   "description": "富山県の最低賃金、労働時間、残業規制",
   "content_type": "guide",
-  "service_category": "business",
+  "service_category": "employment",
   "audience": [
     "residents"
   ],
   "topic": [],
   "source": {
     "source_url": "template://higashiyoshino/services/employment/labor-standards",
-    "fetched_at": "2026-01-20T10:33:17.311Z",
+    "fetched_at": "2026-02-26T05:47:34.382Z",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "2026-01-20T10:33:17.311Z",
+    "generated_at": "2026-02-26T05:47:34.382Z",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -189,16 +189,16 @@
       "props": {
         "items": [
           {
-            "title": "労働相談",
-            "href": "/labor-consultation"
-          },
-          {
-            "title": "ハラスメント",
-            "href": "/harassment"
-          },
-          {
-            "title": "育児・介護休業",
+            "title": "育児休業・介護休業",
             "href": "/family-leave"
+          },
+          {
+            "title": "雇用保険・失業給付",
+            "href": "/unemployment-insurance"
+          },
+          {
+            "title": "シルバー人材センター",
+            "href": "/silver-center"
           }
         ]
       }

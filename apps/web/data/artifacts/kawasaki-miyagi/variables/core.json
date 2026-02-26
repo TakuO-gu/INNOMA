@@ -223,5 +223,21 @@
     "sourceUrl": "https://www.town.kawasaki.miyagi.jp/soshiki/chomin/286.html",
     "confidence": 0.9,
     "updatedAt": "2026-02-03T00:00:00.000Z"
+  },
+  "juminhyo_kisai_fee": {
+    "value": "300円",
+    "source": "llm",
+    "sourceUrl": "https://www.town.kawasaki.miyagi.jp/soshiki/chomin/286.html",
+    "confidence": 0.7,
+    "note": "公式ページに住民票記載事項証明書の独立した項目なし。一般的に住民票抄本と同額のため推定値",
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "shimin_email": {
+    "value": "",
+    "source": "llm",
+    "sourceUrl": "https://www.town.kawasaki.miyagi.jp/soshiki/chomin/286.html",
+    "confidence": 0.0,
+    "note": "公式ウェブサイトに直接のメールアドレス記載なし。問い合わせフォームのみ提供",
+    "updatedAt": "2026-02-26T00:00:00.000Z"
   }
 }

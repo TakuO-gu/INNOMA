@@ -15,11 +15,9 @@
     "updatedAt": "2026-01-31T00:00:00.000Z"
   },
   "city_hall_address": {
-    "value": "〒030-1393 青森県東津軽郡外ヶ浜町字蟹田高銅屋44番地2",
-    "source": "llm",
-    "sourceUrl": "https://www.town.sotogahama.lg.jp/gyosei/about/kakuka.html",
-    "confidence": 0.95,
-    "updatedAt": "2026-01-31T00:00:00.000Z"
+    "value": "〒030-1303 青森県東津軽郡外ヶ浜町字蟹田高銅屋44-2",
+    "source": "manual",
+    "updatedAt": "2026-02-25T18:49:36.392Z"
   },
   "city_hall_phone": {
     "value": "0174-31-1111",
@@ -225,11 +223,9 @@
     "updatedAt": "2026-01-31T00:00:00.000Z"
   },
   "city_hall_hours": {
-    "value": "午前8時30分から午後5時15分まで（土曜日、日曜日、祝日、年末年始を除く）",
-    "source": "llm",
-    "sourceUrl": "https://www.town.sotogahama.lg.jp/",
-    "confidence": 0.9,
-    "updatedAt": "2026-02-03T00:00:00.000Z"
+    "value": "平日 8:15〜17:00（土日祝日・年末年始を除く）",
+    "source": "manual",
+    "updatedAt": "2026-02-25T18:49:36.392Z"
   },
   "kaigo_department": {
     "value": "福祉課",
@@ -286,5 +282,171 @@
     "sourceUrl": "https://www.town.sotogahama.lg.jp/gyosei/about/kakuka.html",
     "confidence": 0.95,
     "updatedAt": "2026-02-03T00:00:00.000Z"
+  },
+  "juminhyo_convenience_fee": {
+    "value": "",
+    "source": "manual",
+    "note": "コンビニ交付サービス未提供",
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "juminhyo_kisai_fee": {
+    "value": "300円",
+    "source": "llm",
+    "sourceUrl": "https://www.town.sotogahama.lg.jp/kurashi/todokede/shoumei.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "shimin_email": {
+    "value": "",
+    "source": "llm",
+    "sourceUrl": "https://www.town.sotogahama.lg.jp/toiawase.html",
+    "note": "問い合わせフォームのみ提供。直接のメールアドレスは非公開。",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "city_hall_email": {
+    "value": "",
+    "source": "manual",
+    "updatedAt": "2026-02-25T12:47:19.797Z"
+  },
+  "traffic_accident_consultation_phone": {
+    "value": "017-734-9235",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:07:04.476Z"
+  },
+  "hello_work_name": {
+    "value": "ハローワーク青森",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:07:04.476Z"
+  },
+  "hello_work_phone": {
+    "value": "017-776-1561",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:07:04.476Z"
+  },
+  "hello_work_address": {
+    "value": "〒030-0822 青森市中央2-10-10",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:07:04.476Z"
+  },
+  "police_station": {
+    "value": "外ヶ浜警察署",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:07:04.476Z"
+  },
+  "police_station_phone": {
+    "value": "0174-22-2211",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:07:04.476Z"
+  },
+  "police_station_address": {
+    "value": "〒030-1393 青森県東津軽郡外ヶ浜町字蟹田中師苗代沢3",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:07:04.476Z"
+  },
+  "labor_bureau": {
+    "value": "青森労働局",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:07:04.476Z"
+  },
+  "labor_bureau_phone": {
+    "value": "017-734-4111",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:07:04.476Z"
+  },
+  "labor_bureau_address": {
+    "value": "〒030-8558 青森市新町2-4-25 青森合同庁舎",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:07:04.476Z"
+  },
+  "driver_license_center": {
+    "value": "青森県運転免許センター",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:07:04.476Z"
+  },
+  "driver_license_center_phone": {
+    "value": "017-782-0081",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:07:04.476Z"
+  },
+  "driver_license_center_address": {
+    "value": "〒038-0031 青森県青森市三内丸山198-4",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:07:04.476Z"
+  },
+  "legal_affairs_bureau": {
+    "value": "青森地方法務局",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:07:04.476Z"
+  },
+  "legal_affairs_bureau_phone": {
+    "value": "017-776-6231",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:07:04.476Z"
+  },
+  "legal_affairs_bureau_address": {
+    "value": "〒030-8511 青森市長島1丁目3番5号 青森第2合同庁舎",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:07:04.476Z"
+  },
+  "transport_branch": {
+    "value": "青森運輸支局",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:07:04.476Z"
+  },
+  "transport_branch_phone": {
+    "value": "017-739-1501",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:07:04.476Z"
+  },
+  "transport_branch_address": {
+    "value": "〒030-0843 青森県青森市大字浜田字豊田139-13",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:07:04.476Z"
+  },
+  "tax_office": {
+    "value": "青森税務署",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:07:04.476Z"
+  },
+  "tax_office_phone": {
+    "value": "017-776-4241",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:07:04.476Z"
+  },
+  "tax_office_address": {
+    "value": "〒030-0861 青森市長島1丁目3番5号 青森第二合同庁舎",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:07:04.476Z"
+  },
+  "passport_office_name": {
+    "value": "青森県パスポートセンター",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:19:06.938Z"
+  },
+  "passport_office_phone": {
+    "value": "017-734-9176",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:19:06.938Z"
+  },
+  "passport_office_address": {
+    "value": "〒030-8570 青森県青森市長島1-1-1 青森県庁北棟1階",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:19:06.938Z"
+  },
+  "immigration_bureau": {
+    "value": "仙台出入国在留管理局青森出張所",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:19:06.938Z"
+  },
+  "immigration_bureau_phone": {
+    "value": "017-777-2939",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:19:06.938Z"
+  },
+  "immigration_bureau_address": {
+    "value": "〒030-0861 青森県青森市長島1-3-5 青森第二合同庁舎",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:19:06.938Z"
   }
 }

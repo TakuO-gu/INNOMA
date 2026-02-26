@@ -13,12 +13,12 @@
   "topic": [],
   "source": {
     "source_url": "template://tobetsu/services/environment/gomi",
-    "fetched_at": "2026-02-03T01:50:20.418Z",
+    "fetched_at": "2026-02-26T05:47:36.559Z",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "2026-02-03T01:50:20.418Z",
+    "generated_at": "2026-02-26T05:47:36.559Z",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -54,15 +54,6 @@
       "type": "Summary",
       "props": {
         "text": "ごみは正しく分別し、決められた日の朝{{gomi_dashijikan}}までに出してください。分別ルールを守ることで、リサイクルが進み、環境負荷を減らすことができます。"
-      }
-    },
-    {
-      "id": "task-button-1",
-      "type": "TaskButton",
-      "props": {
-        "label": "ごみ収集日カレンダーを見る",
-        "href": "{{gomi_calendar_url}}",
-        "isTopTask": true
       }
     },
     {
@@ -276,15 +267,6 @@
             ]
           }
         ]
-      }
-    },
-    {
-      "id": "task-button-2",
-      "type": "TaskButton",
-      "props": {
-        "label": "粗大ごみの申込方法を見る",
-        "href": "/sodaigomi",
-        "isTopTask": false
       }
     },
     {

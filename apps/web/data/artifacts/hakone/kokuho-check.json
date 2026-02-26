@@ -1,0 +1,193 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "hakone-services-health-kokuho-check",
+  "municipality_id": "hakone",
+  "path": "/kokuho-check",
+  "title": "国民健康保険に加入が必要ですか？",
+  "description": "国民健康保険への加入が必要かどうかを確認できます。質問に答えるだけで、あなたが対象かどうかを判定します。",
+  "content_type": "answer",
+  "service_category": "health",
+  "audience": [
+    "residents"
+  ],
+  "topic": [],
+  "source": {
+    "source_url": "template://hakone/services/health/kokuho-check",
+    "fetched_at": "2026-02-26T05:47:34.096Z",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "2026-02-26T05:47:34.096Z",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "健康・医療",
+            "href": "/health"
+          },
+          {
+            "label": "国民健康保険",
+            "href": "/kokuho"
+          },
+          {
+            "label": "国民健康保険に加入が必要ですか？",
+            "href": "/kokuho-check"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "国民健康保険に加入が必要ですか？"
+      }
+    },
+    {
+      "id": "smart-answer-1",
+      "type": "SmartAnswer",
+      "props": {
+        "questions": [
+          {
+            "id": "q1",
+            "text": "現在、職場の健康保険（社会保険）に加入していますか？",
+            "options": [
+              {
+                "label": "はい",
+                "resultId": "result-shakai"
+              },
+              {
+                "label": "いいえ",
+                "nextQuestionId": "q2"
+              }
+            ]
+          },
+          {
+            "id": "q2",
+            "text": "家族の健康保険の扶養に入っていますか？",
+            "options": [
+              {
+                "label": "はい",
+                "resultId": "result-fuyou"
+              },
+              {
+                "label": "いいえ",
+                "nextQuestionId": "q3"
+              }
+            ]
+          },
+          {
+            "id": "q3",
+            "text": "75歳以上ですか？",
+            "options": [
+              {
+                "label": "はい",
+                "resultId": "result-kouki"
+              },
+              {
+                "label": "いいえ",
+                "nextQuestionId": "q4"
+              }
+            ]
+          },
+          {
+            "id": "q4",
+            "text": "生活保護を受けていますか？",
+            "options": [
+              {
+                "label": "はい",
+                "resultId": "result-hogo"
+              },
+              {
+                "label": "いいえ",
+                "resultId": "result-yes"
+              }
+            ]
+          }
+        ],
+        "results": [
+          {
+            "id": "result-yes",
+            "title": "国民健康保険への加入が必要です",
+            "description": "他の医療保険に加入していない方は、国民健康保険に加入する必要があります。14日以内に届出をしてください。",
+            "actionLabel": "国民健康保険の加入届を届け出る",
+            "actionHref": "/health/kokuho-apply",
+            "relatedLinks": [
+              {
+                "title": "国民健康保険について詳しく見る",
+                "href": "/kokuho"
+              }
+            ]
+          },
+          {
+            "id": "result-shakai",
+            "title": "国民健康保険への加入は不要です",
+            "description": "職場の健康保険（社会保険）に加入している方は、国民健康保険に加入する必要はありません。退職などで社会保険を脱退した場合は、届出が必要です。",
+            "relatedLinks": [
+              {
+                "title": "国民健康保険について詳しく見る",
+                "href": "/kokuho"
+              }
+            ]
+          },
+          {
+            "id": "result-fuyou",
+            "title": "国民健康保険への加入は不要です",
+            "description": "家族の健康保険の扶養に入っている方は、国民健康保険に加入する必要はありません。扶養から外れた場合は、届出が必要です。",
+            "relatedLinks": [
+              {
+                "title": "国民健康保険について詳しく見る",
+                "href": "/kokuho"
+              }
+            ]
+          },
+          {
+            "id": "result-kouki",
+            "title": "後期高齢者医療制度の対象です",
+            "description": "75歳以上の方は、国民健康保険ではなく後期高齢者医療制度に加入します。75歳の誕生日から自動的に切り替わります。",
+            "relatedLinks": [
+              {
+                "title": "後期高齢者医療制度について",
+                "href": "/kouki"
+              }
+            ]
+          },
+          {
+            "id": "result-hogo",
+            "title": "国民健康保険への加入は不要です",
+            "description": "生活保護を受けている方は、国民健康保険に加入する必要はありません。医療扶助で医療を受けることができます。",
+            "relatedLinks": [
+              {
+                "title": "生活保護について",
+                "href": "/seikatsu-hogo"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "search": {
+    "summary": "国民健康保険への加入が必要かどうかを判定。社会保険・扶養・後期高齢者・生活保護以外の方は加入が必要。",
+    "keywords": [
+      "国民健康保険",
+      "国保",
+      "加入",
+      "必要",
+      "判定",
+      "確認",
+      "社会保険"
+    ],
+    "plain_text": "国民健康保険に加入が必要ですか？職場の健康保険、家族の扶養、後期高齢者医療制度、生活保護のいずれにも該当しない方は国民健康保険への加入が必要。"
+  }
+}

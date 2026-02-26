@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0.0",
-  "page_id": "takaoka-services-tax-kakuteishinkoku",
-  "municipality_id": "takaoka",
+  "page_id": "tsuru-services-tax-kakuteishinkoku",
+  "municipality_id": "tsuru",
   "path": "/kakuteishinkoku",
   "title": "確定申告・税の相談",
   "description": "確定申告の受付期間、会場、申告が必要な方、住民税の申告について",
@@ -12,13 +12,13 @@
   ],
   "topic": [],
   "source": {
-    "source_url": "template://sample/services/tax/kakuteishinkoku",
-    "fetched_at": "{{generated_at}}",
+    "source_url": "template://tsuru/services/tax/kakuteishinkoku",
+    "fetched_at": "2026-02-26T05:47:37.059Z",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "{{generated_at}}",
+    "generated_at": "2026-02-26T05:47:37.059Z",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -351,15 +351,6 @@
             ]
           }
         ]
-      }
-    },
-    {
-      "id": "btn-etax",
-      "type": "TaskButton",
-      "props": {
-        "label": "確定申告書等作成コーナー（国税庁）",
-        "href": "https://www.keisan.nta.go.jp/",
-        "isTopTask": false
       }
     },
     {

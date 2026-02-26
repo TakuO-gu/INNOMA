@@ -13,13 +13,13 @@
   ],
   "topic": [],
   "source": {
-    "source_url": "template://sample/services/welfare/kaigo",
-    "fetched_at": "2026-01-20T10:33:17.311Z",
+    "source_url": "template://takaoka/services/welfare/kaigo",
+    "fetched_at": "2026-02-26T05:47:37.370Z",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "2026-01-20T10:33:17.311Z",
+    "generated_at": "2026-02-26T05:47:37.370Z",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -58,7 +58,7 @@
       }
     },
     {
-      "id": "section-a1clmhsok",
+      "id": "section-sebhokpvz",
       "type": "Section",
       "props": {
         "heading": "介護保険の対象者",
@@ -67,7 +67,7 @@
       }
     },
     {
-      "id": "section-n1yzzmr0c",
+      "id": "section-ntnqf82db",
       "type": "Section",
       "props": {
         "heading": "第1号被保険者（65歳以上の方）",
@@ -85,7 +85,7 @@
       }
     },
     {
-      "id": "section-xylit2rym",
+      "id": "section-73cai5z36",
       "type": "Section",
       "props": {
         "heading": "第2号被保険者（40〜64歳の方）",
@@ -183,7 +183,7 @@
       }
     },
     {
-      "id": "section-00rxvs7gi",
+      "id": "section-lp70zrvqj",
       "type": "Section",
       "props": {
         "heading": "利用できる介護サービス",
@@ -192,7 +192,7 @@
       }
     },
     {
-      "id": "section-779ohaahf",
+      "id": "section-y7v477usl",
       "type": "Section",
       "props": {
         "heading": "在宅サービス",
@@ -268,7 +268,7 @@
       }
     },
     {
-      "id": "section-fgo76eawe",
+      "id": "section-ryinzs9ci",
       "type": "Section",
       "props": {
         "heading": "施設サービス",
@@ -314,7 +314,7 @@
       }
     },
     {
-      "id": "section-ik2jwsq2p",
+      "id": "section-rm7kurrhi",
       "type": "Section",
       "props": {
         "heading": "自己負担",
@@ -346,7 +346,7 @@
       }
     },
     {
-      "id": "section-4nvbqq7pw",
+      "id": "section-z6ce8udxo",
       "type": "Section",
       "props": {
         "heading": "介護保険料",
@@ -412,57 +412,6 @@
       }
     },
     {
-      "id": "section-必要-1769918445632",
-      "type": "Section",
-      "props": {
-        "heading": "介護保険に必要なもの",
-        "content": [
-          {
-            "type": "paragraph",
-            "runs": [
-              {
-                "text": "{{kaigo_hitsuyou}}"
-              }
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "section-方法-1769918445632",
-      "type": "Section",
-      "props": {
-        "heading": "介護保険の手続き方法",
-        "content": [
-          {
-            "type": "paragraph",
-            "runs": [
-              {
-                "text": "{{kaigo_houhou}}"
-              }
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "section-手順-1769918445632",
-      "type": "Section",
-      "props": {
-        "heading": "介護保険の申請の流れ",
-        "content": [
-          {
-            "type": "paragraph",
-            "runs": [
-              {
-                "text": "{{kaigo_nagare}}"
-              }
-            ]
-          }
-        ]
-      }
-    },
-    {
       "id": "contact-1",
       "type": "Contact",
       "props": {
@@ -474,7 +423,7 @@
       }
     },
     {
-      "id": "terms-1769899964528",
+      "id": "terms-1769919363222",
       "type": "Section",
       "props": {
         "heading": "用語の説明",

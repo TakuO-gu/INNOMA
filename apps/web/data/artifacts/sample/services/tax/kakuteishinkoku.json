@@ -448,19 +448,19 @@
         "items": [
           {
             "title": "住民税",
-            "href": "/juminzei"
+            "href": "/tax/juminzei"
           },
           {
             "title": "税証明書",
-            "href": "/zeishoumei"
+            "href": "/tax/zeishoumei"
           },
           {
             "title": "ふるさと納税",
-            "href": "/furusato"
+            "href": "/tax/furusato"
           },
           {
             "title": "納税方法",
-            "href": "/nouzei"
+            "href": "/tax/nouzei"
           }
         ]
       }

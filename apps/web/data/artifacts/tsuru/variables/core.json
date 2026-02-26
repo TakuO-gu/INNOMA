@@ -1,0 +1,47 @@
+{
+  "municipality_name": {
+    "value": "都留市",
+    "source": "manual",
+    "sourceUrl": null,
+    "confidence": null,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "prefecture_name": {
+    "value": "山梨県",
+    "source": "manual",
+    "sourceUrl": null,
+    "confidence": null,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "city_hall_address": {
+    "value": "〒402-8501 山梨県都留市上谷一丁目1番1号",
+    "source": "web",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/somu/houseikouhou_t/1/1776.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "city_hall_phone": {
+    "value": "0554-43-1111",
+    "source": "web",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/somu/houseikouhou_t/1/1776.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z",
+    "note": "代表電話"
+  },
+  "city_hall_hours": {
+    "value": "月曜日～金曜日 午前8時30分～午後5時15分（年末年始・祝日を除く）",
+    "source": "web",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/somu/houseikouhou_t/1/1776.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z",
+    "note": "毎週水曜日は市民課・税務課のみ午後7時まで延長"
+  },
+  "city_hall_email": {
+    "value": null,
+    "source": "manual",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/somu/houseikouhou_t/1/1776.html",
+    "confidence": null,
+    "updatedAt": "2026-02-26T00:00:00.000Z",
+    "note": "都留市では代表メールアドレスが公開されていません。お問い合わせフォームまたは各課への電話での問い合わせが推奨されています"
+  }
+}

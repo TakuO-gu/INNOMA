@@ -6,7 +6,7 @@
   "title": "国際結婚",
   "description": "外国人との婚姻届、婚姻要件具備証明書、在留資格変更",
   "content_type": "guide",
-  "service_category": "government",
+  "service_category": "nationality",
   "audience": [
     "residents",
     "foreigners"
@@ -14,12 +14,12 @@
   "topic": [],
   "source": {
     "source_url": "template://ide/services/nationality/international-marriage",
-    "fetched_at": "2026-02-03T01:50:19.712Z",
+    "fetched_at": "2026-02-26T05:47:34.761Z",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "2026-02-03T01:50:19.712Z",
+    "generated_at": "2026-02-26T05:47:34.761Z",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -58,25 +58,43 @@
       }
     },
     {
-      "id": "section-4jor6m30j",
+      "id": "section-taisho",
       "type": "Section",
       "props": {
-        "heading": "婚姻届の提出",
+        "heading": "届出できる方",
         "level": 2,
         "content": [
           {
-            "type": "paragraph",
-            "runs": [
-              {
-                "text": "日本人の本籍地または届出人の所在地の市区町村役場に届出できます。"
-              }
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "日本人と外国人のカップル"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "日本で結婚する外国人同士のカップル"
+                    }
+                  ]
+                }
+              ]
             ]
           }
         ]
       }
     },
     {
-      "id": "section-6zd0exgik",
+      "id": "section-hitsuyou",
       "type": "Section",
       "props": {
         "heading": "必要書類（外国人配偶者）",
@@ -136,7 +154,7 @@
       }
     },
     {
-      "id": "section-eedim8dwc",
+      "id": "section-konin-yoken",
       "type": "Section",
       "props": {
         "heading": "婚姻要件具備証明書の取得",
@@ -154,7 +172,25 @@
       }
     },
     {
-      "id": "section-a1hp7rhhd",
+      "id": "section-todokede",
+      "type": "Section",
+      "props": {
+        "heading": "届出先",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "日本人の本籍地または届出人の所在地の市区町村役場に届出できます。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-zairyu",
       "type": "Section",
       "props": {
         "heading": "在留資格の変更",
@@ -172,80 +208,22 @@
       }
     },
     {
-      "id": "section-u1hz8zegj",
+      "id": "section-chuui",
       "type": "Section",
       "props": {
-        "heading": "相手国への届出",
+        "heading": "ご注意ください",
         "level": 2,
         "content": [
           {
-            "type": "paragraph",
-            "runs": [
-              {
-                "text": "外国人配偶者の本国にも婚姻届出が必要な場合があります。在日大使館・領事館にご確認ください。"
-              }
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "related-links-35f3lgw7t",
-      "type": "RelatedLinks",
-      "props": {
-        "items": [
-          {
-            "title": "婚姻届",
-            "href": "/konin"
-          },
-          {
-            "title": "ビザ・在留資格",
-            "href": "/visa"
-          },
-          {
-            "title": "外国人相談",
-            "href": "/consultation"
-          },
-          {
-            "title": "戸籍",
-            "href": "/koseki"
-          }
-        ]
-      }
-    },
-    {
-      "id": "section-対象-1769919363190",
-      "type": "Section",
-      "props": {
-        "heading": "国際結婚の対象となる方",
-        "content": [
-          {
-            "type": "paragraph",
-            "runs": [
-              {
-                "text": "詳細は担当課にお問い合わせください。"
-              }
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "section-方法-1769919363190",
-      "type": "Section",
-      "props": {
-        "heading": "国際結婚の手続き方法",
-        "content": [
-          {
             "type": "list",
-            "ordered": true,
+            "ordered": false,
             "items": [
               [
                 {
                   "type": "paragraph",
                   "runs": [
                     {
-                      "text": "必要書類を準備します。"
+                      "text": "外国人配偶者の本国にも婚姻届出が必要な場合があります。在日大使館・領事館にご確認ください"
                     }
                   ]
                 }
@@ -255,22 +233,41 @@
                   "type": "paragraph",
                   "runs": [
                     {
-                      "text": "窓口で申請書を記入します。"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "書類を提出し、確認を受けます。"
+                      "text": "必要書類は国籍により異なります。事前に届出先の市区町村窓口にご相談ください"
                     }
                   ]
                 }
               ]
             ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "related-links-1",
+      "type": "RelatedLinks",
+      "props": {
+        "heading": "関連ページ",
+        "items": [
+          {
+            "title": "婚姻届",
+            "href": "/konin"
+          },
+          {
+            "title": "在留カード",
+            "href": "/residence-card"
+          },
+          {
+            "title": "外国人住民の届出",
+            "href": "/foreign-registration"
+          },
+          {
+            "title": "戸籍",
+            "href": "/koseki"
+          },
+          {
+            "title": "出入国在留管理庁",
+            "href": "https://www.moj.go.jp/isa/"
           }
         ]
       }

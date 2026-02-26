@@ -61,17 +61,17 @@
         "items": [
           {
             "title": "ごみの分別・出し方",
-            "href": "/gomi",
+            "href": "/environment/gomi",
             "description": "家庭ごみの分別方法と収集日"
           },
           {
             "title": "粗大ごみ",
-            "href": "/sodaigomi",
+            "href": "/environment/sodaigomi",
             "description": "粗大ごみの申込・出し方・手数料"
           },
           {
             "title": "家電リサイクル",
-            "href": "/kaden-recycle",
+            "href": "/environment/kaden-recycle",
             "description": "テレビ、冷蔵庫、洗濯機、エアコンの処分"
           }
         ]

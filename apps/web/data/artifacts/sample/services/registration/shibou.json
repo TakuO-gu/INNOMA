@@ -394,15 +394,15 @@
         "items": [
           {
             "title": "戸籍",
-            "href": "/koseki"
+            "href": "/registration/koseki"
           },
           {
             "title": "住民票",
-            "href": "/juminhyo"
+            "href": "/registration/juminhyo"
           },
           {
             "title": "介護保険",
-            "href": "/kaigo"
+            "href": "/welfare/kaigo"
           },
           {
             "title": "年金",
@@ -410,7 +410,7 @@
           },
           {
             "title": "後期高齢者医療",
-            "href": "/kouki"
+            "href": "/health/kouki"
           }
         ]
       }

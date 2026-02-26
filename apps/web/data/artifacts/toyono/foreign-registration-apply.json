@@ -1,0 +1,265 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "toyono-services-nationality-foreign-registration-apply",
+  "municipality_id": "toyono",
+  "path": "/foreign-registration-apply",
+  "title": "外国人住民の届出をする",
+  "description": "外国人住民の転入届・転出届・転居届の届出手続き。必要書類と届出窓口をご案内します。",
+  "content_type": "service",
+  "service_category": "nationality",
+  "audience": [
+    "foreigners"
+  ],
+  "topic": [],
+  "source": {
+    "source_url": "template://toyono/services/nationality/foreign-registration-apply",
+    "fetched_at": "2026-02-26T05:47:36.696Z",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "2026-02-26T05:47:36.696Z",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "戸籍・国籍・在留",
+            "href": "/nationality"
+          },
+          {
+            "label": "外国人住民の届出",
+            "href": "/foreign-registration"
+          },
+          {
+            "label": "外国人住民の届出をする",
+            "href": "/foreign-registration-apply"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "外国人住民の届出をする"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "外国人住民の方が転入届・転出届・転居届を届け出る手続きです。引っ越し後14日以内に届出が必要です。"
+      }
+    },
+    {
+      "id": "notification-kigen",
+      "type": "NotificationBanner",
+      "props": {
+        "severity": "warning",
+        "title": "届出は14日以内に行ってください",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "届出が遅れると、在留資格の取消事由になる場合があります。引っ越した日から14日以内に届け出てください。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-taisho",
+      "type": "Section",
+      "props": {
+        "heading": "届出が必要な方",
+        "level": 2,
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "3か月を超える在留資格を持つ外国人（中長期在留者、特別永住者）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "住所を新たに定めた方、住所を変更した方"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-hitsuyou",
+      "type": "Section",
+      "props": {
+        "heading": "必要なもの",
+        "level": 2,
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "在留カード",
+                      "bold": true
+                    },
+                    {
+                      "text": "（または特別永住者証明書）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "パスポート"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "世帯主との続柄を証明する書類（該当する場合）"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-tesuryo",
+      "type": "Section",
+      "props": {
+        "heading": "手数料",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "無料"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "action-button-1",
+      "type": "ActionButton",
+      "props": {
+        "label": "窓口で届出する",
+        "href": "{{city_hall_map_url}}",
+        "variant": "primary"
+      }
+    },
+    {
+      "id": "section-madoguchi",
+      "type": "Section",
+      "props": {
+        "heading": "届出窓口",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "{{foreign_registration_department}}（{{city_hall_location}}）"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{foreign_registration_department}}",
+        "phone": "{{foreign_registration_phone}}",
+        "email": "{{foreign_registration_email}}",
+        "hours": "{{city_hall_hours}}",
+        "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "related-links-1",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "外国人住民の届出について詳しく見る",
+            "href": "/foreign-registration"
+          },
+          {
+            "title": "在留カード",
+            "href": "/residence-card"
+          },
+          {
+            "title": "特別永住者",
+            "href": "/special-permanent-resident"
+          }
+        ]
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
+      }
+    }
+  ],
+  "search": {
+    "summary": "外国人住民の届出手続き。転入届・転出届・転居届。14日以内に届出が必要。在留カードとパスポートが必要。手数料無料。",
+    "keywords": [
+      "外国人",
+      "届出",
+      "転入届",
+      "転出届",
+      "転居届",
+      "在留カード",
+      "住所変更",
+      "外国人住民"
+    ],
+    "plain_text": "外国人住民の届出をする。引っ越し後14日以内に届出。在留カードとパスポートが必要。手数料無料。市区町村窓口で届出。"
+  }
+}

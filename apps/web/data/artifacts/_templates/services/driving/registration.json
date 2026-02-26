@@ -6,7 +6,7 @@
   "title": "車検・自動車登録",
   "description": "新規登録、移転登録（名義変更）、変更登録、抹消登録",
   "content_type": "guide",
-  "service_category": "government",
+  "service_category": "driving",
   "audience": [
     "residents"
   ],
@@ -178,19 +178,11 @@
             "href": "/garage-certificate"
           },
           {
-            "title": "自動車税",
+            "title": "自動車税・軽自動車税",
             "href": "/vehicle-tax"
           },
           {
-            "title": "自動車重量税",
-            "href": "/weight-tax"
-          },
-          {
-            "title": "自賠責保険",
-            "href": "/liability-insurance"
-          },
-          {
-            "title": "軽自動車税",
+            "title": "軽自動車税（種別割）",
             "href": "/keijidosha"
           }
         ]

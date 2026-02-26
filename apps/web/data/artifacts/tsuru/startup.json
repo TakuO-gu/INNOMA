@@ -13,13 +13,13 @@
   ],
   "topic": [],
   "source": {
-    "source_url": "template://sample/services/business/startup",
-    "fetched_at": "{{generated_at}}",
+    "source_url": "template://tsuru/services/business/startup",
+    "fetched_at": "2026-02-26T05:47:36.977Z",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "{{generated_at}}",
+    "generated_at": "2026-02-26T05:47:36.977Z",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -54,7 +54,7 @@
       "id": "summary-1",
       "type": "Summary",
       "props": {
-        "text": "{{municipality_name}}では、新たに事業を始める方を様々な形で支援しています。創業相談、セミナー、補助金、融資制度などをご活用ください。"
+        "text": "都留市では、新たに事業を始める方を様々な形で支援しています。創業相談、セミナー、補助金、融資制度などをご活用ください。"
       }
     },
     {
@@ -134,7 +134,7 @@
                   "type": "paragraph",
                   "runs": [
                     {
-                      "text": "{{municipality_name}}創業支援融資",
+                      "text": "都留市創業支援融資",
                       "bold": true
                     }
                   ]
@@ -169,103 +169,6 @@
           {
             "title": "許認可申請",
             "href": "/permits"
-          }
-        ]
-      }
-    },
-    {
-      "id": "section-対象-1769919363147",
-      "type": "Section",
-      "props": {
-        "heading": "起業・創業支援の対象となる方",
-        "content": [
-          {
-            "type": "paragraph",
-            "runs": [
-              {
-                "text": "詳細は担当課にお問い合わせください。"
-              }
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "section-必要-1769919363147",
-      "type": "Section",
-      "props": {
-        "heading": "起業・創業支援に必要なもの",
-        "content": [
-          {
-            "type": "list",
-            "ordered": false,
-            "items": [
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "本人確認書類（マイナンバーカード、運転免許証など）"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "印鑑（認印可）"
-                    }
-                  ]
-                }
-              ]
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "section-方法-1769919363147",
-      "type": "Section",
-      "props": {
-        "heading": "起業・創業支援の手続き方法",
-        "content": [
-          {
-            "type": "list",
-            "ordered": true,
-            "items": [
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "必要書類を準備します。"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "窓口で申請書を記入します。"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "書類を提出し、確認を受けます。"
-                    }
-                  ]
-                }
-              ]
-            ]
           }
         ]
       }

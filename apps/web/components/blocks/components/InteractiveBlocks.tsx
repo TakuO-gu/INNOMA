@@ -14,6 +14,7 @@ import { useMunicipality, prefixInternalLink } from "../MunicipalityContext";
 import { RichTextRenderer, renderTextWithSourceRefs } from "../RichTextRenderer";
 import type { StepItem, DirectoryItem, StepItemState } from "../types";
 import { budouxParse } from "@/components/BudouX";
+import { hasAnyValidValue, CONTACT_REQUIRED_FIELDS, isValidValue } from "@/lib/artifact/variable-utils";
 
 /**
  * 参照番号マーカー(⟦N⟧)を除去してプレーンテキストを取得
@@ -30,6 +31,11 @@ export function ContactBlock({ props }: { props: Record<string, unknown> }) {
   const hours = props.hours as string | undefined;
   const address = props.address as string | undefined;
   const mapUrl = props.map_url as string | undefined;
+
+  // 必須フィールド（department, phone, email）のいずれかに有効な値がない場合は非表示
+  if (!hasAnyValidValue(props, CONTACT_REQUIRED_FIELDS)) {
+    return null;
+  }
 
   return (
     <div className="mt-16 contact-card bg-solid-gray-50 rounded-lg p-6 mb-6">
@@ -106,6 +112,11 @@ export function ActionButtonBlock({ props }: { props: Record<string, unknown> })
   const href = (props.href as string) || "#";
   const actionType = props.action_type as "web_form" | "pdf" | "external_link" | undefined;
 
+  // hrefが未置換の変数の場合は非表示
+  if (!isValidValue(href) || href === "#") {
+    return null;
+  }
+
   const isExternal = actionType === "external_link" || actionType === "pdf" ||
     href.startsWith("http://") || href.startsWith("https://");
 
@@ -141,6 +152,11 @@ export function TaskButtonBlock({ props }: { props: Record<string, unknown> }) {
   const label = (props.label as string) || "タスクを実行";
   const href = (props.href as string) || "#";
   const isTopTask = props.isTopTask as boolean | undefined;
+
+  // hrefが未置換の変数の場合は非表示
+  if (!isValidValue(href) || href === "#") {
+    return null;
+  }
 
   // 外部リンク判定 (http/https で始まる、または変数展開後の外部URL)
   const isExternal = href.startsWith("http://") || href.startsWith("https://");

@@ -1,0 +1,47 @@
+{
+  "kinkyu_hinanbasho_count": {
+    "value": "16",
+    "source": "web",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/somu/kikikanri_t/3/huusuigainisonaete/1_1/1743.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "shitei_hinanjo_count": {
+    "value": "16",
+    "source": "web",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/somu/kikikanri_t/3/huusuigainisonaete/1_1/1743.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "fukushi_hinanjo_count": {
+    "value": "1",
+    "source": "web",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/somu/kikikanri_t/3/huusuigainisonaete/1_1/1743.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z",
+    "note": "いきいきプラザ都留が福祉避難所として指定。バックアップ施設として都留市まちづくり交流センター（旧YLO）も存在"
+  },
+  "hinanjo_status_url": {
+    "value": "https://www.city.tsuru.yamanashi.jp/soshiki/somu/kikikanri_t/3/index.html",
+    "source": "web",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/somu/kikikanri_t/3/index.html",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-26T00:00:00.000Z",
+    "note": "防災情報ページ。災害時には避難所開設状況が掲載される。都留市防災Twitterでも情報発信"
+  },
+  "bosai_department": {
+    "value": "総務課行政防災室危機管理担当",
+    "source": "web",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/somu/kikikanri_t/3/huusuigainisonaete/1_1/1743.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "bosai_phone": {
+    "value": "0554-43-1111",
+    "source": "web",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/somu/kikikanri_t/3/huusuigainisonaete/1_1/1743.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z",
+    "note": "内線208・209"
+  }
+}

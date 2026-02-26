@@ -1,0 +1,187 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "yoshimi-services-registration-inkan-apply",
+  "municipality_id": "yoshimi",
+  "path": "/inkan-apply",
+  "title": "印鑑登録を申請する",
+  "description": "印鑑を市区町村に登録する手続きです。印鑑登録証明書の取得に必要です。",
+  "content_type": "service",
+  "service_category": "government",
+  "audience": [
+    "residents"
+  ],
+  "topic": [],
+  "source": {
+    "source_url": "template://yoshimi/services/registration/inkan-apply",
+    "fetched_at": "2026-02-26T05:47:36.845Z",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "2026-02-26T05:47:36.845Z",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "届出・証明",
+            "href": "/registration"
+          },
+          {
+            "label": "印鑑登録",
+            "href": "/inkan"
+          },
+          {
+            "label": "印鑑登録を申請する",
+            "href": "/inkan-apply"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "印鑑登録を申請する"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "印鑑を吉見町に登録する手続きです。印鑑登録証明書の取得に必要です。"
+      }
+    },
+    {
+      "id": "section-taisho",
+      "type": "Section",
+      "props": {
+        "heading": "対象者",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "吉見町に住民登録がある15歳以上の方"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-hitsuyou",
+      "type": "Section",
+      "props": {
+        "heading": "必要なもの",
+        "level": 2,
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "登録する印鑑"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "本人確認書類"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "登録手数料"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-tesuryo",
+      "type": "Section",
+      "props": {
+        "heading": "手数料",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "{{inkan_fee}}"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{shimin_department}}",
+        "phone": "{{shimin_phone}}",
+        "email": "{{shimin_email}}",
+        "hours": "{{city_hall_hours}}",
+        "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "related-links-1",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "印鑑登録について詳しく見る",
+            "href": "/inkan"
+          }
+        ]
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
+      }
+    }
+  ],
+  "search": {
+    "summary": "印鑑登録の申請手続き。15歳以上の住民が対象。印鑑登録証明書の取得に必要。",
+    "keywords": [
+      "印鑑登録",
+      "申請",
+      "実印",
+      "印鑑登録証",
+      "手続き"
+    ],
+    "plain_text": "印鑑登録を申請する。住民登録がある15歳以上の方が対象。登録する印鑑、本人確認書類、登録手数料が必要。"
+  }
+}

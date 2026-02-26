@@ -1,0 +1,53 @@
+{
+  "kinkyu_hinanbasho_count": {
+    "value": "11",
+    "source": "web",
+    "sourceUrl": "http://www.vill.higashiyoshino.nara.jp/life/wp-content/uploads/sites/2/2021/11/siteikinkyuuhinannbasho.png",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-26T00:00:00.000Z",
+    "note": "東吉野村公式サイト掲載の指定緊急避難場所一覧画像（PNG）より11施設を確認。（公式サイトが503エラーのため、Wayback Machine 2025年12月アーカイブ経由で確認）"
+  },
+  "shitei_hinanjo_count": {
+    "value": "45",
+    "source": "pdf",
+    "sourceUrl": "http://www.vill.higashiyoshino.nara.jp/life/wp-content/uploads/sites/2/2021/11/1_ogawa_r3bousaimap1.pdf",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-26T00:00:00.000Z",
+    "note": "東吉野村防災マップPDF（令和3年9月発行）より村内避難所No.1〜45を確認。"
+  },
+  "bosai_department": {
+    "value": "総務企画課",
+    "source": "web",
+    "sourceUrl": "http://web.archive.org/web/20251215175445/http://www.vill.higashiyoshino.nara.jp/life/bousai/",
+    "confidence": 0.9,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "bosai_phone": {
+    "value": "0746-42-0441",
+    "source": "web",
+    "sourceUrl": "http://web.archive.org/web/20251215175445/http://www.vill.higashiyoshino.nara.jp/life/bousai/",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "bosai_email": {
+    "value": "soumukikaku@vill.higashiyoshino.lg.jp",
+    "source": "web",
+    "sourceUrl": "http://web.archive.org/web/20251215175445/http://www.vill.higashiyoshino.nara.jp/life/bousai/",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "city_hall_hours": {
+    "value": "月曜日から金曜日 午前8時30分から午後5時15分（土曜・日曜・祝日・年末年始を除く）",
+    "source": "web",
+    "sourceUrl": "http://web.archive.org/web/20251215175445/http://www.vill.higashiyoshino.nara.jp/life/bousai/",
+    "confidence": 0.9,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "city_hall_address": {
+    "value": "〒633-2492 奈良県吉野郡東吉野村大字小川99番地",
+    "source": "web",
+    "sourceUrl": "http://web.archive.org/web/20251215175445/http://www.vill.higashiyoshino.nara.jp/life/bousai/",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  }
+}

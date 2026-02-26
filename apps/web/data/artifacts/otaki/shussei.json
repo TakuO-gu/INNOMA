@@ -1,11 +1,11 @@
 {
   "schema_version": "2.0.0",
-  "page_id": "takaoka-services-registration-shussei",
-  "municipality_id": "takaoka",
+  "page_id": "otaki-services-registration-shussei",
+  "municipality_id": "otaki",
   "path": "/shussei",
   "title": "出生届",
   "description": "子どもが生まれたときの届出（出生届）の手続き案内",
-  "content_type": "step_by_step",
+  "content_type": "guide",
   "service_category": "government",
   "audience": [
     "residents",
@@ -14,12 +14,12 @@
   "topic": [],
   "source": {
     "source_url": "template://otaki/services/registration/shussei",
-    "fetched_at": "2026-01-20T10:33:17.311Z",
+    "fetched_at": "2026-02-26T05:47:36.163Z",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "2026-01-20T10:33:17.311Z",
+    "generated_at": "2026-02-26T05:47:36.163Z",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -33,7 +33,7 @@
             "href": "/"
           },
           {
-            "label": "届出・申請・証明書",
+            "label": "届出・証明",
             "href": "/registration"
           },
           {
@@ -54,11 +54,46 @@
       "id": "summary-1",
       "type": "Summary",
       "props": {
-        "text": "子どもが生まれたときは、出生届を届け出てください。届出は生まれた日を含めて14日以内に行う必要があります。"
+        "text": "子どもが生まれたときに届け出る手続きです。届出は生まれた日を含めて14日以内に行う必要があります。"
       }
     },
     {
-      "id": "section-when",
+      "id": "notification-1",
+      "type": "NotificationBanner",
+      "props": {
+        "severity": "warning",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "届出期限は生まれた日を含めて14日以内です。届出が遅れると、届出義務者に過料が科される場合があります。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-taisho",
+      "type": "Section",
+      "props": {
+        "heading": "届出が必要な場合",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "子どもが生まれたとき"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-kigen",
       "type": "Section",
       "props": {
         "heading": "届出期間",
@@ -83,91 +118,11 @@
       }
     },
     {
-      "id": "section-where",
-      "type": "Section",
-      "props": {
-        "heading": "届出場所",
-        "level": 2,
-        "content": [
-          {
-            "type": "list",
-            "ordered": false,
-            "items": [
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "子どもの出生地の市区町村"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "届出人の所在地（住所地）の市区町村"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "届出人の本籍地の市区町村"
-                    }
-                  ]
-                }
-              ]
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "step-nav-1",
-      "type": "StepNavigation",
-      "props": {
-        "currentStep": 0,
-        "steps": [
-          {
-            "title": "出生届を入手",
-            "body": "出生届の用紙は、病院・産院で出生証明書と一体になったものをもらえます。市区町村の窓口でも入手できます。",
-            "documents": [
-              "出生届（出生証明書付き）"
-            ]
-          },
-          {
-            "title": "出生届を記入",
-            "body": "子どもの名前、生年月日、届出人の情報などを記入します。出生証明書は医師または助産師が記入します。",
-            "documents": []
-          },
-          {
-            "title": "窓口で届出",
-            "body": "出生届と必要書類を持って、市区町村の窓口で届け出ます。届出後、戸籍に記載されます。",
-            "documents": [
-              "出生届",
-              "母子健康手帳",
-              "届出人の本人確認書類"
-            ]
-          },
-          {
-            "title": "関連手続き",
-            "body": "児童手当、子ども医療費助成、国民健康保険への加入などの手続きを行います。",
-            "documents": []
-          }
-        ]
-      }
-    },
-    {
-      "id": "section-documents-table",
+      "id": "section-hitsuyou",
       "type": "Section",
       "props": {
         "heading": "届出に必要なもの",
+        "level": 2,
         "content": [
           {
             "type": "list",
@@ -219,7 +174,7 @@
       }
     },
     {
-      "id": "section-applicant",
+      "id": "section-todokenin",
       "type": "Section",
       "props": {
         "heading": "届出人",
@@ -273,35 +228,79 @@
       }
     },
     {
-      "id": "table-info",
-      "type": "Table",
+      "id": "section-tesuryo",
+      "type": "Section",
       "props": {
-        "rows": [
+        "heading": "手数料",
+        "level": 2,
+        "content": [
           {
-            "label": "届出場所",
-            "value": "{{registration_window}}"
-          },
-          {
-            "label": "受付時間",
-            "value": "{{city_hall_hours}}"
-          },
-          {
-            "label": "届出期限",
-            "value": "生まれた日を含めて14日以内"
-          },
-          {
-            "label": "手数料",
-            "value": "無料"
-          },
-          {
-            "label": "時間外届出",
-            "value": "{{after_hours_shussei}}"
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "無料"
+              }
+            ]
           }
         ]
       }
     },
     {
-      "id": "section-related",
+      "id": "section-madoguchi",
+      "type": "Section",
+      "props": {
+        "heading": "届出場所",
+        "level": 2,
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "子どもの出生地の市区町村"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "届出人の所在地（住所地）の市区町村"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "届出人の本籍地の市区町村"
+                    }
+                  ]
+                }
+              ]
+            ]
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "時間外届出：{{after_hours_shussei}}"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-kanren",
       "type": "Section",
       "props": {
         "heading": "出生届と一緒に行う手続き",
@@ -365,16 +364,30 @@
       }
     },
     {
+      "id": "related-links-action",
+      "type": "RelatedLinks",
+      "props": {
+        "heading": "出生届の手続き",
+        "items": [
+          {
+            "title": "出生届を届け出る",
+            "href": "/shussei-apply"
+          }
+        ]
+      }
+    },
+    {
       "id": "related-links-1",
       "type": "RelatedLinks",
       "props": {
+        "heading": "関連ページ",
         "items": [
           {
             "title": "戸籍",
             "href": "/koseki"
           },
           {
-            "title": "住民票",
+            "title": "住民票の写し",
             "href": "/juminhyo"
           },
           {
@@ -392,68 +405,6 @@
           {
             "title": "予防接種",
             "href": "/yobosesshu"
-          }
-        ]
-      }
-    },
-    {
-      "id": "section-対象-1769919363209",
-      "type": "Section",
-      "props": {
-        "heading": "出生届の対象となる方",
-        "content": [
-          {
-            "type": "paragraph",
-            "runs": [
-              {
-                "text": "詳細は担当課にお問い合わせください。"
-              }
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "section-方法-1769919363209",
-      "type": "Section",
-      "props": {
-        "heading": "出生届の手続き方法",
-        "content": [
-          {
-            "type": "list",
-            "ordered": true,
-            "items": [
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "必要書類を準備します。"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "窓口で申請書を記入します。"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "書類を提出し、確認を受けます。"
-                    }
-                  ]
-                }
-              ]
-            ]
           }
         ]
       }
@@ -478,7 +429,7 @@
     }
   ],
   "search": {
-    "summary": "出生届の手続き案内。子どもが生まれたときの届出方法、必要書類、届出期間など。",
+    "summary": "出生届の案内。子どもが生まれたときに届け出る手続き。届出期間は生まれた日を含めて14日以内。",
     "keywords": [
       "出生届",
       "赤ちゃん",
@@ -488,6 +439,6 @@
       "届出",
       "命名"
     ],
-    "plain_text": "出生届。子どもが生まれたときの届出。届出期間は生まれた日を含めて14日以内。必要書類は出生届、母子健康手帳、本人確認書類。届出人は父または母。"
+    "plain_text": "出生届。子どもが生まれたときの届出。届出期間は生まれた日を含めて14日以内。出生届、母子健康手帳、本人確認書類が必要。届出人は父または母。手数料は無料。"
   }
 }

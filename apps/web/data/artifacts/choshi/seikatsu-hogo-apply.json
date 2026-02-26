@@ -1,0 +1,280 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "choshi-services-welfare-seikatsu-hogo-apply",
+  "municipality_id": "choshi",
+  "path": "/seikatsu-hogo-apply",
+  "title": "生活保護を申請する",
+  "description": "生活にお困りの方が生活保護を申請する手続きです。必要書類と申請窓口をご案内します。",
+  "content_type": "service",
+  "service_category": "welfare",
+  "audience": [
+    "residents"
+  ],
+  "topic": [],
+  "source": {
+    "source_url": "template://choshi/services/welfare/seikatsu-hogo-apply",
+    "fetched_at": "2026-02-26T05:47:34.049Z",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "2026-02-26T05:47:34.049Z",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "福祉・介護",
+            "href": "/welfare"
+          },
+          {
+            "label": "生活保護",
+            "href": "/seikatsu-hogo"
+          },
+          {
+            "label": "生活保護を申請する",
+            "href": "/seikatsu-hogo-apply"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "生活保護を申請する"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "生活にお困りの方が生活保護を申請する手続きです。まずは福祉事務所にご相談ください。"
+      }
+    },
+    {
+      "id": "notification-kenri",
+      "type": "NotificationBanner",
+      "props": {
+        "severity": "warning",
+        "title": "申請は権利です",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "生活保護の申請は国民の権利です。窓口で申請を拒否されることはありません。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-taisho",
+      "type": "Section",
+      "props": {
+        "heading": "申請できる方",
+        "level": 2,
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "生活に困窮している方"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "利用できる資産や能力を活用しても生活が困難な方"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "銚子市に居住している方"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-hitsuyou",
+      "type": "Section",
+      "props": {
+        "heading": "必要なもの",
+        "level": 2,
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "本人確認書類"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "収入・資産がわかるもの（通帳、給与明細など）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "住まいの契約書（賃貸の場合）"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-tesuryo",
+      "type": "Section",
+      "props": {
+        "heading": "手数料",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "無料"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "step-nav-1",
+      "type": "StepNavigation",
+      "props": {
+        "heading": "申請の流れ",
+        "steps": [
+          {
+            "title": "相談",
+            "description": "福祉事務所に相談"
+          },
+          {
+            "title": "申請",
+            "description": "申請書を提出"
+          },
+          {
+            "title": "調査",
+            "description": "ケースワーカーが訪問調査"
+          },
+          {
+            "title": "決定",
+            "description": "原則14日以内に決定通知"
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-madoguchi",
+      "type": "Section",
+      "props": {
+        "heading": "相談窓口",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "{{seikatsu_hogo_department}}（{{city_hall_location}}）"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{seikatsu_hogo_department}}",
+        "phone": "{{seikatsu_hogo_phone}}",
+        "email": "{{seikatsu_hogo_email}}",
+        "hours": "{{city_hall_hours}}",
+        "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "related-links-1",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "生活保護について詳しく見る",
+            "href": "/seikatsu-hogo"
+          },
+          {
+            "title": "生活保護を受けられるか確認する",
+            "href": "/seikatsu-hogo-check"
+          }
+        ]
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
+      }
+    }
+  ],
+  "search": {
+    "summary": "生活保護の申請手続き。福祉事務所に相談し、申請書を提出。ケースワーカーの訪問調査後、原則14日以内に決定。",
+    "keywords": [
+      "生活保護",
+      "申請",
+      "生活困窮",
+      "福祉事務所",
+      "ケースワーカー"
+    ],
+    "plain_text": "生活保護を申請する。生活にお困りの方が生活保護を申請する手続き。本人確認書類、収入・資産がわかるもの、住まいの契約書が必要。手数料無料。相談→申請→調査→決定の流れ。原則14日以内に決定通知。"
+  }
+}

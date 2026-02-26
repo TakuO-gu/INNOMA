@@ -13,12 +13,12 @@
   "topic": [],
   "source": {
     "source_url": "template://atami/services/driving/traffic-safety",
-    "fetched_at": "2026-02-03T01:50:19.421Z",
+    "fetched_at": "2026-02-26T05:47:33.866Z",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "2026-02-03T01:50:19.421Z",
+    "generated_at": "2026-02-26T05:47:33.866Z",
     "schema_version": "2.0.0"
   },
   "blocks": [

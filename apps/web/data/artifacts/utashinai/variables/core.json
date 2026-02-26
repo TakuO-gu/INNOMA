@@ -398,5 +398,28 @@
     "sourceUrl": "https://www.city.utashinai.hokkaido.jp/hotnews/detail/00001770.html",
     "confidence": 0.95,
     "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "juminhyo_kisai_fee": {
+    "value": "300円",
+    "source": "llm",
+    "sourceUrl": "https://www.city.utashinai.hokkaido.jp/hotnews/detail/00000055.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "juminhyo_convenience_fee": {
+    "value": "",
+    "source": "manual",
+    "sourceUrl": "https://www.city.utashinai.hokkaido.jp/hotnews/detail/00000055.html",
+    "confidence": 0.95,
+    "note": "歌志内市はコンビニ交付サービスを提供していない",
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "shimin_email": {
+    "value": "",
+    "source": "manual",
+    "sourceUrl": "https://www.city.utashinai.hokkaido.jp/hotnews/detail/00000317.html",
+    "confidence": 0.95,
+    "note": "市民課専用のメールアドレスは公開されていない。全庁共通: info@city.utashinai.hokkaido.jp",
+    "updatedAt": "2026-02-26T00:00:00.000Z"
   }
 }

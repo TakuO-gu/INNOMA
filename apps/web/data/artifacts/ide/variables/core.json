@@ -57,11 +57,17 @@
     "updatedAt": "2026-01-31T00:00:00.000Z"
   },
   "shimin_phone": {
-    "value": "0774-82-2001（代表）",
+    "value": "0774-82-6164",
     "source": "llm",
-    "sourceUrl": "https://www.town.ide.kyoto.jp/soshiki/index.html",
-    "confidence": 0.7,
-    "updatedAt": "2026-01-31T00:00:00.000Z"
+    "sourceUrl": "https://www.town.ide.kyoto.jp/soshiki/jyuminfukushi/oshirase/1573173175393.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "shimin_email": {
+    "value": "",
+    "source": "manual",
+    "note": "井手町公式サイトにはメールアドレスの公開がありません。電話・FAXでの問い合わせのみ（電話：0774-82-6164、FAX：0774-82-5055）。",
+    "updatedAt": "2026-02-26T00:00:00.000Z"
   },
   "registration_department": {
     "value": "住民福祉課",
@@ -71,11 +77,11 @@
     "updatedAt": "2026-01-31T00:00:00.000Z"
   },
   "registration_phone": {
-    "value": "0774-82-2001（代表）",
+    "value": "0774-82-6164",
     "source": "llm",
-    "sourceUrl": "https://www.town.ide.kyoto.jp/soshiki/index.html",
-    "confidence": 0.7,
-    "updatedAt": "2026-01-31T00:00:00.000Z"
+    "sourceUrl": "https://www.town.ide.kyoto.jp/soshiki/jyuminfukushi/oshirase/1573173175393.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
   },
   "tax_department": {
     "value": "税務課",
@@ -134,11 +140,11 @@
     "updatedAt": "2026-01-31T00:00:00.000Z"
   },
   "city_hall_hours": {
-    "value": "午前8時30分から午後5時15分まで（土曜日、日曜日、祝日、年末年始を除く）",
+    "value": "平日 8:30〜17:15（土日祝日・年末年始を除く）",
     "source": "llm",
-    "sourceUrl": "https://www.town.ide.kyoto.jp/",
-    "confidence": 0.9,
-    "updatedAt": "2026-02-03T00:00:00.000Z"
+    "sourceUrl": "https://www.town.ide.kyoto.jp/soshiki/jyuminfukushi/tesuusyou/1401858547805.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
   },
   "kaigo_department": {
     "value": "高齢福祉課",

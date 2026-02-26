@@ -14,12 +14,12 @@
   "topic": [],
   "source": {
     "source_url": "template://kawachi/topics/nationality",
-    "fetched_at": "2026-02-03T01:50:19.926Z",
+    "fetched_at": "2026-02-26T05:47:35.204Z",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "2026-02-03T01:50:19.926Z",
+    "generated_at": "2026-02-26T05:47:35.204Z",
     "schema_version": "2.0.0"
   },
   "blocks": [

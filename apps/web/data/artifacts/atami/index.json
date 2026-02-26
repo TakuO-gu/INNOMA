@@ -13,12 +13,12 @@
   "topic": [],
   "source": {
     "source_url": "template://atami/home",
-    "fetched_at": "2026-02-03T00:00:00.000Z",
+    "fetched_at": "2026-02-26T05:47:33.827Z",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "2026-02-03T00:00:00.000Z",
+    "generated_at": "2026-02-26T05:47:33.827Z",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -27,7 +27,7 @@
       "type": "Hero",
       "props": {
         "title": "熱海市へようこそ",
-        "subtitle": "市民の皆さまの暮らしをサポートする行政情報をお届けします"
+        "subtitle": "INNOMAで表示されています。この情報は一次情報ではありません。"
       }
     },
     {
@@ -137,10 +137,11 @@
       "id": "contact-1",
       "type": "Contact",
       "props": {
-        "department": "市民生活課",
-        "phone": "0557-86-6254",
-        "hours": "平日 8:30〜17:15（土日祝日・年末年始を除く）",
-        "address": "〒413-8550 静岡県熱海市中央町1-1"
+        "department": "{{city_hall_department}}",
+        "phone": "{{city_hall_phone}}",
+        "email": "{{city_hall_email}}",
+        "hours": "{{city_hall_hours}}",
+        "address": "{{city_hall_address}}"
       }
     },
     {
@@ -164,6 +165,6 @@
       "ごみ",
       "防災"
     ],
-    "plain_text": "熱海市へようこそ。市民の皆さまの暮らしをサポートする行政情報をお届けします。届出・申請・証明書、子育て、福祉・介護、健康・医療、税金、環境・ごみ、住まい・施設、防災・災害などの情報を提供しています。"
+    "plain_text": "熱海市へようこそ。INNOMAで表示されています。この情報は一次情報ではありません。届出・申請・証明書、子育て、福祉・介護、健康・医療、税金、環境・ごみ、住まい・施設、防災・災害などの情報を提供しています。"
   }
 }

@@ -6,19 +6,19 @@
   "title": "外国人住民の届出",
   "description": "外国人住民の転入届・転出届・転居届、在留カード関連手続き",
   "content_type": "guide",
-  "service_category": "government",
+  "service_category": "nationality",
   "audience": [
     "foreigners"
   ],
   "topic": [],
   "source": {
     "source_url": "template://kusatsu/services/nationality/foreign-registration",
-    "fetched_at": "2026-02-03T01:50:20.074Z",
+    "fetched_at": "2026-02-26T05:47:35.580Z",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "2026-02-03T01:50:20.074Z",
+    "generated_at": "2026-02-26T05:47:35.580Z",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -57,7 +57,71 @@
       }
     },
     {
-      "id": "section-ugddqhe4x",
+      "id": "section-taisho",
+      "type": "Section",
+      "props": {
+        "heading": "届出が必要な方",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "3か月を超える在留資格を持つ外国人（中長期在留者、特別永住者）"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-hitsuyou",
+      "type": "Section",
+      "props": {
+        "heading": "届出に必要なもの",
+        "level": 2,
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "在留カード（または特別永住者証明書）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "パスポート"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "世帯主との続柄を証明する書類（該当する場合）"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-tennyu",
       "type": "Section",
       "props": {
         "heading": "転入届（草津町に引っ越してきたとき）",
@@ -103,7 +167,7 @@
       }
     },
     {
-      "id": "section-v32smbzjb",
+      "id": "section-tenshutsu",
       "type": "Section",
       "props": {
         "heading": "転出届（草津町から引っ越すとき）",
@@ -149,7 +213,7 @@
       }
     },
     {
-      "id": "section-bkubs1kme",
+      "id": "section-tenkyo",
       "type": "Section",
       "props": {
         "heading": "転居届（草津町内で引っ越したとき）",
@@ -195,17 +259,17 @@
       }
     },
     {
-      "id": "section-wk4v83v9q",
+      "id": "section-madoguchi",
       "type": "Section",
       "props": {
-        "heading": "届出対象者",
+        "heading": "届出窓口",
         "level": 2,
         "content": [
           {
             "type": "paragraph",
             "runs": [
               {
-                "text": "3か月を超える在留資格を持つ外国人（中長期在留者、特別永住者）"
+                "text": "{{foreign_registration_department}}（{{city_hall_location}}）"
               }
             ]
           }
@@ -213,38 +277,11 @@
       }
     },
     {
-      "id": "related-links-h54yu57tp",
-      "type": "RelatedLinks",
-      "props": {
-        "items": [
-          {
-            "title": "在留カード",
-            "href": "/residence-card"
-          },
-          {
-            "title": "ビザ・在留資格",
-            "href": "/visa"
-          },
-          {
-            "title": "外国人相談",
-            "href": "/consultation"
-          },
-          {
-            "title": "住民票",
-            "href": "/juminhyo"
-          },
-          {
-            "title": "国民健康保険",
-            "href": "/kokuho"
-          }
-        ]
-      }
-    },
-    {
-      "id": "section-必要-1769919363189",
+      "id": "section-chuui",
       "type": "Section",
       "props": {
-        "heading": "外国人住民届出に必要なもの",
+        "heading": "ご注意ください",
+        "level": 2,
         "content": [
           {
             "type": "list",
@@ -255,7 +292,7 @@
                   "type": "paragraph",
                   "runs": [
                     {
-                      "text": "本人確認書類（マイナンバーカード、運転免許証など）"
+                      "text": "届出が遅れると、在留資格の取消事由になる場合があります"
                     }
                   ]
                 }
@@ -265,7 +302,7 @@
                   "type": "paragraph",
                   "runs": [
                     {
-                      "text": "印鑑（認印可）"
+                      "text": "在留カードは常時携帯が義務付けられています"
                     }
                   ]
                 }
@@ -276,46 +313,39 @@
       }
     },
     {
-      "id": "section-方法-1769919363189",
-      "type": "Section",
+      "id": "related-links-action",
+      "type": "RelatedLinks",
       "props": {
-        "heading": "外国人住民届出の手続き方法",
-        "content": [
+        "heading": "届出の手続き",
+        "items": [
           {
-            "type": "list",
-            "ordered": true,
-            "items": [
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "必要書類を準備します。"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "窓口で申請書を記入します。"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "書類を提出し、確認を受けます。"
-                    }
-                  ]
-                }
-              ]
-            ]
+            "title": "外国人住民の届出をする",
+            "href": "/foreign-registration-apply"
+          }
+        ]
+      }
+    },
+    {
+      "id": "related-links-1",
+      "type": "RelatedLinks",
+      "props": {
+        "heading": "関連ページ",
+        "items": [
+          {
+            "title": "在留カード",
+            "href": "/residence-card"
+          },
+          {
+            "title": "特別永住者",
+            "href": "/special-permanent-resident"
+          },
+          {
+            "title": "住民票の写し",
+            "href": "/juminhyo"
+          },
+          {
+            "title": "国民健康保険",
+            "href": "/kokuho"
           }
         ]
       }
@@ -324,9 +354,9 @@
       "id": "contact-1",
       "type": "Contact",
       "props": {
-        "department": "{{resident_department}}",
-        "phone": "{{resident_phone}}",
-        "email": "{{resident_email}}",
+        "department": "{{foreign_registration_department}}",
+        "phone": "{{foreign_registration_phone}}",
+        "email": "{{foreign_registration_email}}",
         "hours": "{{city_hall_hours}}",
         "address": "{{city_hall_address}}"
       }
@@ -347,8 +377,9 @@
       "転出届",
       "転居届",
       "在留カード",
-      "住所変更"
+      "住所変更",
+      "外国人住民"
     ],
-    "plain_text": "外国人住民の届出。引っ越した日から14日以内に届出。在留カードに新住所を記載。"
+    "plain_text": "外国人住民の届出。引っ越した日から14日以内に届出。在留カードに新住所を記載。3か月を超える在留資格を持つ外国人が対象。"
   }
 }

@@ -13,13 +13,13 @@
   ],
   "topic": [],
   "source": {
-    "source_url": "template://sample/topics/nationality",
-    "fetched_at": "{{generated_at}}",
+    "source_url": "template://tsuru/topics/nationality",
+    "fetched_at": "2026-02-26T05:47:37.075Z",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "{{generated_at}}",
+    "generated_at": "2026-02-26T05:47:37.075Z",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -96,7 +96,7 @@
           {
             "title": "外国人のための相談窓口",
             "href": "/consultation",
-            "description": "多言語相談、生活相談、{{municipality_name}}国際交流協会"
+            "description": "多言語相談、生活相談、都留市国際交流協会"
           },
           {
             "title": "日本語教室",

@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0.0",
-  "page_id": "takaoka-services-registration-koseki",
-  "municipality_id": "takaoka",
+  "page_id": "sample-services-registration-koseki",
+  "municipality_id": "sample",
   "path": "/koseki",
   "title": "戸籍謄本・住民票の取得",
   "description": "戸籍謄本（戸籍全部事項証明書）・住民票の写しの取得方法と手数料",
@@ -33,7 +33,7 @@
           },
           {
             "label": "届出・証明",
-            "href": "/topics/registration"
+            "href": "/registration"
           },
           {
             "label": "戸籍謄本・住民票の取得",

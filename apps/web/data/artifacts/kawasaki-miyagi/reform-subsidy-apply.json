@@ -1,0 +1,266 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "kawasaki-miyagi-services-housing-reform-subsidy-apply",
+  "municipality_id": "kawasaki-miyagi",
+  "path": "/reform-subsidy-apply",
+  "title": "住宅リフォーム補助を申請する",
+  "description": "住宅のリフォーム工事に対する補助金の申請手続き案内",
+  "content_type": "service",
+  "service_category": "housing",
+  "audience": [
+    "residents"
+  ],
+  "topic": [],
+  "source": {
+    "source_url": "template://kawasaki-miyagi/services/housing/reform-subsidy-apply",
+    "fetched_at": "2026-02-26T05:47:35.384Z",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "2026-02-26T05:47:35.384Z",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "住まい",
+            "href": "/housing"
+          },
+          {
+            "label": "住宅リフォーム補助",
+            "href": "/reform-subsidy"
+          },
+          {
+            "label": "住宅リフォーム補助を申請する",
+            "href": "/reform-subsidy-apply"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "住宅リフォーム補助を申請する"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "住宅のリフォーム工事に対する補助金を申請する手続きです。"
+      }
+    },
+    {
+      "id": "notification-1",
+      "type": "NotificationBanner",
+      "props": {
+        "severity": "warning",
+        "title": "注意",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "工事着手前に申請が必要です。工事後の申請はできません。",
+                "bold": true
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-taisho",
+      "type": "Section",
+      "props": {
+        "heading": "申請できる方",
+        "level": 2,
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "川崎町に住所がある方"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "市税を滞納していない方"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-hitsuyou",
+      "type": "Section",
+      "props": {
+        "heading": "必要なもの",
+        "level": 2,
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "申請書"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "工事見積書"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "住民票の写し"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-hojogaku",
+      "type": "Section",
+      "props": {
+        "heading": "補助額",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "{{reform_subsidy_amount}}"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "step-nav-1",
+      "type": "StepNavigation",
+      "props": {
+        "heading": "申請の流れ",
+        "steps": [
+          {
+            "title": "事前相談",
+            "description": "工事の内容について窓口に相談します"
+          },
+          {
+            "title": "申請",
+            "description": "必要書類を揃えて補助金の申請を行います"
+          },
+          {
+            "title": "審査・交付決定",
+            "description": "申請内容を審査し、補助金の交付を決定します"
+          },
+          {
+            "title": "工事実施",
+            "description": "交付決定後に工事を実施します"
+          },
+          {
+            "title": "実績報告",
+            "description": "工事完了後に実績報告書を提出します"
+          },
+          {
+            "title": "補助金交付",
+            "description": "報告内容の確認後、補助金が交付されます"
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{housing_department}}",
+        "phone": "{{housing_phone}}",
+        "email": "{{housing_email}}",
+        "hours": "{{city_hall_hours}}",
+        "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "related-links-1",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "住宅リフォーム補助について詳しく見る",
+            "href": "/reform-subsidy"
+          },
+          {
+            "title": "耐震診断・耐震改修補助",
+            "href": "/seismic-retrofit"
+          },
+          {
+            "title": "住宅取得支援",
+            "href": "/home-purchase"
+          }
+        ]
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
+      }
+    }
+  ],
+  "search": {
+    "summary": "住宅リフォーム補助金の申請手続き。対象者、必要書類、補助額、申請の流れを案内。",
+    "keywords": [
+      "リフォーム",
+      "補助金",
+      "申請",
+      "住宅改修",
+      "バリアフリー",
+      "省エネ"
+    ],
+    "plain_text": "住宅リフォーム補助を申請する。工事着手前に申請が必要。申請書、工事見積書、住民票が必要。事前相談→申請→審査→工事→実績報告→補助金交付。"
+  }
+}

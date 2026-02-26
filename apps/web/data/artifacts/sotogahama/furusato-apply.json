@@ -1,0 +1,150 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "sotogahama-services-tax-furusato-apply",
+  "municipality_id": "sotogahama",
+  "path": "/furusato-apply",
+  "title": "ふるさと納税を申し込む",
+  "description": "外ヶ浜町へのふるさと納税を申し込む手続きです。",
+  "content_type": "service",
+  "service_category": "government",
+  "audience": [
+    "residents"
+  ],
+  "topic": [],
+  "source": {
+    "source_url": "template://sotogahama/services/tax/furusato-apply",
+    "fetched_at": "2026-02-26T05:47:36.334Z",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "2026-02-26T05:47:36.334Z",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "税金",
+            "href": "/tax"
+          },
+          {
+            "label": "ふるさと納税",
+            "href": "/furusato"
+          },
+          {
+            "label": "ふるさと納税を申し込む",
+            "href": "/furusato-apply"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "ふるさと納税を申し込む"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "外ヶ浜町へのふるさと納税を申し込む手続きです。"
+      }
+    },
+    {
+      "id": "section-moushikomi",
+      "type": "Section",
+      "props": {
+        "heading": "申し込み方法",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "ふるさと納税ポータルサイト（ふるさとチョイス、楽天ふるさと納税など）から申し込めます。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "btn-portal",
+      "type": "ActionButton",
+      "props": {
+        "label": "ふるさと納税ポータルサイトで申し込む",
+        "href": "{{furusato_portal_url}}",
+        "variant": "primary"
+      }
+    },
+    {
+      "id": "section-onestop",
+      "type": "Section",
+      "props": {
+        "heading": "ワンストップ特例制度",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "確定申告をしない給与所得者等は、寄附先が5自治体以内であればワンストップ特例制度を利用できます。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{furusato_department}}",
+        "phone": "{{furusato_phone}}",
+        "email": "{{furusato_email}}",
+        "hours": "{{city_hall_hours}}",
+        "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "related-links-1",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "ふるさと納税について詳しく見る",
+            "href": "/furusato"
+          }
+        ]
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
+      }
+    }
+  ],
+  "search": {
+    "summary": "ふるさと納税の申し込み手続き。ポータルサイトから申し込み可能。ワンストップ特例制度も利用可能。",
+    "keywords": [
+      "ふるさと納税",
+      "申し込み",
+      "寄附",
+      "ワンストップ特例",
+      "手続き"
+    ],
+    "plain_text": "ふるさと納税を申し込む。ふるさと納税ポータルサイトから申し込み可能。確定申告をしない給与所得者は、寄附先が5自治体以内であればワンストップ特例制度を利用できる。"
+  }
+}

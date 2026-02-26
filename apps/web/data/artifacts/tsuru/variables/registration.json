@@ -1,0 +1,49 @@
+{
+  "juminhyo_fee": {
+    "value": "300円",
+    "source": "web",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/shimin/shiminmado_t/2/7/880.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z",
+    "note": "窓口での住民票の写し交付手数料"
+  },
+  "juminhyo_convenience_fee": {
+    "value": "200円",
+    "source": "web",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/shimin/shiminmado_t/2/1/12188.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z",
+    "note": "コンビニ交付サービスの手数料。窓口より100円安い"
+  },
+  "juminhyo_kisai_fee": {
+    "value": "300円",
+    "source": "web",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/shimin/shiminmado_t/2/7/yuusou/862.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z",
+    "note": "住民票記載事項証明書の手数料"
+  },
+  "shimin_department": {
+    "value": "市民課市民窓口担当",
+    "source": "web",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/shimin/shiminmado_t/2/1316.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "shimin_phone": {
+    "value": "0554-43-1111",
+    "source": "web",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/shimin/shiminmado_t/2/1316.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z",
+    "note": "内線：108・112・114・115・119"
+  },
+  "shimin_email": {
+    "value": null,
+    "source": "manual",
+    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/soshiki/shimin/index.html",
+    "confidence": null,
+    "updatedAt": "2026-02-26T00:00:00.000Z",
+    "note": "都留市市民課では直接のメールアドレスが公開されていません。お問い合わせフォームまたは電話での問い合わせが推奨されています"
+  }
+}

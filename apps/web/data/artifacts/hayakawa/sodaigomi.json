@@ -3,9 +3,9 @@
   "page_id": "hayakawa-services-environment-sodaigomi",
   "municipality_id": "hayakawa",
   "path": "/sodaigomi",
-  "title": "粗大ごみの出し方",
-  "description": "粗大ごみの出し方。申込方法、手数料、収集日など。",
-  "content_type": "step_by_step",
+  "title": "粗大ごみ",
+  "description": "粗大ごみの概要。対象品目、手数料、申込方法、自己搬入について。",
+  "content_type": "guide",
   "service_category": "environment",
   "audience": [
     "residents"
@@ -13,12 +13,12 @@
   "topic": [],
   "source": {
     "source_url": "template://hayakawa/services/environment/sodaigomi",
-    "fetched_at": "2026-02-03T01:50:19.599Z",
+    "fetched_at": "2026-02-26T05:47:34.240Z",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "2026-02-03T01:50:19.599Z",
+    "generated_at": "2026-02-26T05:47:34.240Z",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -36,7 +36,7 @@
             "href": "/environment"
           },
           {
-            "label": "粗大ごみの出し方",
+            "label": "粗大ごみ",
             "href": "/sodaigomi"
           }
         ]
@@ -46,7 +46,7 @@
       "id": "title-1",
       "type": "Title",
       "props": {
-        "text": "粗大ごみの出し方"
+        "text": "粗大ごみ"
       }
     },
     {
@@ -143,25 +143,67 @@
       }
     },
     {
-      "id": "step-nav-1",
-      "type": "StepNavigation",
+      "id": "section-apply-flow",
+      "type": "Section",
       "props": {
-        "currentStep": 0,
-        "steps": [
+        "heading": "収集の流れ",
+        "level": 2,
+        "content": [
           {
-            "title": "申込",
-            "body": "電話またはインターネットで申込（収集日の1週間前まで）",
-            "documents": []
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "粗大ごみの収集は、以下の流れで行います。"
+              }
+            ]
           },
           {
-            "title": "手数料納付",
-            "body": "コンビニ等で「粗大ごみ処理券」を購入",
-            "documents": []
-          },
-          {
-            "title": "排出",
-            "body": "収集日の朝8時までに玄関先に出す（処理券を貼付）",
-            "documents": []
+            "type": "list",
+            "ordered": true,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "申込",
+                      "bold": true
+                    },
+                    {
+                      "text": "：電話またはインターネットで申込（収集日の1週間前まで）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "手数料納付",
+                      "bold": true
+                    },
+                    {
+                      "text": "：コンビニ等で「粗大ごみ処理券」を購入"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "排出",
+                      "bold": true
+                    },
+                    {
+                      "text": "：収集日の朝8時までに玄関先に出す（処理券を貼付）"
+                    }
+                  ]
+                }
+              ]
+            ]
           }
         ]
       }
@@ -206,15 +248,6 @@
             "value": "{{sodaigomi_fee_xlarge}}"
           }
         ]
-      }
-    },
-    {
-      "id": "task-button-1",
-      "type": "TaskButton",
-      "props": {
-        "label": "インターネットで申込む",
-        "href": "{{sodaigomi_online_url}}",
-        "isTopTask": true
       }
     },
     {
@@ -263,10 +296,60 @@
       }
     },
     {
+      "id": "section-jiko-hannyu",
+      "type": "Section",
+      "props": {
+        "heading": "自己搬入（直接持ち込み）",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "ご自身で処理施設に直接持ち込むこともできます。処理券の購入は不要ですが、搬入手数料がかかります。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "table-jiko-hannyu",
+      "type": "Table",
+      "props": {
+        "rows": [
+          {
+            "label": "搬入先",
+            "value": "{{sodaigomi_jiko_hannyu_basho}}"
+          },
+          {
+            "label": "住所",
+            "value": "{{sodaigomi_jiko_hannyu_address}}"
+          },
+          {
+            "label": "電話番号",
+            "value": "{{sodaigomi_jiko_hannyu_phone}}"
+          },
+          {
+            "label": "受付時間",
+            "value": "{{sodaigomi_jiko_hannyu_hours}}"
+          },
+          {
+            "label": "手数料",
+            "value": "{{sodaigomi_jiko_hannyu_fee}}"
+          }
+        ]
+      }
+    },
+    {
       "id": "related-links-1",
       "type": "RelatedLinks",
       "props": {
         "items": [
+          {
+            "title": "粗大ごみの回収を申し込む",
+            "href": "/sodaigomi-apply"
+          },
           {
             "title": "ごみの出し方（分別ガイド）",
             "href": "/gomi"
@@ -274,10 +357,6 @@
           {
             "title": "家電リサイクル",
             "href": "/kaden-recycle"
-          },
-          {
-            "title": "不用品のリユース",
-            "href": "/reuse"
           }
         ]
       }
@@ -302,7 +381,7 @@
     }
   ],
   "search": {
-    "summary": "粗大ごみの出し方。申込方法、手数料、収集日について。インターネット・電話で申込可能。",
+    "summary": "粗大ごみの概要。対象品目、手数料、収集の流れ、自己搬入について。インターネット・電話で申込可能。",
     "keywords": [
       "粗大ごみ",
       "大型ごみ",
@@ -313,6 +392,6 @@
       "家具",
       "家電"
     ],
-    "plain_text": "粗大ごみの出し方。粗大ごみは一辺が30cm以上の大型ごみ。家具類、家電類、寝具類、自転車など。申込方法：電話またはインターネットで申込、コンビニで処理券を購入、収集日の朝8時までに玄関先に出す。家電リサイクル法対象品は対象外。"
+    "plain_text": "粗大ごみ。粗大ごみは一辺が30cm以上の大型ごみ。家具類、家電類、寝具類、自転車など。収集の流れ：電話またはインターネットで申込、コンビニで処理券を購入、収集日の朝8時までに玄関先に出す。家電リサイクル法対象品は対象外。"
   }
 }

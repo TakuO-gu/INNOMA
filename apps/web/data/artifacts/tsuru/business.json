@@ -12,13 +12,13 @@
   ],
   "topic": [],
   "source": {
-    "source_url": "template://sample/topics/business",
-    "fetched_at": "{{generated_at}}",
+    "source_url": "template://tsuru/topics/business",
+    "fetched_at": "2026-02-26T05:47:37.069Z",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "{{generated_at}}",
+    "generated_at": "2026-02-26T05:47:37.069Z",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -80,7 +80,7 @@
           {
             "title": "補助金・助成金",
             "href": "/subsidies",
-            "description": "{{municipality_name}}の中小企業向け補助金、国・県の助成制度"
+            "description": "都留市の中小企業向け補助金、国・県の助成制度"
           },
           {
             "title": "融資・資金調達",

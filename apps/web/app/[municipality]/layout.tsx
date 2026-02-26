@@ -24,7 +24,7 @@ export default async function MunicipalityLayout({
 
   // 自治体メタデータを取得（存在しない場合はURLパラメータを使用）
   const meta = await getMunicipalityMeta(decodedMunicipality);
-  const municipalityName = meta?.name || decodedMunicipality;
+  const municipalityName = meta?.municipalityName || meta?.name || decodedMunicipality;
 
   return (
     <>

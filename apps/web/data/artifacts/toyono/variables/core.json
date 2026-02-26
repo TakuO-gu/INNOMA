@@ -245,6 +245,41 @@
     "confidence": 0.95,
     "updatedAt": "2026-02-03T00:00:00.000Z"
   },
+  "juminhyo_fee": {
+    "value": "300円",
+    "source": "llm",
+    "sourceUrl": "https://www.town.toyono.osaka.jp/kurashi/todokede/shoumeisho/page000022.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "juminhyo_convenience_fee": {
+    "value": "300円",
+    "source": "llm",
+    "sourceUrl": "https://www.town.toyono.osaka.jp/kurashi/todokede/shoumeisho/page005743.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "juminhyo_kisai_fee": {
+    "value": "300円",
+    "source": "llm",
+    "sourceUrl": "https://www.town.toyono.osaka.jp/kurashi/todokede/shoumeisho/page000022.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "shimin_email": {
+    "value": "https://www.town.toyono.osaka.jp/inq.php?mode=detail&code=5&code2=0",
+    "source": "llm",
+    "sourceUrl": "https://www.town.toyono.osaka.jp/section.php?code=5",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "juminhyo_madoguchi": {
+    "value": "住民人権課（本庁舎1階）または吉川支所\n受付時間：午前9時から午後5時30分まで（土曜日、日曜日、祝日、12月29日～1月3日を除く）",
+    "source": "llm",
+    "sourceUrl": "https://www.town.toyono.osaka.jp/section.php?code=5",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
   "kaigo_department": {
     "value": "保険課",
     "source": "llm",

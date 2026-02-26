@@ -12,13 +12,13 @@
   ],
   "topic": [],
   "source": {
-    "source_url": "template://sample/services/health/kokuho",
-    "fetched_at": "2026-01-20T10:33:17.311Z",
+    "source_url": "template://takaoka/services/health/kokuho",
+    "fetched_at": "2026-02-26T05:47:37.292Z",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "2026-01-20T10:33:17.311Z",
+    "generated_at": "2026-02-26T05:47:37.292Z",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -32,8 +32,8 @@
             "href": "/"
           },
           {
-            "label": "社会保障・給付金",
-            "href": "/benefits"
+            "label": "健康・医療",
+            "href": "/health"
           },
           {
             "label": "国民健康保険",
@@ -75,7 +75,7 @@
       }
     },
     {
-      "id": "section-3lmt5mfzq",
+      "id": "section-6e2no0mtw",
       "type": "Section",
       "props": {
         "heading": "国民健康保険とは",
@@ -104,7 +104,7 @@
       }
     },
     {
-      "id": "section-dqsdfzo3a",
+      "id": "section-e874bpyno",
       "type": "Section",
       "props": {
         "heading": "加入する方",
@@ -178,7 +178,7 @@
       }
     },
     {
-      "id": "section-8320huj7o",
+      "id": "section-t80i2bnxp",
       "type": "Section",
       "props": {
         "heading": "届出が必要なとき",
@@ -263,7 +263,7 @@
       }
     },
     {
-      "id": "section-yz89dkdvq",
+      "id": "section-kwdb0bgk0",
       "type": "Section",
       "props": {
         "heading": "届出に必要なもの",
@@ -272,7 +272,7 @@
       }
     },
     {
-      "id": "section-db9rot2tb",
+      "id": "section-jnn85bu63",
       "type": "Section",
       "props": {
         "heading": "加入するとき",
@@ -318,7 +318,7 @@
       }
     },
     {
-      "id": "section-ljwo0jxks",
+      "id": "section-1e8cud5t2",
       "type": "Section",
       "props": {
         "heading": "やめるとき",
@@ -374,7 +374,7 @@
       }
     },
     {
-      "id": "section-1z5q6868l",
+      "id": "section-zs8ky9hgb",
       "type": "Section",
       "props": {
         "heading": "届出方法",
@@ -383,7 +383,7 @@
       }
     },
     {
-      "id": "section-3jw3njgoe",
+      "id": "section-oxlqb38sd",
       "type": "Section",
       "props": {
         "heading": "窓口での届出",
@@ -407,7 +407,7 @@
       }
     },
     {
-      "id": "section-8oulqgo9b",
+      "id": "section-6cm81wrdc",
       "type": "Section",
       "props": {
         "heading": "オンライン申請（令和7年3月24日開始）",
@@ -456,17 +456,7 @@
                 }
               ]
             ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "section-akbzfi479",
-      "type": "Section",
-      "props": {
-        "heading": "マイナポータルからの申請方法",
-        "level": 3,
-        "content": [
+          },
           {
             "type": "paragraph",
             "runs": [
@@ -489,16 +479,7 @@
       }
     },
     {
-      "id": "task-button-myna-portal",
-      "type": "TaskButton",
-      "props": {
-        "label": "マイナポータルで届出する",
-        "href": "https://myna.go.jp/",
-        "isTopTask": true
-      }
-    },
-    {
-      "id": "section-5lqky7fcp",
+      "id": "section-tvp5mw0ju",
       "type": "Section",
       "props": {
         "heading": "保険料について",
@@ -530,25 +511,41 @@
         "rows": [
           {
             "label": "医療分",
-            "value": "67万円"
+            "value": "{{kokuho_limit_medical}}"
           },
           {
             "label": "後期高齢者支援分",
-            "value": "26万円"
+            "value": "{{kokuho_limit_support}}"
           },
           {
             "label": "介護分",
-            "value": "17万円"
+            "value": "{{kokuho_limit_care}}"
           },
           {
             "label": "合計",
-            "value": "110万円"
+            "value": "{{kokuho_limit_total}}"
           }
         ]
       }
     },
     {
-      "id": "section-xcbify3p5",
+      "id": "richtext-limits-note",
+      "type": "RichText",
+      "props": {
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "保険料の賦課限度額は毎年度見直される場合があります。最新の情報は担当窓口にお問い合わせください。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-7itsfoqg4",
       "type": "Section",
       "props": {
         "heading": "保険料の軽減・減免",
@@ -574,7 +571,7 @@
       }
     },
     {
-      "id": "section-p2pf06r7l-table",
+      "id": "section-ss9crkxxw-table",
       "type": "Table",
       "props": {
         "rows": [
@@ -600,6 +597,23 @@
           }
         ],
         "heading": "国民健康保険で受けられる給付"
+      }
+    },
+    {
+      "id": "related-links-kokuho-procedures",
+      "type": "RelatedLinks",
+      "props": {
+        "heading": "国民健康保険の手続き",
+        "items": [
+          {
+            "title": "国民健康保険に加入届を届け出る",
+            "href": "/kokuho-apply"
+          },
+          {
+            "title": "国民健康保険に加入が必要か確認する",
+            "href": "/kokuho-check"
+          }
+        ]
       }
     },
     {
@@ -639,40 +653,6 @@
       }
     },
     {
-      "id": "section-対象-1769918445581",
-      "type": "Section",
-      "props": {
-        "heading": "国民健康保険の対象となる方",
-        "content": [
-          {
-            "type": "paragraph",
-            "runs": [
-              {
-                "text": "詳細は{{shimin_department}}（{{shimin_phone}}）にお問い合わせください。"
-              }
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "section-手順-1769918445581",
-      "type": "Section",
-      "props": {
-        "heading": "国民健康保険の申請の流れ",
-        "content": [
-          {
-            "type": "paragraph",
-            "runs": [
-              {
-                "text": "{{kokuho_nagare}}"
-              }
-            ]
-          }
-        ]
-      }
-    },
-    {
       "id": "contact-1",
       "type": "Contact",
       "props": {
@@ -684,7 +664,7 @@
       }
     },
     {
-      "id": "terms-1769899964499",
+      "id": "terms-1769919363174",
       "type": "Section",
       "props": {
         "heading": "用語の説明",
@@ -698,6 +678,18 @@
               },
               {
                 "text": "：保険に加入している方"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "賦課",
+                "bold": true
+              },
+              {
+                "text": "：税金を課すこと"
               }
             ]
           },
@@ -729,7 +721,7 @@
       }
     },
     {
-      "id": "terms-1769919343267",
+      "id": "terms-1769921317320",
       "type": "Section",
       "props": {
         "heading": "用語の説明",
@@ -738,11 +730,11 @@
             "type": "paragraph",
             "runs": [
               {
-                "text": "住民票",
+                "text": "世帯主",
                 "bold": true
               },
               {
-                "text": "：住所を証明する書類"
+                "text": "：住民票上の世帯のリーダー"
               }
             ]
           },

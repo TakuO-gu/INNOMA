@@ -1,0 +1,62 @@
+{
+  "kinkyu_hinanbasho_count": {
+    "value": "18",
+    "source": "web",
+    "sourceUrl": "https://www.town.sotogahama.lg.jp/",
+    "confidence": 0.8,
+    "updatedAt": "2026-02-26T00:00:00.000Z",
+    "note": "NAVITIMEのデータから推定。公式サイトで確認できず"
+  },
+  "shitei_hinanjo_count": {
+    "value": "64",
+    "source": "web",
+    "sourceUrl": "https://www.town.sotogahama.lg.jp/",
+    "confidence": 0.8,
+    "updatedAt": "2026-02-26T00:00:00.000Z",
+    "note": "NAVITIMEのデータから推定。公式サイトで確認できず"
+  },
+  "hinanjo_status_url": {
+    "value": "https://www.town.sotogahama.lg.jp/",
+    "source": "web",
+    "sourceUrl": "https://www.town.sotogahama.lg.jp/",
+    "confidence": 0.7,
+    "updatedAt": "2026-02-26T00:00:00.000Z",
+    "note": "町公式サイトトップページ。災害時には避難所開設状況が掲載されると推定"
+  },
+  "bosai_department": {
+    "value": "総務課",
+    "source": "web",
+    "sourceUrl": "https://www.town.sotogahama.lg.jp/gyosei/about/kakuka.html",
+    "confidence": 0.9,
+    "updatedAt": "2026-02-26T00:00:00.000Z",
+    "note": "総務課が交通安全・消防を担当"
+  },
+  "bosai_phone": {
+    "value": "0174-31-1111",
+    "source": "web",
+    "sourceUrl": "https://www.town.sotogahama.lg.jp/gyosei/about/kakuka.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "bosai_email": {
+    "value": "soumu@town.sotogahama.lg.jp",
+    "source": "web",
+    "sourceUrl": "https://bousai.pref.aomori.lg.jp/P_PUB_VF_CityInfo?city=307",
+    "confidence": 0.9,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "city_hall_hours": {
+    "value": "月曜日～金曜日 午前8時15分～午後5時（土曜日・日曜日・祝日・年末年始を除く）",
+    "source": "web",
+    "sourceUrl": "https://www.town.sotogahama.lg.jp/gyosei/about/kakuka.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "city_hall_address": {
+    "value": "〒030-1393 青森県東津軽郡外ヶ浜町字蟹田高銅屋44番地2",
+    "source": "web",
+    "sourceUrl": "https://www.town.sotogahama.lg.jp/gyosei/about/access.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  }
+}

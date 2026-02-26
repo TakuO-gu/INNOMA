@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0.0",
-  "page_id": "takaoka-services-registration-mynumber",
-  "municipality_id": "takaoka",
+  "page_id": "atami-services-registration-mynumber",
+  "municipality_id": "atami",
   "path": "/mynumber",
   "title": "マイナンバーカード",
   "description": "マイナンバーカードの申請方法、受け取り、更新、利用方法について",
@@ -420,23 +420,6 @@
           {
             "title": "年金",
             "href": "/nenkin"
-          }
-        ]
-      }
-    },
-    {
-      "id": "section-対象-1769919363206",
-      "type": "Section",
-      "props": {
-        "heading": "マイナンバーカードの対象となる方",
-        "content": [
-          {
-            "type": "paragraph",
-            "runs": [
-              {
-                "text": "詳細は担当課にお問い合わせください。"
-              }
-            ]
           }
         ]
       }

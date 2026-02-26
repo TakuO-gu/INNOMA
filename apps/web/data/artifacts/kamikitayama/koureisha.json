@@ -14,12 +14,12 @@
   "topic": [],
   "source": {
     "source_url": "template://kamikitayama/services/welfare/koureisha",
-    "fetched_at": "2026-02-03T01:50:19.781Z",
+    "fetched_at": "2026-02-26T05:47:34.954Z",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "2026-02-03T01:50:19.781Z",
+    "generated_at": "2026-02-26T05:47:34.954Z",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -72,6 +72,7 @@
       "props": {
         "heading": "配食サービス",
         "level": 3,
+        "available": "{{koureisha_haishoku_available}}",
         "content": [
           {
             "type": "paragraph",
@@ -90,6 +91,7 @@
       "props": {
         "heading": "緊急通報システム",
         "level": 3,
+        "available": "{{koureisha_kinkyutsuho_available}}",
         "content": [
           {
             "type": "paragraph",
@@ -108,6 +110,7 @@
       "props": {
         "heading": "ごみ出し支援",
         "level": 3,
+        "available": "{{koureisha_gomidashi_available}}",
         "content": [
           {
             "type": "paragraph",
@@ -135,6 +138,7 @@
       "props": {
         "heading": "介護予防教室",
         "level": 3,
+        "available": "{{koureisha_yobou_kyoshitsu_available}}",
         "content": [
           {
             "type": "paragraph",
@@ -153,6 +157,7 @@
       "props": {
         "heading": "高齢者健康診査",
         "level": 3,
+        "available": "{{koureisha_kenshin_available}}",
         "content": [
           {
             "type": "paragraph",
@@ -171,6 +176,7 @@
       "props": {
         "heading": "高齢者インフルエンザ予防接種",
         "level": 3,
+        "available": "{{koureisha_influenza_available}}",
         "content": [
           {
             "type": "paragraph",
@@ -198,6 +204,7 @@
       "props": {
         "heading": "敬老祝金",
         "level": 3,
+        "available": "{{koureisha_keiro_iwaikin_available}}",
         "content": [
           {
             "type": "paragraph",
@@ -216,6 +223,7 @@
       "props": {
         "heading": "おむつ費用助成",
         "level": 3,
+        "available": "{{koureisha_omutu_josei_available}}",
         "content": [
           {
             "type": "paragraph",
@@ -243,6 +251,7 @@
       "props": {
         "heading": "シルバーハウジング",
         "level": 3,
+        "available": "{{koureisha_silver_housing_available}}",
         "content": [
           {
             "type": "paragraph",
@@ -261,6 +270,7 @@
       "props": {
         "heading": "住宅改修費助成",
         "level": 3,
+        "available": "{{koureisha_jutaku_kaishuu_available}}",
         "content": [
           {
             "type": "paragraph",
@@ -279,6 +289,7 @@
       "props": {
         "heading": "高齢者移動支援",
         "level": 3,
+        "available": "{{koureisha_ido_shien_available}}",
         "content": [
           {
             "type": "paragraph",
@@ -306,6 +317,7 @@
       "props": {
         "heading": "老人クラブ",
         "level": 3,
+        "available": "{{koureisha_rojin_club_available}}",
         "content": [
           {
             "type": "paragraph",
@@ -324,6 +336,7 @@
       "props": {
         "heading": "シルバー人材センター",
         "level": 3,
+        "available": "{{koureisha_silver_jinzai_available}}",
         "content": [
           {
             "type": "paragraph",
@@ -364,103 +377,6 @@
           {
             "title": "シルバー人材センター",
             "href": "/silver-center"
-          }
-        ]
-      }
-    },
-    {
-      "id": "section-対象-1769919363222",
-      "type": "Section",
-      "props": {
-        "heading": "高齢者福祉の対象となる方",
-        "content": [
-          {
-            "type": "paragraph",
-            "runs": [
-              {
-                "text": "詳細は担当課にお問い合わせください。"
-              }
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "section-必要-1769919363222",
-      "type": "Section",
-      "props": {
-        "heading": "高齢者福祉に必要なもの",
-        "content": [
-          {
-            "type": "list",
-            "ordered": false,
-            "items": [
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "本人確認書類（マイナンバーカード、運転免許証など）"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "印鑑（認印可）"
-                    }
-                  ]
-                }
-              ]
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "section-方法-1769919363222",
-      "type": "Section",
-      "props": {
-        "heading": "高齢者福祉の手続き方法",
-        "content": [
-          {
-            "type": "list",
-            "ordered": true,
-            "items": [
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "必要書類を準備します。"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "窓口で申請書を記入します。"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "書類を提出し、確認を受けます。"
-                    }
-                  ]
-                }
-              ]
-            ]
           }
         ]
       }

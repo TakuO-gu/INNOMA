@@ -37,7 +37,7 @@
           },
           {
             "label": "戸籍謄本・住民票の取得",
-            "href": "/koseki"
+            "href": "/registration/koseki"
           }
         ]
       }
@@ -544,11 +544,11 @@
         "items": [
           {
             "title": "住民票",
-            "href": "/juminhyo"
+            "href": "/registration/juminhyo"
           },
           {
             "title": "出生届",
-            "href": "/shussei"
+            "href": "/registration/shussei"
           },
           {
             "title": "死亡届",

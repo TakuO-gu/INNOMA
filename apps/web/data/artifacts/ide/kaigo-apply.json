@@ -7,16 +7,19 @@
   "description": "要介護認定・要支援認定の申請手続き。必要書類と申請窓口をご案内します。オンライン申請も可能です。",
   "content_type": "service",
   "service_category": "welfare",
-  "audience": ["residents", "elderly"],
+  "audience": [
+    "residents",
+    "elderly"
+  ],
   "topic": [],
   "source": {
     "source_url": "template://ide/kaigo-apply",
-    "fetched_at": "2026-02-03T01:50:19.724Z",
+    "fetched_at": "2026-02-26T05:47:34.781Z",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "2026-02-03T01:50:19.724Z",
+    "generated_at": "2026-02-26T05:47:34.781Z",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -25,10 +28,22 @@
       "type": "Breadcrumbs",
       "props": {
         "items": [
-          { "label": "ホーム", "href": "/" },
-          { "label": "高齢者向け支援", "href": "/welfare" },
-          { "label": "介護保険", "href": "/kaigo" },
-          { "label": "要介護認定を申請する", "href": "/kaigo-apply" }
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "高齢者向け支援",
+            "href": "/welfare"
+          },
+          {
+            "label": "介護保険",
+            "href": "/kaigo"
+          },
+          {
+            "label": "要介護認定を申請する",
+            "href": "/kaigo-apply"
+          }
         ]
       }
     },
@@ -57,8 +72,34 @@
             "type": "list",
             "ordered": false,
             "items": [
-              [{ "type": "paragraph", "runs": [{ "text": "65歳以上の方", "bold": true }, { "text": "（第1号被保険者）：原因を問わず、介護・支援が必要な方" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "40〜64歳の方", "bold": true }, { "text": "（第2号被保険者）：特定疾病が原因で介護・支援が必要な方" }] }]
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "65歳以上の方",
+                      "bold": true
+                    },
+                    {
+                      "text": "（第1号被保険者）：原因を問わず、介護・支援が必要な方"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "40〜64歳の方",
+                      "bold": true
+                    },
+                    {
+                      "text": "（第2号被保険者）：特定疾病が原因で介護・支援が必要な方"
+                    }
+                  ]
+                }
+              ]
             ]
           }
         ]
@@ -75,9 +116,36 @@
             "type": "list",
             "ordered": false,
             "items": [
-              [{ "type": "paragraph", "runs": [{ "text": "介護保険要介護・要支援認定申請書" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "介護保険被保険者証" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "医療保険被保険者証（40〜64歳の方のみ）" }] }]
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "介護保険要介護・要支援認定申請書"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "介護保険被保険者証"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "医療保険被保険者証（40〜64歳の方のみ）"
+                    }
+                  ]
+                }
+              ]
             ]
           }
         ]
@@ -92,7 +160,11 @@
         "content": [
           {
             "type": "paragraph",
-            "runs": [{ "text": "無料" }]
+            "runs": [
+              {
+                "text": "無料"
+              }
+            ]
           }
         ]
       }
@@ -142,7 +214,11 @@
         "content": [
           {
             "type": "paragraph",
-            "runs": [{ "text": "マイナポータル（ぴったりサービス）から「井手町」→「介護」で申請できます。" }]
+            "runs": [
+              {
+                "text": "マイナポータル（ぴったりサービス）から「井手町」→「介護」で申請できます。"
+              }
+            ]
           }
         ]
       }
@@ -156,7 +232,11 @@
         "content": [
           {
             "type": "paragraph",
-            "runs": [{ "text": "{{welfare_department}}（{{city_hall_location}}）で申請できます。" }]
+            "runs": [
+              {
+                "text": "{{welfare_department}}（{{city_hall_location}}）で申請できます。"
+              }
+            ]
           }
         ]
       }
@@ -176,9 +256,18 @@
       "type": "RelatedLinks",
       "props": {
         "items": [
-          { "title": "介護保険について詳しく見る", "href": "/kaigo" },
-          { "title": "介護サービスを利用できるか確認する", "href": "/kaigo-check" },
-          { "title": "地域包括支援センター", "href": "/houkatsu" }
+          {
+            "title": "介護保険について詳しく見る",
+            "href": "/kaigo"
+          },
+          {
+            "title": "介護サービスを利用できるか確認する",
+            "href": "/kaigo-check"
+          },
+          {
+            "title": "地域包括支援センター",
+            "href": "/houkatsu"
+          }
         ]
       }
     },
@@ -192,7 +281,13 @@
   ],
   "search": {
     "summary": "要介護認定・要支援認定の申請手続き。介護保険被保険者証が必要。原則30日以内に結果通知。オンライン申請可能。",
-    "keywords": ["要介護認定", "要支援認定", "申請", "介護保険", "訪問調査"],
+    "keywords": [
+      "要介護認定",
+      "要支援認定",
+      "申請",
+      "介護保険",
+      "訪問調査"
+    ],
     "plain_text": "要介護認定を申請する。介護サービス利用のための認定申請。介護保険被保険者証が必要。原則30日以内に結果通知。窓口・郵送・オンライン申請可能。"
   }
 }

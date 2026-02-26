@@ -1,11 +1,11 @@
 {
   "schema_version": "2.0.0",
-  "page_id": "takaoka-services-registration-konin",
-  "municipality_id": "takaoka",
+  "page_id": "ide-services-registration-konin",
+  "municipality_id": "ide",
   "path": "/konin",
   "title": "婚姻届",
   "description": "婚姻届の届出方法、必要書類、届出先について",
-  "content_type": "step_by_step",
+  "content_type": "guide",
   "service_category": "government",
   "audience": [
     "residents"
@@ -13,12 +13,12 @@
   "topic": [],
   "source": {
     "source_url": "template://ide/services/registration/konin",
-    "fetched_at": "2026-01-20T10:33:17.311Z",
+    "fetched_at": "2026-02-26T05:47:34.767Z",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "2026-01-20T10:33:17.311Z",
+    "generated_at": "2026-02-26T05:47:34.767Z",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -57,7 +57,7 @@
       }
     },
     {
-      "id": "section-1m8spear6",
+      "id": "section-taisho",
       "type": "Section",
       "props": {
         "heading": "届出できる人",
@@ -83,44 +83,11 @@
       }
     },
     {
-      "id": "step-nav-1",
-      "type": "StepNavigation",
-      "props": {
-        "currentStep": 0,
-        "steps": [
-          {
-            "title": "婚姻届の入手",
-            "body": "婚姻届は全国共通の様式です。市区町村窓口でもらうか、ダウンロードして印刷してください。",
-            "documents": []
-          },
-          {
-            "title": "届書の記入",
-            "body": "夫・妻それぞれが署名し、証人2人にも署名してもらいます。",
-            "documents": [
-              "婚姻届"
-            ]
-          },
-          {
-            "title": "必要書類の準備",
-            "body": "戸籍謄本（本籍地以外に届出する場合）、本人確認書類を準備します。",
-            "documents": [
-              "戸籍謄本",
-              "本人確認書類"
-            ]
-          },
-          {
-            "title": "届出",
-            "body": "市区町村の窓口に届出します。受理されれば届出日に婚姻が成立します。",
-            "documents": []
-          }
-        ]
-      }
-    },
-    {
-      "id": "section-q9jwny80r-table",
+      "id": "section-hitsuyou",
       "type": "Section",
       "props": {
         "heading": "必要書類",
+        "level": 2,
         "content": [
           {
             "type": "list",
@@ -162,7 +129,7 @@
       }
     },
     {
-      "id": "section-v090jg6i5",
+      "id": "section-koseki",
       "type": "Section",
       "props": {
         "heading": "戸籍謄本について",
@@ -180,7 +147,25 @@
       }
     },
     {
-      "id": "section-4vbyqoze6",
+      "id": "section-tesuryo",
+      "type": "Section",
+      "props": {
+        "heading": "手数料",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "無料"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-todokesaki",
       "type": "Section",
       "props": {
         "heading": "届出先・届出時間",
@@ -250,7 +235,7 @@
       }
     },
     {
-      "id": "section-kjbwdvkx0",
+      "id": "section-kanren",
       "type": "Section",
       "props": {
         "heading": "届出後の手続き",
@@ -324,9 +309,23 @@
       }
     },
     {
+      "id": "related-links-action",
+      "type": "RelatedLinks",
+      "props": {
+        "heading": "婚姻届の手続き",
+        "items": [
+          {
+            "title": "婚姻届を届け出る",
+            "href": "/konin-apply"
+          }
+        ]
+      }
+    },
+    {
       "id": "related-links-1",
       "type": "RelatedLinks",
       "props": {
+        "heading": "関連ページ",
         "items": [
           {
             "title": "戸籍",
@@ -352,68 +351,6 @@
       }
     },
     {
-      "id": "section-対象-1769919363203",
-      "type": "Section",
-      "props": {
-        "heading": "婚姻届の対象となる方",
-        "content": [
-          {
-            "type": "paragraph",
-            "runs": [
-              {
-                "text": "詳細は担当課にお問い合わせください。"
-              }
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "section-方法-1769919363203",
-      "type": "Section",
-      "props": {
-        "heading": "婚姻届の手続き方法",
-        "content": [
-          {
-            "type": "list",
-            "ordered": true,
-            "items": [
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "必要書類を準備します。"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "窓口で申請書を記入します。"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "書類を提出し、確認を受けます。"
-                    }
-                  ]
-                }
-              ]
-            ]
-          }
-        ]
-      }
-    },
-    {
       "id": "contact-1",
       "type": "Contact",
       "props": {
@@ -425,7 +362,7 @@
       }
     },
     {
-      "id": "terms-1769899964513",
+      "id": "terms-1",
       "type": "Section",
       "props": {
         "heading": "用語の説明",

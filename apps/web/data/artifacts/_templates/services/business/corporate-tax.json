@@ -152,16 +152,20 @@
       "props": {
         "items": [
           {
-            "title": "法人設立",
+            "title": "法人設立（株式会社・合同会社）",
             "href": "/incorporation"
           },
           {
-            "title": "社会保険",
-            "href": "/business-insurance"
+            "title": "個人事業主・開業届",
+            "href": "/sole-proprietor"
           },
           {
             "title": "住民税",
             "href": "/juminzei"
+          },
+          {
+            "title": "確定申告",
+            "href": "/kakuteishinkoku"
           }
         ]
       }

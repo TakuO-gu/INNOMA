@@ -37,7 +37,7 @@
           },
           {
             "label": "軽自動車税",
-            "href": "/keijidosha"
+            "href": "/tax/keijidosha"
           }
         ]
       }
@@ -382,7 +382,7 @@
           },
           {
             "title": "住民税",
-            "href": "/juminzei"
+            "href": "/tax/juminzei"
           },
           {
             "title": "車庫証明",

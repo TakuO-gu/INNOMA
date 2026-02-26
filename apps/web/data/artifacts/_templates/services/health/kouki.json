@@ -355,6 +355,19 @@
       }
     },
     {
+      "id": "related-links-kouki-procedures",
+      "type": "RelatedLinks",
+      "props": {
+        "heading": "後期高齢者医療制度の手続き",
+        "items": [
+          {
+            "title": "後期高齢者医療制度の対象か確認する",
+            "href": "/kouki-check"
+          }
+        ]
+      }
+    },
+    {
       "id": "related-links-1",
       "type": "RelatedLinks",
       "props": {

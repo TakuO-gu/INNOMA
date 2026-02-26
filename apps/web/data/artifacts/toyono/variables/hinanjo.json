@@ -1,0 +1,55 @@
+{
+  "kinkyu_hinanbasho_count": {
+    "value": "10",
+    "source": "web",
+    "sourceUrl": "https://www.osaka-bousai.net/shelter/index.html",
+    "confidence": 0.7,
+    "updatedAt": "2026-02-26T00:00:00.000Z",
+    "note": "公式サイトに具体的な区別が掲載されていないため、大阪府防災ネットの情報を参考にしています。電子ハザードマップでの確認が推奨されます。"
+  },
+  "shitei_hinanjo_count": {
+    "value": "10",
+    "source": "web",
+    "sourceUrl": "https://www.osaka-bousai.net/shelter/index.html",
+    "confidence": 0.7,
+    "updatedAt": "2026-02-26T00:00:00.000Z",
+    "note": "公式サイトに具体的な区別が掲載されていないため、大阪府防災ネットの情報を参考にしています。電子ハザードマップでの確認が推奨されます。"
+  },
+  "hinanjo_status_url": {
+    "value": "https://www.osaka-bousai.net/toyono/index.html",
+    "source": "web",
+    "sourceUrl": "https://www.osaka-bousai.net/toyono/index.html",
+    "confidence": 0.8,
+    "updatedAt": "2026-02-26T00:00:00.000Z",
+    "note": "大阪府防災ネットで避難所開設状況を確認できます。"
+  },
+  "bosai_department": {
+    "value": "総務課危機管理室",
+    "source": "web",
+    "sourceUrl": "https://www.town.toyono.osaka.jp/section.php",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "bosai_phone": {
+    "value": "072-739-3415",
+    "source": "web",
+    "sourceUrl": "https://www.town.toyono.osaka.jp/section.php",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "city_hall_hours": {
+    "value": "月曜日から金曜日：午前9時～午後5時30分（土曜日・日曜日・祝日・年末年始を除く）",
+    "source": "web",
+    "sourceUrl": "https://kurashi.yahoo.co.jp/facility/a273210001",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "city_hall_address": {
+    "value": "〒563-0219 大阪府豊能郡豊能町余野414番地の1",
+    "source": "web",
+    "sourceUrl": "https://www.town.toyono.osaka.jp/section.php",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z",
+    "note": "core.jsonにも同じ値が存在します。"
+  }
+}

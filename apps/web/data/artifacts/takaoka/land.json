@@ -1,0 +1,152 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "takaoka-topics-land",
+  "municipality_id": "takaoka",
+  "path": "/topics/land",
+  "title": "土地・農林水産",
+  "description": "農業・林業・漁業、農地転用、土地利用、都市計画などの土地・農林水産に関する情報",
+  "content_type": "directory",
+  "service_category": "environment",
+  "audience": [
+    "residents",
+    "businesses"
+  ],
+  "topic": [],
+  "source": {
+    "source_url": "template://takaoka/topics/land",
+    "fetched_at": "2026-02-26T05:47:37.407Z",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "2026-02-26T05:47:37.407Z",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "土地・農林水産",
+            "href": "/land"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "土地・農林水産"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "農業・林業・漁業、農地転用、土地利用、都市計画などの土地・農林水産に関する情報をまとめています"
+      }
+    },
+    {
+      "id": "topic-list-1",
+      "type": "TopicList",
+      "props": {
+        "items": [
+          {
+            "title": "農地転用",
+            "href": "/farmland-conversion",
+            "description": "農地を宅地・駐車場等に転用する手続き（農業委員会）"
+          },
+          {
+            "title": "農業委員会",
+            "href": "/agricultural-committee",
+            "description": "農地の売買・賃借、農地利用集積、農業者年金"
+          },
+          {
+            "title": "新規就農支援",
+            "href": "/new-farmer",
+            "description": "農業次世代人材投資資金、就農準備資金、新規就農相談"
+          },
+          {
+            "title": "農業振興・補助金",
+            "href": "/agriculture-subsidy",
+            "description": "高岡市の農業振興策、各種補助金・助成制度"
+          },
+          {
+            "title": "林業振興",
+            "href": "/forestry",
+            "description": "森林経営計画、林地開発許可、造林補助、木材利用促進"
+          },
+          {
+            "title": "漁業権・漁業許可",
+            "href": "/fishery",
+            "description": "漁業権、遊漁船業登録、特定水産資源の採捕許可"
+          },
+          {
+            "title": "有害鳥獣対策",
+            "href": "/wildlife-damage",
+            "description": "有害鳥獣の駆除、防護柵設置補助、捕獲許可"
+          },
+          {
+            "title": "狩猟免許",
+            "href": "/hunting-license",
+            "description": "狩猟免許試験、狩猟者登録、わな猟免許"
+          },
+          {
+            "title": "都市計画・用途地域",
+            "href": "/urban-planning",
+            "description": "用途地域、都市計画図、都市計画審議会"
+          },
+          {
+            "title": "開発許可",
+            "href": "/development-permit",
+            "description": "市街化調整区域の開発許可、宅地造成工事規制"
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{land_department}}",
+        "phone": "{{land_phone}}",
+        "email": "{{land_email}}",
+        "hours": "{{city_hall_hours}}",
+        "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
+      }
+    }
+  ],
+  "search": {
+    "summary": "土地・農林水産に関する情報。農業、林業、漁業、農地転用、開発許可、狩猟免許、有害鳥獣、河川、水利権、土地利用、都市計画の案内。",
+    "keywords": [
+      "土地",
+      "農林水産",
+      "農業",
+      "林業",
+      "漁業",
+      "農地転用",
+      "開発許可",
+      "狩猟免許",
+      "有害鳥獣",
+      "河川",
+      "水利権",
+      "土地利用",
+      "都市計画"
+    ],
+    "plain_text": "土地・農林水産。農林水産業・土地利用・都市計画に関する情報。農業・林業・漁業、農地転用・開発許可、狩猟免許・有害鳥獣、河川・水利権、土地利用・都市計画。"
+  }
+}

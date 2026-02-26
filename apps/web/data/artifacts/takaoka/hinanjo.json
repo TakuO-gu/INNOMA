@@ -12,7 +12,7 @@
   ],
   "topic": [],
   "source": {
-    "source_url": "template://sample/services/disaster/hinanjo",
+    "source_url": "template://takaoka/services/disaster/hinanjo",
     "fetched_at": "2026-01-20T10:33:17.311Z",
     "content_hash": "template"
   },
@@ -141,15 +141,6 @@
             ]
           }
         ]
-      }
-    },
-    {
-      "id": "task-button-status",
-      "type": "TaskButton",
-      "props": {
-        "label": "避難所の開設状況を確認する",
-        "href": "{{hinanjo_status_url}}",
-        "isTopTask": true
       }
     },
     {

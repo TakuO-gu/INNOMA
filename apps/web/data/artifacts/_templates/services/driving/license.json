@@ -6,7 +6,7 @@
   "title": "運転免許証",
   "description": "運転免許試験場・更新センターの案内、更新・住所変更手続き",
   "content_type": "guide",
-  "service_category": "government",
+  "service_category": "driving",
   "audience": [
     "residents"
   ],
@@ -182,7 +182,7 @@
       "props": {
         "items": [
           {
-            "title": "自動車登録",
+            "title": "車検・自動車登録",
             "href": "/registration"
           },
           {
@@ -190,7 +190,7 @@
             "href": "/garage-certificate"
           },
           {
-            "title": "高齢者運転",
+            "title": "高齢者運転支援",
             "href": "/senior-driving"
           },
           {

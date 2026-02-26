@@ -126,7 +126,14 @@ export async function cloneTemplate(
       jsonContent.municipality_id = id;
     }
     if (typeof jsonContent.page_id === "string") {
-      jsonContent.page_id = jsonContent.page_id.replace(/^sample-/, `${id}-`);
+      // 既存の自治体IDプレフィックスを新しいIDに置き換え
+      // page_idの形式: {municipality_id}-{rest}
+      // 最初のハイフンまでを自治体IDとして置き換える
+      const parts = jsonContent.page_id.split('-');
+      if (parts.length > 1) {
+        parts[0] = id;
+        jsonContent.page_id = parts.join('-');
+      }
     }
 
     // JSON文字列に変換

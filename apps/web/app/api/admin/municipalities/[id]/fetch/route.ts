@@ -205,9 +205,9 @@ export async function POST(request: NextRequest, { params }: RouteParams) {
 
           try {
             const result = await fetchServiceVariables(
-              meta.name,
+              meta.municipalityName || meta.municipalityId || "",
               serviceId,
-              meta.officialUrl
+              meta.officialWebsite || meta.officialUrl || ""
             );
 
             // Convert to draft format

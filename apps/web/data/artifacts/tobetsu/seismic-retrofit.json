@@ -13,12 +13,12 @@
   "topic": [],
   "source": {
     "source_url": "template://tobetsu/services/housing/seismic-retrofit",
-    "fetched_at": "2026-02-03T01:50:20.423Z",
+    "fetched_at": "2026-02-26T05:47:36.586Z",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "2026-02-03T01:50:20.423Z",
+    "generated_at": "2026-02-26T05:47:36.586Z",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -32,7 +32,7 @@
             "href": "/"
           },
           {
-            "label": "住まい・引越し",
+            "label": "住まい",
             "href": "/housing"
           },
           {
@@ -172,6 +172,10 @@
       "props": {
         "items": [
           {
+            "title": "耐震診断・改修補助を申請する",
+            "href": "/seismic-retrofit-apply"
+          },
+          {
             "title": "リフォーム補助",
             "href": "/reform-subsidy"
           },
@@ -186,86 +190,6 @@
           {
             "title": "避難所",
             "href": "/hinanjo"
-          }
-        ]
-      }
-    },
-    {
-      "id": "section-必要-1769919363180",
-      "type": "Section",
-      "props": {
-        "heading": "耐震診断・耐震改修補助に必要なもの",
-        "content": [
-          {
-            "type": "list",
-            "ordered": false,
-            "items": [
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "本人確認書類（マイナンバーカード、運転免許証など）"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "印鑑（認印可）"
-                    }
-                  ]
-                }
-              ]
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "section-方法-1769919363180",
-      "type": "Section",
-      "props": {
-        "heading": "耐震診断・耐震改修補助の手続き方法",
-        "content": [
-          {
-            "type": "list",
-            "ordered": true,
-            "items": [
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "必要書類を準備します。"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "窓口で申請書を記入します。"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "書類を提出し、確認を受けます。"
-                    }
-                  ]
-                }
-              ]
-            ]
           }
         ]
       }

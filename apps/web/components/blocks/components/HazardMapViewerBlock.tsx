@@ -91,6 +91,11 @@ export function HazardMapViewerBlock({ props }: HazardMapViewerProps) {
     return currentCategory?.educational_materials || [];
   }, [currentCategory]);
 
+  // ソースURL（カテゴリ優先、なければ全体）
+  const sourceUrl = useMemo(() => {
+    return currentCategory?.source_url || hazardMapData?.source_url;
+  }, [currentCategory, hazardMapData]);
+
   // ハザードマップデータを取得
   useEffect(() => {
     async function loadHazardMaps() {
@@ -413,14 +418,14 @@ export function HazardMapViewerBlock({ props }: HazardMapViewerProps) {
             </div>
           )}
 
-          {/* ソースリンク */}
-          {currentCategory?.source_url && (
-            <div className="text-sm text-solid-gray-500">
+          {/* ソースリンクボタン */}
+          {sourceUrl && (
+            <div className="flex justify-end">
               <a
-                href={currentCategory.source_url}
+                href={sourceUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:underline flex items-center gap-1"
+                className="inline-flex items-center gap-2 px-4 py-2 border border-solid-gray-200 rounded-lg text-sm text-solid-gray-700 bg-white hover:bg-solid-gray-50 transition-colors"
               >
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path
@@ -430,7 +435,7 @@ export function HazardMapViewerBlock({ props }: HazardMapViewerProps) {
                     d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
                   />
                 </svg>
-                公式サイトで詳細を確認
+                公式サイトのハザードマップを見る
               </a>
             </div>
           )}

@@ -1,0 +1,55 @@
+{
+  "kinkyu_hinanbasho_count": {
+    "value": "24",
+    "source": "web",
+    "sourceUrl": "https://www.town.hakone.kanagawa.jp/www/contents/1100000002286/index.html",
+    "confidence": 0.8,
+    "updatedAt": "2026-02-26T00:00:00.000Z",
+    "note": "NAVITIMEのデータから推定（要確認）。公式PDFに詳細が記載されている"
+  },
+  "shitei_hinanjo_count": {
+    "value": "28",
+    "source": "web",
+    "sourceUrl": "https://www.town.hakone.kanagawa.jp/www/contents/1100000002286/index.html",
+    "confidence": 0.8,
+    "updatedAt": "2026-02-26T00:00:00.000Z",
+    "note": "NAVITIMEのデータから推定（要確認）。公式PDFに詳細が記載されている"
+  },
+  "hinanjo_status_url": {
+    "value": "https://www.town.hakone.kanagawa.jp/www/contents/1100000001511/index.html",
+    "source": "web",
+    "sourceUrl": "https://www.town.hakone.kanagawa.jp/www/contents/1100000001511/index.html",
+    "confidence": 0.9,
+    "updatedAt": "2026-02-26T00:00:00.000Z",
+    "note": "町内の災害情報ページ。災害時には避難所開設状況が掲載される"
+  },
+  "bosai_department": {
+    "value": "総務部 総務防災課",
+    "source": "web",
+    "sourceUrl": "https://www.town.hakone.kanagawa.jp/www/contents/1100000002286/index.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "bosai_phone": {
+    "value": "0460-85-9561",
+    "source": "web",
+    "sourceUrl": "https://www.town.hakone.kanagawa.jp/www/contents/1100000001511/index.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "city_hall_hours": {
+    "value": "月曜日～金曜日 午前8時30分～午後5時15分（祝日・年末年始を除く）",
+    "source": "web",
+    "sourceUrl": "https://www.town.hakone.kanagawa.jp/",
+    "confidence": 0.9,
+    "updatedAt": "2026-02-26T00:00:00.000Z",
+    "note": "一般的な自治体の窓口時間から推定。要確認"
+  },
+  "city_hall_address": {
+    "value": "〒250-0398 神奈川県足柄下郡箱根町湯本256",
+    "source": "web",
+    "sourceUrl": "https://www.town.hakone.kanagawa.jp/",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  }
+}

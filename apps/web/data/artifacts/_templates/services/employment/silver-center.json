@@ -6,7 +6,7 @@
   "title": "シルバー人材センター",
   "description": "{{municipality_name}}シルバー人材センターの入会・仕事案内",
   "content_type": "guide",
-  "service_category": "business",
+  "service_category": "employment",
   "audience": [
     "residents"
   ],
@@ -196,11 +196,11 @@
             "href": "/koureisha"
           },
           {
-            "title": "ハローワーク",
-            "href": "/hello-work"
+            "title": "雇用保険・失業給付",
+            "href": "/unemployment-insurance"
           },
           {
-            "title": "年金",
+            "title": "国民年金",
             "href": "/nenkin"
           }
         ]

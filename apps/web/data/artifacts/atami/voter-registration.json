@@ -6,19 +6,19 @@
   "title": "選挙人名簿登録",
   "description": "選挙人名簿への登録、在外選挙人名簿、選挙権",
   "content_type": "guide",
-  "service_category": "community",
+  "service_category": "civic",
   "audience": [
     "residents"
   ],
   "topic": [],
   "source": {
     "source_url": "template://atami/services/civic/voter-registration",
-    "fetched_at": "2026-02-03T01:50:19.416Z",
+    "fetched_at": "2026-02-26T05:47:33.857Z",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "2026-02-03T01:50:19.416Z",
+    "generated_at": "2026-02-26T05:47:33.857Z",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -208,7 +208,7 @@
       "props": {
         "items": [
           {
-            "title": "選挙",
+            "title": "選挙・投票",
             "href": "/election"
           },
           {
@@ -218,103 +218,6 @@
           {
             "title": "住民票",
             "href": "/juminhyo"
-          }
-        ]
-      }
-    },
-    {
-      "id": "section-対象-1769919363157",
-      "type": "Section",
-      "props": {
-        "heading": "選挙人名簿登録の対象となる方",
-        "content": [
-          {
-            "type": "paragraph",
-            "runs": [
-              {
-                "text": "詳細は担当課にお問い合わせください。"
-              }
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "section-必要-1769919363157",
-      "type": "Section",
-      "props": {
-        "heading": "選挙人名簿登録に必要なもの",
-        "content": [
-          {
-            "type": "list",
-            "ordered": false,
-            "items": [
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "本人確認書類（マイナンバーカード、運転免許証など）"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "印鑑（認印可）"
-                    }
-                  ]
-                }
-              ]
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "section-方法-1769919363157",
-      "type": "Section",
-      "props": {
-        "heading": "選挙人名簿登録の手続き方法",
-        "content": [
-          {
-            "type": "list",
-            "ordered": true,
-            "items": [
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "必要書類を準備します。"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "窓口で申請書を記入します。"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "書類を提出し、確認を受けます。"
-                    }
-                  ]
-                }
-              ]
-            ]
           }
         ]
       }

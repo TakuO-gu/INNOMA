@@ -201,7 +201,7 @@
           },
           {
             "title": "引越し手続き一覧",
-            "href": "/moving-checklist"
+            "href": "/housing/moving-checklist"
           },
           {
             "title": "生活保護",
@@ -209,7 +209,7 @@
           },
           {
             "title": "転入届",
-            "href": "/tennyu"
+            "href": "/registration/tennyu"
           }
         ]
       }

@@ -7,16 +7,19 @@
   "description": "児童手当の申請手続き。必要書類と申請窓口をご案内します。オンライン申請も可能です。",
   "content_type": "service",
   "service_category": "children",
-  "audience": ["residents", "children_families"],
+  "audience": [
+    "residents",
+    "children_families"
+  ],
   "topic": [],
   "source": {
     "source_url": "template://higashiyoshino/jidou-teate-apply",
-    "fetched_at": "2026-02-03T01:50:19.636Z",
+    "fetched_at": "2026-02-26T05:47:34.359Z",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "2026-02-03T01:50:19.636Z",
+    "generated_at": "2026-02-26T05:47:34.359Z",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -25,10 +28,22 @@
       "type": "Breadcrumbs",
       "props": {
         "items": [
-          { "label": "ホーム", "href": "/" },
-          { "label": "子育て・出産", "href": "/childcare" },
-          { "label": "児童手当", "href": "/jidou-teate" },
-          { "label": "児童手当を申請する", "href": "/jidou-teate-apply" }
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "子育て・出産",
+            "href": "/childcare"
+          },
+          {
+            "label": "児童手当",
+            "href": "/jidou-teate"
+          },
+          {
+            "label": "児童手当を申請する",
+            "href": "/jidou-teate-apply"
+          }
         ]
       }
     },
@@ -56,7 +71,9 @@
           {
             "type": "paragraph",
             "runs": [
-              { "text": "申請が遅れると、受け取れない月が発生します。15日以内に申請すれば、出生・転入の翌月分から受け取れます。" }
+              {
+                "text": "申請が遅れると、受け取れない月が発生します。15日以内に申請すれば、出生・転入の翌月分から受け取れます。"
+              }
             ]
           }
         ]
@@ -73,9 +90,36 @@
             "type": "list",
             "ordered": false,
             "items": [
-              [{ "type": "paragraph", "runs": [{ "text": "お子さんが生まれた方" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "他の市区町村から転入した方" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "公務員でなくなった方" }] }]
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "お子さんが生まれた方"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "他の市区町村から転入した方"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "公務員でなくなった方"
+                    }
+                  ]
+                }
+              ]
             ]
           }
         ]
@@ -92,10 +136,46 @@
             "type": "list",
             "ordered": false,
             "items": [
-              [{ "type": "paragraph", "runs": [{ "text": "申請者（保護者）の本人確認書類（マイナンバーカード、運転免許証など）" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "申請者名義の口座がわかるもの（通帳またはキャッシュカード）" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "申請者と配偶者のマイナンバーがわかるもの" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "健康保険証（被保険者情報がわかるもの）" }] }]
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "申請者（保護者）の本人確認書類（マイナンバーカード、運転免許証など）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "申請者名義の口座がわかるもの（通帳またはキャッシュカード）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "申請者と配偶者のマイナンバーがわかるもの"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "健康保険証（被保険者情報がわかるもの）"
+                    }
+                  ]
+                }
+              ]
             ]
           }
         ]
@@ -110,7 +190,11 @@
         "content": [
           {
             "type": "paragraph",
-            "runs": [{ "text": "無料" }]
+            "runs": [
+              {
+                "text": "無料"
+              }
+            ]
           }
         ]
       }
@@ -157,7 +241,9 @@
           {
             "type": "paragraph",
             "runs": [
-              { "text": "マイナポータル（ぴったりサービス）でオンライン申請できます。マイナンバーカードとスマートフォン（またはICカードリーダー）が必要です。" }
+              {
+                "text": "マイナポータル（ぴったりサービス）でオンライン申請できます。マイナンバーカードとスマートフォン（またはICカードリーダー）が必要です。"
+              }
             ]
           }
         ]
@@ -172,7 +258,11 @@
         "content": [
           {
             "type": "paragraph",
-            "runs": [{ "text": "{{childcare_department}}（{{city_hall_location}}）で申請できます。" }]
+            "runs": [
+              {
+                "text": "{{childcare_department}}（{{city_hall_location}}）で申請できます。"
+              }
+            ]
           }
         ]
       }
@@ -192,8 +282,14 @@
       "type": "RelatedLinks",
       "props": {
         "items": [
-          { "title": "児童手当について詳しく見る", "href": "/jidou-teate" },
-          { "title": "受け取れるか確認する", "href": "/jidou-teate-check" }
+          {
+            "title": "児童手当について詳しく見る",
+            "href": "/jidou-teate"
+          },
+          {
+            "title": "受け取れるか確認する",
+            "href": "/jidou-teate-check"
+          }
         ]
       }
     },
@@ -207,7 +303,15 @@
   ],
   "search": {
     "summary": "児童手当の申請手続き。出生・転入から15日以内に申請。口座情報、マイナンバー、本人確認書類が必要。手数料無料。オンライン申請可能。",
-    "keywords": ["児童手当", "申請", "手続き", "必要書類", "出生届", "転入届", "オンライン申請"],
+    "keywords": [
+      "児童手当",
+      "申請",
+      "手続き",
+      "必要書類",
+      "出生届",
+      "転入届",
+      "オンライン申請"
+    ],
     "plain_text": "児童手当を申請する。高校生年代までのお子さんを養育している方が対象。出生・転入から15日以内に申請。口座情報、マイナンバー、本人確認書類が必要。手数料無料。マイナポータルでオンライン申請可能。"
   }
 }

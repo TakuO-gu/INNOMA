@@ -37,7 +37,7 @@
           },
           {
             "label": "納税方法",
-            "href": "/nouzei"
+            "href": "/tax/nouzei"
           }
         ]
       }
@@ -339,19 +339,19 @@
         "items": [
           {
             "title": "住民税",
-            "href": "/juminzei"
+            "href": "/tax/juminzei"
           },
           {
             "title": "固定資産税",
-            "href": "/kotei"
+            "href": "/tax/kotei"
           },
           {
             "title": "軽自動車税",
-            "href": "/keijidosha"
+            "href": "/tax/keijidosha"
           },
           {
             "title": "税証明書",
-            "href": "/zeishoumei"
+            "href": "/tax/zeishoumei"
           }
         ]
       }

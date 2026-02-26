@@ -1,0 +1,60 @@
+{
+  "kinkyu_hinanbasho_count": {
+    "value": "6",
+    "source": "web",
+    "sourceUrl": "https://www.city.atami.lg.jp/kurashi/bousai/1011957/1004719.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-25T12:36:00.000Z"
+  },
+  "shitei_hinanjo_count": {
+    "value": "11",
+    "source": "web",
+    "sourceUrl": "https://www.city.atami.lg.jp/kurashi/bousai/1011957/1004719.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-25T12:36:00.000Z"
+  },
+  "hinanjo_status_url": {
+    "value": "https://www.city.atami.lg.jp/kurashi/bousai/index.html",
+    "source": "web",
+    "sourceUrl": "https://www.city.atami.lg.jp/kurashi/bousai/index.html",
+    "confidence": 0.7,
+    "updatedAt": "2026-02-25T12:36:00.000Z",
+    "note": "専用の開設状況確認ページは見つかりませんでした。災害時は防災・安全トップページで告知される形式と思われます。"
+  },
+  "bosai_department": {
+    "value": "危機管理課",
+    "source": "web",
+    "sourceUrl": "https://www.city.atami.lg.jp/shisei/soshiki/1001545/1001578/1001579.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-25T12:36:00.000Z"
+  },
+  "bosai_phone": {
+    "value": "0557-86-6443",
+    "source": "web",
+    "sourceUrl": "https://www.city.atami.lg.jp/shisei/soshiki/1001545/1001578/1001579.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-25T12:36:00.000Z"
+  },
+  "bosai_email": {
+    "value": "kikikanri@city.atami.lg.jp",
+    "source": "web",
+    "sourceUrl": "https://www.city.atami.lg.jp/shisei/soshiki/1001545/1001578/1001579.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-25T12:36:00.000Z"
+  },
+  "city_hall_hours": {
+    "value": "月曜日から金曜日：午前8時30分～午後5時15分（祝日・年末年始を除く）",
+    "source": "web",
+    "sourceUrl": "https://www.city.atami.lg.jp/shisei/soshiki/1001632/1001547.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-25T12:36:00.000Z"
+  },
+  "city_hall_address": {
+    "value": "〒413-8550 静岡県熱海市中央町1-1",
+    "source": "web",
+    "sourceUrl": "https://www.city.atami.lg.jp/shisetsu/shiyakusho/1001957.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-25T12:36:00.000Z",
+    "note": "core.jsonにも同じ値が存在します。"
+  }
+}

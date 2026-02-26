@@ -6,19 +6,19 @@
   "title": "高齢者運転支援",
   "description": "運転免許証自主返納、高齢者講習、安全運転相談",
   "content_type": "guide",
-  "service_category": "government",
+  "service_category": "driving",
   "audience": [
     "residents"
   ],
   "topic": [],
   "source": {
-    "source_url": "template://sample/services/driving/senior-driving",
-    "fetched_at": "{{generated_at}}",
+    "source_url": "template://tsuru/services/driving/senior-driving",
+    "fetched_at": "2026-02-26T05:47:36.999Z",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "{{generated_at}}",
+    "generated_at": "2026-02-26T05:47:36.999Z",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -103,7 +103,7 @@
             "type": "paragraph",
             "runs": [
               {
-                "text": "{{municipality_name}}では、自主返納された方に以下の支援を行っています。"
+                "text": "都留市では、自主返納された方に以下の支援を行っています。"
               }
             ]
           },
@@ -146,113 +146,12 @@
             "href": "/license"
           },
           {
-            "title": "交通安全",
-            "href": "/traffic-safety"
-          },
-          {
             "title": "高齢者福祉",
             "href": "/koureisha"
           },
           {
             "title": "地域包括支援センター",
             "href": "/houkatsu"
-          }
-        ]
-      }
-    },
-    {
-      "id": "section-対象-1769919363164",
-      "type": "Section",
-      "props": {
-        "heading": "高齢者運転支援の対象となる方",
-        "content": [
-          {
-            "type": "paragraph",
-            "runs": [
-              {
-                "text": "詳細は担当課にお問い合わせください。"
-              }
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "section-必要-1769919363164",
-      "type": "Section",
-      "props": {
-        "heading": "高齢者運転支援に必要なもの",
-        "content": [
-          {
-            "type": "list",
-            "ordered": false,
-            "items": [
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "本人確認書類（マイナンバーカード、運転免許証など）"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "印鑑（認印可）"
-                    }
-                  ]
-                }
-              ]
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "section-方法-1769919363164",
-      "type": "Section",
-      "props": {
-        "heading": "高齢者運転支援の手続き方法",
-        "content": [
-          {
-            "type": "list",
-            "ordered": true,
-            "items": [
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "必要書類を準備します。"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "窓口で申請書を記入します。"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "書類を提出し、確認を受けます。"
-                    }
-                  ]
-                }
-              ]
-            ]
           }
         ]
       }

@@ -37,7 +37,7 @@
           },
           {
             "label": "マイナンバーカード",
-            "href": "/mynumber"
+            "href": "/registration/mynumber"
           }
         ]
       }
@@ -400,23 +400,23 @@
         "items": [
           {
             "title": "住民票",
-            "href": "/juminhyo"
+            "href": "/registration/juminhyo"
           },
           {
             "title": "印鑑登録",
-            "href": "/inkan"
+            "href": "/registration/inkan"
           },
           {
             "title": "転入届",
-            "href": "/tennyu"
+            "href": "/registration/tennyu"
           },
           {
             "title": "国民健康保険",
-            "href": "/kokuho"
+            "href": "/health/kokuho"
           },
           {
             "title": "住民税",
-            "href": "/juminzei"
+            "href": "/tax/juminzei"
           },
           {
             "title": "年金",

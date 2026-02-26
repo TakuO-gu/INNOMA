@@ -413,6 +413,23 @@
       }
     },
     {
+      "id": "related-links-tetsuzuki",
+      "type": "RelatedLinks",
+      "props": {
+        "heading": "障害者福祉の手続き",
+        "items": [
+          {
+            "title": "障害者手帳を申請する",
+            "href": "/shogai-apply"
+          },
+          {
+            "title": "障害者手帳の対象か確認する",
+            "href": "/shogai-check"
+          }
+        ]
+      }
+    },
+    {
       "id": "related-links-1",
       "type": "RelatedLinks",
       "props": {
@@ -428,10 +445,6 @@
           {
             "title": "国民健康保険",
             "href": "/kokuho"
-          },
-          {
-            "title": "障害者雇用",
-            "href": "/disability-employment"
           },
           {
             "title": "年金",

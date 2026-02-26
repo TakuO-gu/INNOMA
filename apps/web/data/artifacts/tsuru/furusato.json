@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0.0",
-  "page_id": "takaoka-services-tax-furusato",
-  "municipality_id": "takaoka",
+  "page_id": "tsuru-services-tax-furusato",
+  "municipality_id": "tsuru",
   "path": "/furusato",
   "title": "ふるさと納税",
   "description": "ふるさと納税の仕組み、ワンストップ特例制度、寄附金控除の申請方法について",
@@ -12,13 +12,13 @@
   ],
   "topic": [],
   "source": {
-    "source_url": "template://sample/services/tax/furusato",
-    "fetched_at": "{{generated_at}}",
+    "source_url": "template://tsuru/services/tax/furusato",
+    "fetched_at": "2026-02-26T05:47:37.058Z",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "{{generated_at}}",
+    "generated_at": "2026-02-26T05:47:37.058Z",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -101,7 +101,7 @@
             "type": "paragraph",
             "runs": [
               {
-                "text": "総務省のふるさと納税ポータルサイトや各ふるさと納税サイトで、上限額のシミュレーションができます。"
+                "text": "総務省のふるさと納税ポータルサイトや各ふるさと納税サイトで、上限額のシミュレーションができます。詳しくは総務省「ふるさと納税ポータルサイト」をご確認ください。"
               }
             ]
           }
@@ -157,30 +157,76 @@
                 "text": "確定申告が不要な給与所得者の方は、ワンストップ特例制度を利用すると、確定申告なしで寄附金控除を受けられます。"
               }
             ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "step-onestop",
-      "type": "StepNavigation",
-      "props": {
-        "steps": [
-          {
-            "title": "寄附をする",
-            "body": "ふるさと納税ポータルサイト等から寄附を行い、ワンストップ特例申請を希望する"
           },
           {
-            "title": "申請書を受け取る",
-            "body": "寄附先自治体から「寄附金税額控除に係る申告特例申請書」が届く"
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "ワンストップ特例の流れは次のとおりです。"
+              }
+            ]
           },
           {
-            "title": "申請書を提出",
-            "body": "必要事項を記入し、本人確認書類のコピーを添えて寄附先自治体へ提出"
-          },
-          {
-            "title": "住民税から控除",
-            "body": "翌年度の住民税から寄附金控除が適用される（6月以降）"
+            "type": "list",
+            "ordered": true,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "寄附をする",
+                      "bold": true
+                    },
+                    {
+                      "text": "：ふるさと納税ポータルサイト等から寄附を行い、ワンストップ特例申請を希望する"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "申請書を受け取る",
+                      "bold": true
+                    },
+                    {
+                      "text": "：寄附先自治体から「寄附金税額控除に係る申告特例申請書」が届く"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "申請書を提出",
+                      "bold": true
+                    },
+                    {
+                      "text": "：必要事項を記入し、本人確認書類のコピーを添えて寄附先自治体へ提出"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "住民税から控除",
+                      "bold": true
+                    },
+                    {
+                      "text": "：翌年度の住民税から寄附金控除が適用される（6月以降）"
+                    }
+                  ]
+                }
+              ]
+            ]
           }
         ]
       }
@@ -307,20 +353,11 @@
             "type": "paragraph",
             "runs": [
               {
-                "text": "{{municipality_name}}へのふるさと納税は、以下のサイトから受け付けています。"
+                "text": "都留市へのふるさと納税は、以下のサイトから受け付けています。"
               }
             ]
           }
         ]
-      }
-    },
-    {
-      "id": "btn-furusato",
-      "type": "TaskButton",
-      "props": {
-        "label": "ふるさと納税の申込みはこちら",
-        "href": "{{furusato_portal_url}}",
-        "isTopTask": true
       }
     },
     {
@@ -379,6 +416,19 @@
       }
     },
     {
+      "id": "related-links-tetsuzuki",
+      "type": "RelatedLinks",
+      "props": {
+        "heading": "ふるさと納税の手続き",
+        "items": [
+          {
+            "title": "ふるさと納税を申し込む",
+            "href": "/furusato-apply"
+          }
+        ]
+      }
+    },
+    {
       "id": "related-links-1",
       "type": "RelatedLinks",
       "props": {
@@ -394,103 +444,6 @@
           {
             "title": "税証明書",
             "href": "/zeishoumei"
-          }
-        ]
-      }
-    },
-    {
-      "id": "section-対象-1769919363213",
-      "type": "Section",
-      "props": {
-        "heading": "ふるさと納税の対象となる方",
-        "content": [
-          {
-            "type": "paragraph",
-            "runs": [
-              {
-                "text": "詳細は担当課にお問い合わせください。"
-              }
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "section-必要-1769919363213",
-      "type": "Section",
-      "props": {
-        "heading": "ふるさと納税に必要なもの",
-        "content": [
-          {
-            "type": "list",
-            "ordered": false,
-            "items": [
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "本人確認書類（マイナンバーカード、運転免許証など）"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "印鑑（認印可）"
-                    }
-                  ]
-                }
-              ]
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "section-方法-1769919363213",
-      "type": "Section",
-      "props": {
-        "heading": "ふるさと納税の手続き方法",
-        "content": [
-          {
-            "type": "list",
-            "ordered": true,
-            "items": [
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "必要書類を準備します。"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "窓口で申請書を記入します。"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "書類を提出し、確認を受けます。"
-                    }
-                  ]
-                }
-              ]
-            ]
           }
         ]
       }

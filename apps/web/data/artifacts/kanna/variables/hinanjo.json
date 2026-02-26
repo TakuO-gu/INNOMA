@@ -1,0 +1,63 @@
+{
+  "kinkyu_hinanbasho_count": {
+    "value": "15",
+    "source": "web",
+    "sourceUrl": "https://www.town.kanna.gunma.jp/soshiki/somuka_gikaijimukyoku/3/4/1062.html",
+    "confidence": 0.8,
+    "updatedAt": "2026-02-26T00:00:00.000Z",
+    "note": "指定避難所13施設と予備避難所2施設の合計15施設。指定緊急避難場所と指定避難所の明確な区別が公式サイトに記載されていないため、同数としています。"
+  },
+  "shitei_hinanjo_count": {
+    "value": "13",
+    "source": "web",
+    "sourceUrl": "https://www.town.kanna.gunma.jp/soshiki/somuka_gikaijimukyoku/3/4/1062.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "fukushi_hinanjo_count": {
+    "value": "2",
+    "source": "web",
+    "sourceUrl": "https://www.town.kanna.gunma.jp/soshiki/somuka_gikaijimukyoku/3/4/1062.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z",
+    "note": "保健福祉センターと健康づくり支援センターの2施設"
+  },
+  "hinanjo_status_url": {
+    "value": "https://www.town.kanna.gunma.jp/soshiki/somuka_gikaijimukyoku/3/4/1062.html",
+    "source": "web",
+    "sourceUrl": "https://www.town.kanna.gunma.jp/soshiki/somuka_gikaijimukyoku/3/4/1062.html",
+    "confidence": 0.7,
+    "updatedAt": "2026-02-26T00:00:00.000Z",
+    "note": "専用の開設状況確認ページは見つかりませんでした。災害時は避難所一覧ページで告知される形式と思われます。"
+  },
+  "bosai_department": {
+    "value": "総務課消防交通係",
+    "source": "web",
+    "sourceUrl": "https://www.town.kanna.gunma.jp/soshiki/somuka_gikaijimukyoku/3/4/1062.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "bosai_phone": {
+    "value": "0274-57-2111",
+    "source": "web",
+    "sourceUrl": "https://www.town.kanna.gunma.jp/soshiki/somuka_gikaijimukyoku/8/1/108.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "city_hall_hours": {
+    "value": "月曜日から金曜日：午前8時30分～午後5時15分（祝日・休日、年末年始を除く）",
+    "source": "web",
+    "sourceUrl": "https://www.furusato-tax.jp/city/info/10367",
+    "confidence": 0.8,
+    "updatedAt": "2026-02-26T00:00:00.000Z",
+    "note": "公式サイトに明記されていないため、一般的な役場窓口時間を記載しています。"
+  },
+  "city_hall_address": {
+    "value": "〒370-1592 群馬県多野郡神流町万場90番地6",
+    "source": "web",
+    "sourceUrl": "https://www.town.kanna.gunma.jp/soshiki/somuka_gikaijimukyoku/8/1/108.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z",
+    "note": "core.jsonにも同じ値が存在します。"
+  }
+}

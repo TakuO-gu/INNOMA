@@ -2,11 +2,13 @@
 /**
  * テンプレートから各自治体にコンテンツをコピーするスクリプト
  *
- * Usage: node scripts/copy-templates-to-municipalities.mjs [municipality-id]
+ * Usage: node scripts/copy-templates-to-municipalities.mjs [--force] [municipality-id]
  *
  * Examples:
- *   node scripts/copy-templates-to-municipalities.mjs        # 全自治体
- *   node scripts/copy-templates-to-municipalities.mjs atami  # 熱海市のみ
+ *   node scripts/copy-templates-to-municipalities.mjs               # 全自治体（新規のみ）
+ *   node scripts/copy-templates-to-municipalities.mjs atami         # 熱海市のみ（新規のみ）
+ *   node scripts/copy-templates-to-municipalities.mjs --force       # 全自治体（上書き）
+ *   node scripts/copy-templates-to-municipalities.mjs --force atami # 熱海市のみ（上書き）
  */
 
 import fs from 'fs';
@@ -41,6 +43,8 @@ const MUNICIPALITIES = {
   utashinai: '歌志内市',
   yoshimi: '吉見町',
   yoshino: '吉野町',
+  tsuru: '都留市',
+  takaoka: '高岡市',
 };
 
 // テンプレートファイルから出力ファイル名へのマッピング
@@ -91,23 +95,27 @@ function getTemplateFiles() {
 }
 
 // 自治体にテンプレートをコピー
-function copyTemplatesToMunicipality(municipalityId, municipalityName) {
+function copyTemplatesToMunicipality(municipalityId, municipalityName, force = false) {
   const outputDir = path.join(ARTIFACTS_DIR, municipalityId);
   const templateFiles = getTemplateFiles();
 
-  console.log(`\n📁 ${municipalityName} (${municipalityId}) にコピー中...`);
+  console.log(`\n📁 ${municipalityName} (${municipalityId}) にコピー中...${force ? '（上書きモード）' : ''}`);
 
   let copied = 0;
   let skipped = 0;
+  let overwritten = 0;
 
   for (const templatePath of templateFiles) {
     const outputFileName = getOutputFileName(templatePath);
     const outputPath = path.join(outputDir, outputFileName);
 
-    // 既存ファイルがある場合はスキップ
+    // 既存ファイルがある場合
     if (fs.existsSync(outputPath)) {
-      skipped++;
-      continue;
+      if (!force) {
+        skipped++;
+        continue;
+      }
+      overwritten++;
     }
 
     const templateContent = fs.readFileSync(templatePath, 'utf-8');
@@ -117,15 +125,20 @@ function copyTemplatesToMunicipality(municipalityId, municipalityName) {
     copied++;
   }
 
-  console.log(`  ✅ ${copied} ファイルをコピー, ${skipped} ファイルをスキップ`);
-  return { copied, skipped };
+  const parts = [`${copied} ファイルをコピー`];
+  if (overwritten > 0) parts.push(`${overwritten} ファイルを上書き`);
+  if (skipped > 0) parts.push(`${skipped} ファイルをスキップ`);
+  console.log(`  ✅ ${parts.join(', ')}`);
+  return { copied, skipped, overwritten };
 }
 
 // メイン処理
 function main() {
-  const targetMunicipality = process.argv[2];
+  const args = process.argv.slice(2);
+  const force = args.includes('--force');
+  const targetMunicipality = args.find(a => a !== '--force');
 
-  let total = { copied: 0, skipped: 0 };
+  let total = { copied: 0, skipped: 0, overwritten: 0 };
 
   if (targetMunicipality) {
     // 特定の自治体のみ
@@ -134,21 +147,26 @@ function main() {
       console.log('有効な自治体ID:', Object.keys(MUNICIPALITIES).join(', '));
       process.exit(1);
     }
-    const result = copyTemplatesToMunicipality(targetMunicipality, MUNICIPALITIES[targetMunicipality]);
+    const result = copyTemplatesToMunicipality(targetMunicipality, MUNICIPALITIES[targetMunicipality], force);
     total.copied += result.copied;
     total.skipped += result.skipped;
+    total.overwritten += result.overwritten;
   } else {
     // 全自治体
-    console.log('🚀 全自治体にテンプレートをコピーします...\n');
+    console.log(`🚀 全自治体にテンプレートをコピーします...${force ? '（上書きモード）' : ''}\n`);
 
     for (const [id, name] of Object.entries(MUNICIPALITIES)) {
-      const result = copyTemplatesToMunicipality(id, name);
+      const result = copyTemplatesToMunicipality(id, name, force);
       total.copied += result.copied;
       total.skipped += result.skipped;
+      total.overwritten += result.overwritten;
     }
   }
 
-  console.log(`\n📊 完了: ${total.copied} ファイルをコピー, ${total.skipped} ファイルをスキップ`);
+  const parts = [`${total.copied} ファイルをコピー`];
+  if (total.overwritten > 0) parts.push(`${total.overwritten} ファイルを上書き`);
+  if (total.skipped > 0) parts.push(`${total.skipped} ファイルをスキップ`);
+  console.log(`\n📊 完了: ${parts.join(', ')}`);
 }
 
 main();

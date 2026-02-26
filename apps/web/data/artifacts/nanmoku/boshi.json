@@ -5,7 +5,7 @@
   "path": "/boshi",
   "title": "母子保健",
   "description": "妊娠届から乳幼児健診まで、母子の健康を支える制度の案内",
-  "content_type": "directory",
+  "content_type": "guide",
   "service_category": "children",
   "audience": [
     "residents",
@@ -14,12 +14,12 @@
   "topic": [],
   "source": {
     "source_url": "template://nanmoku/services/childcare/boshi",
-    "fetched_at": "2026-02-03T01:50:20.105Z",
+    "fetched_at": "2026-02-26T05:47:35.612Z",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "2026-02-03T01:50:20.105Z",
+    "generated_at": "2026-02-26T05:47:35.612Z",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -124,7 +124,7 @@
                   "type": "paragraph",
                   "runs": [
                     {
-                      "text": "助成回数：14回"
+                      "text": "助成回数：{{ninpu_kenshin_kaisu}}"
                     }
                   ]
                 }
@@ -177,7 +177,7 @@
                   "type": "paragraph",
                   "runs": [
                     {
-                      "text": "出産応援給付金：5万円（妊娠届出時の面談後）"
+                      "text": "出産応援給付金：{{shussan_ouen_kyufukin}}（妊娠届出時の面談後）"
                     }
                   ]
                 }
@@ -187,7 +187,7 @@
                   "type": "paragraph",
                   "runs": [
                     {
-                      "text": "子育て応援給付金：5万円（出生届出後の面談後）"
+                      "text": "子育て応援給付金：{{kosodate_ouen_kyufukin}}（出生届出後の面談後）"
                     }
                   ]
                 }
@@ -378,15 +378,6 @@
       }
     },
     {
-      "id": "task-button-1",
-      "type": "TaskButton",
-      "props": {
-        "label": "予防接種スケジュールを見る",
-        "href": "/yobosesshu",
-        "isTopTask": false
-      }
-    },
-    {
       "id": "section-wxa6kslmp",
       "type": "Section",
       "props": {
@@ -554,103 +545,6 @@
           {
             "title": "健康診断・検診",
             "href": "/kenshin"
-          }
-        ]
-      }
-    },
-    {
-      "id": "section-対象-1769919363148",
-      "type": "Section",
-      "props": {
-        "heading": "母子保健の対象となる方",
-        "content": [
-          {
-            "type": "paragraph",
-            "runs": [
-              {
-                "text": "詳細は担当課にお問い合わせください。"
-              }
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "section-必要-1769919363148",
-      "type": "Section",
-      "props": {
-        "heading": "母子保健に必要なもの",
-        "content": [
-          {
-            "type": "list",
-            "ordered": false,
-            "items": [
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "本人確認書類（マイナンバーカード、運転免許証など）"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "印鑑（認印可）"
-                    }
-                  ]
-                }
-              ]
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "section-方法-1769919363149",
-      "type": "Section",
-      "props": {
-        "heading": "母子保健の手続き方法",
-        "content": [
-          {
-            "type": "list",
-            "ordered": true,
-            "items": [
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "必要書類を準備します。"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "窓口で申請書を記入します。"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "書類を提出し、確認を受けます。"
-                    }
-                  ]
-                }
-              ]
-            ]
           }
         ]
       }

@@ -15,12 +15,12 @@
   ],
   "source": {
     "source_url": "template://utashinai/disaster",
-    "fetched_at": "2026-02-03T01:50:20.559Z",
+    "fetched_at": "2026-02-26T05:47:36.792Z",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "2026-02-03T01:50:20.559Z",
+    "generated_at": "2026-02-26T05:47:36.792Z",
     "schema_version": "2.0.0"
   },
   "blocks": [

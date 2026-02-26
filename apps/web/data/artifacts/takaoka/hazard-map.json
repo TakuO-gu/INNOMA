@@ -12,13 +12,13 @@
   ],
   "topic": [],
   "source": {
-    "source_url": "https://www.city.takaoka.toyama.jp/soshiki/gesuidokomuka/2/1/2/3/4661.html",
-    "fetched_at": "2026-01-31T00:00:00.000Z",
-    "content_hash": "updated"
+    "source_url": "template://takaoka/services/disaster/hazard-map",
+    "fetched_at": "2026-02-26T05:47:37.167Z",
+    "content_hash": "template"
   },
   "pipeline": {
-    "run_id": "manual-update-001",
-    "generated_at": "2026-01-31T00:00:00.000Z",
+    "run_id": "template-001",
+    "generated_at": "2026-02-26T05:47:37.167Z",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -57,13 +57,6 @@
       }
     },
     {
-      "id": "richtext-intro",
-      "type": "RichText",
-      "props": {
-        "content": []
-      }
-    },
-    {
       "id": "richtext-intro-notification-0",
       "type": "NotificationBanner",
       "props": {
@@ -82,20 +75,17 @@
       }
     },
     {
-      "id": "section-flood",
+      "id": "section-l3aq8689q",
       "type": "Section",
       "props": {
-        "heading": "水害ハザードマップ",
+        "heading": "洪水ハザードマップ",
         "level": 2,
         "content": [
           {
             "type": "paragraph",
             "runs": [
               {
-                "text": "想定最大規模降雨（約1,000年に一度）に対応した「洪水ハザードマップ」と「内水ハザードマップ」を重ね合わせた「水害ハザードマップ」です。"
-              },
-              {
-                "text": "河川が氾濫した場合の浸水想定区域と浸水深を示しています。"
+                "text": "河川が氾濫した場合の浸水想定区域と浸水深を示しています。想定される最大規模の降雨（{{kozui_soutei_uryou}}）による浸水を想定しています。"
               }
             ]
           }
@@ -127,17 +117,7 @@
       }
     },
     {
-      "id": "hazard-map-viewer-flood",
-      "type": "HazardMapViewer",
-      "props": {
-        "mapType": "flood",
-        "label": "お住まいの地区を選択して水害ハザードマップを確認",
-        "helpText": "地区を選択すると、水害ハザードマップと内水浸水想定区域図のPDFをダウンロード・表示できます。",
-        "showEducationalMaterials": true
-      }
-    },
-    {
-      "id": "section-dosha",
+      "id": "section-mmtinpl1q",
       "type": "Section",
       "props": {
         "heading": "土砂災害ハザードマップ",
@@ -155,7 +135,7 @@
       }
     },
     {
-      "id": "section-dosha-desclist",
+      "id": "section-mmtinpl1q-desclist",
       "type": "DescriptionList",
       "props": {
         "items": [
@@ -175,16 +155,7 @@
       }
     },
     {
-      "id": "task-button-dosha",
-      "type": "TaskButton",
-      "props": {
-        "label": "土砂災害ハザードマップを見る",
-        "href": "https://www.city.takaoka.toyama.jp/gyosei/kurashi_tetsuzuki/anzen_anshin/8/1/5556.html",
-        "isTopTask": false
-      }
-    },
-    {
-      "id": "section-jishin",
+      "id": "section-iezsv0n1b",
       "type": "Section",
       "props": {
         "heading": "地震ハザードマップ",
@@ -202,7 +173,7 @@
       }
     },
     {
-      "id": "section-jishin-desclist",
+      "id": "section-iezsv0n1b-desclist",
       "type": "DescriptionList",
       "props": {
         "items": [
@@ -222,64 +193,93 @@
       }
     },
     {
-      "id": "task-button-jishin",
-      "type": "TaskButton",
-      "props": {
-        "label": "地震ハザードマップを見る",
-        "href": "https://www.city.takaoka.toyama.jp/gyosei/kurashi_tetsuzuki/anzen_anshin/8/1/5557.html",
-        "isTopTask": false
-      }
-    },
-    {
-      "id": "section-tsunami",
+      "id": "section-7exyezh01",
       "type": "Section",
       "props": {
-        "heading": "津波ハザードマップ",
+        "heading": "ハザードマップの活用方法",
         "level": 2,
         "content": [
           {
-            "type": "paragraph",
-            "runs": [
-              {
-                "text": "最大クラスの津波を想定した浸水範囲、最大浸水深、浸水開始時間を示しています。"
-              }
+            "type": "list",
+            "ordered": true,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "自宅の位置を確認",
+                      "bold": true
+                    },
+                    {
+                      "text": "：自宅がどの危険区域にあるか確認しましょう"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "避難場所を確認",
+                      "bold": true
+                    },
+                    {
+                      "text": "：最寄りの避難場所と経路を確認しましょう"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "避難経路の安全確認",
+                      "bold": true
+                    },
+                    {
+                      "text": "：避難経路上に危険な箇所がないか確認しましょう"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "家族で共有",
+                      "bold": true
+                    },
+                    {
+                      "text": "：避難場所や連絡方法を家族で話し合いましょう"
+                    }
+                  ]
+                }
+              ]
             ]
           }
         ]
       }
     },
     {
-      "id": "task-button-tsunami",
-      "type": "TaskButton",
+      "id": "section-zilntroxh",
+      "type": "Section",
       "props": {
-        "label": "津波ハザードマップを見る",
-        "href": "https://www.city.takaoka.toyama.jp/gyosei/kurashi_tetsuzuki/anzen_anshin/8/1/5608.html",
-        "isTopTask": false
-      }
-    },
-    {
-      "id": "section-usage-step",
-      "type": "StepNavigation",
-      "props": {
-        "steps": [
+        "heading": "ハザードマップの配布",
+        "level": 2,
+        "content": [
           {
-            "title": "ステップ1",
-            "body": "自宅の位置を確認：自宅がどの危険区域にあるか確認しましょう"
-          },
-          {
-            "title": "ステップ2",
-            "body": "避難場所を確認：最寄りの避難場所と経路を確認しましょう"
-          },
-          {
-            "title": "ステップ3",
-            "body": "避難経路の安全確認：避難経路上に危険な箇所がないか確認しましょう"
-          },
-          {
-            "title": "ステップ4",
-            "body": "家族で共有：避難場所や連絡方法を家族で話し合いましょう"
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "紙のハザードマップは、{{hazard_map_haifu_basho}}で配布しています。"
+              }
+            ]
           }
-        ],
-        "heading": "ハザードマップの活用方法"
+        ]
       }
     },
     {
@@ -296,14 +296,12 @@
             "href": "/bosai-mail"
           },
           {
-            "title": "重ねるハザードマップ（国土交通省）",
-            "href": "https://disaportal.gsi.go.jp/",
-            "external": true
+            "title": "非常持出品",
+            "href": "/mochidashi"
           },
           {
-            "title": "デジマップ＠たかおか（地図情報システム）",
-            "href": "https://www.city.takaoka.toyama.jp/johoseisaku/dmap/dmap.html",
-            "external": true
+            "title": "重ねるハザードマップ（国土交通省）",
+            "href": "https://disaportal.gsi.go.jp/"
           }
         ]
       }
@@ -312,11 +310,11 @@
       "id": "contact-1",
       "type": "Contact",
       "props": {
-        "department": "危機管理課",
-        "phone": "0766-20-1229",
-        "email": "kikikanri@city.takaoka.lg.jp",
-        "hours": "平日8:30〜17:15",
-        "address": "〒933-8601 富山県高岡市広小路7-50"
+        "department": "{{bosai_department}}",
+        "phone": "{{bosai_phone}}",
+        "email": "{{bosai_email}}",
+        "hours": "{{city_hall_hours}}",
+        "address": "{{city_hall_address}}"
       }
     },
     {
@@ -328,20 +326,17 @@
     }
   ],
   "search": {
-    "summary": "ハザードマップの案内。水害、土砂災害、地震、津波のハザードマップと活用方法について。地区別PDFダウンロード可能。",
+    "summary": "ハザードマップの案内。洪水、土砂災害、地震のハザードマップと活用方法について。",
     "keywords": [
       "ハザードマップ",
       "洪水",
       "浸水",
-      "水害",
-      "内水",
       "土砂災害",
       "地震",
-      "津波",
       "液状化",
       "避難",
       "防災"
     ],
-    "plain_text": "ハザードマップ。水害ハザードマップは河川氾濫時の浸水想定区域を表示。地区別にPDFをダウンロード可能。土砂災害ハザードマップは警戒区域を表示。地震ハザードマップは揺れやすさ、液状化危険度を表示。津波ハザードマップは浸水範囲を表示。避難場所・避難経路の確認に活用を。"
+    "plain_text": "ハザードマップ。洪水ハザードマップは河川氾濫時の浸水想定区域を表示。土砂災害ハザードマップは警戒区域を表示。地震ハザードマップは揺れやすさ、液状化危険度を表示。避難場所・避難経路の確認に活用を。"
   }
 }

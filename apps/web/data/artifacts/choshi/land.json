@@ -14,12 +14,12 @@
   "topic": [],
   "source": {
     "source_url": "template://choshi/topics/land",
-    "fetched_at": "2026-02-03T01:50:19.508Z",
+    "fetched_at": "2026-02-26T05:47:34.057Z",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "2026-02-03T01:50:19.508Z",
+    "generated_at": "2026-02-26T05:47:34.057Z",
     "schema_version": "2.0.0"
   },
   "blocks": [

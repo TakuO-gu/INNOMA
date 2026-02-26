@@ -13,12 +13,12 @@
   "topic": [],
   "source": {
     "source_url": "template://nosegawa/services/health/kenshin",
-    "fetched_at": "2026-02-03T01:50:20.198Z",
+    "fetched_at": "2026-02-26T05:47:35.979Z",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "2026-02-03T01:50:20.198Z",
+    "generated_at": "2026-02-26T05:47:35.979Z",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -274,35 +274,14 @@
       }
     },
     {
-      "id": "step-nav-1",
-      "type": "StepNavigation",
+      "id": "related-links-kenshin-procedures",
+      "type": "RelatedLinks",
       "props": {
-        "currentStep": 0,
-        "steps": [
+        "heading": "健康診査・がん検診の手続き",
+        "items": [
           {
-            "title": "受診券の確認",
-            "body": "対象の方には受診券をお送りします。届いていない方はお問い合わせください。",
-            "documents": [
-              "受診券"
-            ]
-          },
-          {
-            "title": "医療機関の予約",
-            "body": "指定医療機関に直接予約してください。",
-            "documents": []
-          },
-          {
-            "title": "受診",
-            "body": "受診券と保険証を持参して受診してください。",
-            "documents": [
-              "受診券",
-              "保険証"
-            ]
-          },
-          {
-            "title": "結果通知",
-            "body": "約2〜3週間後に結果をお知らせします。",
-            "documents": []
+            "title": "健康診査・がん検診を予約する",
+            "href": "/kenshin-apply"
           }
         ]
       }
@@ -331,103 +310,6 @@
           {
             "title": "母子保健",
             "href": "/boshi"
-          }
-        ]
-      }
-    },
-    {
-      "id": "section-対象-1769919363173",
-      "type": "Section",
-      "props": {
-        "heading": "健康診査・がん検診の対象となる方",
-        "content": [
-          {
-            "type": "paragraph",
-            "runs": [
-              {
-                "text": "詳細は担当課にお問い合わせください。"
-              }
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "section-必要-1769919363173",
-      "type": "Section",
-      "props": {
-        "heading": "健康診査・がん検診に必要なもの",
-        "content": [
-          {
-            "type": "list",
-            "ordered": false,
-            "items": [
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "本人確認書類（マイナンバーカード、運転免許証など）"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "印鑑（認印可）"
-                    }
-                  ]
-                }
-              ]
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "section-方法-1769919363173",
-      "type": "Section",
-      "props": {
-        "heading": "健康診査・がん検診の手続き方法",
-        "content": [
-          {
-            "type": "list",
-            "ordered": true,
-            "items": [
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "必要書類を準備します。"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "窓口で申請書を記入します。"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "書類を提出し、確認を受けます。"
-                    }
-                  ]
-                }
-              ]
-            ]
           }
         ]
       }

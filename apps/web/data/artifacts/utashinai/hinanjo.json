@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0.0",
-  "page_id": "takaoka-services-disaster-hinanjo",
-  "municipality_id": "takaoka",
+  "page_id": "utashinai-services-disaster-hinanjo",
+  "municipality_id": "utashinai",
   "path": "/hinanjo",
   "title": "避難所・避難場所",
   "description": "指定避難所、指定緊急避難場所、福祉避難所の一覧と開設情報",
@@ -141,15 +141,6 @@
             ]
           }
         ]
-      }
-    },
-    {
-      "id": "task-button-status",
-      "type": "TaskButton",
-      "props": {
-        "label": "避難所の開設状況を確認する",
-        "href": "{{hinanjo_status_url}}",
-        "isTopTask": true
       }
     },
     {

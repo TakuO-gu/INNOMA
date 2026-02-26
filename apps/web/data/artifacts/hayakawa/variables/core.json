@@ -176,10 +176,206 @@
     "updatedAt": "2026-01-31T00:00:00.000Z"
   },
   "city_hall_hours": {
-    "value": "午前8時30分から午後5時15分まで（土曜日、日曜日、祝日、年末年始を除く）",
+    "value": "平日 8:30〜17:15（土日祝日・年末年始を除く）",
+    "source": "manual",
+    "updatedAt": "2026-02-25T12:47:19.797Z"
+  },
+  "city_hall_department": {
+    "value": "総務課",
+    "source": "manual",
+    "updatedAt": "2026-02-25T12:47:19.797Z"
+  },
+  "city_hall_email": {
+    "value": "",
+    "source": "manual",
+    "updatedAt": "2026-02-25T12:47:19.797Z"
+  },
+  "traffic_accident_consultation_phone": {
+    "value": "055-223-1471",
     "source": "llm",
-    "sourceUrl": "https://www.town.hayakawa.yamanashi.jp/",
-    "confidence": 0.9,
-    "updatedAt": "2026-02-03T00:00:00.000Z"
+    "updatedAt": "2026-02-25T19:07:04.476Z"
+  },
+  "hello_work_name": {
+    "value": "ハローワーク鰍沢",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:07:04.476Z"
+  },
+  "hello_work_phone": {
+    "value": "0556-22-8689",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:07:04.476Z"
+  },
+  "hello_work_address": {
+    "value": "〒400-0601 山梨県南巨摩郡富士川町鰍沢1760-1",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:07:04.476Z"
+  },
+  "police_station": {
+    "value": "南部警察署",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:07:04.476Z"
+  },
+  "police_station_phone": {
+    "value": "0556-64-0110",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:07:04.476Z"
+  },
+  "police_station_address": {
+    "value": "〒409-2212 南巨摩郡南部町南部9335-1",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:07:04.476Z"
+  },
+  "labor_bureau": {
+    "value": "山梨労働局",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:07:04.476Z"
+  },
+  "labor_bureau_phone": {
+    "value": "055-225-2858",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:07:04.476Z"
+  },
+  "labor_bureau_address": {
+    "value": "〒400-8577 山梨県甲府市丸の内1丁目1番11号",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:07:04.476Z"
+  },
+  "driver_license_center": {
+    "value": "山梨県総合交通センター",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:07:04.476Z"
+  },
+  "driver_license_center_phone": {
+    "value": "055-285-0533",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:07:04.476Z"
+  },
+  "driver_license_center_address": {
+    "value": "〒400-0202 山梨県南アルプス市下高砂825",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:07:04.476Z"
+  },
+  "legal_affairs_bureau": {
+    "value": "甲府地方法務局鰍沢支局",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:07:04.476Z"
+  },
+  "legal_affairs_bureau_phone": {
+    "value": "0556-22-0148",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:07:04.476Z"
+  },
+  "legal_affairs_bureau_address": {
+    "value": "〒400-0601 南巨摩郡富士川町鰍沢1760番地1",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:07:04.476Z"
+  },
+  "transport_branch": {
+    "value": "山梨運輸支局",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:07:04.476Z"
+  },
+  "transport_branch_phone": {
+    "value": "055-261-0880",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:07:04.476Z"
+  },
+  "transport_branch_address": {
+    "value": "〒406-0034 山梨県笛吹市石和町唐柏1000-9",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:07:04.476Z"
+  },
+  "tax_office": {
+    "value": "鰍沢税務署",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:07:04.476Z"
+  },
+  "tax_office_phone": {
+    "value": "0570-00-5901",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:07:04.476Z"
+  },
+  "tax_office_address": {
+    "value": "〒400-8541 甲府市丸の内1丁目1番18号 甲府合同庁舎",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:07:04.476Z"
+  },
+  "passport_office_name": {
+    "value": "山梨県パスポートセンター",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:19:06.938Z"
+  },
+  "passport_office_phone": {
+    "value": "055-223-1754",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:19:06.938Z"
+  },
+  "passport_office_address": {
+    "value": "〒400-8501 山梨県甲府市丸の内1-6-1 山梨県庁別館2階",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:19:06.938Z"
+  },
+  "immigration_bureau": {
+    "value": "東京出入国在留管理局甲府出張所",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:19:06.938Z"
+  },
+  "immigration_bureau_phone": {
+    "value": "055-255-3350",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:19:06.938Z"
+  },
+  "immigration_bureau_address": {
+    "value": "〒400-0031 山梨県甲府市丸の内1-1-18 甲府合同庁舎9階",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:19:06.938Z"
+  },
+  "silver_center_phone": {
+    "value": "0556-22-8701",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:19:06.938Z"
+  },
+  "silver_center_address": {
+    "value": "〒400-0601 山梨県南巨摩郡富士川町鰍沢655-8",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:19:06.938Z"
+  },
+  "shimin_email": {
+    "value": "",
+    "source": "manual",
+    "sourceUrl": "https://www.town.hayakawa.yamanashi.jp/town/organization/townsman.html",
+    "note": "早川町公式サイトに町民課の個別メールアドレスの記載なし。総務課のメールアドレスは soumu@town.hayakawa.lg.jp",
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "juminhyo_fee": {
+    "value": "300円",
+    "source": "manual",
+    "sourceUrl": "https://www.town.hayakawa.yamanashi.jp/people/registration/certificate.html",
+    "note": "山梨県内の他自治体（山梨市、南アルプス市、中央市など）は全て300円のため、早川町も300円と推定。要確認: 0556-45-2518（町民課 町民担当）",
+    "confidence": 0.8,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "juminhyo_convenience_fee": {
+    "value": "",
+    "source": "manual",
+    "sourceUrl": "",
+    "note": "早川町の公式サイトにコンビニ交付に関する記載なし。未対応の可能性が高い。要確認: 0556-45-2518（町民課 町民担当）",
+    "confidence": 0.3,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "juminhyo_kisai_fee": {
+    "value": "300円",
+    "source": "manual",
+    "sourceUrl": "https://www.town.hayakawa.yamanashi.jp/people/registration/certificate.html",
+    "note": "住民票の写しと同額と推定。要確認: 0556-45-2518（町民課 町民担当）",
+    "confidence": 0.8,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "juminhyo_madoguchi": {
+    "value": "早川町役場町民課（本庁舎1階）\n住所: 〒409-2732 山梨県南巨摩郡早川町高住758\n電話: 0556-45-2518\n受付時間: 平日 8:30〜17:15（土日祝日・年末年始を除く）",
+    "source": "llm",
+    "sourceUrl": "https://www.town.hayakawa.yamanashi.jp/town/organization/townsman.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
   }
 }

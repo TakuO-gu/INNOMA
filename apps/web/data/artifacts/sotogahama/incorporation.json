@@ -13,12 +13,12 @@
   "topic": [],
   "source": {
     "source_url": "template://sotogahama/services/business/incorporation",
-    "fetched_at": "2026-02-03T01:50:20.333Z",
+    "fetched_at": "2026-02-26T05:47:36.280Z",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "2026-02-03T01:50:20.333Z",
+    "generated_at": "2026-02-26T05:47:36.280Z",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -126,30 +126,87 @@
       }
     },
     {
-      "id": "step-nav-1",
-      "type": "StepNavigation",
+      "id": "section-procedure-list",
+      "type": "Section",
       "props": {
-        "currentStep": 0,
-        "steps": [
+        "heading": "設立の手順",
+        "level": 3,
+        "content": [
           {
-            "title": "定款の作成",
-            "body": "会社の基本的なルールを定めた定款を作成します。商号、事業目的、本店所在地、資本金などを記載します。"
-          },
-          {
-            "title": "定款の認証（株式会社のみ）",
-            "body": "公証役場で定款の認証を受けます。合同会社は不要です。電子定款の場合は印紙代4万円が不要。"
-          },
-          {
-            "title": "資本金の払込み",
-            "body": "発起人の個人口座に資本金を払い込み、払込証明書を作成します。"
-          },
-          {
-            "title": "設立登記",
-            "body": "法務局に設立登記を申請します。登録免許税は株式会社15万円〜、合同会社6万円〜。"
-          },
-          {
-            "title": "各種届出",
-            "body": "税務署、都道府県、市区町村、年金事務所、ハローワーク等への届出を行います。"
+            "type": "list",
+            "ordered": true,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "定款の作成",
+                      "bold": true
+                    },
+                    {
+                      "text": "：会社の基本的なルールを定めた定款を作成します。商号、事業目的、本店所在地、資本金などを記載します。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "定款の認証（株式会社のみ）",
+                      "bold": true
+                    },
+                    {
+                      "text": "：公証役場で定款の認証を受けます。合同会社は不要です。電子定款の場合は印紙代4万円が不要。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "資本金の払込み",
+                      "bold": true
+                    },
+                    {
+                      "text": "：発起人の個人口座に資本金を払い込み、払込証明書を作成します。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "設立登記",
+                      "bold": true
+                    },
+                    {
+                      "text": "：法務局に設立登記を申請します。登録免許税は株式会社15万円〜、合同会社6万円〜。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "各種届出",
+                      "bold": true
+                    },
+                    {
+                      "text": "：税務署、都道府県、市区町村、年金事務所、ハローワーク等への届出を行います。"
+                    }
+                  ]
+                }
+              ]
+            ]
           }
         ]
       }
@@ -370,45 +427,20 @@
       "props": {
         "items": [
           {
-            "title": "許認可申請",
-            "href": "/permits"
-          },
-          {
-            "title": "法人税",
+            "title": "法人税・事業税",
             "href": "/corporate-tax"
           },
           {
-            "title": "社会保険",
-            "href": "/business-insurance"
+            "title": "個人事業主・開業届",
+            "href": "/sole-proprietor"
           },
           {
-            "title": "補助金・助成金",
-            "href": "/subsidies"
-          },
-          {
-            "title": "融資制度",
-            "href": "/financing"
+            "title": "事業承継・M&A",
+            "href": "/succession"
           },
           {
             "title": "印鑑登録",
             "href": "/inkan"
-          }
-        ]
-      }
-    },
-    {
-      "id": "section-対象-1769919363144",
-      "type": "Section",
-      "props": {
-        "heading": "法人設立（株式会社・合同会社）の対象となる方",
-        "content": [
-          {
-            "type": "paragraph",
-            "runs": [
-              {
-                "text": "詳細は担当課にお問い合わせください。"
-              }
-            ]
           }
         ]
       }

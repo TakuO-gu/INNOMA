@@ -140,7 +140,7 @@
       "type": "RelatedLinks",
       "props": {
         "items": [
-          { "title": "住民票の写しについて詳しく知る", "href": "/juminhyo" },
+          { "title": "住民票の写しについて詳しく知る", "href": "/registration/juminhyo" },
           { "title": "印鑑登録証明書を請求する", "href": "/inkan-request" }
         ]
       }

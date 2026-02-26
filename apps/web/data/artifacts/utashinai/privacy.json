@@ -6,19 +6,19 @@
   "title": "個人情報保護",
   "description": "個人情報保護制度、自己情報の開示・訂正請求",
   "content_type": "guide",
-  "service_category": "community",
+  "service_category": "civic",
   "audience": [
     "residents"
   ],
   "topic": [],
   "source": {
     "source_url": "template://utashinai/services/civic/privacy",
-    "fetched_at": "2026-02-03T01:50:20.521Z",
+    "fetched_at": "2026-02-26T05:47:36.738Z",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "2026-02-03T01:50:20.521Z",
+    "generated_at": "2026-02-26T05:47:36.738Z",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -96,24 +96,49 @@
       }
     },
     {
-      "id": "section-u3lkv49kh-step",
-      "type": "StepNavigation",
+      "id": "section-u3lkv49kh-procedure",
+      "type": "Section",
       "props": {
-        "steps": [
+        "heading": "請求方法",
+        "level": 2,
+        "content": [
           {
-            "title": "ステップ1",
-            "body": "請求書に必要事項を記入"
-          },
-          {
-            "title": "ステップ2",
-            "body": "本人確認書類（運転免許証、マイナンバーカードなど）を添付"
-          },
-          {
-            "title": "ステップ3",
-            "body": "担当課または総務課に提出"
+            "type": "list",
+            "ordered": true,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "請求書に必要事項を記入"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "本人確認書類（運転免許証、マイナンバーカードなど）を添付"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "担当課または総務課に提出"
+                    }
+                  ]
+                }
+              ]
+            ]
           }
-        ],
-        "heading": "請求方法"
+        ]
       }
     },
     {
@@ -158,12 +183,12 @@
       "props": {
         "items": [
           {
-            "title": "情報公開",
-            "href": "/information-disclosure"
-          },
-          {
             "title": "マイナンバーカード",
             "href": "/mynumber"
+          },
+          {
+            "title": "住民票",
+            "href": "/juminhyo"
           }
         ]
       }

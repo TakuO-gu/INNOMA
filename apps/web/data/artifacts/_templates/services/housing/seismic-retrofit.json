@@ -32,7 +32,7 @@
             "href": "/"
           },
           {
-            "label": "住まい・引越し",
+            "label": "住まい",
             "href": "/housing"
           },
           {
@@ -171,6 +171,10 @@
       "type": "RelatedLinks",
       "props": {
         "items": [
+          {
+            "title": "耐震診断・改修補助を申請する",
+            "href": "/seismic-retrofit-apply"
+          },
           {
             "title": "リフォーム補助",
             "href": "/reform-subsidy"

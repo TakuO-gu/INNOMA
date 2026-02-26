@@ -14,12 +14,12 @@
   "topic": [],
   "source": {
     "source_url": "template://otaki/services/business/sole-proprietor",
-    "fetched_at": "2026-02-03T01:50:20.238Z",
+    "fetched_at": "2026-02-26T05:47:36.066Z",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "2026-02-03T01:50:20.238Z",
+    "generated_at": "2026-02-26T05:47:36.066Z",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -189,125 +189,28 @@
       "props": {
         "items": [
           {
-            "title": "許認可申請",
-            "href": "/permits"
+            "title": "法人設立（株式会社・合同会社）",
+            "href": "/incorporation"
           },
           {
-            "title": "補助金・助成金",
-            "href": "/subsidies"
-          },
-          {
-            "title": "融資制度",
-            "href": "/financing"
+            "title": "法人税・事業税",
+            "href": "/corporate-tax"
           },
           {
             "title": "国民健康保険",
             "href": "/kokuho"
           },
           {
-            "title": "年金",
+            "title": "国民年金",
             "href": "/nenkin"
+          },
+          {
+            "title": "確定申告",
+            "href": "/kakuteishinkoku"
           },
           {
             "title": "住民税",
             "href": "/juminzei"
-          }
-        ]
-      }
-    },
-    {
-      "id": "section-対象-1769919363146",
-      "type": "Section",
-      "props": {
-        "heading": "個人事業主・開業届の対象となる方",
-        "content": [
-          {
-            "type": "paragraph",
-            "runs": [
-              {
-                "text": "詳細は担当課にお問い合わせください。"
-              }
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "section-必要-1769919363146",
-      "type": "Section",
-      "props": {
-        "heading": "個人事業主・開業届に必要なもの",
-        "content": [
-          {
-            "type": "list",
-            "ordered": false,
-            "items": [
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "本人確認書類（マイナンバーカード、運転免許証など）"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "印鑑（認印可）"
-                    }
-                  ]
-                }
-              ]
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "section-方法-1769919363146",
-      "type": "Section",
-      "props": {
-        "heading": "個人事業主・開業届の手続き方法",
-        "content": [
-          {
-            "type": "list",
-            "ordered": true,
-            "items": [
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "必要書類を準備します。"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "窓口で申請書を記入します。"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "書類を提出し、確認を受けます。"
-                    }
-                  ]
-                }
-              ]
-            ]
           }
         ]
       }

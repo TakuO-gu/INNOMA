@@ -12,5 +12,28 @@
     "sourceUrl": "https://www.city.atami.lg.jp/kurashi/juminhyo/1000615/1000617.html",
     "confidence": 0.7999999999999999,
     "updatedAt": "2026-02-05T01:11:58.000Z"
+  },
+  "juminhyo_fee": {
+    "value": "300円",
+    "source": "web",
+    "sourceUrl": "https://www.city.atami.lg.jp/kurashi/juminhyo/1000626/1002605.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "juminhyo_convenience_fee": {
+    "value": "200円",
+    "source": "web",
+    "sourceUrl": "https://www.city.atami.lg.jp/kurashi/juminhyo/1005558.html",
+    "confidence": 0.9,
+    "updatedAt": "2026-02-26T00:00:00.000Z",
+    "notes": "2025年3月1日から100円減額予定との情報あり。公式サイト未更新の場合は実際には100円の可能性があります。"
+  },
+  "juminhyo_kisai_fee": {
+    "value": "300円",
+    "source": "inference",
+    "sourceUrl": "https://www.city.atami.lg.jp/kurashi/juminhyo/1000626/1002605.html",
+    "confidence": 0.7,
+    "updatedAt": "2026-02-26T00:00:00.000Z",
+    "notes": "公式サイトに明記なし。一般的に住民票の写しと同額であることが多いため推定値です。要確認。"
   }
 }

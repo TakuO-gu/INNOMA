@@ -1,4 +1,17 @@
 import { NextRequest, NextResponse } from "next/server";
+import pageRegistryData from "./data/artifacts/_templates/page-registry.json";
+
+// 旧フラットURL → 新カテゴリURLのリダイレクトマップを構築
+// 非topicページのslugをカテゴリ付きパスにマッピング
+const flatSlugRedirects = new Map<string, string>();
+for (const [slug, entry] of Object.entries(pageRegistryData)) {
+  const typedEntry = entry as { filePath: string; categories?: string[]; type?: string };
+  if (typedEntry.type === "topic") continue;
+  const category = typedEntry.categories?.[0];
+  if (category) {
+    flatSlugRedirects.set(slug, `/${category}/${slug}`);
+  }
+}
 
 function unauthorizedResponse(realm?: string) {
   const response = NextResponse.json({ error: "Unauthorized" }, { status: 401 });
@@ -53,9 +66,30 @@ export function middleware(request: NextRequest) {
     return NextResponse.next();
   }
 
+  // 旧フラットURL → 新カテゴリURLへの301リダイレクト
+  // パターン: /{municipality}/{slug} で slug が非topicのregistryエントリに一致
+  const pathParts = pathname.split("/").filter(Boolean);
+  if (pathParts.length === 2) {
+    const [municipality, slug] = pathParts;
+    // 特殊パスは除外
+    if (!["admin", "api", "_next", "search"].includes(municipality)) {
+      const newPath = flatSlugRedirects.get(slug);
+      if (newPath) {
+        const url = request.nextUrl.clone();
+        url.pathname = `/${municipality}${newPath}`;
+        return NextResponse.redirect(url, 301);
+      }
+    }
+  }
+
   return NextResponse.next();
 }
 
 export const config = {
-  matcher: ["/admin/:path*", "/api/admin/:path*", "/api/cron/update-municipalities"],
+  matcher: [
+    "/admin/:path*",
+    "/api/admin/:path*",
+    "/api/cron/update-municipalities",
+    "/:municipality/:path*",
+  ],
 };

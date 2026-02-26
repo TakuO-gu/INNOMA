@@ -1,24 +1,24 @@
 {
   "schema_version": "2.0.0",
-  "page_id": "takaoka-services-nationality-loss-of-citizenship",
-  "municipality_id": "takaoka",
+  "page_id": "kanna-services-nationality-loss-of-citizenship",
+  "municipality_id": "kanna",
   "path": "/loss-of-citizenship",
   "title": "国籍喪失届",
   "description": "日本国籍を喪失した場合の届出手続き",
   "content_type": "guide",
-  "service_category": "government",
+  "service_category": "nationality",
   "audience": [
     "residents"
   ],
   "topic": [],
   "source": {
     "source_url": "template://kanna/services/nationality/loss-of-citizenship",
-    "fetched_at": "2026-01-20T10:33:17.311Z",
+    "fetched_at": "2026-02-26T05:47:35.056Z",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "2026-01-20T10:33:17.311Z",
+    "generated_at": "2026-02-26T05:47:35.056Z",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -57,7 +57,7 @@
       }
     },
     {
-      "id": "section-jum5316jb",
+      "id": "section-taisho",
       "type": "Section",
       "props": {
         "heading": "届出が必要な場合",
@@ -103,7 +103,7 @@
       }
     },
     {
-      "id": "section-m2bs4lno7",
+      "id": "section-todokenin",
       "type": "Section",
       "props": {
         "heading": "届出人",
@@ -121,73 +121,11 @@
       }
     },
     {
-      "id": "section-cx5dkvo3m",
-      "type": "Section",
-      "props": {
-        "heading": "届出期間",
-        "level": 2,
-        "content": [
-          {
-            "type": "paragraph",
-            "runs": [
-              {
-                "text": "国籍喪失の事実を知った日から1か月以内（届出人が国外にいる場合は3か月以内）"
-              }
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "section-3hg95fhf8-table",
-      "type": "Section",
-      "props": {
-        "heading": "届出先",
-        "content": [
-          {
-            "type": "list",
-            "ordered": false,
-            "items": [
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "国籍を喪失した者の本籍地の市区町村役場"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "届出人の所在地の市区町村役場"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "国外の場合は在外公館（大使館・領事館）"
-                    }
-                  ]
-                }
-              ]
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "section-54qab0ov9-table",
+      "id": "section-hitsuyou",
       "type": "Section",
       "props": {
         "heading": "必要書類",
+        "level": 2,
         "content": [
           {
             "type": "list",
@@ -239,36 +177,24 @@
       }
     },
     {
-      "id": "related-links-9yodl8cd6",
-      "type": "RelatedLinks",
-      "props": {
-        "items": [
-          {
-            "title": "帰化申請",
-            "href": "/naturalization"
-          },
-          {
-            "title": "戸籍",
-            "href": "/koseki"
-          },
-          {
-            "title": "パスポート",
-            "href": "/passport"
-          }
-        ]
-      }
-    },
-    {
-      "id": "section-対象-1769919363192",
+      "id": "section-kigen",
       "type": "Section",
       "props": {
-        "heading": "国籍喪失届の対象となる方",
+        "heading": "届出期間",
+        "level": 2,
         "content": [
           {
             "type": "paragraph",
             "runs": [
               {
-                "text": "詳細は担当課にお問い合わせください。"
+                "text": "国籍喪失の事実を知った日から"
+              },
+              {
+                "text": "1か月以内",
+                "bold": true
+              },
+              {
+                "text": "（届出人が国外にいる場合は3か月以内）"
               }
             ]
           }
@@ -276,21 +202,22 @@
       }
     },
     {
-      "id": "section-方法-1769919363192",
+      "id": "section-todokede",
       "type": "Section",
       "props": {
-        "heading": "国籍喪失届の手続き方法",
+        "heading": "届出先",
+        "level": 2,
         "content": [
           {
             "type": "list",
-            "ordered": true,
+            "ordered": false,
             "items": [
               [
                 {
                   "type": "paragraph",
                   "runs": [
                     {
-                      "text": "必要書類を準備します。"
+                      "text": "国籍を喪失した者の本籍地の市区町村役場"
                     }
                   ]
                 }
@@ -300,7 +227,7 @@
                   "type": "paragraph",
                   "runs": [
                     {
-                      "text": "窓口で申請書を記入します。"
+                      "text": "届出人の所在地の市区町村役場"
                     }
                   ]
                 }
@@ -310,12 +237,37 @@
                   "type": "paragraph",
                   "runs": [
                     {
-                      "text": "書類を提出し、確認を受けます。"
+                      "text": "国外の場合は在外公館（大使館・領事館）"
                     }
                   ]
                 }
               ]
             ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "related-links-1",
+      "type": "RelatedLinks",
+      "props": {
+        "heading": "関連ページ",
+        "items": [
+          {
+            "title": "日本国籍の取得（帰化）",
+            "href": "/naturalization"
+          },
+          {
+            "title": "パスポート（旅券）",
+            "href": "/passport"
+          },
+          {
+            "title": "戸籍",
+            "href": "/koseki"
+          },
+          {
+            "title": "法務省 国籍Q&A",
+            "href": "https://www.moj.go.jp/MINJI/minji78.html"
           }
         ]
       }
@@ -347,6 +299,6 @@
       "外国籍取得",
       "国籍離脱"
     ],
-    "plain_text": "国籍喪失届。外国籍を取得した場合など日本国籍を喪失した際の届出。本籍地または所在地の市区町村へ届出。"
+    "plain_text": "国籍喪失届。外国籍を取得した場合など日本国籍を喪失した際の届出。1か月以内に届出。本籍地または所在地の市区町村へ届出。"
   }
 }

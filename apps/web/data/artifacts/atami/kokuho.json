@@ -13,12 +13,12 @@
   "topic": [],
   "source": {
     "source_url": "template://atami/services/health/kokuho",
-    "fetched_at": "2026-02-03T01:50:19.427Z",
+    "fetched_at": "2026-02-26T05:47:33.882Z",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "2026-02-03T01:50:19.427Z",
+    "generated_at": "2026-02-26T05:47:33.882Z",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -32,8 +32,8 @@
             "href": "/"
           },
           {
-            "label": "社会保障・給付金",
-            "href": "/benefits"
+            "label": "健康・医療",
+            "href": "/health"
           },
           {
             "label": "国民健康保険",
@@ -479,15 +479,6 @@
       }
     },
     {
-      "id": "task-button-myna-portal",
-      "type": "TaskButton",
-      "props": {
-        "label": "マイナポータルで届出する",
-        "href": "https://myna.go.jp/",
-        "isTopTask": true
-      }
-    },
-    {
       "id": "section-tvp5mw0ju",
       "type": "Section",
       "props": {
@@ -609,6 +600,23 @@
       }
     },
     {
+      "id": "related-links-kokuho-procedures",
+      "type": "RelatedLinks",
+      "props": {
+        "heading": "国民健康保険の手続き",
+        "items": [
+          {
+            "title": "国民健康保険に加入届を届け出る",
+            "href": "/kokuho-apply"
+          },
+          {
+            "title": "国民健康保険に加入が必要か確認する",
+            "href": "/kokuho-check"
+          }
+        ]
+      }
+    },
+    {
       "id": "related-links-1",
       "type": "RelatedLinks",
       "props": {
@@ -640,23 +648,6 @@
           {
             "title": "介護保険",
             "href": "/kaigo"
-          }
-        ]
-      }
-    },
-    {
-      "id": "section-対象-1769919363173",
-      "type": "Section",
-      "props": {
-        "heading": "国民健康保険の対象となる方",
-        "content": [
-          {
-            "type": "paragraph",
-            "runs": [
-              {
-                "text": "詳細は担当課にお問い合わせください。"
-              }
-            ]
           }
         ]
       }

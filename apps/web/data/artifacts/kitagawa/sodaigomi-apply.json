@@ -1,0 +1,189 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "kitagawa-services-environment-sodaigomi-apply",
+  "municipality_id": "kitagawa",
+  "path": "/sodaigomi-apply",
+  "title": "粗大ごみの回収を申し込む",
+  "description": "粗大ごみの収集を申し込む手続きです。事前に申し込みが必要です。",
+  "content_type": "service",
+  "service_category": "environment",
+  "audience": [
+    "residents"
+  ],
+  "topic": [],
+  "source": {
+    "source_url": "template://kitagawa/services/environment/sodaigomi-apply",
+    "fetched_at": "2026-02-26T05:47:35.480Z",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "2026-02-26T05:47:35.480Z",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "環境・ごみ",
+            "href": "/environment"
+          },
+          {
+            "label": "粗大ごみ",
+            "href": "/sodaigomi"
+          },
+          {
+            "label": "粗大ごみの回収を申し込む",
+            "href": "/sodaigomi-apply"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "粗大ごみの回収を申し込む"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "粗大ごみの収集を申し込む手続きです。事前に申し込みが必要です。"
+      }
+    },
+    {
+      "id": "section-target",
+      "type": "Section",
+      "props": {
+        "heading": "対象となるもの",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "家庭から出る大型のごみ（家具、自転車、布団など）が対象です。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-fee",
+      "type": "Section",
+      "props": {
+        "heading": "手数料",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "品目により異なります（{{sodaigomi_fee_range}}）。粗大ごみ処理券を購入してください。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "step-nav-1",
+      "type": "StepNavigation",
+      "props": {
+        "currentStep": 0,
+        "steps": [
+          {
+            "title": "申し込み",
+            "body": "電話またはインターネットで申し込みます。収集日と手数料が案内されます。"
+          },
+          {
+            "title": "処理券の購入",
+            "body": "コンビニエンスストア等で粗大ごみ処理券を購入し、品目ごとに貼り付けます。"
+          },
+          {
+            "title": "指定日に搬出",
+            "body": "収集日の朝8時までに、玄関先（集合住宅の場合は指定場所）に出してください。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-contact-info",
+      "type": "Section",
+      "props": {
+        "heading": "申し込み先",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "{{sodaigomi_phone}}（{{sodaigomi_hours}}）"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{environment_department}}",
+        "phone": "{{environment_phone}}",
+        "email": "{{environment_email}}",
+        "hours": "{{city_hall_hours}}",
+        "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "related-links-1",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "粗大ごみ",
+            "href": "/sodaigomi"
+          },
+          {
+            "title": "ごみの出し方（分別ガイド）",
+            "href": "/gomi"
+          },
+          {
+            "title": "家電リサイクル",
+            "href": "/kaden-recycle"
+          }
+        ]
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
+      }
+    }
+  ],
+  "search": {
+    "summary": "粗大ごみの収集申込手続き。電話またはインターネットで申し込み、処理券を購入して指定日に搬出。",
+    "keywords": [
+      "粗大ごみ",
+      "申込",
+      "収集",
+      "処理券",
+      "手数料",
+      "回収"
+    ],
+    "plain_text": "粗大ごみの回収を申し込む。電話またはインターネットで申し込み、コンビニで粗大ごみ処理券を購入、収集日の朝8時までに玄関先に搬出。品目により手数料が異なる。"
+  }
+}

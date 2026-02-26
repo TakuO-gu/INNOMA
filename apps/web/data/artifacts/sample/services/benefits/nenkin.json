@@ -372,15 +372,15 @@
         "items": [
           {
             "title": "国民健康保険",
-            "href": "/kokuho"
+            "href": "/health/kokuho"
           },
           {
             "title": "後期高齢者医療",
-            "href": "/kouki"
+            "href": "/health/kouki"
           },
           {
             "title": "介護保険",
-            "href": "/kaigo"
+            "href": "/welfare/kaigo"
           },
           {
             "title": "死亡届",
@@ -388,11 +388,11 @@
           },
           {
             "title": "マイナンバーカード",
-            "href": "/mynumber"
+            "href": "/registration/mynumber"
           },
           {
             "title": "住民税",
-            "href": "/juminzei"
+            "href": "/tax/juminzei"
           }
         ]
       }

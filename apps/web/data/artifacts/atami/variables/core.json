@@ -146,5 +146,20 @@
     "sourceUrl": "https://www.city.atami.lg.jp/shisei/soshiki/1001545/index.html",
     "confidence": 0.95,
     "updatedAt": "2026-01-31T00:00:00.000Z"
+  },
+  "city_hall_hours": {
+    "value": "月曜日から金曜日：午前8時30分～午後5時15分（祝日、年末年始などの閉庁日を除く）",
+    "source": "web",
+    "sourceUrl": "https://www.city.atami.lg.jp/kurashi/juminhyo/1000626/1002605.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "shimin_email": {
+    "value": "専用フォームをご利用ください",
+    "source": "web",
+    "sourceUrl": "https://www.city.atami.lg.jp/kurashi/juminhyo/1000626/1002605.html",
+    "confidence": 0.9,
+    "updatedAt": "2026-02-26T00:00:00.000Z",
+    "notes": "熱海市は問い合わせに専用フォームを使用しており、直接のメールアドレスは公開していません"
   }
 }

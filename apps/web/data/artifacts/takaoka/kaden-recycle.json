@@ -12,13 +12,13 @@
   ],
   "topic": [],
   "source": {
-    "source_url": "template://sample/services/environment/kaden-recycle",
-    "fetched_at": "2026-01-20T10:33:17.311Z",
+    "source_url": "template://takaoka/services/environment/kaden-recycle",
+    "fetched_at": "2026-02-26T05:47:37.180Z",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "2026-01-20T10:33:17.311Z",
+    "generated_at": "2026-02-26T05:47:37.180Z",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -57,7 +57,7 @@
       }
     },
     {
-      "id": "section-vh9con9rr",
+      "id": "section-p1l51iz3w",
       "type": "Section",
       "props": {
         "heading": "対象となる家電製品",
@@ -126,7 +126,17 @@
                 }
               ]
             ]
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-p1l51iz3w-notification-0",
+      "type": "NotificationBanner",
+      "props": {
+        "severity": "warning",
+        "title": "注意",
+        "content": [
           {
             "type": "paragraph",
             "runs": [
@@ -139,7 +149,7 @@
       }
     },
     {
-      "id": "section-2dzbedrsk",
+      "id": "section-sm1vl9l72",
       "type": "Section",
       "props": {
         "heading": "リサイクル料金",
@@ -201,7 +211,10 @@
               },
               {
                 "text": "一般財団法人家電製品協会のウェブサイト",
-                "link": "https://www.rkc.aeha.or.jp/"
+                "link": {
+                  "href": "https://www.rkc.aeha.or.jp/",
+                  "external": true
+                }
               },
               {
                 "text": "でご確認ください。"
@@ -212,7 +225,7 @@
       }
     },
     {
-      "id": "section-v88f4yx4x",
+      "id": "section-sp95vnjbm",
       "type": "Section",
       "props": {
         "heading": "処分方法1：購入店に依頼する",
@@ -264,7 +277,7 @@
       }
     },
     {
-      "id": "section-zvgazq76y",
+      "id": "section-6h62271he",
       "type": "Section",
       "props": {
         "heading": "処分方法2：指定引取場所へ持ち込む",
@@ -282,7 +295,7 @@
       }
     },
     {
-      "id": "section-mgt07bit4",
+      "id": "section-r0m34fwte",
       "type": "Section",
       "props": {
         "heading": "手順",
@@ -318,7 +331,7 @@
       }
     },
     {
-      "id": "section-0gzei3qfo",
+      "id": "section-dfb70obrl",
       "type": "Section",
       "props": {
         "heading": "近隣の指定引取場所",
@@ -336,7 +349,27 @@
       }
     },
     {
-      "id": "section-q5jmb8ouw",
+      "id": "table-hikitori",
+      "type": "Table",
+      "props": {
+        "rows": [
+          {
+            "label": "住所",
+            "value": "{{kaden_hikitori_address}}"
+          },
+          {
+            "label": "電話番号",
+            "value": "{{kaden_hikitori_phone}}"
+          },
+          {
+            "label": "営業時間",
+            "value": "{{kaden_hikitori_hours}}"
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-dkafg1mmc",
       "type": "Section",
       "props": {
         "heading": "処分方法3：許可業者に依頼する",
@@ -354,10 +387,11 @@
       }
     },
     {
-      "id": "section-q5jmb8ouw-notification-0",
+      "id": "section-dkafg1mmc-notification-0",
       "type": "NotificationBanner",
       "props": {
         "severity": "warning",
+        "title": "注意",
         "content": [
           {
             "type": "paragraph",
@@ -371,7 +405,7 @@
       }
     },
     {
-      "id": "section-ftno1ixmo",
+      "id": "section-l7oy1lfru",
       "type": "Section",
       "props": {
         "heading": "パソコンの処分",
@@ -434,12 +468,8 @@
             "href": "/gomi"
           },
           {
-            "title": "粗大ごみの出し方",
+            "title": "粗大ごみ",
             "href": "/sodaigomi"
-          },
-          {
-            "title": "不用品のリユース",
-            "href": "/reuse"
           }
         ]
       }

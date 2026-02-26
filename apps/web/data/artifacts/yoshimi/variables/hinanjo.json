@@ -1,0 +1,55 @@
+{
+  "kinkyu_hinanbasho_count": {
+    "value": "44",
+    "source": "web",
+    "sourceUrl": "https://www.navitime.co.jp/category/0511004/11347/",
+    "confidence": 0.7,
+    "updatedAt": "2026-02-26T00:00:00.000Z",
+    "note": "公式サイトに具体的な区別が掲載されていないため、第三者サイトの避難場所総数を記載しています。公式防災ハザードマップPDFでの確認が推奨されます。"
+  },
+  "shitei_hinanjo_count": {
+    "value": "44",
+    "source": "web",
+    "sourceUrl": "https://www.navitime.co.jp/category/0511004/11347/",
+    "confidence": 0.7,
+    "updatedAt": "2026-02-26T00:00:00.000Z",
+    "note": "公式サイトに具体的な区別が掲載されていないため、第三者サイトの避難場所総数を記載しています。公式防災ハザードマップPDFでの確認が推奨されます。"
+  },
+  "hinanjo_status_url": {
+    "value": "https://www.town.yoshimi.saitama.jp/soshiki/somuka/8/index.html",
+    "source": "web",
+    "sourceUrl": "https://www.town.yoshimi.saitama.jp/soshiki/somuka/8/index.html",
+    "confidence": 0.7,
+    "updatedAt": "2026-02-26T00:00:00.000Z",
+    "note": "専用の開設状況確認ページは見つかりませんでした。災害時は防災ページで告知される形式と思われます。"
+  },
+  "bosai_department": {
+    "value": "総務課危機管理室",
+    "source": "web",
+    "sourceUrl": "https://www.town.yoshimi.saitama.jp/gyosei/534.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "bosai_phone": {
+    "value": "0493-54-1505",
+    "source": "web",
+    "sourceUrl": "https://www.town.yoshimi.saitama.jp/gyosei/534.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "city_hall_hours": {
+    "value": "月曜日から金曜日：午前8時30分～午後5時15分（祝日及び年末年始を除く）",
+    "source": "web",
+    "sourceUrl": "https://www.town.yoshimi.saitama.jp/soshiki/somuka/8/index.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "city_hall_address": {
+    "value": "〒355-0192 埼玉県比企郡吉見町大字下細谷411",
+    "source": "web",
+    "sourceUrl": "https://www.town.yoshimi.saitama.jp/soshiki/somuka/8/index.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z",
+    "note": "core.jsonにも同じ値が存在します。"
+  }
+}

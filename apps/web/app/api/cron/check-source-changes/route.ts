@@ -65,7 +65,7 @@ export async function GET(request: NextRequest) {
       if (!meta) continue;
 
       // ソースチェックが無効な場合はスキップ
-      const checkInterval = meta.settings.sourceCheckInterval || DEFAULT_CHECK_INTERVAL;
+      const checkInterval = meta.settings?.sourceCheckInterval || DEFAULT_CHECK_INTERVAL;
       if (checkInterval === "disabled") continue;
 
       // 公開中の自治体のみチェック

@@ -1,0 +1,62 @@
+{
+  "kinkyu_hinanbasho_count": {
+    "value": "18",
+    "source": "web",
+    "sourceUrl": "https://www.city.utashinai.hokkaido.jp/hotnews/detail/00003522.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z",
+    "note": "屋内12施設、屋外6施設の合計"
+  },
+  "shitei_hinanjo_count": {
+    "value": "6",
+    "source": "web",
+    "sourceUrl": "https://www.city.utashinai.hokkaido.jp/hotnews/detail/00003522.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z",
+    "note": "コミュニティセンター、歌神地区集会所、神威神楽岡地区集会所、チロルの湯、中村地区集会所、歌志内学園の6施設"
+  },
+  "hinanjo_status_url": {
+    "value": "https://www.city.utashinai.hokkaido.jp/hotnews/category/204.html",
+    "source": "web",
+    "sourceUrl": "https://www.city.utashinai.hokkaido.jp/hotnews/category/204.html",
+    "confidence": 0.7,
+    "updatedAt": "2026-02-26T00:00:00.000Z",
+    "note": "専用の開設状況確認ページは見つかりませんでした。災害時は防災トップページで告知される形式と思われます。"
+  },
+  "bosai_department": {
+    "value": "総務課庶務グループ",
+    "source": "web",
+    "sourceUrl": "https://www.city.utashinai.hokkaido.jp/hotnews/detail/00003522.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "bosai_phone": {
+    "value": "0125-42-3212",
+    "source": "web",
+    "sourceUrl": "https://www.city.utashinai.hokkaido.jp/hotnews/detail/00003522.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "bosai_email": {
+    "value": "soumu.shomu@city.utashinai.hokkaido.jp",
+    "source": "web",
+    "sourceUrl": "https://www.city.utashinai.hokkaido.jp/hotnews/group/3.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "city_hall_hours": {
+    "value": "月曜日～金曜日：午前8時30分～午後5時15分（祝日・年末年始を除く）",
+    "source": "web",
+    "sourceUrl": "https://www.city.utashinai.hokkaido.jp/hotnews/detail/00000246.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "city_hall_address": {
+    "value": "〒073-0492 北海道歌志内市字本町5番地",
+    "source": "web",
+    "sourceUrl": "https://www.city.utashinai.hokkaido.jp/hotnews/detail/00000246.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z",
+    "note": "core.jsonにも同じ値が存在します。"
+  }
+}

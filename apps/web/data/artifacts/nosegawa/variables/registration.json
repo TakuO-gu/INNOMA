@@ -1,0 +1,128 @@
+{
+  "shimin_department": {
+    "value": "住民課 戸籍係",
+    "source": "llm",
+    "sourceUrl": "https://www.vill.nosegawa.nara.jp/top/soshiki/soumu/village_government/office_info/168.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "shimin_phone": {
+    "value": "0747-37-2101",
+    "source": "llm",
+    "sourceUrl": "https://www.vill.nosegawa.nara.jp/top/soshiki/soumu/village_government/office_info/168.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "shimin_email": {
+    "value": "jyuminka1@vill.nosegawa.nara.jp",
+    "source": "llm",
+    "sourceUrl": "https://www.vill.nosegawa.nara.jp/top/soshiki/soumu/village_government/office_info/168.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "juminhyo_fee": {
+    "value": "300円",
+    "source": "inferred",
+    "sourceUrl": "https://www.town.shimoichi.lg.jp/0000000323.html",
+    "confidence": 0.8,
+    "updatedAt": "2026-02-26T00:00:00.000Z",
+    "note": "奈良県下市町の手数料を参考。野迫川村の公式サイトに手数料情報の記載なし。確認要。"
+  },
+  "juminhyo_convenience_fee": {
+    "value": "利用不可",
+    "source": "inferred",
+    "sourceUrl": "https://www.vill.nosegawa.nara.jp/top/lifeevent/certificate/index.html",
+    "confidence": 0.7,
+    "updatedAt": "2026-02-26T00:00:00.000Z",
+    "note": "野迫川村にはコンビニエンスストアがないため、コンビニ交付サービスは利用できない可能性が高い。要確認。"
+  },
+  "juminhyo_kisai_fee": {
+    "value": "300円",
+    "source": "inferred",
+    "sourceUrl": "https://www.town.shimoichi.lg.jp/0000000323.html",
+    "confidence": 0.8,
+    "updatedAt": "2026-02-26T00:00:00.000Z",
+    "note": "奈良県下市町の手数料を参考。野迫川村の公式サイトに手数料情報の記載なし。確認要。"
+  },
+  "koseki_fee": {
+    "value": "450円",
+    "source": "inferred",
+    "sourceUrl": "https://www.town.shimoichi.lg.jp/0000000323.html",
+    "confidence": 0.8,
+    "updatedAt": "2026-02-26T00:00:00.000Z",
+    "note": "奈良県下市町の手数料を参考。戸籍謄抄本は全国的に450円が標準。確認要。"
+  },
+  "inkan_shomei_fee": {
+    "value": "300円",
+    "source": "inferred",
+    "sourceUrl": "https://www.town.shimoichi.lg.jp/0000000323.html",
+    "confidence": 0.8,
+    "updatedAt": "2026-02-26T00:00:00.000Z",
+    "note": "奈良県下市町の手数料を参考。印鑑証明は全国的に300円が標準。確認要。"
+  },
+  "koseki_department": {
+    "value": "住民課 戸籍係",
+    "source": "llm",
+    "sourceUrl": "https://www.vill.nosegawa.nara.jp/top/soshiki/soumu/village_government/office_info/168.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "koseki_phone": {
+    "value": "0747-37-2101",
+    "source": "llm",
+    "sourceUrl": "https://www.vill.nosegawa.nara.jp/top/soshiki/soumu/village_government/office_info/168.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "koseki_email": {
+    "value": "jyuminka1@vill.nosegawa.nara.jp",
+    "source": "llm",
+    "sourceUrl": "https://www.vill.nosegawa.nara.jp/top/soshiki/soumu/village_government/office_info/168.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "registration_department": {
+    "value": "住民課 戸籍係",
+    "source": "llm",
+    "sourceUrl": "https://www.vill.nosegawa.nara.jp/top/soshiki/soumu/village_government/office_info/168.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "registration_phone": {
+    "value": "0747-37-2101",
+    "source": "llm",
+    "sourceUrl": "https://www.vill.nosegawa.nara.jp/top/soshiki/soumu/village_government/office_info/168.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "registration_email": {
+    "value": "jyuminka1@vill.nosegawa.nara.jp",
+    "source": "llm",
+    "sourceUrl": "https://www.vill.nosegawa.nara.jp/top/soshiki/soumu/village_government/office_info/168.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "jokoseki_fee": {
+    "value": "750円",
+    "source": "inferred",
+    "sourceUrl": "https://www.town.shimoichi.lg.jp/0000000323.html",
+    "confidence": 0.9,
+    "updatedAt": "2026-02-26T00:00:00.000Z",
+    "note": "除籍謄抄本は全国的に750円が標準。"
+  },
+  "kaisei_koseki_fee": {
+    "value": "750円",
+    "source": "inferred",
+    "sourceUrl": "https://www.town.shimoichi.lg.jp/0000000323.html",
+    "confidence": 0.9,
+    "updatedAt": "2026-02-26T00:00:00.000Z",
+    "note": "改製原戸籍は全国的に750円が標準。"
+  },
+  "juminhyo_madoguchi": {
+    "value": "野迫川村役場 住民課（〒648-0392 奈良県吉野郡野迫川村大字北股84番地）",
+    "source": "llm",
+    "sourceUrl": "https://www.vill.nosegawa.nara.jp/top/soshiki/soumu/village_government/office_info/168.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  }
+}

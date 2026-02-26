@@ -49,6 +49,13 @@
     "confidence": 0.95,
     "updatedAt": "2026-01-31T00:00:00.000Z"
   },
+  "shimin_email": {
+    "value": "jyuminka1@vill.nosegawa.nara.jp",
+    "source": "llm",
+    "sourceUrl": "https://www.vill.nosegawa.nara.jp/top/soshiki/soumu/village_government/office_info/168.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
   "building_department": {
     "value": "建設課",
     "source": "llm",

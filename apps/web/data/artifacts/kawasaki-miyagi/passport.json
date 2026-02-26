@@ -1,24 +1,24 @@
 {
   "schema_version": "2.0.0",
-  "page_id": "takaoka-services-nationality-passport",
-  "municipality_id": "takaoka",
+  "page_id": "kawasaki-miyagi-services-nationality-passport",
+  "municipality_id": "kawasaki-miyagi",
   "path": "/passport",
   "title": "パスポート（旅券）",
   "description": "パスポートの申請・更新・届出、{{passport_office_name}}",
   "content_type": "guide",
-  "service_category": "government",
+  "service_category": "nationality",
   "audience": [
     "residents"
   ],
   "topic": [],
   "source": {
     "source_url": "template://kawasaki-miyagi/services/nationality/passport",
-    "fetched_at": "2026-01-20T10:33:17.311Z",
+    "fetched_at": "2026-02-26T05:47:35.414Z",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "2026-01-20T10:33:17.311Z",
+    "generated_at": "2026-02-26T05:47:35.414Z",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -36,7 +36,7 @@
             "href": "/nationality"
           },
           {
-            "label": "パスポート",
+            "label": "パスポート（旅券）",
             "href": "/passport"
           }
         ]
@@ -57,56 +57,29 @@
       }
     },
     {
-      "id": "section-pzevwnegh",
+      "id": "section-taisho",
       "type": "Section",
       "props": {
-        "heading": "パスポートの種類",
+        "heading": "申請できる方",
         "level": 2,
         "content": [
           {
-            "type": "list",
-            "ordered": false,
-            "items": [
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "10年有効（20歳以上）：16,000円"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "5年有効（12歳以上）：11,000円"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "5年有効（12歳未満）：6,000円"
-                    }
-                  ]
-                }
-              ]
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "日本国籍をお持ちの方（住民登録がある都道府県のパスポートセンターで申請）"
+              }
             ]
           }
         ]
       }
     },
     {
-      "id": "section-fr5jisb1k-table",
+      "id": "section-hitsuyou",
       "type": "Section",
       "props": {
         "heading": "必要書類",
+        "level": 2,
         "content": [
           {
             "type": "list",
@@ -168,76 +141,22 @@
       }
     },
     {
-      "id": "section-utemv7300",
+      "id": "section-hiyou",
       "type": "Section",
       "props": {
-        "heading": "受け取り",
+        "heading": "手数料",
         "level": 2,
         "content": [
           {
-            "type": "paragraph",
-            "runs": [
-              {
-                "text": "申請から約1週間で受け取り可能。必ず本人が受け取りに行く必要があります。"
-              }
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "related-links-7swieom08",
-      "type": "RelatedLinks",
-      "props": {
-        "items": [
-          {
-            "title": "戸籍",
-            "href": "/koseki"
-          },
-          {
-            "title": "住民票",
-            "href": "/juminhyo"
-          },
-          {
-            "title": "ビザ・在留資格",
-            "href": "/visa"
-          }
-        ]
-      }
-    },
-    {
-      "id": "section-対象-1769919363194",
-      "type": "Section",
-      "props": {
-        "heading": "パスポート（旅券）の対象となる方",
-        "content": [
-          {
-            "type": "paragraph",
-            "runs": [
-              {
-                "text": "詳細は担当課にお問い合わせください。"
-              }
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "section-方法-1769919363194",
-      "type": "Section",
-      "props": {
-        "heading": "パスポート（旅券）の手続き方法",
-        "content": [
-          {
             "type": "list",
-            "ordered": true,
+            "ordered": false,
             "items": [
               [
                 {
                   "type": "paragraph",
                   "runs": [
                     {
-                      "text": "必要書類を準備します。"
+                      "text": "10年有効（20歳以上）：16,000円"
                     }
                   ]
                 }
@@ -247,7 +166,7 @@
                   "type": "paragraph",
                   "runs": [
                     {
-                      "text": "窓口で申請書を記入します。"
+                      "text": "5年有効（12歳以上）：11,000円"
                     }
                   ]
                 }
@@ -257,12 +176,60 @@
                   "type": "paragraph",
                   "runs": [
                     {
-                      "text": "書類を提出し、確認を受けます。"
+                      "text": "5年有効（12歳未満）：6,000円"
                     }
                   ]
                 }
               ]
             ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-todokede",
+      "type": "Section",
+      "props": {
+        "heading": "申請・受取場所",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "{{passport_office_name}}で申請します。申請から約1週間で受け取り可能です。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "受け取りは必ず本人が窓口に出向く必要があります。",
+                "bold": true
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "related-links-1",
+      "type": "RelatedLinks",
+      "props": {
+        "heading": "関連ページ",
+        "items": [
+          {
+            "title": "戸籍",
+            "href": "/koseki"
+          },
+          {
+            "title": "住民票の写し",
+            "href": "/juminhyo"
+          },
+          {
+            "title": "外務省 パスポート",
+            "href": "https://www.mofa.go.jp/mofaj/toko/passport/"
           }
         ]
       }
@@ -274,27 +241,6 @@
         "department": "{{passport_office_name}}",
         "phone": "{{passport_office_phone}}",
         "address": "{{passport_office_address}}"
-      }
-    },
-    {
-      "id": "terms-1769899964510",
-      "type": "Section",
-      "props": {
-        "heading": "用語の説明",
-        "content": [
-          {
-            "type": "paragraph",
-            "runs": [
-              {
-                "text": "戸籍謄本",
-                "bold": true
-              },
-              {
-                "text": "：家族全員の戸籍の写し"
-              }
-            ]
-          }
-        ]
       }
     },
     {
@@ -313,6 +259,6 @@
       "パスポート申請",
       "パスポート更新"
     ],
-    "plain_text": "パスポート。10年有効16,000円、5年有効11,000円（12歳以上）。申請から約1週間で受け取り。"
+    "plain_text": "パスポート（旅券）。10年有効16,000円、5年有効11,000円（12歳以上）。申請から約1週間で受け取り。パスポートセンターで申請。"
   }
 }

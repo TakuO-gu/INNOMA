@@ -49,13 +49,14 @@ export interface VariableStore {
  */
 export interface MunicipalityMeta {
   /** 自治体ID（URLスラッグ） */
-  id: string;
+  municipalityId?: string;
   /** 自治体名 */
-  name: string;
+  municipalityName?: string;
   /** 都道府県 */
-  prefecture: string;
+  prefectureName?: string;
   /** 公式サイトURL */
-  officialUrl?: string;
+  officialWebsite?: string;
+  officialUrl?: string; // 後方互換性
   /** 作成日時 */
   createdAt: string;
   /** 最終更新日時 */
@@ -63,9 +64,14 @@ export interface MunicipalityMeta {
   /** 最終LLM取得日時 */
   lastFetchAt?: string;
   /** ステータス */
-  status: MunicipalityStatus;
+  status?: MunicipalityStatus;
   /** 設定 */
-  settings: MunicipalitySettings;
+  settings?: MunicipalitySettings;
+
+  // 後方互換性（古い形式）
+  id?: string;
+  name?: string;
+  prefecture?: string;
 }
 
 /**

@@ -209,5 +209,37 @@
     "sourceUrl": "https://www.town.ibaraki-kawachi.lg.jp/section.php",
     "confidence": 0.8,
     "updatedAt": "2026-02-03T00:00:00.000Z"
+  },
+  "juminhyo_fee": {
+    "value": "300円",
+    "source": "llm",
+    "sourceUrl": "https://www.town.ami.lg.jp/0000000563.html",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-26T00:00:00.000Z",
+    "notes": "茨城県稲敷郡の標準的な手数料（阿見町を参考）"
+  },
+  "juminhyo_convenience_fee": {
+    "value": "200円",
+    "source": "llm",
+    "sourceUrl": "https://www.town.ami.lg.jp/0000009979.html",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-26T00:00:00.000Z",
+    "notes": "茨城県稲敷郡の標準的な手数料（阿見町らくらく交付申請サービスを参考）"
+  },
+  "juminhyo_kisai_fee": {
+    "value": "300円",
+    "source": "llm",
+    "sourceUrl": "https://www.town.ami.lg.jp/0000000563.html",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-26T00:00:00.000Z",
+    "notes": "茨城県稲敷郡の標準的な手数料（阿見町を参考）"
+  },
+  "shimin_email": {
+    "value": "",
+    "source": "manual",
+    "sourceUrl": "https://www.town.ibaraki-kawachi.lg.jp/section.php",
+    "confidence": 0,
+    "updatedAt": "2026-02-26T00:00:00.000Z",
+    "notes": "公式サイトで町民課のメールアドレスは公開されていない。電話: 0297-84-2111（代表）での問い合わせが必要"
   }
 }

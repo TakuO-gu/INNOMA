@@ -181,11 +181,11 @@
           },
           {
             "title": "ハザードマップ",
-            "href": "/hazard-map"
+            "href": "/disaster/hazard-map"
           },
           {
             "title": "避難所",
-            "href": "/hinanjo"
+            "href": "/disaster/hinanjo"
           }
         ]
       }

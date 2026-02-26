@@ -1,8 +1,9 @@
 /**
- * Page Registry - GOV.UK式フラットURL対応
+ * Page Registry - フラットURL対応
  *
  * URLスラッグからファイルパスを解決するためのマッピング層
- * 例: "kokuho" → "services/health/kokuho"
+ * 例: /kokuho → kokuho.json
+ *     /registration → registration.json (トピックページ)
  */
 
 import { cache } from "react";
@@ -12,10 +13,12 @@ import pageRegistryData from "@/data/artifacts/_templates/page-registry.json";
  * ページレジストリのエントリ
  */
 export interface PageRegistryEntry {
-  /** ファイルパス（.json拡張子なし）例: "services/health/kokuho" */
+  /** ファイルパス（.json拡張子なし）例: "kokuho" */
   filePath: string;
   /** 所属カテゴリ（複数可） */
   categories: string[];
+  /** トピックページの場合 "topic" */
+  type?: "topic";
 }
 
 /**
@@ -68,7 +71,7 @@ export function getPageCategories(slug: string): string[] {
 /**
  * ファイルパスからスラッグを逆引き
  *
- * @param filePath - ファイルパス（例: "services/health/kokuho"）
+ * @param filePath - ファイルパス（例: "kokuho"）
  * @returns スラッグ（例: "kokuho"）、見つからない場合はnull
  */
 export function getSlugFromFilePath(filePath: string): string | null {
@@ -82,12 +85,26 @@ export function getSlugFromFilePath(filePath: string): string | null {
 }
 
 /**
+ * スラッグからURLパスを構築（フラットURL）
+ *
+ * 全ページ: /{slug}（例: /kokuho, /registration, /juminhyo）
+ *
+ * @param slug - ページスラッグ
+ * @returns URLパス（先頭 / 付き）
+ */
+export function getUrlPathForSlug(slug: string): string {
+  return `/${slug}`;
+}
+
+/**
  * URLパスをArtifactキーに変換
  *
- * GOV.UK式フラットURL対応:
- * - /kokuho → services/health/kokuho.json
- * - /health → topics/health.json（トピックもフラット）
- * - / → index.json
+ * フラットURL対応:
+ * - /kokuho → kokuho（コンテンツページ）
+ * - /registration → registration（トピックページ）
+ * - / → index
+ *
+ * 後方互換性: /category/slug 形式も解決可能
  *
  * @param pathSegments - URLのパスセグメント配列
  * @returns Artifactファイルパス（.json拡張子なし）
@@ -98,25 +115,36 @@ export function resolveArtifactPath(pathSegments: string[]): string | null {
     return "index";
   }
 
-  // 旧形式 /topics/* もサポート（後方互換性）
-  if (pathSegments[0] === "topics" && pathSegments.length === 2) {
-    return `topics/${pathSegments[1]}`;
-  }
-
-  // 旧形式 /services/* もサポート（後方互換性）
-  if (pathSegments[0] === "services" && pathSegments.length === 3) {
-    return `services/${pathSegments[1]}/${pathSegments[2]}`;
-  }
-
-  // フラットURL: /kokuho → services/health/kokuho, /health → topics/health
+  // 1セグメント: トピックページ or レジストリ直接一致
   if (pathSegments.length === 1) {
     const slug = pathSegments[0];
     const filePath = resolvePagePath(slug);
     if (filePath) {
       return filePath;
     }
-    // レジストリにない場合はそのまま（将来の拡張用）
     return slug;
+  }
+
+  // 2セグメント: /{category}/{slug} 形式
+  if (pathSegments.length === 2) {
+    const [category, slug] = pathSegments;
+    const registry = getPageRegistry();
+    const entry = registry[slug];
+
+    // registryでslugが見つかり、カテゴリが一致する場合
+    if (entry && entry.categories?.includes(category)) {
+      return entry.filePath;
+    }
+
+    // 旧形式 /topics/* の後方互換性
+    if (category === "topics") {
+      return `topics/${slug}`;
+    }
+  }
+
+  // 旧形式 /services/* の後方互換性
+  if (pathSegments[0] === "services" && pathSegments.length === 3) {
+    return `services/${pathSegments[1]}/${pathSegments[2]}`;
   }
 
   // その他のパスはそのまま結合

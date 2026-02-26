@@ -1,0 +1,24 @@
+{
+  "juminhyo_fee": {
+    "value": "300円",
+    "source": "llm",
+    "sourceUrl": "https://www.town.hakone.kanagawa.jp/www/contents/1100000001531/index.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "juminhyo_convenience_fee": {
+    "value": "300円",
+    "source": "llm",
+    "sourceUrl": "https://www.town.hakone.kanagawa.jp/www/contents/1100000000082/index.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "juminhyo_kisai_fee": {
+    "value": "300円",
+    "source": "llm",
+    "sourceUrl": "https://www.town.hakone.kanagawa.jp/www/contents/1100000000401/index.html",
+    "confidence": 0.7,
+    "updatedAt": "2026-02-26T00:00:00.000Z",
+    "note": "公式サイトに明記なし。神奈川県内の他自治体（中井町など）の例から推定。住民票の写しと同額の可能性が高い。"
+  }
+}

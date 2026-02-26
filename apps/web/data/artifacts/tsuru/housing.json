@@ -12,13 +12,13 @@
   ],
   "topic": [],
   "source": {
-    "source_url": "template://sample/topics/housing",
-    "fetched_at": "{{generated_at}}",
+    "source_url": "template://tsuru/topics/housing",
+    "fetched_at": "2026-02-26T05:47:37.074Z",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "{{generated_at}}",
+    "generated_at": "2026-02-26T05:47:37.074Z",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -85,7 +85,7 @@
           {
             "title": "住宅リフォーム補助",
             "href": "/reform-subsidy",
-            "description": "{{municipality_name}}独自の住宅リフォーム補助制度"
+            "description": "都留市独自の住宅リフォーム補助制度"
           },
           {
             "title": "耐震診断・耐震改修補助",

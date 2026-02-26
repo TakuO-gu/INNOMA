@@ -374,17 +374,16 @@
                 "text": "市内には{{houkatsu_count}}か所の地域包括支援センターがあります。お住まいの地区を担当するセンターにご相談ください。"
               }
             ]
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "お住まいの地区を担当するセンターの一覧は、{{municipality_name}}のホームページをご確認ください。"
+              }
+            ]
           }
         ]
-      }
-    },
-    {
-      "id": "task-button-1",
-      "type": "TaskButton",
-      "props": {
-        "label": "地域包括支援センター一覧を見る",
-        "href": "{{houkatsu_list_url}}",
-        "isTopTask": true
       }
     },
     {

@@ -1,0 +1,68 @@
+{
+  "kinkyu_hinanbasho_count": {
+    "value": "167",
+    "source": "web",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kikikanrika/2/1/1/1/5059.html",
+    "confidence": 0.8,
+    "updatedAt": "2026-02-26T00:00:00.000Z",
+    "note": "公式サイトのPDFに記載。NAVITIMEのデータから推定（要確認）"
+  },
+  "shitei_hinanjo_count": {
+    "value": "177",
+    "source": "web",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kikikanrika/2/1/1/1/5059.html",
+    "confidence": 0.8,
+    "updatedAt": "2026-02-26T00:00:00.000Z",
+    "note": "公式サイトのPDFに記載。NAVITIMEのデータから推定（要確認）"
+  },
+  "fukushi_hinanjo_count": {
+    "value": "29",
+    "source": "web",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/kikikanrika/2/2/1/4431.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "hinanjo_status_url": {
+    "value": "https://www.city.takaoka.toyama.jp/gyosei/kurashi_tetsuzuki/anzen_anshin/6/1/index.html",
+    "source": "web",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/gyosei/kurashi_tetsuzuki/anzen_anshin/6/1/index.html",
+    "confidence": 0.9,
+    "updatedAt": "2026-02-26T00:00:00.000Z",
+    "note": "災害情報ページ。災害時には避難所開設状況が掲載される"
+  },
+  "bosai_department": {
+    "value": "危機管理課",
+    "source": "web",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/hisho/shise/gaiyo/soshiki/kikikanri/index.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "bosai_phone": {
+    "value": "0766-20-1229",
+    "source": "web",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/hisho/shise/gaiyo/soshiki/kikikanri/index.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "bosai_email": {
+    "value": "kikikanri@city.takaoka.lg.jp",
+    "source": "web",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/hisho/shise/gaiyo/soshiki/kikikanri/index.html",
+    "confidence": 0.9,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "city_hall_hours": {
+    "value": "月曜日～金曜日 午前8時30分～午後5時15分（祝日・年末年始を除く）",
+    "source": "web",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/soshiki/shiminka/2/4/3055.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "city_hall_address": {
+    "value": "〒933-8601 富山県高岡市広小路7番50号",
+    "source": "web",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/hisho/shise/gaiyo/soshiki/kikikanri/index.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  }
+}

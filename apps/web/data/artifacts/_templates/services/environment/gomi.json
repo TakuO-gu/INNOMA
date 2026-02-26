@@ -57,15 +57,6 @@
       }
     },
     {
-      "id": "task-button-1",
-      "type": "TaskButton",
-      "props": {
-        "label": "ごみ収集日カレンダーを見る",
-        "href": "{{gomi_calendar_url}}",
-        "isTopTask": true
-      }
-    },
-    {
       "id": "district-selector-1",
       "type": "DistrictSelector",
       "props": {
@@ -276,15 +267,6 @@
             ]
           }
         ]
-      }
-    },
-    {
-      "id": "task-button-2",
-      "type": "TaskButton",
-      "props": {
-        "label": "粗大ごみの申込方法を見る",
-        "href": "/sodaigomi",
-        "isTopTask": false
       }
     },
     {

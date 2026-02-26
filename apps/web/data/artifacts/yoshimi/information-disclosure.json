@@ -13,12 +13,12 @@
   "topic": [],
   "source": {
     "source_url": "template://yoshimi/services/civic/information-disclosure",
-    "fetched_at": "2026-02-03T01:50:20.576Z",
+    "fetched_at": "2026-02-26T05:47:36.810Z",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "2026-02-03T01:50:20.576Z",
+    "generated_at": "2026-02-26T05:47:36.810Z",
     "schema_version": "2.0.0"
   },
   "blocks": [

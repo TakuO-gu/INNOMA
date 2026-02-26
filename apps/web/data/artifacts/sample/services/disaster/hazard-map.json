@@ -37,7 +37,7 @@
           },
           {
             "label": "ハザードマップ",
-            "href": "/hazard-map"
+            "href": "/disaster/hazard-map"
           }
         ]
       }
@@ -276,11 +276,11 @@
         "items": [
           {
             "title": "避難所・避難場所",
-            "href": "/hinanjo"
+            "href": "/disaster/hinanjo"
           },
           {
             "title": "防災情報メール",
-            "href": "/bosai-mail"
+            "href": "/disaster/bosai-mail"
           },
           {
             "title": "非常持出品",

@@ -192,11 +192,11 @@
         "items": [
           {
             "title": "戸籍",
-            "href": "/koseki"
+            "href": "/registration/koseki"
           },
           {
             "title": "住民票",
-            "href": "/juminhyo"
+            "href": "/registration/juminhyo"
           },
           {
             "title": "ビザ・在留資格",

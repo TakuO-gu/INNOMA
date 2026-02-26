@@ -5,7 +5,7 @@
   "path": "/shibou",
   "title": "死亡届",
   "description": "ご家族が亡くなられたときの届出方法、必要書類について",
-  "content_type": "step_by_step",
+  "content_type": "guide",
   "service_category": "government",
   "audience": [
     "residents"
@@ -13,12 +13,12 @@
   "topic": [],
   "source": {
     "source_url": "template://utashinai/services/registration/shibou",
-    "fetched_at": "2026-02-03T01:50:20.551Z",
+    "fetched_at": "2026-02-26T05:47:36.778Z",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "2026-02-03T01:50:20.551Z",
+    "generated_at": "2026-02-26T05:47:36.778Z",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -57,66 +57,7 @@
       }
     },
     {
-      "id": "section-6utxsma6l",
-      "type": "Section",
-      "props": {
-        "heading": "届出期間",
-        "level": 2,
-        "content": [
-          {
-            "type": "paragraph",
-            "runs": [
-              {
-                "text": "死亡の事実を知った日から"
-              },
-              {
-                "text": "7日以内",
-                "bold": true
-              },
-              {
-                "text": "に届け出てください。届出が遅れると、過料の対象となる場合があります。"
-              }
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "step-nav-1",
-      "type": "StepNavigation",
-      "props": {
-        "currentStep": 0,
-        "steps": [
-          {
-            "title": "死亡診断書の受け取り",
-            "body": "医師から死亡診断書（または死体検案書）を受け取ります。死亡届は死亡診断書と一体の様式です。",
-            "documents": [
-              "死亡診断書"
-            ]
-          },
-          {
-            "title": "死亡届の記入",
-            "body": "死亡届の左側（届出人が記入する部分）に必要事項を記入します。",
-            "documents": []
-          },
-          {
-            "title": "届出",
-            "body": "市区町村の窓口に届出します。死亡届は24時間受け付けています。",
-            "documents": [
-              "死亡届",
-              "届出人の印鑑"
-            ]
-          },
-          {
-            "title": "火葬許可証の受け取り",
-            "body": "届出と同時に、火葬許可証が発行されます。",
-            "documents": []
-          }
-        ]
-      }
-    },
-    {
-      "id": "section-40jlahxmn",
+      "id": "section-taisho",
       "type": "Section",
       "props": {
         "heading": "届出できる人",
@@ -172,7 +113,94 @@
       }
     },
     {
-      "id": "section-ov7k2qnk5",
+      "id": "section-hitsuyou",
+      "type": "Section",
+      "props": {
+        "heading": "届出に必要なもの",
+        "level": 2,
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "死亡届（死亡診断書）",
+                      "bold": true
+                    },
+                    {
+                      "text": "（医師が記入済みのもの）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "届出人の印鑑",
+                      "bold": true
+                    },
+                    {
+                      "text": "（認印可、シャチハタ不可）"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-kikan",
+      "type": "Section",
+      "props": {
+        "heading": "届出期間",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "死亡の事実を知った日から"
+              },
+              {
+                "text": "7日以内",
+                "bold": true
+              },
+              {
+                "text": "に届け出てください。届出が遅れると、過料の対象となる場合があります。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-tesuryo",
+      "type": "Section",
+      "props": {
+        "heading": "手数料",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "無料"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-todokesaki",
       "type": "Section",
       "props": {
         "heading": "届出先",
@@ -234,51 +262,7 @@
       }
     },
     {
-      "id": "section-wzfvrsawb",
-      "type": "Section",
-      "props": {
-        "heading": "届出に必要なもの",
-        "level": 2,
-        "content": [
-          {
-            "type": "list",
-            "ordered": false,
-            "items": [
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "死亡届（死亡診断書）",
-                      "bold": true
-                    },
-                    {
-                      "text": "（医師が記入済みのもの）"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "届出人の印鑑",
-                      "bold": true
-                    },
-                    {
-                      "text": "（認印可、シャチハタ不可）"
-                    }
-                  ]
-                }
-              ]
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "section-91r4dsqne",
+      "id": "section-kanren",
       "type": "Section",
       "props": {
         "heading": "届出後の手続き",
@@ -362,7 +346,7 @@
       }
     },
     {
-      "id": "section-6lhbu46cz",
+      "id": "section-okuyami",
       "type": "Section",
       "props": {
         "heading": "おくやみ窓口",
@@ -383,6 +367,7 @@
       "id": "related-links-1",
       "type": "RelatedLinks",
       "props": {
+        "heading": "関連ページ",
         "items": [
           {
             "title": "戸籍",
@@ -403,68 +388,6 @@
           {
             "title": "後期高齢者医療",
             "href": "/kouki"
-          }
-        ]
-      }
-    },
-    {
-      "id": "section-対象-1769919363207",
-      "type": "Section",
-      "props": {
-        "heading": "死亡届の対象となる方",
-        "content": [
-          {
-            "type": "paragraph",
-            "runs": [
-              {
-                "text": "詳細は担当課にお問い合わせください。"
-              }
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "section-方法-1769919363207",
-      "type": "Section",
-      "props": {
-        "heading": "死亡届の手続き方法",
-        "content": [
-          {
-            "type": "list",
-            "ordered": true,
-            "items": [
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "必要書類を準備します。"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "窓口で申請書を記入します。"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "書類を提出し、確認を受けます。"
-                    }
-                  ]
-                }
-              ]
-            ]
           }
         ]
       }

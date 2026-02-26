@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0.0",
-  "page_id": "takaoka-services-registration-koseki",
-  "municipality_id": "takaoka",
+  "page_id": "kawasaki-miyagi-services-registration-koseki",
+  "municipality_id": "kawasaki-miyagi",
   "path": "/koseki",
   "title": "戸籍謄本・住民票の取得",
   "description": "戸籍謄本（戸籍全部事項証明書）・住民票の写しの取得方法と手数料",
@@ -32,7 +32,7 @@
             "href": "/"
           },
           {
-            "label": "届出・申請・証明書",
+            "label": "届出・証明",
             "href": "/registration"
           },
           {
@@ -561,23 +561,6 @@
           {
             "title": "パスポート",
             "href": "/passport"
-          }
-        ]
-      }
-    },
-    {
-      "id": "section-対象-1769919363204",
-      "type": "Section",
-      "props": {
-        "heading": "戸籍謄本・住民票取得の対象となる方",
-        "content": [
-          {
-            "type": "paragraph",
-            "runs": [
-              {
-                "text": "詳細は担当課にお問い合わせください。"
-              }
-            ]
           }
         ]
       }

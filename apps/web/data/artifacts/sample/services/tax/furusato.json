@@ -37,7 +37,7 @@
           },
           {
             "label": "ふるさと納税",
-            "href": "/furusato"
+            "href": "/tax/furusato"
           }
         ]
       }
@@ -389,11 +389,11 @@
           },
           {
             "title": "住民税",
-            "href": "/juminzei"
+            "href": "/tax/juminzei"
           },
           {
             "title": "税証明書",
-            "href": "/zeishoumei"
+            "href": "/tax/zeishoumei"
           }
         ]
       }

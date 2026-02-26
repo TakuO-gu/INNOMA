@@ -1,0 +1,54 @@
+{
+  "kinkyu_hinanbasho_count": {
+    "value": "28",
+    "source": "web",
+    "sourceUrl": "https://www.kitagawamura.jp/life/dtl.php?hdnKey=588",
+    "confidence": 0.7,
+    "updatedAt": "2026-02-26T00:00:00.000Z",
+    "note": "北川村公式サイト「避難施設・避難路一覧」より28施設を確認。ただし「指定緊急避難場所」と「指定避難所」の区別が明記されていないため、全体数として記載。"
+  },
+  "shitei_hinanjo_count": {
+    "value": "28",
+    "source": "web",
+    "sourceUrl": "https://www.kitagawamura.jp/life/dtl.php?hdnKey=588",
+    "confidence": 0.7,
+    "updatedAt": "2026-02-26T00:00:00.000Z",
+    "note": "北川村公式サイト「避難施設・避難路一覧」より28施設を確認（うち1施設が福祉避難所）。「指定緊急避難場所」と「指定避難所」の区別は明記されていない。"
+  },
+  "hinanjo_status_url": {
+    "value": "https://www.kitagawamura.jp/",
+    "source": "web",
+    "sourceUrl": "https://www.kitagawamura.jp/",
+    "confidence": 0.6,
+    "updatedAt": "2026-02-26T00:00:00.000Z",
+    "note": "専用の避難所開設状況確認ページは見つかりませんでした。災害時は村のトップページで告知される形式と思われます。詳細な避難所情報は高知県防災マップ（https://bousaimap.pref.kochi.lg.jp/）で確認できます。"
+  },
+  "bosai_department": {
+    "value": "総務課",
+    "source": "web",
+    "sourceUrl": "https://www.kitagawamura.jp/soshiki/",
+    "confidence": 0.9,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "bosai_phone": {
+    "value": "0887-32-1212",
+    "source": "web",
+    "sourceUrl": "https://www.kitagawamura.jp/soshiki/",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "city_hall_hours": {
+    "value": "午前8時30分～午後5時15分",
+    "source": "web",
+    "sourceUrl": "https://www.kitagawamura.jp/soshiki/",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "city_hall_address": {
+    "value": "〒781-6441 高知県安芸郡北川村大字野友甲1530",
+    "source": "web",
+    "sourceUrl": "https://www.kitagawamura.jp/soshiki/",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  }
+}

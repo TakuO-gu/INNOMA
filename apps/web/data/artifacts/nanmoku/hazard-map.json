@@ -13,12 +13,12 @@
   "topic": [],
   "source": {
     "source_url": "template://nanmoku/services/disaster/hazard-map",
-    "fetched_at": "2026-02-03T01:50:20.110Z",
+    "fetched_at": "2026-02-26T05:47:35.620Z",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "2026-02-03T01:50:20.110Z",
+    "generated_at": "2026-02-26T05:47:35.620Z",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -54,13 +54,6 @@
       "type": "Summary",
       "props": {
         "text": "ハザードマップは、自然災害による被害を予測し、被害範囲や避難場所などを地図上に示したものです。お住まいの地域の危険箇所を事前に確認しておきましょう。"
-      }
-    },
-    {
-      "id": "richtext-intro",
-      "type": "RichText",
-      "props": {
-        "content": []
       }
     },
     {
@@ -124,15 +117,6 @@
       }
     },
     {
-      "id": "task-button-kozui",
-      "type": "TaskButton",
-      "props": {
-        "label": "洪水ハザードマップを見る",
-        "href": "{{kozui_hazard_map_url}}",
-        "isTopTask": true
-      }
-    },
-    {
       "id": "section-mmtinpl1q",
       "type": "Section",
       "props": {
@@ -168,15 +152,6 @@
             "description": "地すべりが発生するおそれのある区域"
           }
         ]
-      }
-    },
-    {
-      "id": "task-button-dosha",
-      "type": "TaskButton",
-      "props": {
-        "label": "土砂災害ハザードマップを見る",
-        "href": "{{dosha_hazard_map_url}}",
-        "isTopTask": false
       }
     },
     {
@@ -218,37 +193,75 @@
       }
     },
     {
-      "id": "task-button-jishin",
-      "type": "TaskButton",
+      "id": "section-7exyezh01",
+      "type": "Section",
       "props": {
-        "label": "地震ハザードマップを見る",
-        "href": "{{jishin_hazard_map_url}}",
-        "isTopTask": false
-      }
-    },
-    {
-      "id": "section-7exyezh01-step",
-      "type": "StepNavigation",
-      "props": {
-        "steps": [
+        "heading": "ハザードマップの活用方法",
+        "level": 2,
+        "content": [
           {
-            "title": "ステップ1",
-            "body": "自宅の位置を確認：自宅がどの危険区域にあるか確認しましょう"
-          },
-          {
-            "title": "ステップ2",
-            "body": "避難場所を確認：最寄りの避難場所と経路を確認しましょう"
-          },
-          {
-            "title": "ステップ3",
-            "body": "避難経路の安全確認：避難経路上に危険な箇所がないか確認しましょう"
-          },
-          {
-            "title": "ステップ4",
-            "body": "家族で共有：避難場所や連絡方法を家族で話し合いましょう"
+            "type": "list",
+            "ordered": true,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "自宅の位置を確認",
+                      "bold": true
+                    },
+                    {
+                      "text": "：自宅がどの危険区域にあるか確認しましょう"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "避難場所を確認",
+                      "bold": true
+                    },
+                    {
+                      "text": "：最寄りの避難場所と経路を確認しましょう"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "避難経路の安全確認",
+                      "bold": true
+                    },
+                    {
+                      "text": "：避難経路上に危険な箇所がないか確認しましょう"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "家族で共有",
+                      "bold": true
+                    },
+                    {
+                      "text": "：避難場所や連絡方法を家族で話し合いましょう"
+                    }
+                  ]
+                }
+              ]
+            ]
           }
-        ],
-        "heading": "ハザードマップの活用方法"
+        ]
       }
     },
     {

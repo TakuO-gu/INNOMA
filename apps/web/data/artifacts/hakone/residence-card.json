@@ -6,19 +6,19 @@
   "title": "在留カード",
   "description": "在留カードの交付・更新・届出、住居地届出",
   "content_type": "guide",
-  "service_category": "government",
+  "service_category": "nationality",
   "audience": [
     "foreigners"
   ],
   "topic": [],
   "source": {
     "source_url": "template://hakone/services/nationality/residence-card",
-    "fetched_at": "2026-02-03T01:50:19.559Z",
+    "fetched_at": "2026-02-26T05:47:34.134Z",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "2026-02-03T01:50:19.559Z",
+    "generated_at": "2026-02-26T05:47:34.134Z",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -57,7 +57,25 @@
       }
     },
     {
-      "id": "section-j5g8f8qnj",
+      "id": "section-taisho",
+      "type": "Section",
+      "props": {
+        "heading": "対象となる方",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "3か月を超える在留資格を持つ中長期在留者（短期滞在、外交、公用を除く）"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-jyuukyochi",
       "type": "Section",
       "props": {
         "heading": "住居地届出",
@@ -67,7 +85,11 @@
             "type": "paragraph",
             "runs": [
               {
-                "text": "住居地を定めてから14日以内",
+                "text": "住居地を定めてから",
+                "bold": false
+              },
+              {
+                "text": "14日以内",
                 "bold": true
               },
               {
@@ -79,10 +101,10 @@
       }
     },
     {
-      "id": "section-zcvg6e1za",
+      "id": "section-todokede",
       "type": "Section",
       "props": {
-        "heading": "在留カードの届出が必要な場合",
+        "heading": "届出が必要な場合",
         "level": 2,
         "content": [
           {
@@ -135,7 +157,7 @@
       }
     },
     {
-      "id": "section-m4xqowqjx",
+      "id": "section-koushin",
       "type": "Section",
       "props": {
         "heading": "在留カードの有効期間更新",
@@ -153,62 +175,22 @@
       }
     },
     {
-      "id": "related-links-fjapesvlu",
-      "type": "RelatedLinks",
-      "props": {
-        "items": [
-          {
-            "title": "ビザ・在留資格",
-            "href": "/visa"
-          },
-          {
-            "title": "外国人登録",
-            "href": "/foreign-registration"
-          },
-          {
-            "title": "外国人相談",
-            "href": "/consultation"
-          },
-          {
-            "title": "住民票",
-            "href": "/juminhyo"
-          }
-        ]
-      }
-    },
-    {
-      "id": "section-対象-1769919363194",
+      "id": "section-madoguchi",
       "type": "Section",
       "props": {
-        "heading": "在留カードの対象となる方",
-        "content": [
-          {
-            "type": "paragraph",
-            "runs": [
-              {
-                "text": "詳細は担当課にお問い合わせください。"
-              }
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "section-方法-1769919363194",
-      "type": "Section",
-      "props": {
-        "heading": "在留カードの手続き方法",
+        "heading": "届出窓口",
+        "level": 2,
         "content": [
           {
             "type": "list",
-            "ordered": true,
+            "ordered": false,
             "items": [
               [
                 {
                   "type": "paragraph",
                   "runs": [
                     {
-                      "text": "必要書類を準備します。"
+                      "text": "住居地届出：市区町村の窓口"
                     }
                   ]
                 }
@@ -218,17 +200,7 @@
                   "type": "paragraph",
                   "runs": [
                     {
-                      "text": "窓口で申請書を記入します。"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "書類を提出し、確認を受けます。"
+                      "text": "その他の届出（氏名変更、所属機関変更など）：出入国在留管理局"
                     }
                   ]
                 }
@@ -239,12 +211,73 @@
       }
     },
     {
+      "id": "section-chuui",
+      "type": "Section",
+      "props": {
+        "heading": "ご注意ください",
+        "level": 2,
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "在留カードは常時携帯が義務付けられています"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "届出を怠ると在留資格の取消事由になる場合があります"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "related-links-1",
+      "type": "RelatedLinks",
+      "props": {
+        "heading": "関連ページ",
+        "items": [
+          {
+            "title": "外国人住民の届出",
+            "href": "/foreign-registration"
+          },
+          {
+            "title": "特別永住者",
+            "href": "/special-permanent-resident"
+          },
+          {
+            "title": "住民票の写し",
+            "href": "/juminhyo"
+          },
+          {
+            "title": "出入国在留管理庁",
+            "href": "https://www.moj.go.jp/isa/"
+          }
+        ]
+      }
+    },
+    {
       "id": "contact-1",
       "type": "Contact",
       "props": {
-        "department": "{{registration_department}}",
-        "phone": "{{registration_phone}}",
-        "email": "{{registration_email}}",
+        "department": "{{foreign_registration_department}}",
+        "phone": "{{foreign_registration_phone}}",
+        "email": "{{foreign_registration_email}}",
         "hours": "{{city_hall_hours}}",
         "address": "{{city_hall_address}}"
       }
@@ -265,6 +298,6 @@
       "外国人",
       "中長期在留者"
     ],
-    "plain_text": "在留カード。住居地を定めてから14日以内に届出。引越し、氏名変更等も届出が必要。"
+    "plain_text": "在留カード。住居地を定めてから14日以内に届出。引越し、氏名変更等も届出が必要。常時携帯義務あり。"
   }
 }

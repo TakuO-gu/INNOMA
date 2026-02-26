@@ -27,8 +27,8 @@
         "items": [
           { "label": "ホーム", "href": "/" },
           { "label": "子育て・出産", "href": "/childcare" },
-          { "label": "児童手当", "href": "/jidou-teate" },
-          { "label": "児童手当を申請する", "href": "/jidou-teate-apply" }
+          { "label": "児童手当", "href": "/childcare/jidou-teate" },
+          { "label": "児童手当を申請する", "href": "/childcare/jidou-teate-apply" }
         ]
       }
     },
@@ -192,8 +192,8 @@
       "type": "RelatedLinks",
       "props": {
         "items": [
-          { "title": "児童手当について詳しく見る", "href": "/jidou-teate" },
-          { "title": "受け取れるか確認する", "href": "/jidou-teate-check" }
+          { "title": "児童手当について詳しく見る", "href": "/childcare/jidou-teate" },
+          { "title": "受け取れるか確認する", "href": "/childcare/jidou-teate-check" }
         ]
       }
     },

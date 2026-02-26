@@ -138,11 +138,11 @@
         "items": [
           {
             "title": "保育所入所申請",
-            "href": "/nursery-apply"
+            "href": "/childcare/nursery-apply"
           },
           {
             "title": "介護保険",
-            "href": "/kaigo"
+            "href": "/welfare/kaigo"
           },
           {
             "title": "労働基準",

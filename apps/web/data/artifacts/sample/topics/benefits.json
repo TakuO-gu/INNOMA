@@ -59,7 +59,7 @@
         "items": [
           {
             "title": "国民健康保険",
-            "href": "/kokuho",
+            "href": "/health/kokuho",
             "description": "国民健康保険の加入・届出・給付"
           },
           {
@@ -69,17 +69,17 @@
           },
           {
             "title": "介護保険",
-            "href": "/kaigo",
+            "href": "/welfare/kaigo",
             "description": "介護保険の加入・届出・サービス利用"
           },
           {
             "title": "後期高齢者医療",
-            "href": "/kouki",
+            "href": "/health/kouki",
             "description": "75歳以上の方の医療保険制度"
           },
           {
             "title": "児童手当・児童扶養手当",
-            "href": "/jidou-teate",
+            "href": "/childcare/jidou-teate",
             "description": "子育て世帯への手当支給"
           },
           {

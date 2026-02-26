@@ -13,13 +13,13 @@
   ],
   "topic": [],
   "source": {
-    "source_url": "template://sample/services/health/kouki",
-    "fetched_at": "2026-01-20T10:33:17.311Z",
+    "source_url": "template://takaoka/services/health/kouki",
+    "fetched_at": "2026-02-26T05:47:37.293Z",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "2026-01-20T10:33:17.311Z",
+    "generated_at": "2026-02-26T05:47:37.293Z",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -58,7 +58,7 @@
       }
     },
     {
-      "id": "section-e698i3zjc",
+      "id": "section-2cl1tlqbd",
       "type": "Section",
       "props": {
         "heading": "後期高齢者医療制度の対象となる方",
@@ -110,7 +110,7 @@
       }
     },
     {
-      "id": "section-5t2kel96i",
+      "id": "section-82kvbsvzq",
       "type": "Section",
       "props": {
         "heading": "届出が必要なとき",
@@ -186,7 +186,7 @@
       }
     },
     {
-      "id": "section-g5nwhfkp9",
+      "id": "section-y4wchjj91",
       "type": "Section",
       "props": {
         "heading": "医療費の自己負担",
@@ -224,7 +224,7 @@
       }
     },
     {
-      "id": "section-pkcnaforn",
+      "id": "section-46hpy2dao",
       "type": "Section",
       "props": {
         "heading": "保険料",
@@ -274,7 +274,7 @@
       }
     },
     {
-      "id": "section-bak7lmg7a",
+      "id": "section-cvcu1iy1l",
       "type": "Section",
       "props": {
         "heading": "保険料の軽減",
@@ -292,7 +292,7 @@
       }
     },
     {
-      "id": "section-45hm3u0j7",
+      "id": "section-0ru2513j0",
       "type": "Section",
       "props": {
         "heading": "主な給付",
@@ -301,7 +301,7 @@
       }
     },
     {
-      "id": "section-6yjibkva9",
+      "id": "section-fomldcl67",
       "type": "Section",
       "props": {
         "heading": "高額療養費",
@@ -319,7 +319,7 @@
       }
     },
     {
-      "id": "section-2reu5vcax",
+      "id": "section-gyq1xcr50",
       "type": "Section",
       "props": {
         "heading": "葬祭費",
@@ -337,7 +337,7 @@
       }
     },
     {
-      "id": "section-p1fnrl3pf",
+      "id": "section-nl76mxnaz",
       "type": "Section",
       "props": {
         "heading": "療養費",
@@ -350,6 +350,19 @@
                 "text": "やむを得ず保険証を持参できずに受診した場合など、いったん全額自己負担した医療費の一部が払い戻されます。"
               }
             ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "related-links-kouki-procedures",
+      "type": "RelatedLinks",
+      "props": {
+        "heading": "後期高齢者医療制度の手続き",
+        "items": [
+          {
+            "title": "後期高齢者医療制度の対象か確認する",
+            "href": "/kouki-check"
           }
         ]
       }
@@ -387,40 +400,6 @@
       }
     },
     {
-      "id": "section-方法-1769918445583",
-      "type": "Section",
-      "props": {
-        "heading": "後期高齢者医療制度の手続き方法",
-        "content": [
-          {
-            "type": "paragraph",
-            "runs": [
-              {
-                "text": "{{kouki_houhou}}"
-              }
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "section-手順-1769918445583",
-      "type": "Section",
-      "props": {
-        "heading": "後期高齢者医療制度の申請の流れ",
-        "content": [
-          {
-            "type": "paragraph",
-            "runs": [
-              {
-                "text": "{{kouki_nagare}}"
-              }
-            ]
-          }
-        ]
-      }
-    },
-    {
       "id": "contact-1",
       "type": "Contact",
       "props": {
@@ -432,7 +411,7 @@
       }
     },
     {
-      "id": "terms-1769899964500",
+      "id": "terms-1769919363175",
       "type": "Section",
       "props": {
         "heading": "用語の説明",

@@ -13,12 +13,12 @@
   "topic": [],
   "source": {
     "source_url": "template://kanna/topics/housing",
-    "fetched_at": "2026-02-03T01:50:19.869Z",
+    "fetched_at": "2026-02-26T05:47:35.080Z",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "2026-02-03T01:50:19.869Z",
+    "generated_at": "2026-02-26T05:47:35.080Z",
     "schema_version": "2.0.0"
   },
   "blocks": [

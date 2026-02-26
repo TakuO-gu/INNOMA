@@ -37,7 +37,7 @@
           },
           {
             "label": "住民税",
-            "href": "/juminzei"
+            "href": "/tax/juminzei"
           }
         ]
       }
@@ -358,19 +358,19 @@
         "items": [
           {
             "title": "固定資産税",
-            "href": "/kotei"
+            "href": "/tax/kotei"
           },
           {
             "title": "転入届",
-            "href": "/tennyu"
+            "href": "/registration/tennyu"
           },
           {
             "title": "転出届",
-            "href": "/tenshutsu"
+            "href": "/registration/tenshutsu"
           },
           {
             "title": "マイナンバーカード",
-            "href": "/mynumber"
+            "href": "/registration/mynumber"
           },
           {
             "title": "年金",
@@ -378,7 +378,7 @@
           },
           {
             "title": "保育所入所申請",
-            "href": "/nursery-apply"
+            "href": "/childcare/nursery-apply"
           }
         ]
       }

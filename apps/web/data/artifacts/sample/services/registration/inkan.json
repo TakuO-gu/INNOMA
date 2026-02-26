@@ -37,7 +37,7 @@
           },
           {
             "label": "印鑑登録",
-            "href": "/inkan"
+            "href": "/registration/inkan"
           }
         ]
       }
@@ -347,15 +347,15 @@
         "items": [
           {
             "title": "住民票",
-            "href": "/juminhyo"
+            "href": "/registration/juminhyo"
           },
           {
             "title": "マイナンバーカード",
-            "href": "/mynumber"
+            "href": "/registration/mynumber"
           },
           {
             "title": "転入届",
-            "href": "/tennyu"
+            "href": "/registration/tennyu"
           },
           {
             "title": "住宅購入",

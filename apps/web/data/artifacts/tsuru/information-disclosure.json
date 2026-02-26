@@ -12,13 +12,13 @@
   ],
   "topic": [],
   "source": {
-    "source_url": "template://sample/services/civic/information-disclosure",
-    "fetched_at": "{{generated_at}}",
+    "source_url": "template://tsuru/services/civic/information-disclosure",
+    "fetched_at": "2026-02-26T05:47:36.987Z",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "{{generated_at}}",
+    "generated_at": "2026-02-26T05:47:36.987Z",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -53,7 +53,7 @@
       "id": "summary-1",
       "type": "Summary",
       "props": {
-        "text": "{{municipality_name}}が保有する公文書の開示を請求することができます。情報公開条例に基づく手続きをご案内します。"
+        "text": "都留市が保有する公文書の開示を請求することができます。情報公開条例に基づく手続きをご案内します。"
       }
     },
     {

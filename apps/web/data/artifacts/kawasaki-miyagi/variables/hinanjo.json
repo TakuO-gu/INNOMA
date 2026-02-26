@@ -1,0 +1,54 @@
+{
+  "kinkyu_hinanbasho_count": {
+    "value": "37",
+    "source": "web",
+    "sourceUrl": "https://www.town.kawasaki.miyagi.jp/soshiki/soumu/304.html",
+    "confidence": 0.7,
+    "updatedAt": "2026-02-26T00:00:00.000Z",
+    "note": "川崎町公式サイトの避難場所・避難所一覧より38施設（防災マップPDFより）。「指定緊急避難場所」と「指定避難所」の独立したカウントが明示されていないため、shitei_hinanjo_countと同値を設定。"
+  },
+  "shitei_hinanjo_count": {
+    "value": "37",
+    "source": "web",
+    "sourceUrl": "https://www.town.kawasaki.miyagi.jp/soshiki/soumu/304.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "hinanjo_status_url": {
+    "value": "https://www.town.kawasaki.miyagi.jp/",
+    "source": "web",
+    "sourceUrl": "https://www.town.kawasaki.miyagi.jp/",
+    "confidence": 0.6,
+    "updatedAt": "2026-02-26T00:00:00.000Z",
+    "note": "専用の避難所開設状況確認ページは見つかりませんでした。災害時は町のトップページで告知される形式と思われます。"
+  },
+  "bosai_department": {
+    "value": "総務課消防係",
+    "source": "web",
+    "sourceUrl": "https://www.town.kawasaki.miyagi.jp/soshiki/1.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "bosai_phone": {
+    "value": "0224-84-2111",
+    "source": "web",
+    "sourceUrl": "https://www.town.kawasaki.miyagi.jp/soshiki/1.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "city_hall_hours": {
+    "value": "平日：午前8時30分～午後5時15分（祝日・年末年始を除く）",
+    "source": "inferred",
+    "sourceUrl": "https://www.town.kawasaki.miyagi.jp/",
+    "confidence": 0.7,
+    "updatedAt": "2026-02-26T00:00:00.000Z",
+    "note": "公式サイトで窓口時間の明記が確認できませんでしたが、一般的な自治体の開庁時間として記載しています。"
+  },
+  "city_hall_address": {
+    "value": "〒989-1592 宮城県柴田郡川崎町大字前川字裏丁175-1",
+    "source": "web",
+    "sourceUrl": "https://www.town.kawasaki.miyagi.jp/soshiki/1.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  }
+}

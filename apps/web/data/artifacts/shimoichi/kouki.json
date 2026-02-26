@@ -14,12 +14,12 @@
   "topic": [],
   "source": {
     "source_url": "template://shimoichi/services/health/kouki",
-    "fetched_at": "2026-02-03T01:50:20.304Z",
+    "fetched_at": "2026-02-26T05:47:36.210Z",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "2026-02-03T01:50:20.304Z",
+    "generated_at": "2026-02-26T05:47:36.210Z",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -355,6 +355,19 @@
       }
     },
     {
+      "id": "related-links-kouki-procedures",
+      "type": "RelatedLinks",
+      "props": {
+        "heading": "後期高齢者医療制度の手続き",
+        "items": [
+          {
+            "title": "後期高齢者医療制度の対象か確認する",
+            "href": "/kouki-check"
+          }
+        ]
+      }
+    },
+    {
       "id": "related-links-1",
       "type": "RelatedLinks",
       "props": {
@@ -382,51 +395,6 @@
           {
             "title": "年金",
             "href": "/nenkin"
-          }
-        ]
-      }
-    },
-    {
-      "id": "section-方法-1769919363175",
-      "type": "Section",
-      "props": {
-        "heading": "後期高齢者医療制度の手続き方法",
-        "content": [
-          {
-            "type": "list",
-            "ordered": true,
-            "items": [
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "必要書類を準備します。"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "窓口で申請書を記入します。"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "書類を提出し、確認を受けます。"
-                    }
-                  ]
-                }
-              ]
-            ]
           }
         ]
       }

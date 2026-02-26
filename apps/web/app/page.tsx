@@ -1,9 +1,11 @@
+import React from "react";
 import NextLink from "next/link";
 import Image from "next/image";
 import { Link, Button } from "@/components/dads";
 import { getMunicipalities } from "@/lib/template";
 import { ScrollAnimations } from "@/components/landing/ScrollAnimations";
 import { AnimatedCounter } from "@/components/landing/AnimatedCounter";
+import Footer from "@/components/layout/Footer";
 
 // 3種のページタイプ
 const PAGE_TYPES = [
@@ -131,26 +133,13 @@ export default async function Home() {
       <section className="relative min-h-screen flex items-center justify-center bg-solid-gray-50 overflow-hidden">
         {/* Header */}
         <header className="absolute top-0 left-0 right-0 z-20">
-          <div className="max-w-7xl mx-auto px-6 py-6 flex items-center justify-between">
-            <div className="flex items-center gap-3">
-              <Image
-                src="/images/logo.svg"
-                alt="INNOMA"
-                width={120}
-                height={40}
-                className="h-8 w-auto"
-                priority
-              />
-            </div>
+          <div className="max-w-7xl mx-auto px-6 py-6 flex items-center justify-end">
             <nav className="flex items-center gap-6">
               <Link asChild>
                 <NextLink href="/municipalities" className="text-solid-gray-600 hover:text-solid-gray-900 transition-colors text-sm font-medium">
                   自治体一覧
                 </NextLink>
               </Link>
-              <Button asChild size="md" variant="outline" className="flex items-center justify-center">
-                <NextLink href="/admin">管理画面</NextLink>
-              </Button>
             </nav>
           </div>
         </header>
@@ -168,12 +157,8 @@ export default async function Home() {
             />
           </div>
 
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-solid-gray-900 mb-6 animate-fade-in-up [animation-delay:200ms] opacity-0 leading-tight">
-            誰しもが情報を<span className="text-blue-600">理解できる</span>
-          </h1>
-
-          <p className="text-base md:text-lg text-solid-gray-600 mb-8 max-w-xl mx-auto animate-fade-in-up [animation-delay:400ms] opacity-0">
-            自治体情報を分かりやすく届けるオープンソースプロジェクト
+          <p className="text-base md:text-lg text-solid-gray-600 mb-8 max-w-xl mx-auto animate-fade-in-up [animation-delay:200ms] opacity-0">
+            INformationNormalizationMatrix
           </p>
 
           <div className="flex justify-center animate-fade-in-up [animation-delay:600ms] opacity-0">
@@ -194,55 +179,22 @@ export default async function Home() {
             </h2>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-12 mt-16">
-            <div className="animate-on-scroll">
-              <div className="bg-white rounded-2xl p-8 shadow-sm border border-solid-gray-200 h-full">
+          <div className="flex justify-center mt-16">
+            <div className="animate-on-scroll max-w-2xl">
+              <div className="bg-white rounded-2xl p-8 shadow-sm border border-solid-gray-200">
                 <div className="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center mb-6">
                   <svg className="w-7 h-7 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
                   </svg>
                 </div>
                 <h3 className="text-2xl font-bold text-solid-gray-900 mb-4">
-                  「情報にアクセスする」とは
+                  JIS X 8341-3:2016 適合レベルAA
                 </h3>
                 <p className="text-solid-gray-600 leading-relaxed text-lg">
-                  単に情報を見つけるだけでなく、<strong className="text-solid-gray-900">その情報を理解する</strong>ことまでを意味します。INNOMAは「見つける」と「理解する」の両方を支援します。
+                  日本の<strong className="text-solid-gray-900">ウェブアクセシビリティ規格に準拠</strong>。スクリーンリーダー対応、キーボードナビゲーション、十分なコントラスト比を確保し、誰もが快適に情報にアクセスできる設計を実現しています。
                 </p>
               </div>
             </div>
-
-            <div className="animate-on-scroll">
-              <div className="bg-white rounded-2xl p-8 shadow-sm border border-solid-gray-200 h-full">
-                <div className="w-14 h-14 bg-amber-100 rounded-xl flex items-center justify-center mb-6">
-                  <svg className="w-7 h-7 text-amber-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z" />
-                  </svg>
-                </div>
-                <h3 className="text-2xl font-bold text-solid-gray-900 mb-4">
-                  なぜ必要なのか
-                </h3>
-                <p className="text-solid-gray-600 leading-relaxed text-lg">
-                  PISAの調査によると、日本人の<strong className="text-solid-gray-900">13.8%は長文を理解することが難しい</strong>とされています。少子高齢化が進む日本では、情報を理解しやすく届けることが急務です。
-                </p>
-              </div>
-            </div>
-          </div>
-
-          {/* Stats */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16">
-            {[
-              { value: 13.8, suffix: "%", label: "長文理解が難しい日本人" },
-              { value: 4, suffix: "倍", label: "55-65歳 vs 16-34歳" },
-              { value: 1741, suffix: "", label: "日本の自治体数" },
-              { value: 650, suffix: "+", label: "テンプレート変数" },
-            ].map((stat, i) => (
-              <div key={i} className="animate-on-scroll text-center p-6 bg-white rounded-xl border border-solid-gray-200">
-                <div className="text-3xl md:text-4xl font-bold text-blue-600 stat-number">
-                  <AnimatedCounter end={stat.value} suffix={stat.suffix} />
-                </div>
-                <p className="text-solid-gray-600 text-sm mt-2">{stat.label}</p>
-              </div>
-            ))}
           </div>
         </div>
       </section>
@@ -255,10 +207,6 @@ export default async function Home() {
             <h2 className="text-3xl md:text-5xl font-bold text-solid-gray-900 mb-6 line-decoration">
               INNOMAの情報設計
             </h2>
-            <p className="text-solid-gray-600 text-lg max-w-3xl mt-8">
-              GOV.UK、Local Gov Drupalのタクソノミー（分類法）を参考に、ページを「ターゲット」や「メディア形態」ではなく、
-              <strong className="text-solid-gray-900">純粋に「題材」の名詞だけで分類</strong>。必要なページのみを作成し、シンプルな構造を維持します。
-            </p>
           </div>
 
           {/* 3 Page Types */}
@@ -407,26 +355,61 @@ export default async function Home() {
           {/* Flow Diagram */}
           <div className="mt-20 animate-on-scroll">
             <h3 className="text-xl font-bold mb-8">情報取得フロー</h3>
-            <div className="flex flex-col md:flex-row items-center justify-between gap-4 md:gap-2">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {[
-                { step: "1", label: "検索クエリ生成", icon: "AI" },
-                { step: "2", label: "Web検索実行", icon: "検索" },
-                { step: "3", label: "ページ取得", icon: "取得" },
-                { step: "4", label: "情報抽出", icon: "抽出" },
-                { step: "5", label: "管理者承認", icon: "承認" },
+                {
+                  step: "1",
+                  title: "検索クエリ生成",
+                  description: "LLMが自治体名と変数名から最適な検索クエリを自動生成。自治体の特性を考慮した精度の高い検索を実現します。",
+                  tech: "Google Gemini",
+                },
+                {
+                  step: "2",
+                  title: "Web検索実行",
+                  description: "生成されたクエリでBrave Search APIを使用して検索。自治体公式サイトや信頼できる情報源を優先的に取得します。",
+                  tech: "Brave Search API",
+                },
+                {
+                  step: "3",
+                  title: "ページ取得",
+                  description: "検索結果のURLからHTMLコンテンツを取得。PDF・画像もOCRで読み取り、あらゆる形式の情報に対応します。",
+                  tech: "Web Scraping + OCR",
+                },
+                {
+                  step: "4",
+                  title: "情報抽出",
+                  description: "取得したページからLLMが必要な情報を抽出・構造化。テンプレート変数に最適な形式で情報を整理します。",
+                  tech: "Google Gemini",
+                },
+                {
+                  step: "5",
+                  title: "管理者承認",
+                  description: "抽出された情報を管理者が確認・承認。AIと人間のチェックで正確性を担保します。",
+                  tech: "承認ワークフロー",
+                },
+                {
+                  step: "6",
+                  title: "公開",
+                  description: "承認された情報が自動的にWebサイトに反映され、住民が最新の正確な情報にアクセスできるようになります。",
+                  tech: "自動デプロイ",
+                },
               ].map((item, i) => (
-                <div key={i} className="flex items-center gap-2 md:gap-4">
-                  <div className="flex flex-col items-center">
-                    <div className="w-16 h-16 rounded-full bg-blue-600 flex items-center justify-center text-white font-bold text-lg">
-                      {item.icon}
+                <div
+                  key={i}
+                  className="glass-card rounded-xl p-6 hover:scale-105 transition-transform duration-200"
+                >
+                  <div className="flex items-start gap-4 mb-3">
+                    <div className="w-10 h-10 rounded-full bg-blue-500 flex items-center justify-center text-white font-bold text-sm flex-shrink-0">
+                      {item.step}
                     </div>
-                    <p className="text-sm text-solid-gray-400 mt-2 text-center">{item.label}</p>
+                    <div>
+                      <h4 className="font-bold text-lg mb-1">{item.title}</h4>
+                      <p className="text-xs text-blue-400 font-semibold">{item.tech}</p>
+                    </div>
                   </div>
-                  {i < 4 && (
-                    <svg className="w-6 h-6 text-blue-600 hidden md:block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                    </svg>
-                  )}
+                  <p className="text-sm text-solid-gray-400 leading-relaxed">
+                    {item.description}
+                  </p>
                 </div>
               ))}
             </div>
@@ -488,103 +471,7 @@ export default async function Home() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-24 md:py-32 bg-gradient-to-br from-blue-600 to-blue-800 text-white relative overflow-hidden">
-        <div className="absolute inset-0 grid-pattern opacity-10"></div>
-        <div className="relative max-w-4xl mx-auto px-6 text-center">
-          <div className="animate-on-scroll">
-            <h2 className="text-3xl md:text-5xl font-bold mb-6">
-              一緒に日本の行政情報を
-              <br />
-              もっとアクセスしやすく
-            </h2>
-            <p className="text-blue-100 text-lg mb-10 max-w-2xl mx-auto">
-              INNOMAはオープンソースプロジェクトです。
-              開発への貢献、フィードバック、導入のご相談をお待ちしています。
-            </p>
-            <div className="flex justify-center">
-              <Button asChild size="lg" variant="solid-fill" className="!bg-white !text-blue-700 hover:!bg-blue-50 !px-8 !py-4 !text-lg font-semibold flex items-center justify-center">
-                <a href="https://github.com/TakuO-gu/INNOMA" target="_blank" rel="noopener noreferrer">
-                  GitHubで見る
-                </a>
-              </Button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Footer */}
-      <footer className="bg-solid-gray-900 text-white py-16">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="grid md:grid-cols-4 gap-12">
-            <div className="md:col-span-2">
-              <Image
-                src="/images/logo.svg"
-                alt="INNOMA"
-                width={140}
-                height={50}
-                className="h-10 w-auto brightness-0 invert mb-4"
-              />
-              <p className="text-solid-gray-400 leading-relaxed max-w-sm">
-                日本の自治体情報をオープンに、アクセスしやすく。
-                誰もが必要な情報を見つけ、理解できる社会を目指します。
-              </p>
-            </div>
-            <div>
-              <h4 className="font-semibold mb-4">リンク</h4>
-              <ul className="space-y-3 text-solid-gray-400">
-                <li>
-                  <NextLink href="/municipalities" className="hover:text-white transition-colors">
-                    自治体一覧
-                  </NextLink>
-                </li>
-                <li>
-                  <NextLink href="/admin" className="hover:text-white transition-colors">
-                    管理画面
-                  </NextLink>
-                </li>
-                <li>
-                  <a
-                    href="https://github.com/TakuO-gu/INNOMA"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="hover:text-white transition-colors"
-                  >
-                    GitHub
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-semibold mb-4">技術</h4>
-              <ul className="space-y-3 text-solid-gray-400 text-sm">
-                <li>Next.js 15</li>
-                <li>デジタル庁デザインシステム</li>
-                <li>Google Gemini</li>
-                <li>Brave Search API</li>
-              </ul>
-            </div>
-          </div>
-          <div className="border-t border-solid-gray-800 mt-12 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
-            <p className="text-solid-gray-500 text-sm">
-              &copy; {new Date().getFullYear()} INNOMA Project. Open Source under MIT License.
-            </p>
-            <div className="flex items-center gap-4">
-              <a
-                href="https://github.com/TakuO-gu/INNOMA"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-solid-gray-400 hover:text-white transition-colors"
-                aria-label="GitHub"
-              >
-                <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                  <path fillRule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clipRule="evenodd" />
-                </svg>
-              </a>
-            </div>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }

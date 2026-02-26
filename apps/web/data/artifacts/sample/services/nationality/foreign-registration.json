@@ -231,11 +231,11 @@
           },
           {
             "title": "住民票",
-            "href": "/juminhyo"
+            "href": "/registration/juminhyo"
           },
           {
             "title": "国民健康保険",
-            "href": "/kokuho"
+            "href": "/health/kokuho"
           }
         ]
       }

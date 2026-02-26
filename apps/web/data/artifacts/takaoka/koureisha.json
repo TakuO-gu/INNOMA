@@ -13,13 +13,13 @@
   ],
   "topic": [],
   "source": {
-    "source_url": "template://sample/services/welfare/koureisha",
-    "fetched_at": "2026-01-20T10:33:17.311Z",
+    "source_url": "template://takaoka/services/welfare/koureisha",
+    "fetched_at": "2026-02-26T05:47:37.371Z",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "2026-01-20T10:33:17.311Z",
+    "generated_at": "2026-02-26T05:47:37.371Z",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -58,7 +58,7 @@
       }
     },
     {
-      "id": "section-k1ytcr9ww",
+      "id": "section-xar94rrc2",
       "type": "Section",
       "props": {
         "heading": "生活支援サービス",
@@ -67,11 +67,12 @@
       }
     },
     {
-      "id": "section-s10lsgjls",
+      "id": "section-7ifz61k9q",
       "type": "Section",
       "props": {
         "heading": "配食サービス",
         "level": 3,
+        "available": "{{koureisha_haishoku_available}}",
         "content": [
           {
             "type": "paragraph",
@@ -85,11 +86,12 @@
       }
     },
     {
-      "id": "section-gyh8e4qb6",
+      "id": "section-rr1trhgdl",
       "type": "Section",
       "props": {
         "heading": "緊急通報システム",
         "level": 3,
+        "available": "{{koureisha_kinkyutsuho_available}}",
         "content": [
           {
             "type": "paragraph",
@@ -103,11 +105,12 @@
       }
     },
     {
-      "id": "section-b20sl6vm4",
+      "id": "section-kzyu3juuc",
       "type": "Section",
       "props": {
         "heading": "ごみ出し支援",
         "level": 3,
+        "available": "{{koureisha_gomidashi_available}}",
         "content": [
           {
             "type": "paragraph",
@@ -121,7 +124,7 @@
       }
     },
     {
-      "id": "section-wer0fnonf",
+      "id": "section-vr6b5f900",
       "type": "Section",
       "props": {
         "heading": "健康・介護予防",
@@ -130,11 +133,12 @@
       }
     },
     {
-      "id": "section-pc6l6pfzg",
+      "id": "section-3w63z63y3",
       "type": "Section",
       "props": {
         "heading": "介護予防教室",
         "level": 3,
+        "available": "{{koureisha_yobou_kyoshitsu_available}}",
         "content": [
           {
             "type": "paragraph",
@@ -148,11 +152,12 @@
       }
     },
     {
-      "id": "section-iiupbl19h",
+      "id": "section-2t1eh28no",
       "type": "Section",
       "props": {
         "heading": "高齢者健康診査",
         "level": 3,
+        "available": "{{koureisha_kenshin_available}}",
         "content": [
           {
             "type": "paragraph",
@@ -166,11 +171,12 @@
       }
     },
     {
-      "id": "section-4nfurpwvu",
+      "id": "section-wvcs4brv8",
       "type": "Section",
       "props": {
         "heading": "高齢者インフルエンザ予防接種",
         "level": 3,
+        "available": "{{koureisha_influenza_available}}",
         "content": [
           {
             "type": "paragraph",
@@ -184,7 +190,7 @@
       }
     },
     {
-      "id": "section-sjgiqwmrp",
+      "id": "section-4ph5weqeq",
       "type": "Section",
       "props": {
         "heading": "経済的支援",
@@ -193,11 +199,12 @@
       }
     },
     {
-      "id": "section-s23w4zdh3",
+      "id": "section-c72nj3bd5",
       "type": "Section",
       "props": {
         "heading": "敬老祝金",
         "level": 3,
+        "available": "{{koureisha_keiro_iwaikin_available}}",
         "content": [
           {
             "type": "paragraph",
@@ -211,11 +218,12 @@
       }
     },
     {
-      "id": "section-hwqapk81g",
+      "id": "section-dwfy4m6v8",
       "type": "Section",
       "props": {
         "heading": "おむつ費用助成",
         "level": 3,
+        "available": "{{koureisha_omutu_josei_available}}",
         "content": [
           {
             "type": "paragraph",
@@ -229,7 +237,7 @@
       }
     },
     {
-      "id": "section-1151mzg35",
+      "id": "section-wus5ognrb",
       "type": "Section",
       "props": {
         "heading": "住まい・外出支援",
@@ -238,11 +246,12 @@
       }
     },
     {
-      "id": "section-2a7huic8g",
+      "id": "section-e8zx1s1ki",
       "type": "Section",
       "props": {
         "heading": "シルバーハウジング",
         "level": 3,
+        "available": "{{koureisha_silver_housing_available}}",
         "content": [
           {
             "type": "paragraph",
@@ -256,11 +265,12 @@
       }
     },
     {
-      "id": "section-7kbuaq6u5",
+      "id": "section-zq908koh8",
       "type": "Section",
       "props": {
         "heading": "住宅改修費助成",
         "level": 3,
+        "available": "{{koureisha_jutaku_kaishuu_available}}",
         "content": [
           {
             "type": "paragraph",
@@ -274,11 +284,12 @@
       }
     },
     {
-      "id": "section-bck9p6y3t",
+      "id": "section-eqxcns2v7",
       "type": "Section",
       "props": {
         "heading": "高齢者移動支援",
         "level": 3,
+        "available": "{{koureisha_ido_shien_available}}",
         "content": [
           {
             "type": "paragraph",
@@ -292,7 +303,7 @@
       }
     },
     {
-      "id": "section-axh96whxt",
+      "id": "section-wtgn9yuq8",
       "type": "Section",
       "props": {
         "heading": "生きがい・社会参加",
@@ -301,11 +312,12 @@
       }
     },
     {
-      "id": "section-h28r4v1og",
+      "id": "section-25xwfvsla",
       "type": "Section",
       "props": {
         "heading": "老人クラブ",
         "level": 3,
+        "available": "{{koureisha_rojin_club_available}}",
         "content": [
           {
             "type": "paragraph",
@@ -319,11 +331,12 @@
       }
     },
     {
-      "id": "section-x9e6mtiq9",
+      "id": "section-9k167mij7",
       "type": "Section",
       "props": {
         "heading": "シルバー人材センター",
         "level": 3,
+        "available": "{{koureisha_silver_jinzai_available}}",
         "content": [
           {
             "type": "paragraph",
@@ -364,74 +377,6 @@
           {
             "title": "シルバー人材センター",
             "href": "/silver-center"
-          }
-        ]
-      }
-    },
-    {
-      "id": "section-対象-1769918445633",
-      "type": "Section",
-      "props": {
-        "heading": "高齢者福祉の対象となる方",
-        "content": [
-          {
-            "type": "paragraph",
-            "runs": [
-              {
-                "text": "詳細は{{shimin_department}}（{{shimin_phone}}）にお問い合わせください。"
-              }
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "section-必要-1769918445633",
-      "type": "Section",
-      "props": {
-        "heading": "高齢者福祉に必要なもの",
-        "content": [
-          {
-            "type": "paragraph",
-            "runs": [
-              {
-                "text": "{{koureisha_hitsuyou}}"
-              }
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "section-方法-1769918445633",
-      "type": "Section",
-      "props": {
-        "heading": "高齢者福祉の手続き方法",
-        "content": [
-          {
-            "type": "paragraph",
-            "runs": [
-              {
-                "text": "{{koureisha_houhou}}"
-              }
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "section-手順-1769918445633",
-      "type": "Section",
-      "props": {
-        "heading": "高齢者福祉の申請の流れ",
-        "content": [
-          {
-            "type": "paragraph",
-            "runs": [
-              {
-                "text": "{{koureisha_nagare}}"
-              }
-            ]
           }
         ]
       }

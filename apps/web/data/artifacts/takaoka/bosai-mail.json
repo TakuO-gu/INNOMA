@@ -4,21 +4,21 @@
   "municipality_id": "takaoka",
   "path": "/bosai-mail",
   "title": "防災情報メール",
-  "description": "防災情報メールの登録方法と配信される情報について",
-  "content_type": "step_by_step",
+  "description": "防災情報メールの概要と配信される情報について",
+  "content_type": "guide",
   "service_category": "safety",
   "audience": [
     "residents"
   ],
   "topic": [],
   "source": {
-    "source_url": "template://sample/services/disaster/bosai-mail",
-    "fetched_at": "2026-01-20T10:33:17.311Z",
+    "source_url": "template://takaoka/services/disaster/bosai-mail",
+    "fetched_at": "2026-02-26T05:47:37.165Z",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "2026-01-20T10:33:17.311Z",
+    "generated_at": "2026-02-26T05:47:37.165Z",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -57,7 +57,7 @@
       }
     },
     {
-      "id": "section-dm2eqonkz",
+      "id": "section-uobaxsbnc",
       "type": "Section",
       "props": {
         "heading": "配信される情報",
@@ -143,45 +143,25 @@
       }
     },
     {
-      "id": "step-nav-1",
-      "type": "StepNavigation",
+      "id": "section-w13l7slw2",
+      "type": "Section",
       "props": {
-        "currentStep": 0,
-        "steps": [
+        "heading": "登録方法",
+        "level": 2,
+        "content": [
           {
-            "title": "空メールを送信",
-            "body": "下記のメールアドレスに空メールを送信してください。",
-            "documents": []
-          },
-          {
-            "title": "返信メールを確認",
-            "body": "登録用URLが記載されたメールが届きます。",
-            "documents": []
-          },
-          {
-            "title": "URLにアクセス",
-            "body": "メールに記載されたURLにアクセスして登録画面を開きます。",
-            "documents": []
-          },
-          {
-            "title": "配信内容を選択",
-            "body": "受け取りたい情報を選択して登録完了です。",
-            "documents": []
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "メールまたはQRコードから登録できます。詳しくは「防災情報メールに登録する」をご覧ください。"
+              }
+            ]
           }
         ]
       }
     },
     {
-      "id": "section-9o6bx8h0w",
-      "type": "Section",
-      "props": {
-        "heading": "登録方法",
-        "level": 2,
-        "content": []
-      }
-    },
-    {
-      "id": "section-kgh32fktd",
+      "id": "section-5iwpkocs2",
       "type": "Section",
       "props": {
         "heading": "メールで登録",
@@ -245,16 +225,7 @@
       }
     },
     {
-      "id": "task-button-1",
-      "type": "TaskButton",
-      "props": {
-        "label": "防災情報メールに登録する",
-        "href": "{{bosai_mail_touroku_url}}",
-        "isTopTask": true
-      }
-    },
-    {
-      "id": "section-bv49tzkdn",
+      "id": "section-kttcotdib",
       "type": "Section",
       "props": {
         "heading": "その他の情報入手手段",
@@ -263,7 +234,7 @@
       }
     },
     {
-      "id": "section-psqn96q51",
+      "id": "section-oomkr5986",
       "type": "Section",
       "props": {
         "heading": "防災行政無線",
@@ -281,7 +252,7 @@
       }
     },
     {
-      "id": "section-kn4k4z833",
+      "id": "section-0cvz30eo6",
       "type": "Section",
       "props": {
         "heading": "市公式SNS",
@@ -299,7 +270,7 @@
       }
     },
     {
-      "id": "section-7rua9lokt",
+      "id": "section-5biugn2tk",
       "type": "Section",
       "props": {
         "heading": "緊急速報メール",
@@ -322,16 +293,16 @@
       "props": {
         "items": [
           {
+            "title": "防災情報メールに登録する",
+            "href": "/bosai-mail-apply"
+          },
+          {
             "title": "避難所・避難場所",
             "href": "/hinanjo"
           },
           {
             "title": "ハザードマップ",
             "href": "/hazard-map"
-          },
-          {
-            "title": "非常持出品",
-            "href": "/mochidashi"
           }
         ]
       }
@@ -356,7 +327,7 @@
     }
   ],
   "search": {
-    "summary": "防災情報メールの登録案内。避難情報、気象警報、地震情報などをメールで配信。",
+    "summary": "防災情報メールの案内。避難情報、気象警報、地震情報などをメールで配信。登録は無料。",
     "keywords": [
       "防災情報メール",
       "防災メール",
@@ -365,6 +336,6 @@
       "緊急情報",
       "登録"
     ],
-    "plain_text": "防災情報メール。避難情報、気象警報、地震情報などを配信。登録用メールアドレスに空メールを送信して登録。無料。"
+    "plain_text": "防災情報メール。避難情報、気象警報、地震情報などを配信。登録用メールアドレスに空メールを送信して登録。無料。その他の情報入手手段：防災行政無線、市公式SNS、緊急速報メール。"
   }
 }

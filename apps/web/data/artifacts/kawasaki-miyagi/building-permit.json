@@ -14,12 +14,12 @@
   "topic": [],
   "source": {
     "source_url": "template://kawasaki-miyagi/services/housing/building-permit",
-    "fetched_at": "2026-02-03T01:50:19.950Z",
+    "fetched_at": "2026-02-26T05:47:35.381Z",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "2026-02-03T01:50:19.950Z",
+    "generated_at": "2026-02-26T05:47:35.381Z",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -33,7 +33,7 @@
             "href": "/"
           },
           {
-            "label": "住まい・引越し",
+            "label": "住まい",
             "href": "/housing"
           },
           {
@@ -147,44 +147,99 @@
       }
     },
     {
-      "id": "section-8fxkumnez-step",
-      "type": "StepNavigation",
+      "id": "section-flow",
+      "type": "Section",
       "props": {
-        "steps": [
+        "heading": "申請の流れ",
+        "level": 2,
+        "content": [
           {
-            "title": "ステップ1",
-            "body": "事前相談（必要に応じて）"
-          },
-          {
-            "title": "ステップ2",
-            "body": "建築確認申請書の提出（建築士が代行）"
-          },
-          {
-            "title": "ステップ3",
-            "body": "審査（通常7日〜35日）"
-          },
-          {
-            "title": "ステップ4",
-            "body": "確認済証の交付"
-          },
-          {
-            "title": "ステップ5",
-            "body": "工事着手"
-          },
-          {
-            "title": "ステップ6",
-            "body": "中間検査（対象建築物のみ）"
-          },
-          {
-            "title": "ステップ7",
-            "body": "完了検査"
-          },
-          {
-            "title": "ステップ8",
-            "body": "検査済証の交付"
+            "type": "list",
+            "ordered": true,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "事前相談（必要に応じて）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "建築確認申請書の提出（建築士が代行）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "審査（通常7日〜35日）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "確認済証の交付"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "工事着手"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "中間検査（対象建築物のみ）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "完了検査"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "検査済証の交付"
+                    }
+                  ]
+                }
+              ]
+            ]
           }
-        ],
-        "heading": "申請の流れ"
+        ]
       }
     },
     {
@@ -221,74 +276,8 @@
             "href": "/urban-planning"
           },
           {
-            "title": "開発許可",
-            "href": "/development-permit"
-          },
-          {
             "title": "耐震改修",
             "href": "/seismic-retrofit"
-          }
-        ]
-      }
-    },
-    {
-      "id": "section-対象-1769919363176",
-      "type": "Section",
-      "props": {
-        "heading": "建築確認申請の対象となる方",
-        "content": [
-          {
-            "type": "paragraph",
-            "runs": [
-              {
-                "text": "詳細は担当課にお問い合わせください。"
-              }
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "section-方法-1769919363176",
-      "type": "Section",
-      "props": {
-        "heading": "建築確認申請の手続き方法",
-        "content": [
-          {
-            "type": "list",
-            "ordered": true,
-            "items": [
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "必要書類を準備します。"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "窓口で申請書を記入します。"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "書類を提出し、確認を受けます。"
-                    }
-                  ]
-                }
-              ]
-            ]
           }
         ]
       }

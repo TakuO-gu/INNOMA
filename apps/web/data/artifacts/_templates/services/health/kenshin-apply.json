@@ -1,0 +1,260 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "sample-services-health-kenshin-apply",
+  "municipality_id": "sample",
+  "path": "/kenshin-apply",
+  "title": "健康診査・がん検診を予約する",
+  "description": "特定健康診査やがん検診を予約する手続き。受診券をお持ちの方が対象です。",
+  "content_type": "service",
+  "service_category": "health",
+  "audience": [
+    "residents"
+  ],
+  "topic": [],
+  "source": {
+    "source_url": "template://sample/services/health/kenshin-apply",
+    "fetched_at": "{{generated_at}}",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "{{generated_at}}",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "健康・医療",
+            "href": "/health"
+          },
+          {
+            "label": "健康診査・がん検診",
+            "href": "/kenshin"
+          },
+          {
+            "label": "健康診査・がん検診を予約する",
+            "href": "/kenshin-apply"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "健康診査・がん検診を予約する"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "特定健康診査やがん検診を予約する手続きです。受診券をお持ちの方が対象です。"
+      }
+    },
+    {
+      "id": "section-taisho",
+      "type": "Section",
+      "props": {
+        "heading": "予約が必要な方",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "受診券が届いた方が対象です。"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "特定健康診査",
+                      "bold": true
+                    },
+                    {
+                      "text": "：40〜74歳の国民健康保険加入者"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "後期高齢者健康診査",
+                      "bold": true
+                    },
+                    {
+                      "text": "：75歳以上の方（および65〜74歳で後期高齢者医療に加入の方）"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-hitsuyou",
+      "type": "Section",
+      "props": {
+        "heading": "必要なもの",
+        "level": 2,
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "受診券",
+                      "bold": true
+                    },
+                    {
+                      "text": "（対象の方に送付されます）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "保険証またはマイナンバーカード"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-jikofutan",
+      "type": "Section",
+      "props": {
+        "heading": "自己負担",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "{{tokutei_kenshin_fee}}（特定健診）"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "step-nav-1",
+      "type": "StepNavigation",
+      "props": {
+        "heading": "受診の流れ",
+        "steps": [
+          {
+            "title": "受診券を確認する",
+            "description": "対象の方には受診券をお送りします。届いていない方はお問い合わせください。"
+          },
+          {
+            "title": "医療機関に予約する",
+            "description": "受診券に記載の指定医療機関に直接お電話で予約してください。"
+          },
+          {
+            "title": "受診する",
+            "description": "受診券と保険証（またはマイナンバーカード）を持参して受診してください。"
+          },
+          {
+            "title": "結果通知を受け取る",
+            "description": "約2〜3週間後に結果をお知らせします。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-yoyaku",
+      "type": "Section",
+      "props": {
+        "heading": "予約方法",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "受診券に記載の指定医療機関に直接お電話で予約してください。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{kenshin_department}}",
+        "phone": "{{kenshin_phone}}",
+        "email": "{{kenshin_email}}",
+        "hours": "{{city_hall_hours}}",
+        "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "related-links-1",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "健康診査・がん検診について詳しく見る",
+            "href": "/kenshin"
+          }
+        ]
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
+      }
+    }
+  ],
+  "search": {
+    "summary": "健康診査・がん検診の予約手続き。受診券が届いた方が対象。指定医療機関に電話で予約。受診券と保険証を持参。",
+    "keywords": [
+      "健康診査",
+      "がん検診",
+      "特定健診",
+      "予約",
+      "受診券",
+      "受診",
+      "健康診断"
+    ],
+    "plain_text": "健康診査・がん検診を予約する。特定健診は40〜74歳の国保加入者、後期高齢者健診は75歳以上が対象。受診券が届いたら指定医療機関に電話で予約。受診券と保険証を持参して受診。"
+  }
+}

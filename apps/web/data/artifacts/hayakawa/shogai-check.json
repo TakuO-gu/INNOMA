@@ -1,0 +1,142 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "hayakawa-services-welfare-shogai-check",
+  "municipality_id": "hayakawa",
+  "path": "/shogai-check",
+  "title": "障害者手帳の対象ですか？",
+  "description": "障害者手帳の対象かどうかを確認できます。質問に答えるだけで、該当する手帳の種類をご案内します。",
+  "content_type": "answer",
+  "service_category": "welfare",
+  "audience": [
+    "residents",
+    "disabled"
+  ],
+  "topic": [],
+  "source": {
+    "source_url": "template://hayakawa/services/welfare/shogai-check",
+    "fetched_at": "2026-02-26T05:47:34.324Z",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "2026-02-26T05:47:34.324Z",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "福祉・介護",
+            "href": "/welfare"
+          },
+          {
+            "label": "障害者福祉",
+            "href": "/shogai"
+          },
+          {
+            "label": "障害者手帳の対象ですか？",
+            "href": "/shogai-check"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "障害者手帳の対象ですか？"
+      }
+    },
+    {
+      "id": "smart-answer-1",
+      "type": "SmartAnswer",
+      "props": {
+        "questions": [
+          {
+            "id": "q1",
+            "text": "どのような障害がありますか？",
+            "options": [
+              {
+                "label": "身体の障害",
+                "resultId": "result-shintai"
+              },
+              {
+                "label": "知的障害",
+                "resultId": "result-chiteki"
+              },
+              {
+                "label": "精神疾患",
+                "resultId": "result-seishin"
+              },
+              {
+                "label": "わからない",
+                "resultId": "result-soudan"
+              }
+            ]
+          }
+        ],
+        "results": [
+          {
+            "id": "result-shintai",
+            "title": "身体障害者手帳の対象の可能性があります",
+            "description": "視覚、聴覚、肢体不自由、内部障害（心臓、腎臓など）がある方が対象です。まず指定医師の診断を受けてください。",
+            "actionLabel": "障害者手帳を申請する",
+            "actionHref": "/welfare/shogai-apply"
+          },
+          {
+            "id": "result-chiteki",
+            "title": "療育手帳の対象の可能性があります",
+            "description": "知的障害がある方が対象です。児童相談所（18歳未満）または知的障害者更生相談所（18歳以上）での判定が必要です。",
+            "relatedLinks": [
+              {
+                "title": "障害者福祉について詳しく見る",
+                "href": "/shogai"
+              }
+            ]
+          },
+          {
+            "id": "result-seishin",
+            "title": "精神障害者保健福祉手帳の対象の可能性があります",
+            "description": "精神疾患により日常生活や社会生活に制約がある方が対象です。初診日から6か月以上経過していることが必要です。",
+            "actionLabel": "障害者手帳を申請する",
+            "actionHref": "/welfare/shogai-apply"
+          },
+          {
+            "id": "result-soudan",
+            "title": "窓口でご相談ください",
+            "description": "障害の種類や程度に応じて適切な手帳をご案内します。",
+            "relatedLinks": [
+              {
+                "title": "障害者福祉について詳しく見る",
+                "href": "/shogai"
+              },
+              {
+                "title": "障害者手帳を申請する",
+                "href": "/shogai-apply"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "search": {
+    "summary": "障害者手帳の対象判定。身体障害者手帳、療育手帳、精神障害者保健福祉手帳のいずれに該当するかを確認。",
+    "keywords": [
+      "障害者手帳",
+      "身体障害者手帳",
+      "療育手帳",
+      "精神障害者保健福祉手帳",
+      "対象",
+      "判定"
+    ],
+    "plain_text": "障害者手帳の対象ですか？障害の種類に応じた手帳をご案内。身体の障害は身体障害者手帳、知的障害は療育手帳、精神疾患は精神障害者保健福祉手帳。窓口でも相談可能。"
+  }
+}

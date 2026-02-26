@@ -1,11 +1,11 @@
 {
   "schema_version": "2.0.0",
-  "page_id": "takaoka-services-registration-inkan",
-  "municipality_id": "takaoka",
+  "page_id": "choshi-services-registration-inkan",
+  "municipality_id": "choshi",
   "path": "/inkan",
   "title": "印鑑登録",
   "description": "印鑑登録の方法、印鑑登録証明書の取得について",
-  "content_type": "step_by_step",
+  "content_type": "guide",
   "service_category": "government",
   "audience": [
     "residents"
@@ -13,12 +13,12 @@
   "topic": [],
   "source": {
     "source_url": "template://choshi/services/registration/inkan",
-    "fetched_at": "2026-01-20T10:33:17.311Z",
+    "fetched_at": "2026-02-26T05:47:34.026Z",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "2026-01-20T10:33:17.311Z",
+    "generated_at": "2026-02-26T05:47:34.026Z",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -57,7 +57,7 @@
       }
     },
     {
-      "id": "section-py2w6l8mw",
+      "id": "section-taisho",
       "type": "Section",
       "props": {
         "heading": "登録できる人",
@@ -75,7 +75,7 @@
       }
     },
     {
-      "id": "section-inc00v807",
+      "id": "section-inkan",
       "type": "Section",
       "props": {
         "heading": "登録できる印鑑",
@@ -121,7 +121,7 @@
       }
     },
     {
-      "id": "section-inc00v807-notification-0",
+      "id": "notification-1",
       "type": "NotificationBanner",
       "props": {
         "severity": "warning",
@@ -177,34 +177,7 @@
       }
     },
     {
-      "id": "step-nav-1",
-      "type": "StepNavigation",
-      "props": {
-        "currentStep": 0,
-        "steps": [
-          {
-            "title": "窓口で申請",
-            "body": "登録する印鑑と本人確認書類を持参して窓口で申請します。",
-            "documents": [
-              "登録する印鑑",
-              "本人確認書類"
-            ]
-          },
-          {
-            "title": "本人確認",
-            "body": "顔写真付き本人確認書類があれば即日登録。ない場合は照会書による確認を行います。",
-            "documents": []
-          },
-          {
-            "title": "印鑑登録証の交付",
-            "body": "登録が完了すると印鑑登録証（カード）が交付されます。",
-            "documents": []
-          }
-        ]
-      }
-    },
-    {
-      "id": "section-uz2aamnn4",
+      "id": "section-hitsuyou",
       "type": "Section",
       "props": {
         "heading": "必要書類",
@@ -213,10 +186,11 @@
       }
     },
     {
-      "id": "section-bxi282nqh-table",
+      "id": "section-sokujitsu",
       "type": "Section",
       "props": {
         "heading": "即日登録の場合",
+        "level": 3,
         "content": [
           {
             "type": "list",
@@ -248,7 +222,7 @@
       }
     },
     {
-      "id": "section-kmxt71vgy",
+      "id": "section-shokai",
       "type": "Section",
       "props": {
         "heading": "照会書による登録の場合",
@@ -269,6 +243,7 @@
       "id": "table-tesuryo",
       "type": "Table",
       "props": {
+        "heading": "手数料",
         "rows": [
           {
             "label": "印鑑登録",
@@ -282,12 +257,11 @@
             "label": "印鑑登録証明書（コンビニ）",
             "value": "{{inkan_shomei_convenience_fee}}"
           }
-        ],
-        "heading": "手数料"
+        ]
       }
     },
     {
-      "id": "section-h8819n8au",
+      "id": "section-shomeisho",
       "type": "Section",
       "props": {
         "heading": "印鑑登録証明書の取得",
@@ -305,7 +279,7 @@
       }
     },
     {
-      "id": "section-l97oem9u7",
+      "id": "section-madoguchi",
       "type": "Section",
       "props": {
         "heading": "窓口で取得",
@@ -323,7 +297,7 @@
       }
     },
     {
-      "id": "section-yjbclw6gu",
+      "id": "section-conveni",
       "type": "Section",
       "props": {
         "heading": "コンビニ交付",
@@ -341,9 +315,23 @@
       }
     },
     {
+      "id": "related-links-action",
+      "type": "RelatedLinks",
+      "props": {
+        "heading": "印鑑登録の手続き",
+        "items": [
+          {
+            "title": "印鑑登録を申請する",
+            "href": "/inkan-apply"
+          }
+        ]
+      }
+    },
+    {
       "id": "related-links-1",
       "type": "RelatedLinks",
       "props": {
+        "heading": "関連ページ",
         "items": [
           {
             "title": "住民票",
@@ -364,68 +352,6 @@
           {
             "title": "自動車登録",
             "href": "/registration"
-          }
-        ]
-      }
-    },
-    {
-      "id": "section-対象-1769919363198",
-      "type": "Section",
-      "props": {
-        "heading": "印鑑登録の対象となる方",
-        "content": [
-          {
-            "type": "paragraph",
-            "runs": [
-              {
-                "text": "詳細は担当課にお問い合わせください。"
-              }
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "section-方法-1769919363198",
-      "type": "Section",
-      "props": {
-        "heading": "印鑑登録の手続き方法",
-        "content": [
-          {
-            "type": "list",
-            "ordered": true,
-            "items": [
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "必要書類を準備します。"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "窓口で申請書を記入します。"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "書類を提出し、確認を受けます。"
-                    }
-                  ]
-                }
-              ]
-            ]
           }
         ]
       }

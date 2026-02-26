@@ -1,0 +1,53 @@
+{
+  "kinkyu_hinanbasho_count": {
+    "value": "5",
+    "source": "web",
+    "sourceUrl": "https://www.vill.kamikitayama.nara.jp/soshiki/soumuka/annzenn_annshinn/1/861.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "shitei_hinanjo_count": {
+    "value": "13",
+    "source": "web",
+    "sourceUrl": "https://www.vill.kamikitayama.nara.jp/soshiki/soumuka/annzenn_annshinn/1/861.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "hinanjo_status_url": {
+    "value": "https://www.vill.kamikitayama.nara.jp/soshiki/soumuka/annzenn_annshinn/1/861.html",
+    "source": "web",
+    "sourceUrl": "https://www.vill.kamikitayama.nara.jp/soshiki/soumuka/annzenn_annshinn/1/861.html",
+    "confidence": 0.7,
+    "updatedAt": "2026-02-26T00:00:00.000Z",
+    "note": "専用の避難所開設状況確認ページは見つかりませんでしたが、防災情報ページを記載しています。災害時は村のホームページで告知される形式と思われます。"
+  },
+  "bosai_department": {
+    "value": "総務課",
+    "source": "web",
+    "sourceUrl": "https://www.vill.kamikitayama.nara.jp/soshiki/kikakuseisakuka/yakusho_madoguchiannnai/374.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "bosai_phone": {
+    "value": "07468-2-0001",
+    "source": "web",
+    "sourceUrl": "https://www.vill.kamikitayama.nara.jp/soshiki/kikakuseisakuka/yakusho_madoguchiannnai/374.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "city_hall_hours": {
+    "value": "平日：午前8時30分～午後5時15分（祝日・年末年始を除く）",
+    "source": "inferred",
+    "sourceUrl": "https://www.vill.kamikitayama.nara.jp/",
+    "confidence": 0.7,
+    "updatedAt": "2026-02-26T00:00:00.000Z",
+    "note": "公式サイトで窓口時間の明記が確認できませんでしたが、一般的な自治体の開庁時間として記載しています。"
+  },
+  "city_hall_address": {
+    "value": "〒639-3701 奈良県吉野郡上北山村大字河合330番地",
+    "source": "web",
+    "sourceUrl": "https://www.vill.kamikitayama.nara.jp/soshiki/kikakuseisakuka/yakusho_madoguchiannnai/374.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  }
+}

@@ -6,19 +6,19 @@
   "title": "運転免許証",
   "description": "運転免許試験場・更新センターの案内、更新・住所変更手続き",
   "content_type": "guide",
-  "service_category": "government",
+  "service_category": "driving",
   "audience": [
     "residents"
   ],
   "topic": [],
   "source": {
     "source_url": "template://kawasaki-miyagi/services/driving/license",
-    "fetched_at": "2026-02-03T01:50:19.941Z",
+    "fetched_at": "2026-02-26T05:47:35.223Z",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "2026-02-03T01:50:19.941Z",
+    "generated_at": "2026-02-26T05:47:35.223Z",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -182,7 +182,7 @@
       "props": {
         "items": [
           {
-            "title": "自動車登録",
+            "title": "車検・自動車登録",
             "href": "/registration"
           },
           {
@@ -190,7 +190,7 @@
             "href": "/garage-certificate"
           },
           {
-            "title": "高齢者運転",
+            "title": "高齢者運転支援",
             "href": "/senior-driving"
           },
           {
@@ -200,68 +200,6 @@
           {
             "title": "引越し手続き一覧",
             "href": "/moving-checklist"
-          }
-        ]
-      }
-    },
-    {
-      "id": "section-対象-1769919363162",
-      "type": "Section",
-      "props": {
-        "heading": "運転免許証の対象となる方",
-        "content": [
-          {
-            "type": "paragraph",
-            "runs": [
-              {
-                "text": "詳細は担当課にお問い合わせください。"
-              }
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "section-方法-1769919363162",
-      "type": "Section",
-      "props": {
-        "heading": "運転免許証の手続き方法",
-        "content": [
-          {
-            "type": "list",
-            "ordered": true,
-            "items": [
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "必要書類を準備します。"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "窓口で申請書を記入します。"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "書類を提出し、確認を受けます。"
-                    }
-                  ]
-                }
-              ]
-            ]
           }
         ]
       }

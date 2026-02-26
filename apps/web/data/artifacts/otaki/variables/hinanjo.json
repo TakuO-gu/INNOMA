@@ -1,0 +1,62 @@
+{
+  "kinkyu_hinanbasho_count": {
+    "value": "18",
+    "source": "web",
+    "sourceUrl": "https://www.navitime.co.jp/category/0511004/12/",
+    "confidence": 0.7,
+    "updatedAt": "2026-02-26T00:00:00.000Z",
+    "note": "公式サイトに具体的な数が掲載されていないため、第三者サイトの情報を参考にしています。地域防災計画資料編での確認が推奨されます。"
+  },
+  "shitei_hinanjo_count": {
+    "value": "18",
+    "source": "web",
+    "sourceUrl": "https://www.navitime.co.jp/category/0511004/12/",
+    "confidence": 0.7,
+    "updatedAt": "2026-02-26T00:00:00.000Z",
+    "note": "公式サイトに具体的な数が掲載されていないため、第三者サイトの情報を参考にしています。地域防災計画資料編での確認が推奨されます。"
+  },
+  "hinanjo_status_url": {
+    "value": "https://crisis.yahoo.co.jp/evacuation/12/12441/",
+    "source": "web",
+    "sourceUrl": "https://crisis.yahoo.co.jp/evacuation/12/12441/",
+    "confidence": 0.7,
+    "updatedAt": "2026-02-26T00:00:00.000Z",
+    "note": "町公式サイトに専用の開設状況確認ページは見つかりませんでした。災害時は防災行政無線や「おおたき通信」で周知されます。"
+  },
+  "bosai_department": {
+    "value": "総務課消防防災係",
+    "source": "web",
+    "sourceUrl": "https://www.town.otaki.chiba.jp/soshiki/soumu/1/index.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "bosai_phone": {
+    "value": "0470-82-2111",
+    "source": "web",
+    "sourceUrl": "https://www.town.otaki.chiba.jp/soshiki/soumu/3/1/416.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "bosai_email": {
+    "value": "soumu@town.otaki.lg.jp",
+    "source": "web",
+    "sourceUrl": "https://www.town.otaki.chiba.jp/soshiki/soumu/3/1/416.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "city_hall_hours": {
+    "value": "月曜日から金曜日：午前8時30分～午後5時15分（土・日・祝日・年末年始を除く）",
+    "source": "web",
+    "sourceUrl": "https://kurashi.yahoo.co.jp/facility/a124410001",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "city_hall_address": {
+    "value": "〒298-0292 千葉県夷隅郡大多喜町大多喜93番地",
+    "source": "web",
+    "sourceUrl": "https://www.town.otaki.chiba.jp/soshiki/soumu/3/1/416.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z",
+    "note": "core.jsonにも同じ値が存在します。"
+  }
+}

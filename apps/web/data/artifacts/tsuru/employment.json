@@ -12,13 +12,13 @@
   ],
   "topic": [],
   "source": {
-    "source_url": "template://sample/topics/employment",
-    "fetched_at": "{{generated_at}}",
+    "source_url": "template://tsuru/topics/employment",
+    "fetched_at": "2026-02-26T05:47:37.072Z",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "{{generated_at}}",
+    "generated_at": "2026-02-26T05:47:37.072Z",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -100,7 +100,7 @@
           {
             "title": "シルバー人材センター",
             "href": "/silver-center",
-            "description": "{{municipality_name}}シルバー人材センターの入会・仕事案内"
+            "description": "都留市シルバー人材センターの入会・仕事案内"
           },
           {
             "title": "障害者雇用支援",

@@ -6,7 +6,7 @@
   "title": "高齢者運転支援",
   "description": "運転免許証自主返納、高齢者講習、安全運転相談",
   "content_type": "guide",
-  "service_category": "government",
+  "service_category": "driving",
   "audience": [
     "residents"
   ],
@@ -144,10 +144,6 @@
           {
             "title": "運転免許証",
             "href": "/license"
-          },
-          {
-            "title": "交通安全",
-            "href": "/traffic-safety"
           },
           {
             "title": "高齢者福祉",

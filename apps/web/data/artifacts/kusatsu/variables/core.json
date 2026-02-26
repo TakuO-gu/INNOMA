@@ -16,10 +16,8 @@
   },
   "city_hall_address": {
     "value": "〒377-1792 群馬県吾妻郡草津町大字草津28番地",
-    "source": "llm",
-    "sourceUrl": "https://www.town.kusatsu.gunma.jp/www/contents/1513640181830/index.html",
-    "confidence": 0.95,
-    "updatedAt": "2026-01-31T00:00:00.000Z"
+    "source": "manual",
+    "updatedAt": "2026-02-25T18:49:36.392Z"
   },
   "city_hall_phone": {
     "value": "0279-88-0001",
@@ -36,11 +34,11 @@
     "updatedAt": "2026-01-31T00:00:00.000Z"
   },
   "city_hall_hours": {
-    "value": "午前8時30分〜午後5時15分（土日祝日、年末年始を除く）",
+    "value": "平日 8:30〜17:15（土日祝日・年末年始を除く）",
     "source": "llm",
-    "sourceUrl": "https://www.town.kusatsu.gunma.jp/www/contents/1513640181830/index.html",
+    "sourceUrl": "https://www.town.kusatsu.gunma.jp/www/contents/1509003352365/index.html",
     "confidence": 0.95,
-    "updatedAt": "2026-01-31T00:00:00.000Z"
+    "updatedAt": "2026-02-26T00:00:00.000Z"
   },
   "shimin_department": {
     "value": "愛町部 住民課",
@@ -174,5 +172,210 @@
     "sourceUrl": "https://www.town.kusatsu.gunma.jp/www/contents/1513640181830/index.html",
     "confidence": 0.7,
     "updatedAt": "2026-02-03T00:00:00.000Z"
+  },
+  "city_hall_department": {
+    "value": "住民課",
+    "source": "manual",
+    "updatedAt": "2026-02-25T18:49:36.392Z"
+  },
+  "city_hall_email": {
+    "value": "webmaster@town.kusatsu.gunma.jp",
+    "source": "llm",
+    "sourceUrl": "https://www.town.kusatsu.gunma.jp/www/contents/1513640181830/index.html",
+    "confidence": 0.8,
+    "note": "住民課専用のメールアドレスは確認できなかったため、町役場の代表メールアドレスを設定",
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "shimin_email": {
+    "value": "",
+    "source": "llm",
+    "sourceUrl": "https://www.town.kusatsu.gunma.jp/www/contents/1513640181830/index.html",
+    "confidence": 0.6,
+    "note": "住民課専用のメールアドレスは公式サイトに記載なし。問い合わせは電話（0279-88-7192）推奨",
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "traffic_accident_consultation_phone": {
+    "value": "027-223-1111",
+    "source": "llm",
+    "sourceUrl": "https://www.pref.gunma.jp/page/7473.html",
+    "updatedAt": "2026-02-25T19:00:00.000Z"
+  },
+  "hello_work_name": {
+    "value": "ハローワーク中之条",
+    "source": "llm",
+    "sourceUrl": "https://jsite.mhlw.go.jp/gunma-roudoukyoku/hw/h_map/h_map12.html",
+    "updatedAt": "2026-02-25T19:00:00.000Z"
+  },
+  "hello_work_phone": {
+    "value": "0279-75-2227",
+    "source": "llm",
+    "sourceUrl": "https://jsite.mhlw.go.jp/gunma-roudoukyoku/hw/h_map/h_map12.html",
+    "updatedAt": "2026-02-25T19:00:00.000Z"
+  },
+  "hello_work_address": {
+    "value": "〒377-0425 群馬県吾妻郡中之条町大字西中之条207",
+    "source": "llm",
+    "sourceUrl": "https://jsite.mhlw.go.jp/gunma-roudoukyoku/hw/h_map/h_map12.html",
+    "updatedAt": "2026-02-25T19:00:00.000Z"
+  },
+  "police_station": {
+    "value": "長野原警察署",
+    "source": "llm",
+    "sourceUrl": "https://www.police.pref.gunma.jp/28334.html",
+    "updatedAt": "2026-02-25T19:00:00.000Z"
+  },
+  "police_station_phone": {
+    "value": "0279-82-0110",
+    "source": "llm",
+    "sourceUrl": "https://www.police.pref.gunma.jp/28334.html",
+    "updatedAt": "2026-02-25T19:00:00.000Z"
+  },
+  "police_station_address": {
+    "value": "〒377-1304 群馬県吾妻郡長野原町大字長野原1520-4",
+    "source": "llm",
+    "sourceUrl": "https://www.police.pref.gunma.jp/28334.html",
+    "updatedAt": "2026-02-25T19:00:00.000Z"
+  },
+  "labor_bureau": {
+    "value": "群馬労働局",
+    "source": "llm",
+    "sourceUrl": "https://jsite.mhlw.go.jp/gunma-roudoukyoku/roudoukyoku/shyozaichi.html",
+    "updatedAt": "2026-02-25T19:00:00.000Z"
+  },
+  "labor_bureau_phone": {
+    "value": "027-896-4734",
+    "source": "llm",
+    "sourceUrl": "https://jsite.mhlw.go.jp/gunma-roudoukyoku/roudoukyoku/shyozaichi.html",
+    "updatedAt": "2026-02-25T19:00:00.000Z"
+  },
+  "labor_bureau_address": {
+    "value": "〒371-8567 群馬県前橋市大手町2-3-1 前橋地方合同庁舎8・9階",
+    "source": "llm",
+    "sourceUrl": "https://jsite.mhlw.go.jp/gunma-roudoukyoku/roudoukyoku/shyozaichi.html",
+    "updatedAt": "2026-02-25T19:00:00.000Z"
+  },
+  "driver_license_center": {
+    "value": "群馬県総合交通センター",
+    "source": "llm",
+    "sourceUrl": "https://www.navitime.co.jp/poi?spot=00004-10101900001",
+    "updatedAt": "2026-02-25T19:00:00.000Z"
+  },
+  "driver_license_center_phone": {
+    "value": "027-253-9300",
+    "source": "llm",
+    "sourceUrl": "https://www.navitime.co.jp/poi?spot=00004-10101900001",
+    "updatedAt": "2026-02-25T19:00:00.000Z"
+  },
+  "driver_license_center_address": {
+    "value": "〒371-0846 群馬県前橋市元総社町80-4",
+    "source": "llm",
+    "sourceUrl": "https://www.navitime.co.jp/poi?spot=00004-10101900001",
+    "updatedAt": "2026-02-25T19:00:00.000Z"
+  },
+  "legal_affairs_bureau": {
+    "value": "前橋地方法務局中之条支局",
+    "source": "llm",
+    "sourceUrl": "https://houmukyoku.moj.go.jp/maebashi/table/shikyokutou/all/nakanojou.html",
+    "updatedAt": "2026-02-25T19:00:00.000Z"
+  },
+  "legal_affairs_bureau_phone": {
+    "value": "0279-75-3037",
+    "source": "llm",
+    "sourceUrl": "https://houmukyoku.moj.go.jp/maebashi/table/shikyokutou/all/nakanojou.html",
+    "updatedAt": "2026-02-25T19:00:00.000Z"
+  },
+  "legal_affairs_bureau_address": {
+    "value": "〒377-0424 群馬県吾妻郡中之条町大字中之条町692-2",
+    "source": "llm",
+    "sourceUrl": "https://houmukyoku.moj.go.jp/maebashi/table/shikyokutou/all/nakanojou.html",
+    "updatedAt": "2026-02-25T19:00:00.000Z"
+  },
+  "transport_branch": {
+    "value": "群馬運輸支局",
+    "source": "llm",
+    "sourceUrl": "https://wwwtb.mlit.go.jp/kanto/soumu/sosiki/sikyoku_syozaiti/gunma.html",
+    "updatedAt": "2026-02-25T19:00:00.000Z"
+  },
+  "transport_branch_phone": {
+    "value": "027-263-4440",
+    "source": "llm",
+    "sourceUrl": "https://wwwtb.mlit.go.jp/kanto/soumu/sosiki/sikyoku_syozaiti/gunma.html",
+    "updatedAt": "2026-02-25T19:00:00.000Z"
+  },
+  "transport_branch_address": {
+    "value": "〒371-0007 群馬県前橋市上泉町399番地の1",
+    "source": "llm",
+    "sourceUrl": "https://wwwtb.mlit.go.jp/kanto/soumu/sosiki/sikyoku_syozaiti/gunma.html",
+    "updatedAt": "2026-02-25T19:00:00.000Z"
+  },
+  "tax_office": {
+    "value": "中之条税務署",
+    "source": "llm",
+    "sourceUrl": "https://www.nta.go.jp/about/organization/kantoshinetsu/location/gumma/nakanojo/index.htm",
+    "updatedAt": "2026-02-25T19:00:00.000Z"
+  },
+  "tax_office_phone": {
+    "value": "0279-75-3355",
+    "source": "llm",
+    "sourceUrl": "https://www.nta.go.jp/about/organization/kantoshinetsu/location/gumma/nakanojo/index.htm",
+    "updatedAt": "2026-02-25T19:00:00.000Z"
+  },
+  "tax_office_address": {
+    "value": "〒377-0492 群馬県吾妻郡中之条町大字伊勢町1022番地の1",
+    "source": "llm",
+    "sourceUrl": "https://www.nta.go.jp/about/organization/kantoshinetsu/location/gumma/nakanojo/index.htm",
+    "updatedAt": "2026-02-25T19:00:00.000Z"
+  },
+  "passport_office_name": {
+    "value": "草津町役場住民課",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:19:06.938Z"
+  },
+  "passport_office_phone": {
+    "value": "0279-88-7192",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:19:06.938Z"
+  },
+  "passport_office_address": {
+    "value": "〒377-1792 群馬県吾妻郡草津町草津28番地",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:19:06.938Z"
+  },
+  "immigration_bureau": {
+    "value": "東京出入国在留管理局高崎出張所",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:19:06.938Z"
+  },
+  "immigration_bureau_phone": {
+    "value": "027-328-1154",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:19:06.938Z"
+  },
+  "immigration_bureau_address": {
+    "value": "〒370-0829 群馬県高崎市高松町26-5 高崎法務総合庁舎1階",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:19:06.938Z"
+  },
+  "juminhyo_fee": {
+    "value": "300円",
+    "source": "llm",
+    "sourceUrl": "https://www.town.kusatsu.gunma.jp/www/contents/1509003352365/index.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "juminhyo_convenience_fee": {
+    "value": "200円",
+    "source": "llm",
+    "sourceUrl": "https://www.town.kusatsu.gunma.jp/www/contents/1703038018210/index.html",
+    "confidence": 0.95,
+    "note": "令和7年10月1日から200円に減額",
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "juminhyo_kisai_fee": {
+    "value": "300円",
+    "source": "llm",
+    "sourceUrl": "https://www.town.kusatsu.gunma.jp/www/contents/1509003352365/index.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
   }
 }

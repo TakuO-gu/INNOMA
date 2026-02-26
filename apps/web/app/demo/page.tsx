@@ -16,8 +16,8 @@ export default function DemoTopPage() {
         </p>
       </div>
 
-      {/* 2つのカード */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl w-full">
+      {/* 3つのカード */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl w-full">
         {/* A. タイムトライアル */}
         <Link href="/demo/time-trial" className="group block">
           <div className="relative overflow-hidden rounded-3xl bg-white shadow-xl transition-all duration-300 group-hover:shadow-2xl group-hover:-translate-y-2 border-2 border-transparent group-hover:border-blue-400 p-8 h-full">
@@ -167,6 +167,88 @@ export default function DemoTopPage() {
 
             <div className="mt-6 text-purple-500 font-semibold flex items-center gap-2 group-hover:gap-3 transition-all">
               見学する
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+              >
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </div>
+          </div>
+        </Link>
+
+        {/* C. INNOMAトップページ */}
+        <Link href="/" className="group block">
+          <div className="relative overflow-hidden rounded-3xl bg-white shadow-xl transition-all duration-300 group-hover:shadow-2xl group-hover:-translate-y-2 border-2 border-transparent group-hover:border-emerald-400 p-8 h-full">
+            {/* アイコンエリア */}
+            <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-emerald-500 to-teal-400 flex items-center justify-center mb-6 shadow-lg group-hover:scale-110 transition-transform">
+              <svg
+                width="40"
+                height="40"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="white"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                <polyline points="9 22 9 12 15 12 15 22" />
+              </svg>
+            </div>
+
+            <div className="flex items-center gap-3 mb-3">
+              <span className="text-sm font-bold text-emerald-600 bg-emerald-100 px-3 py-1 rounded-full">
+                C
+              </span>
+              <h2 className="text-2xl font-bold text-gray-800">
+                INNOMAトップページ
+              </h2>
+            </div>
+
+            <p className="text-gray-500 leading-relaxed mb-6">
+              INNOMAの思想・情報設計・技術的な仕組みを紹介するトップページ。
+              プロジェクトの全体像を確認できます。
+            </p>
+
+            <div className="flex items-center gap-4 text-sm text-gray-400">
+              <span className="flex items-center gap-1">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                >
+                  <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
+                  <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+                </svg>
+                プロジェクト概要
+              </span>
+              <span className="flex items-center gap-1">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                >
+                  <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z" />
+                  <path d="M2 12h20" />
+                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                </svg>
+                対応自治体一覧
+              </span>
+            </div>
+
+            <div className="mt-6 text-emerald-500 font-semibold flex items-center gap-2 group-hover:gap-3 transition-all">
+              トップページへ
               <svg
                 width="20"
                 height="20"

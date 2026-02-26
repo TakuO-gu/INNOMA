@@ -6,7 +6,7 @@
   "title": "都市計画・用途地域",
   "description": "都市計画区域、用途地域、建ぺい率・容積率",
   "content_type": "guide",
-  "service_category": "environment",
+  "service_category": "land",
   "audience": [
     "residents",
     "businesses"
@@ -158,20 +158,16 @@
       "props": {
         "items": [
           {
-            "title": "開発許可",
-            "href": "/development-permit"
-          },
-          {
-            "title": "建築確認申請",
-            "href": "/building-permit"
-          },
-          {
-            "title": "農地転用",
-            "href": "/farmland-conversion"
-          },
-          {
             "title": "固定資産税",
             "href": "/kotei"
+          },
+          {
+            "title": "住宅購入・新築",
+            "href": "/home-purchase"
+          },
+          {
+            "title": "不動産登記",
+            "href": "/property-registration"
           }
         ]
       }

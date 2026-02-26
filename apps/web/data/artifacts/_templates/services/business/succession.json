@@ -147,12 +147,16 @@
       "props": {
         "items": [
           {
-            "title": "法人設立",
+            "title": "法人設立（株式会社・合同会社）",
             "href": "/incorporation"
           },
           {
-            "title": "廃業届",
-            "href": "/closure"
+            "title": "個人事業主・開業届",
+            "href": "/sole-proprietor"
+          },
+          {
+            "title": "法人税・事業税",
+            "href": "/corporate-tax"
           },
           {
             "title": "固定資産税",

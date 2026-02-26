@@ -419,7 +419,7 @@
         "items": [
           {
             "title": "介護保険",
-            "href": "/kaigo"
+            "href": "/welfare/kaigo"
           },
           {
             "title": "生活保護",
@@ -427,7 +427,7 @@
           },
           {
             "title": "国民健康保険",
-            "href": "/kokuho"
+            "href": "/health/kokuho"
           },
           {
             "title": "障害者雇用",
@@ -439,7 +439,7 @@
           },
           {
             "title": "住民税",
-            "href": "/juminzei"
+            "href": "/tax/juminzei"
           }
         ]
       }

@@ -13,12 +13,12 @@
   "topic": [],
   "source": {
     "source_url": "template://nanmoku/services/tax/juminzei",
-    "fetched_at": "2026-02-03T01:50:20.161Z",
+    "fetched_at": "2026-02-26T05:47:35.673Z",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "2026-02-03T01:50:20.161Z",
+    "generated_at": "2026-02-26T05:47:35.673Z",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -361,58 +361,6 @@
           {
             "title": "保育所入所申請",
             "href": "/nursery-apply"
-          }
-        ]
-      }
-    },
-    {
-      "id": "section-対象-1769919363214",
-      "type": "Section",
-      "props": {
-        "heading": "住民税（市民税・県民税）の対象となる方",
-        "content": [
-          {
-            "type": "paragraph",
-            "runs": [
-              {
-                "text": "詳細は担当課にお問い合わせください。"
-              }
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "section-必要-1769919363214",
-      "type": "Section",
-      "props": {
-        "heading": "住民税（市民税・県民税）に必要なもの",
-        "content": [
-          {
-            "type": "list",
-            "ordered": false,
-            "items": [
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "本人確認書類（マイナンバーカード、運転免許証など）"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "印鑑（認印可）"
-                    }
-                  ]
-                }
-              ]
-            ]
           }
         ]
       }

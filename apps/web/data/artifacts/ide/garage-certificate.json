@@ -6,19 +6,19 @@
   "title": "車庫証明（保管場所証明）",
   "description": "自動車保管場所証明書の申請手続き（警察署案内）",
   "content_type": "guide",
-  "service_category": "government",
+  "service_category": "driving",
   "audience": [
     "residents"
   ],
   "topic": [],
   "source": {
     "source_url": "template://ide/services/driving/garage-certificate",
-    "fetched_at": "2026-02-03T01:50:19.694Z",
+    "fetched_at": "2026-02-26T05:47:34.682Z",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "2026-02-03T01:50:19.694Z",
+    "generated_at": "2026-02-26T05:47:34.682Z",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -200,7 +200,7 @@
       "props": {
         "items": [
           {
-            "title": "自動車登録",
+            "title": "車検・自動車登録",
             "href": "/registration"
           },
           {
@@ -208,74 +208,12 @@
             "href": "/license"
           },
           {
-            "title": "駐車場",
-            "href": "/parking"
+            "title": "自動車税・軽自動車税",
+            "href": "/vehicle-tax"
           },
           {
             "title": "印鑑登録",
             "href": "/inkan"
-          }
-        ]
-      }
-    },
-    {
-      "id": "section-対象-1769919363160",
-      "type": "Section",
-      "props": {
-        "heading": "車庫証明（保管場所証明）の対象となる方",
-        "content": [
-          {
-            "type": "paragraph",
-            "runs": [
-              {
-                "text": "詳細は担当課にお問い合わせください。"
-              }
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "section-方法-1769919363160",
-      "type": "Section",
-      "props": {
-        "heading": "車庫証明（保管場所証明）の手続き方法",
-        "content": [
-          {
-            "type": "list",
-            "ordered": true,
-            "items": [
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "必要書類を準備します。"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "窓口で申請書を記入します。"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "書類を提出し、確認を受けます。"
-                    }
-                  ]
-                }
-              ]
-            ]
           }
         ]
       }

@@ -12,13 +12,13 @@
   ],
   "topic": [],
   "source": {
-    "source_url": "template://sample/services/civic/legal-support",
-    "fetched_at": "{{generated_at}}",
+    "source_url": "template://tsuru/services/civic/legal-support",
+    "fetched_at": "2026-02-26T05:47:36.987Z",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "{{generated_at}}",
+    "generated_at": "2026-02-26T05:47:36.987Z",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -67,7 +67,7 @@
             "type": "paragraph",
             "runs": [
               {
-                "text": "{{municipality_name}}では、弁護士による無料法律相談を実施しています。"
+                "text": "都留市では、弁護士による無料法律相談を実施しています。"
               }
             ]
           },

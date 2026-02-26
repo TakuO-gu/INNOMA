@@ -37,7 +37,7 @@
           },
           {
             "label": "転居届",
-            "href": "/tenkyo"
+            "href": "/registration/tenkyo"
           }
         ]
       }
@@ -346,27 +346,27 @@
         "items": [
           {
             "title": "住民票",
-            "href": "/juminhyo"
+            "href": "/registration/juminhyo"
           },
           {
             "title": "マイナンバーカード",
-            "href": "/mynumber"
+            "href": "/registration/mynumber"
           },
           {
             "title": "印鑑登録",
-            "href": "/inkan"
+            "href": "/registration/inkan"
           },
           {
             "title": "国民健康保険",
-            "href": "/kokuho"
+            "href": "/health/kokuho"
           },
           {
             "title": "児童手当",
-            "href": "/jidou-teate"
+            "href": "/childcare/jidou-teate"
           },
           {
             "title": "引越し手続き一覧",
-            "href": "/moving-checklist"
+            "href": "/housing/moving-checklist"
           }
         ]
       }

@@ -328,5 +328,41 @@
     "sourceUrl": "https://www.city.choshi.chiba.jp/",
     "confidence": 0.95,
     "updatedAt": "2026-02-03T00:00:00.000Z"
+  },
+  "city_hall_email": {
+    "value": "info@city.choshi.lg.jp",
+    "source": "llm",
+    "sourceUrl": "https://www.city.choshi.chiba.jp/business/page020020.html",
+    "confidence": 0.9,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "shimin_email": {
+    "value": "",
+    "source": "llm",
+    "sourceUrl": "https://www.city.choshi.chiba.jp/soshiki/shimin.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z",
+    "notes": "市民課専用のメールアドレスは公開されていません。お問い合わせフォームを利用してください。"
+  },
+  "juminhyo_fee": {
+    "value": "350円",
+    "source": "llm",
+    "sourceUrl": "https://www.city.choshi.chiba.jp/kurashi/page050025.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "juminhyo_convenience_fee": {
+    "value": "300円",
+    "source": "llm",
+    "sourceUrl": "https://www.city.choshi.chiba.jp/kurashi/konbini001.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "juminhyo_kisai_fee": {
+    "value": "350円",
+    "source": "llm",
+    "sourceUrl": "https://www.city.choshi.chiba.jp/kurashi/page050025.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
   }
 }

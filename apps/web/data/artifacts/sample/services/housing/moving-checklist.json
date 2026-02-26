@@ -37,7 +37,7 @@
           },
           {
             "label": "引越し手続き一覧",
-            "href": "/moving-checklist"
+            "href": "/housing/moving-checklist"
           }
         ]
       }
@@ -264,23 +264,23 @@
         "items": [
           {
             "title": "転入届",
-            "href": "/tennyu"
+            "href": "/registration/tennyu"
           },
           {
             "title": "転出届",
-            "href": "/tenshutsu"
+            "href": "/registration/tenshutsu"
           },
           {
             "title": "転居届",
-            "href": "/tenkyo"
+            "href": "/registration/tenkyo"
           },
           {
             "title": "マイナンバーカード",
-            "href": "/mynumber"
+            "href": "/registration/mynumber"
           },
           {
             "title": "国民健康保険",
-            "href": "/kokuho"
+            "href": "/health/kokuho"
           },
           {
             "title": "国民年金",
@@ -288,11 +288,11 @@
           },
           {
             "title": "児童手当",
-            "href": "/jidou-teate"
+            "href": "/childcare/jidou-teate"
           },
           {
             "title": "印鑑登録",
-            "href": "/inkan"
+            "href": "/registration/inkan"
           },
           {
             "title": "運転免許証",
@@ -304,11 +304,11 @@
           },
           {
             "title": "住民票",
-            "href": "/juminhyo"
+            "href": "/registration/juminhyo"
           },
           {
             "title": "ごみの出し方",
-            "href": "/gomi"
+            "href": "/environment/gomi"
           }
         ]
       }

@@ -517,5 +517,29 @@
     "sourceUrl": "https://www.town.tobetsu.hokkaido.jp/",
     "confidence": 0.9,
     "updatedAt": "2026-02-03T00:00:00.000Z"
+  },
+  "juminhyo_convenience_fee": {
+    "value": "300円",
+    "source": "llm",
+    "sourceUrl": "https://www.town.tobetsu.hokkaido.jp/soshiki/zyumin/43278.html",
+    "confidence": 0.95,
+    "note": "コンビニ交付も窓口と同額の300円",
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "juminhyo_kisai_fee": {
+    "value": "300円",
+    "source": "llm",
+    "sourceUrl": "https://www.town.tobetsu.hokkaido.jp/soshiki/zyumin/2851.html",
+    "confidence": 0.7,
+    "note": "公式サイトに明記なし。北海道内の自治体では通常300円。要確認",
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "shimin_email": {
+    "value": "",
+    "source": "llm",
+    "sourceUrl": "https://www.town.tobetsu.hokkaido.jp/soshiki/ict/4357.html",
+    "confidence": 0.9,
+    "note": "住民課専用のメールアドレスは公式サイトに記載なし。問い合わせフォーム（https://www.town.tobetsu.hokkaido.jp/form/detail.php?sec_sec1=12&inq=02&check）または電話（0133-23-2463）推奨",
+    "updatedAt": "2026-02-26T00:00:00.000Z"
   }
 }

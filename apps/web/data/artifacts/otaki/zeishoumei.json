@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0.0",
-  "page_id": "takaoka-services-tax-zeishoumei",
-  "municipality_id": "takaoka",
+  "page_id": "otaki-services-tax-zeishoumei",
+  "municipality_id": "otaki",
   "path": "/zeishoumei",
   "title": "税証明書",
   "description": "所得証明書、課税証明書、納税証明書の取得方法、必要書類、手数料について",
@@ -13,12 +13,12 @@
   "topic": [],
   "source": {
     "source_url": "template://otaki/services/tax/zeishoumei",
-    "fetched_at": "2026-02-03T01:50:20.272Z",
+    "fetched_at": "2026-02-26T05:47:36.172Z",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "2026-02-03T01:50:20.272Z",
+    "generated_at": "2026-02-26T05:47:36.172Z",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -400,6 +400,19 @@
       }
     },
     {
+      "id": "related-links-tetsuzuki",
+      "type": "RelatedLinks",
+      "props": {
+        "heading": "税証明書の手続き",
+        "items": [
+          {
+            "title": "税証明書を請求する",
+            "href": "/zeishoumei-apply"
+          }
+        ]
+      }
+    },
+    {
       "id": "related-links-1",
       "type": "RelatedLinks",
       "props": {
@@ -419,103 +432,6 @@
           {
             "title": "住民票の写し",
             "href": "/juminhyo"
-          }
-        ]
-      }
-    },
-    {
-      "id": "section-対象-1769919363219",
-      "type": "Section",
-      "props": {
-        "heading": "税証明書の対象となる方",
-        "content": [
-          {
-            "type": "paragraph",
-            "runs": [
-              {
-                "text": "詳細は担当課にお問い合わせください。"
-              }
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "section-必要-1769919363219",
-      "type": "Section",
-      "props": {
-        "heading": "税証明書に必要なもの",
-        "content": [
-          {
-            "type": "list",
-            "ordered": false,
-            "items": [
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "本人確認書類（マイナンバーカード、運転免許証など）"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "印鑑（認印可）"
-                    }
-                  ]
-                }
-              ]
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "section-方法-1769919363219",
-      "type": "Section",
-      "props": {
-        "heading": "税証明書の手続き方法",
-        "content": [
-          {
-            "type": "list",
-            "ordered": true,
-            "items": [
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "必要書類を準備します。"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "窓口で申請書を記入します。"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "書類を提出し、確認を受けます。"
-                    }
-                  ]
-                }
-              ]
-            ]
           }
         ]
       }

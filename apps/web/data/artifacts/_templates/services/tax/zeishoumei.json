@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0.0",
-  "page_id": "takaoka-services-tax-zeishoumei",
-  "municipality_id": "takaoka",
+  "page_id": "sample-services-tax-zeishoumei",
+  "municipality_id": "sample",
   "path": "/zeishoumei",
   "title": "税証明書",
   "description": "所得証明書、課税証明書、納税証明書の取得方法、必要書類、手数料について",
@@ -395,6 +395,19 @@
                 "text": "ただし、納付後すぐ（2〜3週間程度）は確認できない場合がありますので、納税証明書をお持ちください。"
               }
             ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "related-links-tetsuzuki",
+      "type": "RelatedLinks",
+      "props": {
+        "heading": "税証明書の手続き",
+        "items": [
+          {
+            "title": "税証明書を請求する",
+            "href": "/zeishoumei-apply"
           }
         ]
       }

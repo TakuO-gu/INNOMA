@@ -1,22 +1,24 @@
 {
   "schema_version": "2.0.0",
-  "page_id": "takaoka-kokuho-apply",
+  "page_id": "takaoka-services-health-kokuho-apply",
   "municipality_id": "takaoka",
   "path": "/kokuho-apply",
   "title": "国民健康保険に加入届を届け出る",
   "description": "国民健康保険の加入届出手続き。必要書類と届出窓口をご案内します。",
   "content_type": "service",
   "service_category": "health",
-  "audience": ["residents"],
+  "audience": [
+    "residents"
+  ],
   "topic": [],
   "source": {
-    "source_url": "https://www.city.takaoka.toyama.jp/soshiki/hokennenkinka/2/3/4/2/5066.html",
-    "fetched_at": "2026-02-03T00:00:00.000Z",
-    "content_hash": "new-service-page"
+    "source_url": "template://takaoka/services/health/kokuho-apply",
+    "fetched_at": "2026-02-26T05:47:37.207Z",
+    "content_hash": "template"
   },
   "pipeline": {
-    "run_id": "manual-create-005",
-    "generated_at": "2026-02-03T00:00:00.000Z",
+    "run_id": "template-001",
+    "generated_at": "2026-02-26T05:47:37.207Z",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -25,9 +27,22 @@
       "type": "Breadcrumbs",
       "props": {
         "items": [
-          { "label": "ホーム", "href": "/" },
-          { "label": "国民健康保険", "href": "/kokuho" },
-          { "label": "国民健康保険に加入届を届け出る", "href": "/kokuho-apply" }
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "健康・医療",
+            "href": "/health"
+          },
+          {
+            "label": "国民健康保険",
+            "href": "/kokuho"
+          },
+          {
+            "label": "国民健康保険に加入届を届け出る",
+            "href": "/kokuho-apply"
+          }
         ]
       }
     },
@@ -54,7 +69,11 @@
         "content": [
           {
             "type": "paragraph",
-            "runs": [{ "text": "届出が遅れても、社会保険等の資格喪失日に遡って国保に加入となります。届出までの医療費は全額自己負担となる場合があります。" }]
+            "runs": [
+              {
+                "text": "届出が遅れても、社会保険等の資格喪失日に遡って国保に加入となります。届出までの医療費は全額自己負担となる場合があります。"
+              }
+            ]
           }
         ]
       }
@@ -70,10 +89,46 @@
             "type": "list",
             "ordered": false,
             "items": [
-              [{ "type": "paragraph", "runs": [{ "text": "職場の健康保険を脱退した方（退職、任意継続終了など）" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "他の市区町村から転入した方（転入届と同時に届出可）" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "子どもが生まれた方" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "生活保護を受けなくなった方" }] }]
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "職場の健康保険を脱退した方（退職、任意継続終了など）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "他の市区町村から転入した方（転入届と同時に届出可）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "子どもが生まれた方"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "生活保護を受けなくなった方"
+                    }
+                  ]
+                }
+              ]
             ]
           }
         ]
@@ -90,23 +145,41 @@
             "type": "list",
             "ordered": false,
             "items": [
-              [{ "type": "paragraph", "runs": [{ "text": "国民健康保険異動届" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "健康保険の資格喪失等証明書", "bold": true }, { "text": "（職場または健康保険組合から発行）" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "本人確認書類（マイナンバーカード、運転免許証など）" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "マイナンバーがわかるもの" }] }]
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "健康保険の資格喪失等証明書",
+                      "bold": true
+                    },
+                    {
+                      "text": "（職場の健康保険を脱退した場合。職場または健康保険組合から発行）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "本人確認書類（マイナンバーカード、運転免許証など）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "世帯主および加入する方のマイナンバーがわかるもの（マイナンバーカード、通知カード等）"
+                    }
+                  ]
+                }
+              ]
             ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "richtext-kouza",
-      "type": "RichText",
-      "props": {
-        "content": [
-          {
-            "type": "paragraph",
-            "runs": [{ "text": "口座振替を希望する場合は、通帳と届出印もお持ちください。" }]
           }
         ]
       }
@@ -120,7 +193,57 @@
         "content": [
           {
             "type": "paragraph",
-            "runs": [{ "text": "無料" }]
+            "runs": [
+              {
+                "text": "無料"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "step-nav-1",
+      "type": "StepNavigation",
+      "props": {
+        "heading": "届出の流れ",
+        "steps": [
+          {
+            "title": "必要書類を準備する",
+            "description": "資格喪失証明書、本人確認書類、マイナンバーを用意します"
+          },
+          {
+            "title": "届出する",
+            "description": "{{kokuho_department}}の窓口またはオンラインで届出します"
+          },
+          {
+            "title": "審査・保険証交付",
+            "description": "届出内容を審査し、国民健康保険証（資格確認書）を交付します"
+          }
+        ]
+      }
+    },
+    {
+      "id": "action-button-1",
+      "type": "ActionButton",
+      "props": {
+        "label": "マイナポータルで届出する",
+        "href": "https://myna.go.jp/",
+        "variant": "primary"
+      }
+    },
+    {
+      "id": "richtext-online-note",
+      "type": "RichText",
+      "props": {
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "マイナンバーカードとマイナポータルを使って、国民健康保険の加入届出がオンラインで申請できます。マイナポータルにログインし、「手続の検索・電子申請」から「国民健康保険」で検索して手続きを進めてください。"
+              }
+            ]
           }
         ]
       }
@@ -134,43 +257,11 @@
         "content": [
           {
             "type": "paragraph",
-            "runs": [{ "text": "保険年金課（市役所）" }]
-          },
-          {
-            "type": "paragraph",
-            "runs": [{ "text": "Web予約による来庁日時の指定も可能です。" }]
-          }
-        ]
-      }
-    },
-    {
-      "id": "section-yuubin",
-      "type": "Section",
-      "props": {
-        "heading": "郵送で届出する場合",
-        "level": 2,
-        "content": [
-          {
-            "type": "paragraph",
-            "runs": [{ "text": "〒933-8601 高岡市広小路7番50号" }]
-          },
-          {
-            "type": "paragraph",
-            "runs": [{ "text": "高岡市役所 保険年金課 国保資格・賦課係" }]
-          }
-        ]
-      }
-    },
-    {
-      "id": "notification-online",
-      "type": "NotificationBanner",
-      "props": {
-        "severity": "info",
-        "title": "オンライン申請について",
-        "content": [
-          {
-            "type": "paragraph",
-            "runs": [{ "text": "現在、高岡市では国民健康保険加入のオンライン申請には対応しておりません。窓口または郵送でお届けください。" }]
+            "runs": [
+              {
+                "text": "{{kokuho_department}}（{{city_hall_location}}）"
+              }
+            ]
           }
         ]
       }
@@ -179,10 +270,11 @@
       "id": "contact-1",
       "type": "Contact",
       "props": {
-        "department": "保険年金課",
-        "phone": "0766-20-1374",
-        "hours": "午前8時30分〜午後5時15分（土日祝日・年末年始除く）",
-        "address": "高岡市広小路7-50"
+        "department": "{{kokuho_department}}",
+        "phone": "{{kokuho_phone}}",
+        "email": "{{kokuho_email}}",
+        "hours": "{{city_hall_hours}}",
+        "address": "{{city_hall_address}}"
       }
     },
     {
@@ -190,8 +282,14 @@
       "type": "RelatedLinks",
       "props": {
         "items": [
-          { "title": "国民健康保険について詳しく見る", "href": "/kokuho" },
-          { "title": "国民健康保険に加入が必要か確認する", "href": "/kokuho-check" }
+          {
+            "title": "国民健康保険について詳しく見る",
+            "href": "/kokuho"
+          },
+          {
+            "title": "国民健康保険に加入が必要か確認する",
+            "href": "/kokuho-check"
+          }
         ]
       }
     },
@@ -204,8 +302,17 @@
     }
   ],
   "search": {
-    "summary": "国民健康保険の加入届出手続き。14日以内に届出が必要。資格喪失証明書、本人確認書類、マイナンバーが必要。手数料無料。",
-    "keywords": ["国民健康保険", "国保", "加入", "届出", "資格喪失証明書", "退職"],
-    "plain_text": "国民健康保険に加入届を届け出る。職場の健康保険を脱退した方等が対象。14日以内に届出。資格喪失証明書、本人確認書類、マイナンバーが必要。手数料無料。窓口または郵送で届出。"
+    "summary": "国民健康保険の加入届出手続き。14日以内に届出が必要。資格喪失証明書、本人確認書類、マイナンバーが必要。手数料無料。オンライン申請可能。",
+    "keywords": [
+      "国民健康保険",
+      "国保",
+      "加入",
+      "届出",
+      "資格喪失証明書",
+      "退職",
+      "オンライン申請",
+      "マイナポータル"
+    ],
+    "plain_text": "国民健康保険に加入届を届け出る。職場の健康保険を脱退した方等が対象。14日以内に届出。資格喪失証明書、本人確認書類、マイナンバーが必要。手数料無料。窓口またはマイナポータルで届出。"
   }
 }

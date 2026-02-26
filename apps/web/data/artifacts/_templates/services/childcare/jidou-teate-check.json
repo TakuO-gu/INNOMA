@@ -7,7 +7,10 @@
   "description": "児童手当の受給資格を確認できます。質問に答えるだけで、あなたが対象かどうかを判定します。",
   "content_type": "answer",
   "service_category": "children",
-  "audience": ["residents", "children_families"],
+  "audience": [
+    "residents",
+    "children_families"
+  ],
   "topic": [],
   "source": {
     "source_url": "template://sample/jidou-teate-check",
@@ -25,10 +28,22 @@
       "type": "Breadcrumbs",
       "props": {
         "items": [
-          { "label": "ホーム", "href": "/" },
-          { "label": "子育て・出産", "href": "/childcare" },
-          { "label": "児童手当", "href": "/jidou-teate" },
-          { "label": "児童手当を受け取れますか？", "href": "/jidou-teate-check" }
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "子育て・出産",
+            "href": "/childcare"
+          },
+          {
+            "label": "児童手当",
+            "href": "/jidou-teate"
+          },
+          {
+            "label": "児童手当を受け取れますか？",
+            "href": "/jidou-teate-check"
+          }
         ]
       }
     },
@@ -48,24 +63,42 @@
             "id": "q1",
             "text": "{{municipality_name}}に住所がありますか？",
             "options": [
-              { "label": "はい", "nextQuestionId": "q2" },
-              { "label": "いいえ", "resultId": "result-no-address" }
+              {
+                "label": "はい",
+                "nextQuestionId": "q2"
+              },
+              {
+                "label": "いいえ",
+                "resultId": "result-no-address"
+              }
             ]
           },
           {
             "id": "q2",
             "text": "高校生年代まで（18歳の年度末まで）のお子さんを養育していますか？",
             "options": [
-              { "label": "はい", "nextQuestionId": "q3" },
-              { "label": "いいえ", "resultId": "result-no-child" }
+              {
+                "label": "はい",
+                "nextQuestionId": "q3"
+              },
+              {
+                "label": "いいえ",
+                "resultId": "result-no-child"
+              }
             ]
           },
           {
             "id": "q3",
             "text": "公務員ですか？",
             "options": [
-              { "label": "はい", "resultId": "result-koumuin" },
-              { "label": "いいえ", "resultId": "result-yes" }
+              {
+                "label": "はい",
+                "resultId": "result-koumuin"
+              },
+              {
+                "label": "いいえ",
+                "resultId": "result-yes"
+              }
             ]
           }
         ],
@@ -77,7 +110,10 @@
             "actionLabel": "児童手当を申請する",
             "actionHref": "/jidou-teate-apply",
             "relatedLinks": [
-              { "title": "児童手当について詳しく見る", "href": "/jidou-teate" }
+              {
+                "title": "児童手当について詳しく見る",
+                "href": "/jidou-teate"
+              }
             ]
           },
           {
@@ -85,7 +121,10 @@
             "title": "勤務先で手続きしてください",
             "description": "公務員の方は、勤務先から児童手当が支給されます。市役所ではなく、勤務先の担当課で申請手続きを行ってください。",
             "relatedLinks": [
-              { "title": "児童手当について詳しく見る", "href": "/jidou-teate" }
+              {
+                "title": "児童手当について詳しく見る",
+                "href": "/jidou-teate"
+              }
             ]
           },
           {
@@ -93,7 +132,10 @@
             "title": "住所のある市区町村で申請してください",
             "description": "児童手当は、住所のある市区町村から支給されます。{{municipality_name}}に転入された場合は、転入届の提出後に申請してください。",
             "relatedLinks": [
-              { "title": "転入届について", "href": "/tennyu" }
+              {
+                "title": "転入届について",
+                "href": "/tennyu"
+              }
             ]
           },
           {
@@ -101,7 +143,10 @@
             "title": "受け取れません",
             "description": "児童手当は18歳の年度末まで（高校生年代）のお子さんを養育している方が対象です。",
             "relatedLinks": [
-              { "title": "他の子育て支援制度を見る", "href": "/childcare" }
+              {
+                "title": "他の子育て支援制度を見る",
+                "href": "/childcare"
+              }
             ]
           }
         ]
@@ -110,7 +155,14 @@
   ],
   "search": {
     "summary": "児童手当の受給資格を判定。{{municipality_name}}在住で高校生年代までの子を養育している方が対象。所得制限なし。公務員は勤務先で申請。",
-    "keywords": ["児童手当", "受給資格", "対象者", "判定", "チェック", "確認"],
+    "keywords": [
+      "児童手当",
+      "受給資格",
+      "対象者",
+      "判定",
+      "チェック",
+      "確認"
+    ],
     "plain_text": "児童手当を受け取れますか？児童手当の受給資格を確認。{{municipality_name}}に住所があり、18歳の年度末までのお子さんを養育している方が対象。令和6年10月から所得制限撤廃。公務員は勤務先で申請。"
   }
 }

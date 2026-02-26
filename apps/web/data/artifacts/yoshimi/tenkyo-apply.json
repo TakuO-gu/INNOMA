@@ -1,0 +1,257 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "yoshimi-services-registration-tenkyo-apply",
+  "municipality_id": "yoshimi",
+  "path": "/tenkyo-apply",
+  "title": "転居届を届け出る",
+  "description": "市内で住所が変わったときの転居届の届出手続きです。",
+  "content_type": "service",
+  "service_category": "government",
+  "audience": [
+    "residents"
+  ],
+  "topic": [],
+  "source": {
+    "source_url": "template://yoshimi/services/registration/tenkyo-apply",
+    "fetched_at": "2026-02-26T05:47:36.852Z",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "2026-02-26T05:47:36.852Z",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "届出・証明",
+            "href": "/registration"
+          },
+          {
+            "label": "転居届",
+            "href": "/tenkyo"
+          },
+          {
+            "label": "転居届を届け出る",
+            "href": "/tenkyo-apply"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "転居届を届け出る"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "吉見町内で住所が変わったときに、転居届を届け出る手続きです。"
+      }
+    },
+    {
+      "id": "notification-1",
+      "type": "NotificationBanner",
+      "props": {
+        "severity": "warning",
+        "title": "引越し日から14日以内に届け出てください",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "届出が遅れると、5万円以下の過料が科される場合があります。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-taisho",
+      "type": "Section",
+      "props": {
+        "heading": "届出が必要な方",
+        "level": 2,
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "吉見町内で住所が変わった方"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-hitsuyou",
+      "type": "Section",
+      "props": {
+        "heading": "必要なもの",
+        "level": 2,
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "届出人の本人確認書類"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "マイナンバーカード（転居する方全員分）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "国民健康保険証（加入している場合）"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-tesuryo",
+      "type": "Section",
+      "props": {
+        "heading": "手数料",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "無料"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "step-nav-1",
+      "type": "StepNavigation",
+      "props": {
+        "heading": "届出の流れ",
+        "steps": [
+          {
+            "title": "必要書類を準備する",
+            "description": "本人確認書類、マイナンバーカード、国民健康保険証などを用意します"
+          },
+          {
+            "title": "窓口で転居届を届け出る",
+            "description": "{{registration_window}}で届け出ます"
+          },
+          {
+            "title": "住所変更の手続きを行う",
+            "description": "マイナンバーカード、国民健康保険証などの住所変更を一緒に行えます"
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-madoguchi",
+      "type": "Section",
+      "props": {
+        "heading": "窓口で届け出る場合",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "{{registration_window}}で届け出ることができます。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{shimin_department}}",
+        "phone": "{{shimin_phone}}",
+        "email": "{{shimin_email}}",
+        "hours": "{{city_hall_hours}}",
+        "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "related-links-1",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "転居届について詳しく見る",
+            "href": "/tenkyo"
+          },
+          {
+            "title": "引越し手続き一覧",
+            "href": "/moving-checklist"
+          }
+        ]
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
+      }
+    }
+  ],
+  "search": {
+    "summary": "転居届の届出手続き。市内で住所が変わったときに窓口で届け出ます。",
+    "keywords": [
+      "転居届",
+      "届出",
+      "引っ越し",
+      "手続き",
+      "住所変更",
+      "市内"
+    ],
+    "plain_text": "転居届を届け出る。市内で住所が変わったときの届出手続き。本人確認書類とマイナンバーカードが必要。手数料は無料。"
+  }
+}

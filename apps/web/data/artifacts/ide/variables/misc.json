@@ -1,0 +1,23 @@
+{
+  "juminhyo_fee": {
+    "value": "300円",
+    "source": "llm",
+    "sourceUrl": "https://www.town.ide.kyoto.jp/soshiki/jyuminfukushi/tesuusyou/1401858547805.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "juminhyo_convenience_fee": {
+    "value": "300円",
+    "source": "llm",
+    "sourceUrl": "https://www.town.ide.kyoto.jp/soshiki/jyuminfukushi/oshirase/5005.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "juminhyo_kisai_fee": {
+    "value": "300円",
+    "source": "llm",
+    "sourceUrl": "https://www.town.ide.kyoto.jp/soshiki/jyuminfukushi/tesuusyou/1401858547805.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  }
+}

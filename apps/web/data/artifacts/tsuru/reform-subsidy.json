@@ -4,7 +4,7 @@
   "municipality_id": "tsuru",
   "path": "/reform-subsidy",
   "title": "住宅リフォーム補助",
-  "description": "{{municipality_name}}独自の住宅リフォーム補助制度",
+  "description": "都留市独自の住宅リフォーム補助制度",
   "content_type": "guide",
   "service_category": "housing",
   "audience": [
@@ -12,13 +12,13 @@
   ],
   "topic": [],
   "source": {
-    "source_url": "template://sample/services/housing/reform-subsidy",
-    "fetched_at": "{{generated_at}}",
+    "source_url": "template://tsuru/services/housing/reform-subsidy",
+    "fetched_at": "2026-02-26T05:47:37.024Z",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "{{generated_at}}",
+    "generated_at": "2026-02-26T05:47:37.024Z",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -32,7 +32,7 @@
             "href": "/"
           },
           {
-            "label": "住まい・引越し",
+            "label": "住まい",
             "href": "/housing"
           },
           {
@@ -53,7 +53,7 @@
       "id": "summary-1",
       "type": "Summary",
       "props": {
-        "text": "{{municipality_name}}では、住宅の改修工事に対する補助制度を設けています。対象となる工事や補助金額は制度により異なります。"
+        "text": "都留市では、住宅の改修工事に対する補助制度を設けています。対象となる工事や補助金額は制度により異なります。"
       }
     },
     {
@@ -180,6 +180,10 @@
       "props": {
         "items": [
           {
+            "title": "住宅リフォーム補助を申請する",
+            "href": "/reform-subsidy-apply"
+          },
+          {
             "title": "耐震改修",
             "href": "/seismic-retrofit"
           },
@@ -194,86 +198,6 @@
           {
             "title": "障害者福祉",
             "href": "/shogai"
-          }
-        ]
-      }
-    },
-    {
-      "id": "section-必要-1769919363180",
-      "type": "Section",
-      "props": {
-        "heading": "住宅リフォーム補助に必要なもの",
-        "content": [
-          {
-            "type": "list",
-            "ordered": false,
-            "items": [
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "本人確認書類（マイナンバーカード、運転免許証など）"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "印鑑（認印可）"
-                    }
-                  ]
-                }
-              ]
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "section-方法-1769919363180",
-      "type": "Section",
-      "props": {
-        "heading": "住宅リフォーム補助の手続き方法",
-        "content": [
-          {
-            "type": "list",
-            "ordered": true,
-            "items": [
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "必要書類を準備します。"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "窓口で申請書を記入します。"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "書類を提出し、確認を受けます。"
-                    }
-                  ]
-                }
-              ]
-            ]
           }
         ]
       }

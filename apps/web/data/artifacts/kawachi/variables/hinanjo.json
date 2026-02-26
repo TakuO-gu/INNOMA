@@ -1,0 +1,56 @@
+{
+  "kinkyu_hinanbasho_count": {
+    "value": "18",
+    "source": "web",
+    "sourceUrl": "https://opd.opendata-japan.com/city_type_facility_s110s?prefecture_code=08&city_code=08447&category_code=cat_hinanjo",
+    "confidence": 0.7,
+    "updatedAt": "2026-02-26T00:00:00.000Z",
+    "note": "公式サイトで指定緊急避難場所と指定避難所の明確な区別が確認できないため、総避難所数を記載しています。"
+  },
+  "shitei_hinanjo_count": {
+    "value": "18",
+    "source": "web",
+    "sourceUrl": "https://opd.opendata-japan.com/city_type_facility_s110s?prefecture_code=08&city_code=08447&category_code=cat_hinanjo",
+    "confidence": 0.7,
+    "updatedAt": "2026-02-26T00:00:00.000Z",
+    "note": "公式サイトで指定緊急避難場所と指定避難所の明確な区別が確認できないため、総避難所数を記載しています。"
+  },
+  "hinanjo_status_url": {
+    "value": "https://www.town.ibaraki-kawachi.lg.jp/",
+    "source": "web",
+    "sourceUrl": "https://www.town.ibaraki-kawachi.lg.jp/",
+    "confidence": 0.6,
+    "updatedAt": "2026-02-26T00:00:00.000Z",
+    "note": "専用の避難所開設状況確認ページは見つかりませんでした。災害時は町のトップページで告知される形式と思われます。"
+  },
+  "bosai_department": {
+    "value": "総務課",
+    "source": "web",
+    "sourceUrl": "https://www.town.ibaraki-kawachi.lg.jp/section.php",
+    "confidence": 0.8,
+    "updatedAt": "2026-02-26T00:00:00.000Z",
+    "note": "防災担当の具体的な係名は確認できませんでしたが、総務課が防災業務を担当していると推定されます。"
+  },
+  "bosai_phone": {
+    "value": "0297-84-2111",
+    "source": "web",
+    "sourceUrl": "https://www.town.ibaraki-kawachi.lg.jp/section.php",
+    "confidence": 0.9,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "city_hall_hours": {
+    "value": "平日：午前8時30分～午後5時15分（祝日・年末年始を除く）",
+    "source": "inferred",
+    "sourceUrl": "https://www.town.ibaraki-kawachi.lg.jp/",
+    "confidence": 0.7,
+    "updatedAt": "2026-02-26T00:00:00.000Z",
+    "note": "公式サイトで窓口時間の明記が確認できませんでしたが、一般的な自治体の開庁時間として記載しています。"
+  },
+  "city_hall_address": {
+    "value": "〒300-1392 茨城県稲敷郡河内町源清田1183",
+    "source": "web",
+    "sourceUrl": "https://kurashi.yahoo.co.jp/facility/a084470001",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  }
+}

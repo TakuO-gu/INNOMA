@@ -13,12 +13,12 @@
   "topic": [],
   "source": {
     "source_url": "template://kawachi/services/tax/keijidosha",
-    "fetched_at": "2026-02-03T01:50:19.916Z",
+    "fetched_at": "2026-02-26T05:47:35.192Z",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "2026-02-03T01:50:19.916Z",
+    "generated_at": "2026-02-26T05:47:35.192Z",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -377,23 +377,6 @@
           {
             "title": "車庫証明",
             "href": "/garage-certificate"
-          }
-        ]
-      }
-    },
-    {
-      "id": "section-対象-1769919363217",
-      "type": "Section",
-      "props": {
-        "heading": "軽自動車税（種別割）の対象となる方",
-        "content": [
-          {
-            "type": "paragraph",
-            "runs": [
-              {
-                "text": "詳細は担当課にお問い合わせください。"
-              }
-            ]
           }
         ]
       }

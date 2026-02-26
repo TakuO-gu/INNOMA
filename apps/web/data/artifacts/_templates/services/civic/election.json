@@ -6,7 +6,7 @@
   "title": "選挙・投票",
   "description": "選挙日程、投票所一覧、不在者投票、期日前投票",
   "content_type": "guide",
-  "service_category": "community",
+  "service_category": "civic",
   "audience": [
     "residents"
   ],
@@ -134,7 +134,7 @@
       "props": {
         "items": [
           {
-            "title": "選挙人名簿",
+            "title": "選挙人名簿登録",
             "href": "/voter-registration"
           },
           {

@@ -62,8 +62,8 @@ export async function getMunicipalities(): Promise<MunicipalitySummary[]> {
     // sampleの場合はデフォルト値を使用
     const summary: MunicipalitySummary = {
       id,
-      name: meta?.name ?? id,
-      prefecture: meta?.prefecture ?? "",
+      name: meta?.municipalityName ?? meta?.name ?? id,
+      prefecture: meta?.prefectureName ?? meta?.prefecture ?? "",
       status: meta?.status ?? "draft",
       updatedAt: meta?.updatedAt ?? new Date().toISOString(),
       variableStats: {
@@ -113,8 +113,8 @@ export async function getMunicipality(
 
   return {
     id,
-    name: meta?.name ?? id,
-    prefecture: meta?.prefecture ?? "",
+    name: meta?.municipalityName ?? meta?.name ?? id,
+    prefecture: meta?.prefectureName ?? meta?.prefecture ?? "",
     status: meta?.status ?? "draft",
     updatedAt: meta?.updatedAt ?? new Date().toISOString(),
     variableStats: {
@@ -139,9 +139,9 @@ export async function getMunicipalityMeta(
     // sampleの場合はデフォルトメタデータを返す
     if (id === "sample") {
       return {
-        id: "sample",
-        name: "サンプル市",
-        prefecture: "東京都",
+        municipalityId: "sample",
+        municipalityName: "サンプル市",
+        prefectureName: "東京都",
         createdAt: "2026-01-01T00:00:00Z",
         updatedAt: new Date().toISOString(),
         status: "draft",

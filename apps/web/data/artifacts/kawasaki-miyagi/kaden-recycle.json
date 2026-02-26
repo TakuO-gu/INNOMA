@@ -13,12 +13,12 @@
   "topic": [],
   "source": {
     "source_url": "template://kawasaki-miyagi/services/environment/kaden-recycle",
-    "fetched_at": "2026-02-03T01:50:19.947Z",
+    "fetched_at": "2026-02-26T05:47:35.231Z",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "2026-02-03T01:50:19.947Z",
+    "generated_at": "2026-02-26T05:47:35.231Z",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -349,6 +349,26 @@
       }
     },
     {
+      "id": "table-hikitori",
+      "type": "Table",
+      "props": {
+        "rows": [
+          {
+            "label": "住所",
+            "value": "{{kaden_hikitori_address}}"
+          },
+          {
+            "label": "電話番号",
+            "value": "{{kaden_hikitori_phone}}"
+          },
+          {
+            "label": "営業時間",
+            "value": "{{kaden_hikitori_hours}}"
+          }
+        ]
+      }
+    },
+    {
       "id": "section-dkafg1mmc",
       "type": "Section",
       "props": {
@@ -448,12 +468,8 @@
             "href": "/gomi"
           },
           {
-            "title": "粗大ごみの出し方",
+            "title": "粗大ごみ",
             "href": "/sodaigomi"
-          },
-          {
-            "title": "不用品のリユース",
-            "href": "/reuse"
           }
         ]
       }

@@ -12,13 +12,13 @@
   ],
   "topic": [],
   "source": {
-    "source_url": "template://sample/services/land/new-farmer",
-    "fetched_at": "{{generated_at}}",
+    "source_url": "template://tsuru/services/land/new-farmer",
+    "fetched_at": "2026-02-26T05:47:37.029Z",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "{{generated_at}}",
+    "generated_at": "2026-02-26T05:47:37.029Z",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -156,7 +156,7 @@
       "id": "section-1r65n455n",
       "type": "Section",
       "props": {
-        "heading": "{{municipality_name}}の支援制度",
+        "heading": "都留市の支援制度",
         "level": 2,
         "content": [
           {

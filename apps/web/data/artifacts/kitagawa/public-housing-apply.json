@@ -1,0 +1,263 @@
+{
+  "schema_version": "2.0.0",
+  "page_id": "kitagawa-services-housing-public-housing-apply",
+  "municipality_id": "kitagawa",
+  "path": "/public-housing-apply",
+  "title": "公営住宅に入居を申し込む",
+  "description": "公営住宅（市営住宅・県営住宅）への入居申込みの手続き案内",
+  "content_type": "service",
+  "service_category": "housing",
+  "audience": [
+    "residents"
+  ],
+  "topic": [],
+  "source": {
+    "source_url": "template://kitagawa/services/housing/public-housing-apply",
+    "fetched_at": "2026-02-26T05:47:35.493Z",
+    "content_hash": "template"
+  },
+  "pipeline": {
+    "run_id": "template-001",
+    "generated_at": "2026-02-26T05:47:35.493Z",
+    "schema_version": "2.0.0"
+  },
+  "blocks": [
+    {
+      "id": "breadcrumb-1",
+      "type": "Breadcrumbs",
+      "props": {
+        "items": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "住まい",
+            "href": "/housing"
+          },
+          {
+            "label": "公営住宅",
+            "href": "/public-housing"
+          },
+          {
+            "label": "公営住宅に入居を申し込む",
+            "href": "/public-housing-apply"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title-1",
+      "type": "Title",
+      "props": {
+        "text": "公営住宅に入居を申し込む"
+      }
+    },
+    {
+      "id": "summary-1",
+      "type": "Summary",
+      "props": {
+        "text": "北川村の公営住宅への入居を申し込む手続きです。"
+      }
+    },
+    {
+      "id": "section-taisho",
+      "type": "Section",
+      "props": {
+        "heading": "申し込みできる方",
+        "level": 2,
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "住宅に困窮していること"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "収入基準を満たしていること（月額158,000円以下が目安）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "市税を滞納していないこと"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-hitsuyou",
+      "type": "Section",
+      "props": {
+        "heading": "必要なもの",
+        "level": 2,
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "入居申込書"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "住民票の写し"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "所得を証明する書類"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "市税の滞納がないことの証明"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-tesuryo",
+      "type": "Section",
+      "props": {
+        "heading": "手数料",
+        "level": 2,
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "無料"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "step-nav-1",
+      "type": "StepNavigation",
+      "props": {
+        "heading": "申し込みの流れ",
+        "steps": [
+          {
+            "title": "募集時期の確認",
+            "description": "市の広報やホームページで募集案内を確認します"
+          },
+          {
+            "title": "申込書の提出",
+            "description": "必要書類を揃えて窓口に提出します"
+          },
+          {
+            "title": "抽選・審査",
+            "description": "応募多数の場合は抽選を行い、入居資格の審査を行います"
+          },
+          {
+            "title": "入居",
+            "description": "敷金を納付し、入居手続きを行います"
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "Contact",
+      "props": {
+        "department": "{{housing_department}}",
+        "phone": "{{housing_phone}}",
+        "email": "{{housing_email}}",
+        "hours": "{{city_hall_hours}}",
+        "address": "{{city_hall_address}}"
+      }
+    },
+    {
+      "id": "related-links-1",
+      "type": "RelatedLinks",
+      "props": {
+        "items": [
+          {
+            "title": "公営住宅について詳しく見る",
+            "href": "/public-housing"
+          },
+          {
+            "title": "住居確保給付金",
+            "href": "/housing-benefit"
+          },
+          {
+            "title": "引越し手続き一覧",
+            "href": "/moving-checklist"
+          },
+          {
+            "title": "転入届",
+            "href": "/tennyu"
+          }
+        ]
+      }
+    },
+    {
+      "id": "sources-1",
+      "type": "Sources",
+      "props": {
+        "heading": "情報の出典"
+      }
+    }
+  ],
+  "search": {
+    "summary": "公営住宅への入居申込み手続き。収入基準、必要書類、申し込みの流れを案内。",
+    "keywords": [
+      "公営住宅",
+      "市営住宅",
+      "入居申込",
+      "申し込み",
+      "手続き",
+      "抽選"
+    ],
+    "plain_text": "公営住宅に入居を申し込む。収入基準を満たし住宅に困窮している方が対象。入居申込書、住民票、所得証明等が必要。募集時期確認→申込→抽選・審査→入居。"
+  }
+}

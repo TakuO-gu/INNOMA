@@ -1,0 +1,49 @@
+{
+  "juminhyo_fee": {
+    "value": "300円",
+    "source": "manual",
+    "sourceUrl": "https://www.town.hayakawa.yamanashi.jp/people/registration/certificate.html",
+    "note": "山梨県内の他自治体（山梨市、南アルプス市、中央市など）は全て300円のため、早川町も300円と推定。要確認: 0556-45-2518（町民課 町民担当）",
+    "confidence": 0.8,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "juminhyo_convenience_fee": {
+    "value": "",
+    "source": "manual",
+    "sourceUrl": "",
+    "note": "早川町の公式サイトにコンビニ交付に関する記載なし。未対応の可能性が高い。要確認: 0556-45-2518（町民課 町民担当）",
+    "confidence": 0.3,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "juminhyo_kisai_fee": {
+    "value": "300円",
+    "source": "manual",
+    "sourceUrl": "https://www.town.hayakawa.yamanashi.jp/people/registration/certificate.html",
+    "note": "住民票の写しと同額と推定。要確認: 0556-45-2518（町民課 町民担当）",
+    "confidence": 0.8,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "city_hall_hours": {
+    "value": "平日 8:30〜17:15（土日祝日・年末年始を除く）",
+    "source": "llm",
+    "sourceUrl": "https://kurashi.yahoo.co.jp/facility/a193640001",
+    "note": "Yahoo!くらしの情報より。早川町役場の開庁時間。すでにcore.jsonに登録済み",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "shimin_email": {
+    "value": "",
+    "source": "manual",
+    "sourceUrl": "https://www.town.hayakawa.yamanashi.jp/town/organization/townsman.html",
+    "note": "早川町公式サイトに町民課の個別メールアドレスの記載なし。総務課のメールアドレスは soumu@town.hayakawa.lg.jp",
+    "confidence": 0.9,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "juminhyo_madoguchi": {
+    "value": "早川町役場町民課（本庁舎1階）\n住所: 〒409-2732 山梨県南巨摩郡早川町高住758\n電話: 0556-45-2518\n受付時間: 平日 8:30〜17:15（土日祝日・年末年始を除く）",
+    "source": "llm",
+    "sourceUrl": "https://www.town.hayakawa.yamanashi.jp/town/organization/townsman.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  }
+}

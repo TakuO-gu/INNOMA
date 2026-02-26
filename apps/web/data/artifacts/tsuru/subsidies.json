@@ -4,7 +4,7 @@
   "municipality_id": "tsuru",
   "path": "/subsidies",
   "title": "補助金・助成金",
-  "description": "{{municipality_name}}の中小企業向け補助金、国・県の助成制度",
+  "description": "都留市の中小企業向け補助金、国・県の助成制度",
   "content_type": "guide",
   "service_category": "business",
   "audience": [
@@ -12,13 +12,13 @@
   ],
   "topic": [],
   "source": {
-    "source_url": "template://sample/services/business/subsidies",
-    "fetched_at": "{{generated_at}}",
+    "source_url": "template://tsuru/services/business/subsidies",
+    "fetched_at": "2026-02-26T05:47:36.978Z",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "{{generated_at}}",
+    "generated_at": "2026-02-26T05:47:36.978Z",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -132,7 +132,7 @@
       "id": "section-auq7459kx",
       "type": "Section",
       "props": {
-        "heading": "{{municipality_name}}の補助金",
+        "heading": "都留市の補助金",
         "level": 2,
         "content": [
           {

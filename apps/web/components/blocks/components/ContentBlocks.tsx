@@ -9,6 +9,7 @@ import { useMunicipality, prefixInternalLink } from "../MunicipalityContext";
 import { RichTextRenderer, getHeadingSizeClass, renderTextWithSourceRefs } from "../RichTextRenderer";
 import type { TableRow, AccordionItem } from "../types";
 import { budouxParse } from "@/components/BudouX";
+import { isBlockAvailable } from "@/lib/artifact/variable-utils";
 
 export function TitleBlock({ props }: { props: Record<string, unknown> }) {
   const text = (props.text as string) || (props.title as string) || "";
@@ -290,6 +291,10 @@ export function SectionBlock({ props }: { props: Record<string, unknown> }) {
   const heading = (props.heading as string) || "";
   const level = (props.level as 2 | 3 | 4) || 2;
   const content = props.content;
+  const available = props.available as string | undefined;
+
+  // available が false 相当（未置換変数含む）なら非表示
+  if (!isBlockAvailable(available)) return null;
 
   const HeadingTag = `h${level}` as "h2" | "h3" | "h4";
 

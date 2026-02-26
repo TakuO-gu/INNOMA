@@ -12,13 +12,13 @@
   ],
   "topic": [],
   "source": {
-    "source_url": "template://sample/services/environment/gomi",
-    "fetched_at": "2026-01-20T10:33:17.311Z",
+    "source_url": "template://takaoka/services/environment/gomi",
+    "fetched_at": "2026-02-26T05:47:37.179Z",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "2026-01-20T10:33:17.311Z",
+    "generated_at": "2026-02-26T05:47:37.179Z",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -57,15 +57,6 @@
       }
     },
     {
-      "id": "task-button-1",
-      "type": "TaskButton",
-      "props": {
-        "label": "ごみ収集日カレンダーを見る",
-        "href": "{{gomi_calendar_url}}",
-        "isTopTask": true
-      }
-    },
-    {
       "id": "district-selector-1",
       "type": "DistrictSelector",
       "props": {
@@ -76,7 +67,7 @@
       }
     },
     {
-      "id": "section-wjogfacdc",
+      "id": "section-khnq172x8",
       "type": "Section",
       "props": {
         "heading": "ごみの分別",
@@ -85,7 +76,7 @@
       }
     },
     {
-      "id": "section-drhfwtl9b",
+      "id": "section-sdojpdn1e",
       "type": "Section",
       "props": {
         "heading": "燃やせるごみ",
@@ -129,7 +120,7 @@
       }
     },
     {
-      "id": "section-9pfsc4uyc",
+      "id": "section-fxqavc6du",
       "type": "Section",
       "props": {
         "heading": "燃やせないごみ",
@@ -173,7 +164,7 @@
       }
     },
     {
-      "id": "section-3tfjjd2tk",
+      "id": "section-c7liyivlu",
       "type": "Section",
       "props": {
         "heading": "資源ごみ",
@@ -217,7 +208,7 @@
       }
     },
     {
-      "id": "section-w4zx5ug25",
+      "id": "section-w8mf9msy9",
       "type": "Section",
       "props": {
         "heading": "プラスチックの分別",
@@ -261,7 +252,7 @@
       }
     },
     {
-      "id": "section-1mnsjc3o0",
+      "id": "section-9l74s25pg",
       "type": "Section",
       "props": {
         "heading": "粗大ごみ",
@@ -279,19 +270,11 @@
       }
     },
     {
-      "id": "task-button-2",
-      "type": "TaskButton",
-      "props": {
-        "label": "粗大ごみの申込方法を見る",
-        "href": "/sodaigomi",
-        "isTopTask": false
-      }
-    },
-    {
-      "id": "section-nirgldj8z-notification-0",
+      "id": "section-pkllhe8hn-notification-0",
       "type": "NotificationBanner",
       "props": {
         "severity": "warning",
+        "title": "注意",
         "content": [
           {
             "type": "paragraph",
@@ -371,7 +354,7 @@
       }
     },
     {
-      "id": "section-cibzlkwn5",
+      "id": "section-tmr74u4ek",
       "type": "Section",
       "props": {
         "heading": "ごみ分別アプリ",

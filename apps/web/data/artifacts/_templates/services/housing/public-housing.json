@@ -32,7 +32,7 @@
             "href": "/"
           },
           {
-            "label": "住まい・引越し",
+            "label": "住まい",
             "href": "/housing"
           },
           {
@@ -196,7 +196,11 @@
       "props": {
         "items": [
           {
-            "title": "住宅手当",
+            "title": "公営住宅に入居を申し込む",
+            "href": "/public-housing-apply"
+          },
+          {
+            "title": "住居確保給付金",
             "href": "/housing-benefit"
           },
           {

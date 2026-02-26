@@ -72,7 +72,7 @@ export default async function ReviewDetailPage({ params }: PageProps) {
             レビュー詳細
           </h1>
           <p className="mt-1 text-sm text-solid-gray-600">
-            {meta.name} / {pagePathStr}
+            {meta.municipalityName || meta.name} / {pagePathStr}
           </p>
         </div>
       </div>

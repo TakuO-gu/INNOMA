@@ -179,32 +179,19 @@
       }
     },
     {
-      "id": "step-nav-1",
-      "type": "StepNavigation",
+      "id": "section-shinsei-flow",
+      "type": "Section",
       "props": {
-        "currentStep": 0,
-        "steps": [
+        "heading": "申請の流れ",
+        "level": 2,
+        "content": [
           {
-            "title": "相談",
-            "body": "福祉事務所（市役所福祉課）に相談してください。生活状況を伺い、制度について説明します。",
-            "documents": []
-          },
-          {
-            "title": "申請",
-            "body": "申請書を提出します。申請は国民の権利であり、申請を拒否することはできません。",
-            "documents": [
-              "申請書"
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "まず福祉事務所に相談し、申請書を提出します。ケースワーカーによる調査の後、申請から原則14日以内（最長30日）に保護の要否が決定されます。"
+              }
             ]
-          },
-          {
-            "title": "調査",
-            "body": "ケースワーカーが家庭訪問や資産調査を行います。",
-            "documents": []
-          },
-          {
-            "title": "決定",
-            "body": "申請から原則14日以内（最長30日）に保護の要否が決定されます。",
-            "documents": []
           }
         ]
       }
@@ -246,6 +233,23 @@
       }
     },
     {
+      "id": "related-links-tetsuzuki",
+      "type": "RelatedLinks",
+      "props": {
+        "heading": "生活保護の手続き",
+        "items": [
+          {
+            "title": "生活保護を申請する",
+            "href": "/seikatsu-hogo-apply"
+          },
+          {
+            "title": "生活保護を受けられるか確認する",
+            "href": "/seikatsu-hogo-check"
+          }
+        ]
+      }
+    },
+    {
       "id": "related-links-1",
       "type": "RelatedLinks",
       "props": {
@@ -261,18 +265,6 @@
           {
             "title": "国民健康保険",
             "href": "/kokuho"
-          },
-          {
-            "title": "住宅手当",
-            "href": "/housing-benefit"
-          },
-          {
-            "title": "ハローワーク",
-            "href": "/hello-work"
-          },
-          {
-            "title": "法律相談",
-            "href": "/legal-support"
           }
         ]
       }

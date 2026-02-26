@@ -6,19 +6,19 @@
   "title": "日本国籍の取得（帰化）",
   "description": "帰化申請の要件、手続き、法務局案内",
   "content_type": "guide",
-  "service_category": "government",
+  "service_category": "nationality",
   "audience": [
     "foreigners"
   ],
   "topic": [],
   "source": {
     "source_url": "template://nosegawa/services/nationality/naturalization",
-    "fetched_at": "2026-02-03T01:50:20.207Z",
+    "fetched_at": "2026-02-26T05:47:36.040Z",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "2026-02-03T01:50:20.207Z",
+    "generated_at": "2026-02-26T05:47:36.040Z",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -36,7 +36,7 @@
             "href": "/nationality"
           },
           {
-            "label": "帰化申請",
+            "label": "日本国籍の取得（帰化）",
             "href": "/naturalization"
           }
         ]
@@ -57,7 +57,7 @@
       }
     },
     {
-      "id": "section-7t50yguf0",
+      "id": "section-taisho",
       "type": "Section",
       "props": {
         "heading": "帰化の要件（普通帰化）",
@@ -133,7 +133,81 @@
       }
     },
     {
-      "id": "section-oogi5u606",
+      "id": "section-hitsuyou",
+      "type": "Section",
+      "props": {
+        "heading": "主な必要書類",
+        "level": 2,
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "帰化許可申請書"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "国籍を証する書面（本国の戸籍謄本等とその日本語訳）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "身分関係を証する書面（出生証明書、婚姻証明書等）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "住民票の写し、在留カードの写し"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "納税証明書、給与明細書など収入を証明する書類"
+                    }
+                  ]
+                }
+              ]
+            ]
+          },
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "必要書類は個別の状況により異なります。法務局で事前相談のうえご確認ください。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-todokede",
       "type": "Section",
       "props": {
         "heading": "申請先",
@@ -151,51 +225,11 @@
       }
     },
     {
-      "id": "related-links-b0t1bhtgp",
-      "type": "RelatedLinks",
-      "props": {
-        "items": [
-          {
-            "title": "ビザ・在留資格",
-            "href": "/visa"
-          },
-          {
-            "title": "在留カード",
-            "href": "/residence-card"
-          },
-          {
-            "title": "戸籍",
-            "href": "/koseki"
-          },
-          {
-            "title": "外国人相談",
-            "href": "/consultation"
-          }
-        ]
-      }
-    },
-    {
-      "id": "section-対象-1769919363193",
+      "id": "section-chuui",
       "type": "Section",
       "props": {
-        "heading": "日本国籍の取得（帰化）の対象となる方",
-        "content": [
-          {
-            "type": "paragraph",
-            "runs": [
-              {
-                "text": "詳細は担当課にお問い合わせください。"
-              }
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "section-必要-1769919363193",
-      "type": "Section",
-      "props": {
-        "heading": "日本国籍の取得（帰化）に必要なもの",
+        "heading": "ご注意ください",
+        "level": 2,
         "content": [
           {
             "type": "list",
@@ -206,7 +240,7 @@
                   "type": "paragraph",
                   "runs": [
                     {
-                      "text": "本人確認書類（マイナンバーカード、運転免許証など）"
+                      "text": "帰化申請は市区町村ではなく法務局で行います"
                     }
                   ]
                 }
@@ -216,7 +250,17 @@
                   "type": "paragraph",
                   "runs": [
                     {
-                      "text": "印鑑（認印可）"
+                      "text": "審査には通常1年程度かかります"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "日本人の配偶者等、特別永住者の方は要件が緩和されます（簡易帰化）"
                     }
                   ]
                 }
@@ -227,46 +271,26 @@
       }
     },
     {
-      "id": "section-方法-1769919363193",
-      "type": "Section",
+      "id": "related-links-1",
+      "type": "RelatedLinks",
       "props": {
-        "heading": "日本国籍の取得（帰化）の手続き方法",
-        "content": [
+        "heading": "関連ページ",
+        "items": [
           {
-            "type": "list",
-            "ordered": true,
-            "items": [
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "必要書類を準備します。"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "窓口で申請書を記入します。"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "書類を提出し、確認を受けます。"
-                    }
-                  ]
-                }
-              ]
-            ]
+            "title": "在留カード",
+            "href": "/residence-card"
+          },
+          {
+            "title": "特別永住者",
+            "href": "/special-permanent-resident"
+          },
+          {
+            "title": "戸籍",
+            "href": "/koseki"
+          },
+          {
+            "title": "法務省 帰化許可申請",
+            "href": "https://www.moj.go.jp/MINJI/minji06.html"
           }
         ]
       }
@@ -297,6 +321,6 @@
       "国籍取得",
       "法務局"
     ],
-    "plain_text": "日本国籍の取得（帰化）。引き続き5年以上日本に住所を有することなどの要件。法務局で申請。"
+    "plain_text": "日本国籍の取得（帰化）。引き続き5年以上日本に住所を有することなどの要件。法務局で申請。審査には通常1年程度。"
   }
 }

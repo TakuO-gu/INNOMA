@@ -2,12 +2,14 @@
  * 検索機能
  *
  * Artifactを直接走査して検索を実行
- * 将来的にはsearch.jsonlインデックスを使用可能
+ * 変数を実際の値に置換してから検索し、変数名・値も検索対象に含める
  */
 
 import { readdir, readFile, stat } from "fs/promises";
 import { join } from "path";
 import type { InnomaArtifact } from "../artifact/types";
+import { getUrlPathForSlug } from "../artifact/page-registry";
+import { getVariableStore, replaceVariables } from "../template";
 
 const ARTIFACTS_DIR = join(process.cwd(), "data/artifacts");
 
@@ -246,6 +248,10 @@ function calculateScore(searchableText: string, title: string, query: string): n
   return score;
 }
 
+/** Artifact以外のディレクトリ・ファイル */
+const SKIP_DIRS = new Set(["variables", "data", "history"]);
+const SKIP_FILES = new Set(["meta.json", "variables.json", "districts.json"]);
+
 /**
  * JSONファイルを再帰的に検索
  */
@@ -259,14 +265,13 @@ async function findJsonFiles(dir: string): Promise<string[]> {
       const fullPath = join(dir, entry.name);
 
       if (entry.isDirectory()) {
-        // _で始まるディレクトリはスキップ
-        if (!entry.name.startsWith("_")) {
+        // _で始まるディレクトリおよび特殊ディレクトリをスキップ
+        if (!entry.name.startsWith("_") && !SKIP_DIRS.has(entry.name)) {
           const subFiles = await findJsonFiles(fullPath);
           files.push(...subFiles);
         }
       } else if (entry.isFile() && entry.name.endsWith(".json")) {
-        // meta.json, variables.jsonはスキップ
-        if (entry.name !== "meta.json" && entry.name !== "variables.json") {
+        if (!SKIP_FILES.has(entry.name)) {
           files.push(fullPath);
         }
       }
@@ -276,6 +281,58 @@ async function findJsonFiles(dir: string): Promise<string[]> {
   }
 
   return files;
+}
+
+/**
+ * 変数ストアからフラットな key→value マップを生成
+ */
+function flattenVariableStore(
+  variableStore: Record<string, { value?: string } | string>
+): Record<string, string> {
+  const flat: Record<string, string> = {};
+  for (const [key, entry] of Object.entries(variableStore)) {
+    if (typeof entry === "string") {
+      flat[key] = entry;
+    } else if (entry && typeof entry === "object" && "value" in entry && typeof entry.value === "string") {
+      flat[key] = entry.value;
+    }
+  }
+  return flat;
+}
+
+/**
+ * Artifact内の {{変数}} を実際の値に置換した文字列を返す
+ */
+function replaceVariablesInContent(
+  content: string,
+  variables: Record<string, string>
+): string {
+  const result = replaceVariables(content, variables);
+  return result.content;
+}
+
+/**
+ * Artifactで使用されている変数の値を検索テキストに追加
+ * 変数名（例: kokuho_department）と日本語の説明的テキストも含める
+ */
+function extractVariableSearchText(
+  rawContent: string,
+  variables: Record<string, string>
+): string {
+  const parts: string[] = [];
+  // rawContent中の {{variable_name}} を検出し、対応する値を追加
+  const varPattern = /\{\{(\w+)\}\}/g;
+  let match;
+  while ((match = varPattern.exec(rawContent)) !== null) {
+    const varName = match[1];
+    const value = variables[varName] || variables[varName.toLowerCase()];
+    if (value) {
+      parts.push(value);
+      // 変数名をアンダースコアをスペースに変換して追加（例: kokuho_department → kokuho department）
+      parts.push(varName.replace(/_/g, " "));
+    }
+  }
+  return parts.join(" ");
 }
 
 /**
@@ -302,13 +359,30 @@ export async function searchMunicipality(
     return [];
   }
 
+  // 変数ストアを読み込み（自治体指定時のみ）
+  let variables: Record<string, string> = {};
+  if (municipalityId) {
+    try {
+      const store = await getVariableStore(municipalityId);
+      variables = flattenVariableStore(store);
+    } catch {
+      // 変数ストアがない場合は空のまま
+    }
+  }
+
   const files = await findJsonFiles(searchDir);
   const results: SearchResult[] = [];
 
   for (const file of files) {
     try {
-      const content = await readFile(file, "utf-8");
-      const artifact: InnomaArtifact = JSON.parse(content);
+      const rawContent = await readFile(file, "utf-8");
+
+      // 変数を実際の値に置換してからパース
+      const resolvedContent = Object.keys(variables).length > 0
+        ? replaceVariablesInContent(rawContent, variables)
+        : rawContent;
+
+      const artifact: InnomaArtifact = JSON.parse(resolvedContent);
 
       // コンテンツタイプフィルタ
       const contentType = inferContentType(artifact);
@@ -316,8 +390,17 @@ export async function searchMunicipality(
         continue;
       }
 
-      // 検索可能テキストを生成
-      const searchableText = extractSearchableText(artifact);
+      // 検索可能テキストを生成（変数置換後のArtifactから）
+      let searchableText = extractSearchableText(artifact);
+
+      // 変数の値と変数名も検索対象に追加
+      if (Object.keys(variables).length > 0) {
+        const varText = extractVariableSearchText(rawContent, variables);
+        if (varText) {
+          searchableText += " " + varText.toLowerCase();
+        }
+      }
+
       const title = extractTitle(artifact);
 
       // クエリがマッチするか確認
@@ -328,19 +411,21 @@ export async function searchMunicipality(
       // スコアを計算
       const score = calculateScore(searchableText, title, query);
 
-      // 相対パスからURLを生成
+      // 相対パスからURLを生成（フラットURL）
       const relativePath = file
         .replace(ARTIFACTS_DIR + "/", "")
         .replace(/\.json$/, "");
       const pathParts = relativePath.split("/");
       const muni = pathParts[0];
-      const pagePath = pathParts.slice(1).join("/");
+      const slug = pathParts[pathParts.length - 1];
+
+      const urlPath = slug === "index" ? "" : getUrlPathForSlug(slug);
 
       results.push({
         id: relativePath,
         title,
         summary: extractSummary(artifact),
-        url: pagePath ? `/${muni}/${pagePath}` : `/${muni}`,
+        url: urlPath ? `/${muni}${urlPath}` : `/${muni}`,
         type: contentType,
         score,
       });

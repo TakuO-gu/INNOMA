@@ -61,32 +61,32 @@
         "items": [
           {
             "title": "住民税",
-            "href": "/juminzei",
+            "href": "/tax/juminzei",
             "description": "住民税の課税・納付・届出"
           },
           {
             "title": "固定資産税",
-            "href": "/kotei",
+            "href": "/tax/kotei",
             "description": "固定資産税・都市計画税の課税・納付"
           },
           {
             "title": "軽自動車税",
-            "href": "/keijidosha",
+            "href": "/tax/keijidosha",
             "description": "軽自動車・バイクの税金"
           },
           {
             "title": "納税方法",
-            "href": "/nouzei",
+            "href": "/tax/nouzei",
             "description": "口座振替・コンビニ・スマホ決済での納付"
           },
           {
             "title": "税証明書",
-            "href": "/zeishoumei",
+            "href": "/tax/zeishoumei",
             "description": "所得証明書・課税証明書・納税証明書の取得"
           },
           {
             "title": "ふるさと納税",
-            "href": "/furusato",
+            "href": "/tax/furusato",
             "description": "ふるさと納税・ワンストップ特例"
           }
         ]

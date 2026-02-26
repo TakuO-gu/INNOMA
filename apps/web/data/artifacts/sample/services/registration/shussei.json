@@ -38,7 +38,7 @@
           },
           {
             "label": "出生届",
-            "href": "/shussei"
+            "href": "/registration/shussei"
           }
         ]
       }
@@ -371,27 +371,27 @@
         "items": [
           {
             "title": "戸籍",
-            "href": "/koseki"
+            "href": "/registration/koseki"
           },
           {
             "title": "住民票",
-            "href": "/juminhyo"
+            "href": "/registration/juminhyo"
           },
           {
             "title": "児童手当",
-            "href": "/jidou-teate"
+            "href": "/childcare/jidou-teate"
           },
           {
             "title": "母子保健",
-            "href": "/boshi"
+            "href": "/childcare/boshi"
           },
           {
             "title": "国民健康保険",
-            "href": "/kokuho"
+            "href": "/health/kokuho"
           },
           {
             "title": "予防接種",
-            "href": "/yobosesshu"
+            "href": "/health/yobosesshu"
           }
         ]
       }

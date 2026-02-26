@@ -16,10 +16,8 @@
   },
   "city_hall_address": {
     "value": "〒370-2806 群馬県甘楽郡南牧村大字大日向1098",
-    "source": "llm",
-    "sourceUrl": "https://nanmoku.ne.jp/sonsei/gaiyou/",
-    "confidence": 0.95,
-    "updatedAt": "2026-01-31T00:00:00.000Z"
+    "source": "manual",
+    "updatedAt": "2026-02-25T18:49:36.392Z"
   },
   "city_hall_phone": {
     "value": "0274-87-2011",
@@ -127,11 +125,9 @@
     "updatedAt": "2026-01-31T00:00:00.000Z"
   },
   "city_hall_hours": {
-    "value": "午前8時30分から午後5時15分まで（土曜日、日曜日、祝日、年末年始を除く）",
-    "source": "llm",
-    "sourceUrl": "https://www.nanmoku.ne.jp/",
-    "confidence": 0.9,
-    "updatedAt": "2026-02-03T00:00:00.000Z"
+    "value": "平日 8:30〜17:15（土日祝日・年末年始を除く）",
+    "source": "manual",
+    "updatedAt": "2026-02-25T12:47:19.797Z"
   },
   "kaigo_department": {
     "value": "保健福祉課",
@@ -202,5 +198,192 @@
     "sourceUrl": "https://nanmoku.ne.jp/sonsei/gaiyou/",
     "confidence": 0.8,
     "updatedAt": "2026-02-03T00:00:00.000Z"
+  },
+  "city_hall_email": {
+    "value": "",
+    "source": "manual",
+    "updatedAt": "2026-02-25T12:47:19.797Z"
+  },
+  "traffic_accident_consultation_phone": {
+    "value": "027-223-1111",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:07:04.476Z"
+  },
+  "hello_work_name": {
+    "value": "ハローワーク富岡",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:07:04.476Z"
+  },
+  "hello_work_phone": {
+    "value": "0274-62-8609",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:07:04.476Z"
+  },
+  "hello_work_address": {
+    "value": "〒370-2316 富岡市富岡1414-14",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:07:04.476Z"
+  },
+  "police_station": {
+    "value": "富岡警察署",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:07:04.476Z"
+  },
+  "police_station_phone": {
+    "value": "0274-62-0110",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:07:04.476Z"
+  },
+  "police_station_address": {
+    "value": "〒370-2316 富岡市富岡1198",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:07:04.476Z"
+  },
+  "labor_bureau": {
+    "value": "群馬労働局",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:07:04.476Z"
+  },
+  "labor_bureau_phone": {
+    "value": "027-896-4734",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:07:04.476Z"
+  },
+  "labor_bureau_address": {
+    "value": "〒371-8567 群馬県前橋市大手町2-3-1 前橋地方合同庁舎8・9階",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:07:04.476Z"
+  },
+  "driver_license_center": {
+    "value": "群馬県総合交通センター",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:07:04.476Z"
+  },
+  "driver_license_center_phone": {
+    "value": "027-253-9300",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:07:04.476Z"
+  },
+  "driver_license_center_address": {
+    "value": "〒371-0846 群馬県前橋市元総社町80-4",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:07:04.476Z"
+  },
+  "legal_affairs_bureau": {
+    "value": "前橋地方法務局富岡支局",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:07:04.476Z"
+  },
+  "legal_affairs_bureau_phone": {
+    "value": "0274-62-0404",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:07:04.476Z"
+  },
+  "legal_affairs_bureau_address": {
+    "value": "〒370-2316 群馬県富岡市富岡1383-6",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:07:04.476Z"
+  },
+  "transport_branch": {
+    "value": "群馬運輸支局",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:07:04.476Z"
+  },
+  "transport_branch_phone": {
+    "value": "027-263-4440",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:07:04.476Z"
+  },
+  "transport_branch_address": {
+    "value": "〒371-0007 群馬県前橋市上泉町399番地の1",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:07:04.476Z"
+  },
+  "tax_office": {
+    "value": "富岡税務署",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:07:04.476Z"
+  },
+  "tax_office_phone": {
+    "value": "0274-63-2235",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:07:04.476Z"
+  },
+  "tax_office_address": {
+    "value": "〒370-2391 富岡市富岡2741番地の1",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:07:04.476Z"
+  },
+  "passport_office_name": {
+    "value": "群馬県パスポートセンター",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:19:06.938Z"
+  },
+  "passport_office_phone": {
+    "value": "027-226-2644",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:19:06.938Z"
+  },
+  "passport_office_address": {
+    "value": "〒371-0026 群馬県前橋市大手町2-1-1 群馬県庁2階",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:19:06.938Z"
+  },
+  "immigration_bureau": {
+    "value": "東京出入国在留管理局高崎出張所",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:19:06.938Z"
+  },
+  "immigration_bureau_phone": {
+    "value": "027-328-1154",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:19:06.938Z"
+  },
+  "immigration_bureau_address": {
+    "value": "〒370-0829 群馬県高崎市高松町26-5 高崎法務総合庁舎1階",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:19:06.938Z"
+  },
+  "silver_center_phone": {
+    "value": "0274-87-2676",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:19:06.938Z"
+  },
+  "silver_center_address": {
+    "value": "〒370-2804 群馬県甘楽郡南牧村磐戸207",
+    "source": "llm",
+    "updatedAt": "2026-02-25T19:19:06.938Z"
+  },
+  "juminhyo_fee": {
+    "value": "300円",
+    "source": "llm",
+    "sourceUrl": "https://www.town.kanra.lg.jp/jyuumin/jyuumin/todoke/01.html",
+    "confidence": 0.8,
+    "updatedAt": "2026-02-26T00:00:00.000Z",
+    "note": "同じ甘楽郡の甘楽町の手数料（300円）を参考。群馬県内の標準的な手数料体系"
+  },
+  "juminhyo_convenience_fee": {
+    "value": "",
+    "source": "llm",
+    "sourceUrl": "https://www.pref.gunma.jp/page/16101.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z",
+    "note": "南牧村はコンビニ交付サービス未導入のため空欄"
+  },
+  "juminhyo_kisai_fee": {
+    "value": "300円",
+    "source": "llm",
+    "sourceUrl": "https://www.town.kanra.lg.jp/jyuumin/jyuumin/todoke/01.html",
+    "confidence": 0.8,
+    "updatedAt": "2026-02-26T00:00:00.000Z",
+    "note": "同じ甘楽郡の甘楽町の手数料（300円）を参考。群馬県内の標準的な手数料体系"
+  },
+  "shimin_email": {
+    "value": "",
+    "source": "llm",
+    "sourceUrl": "https://nanmoku.ne.jp/sonsei/gaiyou/",
+    "confidence": 0.9,
+    "updatedAt": "2026-02-26T00:00:00.000Z",
+    "note": "南牧村の公式サイトでは住民税務課のメールアドレスは公開されていない"
   }
 }

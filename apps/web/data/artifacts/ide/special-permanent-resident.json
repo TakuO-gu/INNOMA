@@ -6,19 +6,19 @@
   "title": "特別永住者",
   "description": "特別永住者証明書の申請・更新、紛失時の手続き",
   "content_type": "guide",
-  "service_category": "government",
+  "service_category": "nationality",
   "audience": [
     "foreigners"
   ],
   "topic": [],
   "source": {
     "source_url": "template://ide/services/nationality/special-permanent-resident",
-    "fetched_at": "2026-02-03T01:50:19.715Z",
+    "fetched_at": "2026-02-26T05:47:34.764Z",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "2026-02-03T01:50:19.715Z",
+    "generated_at": "2026-02-26T05:47:34.764Z",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -57,7 +57,7 @@
       }
     },
     {
-      "id": "section-cf5p9tkgv",
+      "id": "section-taisho",
       "type": "Section",
       "props": {
         "heading": "特別永住者とは",
@@ -75,7 +75,53 @@
       }
     },
     {
-      "id": "section-k7u65rlmb",
+      "id": "section-hitsuyou",
+      "type": "Section",
+      "props": {
+        "heading": "届出に必要なもの",
+        "level": 2,
+        "content": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "特別永住者証明書"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "パスポート（お持ちの方）"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "写真1枚（縦4cm×横3cm、3か月以内撮影）"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-koushin",
       "type": "Section",
       "props": {
         "heading": "特別永住者証明書の更新",
@@ -119,7 +165,7 @@
       }
     },
     {
-      "id": "section-ynbans08r",
+      "id": "section-todokede",
       "type": "Section",
       "props": {
         "heading": "届出が必要な場合",
@@ -165,53 +211,7 @@
       }
     },
     {
-      "id": "section-qup6eocfq",
-      "type": "Section",
-      "props": {
-        "heading": "必要書類",
-        "level": 2,
-        "content": [
-          {
-            "type": "list",
-            "ordered": false,
-            "items": [
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "特別永住者証明書"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "パスポート（お持ちの方）"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "写真1枚（縦4cm×横3cm、3か月以内撮影）"
-                    }
-                  ]
-                }
-              ]
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "section-zlfmumk7x",
+      "id": "section-hiyou",
       "type": "Section",
       "props": {
         "heading": "手数料",
@@ -229,36 +229,17 @@
       }
     },
     {
-      "id": "related-links-zwygiysr5",
-      "type": "RelatedLinks",
-      "props": {
-        "items": [
-          {
-            "title": "在留カード",
-            "href": "/residence-card"
-          },
-          {
-            "title": "外国人相談",
-            "href": "/consultation"
-          },
-          {
-            "title": "住民票",
-            "href": "/juminhyo"
-          }
-        ]
-      }
-    },
-    {
-      "id": "section-対象-1769919363195",
+      "id": "section-madoguchi",
       "type": "Section",
       "props": {
-        "heading": "特別永住者の対象となる方",
+        "heading": "届出窓口",
+        "level": 2,
         "content": [
           {
             "type": "paragraph",
             "runs": [
               {
-                "text": "詳細は担当課にお問い合わせください。"
+                "text": "{{foreign_registration_department}}（{{city_hall_location}}）"
               }
             ]
           }
@@ -266,46 +247,26 @@
       }
     },
     {
-      "id": "section-方法-1769919363195",
-      "type": "Section",
+      "id": "related-links-1",
+      "type": "RelatedLinks",
       "props": {
-        "heading": "特別永住者の手続き方法",
-        "content": [
+        "heading": "関連ページ",
+        "items": [
           {
-            "type": "list",
-            "ordered": true,
-            "items": [
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "必要書類を準備します。"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "窓口で申請書を記入します。"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "書類を提出し、確認を受けます。"
-                    }
-                  ]
-                }
-              ]
-            ]
+            "title": "在留カード",
+            "href": "/residence-card"
+          },
+          {
+            "title": "外国人住民の届出",
+            "href": "/foreign-registration"
+          },
+          {
+            "title": "住民票の写し",
+            "href": "/juminhyo"
+          },
+          {
+            "title": "出入国在留管理庁",
+            "href": "https://www.moj.go.jp/isa/"
           }
         ]
       }
@@ -314,9 +275,9 @@
       "id": "contact-1",
       "type": "Contact",
       "props": {
-        "department": "{{resident_department}}",
-        "phone": "{{resident_phone}}",
-        "email": "{{resident_email}}",
+        "department": "{{foreign_registration_department}}",
+        "phone": "{{foreign_registration_phone}}",
+        "email": "{{foreign_registration_email}}",
         "hours": "{{city_hall_hours}}",
         "address": "{{city_hall_address}}"
       }
@@ -337,6 +298,6 @@
       "在日",
       "更新"
     ],
-    "plain_text": "特別永住者。特別永住者証明書の更新は有効期間満了2か月前から。住所変更・氏名変更などの届出も市区町村で手続き。"
+    "plain_text": "特別永住者。特別永住者証明書の更新は有効期間満了2か月前から。住所変更・氏名変更などの届出も市区町村で手続き。手数料無料。"
   }
 }

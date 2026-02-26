@@ -14,12 +14,12 @@
   "topic": [],
   "source": {
     "source_url": "template://nanmoku/services/health/yobosesshu",
-    "fetched_at": "2026-02-03T01:50:20.120Z",
+    "fetched_at": "2026-02-26T05:47:35.636Z",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "2026-02-03T01:50:20.120Z",
+    "generated_at": "2026-02-26T05:47:35.636Z",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -55,6 +55,24 @@
       "type": "Summary",
       "props": {
         "text": "感染症を予防するため、各種予防接種を実施しています。定期接種は対象年齢の間に接種すると公費で受けられます。"
+      }
+    },
+    {
+      "id": "richtext-warning-notification-0",
+      "type": "NotificationBanner",
+      "props": {
+        "severity": "warning",
+        "title": "接種間隔にご注意ください",
+        "content": [
+          {
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "注射生ワクチン（MR、水痘、BCGなど）を接種した後、別の注射生ワクチンを接種する場合は、27日以上の間隔をあけてください。"
+              }
+            ]
+          }
+        ]
       }
     },
     {
@@ -247,62 +265,6 @@
       }
     },
     {
-      "id": "step-nav-1",
-      "type": "StepNavigation",
-      "props": {
-        "currentStep": 0,
-        "steps": [
-          {
-            "title": "予診票の確認",
-            "body": "お子さんの場合、予診票は出生届出時や転入時にお渡ししています。",
-            "documents": [
-              "予診票",
-              "母子健康手帳"
-            ]
-          },
-          {
-            "title": "医療機関の予約",
-            "body": "指定医療機関に直接予約してください。",
-            "documents": []
-          },
-          {
-            "title": "接種",
-            "body": "予診票、母子健康手帳（お子さんの場合）、保険証を持参してください。",
-            "documents": [
-              "予診票",
-              "母子健康手帳",
-              "保険証"
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "richtext-warning",
-      "type": "RichText",
-      "props": {
-        "content": []
-      }
-    },
-    {
-      "id": "richtext-warning-notification-0",
-      "type": "NotificationBanner",
-      "props": {
-        "severity": "warning",
-        "title": "接種間隔にご注意ください",
-        "content": [
-          {
-            "type": "paragraph",
-            "runs": [
-              {
-                "text": "注射生ワクチン（MR、水痘、BCGなど）を接種した後、別の注射生ワクチンを接種する場合は、27日以上の間隔をあけてください。"
-              }
-            ]
-          }
-        ]
-      }
-    },
-    {
       "id": "related-links-1",
       "type": "RelatedLinks",
       "props": {
@@ -322,103 +284,6 @@
           {
             "title": "高齢者福祉",
             "href": "/koureisha"
-          }
-        ]
-      }
-    },
-    {
-      "id": "section-対象-1769919363175",
-      "type": "Section",
-      "props": {
-        "heading": "予防接種の対象となる方",
-        "content": [
-          {
-            "type": "paragraph",
-            "runs": [
-              {
-                "text": "詳細は担当課にお問い合わせください。"
-              }
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "section-必要-1769919363175",
-      "type": "Section",
-      "props": {
-        "heading": "予防接種に必要なもの",
-        "content": [
-          {
-            "type": "list",
-            "ordered": false,
-            "items": [
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "本人確認書類（マイナンバーカード、運転免許証など）"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "印鑑（認印可）"
-                    }
-                  ]
-                }
-              ]
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "section-方法-1769919363175",
-      "type": "Section",
-      "props": {
-        "heading": "予防接種の手続き方法",
-        "content": [
-          {
-            "type": "list",
-            "ordered": true,
-            "items": [
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "必要書類を準備します。"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "窓口で申請書を記入します。"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "書類を提出し、確認を受けます。"
-                    }
-                  ]
-                }
-              ]
-            ]
           }
         ]
       }

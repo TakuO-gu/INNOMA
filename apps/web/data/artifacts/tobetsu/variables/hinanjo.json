@@ -1,0 +1,55 @@
+{
+  "kinkyu_hinanbasho_count": {
+    "value": "26",
+    "source": "web",
+    "sourceUrl": "https://www.navitime.co.jp/category/0500009/10303/",
+    "confidence": 0.6,
+    "updatedAt": "2026-02-26T00:00:00.000Z",
+    "note": "NAVITIMEの避難場所・避難所一覧より（15件+11件=26件）。公式PDFはスキャンベースで自動抽出不可。公式サイト確認推奨。"
+  },
+  "shitei_hinanjo_count": {
+    "value": "26",
+    "source": "web",
+    "sourceUrl": "https://www.navitime.co.jp/category/0500009/10303/",
+    "confidence": 0.6,
+    "updatedAt": "2026-02-26T00:00:00.000Z",
+    "note": "NAVITIMEの避難場所・避難所一覧より。kinkyu/shiteiの区別が不明なため同値を設定。公式サイト確認推奨。"
+  },
+  "hinanjo_status_url": {
+    "value": "https://www.town.tobetsu.hokkaido.jp/life/1/16/",
+    "source": "web",
+    "sourceUrl": "https://www.town.tobetsu.hokkaido.jp/life/1/16/",
+    "confidence": 0.7,
+    "updatedAt": "2026-02-26T00:00:00.000Z",
+    "note": "専用の開設状況確認ページは見つかりませんでした。災害時は消防・防災トップページで告知される形式と思われます。"
+  },
+  "bosai_department": {
+    "value": "総務部危機対策課危機対策係",
+    "source": "web",
+    "sourceUrl": "https://www.town.tobetsu.hokkaido.jp/soshiki/kiki/",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "bosai_phone": {
+    "value": "0133-23-3801",
+    "source": "web",
+    "sourceUrl": "https://www.town.tobetsu.hokkaido.jp/soshiki/kiki/",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "city_hall_hours": {
+    "value": "午前8時45分～午後5時15分（祝日・休日・年末年始を除く）",
+    "source": "web",
+    "sourceUrl": "https://www.town.tobetsu.hokkaido.jp/life/4/27/108/",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "city_hall_address": {
+    "value": "〒061-0292 北海道石狩郡当別町白樺町58番地9",
+    "source": "web",
+    "sourceUrl": "https://www.town.tobetsu.hokkaido.jp/life/4/27/108/",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z",
+    "note": "core.jsonにも同じ値が存在します。"
+  }
+}

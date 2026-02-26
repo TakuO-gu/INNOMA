@@ -12,13 +12,13 @@
   ],
   "topic": [],
   "source": {
-    "source_url": "template://sample/services/tax/juminzei",
-    "fetched_at": "2026-01-20T10:33:17.311Z",
+    "source_url": "template://takaoka/services/tax/juminzei",
+    "fetched_at": "2026-02-26T05:47:37.364Z",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "2026-01-20T10:33:17.311Z",
+    "generated_at": "2026-02-26T05:47:37.364Z",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -57,7 +57,7 @@
       }
     },
     {
-      "id": "section-sr63q40zf",
+      "id": "section-upv8rarz3",
       "type": "Section",
       "props": {
         "heading": "納税義務者",
@@ -83,7 +83,7 @@
       }
     },
     {
-      "id": "section-fa4yo41z2",
+      "id": "section-e5u718ijf",
       "type": "Section",
       "props": {
         "heading": "非課税となる方",
@@ -129,7 +129,7 @@
       }
     },
     {
-      "id": "section-tbhyc99l9",
+      "id": "section-d4yoisaxz",
       "type": "Section",
       "props": {
         "heading": "税額の計算",
@@ -171,7 +171,7 @@
       }
     },
     {
-      "id": "section-g30u4wdgx",
+      "id": "section-mm1vfxkus",
       "type": "Section",
       "props": {
         "heading": "納付方法",
@@ -180,7 +180,7 @@
       }
     },
     {
-      "id": "section-fj0kae43z",
+      "id": "section-3x8cf7hi2",
       "type": "Section",
       "props": {
         "heading": "特別徴収（給与天引き）",
@@ -198,7 +198,7 @@
       }
     },
     {
-      "id": "section-x486b06y7",
+      "id": "section-8c5snjsh5",
       "type": "Section",
       "props": {
         "heading": "普通徴収（納付書払い）",
@@ -244,7 +244,7 @@
       }
     },
     {
-      "id": "section-0mlfq9ol5",
+      "id": "section-5zovw1h9y",
       "type": "Section",
       "props": {
         "heading": "年金特別徴収",
@@ -262,7 +262,7 @@
       }
     },
     {
-      "id": "section-8labnos2q",
+      "id": "section-n2xdj5c8a",
       "type": "Section",
       "props": {
         "heading": "申告について",
@@ -366,57 +366,6 @@
       }
     },
     {
-      "id": "section-対象-1769918445625",
-      "type": "Section",
-      "props": {
-        "heading": "住民税（市民税・県民税）の対象となる方",
-        "content": [
-          {
-            "type": "paragraph",
-            "runs": [
-              {
-                "text": "詳細は{{shimin_department}}（{{shimin_phone}}）にお問い合わせください。"
-              }
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "section-必要-1769918445625",
-      "type": "Section",
-      "props": {
-        "heading": "住民税（市民税・県民税）に必要なもの",
-        "content": [
-          {
-            "type": "paragraph",
-            "runs": [
-              {
-                "text": "{{juminzei_hitsuyou}}"
-              }
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "section-手順-1769918445625",
-      "type": "Section",
-      "props": {
-        "heading": "住民税（市民税・県民税）の申請の流れ",
-        "content": [
-          {
-            "type": "paragraph",
-            "runs": [
-              {
-                "text": "{{juminzei_nagare}}"
-              }
-            ]
-          }
-        ]
-      }
-    },
-    {
       "id": "contact-1",
       "type": "Contact",
       "props": {
@@ -428,7 +377,7 @@
       }
     },
     {
-      "id": "terms-1769899964522",
+      "id": "terms-1769919363214",
       "type": "Section",
       "props": {
         "heading": "用語の説明",

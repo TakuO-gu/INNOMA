@@ -12,13 +12,13 @@
   ],
   "topic": [],
   "source": {
-    "source_url": "template://sample/services/housing/moving-checklist",
-    "fetched_at": "2026-01-20T10:33:17.311Z",
+    "source_url": "template://takaoka/services/housing/moving-checklist",
+    "fetched_at": "2026-02-26T05:47:37.298Z",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "2026-01-20T10:33:17.311Z",
+    "generated_at": "2026-02-26T05:47:37.298Z",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -32,7 +32,7 @@
             "href": "/"
           },
           {
-            "label": "住まい・引越し",
+            "label": "住まい",
             "href": "/housing"
           },
           {
@@ -57,7 +57,7 @@
       }
     },
     {
-      "id": "section-4ukfrl5ot",
+      "id": "section-tvfq28315",
       "type": "Section",
       "props": {
         "heading": "市役所での手続き",
@@ -151,7 +151,7 @@
       }
     },
     {
-      "id": "section-7sxmzz2c8",
+      "id": "section-dr0ar8ye6",
       "type": "Section",
       "props": {
         "heading": "ライフライン",
@@ -200,7 +200,7 @@
       }
     },
     {
-      "id": "section-lb1tpzeme",
+      "id": "section-a8gse8t84",
       "type": "Section",
       "props": {
         "heading": "その他の届出",

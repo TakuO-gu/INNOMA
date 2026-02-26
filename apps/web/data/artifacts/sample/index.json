@@ -27,7 +27,7 @@
       "type": "Hero",
       "props": {
         "title": "サンプル市へようこそ",
-        "subtitle": "市民の皆さまの暮らしをサポートする行政情報をお届けします"
+        "subtitle": "INNOMAで表示されています。この情報は一次情報ではありません。"
       }
     },
     {
@@ -48,42 +48,42 @@
           {
             "title": "住民票の写し",
             "description": "住民票の取得方法・必要書類",
-            "href": "/juminhyo"
+            "href": "/registration/juminhyo"
           },
           {
             "title": "戸籍謄本",
             "description": "戸籍全部事項証明書の取得",
-            "href": "/koseki"
+            "href": "/registration/koseki"
           },
           {
             "title": "マイナンバーカード",
             "description": "申請・受取・更新の手続き",
-            "href": "/mynumber"
+            "href": "/registration/mynumber"
           },
           {
             "title": "転入届",
             "description": "市外からの引越し手続き",
-            "href": "/tennyu"
+            "href": "/registration/tennyu"
           },
           {
             "title": "印鑑登録",
             "description": "印鑑登録・証明書の取得",
-            "href": "/inkan"
+            "href": "/registration/inkan"
           },
           {
             "title": "ごみの分別・収集",
             "description": "ごみの出し方・収集日",
-            "href": "/gomi"
+            "href": "/environment/gomi"
           },
           {
             "title": "児童手当",
             "description": "支給要件・申請方法",
-            "href": "/jidou-teate"
+            "href": "/childcare/jidou-teate"
           },
           {
             "title": "国民健康保険",
             "description": "加入・届出・保険料",
-            "href": "/kokuho"
+            "href": "/health/kokuho"
           }
         ]
       }
@@ -165,6 +165,6 @@
       "ごみ",
       "防災"
     ],
-    "plain_text": "サンプル市へようこそ。市民の皆さまの暮らしをサポートする行政情報をお届けします。届出・申請・証明書、子育て、福祉・介護、健康・医療、税金、環境・ごみ、住まい・施設、防災・災害などの情報を提供しています。"
+    "plain_text": "サンプル市へようこそ。INNOMAで表示されています。この情報は一次情報ではありません。届出・申請・証明書、子育て、福祉・介護、健康・医療、税金、環境・ごみ、住まい・施設、防災・災害などの情報を提供しています。"
   }
 }

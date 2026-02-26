@@ -345,15 +345,15 @@
           },
           {
             "title": "固定資産税",
-            "href": "/kotei"
+            "href": "/tax/kotei"
           },
           {
             "title": "印鑑登録",
-            "href": "/inkan"
+            "href": "/registration/inkan"
           },
           {
             "title": "住民票",
-            "href": "/juminhyo"
+            "href": "/registration/juminhyo"
           }
         ]
       }

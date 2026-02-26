@@ -7,16 +7,19 @@
   "description": "介護保険サービスの利用資格を確認できます。質問に答えるだけで、あなたが対象かどうかを判定します。",
   "content_type": "answer",
   "service_category": "welfare",
-  "audience": ["residents", "elderly"],
+  "audience": [
+    "residents",
+    "elderly"
+  ],
   "topic": [],
   "source": {
     "source_url": "template://utashinai/kaigo-check",
-    "fetched_at": "2026-02-03T01:50:20.556Z",
+    "fetched_at": "2026-02-26T05:47:36.788Z",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "2026-02-03T01:50:20.556Z",
+    "generated_at": "2026-02-26T05:47:36.788Z",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -25,10 +28,22 @@
       "type": "Breadcrumbs",
       "props": {
         "items": [
-          { "label": "ホーム", "href": "/" },
-          { "label": "高齢者向け支援", "href": "/welfare" },
-          { "label": "介護保険", "href": "/kaigo" },
-          { "label": "介護サービスを利用できますか？", "href": "/kaigo-check" }
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "高齢者向け支援",
+            "href": "/welfare"
+          },
+          {
+            "label": "介護保険",
+            "href": "/kaigo"
+          },
+          {
+            "label": "介護サービスを利用できますか？",
+            "href": "/kaigo-check"
+          }
         ]
       }
     },
@@ -48,25 +63,46 @@
             "id": "q1",
             "text": "あなたの年齢は？",
             "options": [
-              { "label": "65歳以上", "nextQuestionId": "q2-65" },
-              { "label": "40〜64歳", "nextQuestionId": "q2-40" },
-              { "label": "40歳未満", "resultId": "result-no-age" }
+              {
+                "label": "65歳以上",
+                "nextQuestionId": "q2-65"
+              },
+              {
+                "label": "40〜64歳",
+                "nextQuestionId": "q2-40"
+              },
+              {
+                "label": "40歳未満",
+                "resultId": "result-no-age"
+              }
             ]
           },
           {
             "id": "q2-65",
             "text": "日常生活で介護や支援が必要ですか？",
             "options": [
-              { "label": "はい", "resultId": "result-yes-65" },
-              { "label": "いいえ・わからない", "resultId": "result-consult" }
+              {
+                "label": "はい",
+                "resultId": "result-yes-65"
+              },
+              {
+                "label": "いいえ・わからない",
+                "resultId": "result-consult"
+              }
             ]
           },
           {
             "id": "q2-40",
             "text": "介護が必要になった原因は、特定疾病（がん末期、認知症、脳血管疾患など16疾病）ですか？",
             "options": [
-              { "label": "はい", "resultId": "result-yes-40" },
-              { "label": "いいえ・わからない", "resultId": "result-no-shikkan" }
+              {
+                "label": "はい",
+                "resultId": "result-yes-40"
+              },
+              {
+                "label": "いいえ・わからない",
+                "resultId": "result-no-shikkan"
+              }
             ]
           }
         ],
@@ -78,8 +114,14 @@
             "actionLabel": "要介護認定を申請する",
             "actionHref": "/kaigo-apply",
             "relatedLinks": [
-              { "title": "介護保険について詳しく見る", "href": "/kaigo" },
-              { "title": "地域包括支援センターに相談する", "href": "/houkatsu" }
+              {
+                "title": "介護保険について詳しく見る",
+                "href": "/kaigo"
+              },
+              {
+                "title": "地域包括支援センターに相談する",
+                "href": "/houkatsu"
+              }
             ]
           },
           {
@@ -89,8 +131,14 @@
             "actionLabel": "要介護認定を申請する",
             "actionHref": "/kaigo-apply",
             "relatedLinks": [
-              { "title": "介護保険について詳しく見る", "href": "/kaigo" },
-              { "title": "特定疾病の一覧", "href": "/kaigo" }
+              {
+                "title": "介護保険について詳しく見る",
+                "href": "/kaigo"
+              },
+              {
+                "title": "特定疾病の一覧",
+                "href": "/kaigo"
+              }
             ]
           },
           {
@@ -98,7 +146,10 @@
             "title": "介護保険サービスは利用できません",
             "description": "介護保険は40歳以上の方が対象です。40歳未満の方で介護や支援が必要な場合は、障害福祉サービスが利用できる場合があります。",
             "relatedLinks": [
-              { "title": "障害福祉サービスについて", "href": "/welfare" }
+              {
+                "title": "障害福祉サービスについて",
+                "href": "/welfare"
+              }
             ]
           },
           {
@@ -106,8 +157,14 @@
             "title": "介護保険サービスは利用できない可能性があります",
             "description": "40〜64歳の方は、特定疾病（がん末期、認知症、脳血管疾患など16疾病）が原因の場合のみ対象となります。詳しくは地域包括支援センターにご相談ください。",
             "relatedLinks": [
-              { "title": "特定疾病について詳しく見る", "href": "/kaigo" },
-              { "title": "地域包括支援センターに相談する", "href": "/houkatsu" }
+              {
+                "title": "特定疾病について詳しく見る",
+                "href": "/kaigo"
+              },
+              {
+                "title": "地域包括支援センターに相談する",
+                "href": "/houkatsu"
+              }
             ]
           },
           {
@@ -117,7 +174,10 @@
             "actionLabel": "地域包括支援センターに相談する",
             "actionHref": "/houkatsu",
             "relatedLinks": [
-              { "title": "介護保険について詳しく見る", "href": "/kaigo" }
+              {
+                "title": "介護保険について詳しく見る",
+                "href": "/kaigo"
+              }
             ]
           }
         ]
@@ -126,7 +186,14 @@
   ],
   "search": {
     "summary": "介護保険サービスの利用資格を判定。65歳以上は原因問わず対象。40〜64歳は特定疾病が原因の場合のみ対象。",
-    "keywords": ["介護保険", "介護サービス", "要介護認定", "対象者", "判定", "特定疾病"],
+    "keywords": [
+      "介護保険",
+      "介護サービス",
+      "要介護認定",
+      "対象者",
+      "判定",
+      "特定疾病"
+    ],
     "plain_text": "介護サービスを利用できますか？介護保険の利用資格を確認。65歳以上は原因を問わず対象。40〜64歳は特定疾病が原因の場合のみ。まずは要介護認定を申請。"
   }
 }

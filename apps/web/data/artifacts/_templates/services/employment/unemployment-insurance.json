@@ -6,7 +6,7 @@
   "title": "雇用保険・失業給付",
   "description": "失業給付（基本手当）、再就職手当、教育訓練給付金",
   "content_type": "guide",
-  "service_category": "business",
+  "service_category": "employment",
   "audience": [
     "residents"
   ],
@@ -138,30 +138,87 @@
       }
     },
     {
-      "id": "step-nav-1",
-      "type": "StepNavigation",
+      "id": "section-procedure",
+      "type": "Section",
       "props": {
-        "currentStep": 0,
-        "steps": [
+        "heading": "手続きの流れ",
+        "level": 2,
+        "content": [
           {
-            "title": "離職票を受け取る",
-            "body": "会社から離職票（1・2）を受け取ります。通常、退職後10日〜2週間で届きます。"
-          },
-          {
-            "title": "ハローワークで求職申込み",
-            "body": "住所地を管轄するハローワークで求職の申込みと受給資格の決定を受けます。"
-          },
-          {
-            "title": "雇用保険説明会に参加",
-            "body": "受給資格決定後、雇用保険説明会に参加します。"
-          },
-          {
-            "title": "認定日にハローワークへ",
-            "body": "4週間に1回の認定日にハローワークで求職活動実績を報告し、失業認定を受けます。"
-          },
-          {
-            "title": "失業給付の振込",
-            "body": "認定後、約1週間で指定口座に振り込まれます。"
+            "type": "list",
+            "ordered": true,
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "離職票を受け取る",
+                      "bold": true
+                    },
+                    {
+                      "text": "：会社から離職票（1・2）を受け取ります。通常、退職後10日〜2週間で届きます。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "ハローワークで求職申込み",
+                      "bold": true
+                    },
+                    {
+                      "text": "：住所地を管轄するハローワークで求職の申込みと受給資格の決定を受けます。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "雇用保険説明会に参加",
+                      "bold": true
+                    },
+                    {
+                      "text": "：受給資格決定後、雇用保険説明会に参加します。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "認定日にハローワークへ",
+                      "bold": true
+                    },
+                    {
+                      "text": "：4週間に1回の認定日にハローワークで求職活動実績を報告し、失業認定を受けます。"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "失業給付の振込",
+                      "bold": true
+                    },
+                    {
+                      "text": "：認定後、約1週間で指定口座に振り込まれます。"
+                    }
+                  ]
+                }
+              ]
+            ]
           }
         ]
       }
@@ -172,24 +229,20 @@
       "props": {
         "items": [
           {
-            "title": "ハローワーク",
-            "href": "/hello-work"
-          },
-          {
-            "title": "職業訓練",
-            "href": "/vocational-training"
-          },
-          {
-            "title": "就職支援",
-            "href": "/career-support"
-          },
-          {
             "title": "国民健康保険",
             "href": "/kokuho"
           },
           {
-            "title": "年金",
+            "title": "国民年金",
             "href": "/nenkin"
+          },
+          {
+            "title": "育児休業・介護休業",
+            "href": "/family-leave"
+          },
+          {
+            "title": "労働条件・最低賃金",
+            "href": "/labor-standards"
           }
         ]
       }

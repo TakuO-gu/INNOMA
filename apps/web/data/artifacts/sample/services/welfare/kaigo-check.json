@@ -27,8 +27,8 @@
         "items": [
           { "label": "ホーム", "href": "/" },
           { "label": "高齢者向け支援", "href": "/welfare" },
-          { "label": "介護保険", "href": "/kaigo" },
-          { "label": "介護サービスを利用できますか？", "href": "/kaigo-check" }
+          { "label": "介護保険", "href": "/welfare/kaigo" },
+          { "label": "介護サービスを利用できますか？", "href": "/welfare/kaigo-check" }
         ]
       }
     },
@@ -78,8 +78,8 @@
             "actionLabel": "要介護認定を申請する",
             "actionHref": "/kaigo-apply",
             "relatedLinks": [
-              { "title": "介護保険について詳しく見る", "href": "/kaigo" },
-              { "title": "地域包括支援センターに相談する", "href": "/houkatsu" }
+              { "title": "介護保険について詳しく見る", "href": "/welfare/kaigo" },
+              { "title": "地域包括支援センターに相談する", "href": "/welfare/houkatsu" }
             ]
           },
           {
@@ -89,8 +89,8 @@
             "actionLabel": "要介護認定を申請する",
             "actionHref": "/kaigo-apply",
             "relatedLinks": [
-              { "title": "介護保険について詳しく見る", "href": "/kaigo" },
-              { "title": "特定疾病の一覧", "href": "/kaigo" }
+              { "title": "介護保険について詳しく見る", "href": "/welfare/kaigo" },
+              { "title": "特定疾病の一覧", "href": "/welfare/kaigo" }
             ]
           },
           {
@@ -106,8 +106,8 @@
             "title": "介護保険サービスは利用できない可能性があります",
             "description": "40〜64歳の方は、特定疾病（がん末期、認知症、脳血管疾患など16疾病）が原因の場合のみ対象となります。詳しくは地域包括支援センターにご相談ください。",
             "relatedLinks": [
-              { "title": "特定疾病について詳しく見る", "href": "/kaigo" },
-              { "title": "地域包括支援センターに相談する", "href": "/houkatsu" }
+              { "title": "特定疾病について詳しく見る", "href": "/welfare/kaigo" },
+              { "title": "地域包括支援センターに相談する", "href": "/welfare/houkatsu" }
             ]
           },
           {
@@ -117,7 +117,7 @@
             "actionLabel": "地域包括支援センターに相談する",
             "actionHref": "/houkatsu",
             "relatedLinks": [
-              { "title": "介護保険について詳しく見る", "href": "/kaigo" }
+              { "title": "介護保険について詳しく見る", "href": "/welfare/kaigo" }
             ]
           }
         ]

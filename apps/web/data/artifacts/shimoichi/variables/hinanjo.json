@@ -1,0 +1,54 @@
+{
+  "kinkyu_hinanbasho_count": {
+    "value": "14",
+    "source": "web",
+    "sourceUrl": "https://www.town.shimoichi.lg.jp/0000000184.html",
+    "confidence": 0.9,
+    "updatedAt": "2026-02-26T00:00:00.000Z",
+    "note": "下市町公式サイト避難場所・避難所一覧（2025年5月27日更新）より。種別「避難場所・避難所」の件数14件（No.22,23,27,34,36,43,44,46,47,48,51,53,61,65）。"
+  },
+  "shitei_hinanjo_count": {
+    "value": "72",
+    "source": "web",
+    "sourceUrl": "https://www.town.shimoichi.lg.jp/0000000184.html",
+    "confidence": 0.9,
+    "updatedAt": "2026-02-26T00:00:00.000Z",
+    "note": "下市町公式サイト避難場所・避難所一覧より。「避難所」+「避難場所・避難所」の合計72件（No.1〜72）。"
+  },
+  "fukushi_hinanjo_count": {
+    "value": "5",
+    "source": "web",
+    "sourceUrl": "https://www.town.shimoichi.lg.jp/0000000184.html",
+    "confidence": 0.9,
+    "updatedAt": "2026-02-26T00:00:00.000Z",
+    "note": "下市町公式サイト避難場所・避難所一覧より福祉避難所5件（No.73〜77）。"
+  },
+  "bosai_department": {
+    "value": "総務課",
+    "source": "web",
+    "sourceUrl": "https://www.town.shimoichi.lg.jp/soshiki/1-8-0-0-0_2.html",
+    "confidence": 0.9,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "bosai_phone": {
+    "value": "0747-52-0001",
+    "source": "web",
+    "sourceUrl": "https://www.town.shimoichi.lg.jp/soshiki/1-8-0-0-0_2.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "city_hall_hours": {
+    "value": "午前8時30分から午後5時15分（土曜・日曜・祝日・年末年始を除く）",
+    "source": "web",
+    "sourceUrl": "https://www.town.shimoichi.lg.jp/soshiki_list.html",
+    "confidence": 0.9,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "city_hall_address": {
+    "value": "〒638-0041 奈良県吉野郡下市町大字下市1960",
+    "source": "web",
+    "sourceUrl": "https://www.town.shimoichi.lg.jp/soshiki_list.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  }
+}

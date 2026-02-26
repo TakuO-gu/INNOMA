@@ -265,5 +265,34 @@
     "sourceUrl": "https://www.town.yoshimi.saitama.jp/",
     "confidence": 0.95,
     "updatedAt": "2026-02-03T00:00:00.000Z"
+  },
+  "juminhyo_fee": {
+    "value": "200円",
+    "source": "llm",
+    "sourceUrl": "https://www.town.yoshimi.saitama.jp/soshiki/choumin_kenko/koseki/2490.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "juminhyo_convenience_fee": {
+    "value": "200円",
+    "source": "llm",
+    "sourceUrl": "https://www.town.yoshimi.saitama.jp/soshiki/choumin_kenko/koseki/syoumeisyo/2514.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "juminhyo_kisai_fee": {
+    "value": "200円",
+    "source": "llm",
+    "sourceUrl": "https://www.town.yoshimi.saitama.jp/soshiki/choumin_kenko/koseki/2490.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "shimin_email": {
+    "value": "",
+    "source": "llm",
+    "sourceUrl": "https://www.town.yoshimi.saitama.jp/gyosei/534.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z",
+    "note": "メールアドレスは公式サイトに公開されていません。問い合わせは電話（0493-63-5010）またはFAX（0493-54-4970）で受け付けています。"
   }
 }

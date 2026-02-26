@@ -1,24 +1,24 @@
 {
   "schema_version": "2.0.0",
-  "page_id": "yoshino-services-driving-registration",
+  "page_id": "yoshino-topics-registration",
   "municipality_id": "yoshino",
-  "path": "/registration",
-  "title": "車検・自動車登録",
-  "description": "新規登録、移転登録（名義変更）、変更登録、抹消登録",
-  "content_type": "guide",
-  "service_category": "government",
+  "path": "/topics/registration",
+  "title": "届出・申請・証明書",
+  "description": "出生届、婚姻届、転入届、戸籍謄本、住民票、マイナンバーカードに関する情報",
+  "content_type": "directory",
+  "service_category": "housing",
   "audience": [
     "residents"
   ],
   "topic": [],
   "source": {
-    "source_url": "template://yoshino/services/driving/registration",
-    "fetched_at": "2026-02-03T01:50:20.634Z",
+    "source_url": "template://yoshino/topics/registration",
+    "fetched_at": "2026-02-26T05:47:36.967Z",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "2026-02-03T01:50:20.634Z",
+    "generated_at": "2026-02-26T05:47:36.967Z",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -32,11 +32,7 @@
             "href": "/"
           },
           {
-            "label": "運転・車両",
-            "href": "/driving"
-          },
-          {
-            "label": "車検・自動車登録",
+            "label": "届出・申請・証明書",
             "href": "/registration"
           }
         ]
@@ -46,249 +42,70 @@
       "id": "title-1",
       "type": "Title",
       "props": {
-        "text": "車検・自動車登録"
+        "text": "届出・申請・証明書"
       }
     },
     {
       "id": "summary-1",
       "type": "Summary",
       "props": {
-        "text": "自動車の車検（継続検査）および各種登録手続きは運輸支局で行います。"
+        "text": "出生届、婚姻届、転入届、戸籍謄本、住民票、マイナンバーカードに関する情報をまとめています"
       }
     },
     {
-      "id": "section-2fuzvgmag",
-      "type": "Section",
-      "props": {
-        "heading": "車検（継続検査）",
-        "level": 2,
-        "content": [
-          {
-            "type": "list",
-            "ordered": false,
-            "items": [
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "有効期間：新車は3年、以降は2年"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "車検満了日の1か月前から受検可能"
-                    }
-                  ]
-                }
-              ]
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "section-p4d4aspfp",
-      "type": "Section",
-      "props": {
-        "heading": "自動車登録の種類",
-        "level": 2,
-        "content": [
-          {
-            "type": "list",
-            "ordered": false,
-            "items": [
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "新規登録",
-                      "bold": true
-                    },
-                    {
-                      "text": "：新車や中古新規の登録"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "移転登録",
-                      "bold": true
-                    },
-                    {
-                      "text": "：売買による名義変更"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "変更登録",
-                      "bold": true
-                    },
-                    {
-                      "text": "：住所変更など"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "抹消登録",
-                      "bold": true
-                    },
-                    {
-                      "text": "：廃車、一時使用中止"
-                    }
-                  ]
-                }
-              ]
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "related-links-uyyknjhc7",
-      "type": "RelatedLinks",
+      "id": "topic-list-1",
+      "type": "TopicList",
       "props": {
         "items": [
           {
-            "title": "運転免許証",
-            "href": "/license"
+            "title": "転入届",
+            "href": "/tennyu",
+            "description": "他の市区町村から引っ越してきたとき"
           },
           {
-            "title": "車庫証明",
-            "href": "/garage-certificate"
+            "title": "転出届",
+            "href": "/tenshutsu",
+            "description": "他の市区町村へ引っ越すとき"
           },
           {
-            "title": "自動車税",
-            "href": "/vehicle-tax"
+            "title": "転居届",
+            "href": "/tenkyo",
+            "description": "市内で住所が変わったとき"
           },
           {
-            "title": "自動車重量税",
-            "href": "/weight-tax"
+            "title": "出生届",
+            "href": "/shussei",
+            "description": "お子さんが生まれたときの届出"
           },
           {
-            "title": "自賠責保険",
-            "href": "/liability-insurance"
+            "title": "婚姻届",
+            "href": "/konin",
+            "description": "結婚の届出手続き"
           },
           {
-            "title": "軽自動車税",
-            "href": "/keijidosha"
-          }
-        ]
-      }
-    },
-    {
-      "id": "section-対象-1769919363163",
-      "type": "Section",
-      "props": {
-        "heading": "車検・自動車登録の対象となる方",
-        "content": [
+            "title": "死亡届",
+            "href": "/shibou",
+            "description": "ご家族が亡くなられたときの届出"
+          },
           {
-            "type": "paragraph",
-            "runs": [
-              {
-                "text": "詳細は担当課にお問い合わせください。"
-              }
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "section-必要-1769919363163",
-      "type": "Section",
-      "props": {
-        "heading": "車検・自動車登録に必要なもの",
-        "content": [
+            "title": "戸籍謄本・住民票",
+            "href": "/koseki",
+            "description": "戸籍・住民票の取得方法"
+          },
           {
-            "type": "list",
-            "ordered": false,
-            "items": [
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "本人確認書類（マイナンバーカード、運転免許証など）"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "印鑑（認印可）"
-                    }
-                  ]
-                }
-              ]
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "section-方法-1769919363163",
-      "type": "Section",
-      "props": {
-        "heading": "車検・自動車登録の手続き方法",
-        "content": [
+            "title": "住民票の写し",
+            "href": "/juminhyo",
+            "description": "住民票の取得方法"
+          },
           {
-            "type": "list",
-            "ordered": true,
-            "items": [
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "必要書類を準備します。"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "窓口で申請書を記入します。"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "runs": [
-                    {
-                      "text": "書類を提出し、確認を受けます。"
-                    }
-                  ]
-                }
-              ]
-            ]
+            "title": "印鑑登録",
+            "href": "/inkan",
+            "description": "印鑑登録と証明書の取得"
+          },
+          {
+            "title": "マイナンバーカード",
+            "href": "/mynumber",
+            "description": "マイナンバーカードの申請・更新"
           }
         ]
       }
@@ -297,9 +114,11 @@
       "id": "contact-1",
       "type": "Contact",
       "props": {
-        "department": "{{transport_branch}}",
-        "phone": "{{transport_branch_phone}}",
-        "address": "{{transport_branch_address}}"
+        "department": "{{registration_department}}",
+        "phone": "{{registration_phone}}",
+        "email": "{{registration_email}}",
+        "hours": "{{city_hall_hours}}",
+        "address": "{{city_hall_address}}"
       }
     },
     {
@@ -311,15 +130,20 @@
     }
   ],
   "search": {
-    "summary": "車検・自動車登録の案内。継続検査、新規登録、移転登録、変更登録、抹消登録。",
+    "summary": "届出・申請・証明書に関する情報。転入届、出生届、婚姻届、戸籍謄本、住民票、マイナンバーカードの手続き案内。",
     "keywords": [
-      "車検",
-      "自動車登録",
-      "名義変更",
-      "移転登録",
-      "変更登録",
-      "抹消登録"
+      "届出",
+      "申請",
+      "証明書",
+      "転入届",
+      "転出届",
+      "出生届",
+      "婚姻届",
+      "戸籍謄本",
+      "住民票",
+      "マイナンバーカード",
+      "印鑑登録"
     ],
-    "plain_text": "車検・自動車登録。車検は満了日の1か月前から受検可能。登録手続きは運輸支局で。"
+    "plain_text": "届出・申請・証明書。出生届、婚姻届、転入届、戸籍謄本、住民票、マイナンバーカードに関する情報。転入届・転出届・転居届、出生届、婚姻届・離婚届、死亡届、戸籍謄本・抄本、住民票、印鑑登録・印鑑証明、マイナンバーカード。"
   }
 }

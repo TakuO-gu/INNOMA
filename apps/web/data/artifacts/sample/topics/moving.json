@@ -61,17 +61,17 @@
         "items": [
           {
             "title": "転入届",
-            "href": "/tennyu",
+            "href": "/registration/tennyu",
             "description": "他の市区町村から引っ越してきたとき"
           },
           {
             "title": "転出届",
-            "href": "/tenshutsu",
+            "href": "/registration/tenshutsu",
             "description": "他の市区町村へ引っ越すとき"
           },
           {
             "title": "転居届",
-            "href": "/tenkyo",
+            "href": "/registration/tenkyo",
             "description": "市内で住所が変わったとき"
           }
         ]

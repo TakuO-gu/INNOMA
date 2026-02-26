@@ -7,16 +7,19 @@
   "description": "要介護認定・要支援認定の申請手続き。必要書類と申請窓口をご案内します。オンライン申請も可能です。",
   "content_type": "service",
   "service_category": "welfare",
-  "audience": ["residents", "elderly"],
+  "audience": [
+    "residents",
+    "elderly"
+  ],
   "topic": [],
   "source": {
-    "source_url": "https://www.city.takaoka.toyama.jp/soshiki/koreikaigoka/2/1/2/9/3007.html",
-    "fetched_at": "2026-02-03T00:00:00.000Z",
-    "content_hash": "new-service-page"
+    "source_url": "template://takaoka/kaigo-apply",
+    "fetched_at": "2026-02-26T05:47:37.369Z",
+    "content_hash": "template"
   },
   "pipeline": {
-    "run_id": "manual-create-003",
-    "generated_at": "2026-02-03T00:00:00.000Z",
+    "run_id": "template-001",
+    "generated_at": "2026-02-26T05:47:37.369Z",
     "schema_version": "2.0.0"
   },
   "blocks": [
@@ -25,10 +28,22 @@
       "type": "Breadcrumbs",
       "props": {
         "items": [
-          { "label": "ホーム", "href": "/" },
-          { "label": "高齢者向け支援", "href": "/welfare" },
-          { "label": "介護保険", "href": "/kaigo" },
-          { "label": "要介護認定を申請する", "href": "/kaigo-apply" }
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "高齢者向け支援",
+            "href": "/welfare"
+          },
+          {
+            "label": "介護保険",
+            "href": "/kaigo"
+          },
+          {
+            "label": "要介護認定を申請する",
+            "href": "/kaigo-apply"
+          }
         ]
       }
     },
@@ -57,8 +72,34 @@
             "type": "list",
             "ordered": false,
             "items": [
-              [{ "type": "paragraph", "runs": [{ "text": "65歳以上の方", "bold": true }, { "text": "（第1号被保険者）：原因を問わず、介護・支援が必要な方" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "40〜64歳の方", "bold": true }, { "text": "（第2号被保険者）：特定疾病が原因で介護・支援が必要な方" }] }]
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "65歳以上の方",
+                      "bold": true
+                    },
+                    {
+                      "text": "（第1号被保険者）：原因を問わず、介護・支援が必要な方"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "40〜64歳の方",
+                      "bold": true
+                    },
+                    {
+                      "text": "（第2号被保険者）：特定疾病が原因で介護・支援が必要な方"
+                    }
+                  ]
+                }
+              ]
             ]
           }
         ]
@@ -75,25 +116,37 @@
             "type": "list",
             "ordered": false,
             "items": [
-              [{ "type": "paragraph", "runs": [{ "text": "介護保険要介護・要支援認定申請書" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "主治医意見書", "bold": true }, { "text": "（医療機関に依頼して入手してください）" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "介護保険被保険者証" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "医療保険被保険者証（40〜64歳の方のみ）" }] }]
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "介護保険要介護・要支援認定申請書"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "介護保険被保険者証"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "runs": [
+                    {
+                      "text": "医療保険被保険者証（40〜64歳の方のみ）"
+                    }
+                  ]
+                }
+              ]
             ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "notification-ikensho",
-      "type": "NotificationBanner",
-      "props": {
-        "severity": "info",
-        "title": "主治医意見書について",
-        "content": [
-          {
-            "type": "paragraph",
-            "runs": [{ "text": "高岡市では、主治医意見書は申請者ご自身で医療機関に依頼し、入手してから申請書と一緒に提出していただく方式です。" }]
           }
         ]
       }
@@ -107,7 +160,11 @@
         "content": [
           {
             "type": "paragraph",
-            "runs": [{ "text": "無料" }]
+            "runs": [
+              {
+                "text": "無料"
+              }
+            ]
           }
         ]
       }
@@ -119,12 +176,12 @@
         "heading": "認定までの流れ",
         "steps": [
           {
-            "title": "主治医意見書を依頼する",
-            "description": "かかりつけ医に主治医意見書の作成を依頼します"
-          },
-          {
             "title": "申請する",
             "description": "窓口・郵送・オンラインのいずれかで申請します"
+          },
+          {
+            "title": "主治医意見書",
+            "description": "市から主治医に意見書の作成を依頼します"
           },
           {
             "title": "訪問調査",
@@ -157,7 +214,11 @@
         "content": [
           {
             "type": "paragraph",
-            "runs": [{ "text": "マイナポータル（ぴったりサービス）から「高岡市」→「介護」で申請できます。" }]
+            "runs": [
+              {
+                "text": "マイナポータル（ぴったりサービス）から「高岡市」→「介護」で申請できます。"
+              }
+            ]
           }
         ]
       }
@@ -170,30 +231,12 @@
         "level": 2,
         "content": [
           {
-            "type": "list",
-            "ordered": false,
-            "items": [
-              [{ "type": "paragraph", "runs": [{ "text": "長寿福祉課（市役所2階）" }] }],
-              [{ "type": "paragraph", "runs": [{ "text": "各支所（戸出・中田・伏木・福岡）" }] }]
+            "type": "paragraph",
+            "runs": [
+              {
+                "text": "{{welfare_department}}（{{city_hall_location}}）で申請できます。"
+              }
             ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "section-yuubin",
-      "type": "Section",
-      "props": {
-        "heading": "郵送で申請する場合",
-        "level": 2,
-        "content": [
-          {
-            "type": "paragraph",
-            "runs": [{ "text": "〒933-8601 高岡市広小路7番50号" }]
-          },
-          {
-            "type": "paragraph",
-            "runs": [{ "text": "高岡市役所 長寿福祉課 介護認定審査係" }]
           }
         ]
       }
@@ -202,10 +245,10 @@
       "id": "contact-1",
       "type": "Contact",
       "props": {
-        "department": "長寿福祉課",
-        "phone": "0766-20-1365",
-        "hours": "午前8時30分〜午後5時15分（土日祝日・年末年始除く）",
-        "address": "高岡市広小路7-50（市役所2階）"
+        "department": "{{welfare_department}}",
+        "phone": "{{welfare_phone}}",
+        "hours": "{{city_hall_hours}}",
+        "address": "{{city_hall_address}}"
       }
     },
     {
@@ -213,9 +256,18 @@
       "type": "RelatedLinks",
       "props": {
         "items": [
-          { "title": "介護保険について詳しく見る", "href": "/kaigo" },
-          { "title": "介護サービスを利用できるか確認する", "href": "/kaigo-check" },
-          { "title": "地域包括支援センター", "href": "/houkatsu" }
+          {
+            "title": "介護保険について詳しく見る",
+            "href": "/kaigo"
+          },
+          {
+            "title": "介護サービスを利用できるか確認する",
+            "href": "/kaigo-check"
+          },
+          {
+            "title": "地域包括支援センター",
+            "href": "/houkatsu"
+          }
         ]
       }
     },
@@ -228,8 +280,14 @@
     }
   ],
   "search": {
-    "summary": "要介護認定・要支援認定の申請手続き。主治医意見書、介護保険被保険者証が必要。原則30日以内に結果通知。オンライン申請可能。",
-    "keywords": ["要介護認定", "要支援認定", "申請", "介護保険", "主治医意見書", "訪問調査"],
-    "plain_text": "要介護認定を申請する。介護サービス利用のための認定申請。主治医意見書、介護保険被保険者証が必要。原則30日以内に結果通知。窓口・郵送・オンライン申請可能。"
+    "summary": "要介護認定・要支援認定の申請手続き。介護保険被保険者証が必要。原則30日以内に結果通知。オンライン申請可能。",
+    "keywords": [
+      "要介護認定",
+      "要支援認定",
+      "申請",
+      "介護保険",
+      "訪問調査"
+    ],
+    "plain_text": "要介護認定を申請する。介護サービス利用のための認定申請。介護保険被保険者証が必要。原則30日以内に結果通知。窓口・郵送・オンライン申請可能。"
   }
 }

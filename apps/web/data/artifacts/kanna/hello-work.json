@@ -13,12 +13,12 @@
   "topic": [],
   "source": {
     "source_url": "template://kanna/services/employment/hello-work",
-    "fetched_at": "2026-02-03T01:50:19.804Z",
+    "fetched_at": "2026-02-26T05:47:35.027Z",
     "content_hash": "template"
   },
   "pipeline": {
     "run_id": "template-001",
-    "generated_at": "2026-02-03T01:50:19.804Z",
+    "generated_at": "2026-02-26T05:47:35.027Z",
     "schema_version": "2.0.0"
   },
   "blocks": [

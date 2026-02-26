@@ -1,0 +1,62 @@
+{
+  "kinkyu_hinanbasho_count": {
+    "value": "45",
+    "source": "web",
+    "sourceUrl": "https://www.city.choshi.chiba.jp/content/000017609.pdf",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z",
+    "note": "指定緊急避難場所一覧（令和7年3月）PDFよりテキスト抽出。45施設を確認。"
+  },
+  "shitei_hinanjo_count": {
+    "value": "31",
+    "source": "web",
+    "sourceUrl": "https://www.city.choshi.chiba.jp/content/000058642.pdf",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z",
+    "note": "指定避難所一覧（令和7年3月）PDFよりテキスト抽出。31施設を確認。"
+  },
+  "fukushi_hinanjo_count": {
+    "value": "23",
+    "source": "web",
+    "sourceUrl": "https://www.city.choshi.chiba.jp/content/000017611.pdf",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z",
+    "note": "福祉避難所一覧PDFよりテキスト抽出。23施設を確認。"
+  },
+  "hinanjo_status_url": {
+    "value": "https://www.city.choshi.chiba.jp/shobo/index0287.html",
+    "source": "web",
+    "sourceUrl": "https://www.city.choshi.chiba.jp/shobo/index0287.html",
+    "confidence": 0.85,
+    "updatedAt": "2026-02-26T00:00:00.000Z",
+    "note": "災害情報ページ。災害時には避難所開設状況が掲載される"
+  },
+  "bosai_department": {
+    "value": "総務課 危機管理室 危機管理班",
+    "source": "web",
+    "sourceUrl": "https://www.city.choshi.chiba.jp/kurashi/page040054.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "bosai_phone": {
+    "value": "0479-24-8193",
+    "source": "web",
+    "sourceUrl": "https://www.city.choshi.chiba.jp/kurashi/page040054.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "city_hall_hours": {
+    "value": "午前8時30分～午後5時15分（土曜日・日曜日・祝日・年末年始を除く）",
+    "source": "web",
+    "sourceUrl": "https://www.city.choshi.chiba.jp/soshiki/otoiawase.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  },
+  "city_hall_address": {
+    "value": "〒288-8601 千葉県銚子市若宮町1-1",
+    "source": "web",
+    "sourceUrl": "https://www.city.choshi.chiba.jp/soshiki/otoiawase.html",
+    "confidence": 0.95,
+    "updatedAt": "2026-02-26T00:00:00.000Z"
+  }
+}

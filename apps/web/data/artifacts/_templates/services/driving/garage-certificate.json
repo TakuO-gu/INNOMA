@@ -6,7 +6,7 @@
   "title": "車庫証明（保管場所証明）",
   "description": "自動車保管場所証明書の申請手続き（警察署案内）",
   "content_type": "guide",
-  "service_category": "government",
+  "service_category": "driving",
   "audience": [
     "residents"
   ],
@@ -200,7 +200,7 @@
       "props": {
         "items": [
           {
-            "title": "自動車登録",
+            "title": "車検・自動車登録",
             "href": "/registration"
           },
           {
@@ -208,8 +208,8 @@
             "href": "/license"
           },
           {
-            "title": "駐車場",
-            "href": "/parking"
+            "title": "自動車税・軽自動車税",
+            "href": "/vehicle-tax"
           },
           {
             "title": "印鑑登録",

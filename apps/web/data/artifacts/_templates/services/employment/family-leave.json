@@ -6,7 +6,7 @@
   "title": "育児休業・介護休業",
   "description": "育児休業給付金、介護休業給付金、育休取得の手続き",
   "content_type": "guide",
-  "service_category": "business",
+  "service_category": "employment",
   "audience": [
     "residents"
   ],
@@ -145,12 +145,12 @@
             "href": "/kaigo"
           },
           {
-            "title": "労働基準",
+            "title": "労働条件・最低賃金",
             "href": "/labor-standards"
           },
           {
-            "title": "社会保険",
-            "href": "/business-insurance"
+            "title": "雇用保険・失業給付",
+            "href": "/unemployment-insurance"
           }
         ]
       }

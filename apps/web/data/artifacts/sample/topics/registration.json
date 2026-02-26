@@ -59,22 +59,22 @@
         "items": [
           {
             "title": "転入届",
-            "href": "/tennyu",
+            "href": "/registration/tennyu",
             "description": "他の市区町村から引っ越してきたとき"
           },
           {
             "title": "転出届",
-            "href": "/tenshutsu",
+            "href": "/registration/tenshutsu",
             "description": "他の市区町村へ引っ越すとき"
           },
           {
             "title": "転居届",
-            "href": "/tenkyo",
+            "href": "/registration/tenkyo",
             "description": "市内で住所が変わったとき"
           },
           {
             "title": "出生届",
-            "href": "/shussei",
+            "href": "/registration/shussei",
             "description": "お子さんが生まれたときの届出"
           },
           {
@@ -89,22 +89,22 @@
           },
           {
             "title": "戸籍謄本・住民票",
-            "href": "/koseki",
+            "href": "/registration/koseki",
             "description": "戸籍・住民票の取得方法"
           },
           {
             "title": "住民票の写し",
-            "href": "/juminhyo",
+            "href": "/registration/juminhyo",
             "description": "住民票の取得方法"
           },
           {
             "title": "印鑑登録",
-            "href": "/inkan",
+            "href": "/registration/inkan",
             "description": "印鑑登録と証明書の取得"
           },
           {
             "title": "マイナンバーカード",
-            "href": "/mynumber",
+            "href": "/registration/mynumber",
             "description": "マイナンバーカードの申請・更新"
           }
         ]
