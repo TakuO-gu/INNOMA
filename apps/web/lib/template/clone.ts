@@ -232,21 +232,128 @@ export async function extractTemplateVariables(
 }
 
 /**
- * 自治体のファイル数を取得
+ * ページ数キャッシュ（1日有効）
+ */
+interface PageCountCache {
+  updatedAt: string;
+  counts: Record<string, number>;
+}
+
+const PAGE_COUNT_CACHE_FILE = join(ARTIFACTS_DIR, "_config", "page-count-cache.json");
+const CACHE_TTL_MS = 24 * 60 * 60 * 1000; // 1日
+
+async function readPageCountCache(): Promise<PageCountCache | null> {
+  try {
+    const content = await readFile(PAGE_COUNT_CACHE_FILE, "utf-8");
+    const cache = JSON.parse(content) as PageCountCache;
+    const age = Date.now() - new Date(cache.updatedAt).getTime();
+    if (age < CACHE_TTL_MS) {
+      return cache;
+    }
+  } catch {
+    // ファイルが存在しないか壊れている場合
+  }
+  return null;
+}
+
+async function writePageCountCache(cache: PageCountCache): Promise<void> {
+  const { mkdir: mkdirFs } = await import("fs/promises");
+  await mkdirFs(join(ARTIFACTS_DIR, "_config"), { recursive: true });
+  await writeFile(PAGE_COUNT_CACHE_FILE, JSON.stringify(cache, null, 2));
+}
+
+/**
+ * 自治体の公開可能ページ数を取得
+ *
+ * visibility で公開設定されていて、かつページ内の変数が十分に
+ * 埋まっている（充足率80%以上）ページのみをカウントする。
+ * 結果は1日間キャッシュされる。
  */
 export async function getMunicipalityPageCount(
   municipalityId: string
 ): Promise<number> {
+  // キャッシュを確認
+  const cache = await readPageCountCache();
+  if (cache && municipalityId in cache.counts) {
+    return cache.counts[municipalityId];
+  }
+
+  const count = await computePageCount(municipalityId);
+
+  // キャッシュに保存（既存キャッシュが有効ならマージ、期限切れなら新規作成）
+  const currentCache = cache ?? { updatedAt: new Date().toISOString(), counts: {} };
+  currentCache.counts[municipalityId] = count;
+  currentCache.updatedAt = new Date().toISOString();
+  await writePageCountCache(currentCache);
+
+  return count;
+}
+
+async function computePageCount(municipalityId: string): Promise<number> {
   const dir = join(ARTIFACTS_DIR, municipalityId);
   if (!(await exists(dir))) {
     return 0;
   }
 
+  // visibility設定を取得
+  const { getVisibilityConfig, isPageVisible } = await import("../visibility/storage");
+  const visibilityConfig = await getVisibilityConfig();
+
+  // 変数ストアを取得
+  const { getVariableStore } = await import("./storage");
+  const variables = await getVariableStore(municipalityId);
+
+  // {{variable_name}} パターン
+  const variablePattern = /\{\{([a-z_][a-z0-9_]*)\}\}/gi;
+
   const files = await getAllFiles(dir);
-  // meta.jsonとvariables.jsonは除外
-  return files.filter(
-    (f) => !f.endsWith("meta.json") && !f.endsWith("variables.json")
-  ).length;
+  const pageFiles = files.filter(
+    (f) =>
+      f.endsWith(".json") &&
+      !f.endsWith("meta.json") &&
+      !f.endsWith("variables.json") &&
+      !f.includes("/variables/")
+  );
+
+  let count = 0;
+
+  for (const file of pageFiles) {
+    // ファイル名からslugを取得（拡張子なし、サブディレクトリ対応）
+    const relativePath = relative(dir, file);
+    const slug = relativePath.replace(/\.json$/, "").replace(/\//g, "/");
+
+    // visibility チェック
+    if (!isPageVisible(visibilityConfig, slug)) {
+      continue;
+    }
+
+    // ページ内の変数を抽出して充足率をチェック
+    const content = await readFile(file, "utf-8");
+    const usedVariables = new Set<string>();
+    let match;
+    variablePattern.lastIndex = 0;
+    while ((match = variablePattern.exec(content)) !== null) {
+      usedVariables.add(match[1].toLowerCase());
+    }
+
+    // 変数を使わないページは公開可能
+    if (usedVariables.size === 0) {
+      count++;
+      continue;
+    }
+
+    // 変数の充足率を計算（80%以上で公開可能）
+    const filledCount = Array.from(usedVariables).filter(
+      (name) => variables[name]?.value && variables[name].value.trim() !== ""
+    ).length;
+    const fillRate = filledCount / usedVariables.size;
+
+    if (fillRate >= 0.8) {
+      count++;
+    }
+  }
+
+  return count;
 }
 
 /**

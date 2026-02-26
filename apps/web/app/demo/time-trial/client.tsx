@@ -18,6 +18,15 @@ type Phase =
   | "search-innoma" // INNOMAサイトで検索中
   | "result"; // 結果表示
 
+interface TrialResult {
+  question: string;
+  municipality: string;
+  existingTime: number;
+  innomaTime: number;
+  timeDiffPercent: number;
+  timestamp: number;
+}
+
 export function TimeTrialClient({
   questions,
   slotData,
@@ -33,6 +42,26 @@ export function TimeTrialClient({
   const [slotCategoryIndex, setSlotCategoryIndex] = useState(0);
   const [isSlotSpinning, setIsSlotSpinning] = useState(false);
 
+  // 結果履歴（localStorageに保存）
+  const [resultHistory, setResultHistory] = useState<TrialResult[]>([]);
+  const [feedback, setFeedback] = useState("");
+  const [feedbackSubmitted, setFeedbackSubmitted] = useState(false);
+
+  useEffect(() => {
+    try {
+      const saved = localStorage.getItem("innoma-trial-history");
+      if (saved) setResultHistory(JSON.parse(saved));
+    } catch {}
+  }, []);
+
+  const saveResult = useCallback((result: TrialResult) => {
+    setResultHistory((prev) => {
+      const updated = [...prev, result];
+      try { localStorage.setItem("innoma-trial-history", JSON.stringify(updated)); } catch {}
+      return updated;
+    });
+  }, []);
+
   // タイマー
   const [existingTime, setExistingTime] = useState(0);
   const [innomaTime, setInnomaTime] = useState(0);
@@ -46,22 +75,53 @@ export function TimeTrialClient({
     }
   }, []);
 
-  // Timer effect for search phases
+  // INNOMA iframe読み込み完了フラグ
+  const [innomaIframeLoaded, setInnomaIframeLoaded] = useState(false);
+
+  const formatTime = (seconds: number) => {
+    const mins = Math.floor(seconds / 60);
+    const secs = Math.floor(seconds % 60);
+    const ms = Math.floor((seconds % 1) * 10);
+    if (mins > 0) {
+      return `${mins}:${secs.toString().padStart(2, "0")}.${ms}`;
+    }
+    return `${secs}.${ms}秒`;
+  };
+
+  // タスクパネルのタイマー表示を更新
+  const updateTaskPanelTimer = useCallback((timeStr: string) => {
+    if (taskPanelWindowRef.current && !taskPanelWindowRef.current.closed) {
+      const el = taskPanelWindowRef.current.document.getElementById("timer-display");
+      if (el) el.textContent = timeStr;
+    }
+  }, []);
+
+  // Timer effect for search-existing phase
   useEffect(() => {
-    if (phase === "search-existing" || phase === "search-innoma") {
+    if (phase === "search-existing") {
       startTimeRef.current = Date.now();
       const interval = setInterval(() => {
         const elapsed = (Date.now() - startTimeRef.current) / 1000;
-        if (phase === "search-existing") {
-          setExistingTime(elapsed);
-        } else {
-          setInnomaTime(elapsed);
-        }
+        setExistingTime(elapsed);
+        updateTaskPanelTimer(formatTime(elapsed));
       }, 50);
       timerRef.current = interval;
       return () => clearInterval(interval);
     }
-  }, [phase]);
+  }, [phase, updateTaskPanelTimer]);
+
+  // Timer effect for search-innoma phase（iframe読み込み完了後に開始）
+  useEffect(() => {
+    if (phase === "search-innoma" && innomaIframeLoaded) {
+      startTimeRef.current = Date.now();
+      const interval = setInterval(() => {
+        const elapsed = (Date.now() - startTimeRef.current) / 1000;
+        setInnomaTime(elapsed);
+      }, 50);
+      timerRef.current = interval;
+      return () => clearInterval(interval);
+    }
+  }, [phase, innomaIframeLoaded]);
 
   // スロット回転開始
   const spin = useCallback(() => {
@@ -101,14 +161,19 @@ export function TimeTrialClient({
     }, 80);
   }, [questions, slotData]);
 
-  // 公式サイトポップアップウィンドウ
+  // ウィンドウ参照
   const officialWindowRef = useRef<Window | null>(null);
+  const taskPanelWindowRef = useRef<Window | null>(null);
 
   const closeSplitWindows = useCallback(() => {
     if (officialWindowRef.current && !officialWindowRef.current.closed) {
       officialWindowRef.current.close();
     }
     officialWindowRef.current = null;
+    if (taskPanelWindowRef.current && !taskPanelWindowRef.current.closed) {
+      taskPanelWindowRef.current.close();
+    }
+    taskPanelWindowRef.current = null;
   }, []);
 
   useEffect(() => {
@@ -125,31 +190,81 @@ export function TimeTrialClient({
 
   const ESC_HOLD_MS = 1500; // 長押し時間
 
-  // Phase 1 開始: 公式サイトをポップアップで開き、メインタブにタスクパネルを表示
-  // ※ 役割を逆にする: ユーザーが操作するのはポップアップ（公式サイト）で、
-  //   メインタブ（タスクパネル）は裏に回らないので常にアクセス可能
+  // タスクパネルポップアップを開く
+  const openTaskPanelPopup = useCallback((question: QuizQuestion, phaseLabel: string, color: string) => {
+    const screenW = window.screen.availWidth;
+    const screenH = window.screen.availHeight;
+    const popupW = 400;
+    const popupLeft = screenW - popupW;
+    const panel = window.open(
+      "",
+      "innoma-task-panel",
+      `popup=yes,width=${popupW},height=${screenH},left=${popupLeft},top=0`
+    );
+    if (!panel) return null;
+    panel.document.write(`<!DOCTYPE html>
+<html><head><meta charset="utf-8"><title>タイムトライアル</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;background:#f9fafb;display:flex;flex-direction:column;min-height:100vh;padding:24px}
+.header{background:${color};color:#fff;padding:12px 20px;border-radius:16px;margin-bottom:20px;font-weight:700;font-size:14px}
+.mission{background:#fff;border:2px solid ${color}33;border-radius:16px;padding:20px;margin-bottom:20px}
+.mission-label{font-size:12px;color:${color};font-weight:700;margin-bottom:6px}
+.mission-text{font-size:18px;font-weight:700;color:#1f2937;line-height:1.4}
+.mission-sub{font-size:13px;color:#9ca3af;margin-top:6px}
+.timer{text-align:center;padding:24px 0}
+#timer-display{font-size:64px;font-family:ui-monospace,monospace;font-weight:900;color:${color};letter-spacing:-2px}
+.guide{text-align:center;color:#6b7280;font-size:14px;margin-bottom:20px;line-height:1.6}
+.btn{display:block;width:100%;padding:16px;border:none;border-radius:16px;font-size:18px;font-weight:700;cursor:pointer;transition:transform .1s}
+.btn:active{transform:scale(0.97)}
+.btn-primary{background:linear-gradient(135deg,${color},${color}dd);color:#fff;margin-bottom:12px;box-shadow:0 4px 12px ${color}44}
+.btn-secondary{background:#f3f4f6;color:#4b5563;font-size:14px;margin-bottom:12px}
+.hint{text-align:center;font-size:12px;color:#d1d5db;margin-top:16px}
+</style></head><body>
+<div class="header">${phaseLabel}</div>
+<div class="mission">
+<div class="mission-label">ミッション</div>
+<div class="mission-text">${question.question}</div>
+<div class="mission-sub">${question.prefecture} ${question.municipalityName}</div>
+</div>
+<div class="timer"><div id="timer-display">0.0秒</div></div>
+<div class="guide">公式サイトで情報を探してください。<br>見つけたら「見つけた！」を押してください。</div>
+<button class="btn btn-primary" id="found-btn">見つけた！</button>
+<button class="btn btn-secondary" id="reopen-btn">既存サイトをもう一度表示する</button>
+<div class="hint">答え: 「${question.answer}」</div>
+<script>
+document.getElementById('found-btn').onclick=function(){window.opener&&window.opener.postMessage({type:'innoma-found-existing'},'*')};
+document.getElementById('reopen-btn').onclick=function(){window.opener&&window.opener.postMessage({type:'innoma-reopen-official'},'*')};
+</script></body></html>`);
+    panel.document.close();
+    return panel;
+  }, []);
+
+  // Phase 1 開始: 公式サイトを通常タブで開き、タスクパネルをポップアップで表示
   const startExistingSearch = useCallback(() => {
     if (!currentQuestion) return;
 
-    const screenW = window.screen.availWidth;
-    const screenH = window.screen.availHeight;
-    // 公式サイトを画面の左半分にポップアップで開く（右側にタスクパネルを並べる）
-    const popupW = Math.round(screenW / 2);
+    // 公式サイトを通常のChromeウィンドウ（新しいタブ）として開く
     const officialWin = window.open(
       currentQuestion.officialUrl,
-      "innoma-official",
-      `popup=yes,width=${popupW},height=${screenH},left=0,top=0`
+      "innoma-official"
     );
     if (officialWin) {
       officialWindowRef.current = officialWin;
     }
 
+    // タスクパネルをポップアップで開く
+    const panel = openTaskPanelPopup(currentQuestion, "Phase 1: 既存サイトで探そう", "#f97316");
+    if (panel) {
+      taskPanelWindowRef.current = panel;
+    }
+
     // Phase 遷移（タイマー開始）
     setPhase("search-existing");
-  }, [currentQuestion]);
+  }, [currentQuestion, openTaskPanelPopup]);
 
   // waiting phase: フルスクリーン解除後に少し待ってからポップアップ＋タイマー開始
-  const WAIT_AFTER_ESC_MS = 1500;
+  const WAIT_AFTER_ESC_MS = 5000;
   const [waitCountdown, setWaitCountdown] = useState(0); // 0〜100
 
   useEffect(() => {
@@ -233,18 +348,64 @@ export function TimeTrialClient({
     };
   }, [phase, ESC_HOLD_MS]);
 
-  // 既存サイト「見つけた！」（元タブのフォールバック用）
+  // 既存サイト「見つけた！」
   const foundOnExisting = useCallback(() => {
     stopTimer();
+    // 公式サイトとタスクパネルポップアップを閉じる
     closeSplitWindows();
+    setInnomaIframeLoaded(false);
     setPhase("search-innoma");
   }, [stopTimer, closeSplitWindows]);
+
+  // ポップアップからのメッセージを受信
+  const foundOnExistingRef = useRef<(() => void) | null>(null);
+  useEffect(() => {
+    foundOnExistingRef.current = foundOnExisting;
+  }, [foundOnExisting]);
+
+  useEffect(() => {
+    const handleMessage = (e: MessageEvent) => {
+      if (e.data?.type === "innoma-found-existing") {
+        foundOnExistingRef.current?.();
+      } else if (e.data?.type === "innoma-reopen-official" && currentQuestion) {
+        const win = window.open(
+          currentQuestion.officialUrl,
+          "innoma-official"
+        );
+        if (win) officialWindowRef.current = win;
+      }
+    };
+    window.addEventListener("message", handleMessage);
+    return () => window.removeEventListener("message", handleMessage);
+  }, [currentQuestion]);
 
   // INNOMA「見つけた！」
   const foundOnInnoma = useCallback(() => {
     stopTimer();
     setPhase("result");
   }, [stopTimer]);
+
+  // 結果をphase遷移時に保存
+  const resultSavedRef = useRef(false);
+  useEffect(() => {
+    if (phase === "result" && currentQuestion && existingTime > 0 && innomaTime > 0 && !resultSavedRef.current) {
+      resultSavedRef.current = true;
+      const diff = ((existingTime - innomaTime) / existingTime) * 100;
+      saveResult({
+        question: currentQuestion.question,
+        municipality: currentQuestion.municipalityName,
+        existingTime,
+        innomaTime,
+        timeDiffPercent: Math.round(diff),
+        timestamp: Date.now(),
+      });
+      setFeedback("");
+      setFeedbackSubmitted(false);
+    }
+    if (phase !== "result") {
+      resultSavedRef.current = false;
+    }
+  }, [phase, currentQuestion, existingTime, innomaTime, saveResult]);
 
   // 最初からやり直す
   const reset = useCallback(() => {
@@ -256,20 +417,21 @@ export function TimeTrialClient({
     setInnomaTime(0);
   }, [stopTimer, closeSplitWindows]);
 
-  const formatTime = (seconds: number) => {
-    const mins = Math.floor(seconds / 60);
-    const secs = Math.floor(seconds % 60);
-    const ms = Math.floor((seconds % 1) * 10);
-    if (mins > 0) {
-      return `${mins}:${secs.toString().padStart(2, "0")}.${ms}`;
-    }
-    return `${secs}.${ms}秒`;
-  };
-
   const timeDiff =
     existingTime > 0 && innomaTime > 0
       ? ((existingTime - innomaTime) / existingTime) * 100
       : 0;
+
+  // 統計計算
+  const stats = (() => {
+    if (resultHistory.length === 0) return null;
+    const totalTrials = resultHistory.length;
+    const innomaWins = resultHistory.filter((r) => r.timeDiffPercent > 0).length;
+    const avgExisting = resultHistory.reduce((s, r) => s + r.existingTime, 0) / totalTrials;
+    const avgInnoma = resultHistory.reduce((s, r) => s + r.innomaTime, 0) / totalTrials;
+    const avgDiff = resultHistory.reduce((s, r) => s + r.timeDiffPercent, 0) / totalTrials;
+    return { totalTrials, innomaWins, avgExisting, avgInnoma, avgDiff };
+  })();
 
   return (
     <main className="min-h-screen flex flex-col">
@@ -415,30 +577,25 @@ export function TimeTrialClient({
                         </svg>
                         {/* 中央のescキー表示 */}
                         <div className="absolute inset-0 flex flex-col items-center justify-center">
-                          <div className={`w-16 h-10 rounded-lg border-2 flex items-center justify-center mb-2 transition-all ${
+                          <div className={`w-14 h-14 rounded-lg border-2 flex items-center justify-center mb-2 transition-all ${
                             escProgress > 0
-                              ? "bg-orange-500 border-orange-600 scale-95"
-                              : "bg-gray-800 border-gray-700"
-                          }`}>
+                              ? "scale-95 border-red-400"
+                              : "border-red-300"
+                          }`} style={{ backgroundColor: escProgress > 0 ? "#D94040" : "#FF6B6B" }}>
                             <span className="text-white font-mono font-bold text-sm">esc</span>
                           </div>
-                          <span className={`text-xs font-bold ${
-                            escProgress > 0 ? "text-orange-500" : "text-gray-400"
-                          }`}>
-                            {escProgress > 0 ? "長押し中..." : "長押しでスタート"}
-                          </span>
+                          {escProgress > 0 && (
+                            <span className="text-xs font-bold text-orange-500">
+                              長押し中...
+                            </span>
+                          )}
                         </div>
                       </div>
                     </div>
-                    <p className="text-sm text-gray-500">
+                    <p className="text-base font-bold text-gray-700">
                       キーボード左上の
-                      <span className="inline-block mx-1 px-2 py-0.5 bg-gray-800 text-white text-xs font-mono font-bold rounded">
-                        esc
-                      </span>
-                      キーを長押ししてスタート！
-                    </p>
-                    <p className="text-xs text-gray-400">
-                      公式サイトがポップアップで開きます
+                      <span className="inline-block mx-1 px-2 py-0.5 rounded text-white text-sm font-mono" style={{ backgroundColor: "#FF6B6B" }}>esc</span>
+                      キーを長押ししてください
                     </p>
                   </div>
                 </div>
@@ -539,9 +696,9 @@ export function TimeTrialClient({
 
                 {/* ガイド */}
                 <p className="text-sm text-gray-500 text-center">
-                  ポップアップの公式サイトで情報を探してください。
+                  公式サイトで情報を探してください。
                   <br />
-                  見つけたらこのタブに戻って「見つけた！」を押してください。
+                  見つけたら「見つけた！」を押してください。
                 </p>
 
                 {/* メインボタン */}
@@ -551,6 +708,20 @@ export function TimeTrialClient({
                     className="w-full py-4 bg-gradient-to-r from-orange-500 to-red-500 text-white text-xl font-bold rounded-2xl shadow-lg hover:shadow-xl hover:scale-[1.02] active:scale-[0.98] transition-all"
                   >
                     見つけた！
+                  </button>
+                  <button
+                    onClick={() => {
+                      if (currentQuestion) {
+                        const win = window.open(
+                          currentQuestion.officialUrl,
+                          "innoma-official"
+                        );
+                        if (win) officialWindowRef.current = win;
+                      }
+                    }}
+                    className="w-full py-3 bg-gray-100 text-gray-600 text-sm font-bold rounded-2xl hover:bg-gray-200 transition-colors"
+                  >
+                    既存サイトをもう一度表示する
                   </button>
                 </div>
 
@@ -580,8 +751,8 @@ export function TimeTrialClient({
                   <div className="text-sm text-gray-400">
                     既存サイト: {formatTime(existingTime)}
                   </div>
-                  <div className="text-3xl font-mono font-bold text-blue-600 tabular-nums">
-                    {formatTime(innomaTime)}
+                  <div className={`text-3xl font-mono font-bold tabular-nums ${innomaIframeLoaded ? "text-blue-600" : "text-gray-300"}`}>
+                    {innomaIframeLoaded ? formatTime(innomaTime) : "読込中..."}
                   </div>
                 </div>
               </div>
@@ -611,11 +782,20 @@ export function TimeTrialClient({
                   </svg>
                 </a>
               </div>
-              <div className="flex-1">
+              <div className="flex-1 relative">
+                {!innomaIframeLoaded && (
+                  <div className="absolute inset-0 flex items-center justify-center bg-white z-10">
+                    <div className="text-center space-y-3">
+                      <div className="w-10 h-10 border-4 border-blue-200 border-t-blue-500 rounded-full animate-spin mx-auto" />
+                      <p className="text-sm text-gray-500 font-medium">ページを読み込み中...</p>
+                    </div>
+                  </div>
+                )}
                 <iframe
                   src={`/${currentQuestion.municipalityId}${currentQuestion.innomaPath}`}
                   className="w-full h-full min-h-[460px] border-0"
                   title={`INNOMA ${currentQuestion.municipalityName}`}
+                  onLoad={() => setInnomaIframeLoaded(true)}
                 />
               </div>
             </div>
@@ -693,6 +873,89 @@ export function TimeTrialClient({
                 <p className="text-2xl font-bold text-gray-800">
                   {currentQuestion.answer}
                 </p>
+              </div>
+
+              {/* 累計統計 */}
+              {stats && stats.totalTrials > 0 && (
+                <div className="bg-gradient-to-r from-purple-50 to-indigo-50 rounded-2xl p-6 border-2 border-purple-200 mb-8">
+                  <p className="text-sm font-bold text-purple-600 mb-4 text-center">
+                    これまでの統計（{stats.totalTrials}回分）
+                  </p>
+                  <div className="grid grid-cols-3 gap-4 text-center">
+                    <div>
+                      <p className="text-xs text-gray-400 mb-1">INNOMA勝率</p>
+                      <p className="text-2xl font-black text-purple-600">
+                        {Math.round((stats.innomaWins / stats.totalTrials) * 100)}%
+                      </p>
+                      <p className="text-xs text-gray-400">
+                        {stats.innomaWins}/{stats.totalTrials}回
+                      </p>
+                    </div>
+                    <div>
+                      <p className="text-xs text-gray-400 mb-1">既存 平均</p>
+                      <p className="text-xl font-bold text-orange-500 tabular-nums">
+                        {formatTime(stats.avgExisting)}
+                      </p>
+                    </div>
+                    <div>
+                      <p className="text-xs text-gray-400 mb-1">INNOMA 平均</p>
+                      <p className="text-xl font-bold text-blue-500 tabular-nums">
+                        {formatTime(stats.avgInnoma)}
+                      </p>
+                    </div>
+                  </div>
+                  {stats.avgDiff > 0 && (
+                    <p className="text-center text-sm text-purple-500 font-bold mt-3">
+                      平均 {Math.round(stats.avgDiff)}% 時間短縮
+                    </p>
+                  )}
+                </div>
+              )}
+
+              {/* 感想フォーム */}
+              <div className="bg-gray-50 rounded-2xl p-6 mb-8">
+                <p className="text-sm font-bold text-gray-600 mb-3">
+                  感想を教えてください
+                </p>
+                {feedbackSubmitted ? (
+                  <div className="text-center py-4">
+                    <p className="text-green-600 font-bold">ありがとうございます！</p>
+                    <p className="text-sm text-gray-400 mt-1">感想を送信しました</p>
+                  </div>
+                ) : (
+                  <div className="space-y-3">
+                    <textarea
+                      value={feedback}
+                      onChange={(e) => setFeedback(e.target.value)}
+                      placeholder="使ってみた感想、気づいたことなどを自由にお書きください..."
+                      className="w-full p-3 border-2 border-gray-200 rounded-xl text-sm resize-none focus:border-blue-400 focus:outline-none transition-colors"
+                      rows={3}
+                    />
+                    <button
+                      onClick={() => {
+                        if (feedback.trim()) {
+                          try {
+                            const feedbackHistory = JSON.parse(localStorage.getItem("innoma-trial-feedback") || "[]");
+                            feedbackHistory.push({
+                              feedback: feedback.trim(),
+                              question: currentQuestion.question,
+                              municipality: currentQuestion.municipalityName,
+                              existingTime,
+                              innomaTime,
+                              timestamp: Date.now(),
+                            });
+                            localStorage.setItem("innoma-trial-feedback", JSON.stringify(feedbackHistory));
+                          } catch {}
+                          setFeedbackSubmitted(true);
+                        }
+                      }}
+                      disabled={!feedback.trim()}
+                      className="w-full py-3 bg-purple-500 text-white font-bold rounded-xl hover:bg-purple-600 transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
+                    >
+                      送信
+                    </button>
+                  </div>
+                )}
               </div>
 
               <div className="flex items-center justify-center gap-4">

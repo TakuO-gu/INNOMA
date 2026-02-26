@@ -27,16 +27,6 @@ export default function Footer() {
                   自治体一覧
                 </NextLink>
               </li>
-              <li>
-                <a
-                  href="https://github.com/YOUR_ORG/INNOMA"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-white transition-colors"
-                >
-                  GitHub
-                </a>
-              </li>
             </ul>
           </div>
         </div>

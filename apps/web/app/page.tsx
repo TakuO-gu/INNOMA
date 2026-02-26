@@ -169,6 +169,76 @@ export default async function Home() {
         </div>
       </section>
 
+      {/* What INNOMA Can Do Section */}
+      <section id="features" className="py-24 md:py-32 bg-white">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="animate-on-scroll">
+            <p className="text-blue-600 font-semibold mb-4 tracking-wide">FEATURES</p>
+            <h2 className="text-3xl md:text-5xl font-bold text-solid-gray-900 mb-6 line-decoration">
+              INNOMAでできること
+            </h2>
+            <p className="text-solid-gray-600 text-lg max-w-3xl">
+              INNOMAは、全国の自治体の行政情報を<strong className="text-solid-gray-900">わかりやすく、正確に、すばやく届ける</strong>ためのプラットフォームです。
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">
+            {[
+              {
+                title: "行政手続きをわかりやすく",
+                description: "住民票の取得、児童手当の申請、転入届...複雑な手続きをステップバイステップで案内します。",
+                icon: (
+                  <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M11.35 3.836c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75 2.25 2.25 0 00-.1-.664m-5.8 0A2.251 2.251 0 0113.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m8.9-4.414c.376.023.75.05 1.124.08 1.131.094 1.976 1.057 1.976 2.192V16.5A2.25 2.25 0 0118 18.75h-2.25m-7.5-10.5H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V18.75m-7.5-10.5h6.375c.621 0 1.125.504 1.125 1.125v9.375m-8.25-3l1.5 1.5 3-3.75" />
+                  </svg>
+                ),
+              },
+              {
+                title: "必要な書類・費用がすぐわかる",
+                description: "手続きに必要な持ち物、手数料、申請書の書き方など、事前に知りたい情報を一目で確認できます。",
+                icon: (
+                  <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
+                  </svg>
+                ),
+              },
+              {
+                title: "対象かどうかを簡単チェック",
+                description: "児童手当、介護保険、生活保護...自分が対象になるか、簡単な質問に答えるだけで確認できます。",
+                icon: (
+                  <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                ),
+              },
+              {
+                title: "常に最新の情報",
+                description: "AIが自治体の公式サイトを定期的にチェックし、制度変更や手数料の改定を自動で検出・更新します。",
+                icon: (
+                  <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182M2.985 19.644l3.181-3.182" />
+                  </svg>
+                ),
+              },
+            ].map((feature, i) => (
+              <div key={i} className="animate-on-scroll">
+                <div className="bg-solid-gray-50 rounded-2xl p-8 h-full hover-lift border border-solid-gray-200">
+                  <div className="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center mb-6 text-blue-600">
+                    {feature.icon}
+                  </div>
+                  <h3 className="text-xl font-bold text-solid-gray-900 mb-3">
+                    {feature.title}
+                  </h3>
+                  <p className="text-solid-gray-600 leading-relaxed">
+                    {feature.description}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Philosophy Section */}
       <section id="philosophy" className="py-24 md:py-32 bg-solid-gray-50">
         <div className="max-w-6xl mx-auto px-6">

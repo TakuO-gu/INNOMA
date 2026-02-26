@@ -32,6 +32,9 @@ Thumbs.db
 # Archive (not tracked in git)
 archive/
 
+# Page count cache
+apps/web/data/artifacts/_config/page-count-cache.json
+
 # Crawler outputs (legacy)
 downloaded_images/
 crawl_output/
