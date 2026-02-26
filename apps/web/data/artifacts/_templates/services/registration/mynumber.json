@@ -33,7 +33,7 @@
           },
           {
             "label": "届出・証明",
-            "href": "/registration"
+            "href": "/topics/registration"
           },
           {
             "label": "マイナンバーカード",
@@ -420,23 +420,6 @@
           {
             "title": "年金",
             "href": "/nenkin"
-          }
-        ]
-      }
-    },
-    {
-      "id": "section-対象-1769919363206",
-      "type": "Section",
-      "props": {
-        "heading": "マイナンバーカードの対象となる方",
-        "content": [
-          {
-            "type": "paragraph",
-            "runs": [
-              {
-                "text": "詳細は担当課にお問い合わせください。"
-              }
-            ]
           }
         ]
       }

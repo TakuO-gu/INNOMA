@@ -645,23 +645,6 @@
       }
     },
     {
-      "id": "section-対象-1769919363173",
-      "type": "Section",
-      "props": {
-        "heading": "国民健康保険の対象となる方",
-        "content": [
-          {
-            "type": "paragraph",
-            "runs": [
-              {
-                "text": "詳細は担当課にお問い合わせください。"
-              }
-            ]
-          }
-        ]
-      }
-    },
-    {
       "id": "contact-1",
       "type": "Contact",
       "props": {

@@ -57,13 +57,6 @@
       }
     },
     {
-      "id": "richtext-intro",
-      "type": "RichText",
-      "props": {
-        "content": []
-      }
-    },
-    {
       "id": "richtext-intro-notification-0",
       "type": "NotificationBanner",
       "props": {

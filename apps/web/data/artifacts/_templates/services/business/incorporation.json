@@ -397,23 +397,6 @@
       }
     },
     {
-      "id": "section-対象-1769919363144",
-      "type": "Section",
-      "props": {
-        "heading": "法人設立（株式会社・合同会社）の対象となる方",
-        "content": [
-          {
-            "type": "paragraph",
-            "runs": [
-              {
-                "text": "詳細は担当課にお問い合わせください。"
-              }
-            ]
-          }
-        ]
-      }
-    },
-    {
       "id": "contact-1",
       "type": "Contact",
       "props": {

@@ -349,6 +349,26 @@
       }
     },
     {
+      "id": "table-hikitori",
+      "type": "Table",
+      "props": {
+        "rows": [
+          {
+            "label": "住所",
+            "value": "{{kaden_hikitori_address}}"
+          },
+          {
+            "label": "電話番号",
+            "value": "{{kaden_hikitori_phone}}"
+          },
+          {
+            "label": "営業時間",
+            "value": "{{kaden_hikitori_hours}}"
+          }
+        ]
+      }
+    },
+    {
       "id": "section-dkafg1mmc",
       "type": "Section",
       "props": {
